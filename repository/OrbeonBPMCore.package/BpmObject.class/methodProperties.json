@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"new" : "BrunoBB 06/26/2016 14:37" },
+	"instance" : {
+		"getProcessDefinitionCache" : "BrunoBB 12/10/2015 06:18",
+		"throwExceptionTaskAssignmentNotFound" : "BrunoBB 12/04/2015 10:36",
+		"throwNoProcessMatrixExceptionFor:" : "BrunoBB 12/05/2015 13:57" } }

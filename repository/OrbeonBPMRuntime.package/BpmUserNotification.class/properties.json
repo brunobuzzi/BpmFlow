@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"senderUser",
+		"receivers" ],
+	"name" : "BpmUserNotification",
+	"pools" : [
+		 ],
+	"super" : "BpmNotification",
+	"type" : "normal" }

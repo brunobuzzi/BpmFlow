@@ -1,0 +1,4 @@
+user preferences
+regularListPagingSize
+
+	^userOptions regularListPagingSize

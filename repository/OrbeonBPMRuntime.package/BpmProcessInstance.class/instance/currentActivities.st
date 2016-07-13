@@ -1,0 +1,3 @@
+Accessing
+currentActivities
+	^currentActivities

@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAOrbeonBackofficeLogin",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebLogin",
+	"type" : "normal" }

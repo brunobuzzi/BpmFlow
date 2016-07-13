@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"evaluationCode" ],
+	"name" : "BpmCodeCondition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

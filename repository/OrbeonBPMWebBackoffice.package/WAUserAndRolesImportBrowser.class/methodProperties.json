@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applyImportedConfiguration" : "BrunoBB 06/19/2016 14:51",
+		"gitbookUrl" : "BrunoBB 06/20/2016 11:02",
+		"importCSVString:" : "BrunoBB 06/19/2016 14:39",
+		"importConfiguration" : "BrunoBB 06/19/2016 15:29",
+		"initialize" : "BrunoBB 06/19/2016 12:38",
+		"initializeBatchedLists" : "BrunoBB 06/19/2016 13:11",
+		"initializeSewafTableForGrantConfiguration" : "BrunoBB 06/19/2016 13:42",
+		"initializeSewafTableForImportedData" : "BrunoBB 06/19/2016 12:46",
+		"receiveFile:" : "BrunoBB 06/19/2016 12:15",
+		"renderApplyImportedDataOn:" : "BrunoBB 06/20/2016 10:14",
+		"renderCSVUploadOn:" : "BrunoBB 06/19/2016 15:37",
+		"renderContentOn:" : "BrunoBB 06/19/2016 14:28",
+		"renderHelpOn:" : "BrunoBB 06/19/2016 13:26",
+		"renderProcessDataOn:" : "BrunoBB 06/20/2016 10:14",
+		"renderUploadComponentOn:" : "BrunoBB 06/20/2016 10:14" } }

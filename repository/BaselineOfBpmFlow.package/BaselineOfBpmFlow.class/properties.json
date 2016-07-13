@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfBpmFlow",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfBpmFlow",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

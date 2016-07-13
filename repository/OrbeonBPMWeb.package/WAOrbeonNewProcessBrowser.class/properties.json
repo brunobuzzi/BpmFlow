@@ -1,0 +1,18 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"andApplication",
+		"orApplication",
+		"andApplications",
+		"orApplications",
+		"processInstance" ],
+	"name" : "WAOrbeonNewProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+subcomponents
+getDefinitionCollection
+
+	^self session user getAllProcessDefinition

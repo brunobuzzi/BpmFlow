@@ -1,0 +1,3 @@
+Accessing
+finalizedPerformerCount
+	^finalizedPerformerCount

@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		"cache" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"processes",
+		"color" ],
+	"name" : "BpmProcessCategory",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

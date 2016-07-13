@@ -1,0 +1,4 @@
+*orbeonBPMXpdl
+getArtifactFrom: aBpmProcessDefinition
+
+	^aBpmProcessDefinition startEvent

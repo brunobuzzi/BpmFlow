@@ -1,0 +1,4 @@
+other
+isEventNode
+
+	^true

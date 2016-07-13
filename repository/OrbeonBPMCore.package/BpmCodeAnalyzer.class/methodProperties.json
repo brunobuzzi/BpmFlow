@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"example1" : "BrunoBB 01/21/2016 10:33",
+		"example2" : "BrunoBB 01/21/2016 10:33",
+		"for:" : "BrunoBB 01/21/2016 10:30" },
+	"instance" : {
+		"addBlockWarning:" : "BrunoBB 01/21/2016 10:31",
+		"analyze" : "BrunoBB 06/25/2016 07:53",
+		"blockCode" : "BrunoBB 01/21/2016 10:31",
+		"blockCode:" : "BrunoBB 01/21/2016 10:36",
+		"codeWarnings" : "BrunoBB 01/21/2016 10:31",
+		"codeWarnings:" : "BrunoBB 01/21/2016 10:31",
+		"getOrbeonFormInstanceClassOrNil" : "BrunoBB 02/09/2016 15:14",
+		"hasWarinings" : "BrunoBB 01/21/2016 10:32",
+		"initialize" : "BrunoBB 01/21/2016 10:32",
+		"parser" : "BrunoBB 01/21/2016 10:31",
+		"parser:" : "BrunoBB 01/21/2016 10:31" } }

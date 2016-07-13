@@ -1,0 +1,4 @@
+other
+getObjectModel
+
+	^definition getObjectModel

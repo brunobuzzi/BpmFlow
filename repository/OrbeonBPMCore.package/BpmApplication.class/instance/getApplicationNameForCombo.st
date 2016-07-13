@@ -1,0 +1,4 @@
+other
+getApplicationNameForCombo
+
+	^applicationName , ' [BpmApp]'

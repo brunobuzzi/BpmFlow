@@ -1,0 +1,26 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AnonymousFormMapping",
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"processName",
+		"sheetName",
+		"executionPath",
+		"roles",
+		"processInstances",
+		"application",
+		"version",
+		"subProcesses",
+		"formFieldInstances",
+		"participants",
+		"xmlString" ],
+	"name" : "BpmProcessDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

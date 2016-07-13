@@ -1,0 +1,19 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"users",
+		"isAdmin",
+		"application",
+		"orbeonApplication",
+		"tasks" ],
+	"name" : "BpmRole",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

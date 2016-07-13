@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmUserInbox",
+	"pools" : [
+		 ],
+	"super" : "BpmUserBox",
+	"type" : "normal" }

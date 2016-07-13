@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"batchedList" ],
+	"name" : "WAOrbeonGrantedTransitionManager",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

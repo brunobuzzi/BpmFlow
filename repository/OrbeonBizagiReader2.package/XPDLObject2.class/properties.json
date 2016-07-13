@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xmlSegment",
+		"attributes",
+		"extendedAttributes" ],
+	"name" : "XPDLObject2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

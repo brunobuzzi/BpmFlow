@@ -1,0 +1,4 @@
+other
+hasLoop
+
+	^loop notNil

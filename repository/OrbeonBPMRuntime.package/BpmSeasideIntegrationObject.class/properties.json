@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignment",
+		"fieldsValues",
+		"user" ],
+	"name" : "BpmSeasideIntegrationObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

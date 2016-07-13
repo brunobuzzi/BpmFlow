@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xpdlDocuments",
+		"xpdlPackages",
+		"importReport" ],
+	"name" : "XPDLReader2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

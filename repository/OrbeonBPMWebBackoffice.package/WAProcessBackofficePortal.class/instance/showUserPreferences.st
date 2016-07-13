@@ -1,0 +1,4 @@
+other
+showUserPreferences
+
+	^WABkBpmUserPreference new

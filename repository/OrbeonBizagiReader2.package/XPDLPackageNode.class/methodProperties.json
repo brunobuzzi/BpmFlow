@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"newOn:" : "BrunoBB 11/29/2015 16:59" },
+	"instance" : {
+		"addParticipant:" : "BrunoBB 11/29/2015 16:58",
+		"addPool:" : "BrunoBB 11/29/2015 16:58",
+		"artifacts" : "BrunoBB 11/29/2015 16:58",
+		"artifacts:" : "BrunoBB 11/29/2015 16:58",
+		"associations" : "BrunoBB 11/29/2015 16:58",
+		"associations:" : "BrunoBB 11/29/2015 16:58",
+		"createParticipants" : "BrunoBB 11/29/2015 16:58",
+		"createParticipantsFrom:" : "BrunoBB 11/29/2015 16:58",
+		"createXpdlComponents" : "BrunoBB 07/06/2016 11:15",
+		"getAllSubProcessNodes" : "BrunoBB 01/21/2016 10:52",
+		"getPoolNamed:ifNone:" : "BrunoBB 11/29/2015 16:58",
+		"getWorkflowNamed:ifNone:" : "BrunoBB 11/29/2015 16:58",
+		"getWorkflows" : "BrunoBB 01/21/2016 12:18",
+		"hasParentProcess" : "BrunoBB 11/29/2015 17:07",
+		"initialize" : "BrunoBB 11/29/2015 16:58",
+		"participants" : "BrunoBB 11/29/2015 16:58",
+		"participants:" : "BrunoBB 11/29/2015 16:58",
+		"pools" : "BrunoBB 11/29/2015 16:58",
+		"pools:" : "BrunoBB 11/29/2015 16:58",
+		"xpdlReader" : "BrunoBB 11/29/2015 16:58",
+		"xpdlReader:" : "BrunoBB 11/29/2015 16:58" } }

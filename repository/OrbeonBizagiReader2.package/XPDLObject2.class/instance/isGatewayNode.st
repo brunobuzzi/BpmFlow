@@ -1,0 +1,4 @@
+other
+isGatewayNode
+
+	^false

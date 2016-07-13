@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getLanesFrom:" : "BrunoBB 10/29/2015 19:10",
+		"hasMixedStartConditions" : "BrunoBB 01/21/2016 11:23",
+		"hasNoInOrOutTransitions" : "BrunoBB 01/21/2016 11:28",
+		"inTransitions" : "BrunoBB 10/25/2015 19:30",
+		"inTransitions:" : "BrunoBB 10/25/2015 19:30",
+		"initialize" : "BrunoBB 10/25/2015 19:30",
+		"isGatewayNode" : "BrunoBB 01/20/2016 11:32",
+		"outConditionsAreMandatory" : "BrunoBB 01/21/2016 11:27",
+		"outTransitions" : "BrunoBB 10/25/2015 19:30",
+		"outTransitions:" : "BrunoBB 10/25/2015 19:30",
+		"printOn:" : "BrunoBB 10/28/2015 12:04",
+		"shortType" : "BrunoBB 10/25/2015 19:30",
+		"type" : "BrunoBB 10/25/2015 19:30",
+		"type:" : "BrunoBB 10/25/2015 19:30" } }

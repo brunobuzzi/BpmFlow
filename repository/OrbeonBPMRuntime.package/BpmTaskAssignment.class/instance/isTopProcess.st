@@ -1,0 +1,4 @@
+other
+isTopProcess
+
+	^process isTopProcess

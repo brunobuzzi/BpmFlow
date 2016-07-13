@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignmentBatchedList" ],
+	"name" : "WAOrbeonRadarProcessComposite2",
+	"pools" : [
+		 ],
+	"super" : "WAOrbeonRadarComposite2",
+	"type" : "normal" }

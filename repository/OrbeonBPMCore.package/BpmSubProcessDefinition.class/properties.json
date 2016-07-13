@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parentProcess",
+		"triggeredByEvent",
+		"isEmbedded" ],
+	"name" : "BpmSubProcessDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessDefinition",
+	"type" : "normal" }

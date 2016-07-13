@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"gitbookUrl" : "BrunoBB 05/15/2016 15:27",
+		"importNewApplications" : "BrunoBB 03/15/2016 11:32",
+		"initialize" : "BrunoBB 03/15/2016 11:32",
+		"renderApplicationsListOn:" : "BrunoBB 03/15/2016 11:32",
+		"renderContentOn:" : "BrunoBB 03/15/2016 11:32",
+		"renderFormDefinitionsOn:" : "BrunoBB 03/15/2016 11:32",
+		"renderFormOperationsOn:" : "BrunoBB 03/15/2016 11:32",
+		"selections:" : "BrunoBB 03/15/2016 11:32",
+		"sewafTableForOrbeonFormDefinitions" : "BrunoBB 06/12/2016 12:42",
+		"showFormDefinitions" : "BrunoBB 03/15/2016 11:32",
+		"updateSelectedApplications" : "BrunoBB 03/15/2016 11:32" } }

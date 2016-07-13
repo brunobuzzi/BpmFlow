@@ -1,0 +1,3 @@
+Accessing
+loopType
+	^loopType

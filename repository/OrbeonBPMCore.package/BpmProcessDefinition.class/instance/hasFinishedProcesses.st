@@ -1,0 +1,4 @@
+other
+hasFinishedProcesses
+
+	^processInstances notEmpty

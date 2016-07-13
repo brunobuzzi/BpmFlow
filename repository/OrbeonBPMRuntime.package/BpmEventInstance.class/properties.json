@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"trigger" ],
+	"name" : "BpmEventInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmArtifactInstance",
+	"type" : "normal" }

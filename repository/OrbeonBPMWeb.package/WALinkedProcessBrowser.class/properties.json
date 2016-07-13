@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WALinkedProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "WAOrbeonProcessBrowser",
+	"type" : "normal" }

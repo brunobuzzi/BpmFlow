@@ -1,0 +1,20 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startNode",
+		"endNode",
+		"startId",
+		"endId",
+		"startCondition",
+		"roles",
+		"isDefaultFlow" ],
+	"name" : "XPDLTransitionNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLObject2",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"waitAllIncoming" ],
+	"name" : "BpmGatewayDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityDefinition",
+	"type" : "normal" }

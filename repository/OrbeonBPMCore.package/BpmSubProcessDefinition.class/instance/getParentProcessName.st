@@ -1,0 +1,4 @@
+other
+getParentProcessName
+
+	^parentProcess processName

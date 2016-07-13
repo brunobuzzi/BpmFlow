@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"password",
+		"rols" ],
+	"name" : "WABpmSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

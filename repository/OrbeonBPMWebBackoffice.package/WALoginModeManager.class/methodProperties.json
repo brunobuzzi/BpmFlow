@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"gitbookUrl" : "BrunoBB 05/15/2016 15:20",
+		"initialize" : "BrunoBB 03/15/2016 10:54",
+		"ldapLoginModeName" : "BrunoBB 03/15/2016 10:54",
+		"loginModeNames" : "BrunoBB 03/15/2016 10:54",
+		"modeType" : "BrunoBB 03/15/2016 10:54",
+		"modeType:" : "BrunoBB 03/15/2016 10:54",
+		"renderContentOn:" : "BrunoBB 03/15/2016 10:54",
+		"renderLdapOptionsOn:" : "BrunoBB 06/29/2016 08:05",
+		"renderLoginModeOn:" : "BrunoBB 03/15/2016 10:54",
+		"saveLoginMode" : "BrunoBB 03/15/2016 10:54",
+		"setLocalLoginMode" : "BrunoBB 03/15/2016 10:54" } }

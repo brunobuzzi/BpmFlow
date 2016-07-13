@@ -1,0 +1,4 @@
+other
+getApplicationNameForCombo
+
+	^application getApplicationNameForCombo

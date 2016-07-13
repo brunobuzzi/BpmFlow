@@ -1,0 +1,4 @@
+other
+getDefinitionName
+
+	^definition processName

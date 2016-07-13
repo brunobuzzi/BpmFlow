@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scriptCode",
+		"loop" ],
+	"name" : "BpmScriptTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityDefinition",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+*orbeonBPMRuntime
+getProcessInstanceClass
+
+	^BpmProcessInstance

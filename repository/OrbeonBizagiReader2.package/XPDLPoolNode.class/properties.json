@@ -1,0 +1,18 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"package",
+		"lanes",
+		"processId",
+		"workflow",
+		"workflowId" ],
+	"name" : "XPDLPoolNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLObject2",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definition",
+		"startArtifact",
+		"endArtifact" ],
+	"name" : "BpmTransitionInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

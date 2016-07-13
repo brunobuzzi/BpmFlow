@@ -1,0 +1,4 @@
+other
+isInCorruptedState
+
+	^process isInCorruptedState

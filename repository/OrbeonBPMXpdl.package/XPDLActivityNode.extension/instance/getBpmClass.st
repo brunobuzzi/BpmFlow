@@ -1,0 +1,4 @@
+*orbeonBPMXpdl
+getBpmClass
+
+	^self subclassResponsibility

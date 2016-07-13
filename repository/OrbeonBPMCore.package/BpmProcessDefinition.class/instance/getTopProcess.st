@@ -1,0 +1,3 @@
+other
+getTopProcess
+	^self subclassResponsibility

@@ -1,0 +1,4 @@
+other
+summaryTitle
+
+	^self subclassResponsibility

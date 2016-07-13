@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"blockCode",
+		"codeWarnings",
+		"parser" ],
+	"name" : "BpmCodeAnalyzer",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

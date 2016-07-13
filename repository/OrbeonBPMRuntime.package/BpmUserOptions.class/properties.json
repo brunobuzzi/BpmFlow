@@ -1,0 +1,19 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"orbeonWebIsLinked",
+		"languageName",
+		"initialTransitionDisplayMode",
+		"lateralListPagingSize",
+		"regularListPagingSize",
+		"applicationOptions" ],
+	"name" : "BpmUserOptions",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

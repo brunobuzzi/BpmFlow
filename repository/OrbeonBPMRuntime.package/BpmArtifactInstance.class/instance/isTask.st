@@ -1,0 +1,4 @@
+other
+isTask
+
+	^definition isTaskDefinition

@@ -1,0 +1,4 @@
+other
+isCreated
+
+	^state = #created

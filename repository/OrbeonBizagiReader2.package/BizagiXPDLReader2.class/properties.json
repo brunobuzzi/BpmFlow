@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BizagiXPDLReader2",
+	"pools" : [
+		 ],
+	"super" : "XPDLReader2",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OrbeonXpdlException",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

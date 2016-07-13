@@ -1,0 +1,4 @@
+other
+getProcessWithFreeTransitions
+
+	^selectedObject getAllAvailableTaskAssignments

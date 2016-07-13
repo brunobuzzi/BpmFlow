@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmStartEventDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmEventDefinition",
+	"type" : "normal" }

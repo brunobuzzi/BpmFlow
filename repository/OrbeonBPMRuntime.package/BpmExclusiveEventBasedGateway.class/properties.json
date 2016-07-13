@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmExclusiveEventBasedGateway",
+	"pools" : [
+		 ],
+	"super" : "BpmGatewayInstance",
+	"type" : "normal" }

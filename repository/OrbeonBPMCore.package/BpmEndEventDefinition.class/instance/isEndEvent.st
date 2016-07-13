@@ -1,0 +1,4 @@
+other
+isEndEvent
+
+	^true

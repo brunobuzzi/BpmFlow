@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"seasideK",
+		"mode",
+		"categories",
+		"transitionsHeight" ],
+	"name" : "WAOrbeonProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

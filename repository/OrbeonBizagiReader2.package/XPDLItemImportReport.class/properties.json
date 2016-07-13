@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"title",
+		"description",
+		"solution" ],
+	"name" : "XPDLItemImportReport",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

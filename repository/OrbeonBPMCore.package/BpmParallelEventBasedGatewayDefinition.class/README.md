@@ -1,0 +1,1 @@
+As the name suggest, this gateway is similar to a parallel gateway. It allows for multiple processes to happen at the same time, but unlike the parallel gateway, the processes are event dependent.

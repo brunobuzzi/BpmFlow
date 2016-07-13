@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "BrunoBB 10/31/2015 10:59",
+	"instvars" : [
+		"loopCardinality",
+		"isSequential" ],
+	"name" : "BpmMultiInstanceTaskLoop",
+	"pools" : [
+		 ],
+	"super" : "BpmTaskLoop",
+	"type" : "normal" }

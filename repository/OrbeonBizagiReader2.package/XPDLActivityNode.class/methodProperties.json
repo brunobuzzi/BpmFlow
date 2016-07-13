@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addPerformer:" : "BrunoBB 12/31/2015 08:29",
+		"getArtifactFrom:" : "BrunoBB 06/22/2016 11:48",
+		"hasMixedStartConditions" : "BrunoBB 01/21/2016 11:22",
+		"hasNoInOrOutTransitions" : "BrunoBB 01/20/2016 11:52",
+		"inTransitions" : "BrunoBB 12/30/2015 14:32",
+		"inTransitions:" : "BrunoBB 12/30/2015 14:32",
+		"initialize" : "BrunoBB 12/30/2015 14:37",
+		"isActivityNode" : "BrunoBB 01/20/2016 11:31",
+		"isMultiInstance" : "BrunoBB 12/30/2015 14:32",
+		"loopCondition" : "BrunoBB 12/30/2015 14:32",
+		"loopCondition:" : "BrunoBB 12/30/2015 14:32",
+		"loopType" : "BrunoBB 12/30/2015 14:32",
+		"loopType:" : "BrunoBB 12/30/2015 14:32",
+		"outTransitions" : "BrunoBB 12/30/2015 14:32",
+		"outTransitions:" : "BrunoBB 12/30/2015 14:32",
+		"performers" : "BrunoBB 12/30/2015 14:37",
+		"performers:" : "BrunoBB 12/30/2015 14:37",
+		"printOn:" : "BrunoBB 12/30/2015 14:32",
+		"setLoopCondtionWithNode:" : "BrunoBB 12/30/2015 14:32",
+		"setLoopTypeWithNode:" : "BrunoBB 12/30/2015 14:32",
+		"setMultiInstanceLoopConditionWith:" : "BrunoBB 12/30/2015 14:32",
+		"setStandardLoopConditionWith:" : "BrunoBB 12/30/2015 14:32" } }

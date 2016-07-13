@@ -1,0 +1,4 @@
+other
+isDone
+
+	^task isDone

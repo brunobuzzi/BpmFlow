@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processInstance" ],
+	"name" : "BpmSubProcessTaskInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityInstance",
+	"type" : "normal" }

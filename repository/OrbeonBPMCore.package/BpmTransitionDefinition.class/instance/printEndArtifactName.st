@@ -1,0 +1,4 @@
+other
+printEndArtifactName
+
+	^endArtifact name

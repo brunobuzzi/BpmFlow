@@ -1,0 +1,27 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignationDate",
+		"creationDate",
+		"roleName",
+		"processName",
+		"processId",
+		"taskName",
+		"taskEndDate",
+		"processEndDate",
+		"process",
+		"task",
+		"user",
+		"matrix",
+		"hasContextApplications",
+		"canUnassign" ],
+	"name" : "BpmTaskAssignment",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

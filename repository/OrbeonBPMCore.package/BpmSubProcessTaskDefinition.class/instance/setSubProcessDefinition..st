@@ -1,0 +1,6 @@
+Updating
+setSubProcessDefinition: aBpmSubProcessDefinition
+
+	subProcessDefinition := aBpmSubProcessDefinition.
+
+	processDefinition addSubProcess: aBpmSubProcessDefinition

@@ -1,0 +1,4 @@
+other
+hasNoException
+
+	^exception isNil

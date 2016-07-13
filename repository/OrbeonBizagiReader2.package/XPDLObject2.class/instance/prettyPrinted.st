@@ -1,0 +1,4 @@
+other
+prettyPrinted
+
+	^xmlSegment prettyPrinted

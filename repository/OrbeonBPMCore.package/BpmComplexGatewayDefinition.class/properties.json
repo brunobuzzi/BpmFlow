@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "BrunoBB 11/23/2015 13:33",
+	"instvars" : [
+		 ],
+	"name" : "BpmComplexGatewayDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmGatewayDefinition",
+	"type" : "normal" }

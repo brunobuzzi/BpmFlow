@@ -1,0 +1,4 @@
+other
+hasWarnings
+
+	^importReport notEmpty

@@ -1,0 +1,4 @@
+other
+isGateway
+
+	^true

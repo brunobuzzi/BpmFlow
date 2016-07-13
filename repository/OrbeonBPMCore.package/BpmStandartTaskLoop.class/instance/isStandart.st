@@ -1,0 +1,4 @@
+other
+isStandart
+
+	^true

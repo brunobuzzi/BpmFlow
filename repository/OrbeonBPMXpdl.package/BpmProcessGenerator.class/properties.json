@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBPMXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xpdlPackages",
+		"processes",
+		"participants",
+		"processesMapping" ],
+	"name" : "BpmProcessGenerator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,23 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectedUser",
+		"isAddingUser",
+		"newUser",
+		"isBackoffice",
+		"isAdmin",
+		"selectedApplication",
+		"rolesBatchList",
+		"usersWithSelectedRoleBatchList",
+		"addUserToRoleBatchList",
+		"rolesWithSelectedUserBatchList" ],
+	"name" : "WABpmRoleManager",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

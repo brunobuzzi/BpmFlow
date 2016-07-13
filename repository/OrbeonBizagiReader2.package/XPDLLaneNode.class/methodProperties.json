@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addAllXpdlObject:" : "BrunoBB 07/06/2016 10:49",
+		"getAnyObjectNamed:ifNone:" : "BrunoBB 07/06/2016 10:49",
+		"getGatewayNodes" : "BrunoBB 07/06/2016 10:49",
+		"getScriptNodes" : "BrunoBB 07/06/2016 10:49",
+		"getSubProcessNodes" : "BrunoBB 07/06/2016 10:49",
+		"getTaskNodes" : "BrunoBB 07/06/2016 10:49",
+		"hasGatewayNamed:" : "BrunoBB 07/06/2016 10:49",
+		"hasScriptNamed:" : "BrunoBB 07/06/2016 10:49",
+		"hasSubProcessTaskNamed:" : "BrunoBB 07/06/2016 10:49",
+		"hasTaskNamed:" : "BrunoBB 07/06/2016 10:49",
+		"initialize" : "BrunoBB 07/06/2016 10:49",
+		"pool" : "BrunoBB 07/06/2016 10:49",
+		"pool:" : "BrunoBB 07/06/2016 10:49",
+		"rectangle" : "BrunoBB 07/08/2016 11:49",
+		"rectangleIncludesActivity:" : "BrunoBB 07/08/2016 11:29",
+		"workflow" : "BrunoBB 07/06/2016 11:18",
+		"xpdlObjects" : "BrunoBB 07/06/2016 10:49",
+		"xpdlObjects:" : "BrunoBB 07/06/2016 10:49" } }

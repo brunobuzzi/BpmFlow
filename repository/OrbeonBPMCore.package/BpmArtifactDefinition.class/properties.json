@@ -1,0 +1,20 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinition",
+		"name",
+		"inTransitions",
+		"outTransitions",
+		"roles",
+		"extendedAttributes",
+		"defaultTransition" ],
+	"name" : "BpmArtifactDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

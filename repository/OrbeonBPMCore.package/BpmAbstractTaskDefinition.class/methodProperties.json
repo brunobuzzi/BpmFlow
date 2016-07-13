@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addPerformer:" : "BrunoBB 12/31/2015 14:02",
+		"getExpectedResult" : "BrunoBB 03/23/2016 09:08",
+		"getFirstPerformerIfNone:" : "BrunoBB 01/16/2016 16:03",
+		"getFirstPerformerName" : "BrunoBB 04/13/2016 12:07",
+		"getPreviousFields" : "BrunoBB 03/05/2016 10:18",
+		"getRoleForPerformer:" : "BrunoBB 04/11/2016 12:26",
+		"hasLoop" : "BrunoBB 11/01/2015 13:30",
+		"hasPerformers" : "BrunoBB 04/13/2016 10:16",
+		"initialize" : "BrunoBB 03/23/2016 09:13",
+		"isGrantedUser:" : "BrunoBB 01/19/2016 12:28",
+		"isMultiInstance" : "BrunoBB 12/28/2015 09:07",
+		"isTaskDefinition" : "BrunoBB 12/10/2015 10:51",
+		"loop" : "BrunoBB 11/01/2015 13:30",
+		"loop:" : "BrunoBB 11/01/2015 13:30",
+		"performers" : "BrunoBB 12/31/2015 13:53",
+		"performers:" : "BrunoBB 12/31/2015 13:53" } }

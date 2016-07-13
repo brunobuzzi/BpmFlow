@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLIntermediateNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLEventNode",
+	"type" : "normal" }

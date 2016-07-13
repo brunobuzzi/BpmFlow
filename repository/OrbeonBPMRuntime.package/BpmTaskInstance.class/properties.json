@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "BrunoBB 11/01/2015 12:52",
+	"instvars" : [
+		"rolesWhoWorked",
+		"externalObject",
+		"usersWhoWorked",
+		"finalizedPerformerCounter" ],
+	"name" : "BpmTaskInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityInstance",
+	"type" : "normal" }

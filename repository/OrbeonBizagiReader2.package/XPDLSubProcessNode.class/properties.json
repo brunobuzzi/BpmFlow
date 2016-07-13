@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subProcess",
+		"subProcessId",
+		"isEmbedded" ],
+	"name" : "XPDLSubProcessNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLActivityNode",
+	"type" : "normal" }

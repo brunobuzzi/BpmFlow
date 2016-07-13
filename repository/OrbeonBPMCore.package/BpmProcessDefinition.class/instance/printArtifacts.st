@@ -1,0 +1,4 @@
+other
+printArtifacts
+
+	^executionPath printArtifacts

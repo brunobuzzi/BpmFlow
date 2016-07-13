@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"cache" : "BrunoBB 10/29/2015 14:38",
+		"cache:" : "BrunoBB 10/29/2015 14:38",
+		"getAllRoles" : "BrunoBB 04/11/2016 10:56" },
+	"instance" : {
+		"asBackofficeRole" : "BrunoBB 12/18/2015 14:27",
+		"asFrontofficeRole" : "BrunoBB 02/08/2016 14:42",
+		"isBackofficeRole" : "BrunoBB 10/29/2015 14:35",
+		"isBackofficeUserAndAdmin" : "BrunoBB 10/29/2015 14:35" } }

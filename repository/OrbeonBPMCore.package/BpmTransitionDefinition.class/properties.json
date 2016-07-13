@@ -1,0 +1,20 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinition",
+		"name",
+		"startArtifact",
+		"endArtifact",
+		"conditionToRun",
+		"extendedAttributes",
+		"isDefaultFlow" ],
+	"name" : "BpmTransitionDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

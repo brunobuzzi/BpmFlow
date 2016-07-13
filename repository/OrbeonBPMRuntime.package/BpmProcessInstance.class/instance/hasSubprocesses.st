@@ -1,0 +1,4 @@
+other
+hasSubprocesses
+
+	^subprocesses notEmpty

@@ -1,0 +1,25 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"orbeonApplications",
+		"orbeonApplication",
+		"upload",
+		"processNode",
+		"reader",
+		"numberOfProcess",
+		"uploadProcesses",
+		"selectedUploads",
+		"processesNames",
+		"fileFormats",
+		"invalidFormatError",
+		"packageFile" ],
+	"name" : "WAXpdlImporterBrowser",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

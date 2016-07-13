@@ -1,0 +1,29 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definition",
+		"id",
+		"processName",
+		"currentActivities",
+		"executedActivities",
+		"transitions",
+		"subprocesses",
+		"creator",
+		"createdTime",
+		"postExecution",
+		"startEvent",
+		"endEvents",
+		"runningGateways",
+		"executedGateways",
+		"userAssignments",
+		"executedScripts" ],
+	"name" : "BpmProcessInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

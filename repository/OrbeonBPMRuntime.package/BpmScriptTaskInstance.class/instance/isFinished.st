@@ -1,0 +1,4 @@
+script
+isFinished
+
+	^scriptBlock notNil

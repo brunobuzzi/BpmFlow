@@ -1,0 +1,4 @@
+other
+isDelayed
+
+	^state = #delayed

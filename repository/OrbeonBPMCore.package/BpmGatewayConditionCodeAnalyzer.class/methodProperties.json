@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"analyze" : "BrunoBB 06/25/2016 07:53",
+		"checkOneArgumentBlockRule" : "BrunoBB 06/25/2016 07:47",
+		"checkReceiverVariableMessagesRule" : "BrunoBB 06/25/2016 07:48",
+		"checkReceiverVariableRule" : "BrunoBB 06/25/2016 07:49",
+		"getAllowedSelectorsToBlockArgument" : "BrunoBB 06/25/2016 07:50",
+		"getBasicClasses" : "BrunoBB 06/25/2016 07:50",
+		"getBasicSelectorsForBasicClasses" : "BrunoBB 06/25/2016 07:51",
+		"isInvalidSelector:for:" : "BrunoBB 06/25/2016 07:51" } }

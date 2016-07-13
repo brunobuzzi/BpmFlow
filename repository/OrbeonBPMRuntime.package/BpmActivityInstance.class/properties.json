@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"loopCounter" ],
+	"name" : "BpmActivityInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmArtifactInstance",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+printNameAndDefinitionType
+
+	^name, ' [C]'

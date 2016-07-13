@@ -1,0 +1,4 @@
+other
+isPaused
+
+	^state = #paused

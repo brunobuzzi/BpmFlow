@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"downloadSystemRoleStructure" : "BrunoBB 06/20/2016 10:14",
+		"gitbookUrl" : "BrunoBB 06/20/2016 12:08",
+		"initialize" : "BrunoBB 06/19/2016 16:58",
+		"initializeBatchedLists" : "BrunoBB 06/19/2016 16:58",
+		"initializeSewafTableForGrantConfiguration" : "BrunoBB 06/19/2016 16:32",
+		"renderCSVDownloadOn:" : "BrunoBB 06/19/2016 17:54",
+		"renderContentOn:" : "BrunoBB 06/20/2016 10:15",
+		"renderDownloadComponentOn:" : "BrunoBB 06/19/2016 18:36",
+		"renderHelpOn:" : "BrunoBB 06/19/2016 17:34" } }

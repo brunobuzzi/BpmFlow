@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"cache" : "BrunoBB 12/10/2015 13:19",
+		"getCategoriesFor:" : "BrunoBB 12/10/2015 13:17",
+		"getCategoriesForUserNamed:" : "BrunoBB 12/10/2015 13:20",
+		"getCategory:forUserNamed:" : "BrunoBB 12/10/2015 13:20",
+		"initializeCache" : "BrunoBB 12/10/2015 13:20",
+		"resetAll" : "BrunoBB 12/14/2015 12:04" },
+	"instance" : {
+		"add:" : "BrunoBB 12/13/2015 11:31",
+		"addToCacheIn:" : "BrunoBB 12/13/2015 11:33",
+		"color" : "BrunoBB 12/13/2015 11:30",
+		"color:" : "BrunoBB 12/13/2015 11:30",
+		"currentProcesses" : "BrunoBB 12/13/2015 11:32",
+		"finishedProcesses" : "BrunoBB 12/13/2015 11:32",
+		"includes:" : "BrunoBB 12/13/2015 11:31",
+		"initialize" : "BrunoBB 03/10/2016 06:19",
+		"name" : "BrunoBB 12/13/2015 11:30",
+		"name:" : "BrunoBB 12/13/2015 11:30",
+		"processes" : "BrunoBB 12/13/2015 11:30",
+		"processes:" : "BrunoBB 12/13/2015 11:30",
+		"remove:" : "BrunoBB 12/13/2015 11:31",
+		"removeFromCacheFrom:" : "BrunoBB 02/07/2016 15:32",
+		"resetAll" : "BrunoBB 12/14/2015 11:56" } }

@@ -1,0 +1,4 @@
+other
+getAllEmbbeddedProcesses
+
+	^workflow getAllEmbbeddedProcesses

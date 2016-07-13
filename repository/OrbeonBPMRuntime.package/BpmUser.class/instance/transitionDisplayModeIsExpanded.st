@@ -1,0 +1,4 @@
+user preferences
+transitionDisplayModeIsExpanded
+
+	^userOptions transitionDisplayModeIsExpanded

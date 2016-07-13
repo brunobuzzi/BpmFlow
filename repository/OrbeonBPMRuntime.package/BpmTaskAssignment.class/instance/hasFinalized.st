@@ -1,0 +1,4 @@
+other
+hasFinalized
+
+	^process hasFinalized

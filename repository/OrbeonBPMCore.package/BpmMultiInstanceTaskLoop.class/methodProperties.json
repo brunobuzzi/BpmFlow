@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getLoop" : "BrunoBB 11/02/2015 08:18",
+		"initialize" : "BrunoBB 10/31/2015 11:01",
+		"isMultiInstance" : "BrunoBB 11/02/2015 08:19",
+		"isSequential" : "BrunoBB 10/31/2015 11:00",
+		"isSequential:" : "BrunoBB 10/31/2015 11:00",
+		"loopCardinality" : "BrunoBB 10/31/2015 11:00",
+		"loopCardinality:" : "BrunoBB 10/31/2015 11:00",
+		"setLoop:" : "BrunoBB 11/01/2015 14:46" } }

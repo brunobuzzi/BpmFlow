@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmFrontOfficeRole",
+	"pools" : [
+		 ],
+	"super" : "BpmRole",
+	"type" : "normal" }
