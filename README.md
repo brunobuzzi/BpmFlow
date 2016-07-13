@@ -1,4 +1,4 @@
-OrbeonBridgeForGemStone
+BPM Flow
 =======================
 
-A package to use Orbeon as a View Composer (Windows Builder) for GemStone Smalltalk applications
+A implementation of BPM standart using GemStone/S and Orbeon.
