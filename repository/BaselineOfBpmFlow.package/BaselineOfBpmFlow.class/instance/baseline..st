@@ -11,4 +11,7 @@ baseline: spec
        spec package: 'OrbeonBPMWeb'.
        spec package: 'OrbeonBPMWebBackoffice'.
        spec package: 'OrbeonPersistenceApiProcess'.
+       spec package: 'OrbeonBizagiReader2_Tests'.
+       spec package: 'OrbeonBPMXpdl_Tests'.
+       spec package: 'OrbeonBPMRuntime_Tests'.
 		]
