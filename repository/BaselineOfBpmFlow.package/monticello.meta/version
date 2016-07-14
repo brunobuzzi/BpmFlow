@@ -1,1 +1,1 @@
-(name 'BaselineOfBpmFlow-brunobb.1' message 'initial baseline and packages' id '8487675e-66d2-42a0-914e-2873bbcf9586' date '07/13/2016' time '09:33:55' author 'brunobb' ancestors () stepChildren ())
+(name 'BaselineOfBpmFlow-brunobb.2' message '''baseline' id '425ddd65-6af6-4eab-86f9-4a62df1631c9' date '07/14/2016' time '05:49:18' author 'brunobb' ancestors ((name 'BaselineOfBpmFlow-brunobb.1' message 'initial baseline and packages' id '8487675e-66d2-42a0-914e-2873bbcf9586' date '07/13/2016' time '09:33:55' author 'brunobb' ancestors () stepChildren ())) stepChildren ())
