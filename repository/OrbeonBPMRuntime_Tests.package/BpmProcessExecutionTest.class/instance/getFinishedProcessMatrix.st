@@ -1,0 +1,4 @@
+other
+getFinishedProcessMatrix
+
+	^self getFinishedProcessMatrixFor: procInstance

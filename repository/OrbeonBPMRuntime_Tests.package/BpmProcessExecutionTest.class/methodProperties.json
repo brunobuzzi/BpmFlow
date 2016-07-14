@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createFormInstance:definitionNamed:app:" : "BrunoBB 04/29/2016 14:47",
+		"getAssignmentFor:on:" : "BrunoBB 03/29/2016 14:31",
+		"getAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:30",
+		"getFinishedAssignmentFor:on:" : "BrunoBB 03/29/2016 14:44",
+		"getFinishedAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:43",
+		"getFinishedProcessMatrix" : "BrunoBB 03/29/2016 14:41",
+		"getFinishedProcessMatrixFor:" : "BrunoBB 03/29/2016 14:41",
+		"getProcessMatrix" : "BrunoBB 12/07/2015 06:51",
+		"getProcessMatrixFor:" : "BrunoBB 12/07/2015 06:51",
+		"getUserNamed:" : "BrunoBB 03/27/2016 16:13",
+		"procInstance" : "BrunoBB 12/07/2015 06:51",
+		"procInstance:" : "BrunoBB 12/07/2015 06:51",
+		"processTask:withUserNamed:withForm:" : "BrunoBB 12/07/2015 06:59",
+		"processTask:withUserNamed:withForm:on:" : "BrunoBB 04/01/2016 14:31",
+		"takeTask:forUserNamed:withForm:on:" : "BrunoBB 03/31/2016 17:05" } }

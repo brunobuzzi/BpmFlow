@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmGatewayConditionCodeAnalyzerTest",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeAnalyzerTest",
+	"type" : "normal" }

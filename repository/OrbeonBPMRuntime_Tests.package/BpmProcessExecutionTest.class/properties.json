@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBPMRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"procInstance",
+		"procDefinition",
+		"users",
+		"roles" ],
+	"name" : "BpmProcessExecutionTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

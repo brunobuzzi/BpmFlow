@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmTaskScriptCodeAnalyzerTest",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeAnalyzerTest",
+	"type" : "normal" }

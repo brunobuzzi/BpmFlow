@@ -1,0 +1,4 @@
+other
+getProcessMatrixFor: aBpmProcessInstance
+
+	^aBpmProcessInstance getProcessMatrix

@@ -1,0 +1,4 @@
+other
+getFinishedProcessMatrixFor: aBpmProcessInstance
+
+	^aBpmProcessInstance getFinishedProcessMatrix

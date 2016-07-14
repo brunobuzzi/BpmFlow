@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMXpdl_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmProcessGeneratorTest3",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessGeneratorTest",
+	"type" : "normal" }
