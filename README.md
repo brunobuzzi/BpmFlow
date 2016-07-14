@@ -13,4 +13,3 @@ The execution engine will show a **Seaside** component or an **Orbeon** form dep
 
 **Orbeon** is an optional application that interact with the BPM application (can be used or not).
 
- <iframe src="https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/bizagi-4.jpg"></iframe> 
