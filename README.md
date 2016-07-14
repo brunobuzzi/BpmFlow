@@ -12,4 +12,5 @@ Inside **Bizagi Modeler** if a task has the extended attribute -*seasideComponen
 The execution engine will show a **Seaside** component or an **Orbeon** form depending on the task's definition in the **Bizagi Modeler**.
 
 **Orbeon** is an optional application that interact with the BPM application (can be used or not).
-https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/bizagi-4.jpg
+
+ <iframe src="https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/bizagi-4.jpg"></iframe> 
