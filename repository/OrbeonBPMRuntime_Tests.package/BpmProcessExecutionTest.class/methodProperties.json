@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"createDefinition:with:in:" : "BrunoBB 07/14/2016 12:05",
 		"createFormInstance:definitionNamed:app:" : "BrunoBB 04/29/2016 14:47",
+		"createFormInstance:definitionNamed:app:definitionMethod:" : "BrunoBB 07/14/2016 11:59",
 		"getAssignmentFor:on:" : "BrunoBB 03/29/2016 14:31",
 		"getAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:30",
 		"getFinishedAssignmentFor:on:" : "BrunoBB 03/29/2016 14:44",

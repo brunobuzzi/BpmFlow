@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForDataEntryProcess.
+	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForDefaultTransition.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator mapProcess: 'default-transition-process' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
