@@ -483,19 +483,19 @@ body, html, main {
 	display: inline-flex;
 	float: left;
 }
-.table-search-element form fieldset {
+.table-search-element form fieldset, .table-search-element fieldset{
 	border: 0px none;
 }
-.table-search-element form fieldset label {
+.table-search-element form fieldset label,  .table-search-element fieldset label {
 	display: inherit;
 	text-align: left;
 	font-size: 80%;
 }
-.table-search-element form fieldset input[type="text"] {
+.table-search-element form fieldset input[type="text"],  .table-search-element fieldset input[type="text"]{
 	border-radius: 6px;
 	margin-right: 2px;
 }
-.table-search-element form fieldset input[type="submit"] {
+.table-search-element form fieldset input[type="submit"], .table-search-element fieldset input[type="submit"]{
     margin-top: 0px;
 }
 .unique-centered-table {
