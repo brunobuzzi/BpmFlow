@@ -1,4 +1,4 @@
 other
 applicationIcon
 
-	^SEWAFIconLibrary / #applicationsettings48Png
+	^SEWAFIconLibrary / #applicationsettings32Png

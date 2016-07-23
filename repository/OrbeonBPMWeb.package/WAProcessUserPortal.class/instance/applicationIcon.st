@@ -1,4 +1,4 @@
 other
 applicationIcon
 
-	^SEWAFIconLibrary / #documentflowchart48Png
+	^SEWAFIconLibrary / #documentflowchart32Png

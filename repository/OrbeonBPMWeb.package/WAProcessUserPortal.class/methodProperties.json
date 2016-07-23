@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applicationIcon" : "BrunoBB 06/27/2015 09:28",
+		"applicationIcon" : "BrunoBB 07/21/2016 10:07",
 		"applicationName" : "BrunoBB 06/27/2015 09:29",
 		"getAssignmentComponentClassFor:" : "BrunoBB 06/27/2015 09:23",
 		"initialize" : "BrunoBB 06/27/2015 09:23",
-		"initializeNavigation" : "BrunoBB 05/16/2016 11:41",
+		"initializeNavigation" : "BrunoBB 07/21/2016 10:20",
 		"logout" : "BrunoBB 02/03/2016 09:43",
 		"selectedLateralItem:" : "BrunoBB 03/06/2016 14:03",
 		"showAvailableProcesses" : "BrunoBB 06/12/2016 14:10",
@@ -19,5 +19,5 @@
 		"showLanguageConfiguration" : "BrunoBB 03/15/2016 10:41",
 		"showProcessCategories" : "BrunoBB 07/05/2015 13:05",
 		"showUnassignedTasks" : "BrunoBB 12/08/2015 08:46",
-		"style" : "BrunoBB 07/04/2016 06:47",
+		"style" : "BrunoBB 07/21/2016 10:49",
 		"versionName" : "BrunoBB 06/11/2016 14:05" } }

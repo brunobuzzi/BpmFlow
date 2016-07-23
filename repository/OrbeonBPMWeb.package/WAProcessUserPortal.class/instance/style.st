@@ -41,8 +41,11 @@ body, html, main {
 	margin-top: 5px;
 	color: gainsboro;
 }
+#top-app-name {
+	font-size: 30px;
+	color: gainsboro;
+}
 #top-app-version-name {
-	margin-top: -30px;
 	font-size: 14px;
 }
 #top-logout a {
