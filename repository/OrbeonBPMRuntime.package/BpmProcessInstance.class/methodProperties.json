@@ -4,7 +4,7 @@
 		"definition:user:" : "BrunoBB 11/29/2015 16:16",
 		"resetAll" : "BrunoBB 12/14/2015 11:55" },
 	"instance" : {
-		"addActivityToPerform:" : "BrunoBB 12/04/2015 11:13",
+		"addActivityToPerform:" : "BrunoBB 07/25/2016 10:29",
 		"addSubProcess:" : "BrunoBB 12/01/2015 12:01",
 		"applicationName" : "BrunoBB 02/08/2016 12:32",
 		"assignedUserNames" : "BrunoBB 12/20/2015 14:16",
@@ -33,7 +33,7 @@
 		"executedScripts:" : "BrunoBB 06/24/2016 10:24",
 		"finalizeGateway:" : "BrunoBB 11/29/2015 16:16",
 		"finalizeWith:" : "BrunoBB 12/01/2015 12:03",
-		"generateNextTransitionsFrom:" : "BrunoBB 07/02/2016 12:17",
+		"generateNextTransitionsFrom:" : "BrunoBB 07/25/2016 09:36",
 		"generateProcessMap" : "BrunoBB 04/15/2016 11:34",
 		"getActiveArtifacts" : "BrunoBB 11/29/2015 16:16",
 		"getApplication" : "BrunoBB 02/08/2016 14:41",

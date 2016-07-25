@@ -1,0 +1,18 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignment",
+		"nextTransitions",
+		"isFinalized",
+		"user",
+		"assignNextToUser" ],
+	"name" : "BpmAssignmentFinalization",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

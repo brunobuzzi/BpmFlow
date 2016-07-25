@@ -1,15 +1,13 @@
 assignment
 basicFinalizeAssignment: aBpmTaskAssignment
 	"The receiver finalize the assignment <aBpmTaskAssignment>"
-	| finishedMatrix |
+	| assignmentFinalization |
 
-	aBpmTaskAssignment finalize.
+	assignmentFinalization := BpmAssignmentFinalization on: aBpmTaskAssignment by: self.
 
-	self moveFromCurrentToFinished: aBpmTaskAssignment.
+	"1- move assignment from <user> current to <user> finished assignments.
+	2- Get Global Finished Matrix and add the new finished assignment <aBpmTaskAssignment>.
+	3- Generate next transitions for the Process"
+	assignmentFinalization finalizeAssignment.
 
-	"move the <aBpmTaskAssignment> to finished assignments Matrix"
-	finishedMatrix := self getFinishedMatrixManagerClass getMatrixForApplicationNamed: aBpmTaskAssignment applicationName.
-
-	finishedMatrix addAssignment: aBpmTaskAssignment.
-
-	aBpmTaskAssignment generateNextRunningTransitions.
+	^assignmentFinalization

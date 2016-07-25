@@ -10,5 +10,4 @@ generateNextTransitionsFrom: aBpmTaskInstance
 
 	^nextTransitions collect: [:transitionDefinition | | newTransition |
 			newTransition := self createNewTransition: transitionDefinition from: aBpmTaskInstance.
-			newTransition
-			].
+			newTransition].

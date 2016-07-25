@@ -1,12 +1,12 @@
 assignment
 getAllAvailableTaskAssignments
 	"Answer a collection with all available assignments <BpmTaskAssignment> for the receiver"
-	| tasks |
+	| assignments |
 
-	tasks := OrderedCollection new.
+	assignments := OrderedCollection new.
 	self getApplications do: [:eachApp |  | matrix |
 		matrix := self getMatrixManagerClass getMatrixForApplicationNamed: eachApp applicationName.
 		self roles do: [:eachRole | 
-			tasks addAll: (matrix getAvailableTasksFor: eachRole name)]].
+			assignments addAll: (matrix getAvailableTasksFor: eachRole name)]].
 
-	^tasks select: [:each | each isAvailableFor: self]
+	^assignments select: [:each | each isAvailableFor: self]

@@ -8,4 +8,4 @@ performInitializationOn: aBpmProcessInstance
 		previousTask := aBpmProcessInstance getExecutedActivityNamed: self getDefinitionName ifNone: [].
 		self externalObject: previousTask externalObject].
 
-	^aBpmProcessInstance addActivityToPerform: self
+	^aBpmProcessInstance addActivityToPerform: self "add the task to the Running Matrix"

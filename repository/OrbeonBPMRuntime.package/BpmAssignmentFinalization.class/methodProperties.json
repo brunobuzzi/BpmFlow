@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"on:by:" : "BrunoBB 07/25/2016 09:28" },
+	"instance" : {
+		"assignNextToUser" : "BrunoBB 07/25/2016 10:15",
+		"assignNextToUser:" : "BrunoBB 07/25/2016 10:15",
+		"assignment" : "BrunoBB 07/25/2016 09:22",
+		"assignment:" : "BrunoBB 07/25/2016 09:22",
+		"finalizeAssignment" : "BrunoBB 07/25/2016 10:25",
+		"initialize" : "BrunoBB 07/25/2016 10:15",
+		"isFinalized" : "BrunoBB 07/25/2016 09:22",
+		"isFinalized:" : "BrunoBB 07/25/2016 09:22",
+		"nextTransitions" : "BrunoBB 07/25/2016 09:22",
+		"nextTransitions:" : "BrunoBB 07/25/2016 09:22",
+		"setUserToTakeNextTasks" : "BrunoBB 07/25/2016 10:27",
+		"user" : "BrunoBB 07/25/2016 09:28",
+		"user:" : "BrunoBB 07/25/2016 09:28" } }
