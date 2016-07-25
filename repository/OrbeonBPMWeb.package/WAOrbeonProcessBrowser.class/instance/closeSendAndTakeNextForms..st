@@ -1,2 +1,4 @@
 process
 closeSendAndTakeNextForms: aBpmArtifactInstance
+
+	self closeSendAndTakeNextForms: aBpmArtifactInstance
