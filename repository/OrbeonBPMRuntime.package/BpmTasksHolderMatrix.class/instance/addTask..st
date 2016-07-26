@@ -13,4 +13,4 @@ addTask: aBpmTaskInstance
 				self updatePerformersOf: aBpmTaskInstance.
 			].
 
-	^newAssignments
+	^newAssignments select: [:each | each notNil] "#updatePerformersOf: can answer nil"
