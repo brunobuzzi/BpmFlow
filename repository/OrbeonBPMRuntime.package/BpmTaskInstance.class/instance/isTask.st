@@ -1,4 +1,4 @@
 other
 isTask
 
-	^false
+	^true

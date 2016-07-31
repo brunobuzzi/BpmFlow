@@ -15,4 +15,9 @@ finalizeAssignment
 	"generate next transitions and put New Tasks in the Application Running Matrix"
 	nextTransitions := assignment generateNextRunningTransitions. 
 
-	assignNextToUser ifTrue: [].
+	assignNextToUser ifTrue: [ | assignments availableAssignments |
+		availableAssignments := user getAllAvailableTaskAssignments.
+		assignments := self process currentActivities collect: [:each | self getProcessMatrix getAssignmentFor: each].
+		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
+			do:[:each | user take: each].
+		].
