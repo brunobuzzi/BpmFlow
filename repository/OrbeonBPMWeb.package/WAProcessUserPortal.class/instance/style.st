@@ -336,7 +336,14 @@ body, html, main {
 }
 #item-customized-component {
 	overflow-y: scroll;
-	height: 60%;
+	position: relative;
+	bottom: 0px;
+}
+.item-customized-component-hide-top {
+	height: 74%;
+}
+.item-customized-component-show-top {
+	height: 65%;
 }
 .lateral-left-list {
 	width: 19.5%;

@@ -285,8 +285,12 @@ body, html, main {
 }
 #import-forms {
 	overflow-y: auto;
-	height: 620px;
 	display: inline-block;
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	max-height: 100%;
+	top: 112px;
 }
 .inform-box {
 	padding: 10px;
