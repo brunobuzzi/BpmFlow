@@ -1,9 +1,9 @@
 xpdl
-changeColorOfTransitionsReaching: nodesCollection in: xmlDocument
+changeColorOfTransitionsReaching: executedNodes in: xmlDocument
 	| transitionNodes |
 
 	transitionNodes := OrderedCollection new.
-	nodesCollection do: [:eachNode | | nodeId trNode |
+	executedNodes do: [:eachNode | | nodeId trNode |
 		nodeId := eachNode attributeAt: 'Id'.
 		trNode := (xmlDocument allElementsNamed: 'Transition') detect: [:each | (each attributeAt: 'To') = nodeId] ifNone: [nil].
 		trNode notNil

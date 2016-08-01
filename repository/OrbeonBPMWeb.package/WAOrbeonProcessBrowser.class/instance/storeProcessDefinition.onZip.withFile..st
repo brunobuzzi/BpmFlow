@@ -4,7 +4,7 @@ storeProcessDefinition: aBpmProcessInstance onZip: aZipArchive withFile: aGsFile
 
 	stream := RWBinaryOrTextStream on: String new. 
 	member := aZipArchive 
-						addString: (self xmlHeader, aBpmProcessInstance generateProcessMap prettyPrinted) 
+						addString: (self xmlHeader, (aBpmProcessInstance generateProcessMapFor: self session user) prettyPrinted) 
 						as: (aBpmProcessInstance processName, '.xpdl').
 
 	member desiredCompressionMethod: ZipArchive compressionDeflated. 
