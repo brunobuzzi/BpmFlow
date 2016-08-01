@@ -308,7 +308,12 @@ body, html, main {
 }
 #free-tasks-list {
 	overflow-y: auto;
-	height: 625px;
+}
+.free-tasks-list-hide-top {
+	height: 86%;
+}
+.free-tasks-list-show-top {
+	height: 77%;
 }
 #free-tasks-list ul {
 	list-style-type: none;
