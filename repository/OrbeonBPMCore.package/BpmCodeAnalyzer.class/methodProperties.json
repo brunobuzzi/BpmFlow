@@ -5,6 +5,7 @@
 		"for:" : "BrunoBB 01/21/2016 10:30" },
 	"instance" : {
 		"addBlockWarning:" : "BrunoBB 01/21/2016 10:31",
+		"addInfo:" : "BrunoBB 08/02/2016 14:14",
 		"analyze" : "BrunoBB 06/25/2016 07:53",
 		"blockCode" : "BrunoBB 01/21/2016 10:31",
 		"blockCode:" : "BrunoBB 01/21/2016 10:36",
@@ -12,6 +13,8 @@
 		"codeWarnings:" : "BrunoBB 01/21/2016 10:31",
 		"getOrbeonFormInstanceClassOrNil" : "BrunoBB 02/09/2016 15:14",
 		"hasWarinings" : "BrunoBB 01/21/2016 10:32",
-		"initialize" : "BrunoBB 01/21/2016 10:32",
+		"infoWarnings" : "BrunoBB 08/02/2016 14:13",
+		"infoWarnings:" : "BrunoBB 08/02/2016 14:13",
+		"initialize" : "BrunoBB 08/02/2016 14:14",
 		"parser" : "BrunoBB 01/21/2016 10:31",
 		"parser:" : "BrunoBB 01/21/2016 10:31" } }

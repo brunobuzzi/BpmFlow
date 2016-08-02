@@ -8,7 +8,8 @@
 	"instvars" : [
 		"blockCode",
 		"codeWarnings",
-		"parser" ],
+		"parser",
+		"infoWarnings" ],
 	"name" : "BpmCodeAnalyzer",
 	"pools" : [
 		 ],
