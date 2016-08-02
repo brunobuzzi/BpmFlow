@@ -745,6 +745,9 @@ body, html, main {
 .float-none {
 	float: none;
 }
+.float-right {
+	float: right;
+}
 .height180 {
 	height: 180px;
 }
