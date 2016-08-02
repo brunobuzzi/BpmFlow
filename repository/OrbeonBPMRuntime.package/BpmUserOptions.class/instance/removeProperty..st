@@ -1,4 +1,4 @@
 properties
-removeProperty: named put: value
+removeProperty: named
 
 	^applicationOptions removeKey: named ifAbsent: [nil]

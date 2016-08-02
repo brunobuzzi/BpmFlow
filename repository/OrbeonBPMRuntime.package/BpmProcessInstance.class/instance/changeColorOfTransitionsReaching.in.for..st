@@ -1,5 +1,5 @@
 xpdl
-changeColorOfTransitionsReaching: executedNodes in: xmlDocument
+changeColorOfTransitionsReaching: executedNodes in: xmlDocument for: aBpmUser
 	| transitionNodes |
 
 	transitionNodes := OrderedCollection new.
@@ -7,12 +7,16 @@ changeColorOfTransitionsReaching: executedNodes in: xmlDocument
 		nodeId := eachNode attributeAt: 'Id'.
 		trNode := (xmlDocument allElementsNamed: 'Transition') detect: [:each | (each attributeAt: 'To') = nodeId] ifNone: [nil].
 		trNode notNil
-		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') attributeAt: 'BorderColor' put: '-7136256'.
+		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') 
+						attributeAt: 'BorderColor' 
+						put: (aBpmUser getProperty: 'transition.borderColor.done').
 			transitionNodes add: trNode].
 
 		trNode := (xmlDocument allElementsNamed: 'Transition') detect: [:each | (each attributeAt: 'From') = nodeId] ifNone: [nil].
 		trNode notNil
-		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') attributeAt: 'BorderColor' put: '-7136256'.
+		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') 
+						attributeAt: 'BorderColor' 
+						put: (aBpmUser getProperty: 'transition.borderColor.done').
 			transitionNodes add: trNode].
 	].
 

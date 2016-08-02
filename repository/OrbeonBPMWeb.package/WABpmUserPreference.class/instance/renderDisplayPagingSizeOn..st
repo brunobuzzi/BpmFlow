@@ -1,4 +1,4 @@
-other
+list
 renderDisplayPagingSizeOn: html
 
 	html label attributeAt: 'for' put: 'lateralPaging'; with: ('Lateral List Paging Size' translateFor: self session user).

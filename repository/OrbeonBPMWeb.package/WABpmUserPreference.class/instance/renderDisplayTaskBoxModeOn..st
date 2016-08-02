@@ -1,4 +1,4 @@
-other
+list
 renderDisplayTaskBoxModeOn: html
 
 	html checkbox 
