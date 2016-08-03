@@ -1,4 +1,4 @@
 process
 closeSendAndSelectUsers: aBpmArtifactInstance
 
-	self inform: 'Not Implemented Yet'
+	assignationComposite := WAAssignTasksToUsers parent: self on: (OrderedCollection with: aBpmArtifactInstance)

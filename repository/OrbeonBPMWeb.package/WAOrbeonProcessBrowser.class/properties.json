@@ -9,7 +9,8 @@
 		"seasideK",
 		"mode",
 		"categories",
-		"transitionsHeight" ],
+		"transitionsHeight",
+		"assignationComposite" ],
 	"name" : "WAOrbeonProcessBrowser",
 	"pools" : [
 		 ],

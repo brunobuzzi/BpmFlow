@@ -1,0 +1,4 @@
+other
+closeWindow
+
+	mainPanel clearAssignationCompostite

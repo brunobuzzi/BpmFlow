@@ -1,0 +1,4 @@
+other
+getApplication
+
+	^process getApplication

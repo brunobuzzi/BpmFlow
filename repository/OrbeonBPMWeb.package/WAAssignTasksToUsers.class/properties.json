@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tasksBatchedList",
+		"usersBatchedList",
+		"selectedTask",
+		"assignationTable" ],
+	"name" : "WAAssignTasksToUsers",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

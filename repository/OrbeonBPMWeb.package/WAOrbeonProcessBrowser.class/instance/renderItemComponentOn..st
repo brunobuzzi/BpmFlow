@@ -16,3 +16,5 @@ renderItemComponentOn: html
 		html div class: (cssClass, ' ', heightClass); with: [
 			self renderTransitionDataOn: html for: eachArtifact].
 	]. "end DO"
+
+	assignationComposite ifNotNil: [html render: assignationComposite]

@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"closeWindow" : "BrunoBB 08/03/2016 11:13",
+		"getColumnsForTasks" : "BrunoBB 08/03/2016 11:00",
+		"initialize" : "BrunoBB 08/03/2016 11:00",
+		"initializeSewafTableForTasks" : "BrunoBB 08/03/2016 11:00",
+		"initializeSewafTableForUsers" : "BrunoBB 08/03/2016 11:00",
+		"isSelected:" : "BrunoBB 08/03/2016 11:17",
+		"model:" : "BrunoBB 08/03/2016 11:00",
+		"renderCloseWindowsButtonOn:" : "BrunoBB 08/03/2016 11:12",
+		"renderContentOn:" : "BrunoBB 08/03/2016 11:11",
+		"searchBy:" : "BrunoBB 08/03/2016 11:00",
+		"selectUser:withValue:" : "BrunoBB 08/03/2016 11:04",
+		"selectedTask" : "BrunoBB 08/03/2016 11:00",
+		"selectedTask:" : "BrunoBB 08/03/2016 11:00",
+		"sewafTableForTasks" : "BrunoBB 08/03/2016 11:00",
+		"sewafTableForUsers" : "BrunoBB 08/03/2016 11:00",
+		"tasksBatchedList" : "BrunoBB 08/03/2016 11:00",
+		"tasksBatchedList:" : "BrunoBB 08/03/2016 11:00",
+		"usersBatchedList" : "BrunoBB 08/03/2016 11:00",
+		"usersBatchedList:" : "BrunoBB 08/03/2016 11:00" } }
