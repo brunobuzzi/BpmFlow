@@ -1,6 +1,10 @@
 process
 closeSendAndSelectUsers: aBpmArtifactInstance
-	| tasks |
+	| assignmentFinalization |
 
-	tasks := OrderedCollection withAll: (selectedLateralItem process executedActivities, selectedLateralItem process currentActivities).
-	assignationComposite := WAAssignTasksToUsers parent: self on: tasks.
+	self inform: 'Not Implemented Yet'.
+"
+	assignmentFinalization := self session user finalizeAssignment: selectedLateralItem.
+
+	assignationComposite := WAAssignTasksToUsers parent: self on: assignmentFinalization getNextTasks.
+"
