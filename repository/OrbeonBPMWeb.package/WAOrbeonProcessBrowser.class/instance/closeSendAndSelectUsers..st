@@ -1,10 +1,12 @@
 process
 closeSendAndSelectUsers: aBpmArtifactInstance
-	| assignmentFinalization |
+	| assignmentFinalization currentActivities newTasks |
 
-	self inform: 'Not Implemented Yet'.
-"
+"	self inform: 'Not Implemented Yet'."
+	currentActivities := OrderedCollection withAll: (selectedLateralItem process currentActivities asArray remove: aBpmArtifactInstance; yourself).
+
 	assignmentFinalization := self session user finalizeAssignment: selectedLateralItem.
 
-	assignationComposite := WAAssignTasksToUsers parent: self on: assignmentFinalization getNextTasks.
-"
+	newTasks := selectedLateralItem process currentActivities asArray removeAll: currentActivities; yourself.
+
+	assignationComposite := WAAssignTasksToUsers parent: self on: newTasks.

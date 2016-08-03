@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"closeWindow" : "BrunoBB 08/03/2016 11:13",
+		"closeWindow" : "BrunoBB 08/03/2016 15:04",
 		"getColumnsForTasks" : "BrunoBB 08/03/2016 11:36",
 		"initialize" : "BrunoBB 08/03/2016 11:00",
 		"initializeSewafTableForTasks" : "BrunoBB 08/03/2016 11:00",
-		"initializeSewafTableForUsers" : "BrunoBB 08/03/2016 11:00",
+		"initializeSewafTableForUsers" : "BrunoBB 08/03/2016 14:06",
 		"isSelected:" : "BrunoBB 08/03/2016 11:17",
 		"model:" : "BrunoBB 08/03/2016 11:00",
 		"renderCloseWindowsButtonOn:" : "BrunoBB 08/03/2016 11:12",

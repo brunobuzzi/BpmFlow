@@ -8,7 +8,7 @@ initializeSewafTableForUsers
 	table := (SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
 		backcolor: self session user userOptions getBooleanTableBackcolor;
-		buttonLabel: ('Assign and Close' translateFor: self session user);
+		buttonLabel: ('Assign' translateFor: self session user);
 		booleanSelector: #isSelected:;
 		callbackSelector: #selectUser:withValue:;
 		columns: (OrderedCollection new add: column; 
