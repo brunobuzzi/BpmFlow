@@ -8,3 +8,4 @@ closeWindow
 	].
 
 	mainPanel clearAssignationCompostite.
+	mainPanel removeSelectionAndRefreshLateralCollection.

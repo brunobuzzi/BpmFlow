@@ -9,4 +9,6 @@ closeSendAndSelectUsers: aBpmArtifactInstance
 
 	newTasks := selectedLateralItem process currentActivities asArray removeAll: currentActivities; yourself.
 
+	newTasks ifEmpty: [^self].
+
 	assignationComposite := WAAssignTasksToUsers parent: self on: newTasks.
