@@ -1,4 +1,6 @@
 process
 closeSendAndSelectUsers: aBpmArtifactInstance
+	| tasks |
 
-	assignationComposite := WAAssignTasksToUsers parent: self on: (OrderedCollection with: aBpmArtifactInstance)
+	tasks := OrderedCollection withAll: (selectedLateralItem process executedActivities, selectedLateralItem process currentActivities).
+	assignationComposite := WAAssignTasksToUsers parent: self on: tasks.
