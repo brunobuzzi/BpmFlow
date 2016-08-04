@@ -25,6 +25,27 @@ body, html, main {
 	height: 100%;
 }
 /* END: HTML GENERAL */
+/* START: 3 DIVs VERTICAL ALLIGNED */
+.left, .center, .right{
+    display:inline-block; 
+    *display:inline; /*IE7 fix*/
+    zoom:1;
+    padding:5px; 
+	border: 0px none;
+    vertical-align:middle;
+}
+.left{
+    width: 40%; 
+}
+
+.center{
+    width: 30%;
+}
+
+.right{
+    width: 25%;
+}
+/* END: 3 DIVs VERTICAL ALLIGNED */
 /* START: TOP AREA */
 #top-area {
 	display: inline-flex;
@@ -574,6 +595,15 @@ body, html, main {
 .process-transition-expanded {
 	height: 60%;
 }
+#users-to-add {
+	float: left;
+}
+#users-to-add input {
+	border-radius: 10px;
+}
+#users-to-add input[type="submit"] {
+	margin-top: 20px;
+}
 .table-search-element form fieldset, .table-search-element fieldset{
 	border: 0px none;
 }
@@ -741,6 +771,9 @@ body, html, main {
 	display: inline;
 }
 /* BASIC BLOCK STYLES */
+.border-radius10px {
+	border-radius: 10px;
+}
 .display-block {
 	display: block;
 }
