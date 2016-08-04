@@ -4,4 +4,4 @@ isAvailableFor: aBpmUser
 
 	hasContextApplications ifFalse: [^true]. "if there is no context --> the receiver is available"
 
-	^process matchContextsApplicationWith: aBpmUser getApplications "match context applications"
+	^process matchContextsWith: aBpmUser
