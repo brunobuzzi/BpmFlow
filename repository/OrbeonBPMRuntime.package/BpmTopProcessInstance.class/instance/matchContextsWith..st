@@ -7,10 +7,6 @@ matchContextsWith: aBpmUser
 	| userApplications |
 
 	userApplications := aBpmUser getApplications.
-	(andContextApplications notEmpty and: [orContextApplications notEmpty])
-	ifTrue: [^(andContextApplications allSatisfy: [:each | userApplications includes: each])
-					or: [orContextApplications anySatisfy: [:each | userApplications includes: each]]].
 
-	andContextApplications notEmpty ifTrue: [^andContextApplications allSatisfy: [:each | userApplications includes: each]].
-
-	^orContextApplications anySatisfy: [:each | userApplications includes: each]
+	^(andContextApplications notEmpty and: [andContextApplications allSatisfy: [:each | userApplications includes: each]]) 
+		or: [orContextApplications anySatisfy: [:each | userApplications includes: each]]
