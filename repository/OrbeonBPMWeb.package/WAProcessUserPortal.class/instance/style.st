@@ -213,6 +213,14 @@ body, html, main {
     display: inline-block;
 	width: 100%;
 }
+#assignation-close-form form fieldset {
+	border: 0px;
+}
+.assignation-title {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+}
 .category-circle {
 	width: 20px;
 	height: 20px;
