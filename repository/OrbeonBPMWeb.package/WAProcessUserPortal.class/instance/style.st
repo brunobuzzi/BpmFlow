@@ -241,6 +241,8 @@ body, html, main {
 	font-size: 20px;
 	text-align: center;
 	margin-bottom: 15px;
+	margin-top: 10px;
+	text-decoration: underline;
 }
 .category-circle {
 	width: 20px;
@@ -818,6 +820,9 @@ body, html, main {
 }
 .margin-bottom-10px {
 	margin-bottom: 10px;
+}
+.text-underline {
+	text-decoration: underline;
 }
 .underline {
 	text-decoration: underline;
