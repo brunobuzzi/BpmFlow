@@ -2,9 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addToParentProcess" : "BrunoBB 08/06/2016 14:41",
 		"cycle" : "BrunoBB 08/06/2016 14:27",
 		"cycle:" : "BrunoBB 08/06/2016 14:27",
+		"instanceClass" : "BrunoBB 08/06/2016 14:42",
+		"isEndEvent" : "BrunoBB 08/06/2016 14:50",
 		"isEventDefinition" : "BrunoBB 06/28/2016 12:12",
+		"printOnType" : "BrunoBB 08/06/2016 14:46",
 		"tag" : "BrunoBB 08/06/2016 14:27",
 		"tag:" : "BrunoBB 08/06/2016 14:27",
 		"type" : "BrunoBB 08/06/2016 14:27",

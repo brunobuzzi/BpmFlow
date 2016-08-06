@@ -1,0 +1,4 @@
+other
+printOnType
+
+	^cycle printOnType

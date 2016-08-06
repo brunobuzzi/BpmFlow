@@ -3,4 +3,7 @@
 		"event:" : "BrunoBB 08/06/2016 14:33" },
 	"instance" : {
 		"eventDefinition" : "BrunoBB 08/06/2016 14:33",
-		"eventDefinition:" : "BrunoBB 08/06/2016 14:33" } }
+		"eventDefinition:" : "BrunoBB 08/06/2016 14:33",
+		"isEndEvent" : "BrunoBB 08/06/2016 14:50",
+		"name" : "BrunoBB 08/06/2016 15:03",
+		"processDefinition" : "BrunoBB 08/06/2016 14:40" } }

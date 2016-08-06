@@ -7,7 +7,8 @@ createBpmDefinitionOn: aBpmProcessDefinition
 		yourself"
 
 	event := BpmEventDefinition process: aBpmProcessDefinition.
-	event cycle: (BpmStartComponentDefinition event: event);
+	event name: self getName;
+		cycle: (BpmStartComponentDefinition event: event);
 		type: (BpmNoneComponentDefinition event: event);
 		tag: (BpmNormalTagComponentDefinition event: event);
 		yourself.

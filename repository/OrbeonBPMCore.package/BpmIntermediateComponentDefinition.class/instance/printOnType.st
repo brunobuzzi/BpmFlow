@@ -1,4 +1,4 @@
 other
 printOnType
 
-	^'ev:in'
+	^'ev:inter'

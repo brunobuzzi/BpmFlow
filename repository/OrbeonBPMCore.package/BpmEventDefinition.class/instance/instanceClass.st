@@ -1,0 +1,4 @@
+other
+instanceClass
+
+	^cycle instanceClass

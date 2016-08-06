@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"addToParentProcess" : "BrunoBB 08/06/2016 15:01",
+		"instanceClass" : "BrunoBB 08/06/2016 14:50",
+		"isEndEvent" : "BrunoBB 08/06/2016 14:50",
+		"printOnType" : "BrunoBB 08/06/2016 14:47" } }

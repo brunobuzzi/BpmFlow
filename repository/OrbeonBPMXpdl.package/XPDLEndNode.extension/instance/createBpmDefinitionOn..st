@@ -1,6 +1,15 @@
 *orbeonBPMXpdl
 createBpmDefinitionOn: aBpmProcessDefinition
-
-	^(BpmEndEventDefinition process: aBpmProcessDefinition)
+	| event |
+"	^(BpmEndEventDefinition process: aBpmProcessDefinition)
 		name: self getName;
-		yourself
+		yourself"
+
+	event := BpmEventDefinition process: aBpmProcessDefinition.
+	event name: self getName;
+		cycle: (BpmEndComponentDefinition event: event);
+		type: (BpmTerminationComponentDefinition event: event);
+		tag: (BpmNormalTagComponentDefinition event: event);
+		yourself.
+
+	^event
