@@ -1,0 +1,4 @@
+other
+beInterrupt
+
+	isNonInterrupt := false.

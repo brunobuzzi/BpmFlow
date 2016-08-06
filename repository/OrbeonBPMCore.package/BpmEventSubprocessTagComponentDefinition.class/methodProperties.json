@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"beInterrupt" : "BrunoBB 08/06/2016 14:09",
+		"beNonInterrupt" : "BrunoBB 08/06/2016 14:09",
+		"initialize" : "BrunoBB 08/06/2016 14:09",
+		"isNonInterrupt" : "BrunoBB 08/06/2016 14:09",
+		"isNonInterrupt:" : "BrunoBB 08/06/2016 14:09" } }

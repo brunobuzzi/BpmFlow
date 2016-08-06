@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmIntermediateEventDefinition",
+	"name" : "BpmCycleComponentDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmAbstractIntermediateEventDefinition",
+	"super" : "BpmEventComponentDefinition",
 	"type" : "normal" }

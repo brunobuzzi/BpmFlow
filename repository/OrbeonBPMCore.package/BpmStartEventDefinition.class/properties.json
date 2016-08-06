@@ -10,5 +10,5 @@
 	"name" : "BpmStartEventDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmEventDefinition",
+	"super" : "BpmAbstractStartEventDefinition",
 	"type" : "normal" }

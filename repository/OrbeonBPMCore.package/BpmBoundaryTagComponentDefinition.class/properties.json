@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "BpmIntermediateEventDefinition",
+		"isNonInterrupt" ],
+	"name" : "BpmBoundaryTagComponentDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmAbstractIntermediateEventDefinition",
+	"super" : "BpmTagComponentDefinition",
 	"type" : "normal" }
