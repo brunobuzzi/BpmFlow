@@ -16,6 +16,7 @@
 		"getAllBoxes" : "BrunoBB 04/17/2016 12:20",
 		"getAllBoxesOn:" : "BrunoBB 04/17/2016 12:21",
 		"getChildBoxNamed:" : "BrunoBB 04/17/2016 12:22",
+		"getObjectsSatisfying:" : "BrunoBB 08/06/2016 11:50",
 		"includesEntry:" : "BrunoBB 05/30/2016 14:20",
 		"initialize" : "BrunoBB 04/17/2016 12:24",
 		"isEmpty" : "BrunoBB 04/17/2016 17:51",

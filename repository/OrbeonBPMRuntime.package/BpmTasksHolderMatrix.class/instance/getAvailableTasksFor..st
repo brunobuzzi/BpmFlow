@@ -1,5 +1,5 @@
 task handling
 getAvailableTasksFor: roleName
-	"Answer a collection with all available/free tasks for the role named <roleName>"
+	"Answer a (reduce conflict and indexable) collection with all available/free tasks for the role named <roleName>"
 
-	^rolesAndAssignment at: roleName ifAbsent: [OrderedCollection new]
+	^rolesAndAssignment at: roleName ifAbsent: [RcIdentityBag new]

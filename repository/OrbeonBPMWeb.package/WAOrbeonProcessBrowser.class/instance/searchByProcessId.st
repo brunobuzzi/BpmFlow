@@ -2,11 +2,11 @@ search area
 searchByProcessId
 	| id |
 
-	id  := self searchValueAt: 'id' ifAbsent: [''].
+	id  := [Number fromString: (self searchValueAt: 'id' ifAbsent: ['0'])] on: Error do: [:err | 0].
 
-	searchResult := self getIterationCollection select: [:each | each processId printString = id].
+	searchResult := self modeIsFinishedTasks 
+								ifTrue: [self session user getAllFinishedTaskAssignmentsWithId: id] 
+								ifFalse: [self session user getAllTaskAssignmentsWithId: id].
 
 	selectedLateralItem := nil.
 	"selectedTransition := nil."
-
-	self removeSearchValueNamed: 'id'
