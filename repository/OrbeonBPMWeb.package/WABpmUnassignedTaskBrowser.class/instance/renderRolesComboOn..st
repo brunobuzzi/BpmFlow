@@ -10,6 +10,6 @@ renderRolesComboOn: html
 	html label attributeAt: 'for' put: 'roles'; with: ('Roles' translateFor: self session user).
 	html select "Process Definition List"
 		attributeAt: 'id' put: 'roles'; 
-		list: (#(''), roles) asSortedCollection;
+		list: (#(''), roles asArray) asSortedCollection;
 		callback: [:roleName | self onRoleChanged: roleName];
 		selected: (searchValues at: 'role' ifAbsent: ['']).

@@ -5,3 +5,5 @@ resetAll
 	self getCurrentAssigmentsInbox resetMessages.
 	self getFinishedAssigmentsInbox resetMessages.
 	self getReleasedAssigmentsInbox resetMessages.
+
+	roles := Set new.
