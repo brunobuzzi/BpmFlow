@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"cycle",
+		"type",
+		"tag" ],
 	"name" : "BpmEventDefinition",
 	"pools" : [
 		 ],
