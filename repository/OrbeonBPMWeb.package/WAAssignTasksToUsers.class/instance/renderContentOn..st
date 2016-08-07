@@ -9,8 +9,8 @@ renderContentOn: html
 			html render: (tasksBatchedList table: self sewafTableForTasks)].
 
 		selectedTask ifNil: [^self].
-
-		usersBatchedList items: selectedTask getGrantedUsers.
+		"if <orderMode> is true --> the user list has been sorted and it is already with the correct items"
+		usersBatchedList hasOrderMode ifFalse: [usersBatchedList items: selectedTask getGrantedUsers].
 
 		html div id: 'users-to-add';class: 'center default-gray-table float-left float-left'; with: [
 			html render: (usersBatchedList table: self sewafTableForUsers)].
