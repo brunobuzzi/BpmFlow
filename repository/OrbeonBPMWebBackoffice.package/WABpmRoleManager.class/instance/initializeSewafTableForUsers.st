@@ -7,6 +7,7 @@ initializeSewafTableForUsers
 	column beSortable; beSearchable; sortBlock: [:a :b | a username <= b username]. 
 	table := (SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
+		sortColumnSelector: #sortUsers:orderMode:;
 		backcolor: self session user userOptions getBooleanTableBackcolor;
 		buttonLabel: ('Assign and Close' translateFor: self session user);
 		booleanSelector: #booleanValueForUser:;

@@ -1,5 +1,5 @@
 style
-style
+style2
 
 ^'/* Smart Devices*/
 @media (max-width: 800px) {                  
