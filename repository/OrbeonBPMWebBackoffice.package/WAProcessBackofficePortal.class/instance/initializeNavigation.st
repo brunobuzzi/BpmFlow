@@ -4,7 +4,7 @@ initializeNavigation
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
-		addItem: (SewafCommandItem label: 'Manage Processes Definitions' command: #openDefinitionsManager);
+		addItem: (SewafCommandItem label: 'List Processes Definitions' command: #openDefinitionsManager);
 		addItem: (SewafCommandItem label: 'Define New Process' command: #openBizagiManager);
 		addItem: (SewafCommandItem label: 'Monitor Processes' command: #openProcessRadar);
 		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);
