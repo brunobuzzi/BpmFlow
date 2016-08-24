@@ -1,0 +1,10 @@
+language: smalltalk
+sudo: false
+
+# Select operating system(s)
+os:
+  - linux
+
+# Select compatible Smalltalk image(s)
+smalltalk:
+  - GemStone-3.3.0
