@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/brunobuzzi/OrbeonPersistenceLayer.svg?branch=master)](https://github.com/brunobuzzi/BpmFlow)
 BPM Flow
 =======================
 
