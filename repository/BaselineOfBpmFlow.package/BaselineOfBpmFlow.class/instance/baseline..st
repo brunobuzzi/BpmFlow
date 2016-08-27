@@ -32,7 +32,7 @@ baseline: spec
 		spec baseline: 'Sewaf' with: [
 			spec repository: 'github://brunobuzzi/SEWAF:master/repository' ].
 
-       spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonLDAP' 'OrbeonPersistenceLayer')].
+       spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
        spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
        spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
        spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
