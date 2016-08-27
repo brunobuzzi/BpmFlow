@@ -32,14 +32,22 @@ baseline: spec
 		spec baseline: 'Sewaf' with: [
 			spec repository: 'github://brunobuzzi/SEWAF:master/repository' ].
 
-       spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
-       spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
-       spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
-       spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
-       spec package: 'OrbeonBPMWeb' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
-       spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
-       spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
-       spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
-       spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
-       spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
+		spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
+		spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
+		spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
+		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
+		spec package: 'OrbeonBPMWeb' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
+		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
+		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
+		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
+		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
+		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
+
+		spec
+			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl'); 
+			group: 'web-backoffice' with: #('OrbeonBPMWebBackoffice');
+			group: 'web-frontoffice' with: #('OrbeonBPMWeb');
+			group: 'rest' with: #('OrbeonPersistenceApiProcess');
+			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntime_Tests');
+			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'rest' 'test').
 		]
