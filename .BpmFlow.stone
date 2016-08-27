@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'BpmFlow',
+      #directory : 'repository',
+      #onWarningLog : true,
+      #load : [ 'default' ],
+      #platforms : [ #gemstone ]
+    }
+  ],
+  #testing : {	
+     #exclude : {
+  	    #packages : ['Orbeon_Tests', 'OrbeonBizagiReader2_Tests', 'OrbeonBPMRuntime_Tests', 'OrbeonBPMXpdl_Tests']
+    }
+  }
+}
