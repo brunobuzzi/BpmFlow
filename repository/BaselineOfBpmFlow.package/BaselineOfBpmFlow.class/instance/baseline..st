@@ -7,7 +7,7 @@ baseline: spec
 		spec project: 'XMLParser' with: [
 			spec className: 'ConfigurationOfXMLParser';
 				loads: #('default');
-				versionString: #'release-2.7.7';
+				versionString: #'release-2.8.3';
 				repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XMLParser/main'].
 		spec project: 'XPath' with: [
 			spec className: 'ConfigurationOfXPath';
