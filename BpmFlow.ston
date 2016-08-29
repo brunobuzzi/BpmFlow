@@ -1,4 +1,3 @@
-
 TDObjectGatewayLeafNode{#name:'BpmFlow',#contents:'^ TDProjectSpecEntryDefinition new
     baseline: \'BpmFlow\'
       repository: \'github://brunobuzzi/BpmFlow:master/repository\'
