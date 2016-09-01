@@ -10,5 +10,5 @@ renderContentOn: html
 					self renderNewApplicationOn: html.
 					self renderFormOperationsOn: html.
 				].
-			]
+			].
 	].

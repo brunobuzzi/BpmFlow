@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmApplicationBrowser",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

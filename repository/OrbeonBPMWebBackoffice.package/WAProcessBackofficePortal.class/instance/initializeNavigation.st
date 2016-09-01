@@ -28,7 +28,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Set Language' command: #openLanguageConfiguration);
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
-	navigation addItem: subMenu1;
-		addItem: subMenu2;
+	navigation addItem: subMenu2;
+		addItem: subMenu1;
 		addItem: subMenu3;
 		addItem: subMenu4.

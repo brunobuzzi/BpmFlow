@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"initialize" : "BrunoBB 08/30/2016 10:53" },
 	"instance" : {
 		"applicationIcon" : "BrunoBB 07/21/2016 10:23",
 		"applicationName" : "BrunoBB 06/27/2015 09:32",
@@ -8,11 +8,11 @@
 		"getDefinitionCollection" : "BrunoBB 03/14/2016 10:35",
 		"importUsersAndRoles" : "BrunoBB 06/19/2016 17:44",
 		"initialize" : "BrunoBB 06/05/2015 06:17",
-		"initializeNavigation" : "BrunoBB 08/12/2016 08:30",
+		"initializeNavigation" : "BrunoBB 09/01/2016 09:03",
 		"isBackoffice" : "BrunoBB 08/12/2016 08:39",
 		"lateralCollection:" : "BrunoBB 04/10/2016 16:11",
 		"logout" : "BrunoBB 02/03/2016 09:43",
-		"openApplicationManager" : "BrunoBB 03/15/2016 10:57",
+		"openApplicationManager" : "BrunoBB 08/31/2016 10:08",
 		"openBizagiManager" : "BrunoBB 03/05/2016 09:50",
 		"openChangePassword" : "BrunoBB 03/15/2016 11:30",
 		"openDefinitionsManager" : "BrunoBB 06/18/2016 13:38",
@@ -30,6 +30,6 @@
 		"selectedLateralItem:" : "BrunoBB 04/10/2016 16:09",
 		"setSearchApplied" : "BrunoBB 04/10/2016 16:20",
 		"showUserPreferences" : "BrunoBB 03/15/2016 10:44",
-		"style" : "BrunoBB 08/11/2016 08:38",
+		"style" : "BrunoBB 08/30/2016 10:20",
 		"style2" : "BrunoBB 08/10/2016 08:35",
 		"versionName" : "BrunoBB 08/09/2016 05:20" } }

@@ -1,4 +1,4 @@
-other
+style
 style
 
 	^super style,

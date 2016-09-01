@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createNewApplication" : "BrunoBB 08/31/2016 11:48",
+		"getCurrentCollection" : "BrunoBB 08/31/2016 12:23",
+		"getIconNameFormItem" : "BrunoBB 08/31/2016 10:16",
+		"getTextForItem:" : "BrunoBB 08/31/2016 10:17",
+		"initialize" : "BrunoBB 08/31/2016 10:41",
+		"removeApplication" : "BrunoBB 08/31/2016 10:41",
+		"renderDeleteApplicationOn:" : "BrunoBB 08/31/2016 10:22",
+		"renderItemComponentOn:" : "BrunoBB 08/31/2016 12:26",
+		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 08/31/2016 12:03",
+		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 08/31/2016 10:48",
+		"renderItemDescriptionTitleOn:" : "BrunoBB 08/31/2016 10:18",
+		"renderLateralItemDetailsOn:for:" : "BrunoBB 08/31/2016 12:02",
+		"renderNewAppFormOn:" : "BrunoBB 08/31/2016 12:00",
+		"renderSearchApplicationOn:" : "BrunoBB 08/31/2016 11:17",
+		"renderSearchAreaOn:" : "BrunoBB 08/31/2016 11:59",
+		"renderSearchSubmitButtonOn:" : "BrunoBB 08/31/2016 11:12",
+		"searchMatchingApplications" : "BrunoBB 08/31/2016 12:12" } }

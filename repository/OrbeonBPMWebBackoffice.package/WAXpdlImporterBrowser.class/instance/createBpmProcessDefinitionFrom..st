@@ -9,7 +9,7 @@ createBpmProcessDefinitionFrom: aBpmProcessGenerator
 	"redirect from the current page the process definition page"
 	messages := OrderedCollection new.
 
-	subMenu := mainPanel selectSubTabNamed: 'Manage Processes Definitions' inMenu: 'Processes' ifNone: [^nil].
+	subMenu := mainPanel selectSubTabNamed: 'List Processes Definitions' inMenu: 'Processes' ifNone: [^nil].
 
 	messages 
 		add: (MessageSend receiver: mainPanel selector: #openDefinitionsManager);

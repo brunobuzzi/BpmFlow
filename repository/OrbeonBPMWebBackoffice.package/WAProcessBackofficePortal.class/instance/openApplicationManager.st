@@ -1,7 +1,7 @@
 subcomponents
 openApplicationManager
 
-	(arena isKindOf: WABpmApplicationManager)
+	(arena isKindOf: WABpmApplicationBrowser)
 	ifTrue: [^arena].
 
-	^WABpmApplicationManager parent: self
+	^WABpmApplicationBrowser parent: self
