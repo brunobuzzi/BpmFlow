@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonAdHocProcessRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"seasideComponent",
+		"object" ],
+	"name" : "AdHocSeasideStepInstance",
+	"pools" : [
+		 ],
+	"super" : "AdHocStepInstance",
+	"type" : "normal" }

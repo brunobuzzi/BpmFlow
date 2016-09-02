@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonAdHocProcessCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"users",
+		"roles",
+		"formDefinitions" ],
+	"name" : "AdHocProcessDefinition",
+	"pools" : [
+		 ],
+	"super" : "AdHocObject",
+	"type" : "normal" }

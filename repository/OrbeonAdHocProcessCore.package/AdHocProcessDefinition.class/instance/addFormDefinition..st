@@ -1,0 +1,4 @@
+other
+addFormDefinition: anOrbeonPublishedFormDefinition
+
+	^formDefinitions add: anOrbeonPublishedFormDefinition
