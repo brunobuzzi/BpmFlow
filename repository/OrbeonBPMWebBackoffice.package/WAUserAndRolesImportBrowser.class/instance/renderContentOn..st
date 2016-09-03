@@ -1,13 +1,13 @@
 other
 renderContentOn: html
 
-	html div with: [self renderCSVUploadOn: html].
+	self renderCSVUploadOn: html.
 
-	html div id: 'imported-data'; class: 'padding-top-1px'; with: [
-			html div class: 'default-gray-table float-left';
+	html div id: 'imported-data'; class: 'padding-top-1px width-70per float-right'; with: [
+			html div class: 'default-gray-table float-left width-25per';
 				with:[importedDataBatchList items: componentValues asOrderedCollection.
-						html render:  (importedDataBatchList table: self initializeSewafTableForImportedData).].
-			html div class: 'default-gray-table ';
+						html render:  (importedDataBatchList table: self sewafTableForImportedData).].
+			html div class: 'default-gray-table float-right width-75per';
 							with:["importedConfigurationBatchList items: configurations."
-									html render:  (importedConfigurationBatchList table: self initializeSewafTableForGrantConfiguration).]
+									html render:  (importedConfigurationBatchList table: self sewafTableForGrantConfiguration).]
 		].

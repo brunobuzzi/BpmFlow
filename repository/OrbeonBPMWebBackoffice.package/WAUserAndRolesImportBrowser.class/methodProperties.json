@@ -2,18 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyImportedConfiguration" : "BrunoBB 06/19/2016 14:51",
+		"applyImportedConfiguration" : "BrunoBB 09/03/2016 12:15",
 		"gitbookUrl" : "BrunoBB 06/20/2016 11:02",
-		"importCSVString:" : "BrunoBB 06/19/2016 14:39",
-		"importConfiguration" : "BrunoBB 06/19/2016 15:29",
+		"importCSVString:" : "BrunoBB 09/03/2016 12:09",
+		"importConfiguration" : "BrunoBB 09/03/2016 10:45",
 		"initialize" : "BrunoBB 06/19/2016 12:38",
 		"initializeBatchedLists" : "BrunoBB 06/19/2016 13:11",
 		"initializeSewafTableForGrantConfiguration" : "BrunoBB 06/19/2016 13:42",
 		"initializeSewafTableForImportedData" : "BrunoBB 06/19/2016 12:46",
 		"receiveFile:" : "BrunoBB 06/19/2016 12:15",
 		"renderApplyImportedDataOn:" : "BrunoBB 06/20/2016 10:14",
-		"renderCSVUploadOn:" : "BrunoBB 06/19/2016 15:37",
-		"renderContentOn:" : "BrunoBB 06/19/2016 14:28",
+		"renderCSVUploadOn:" : "BrunoBB 09/03/2016 12:40",
+		"renderContentOn:" : "BrunoBB 09/03/2016 12:42",
 		"renderHelpOn:" : "BrunoBB 09/01/2016 09:07",
 		"renderProcessDataOn:" : "BrunoBB 06/20/2016 10:14",
-		"renderUploadComponentOn:" : "BrunoBB 06/20/2016 10:14" } }
+		"renderUploadComponentOn:" : "BrunoBB 06/20/2016 10:14",
+		"sewafTableForGrantConfiguration" : "BrunoBB 09/03/2016 11:31",
+		"sewafTableForImportedData" : "BrunoBB 09/03/2016 11:30" } }

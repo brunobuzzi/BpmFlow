@@ -1,7 +1,7 @@
 other
 renderCSVUploadOn: html
 
-	html div class: 'centered-unique-form float-left';
+	html div class: 'centered-unique-form float-left width-28per';
 		with: [
 				html form multipart; 
 					class: 'height350';
