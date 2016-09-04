@@ -1,12 +1,16 @@
 {
 	"class" : {
-		 },
+		"newWithAll:" : "BrunoBB 09/02/2016 15:23" },
 	"instance" : {
 		"addFormDefinition:" : "BrunoBB 09/02/2016 10:14",
+		"applications" : "BrunoBB 09/02/2016 15:14",
+		"applications:" : "BrunoBB 09/02/2016 15:14",
 		"createInstance" : "BrunoBB 09/02/2016 10:25",
 		"formDefinitions" : "BrunoBB 09/02/2016 09:58",
 		"formDefinitions:" : "BrunoBB 09/02/2016 09:58",
-		"initialize" : "BrunoBB 09/02/2016 10:47",
+		"grantRole:to:" : "BrunoBB 09/02/2016 15:29",
+		"grantUser:to:" : "BrunoBB 09/02/2016 15:32",
+		"initialize" : "BrunoBB 09/02/2016 15:14",
 		"name" : "BrunoBB 09/02/2016 09:58",
 		"name:" : "BrunoBB 09/02/2016 09:58",
 		"removeFormDefinition:" : "BrunoBB 09/02/2016 10:15",

@@ -1,0 +1,4 @@
+other
+hasFormInstance
+
+	^orbeonInstance notNil
