@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"initialize" : "BrunoBB 08/30/2016 10:55" },
+		"initialize" : "BrunoBB 09/05/2016 14:50" },
 	"instance" : {
+		"selectorsToInclude" : "BrunoBB 09/05/2016 15:31",
 		"style" : "BrunoBB 07/09/2016 16:38",
-		"tryLogin" : "BrunoBB 06/29/2016 07:51" } }
+		"tryLogin" : "BrunoBB 06/29/2016 07:51",
+		"updateRoot:" : "BrunoBB 09/05/2016 14:51" } }

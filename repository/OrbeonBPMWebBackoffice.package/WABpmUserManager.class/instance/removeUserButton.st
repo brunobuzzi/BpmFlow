@@ -3,9 +3,9 @@ removeUserButton
 
 	^(SewafReportColumn 
 			renderBlock: [:each :html | | jQueryId |
-				jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeUser' actionMethod: #removeUser: arguments: (Array with: each).
 				each canDelete 
 				ifTrue: [
+					jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeUser' actionMethod: #removeUser: arguments: (Array with: each).
 					html anchor "callback: [self removeUser: each]; "
 								class: 'cursor-pointer';
 								onClick: (html jQuery id: jQueryId) dialog open;

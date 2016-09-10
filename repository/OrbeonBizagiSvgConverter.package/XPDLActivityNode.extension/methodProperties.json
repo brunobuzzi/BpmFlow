@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawOn:" : "BrunoBB 09/10/2016 08:17" } }
+		"drawOn:" : "BrunoBB 09/10/2016 15:02",
+		"getColor" : "BrunoBB 09/10/2016 14:26",
+		"getStrokeColor" : "BrunoBB 09/10/2016 15:03" } }

@@ -3,9 +3,9 @@ newRemoveRolButton
 
 	^(SewafReportColumn 
 			renderBlock: [:each :html | | jQueryId |
-				jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeRol' actionMethod: #removeRol: arguments: (Array with: each).
 				each canDelete
 				ifTrue: [
+					jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeRol' actionMethod: #removeRol: arguments: (Array with: each).
 					html anchor "callback: [self removeRol: each]; "
 								class: 'cursor-pointer';
 								onClick: (html jQuery id: jQueryId) dialog open;

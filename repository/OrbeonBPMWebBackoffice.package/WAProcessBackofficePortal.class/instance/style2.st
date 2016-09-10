@@ -1,5 +1,5 @@
 style
-style
+style2
 
 	^super style,
 '/* START: BACK OFFICE STYLES */

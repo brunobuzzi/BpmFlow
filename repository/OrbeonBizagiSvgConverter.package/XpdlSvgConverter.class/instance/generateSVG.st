@@ -8,7 +8,7 @@ generateSVG
 
 	xpdlReader getAllWorkflows do: [:eachWorkflow | 
 		eachWorkflow activities do: [:eachActivityNode | eachActivityNode drawOn: svgCanvas].
-		eachWorkflow transitions do: [:eachTransition | eachTransition drawOn: svgCanvas] 
+		eachWorkflow transitions do: [:eachTransition | eachTransition drawOn: svgCanvas].
 	].
 
 	^svgCanvas contents

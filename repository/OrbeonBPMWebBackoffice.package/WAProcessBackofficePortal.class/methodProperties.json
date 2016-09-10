@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"initialize" : "BrunoBB 08/30/2016 10:53" },
+		 },
 	"instance" : {
 		"applicationIcon" : "BrunoBB 07/21/2016 10:23",
 		"applicationName" : "BrunoBB 06/27/2015 09:32",
@@ -28,7 +28,9 @@
 		"openUsersRadar" : "BrunoBB 12/20/2015 14:56",
 		"searchResult:" : "BrunoBB 04/10/2016 16:21",
 		"selectedLateralItem:" : "BrunoBB 04/10/2016 16:09",
+		"selectorsToInclude" : "BrunoBB 09/05/2016 15:31",
 		"setSearchApplied" : "BrunoBB 04/10/2016 16:20",
 		"showUserPreferences" : "BrunoBB 03/15/2016 10:44",
-		"style" : "BrunoBB 08/30/2016 10:20",
+		"style2" : "BrunoBB 09/05/2016 14:31",
+		"updateRoot:" : "BrunoBB 09/05/2016 15:44",
 		"versionName" : "BrunoBB 08/09/2016 05:20" } }
