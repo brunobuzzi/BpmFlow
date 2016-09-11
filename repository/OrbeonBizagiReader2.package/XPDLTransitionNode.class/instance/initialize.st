@@ -4,4 +4,5 @@ initialize
 	super initialize.
 
 	roles := OrderedCollection new.
-	isDefaultFlow := false
+	isDefaultFlow := false.
+	coordinates := OrderedCollection new.

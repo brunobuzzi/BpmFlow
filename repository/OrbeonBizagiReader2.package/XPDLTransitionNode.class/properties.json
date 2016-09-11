@@ -12,7 +12,8 @@
 		"endId",
 		"startCondition",
 		"roles",
-		"isDefaultFlow" ],
+		"isDefaultFlow",
+		"coordinates" ],
 	"name" : "XPDLTransitionNode",
 	"pools" : [
 		 ],

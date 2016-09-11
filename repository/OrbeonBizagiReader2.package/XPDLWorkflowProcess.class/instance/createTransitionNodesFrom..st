@@ -16,7 +16,7 @@ createTransitionNodesFrom: aXMLDocument
 									startCondition: startCond;
 									isDefaultFlow: isDefaultFlow;
 									yourself.
-		newTransition setExtendedAttributes.
+		newTransition setExtendedAttributes; setGraphicValues.
 		self addTransition: newTransition.].
 
 	^transitions

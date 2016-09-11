@@ -5,7 +5,7 @@ renderItemDescriptionTitleOn: html
 	html output:  selectedLateralItem processName.
 	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
 
-	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessDefinitionAs arguments: #().
+	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessDefinitionAs arguments: #() extent: 420@120.
 
 	html anchor 
 		class: 'cursor-pointer';
