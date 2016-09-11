@@ -8,6 +8,8 @@
 		"getScriptNodes" : "BrunoBB 07/06/2016 10:49",
 		"getSubProcessNodes" : "BrunoBB 07/06/2016 10:49",
 		"getTaskNodes" : "BrunoBB 07/06/2016 10:49",
+		"getXcoordinate" : "BrunoBB 09/11/2016 08:57",
+		"getYcoordinate" : "BrunoBB 09/11/2016 08:57",
 		"hasGatewayNamed:" : "BrunoBB 07/06/2016 10:49",
 		"hasScriptNamed:" : "BrunoBB 07/06/2016 10:49",
 		"hasSubProcessTaskNamed:" : "BrunoBB 07/06/2016 10:49",
