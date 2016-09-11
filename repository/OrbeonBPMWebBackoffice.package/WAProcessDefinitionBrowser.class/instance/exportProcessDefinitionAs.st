@@ -10,7 +10,7 @@ exportProcessDefinitionAs
 
 	stream := PrintStream on: String new.
 
-	stream nextPutAll: self xmlHeader, String lf,(XpdlSvgConverter convert: selectedLateralItem xmlString) generateSVG.
+	stream nextPutAll: self xmlHeader, String lf,(BizagiSvgConverter convert: selectedLateralItem xmlString) generateSVG.
 
 	self requestContext respond: [:response | 
         response document: ((stream contents asByteArray seasideMimeDocument) 

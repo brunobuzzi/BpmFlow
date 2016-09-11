@@ -9,7 +9,7 @@ exportProcessInstanceAs
 	(selectedOption = #svg) ifFalse: [^self].
 
 	stream := PrintStream on: String new.
-	converter := XpdlSvgConverter convert: (selectedLateralItem process generateProcessMapFor: self session user) prettyPrinted.
+	converter := BizagiSvgConverter convert: (selectedLateralItem process generateProcessMapFor: self session user) prettyPrinted.
 
 	stream nextPutAll: self xmlHeader, String lf;
 		nextPutAll: converter generateSVG.

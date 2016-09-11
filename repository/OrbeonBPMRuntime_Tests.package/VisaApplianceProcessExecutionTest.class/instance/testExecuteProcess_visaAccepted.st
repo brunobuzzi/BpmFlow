@@ -17,6 +17,7 @@ testExecuteProcess_visaAccepted
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 	"Step 4 - Form [check-previous-appliance]"
+
 	currentTask := procInstance currentActivities last.
 	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance.
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
