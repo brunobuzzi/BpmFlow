@@ -16,7 +16,7 @@ renderItemDescriptionTitleOn: html
 						altText: ('Free Process' translateFor: self session user)]].
 
 	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
-	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #().
+	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120.
 
 	html anchor 
 		class: 'cursor-pointer';

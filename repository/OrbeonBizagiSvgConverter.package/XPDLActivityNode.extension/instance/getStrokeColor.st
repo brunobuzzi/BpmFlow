@@ -1,4 +1,11 @@
 *orbeonBizagiSvgConverter
 getStrokeColor
+	| bizagiColor |
 
-	^(self getColor = 'lightblue') ifTrue: ['blue'] ifFalse: ['red']
+	bizagiColor := self getColor.
+
+	(bizagiColor = 'lightgreen') ifTrue: [^'darkgreen'].
+	(bizagiColor = 'lightblue') ifTrue: [^'darkblue'].
+	(bizagiColor = 'lightgray') ifTrue: [^'black'].
+
+	^'red'
