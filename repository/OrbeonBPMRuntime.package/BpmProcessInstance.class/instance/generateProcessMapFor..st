@@ -15,6 +15,7 @@ generateProcessMapFor: aBpmUser
 
 	(currentActivities select: [:each | each isTask]) do: [:eachArt | | node |
 		node := (xmlDocument allElementsNamed: 'Activity') detect: [:each | (each attributeAt: 'Name') = eachArt getDefinitionName].
+		executedNodes add: node.
 		self changeColorTo: node fillColor: (aBpmUser getProperty: 'task.fillColor.pending') borderColor: (aBpmUser getProperty: 'task.borderColor.pending')].
 
 	(subprocesses select: [:each | each hasFinalized]) do: [:eachProc | | node |

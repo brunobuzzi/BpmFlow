@@ -1,0 +1,4 @@
+default values
+defaultTaskStroke
+
+	^'darkblue'
