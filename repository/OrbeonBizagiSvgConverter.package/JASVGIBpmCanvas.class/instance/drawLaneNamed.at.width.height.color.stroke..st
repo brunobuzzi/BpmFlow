@@ -1,4 +1,4 @@
-bpm figure
+lanes
 drawLaneNamed: aString at: aPoint width: width height: height color: color stroke: stroke
 	| rect |
 

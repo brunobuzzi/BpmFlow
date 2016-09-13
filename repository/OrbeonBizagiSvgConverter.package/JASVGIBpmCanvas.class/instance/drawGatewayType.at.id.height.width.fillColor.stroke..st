@@ -1,5 +1,5 @@
 gateways
-drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke
+drawGatewayType: type at: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke
 	| figure rotation textPoint |
 	"aPoint + 5 >> to fix a mismatch with Bizagi coordinates"
 	figure := JASVGITagRectangle newAt: aPoint + 5 id: id height: height width: width fillColor: fillColor stroke: stroke.
@@ -14,6 +14,7 @@ drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor st
 	self draw: figure.
 
 	self addFigure: figure toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawGatewayIconFor: type at: aPoint height: height width: width) toGroup: self defaultNameForProcessGroup.
 	self addFigure: (self drawText: id at: textPoint textSizePx: self defaultGatewayNameSize) toGroup: self defaultNameForProcessGroup.
 
 	^figure

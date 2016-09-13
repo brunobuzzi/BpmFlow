@@ -1,4 +1,4 @@
-bpm figure
+activities
 drawActivityNamed: aString at: aPoint
 
 	^self drawActivityNamed: aString at: aPoint color: self defaultTaskFillColor

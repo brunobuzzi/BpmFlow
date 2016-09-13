@@ -1,4 +1,4 @@
-bpm figure
+gateways
 drawGatewayAt: aPoint id: id
 
 	^self drawGatewayAt: aPoint 

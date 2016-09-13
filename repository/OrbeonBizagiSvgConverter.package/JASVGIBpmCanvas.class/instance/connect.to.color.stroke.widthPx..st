@@ -1,4 +1,4 @@
-bpm figure
+connections
 connect: figureOne to: figureTwo color: color stroke: stroke widthPx: widthPx
 	| line |
 

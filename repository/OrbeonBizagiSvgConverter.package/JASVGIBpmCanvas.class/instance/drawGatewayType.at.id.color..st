@@ -1,9 +1,10 @@
 gateways
-drawGatewayAt: aPoint id: id color: color
+drawGatewayType: type at: aPoint id: id color: color
 
-	^self drawGatewayAt: aPoint 
+	^self drawGatewayType: type 
+			at: aPoint 
 			id: id 
 			height: self defaultGatewayHeight 
 			width: self defaultGatewayWidth
-			fillColor: color
+			fillColor: color 
 			stroke: self defaultGatewayStroke

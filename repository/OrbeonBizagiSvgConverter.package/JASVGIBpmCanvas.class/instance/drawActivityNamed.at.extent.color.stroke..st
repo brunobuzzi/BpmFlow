@@ -1,4 +1,4 @@
-bpm figure
+activities
 drawActivityNamed: aString at: aPoint extent: extent color: color stroke: stroke
 	| rect textPoint |
 

@@ -1,4 +1,4 @@
-bpm figure
+events
 drawEndNamed: aString at: aPoint
 	| end textPoint |
 	"aPoint + 15 >> to fix a mismatch with Bizagi coordinates"

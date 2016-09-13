@@ -1,4 +1,4 @@
-bpm figure
+other
 defaultNameForProcessGroup
 
 	^self class defaultNameForProcessGroup

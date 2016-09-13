@@ -1,4 +1,4 @@
-bpm figure
+connections
 connectWith: coordinates color: color widthPx: widthPx
 	| path |
 
