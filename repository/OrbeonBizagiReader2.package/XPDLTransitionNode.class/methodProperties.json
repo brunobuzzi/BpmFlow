@@ -8,6 +8,8 @@
 		"endId:" : "BrunoBB 09/11/2016 14:04",
 		"endNode" : "BrunoBB 09/11/2016 14:04",
 		"endNode:" : "BrunoBB 09/11/2016 14:04",
+		"endNodeName" : "BrunoBB 09/13/2016 09:00",
+		"hasCondition" : "BrunoBB 09/13/2016 04:00",
 		"initialize" : "BrunoBB 09/11/2016 14:05",
 		"isDefaultFlow" : "BrunoBB 09/11/2016 14:04",
 		"isDefaultFlow:" : "BrunoBB 09/11/2016 14:04",
@@ -21,4 +23,5 @@
 		"startId" : "BrunoBB 09/11/2016 14:04",
 		"startId:" : "BrunoBB 09/11/2016 14:04",
 		"startNode" : "BrunoBB 09/11/2016 14:04",
-		"startNode:" : "BrunoBB 09/11/2016 14:04" } }
+		"startNode:" : "BrunoBB 09/11/2016 14:04",
+		"startNodeName" : "BrunoBB 09/13/2016 09:00" } }

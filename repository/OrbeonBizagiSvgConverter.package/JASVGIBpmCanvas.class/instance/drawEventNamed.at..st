@@ -10,6 +10,6 @@ drawEventNamed: aString at: aPoint
 	namesAndTags at: aString put: event. "map the Activity name with the Activity id"
 
 	self addFigure: event toGroup: self defaultNameForProcessGroup.
-	self addFigure: (self drawText: aString at: event position) toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: event position textSizePx: self defaultEventNameSize) toGroup: self defaultNameForProcessGroup.
 
 	^event

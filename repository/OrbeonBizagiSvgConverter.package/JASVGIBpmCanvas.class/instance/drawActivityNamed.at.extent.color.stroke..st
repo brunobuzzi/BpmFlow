@@ -13,6 +13,6 @@ drawActivityNamed: aString at: aPoint extent: extent color: color stroke: stroke
 	namesAndTags at: aString put: rect. "map the Activity name with the Activity id"
 
 	self addFigure: rect toGroup: self defaultNameForProcessGroup.
-	self addFigure: (self drawText: aString at: textPoint) toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: textPoint textSizePx: self defaultActivityNameSize) toGroup: self defaultNameForProcessGroup.
 
 	^rect

@@ -11,17 +11,17 @@ generateProcessMapFor: aBpmUser
 	(executedActivities select: [:each | each isTask and:[each isDone]]) do: [:eachArt | | node |
 		node := (xmlDocument allElementsNamed: 'Activity') detect: [:each | (each attributeAt: 'Name') = eachArt getDefinitionName].
 		executedNodes add: node.
-		self changeColorTo: node fillColor: (aBpmUser getProperty: 'task.fillColor.done') borderColor: (aBpmUser getProperty: 'task.borderColor.done')].
+		self changeColorTo: node fillColor: (aBpmUser getProperty: 'bizagi.task.fillColor.done') borderColor: (aBpmUser getProperty: 'bizagi.task.borderColor.done')].
 
 	(currentActivities select: [:each | each isTask]) do: [:eachArt | | node |
 		node := (xmlDocument allElementsNamed: 'Activity') detect: [:each | (each attributeAt: 'Name') = eachArt getDefinitionName].
 		executedNodes add: node.
-		self changeColorTo: node fillColor: (aBpmUser getProperty: 'task.fillColor.pending') borderColor: (aBpmUser getProperty: 'task.borderColor.pending')].
+		self changeColorTo: node fillColor: (aBpmUser getProperty: 'bizagi.task.fillColor.pending') borderColor: (aBpmUser getProperty: 'bizagi.task.borderColor.pending')].
 
 	(subprocesses select: [:each | each hasFinalized]) do: [:eachProc | | node |
 		node := (xmlDocument allElementsNamed: 'Activity') detect: [:each | (each attributeAt: 'Name') = eachProc getDefinitionName].
 		executedNodes add: node.
-		self changeColorTo: node fillColor: (aBpmUser getProperty: 'subprocess.fillColor.done') borderColor: (aBpmUser getProperty: 'subprocess.borderColor.done')].
+		self changeColorTo: node fillColor: (aBpmUser getProperty: 'bizagi.subprocess.fillColor.done') borderColor: (aBpmUser getProperty: 'bizagi.subprocess.borderColor.done')].
 
 	transitionsNodes := self changeColorOfTransitionsReaching: executedNodes in: xmlDocument for: aBpmUser.
 

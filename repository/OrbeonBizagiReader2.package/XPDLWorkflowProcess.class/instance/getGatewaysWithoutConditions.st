@@ -8,7 +8,7 @@ getGatewaysWithoutConditions
 
 	activitiesNames := Dictionary new.
 	(activities select: [:each |each isGatewayNode and: [each outConditionsAreMandatory]]) do: [:xpdlGateway | 
-			(xpdlGateway outTransitions select: [:eachTr | eachTr startCondition isNil or:[eachTr startCondition isEmpty]]) do: [:eachTr | | reportItem |		
+			(xpdlGateway outTransitions reject: [:eachTr | eachTr hasCondition]) do: [:eachTr | | reportItem |		
 				reportItem := XPDLItemImportReport new type: 'Error';
 					title: 'Gateway without condition';
 					description: 'Gateway [', xpdlGateway getName, '] in Process [', self getName, '] has no condition for out going transition [', eachTr getName, ']';

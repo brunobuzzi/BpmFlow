@@ -10,14 +10,14 @@ changeColorOfTransitionsReaching: executedNodes in: xmlDocument for: aBpmUser
 		trNode notNil
 		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') 
 						attributeAt: 'BorderColor' 
-						put: (aBpmUser getProperty: 'transition.borderColor.done').
+						put: (aBpmUser getProperty: 'bizagi.transition.borderColor.done').
 			transitionNodes add: trNode].
 
 		trNode := (xmlDocument allElementsNamed: 'Transition') detect: [:each | (each attributeAt: 'From') = nodeId] ifNone: [nil].
 		(trNode notNil and:[executedActivities anySatisfy: [:each | each getDefinitionName = nodeName]])
 		ifTrue: [(trNode findElementNamed: 'ConnectorGraphicsInfo') 
 						attributeAt: 'BorderColor' 
-						put: (aBpmUser getProperty: 'transition.borderColor.done').
+						put: (aBpmUser getProperty: 'bizagi.transition.borderColor.done').
 			transitionNodes add: trNode].
 	].
 

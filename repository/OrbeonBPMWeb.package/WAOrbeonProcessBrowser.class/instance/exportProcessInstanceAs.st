@@ -12,7 +12,7 @@ exportProcessInstanceAs
 	converter := BizagiSvgConverter convert: (selectedLateralItem process generateProcessMapFor: self session user) prettyPrinted.
 
 	stream nextPutAll: self xmlHeader, String lf;
-		nextPutAll: (converter generateSVGfor: selectedLateralItem).
+		nextPutAll: (converter generateSVGFor: self session user assignment: selectedLateralItem).
 
 	self requestContext respond: [:response | 
         response document: ((stream contents asByteArray seasideMimeDocument) 

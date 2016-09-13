@@ -9,6 +9,6 @@ drawEndNamed: aString at: aPoint
 	namesAndTags at: aString put: end. "map the Activity name with the Activity id"
 
 	self addFigure: end toGroup: self defaultNameForProcessGroup.
-	self addFigure: (self drawText: aString at: end position) toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: end position textSizePx: self defaultEventNameSize) toGroup: self defaultNameForProcessGroup.
 
 	^end

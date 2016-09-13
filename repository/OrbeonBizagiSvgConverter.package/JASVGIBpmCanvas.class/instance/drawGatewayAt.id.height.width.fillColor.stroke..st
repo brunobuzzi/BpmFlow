@@ -14,6 +14,6 @@ drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor st
 	self draw: figure.
 
 	self addFigure: figure toGroup: self defaultNameForProcessGroup.
-	self addFigure: (self drawText: id at: textPoint) toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: id at: textPoint textSizePx: self defaultGatewayNameSize) toGroup: self defaultNameForProcessGroup.
 
 	^figure

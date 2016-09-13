@@ -8,5 +8,5 @@ changeColorOfGatewaysOf: transitionsNodes in: xmlDocument for: aBpmUser
 		trNode notNil
 		ifTrue: [(trNode findElementNamed: 'NodeGraphicsInfo') 
 						attributeAt: 'FillColor' 
-						put: (aBpmUser getProperty: 'gateway.fillColor.done').].
+						put: (aBpmUser getProperty: 'bizagi.gateway.fillColor.done').].
 	]

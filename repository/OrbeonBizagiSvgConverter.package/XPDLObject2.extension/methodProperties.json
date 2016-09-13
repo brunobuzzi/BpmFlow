@@ -3,5 +3,6 @@
 		 },
 	"instance" : {
 		"drawOn:" : "BrunoBB 09/10/2016 08:23",
-		"getColor" : "BrunoBB 09/10/2016 14:25",
-		"getWidthPx" : "BrunoBB 09/11/2016 07:19" } }
+		"drawOn:color:" : "BrunoBB 09/13/2016 09:13",
+		"drawOn:context:color:stroke:" : "BrunoBB 09/13/2016 10:06",
+		"getColor" : "BrunoBB 09/10/2016 14:25" } }
