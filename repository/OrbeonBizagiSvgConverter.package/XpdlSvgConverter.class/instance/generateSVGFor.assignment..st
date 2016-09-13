@@ -6,7 +6,7 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 	svgCanvas := JASVGIBpmCanvas newWidth: '1000px' height: '1000px'.
 	svgCanvas addMarker: (JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
-	svgCanvas drawText: (self getSVGTitleFor: aBpmTaskAssignment) at: 20@20 textSizePx: '14px'.
+	svgCanvas drawText: (self getSVGTitleForAssignment: aBpmTaskAssignment) at: 20@20 textSizePx: '14px'.
 
 	xpdlReader getAllWorkflows do: [:eachWorkflow | 
 		eachWorkflow parentLanes do: [:eachLaneNode | eachLaneNode drawOn: svgCanvas].

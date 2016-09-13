@@ -1,5 +1,5 @@
 other
-getSVGTitleFor: aBpmTaskAssignment
+getSVGTitleForAssignment: aBpmTaskAssignment
 
 	^'#', aBpmTaskAssignment processId printString, 
 		' | Process Name: ', aBpmTaskAssignment processName,
