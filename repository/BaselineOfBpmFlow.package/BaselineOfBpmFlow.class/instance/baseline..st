@@ -25,6 +25,8 @@ baseline: spec
 
 		spec baseline: 'AbstractApplicationObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository' ].
+		spec baseline: 'JASVGI' with: [
+			spec repository: 'github://brunobuzzi/JASVGI:master/repository'].
 		spec baseline: 'OrbeonPersistenceLayer' with: [
 			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository' ].
 		spec baseline: 'Seaside3' with: [
@@ -36,15 +38,16 @@ baseline: spec
 		spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
 		spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
-		spec package: 'OrbeonBPMWeb' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime')].
+		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('JASVGI')].
+		spec package: 'OrbeonBPMWeb' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter')].
+		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter')].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
 		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
 		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
 
 		spec
-			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl'); 
+			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter'); 
 			group: 'web-backoffice' with: #('OrbeonBPMWebBackoffice');
 			group: 'web-frontoffice' with: #('OrbeonBPMWeb');
 			group: 'rest' with: #('OrbeonPersistenceApiProcess');
