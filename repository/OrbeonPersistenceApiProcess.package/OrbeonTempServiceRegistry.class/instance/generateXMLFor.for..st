@@ -11,8 +11,7 @@ generateXMLFor: anObject for: anOrbeonFormUser
 		result := result, '<', key, '>', conValue,'</', key, '>',  String lf. ].
 
 	anObject previousFieldValues keysAndValuesDo: [:key :value | | conValue |
-		conValue := value ifNil: ['nil'] ifNotNil: [value].
-		"(conValue  class == String) ifFalse: [conValue := conValue printMySqlString]."
+		conValue := ((value ifNil: [''] ifNotNil: [value]) isKindOf: String) ifTrue: [] ifFalse: [conValue printString].
 		result := result, '<', key, '>', conValue,'</', key, '>',  String lf. ].	
 
 	"results add: (result, '</result>', anObject asOop printString)."

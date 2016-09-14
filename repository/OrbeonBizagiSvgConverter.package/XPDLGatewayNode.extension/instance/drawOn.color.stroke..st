@@ -1,5 +1,5 @@
 *orbeonBizagiSvgConverter
-drawOn: aJasvgiBpmCanvas context: aBpmProcessInstance color: color stroke: stroke 
+drawOn: aJasvgiBpmCanvas color: color stroke: stroke 
 
 	^aJasvgiBpmCanvas
 		drawGatewayType: type

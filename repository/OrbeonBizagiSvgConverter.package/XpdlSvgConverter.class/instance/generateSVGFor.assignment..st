@@ -13,7 +13,7 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 		eachWorkflow activities do: [:eachActivityNode | | color stroke |
 			color := aBpmTaskAssignment process getColorForActivityNamed: eachActivityNode getName user: aBpmUser.
 			stroke := aBpmTaskAssignment process getStrokeForActivityNamed: eachActivityNode getName user: aBpmUser.
-			eachActivityNode drawOn: svgCanvas context: aBpmTaskAssignment process color: color stroke: stroke].
+			eachActivityNode drawOn: svgCanvas color: color stroke: stroke].
 		eachWorkflow transitions do: [:eachTransition | | color | 
 			color := aBpmTaskAssignment process getColorForTransition: eachTransition user: aBpmUser.
 			eachTransition drawOn: svgCanvas color: color].
