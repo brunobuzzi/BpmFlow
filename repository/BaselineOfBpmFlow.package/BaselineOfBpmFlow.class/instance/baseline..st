@@ -12,7 +12,7 @@ baseline: spec
 		spec project: 'XPath' with: [
 			spec className: 'ConfigurationOfXPath';
 				loads: #('default');
-				versionString: #'stable';
+				versionString: '1.6.8';
 				file: 'ConfigurationOfXPath';
 				repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XPath/main'].
 		spec project: 'XMLWriter' with: [
