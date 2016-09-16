@@ -38,7 +38,7 @@ baseline: spec
 		spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
 		spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
-		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('JASVGI')].
+		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
 		spec package: 'OrbeonBPMWeb' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter')].
 		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter')].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
