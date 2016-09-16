@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"absoluteRectangleIncludesActivity:" : "BrunoBB 09/16/2016 10:48",
 		"addAllXpdlObject:" : "BrunoBB 07/06/2016 10:49",
+		"getAbsoluteRectangle" : "BrunoBB 09/16/2016 10:45",
 		"getAnyObjectNamed:ifNone:" : "BrunoBB 07/06/2016 10:49",
 		"getGatewayNodes" : "BrunoBB 07/06/2016 10:49",
+		"getRelativeRectangle" : "BrunoBB 09/16/2016 10:44",
 		"getScriptNodes" : "BrunoBB 07/06/2016 10:49",
 		"getSubProcessNodes" : "BrunoBB 07/06/2016 10:49",
 		"getTaskNodes" : "BrunoBB 07/06/2016 10:49",
@@ -17,8 +20,7 @@
 		"initialize" : "BrunoBB 07/06/2016 10:49",
 		"pool" : "BrunoBB 07/06/2016 10:49",
 		"pool:" : "BrunoBB 07/06/2016 10:49",
-		"rectangle" : "BrunoBB 07/08/2016 11:49",
-		"rectangleIncludesActivity:" : "BrunoBB 07/08/2016 11:29",
+		"rectangleIncludesActivity:" : "BrunoBB 09/16/2016 10:48",
 		"workflow" : "BrunoBB 07/06/2016 11:18",
 		"xpdlObjects" : "BrunoBB 07/06/2016 10:49",
 		"xpdlObjects:" : "BrunoBB 07/06/2016 10:49" } }

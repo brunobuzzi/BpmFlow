@@ -1,6 +1,6 @@
-graphics
-rectangle
-	"Answer a Rectable that graphically represent the receiver"
+rectangle area
+getRelativeRectangle
+	"Answer a Rectangle that graphically represent the receiver"
 
 	^Rectangle 
 		origin: (self getXcoordinate @ self getYcoordinate) 

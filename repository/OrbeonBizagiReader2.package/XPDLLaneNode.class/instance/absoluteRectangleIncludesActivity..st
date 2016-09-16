@@ -1,5 +1,5 @@
 rectangle area
-rectangleIncludesActivity: aXPDLObject
+absoluteRectangleIncludesActivity: aXPDLObject
 	"Answer whether or not the xpdl object <aXPDLObject> is graphically contained inside the receiver"
 
-	^self getRelativeRectangle containsPoint: aXPDLObject originPoint
+	^self getAbsoluteRectangle containsPoint: aXPDLObject originPoint

@@ -1,5 +1,5 @@
 rectangle area
-rectangle
+getAbsoluteRectangle
 	"Answer a Rectangle that graphically represent the receiver"
 	| xCoordinate yCoordinate |
 
