@@ -25,7 +25,7 @@ baseline: spec
 
 		spec baseline: 'AbstractApplicationObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository' ].
-		spec baseline: 'JASVGI' with: [
+		spec baseline: 'Jasvgi' with: [
 			spec repository: 'github://brunobuzzi/JASVGI:master/repository'].
 		spec baseline: 'OrbeonPersistenceLayer' with: [
 			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository' ].
