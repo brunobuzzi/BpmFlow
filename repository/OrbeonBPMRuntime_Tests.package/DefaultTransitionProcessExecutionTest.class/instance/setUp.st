@@ -1,6 +1,7 @@
 other
 setUp
 
+	super setUp.
 	users := Dictionary new.
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'default-transition-process' in: 'ue'. "answer a collection with all versions"

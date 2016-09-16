@@ -1,6 +1,7 @@
 other
 setUp
 
+	super setUp.
 	users := Dictionary new.
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'Simple Registration' in: 'st'. "answer a collection with all versions"
