@@ -4,6 +4,7 @@ initializeNavigation
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
+		set24Icon: #process24Png;
 		addItem: (SewafCommandItem label: 'List Processes Definitions' command: #openDefinitionsManager);
 		addItem: (SewafCommandItem label: 'Define New Process' command: #openBizagiManager);
 		addItem: (SewafCommandItem label: 'Monitor Processes' command: #openProcessRadar);
@@ -11,16 +12,19 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Process Categories' command: #openProcessCategoryManager);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #forms32Png)
+		set24Icon: #forms24Png;
 		addItem: (SewafCommandItem label: 'Manage Applications' command: #openApplicationManager);
 		addItem: (SewafCommandItem label: 'Manage Orbeon Forms' command: #openFormManager);
 		yourself.
 	subMenu3 := (SewafSubMenuItem label: 'Users & Roles' icon: #usersettings32Png)
+		set24Icon: #usersettings24Png;
 		addItem: (SewafCommandItem label: 'Manage Users' command: #openUsersManager);
 		addItem: (SewafCommandItem label: 'Manage Roles' command: #openRolesManager);
 		addItem: (SewafCommandItem label: 'Import' command: #importUsersAndRoles);
 		addItem: (SewafCommandItem label: 'Export' command: #exportUsersAndRoles);
 		yourself.
-	subMenu4 := (SewafSubMenuItem label: 'Configuration' icon: #serversetting32Png)
+	subMenu4 := (SewafSubMenuItem label: 'Configuration' icon: #homeserver32Png)
+		set24Icon: #homeserver24Png;
 		addItem: (SewafCommandItem label: 'User Preferences' command: #showUserPreferences);
 		addItem: (SewafCommandItem label: 'Server Setup' command: #openServerSetup);
 		addItem: (SewafCommandItem label: 'Login Mode' command: #openLoginMode);
