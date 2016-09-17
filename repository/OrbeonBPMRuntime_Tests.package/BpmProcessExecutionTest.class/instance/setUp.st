@@ -3,6 +3,6 @@ setUp
 
 	super setUp.
 
-	self getApplicationManagerClass 
+	self getOrbeonApplicationClass 
 		getAnyApplicationNamed: 'ue' 
-		ifNone: [(self getApplicationManagerClass newNamed: 'ue') addToCache].
+		ifNone: [(self getOrbeonApplicationClass newNamed: 'ue') addToCache].
