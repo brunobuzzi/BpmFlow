@@ -1,7 +1,7 @@
 other
 setUp
 
-	self getOrbeonApplicationClass 
+	self getApplicationManagerClass 
 		getAnyApplicationNamed: 'st' 
 		ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
 
