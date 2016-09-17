@@ -1,7 +1,10 @@
 other
 setUp
 
-	super setUp.
+	self getOrbeonApplicationClass 
+		getAnyApplicationNamed: 'st' 
+		ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
+
 	users := Dictionary new.
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'Simple Registration' in: 'st'. "answer a collection with all versions"
