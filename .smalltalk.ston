@@ -7,10 +7,5 @@ SmalltalkCISpec {
       #load : [ 'default' ],
       #platforms : [ #gemstone ]
     }
-  ],
-  #testing : {	
-     #include : {
-  	    #packages : [ 'OrbeonBizagiReader2_Tests', 'OrbeonBPMRuntime_Tests', 'OrbeonBPMXpdl_Tests' ]
-    }
-  }
+  ]
 }
