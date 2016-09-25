@@ -2,7 +2,8 @@
 	"class" : {
 		"defaultNameForProcessGroup" : "BrunoBB 09/11/2016 12:22",
 		"example1" : "BrunoBB 09/10/2016 06:38",
-		"example2" : "BrunoBB 09/10/2016 07:05" },
+		"example2" : "BrunoBB 09/10/2016 07:05",
+		"example3" : "BrunoBB 09/24/2016 17:07" },
 	"instance" : {
 		"connect:to:" : "BrunoBB 09/11/2016 07:16",
 		"connect:to:color:" : "BrunoBB 09/11/2016 07:16",
