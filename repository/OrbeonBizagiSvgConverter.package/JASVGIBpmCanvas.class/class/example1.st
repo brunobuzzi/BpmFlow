@@ -4,7 +4,7 @@ example1
 
 	jasv := JASVGIBpmCanvas newWidth: '400px' height: '400px'.
 	jasv addMarker: 
-		(JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
+		(self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	jasv drawStartNamed: 'start' at: 30@30.
 	jasv drawActivityNamed: 'Task 1' at: 200@30.

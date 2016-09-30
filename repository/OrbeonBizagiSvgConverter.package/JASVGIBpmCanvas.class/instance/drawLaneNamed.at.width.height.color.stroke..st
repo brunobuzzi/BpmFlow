@@ -3,8 +3,8 @@ drawLaneNamed: aString at: aPoint width: width height: height color: color strok
 	| rect roleRect laneName laneNameCenter |
 
 	laneNameCenter := ((aPoint x - 20) @ (aPoint y + (height // 2) + 35)).
-	rect := self drawRectangleAt: aPoint height: height width: width fillColor: color stroke: stroke.
-	roleRect := self drawRectangleAt: ((aPoint x - 50) @ aPoint y) height: height width: 50 fillColor: color stroke: stroke.
+	rect := self drawRectangleAt: aPoint width: width height: height stroke: stroke fillColor: color.
+	roleRect := self drawRectangleAt: ((aPoint x - 50) @ aPoint y) width: 50 height: height stroke: stroke fillColor: color.
 	laneName := self drawText: aString at: laneNameCenter textSizePx: '14px'.
 
 	laneName transform: 'rotate(-90 ', laneNameCenter x printString, ' ', laneNameCenter y printString, ')'.

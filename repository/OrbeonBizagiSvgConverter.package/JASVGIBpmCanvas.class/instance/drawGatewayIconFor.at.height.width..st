@@ -5,7 +5,7 @@ drawGatewayIconFor: type at: aPoint height: height width: width
 	center := (aPoint x + (width // 2)) @ (aPoint y + (height // 2)) + 5.
 
 	(type = 'Inclusive') ifTrue: [
-		^self addFigure: (self drawCircleAt: center r: 10 fillColor: 'none' stroke: 'black' strokeWidth: '3px') toGroup: self defaultNameForProcessGroup].
+		^self addFigure: (self drawCircleAt: center r: 10 strokeWidth: '3px' stroke: 'black' fillColor: 'none') toGroup: self defaultNameForProcessGroup].
 
 	(type = 'Parallel')
 	ifTrue: [| lineH lineV |

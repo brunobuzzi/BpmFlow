@@ -2,7 +2,7 @@ events
 drawStartNamed: aString at: aPoint
 	| start textPoint |
 	"aPoint + 15 >> to fix a mismatch with Bizagi coordinates"
-	start := self drawCircleAt: aPoint + 15 r: 15 fillColor: self defaultStartEventFillColor stroke: self defultStartEventStroke.
+	start := self drawCircleAt: aPoint + 15 r: 15 stroke: self defultStartEventStroke fillColor: self defaultStartEventFillColor .
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 

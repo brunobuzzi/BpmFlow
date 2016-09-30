@@ -4,7 +4,7 @@ generateSVGFor: aBpmDefinition
 
 	xpdlReader := XPDLReader2 for: 'convert' withString: xpdlString.
 	svgCanvas := JASVGIBpmCanvas newWidth: '1000px' height: '1000px'.
-	svgCanvas addMarker: (JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
+	svgCanvas addMarker: (svgCanvas markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	svgCanvas drawText: (self getSVGTitleForDefinition: aBpmDefinition) at: 20@20 textSizePx: '14px'.
 
