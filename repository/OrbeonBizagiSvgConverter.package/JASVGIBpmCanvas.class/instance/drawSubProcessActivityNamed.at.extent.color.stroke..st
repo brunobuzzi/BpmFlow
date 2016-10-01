@@ -8,7 +8,7 @@ drawSubProcessActivityNamed: aString at: aPoint extent: extent color: color stro
 
 	lineH := self drawLineFrom: ((center x - 6) @ center y) to: ((center x + 6) @ center y) widthPx: '3px' stroke: 'black' fillColor: 'black'.
 	lineV := self drawLineFrom: (center x @ (center y - 6)) to: (center x @ (center y + 6)) widthPx: '3px' stroke: 'black' fillColor: 'black'.
-	smallRect := self drawRoundRectangleAt: center - 8 height: 16 width: 16 fillColor: 'none' stroke: 'black'.
+	smallRect := self drawRoundRectangleAt: center - 8 width: 16 height: 16 stroke: 'black' fillColor: 'none'.
 
 	self addFigure: smallRect toGroup: self defaultNameForProcessGroup.
 	self addFigure: lineH toGroup: self defaultNameForProcessGroup.

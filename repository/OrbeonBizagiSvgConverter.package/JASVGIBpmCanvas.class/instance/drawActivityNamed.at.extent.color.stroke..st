@@ -3,10 +3,10 @@ drawActivityNamed: aString at: aPoint extent: extent color: color stroke: stroke
 	| rect textPoint |
 
 	rect := self drawRoundRectangleAt: aPoint 
-						height: extent y 
 						width: extent x 
-						fillColor: color
-						stroke: stroke.
+						height: extent y 
+						stroke: stroke
+						fillColor: color.
 
 	textPoint := (aPoint x + 5) @ (aPoint y + 32).
 
