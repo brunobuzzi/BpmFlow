@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/01/2016 10:24",
+		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/01/2016 10:24",
+		"isAllVersionSelected" : "BrunoBB 11/01/2016 10:18",
+		"renderChartTypeComboOn:" : "BrunoBB 11/01/2016 09:47",
+		"renderDistributionComboOn:" : "BrunoBB 11/01/2016 10:20",
+		"renderProcessDefinitionComboOn:" : "BrunoBB 11/01/2016 09:59",
+		"renderProcessVersionsComboOn:" : "BrunoBB 11/01/2016 09:56",
+		"renderSearchAreaOn:" : "BrunoBB 11/01/2016 09:49",
+		"showChart" : "BrunoBB 11/01/2016 10:24" } }

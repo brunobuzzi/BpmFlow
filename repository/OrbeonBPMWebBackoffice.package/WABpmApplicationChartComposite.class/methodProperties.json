@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/01/2016 08:14",
+		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/01/2016 08:13",
+		"renderChartTypeComboOn:" : "BrunoBB 11/01/2016 05:19",
+		"renderDistributionComboOn:" : "BrunoBB 11/01/2016 05:22",
+		"renderSearchAreaOn:" : "BrunoBB 11/01/2016 05:25",
+		"showChart" : "BrunoBB 11/01/2016 08:00" } }

@@ -1,6 +1,6 @@
 other
 initializeNavigation
-	| subMenu1 subMenu2 subMenu3 subMenu4 |
+	| subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
@@ -23,7 +23,15 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Import' command: #importUsersAndRoles);
 		addItem: (SewafCommandItem label: 'Export' command: #exportUsersAndRoles);
 		yourself.
-	subMenu4 := (SewafSubMenuItem label: 'Configuration' icon: #homeserver32Png)
+	subMenu4 := (SewafSubMenuItem label: 'Charts' icon: #chart32Png)
+		set24Icon: #chart24Png;
+		addItem: (SewafCommandItem label: 'Global Charts' command: #openGlobalCharts);
+		addItem: (SewafCommandItem label: 'Applications Charts' command: #openBpmApplicationsCharts);
+		addItem: (SewafCommandItem label: 'Processes Charts' command: #openBpmProcessCharts);
+		addItem: (SewafCommandItem label: 'Roles Charts' command: #yourself);
+		addItem: (SewafCommandItem label: 'Users Charts' command: #yourself);
+		yourself.
+	subMenu5 := (SewafSubMenuItem label: 'Configuration' icon: #homeserver32Png)
 		set24Icon: #homeserver24Png;
 		addItem: (SewafCommandItem label: 'User Preferences' command: #showUserPreferences);
 		addItem: (SewafCommandItem label: 'Server Setup' command: #openServerSetup);
@@ -35,4 +43,5 @@ initializeNavigation
 	navigation addItem: subMenu2;
 		addItem: subMenu1;
 		addItem: subMenu3;
-		addItem: subMenu4.
+		addItem: subMenu4;
+		addItem: subMenu5.
