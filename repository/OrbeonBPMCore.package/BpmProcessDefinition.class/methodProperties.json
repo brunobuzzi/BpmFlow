@@ -11,6 +11,7 @@
 		"getAssignmentsIn:processName:formName:fieldName:withValue:" : "BrunoBB 07/04/2016 12:22",
 		"getBpmProcessDefinitionForForm:in:" : "BrunoBB 03/31/2016 16:10",
 		"getProcessInstanceDistributionFor:" : "BrunoBB 11/01/2016 07:56",
+		"getProcessInstanceDistributionFor:in:" : "BrunoBB 11/02/2016 08:32",
 		"getProcessInstanceWithId:" : "BrunoBB 06/03/2016 15:25",
 		"getProcessInstanceWithId:onApplications:" : "BrunoBB 06/03/2016 15:31",
 		"hasAnyProcessApplicationNamed:" : "BrunoBB 02/29/2016 09:25",
@@ -23,6 +24,7 @@
 		"reportProcessDefinitionsQuantityDistribution" : "BrunoBB 11/01/2016 04:35",
 		"reportProcessInstancesQuantityDistribution" : "BrunoBB 11/01/2016 04:34",
 		"reportProcessInstancesQuantityDistributionFor:" : "BrunoBB 11/01/2016 07:59",
+		"reportProcessInstancesQuantityDistributionFor:in:" : "BrunoBB 11/02/2016 08:28",
 		"resetAll" : "BrunoBB 08/06/2016 09:21",
 		"unregisterAnonymousMappingFor:in:" : "BrunoBB 03/30/2016 16:08" },
 	"instance" : {

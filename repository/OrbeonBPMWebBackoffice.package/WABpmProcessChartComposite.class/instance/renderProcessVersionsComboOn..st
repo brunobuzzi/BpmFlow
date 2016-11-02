@@ -6,4 +6,6 @@ renderProcessVersionsComboOn: html
 
 	versions := procVersions collect: [:each | each version printString].
 
-	self renderGenericActiveComboOn: html withList: (#('All') , versions) forVariable: 'version' label: 'Version'
+	self renderGenericActiveComboOn: html withList: (#('All') , versions) forVariable: 'version' label: 'Version'.
+
+	(self hasSearchValueAt: 'version') ifFalse: [self addSearchValue: 'All' named: 'version'].

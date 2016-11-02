@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/01/2016 10:24",
-		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/01/2016 10:24",
+		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/02/2016 08:30",
+		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/02/2016 08:32",
 		"isAllVersionSelected" : "BrunoBB 11/01/2016 10:18",
 		"renderChartTypeComboOn:" : "BrunoBB 11/01/2016 09:47",
-		"renderDistributionComboOn:" : "BrunoBB 11/01/2016 10:20",
+		"renderDistributionComboOn:" : "BrunoBB 11/02/2016 06:57",
 		"renderProcessDefinitionComboOn:" : "BrunoBB 11/01/2016 09:59",
-		"renderProcessVersionsComboOn:" : "BrunoBB 11/01/2016 09:56",
+		"renderProcessVersionsComboOn:" : "BrunoBB 11/02/2016 07:03",
 		"renderSearchAreaOn:" : "BrunoBB 11/01/2016 09:49",
 		"showChart" : "BrunoBB 11/01/2016 10:24" } }

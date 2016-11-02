@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processName",
+		"isAllVersions" ],
+	"name" : "BpmProcessDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "AppLocalDistributionReport",
+	"type" : "normal" }
