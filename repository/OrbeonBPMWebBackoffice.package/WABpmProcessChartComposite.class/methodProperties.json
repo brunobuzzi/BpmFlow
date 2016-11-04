@@ -2,12 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/02/2016 08:30",
-		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/02/2016 08:32",
+		"drawCreationDayDistributionChart" : "BrunoBB 11/04/2016 08:23",
+		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/04/2016 04:49",
+		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/04/2016 04:49",
+		"getEndDate" : "BrunoBB 11/04/2016 08:17",
+		"getStartDate" : "BrunoBB 11/04/2016 08:17",
 		"isAllVersionSelected" : "BrunoBB 11/01/2016 10:18",
-		"renderChartTypeComboOn:" : "BrunoBB 11/01/2016 09:47",
-		"renderDistributionComboOn:" : "BrunoBB 11/02/2016 06:57",
-		"renderProcessDefinitionComboOn:" : "BrunoBB 11/01/2016 09:59",
-		"renderProcessVersionsComboOn:" : "BrunoBB 11/02/2016 07:03",
-		"renderSearchAreaOn:" : "BrunoBB 11/01/2016 09:49",
-		"showChart" : "BrunoBB 11/01/2016 10:24" } }
+		"queryBlock" : "BrunoBB 11/04/2016 07:57",
+		"renderChartTypeComboOn:" : "BrunoBB 11/04/2016 05:01",
+		"renderDistributionComboOn:" : "BrunoBB 11/04/2016 04:45",
+		"renderProcessDefinitionComboOn:" : "BrunoBB 11/04/2016 04:44",
+		"renderProcessVersionsComboOn:" : "BrunoBB 11/04/2016 04:44",
+		"renderQueryConditionOn:" : "BrunoBB 11/04/2016 08:16",
+		"renderSearchAreaOn:" : "BrunoBB 11/04/2016 08:03",
+		"renderStartEndDatesOn:" : "BrunoBB 11/04/2016 08:11",
+		"showChart" : "BrunoBB 11/04/2016 05:08" } }

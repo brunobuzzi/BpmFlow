@@ -1,4 +1,7 @@
 other
 renderDistributionComboOn: html withDistribution: distributionNames
+	| distributionTypes |
 
-	^self renderGenericComboOn: html withList: distributionNames forVariable: 'distribution' label: 'Distribution'
+	distributionTypes := distributionNames collect: [:each | each translateFor: self session user]. 
+
+	^self renderGenericComboOn: html withList: distributionTypes forVariable: 'distribution' label: 'Distribution'

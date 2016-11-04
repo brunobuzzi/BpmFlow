@@ -1,4 +1,7 @@
 other
 renderChartTypeComboOn: html
+	| chartTypes |
 
-	^self renderChartTypeComboOn: html withCharts: #('Bar Chart' 'Donut Chart')
+	chartTypes := self isCreationDayDistribution ifTrue: [#('Day Calendar')] ifFalse: [#('Bar Chart' 'Donut Chart')].
+	
+	^self renderChartTypeComboOn: html withCharts: chartTypes

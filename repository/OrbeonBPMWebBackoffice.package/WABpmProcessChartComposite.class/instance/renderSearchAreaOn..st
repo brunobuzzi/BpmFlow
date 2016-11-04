@@ -19,6 +19,10 @@ renderSearchAreaOn: html
 					self renderDistributionComboOn: html.
 					self renderChartTypeComboOn: html.
 					self renderShowChartButtonOn: html.
+					self isCreationDayDistribution ifTrue: [
+						self renderStartEndDatesOn: html.
+						self renderQueryConditionOn: html.
+						].
 				].
 			].
 		].

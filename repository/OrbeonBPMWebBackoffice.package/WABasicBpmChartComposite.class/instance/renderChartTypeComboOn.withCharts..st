@@ -1,4 +1,7 @@
 other
 renderChartTypeComboOn: html withCharts: chartsNames
+	| chartTypes |
 
-	^self renderGenericComboOn: html withList: chartsNames forVariable: 'chart-type' label: 'Chart Type'
+	chartTypes := chartsNames collect: [:each | each translateFor: self session user]. 
+
+	^self renderGenericComboOn: html withList: chartTypes forVariable: 'chart-type' label: 'Chart Type'

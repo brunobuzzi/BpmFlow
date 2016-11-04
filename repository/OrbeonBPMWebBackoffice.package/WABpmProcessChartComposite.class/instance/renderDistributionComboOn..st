@@ -2,6 +2,7 @@ other
 renderDistributionComboOn: html
 	| distributionNames |
 
-	distributionNames := self isAllVersionSelected ifTrue: [#('Creation Day' 'Field Value' 'Process Instances')] ifFalse: [#('Creation Day' 'Field Value')].
+	distributionNames := (self isAllVersionSelected ifTrue: [#('Creation Day' 'Field Value' 'Process Instances')] ifFalse: [#('Creation Day' 'Field Value')])
+									collect: [:each | each translateFor: self session user].
 
-	^self renderDistributionComboOn: html withDistribution: distributionNames
+	^self renderActiveDistributionComboOn: html withDistribution: distributionNames
