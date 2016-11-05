@@ -3,9 +3,11 @@
 		 },
 	"instance" : {
 		"drawCreationDayDistributionChart" : "BrunoBB 11/04/2016 08:23",
+		"drawFieldValueDistribution" : "BrunoBB 11/05/2016 13:28",
 		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/04/2016 04:49",
 		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/04/2016 04:49",
 		"getEndDate" : "BrunoBB 11/04/2016 08:17",
+		"getFieldName" : "BrunoBB 11/05/2016 13:26",
 		"getFormName" : "BrunoBB 11/05/2016 09:51",
 		"getProcessFieldList" : "BrunoBB 11/05/2016 09:53",
 		"getProcessFormsList" : "BrunoBB 11/05/2016 09:07",
@@ -22,4 +24,4 @@
 		"renderProcessVersionsComboOn:" : "BrunoBB 11/04/2016 04:44",
 		"renderQueryConditionOn:" : "BrunoBB 11/05/2016 09:59",
 		"renderSearchAreaOn:" : "BrunoBB 11/05/2016 11:51",
-		"showChart" : "BrunoBB 11/04/2016 05:08" } }
+		"showChart" : "BrunoBB 11/05/2016 13:22" } }
