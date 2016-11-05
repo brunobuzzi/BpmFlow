@@ -28,6 +28,7 @@
 		"getNumberOfSubProcessTasks" : "BrunoBB 10/29/2015 14:03",
 		"getNumberOfTasks" : "BrunoBB 10/29/2015 14:01",
 		"getNumberOfTransitions" : "BrunoBB 10/29/2015 14:01",
+		"getOrbeonTasks" : "BrunoBB 11/04/2016 10:42",
 		"getOrderedTasks" : "BrunoBB 12/16/2015 13:09",
 		"getOrderedTasksFrom:as:" : "BrunoBB 12/16/2015 13:21",
 		"getScriptNamed:ifNone:" : "BrunoBB 06/22/2016 11:45",
