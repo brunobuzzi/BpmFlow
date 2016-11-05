@@ -2,7 +2,6 @@ render
 renderProcessFormsComboOn: html
 	| forms |
 
-html break.
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'process-forms';

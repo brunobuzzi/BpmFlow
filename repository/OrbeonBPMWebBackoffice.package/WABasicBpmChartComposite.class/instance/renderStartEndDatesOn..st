@@ -1,8 +1,6 @@
 render
 renderStartEndDatesOn: html
 
-	self isFieldValueDistribution ifFalse: [html break].
-
 	html div class: 'top-search-div'; with: [
 		html label attributeAt: 'for' put: 'start'; with: ('Start' translateFor: self session user).
 		html textInput 

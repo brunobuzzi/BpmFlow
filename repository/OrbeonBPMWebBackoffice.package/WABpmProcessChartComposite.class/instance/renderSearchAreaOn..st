@@ -24,7 +24,7 @@ renderSearchAreaOn: html
 						self isFieldValueDistribution ifTrue: [self renderProcessFormsComboOn: html]. 
 						self renderStartEndDatesOn: html.
 						self renderQueryConditionOn: html.
-						].
+					].
 				].
 			].
 		].
