@@ -1,4 +1,4 @@
-other
+render
 renderDistributionComboOn: html
 	| distributionNames |
 

@@ -1,4 +1,4 @@
-other
+draw svg
 drawProcessInstanceDistributionAndDonutChart
 	| report text |
 

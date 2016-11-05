@@ -1,4 +1,4 @@
-other
+draw svg
 showChart
 
 	(self isProcessInstanceDistributionAndBarChart and: [self isAllVersionSelected]) ifTrue: [^self drawProcessInstanceDistributionAndBarChart].

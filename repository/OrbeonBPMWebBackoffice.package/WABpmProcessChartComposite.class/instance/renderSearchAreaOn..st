@@ -1,4 +1,4 @@
-other
+render
 renderSearchAreaOn: html
 
 	self renderShowHideWindowIconOn: html. "show/hide search area"
@@ -19,7 +19,9 @@ renderSearchAreaOn: html
 					self renderDistributionComboOn: html.
 					self renderChartTypeComboOn: html.
 					self renderShowChartButtonOn: html.
-					self isCreationDayDistribution ifTrue: [
+					(self isCreationDayDistribution or: [self isFieldValueDistribution])
+					ifTrue: [
+						self isFieldValueDistribution ifTrue: [self renderProcessFormsComboOn: html]. 
 						self renderStartEndDatesOn: html.
 						self renderQueryConditionOn: html.
 						].

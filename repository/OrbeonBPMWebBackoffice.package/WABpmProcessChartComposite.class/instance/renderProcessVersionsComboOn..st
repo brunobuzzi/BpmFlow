@@ -1,4 +1,4 @@
-other
+render
 renderProcessVersionsComboOn: html
 	| procVersions versions |
 

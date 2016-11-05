@@ -1,4 +1,4 @@
-other
+draw svg
 drawCreationDayDistributionChart
 	| report text version |
 

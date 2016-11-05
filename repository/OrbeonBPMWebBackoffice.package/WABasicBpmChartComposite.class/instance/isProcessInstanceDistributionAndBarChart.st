@@ -1,5 +1,5 @@
 other
 isProcessInstanceDistributionAndBarChart
 
-	^((self searchValueAt: 'distribution' ifAbsent: [nil]) = 'Process Instances') 
+	^self isProcessInstanceDistribution
 		and:[(self searchValueAt: 'chart-type' ifAbsent: [nil]) = 'Bar Chart']

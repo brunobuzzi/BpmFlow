@@ -1,4 +1,4 @@
-other
+render
 renderProcessDefinitionComboOn: html
 	| definitionNames |
 

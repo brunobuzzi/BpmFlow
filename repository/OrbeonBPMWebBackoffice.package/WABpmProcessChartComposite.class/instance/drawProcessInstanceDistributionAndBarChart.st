@@ -1,4 +1,4 @@
-other
+draw svg
 drawProcessInstanceDistributionAndBarChart
 	| report text |
 

@@ -1,4 +1,4 @@
-other
+query variables
 queryBlock
 
 	^(self searchValueAt: 'process-condition') 
