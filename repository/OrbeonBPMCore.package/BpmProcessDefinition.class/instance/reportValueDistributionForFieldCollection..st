@@ -7,6 +7,6 @@ reportValueDistributionForFieldCollection: fieldInstancesCollection
 
 	secondsToRun := Time secondsElapsedTime: [distribution := self getValueDistributionForFieldCollection: fieldInstancesCollection].
 	
-	^(BpmProcessDistributionReport processName: processName applicationName: self applicationName distribution: distribution)
+	^(BpmFieldDistributionReport processName: processName applicationName: self applicationName distribution: distribution)
 			sumSecondsToConstruct: secondsToRun;
 			yourself

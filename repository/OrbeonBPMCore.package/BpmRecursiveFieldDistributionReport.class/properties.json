@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subDistributionMethods",
+		"subDistributions" ],
+	"name" : "BpmRecursiveFieldDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "BpmFieldDistributionReport",
+	"type" : "normal" }
