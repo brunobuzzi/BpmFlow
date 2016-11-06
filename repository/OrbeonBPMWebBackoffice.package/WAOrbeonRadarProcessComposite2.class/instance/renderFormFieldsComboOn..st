@@ -1,6 +1,5 @@
 search area
 renderFormFieldsComboOn: html
-	| |
 
 	html div class: 'top-search-div'; with: [
 		html label 
@@ -16,4 +15,4 @@ renderFormFieldsComboOn: html
 
 	self hasFormField
 	ifTrue: [self renderFilterValuesAndButtonOn: html]
-	ifFalse: [html div id: 'top-search-filters-two'; with: [self renderSubmitButtonOn: html]]
+	ifFalse: [html div id: 'top-search-filters-one'; with: [self renderSubmitButtonOn: html class: 'margin-top-20px']]

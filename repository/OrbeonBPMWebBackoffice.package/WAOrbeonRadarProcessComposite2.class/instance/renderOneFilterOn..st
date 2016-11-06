@@ -13,6 +13,6 @@ renderOneFilterOn: html
 
 	html div id: 'top-search-filters-two'; with:[ 
 		html submitButton 
-			class: 'search-section-float search-section-width-100';
+			class: 'search-section-float search-section-width-100 margin-top-35px';
 			callback: [self searchMatchingProcesses]; 
 			with: ('Search' translateFor: self session user)].

@@ -6,4 +6,6 @@ showChart
 
 	self isCreationDayDistribution ifTrue: [^self drawCreationDayDistributionChart].
 
-	self isFieldValueDistribution ifTrue: [^self drawFieldValueDistribution].
+	(self isFieldValueDistribution and: [self isDoubleChart not]) ifTrue: [^self drawFieldValueDistribution].
+
+	(self isFieldValueDistribution and: [self isDoubleChart]) ifTrue: [^self drawFieldValueDoubleDistribution].

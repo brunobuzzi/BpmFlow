@@ -3,7 +3,7 @@ drawFieldValueDistribution
 	| report definition text |
 
 	definition := self getSelectedProcessDefinitions last.
-	report := definition reportTotalValueDistributionFor: self getFieldName in: self getFormName.
+	report := definition reportValueDistributionFor: self getFieldName in: self getFormName from: self getStartDate to: self getEndDate satisfying: self queryBlock.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
