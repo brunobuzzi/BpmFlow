@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawCreationDayDistributionChart" : "BrunoBB 11/04/2016 08:23",
+		"drawCreationDayDistributionChart" : "BrunoBB 11/07/2016 02:55",
 		"drawFieldValueDistribution" : "BrunoBB 11/06/2016 08:00",
 		"drawFieldValueDoubleDistribution" : "BrunoBB 11/06/2016 08:07",
 		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/04/2016 04:49",
 		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/04/2016 04:49",
+		"drawProcessesAverageDistribution" : "BrunoBB 11/07/2016 07:01",
+		"drawTasksAverageDistribution" : "BrunoBB 11/07/2016 09:30",
 		"getEndDate" : "BrunoBB 11/04/2016 08:17",
 		"getFieldName" : "BrunoBB 11/05/2016 13:26",
 		"getFieldName2" : "BrunoBB 11/06/2016 07:58",
@@ -20,7 +22,7 @@
 		"queryBlock" : "BrunoBB 11/04/2016 07:57",
 		"renderChartTypeComboOn:" : "BrunoBB 11/06/2016 07:14",
 		"renderChartTypeComboOn:withCharts:" : "BrunoBB 11/06/2016 07:38",
-		"renderDistributionComboOn:" : "BrunoBB 11/05/2016 11:56",
+		"renderDistributionComboOn:" : "BrunoBB 11/07/2016 03:16",
 		"renderFormFieldCombo2On:" : "BrunoBB 11/06/2016 07:35",
 		"renderFormFieldComboOn:" : "BrunoBB 11/06/2016 07:36",
 		"renderProcessDefinitionComboOn:" : "BrunoBB 11/04/2016 04:44",
@@ -28,4 +30,4 @@
 		"renderProcessVersionsComboOn:" : "BrunoBB 11/04/2016 04:44",
 		"renderQueryConditionOn:" : "BrunoBB 11/05/2016 09:59",
 		"renderSearchAreaOn:" : "BrunoBB 11/05/2016 11:51",
-		"showChart" : "BrunoBB 11/06/2016 08:00" } }
+		"showChart" : "BrunoBB 11/07/2016 07:11" } }

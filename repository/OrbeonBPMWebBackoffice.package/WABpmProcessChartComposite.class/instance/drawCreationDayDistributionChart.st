@@ -7,7 +7,7 @@ drawCreationDayDistributionChart
 	report := BpmProcessDefinition reportCreationDayFor: self getProcessName in: self  getApplicationName version: version from: self getStartDate to: self getEndDate satisfying: self queryBlock.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
-	text := 'Nothing'.
+	text := (' Total Process Instances: ' translateFor: self session user) , report getTotalValue printString.
 
 	canvas drawText: text at: 20@20 textSizePx: '18px'.
 

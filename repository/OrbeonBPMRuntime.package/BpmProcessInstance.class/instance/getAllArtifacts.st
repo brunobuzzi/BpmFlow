@@ -1,0 +1,4 @@
+other
+getAllArtifacts
+
+	^currentActivities, executedActivities

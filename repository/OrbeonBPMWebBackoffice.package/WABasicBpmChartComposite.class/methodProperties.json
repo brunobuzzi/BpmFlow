@@ -20,6 +20,8 @@
 		"isProcessInstanceDistribution" : "BrunoBB 11/04/2016 09:34",
 		"isProcessInstanceDistributionAndBarChart" : "BrunoBB 11/04/2016 09:34",
 		"isProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/04/2016 09:34",
+		"isProcessesAverageTimeDistribution" : "BrunoBB 11/07/2016 03:18",
+		"isTasksAverageTimeDistribution" : "BrunoBB 11/07/2016 03:18",
 		"renderActiveDistributionComboOn:withDistribution:" : "BrunoBB 11/04/2016 04:44",
 		"renderApplicationComboOn:" : "BrunoBB 11/01/2016 09:36",
 		"renderApplicationComboOn:withApplications:" : "BrunoBB 11/01/2016 08:09",

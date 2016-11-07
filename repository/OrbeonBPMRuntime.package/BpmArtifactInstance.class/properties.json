@@ -13,7 +13,8 @@
 		"outTransitions",
 		"creationTime",
 		"state",
-		"exceptions" ],
+		"exceptions",
+		"endTime" ],
 	"name" : "BpmArtifactInstance",
 	"pools" : [
 		 ],
