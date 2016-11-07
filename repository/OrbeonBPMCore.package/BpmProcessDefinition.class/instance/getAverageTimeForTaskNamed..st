@@ -4,7 +4,7 @@ getAverageTimeForTaskNamed: aString
 
 	taskCount := 0.
 	totalTime := processInstances inject: 0 into: [:sum :each | 
-							(self hasTaskNamed: aString)
+							((self hasTaskNamed: aString) or: [self hasSubProcessNamed: aString])
 							ifTrue: [taskCount := taskCount + 1.
 										sum + (each getTotalTimeOfTaskNamed: aString) asSeconds] 
 							ifFalse: [sum] 
