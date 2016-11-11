@@ -6,7 +6,7 @@ drawProcessesAverageDistribution
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := (' Global Average Time: ' translateFor: self session user) , ((report getTotalValue / report getRootDistributionSize) asFixedPoint: 2) printString.
+	text := (' Global Average Time: ' translateFor: self session user) , (report printAverageTimeFor: self session user).
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

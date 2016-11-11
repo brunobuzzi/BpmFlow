@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"roleName" ],
+	"name" : "BpmRoleDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "AppLocalDistributionReport",
+	"type" : "normal" }

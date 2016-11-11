@@ -1,0 +1,4 @@
+distribution
+getAverageTimeForAllTasks
+
+	^self getAverageTimeForTasksIn: self getFinishedAssigments

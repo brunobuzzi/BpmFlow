@@ -8,7 +8,6 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'List Processes Definitions' command: #openDefinitionsManager);
 		addItem: (SewafCommandItem label: 'Define New Process' command: #openBizagiManager);
 		addItem: (SewafCommandItem label: 'Monitor Processes' command: #openProcessRadar);
-		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);
 		addItem: (SewafCommandItem label: 'Process Categories' command: #openProcessCategoryManager);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #forms32Png)
@@ -18,6 +17,7 @@ initializeNavigation
 		yourself.
 	subMenu3 := (SewafSubMenuItem label: 'Users & Roles' icon: #usersettings32Png)
 		set24Icon: #usersettings24Png;
+		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);
 		addItem: (SewafCommandItem label: 'Manage Users' command: #openUsersManager);
 		addItem: (SewafCommandItem label: 'Manage Roles' command: #openRolesManager);
 		addItem: (SewafCommandItem label: 'Import' command: #importUsersAndRoles);
@@ -28,8 +28,8 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Global Charts' command: #openGlobalCharts);
 		addItem: (SewafCommandItem label: 'Applications Charts' command: #openBpmApplicationsCharts);
 		addItem: (SewafCommandItem label: 'Processes Charts' command: #openBpmProcessCharts);
-		addItem: (SewafCommandItem label: 'Roles Charts' command: #yourself);
-		addItem: (SewafCommandItem label: 'Users Charts' command: #yourself);
+		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
+		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
 		yourself.
 	subMenu5 := (SewafSubMenuItem label: 'Configuration' icon: #homeserver32Png)
 		set24Icon: #homeserver24Png;

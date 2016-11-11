@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWeb",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmMyChartsComposite",
+	"pools" : [
+		 ],
+	"super" : "WABasicBpmChartComposite",
+	"type" : "normal" }

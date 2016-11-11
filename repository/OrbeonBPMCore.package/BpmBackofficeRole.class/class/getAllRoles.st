@@ -4,6 +4,6 @@ getAllRoles
 
 	allRols := OrderedCollection new.
 
-	BpmBackofficeRole cache asOrderedCollection do: [:each | allRols addAll: each].
+	self cache asOrderedCollection do: [:each | allRols addAll: each].
 
 	^allRols

@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"userName" ],
+	"name" : "BpmUserDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "AppLocalDistributionReport",
+	"type" : "normal" }

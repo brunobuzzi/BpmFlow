@@ -20,9 +20,7 @@ initializeNavigation
 		yourself.
 	subMenu4 := (SewafSubMenuItem label: 'Charts' icon: #chart32Png)
 		set24Icon: #chart24Png;
-		addItem: (SewafCommandItem label: 'My Charts' command: #yourself);
-		addItem: (SewafCommandItem label: 'Processes Charts' command: #yourself);
-		addItem: (SewafCommandItem label: 'Roles Charts' command: #yourself);
+		addItem: (SewafCommandItem label: 'My Charts' command: #showMyChartsComposite);
 		yourself.
 	subMenu5 := (SewafSubMenuItem label: 'User Preferences' icon: #applicationsettings32Png)
 		set24Icon: #applicationsettings24Png;

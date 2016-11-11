@@ -1,0 +1,4 @@
+other
+numberOfUsers
+
+	^users size

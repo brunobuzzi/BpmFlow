@@ -2,7 +2,15 @@
 	"class" : {
 		"cache" : "BrunoBB 10/29/2015 18:46",
 		"cache:" : "BrunoBB 10/29/2015 18:46",
-		"getAllRoles" : "BrunoBB 04/11/2016 10:24" },
+		"getAllRoles" : "BrunoBB 11/08/2016 07:52",
+		"getNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:12",
+		"getNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:52",
+		"getUnassignedTasksDistributionFor:" : "BrunoBB 11/08/2016 14:37",
+		"reportNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:11",
+		"reportNumberOfUnassignedTasksFor:" : "BrunoBB 11/08/2016 14:38",
+		"reportNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:53" },
 	"instance" : {
 		"asBackofficeRole" : "BrunoBB 02/08/2016 14:42",
-		"asFrontofficeRole" : "BrunoBB 12/18/2015 14:27" } }
+		"asFrontofficeRole" : "BrunoBB 12/18/2015 14:27",
+		"getAverageTimeForTasks" : "BrunoBB 11/08/2016 09:02",
+		"reportAverageTimeDistributionForAllTasks" : "BrunoBB 11/08/2016 09:04" } }

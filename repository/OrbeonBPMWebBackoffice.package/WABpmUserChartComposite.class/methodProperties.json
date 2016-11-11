@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawAverageTaskTimeChart" : "BrunoBB 11/09/2016 09:20",
+		"drawCurrentTaskTypeQuantityChart" : "BrunoBB 11/08/2016 14:21",
+		"drawFinishedTaskTypeQuantityChart" : "BrunoBB 11/08/2016 14:19",
+		"drawTaskTypeQuantityChart" : "BrunoBB 11/08/2016 14:17",
+		"getSelectedUser" : "BrunoBB 11/08/2016 13:58",
+		"gitbookUrl" : "BrunoBB 11/09/2016 09:09",
+		"isCurrentTaskTypeQuantityDistribution" : "BrunoBB 11/08/2016 14:18",
+		"isFinishedTaskTypeQuantityDistribution" : "BrunoBB 11/08/2016 14:18",
+		"renderBpmUsersComboOn:" : "BrunoBB 11/08/2016 13:53",
+		"renderChartTypeComboOn:" : "BrunoBB 11/08/2016 13:55",
+		"renderDistributionComboOn:" : "BrunoBB 11/09/2016 09:19",
+		"renderSearchAreaOn:" : "BrunoBB 11/08/2016 13:36",
+		"showChart" : "BrunoBB 11/09/2016 09:20" } }
