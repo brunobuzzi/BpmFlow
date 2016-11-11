@@ -1,4 +1,4 @@
 other
-getDateFromSearchValueNamed: aString onError: date
+getDateFromSearchValueNamed: aString onError: anObject
 
-	^[Date fromString: (self searchValueAt: aString)] on: Error do: [:err| date]
+	^[Date fromString: (self searchValueAt: aString)] on: Error do: [:err| anObject]

@@ -1,7 +1,7 @@
 distribution
-getAverageTimeForTasksFrom: startDate to: endDate satisfying: conditionBlock
+getFinishedTaskQuantityDistributionFrom: startDate to: endDate satisfying: conditionBlock
 	| filteredAssignments |
 
 	filteredAssignments := self getFinishedAssigments select: [:each | ((startDate <= each creationDate) and: [each creationDate <= endDate]) and: [conditionBlock value: each process]].
 
-	^self getAverageTimeForTasksIn: filteredAssignments
+	^self getTaskQuantityDistributionIn: filteredAssignments
