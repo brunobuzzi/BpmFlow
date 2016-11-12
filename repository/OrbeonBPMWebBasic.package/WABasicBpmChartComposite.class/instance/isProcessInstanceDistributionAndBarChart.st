@@ -1,5 +1,4 @@
 query variables
 isProcessInstanceDistributionAndBarChart
 
-	^self isProcessInstanceDistribution
-		and:[(self searchValueAt: 'chart-type' ifAbsent: [nil]) = 'Bar Chart']
+	^self isProcessInstanceDistribution and:[self isBarChart]

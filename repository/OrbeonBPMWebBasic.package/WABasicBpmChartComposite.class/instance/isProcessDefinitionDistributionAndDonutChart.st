@@ -1,5 +1,4 @@
 query variables
 isProcessDefinitionDistributionAndDonutChart
 
-	^((self searchValueAt: 'distribution' ifAbsent: [nil]) = 'Process Definition') 
-		and:[(self searchValueAt: 'chart-type' ifAbsent: [nil]) = 'Donut Chart']
+	^self isProcessDefinitionDistribution and:[self isDonutChart]
