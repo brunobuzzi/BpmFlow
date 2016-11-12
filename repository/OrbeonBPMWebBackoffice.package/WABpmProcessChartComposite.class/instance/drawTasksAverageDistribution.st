@@ -3,7 +3,7 @@ drawTasksAverageDistribution
 	| report definition text |
 
 	definition := self getSelectedProcessDefinitions last.
-	report := definition reportAverageTimeDistributionForAllTasks.
+	report := definition reportAverageTimeDistributionForAllTasksFrom: self getStartDate to: self getEndDate satisfying: self queryBlock.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
