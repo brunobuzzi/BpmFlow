@@ -7,7 +7,7 @@ reportValueDistributionFor: fieldName in: formName from: startDate to: endDate s
 									filteredCollection := (self fieldInstancesOf: fieldName in: formName) 
 											select: [:fieldInst | (startDate <= fieldInst parentObject createdTime) 
 																	and: [(fieldInst parentObject createdTime <= endDate)
-																and: [formConditionBlock value: fieldInst parentObject]]
+																and: [formConditionBlock asBpmBlock value: fieldInst parentObject]]
 											]
 							].
 

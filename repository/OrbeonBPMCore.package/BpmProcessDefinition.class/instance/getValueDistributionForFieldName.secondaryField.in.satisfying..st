@@ -5,7 +5,7 @@ getValueDistributionForFieldName: fieldName secondaryField: secondaryField in: f
      The second dictionary is the second distribution for the field named <secondaryField>."
      | distribution secondaryDistribution blockFilteredCollection |
 
-	blockFilteredCollection := (self fieldInstancesOf: fieldName in: formName) select: [:fieldInst | formConditionBlock value: fieldInst parentObject].
+	blockFilteredCollection := (self fieldInstancesOf: fieldName in: formName) select: [:fieldInst | formConditionBlock asBpmBlock value: fieldInst parentObject].
 
    distribution := OrderPreservingDictionary new.
    secondaryDistribution := OrderPreservingDictionary new.

@@ -3,7 +3,7 @@ getAverageTimeForTaskNamed: aString from: startDate to: endDate satisfying: cond
 	| filteredCollection totalTime taskCount |
 
 	taskCount := 0.
-	filteredCollection := processInstances select: [:procInst | ((startDate <= procInst createdTime) and: [procInst createdTime <= endDate]) and: [conditionBlock value: procInst]].
+	filteredCollection := processInstances select: [:procInst | ((startDate <= procInst createdTime) and: [procInst createdTime <= endDate]) and: [conditionBlock asBpmBlock value: procInst]].
 
 	totalTime := filteredCollection inject: 0 into: [:sum :each | 
 							((self hasTaskNamed: aString) or: [self hasSubProcessNamed: aString])

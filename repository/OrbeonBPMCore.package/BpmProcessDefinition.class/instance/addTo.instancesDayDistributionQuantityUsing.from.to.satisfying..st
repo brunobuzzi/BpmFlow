@@ -3,7 +3,7 @@ addTo: distributionDictionary instancesDayDistributionQuantityUsing: sortSelecto
 
 	(processInstances select: [:each | | value |
 		value := each perform: sortSelector.
-		startDate <= value  and: [(value <= endDate) and: [processConditionBlock value: each]]])
+		startDate <= value  and: [(value <= endDate) and: [processConditionBlock asBpmBlock value: each]]])
 			do: [:each | | key value |
 				value := each perform: sortSelector.
 				key := value date asDays - startDate asDays.
