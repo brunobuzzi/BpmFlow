@@ -2,6 +2,6 @@ other
 renderDistributionComboOn: html
 	| distributionNames |
 
-	distributionNames := #('Possible Tasks' 'Number of Tasks' 'Average Time per Task').
+	distributionNames := #('Average Time per Task' 'Number of Tasks' 'Possible Tasks').
 
 	self renderActiveDistributionComboOn: html withDistribution: distributionNames.

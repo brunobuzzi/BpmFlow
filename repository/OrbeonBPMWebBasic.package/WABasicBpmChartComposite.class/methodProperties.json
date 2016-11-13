@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"analyzeQueryBlockIfFail:" : "BrunoBB 11/13/2016 13:22",
 		"canvas" : "BrunoBB 10/31/2016 10:47",
 		"canvas:" : "BrunoBB 10/31/2016 10:47",
 		"getAllArray" : "BrunoBB 11/08/2016 07:34",
@@ -43,7 +44,8 @@
 		"isUnassignedTasksDistribution" : "BrunoBB 11/12/2016 08:30",
 		"isUserNumberOfTasksDistribution" : "BrunoBB 11/12/2016 08:30",
 		"isUserPossibleTasksDistribution" : "BrunoBB 11/12/2016 08:30",
-		"queryBlock" : "BrunoBB 11/13/2016 09:59",
+		"queryBlock" : "BrunoBB 11/13/2016 13:38",
+		"queryBlockFailedWith:" : "BrunoBB 11/13/2016 12:58",
 		"renderActiveDistributionComboOn:withDistribution:" : "BrunoBB 11/04/2016 04:44",
 		"renderApplicationComboOn:" : "BrunoBB 11/01/2016 09:36",
 		"renderApplicationComboOn:withApplications:" : "BrunoBB 11/01/2016 08:09",

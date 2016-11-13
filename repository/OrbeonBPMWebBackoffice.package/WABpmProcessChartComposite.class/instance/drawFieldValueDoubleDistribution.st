@@ -4,6 +4,7 @@ drawFieldValueDoubleDistribution
 
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportValueDistributionForFieldName: self getFieldName secondaryField: self getFieldName2 in: self getFormName satisfying: self queryBlock.
+	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
