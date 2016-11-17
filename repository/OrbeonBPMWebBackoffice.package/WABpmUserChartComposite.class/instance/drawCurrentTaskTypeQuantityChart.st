@@ -3,10 +3,11 @@ drawCurrentTaskTypeQuantityChart
 	| report text |
 
 	report := self getSelectedUser reportCurrentTaskQuantity.
+	report name: (' User Current Tasks | ' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := (' Current Tasks: ' translateFor: self session user) , report getTotalValue printString.
+	text := report name, report getTotalValue printString.
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

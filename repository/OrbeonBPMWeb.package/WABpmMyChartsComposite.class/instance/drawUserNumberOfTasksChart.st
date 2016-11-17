@@ -3,11 +3,12 @@ drawUserNumberOfTasksChart
 	| report text |
 
 	report := self session user reportFinishedTaskQuantityFrom: self getStartDate to: self getEndDate satisfying: self queryBlock.
+	report name: (' My Finished Tasks' translateFor: self session user).
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := (' Number of Tasks: ' translateFor: self session user) , report getTotalValue printString.
+	text := report name, report getTotalValue printString.
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

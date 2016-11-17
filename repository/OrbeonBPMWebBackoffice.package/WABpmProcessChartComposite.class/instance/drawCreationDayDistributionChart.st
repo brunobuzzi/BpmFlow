@@ -5,7 +5,7 @@ drawCreationDayDistributionChart
 	version := self isAllVersionSelected ifTrue: [nil] ifFalse: [Number fromString: self getVersion].
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
 
-	report := BpmProcessDefinition reportCreationDayFor: self getProcessName in: self  getApplicationName version: version from: self getStartDate to: self getEndDate satisfying: self queryBlock.
+	report := self getProcessDefinitionClass reportCreationDayFor: self getProcessName in: self  getApplicationName version: version from: self getStartDate to: self getEndDate satisfying: self queryBlock.
 	report name: ('Creation of Processes in Calendar' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.

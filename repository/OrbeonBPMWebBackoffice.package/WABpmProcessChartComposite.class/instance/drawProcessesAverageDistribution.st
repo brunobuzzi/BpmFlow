@@ -2,7 +2,7 @@ draw svg
 drawProcessesAverageDistribution
 	| report text |
 
-	report := BpmProcessDefinition reportProcessAverageTimeDistributionFor: self getProcessName in: self getApplicationName.
+	report := self getProcessDefinitionClass reportProcessAverageTimeDistributionFor: self getProcessName in: self getApplicationName.
 	report name: ('Process Average Time' translateFor: self session user).
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.

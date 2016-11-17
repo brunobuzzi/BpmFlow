@@ -2,7 +2,7 @@ draw svg
 drawProcessInstanceDistributionAndBarChart
 	| report text |
 
-	report := BpmProcessDefinition reportProcessInstancesQuantityDistributionFor: self getProcessName in: self getApplicationName.
+	report := self getProcessDefinitionClass reportProcessInstancesQuantityDistributionFor: self getProcessName in: self getApplicationName.
 	report name: ('Process Distribution by Version' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
