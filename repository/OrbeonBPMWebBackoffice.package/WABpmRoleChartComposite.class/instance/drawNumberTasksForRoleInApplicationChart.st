@@ -3,10 +3,11 @@ drawNumberTasksForRoleInApplicationChart
 	| report text |
 
 	report := BpmFrontOfficeRole reportNumberOfTasksDistributionFor: self getApplicationName.
+	report name: ('Number of Tasks per Role' translateFor: self session user).
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := (' Number of Tasks: ' translateFor: self session user) , report getTotalValue printString.
+	text := report name, (' | Number of Tasks: ' translateFor: self session user) , report getTotalValue printString.
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

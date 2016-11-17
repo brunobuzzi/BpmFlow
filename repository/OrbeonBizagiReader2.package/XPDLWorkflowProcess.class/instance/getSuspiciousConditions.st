@@ -8,7 +8,7 @@ getSuspiciousConditions
 	report := OrderedCollection new.
 
 	(transitions select: [:eachTr | eachTr startCondition notNil]) do: [:eachTr | | blockAnalysis | 
-		blockAnalysis := BpmGatewayConditionCodeAnalyzer new blockCode: eachTr startCondition.
+		blockAnalysis := BpmProcessConditionCodeAnalyzer for: eachTr startCondition.
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
 			reportItem := XPDLItemImportReport new type: 'Error';

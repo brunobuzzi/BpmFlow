@@ -9,4 +9,5 @@ reportValueDistributionForFieldCollection: fieldInstancesCollection
 	
 	^(BpmFieldDistributionReport processName: processName applicationName: self applicationName distribution: distribution)
 			sumSecondsToConstruct: secondsToRun;
+			fieldName: fieldName;
 			yourself

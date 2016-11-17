@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawProcessDefinitionDistributionAndBarChart" : "BrunoBB 11/04/2016 04:51",
-		"drawProcessDefinitionDistributionAndDonutChart" : "BrunoBB 11/04/2016 04:51",
-		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/04/2016 04:51",
-		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/04/2016 04:51",
+		"drawProcessDefinitionDistributionAndBarChart" : "BrunoBB 11/16/2016 09:55",
+		"drawProcessDefinitionDistributionAndDonutChart" : "BrunoBB 11/16/2016 09:55",
+		"drawProcessInstanceDistributionAndBarChart" : "BrunoBB 11/16/2016 09:56",
+		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/16/2016 09:56",
 		"gitbookUrl" : "BrunoBB 11/09/2016 09:07",
 		"renderChartTypeComboOn:" : "BrunoBB 11/04/2016 04:55",
 		"renderDistributionComboOn:" : "BrunoBB 11/04/2016 04:57",

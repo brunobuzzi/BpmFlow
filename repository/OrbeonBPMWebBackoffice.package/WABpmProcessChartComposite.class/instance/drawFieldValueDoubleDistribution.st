@@ -5,10 +5,11 @@ drawFieldValueDoubleDistribution
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportValueDistributionForFieldName: self getFieldName secondaryField: self getFieldName2 in: self getFormName satisfying: self queryBlock.
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
+	report name: ('Processes Distribution by Two Field Value' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := (' Total Process Instances: ' translateFor: self session user) , report getTotalValue printString.
+	text := report name, (' | Total Process Instances: ' translateFor: self session user) , report getTotalValue printString.
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 
