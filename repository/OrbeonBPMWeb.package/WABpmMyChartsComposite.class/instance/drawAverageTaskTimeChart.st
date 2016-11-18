@@ -1,14 +1,13 @@
 other
 drawAverageTaskTimeChart
-	| report text |
+	| text |
  
 	report := self session user reportAverageTimePerTaskFrom: self getStartDate to: self getEndDate satisfying: self queryBlock.
-	report name: (' My Average Time per Task' translateFor: self session user).
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := report name , (report printAverageTimeFor: self session user).
+	text := (' Average Time per Tasks: ' translateFor: self session user) , (report printAverageTimeFor: self session user).
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

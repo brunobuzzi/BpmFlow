@@ -1,13 +1,13 @@
 other
-drawAverageTimeForRoleTasksChart
+drawTaskTypeQuantityChart
 	| text |
 
-	report := self getSelectedRole reportAverageTimeDistributionForAllTasks.
-	report name: ('Role Average Time by Task' translateFor: self session user). 
+	report := self getSelectedUser reportFinishedTaskQuantity.
+	report name: (' Number of Tasks: ' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
-	text := report name, (' | Average Time per Task: ' translateFor: self session user) , (report printAverageTimeFor: self session user).
+	text := report name, report getTotalValue printString.
 
 	canvas drawText: text at: 10@30 textSizePx: '18px'.
 

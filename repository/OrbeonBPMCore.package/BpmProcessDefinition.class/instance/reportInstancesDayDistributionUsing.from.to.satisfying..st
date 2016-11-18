@@ -10,4 +10,5 @@ reportInstancesDayDistributionUsing: sortSelector from: startDate to: endDate sa
 		conditionStringBlock: formConditionBlock blockSource;
 		distributionMethod: sortSelector;
 		sumSecondsToConstruct: secondsToRun;
+		version: version;
 		yourself

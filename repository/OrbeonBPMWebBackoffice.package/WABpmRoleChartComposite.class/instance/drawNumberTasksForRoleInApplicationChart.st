@@ -1,8 +1,8 @@
 other
 drawNumberTasksForRoleInApplicationChart
-	| report text |
+	| text |
 
-	report := self getFrontOfficeRoleClass reportNumberOfTasksDistributionFor: self getApplicationName.
+	report := BpmFrontOfficeRole reportNumberOfTasksDistributionFor: self getApplicationName.
 	report name: ('Number of Tasks per Role' translateFor: self session user).
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.

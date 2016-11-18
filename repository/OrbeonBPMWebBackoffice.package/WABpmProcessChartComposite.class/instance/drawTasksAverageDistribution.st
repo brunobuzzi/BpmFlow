@@ -1,6 +1,6 @@
-draw svg
+other
 drawTasksAverageDistribution
-	| report definition text |
+	| definition text |
 
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportAverageTimeDistributionForAllTasksFor: self session user from: self getStartDate to: self getEndDate satisfying: self queryBlock.

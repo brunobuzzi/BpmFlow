@@ -7,4 +7,5 @@ reportAverageTimeDistributionForAllTasksFor: aBpmUser from: startDate to: endDat
 	^(BpmProcessDistributionReport processName: processName applicationName: self getApplicationName distribution: distribution)
 		name: ('Average Time for All Tasks' translateFor: aBpmUser);
 		sumSecondsToConstruct: secondsToRun;
+		version: version;
 		yourself.

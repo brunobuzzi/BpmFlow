@@ -13,10 +13,6 @@ renderSearchAreaOn: html
 			self renderDistributionComboOn: html.
 			self renderChartTypeComboOn: html.
 
-			html div id: 'top-search-filters-one'; with: [
-				html submitButton 
-					style: 'margin-top: 25px;';
-					callback: [self showChart]; 
-					with: ('Show Chart' translateFor: self session user)]
+			self renderShowChartButtonOn: html.
 		]
 	]

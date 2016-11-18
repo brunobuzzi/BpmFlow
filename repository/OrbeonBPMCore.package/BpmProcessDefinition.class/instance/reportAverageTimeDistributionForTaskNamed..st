@@ -6,4 +6,5 @@ reportAverageTimeDistributionForTaskNamed: taskName
  
 	^(BpmProcessDistributionReport processName: processName applicationName: self getApplicationName distribution: distribution)
 		sumSecondsToConstruct: secondsToRun;
+		version: version;
 		yourself.

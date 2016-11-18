@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawAverageTaskTimeChart" : "BrunoBB 11/17/2016 08:52",
-		"drawCurrentTaskTypeQuantityChart" : "BrunoBB 11/17/2016 08:52",
-		"drawFinishedTaskTypeQuantityChart" : "BrunoBB 11/17/2016 08:52",
+		"drawAverageTaskTimeChart" : "BrunoBB 11/18/2016 07:15",
+		"drawCurrentTaskTypeQuantityChart" : "BrunoBB 11/18/2016 07:15",
+		"drawFinishedTaskTypeQuantityChart" : "BrunoBB 11/18/2016 07:16",
+		"drawTaskTypeQuantityChart" : "BrunoBB 11/18/2016 07:16",
 		"getSelectedUser" : "BrunoBB 11/08/2016 13:58",
 		"gitbookUrl" : "BrunoBB 11/09/2016 09:09",
 		"isCurrentTaskTypeQuantityDistribution" : "BrunoBB 11/08/2016 14:18",

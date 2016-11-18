@@ -1,8 +1,8 @@
 other
 drawProcessDefinitionDistributionAndDonutChart
-	| report text |
+	| text |
 
-	report := self getProcessDefinitionClass reportProcessDefinitionsQuantityDistribution.
+	report := BpmProcessDefinition reportProcessDefinitionsQuantityDistribution.
 	report name: ('Process Definitions by Application' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.

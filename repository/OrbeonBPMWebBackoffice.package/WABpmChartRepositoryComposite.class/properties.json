@@ -1,14 +1,13 @@
 {
-	"category" : "OrbeonBPMWebBasic",
+	"category" : "OrbeonBPMWebBackoffice",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"canvas",
-		"report" ],
-	"name" : "WABasicBpmChartComposite",
+		 ],
+	"name" : "WABpmChartRepositoryComposite",
 	"pools" : [
 		 ],
 	"super" : "SEWAFWebObjectComposite",

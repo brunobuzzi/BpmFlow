@@ -3,7 +3,8 @@
 		"processName:applicationName:distribution:" : "BrunoBB 11/02/2016 08:28" },
 	"instance" : {
 		"initialize" : "BrunoBB 11/02/2016 07:50",
-		"isAllVersions" : "BrunoBB 11/02/2016 07:49",
-		"isAllVersions:" : "BrunoBB 11/02/2016 07:49",
+		"isAllVersions" : "BrunoBB 11/18/2016 03:19",
 		"processName" : "BrunoBB 11/02/2016 07:49",
-		"processName:" : "BrunoBB 11/02/2016 07:49" } }
+		"processName:" : "BrunoBB 11/02/2016 07:49",
+		"version" : "BrunoBB 11/18/2016 03:19",
+		"version:" : "BrunoBB 11/18/2016 03:19" } }

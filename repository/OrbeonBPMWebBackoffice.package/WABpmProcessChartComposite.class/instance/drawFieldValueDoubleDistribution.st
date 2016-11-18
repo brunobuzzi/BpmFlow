@@ -1,6 +1,6 @@
-draw svg
+other
 drawFieldValueDoubleDistribution
-	| report definition text |
+	| definition text |
 
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportValueDistributionForFieldName: self getFieldName secondaryField: self getFieldName2 in: self getFormName satisfying: self queryBlock.

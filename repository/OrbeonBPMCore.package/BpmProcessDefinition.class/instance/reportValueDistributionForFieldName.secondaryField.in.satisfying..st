@@ -11,4 +11,5 @@ reportValueDistributionForFieldName: fieldName secondaryField: secondaryField in
 			formName: formName;
 			fieldName: fieldName;
 			secondaryField: secondaryField;
+			version: version;
 			yourself

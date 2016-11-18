@@ -1,9 +1,9 @@
 other
 drawCurrentTaskTypeQuantityChart
-	| report text |
+	| text |
 
 	report := self getSelectedUser reportCurrentTaskQuantity.
-	report name: (' User Current Tasks | ' translateFor: self session user). 
+	report name: (' Current Tasks: ' translateFor: self session user). 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

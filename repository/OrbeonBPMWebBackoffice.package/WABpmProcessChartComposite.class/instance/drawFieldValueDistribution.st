@@ -1,6 +1,6 @@
-draw svg
+other
 drawFieldValueDistribution
-	| report definition text |
+	| definition text |
 
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportValueDistributionFor: self getFieldName in: self getFormName from: self getStartDate to: self getEndDate satisfying: self queryBlock.

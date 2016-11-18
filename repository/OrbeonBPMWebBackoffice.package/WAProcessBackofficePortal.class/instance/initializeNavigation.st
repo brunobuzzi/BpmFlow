@@ -30,6 +30,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Processes Charts' command: #openBpmProcessCharts);
 		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
 		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
+		addItem: (SewafCommandItem label: 'Charts Repository' command: #openBpmChartsRepository);
 		yourself.
 	subMenu5 := (SewafSubMenuItem label: 'Configuration' icon: #homeserver32Png)
 		set24Icon: #homeserver24Png;
