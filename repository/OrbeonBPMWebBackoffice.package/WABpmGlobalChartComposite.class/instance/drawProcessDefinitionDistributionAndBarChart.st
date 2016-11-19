@@ -3,7 +3,8 @@ drawProcessDefinitionDistributionAndBarChart
 	| text |
 
 	report := BpmProcessDefinition reportProcessDefinitionsQuantityDistribution.
-	report name: ('Process Definitions by Application' translateFor: self session user).
+	report name: ('Process Definitions by Application' translateFor: self session user);
+		creator: self session user.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

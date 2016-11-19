@@ -1,0 +1,4 @@
+Accessing
+isRole
+
+	^true

@@ -5,7 +5,8 @@ drawTasksAverageDistribution
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportAverageTimeDistributionForAllTasksFor: self session user from: self getStartDate to: self getEndDate satisfying: self queryBlock.
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
-	report name: ('Average Time by Process Tasks' translateFor: self session user).
+	report name: ('Average Time by Process Tasks' translateFor: self session user);
+		creator: self session user.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

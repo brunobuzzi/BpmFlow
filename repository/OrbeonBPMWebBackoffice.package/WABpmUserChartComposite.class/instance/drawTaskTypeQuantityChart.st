@@ -3,7 +3,8 @@ drawTaskTypeQuantityChart
 	| text |
 
 	report := self getSelectedUser reportFinishedTaskQuantity.
-	report name: (' Number of Tasks: ' translateFor: self session user). 
+	report name: (' Number of Tasks: ' translateFor: self session user);
+		creator: self session user.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

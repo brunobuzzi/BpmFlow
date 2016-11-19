@@ -10,5 +10,5 @@
 	"name" : "WABpmChartRepositoryComposite",
 	"pools" : [
 		 ],
-	"super" : "SEWAFWebObjectComposite",
+	"super" : "SewafLateralListComposite",
 	"type" : "normal" }

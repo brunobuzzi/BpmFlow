@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"drawAverageTimeForRoleTasksChart" : "BrunoBB 11/18/2016 07:12",
-		"drawNumberOfUsersInRoleChart" : "BrunoBB 11/18/2016 07:12",
-		"drawNumberTasksForRoleInApplicationChart" : "BrunoBB 11/18/2016 07:13",
-		"drawUnassignedTaskChart" : "BrunoBB 11/18/2016 07:13",
+		"drawAverageTimeForRoleTasksChart" : "BrunoBB 11/19/2016 08:06",
+		"drawNumberOfUsersInRoleChart" : "BrunoBB 11/19/2016 08:06",
+		"drawNumberTasksForRoleInApplicationChart" : "BrunoBB 11/19/2016 08:06",
+		"drawUnassignedTaskChart" : "BrunoBB 11/19/2016 08:06",
 		"getSelectedRole" : "BrunoBB 11/08/2016 09:09",
 		"gitbookUrl" : "BrunoBB 11/09/2016 09:08",
 		"renderChartTypeComboOn:" : "BrunoBB 11/08/2016 08:13",

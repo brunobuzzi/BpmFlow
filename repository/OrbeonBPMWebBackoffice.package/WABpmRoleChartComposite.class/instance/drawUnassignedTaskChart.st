@@ -3,7 +3,8 @@ drawUnassignedTaskChart
 	| text |
 
 	report := BpmFrontOfficeRole reportNumberOfUnassignedTasksFor: self getApplicationName.
-	report name: ('Free Tasks per Role' translateFor: self session user).
+	report name: ('Free Tasks per Role' translateFor: self session user);
+		creator: self session user.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

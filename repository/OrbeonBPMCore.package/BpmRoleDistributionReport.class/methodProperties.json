@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"applicationName:roleName:distribution:" : "BrunoBB 11/08/2016 08:06" },
+		"applicationName:roleName:distribution:" : "BrunoBB 11/08/2016 08:06",
+		"getComboName" : "BrunoBB 11/19/2016 06:19" },
 	"instance" : {
+		"isRole" : "BrunoBB 11/19/2016 09:48",
 		"roleName" : "BrunoBB 11/08/2016 08:06",
 		"roleName:" : "BrunoBB 11/08/2016 08:06" } }

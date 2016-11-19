@@ -3,7 +3,8 @@ drawNumberOfUsersInRoleChart
 	| text |
 
 	report := BpmFrontOfficeRole reportNumberOfUsersDistributionFor: self getApplicationName.
-	report name: ('Number of Users per Role' translateFor: self session user). 
+	report name: ('Number of Users per Role' translateFor: self session user);
+		creator: self session user. 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

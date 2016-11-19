@@ -1,2 +1,4 @@
 other
 saveChart
+
+	report addToCache

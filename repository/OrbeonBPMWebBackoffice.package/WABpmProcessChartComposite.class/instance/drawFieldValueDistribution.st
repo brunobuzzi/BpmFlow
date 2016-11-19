@@ -5,7 +5,8 @@ drawFieldValueDistribution
 	definition := self getSelectedProcessDefinitions last.
 	report := definition reportValueDistributionFor: self getFieldName in: self getFormName from: self getStartDate to: self getEndDate satisfying: self queryBlock.
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
-	report name: ('Processes Distribution by Field Value' translateFor: self session user).
+	report name: ('Processes Distribution by Field Value' translateFor: self session user);
+		creator: self session user.
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 

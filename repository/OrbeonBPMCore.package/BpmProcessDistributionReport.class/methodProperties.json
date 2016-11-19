@@ -1,9 +1,11 @@
 {
 	"class" : {
+		"getComboName" : "BrunoBB 11/19/2016 06:19",
 		"processName:applicationName:distribution:" : "BrunoBB 11/02/2016 08:28" },
 	"instance" : {
 		"initialize" : "BrunoBB 11/02/2016 07:50",
 		"isAllVersions" : "BrunoBB 11/18/2016 03:19",
+		"isProcess" : "BrunoBB 11/19/2016 09:25",
 		"processName" : "BrunoBB 11/02/2016 07:49",
 		"processName:" : "BrunoBB 11/02/2016 07:49",
 		"version" : "BrunoBB 11/18/2016 03:19",

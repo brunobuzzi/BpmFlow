@@ -3,7 +3,8 @@ drawAverageTaskTimeChart
 	| text |
 
 	report := self getSelectedUser reportAverageTimePerTask.
-	report name: (' Average Time per Tasks: ' translateFor: self session user). 
+	report name: (' Average Time per Tasks: ' translateFor: self session user);
+		creator: self session user. 
 
 	canvas := self svgCanvasClass newWidth: '100%' height: '100%'.
 
