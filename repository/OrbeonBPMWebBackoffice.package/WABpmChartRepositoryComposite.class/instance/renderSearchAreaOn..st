@@ -11,7 +11,9 @@ renderSearchAreaOn: html
 				with: ('Search Chart Report' translateFor: self session user).
 			self renderReportClassesComboOn: html.
 			self isGlobalReportSelected 
-			ifFalse: [self renderApplicationComboOn: html].
+				ifFalse: [self renderApplicationComboOn: html].
+			self isProcessReportSelected 
+				ifTrue: [self renderProcessDefinitionComboOn: html]. 
 			self renderSearchButtonOn: html.
 		].
 	].

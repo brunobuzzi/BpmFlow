@@ -14,6 +14,7 @@ reportValueDistributionFor: fieldName in: formName from: startDate to: endDate s
 	^(self reportValueDistributionForFieldCollection: filteredCollection)
 		startDate: startDate;
 		endDate: endDate;
+		formName: formName; 
 		conditionStringBlock: formConditionBlock blockSource;
 		sumSecondsToConstruct: secondsToRun;
 		yourself
