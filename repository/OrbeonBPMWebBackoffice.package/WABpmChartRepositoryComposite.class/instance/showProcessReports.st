@@ -1,4 +1,4 @@
 other
 showProcessReports
 
-	searchResult := self reportsRepository getProcessReportFor: self getApplicationName
+	searchResult := self reportsRepository getProcessReportFor: self getProcessName in: self getApplicationName

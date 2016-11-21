@@ -1,0 +1,4 @@
+other
+isUserComboAvailable
+
+	^self isUserReportSelected

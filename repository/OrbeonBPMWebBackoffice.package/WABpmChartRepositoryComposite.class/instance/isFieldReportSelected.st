@@ -1,4 +1,4 @@
 other
 isFieldReportSelected
 
-	^(self searchValueAt: 'report-type' ifAbsent: [^true]) = ('Field Report' translateFor: self session user)
+	^(self searchValueAt: 'report-type' ifAbsent: [^false]) = ('Field Report' translateFor: self session user)

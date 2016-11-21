@@ -8,6 +8,8 @@ searchReport
 
 	self isApplicationReportSelected ifTrue: [^self showApplicationReports].
 
+	self isFieldReportSelected ifTrue: [^self showFieldReports].
+
 	self isProcessReportSelected ifTrue: [^self showProcessReports].
 
 	self isRoleReportSelected ifTrue: [^self showRoleReports].

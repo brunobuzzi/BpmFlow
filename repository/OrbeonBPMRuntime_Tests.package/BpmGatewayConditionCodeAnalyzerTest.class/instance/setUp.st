@@ -1,4 +1,4 @@
 other
 setUp
 
-	analyzer := BpmGatewayConditionCodeAnalyzer new.
+	analyzer := BpmProcessConditionCodeAnalyzer new.

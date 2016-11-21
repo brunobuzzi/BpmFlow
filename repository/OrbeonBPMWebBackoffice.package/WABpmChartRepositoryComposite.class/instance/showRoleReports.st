@@ -1,4 +1,4 @@
 other
 showRoleReports
 
-	searchResult := self reportsRepository getRoleReports
+	searchResult := self reportsRepository getRoleReportsFor: self getApplicationName

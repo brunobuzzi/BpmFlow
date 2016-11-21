@@ -1,4 +1,4 @@
 other
 showUserReports
 
-	searchResult := self reportsRepository getUserReports
+	searchResult := self reportsRepository getUserReportsFor: self getUserName
