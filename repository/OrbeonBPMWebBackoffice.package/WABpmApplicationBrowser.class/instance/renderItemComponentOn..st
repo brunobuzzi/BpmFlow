@@ -7,7 +7,7 @@ renderItemComponentOn: html
 
 	html unorderedList with:[
 		(BpmProcessDefinition getAllVersionsIn: selectedLateralItem applicationName) do: [:procDefinition |
-			html listItem with: procDefinition processName.
-				html horizontalRule.
+			html listItem with: [html text: procDefinition processName.
+				html horizontalRule].
 		].
 	].
