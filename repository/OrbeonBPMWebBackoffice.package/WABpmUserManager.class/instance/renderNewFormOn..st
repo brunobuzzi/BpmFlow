@@ -13,7 +13,7 @@ renderNewFormOn: html
 				html label attributeAt: 'for' put: 'password'; with: ('Password' translateFor: self session user).
 				html textInput attributeAt: 'id' put: 'password'; callback: [:value | model password: value].
 			].
-			html div id: 'top-search-filters-one'; with: [
+			html div class: 'top-search-filters-one'; with: [
 				html submitButton 
 					style: 'margin-top: 25px;';
 					callback: [self createNewUser]; 
