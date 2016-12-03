@@ -11,6 +11,7 @@
 		"createInstanceProcessFor:" : "BrunoBB 06/20/2016 13:35",
 		"downloadProcessMap" : "BrunoBB 06/20/2016 13:35",
 		"downloadProcessMapOf:" : "BrunoBB 06/20/2016 13:35",
+		"exportProcessDefinitionAs" : "BrunoBB 12/03/2016 11:15",
 		"getAllFormProcessDefinition" : "BrunoBB 06/20/2016 13:35",
 		"getCurrentCollection" : "BrunoBB 06/20/2016 13:35",
 		"getIconNameFormItem" : "BrunoBB 06/20/2016 13:35",
@@ -34,7 +35,7 @@
 		"renderItemComponentOn:" : "BrunoBB 06/20/2016 13:49",
 		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 06/20/2016 13:35",
 		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 06/20/2016 13:35",
-		"renderItemDescriptionTitleOn:" : "BrunoBB 06/20/2016 13:35",
+		"renderItemDescriptionTitleOn:" : "BrunoBB 12/03/2016 11:15",
 		"renderLateralItemDetailsOn:for:" : "BrunoBB 06/20/2016 13:35",
 		"renderNewProcessAndOptionsOn:" : "BrunoBB 12/03/2016 09:33",
 		"renderNewProcessCommandIconOn:" : "BrunoBB 06/20/2016 13:35",
@@ -44,4 +45,5 @@
 		"renderProcessDefinitionOn:for:" : "BrunoBB 06/20/2016 13:35",
 		"renderSearchAreaOn:" : "BrunoBB 12/03/2016 09:02",
 		"renderSearchSubmitButtonOn:" : "BrunoBB 06/20/2016 13:35",
-		"searchCreationProcesses" : "BrunoBB 06/20/2016 13:35" } }
+		"searchCreationProcesses" : "BrunoBB 06/20/2016 13:35",
+		"xmlHeader" : "BrunoBB 12/03/2016 11:17" } }
