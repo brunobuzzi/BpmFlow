@@ -3,8 +3,8 @@ renderSearchCategoriesPanelOn: html
 
 	html form with: [ 
 		html fieldSet with: [
-			self renderSwitchWindowOn: html.
 			html legend class: 'top-search-legend'; with: ('Search Task' translateFor: self session user).
+			self renderSwitchWindowOn: html.
 			html div class: 'top-search-div'; with: [
 				html label attributeAt: 'for' put: 'categotyLabel'; with: ('Category Name' translateFor: self session user).
 				html textInput attributeAt: 'id' put: 'categotyLabel'; callback: [:value | self addSearchValue: value named: 'category-name'].

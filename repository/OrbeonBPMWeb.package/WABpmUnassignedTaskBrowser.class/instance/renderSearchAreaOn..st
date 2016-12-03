@@ -6,8 +6,8 @@ renderSearchAreaOn: html
 	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
 
 	html form with: [ 
-		html fieldSet with: [
-			html div id: 'top-search-filters'; with: [
+		html div id: 'top-search-filters'; with: [
+			html fieldSet with: [
 				html legend class: 'top-search-legend'; with: ('Search Unassigned Task' translateFor: self session user).
 				html div class: 'top-search-div'; with: [self renderApplicationsComboOn: html].
 				html div class: 'top-search-div'; with: [self renderRolesComboOn: html].

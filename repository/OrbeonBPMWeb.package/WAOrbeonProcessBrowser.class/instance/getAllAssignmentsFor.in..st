@@ -3,7 +3,7 @@ getAllAssignmentsFor: procName in: appName
 	"Answer a collection of <OrbeonProcessAssignment> for the process named <procName> in application <appName>"
 	| selectBlock |
 
-	appName isEmpty ifTrue: [^searchResult := self getIterationCollection].
+	(appName isNil or: [appName isEmpty]) ifTrue: [^searchResult := self getIterationCollection].
 
 	selectBlock := (procName = self viewAllText)
 		ifTrue: [[:each | each applicationName = appName]]
