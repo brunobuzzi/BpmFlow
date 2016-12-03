@@ -1,7 +1,7 @@
 subcomponents
 openChangePassword
 
-	(arena isKindOf: WABkBpmUserChangePassword)
+	(arena isKindOf: WAChangeUserPasswordComposite)
 	ifTrue: [^arena].
 
-	^WABkBpmUserChangePassword parent: self
+	^WAChangeUserPasswordComposite parent: self

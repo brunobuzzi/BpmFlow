@@ -1,6 +1,6 @@
 sub components
 showChangePassword
 
-	^(arena class == WABpmUserChangePassword)
+	^(arena class == WAChangeUserPasswordComposite)
 	ifTrue: [arena]
-	ifFalse: [WABpmUserChangePassword parent: self]
+	ifFalse: [WAChangeUserPasswordComposite parent: self]
