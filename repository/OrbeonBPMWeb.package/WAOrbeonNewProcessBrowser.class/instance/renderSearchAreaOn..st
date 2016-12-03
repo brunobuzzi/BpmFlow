@@ -5,7 +5,7 @@ renderSearchAreaOn: html
 
 	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
 
-	html div id: 'top-search-area'; 
+	html div 
 		with: [html form with: [ 
 					html fieldSet with: [
 						html legend class: 'top-search-legend'; with: ('Search Process' translateFor: self session user).
