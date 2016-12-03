@@ -1,7 +1,7 @@
 list
 renderListOptionsOn: html
 
-	html div id: 'user-preferences'; class: 'centered-unique-form float-left';
+	html div id: 'user-preferences-list'; class: 'centered-unique-form float-left';
 		with: [html form with: [
 					html fieldSet with:[
 						html legend with: [html strong: ('Lists' translateFor: self session user)].
