@@ -1,7 +1,7 @@
 subcomponents
 openLanguageConfiguration
 
-	(arena isKindOf: WASetBkUserLanguage)
+	(arena isKindOf: WASetUserLanguage)
 	ifTrue: [^arena].
 
-	^WASetBkUserLanguage parent: self
+	^WASetUserLanguage parent: self
