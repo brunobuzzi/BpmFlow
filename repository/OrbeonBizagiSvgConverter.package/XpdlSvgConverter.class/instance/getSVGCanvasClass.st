@@ -1,0 +1,4 @@
+other
+getSVGCanvasClass
+
+	^JASVGIBpmCanvas

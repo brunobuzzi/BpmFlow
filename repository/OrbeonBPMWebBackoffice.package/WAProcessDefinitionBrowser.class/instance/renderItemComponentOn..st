@@ -16,8 +16,3 @@ renderItemComponentOn: html
 		].
 	].
 	html div class: 'width-45per margin-top-15px float-right margin-right-20px'; with: [self renderSelectedTransitionOn: html].
-
-	html div id: 'artifact-definitions'; with: [
-		selectedLateralItem getOrderedTasks do: [:taskDefinition | 
-			html div class: 'artifact-definition'; with: [html output: taskDefinition printNameAndDefinitionType]]
-	].

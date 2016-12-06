@@ -1,10 +1,11 @@
 process
 renderSelectedTransitionOn: html
+	| svgCode |
 
 	selectedObject ifNil: [^self].
 
-	html div class: 'transition-def-artifact'; with: [self renderArtifactPreviousFieldOf: selectedObject startArtifact on: html].
+	svgCode := (XpdlSvgConverter new generateSVGForTransition: selectedObject) contents.
 
-	selectedObject hasCondition ifTrue: [html div class: 'transition-condition'; with: [self renderConditionOn: html]].
-
-	html div class: 'transition-def-artifact'; with: [self renderArtifactPreviousFieldOf: selectedObject endArtifact on: html].
+	html div 
+		class: 'transition-artifact'; 
+		with: [html html: svgCode].

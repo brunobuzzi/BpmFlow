@@ -4,6 +4,9 @@
 	"instance" : {
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:22",
 		"createNewGatewayOn:" : "BrunoBB 11/24/2015 13:31",
+		"drawFirstOn:" : "BrunoBB 12/06/2016 04:24",
+		"drawLastOn:" : "BrunoBB 12/06/2016 04:24",
+		"drawOn:at:" : "BrunoBB 12/05/2016 11:01",
 		"hasEvaluationConditionWithFieldNamed:" : "BrunoBB 04/19/2016 16:21",
 		"initialize" : "BrunoBB 11/23/2015 13:38",
 		"isGateway" : "BrunoBB 06/18/2016 12:59",

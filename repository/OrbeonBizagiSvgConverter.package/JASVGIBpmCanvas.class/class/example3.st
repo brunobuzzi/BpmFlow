@@ -1,7 +1,8 @@
 other
 example3
 	| jasv line |
-	jasv := JASVGIBpmCanvas newWidth: '400px' height: '400px'.
+
+	jasv := self newWidth: '400px' height: '400px'.
 	jasv addMarker: 
 		(self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
