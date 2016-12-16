@@ -6,7 +6,6 @@ answerXMLErrorWith: uuidToken
 	</result>'
 "
 
-
 	^'<result>
 		<formid></formid>
 		<username></username>
