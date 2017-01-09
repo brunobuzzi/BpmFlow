@@ -13,7 +13,7 @@ renderNewAppFormOn: html
 				html checkbox attributeAt: 'id' put: 'appType'; callback: [:value | self addValue: value named: 'isOrbeon'].
 				html label attributeAt: 'for' put: 'appType'; with: ('Is Orbeon ?' translateFor: self session user).
 			].
-			html div id: 'top-search-filters-one'; with: [
+			html div class: 'top-search-filters-one'; with: [
 				html submitButton 
 					style: 'margin-top: 25px;';
 					callback: [self createNewApplication]; 

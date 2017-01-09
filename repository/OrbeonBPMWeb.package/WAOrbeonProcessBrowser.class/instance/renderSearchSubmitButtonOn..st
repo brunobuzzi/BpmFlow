@@ -4,7 +4,7 @@ renderSearchSubmitButtonOn: html
 
 	styleOption := self renderFilterFields ifFalse: ['margin-top: 20px;'] ifTrue: [''].
 
-	html div id: 'top-search-filters-one';
+	html div class: 'top-search-filters-one';
 		style: styleOption;
 		with: [
 			html submitButton 

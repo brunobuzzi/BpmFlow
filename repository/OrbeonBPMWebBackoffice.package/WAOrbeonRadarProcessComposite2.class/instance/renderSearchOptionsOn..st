@@ -11,7 +11,7 @@ renderSearchOptionsOn: html
 			html div class: 'top-search-div'; with: [self renderApplicationComboOn: html].
 			self hasSelectedApplication 
 			ifTrue: [self renderProcessTypeComboOn: html]
-			ifFalse: [html div id: 'top-search-filters-two'; 
+			ifFalse: [html div class: 'top-search-filters-two'; 
 								class: 'margin-top-20px float-left width-100px'; 
 								with: [self renderSubmitButtonOn: html]].
 

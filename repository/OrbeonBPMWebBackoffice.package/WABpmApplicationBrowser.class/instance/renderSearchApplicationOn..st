@@ -9,6 +9,6 @@ renderSearchApplicationOn: html
 				html textInput attributeAt: 'id' put: 'appId'; 
 						callback: [:value | self addSearchValue: value named: 'appName'];
 						value: (self searchValueAt: 'appName')].
-			html div id: 'top-search-filters-two'; with: [self renderSearchSubmitButtonOn: html].
+			html div class: 'top-search-filters-two'; with: [self renderSearchSubmitButtonOn: html].
 		].
 	]

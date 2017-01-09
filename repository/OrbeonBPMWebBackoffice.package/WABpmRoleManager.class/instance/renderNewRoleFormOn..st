@@ -24,7 +24,7 @@ renderNewRoleFormOn: html
 							html checkbox attributeAt: 'id' put: 'isbackoffice'; callback: [:value | self isBackoffice: value].
 							html label attributeAt: 'for' put: 'isbackoffice'; with: ('Is Backoffice ?' translateFor: self session user).
 						].
-						html div id: 'top-search-filters-one'; with: [
+						html div class: 'top-search-filters-one'; with: [
 							html submitButton style: 'margin-top: 25px;';
 								callback: [self searchRoles]; 
 								with: ('Search' translateFor: self session user).

@@ -20,6 +20,6 @@ renderTwoFitersOn: html
 			callback: [:value | searchValues at: 'field-value-2' put: value].
 	].
 
-	html div id: 'top-search-filters-two'; with:[ 
+	html div class: 'top-search-filters-two'; with:[ 
 		html submitButton class: 'search-section-float search-section-width-100 margin-top-35px';
 						callback: [self searchMatchingProcessesRange]; with: ('Search' translateFor: self session user)].

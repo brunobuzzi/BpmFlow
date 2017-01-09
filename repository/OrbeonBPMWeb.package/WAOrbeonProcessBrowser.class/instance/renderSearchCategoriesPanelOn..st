@@ -10,7 +10,7 @@ renderSearchCategoriesPanelOn: html
 				html textInput attributeAt: 'id' put: 'categotyLabel'; callback: [:value | self addSearchValue: value named: 'category-name'].
 			].
 			self renderCategoriesListOn: html.
-			html div id: 'top-search-filters-one'; with: [
+			html div class: 'top-search-filters-one'; with: [
 				html submitButton 
 					style: 'margin-top: 25px';
 					callback: [self searchMatchingCategories]; 

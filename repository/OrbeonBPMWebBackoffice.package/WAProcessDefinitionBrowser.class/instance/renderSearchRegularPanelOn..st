@@ -12,7 +12,7 @@ renderSearchRegularPanelOn: html
 			].
 			html div class: 'top-search-div'; with: [self renderProcessTypeComboOn: html].
 			html div class: 'top-search-div'; with: [self renderFormDefinitionComboOn: html].
-			html div id: 'top-search-filters-two'; with: [
+			html div class: 'top-search-filters-two'; with: [
 				self renderSearchSubmitButtonOn: html].
 		].
 ]

@@ -1,7 +1,7 @@
 other
 renderSearchSubmitButtonOn: html
 
-	html div id: 'top-search-filters-one';
+	html div class: 'top-search-filters-one';
 		style: 'margin-top: 20px;';
 		with: [
 			html submitButton 

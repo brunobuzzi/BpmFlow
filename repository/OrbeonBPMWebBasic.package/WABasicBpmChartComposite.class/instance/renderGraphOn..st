@@ -10,7 +10,7 @@ renderGraphOn: html
 	html div 
 		class: 'display-inline-flex margin-left-5px width-100per height100per';
 		with: [ 
-			html div "id: 'top-search-filters-one'; "
+			html div 
 				class: 'margin-top-5px';
 				with: [
 					html anchor 

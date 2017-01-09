@@ -15,4 +15,4 @@ renderFormFieldsComboOn: html
 
 	self hasFormField
 	ifTrue: [self renderFilterValuesAndButtonOn: html]
-	ifFalse: [html div id: 'top-search-filters-one'; with: [self renderSubmitButtonOn: html class: 'margin-top-20px']]
+	ifFalse: [html div class: 'top-search-filters-one'; with: [self renderSubmitButtonOn: html class: 'margin-top-20px']]
