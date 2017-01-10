@@ -3,7 +3,7 @@ initializeSewafTableForUsers
 	"Table with all Users that are NOT present in the role <selectedObject> "
 	| table column|
 
-	column := SewafReportColumn selector: #username title: 'Username'.
+	column := SewafReportColumn selector: #username title: ('Username' translateFor: self session user).
 	column beSortable; beSearchable; sortBlock: [:a :b | a username <= b username]. 
 	table := (SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
