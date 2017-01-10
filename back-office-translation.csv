@@ -1,0 +1,263 @@
+Target Translation;English;French;German;Italian;Portuguese;Spanish
+ | Number of Tasks: ; | Number of Tasks: ;| Nombre de tâches:;Aufrechtzuerhalten Anzahl der Aufgaben:;| Numero di attività:;| Número de tarefas:;| Número de tareas:
+ | Number of Users: ; | Number of Users: ; | Nombre d'utilisateurs:; Aufrechtzuerhalten Anzahl der Nutzer:; | Numero di utenti:; | Número de usuários:; | Número de usuarios:
+ | Total Process Definitions: ; | Total Process Definitions: ; | Total des définitions de processus:; Aufrechtzuerhalten Gesamtprozessdefinitionen:; | Totale Definizioni di processo:; | Total de Definições de Processo:; | Definiciones de Procesos Totales:
+ | Total Process Instances: ; | Total Process Instances: ; | Nombre total d'instances de processus:; Aufrechtzuerhalten Gesamte Prozessinstanzen:; | Totale istanze di processo:; | Total de instâncias do processo:; | Total de instancias de proceso:
+ | Unassigned Tasks: ; | Unassigned Tasks: ; | Tâches non assignées:; Aufrechtzuerhalten Nicht zugewiesene Aufgaben:; | Compiti non assegnati:; | Tarefas não atribuídas:; | Tareas no asignadas:
+ Average Time per Tasks: ; Average Time per Tasks: ; Temps moyen par tâche:; Durchschnittliche Zeit pro Aufgaben:; Tempo medio per le attività:; Tempo médio por tarefas:; Tiempo medio por tareas:
+ Current Tasks: ; Current Tasks: ; Tâches actuelles:; Aktuelle Aufgaben:; Attività correnti:; Tarefas atuais:; Tareas actuales:
+ minutes; minutes; minutes; Protokoll; minuti; minutos; minutos
+ Number of Tasks: ; Number of Tasks: ; Nombre de tâches:; Anzahl der Aufgaben:; Numero di attività:; Número de tarefas:; Número de tareas:
+ Total Process Instances: ; Total Process Instances: ; Nombre total d'instances de processus:; Gesamte Prozessinstanzen:; Totale istanze di processo:; Total de instâncias do processo:; Total de instancias de proceso:
+-View All-;-View All-;-Voir tout-;-Alles anzeigen-;-Guarda tutto-;-Ver tudo-;-Ver todo-
+2. Import Configuration;2. Import Configuration;2. Importation de la configuration;2. Importieren Sie die Konfiguration;2. Importa configurazione;2. Importar Configuração;2. Configuración de importación
+3. Apply Configuration;3. Apply Configuration;3. Appliquer la configuration;3. Konfiguration übernehmen;3. Applica configurazione;3. Aplicar Configuração;3. Aplicar Configuración
+Add New Import Process Form;Add New Import Process Form;Ajouter un nouveau formulaire de processus d'importation;Neues Import-Prozess-Formular hinzufügen;Aggiungi nuovo Importa modulo Process;Adicionar novo formulário de processo de importação;Añadir nuevo formulario de proceso de importación
+Add Role to User;Add Role to User;Ajouter un rôle à l'utilisateur;Rolle zu Benutzer hinzufügen;Aggiungere ruolo di utente;Adicionar função ao usuário;Añadir función al usuario
+Add Translation;Add Translation;Ajouter une traduction;Übersetzung hinzufügen;aggiungi traduzione;Adicionar tradução;Añadir traducción
+Add User to Rol;Add User to Rol;Ajouter un utilisateur à Rol;Benutzer zu Rol hinzufügen;Aggiungi utente a Rol;Adicionar usuário a Rol;Añadir usuario a Rol
+Admin;Admin;Admin;Administrator;Admin;Admin;administración
+Admin?;Admin?;Admin?;Administrator?;Admin?;Admin?;¿Administración?
+All;All;Tout;Alle;Tutti;Todos;Todas
+Application;Application;Application;Anwendung;Applicazione;Aplicação;Solicitud
+Application Name;Application Name;Nom de l'application;Anwendungsname;Nome dell'applicazione;Nome da Aplicação;Nombre de la aplicación
+Application Report;Application Report;Rapport d'application;Anwendungsbericht;report Application;Relatório de Aplicação;Informe de solicitud
+Application:;Application:;Application:;Anwendung:;Applicazione:;Aplicação:;Solicitud:
+Applications;Applications;Applications;Anwendungen;applicazioni;Aplicações;Aplicaciones
+Applications Charts;Applications Charts;Applications graphiques;Anwendungsdiagramme;Applicazioni Grafici;Gráficos de Aplicações;Gráficos de aplicaciones
+Assign and Close;Assign and Close;Affecter et fermer;Zuweisen und schließen;Assegnare e chiudi;Atribuir e fechar;Asignar y Cerrar
+Assigned Date;Assigned Date;Date d'affectation;Zugewiesenes Datum;assegnato Data;Data atribuída;Fecha asignada
+Assigned Users;Assigned Users;Utilisateurs affectés;Zugeordnete Benutzer;Gli utenti assegnati;Usuários Atribuídos;Usuarios asignados
+Available Form Applications;Available Form Applications;Formulaires disponibles;Verfügbare Formularanwendungen;Applicazioni modulo disponibile;Formulários disponíveis;Aplicaciones de forma disponibles
+Available Orbeon Applications;Available Orbeon Applications;Applications Orbeon disponibles;Verfügbare Orbeon Anwendungen;Disponibili Applicazioni Orbeon;Aplicações Orbeon disponíveis;Aplicaciones Orbeon disponibles
+Available Orbeon Forms;Available Orbeon Forms;Formules Orbeon disponibles;Verfügbare Orbeon Forms;Forme Orbeon disponibili;Disponível Orbeon Forms;Formularios Orbeon Disponibles
+Average Time per Task;Average Time per Task;Temps moyen par tâche;Durchschnittliche Zeit pro Aufgabe;Tempo medio per operazione;Tempo médio por tarefa;Promedio de tiempo por tarea
+Backcolor;Backcolor;Couleur de fond;Hintergrundfarbe;Colore di sfondo;Cor de fundo;Color de fondo
+Backcolors;Backcolors;Retour;Rückseiten;Backcolors;Backcolors;Backcolors
+Backoffice;Backoffice;Backoffice;Backoffice;backoffice;Backoffice;Backoffice
+Bar Chart;Bar Chart;Diagramme à bandes;Balkendiagramm;Grafico a barre;Gráfico de barras;Gráfico de barras
+Base Dn;Base Dn;Base Dn;Base Dn;Base DN;Base Dn;Base Dn
+Bind Dn;Bind Dn;Lier Dn;Bind Dn;Bind Dn;Bind Dn;Enlazar Dn
+Bind Password;Bind Password;Mot de passe;Bind Kennwort;password Bind;Senha de Vinculação;Contraseña de enlace
+Boolean Table;Boolean Table;Tableau booléen;Boolesche Tabelle;Tabella booleano;Tabela booleana;Tabla booleana
+BPM Process;BPM Process;Processus BPM;BPM-Verfahren;BPM processo;Processo BPM;Proceso BPM
+BpmApplication;BpmApplication;BpmApplication;BpmApplication;BpmApplication;BpmApplication;BpmApplication
+BpmBackofficeRole;BpmBackofficeRole;BpmBackofficeRole;BpmBackofficeRole;BpmBackofficeRole;BpmBackofficeRole;BpmBackofficeRole
+BpmFrontOfficeRole;BpmFrontOfficeRole;BpmFrontOfficeRole;BpmFrontOfficeRole;BpmFrontOfficeRole;BpmFrontOfficeRole;BpmFrontOfficeRole
+Can be Modified:;Can be Modified:;Peut être modifié:;Kann geändert werden:;Possono essere modificati:;Pode ser modificado:;Se puede modificar:
+Category Name;Category Name;Nom de catégorie;Kategoriename;Nome della categoria;Nome da Categoria;nombre de la categoría
+Change Password;Change Password;Changer le mot de passe;Passwort ändern;Cambia la password;Mudar senha;Cambia la contraseña
+Chart Saved !;Chart Saved !;Graphique sauvegardé!;Chart gespeichert!;Grafico salvato!;Gráfico Salvo!;¡Cuadro guardado!
+Chart Type;Chart Type;Type de graphique;Diagrammtyp;Tipo di grafico;Tipo de Gráfico;Tipo de gráfico
+Charts;Charts;Graphiques;Diagramme;Grafici;Gráficos;Gráficos
+Charts Repository;Charts Repository;Référencement;Charts-Repository;grafici Repository;Repositório de Gráficos;Repositorio de gráficos
+Close;Close;Fermer;Schließen;Vicino;Fechar;Cerca
+Color;Color;Couleur;Farbe;Colore;Cor;Color
+Condition Block;Condition Block;Condition Block;Zustand Block;Condizione Block;Bloco de condição;Bloque de Condición
+Configuration;Configuration;Configuration;Konfiguration;Configurazione;Configuração;Configuración
+Confirm;Confirm;Confirmer;Bestätigen;Confermare;Confirmar;Confirmar
+Confirm Delete ?;Confirm Delete ?;Confirmation de la suppression ?;Löschen bestätigen ?;Conferma cancellazione ?;Confirmar Eliminar?;Confirmar eliminación ?
+Create Application;Create Application;Créer une application;Anwendung erstellen;Crea Applicazione;Criar Aplicação;Crear aplicación
+Create Category;Create Category;Créer une catégorie;Kategorie erstellen;creare Categoria;Criar categoria;Crear categoría
+Create Role;Create Role;Créer un rôle;Rolle erstellen;creare Ruolo;Criar Papel;Crear papel
+Create User;Create User;Créer un utilisateur;Benutzer erstellen;Crea utente;Criar Usuário;Crear usuario
+Create-Search Roles;Create-Search Roles;Rôles de création de recherche;Erstellen-Suchrollen;Create-ricerca ruoli;Funções de Criar Pesquisa;Funciones de creación de búsqueda
+Created;Created;Créé;Erstellt;Creato;Criado;Creado
+Created Time:;Created Time:;Temps de création:;Erstellungszeit:;Tempo Creato:;Tempo criado:;Tiempo creado:
+Creation Date;Creation Date;Date de création;Erstellungsdatum;Data di creazione;Data de criação;Fecha de creación
+Creation Day;Creation Day;Jour de la Création;Schöpfungstag;creazione Giorno;Dia da Criação;Día de Creación
+Creation of Processes in Calendar;Creation of Processes in Calendar;Création de processus dans le calendrier;Erstellen von Prozessen im Kalender;Creazione di processi in calendario;Criação de Processos no Calendário;Creación de procesos en el calendario
+Creation Time;Creation Time;Heure de création;Erschaffungszeit;Ora di creazione;Tempo de Criação;Tiempo de creación
+Creator;Creator;Créateur;Schöpfer;Creatore;Criador;Creador
+Current Password;Current Password;Mot de passe actuel;Aktuelles Passwort;Password attuale;senha atual;contraseña actual
+Current Tasks;Current Tasks;Tâches actuelles;Aktuelle Aufgaben;compiti attuali;Tarefas atuais;Tareas actuales
+Current Tasks by Type;Current Tasks by Type;Tâches actuelles par type;Aktuelle Aufgaben nach Typ;Compiti attuali per tipo;Tarefas atuais por tipo;Tareas actuales por tipo
+Data;Data;Données;Daten;dati;Dados;Datos
+Database IP;Database IP;IP de base de données;Datenbank-IP;database di indirizzi IP;IP do banco de dados;IP de base de datos
+Database Password;Database Password;Mot de passe de base de données;Datenbankkennwort;password database;Senha do banco de dados;Contraseña de base de datos
+Database User;Database User;Utilisateur de la base de données;Datenbankbenutzer;utente database;Usuário do banco de dados;Usuario de la base de datos
+Day Calendar;Day Calendar;Jour Calendrier;Tageskalender;giorno Calendario;Calendário de dia;Calendario del día
+Define New Process;Define New Process;Définir un nouveau processus;Neuen Prozess definieren;Definire un nuovo processo;Definir novo processo;Definir un nuevo proceso
+DEL;DEL;DEL;DEL;DEL;DEL;DEL
+Delete report;Delete report;Supprimer le rapport;Bericht löschen;Eliminare rapporto;Excluir relatório;Eliminar informe
+Delete Report;Delete Report;Supprimer le rapport;Bericht löschen;Cancella Rapporto;Excluir relatório;Eliminar informe
+Distribution;Distribution;Distribution;Verteilung;Distribuzione;Distribuição;Distribución
+Donut Chart;Donut Chart;Graphique Donut;Doughnut-Diagramm;Donut Grafico;Gráfico de rosca;Gráfico de Donuts
+Double Bar Chart;Double Bar Chart;Double Bar Chart;Doppeltes Balkendiagramm;Doppia Bar Chart;Gráfico de barras duplo;Doble Gráfico de barras
+Double Donut Chart;Double Donut Chart;Double Donut Chart;Doppeltes Krapfen-Diagramm;Doppio grafico ad anello;Tabela dobro da filhós;Doble Donut Chart
+Download System Role Configuration;Download System Role Configuration;Télécharger la configuration du rôle système;Systemrollenkonfiguration herunterladen;Scarica Configurazione ruolo di sistema;Download da configuração de função do sistema;Descargar la configuración del rol del sistema
+Draw Chart;Draw Chart;Dessiner le graphique;Zeichnen Sie Diagramm;disegnare Grafico;Desenhe o gráfico;Dibujar el gráfico
+End;End;Fin;Ende;Fine;Fim;Fin
+End Date;End Date;Date de fin;Enddatum;Data di fine;Data final;Fecha final
+Export;Export;Exportation;Export;Esportare;Exportar;Exportar
+Export XPDL;Export XPDL;Exportation XPDL;Exportieren Sie XPDL;Export XPDL;Export XPDL;Exportar XPDL
+false;false;faux;falsch;FALSO;FALSO;FALSO
+Field;Field;Champ;Feld;Campo;Campo;Campo
+Field Report;Field Report;Rapport sur le terrain;Feldbericht;Relazione campo;Relatório de campo;Informe sobre el terreno
+Field Value;Field Value;Valeur du champ;Feldwert;campo Valore;Valor do campo;Valor del campo
+FileName:;FileName:;Nom de fichier:;Dateiname:;Nome del file:;Nome do arquivo:;Nombre del archivo:
+Filled Forms;Filled Forms;Formulaires remplis;Gefüllte Formulare;moduli compilati;Formulários preenchidos;Formularios rellenos
+Finished;Finished;Fini;Fertig;Finito;Acabado;Terminado
+Finished Tasks by Type;Finished Tasks by Type;Tâches terminées par type;Abgeschlossene Aufgaben nach Typ;Attività completate per tipo;Tarefas concluídas por tipo;Tareas finalizadas por tipo
+Form;Form;Forme;Bilden;Modulo;Formato;Formar
+Form Definition;Form Definition;Définition du formulaire;Formular Definition;modulo Definizione;Definição do formulário;Definición del Formulario
+Form Fields;Form Fields;Champs de formulaire;Formularfelder aus;I campi modulo;Campos de formulário;Campos del formulario
+Forms;Forms;Formes;Formen;Forme;Formulários;Formularios
+Free Tasks per Role;Free Tasks per Role;Tâches gratuites par rôle;Freie Aufgaben pro Rolle;Attività gratuita per ruolo;Tarefas gratuitas por função;Tareas gratuitas por rol
+GemStone/S IP;GemStone/S IP;GemStone / S IP;GemStone / S IP;GemStone / S IP;GemStone / S IP;GemStone / S IP
+Global Charts;Global Charts;Graphiques mondiaux;Globale Karten;Grafici globali;Gráficos Globais;Gráficos Globales
+Global Report;Global Report;Rapport global;Globaler Bericht;Rapporto globale;Relatório Global;Informe Global
+Go;Go;Aller;Gehen;Andare;Ir;Ir
+Has Anonymous Start:;Has Anonymous Start:;A Anonyme Démarrer:;Hat Anonymous Start:;Ha Anonimo Inizio:;Tem início anônimo:;Tiene Anonymous Start:
+Has Finished Processes:;Has Finished Processes:;A des processus terminés:;Abgeschlossene Prozesse:;Ha processi finiti:;Tem Processos Finalizados:;Tiene procesos terminados:
+home-office-check;home-office-check;Maison-bureau-chèque;Home-office-check;casa-ufficio-check;Casa-escritório-cheque;Casa-oficina-cheque
+Id;Id;Id;Ich würde;Id;Identidade;Carné de identidad
+Import;Import;Importer;Einführen;Importare;Importar;Importar
+Import All Files;Import All Files;Importer tous les fichiers;Importieren Sie alle Dateien;Importa tutti i file;Importar todos os arquivos;Importar todos los archivos
+Import Users & Roles from CSV file;Import Users & Roles from CSV file;Importer des utilisateurs et des rôles à partir du fichier CSV;Importieren Sie Benutzer und Rollen aus CSV-Datei;Importa utenti e ruoli da file CSV;Importar usuários e funções do arquivo CSV;Importar usuarios y funciones del archivo CSV
+Information;Information;Information;Information;Informazioni;Em formação;Información
+Internationalization;Internationalization;Internationalisation;Internationalisierung;Internazionalizzazione;Internacionalização;Internacionalización
+Is Admin;Is Admin;Est Admin;Ist Admin;è admin;É Admin;Es admin
+Is Admin ?;Is Admin ?;Est-Admin?;Ist Admin?;È admin?;É Admin?;¿Es Admin?
+Is Backoffice ?;Is Backoffice ?;Est-Backoffice?;Ist Backoffice?;È Backoffice?;É Backoffice?;¿Es Backoffice?
+Is Backoffice User;Is Backoffice User;Utilisateur Backoffice;Ist Backoffice-Benutzer;È Backoffice utente;É o usuário Backoffice;Es el usuario de Backoffice
+Is Orbeon ?;Is Orbeon ?;Est-Orbeon?;Ist Orbeon?;È Orbeon?;É Orbeon?;Qué es Orbeon?
+Languages;Languages;Langues;Sprachen;Le lingue;Idiomas;Idiomas
+Lateral List Paging Size;Lateral List Paging Size;Taille latérale de la pagination;Seitengröße;Laterale Lista Paging Size;Tamanho de paginação de lista lateral;Lateral List Tamaño de paginación
+Ldap IP;Ldap IP;IP Ldap;Ldap IP;Ldap IP;IP do Ldap;IP de Ldap
+List Processes Definitions;List Processes Definitions;Liste des définitions des processus;Listenprozesse Definitionen;Lista Processi Definizioni;Listar Definições de Processos;Listar Definiciones de Procesos
+Lists;Lists;Listes;Listen;elenchi;Listas;Liza
+Login;Login;S'identifier;Anmeldung;Accesso;Entrar;Iniciar sesión
+Login Mode;Login Mode;Mode de connexion;Login-Modus;Modalità di accesso;Modo de Login;Modo de inicio de sesión
+Logout;Logout;Se déconnecter;Ausloggen;Disconnettersi;Sair;Cerrar sesión
+Logout from Application;Logout from Application;Déconnexion de l'application;Abmelden von der Anwendung;Disconnetti da Application;Sair do aplicativo;Cerrar sesión de la aplicación
+Manage Applications;Manage Applications;Gérer des applications;Anwendungen verwalten;Gestire applicazioni;Gerenciar aplicativos;Administrar aplicaciones
+Manage Roles;Manage Roles;Gérer les rôles;Rollen verwalten;Gestione ruoli;Gerir funções;Administrar roles
+Manage Users;Manage Users;gérer les utilisateurs;Benutzer verwalten;Gestione utenti;Gerir utilizadores;Administrar usuarios
+manager;manager;gérante;Manager;manager;Gerente;gerente
+Modified;Modified;Modifié;Geändert;Modificata;Modificado;Modificado
+Modify Category;Modify Category;Modifier la catégorie;Ändern Kategorie;modificare la categoria;Modificar Categoria;Modificar Categoría
+Monitor Processes;Monitor Processes;Suivi des processus;Prozesse überwachen;monitorare i processi;Monitorar Processos;Supervisar Procesos
+Monitor Users;Monitor Users;Surveiller les utilisateurs;Benutzer überwachen;Monitor utenti;Monitorar Usuários;Usuarios del Monitor
+N/A;N/A;N / A;N / A;N / A;N / D;N / A
+Name;Name;prénom;Name;Nome;Nome;Nombre
+New Category;New Category;Nouvelle catégorie;Neue Kategorie;Nuova categoria;Nova categoria;Nueva categoría
+New Language;New Language;Nouveau langage;Neue Sprache;nuova lingua;Nova linguagem;Nuevo idioma
+New Password;New Password;nouveau mot de passe;Neues Kennwort;nuova password;Nova senha;nueva contraseña
+No;No;Non;Nein;no;Não;No
+Non Selected Color;Non Selected Color;Couleur non sélectionnée;Nicht ausgewählte Farbe;Non Colore selezionato;Cor não selecionada;Color no seleccionado
+Number of Processes Definition:;Number of Processes Definition:;Nombre de processus Définition:;Anzahl der Prozesse Definition:;Numero di processi Definizione:;Número de Processos Definição:;Número de Procesos Definición:
+Number of Tasks;Number of Tasks;Nombre de tâches;Anzahl der Aufgaben;Numero di attività;Número de Tarefas;Número de tareas
+Number of Tasks per Role;Number of Tasks per Role;Nombre de tâches par rôle;Anzahl der Aufgaben pro Rolle;Numero di attività per ruolo;Número de tarefas por função;Número de tareas por función
+Number of Users;Number of Users;Nombre d'utilisateurs;Anzahl der Nutzer;Numero di utenti;Número de usuários;Número de usuarios
+Number of Users per Role;Number of Users per Role;Nombre d'utilisateurs par rôle;Anzahl der Benutzer pro Rolle;Numero di utenti per ruolo;Número de usuários por função;Número de usuarios por función
+Orbeon Applications;Orbeon Applications;Applications Orbeon;Orbeon Anwendungen;Applicazioni Orbeon;Aplicações Orbeon;Aplicaciones Orbeon
+Orbeon IP;Orbeon IP;Orbeon IP;Orbeon IP;Orbeon IP;Orbeon IP;Orbeon IP
+OrbeonApplication;OrbeonApplication;OrbeonApplication;OrbeonAnwendung;OrbeonApplication;OrbeonApplication;OrbeonApplication
+Parent Process:;Parent Process:;Processus parental:;Übergeordneter Prozess:;Processo padre:;Processo pai:;Proceso de Padres:
+Password;Password;Mot de passe;Passwort;parola d'ordine;Senha;Contraseña
+Password:;Password:;Mot de passe:;Passwort:;Parola d'ordine:;Senha:;Contraseña:
+Proceed;Proceed;Procéder;Vorgehen;Procedere;Proceder;Proceder
+Process;Process;Processus;Verarbeiten;Processo;Processo;Proceso
+Process Categories;Process Categories;Catégories de processus;Prozesskategorien;Categorie di processo;Categorias de processos;Categorías de procesos
+Process Definition;Process Definition;Définition du processus;Prozessdefinition;Definizione processo;Definição do processo;Definición del proceso
+Process Definitions by Application;Process Definitions by Application;Définitions de processus par application;Prozessdefinitionen nach Anwendung;Definizioni di processo per applicazione;Definições de Processo por Aplicação;Definiciones de proceso por aplicación
+Process Distribution by Version;Process Distribution by Version;Répartition des processus par version;Prozessverteilung nach Version;Processo di distribuzione da Versione;Distribuição do Processo por Versão;Distribución de procesos por versión
+Process Id;Process Id;Id du processus;Prozesskennung;processo Id;ID do processo;Identificacion de proceso
+Process Id:;Process Id:;Id du processus:;Prozesskennung:;Processo Id:;Id do processo:;Identificacion de proceso:
+Process Instances;Process Instances;Instances de processus;Prozessinstanzen;istanze di processo;Instâncias do processo;Instancias del proceso
+Process Instances per Process Definition;Process Instances per Process Definition;Instances de processus par définition de processus;Prozessinstanzen pro Prozessdefinition;Le istanze di processo per processo Definizione;Instâncias de Processo por Definição de Processo;Instancias de proceso por definición de proceso
+Process Map;Process Map;Carte du processus;Prozesszuordnung;processo Mappa;Mapa do processo;Mapa de proceso
+Process Name;Process Name;Nom du processus;Prozessname;Nome del processo;Nome do processo;Nombre del proceso
+Process Report;Process Report;Rapport de processus;Prozessbericht;resoconto del processo di;Relatório do processo;Informe del proceso
+Process Type;Process Type;Type de process;Prozeßtyp;Tipo di processo;Tipo de Processo;Tipo de proceso
+Processes;Processes;Processus;Prozesse;Processi;Processos;Procesos
+Processes Average Time;Processes Average Time;Processus Temps moyen;Prozesse Durchschnittliche Zeit;Processi Tempo medio;Processos Tempo médio;Procesos Tiempo medio
+Processes Charts;Processes Charts;Graphiques des processus;Prozessdiagramme;processi Grafici;Gráficos de Processos;Gráficos de procesos
+Processes Distribution by Field Value;Processes Distribution by Field Value;Répartition des processus par valeur de champ;Prozessverteilung nach Feldwert;Processi di distribuzione da Campo Valore;Distribuição de processos por valor de campo;Distribución de procesos por valor de campo
+Recursive Field Report;Recursive Field Report;Rapport récursif sur le terrain;Rekursiver Feldbericht;Ricorsivo Relazione Campo;Relatório Recursivo de Campo;Informe de campo recursivo
+Regular List Paging Size;Regular List Paging Size;Taille de la pagination des listes régulières;Regelmäßige Liste Paging-Größe;Regolare Lista Paging Size;Tamanho de paging de lista regular;Tamaño de paginación de lista regular
+Remove Category;Remove Category;Supprimer la catégorie;Kategorie entfernen;rimuovere Categoria;Remover categoria;Eliminar categoría
+Remove Import Process Form;Remove Import Process Form;Suppression du formulaire de processus d'importation;Entfernen Sie Import Process Form;Rimuovere Import Modulo di processo;Remover formulário de processo de importação;Eliminar formulario de proceso de importación
+Remove Role;Remove Role;Supprimer le rôle;Rolle entfernen;rimuovere Ruolo;Remover Papel;Eliminar papel
+Remove Role from User;Remove Role from User;Supprimer le rôle de l'utilisateur;Entfernen Sie die Rolle vom Benutzer;Rimuovere ruolo da utente;Remover papel do usuário;Eliminar la función del usuario
+Remove User;Remove User;Supprimer l'utilisateur;Benutzer entfernen;rimuovere l'utente;Remover Usuário;Eliminar usuario
+Remove User from Role;Remove User from Role;Supprimer l'utilisateur du rôle;Benutzer aus Rolle entfernen;Rimuovere utente dal ruolo;Remover usuário da função;Quitar usuario del rol
+Remove User Role;Remove User Role;Supprimer le rôle utilisateur;Benutzerrolle entfernen;Rimuovere ruolo utente;Remover função do usuário;Eliminar el rol de usuario
+Repeat New Password;Repeat New Password;Répété le nouveau mot de passe;Wiederhole das neue Passwort;Ripetere la nuova password;Repita a nova senha;Repita la nueva contraseña
+Report Creator:;Report Creator:;Créateur du rapport:;Berichtsgenerator:;Relazione Creatore:;Criador do relatório:;Creador del informe:
+Report Type;Report Type;Type de rapport;Berichtstyp;Tipo di rapporto;Tipo de relatório;Tipo de informe
+Reset Password;Reset Password;réinitialiser le mot de passe;Passwort zurücksetzen;Resetta la password;Trocar a senha;Restablecer la contraseña
+Reseted Password;Reseted Password;Mot de passe;Reseted Passwort;password reseted;Senha Reseted;Contraseña resaltada
+Responsible;Responsible;Responsable;Verantwortlich;Responsabile;Responsável;Responsable
+Rol;Rol;Rol;Rol;Rol;Rol;Rol
+Rol Can not be removed;Rol Can not be removed;Rol ne peut pas être supprimé;Rol Kann nicht entfernt werden;Rol non può essere rimosso;Rol não pode ser removido;Rol no se puede quitar
+Rol's Name;Rol's Name;Nom de Rol;Rols Name;Nome di Rol;Nome de Rol;Nombre de Rol
+Role;Role;Rôle;Rolle;Ruolo;Função;Papel
+Role Report;Role Report;Rapport de rôle;Rollenbericht;Rapporto ruolo;Relatório de funções;Informe de función
+Role Type;Role Type;Type de rôle;Rollenart;Tipo ruolo;Tipo de função;Tipo de rol
+Roles;Roles;Les rôles;Rollen;ruoli;Funções;Roles
+Roles Charts;Roles Charts;Rôles Graphiques;Rollencharts;Ruoli Grafici;Gráficos de funções;Cartas de roles
+runner;runner;coureur;Läufer;corridore;corredor;Corredor
+Save Chart;Save Chart;Enregistrer le graphique;Diagramm speichern;Salva Grafico;Salvar gráfico;Guardar gráfico
+Save Language;Save Language;Enregistrer la langue;Sprache speichern;Salva Lingua;Salvar idioma;Guardar idioma
+Save Login Mode;Save Login Mode;Enregistrer le mode de connexion;Login-Modus speichern;Modalità di risparmio Accesso;Salvar modo de logon;Guardar modo de acceso
+Save Preferences;Save Preferences;Enregistrer les préférences;Einstellungen speichern;Salva preferenze;Guardar Preferências;Guardar Preferencias
+Save Translation;Save Translation;Enregistrer la traduction;Übersetzung speichern;Salva Traduzione;Salvar tradução;Guardar traducción
+Search;Search;Chercher;Suche;Ricerca;Pesquisa;Buscar
+Search Appication;Search Appication;Rechercher Appication;Suchen Appication;Ricerca Appication;Pesquisa Appication;Buscar Aplicación
+Search Chart Report;Search Chart Report;Recherche;Chart suchen;Ricerca Diagramma di rapporto;Relatório de gráfico de pesquisa;Informe de la carta de búsqueda
+Search Options;Search Options;Options de recherche;Suchoptionen;Opzioni di ricerca;Opções de busca;Opciones de búsqueda
+Search Process;Search Process;Processus de recherche;Suchprozess;Ricerca di processo;Processo de pesquisa;Proceso de búsqueda
+Search Report;Search Report;Rapport de recherche;Suchbericht;Rapporto di Ricerca;Relatório de pesquisa;Informe de búsqueda
+Search User;Search User;Rechercher un utilisateur;Benutzer suchen;Cerca utente;Procurar usuário;Buscar usuario
+Select CSV File;Select CSV File;Sélectionner le fichier CSV;Wählen Sie CSV-Datei;Seleziona file CSV;Selecionar arquivo CSV;Seleccionar archivo CSV
+Select File;Select File;Choisir le dossier;Datei aussuchen;Seleziona il file;Selecione o arquivo;Seleccione Archivo
+Select Language;Select Language;Choisir la langue;Sprache auswählen;Seleziona la lingua;Selecione o idioma;Seleccione el idioma
+Select One Option;Select One Option;Sélectionner une option;Wählen Sie eine Option aus;Seleziona una opzione;Selecione uma opção;Seleccione una opción
+Select Table;Select Table;Sélectionner une table;Wählen Sie Tabelle;Seleziona tabella;Selecionar tabela;Seleccionar tabla
+Selected Category;Selected Category;Catégorie choisie;Ausgewählte Kategorie;Categoria selezionata;Categoria selecionada;Categoría seleccionada
+Selected Color;Selected Color;Couleur sélectionnée;Ausgewählte Farbe;Colore selezionato;Cor selecionada;Color seleccionado
+Send File [;Send File [;Envoyer le fichier [;Datei senden [;Inviare file [;Enviar arquivo [;Enviar archivo [
+Server Setup;Server Setup;Configuration du serveur;Server einrichten;Configurazione del server;Configuração do servidor;Configuración del servidor
+Servers Configuration;Servers Configuration;Configuration des serveurs;Serverkonfiguration;Configurazione Server;Configuração dos Servidores;Configuración de servidores
+Set Language;Set Language;Définir la langue;Sprache einstellen;Imposta lingua;Definir idioma;Elegir lenguaje
+Show Chart;Show Chart;Afficher le graphique;Diagramm anzeigen;Mostra grafico;Mostrar gráfico;Mostrar gráfico
+Show Form Definitions;Show Form Definitions;Afficher les définitions de formulaire;Formulardefinitionen anzeigen;Definizioni Mostra modulo;Mostrar Definições de Formulário;Mostrar definiciones de formulario
+Show Hide Search Area;Show Hide Search Area;Afficher Masquer la zone de recherche;Ausblenden Suchbereich anzeigen;Mostra Nascondi Area di ricerca;Mostrar Esconder Área de Pesquisa;Mostrar Ocultar área de búsqueda
+Start;Start;Démarrer;Anfang;Inizio;Começar;comienzo
+Table Report;Table Report;Rapport de la table;Tabellenbericht;Tabella Relazione;Relatório de tabela;Informe de la tabla
+Tasks Average Time;Tasks Average Time;Tâches Temps moyen;Aufgaben Durchschnittliche Zeit;Compiti tempo medio;Tempo médio das tarefas;Tiempo medio de las tareas
+Text to Translate;Text to Translate;Texte à traduire;Text zu übersetzen;Testo da tradurre;Texto para traduzir;Texto para traducir
+Time to Build:;Time to Build:;Temps de construction:;Zeitaufwand:;Tempo per costruire:;Tempo para construir:;Tiempo para construir:
+Toggle Anonymous Start;Toggle Anonymous Start;Toggle Anonymous Start;Anonymer Start umschalten;Toggle Anonimo Inizio;Alternar o início anônimo;Alternar inicio anónimo
+Toggle Lateral List;Toggle Lateral List;Toggle Lateral List;Seitliche Liste umschalten;Toggle Lista laterale;Alternar Lista Lateral;Toggle Lateral List
+Translation;Translation;Traduction;Übersetzung;Traduzione;Tradução;Traducción
+Type;Type;Type;Art;Digitare;Digitar;Tipo
+Type:;Type:;Type:;Art:;Digitare:;Digitar:;Tipo:
+Unassigned Tasks;Unassigned Tasks;Tâches non attribuées;Nicht zugewiesene Aufgaben;Compiti non assegnati;Tarefas não atribuídas;Tareas no asignadas
+Uploaded File;Uploaded File;Fichier téléchargé;Hochgeladene Datei;Il file caricato;Arquivo Carregado;Archivo cargado
+User;User;Utilisateur;Benutzer;Utente;Do utilizador;Usuario
+User added !!!;User added !!!;Utilisateur ajouté!;Benutzer hinzugefügt !!!;aggiunto utente !!!;Usuário adicionado !!!;Usuario agregado!
+User Can not be removed;User Can not be removed;Utilisateur Ne peut pas être supprimé;Benutzer Kann nicht entfernt werden;L'utente non può essere rimosso;Usuário Não pode ser removido;Usuario No se puede eliminar
+User Granted !!!;User Granted !!!;Utilisateur Accordé !!!;Benutzer gewährt !!!;Concesso utente !!!;Usuário Concedido !!!;Usuario Concedido !!!
+User Login;User Login;Utilisateur en ligne;Benutzer-Anmeldung;Login utente;Login de usuário;Inicio de sesión de usuario
+User Name;User Name;Nom d'utilisateur;Benutzername;Nome utente;Nome do usuário;Nombre de usuario
+User Preferences;User Preferences;Préférences de l'utilisateur;Nutzerpreferenzen;Preferenze utente;Preferências de usuário;Preferencias de usuario
+User removed !!!;User removed !!!;Utilisateur supprimé!;Benutzer wurde entfernt !!!;rimosso utente !!!;Usuário removido !!!;Usuario eliminado!
+User Report;User Report;Rapport utilisateur;Benutzerbericht;Relazione dell'utente;Relatório do Usuário;Informe del usuario
+User Ungranted !!!;User Ungranted !!!;Utilisateur Ungranted !!!;Benutzer ungranted !!!;User 'insicurezza !!!;Usuário Ungranted !!!;Usuario Ungranted !!!
+User:;User:;Utilisateur:;Benutzer:;Utente:;Do utilizador:;Usuario:
+Username;Username;Nom d'utilisateur;Benutzername;Nome utente;Nome de usuário;Nombre de usuario
+Users & Roles;Users & Roles;Utilisateurs et rôles;Benutzer & Rollen;Utenti e ruoli;Usuários e Funções;Usuarios y funciones
+Users Charts;Users Charts;Graphiques Utilisateurs;Benutzer-Charts;utenti Grafici;Gráficos de usuários;Gráficos de Usuarios
+Value to Search;Value to Search;Valeur à la recherche;Wert zu suchen;Valore da cercare;Valor à pesquisa;Valor a buscar
+Version;Version;Version;Version;Versione;Versão;Versión
+Version:;Version:;Version:;Version:;Versione:;Versão:;Versión:
+View SVG;View SVG;Voir SVG;Ansicht SVG;vista SVG;Ver SVG;Ver SVG
+visa checker;visa checker;Vérificateur de visa;Visumprüfer;checker visto;Verificador de vistos;Buscador de visas
+visa officer;visa officer;Agent / agente des visas;Visum Offizier;ufficiale visto;Oficial de vistos;Oficial de visa
+visa-appliance;visa-appliance;Appareil-visas;Visa-Gerät;visa-appliance;Aparelho de visto;Aparato de visado
+XPDL import is about to start. If succeed the imported Process/es Definition/s will be shown. If fail an error report will be shown.;XPDL import is about to start. If succeed the imported Process/es Definition/s will be shown. If fail an error report will be shown.;L'importation XPDL est sur le point de démarrer. En cas de réussite, les Process / es Définition / s importés seront affichés. En cas d'échec, un rapport d'erreur s'affiche.;XPDL-Import zu starten. Wenn erfolgreich, werden die importierten Process / es-Definitionen / s angezeigt. Falls nicht, wird ein Fehlerbericht angezeigt.;XPDL importazione sta per iniziare. Se riuscirà importato definizione di processo / es / s saranno mostrati. Se fallire verrà mostrato un rapporto di errore.;XPDL importação está prestes a começar. Se for bem sucedido, o Process / es Definition / s importado será mostrado. Se falhar, um relatório de erro será mostrado.;La importación de XPDL está a punto de comenzar. Si tiene éxito, se mostrarán los Procesos importados / es Definición / s. Si falla, se mostrará un informe de error.
+XPDL Upload Form;XPDL Upload Form;Formulaire de téléchargement XPDL;XPDL Formular hochladen;XPDL Carica Form;Formulário de Upload XPDL;Formulario de carga XPDL
+Yes;Yes;Oui ;ja ;sì ;sim ;Sí 

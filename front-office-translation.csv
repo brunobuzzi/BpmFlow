@@ -1,0 +1,143 @@
+Target Translation;English;French;German;Italian;Portuguese;Spanish
+Average Time per Tasks: ;Average Time per Tasks: ;Temps moyen par tâche:;Durchschnittliche Zeit pro Aufgaben:;Tempo medio per le attività:;Tempo médio por tarefas:;Tiempo medio por tareas:
+ minutes; minutes; minutes; Protokoll; minuti; minutos; minutos
+ Number of Tasks: ; Number of Tasks: ; Nombre de tâches:; Anzahl der Aufgaben:; Numero di attività:; Número de tarefas:; Número de tareas:
+ Possible Tasks Defintions per Role: ; Possible Tasks Defintions per Role: ; Tâches possibles Définitions par rôle:; Mögliche Aufgaben Definitionen pro Rolle:; Possibili Attività defintions per ruolo:; Tarefas possíveis Definições por função:; Posibles tareas Definiciones por rol:
+-View All-;-View All-;-Voir tout-;-Alles anzeigen-;-Guarda tutto-;-Ver tudo-;-Ver todo-
+Add Application;Add Application;Ajouter une application;Anwendung hinzufügen;Aggiungi applicazione;Adicionar aplicativo;Añadir aplicación
+And Context:;And Context:;Et Contexte:;Und Kontext:;E CONTESTO:;E Contexto:;Y Contexto:
+Application;Application;Application;Anwendung;Applicazione;Aplicação;Solicitud
+Application:;Application:;Application:;Anwendung:;Applicazione:;Aplicação:;Solicitud:
+Applications;Applications;Applications;Anwendungen;applicazioni;Aplicações;Aplicaciones
+Assigned Date:;Assigned Date:;Date d'affectation:;Zugewiesenes Datum:;Assegnato Data:;Data atribuída:;Fecha asignada:
+Available Processes;Available Processes;Processus disponibles;Verfügbare Prozesse;Processi disponibili;Processos disponíveis;Procesos disponibles
+Average Time per Task;Average Time per Task;Temps moyen par tâche;Durchschnittliche Zeit pro Aufgabe;Tempo medio per operazione;Tempo médio por tarefa;Promedio de tiempo por tarea
+Backcolor;Backcolor;Couleur de fond;Hintergrundfarbe;Colore di sfondo;Cor de fundo;Color de fondo
+Backcolors;Backcolors;Retour;Rückseiten;Backcolors;Backcolors;Backcolors
+Bar Chart;Bar Chart;Diagramme à bandes;Balkendiagramm;Grafico a barre;Gráfico de barras;Gráfico de barras
+Bizagi Export Colors;Bizagi Export Colors;Couleurs d'exportation de Bizagi;Bizagi-Export-Farben;BizAgi Export Colori;Cores de exportação do Bizagi;Bizagi Exportar Colores
+Boolean Table;Boolean Table;Tableau booléen;Boolesche Tabelle;Tabella booleano;Tabela booleana;Tabla booleana
+Can Unassign:;Can Unassign:;Peut annuler l'attribution:;Kann nicht zuordnen:;Possibile annullare l'assegnazione:;Pode cancelar a atribuição:;Puede cancelar la asignación:
+Category Name;Category Name;Nom de catégorie;Kategoriename;Nome della categoria;Nome da Categoria;nombre de la categoría
+Change Password;Change Password;Changer le mot de passe;Passwort ändern;Cambia la password;Mudar senha;Cambia la contraseña
+Chart Saved !;Chart Saved !;Graphique sauvegardé!;Chart gespeichert!;Grafico salvato!;Gráfico Salvo!;¡Cuadro guardado!
+Chart Type;Chart Type;Type de graphique;Diagrammtyp;Tipo di grafico;Tipo de Gráfico;Tipo de gráfico
+Charts;Charts;Graphiques;Diagramme;Grafici;Gráficos;Gráficos
+check-basic-data;check-basic-data;Check-basic-data;Check-Grunddaten;check-base-dati;Check-basic-data;Check-basic-data
+citizen-appliance;citizen-appliance;Citoyen-appareil;Bürger-Gerät;cittadino-appliance;Aparelho de cidadania;Electrodoméstico
+Close;Close;Fermer;Schließen;Vicino;Fechar;Cerca
+Close & Send Form;Close & Send Form;Fermer et envoyer le formulaire;Schließen & Senden Form;Close & Invia modulo;Fechar e enviar formulário;Cerrar y Enviar Formulario
+Close, Send & Select Users;Close, Send & Select Users;Fermer, Envoyer & Sélectionner Utilisateurs;Schließen, senden & wählen Sie Benutzer;Close, Invia & Seleziona utenti;Fechar, Enviar e Selecionar Usuários;Cerrar, Enviar y Seleccionar Usuarios
+Close, Send & Take Next Forms;Close, Send & Take Next Forms;Fermer, envoyer et prendre les formulaires suivants;Schließen, Senden & Take Next Forms;Chiudere, Invia e assumono forme Avanti;Fechar, enviar e receber os formulários seguintes;Cerrar, enviar y tomar los formularios siguientes
+Collapse;Collapse;Effondrement;Zusammenbruch;Crollo;Colapso;Colapso
+Color;Color;Couleur;Farbe;Colore;Cor;Color
+Color Options;Color Options;Options de couleurs;Farboptionen;Opzioni colore;Opções de cores;Opciones de color
+Condition Block;Condition Block;Condition Block;Zustand Block;Condizione Block;Bloco de condição;Bloque de Condición
+Confirm;Confirm;Confirmer;Bestätigen;Confermare;Confirmar;Confirmar
+Create Category;Create Category;Créer une catégorie;Kategorie erstellen;creare Categoria;Criar categoria;Crear categoría
+Create New Process;Create New Process;Créer un nouveau processus;Erstellen Sie einen neuen Prozess;Crea nuovo processo;Criar Novo Processo;Crear nuevo proceso
+Create Process;Create Process;Créer un processus;Erstellen Sie Prozess;creare processo;Criar processo;Proceso de creación
+Create Task;Create Task;Créer une tâche;Aufgabe erstellen;Crea attività;Criar tarefa;Crear tarea
+created;created;créé;Erstellt;creato;Criado;creado
+Creation Date:;Creation Date:;Date de création:;Erstellungsdatum:;Data di creazione:;Data de criação:;Fecha de creación:
+Creation Time;Creation Time;Heure de création;Erschaffungszeit;Ora di creazione;Tempo de Criação;Tiempo de creación
+Current Forms:;Current Forms:;Formulaires courants:;Aktuelle Formulare:;Le forme attuali:;Formulários atuais:;Formularios actuales:
+Current Password;Current Password;Mot de passe actuel;Aktuelles Passwort;Password attuale;senha atual;contraseña actual
+Current Processes;Current Processes;Processus en cours;Aktuelle Prozesse;i processi in corso;Processos atuais;Procesos actuales
+Display Orbeon Forms Embedded;Display Orbeon Forms Embedded;Affichage Orbeon Forms Embedded;Anzeigen Orbeon Forms Embedded;Visualizzare Forme Orbeon embedded;Exibir Orbeon Forms Embedded;Mostrar Orbeon Forms Embedded
+Display Preferences;Display Preferences;Préférences d'affichage;Anzeigeeinstellungen;Preferenze di visualizzazione;Preferências de exibição;Preferencias de visualización
+Display Task Mode - Expanded Box ?;Display Task Mode - Expanded Box ?;Affichage du mode tâche - Boîte étendue?;Anzeige Aufgabemodus - Expanded Box?;Display Mode Task - Expanded Box?;Modo de Tarefa de Visualização - Caixa Expandida?;¿Modo de la tarea de la exhibición - caja ampliada?
+Distribution;Distribution;Distribution;Verteilung;Distribuzione;Distribuição;Distribución
+done;done;terminé;erledigt;fatto;Feito;Hecho
+Donut Chart;Donut Chart;Graphique Donut;Doughnut-Diagramm;Donut Grafico;Gráfico de rosca;Gráfico de Donuts
+Draw Chart;Draw Chart;Dessiner le graphique;Zeichnen Sie Diagramm;disegnare Grafico;Desenhe o gráfico;Dibujar el gráfico
+Edit Task;Edit Task;Modifier la tâche;Aufgabe bearbeiten;Modifica operazione;Editar Tarefa;Editar Tarea
+Element ;Element ;Élément;Element;Elemento;Elemento;Elemento
+End;End;Fin;Ende;Fine;Fim;Fin
+End Value;End Value;Valeur finale;Endwert;Valore finale;Valor final;Valor final
+Export XPDL;Export XPDL;Exportation XPDL;Exportieren Sie XPDL;Export XPDL;Export XPDL;Exportar XPDL
+Field;Field;Champ;Feld;Campo;Campo;Campo
+Field Value;Field Value;Valeur du champ;Feldwert;campo Valore;Valor do campo;Valor del campo
+Finished;Finished;Fini;Fertig;Finito;Acabado;Terminado
+Finished Processes;Finished Processes;Processus finis;Fertige Prozesse;Processi finiti;Processos Finalizados;Procesos terminados
+Finished Task;Finished Task;Tâche terminée;Abgeschlossene Aufgabe;Task finito;Tarefa concluída;Tarea Finalizada
+Form;Form;Forme;Bilden;Modulo;Formato;Formar
+Form to Fill;Form to Fill;Formulaire de remplissage;Form zu füllen;Modulo da compilare;Formulário para preencher;Forma de llenar
+Free Process;Free Process;Processus Libre;Freies Verfahren;processo libero;Processo Livre;Proceso Libre
+Gateway Done Border Color;Gateway Done Border Color;Couleur de la bordure terminée par la passerelle;Gateway Fertig Farbe;Gateway Fatto Colore bordo;Gateway concluído cor da borda;Color del borde de la puerta de enlace
+Gateway Done Fill Color;Gateway Done Fill Color;Couleur de remplissage de la passerelle;Gateway Fertig Füllfarbe;Gateway Fatto Colore riempimento;Cor de preenchimento concluída do gateway;Gateway Done Fill Color
+Granted Tasks;Granted Tasks;Tâches acquises;Gewünschte Aufgaben;Compiti concessi;Tarefas Concedidas;Tareas otorgadas
+Information;Information;Information;Information;Informazioni;Em formação;Información
+Languages;Languages;Langues;Sprachen;Le lingue;Idiomas;Idiomas
+Lateral List Paging Size;Lateral List Paging Size;Taille latérale de la pagination;Seitengröße;Laterale Lista Paging Size;Tamanho de paginação de lista lateral;Lateral List Tamaño de paginación
+Lists;Lists;Listes;Listen;elenchi;Listas;Liza
+Login;Login;S'identifier;Anmeldung;Accesso;Entrar;Iniciar sesión
+Logout;Logout;Se déconnecter;Ausloggen;Disconnettersi;Sair;Cerrar sesión
+Logout from Application;Logout from Application;Déconnexion de l'application;Abmelden von der Anwendung;Disconnetti da Application;Sair do aplicativo;Cerrar sesión de la aplicación
+Modify Category;Modify Category;Modifier la catégorie;Ändern Kategorie;modificare la categoria;Modificar Categoria;Modificar Categoría
+My Charts;My Charts;Mes graphiques;Meine Charts;I miei Grafici;Meus gráficos;Mis gráficos
+My Processes;My Processes;Mes processus;Meine Prozesse;i miei processi;Meus Processos;Mis Procesos
+New Category;New Category;Nouvelle catégorie;Neue Kategorie;Nuova categoria;Nova categoria;Nueva categoría
+New Password;New Password;nouveau mot de passe;Neues Kennwort;nuova password;Nova senha;nueva contraseña
+New Process Created number: <;New Process Created number: <;Nouveau Processus Numéro créé: <;Neue Erstellungsnummer: <;Nuovo numero di processo Creato: <;Novo processo Número criado: <;Nuevo Proceso Número creado: <
+Non Selected Color;Non Selected Color;Couleur non sélectionnée;Nicht ausgewählte Farbe;Non Colore selezionato;Cor não selecionada;Color no seleccionado
+Number of Tasks;Number of Tasks;Nombre de tâches;Anzahl der Aufgaben;Numero di attività;Número de Tarefas;Número de tareas
+Or Context:;Or Context:;Ou Contexte:;Oder Kontext:;O il contesto:;Ou Contexto:;O Contexto:
+Parent Process:;Parent Process:;Processus parental:;Übergeordneter Prozess:;Processo padre:;Processo pai:;Proceso de Padres:
+Password:;Password:;Mot de passe:;Passwort:;Parola d'ordine:;Senha:;Contraseña:
+Possible Tasks;Possible Tasks;Tâches possibles;Mögliche Aufgaben;Possibili Compiti;Possíveis tarefas;Posibles tareas
+Process;Process;Processus;Verarbeiten;Processo;Processo;Proceso
+Process Categories;Process Categories;Catégories de processus;Prozesskategorien;Categorie di processo;Categorias de processos;Categorías de procesos
+Process Creator:;Process Creator:;Créateur de processus:;Prozess Schöpfer:;Processo Creatore:;Criador de Processo:;Creador del Proceso:
+Process Id;Process Id;Id du processus;Prozesskennung;processo Id;ID do processo;Identificacion de proceso
+Process Id:;Process Id:;Id du processus:;Prozesskennung:;Processo Id:;Id do processo:;Identificacion de proceso:
+Process Map;Process Map;Carte du processus;Prozesszuordnung;processo Mappa;Mapa do processo;Mapa de proceso
+Process Name:;Process Name:;Nom du processus:;Prozessname:;Nome del processo:;Nome do processo:;Nombre del proceso:
+Process State:;Process State:;État du processus:;Prozesszustand:;Processo di Stato:;Estado do processo:;Estado del proceso:
+Process Type;Process Type;Type de process;Prozeßtyp;Tipo di processo;Tipo de Processo;Tipo de proceso
+processing;processing;En traitement;Verarbeitung;lavorazione;em processamento;tratamiento
+Regular List Paging Size;Regular List Paging Size;Taille de la pagination des listes régulières;Regelmäßige Liste Paging-Größe;Regolare Lista Paging Size;Tamanho de paging de lista regular;Tamaño de paginación de lista regular
+Remove All;Remove All;Enlever tout;Alles entfernen;Rimuovi tutto;Deletar tudo;Eliminar todo
+Remove Category;Remove Category;Supprimer la catégorie;Kategorie entfernen;rimuovere Categoria;Remover categoria;Eliminar categoría
+Repeat New Password;Repeat New Password;Répété le nouveau mot de passe;Wiederhole das neue Passwort;Ripetere la nuova password;Repita a nova senha;Repita la nueva contraseña
+Role:;Role:;Rôle:;Rolle:;Ruolo:;Função:;Papel:
+Roles;Roles;Les rôles;Rollen;ruoli;Funções;Roles
+Running;Running;Fonctionnement;Laufen;In esecuzione;Correndo;Corriendo
+Save Chart;Save Chart;Enregistrer le graphique;Diagramm speichern;Salva Grafico;Salvar gráfico;Guardar gráfico
+Save Preferences;Save Preferences;Enregistrer les préférences;Einstellungen speichern;Salva preferenze;Guardar Preferências;Guardar Preferencias
+Search;Search;Chercher;Suche;Ricerca;Pesquisa;Buscar
+Search Process;Search Process;Processus de recherche;Suchprozess;Ricerca di processo;Processo de pesquisa;Proceso de búsqueda
+Search Task;Search Task;Tâche de recherche;Suchaufgabe;Ricerca Task;Tarefa de pesquisa;Tarea de búsqueda
+Search Unassigned Task;Search Unassigned Task;Rechercher une tâche non assignée;Suche Unassigned Task;Ricerca assegnato Task;Tarefa de pesquisa não atribuída;Tarea de búsqueda no asignada
+Select Language;Select Language;Choisir la langue;Sprache auswählen;Seleziona la lingua;Selecione o idioma;Seleccione el idioma
+Select One Option;Select One Option;Sélectionner une option;Wählen Sie eine Option aus;Seleziona una opzione;Selecione uma opção;Seleccione una opción
+Select Table;Select Table;Sélectionner une table;Wählen Sie Tabelle;Seleziona tabella;Selecionar tabela;Seleccionar tabla
+Selected Category;Selected Category;Catégorie choisie;Ausgewählte Kategorie;Categoria selezionata;Categoria selecionada;Categoría seleccionada
+Selected Color;Selected Color;Couleur sélectionnée;Ausgewählte Farbe;Colore selezionato;Cor selecionada;Color seleccionado
+Set Language;Set Language;Définir la langue;Sprache einstellen;Imposta lingua;Definir idioma;Elegir lenguaje
+Show Chart;Show Chart;Afficher le graphique;Diagramm anzeigen;Mostra grafico;Mostrar gráfico;Mostrar gráfico
+Show Hide Search Area;Show Hide Search Area;Afficher Masquer la zone de recherche;Ausblenden Suchbereich anzeigen;Mostra Nascondi Area di ricerca;Mostrar Esconder Área de Pesquisa;Mostrar Ocultar área de búsqueda
+Start;Start;Démarrer;Anfang;Inizio;Começar;comienzo
+Start Value;Start Value;Valeur initiale;Startwert;Valore iniziale;Valor inicial;Valor inicial
+State;State;Etat;Bundesland;Stato;Estado;Estado
+Subprocess Done Border Color;Subprocess Done Border Color;Sous-processus Terminé Couleur de la bordure;Teilprozess Fertigfarbe;Sottoprocesso Fatto Colore bordo;Subprocesso concluído Cor da margem;Subproceso Hecho Color del borde
+Subprocess Done Fill Color;Subprocess Done Fill Color;Sous-processus Terminé Couleur de remplissage;Teilprozess Fertig Füllfarbe;Sottoprocesso Fatto Colore riempimento;Subprocesso concluído Cor de preenchimento;Subproceso Hecho Color de relleno
+Switch Window;Switch Window;Fenêtre de commutation;Schalter Fenster;interruttore finestra;Alternar janela;Cambiar ventana
+Table Report;Table Report;Rapport de la table;Tabellenbericht;Tabella Relazione;Relatório de tabela;Informe de la tabla
+Task Data;Task Data;Données de tâches;Aufgabendaten;compito dei dati;Dados da tarefa;Datos de tareas
+Task Done Border Color;Task Done Border Color;Tâche terminée Couleur de la bordure;Aufgabe Border Farbe fertig;Task Fatto Colore bordo;Tarefa Concluída Cor da margem;Tarea terminada Color del borde
+Task Done Fill Color;Task Done Fill Color;Tâche terminée Couleur de remplissage;Aufgabe Fertig Füllfarbe;Task Done Colore riempimento;Tarefa concluída Cor de preenchimento;Tarea Completa Color de relleno
+Task Name:;Task Name:;Nom de la tâche:;Aufgabennname:;Nome attività:;Nome da tarefa:;Nombre de la tarea:
+Toggle Lateral List;Toggle Lateral List;Toggle Lateral List;Seitliche Liste umschalten;Toggle Lista laterale;Alternar Lista Lateral;Toggle Lateral List
+Top Application:;Top Application:;Top Application:;Top Anwendung:;Top Application:;Aplicação Top:;Aplicación superior:
+Transition Done Border Color;Transition Done Border Color;Transition Terminé Couleur de la bordure;Übergang Fertig Farbe;Transizione Fatto Colore bordo;Transição concluída cor da borda;Transición terminada Color de borde
+true;true;vrai;wahr;vero;Verdadeiro;cierto
+Unassigned Tasks;Unassigned Tasks;Tâches non attribuées;Nicht zugewiesene Aufgaben;Compiti non assegnati;Tarefas não atribuídas;Tareas no asignadas
+User;User;Utilisateur;Benutzer;Utente;Do utilizador;Usuario
+User Login;User Login;Utilisateur en ligne;Benutzer-Anmeldung;Login utente;Login de usuário;Inicio de sesión de usuario
+User Preferences;User Preferences;Préférences de l'utilisateur;Nutzerpreferenzen;Preferenze utente;Preferências de usuário;Preferencias de usuario
+User:;User:;Utilisateur:;Benutzer:;Utente:;Do utilizador:;Usuario:
+Version:;Version:;Version:;Version:;Versione:;Versão:;Versión:
+View PDF;View PDF;Voir le PDF;PDF anzeigen;Visualizza PDF;Ver PDF;Ver PDF
+View SVG;View SVG;Voir SVG;Ansicht SVG;vista SVG;Ver SVG;Ver SVG
+View Unassigned Tasks;View Unassigned Tasks;Afficher les tâches non attribuées ;Ansicht Nicht zugewiesene Aufgaben ;Visualizzazione delle attività non assegnati ;Visualizar tarefas não atribuídas ;Ver tareas no asignadas 
