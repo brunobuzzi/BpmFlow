@@ -5,6 +5,7 @@
 		"example2" : "BrunoBB 12/04/2016 12:58",
 		"example3" : "BrunoBB 12/04/2016 12:59" },
 	"instance" : {
+		"cancelDefaultGroupTranslation" : "BrunoBB 01/13/2017 06:15",
 		"connect:to:" : "BrunoBB 09/11/2016 07:16",
 		"connect:to:color:" : "BrunoBB 09/11/2016 07:16",
 		"connect:to:color:stroke:widthPx:" : "BrunoBB 09/11/2016 11:57",
