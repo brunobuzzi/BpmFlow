@@ -1,4 +1,6 @@
 other
 downloadProcessMap
 
-	^self downloadProcessMapOf: self selectedLateralItem
+	^self selectedLateralItem hasSubProcesses
+	ifTrue: [self downloadZipProcessMapOf: self selectedLateralItem] 
+	ifFalse: [self downloadProcessMapOf: self selectedLateralItem].

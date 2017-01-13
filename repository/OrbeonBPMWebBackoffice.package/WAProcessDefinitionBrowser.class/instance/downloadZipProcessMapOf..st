@@ -1,17 +1,12 @@
 export
 downloadZipProcessMapOf: aBpmProcessDefinition
-	| contents fileStream fileName |
+	| fileName stream |
 
-	fileName := '/tmp/', aBpmProcessDefinition processName, Lag1MwcRandom new integer printString, '.zip'.
-
-	self createZipFileFor: aBpmProcessDefinition withName: fileName.
-
-	fileStream := FileStream read: fileName.
-
-	contents := fileStream contents.
+	stream := aBpmProcessDefinition getProcessMapStream.
+	fileName := stream gsfile name.
 
 	self requestContext respond: [:response | 
-        response document: ((contents asByteArray seasideMimeDocument) 
+        response document: ((stream contents asByteArray seasideMimeDocument) 
                                         mimeType: 'application/octet-stream'; 
                                         fileName: fileName; 
                                         yourself)].

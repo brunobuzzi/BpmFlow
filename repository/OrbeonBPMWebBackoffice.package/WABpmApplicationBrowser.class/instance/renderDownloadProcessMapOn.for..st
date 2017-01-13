@@ -1,4 +1,4 @@
-other
+xpdl download
 renderDownloadProcessMapOn: html for: procName
 	| jQueryId options |
 

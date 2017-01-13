@@ -1,4 +1,4 @@
-other
+xpdl download
 renderProcessWithLinkOn: html at: aPoint name: procName
 	| canvas |
 

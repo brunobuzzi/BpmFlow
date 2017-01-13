@@ -1,6 +1,9 @@
 export
 downloadProcessMap
+	| procInstance |
 
-	self selectedLateralItem process getTopProcess hasSubprocesses
-	ifTrue: [self downloadZipProcessMapOf: self selectedLateralItem] "generate a ZIP with all subprocesses"
-	ifFalse: [self downloadProcessMapOf: self selectedLateralItem]. "generate a XPDL"
+	procInstance := self selectedLateralItem process getTopProcess.
+
+	procInstance definition hasSubProcesses
+	ifTrue: [self downloadZipProcessMapOf: procInstance] 
+	ifFalse: [self downloadProcessMapOf: procInstance].

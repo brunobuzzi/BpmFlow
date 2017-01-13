@@ -3,10 +3,9 @@
 		 },
 	"instance" : {
 		"createNewApplication" : "BrunoBB 08/31/2016 11:48",
-		"createZipFileFor:withName:" : "BrunoBB 01/13/2017 07:33",
-		"downloadProcessMap:" : "BrunoBB 01/13/2017 07:32",
-		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 07:32",
-		"downloadZipProcessMapOf:" : "BrunoBB 01/13/2017 07:33",
+		"downloadProcessMap:" : "BrunoBB 01/13/2017 12:23",
+		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 12:33",
+		"downloadZipProcessMapOf:" : "BrunoBB 01/13/2017 12:52",
 		"exportProcessDefinitionAs:" : "BrunoBB 01/13/2017 07:32",
 		"getCurrentCollection" : "BrunoBB 08/31/2016 12:23",
 		"getIconNameFormItem" : "BrunoBB 08/31/2016 10:16",
@@ -26,5 +25,4 @@
 		"renderSearchAreaOn:" : "BrunoBB 08/31/2016 11:59",
 		"renderSearchSubmitButtonOn:" : "BrunoBB 08/31/2016 11:12",
 		"searchMatchingApplications" : "BrunoBB 08/31/2016 12:12",
-		"storeProcessDefinition:onZip:withFile:" : "BrunoBB 01/13/2017 07:35",
-		"xmlHeader" : "BrunoBB 01/13/2017 07:14" } }
+		"xmlHeader" : "BrunoBB 01/13/2017 13:23" } }

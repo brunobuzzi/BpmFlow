@@ -1,4 +1,4 @@
-other
+xpdl download
 exportProcessDefinitionAs: procName
 	| selectedOption stream bpmProcDefinition |
 

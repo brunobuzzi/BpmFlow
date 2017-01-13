@@ -4,10 +4,9 @@
 	"instance" : {
 		"categories" : "BrunoBB 07/02/2015 12:37",
 		"categories:" : "BrunoBB 07/02/2015 12:37",
-		"createZipFileFor:withName:" : "BrunoBB 06/24/2016 12:19",
-		"downloadProcessMap" : "BrunoBB 04/15/2016 10:15",
-		"downloadProcessMapOf:" : "BrunoBB 04/15/2016 10:20",
-		"downloadZipProcessMapOf:" : "BrunoBB 06/24/2016 12:20",
+		"downloadProcessMap" : "BrunoBB 01/13/2017 13:18",
+		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 13:19",
+		"downloadZipProcessMapOf:" : "BrunoBB 01/13/2017 13:19",
 		"exportProcessDefinitionAs" : "BrunoBB 09/13/2016 15:04",
 		"filterProcessDefinitionByCategory:" : "BrunoBB 12/15/2015 10:11",
 		"getCurrentCollection" : "BrunoBB 06/27/2015 13:10",
@@ -51,6 +50,5 @@
 		"searchMatchingCategories" : "BrunoBB 12/15/2015 10:11",
 		"searchMatchingProcesses" : "BrunoBB 09/28/2015 16:48",
 		"selectedLateralItem:" : "BrunoBB 06/16/2016 14:03",
-		"storeProcessDefinition:onZip:withFile:" : "BrunoBB 04/15/2016 10:20",
 		"toggleAnonymousStart" : "BrunoBB 04/10/2016 18:23",
-		"xmlHeader" : "BrunoBB 04/15/2016 10:20" } }
+		"xmlHeader" : "BrunoBB 01/13/2017 13:23" } }
