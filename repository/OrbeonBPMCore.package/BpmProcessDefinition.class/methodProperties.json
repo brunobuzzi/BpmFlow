@@ -3,6 +3,8 @@
 		"anonymousFormMapping" : "BrunoBB 03/30/2016 10:48",
 		"cache" : "BrunoBB 10/31/2015 09:23",
 		"cacheAt:ifAbsent:" : "BrunoBB 06/03/2016 15:36",
+		"getAllArtifactInstances" : "BrunoBB 01/14/2017 10:01",
+		"getAllProcessInstances" : "BrunoBB 01/14/2017 10:15",
 		"getAllProcessNamesIn:" : "BrunoBB 01/13/2017 06:02",
 		"getAllProcessesNamed:in:" : "BrunoBB 03/26/2016 15:39",
 		"getAllVersionsIn:" : "BrunoBB 03/26/2016 15:57",

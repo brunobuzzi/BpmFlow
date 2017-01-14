@@ -2,7 +2,7 @@ other
 drawFieldValueDoubleDistribution
 	| definition text |
 
-	definition := self getSelectedProcessDefinitions last.
+	definition := self getSelectedProcessDefinitions ifEmpty: [^self] ifNotEmpty: [:collection | collection last].
 	report := definition reportValueDistributionForFieldName: self getFieldName secondaryField: self getFieldName2 in: self getFormName satisfying: self queryBlock.
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
 	report name: ('Processes Distribution by Two Field Value' translateFor: self session user);
