@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmAppLinuxScripts",
+	"pools" : [
+		 ],
+	"super" : "AppLinuxScripts",
+	"type" : "normal" }
