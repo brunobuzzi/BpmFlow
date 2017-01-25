@@ -2,7 +2,7 @@ other
 searchMatchingApplications
 	| appName |
 
-	appName := self searchValueAt: 'appName'.
+	appName := self searchValueAt: 'appName' ifAbsent: [''].
 
 	searchApplied := true.
 
