@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"calendar" ],
+	"name" : "BpmExceptionCalendarTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
