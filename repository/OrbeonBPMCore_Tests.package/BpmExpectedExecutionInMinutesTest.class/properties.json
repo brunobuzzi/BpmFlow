@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmExpectedExecutionInMinutesTest",
+	"pools" : [
+		 ],
+	"super" : "BpmExpectedExecutionTimeTest",
+	"type" : "normal" }
