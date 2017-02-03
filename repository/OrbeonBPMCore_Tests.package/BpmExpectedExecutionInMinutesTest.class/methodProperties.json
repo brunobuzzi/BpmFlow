@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "BrunoBB 02/03/2017 03:49" } }
+		"setUp" : "BrunoBB 02/03/2017 09:46",
+		"testCaculateExecutionTime" : "BrunoBB 02/03/2017 09:22" } }
