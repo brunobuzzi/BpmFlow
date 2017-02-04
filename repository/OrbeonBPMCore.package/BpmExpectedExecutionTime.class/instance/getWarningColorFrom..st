@@ -6,4 +6,4 @@ getWarningColorFrom: startTimeValue
 	[<warningThreshold> to: <value>] - Yellow.
 	[<value> to: Date today] - Red."
 
-	^self getWarningColorFrom: startTimeValue to: self currentTime
+	^self getWarningColorFrom: (self getTimeUnitFor: startTimeValue) to: self currentTime
