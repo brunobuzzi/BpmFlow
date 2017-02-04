@@ -1,5 +1,5 @@
 other
-calculateExecutionTimeFrom: startTimeStamp to: endTimeStamp
+countExecutionTimeFrom: startTimeStamp to: endTimeStamp
 	"The receiver calculate (count) the execution time from start time <startTimeStamp> to end time <endTimeStamp>.
 	It use it's calendar to whether or not compute a minute"
 	| currentTimeStamp minutesCount |
