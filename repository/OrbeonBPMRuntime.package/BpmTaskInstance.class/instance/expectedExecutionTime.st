@@ -1,4 +1,0 @@
-other
-expectedExecutionTime
-
-	^definition expectedExecutionTime

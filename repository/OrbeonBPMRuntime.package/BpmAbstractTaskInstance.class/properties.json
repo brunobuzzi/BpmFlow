@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"processInstance" ],
-	"name" : "BpmSubProcessTaskInstance",
+		 ],
+	"name" : "BpmAbstractTaskInstance",
 	"pools" : [
 		 ],
-	"super" : "BpmAbstractTaskInstance",
+	"super" : "BpmActivityInstance",
 	"type" : "normal" }
