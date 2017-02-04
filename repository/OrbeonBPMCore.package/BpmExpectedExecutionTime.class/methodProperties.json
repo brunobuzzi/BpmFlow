@@ -7,5 +7,9 @@
 		"calendar:" : "BrunoBB 02/02/2017 08:53",
 		"countExecutionTimeFrom:" : "BrunoBB 02/04/2017 11:25",
 		"countExecutionTimeFrom:to:" : "BrunoBB 02/04/2017 11:25",
+		"getWarningColorFrom:to:" : "BrunoBB 02/04/2017 11:44",
+		"initialize" : "BrunoBB 02/04/2017 11:41",
 		"value" : "BrunoBB 02/02/2017 03:31",
-		"value:" : "BrunoBB 02/02/2017 03:31" } }
+		"value:" : "BrunoBB 02/02/2017 03:31",
+		"warningThreshold" : "BrunoBB 02/04/2017 11:33",
+		"warningThreshold:" : "BrunoBB 02/04/2017 11:33" } }
