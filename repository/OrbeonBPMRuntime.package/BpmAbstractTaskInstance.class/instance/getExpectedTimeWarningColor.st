@@ -1,4 +1,4 @@
-other
+time warnings
 getExpectedTimeWarningColor
 	"The receiver answer the warning color of the execution time"
 

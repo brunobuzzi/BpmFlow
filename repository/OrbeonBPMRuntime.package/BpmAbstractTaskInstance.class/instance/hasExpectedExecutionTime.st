@@ -1,4 +1,4 @@
-other
+time warnings
 hasExpectedExecutionTime
 
 	^definition hasExpectedExecutionTime
