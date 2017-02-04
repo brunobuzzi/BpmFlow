@@ -1,4 +1,4 @@
-other
+warning calculations
 getWarningColorFrom: startTimeValue to: endTimeValue
 	"The receiver answer it's color using the time scale <startTimeValue> to <endTimeValue>
 	Colors:
