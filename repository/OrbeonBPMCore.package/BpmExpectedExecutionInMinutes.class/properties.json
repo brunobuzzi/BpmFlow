@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmExpectedExecutionInMinutes",
+	"pools" : [
+		 ],
+	"super" : "BpmExpectedExecutionTime",
+	"type" : "normal" }

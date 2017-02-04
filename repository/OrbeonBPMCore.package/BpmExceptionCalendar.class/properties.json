@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"days",
+		"hours" ],
+	"name" : "BpmExceptionCalendar",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

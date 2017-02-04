@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"newExeceptWeekEnds" : "BrunoBB 02/03/2017 09:59" },
+	"instance" : {
+		"addExceptionDay:" : "BrunoBB 02/02/2017 03:56",
+		"addExceptionTimeFrom:to:" : "BrunoBB 02/02/2017 08:14",
+		"days" : "BrunoBB 02/02/2017 03:48",
+		"days:" : "BrunoBB 02/02/2017 03:48",
+		"exceptionDaysSize" : "BrunoBB 02/02/2017 07:24",
+		"exceptionHoursSize" : "BrunoBB 02/02/2017 07:24",
+		"hasExceptionDays" : "BrunoBB 02/02/2017 07:22",
+		"hasExceptionHours" : "BrunoBB 02/02/2017 07:23",
+		"hours" : "BrunoBB 02/02/2017 03:48",
+		"hours:" : "BrunoBB 02/02/2017 03:48",
+		"initialize" : "BrunoBB 02/02/2017 03:52",
+		"isExceptionDay:" : "BrunoBB 02/02/2017 07:30",
+		"name" : "BrunoBB 02/02/2017 03:48",
+		"name:" : "BrunoBB 02/02/2017 03:48",
+		"removeExceptionDay:" : "BrunoBB 02/02/2017 03:53",
+		"timeIntervalExistFrom:to:" : "BrunoBB 02/02/2017 08:31" } }

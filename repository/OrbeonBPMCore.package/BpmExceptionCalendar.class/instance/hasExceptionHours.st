@@ -1,0 +1,4 @@
+other
+hasExceptionHours
+
+	^hours notEmpty
