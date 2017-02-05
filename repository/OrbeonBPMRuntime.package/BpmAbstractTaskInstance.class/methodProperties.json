@@ -3,9 +3,10 @@
 		 },
 	"instance" : {
 		"countExecutionTime" : "BrunoBB 02/04/2017 12:57",
-		"countToDueDate" : "BrunoBB 02/05/2017 12:50",
 		"dueDate" : "BrunoBB 02/05/2017 12:48",
 		"expectedExecutionTime" : "BrunoBB 02/04/2017 11:09",
 		"getExpectedTimeWarningColor" : "BrunoBB 02/04/2017 12:29",
 		"hasExpectedExecutionTime" : "BrunoBB 02/04/2017 11:09",
-		"isOverdue" : "BrunoBB 02/04/2017 12:23" } }
+		"isOverdue" : "BrunoBB 02/04/2017 12:23",
+		"printTimeToDueDate" : "BrunoBB 02/05/2017 13:08",
+		"timeToDueDate" : "BrunoBB 02/05/2017 12:58" } }
