@@ -8,7 +8,9 @@
 	"instvars" : [
 		"name",
 		"days",
-		"hours" ],
+		"hours",
+		"daysHistory",
+		"hoursHistory" ],
 	"name" : "BpmExceptionCalendar",
 	"pools" : [
 		 ],
