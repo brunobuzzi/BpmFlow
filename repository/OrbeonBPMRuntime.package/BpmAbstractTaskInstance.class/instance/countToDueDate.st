@@ -1,4 +1,4 @@
 time warnings
 countToDueDate
 
-	"creationTime addDays: 44"
+	"^creationTime addDays: self expectedExecutionTime value"

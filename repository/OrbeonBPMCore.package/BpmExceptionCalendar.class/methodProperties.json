@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"addCalendar:named:" : "BrunoBB 02/05/2017 11:51",
 		"addDefaultCalendar" : "BrunoBB 02/05/2017 11:48",
 		"cache" : "BrunoBB 02/05/2017 11:43",
 		"default" : "BrunoBB 02/05/2017 11:44",
@@ -11,6 +12,7 @@
 		"addAllWeekEndsOf:" : "BrunoBB 02/05/2017 11:14",
 		"addExceptionDay:" : "BrunoBB 02/02/2017 03:56",
 		"addExceptionTimeFrom:to:" : "BrunoBB 02/02/2017 08:14",
+		"addToCache" : "BrunoBB 02/05/2017 11:54",
 		"days" : "BrunoBB 02/02/2017 03:48",
 		"days:" : "BrunoBB 02/02/2017 03:48",
 		"daysHistory" : "BrunoBB 02/05/2017 09:47",
