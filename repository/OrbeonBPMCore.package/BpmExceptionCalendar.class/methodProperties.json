@@ -1,10 +1,14 @@
 {
 	"class" : {
-		"newExeceptWeekEnds" : "BrunoBB 02/03/2017 09:59" },
+		"addDefaultCalendar" : "BrunoBB 02/05/2017 11:48",
+		"cache" : "BrunoBB 02/05/2017 11:43",
+		"default" : "BrunoBB 02/05/2017 11:44",
+		"newExceptWeekEnds" : "BrunoBB 02/05/2017 11:45" },
 	"instance" : {
 		"addAllDaysNamed:ofYear:" : "BrunoBB 02/05/2017 10:55",
 		"addAllSaturdayOf:" : "BrunoBB 02/05/2017 10:51",
 		"addAllSundayOf:" : "BrunoBB 02/05/2017 10:35",
+		"addAllWeekEndsOf:" : "BrunoBB 02/05/2017 11:14",
 		"addExceptionDay:" : "BrunoBB 02/02/2017 03:56",
 		"addExceptionTimeFrom:to:" : "BrunoBB 02/02/2017 08:14",
 		"days" : "BrunoBB 02/02/2017 03:48",
