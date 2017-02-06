@@ -9,7 +9,7 @@ appendFormsWithMissingMandatoryFieldsIn: anOrbeonApplication to: anOrderedCollec
 							item := XPDLItemImportReport new type: 'Error';
 										title: 'Missing Mandatory Field';
 										description: 'Form [', def formName, '] in Orbeon Application [', anOrbeonApplication applicationName, '] has NO mandatory field [', eachName ,']';
-										solution: 'Add missing mandatory fields to the Form Definition. Mandatori fields (s, k, oop, uuid, assignmentOop, username, rol, formId)';
+										solution: 'Add missing mandatory fields to the Form Definition. Mandatori fields (s, k, oop, uuid, assignmentOop, username, rol, processId)';
 									yourself.
 							anOrderedCollection add: item]]].
 
