@@ -4,6 +4,7 @@
 		"addDefaultCalendar" : "BrunoBB 02/05/2017 11:48",
 		"cache" : "BrunoBB 02/05/2017 11:43",
 		"default" : "BrunoBB 02/05/2017 11:44",
+		"getCalendarNamedOrDefault:" : "BrunoBB 02/06/2017 06:51",
 		"newExceptWeekEnds" : "BrunoBB 02/05/2017 11:45" },
 	"instance" : {
 		"addAllDaysNamed:ofYear:" : "BrunoBB 02/05/2017 10:55",

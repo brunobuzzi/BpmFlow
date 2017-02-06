@@ -1,0 +1,4 @@
+other
+defaultCharacter
+
+	^$d

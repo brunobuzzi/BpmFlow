@@ -18,7 +18,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 			newArtifact addPerformer: bpmPerformer;
 				grantRole: performerRole]. "grant the role of the performer to the task definition"
 		newArtifact addToParentProcess.
-		newArtifact extendedAttributes: xpdlActivity extendedAttributes.
+		newArtifact setExtendedAttributesWith: xpdlActivity extendedAttributes.
 		xpdlActivity performers ifEmpty: ["if has perfomers --> lanes roles are NOT granted to the task (only performers roles are granted)"
 			lanesNames := (xpdlActivity getLanesFrom: aXPDLWorflowProcess) collect: [:each | each getName].
 			lanesNames do: [:laneName | (roles at: laneName ifAbsent: [nil]) ifNotNil: [:rol | newArtifact grantRole: rol]]

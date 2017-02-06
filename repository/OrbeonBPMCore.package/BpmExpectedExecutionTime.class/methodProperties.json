@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"defaultCharacter" : "BrunoBB 02/06/2017 07:03",
+		"getSubClassFor:" : "BrunoBB 02/06/2017 07:04",
 		"new" : "BrunoBB 02/03/2017 03:46",
 		"value:withCalendar:" : "BrunoBB 02/02/2017 08:54" },
 	"instance" : {
@@ -8,13 +10,15 @@
 		"countExecutionTimeFrom:" : "BrunoBB 02/04/2017 12:59",
 		"countExecutionTimeFrom:to:" : "BrunoBB 02/04/2017 11:25",
 		"currentTime" : "BrunoBB 02/04/2017 11:52",
+		"defaultCharacter" : "BrunoBB 02/06/2017 07:03",
 		"getDueDateFrom:" : "BrunoBB 02/05/2017 12:46",
 		"getTimeUnitFor:" : "BrunoBB 02/04/2017 12:25",
 		"getWarningColorFrom:" : "BrunoBB 02/04/2017 12:30",
 		"getWarningColorFrom:to:" : "BrunoBB 02/04/2017 11:44",
-		"initialize" : "BrunoBB 02/04/2017 11:41",
+		"initialize" : "BrunoBB 02/06/2017 06:39",
 		"isOverdueFrom:" : "BrunoBB 02/04/2017 12:26",
 		"isOverdueFrom:to:" : "BrunoBB 02/04/2017 12:19",
+		"printOn:" : "BrunoBB 02/06/2017 07:06",
 		"value" : "BrunoBB 02/02/2017 03:31",
 		"value:" : "BrunoBB 02/02/2017 03:31",
 		"warningThreshold" : "BrunoBB 02/04/2017 11:33",
