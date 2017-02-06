@@ -6,9 +6,15 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"id",
 		"definition",
+		"processName",
 		"currentSteps",
-		"executedSteps" ],
+		"executedSteps",
+		"transitions",
+		"creator",
+		"createdTime",
+		"postExecution" ],
 	"name" : "AdHocProcessInstance",
 	"pools" : [
 		 ],

@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonAdHocProcessRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"state",
+		"externalObject" ],
+	"name" : "AdHocTaskInstance",
+	"pools" : [
+		 ],
+	"super" : "AdHocObject",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonAdHocProcessRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scriptVariables",
+		"scriptBlock" ],
+	"name" : "AdHocScriptTaskInstance",
+	"pools" : [
+		 ],
+	"super" : "AdHocTaskInstance",
+	"type" : "normal" }

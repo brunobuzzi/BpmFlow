@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonAdHocProcessCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OrbeonAdHocException",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

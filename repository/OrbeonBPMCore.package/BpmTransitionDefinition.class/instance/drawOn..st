@@ -17,4 +17,6 @@ drawOn: aJasvgiBpmCanvas
 
 	endArtifact roles ifNotEmpty:[:collection | aJasvgiBpmCanvas drawText: ('Rol: ', collection last name) at: 0@15 textSizePx: '15px' color: 'darkBlue'].
 
+	endArtifact expectedExecutionTime ifNotNil: [:value | aJasvgiBpmCanvas drawText: value printData at: 0@35 textSizePx: '15px' color: '#808000'].
+
 	aJasvgiBpmCanvas drawText: self printConditionToRun at: 5@30 textSizePx: '12px'.

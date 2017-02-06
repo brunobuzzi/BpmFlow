@@ -1,0 +1,4 @@
+other
+performInitializationOn: anAdHocProcessInstance
+
+	^self subclassResponsibility

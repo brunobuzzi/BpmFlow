@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonAdHocProcessRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NoSuchStepException",
+	"pools" : [
+		 ],
+	"super" : "OrbeonAdHocException",
+	"type" : "normal" }

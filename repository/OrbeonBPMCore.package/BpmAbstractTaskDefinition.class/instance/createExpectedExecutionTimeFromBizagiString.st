@@ -12,7 +12,7 @@ createExpectedExecutionTimeFromBizagiString
 	timeType := arrayValues first last. 
 	((timeType = $d) or: [(timeType = $h) or:[timeType = $m]]) ifFalse: [^self].
 	value := [Number fromString: arrayValues first allButLast] on: Error do: [:ex | ^self].
-	percentage := ([Number fromString: arrayValues second allButLast] on: Error do: [:ex | ^self]) // 100.
+	percentage := (([Number fromString: arrayValues second allButLast] on: Error do: [:ex | ^self]) / 100) asFloat.
 	calendarName := arrayValues last.
 
 	expectedExecutionTime := (BpmExpectedExecutionTime getSubClassFor: timeType) 

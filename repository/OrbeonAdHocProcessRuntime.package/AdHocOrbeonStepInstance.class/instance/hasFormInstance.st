@@ -1,4 +1,0 @@
-other
-hasFormInstance
-
-	^orbeonInstance notNil
