@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"register" : "BrunoBB 02/07/2017 08:46",
+		"unregister" : "BrunoBB 02/07/2017 10:49" },
 	"instance" : {
 		"answerXMLErrorWith:" : "BrunoBB 12/16/2016 12:57",
 		"associateFormWithTask:forProcess:" : "BrunoBB 04/28/2016 10:43",
