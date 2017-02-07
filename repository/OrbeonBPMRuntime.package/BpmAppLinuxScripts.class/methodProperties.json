@@ -1,6 +1,8 @@
 {
 	"class" : {
 		"getShortScriptPath" : "BrunoBB 01/16/2017 07:44",
-		"getSystemName" : "BrunoBB 01/16/2017 08:05" },
+		"getSystemName" : "BrunoBB 01/16/2017 08:05",
+		"registerScript" : "BrunoBB 02/07/2017 10:48",
+		"unregisterScript" : "BrunoBB 02/07/2017 10:51" },
 	"instance" : {
 		 } }
