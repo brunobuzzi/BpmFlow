@@ -9,8 +9,8 @@ getWarningColorFrom: startTimeValue to: endTimeValue
 
 	consumedTime := self countExecutionTimeFrom: startTimeValue to: endTimeValue.
 
-	(consumedTime >= value) ifTrue: [^Color red].
+	(consumedTime >= value) ifTrue: [^'darkred'].
 
-	(consumedTime >= value * warningThreshold) ifTrue: [^Color yellow].
+	(consumedTime >= (value * warningThreshold)) ifTrue: [^'#fffd73e6']. "yellow"
 
-	^Color green
+	^'darkgreen'

@@ -16,3 +16,11 @@ renderFormDataOn: html for: aBpmActivityInstance
 	html div class: 'transition-data'; with: [
 		html strong with: [html span with: ('Creation Time' translateFor: self session user)].
 		html strong with: [html output "for: 'searchFields';" with: aBpmActivityInstance creationTime]].
+
+	(aBpmActivityInstance isDone not and: [aBpmActivityInstance hasExpectedExecutionTime]) ifTrue: [
+		html div class: 'transition-data'; with: [
+			html strong with: [html span with: ('Time to Finish' translateFor: self session user)].
+			html strong with: [html output "for: 'searchFields';" 
+										style: ('color: ', aBpmActivityInstance getWarningColor,';');
+										with: aBpmActivityInstance printTimeToDueDate.]].
+	].

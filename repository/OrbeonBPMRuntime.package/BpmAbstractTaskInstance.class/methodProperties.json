@@ -6,7 +6,9 @@
 		"dueDate" : "BrunoBB 02/05/2017 12:48",
 		"expectedExecutionTime" : "BrunoBB 02/04/2017 11:09",
 		"getExpectedTimeWarningColor" : "BrunoBB 02/04/2017 12:29",
+		"getWarningColor" : "BrunoBB 02/06/2017 15:28",
 		"hasExpectedExecutionTime" : "BrunoBB 02/04/2017 11:09",
 		"isOverdue" : "BrunoBB 02/04/2017 12:23",
+		"printDueDate" : "BrunoBB 02/07/2017 05:50",
 		"printTimeToDueDate" : "BrunoBB 02/06/2017 14:34",
 		"timeToDueDate" : "BrunoBB 02/06/2017 14:36" } }

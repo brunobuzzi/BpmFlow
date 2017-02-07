@@ -3106,3 +3106,126 @@ true
 topaz 1> exit
 Logging out session 1.
 --- 02/06/2017 14:03:30.362 PST Logging out
+ _____________________________________________________________________________
+|                             Configuration Files                             |
+|                                                                             |
+| System File: /home/gemstone/GsDevKit_home/server/stones/devKit_33/extents/system.conf
+|                                                                             |
+| Executable File: /home/gemstone/GsDevKit_home/server/stones/devKit_33/gem.conf
+|_____________________________________________________________________________|
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_33/extents/system.conf
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_33/gem.conf
+ _____________________________________________________________________________
+|                Gem Configuration Options for process id 1436                |
+|_____________________________________________________________________________|
+
+DUMP_OPTIONS = TRUE;
+GEM_GCI_LOG_ENABLED = FALSE;
+GEM_ABORT_MAX_CRS = 0;
+GEM_FREE_FRAME_CACHE_SIZE = -1;
+GEM_FREE_FRAME_LIMIT = -1;
+GEM_FREE_PAGEIDS_CACHE = 200;
+GEM_HALT_ON_ERROR = -1;
+GEM_KEEP_MIN_SOFTREFS = 0;
+GEM_MAX_SMALLTALK_STACK_DEPTH = 1000;
+GEM_NATIVE_CODE_ENABLED = 2;
+GEM_PRIVATE_PAGE_CACHE_KB = 960KB;
+GEM_PGSVR_COMPRESS_PAGE_TRANSFERS = FALSE;
+GEM_PGSVR_FREE_FRAME_CACHE_SIZE = -1;
+GEM_PGSVR_FREE_FRAME_LIMIT = -1;
+GEM_PGSVR_UPDATE_CACHE_ON_READ = FALSE;
+GEM_PGSVR_USE_SSL = FALSE;
+GEM_READ_AUTH_ERR_STUBS = FALSE;
+GEM_REPOSITORY_IN_MEMORY = FALSE;
+GEM_RPC_KEEPALIVE_INTERVAL = 0;
+GEM_RPCGCI_TIMEOUT = 0;
+GEM_RPC_USE_SSL = TRUE;
+GEM_SOFTREF_CLEANUP_PERCENT_MEM = 50;
+GEM_STATMONITOR_ARGS = "";
+GEM_STATMONITOR_MID_CACHE_ARGS = "";
+GEM_TEMPOBJ_AGGRESSIVE_STUBBING = TRUE;
+GEM_TEMPOBJ_CACHE_SIZE = 50000KB;
+GEM_TEMPOBJ_CONSECUTIVE_MARKSWEEP_LIMIT = 50;
+GEM_TEMPOBJ_MESPACE_SIZE = 0;
+GEM_TEMPOBJ_OOMSTATS_CSV = FALSE;
+GEM_TEMPOBJ_OOPMAP_SIZE = 0;
+GEM_TEMPOBJ_SCOPES_SIZE = 2000;
+GEM_TEMPOBJ_POMGEN_SIZE = 0;
+GEM_TEMPOBJ_POMGEN_PRUNE_ON_VOTE = 90;
+GEM_TEMPOBJ_POMGEN_SCAVENGE_INTERVAL = 1800;
+GEM_TEMPOBJ_START_ADDR not used on this platform
+LOG_WARNINGS = TRUE;
+SHR_NUM_FREE_FRAME_SERVERS = -1;
+SHR_PAGE_CACHE_LARGE_MEMORY_PAGE_POLICY = 0;
+SHR_PAGE_CACHE_LOCKED = FALSE;
+SHR_PAGE_CACHE_NUM_PROCS = 4089;
+SHR_PAGE_CACHE_NUM_SHARED_COUNTERS = 1900;
+SHR_PAGE_CACHE_PERMISSIONS = 660;
+SHR_PAGE_CACHE_SIZE_KB = 500000KB;
+SHR_TARGET_FREE_FRAME_COUNT = -1;
+SHR_WELL_KNOWN_PORT_NUMBER = 0;
+CONFIG_WARNINGS_FATAL = FALSE;
+(vmGc spaceSizes: eden init 2048K max 9344K , survivor init 448K max 1600K,
+ vmGc    old max 37440K, code max 10048K, perm max 5056K, pom 10 * 4224K = 42240K,
+ vmGc    remSet 1156K, meSpace max 51568K oopMapSize 262144  max footprint 164M)
+ _____________________________________________________________________________
+|             GemStone/S64 Object-Oriented Data Management System             |
+|                   Copyright (C) GemTalk Systems 1986-2016                   |
+|                            All rights reserved.                             |
+|                           Covered by U.S Patents:                           |
+|            6,256,637 Transactional virtual machine architecture             |
+|              6,360,219 Object queues with concurrent updating               |
+|                  6,567,905 Generational Garbage Collector.                  |
+| 6,681,226 Selective Pessimistic Locking for a Concurrently Updateable Database
++-----------------------------------------------------------------------------+
+|    PROGRAM: topaz, Linear GemStone Interface (Linked Session)               |
+|    VERSION: 3.3.3, Wed Nov 30 14:31:50 2016                                 |
+|      BUILD: gss64_3_3_x_branch-40760                                        |
+|  BUILT FOR: x86-64 (Linux)                                                  |
+|       MODE: 64 bit                                                          |
+| RUNNING ON: 1-CPU ubuntu x86_64 (Linux 3.13.0-32-generic #57-Ubuntu SMP Tue |
+| Jul 15 03:51:08 UTC 2014) 979MB                                             |
+| PROCESS ID: 1436      DATE: 02/07/2017 05:24:53 PST                         |
+|   USER IDS: REAL=gemstone (1000) EFFECTIVE=gemstone (1000) LOGIN=gemstone (1000)
++-----------------------------------------------------------------------------+
+|   GEMSTONE_NRS_ALL = #dir:$GEMSTONE_LOGDIR#log:%N%P.log                     |
+|_____________________________________________________________________________|
+topaz> set user DataCurator password swordfish gemstone devKit_33
+topaz> login
+[Info]: LNK client/gem GCI levels = 33002/33002
+--- 02/07/2017 05:24:53.740 PST Login
+[Info]: libssl-3.3.3-64.so: loaded
+[Info]: User ID: DataCurator
+[Info]: Repository: devKit_33
+[Info]: Session ID: 5
+[Info]: GCI Client Host: <Linked>
+[Info]: Page server PID: -1
+[Info]: libicudata.54.1.so: loaded
+[Info]: libicuuc.54.1.so: loaded
+[Info]: libicui18n.54.1.so: loaded
+[Info]: Gave this process preference for OOM killer: wrote to /proc/1436/oom_score_adj value 250
+[02/07/2017 05:24:54.909 PST]
+  gci login: currSession 1  linked session 
+successful login
+ fileformat is now utf8
+sourcestringclass is now Unicode16 
+topaz 1> exec 
+   | handler commitThreshold |
+
+   commitThreshold := 65.
+   handler := AlmostOutOfMemory addDefaultHandler: [ :ex | self halt ].
+   SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
+   System signalAlmostOutOfMemoryThreshold: commitThreshold.
+
+[BpmAppLinuxScripts startAllScript]
+  on: AlmostOutOfMemory enable
+  do: [:ex | ex error: ex description]. 
+%
+--transcript--'scriptLogEvent: ''performOnServer: BPM :: /home/gemstone/GsDevKit_home/server/stones/devKit_33/logs/github-cache/GsDevKit/gsApplicationTools/v1.0.9/GsDevKit-gsApplicationTools-898232b/bin/startGemServerGem BPM "8787" "/home/gemstone/GsDevKit_home/server/stones/devKit_33"'''
+--transcript--'scriptLogEvent: ''performOnServer: BPM :: /home/gemstone/GsDevKit_home/server/stones/devKit_33/logs/github-cache/GsDevKit/gsApplicationTools/v1.0.9/GsDevKit-gsApplicationTools-898232b/bin/startGemServerGem BPM "8888" "/home/gemstone/GsDevKit_home/server/stones/devKit_33"'''
+--transcript--'scriptLogEvent: ''performOnServer: BPM :: /home/gemstone/GsDevKit_home/server/stones/devKit_33/logs/github-cache/GsDevKit/gsApplicationTools/v1.0.9/GsDevKit-gsApplicationTools-898232b/bin/startGemServerGem BPM "8989" "/home/gemstone/GsDevKit_home/server/stones/devKit_33"'''
+--transcript--'scriptLogEvent: ''performOnServer: SeasideMaintenanceVM :: /home/gemstone/GsDevKit_home/server/stones/devKit_33/logs/github-cache/GsDevKit/gsApplicationTools/v1.0.9/GsDevKit-gsApplicationTools-898232b/bin/startGemServerGem SeasideMaintenanceVM "''''instance''''" "/home/gemstone/GsDevKit_home/server/stones/devKit_33"'''
+aZnSeasideGemServer
+topaz 1> exit
+Logging out session 1.
+--- 02/07/2017 05:25:02.452 PST Logging out
