@@ -7,4 +7,4 @@ os:
 
 # Select compatible Smalltalk image(s)
 smalltalk:
-  - GemStone-3.3.0
+  - GemStone-3.3.3
