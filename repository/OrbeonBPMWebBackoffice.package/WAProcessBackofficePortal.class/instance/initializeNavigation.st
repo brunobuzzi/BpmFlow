@@ -14,6 +14,7 @@ initializeNavigation
 		set24Icon: #forms24Png;
 		addItem: (SewafCommandItem label: 'Manage Applications' command: #openApplicationManager);
 		addItem: (SewafCommandItem label: 'Available Orbeon Forms' command: #openFormManager);
+		addItem: (SewafCommandItem label: 'Manage Calendars' command: #openCalendarManager);
 		yourself.
 	subMenu3 := (SewafSubMenuItem label: 'Users & Roles' icon: #usersettings32Png)
 		set24Icon: #usersettings24Png;

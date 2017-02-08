@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getCurrentCollection" : "BrunoBB 02/07/2017 16:31",
+		"getIconNameFormItem" : "BrunoBB 02/07/2017 17:03",
+		"getTextForItem:" : "BrunoBB 02/07/2017 16:22",
+		"renderDeleteCalendarOn:" : "BrunoBB 02/07/2017 16:27",
+		"renderItemComponentOn:" : "BrunoBB 02/07/2017 16:27",
+		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 02/07/2017 16:28",
+		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 02/07/2017 16:29",
+		"renderItemDescriptionTitleOn:" : "BrunoBB 02/07/2017 16:31",
+		"renderLateralItemDetailsOn:for:" : "BrunoBB 02/07/2017 16:29",
+		"renderSearchAreaOn:" : "BrunoBB 02/07/2017 16:21" } }
