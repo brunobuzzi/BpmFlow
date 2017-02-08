@@ -1,6 +1,12 @@
 other
 renderCalendarDaysOn: html
 	| svgCanvas1 svgCanvas2 year notWorkingDays  |
+
+	html anchor class: 'margin-left-5px';
+			callback: [self addValue: true named: 'hoursPane']; 
+			with: [html image url: (SEWAFIconLibrary / #clock32Png);
+									title: ('Set Hours' translateFor: self session user);
+									altText: ('Set Hours' translateFor: self session user)].
 	
 	notWorkingDays := Dictionary new.
 	svgCanvas1 := 	JASVGIGraphCanvas newWidth: '1400px' height: '200px'.

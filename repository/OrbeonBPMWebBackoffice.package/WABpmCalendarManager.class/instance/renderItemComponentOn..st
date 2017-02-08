@@ -6,6 +6,9 @@ renderItemComponentOn: html
 	(selectedLateralItem name = 'Default') ifFalse: [self renderDeleteCalendarOn: html]. "Default calendar can not be removed"
 
 	html div with: [
-		html div with: [self renderCalendarOperationsOn: html].
-		html div with: [self renderCalendarDaysOn: html].
+		(self componentValueAt: 'hoursPane') 
+		ifFalse: [html div with: [
+			self renderCalendarOperationsOn: html.
+			self renderCalendarDaysOn: html]]
+		ifTrue: [html div with: [self renderCalendarHoursOn: html]].
 	].
