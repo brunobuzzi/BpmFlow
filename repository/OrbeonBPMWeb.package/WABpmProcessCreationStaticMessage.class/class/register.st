@@ -10,4 +10,4 @@ register
 		preferenceAt: #sessionClass put: WABpmSession;
 		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
-		addLibrary: JQSmoothnessTheme.
+		addLibrary: JQUiLightnessTheme.
