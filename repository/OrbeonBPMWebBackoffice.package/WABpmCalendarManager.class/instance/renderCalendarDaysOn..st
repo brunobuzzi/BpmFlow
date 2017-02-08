@@ -1,19 +1,30 @@
 other
 renderCalendarDaysOn: html
-	| svgCanvas year notWorkingDays  |
+	| svgCanvas1 svgCanvas2 year notWorkingDays  |
 	
 	notWorkingDays := Dictionary new.
-	svgCanvas := 	JASVGIGraphCanvas newWidth: '1400px' height: '1000px'.
+	svgCanvas1 := 	JASVGIGraphCanvas newWidth: '1400px' height: '200px'.
 	year := Date today year.
 
 	selectedLateralItem days do: [:each | notWorkingDays at: each dayOfYear put: 100].
 	
-	svgCanvas drawCalendar: notWorkingDays 
+	svgCanvas1 drawCalendar: notWorkingDays 
 					at: 25@25
 					from: (Date fromString: '01/01/', year printString)
+					to: (Date fromString: '06/30/', year printString)
+					width: 18
+					color: 'darkred'
+					dayHasContent: true.
+
+	html div with: [html html: svgCanvas1 contents].
+
+	svgCanvas2 := 	JASVGIGraphCanvas newWidth: '1400px' height: '200px'.
+	svgCanvas2 drawCalendar: notWorkingDays 
+					at: 25@25
+					from: (Date fromString: '07/01/', year printString)
 					to: (Date fromString: '12/31/', year printString)
 					width: 18
 					color: 'darkred'
 					dayHasContent: true.
 
-	html html: svgCanvas contents.
+	html div with: [html html: svgCanvas2 contents].
