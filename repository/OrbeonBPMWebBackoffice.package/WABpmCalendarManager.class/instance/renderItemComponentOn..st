@@ -3,4 +3,4 @@ renderItemComponentOn: html
 
 	selectedLateralItem ifNil: [^self].
 
-	self renderDeleteCalendarOn: html.
+	(selectedLateralItem name = 'Default') ifFalse: [self renderDeleteCalendarOn: html]. "Default calendar can not be removed"
