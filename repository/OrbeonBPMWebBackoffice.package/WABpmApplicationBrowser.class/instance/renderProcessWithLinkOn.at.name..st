@@ -13,7 +13,7 @@ renderProcessWithLinkOn: html at: aPoint name: procName
 		html div with: [html html: canvas contents].
 		html div class: 'float-right margin-right-10px'; with: [ | versionsInfo |
 			versionsInfo :=  (BpmProcessDefinition  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName) version
-									ifNil: ['v1'] ifNotNil: [:ver | (ver = 1) ifTrue: ['v1'] ifFalse: ['v1..v', ver printString]]. 
+									ifNil: ['v1'] ifNotNil: [:ver | 'v',ver printString]. 
 			html output: versionsInfo.	
 			self renderDownloadProcessMapOn: html for: procName.
 		].
