@@ -4,6 +4,7 @@
 	"instance" : {
 		"addCalendar" : "BrunoBB 02/15/2017 07:44",
 		"addOfficeHours" : "BrunoBB 02/13/2017 12:12",
+		"addRemoveDay:" : "BrunoBB 02/15/2017 14:18",
 		"addRemoveHour:" : "BrunoBB 02/15/2017 12:59",
 		"addSaturdays" : "BrunoBB 02/08/2017 09:09",
 		"addSelectedDay" : "BrunoBB 02/08/2017 09:38",
@@ -22,8 +23,8 @@
 		"removeSelectedHour" : "BrunoBB 02/13/2017 11:40",
 		"removeSundays" : "BrunoBB 02/08/2017 09:10",
 		"renderAddCalendarOn:" : "BrunoBB 02/15/2017 07:38",
-		"renderCalendarDaysOn:" : "BrunoBB 02/13/2017 14:55",
-		"renderCalendarHoursOn:" : "BrunoBB 02/15/2017 12:52",
+		"renderCalendarDaysOn:" : "BrunoBB 02/15/2017 14:16",
+		"renderCalendarHoursOn:" : "BrunoBB 02/15/2017 13:16",
 		"renderCalendarHoursOperationsOn:" : "BrunoBB 02/15/2017 13:00",
 		"renderCalendarOperationsOn:" : "BrunoBB 02/13/2017 15:00",
 		"renderCompleteItemOn:" : "BrunoBB 02/13/2017 15:07",
