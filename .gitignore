@@ -1,6 +1,7 @@
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
 *.un~
+MFC.out
 Session.vim
 .netrwhist
 *~
