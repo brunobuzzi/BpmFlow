@@ -19,7 +19,7 @@ renderCalendarHoursOperationsOn: html
 			]
 		].
 	].
-	html div class: 'float-left centered-unique-form'; with: [
+"	html div class: 'float-left centered-unique-form'; with: [
 		html form with: [
 			html fieldSet with: [
 				html legend with: [html strong: ('Add Hours' translateFor: self session user)].
@@ -30,3 +30,4 @@ renderCalendarHoursOperationsOn: html
 			]
 		]
 	].
+"
