@@ -1,5 +1,5 @@
 other
-createNewApplication
+createApplication
 	| appClass appName |
 
 	appName := self componentValueAt: 'appName'.

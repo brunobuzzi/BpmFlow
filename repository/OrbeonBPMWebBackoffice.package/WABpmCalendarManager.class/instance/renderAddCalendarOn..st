@@ -1,4 +1,4 @@
-other
+jquery
 renderAddCalendarOn: html
    | jQueryId |
 

@@ -5,6 +5,7 @@ renderItemComponentOn: html
 	selectedLateralItem ifNil: [^self].
 
 	selectedLateralItem canDelete ifTrue: [self renderDeleteApplicationOn: html].
+	self renderAddApplicationOn: html.  
 
 	point := 10@10.
 	(BpmProcessDefinition getAllProcessNamesIn: selectedLateralItem applicationName) do: [:procName |

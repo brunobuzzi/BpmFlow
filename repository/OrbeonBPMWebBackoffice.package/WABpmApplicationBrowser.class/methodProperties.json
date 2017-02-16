@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createNewApplication" : "BrunoBB 08/31/2016 11:48",
 		"downloadProcessMap:" : "BrunoBB 01/13/2017 12:23",
 		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 12:33",
 		"downloadZipProcessMapOf:" : "BrunoBB 01/13/2017 12:52",
@@ -13,9 +12,10 @@
 		"gitbookUrl" : "BrunoBB 01/25/2017 07:25",
 		"initialize" : "BrunoBB 08/31/2016 10:41",
 		"removeApplication" : "BrunoBB 08/31/2016 10:41",
+		"renderAddApplicationOn:" : "BrunoBB 02/16/2017 12:45",
 		"renderDeleteApplicationOn:" : "BrunoBB 08/31/2016 10:22",
 		"renderDownloadProcessMapOn:for:" : "BrunoBB 01/13/2017 07:21",
-		"renderItemComponentOn:" : "BrunoBB 01/13/2017 06:21",
+		"renderItemComponentOn:" : "BrunoBB 02/16/2017 09:06",
 		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 08/31/2016 12:03",
 		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 01/13/2017 06:08",
 		"renderItemDescriptionTitleOn:" : "BrunoBB 08/31/2016 10:18",
@@ -23,7 +23,7 @@
 		"renderNewAppFormOn:" : "BrunoBB 01/09/2017 06:14",
 		"renderProcessWithLinkOn:at:name:" : "BrunoBB 02/13/2017 15:32",
 		"renderSearchApplicationOn:" : "BrunoBB 01/09/2017 06:36",
-		"renderSearchAreaOn:" : "BrunoBB 08/31/2016 11:59",
+		"renderSearchAreaOn:" : "BrunoBB 02/16/2017 12:45",
 		"renderSearchSubmitButtonOn:" : "BrunoBB 08/31/2016 11:12",
 		"searchMatchingApplications" : "BrunoBB 01/25/2017 04:54",
 		"xmlHeader" : "BrunoBB 01/13/2017 13:23" } }
