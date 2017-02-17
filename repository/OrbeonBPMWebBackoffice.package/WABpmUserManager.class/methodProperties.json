@@ -17,10 +17,10 @@
 		"removeUser:" : "BrunoBB 09/01/2016 05:17",
 		"removeUserButton" : "BrunoBB 09/05/2016 14:08",
 		"renderAddRolButtonOn:" : "BrunoBB 03/15/2016 10:51",
+		"renderAddUserOn:" : "BrunoBB 02/17/2017 08:23",
 		"renderAddingRolOn:" : "BrunoBB 03/15/2016 10:51",
-		"renderContentOn:" : "BrunoBB 03/15/2016 10:51",
-		"renderNewFormOn:" : "BrunoBB 12/02/2016 06:13",
-		"renderSearchAndNewFormOn:" : "BrunoBB 03/15/2016 10:51",
+		"renderContentOn:" : "BrunoBB 02/16/2017 13:37",
+		"renderSearchAndNewFormOn:" : "BrunoBB 02/17/2017 07:15",
 		"renderSearchFormOn:" : "BrunoBB 12/02/2016 06:13",
 		"resetPasswordButton" : "BrunoBB 03/15/2016 10:51",
 		"resetPasswordOf:" : "BrunoBB 03/15/2016 10:51",
@@ -30,4 +30,5 @@
 		"sewafTableForUsers" : "BrunoBB 06/13/2016 09:49",
 		"sewafTableRolsOfUser" : "BrunoBB 06/13/2016 10:01",
 		"sortColumn:orderMode:" : "BrunoBB 07/03/2016 16:14",
-		"switchAddingUser" : "BrunoBB 03/15/2016 10:51" } }
+		"switchAddingUser" : "BrunoBB 03/15/2016 10:51",
+		"updateListWith:" : "BrunoBB 02/16/2017 13:45" } }

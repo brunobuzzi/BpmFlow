@@ -29,10 +29,11 @@
 		"removeRol:" : "BrunoBB 09/01/2016 05:33",
 		"removeRoleFromUser:" : "BrunoBB 06/12/2016 17:41",
 		"removeUserFromRole:" : "BrunoBB 06/12/2016 17:41",
+		"renderAddRoleOn:" : "BrunoBB 02/17/2017 07:54",
 		"renderAddUserButtonOn:" : "BrunoBB 03/15/2016 10:48",
 		"renderAddingUserOn:" : "BrunoBB 08/10/2016 10:59",
 		"renderApplicationComboOn:" : "BrunoBB 03/15/2016 10:48",
-		"renderContentOn:" : "BrunoBB 03/15/2016 10:48",
+		"renderContentOn:" : "BrunoBB 02/17/2017 07:18",
 		"renderNewRoleFormOn:" : "BrunoBB 01/09/2017 06:14",
 		"searchBy:" : "BrunoBB 07/04/2016 10:12",
 		"searchByApplication" : "BrunoBB 03/15/2016 10:48",
@@ -48,4 +49,5 @@
 		"sewafTableUsersWithRol" : "BrunoBB 06/12/2016 17:03",
 		"sortColumn:orderMode:" : "BrunoBB 08/10/2016 10:43",
 		"sortUsers:orderMode:" : "BrunoBB 08/10/2016 10:59",
-		"switchAddingUser" : "BrunoBB 03/15/2016 10:48" } }
+		"switchAddingUser" : "BrunoBB 03/15/2016 10:48",
+		"updateRole:" : "BrunoBB 02/17/2017 07:57" } }
