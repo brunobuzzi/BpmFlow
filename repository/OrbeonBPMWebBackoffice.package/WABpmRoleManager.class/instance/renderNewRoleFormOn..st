@@ -9,7 +9,7 @@ renderNewRoleFormOn: html
 		with: [html form with: [
 					html fieldSet with: [
 						html legend class: 'top-search-legend'; 
-							with: ('Create-Search Roles' translateFor: self session user).
+							with: ('Search Roles' translateFor: self session user).
 						html div class: 'top-search-div'; with: [
 							html label attributeAt: 'for' put: 'rolename'; with: ('Rol''s Name' translateFor: self session user).
 							html textInput attributeAt: 'id' put: 'rolename'; callback: [:value | model name: value].
@@ -28,9 +28,7 @@ renderNewRoleFormOn: html
 							html submitButton style: 'margin-top: 25px;';
 								callback: [self searchRoles]; 
 								with: ('Search' translateFor: self session user).
-							html submitButton 
-								callback: [self createNewRolIn: selectedApplication]; 
-								with: ('Create Role' translateFor: self session user)]
+						]
 					]
 				]
 		].
