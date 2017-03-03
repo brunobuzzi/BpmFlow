@@ -1,6 +1,6 @@
 activationBlock - is a two argument block.
 
-[:lastExecuteTime :currentTime | ]
+[:lastExecutedTime :currentTime | ]
 
 Where <lastExecuteTime> is given by BpmArtifactInstance <creationTime> (a new BpmEventInstance is created each time the event is triggered so #creationTime is equal to "last executed time").
 

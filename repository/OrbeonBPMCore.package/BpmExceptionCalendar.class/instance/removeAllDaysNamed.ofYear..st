@@ -1,6 +1,6 @@
 days configuration
 removeAllDaysNamed: aString ofYear: year
-	"The receiver add all sundays of year <year>"
+	"The receiver rmeove all days named <aString> of year <year>"
 	| pivotDate shift daysToAdd |
 
 	shift := 1.
