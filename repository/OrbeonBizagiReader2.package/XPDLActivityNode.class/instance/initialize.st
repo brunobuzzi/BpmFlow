@@ -7,3 +7,5 @@ initialize
 	outTransitions := OrderedCollection new.
 
 	performers := OrderedCollection new.
+
+	attachedEvents := OrderedCollection new.

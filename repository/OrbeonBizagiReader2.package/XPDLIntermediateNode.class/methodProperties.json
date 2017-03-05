@@ -2,4 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getLanesFrom:" : "BrunoBB 10/29/2015 19:26" } }
+		"getLanesFrom:" : "BrunoBB 03/05/2017 11:30",
+		"getTargetId" : "BrunoBB 03/05/2017 11:30",
+		"hostNode" : "BrunoBB 03/05/2017 11:30",
+		"hostNode:" : "BrunoBB 03/05/2017 11:30",
+		"inTransitions" : "BrunoBB 03/05/2017 11:30",
+		"inTransitions:" : "BrunoBB 03/05/2017 11:30",
+		"initialize" : "BrunoBB 03/05/2017 11:30",
+		"isAttached" : "BrunoBB 03/05/2017 11:30",
+		"isIntermediateEventNode" : "BrunoBB 03/05/2017 11:30",
+		"outTransitions" : "BrunoBB 03/05/2017 11:30",
+		"outTransitions:" : "BrunoBB 03/05/2017 11:30",
+		"setInternalAttributesWithNode:" : "BrunoBB 03/05/2017 11:30" } }

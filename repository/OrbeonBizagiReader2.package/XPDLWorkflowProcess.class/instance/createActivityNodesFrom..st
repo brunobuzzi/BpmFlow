@@ -14,7 +14,8 @@ createActivityNodesFrom: aXMLDocument
 			setExtendedAttributesWithNode: eachNode;
 			setLoopTypeWithNode: eachNode; "loop type: (none) (standart) (multi-instance) [only for Tasks and Subprocess nodes ]"
 			setGraphicActivityValuesWithNode: eachNode; "set graphic coordinates [for all nodes]"
-			setInternalDataWithNode: eachNode. "set the Id of the subprocess [only for Subprocess nodes]"
+			setInternalDataWithNode: eachNode; "set the Id of the subprocess [only for Subprocess nodes]"
+			setInternalAttributesWithNode: eachNode. "set the internal attributes that need special consideration (used to set event's attributes)"
 
 		eachNode allElementsNamed: 'Performer' do: [:performerNode | | activityPerformId |
 			activityPerformId := performerNode nodes last asString.

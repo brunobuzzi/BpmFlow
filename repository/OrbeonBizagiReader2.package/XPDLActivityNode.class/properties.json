@@ -10,7 +10,8 @@
 		"outTransitions",
 		"loopType",
 		"loopCondition",
-		"performers" ],
+		"performers",
+		"attachedEvents" ],
 	"name" : "XPDLActivityNode",
 	"pools" : [
 		 ],

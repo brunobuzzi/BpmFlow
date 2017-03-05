@@ -16,6 +16,8 @@ getActivityInstanceFrom: xmlActivityNode
 
 	(xmlActivityNode findElementNamed: 'EndEvent') ifNotNil: [^XPDLEndNode new].
 
+	(xmlActivityNode findElementNamed: 'IntermediateEvent') ifNotNil: [^XPDLIntermediateNode new].
+
 	(xmlActivityNode findElementNamed: 'Script') ifNotNil: [^XPDLScriptNode new].
 
 	^XPDLTaskNode new

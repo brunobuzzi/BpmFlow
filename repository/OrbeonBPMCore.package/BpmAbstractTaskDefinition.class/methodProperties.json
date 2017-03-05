@@ -3,6 +3,9 @@
 		 },
 	"instance" : {
 		"addPerformer:" : "BrunoBB 12/31/2015 14:02",
+		"attachEvent:" : "BrunoBB 03/05/2017 09:11",
+		"attachedEvents" : "BrunoBB 03/05/2017 09:10",
+		"attachedEvents:" : "BrunoBB 03/05/2017 09:10",
 		"createExpectedExecutionTimeFromBizagiString" : "BrunoBB 02/06/2017 07:30",
 		"expectedExecutionTime" : "BrunoBB 02/04/2017 10:57",
 		"expectedExecutionTime:" : "BrunoBB 02/04/2017 10:57",
@@ -14,7 +17,7 @@
 		"hasExpectedExecutionTime" : "BrunoBB 02/04/2017 10:57",
 		"hasLoop" : "BrunoBB 11/01/2015 13:30",
 		"hasPerformers" : "BrunoBB 04/13/2016 10:16",
-		"initialize" : "BrunoBB 03/23/2016 09:13",
+		"initialize" : "BrunoBB 03/05/2017 09:10",
 		"isGrantedUser:" : "BrunoBB 01/19/2016 12:28",
 		"isMultiInstance" : "BrunoBB 09/05/2016 08:17",
 		"isTaskDefinition" : "BrunoBB 12/10/2015 10:51",

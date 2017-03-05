@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"scriptCode",
-		"loop" ],
+		"scriptCode" ],
 	"name" : "BpmScriptTaskDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmActivityDefinition",
+	"super" : "BpmAbstractTaskDefinition",
 	"type" : "normal" }

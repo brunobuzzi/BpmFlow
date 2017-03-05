@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"inTransitions",
+		"outTransitions",
+		"hostNode" ],
 	"name" : "XPDLIntermediateNode",
 	"pools" : [
 		 ],
