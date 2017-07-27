@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForTimerProcess.
+	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForTimerProcess. 
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator mapProcess: 'timer-process' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');

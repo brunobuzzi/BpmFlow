@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessDefinition" : "BrunoBB 03/05/2017 09:07" } }
+		"createProcessDefinition" : "BrunoBB 03/12/2017 12:15",
+		"setUp" : "BrunoBB 03/09/2017 14:07",
+		"testProcessCreation" : "BrunoBB 04/03/2017 08:08" } }

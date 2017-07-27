@@ -1,4 +1,4 @@
 other
 addIntermediateEvent: aBpmIntermediateEventDefinition
 
-	^endEvents at: aBpmIntermediateEventDefinition name put: aBpmIntermediateEventDefinition
+	^intermediateEvents at: aBpmIntermediateEventDefinition name put: aBpmIntermediateEventDefinition

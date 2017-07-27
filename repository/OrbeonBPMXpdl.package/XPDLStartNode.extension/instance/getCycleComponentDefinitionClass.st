@@ -1,0 +1,4 @@
+*orbeonBPMXpdl
+getCycleComponentDefinitionClass
+
+	^BpmStartComponentDefinition

@@ -26,6 +26,7 @@
 		"registerAnonymousMappingForm:in:for:" : "BrunoBB 03/30/2016 16:12",
 		"removeAllDefinitions" : "BrunoBB 06/20/2016 14:37",
 		"removeAllFormFieldInstances" : "BrunoBB 06/20/2016 14:36",
+		"removeAllVersionOfProcessNamed:in:" : "BrunoBB 03/12/2017 15:37",
 		"reportCreationDayFor:in:from:to:satisfying:" : "BrunoBB 11/04/2016 05:27",
 		"reportCreationDayFor:in:version:from:to:satisfying:" : "BrunoBB 11/04/2016 05:46",
 		"reportProcessAverageTimeDistributionFor:in:" : "BrunoBB 11/07/2016 03:34",

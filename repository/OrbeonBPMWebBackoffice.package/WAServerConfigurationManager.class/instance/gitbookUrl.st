@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^'https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/server_setup.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, 'server_setup.html'

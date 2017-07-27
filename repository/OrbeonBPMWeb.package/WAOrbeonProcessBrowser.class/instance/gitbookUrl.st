@@ -2,5 +2,5 @@ other
 gitbookUrl
 
 	^self modeIsFinishedTasks
-	ifTrue: ['https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/finished_processes.html']
-	ifFalse: ['https://brunobuzzi.gitbooks.io/bpm-using-orbeon-and-gemstone-s/content/current_processes.html']
+	ifTrue: [self getGemStoneServerConfiguration baseUrlDocumentation, 'finished_processes.html']
+	ifFalse: [self getGemStoneServerConfiguration baseUrlDocumentation, 'current_processes.html']

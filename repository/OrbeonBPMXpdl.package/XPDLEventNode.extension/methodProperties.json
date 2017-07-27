@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createBpmDefinitionOn:" : "BrunoBB 03/12/2017 15:28",
+		"getBpmTagComponentDefinitionClass" : "BrunoBB 03/12/2017 15:26",
+		"getBpmTypeComponentDefinitionClass" : "BrunoBB 03/12/2017 15:26",
+		"getCycleComponentDefinitionClass" : "BrunoBB 03/12/2017 15:26" } }

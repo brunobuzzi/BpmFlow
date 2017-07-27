@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createBpmDefinitionOn:" : "BrunoBB 08/06/2016 15:05",
-		"getArtifactFrom:" : "BrunoBB 10/28/2015 12:16" } }
+		"getArtifactFrom:" : "BrunoBB 03/05/2017 11:30",
+		"getBpmTagComponentDefinitionClass" : "BrunoBB 03/12/2017 15:26",
+		"getBpmTypeComponentDefinitionClass" : "BrunoBB 03/12/2017 15:31",
+		"getCycleComponentDefinitionClass" : "BrunoBB 03/12/2017 15:24" } }
