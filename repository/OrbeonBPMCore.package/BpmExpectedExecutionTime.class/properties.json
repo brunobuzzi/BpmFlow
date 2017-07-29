@@ -4,11 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 07/29/2017 09:41",
 	"instvars" : [
 		"value",
 		"calendar",
-		"warningThreshold" ],
+		"warningThreshold",
+		"notificationInterval",
+		"notifications" ],
 	"name" : "BpmExpectedExecutionTime",
 	"pools" : [
 		 ],
