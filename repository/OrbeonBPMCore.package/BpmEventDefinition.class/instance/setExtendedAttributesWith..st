@@ -1,5 +1,7 @@
-Updating
+other
 setExtendedAttributesWith: attributesDictionary
 	"The receiver copy the extended attributes from XPDL elements"
 
-	extendedAttributes := attributesDictionary.
+	super setExtendedAttributesWith: attributesDictionary.
+
+	type setValuesOfExtendedAttributes.

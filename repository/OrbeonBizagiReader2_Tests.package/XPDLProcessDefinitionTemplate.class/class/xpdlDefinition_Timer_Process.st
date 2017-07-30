@@ -7,7 +7,7 @@ xpdlDefinition_Timer_Process
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2017-03-05T12:11:30.7964825-03:00</Created>
-    <ModificationDate>2017-03-05T13:33:19.1186887-03:00</ModificationDate>
+    <ModificationDate>2017-07-30T17:20:07.0272857-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -47,7 +47,7 @@ xpdlDefinition_Timer_Process
   <WorkflowProcesses>
     <WorkflowProcess Id="e75ec3e2-d2b1-4332-b7ef-c4664186c88d" Name="Main Process">
       <ProcessHeader>
-        <Created>2017-03-05T13:34:01.9202699-03:00</Created>
+        <Created>2017-07-30T17:20:32.710603-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -63,7 +63,7 @@ xpdlDefinition_Timer_Process
     </WorkflowProcess>
     <WorkflowProcess Id="691a183a-46e1-4168-978e-f288a183f498" Name="timer-process">
       <ProcessHeader>
-        <Created>2017-03-05T13:34:01.9202699-03:00</Created>
+        <Created>2017-07-30T17:20:32.710603-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -82,7 +82,7 @@ xpdlDefinition_Timer_Process
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
-              <Coordinates XCoordinate="155" YCoordinate="75" />
+              <Coordinates XCoordinate="153" YCoordinate="75" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
@@ -117,7 +117,9 @@ xpdlDefinition_Timer_Process
               <Coordinates XCoordinate="344" YCoordinate="120" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
-          <ExtendedAttributes />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime | (lastExecutedTime addDays: 1) &amp;lt; currentTime ]&lt;/span&gt;&lt;/p&gt;" />
+          </ExtendedAttributes>
         </Activity>
         <Activity Id="47aecb55-e3a9-4b7e-b431-dfbc742d161d" Name="alert_script">
           <Description />
@@ -133,7 +135,7 @@ xpdlDefinition_Timer_Process
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="299" YCoordinate="196" />
+              <Coordinates XCoordinate="299" YCoordinate="207" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -146,7 +148,7 @@ xpdlDefinition_Timer_Process
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
-              <Coordinates XCoordinate="542" YCoordinate="75" />
+              <Coordinates XCoordinate="545" YCoordinate="75" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -158,7 +160,7 @@ xpdlDefinition_Timer_Process
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="185" YCoordinate="90" />
+              <Coordinates XCoordinate="183" YCoordinate="90" />
               <Coordinates XCoordinate="299" YCoordinate="90" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -170,7 +172,7 @@ xpdlDefinition_Timer_Process
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="344" YCoordinate="120" />
-              <Coordinates XCoordinate="344" YCoordinate="196" />
+              <Coordinates XCoordinate="344" YCoordinate="207" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -181,7 +183,7 @@ xpdlDefinition_Timer_Process
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="389" YCoordinate="90" />
-              <Coordinates XCoordinate="542" YCoordinate="90" />
+              <Coordinates XCoordinate="545" YCoordinate="90" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />

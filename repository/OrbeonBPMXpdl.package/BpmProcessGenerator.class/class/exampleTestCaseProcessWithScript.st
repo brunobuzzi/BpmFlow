@@ -1,4 +1,4 @@
-other
+example
 exampleTestCaseProcessWithScript
 	| generator reader |
 

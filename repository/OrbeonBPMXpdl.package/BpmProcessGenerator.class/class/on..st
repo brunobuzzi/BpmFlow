@@ -1,4 +1,4 @@
-other
+instance creation
 on: collectionOfXPDLPackages
 
 	^super new initialize

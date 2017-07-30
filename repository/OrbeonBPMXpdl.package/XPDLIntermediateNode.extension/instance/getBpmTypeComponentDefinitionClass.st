@@ -1,4 +1,0 @@
-*orbeonBPMXpdl
-getBpmTypeComponentDefinitionClass
-
-	^BpmNoneComponentDefinition

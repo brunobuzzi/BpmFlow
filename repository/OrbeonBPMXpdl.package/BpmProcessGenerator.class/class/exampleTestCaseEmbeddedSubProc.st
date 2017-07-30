@@ -1,4 +1,4 @@
-other
+example
 exampleTestCaseEmbeddedSubProc
 	| generator reader |
 
