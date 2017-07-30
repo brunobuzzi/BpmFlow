@@ -3,11 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Default" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"executedEvents" ],
-	"name" : "BpmTimerEventManager",
+		"eventsHistory",
+		"monitoredProcessDefinitions",
+		"monitoredProcessInstances" ],
+	"name" : "BpmTimerEventMonitor",
 	"pools" : [
 		 ],
 	"super" : "BpmObject",
