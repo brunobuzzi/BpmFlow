@@ -13,4 +13,5 @@ initialize
 	monitoredProcessInstances := Dictionary new.
 
 	"all executed TimerEvents"
-	eventsHistory := Dictionary new.
+	processesCreationEventHistory := Dictionary new.
+	tasksCreationEventHistory := Dictionary new.

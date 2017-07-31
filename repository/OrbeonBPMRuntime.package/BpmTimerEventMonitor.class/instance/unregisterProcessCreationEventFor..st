@@ -1,4 +1,4 @@
-process creation timer
+process creation
 unregisterProcessCreationEventFor: aBpmProcessDefinition
 	"The receiver remove the process <aBpmProcessDefinition> from the collection of Timer process creation.
 	No more Timer process creation will be triggered for <aBpmProcessDefinition>"
