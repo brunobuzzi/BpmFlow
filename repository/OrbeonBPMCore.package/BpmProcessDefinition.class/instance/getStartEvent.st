@@ -1,0 +1,4 @@
+other
+getStartEvent
+
+	^executionPath startEvent
