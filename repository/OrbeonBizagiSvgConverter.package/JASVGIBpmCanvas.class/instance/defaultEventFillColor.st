@@ -1,4 +1,4 @@
 default values
 defaultEventFillColor
 
-	^'blue'
+	^'lightblue'
