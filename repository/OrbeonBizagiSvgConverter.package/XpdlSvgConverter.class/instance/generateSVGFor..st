@@ -11,9 +11,10 @@ generateSVGFor: aBpmDefinition
 
 	xpdlReader getAllWorkflows do: [:eachWorkflow | 
 		eachWorkflow parentLanes do: [:eachLaneNode | eachLaneNode drawOn: svgCanvas].
-		eachWorkflow activities do: [:eachActivityNode | eachActivityNode drawOn: svgCanvas].
 		eachWorkflow transitions do: [:eachTransition | eachTransition drawOn: svgCanvas].
+		eachWorkflow activities do: [:eachActivityNode | eachActivityNode drawOn: svgCanvas].
 	].
+
 	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText yCoordinate text |
 		yCoordinate := eachWorkflow getLaneMaxYCoordinate + 20.
 		eachWorkflow getGatewayNodes do: [:gatewayNode | 

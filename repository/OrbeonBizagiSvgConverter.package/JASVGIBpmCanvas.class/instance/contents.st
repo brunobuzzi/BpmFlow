@@ -1,6 +1,6 @@
 draw
 contents
-	
+
 	svgTag with: [
 		self tag: 'defs' with: [svgMarkers do: [:each | each drawOn: self]].
 		(svgGroups orderedKeys select: [:e | e notNil]) do:[:key | | tagGroup |
