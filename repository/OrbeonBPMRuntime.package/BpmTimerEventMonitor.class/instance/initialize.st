@@ -9,7 +9,7 @@ initialize
 
 	"used for <BpmProcessInstance> with Timer on an IntermediateEvent [a new <BpmActivityInstance> is created each X time] "
 	"each time a <BpmProcessInstance> is finished then the process instance is removed from this collection"
-	"while iterating over the collection if a <BpmProcessInstance> is finished the is removed in that moment"
+	"while iterating over the collection if a <BpmProcessInstance> is finished then is removed in that moment"
 	monitoredProcessInstances := Dictionary new.
 
 	"all executed TimerEvents"

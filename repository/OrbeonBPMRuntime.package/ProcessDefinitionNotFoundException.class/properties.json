@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ProcessDefinitionNotFoundException",
+	"pools" : [
+		 ],
+	"super" : "OrbeonBpmException",
+	"type" : "normal" }
