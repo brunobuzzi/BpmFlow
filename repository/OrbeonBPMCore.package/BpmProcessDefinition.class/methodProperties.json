@@ -114,6 +114,7 @@
 		"getScriptNamed:ifNone:" : "BrunoBB 06/22/2016 11:49",
 		"getSingleProcessMapStream" : "BrunoBB 01/13/2017 12:31",
 		"getStartEvent" : "brunobb 07/31/2017 12:05",
+		"getStartTimerBlock" : "brunobb 08/05/2017 15:34",
 		"getSubProcessDefinitions" : "BrunoBB 11/28/2015 19:51",
 		"getSubProcessNamed:ifAbsent:" : "BrunoBB 06/26/2016 14:22",
 		"getSubProcessTaskNamed:ifNone:" : "BrunoBB 11/28/2015 19:51",
