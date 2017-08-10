@@ -88,7 +88,7 @@ xpdlDefinition_Timer_Process_Start
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
-            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime | (lastExecutedTime addDays: 1) &amp;lt; currentTime ]&lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime | (lastExecutedTime plusDays: 1) &amp;lt; currentTime ]&lt;/span&gt;&lt;/p&gt;" />
           </ExtendedAttributes>
         </Activity>
         <Activity Id="47aecb55-e3a9-4b7e-b431-dfbc742d161d" Name="alert_script">
@@ -157,7 +157,7 @@ xpdlDefinition_Timer_Process_Start
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0}" />
-            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime | (lastExecutedTime addDays: 1) &amp;lt; currentTime ]&lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime | (lastExecutedTime plusDays: 1) &amp;lt; currentTime ]&lt;/span&gt;&lt;/p&gt;" />
           </ExtendedAttributes>
         </Activity>
       </Activities>

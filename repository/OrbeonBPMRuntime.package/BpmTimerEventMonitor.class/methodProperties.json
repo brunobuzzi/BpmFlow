@@ -1,8 +1,10 @@
 {
 	"class" : {
-		"default" : "brunobb 07/31/2017 13:21" },
+		"default" : "brunobb 07/31/2017 13:21",
+		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:12" },
 	"instance" : {
 		"endMonitoringProcessCreation:" : "brunobb 08/05/2017 15:02",
+		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:11",
 		"getLastProcessCreationTimeFor:" : "brunobb 08/08/2017 12:58",
 		"initialize" : "brunobb 08/05/2017 14:32",
 		"monitoredProcessDefinitions" : "brunobb 07/31/2017 13:22",
