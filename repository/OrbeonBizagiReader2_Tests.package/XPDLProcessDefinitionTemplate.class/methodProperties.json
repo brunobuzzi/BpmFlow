@@ -13,6 +13,7 @@
 		"processDefinition_visa_apply" : "BrunoBB 04/09/2016 15:21",
 		"xpdlDefinition_Timer_Process" : "brunobb 08/10/2017 13:25",
 		"xpdlDefinition_Timer_Process_Start" : "brunobb 08/10/2017 13:44",
+		"xpdlDefinition_Timer_Process_Start_Simple" : "brunobb 08/24/2017 10:26",
 		"xpdlExample_MultiplePools" : "BrunoBB 07/06/2016 08:17",
 		"xpdlExample_ProcessFixIssue" : "BrunoBB 03/21/2016 06:07",
 		"xpdlExample_ProcessReportToArchitect" : "BrunoBB 03/21/2016 06:07",
@@ -33,6 +34,7 @@
 		"xpdlReaderForSimpleRegistrationProcess" : "BrunoBB 03/31/2016 15:48",
 		"xpdlReaderForTimerProcess" : "BrunoBB 03/05/2017 09:05",
 		"xpdlReaderForTimerProcessStart" : "brunobb 07/31/2017 05:05",
+		"xpdlReaderForTimerProcessStartSimple" : "brunobb 08/24/2017 10:26",
 		"xpdlReaderForVisaProcess" : "BrunoBB 07/02/2016 12:21" },
 	"instance" : {
 		 } }

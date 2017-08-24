@@ -1,6 +1,6 @@
 monitoring
-endMonitoringProcessCreation: aBpmProcessDefinition
-	"The receiver ends the monitoring of <aBpmProcessDefinition> for automatic process creation."
+stopMonitoringProcessCreation: aBpmProcessDefinition
+	"The receiver stop the monitoring of <aBpmProcessDefinition> for automatic process creation."
 	| appDictionary monitorCollection |
 
 	aBpmProcessDefinition hasCreationTimer 
