@@ -1,10 +1,11 @@
 {
 	"class" : {
 		"default" : "brunobb 07/31/2017 13:21",
-		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:12" },
+		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:12",
+		"initializeDefault" : "brunobb 09/03/2017 14:02" },
 	"instance" : {
 		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:11",
-		"getLastProcessCreationTimeFor:" : "brunobb 08/08/2017 12:58",
+		"getLastProcessCreationTimeFor:" : "brunobb 09/03/2017 14:34",
 		"initialize" : "brunobb 08/05/2017 14:32",
 		"monitoredProcessDefinitions" : "brunobb 07/31/2017 13:22",
 		"monitoredProcessDefinitions:" : "brunobb 07/31/2017 13:22",
@@ -16,5 +17,5 @@
 		"stopMonitoringProcessCreation:" : "brunobb 08/24/2017 10:47",
 		"tasksCreationEventHistory" : "brunobb 07/31/2017 13:26",
 		"tasksCreationEventHistory:" : "brunobb 07/31/2017 13:26",
-		"triggerProcessCreation" : "brunobb 08/08/2017 12:54",
-		"updateLastExecutionTimeFor:" : "brunobb 08/08/2017 12:58" } }
+		"triggerProcessCreation" : "brunobb 09/03/2017 14:13",
+		"updateLastExecutionTimeFor:" : "brunobb 09/03/2017 14:34" } }
