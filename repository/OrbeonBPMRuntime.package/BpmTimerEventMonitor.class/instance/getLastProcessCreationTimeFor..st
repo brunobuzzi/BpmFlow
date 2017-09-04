@@ -12,6 +12,6 @@ getLastProcessCreationTimeFor: aBpmProcessDefinition
 									ifAbsent: [procNameDictionary at: aBpmProcessDefinition processName put: OrderedCollection new] 
 									ifPresent: [:dictionary | dictionary].
 
-	^procInstancesCollection 
+	^(procInstancesCollection select: [:each | each version = aBpmProcessDefinition version]) 
 		ifNotEmpty: [:value | value last createdTime]
 		ifEmpty: [TimeStamp fromString: '1-10-1970 11:55:00 am' ]
