@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="e7d74ab3-b817-4476-bcc1-2eb5a0d0834a" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="e7d74ab3-b817-4476-bcc1-2eb5a0d0834a" Name="task_timer" xmlns="http://www.wfmc.org/2009/XPDL2.2">
   <PackageHeader>
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2017-10-15T16:31:56.8401671-03:00</Created>
-    <ModificationDate>2017-10-15T17:54:13.0671922-03:00</ModificationDate>
-    <Description>Diagram 1</Description>
+    <ModificationDate>2017-10-15T18:30:18.8214019-03:00</ModificationDate>
+    <Description>task_timer</Description>
     <Documentation />
   </PackageHeader>
   <RedefinableHeader>
@@ -35,7 +35,7 @@
   <WorkflowProcesses>
     <WorkflowProcess Id="3e90d102-ea83-4782-b208-e3a855884069" Name="Main Process">
       <ProcessHeader>
-        <Created>2017-10-15T17:54:40.2317965-03:00</Created>
+        <Created>2017-10-15T18:31:07.8943896-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -51,7 +51,7 @@
     </WorkflowProcess>
     <WorkflowProcess Id="84e75b24-ae41-4266-ba55-4b1f21cca5c2" Name="task_timer">
       <ProcessHeader>
-        <Created>2017-10-15T17:54:40.2317965-03:00</Created>
+        <Created>2017-10-15T18:31:07.8943896-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -118,7 +118,7 @@
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="242" YCoordinate="80" />
+              <Coordinates XCoordinate="240" YCoordinate="80" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -126,14 +126,14 @@
         <Activity Id="368a790b-cb63-46b1-ad95-b6720678206f" Name="task timer">
           <Description />
           <Event>
-            <IntermediateEvent Trigger="Timer" IsAttached="true">
+            <IntermediateEvent Trigger="Timer" Target="dc53df7b-0215-491f-b068-9a1832d48797" IsAttached="true">
               <TriggerTimer TimeDate="2017-10-15T00:00:00" />
             </IntermediateEvent>
           </Event>
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="269" YCoordinate="140" />
+              <Coordinates XCoordinate="267" YCoordinate="140" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
@@ -163,7 +163,7 @@
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="168" YCoordinate="110" />
-              <Coordinates XCoordinate="242" YCoordinate="110" />
+              <Coordinates XCoordinate="240" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -173,7 +173,7 @@
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="332" YCoordinate="110" />
+              <Coordinates XCoordinate="330" YCoordinate="110" />
               <Coordinates XCoordinate="430" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -195,9 +195,8 @@
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="269" YCoordinate="140" />
-              <Coordinates XCoordinate="346" YCoordinate="140" />
-              <Coordinates XCoordinate="346" YCoordinate="207" />
+              <Coordinates XCoordinate="267" YCoordinate="140" />
+              <Coordinates XCoordinate="267" YCoordinate="207" />
               <Coordinates XCoordinate="416" YCoordinate="207" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -217,7 +216,7 @@
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2017-10-15T16:31:56.8552562-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2017-10-15T16:31:56.8552562-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2017-10-15T16:31:56.8552562-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2017-10-15T16:31:56.8552562-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
