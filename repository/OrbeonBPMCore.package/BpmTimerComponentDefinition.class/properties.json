@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"activationBlock" ],
+		"activationBlock",
+		"isInterrupting" ],
 	"name" : "BpmTimerComponentDefinition",
 	"pools" : [
 		 ],
