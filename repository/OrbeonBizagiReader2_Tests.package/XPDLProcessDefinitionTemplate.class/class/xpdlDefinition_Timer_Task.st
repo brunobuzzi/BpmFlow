@@ -2,13 +2,13 @@ timer task
 xpdlDefinition_Timer_Task
 
 	^'<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="e7d74ab3-b817-4476-bcc1-2eb5a0d0834a" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="e7d74ab3-b817-4476-bcc1-2eb5a0d0834a" Name="Diagram_1" xmlns="http://www.wfmc.org/2009/XPDL2.2">
   <PackageHeader>
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2017-10-15T16:31:56.8401671-03:00</Created>
-    <ModificationDate>2017-10-15T17:54:13.0671922-03:00</ModificationDate>
-    <Description>Diagram 1</Description>
+    <ModificationDate>2017-10-16T11:27:14.3989894-03:00</ModificationDate>
+    <Description>Diagram_1</Description>
     <Documentation />
   </PackageHeader>
   <RedefinableHeader>
@@ -21,13 +21,22 @@ xpdlDefinition_Timer_Task
     <Pool Id="6a876ac4-8aa7-409b-9068-6134079b353f" Name="Main Process" Process="3e90d102-ea83-4782-b208-e3a855884069" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
     <Pool Id="939b60f2-b851-4c67-82c4-df02c9c3949d" Name="task_timer" Process="84e75b24-ae41-4266-ba55-4b1f21cca5c2" BoundaryVisible="true">
-      <Lanes />
+      <Lanes>
+        <Lane Id="978d4e06-673c-4bcc-86e8-839a2db1eea7" Name="timer-role" ParentPool="939b60f2-b851-4c67-82c4-df02c9c3949d">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="228" Width="650" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+      </Lanes>
       <NodeGraphicsInfos>
         <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="228" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="28" YCoordinate="30" />
@@ -38,7 +47,7 @@ xpdlDefinition_Timer_Task
   <WorkflowProcesses>
     <WorkflowProcess Id="3e90d102-ea83-4782-b208-e3a855884069" Name="Main Process">
       <ProcessHeader>
-        <Created>2017-10-15T17:54:40.2317965-03:00</Created>
+        <Created>2017-10-16T11:27:53.991242-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -54,7 +63,7 @@ xpdlDefinition_Timer_Task
     </WorkflowProcess>
     <WorkflowProcess Id="84e75b24-ae41-4266-ba55-4b1f21cca5c2" Name="task_timer">
       <ProcessHeader>
-        <Created>2017-10-15T17:54:40.2317965-03:00</Created>
+        <Created>2017-10-16T11:27:53.9922431-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -121,7 +130,7 @@ xpdlDefinition_Timer_Task
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="242" YCoordinate="80" />
+              <Coordinates XCoordinate="240" YCoordinate="80" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -129,14 +138,14 @@ xpdlDefinition_Timer_Task
         <Activity Id="368a790b-cb63-46b1-ad95-b6720678206f" Name="task timer">
           <Description />
           <Event>
-            <IntermediateEvent Trigger="Timer" IsAttached="true">
+            <IntermediateEvent Trigger="Timer" Target="dc53df7b-0215-491f-b068-9a1832d48797" IsAttached="true">
               <TriggerTimer TimeDate="2017-10-15T00:00:00" />
             </IntermediateEvent>
           </Event>
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="269" YCoordinate="140" />
+              <Coordinates XCoordinate="256" YCoordinate="129" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
@@ -166,7 +175,7 @@ xpdlDefinition_Timer_Task
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="168" YCoordinate="110" />
-              <Coordinates XCoordinate="242" YCoordinate="110" />
+              <Coordinates XCoordinate="240" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -176,7 +185,7 @@ xpdlDefinition_Timer_Task
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="332" YCoordinate="110" />
+              <Coordinates XCoordinate="330" YCoordinate="110" />
               <Coordinates XCoordinate="430" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -198,9 +207,8 @@ xpdlDefinition_Timer_Task
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="269" YCoordinate="140" />
-              <Coordinates XCoordinate="346" YCoordinate="140" />
-              <Coordinates XCoordinate="346" YCoordinate="207" />
+              <Coordinates XCoordinate="267" YCoordinate="140" />
+              <Coordinates XCoordinate="267" YCoordinate="207" />
               <Coordinates XCoordinate="416" YCoordinate="207" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>

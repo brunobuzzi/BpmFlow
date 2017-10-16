@@ -29,6 +29,11 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 				yCoordinate := yCoordinate + 20.
 			].
 		].
+		eachWorkflow getTimerNodes do: [:timerNode |
+			text := svgCanvas drawText: (timerNode getName, ' - ' , timerNode getActivationBlockValue) at: 10 @ yCoordinate.
+			svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+			yCoordinate := yCoordinate + 20.
+		].
 	].
 
 	^svgCanvas contents
