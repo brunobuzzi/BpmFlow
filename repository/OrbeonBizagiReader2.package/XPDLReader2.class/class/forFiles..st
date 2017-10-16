@@ -7,7 +7,7 @@ forFiles: pathFileCollection
 	file:= FileStream fileNamed: pathFileCollection first.
 	contents := file contents.
 	file close.
-	reader := self for: pathFileCollection first withString: contents.
+	reader := self forProcessNamed: pathFileCollection first withString: contents.
 
 	pathFileCollection allButFirst do:[:each |
 		file:= FileStream fileNamed: each.

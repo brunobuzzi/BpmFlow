@@ -2,8 +2,8 @@
 	"class" : {
 		"convert:" : "BrunoBB 09/10/2016 07:33" },
 	"instance" : {
-		"generateSVGFor:" : "brunobb 08/01/2017 11:22",
-		"generateSVGFor:assignment:" : "BrunoBB 12/04/2016 13:01",
+		"generateSVGFor:" : "brunobb 10/15/2017 19:44",
+		"generateSVGFor:assignment:" : "brunobb 10/15/2017 19:44",
 		"generateSVGForTransition:" : "BrunoBB 12/05/2016 10:55",
 		"getSVGCanvasClass" : "BrunoBB 12/04/2016 13:01",
 		"getSVGTitleForAssignment:" : "BrunoBB 09/13/2016 14:59",

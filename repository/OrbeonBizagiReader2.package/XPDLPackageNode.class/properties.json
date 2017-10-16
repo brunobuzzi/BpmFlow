@@ -10,7 +10,8 @@
 		"pools",
 		"participants",
 		"associations",
-		"artifacts" ],
+		"artifacts",
+		"fileName" ],
 	"name" : "XPDLPackageNode",
 	"pools" : [
 		 ],

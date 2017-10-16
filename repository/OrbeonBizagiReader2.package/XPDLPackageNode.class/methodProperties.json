@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"newOn:" : "BrunoBB 11/29/2015 16:59" },
+		"newOn:" : "BrunoBB 11/29/2015 16:59",
+		"newOn:fileNamed:" : "brunobb 10/15/2017 19:36" },
 	"instance" : {
 		"addParticipant:" : "BrunoBB 11/29/2015 16:58",
 		"addPool:" : "BrunoBB 11/29/2015 16:58",
@@ -11,6 +12,8 @@
 		"createParticipants" : "BrunoBB 11/29/2015 16:58",
 		"createParticipantsFrom:" : "BrunoBB 11/29/2015 16:58",
 		"createXpdlComponents" : "BrunoBB 07/06/2016 11:15",
+		"fileName" : "brunobb 10/15/2017 19:30",
+		"fileName:" : "brunobb 10/15/2017 19:30",
 		"getAllSubProcessNodes" : "BrunoBB 01/21/2016 10:52",
 		"getPoolNamed:ifNone:" : "BrunoBB 11/29/2015 16:58",
 		"getWorkflowNamed:ifNone:" : "BrunoBB 11/29/2015 16:58",

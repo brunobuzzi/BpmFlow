@@ -1,5 +1,5 @@
 other
 setUp
 
-	reader := (XPDLReader2 for: 'MultiplePools' withString: XPDLProcessDefinitionTemplate xpdlExample_MultiplePools)
+	reader := (XPDLReader2 forProcessNamed: 'MultiplePools' withString: XPDLProcessDefinitionTemplate xpdlExample_MultiplePools)
 				yourself
