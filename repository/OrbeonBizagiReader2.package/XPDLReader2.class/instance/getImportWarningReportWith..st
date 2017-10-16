@@ -7,7 +7,7 @@ getImportWarningReportWith: mapperDictionary
 	importReport := self getImportWarningReport.
 
 	self getAllWorkflows do: [:each | | app |
-		app := mapperDictionary at: each getName ifAbsent: [nil].
+		app := mapperDictionary at: each getPackageFileName ifAbsent: [self halt. nil].
 		app ifNotNil: [
 			each appendFormsWithMissingMandatoryFieldsIn: app to: importReport;
 				appendNonExistingFormsReportFor: app to: importReport;

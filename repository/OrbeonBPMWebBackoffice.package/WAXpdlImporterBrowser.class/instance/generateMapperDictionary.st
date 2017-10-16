@@ -4,9 +4,8 @@ generateMapperDictionary
 
 	dictionary := Dictionary new.
 
-	selectedUploads keysAndValuesDo: [:index :processName |
-		(processName size > 5) "all but .xpdl (size=5)"
-		ifTrue: [dictionary at: (processName allButLast: 5) put: (self getApplicationManagerClass getAnyApplicationNamed: (uploadProcesses at: index))].
+	selectedUploads keysAndValuesDo: [:index :xpdlFileName |
+		dictionary at: xpdlFileName put: (self getApplicationManagerClass getAnyApplicationNamed: (uploadProcesses at: index)).
 	].
 
 	^dictionary

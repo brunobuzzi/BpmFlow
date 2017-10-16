@@ -2,7 +2,7 @@ example
 exampleTestCaseProcessWithScript
 	| generator reader |
 
-	reader:=  (XPDLReader2 for: 'Process with Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_script)
+	reader:=  (XPDLReader2 forProcessNamed: 'Process with Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_script)
 				connectProcesses; 
 				yourself.
 
