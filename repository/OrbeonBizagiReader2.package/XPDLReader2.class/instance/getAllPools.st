@@ -1,6 +1,6 @@
 other
 getAllPools
-	"Answer a collection with all sub process nodes of all pools"
+	"Answer a collection with all XPDLPoolNode of the receiver"
 	| allPools |
 
 	allPools := OrderedCollection new.

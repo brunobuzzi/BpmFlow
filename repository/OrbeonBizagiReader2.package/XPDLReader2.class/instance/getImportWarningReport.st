@@ -1,7 +1,8 @@
 other
 getImportWarningReport
 
-	importReport addAll: self getSubProcessNodesWithoutProcessDefinition.
+	importReport addAll: self getSubProcessNodesWithoutProcessDefinition;
+		addAll: self getPoolsWithoutLanes.
 
 	self getAllWorkflows do: [:each | 
 		importReport addAll: each getActivitiesWithMixedStartConditions; "activities with some conditions in one transition and none in others"
