@@ -1,4 +1,4 @@
-other
+process execution
 performInitializationOn: aBpmProcessInstance
 	"The receiver perform the creation operation in the process instance <aBpmProcessInstance>.
 	This operatoin initialize the receiver inside the process <aBpmProcessInstance>"
@@ -8,5 +8,7 @@ performInitializationOn: aBpmProcessInstance
 	ifTrue: [ | previousTask | 
 		previousTask := aBpmProcessInstance getExecutedActivityNamed: self getDefinitionName ifNone: [].
 		self externalObject: previousTask externalObject].
+
+	self createAttachedEventsIn: aBpmProcessInstance. "create the attached event instances of the receiver "
 
 	^aBpmProcessInstance addActivityToPerform: self "add the task to the Running Matrix"

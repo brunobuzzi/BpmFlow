@@ -1,4 +1,4 @@
-other
+process execution
 generateNextRunningTransitions
 	"The receiver fetch the possibles next transitions to transition definition.
 	1- Ask the path definition for next transitions.

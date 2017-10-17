@@ -1,4 +1,4 @@
-Updating
+process execution
 externalObject: anObjectModel
 
 	externalObject := anObjectModel.

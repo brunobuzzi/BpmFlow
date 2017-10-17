@@ -1,4 +1,4 @@
-other
+process execution
 isMultiInstance
 
 	^definition isMultiInstance

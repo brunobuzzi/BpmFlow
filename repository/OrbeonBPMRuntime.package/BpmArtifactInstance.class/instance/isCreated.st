@@ -1,4 +1,4 @@
-other
+process execution
 isCreated
 
 	^state = #created
