@@ -1,4 +1,4 @@
-monitoring
+monitor process creation
 updateLastExecutionTimeFor: aBpmProcessInstance
 	"The receiver update the last execution time for process instance <aBpmProcessInstance>.
 	It means the process execution time span (currentTime - lastExecution >=  process execution time span) have been exceeded and new process must be created"

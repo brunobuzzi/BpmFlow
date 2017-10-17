@@ -4,4 +4,6 @@ createAttachedEventsIn: aBpmProcessInstance
 
 	attachedEvents do: [:eventDefinition | | eventInstance |
 		eventInstance := eventDefinition createInstanceOn: aBpmProcessInstance.
-		self attachEvent: eventInstance].
+		self attachEvent: eventInstance.
+		eventDefinition isTimerEvent ifTrue: [self defaultTimerEventMonitor startMonitoringArtifact: eventInstance].
+	].

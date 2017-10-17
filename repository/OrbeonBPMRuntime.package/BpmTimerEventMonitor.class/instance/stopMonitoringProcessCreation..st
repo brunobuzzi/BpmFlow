@@ -1,4 +1,4 @@
-monitoring
+monitor process creation
 stopMonitoringProcessCreation: aBpmProcessDefinition
 	"The receiver stop the monitoring of <aBpmProcessDefinition> for automatic process creation."
 	| appDictionary monitorCollection |
