@@ -4,8 +4,8 @@ createAttachedEventsIn: aBpmProcessInstance
 
 	"for now only -TimerEvents- are created attached to its Task. In the future other EventInstances should be created as we complete the BPMN standart"
 
-	(attachedEvents select: [:eventDefinition | eventDefinition isTimerEvent]) do: [:eventDefinition | | eventInstance |
-		eventInstance := eventDefinition createInstanceOn: aBpmProcessInstance.
-		self attachEvent: eventInstance.
-		self defaultTimerEventMonitor startMonitoringArtifact: eventInstance.
+	(self getAttachedEventDefinitions select: [:eventDefinition | eventDefinition isTimerEvent]) do: [:eventDefinition | | eventInstance |
+			eventInstance := eventDefinition createInstanceOn: aBpmProcessInstance.
+			self attachEvent: eventInstance.
+			self defaultTimerEventMonitor startMonitoringArtifact: eventInstance.
 	].
