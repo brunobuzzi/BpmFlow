@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"attachedTask" : "brunobb 10/18/2017 13:02",
+		"attachedTask:" : "brunobb 10/18/2017 13:02",
 		"initialize" : "BrunoBB 11/07/2016 07:39",
 		"isAnonymousEvent" : "BrunoBB 03/30/2016 16:43",
 		"performInitializationOn:" : "brunobb 10/17/2017 12:37",
