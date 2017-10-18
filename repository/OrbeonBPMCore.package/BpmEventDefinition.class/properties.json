@@ -8,7 +8,8 @@
 	"instvars" : [
 		"cycle",
 		"type",
-		"tag" ],
+		"tag",
+		"attachedTask" ],
 	"name" : "BpmEventDefinition",
 	"pools" : [
 		 ],
