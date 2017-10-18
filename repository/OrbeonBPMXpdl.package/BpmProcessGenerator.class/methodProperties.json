@@ -6,6 +6,7 @@
 		"exampleTestCaseProcessWithScript" : "brunobb 10/15/2017 19:44",
 		"on:" : "BrunoBB 10/31/2015 15:57" },
 	"instance" : {
+		"attachEventsToTaskIn:withXPDL:" : "brunobb 10/18/2017 12:57",
 		"connectSubProcessTaskWithSubProcess" : "BrunoBB 06/29/2016 09:35",
 		"createEmbeddedSubProcessFor:basedOn:package:" : "BrunoBB 07/07/2016 07:59",
 		"createParticipantDefinitionsOf:" : "BrunoBB 11/01/2015 08:19",
@@ -18,7 +19,7 @@
 		"mapProcess:toApplication:" : "BrunoBB 12/09/2015 11:17",
 		"participants" : "BrunoBB 10/31/2015 16:29",
 		"participants:" : "BrunoBB 10/31/2015 16:29",
-		"populateBpmDefinition:withXPDL:for:" : "BrunoBB 03/12/2017 14:04",
+		"populateBpmDefinition:withXPDL:for:" : "brunobb 10/18/2017 12:43",
 		"processes" : "BrunoBB 10/26/2015 17:48",
 		"processes:" : "BrunoBB 10/26/2015 17:48",
 		"processesMapping" : "BrunoBB 01/21/2016 12:34",

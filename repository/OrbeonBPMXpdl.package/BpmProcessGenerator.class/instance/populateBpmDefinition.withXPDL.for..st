@@ -31,4 +31,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 		newTransition setEndArtifact: (xpdlTransition endNode getArtifactFrom: aBpmProcessDefinition).
 	].
 
+	"the receiver attach events to task. At this point both exist but are unrelated "
+	self attachEventsToTaskIn: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess.
+
 	^aBpmProcessDefinition
