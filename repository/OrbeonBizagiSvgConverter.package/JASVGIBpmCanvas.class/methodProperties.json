@@ -72,6 +72,7 @@
 		"drawSubProcessActivityNamed:at:extent:color:stroke:" : "BrunoBB 10/01/2016 08:22",
 		"drawSubProcessActivityNamed:at:extent:color:stroke:textSizePx:" : "BrunoBB 01/13/2017 09:14",
 		"drawSubProcessActivityNamed:at:extent:textSizePx:" : "BrunoBB 01/13/2017 09:14",
+		"drawTimeEvent:at:" : "brunobb 10/18/2017 14:29",
 		"drawTimeEventNamed:at:" : "brunobb 08/01/2017 13:34",
 		"getJasvgiTagNamed:" : "BrunoBB 09/06/2016 10:26",
 		"getJasvgiTagNamed:ifAbsent:" : "BrunoBB 09/10/2016 05:54",
