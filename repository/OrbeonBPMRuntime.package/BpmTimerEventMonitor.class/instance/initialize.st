@@ -15,3 +15,5 @@ initialize
 	"all executed TimerEvents"
 	processesCreationEventHistory := Dictionary new.
 	tasksCreationEventHistory := Dictionary new.
+
+	monitoredEvents := RcIdentityBag new.

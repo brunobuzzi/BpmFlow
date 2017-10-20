@@ -9,7 +9,8 @@
 		"processesCreationEventHistory",
 		"tasksCreationEventHistory",
 		"monitoredProcessDefinitions",
-		"monitoredProcessInstances" ],
+		"monitoredProcessInstances",
+		"monitoredEvents" ],
 	"name" : "BpmTimerEventMonitor",
 	"pools" : [
 		 ],

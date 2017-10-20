@@ -1,4 +1,4 @@
-other
+finalizing
 hasFinalized
 
 	^process hasFinalized

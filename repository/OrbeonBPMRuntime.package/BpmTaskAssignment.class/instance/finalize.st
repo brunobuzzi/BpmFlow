@@ -1,4 +1,4 @@
-other
+finalizing
 finalize
 	"The receiver is finalizing.
 	1- Set the end timestamp for the <task>.

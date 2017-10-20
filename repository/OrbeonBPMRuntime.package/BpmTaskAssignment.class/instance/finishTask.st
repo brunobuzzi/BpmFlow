@@ -1,4 +1,4 @@
-other
+finalizing
 finishTask
 
 	taskEndDate := TimeStamp now.
