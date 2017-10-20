@@ -6,6 +6,8 @@ createAttachedEventsIn: aBpmProcessInstance
 
 	(self getAttachedEventDefinitions select: [:eventDefinition | eventDefinition isTimerEvent]) do: [:eventDefinition | | eventInstance |
 			eventInstance := eventDefinition createInstanceOn: aBpmProcessInstance.
+			eventInstance trigger: self;
+				performInitializationOn: aBpmProcessInstance.
 			self attachEvent: eventInstance.
 			self defaultTimerEventMonitor startMonitoringArtifact: eventInstance.
 	].

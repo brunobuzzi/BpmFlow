@@ -1,0 +1,4 @@
+other
+isInterrupting
+
+	^type isInterrupting

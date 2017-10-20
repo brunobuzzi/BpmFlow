@@ -1,0 +1,4 @@
+other
+isAttachedEvent
+
+	^attachedTask notNil
