@@ -1,6 +1,8 @@
 process execution
-performInitializationOn: aBpmProcessInstance
+performInitializationOn: aBpmProcessInstance attachedTo: aBpmTaskInstance
 	"The receiver perform the creation operation in the process instance <aBpmProcessInstance>.
 	This operatoin initialize the receiver inside the process <aBpmProcessInstance>"
 
-	^aBpmProcessInstance addEvent: self.
+	aBpmTaskInstance attachEvent: self. 
+
+	^self performInitializationOn: aBpmProcessInstance

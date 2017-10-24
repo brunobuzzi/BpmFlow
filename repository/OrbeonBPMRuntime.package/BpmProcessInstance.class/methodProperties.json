@@ -5,6 +5,7 @@
 		"resetAll" : "BrunoBB 12/14/2015 11:55" },
 	"instance" : {
 		"addActivityToPerform:" : "brunobb 10/24/2017 11:57",
+		"addEvent:" : "brunobb 10/24/2017 14:18",
 		"addSubProcess:" : "BrunoBB 12/01/2015 12:01",
 		"applicationName" : "BrunoBB 02/08/2016 12:32",
 		"assignedUserNames" : "BrunoBB 12/20/2015 14:16",
@@ -50,6 +51,7 @@
 		"getExecutedArtifacts" : "BrunoBB 12/10/2015 13:23",
 		"getExecutedScriptNamed:ifNone:" : "BrunoBB 06/24/2016 10:53",
 		"getFinishedProcessMatrix" : "BrunoBB 03/29/2016 14:39",
+		"getLastEventNamed:ifNone:" : "brunobb 10/24/2017 14:31",
 		"getProcessMapStreamFor:" : "BrunoBB 01/13/2017 13:06",
 		"getProcessMatrix" : "BrunoBB 02/08/2016 12:32",
 		"getProcessTree:" : "BrunoBB 03/23/2016 14:27",

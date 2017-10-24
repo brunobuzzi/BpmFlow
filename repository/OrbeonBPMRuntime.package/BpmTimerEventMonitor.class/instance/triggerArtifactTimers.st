@@ -2,9 +2,9 @@ monitor process artifact
 triggerArtifactTimers
 
 
-	monitoredEvents do: [:eventInstance | | lastExecution |
+	monitoredEvents do: [:eventInstance | | lastExecutionTime |
 
-		lastExecution := self getLastEventInstanceExecutionFor: eventInstance.
+		lastExecutionTime := self getLastEventInstanceExecutionFor: eventInstance.
 
 		
 	].
