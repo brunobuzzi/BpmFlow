@@ -1,6 +1,6 @@
 monitor process artifact
 getLastEventInstanceExecutionFor: aBpmEventInstance
-	"The receiver answer the latest execution for the event <aBpmEventInstance>"
+	"The receiver answer <aTimeStamp> the latest execution for the event <aBpmEventInstance>"
 	| bpmProcess lastEvent |
 
 	bpmProcess := aBpmEventInstance process.

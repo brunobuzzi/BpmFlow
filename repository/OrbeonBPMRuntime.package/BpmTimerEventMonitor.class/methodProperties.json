@@ -5,7 +5,7 @@
 		"initializeDefault" : "brunobb 09/03/2017 14:02" },
 	"instance" : {
 		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:11",
-		"getLastEventInstanceExecutionFor:" : "brunobb 10/24/2017 14:39",
+		"getLastEventInstanceExecutionFor:" : "brunobb 10/24/2017 14:44",
 		"getLastProcessCreationTimeFor:" : "brunobb 09/04/2017 05:41",
 		"initialize" : "brunobb 10/20/2017 12:33",
 		"monitoredEvents" : "brunobb 10/20/2017 12:31",
@@ -22,6 +22,8 @@
 		"stopMonitoringProcessCreation:" : "brunobb 08/24/2017 10:47",
 		"tasksCreationEventHistory" : "brunobb 07/31/2017 13:26",
 		"tasksCreationEventHistory:" : "brunobb 07/31/2017 13:26",
-		"triggerArtifactTimers" : "brunobb 10/24/2017 14:41",
-		"triggerProcessCreation" : "brunobb 09/04/2017 05:27",
+		"triggerArtifactTimers" : "brunobb 10/24/2017 14:57",
+		"triggerArtifactTimersWith:" : "brunobb 10/24/2017 14:57",
+		"triggerProcessCreation" : "brunobb 10/24/2017 14:56",
+		"triggerProcessCreationWith:" : "brunobb 10/24/2017 14:56",
 		"updateLastExecutionTimeFor:" : "brunobb 10/15/2017 09:31" } }
