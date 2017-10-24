@@ -4,4 +4,4 @@ addActivityToPerform: aBpmTaskInstance
 
 	currentActivities add: aBpmTaskInstance.
 
-	^self getProcessMatrix addTask: aBpmTaskInstance. "from the task it create the assignment <BpmTaskAssignment>"
+	^self getProcessMatrix addTask: aBpmTaskInstance. "from <aBpmTaskInstance> create the assignment <BpmTaskAssignment>"

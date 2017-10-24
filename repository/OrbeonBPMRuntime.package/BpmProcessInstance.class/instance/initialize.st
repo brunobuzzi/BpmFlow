@@ -14,3 +14,4 @@ initialize
 	userAssignments := OrderedCollection new.
 	endEvents := Dictionary new.
 	executedScripts := OrderedCollection new.
+	intermediateEvents := Dictionary new.
