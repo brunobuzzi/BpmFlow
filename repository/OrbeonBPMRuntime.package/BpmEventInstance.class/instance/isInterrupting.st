@@ -1,4 +1,4 @@
-other
+process execution
 isInterrupting
 
 	^definition isInterrupting
