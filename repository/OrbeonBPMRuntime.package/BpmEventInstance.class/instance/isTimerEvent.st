@@ -1,0 +1,4 @@
+other
+isTimerEvent
+
+	^definition isTimerEvent

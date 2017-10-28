@@ -4,12 +4,15 @@
 	"instance" : {
 		"attachedTask" : "brunobb 10/18/2017 13:02",
 		"attachedTask:" : "brunobb 10/18/2017 13:02",
+		"finalize" : "brunobb 10/28/2017 15:51",
+		"generateNextRunningTransitions" : "brunobb 10/28/2017 15:53",
 		"getTimerBlock" : "brunobb 10/24/2017 14:51",
 		"initialize" : "BrunoBB 11/07/2016 07:39",
 		"isAnonymousEvent" : "BrunoBB 03/30/2016 16:43",
 		"isAttachedEvent" : "brunobb 10/20/2017 12:42",
 		"isInterrupting" : "brunobb 10/20/2017 12:59",
-		"performInitializationOn:" : "brunobb 10/24/2017 14:21",
+		"isTimerEvent" : "brunobb 10/28/2017 15:38",
+		"performInitializationOn:" : "brunobb 10/28/2017 15:48",
 		"performInitializationOn:attachTo:" : "brunobb 10/25/2017 07:21",
 		"trigger" : "BrunoBB 03/30/2016 16:42",
 		"trigger:" : "BrunoBB 03/30/2016 16:42" } }

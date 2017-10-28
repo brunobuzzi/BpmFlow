@@ -7,7 +7,7 @@ xpdlDefinition_Timer_Task
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2017-10-15T16:31:56.8401671-03:00</Created>
-    <ModificationDate>2017-10-16T11:27:14.3989894-03:00</ModificationDate>
+    <ModificationDate>2017-10-28T19:15:33.9864048-03:00</ModificationDate>
     <Description>Diagram_1</Description>
     <Documentation />
   </PackageHeader>
@@ -47,7 +47,7 @@ xpdlDefinition_Timer_Task
   <WorkflowProcesses>
     <WorkflowProcess Id="3e90d102-ea83-4782-b208-e3a855884069" Name="Main Process">
       <ProcessHeader>
-        <Created>2017-10-16T11:27:53.991242-03:00</Created>
+        <Created>2017-10-28T19:15:52.8035794-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -63,7 +63,7 @@ xpdlDefinition_Timer_Task
     </WorkflowProcess>
     <WorkflowProcess Id="84e75b24-ae41-4266-ba55-4b1f21cca5c2" Name="task_timer">
       <ProcessHeader>
-        <Created>2017-10-16T11:27:53.9922431-03:00</Created>
+        <Created>2017-10-28T19:15:52.8035794-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -104,7 +104,7 @@ xpdlDefinition_Timer_Task
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0}" />
-            <ExtendedAttribute Name="activationBlock" Value="[:lastExecutedTime :currentTime :process | (lastExecutedTime plusSeconds: (process termValue)) &lt;= currentTime ]" />
+            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime :process | (lastExecutedTime plusSeconds: (process termValue)) &amp;lt;= currentTime ]&lt;/span&gt;&lt;/p&gt;" />
           </ExtendedAttributes>
         </Activity>
         <Activity Id="ef8bcc53-51ce-4621-8aed-5cc956f9f95c" Name="end">
@@ -130,7 +130,7 @@ xpdlDefinition_Timer_Task
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="240" YCoordinate="80" />
+              <Coordinates XCoordinate="226" YCoordinate="80" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -145,11 +145,11 @@ xpdlDefinition_Timer_Task
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="256" YCoordinate="129" />
+              <Coordinates XCoordinate="236" YCoordinate="140" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
-            <ExtendedAttribute Name="activationBlock" Value="[:lastExecutedTime :currentTime :process | (lastExecutedTime plusSeconds: 180) &lt;= currentTime ]" />
+            <ExtendedAttribute Name="activationBlock" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;[:lastExecutedTime :currentTime :process | (lastExecutedTime plusSeconds: 180) &amp;lt;= currentTime ]&lt;/span&gt;&lt;/p&gt;" />
           </ExtendedAttributes>
         </Activity>
         <Activity Id="c0adb58b-8aae-4b6b-8f2a-d45722eacc35" Name="user-form">
@@ -162,7 +162,7 @@ xpdlDefinition_Timer_Task
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="416" YCoordinate="177" />
+              <Coordinates XCoordinate="423" YCoordinate="177" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -175,7 +175,7 @@ xpdlDefinition_Timer_Task
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="168" YCoordinate="110" />
-              <Coordinates XCoordinate="240" YCoordinate="110" />
+              <Coordinates XCoordinate="226" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -185,7 +185,7 @@ xpdlDefinition_Timer_Task
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="330" YCoordinate="110" />
+              <Coordinates XCoordinate="316" YCoordinate="110" />
               <Coordinates XCoordinate="430" YCoordinate="110" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -207,9 +207,9 @@ xpdlDefinition_Timer_Task
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="267" YCoordinate="140" />
-              <Coordinates XCoordinate="267" YCoordinate="207" />
-              <Coordinates XCoordinate="416" YCoordinate="207" />
+              <Coordinates XCoordinate="236" YCoordinate="140" />
+              <Coordinates XCoordinate="236" YCoordinate="207" />
+              <Coordinates XCoordinate="423" YCoordinate="207" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -219,7 +219,7 @@ xpdlDefinition_Timer_Task
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
-              <Coordinates XCoordinate="506" YCoordinate="207" />
+              <Coordinates XCoordinate="513" YCoordinate="207" />
               <Coordinates XCoordinate="590" YCoordinate="207" />
               <Coordinates XCoordinate="590" YCoordinate="125" />
             </ConnectorGraphicsInfo>
