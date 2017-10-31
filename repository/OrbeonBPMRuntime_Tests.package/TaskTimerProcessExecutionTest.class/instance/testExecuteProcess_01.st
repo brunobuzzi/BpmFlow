@@ -11,7 +11,7 @@ testExecuteProcess_01
 
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
- 
+	self assert: (currentTask getDefinitionName = 'set-timer-term').
 
-
+	"formInstance_set_timer_term: is set with 60 seconds and this number is used by timer named Term to wait before finishing the process"
 	"self processTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_set_timer_term."
