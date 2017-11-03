@@ -15,7 +15,7 @@ testExecuteProcess_01
 
 	"formInstance_set_timer_term: is set with 60 seconds and this number is used by timer named Term to wait before finishing the process"
 
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term.  "60 seconds to wait"
+	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3.  "15 seconds to wait"
 
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: procInstance currentActivities isEmpty.
@@ -24,11 +24,11 @@ testExecuteProcess_01
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
-	(Delay forSeconds: 30) wait.
+	(Delay forSeconds: 8) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
-	(Delay forSeconds: 40) wait.
+	(Delay forSeconds: 9) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: procInstance hasFinalized.

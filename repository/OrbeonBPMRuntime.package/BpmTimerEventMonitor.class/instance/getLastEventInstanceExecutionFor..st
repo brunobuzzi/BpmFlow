@@ -6,6 +6,6 @@ getLastEventInstanceExecutionFor: aBpmEventInstance
 	bpmProcess := aBpmEventInstance process.
 
 	"if there is none previous executed event --> the first event is taken as the last"
-	lastEvent := bpmProcess getLastEventNamed: aBpmEventInstance getName ifNone: [aBpmEventInstance].
+	lastEvent := bpmProcess getLastEventNamed: aBpmEventInstance getDefinitionName ifNone: [aBpmEventInstance].
 
 	^lastEvent creationTime

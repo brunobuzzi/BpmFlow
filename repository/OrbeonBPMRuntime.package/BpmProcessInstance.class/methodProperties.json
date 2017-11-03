@@ -47,6 +47,7 @@
 		"getColorForTransition:user:" : "BrunoBB 09/13/2016 09:51",
 		"getContextApplications" : "BrunoBB 12/06/2015 13:11",
 		"getDefinitionName" : "BrunoBB 11/29/2015 16:16",
+		"getEventsNamed:ifNone:" : "brunobb 11/02/2017 12:35",
 		"getExecutedActivityNamed:ifNone:" : "brunobb 10/17/2017 14:01",
 		"getExecutedArtifacts" : "BrunoBB 12/10/2015 13:23",
 		"getExecutedScriptNamed:ifNone:" : "BrunoBB 06/24/2016 10:53",

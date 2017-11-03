@@ -1,5 +1,5 @@
 other
-testExecuteProcess_01
+testExecuteProcess_02
 	| currentTask |
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vm').
@@ -13,22 +13,21 @@ testExecuteProcess_01
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
 
-	"formInstance_set_timer_term: is set with 60 seconds and this number is used by timer named Term to wait before finishing the process"
-
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term.  "60 seconds to wait"
-
-	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
-	self assert: procInstance currentActivities isEmpty.
-
+	(Delay forSeconds: 5) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
-	self assert: procInstance currentActivities isEmpty.
+	self assert: (procInstance currentActivities size = 1).
+	self assert: (procInstance currentActivities last attachedEvents size = 1).
+	self assert: (currentTask getDefinitionName = 'set-timer-term').
+
+	(Delay forSeconds: 7) wait.
+	self defaultTimerEventMonitor triggerArtifactTimers.
+	self assert: (procInstance currentActivities size = 2).
+	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"
+	self assert: (procInstance currentActivities size = 1).
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
-	(Delay forSeconds: 30) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
-	self assert: procInstance currentActivities isEmpty.
-	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
-	self deny: procInstance hasFinalized.
-	(Delay forSeconds: 40) wait.
+
+	(Delay forSeconds: 18) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: procInstance hasFinalized.
+	self assert: (procInstance currentActivities size = 1).

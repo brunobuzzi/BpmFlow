@@ -1,0 +1,4 @@
+other
+isDone
+
+	^processInstance hasFinalized
