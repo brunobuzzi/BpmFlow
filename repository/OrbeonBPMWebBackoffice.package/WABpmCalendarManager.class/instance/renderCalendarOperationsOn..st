@@ -8,7 +8,7 @@ renderCalendarOperationsOn: html
 										title: ('Set Hours' translateFor: self session user);
 										altText: ('Set Hours' translateFor: self session user)].
 	].
-	html div with: [
+	html div class: 'float-left'; with: [
 		html div class: 'margin-left-10px float-left centered-unique-form'; with: [
 			html form with: [
 				html fieldSet with: [

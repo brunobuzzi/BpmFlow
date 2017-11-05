@@ -3,7 +3,8 @@
 		"defaultCharacter" : "BrunoBB 02/06/2017 07:03",
 		"getSubClassFor:" : "BrunoBB 02/06/2017 07:04",
 		"new" : "BrunoBB 02/03/2017 03:46",
-		"value:withCalendar:" : "BrunoBB 02/02/2017 08:54" },
+		"value:withCalendar:" : "BrunoBB 02/02/2017 08:54",
+		"value:withCalendarNamed:" : "brunobb 11/05/2017 12:29" },
 	"instance" : {
 		"calendar" : "BrunoBB 02/02/2017 08:53",
 		"calendar:" : "BrunoBB 02/02/2017 08:53",
