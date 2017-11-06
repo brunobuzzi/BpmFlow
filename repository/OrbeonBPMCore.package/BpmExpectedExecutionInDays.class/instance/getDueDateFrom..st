@@ -12,4 +12,12 @@ getDueDateFrom: aTimeStamp
 		indexDay := indexDay + 1.
 	]. 
 
+	"the end date is not included in exception days"
+	(calendar includesExceptionDay: (aTimeStamp plusDays: indexDay)) ifFalse: [^aTimeStamp plusDays: indexDay].
+
+	"in this case the due date is an exception date (which is not possible) --> go to next available date"
+	[calendar includesExceptionDay: (aTimeStamp plusDays: indexDay)] whileTrue: [
+		indexDay := indexDay + 1.
+	]. 
+
 	^aTimeStamp plusDays: indexDay
