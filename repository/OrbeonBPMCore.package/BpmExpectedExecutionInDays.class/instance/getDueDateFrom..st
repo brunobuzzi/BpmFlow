@@ -11,7 +11,7 @@ getDueDateFrom: aTimeStamp
 		ifFalse: [valDays := valDays + 1].
 		indexDay := indexDay + 1.
 	]. 
-
+	indexDay := indexDay - 1.
 	"the end date is not included in exception days"
 	(calendar includesExceptionDay: (aTimeStamp plusDays: indexDay)) ifFalse: [^aTimeStamp plusDays: indexDay].
 
