@@ -21,3 +21,7 @@ testDueDate
 	expectedTime value: 1.
 	timeStamp := TimeStamp date: (Date fromString: '02/02/2017') time: (Time fromString: '14:00'). 
 	self assert: ((expectedTime getDueDateFrom: timeStamp) date = (Date fromString: '02/03/2017')).
+
+	expectedTime value: 90.
+	timeStamp := TimeStamp date: (Date fromString: '01/01/2017') time: (Time fromString: '14:00'). 
+	self assert: ((expectedTime getDueDateFrom: timeStamp) date = (Date fromString: '04/06/2017')).
