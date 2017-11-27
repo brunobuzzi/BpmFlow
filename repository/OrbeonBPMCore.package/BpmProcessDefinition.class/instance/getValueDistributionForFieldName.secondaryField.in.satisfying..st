@@ -10,18 +10,21 @@ getValueDistributionForFieldName: fieldName secondaryField: secondaryField in: f
    distribution := OrderPreservingDictionary new.
    secondaryDistribution := OrderPreservingDictionary new.
 
-   blockFilteredCollection do: [:fieldInst |  | fieldValue count secondaryValue secondaryCount subValueDictionary |
+   blockFilteredCollection do: [:fieldInst |  | fieldValue count secondaryCount subValueDictionary secondaryValueHolder |
 		fieldValue := (fieldInst value class = String) ifTrue:[fieldInst value] ifFalse: [fieldInst value printString].
         (distribution includesKey: fieldValue) ifFalse: [distribution at: fieldValue put: 0].
         count := (distribution at: fieldValue) + 1.
         distribution at: fieldValue put: count. "main distribution"
 
-        secondaryValue := fieldInst parentObject fieldValueAt: secondaryField.
+		secondaryValueHolder := fieldInst parentObject holderValueAt: secondaryField.
 
         (secondaryDistribution includesKey: fieldValue) ifFalse: [secondaryDistribution at: fieldValue put: Dictionary new].
 		subValueDictionary := secondaryDistribution at: fieldValue.
-        secondaryCount := (subValueDictionary at: secondaryValue ifAbsent: [0]) + 1.
-		subValueDictionary at: secondaryValue put: secondaryCount.
+
+		secondaryValueHolder currentValues do: [:eachValue | 
+			secondaryCount := (subValueDictionary at: eachValue ifAbsent: [0]) + 1.
+			subValueDictionary at: eachValue put: secondaryCount.
+		].
     ].
 
      ^Array with: distribution with: secondaryDistribution
