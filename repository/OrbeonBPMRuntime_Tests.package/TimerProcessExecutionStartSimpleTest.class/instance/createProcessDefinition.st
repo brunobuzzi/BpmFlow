@@ -5,7 +5,7 @@ createProcessDefinition
 	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForTimerProcessStartSimple. 
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
-	processGenerator mapProcess: 'timer-process-start-simple' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
+	processGenerator mapProcess: 'timer-process-start-simple' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
 	processGenerator processes do: [:each | each addToCache].

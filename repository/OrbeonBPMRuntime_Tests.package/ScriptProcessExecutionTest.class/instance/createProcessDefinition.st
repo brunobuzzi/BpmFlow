@@ -5,7 +5,7 @@ createProcessDefinition
 	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForScriptProcess.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
-	processGenerator mapProcess: 'Process with Scripts' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
+	processGenerator mapProcess: 'Process with Scripts' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
 	processGenerator processes do: [:each | each addToCache].
