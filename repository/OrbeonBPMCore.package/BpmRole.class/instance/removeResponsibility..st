@@ -1,4 +1,4 @@
-other
+responsibility
 removeResponsibility: aBpmArtifactDefinition
 
 	^tasks removeKey: aBpmArtifactDefinition name 

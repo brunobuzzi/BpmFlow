@@ -1,4 +1,4 @@
-other
+responsibility
 removeAllUsers
 	"The receiver ungrant all users"
 	| allUsers |
