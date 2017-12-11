@@ -3,7 +3,7 @@ getProcessDefinitionLatestVersions
 	"Answer a collection with all process's latest versions <BpmProcessDefinition> that the receiver has access"
 	| allLatestDefinitions definitionCache |
 
-	allLatestDefinitions := OrderedCollection new.
+	allLatestDefinitions := Set new.
 	definitionCache := self getProcessDefinitionCache.
 	"backoffice user and admin --> can see all applications"
 	((self isBackofficeUserAndAdmin) ifTrue: [self getVisibleApplications] ifFalse: [self getApplications]) 
@@ -16,4 +16,4 @@ getProcessDefinitionLatestVersions
 			].
 		].
 
-	^allLatestDefinitions
+	^allLatestDefinitions asOrderedCollection
