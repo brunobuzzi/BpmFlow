@@ -1,0 +1,4 @@
+other
+hasUser
+
+	^user notNil

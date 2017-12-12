@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 12/11/2017 16:59",
+	"instvars" : [
+		"process",
+		"timeStamp",
+		"user" ],
+	"name" : "BpmProcessState",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

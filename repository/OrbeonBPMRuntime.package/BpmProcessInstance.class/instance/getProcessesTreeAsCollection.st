@@ -1,4 +1,4 @@
-running
+execution
 getProcessesTreeAsCollection
 	"Answer a collection with all process in the tree process structure (parentProcesses and subprocesses)"
 

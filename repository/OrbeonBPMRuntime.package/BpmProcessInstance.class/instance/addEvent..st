@@ -1,4 +1,4 @@
-running
+execution
 addEvent: aBpmEventInstance
 	"The receiver add <aBpmEventInstance> to it's event collection"
 

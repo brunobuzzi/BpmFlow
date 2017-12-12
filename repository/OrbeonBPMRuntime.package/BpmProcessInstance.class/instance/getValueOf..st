@@ -1,4 +1,4 @@
-running
+execution
 getValueOf: fieldName
 	"Answer the first value of a field named <fieldName> in the receiver's collection of <executedActivities>.
 	The search is performed only in activities that have anOrbeonFormInstance <hasForm>."

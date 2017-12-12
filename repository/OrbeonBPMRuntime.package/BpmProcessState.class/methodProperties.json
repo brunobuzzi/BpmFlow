@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"newFor:" : "brunobb 12/11/2017 17:00",
+		"newFor:user:" : "brunobb 12/11/2017 17:26" },
+	"instance" : {
+		"hasUser" : "brunobb 12/11/2017 17:03",
+		"initialize" : "brunobb 12/11/2017 17:01",
+		"isAborted" : "brunobb 12/11/2017 17:14",
+		"isPaused" : "brunobb 12/11/2017 17:13",
+		"isRunning" : "brunobb 12/11/2017 17:13",
+		"process" : "brunobb 12/11/2017 16:59",
+		"process:" : "brunobb 12/11/2017 16:59",
+		"timeStamp" : "brunobb 12/11/2017 17:01",
+		"timeStamp:" : "brunobb 12/11/2017 17:01",
+		"user" : "brunobb 12/11/2017 17:02",
+		"user:" : "brunobb 12/11/2017 17:02" } }

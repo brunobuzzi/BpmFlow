@@ -1,4 +1,4 @@
-running
+execution
 executeScript: aBpmScriptTaskInstance
 	"The receiver execute the BPM Script <aBpmScriptTaskInstance>"
 

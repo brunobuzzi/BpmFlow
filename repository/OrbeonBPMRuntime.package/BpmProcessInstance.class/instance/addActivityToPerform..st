@@ -1,4 +1,4 @@
-running
+execution
 addActivityToPerform: aBpmTaskInstance
 	"Add the task <aBpmTaskInstance> to be performed and finished by the receiver"
 

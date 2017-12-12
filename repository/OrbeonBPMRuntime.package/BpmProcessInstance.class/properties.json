@@ -22,7 +22,8 @@
 		"executedGateways",
 		"userAssignments",
 		"executedScripts",
-		"intermediateEvents" ],
+		"intermediateEvents",
+		"states" ],
 	"name" : "BpmProcessInstance",
 	"pools" : [
 		 ],

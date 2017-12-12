@@ -1,4 +1,4 @@
-running
+execution
 createNewTransition: aBpmTransitionDefinition from: aBpmArtifactInstance
 	"The receiver creates a new concrete transition based on the definition <aBpmTransitionDefinition> and this transition has been started from the artifact <aBpmArtifactInstance>"
 	| newTransition endArtifact |

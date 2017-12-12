@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmAbortedState",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessState",
+	"type" : "normal" }

@@ -15,3 +15,4 @@ initialize
 	endEvents := Dictionary new.
 	executedScripts := OrderedCollection new.
 	intermediateEvents := Dictionary new.
+	states := OrderedCollection with: (BpmRunningState newFor: self).
