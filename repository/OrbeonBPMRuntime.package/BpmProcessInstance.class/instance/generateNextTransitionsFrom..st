@@ -1,11 +1,11 @@
 execution
 generateNextTransitionsFrom: aBpmTaskInstance
-	"The receiver generate the nexts task to be performed from the finalized task <aBpmTaskInstance>"
+	"The receiver generate the next tasks to be performed from the finalized task <aBpmTaskInstance>"
 	| nextTransitions |
 
-	"transitions can have evaluation conditions at any step"
+	"each transition can have a condition or not. 
+	a transition is selected --> if has NO condition or the condition answer <true> after evaluation"
 	nextTransitions := aBpmTaskInstance getOutTransitionDefinitions select: [:trDefinition | trDefinition hasCondition not or: [trDefinition evaluateConditionIn: self]].
 
-	nextTransitions collect: [:transitionDefinition | | newTransition |
-			newTransition := self createNewTransition: transitionDefinition from: aBpmTaskInstance.
-			newTransition].
+	"after the selection of <BpmTransitionDefinition> the concrete transations are created <BpmTransitionInstance>"
+	nextTransitions do: [:transitionDefinition | self createNewTransition: transitionDefinition from: aBpmTaskInstance].
