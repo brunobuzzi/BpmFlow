@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"isAborted" : "brunobb 12/11/2017 17:14" } }
+		"confirmAbortion" : "brunobb 12/12/2017 17:00",
+		"initialize" : "brunobb 12/12/2017 16:56",
+		"isAborted" : "brunobb 12/11/2017 17:14",
+		"isConfirmed" : "brunobb 12/12/2017 16:56",
+		"isConfirmed:" : "brunobb 12/12/2017 16:56" } }
