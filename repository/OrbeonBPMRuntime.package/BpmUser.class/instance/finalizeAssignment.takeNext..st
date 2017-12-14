@@ -4,6 +4,9 @@ finalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	If the assignment <aBpmTaskAssignment> has performers --> more than one role are going to work with the assignment.
 	If the assignment <aBpmTaskAssignment>  has NO performers --> only one role is granted to work with"
 
+	"if the process has been paused or aborted --> <aBpmTaskAssignment> can not be finalized (the process is freeze)"
+	aBpmTaskAssignment process isRunning ifFalse: [^nil].
+
 	"a manager has untaken the assignment from the receiver --> the assignment can NOT be finalized by the receiver"
 	(aBpmTaskAssignment user == self) ifFalse: [^BpmAssignmentFinalization on: aBpmTaskAssignment by: self].
 
