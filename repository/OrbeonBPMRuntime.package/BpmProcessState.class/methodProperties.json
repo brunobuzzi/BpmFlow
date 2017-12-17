@@ -1,8 +1,10 @@
 {
 	"class" : {
 		"newFor:" : "brunobb 12/11/2017 17:00",
-		"newFor:user:" : "brunobb 12/11/2017 17:26" },
+		"newFor:user:" : "brunobb 12/11/2017 17:26",
+		"stateName" : "brunobb 12/15/2017 12:13" },
 	"instance" : {
+		"getStateNameFor:" : "brunobb 12/15/2017 11:13",
 		"hasUser" : "brunobb 12/11/2017 17:03",
 		"initialize" : "brunobb 12/11/2017 17:01",
 		"isAborted" : "brunobb 12/11/2017 17:14",
@@ -10,6 +12,7 @@
 		"isRunning" : "brunobb 12/11/2017 17:13",
 		"process" : "brunobb 12/11/2017 16:59",
 		"process:" : "brunobb 12/11/2017 16:59",
+		"stateName" : "brunobb 12/15/2017 12:11",
 		"timeStamp" : "brunobb 12/11/2017 17:01",
 		"timeStamp:" : "brunobb 12/11/2017 17:01",
 		"user" : "brunobb 12/11/2017 17:02",

@@ -10,6 +10,8 @@ renderContentOn: html
 	searchCollectionResult isEmpty ifTrue: [^self].
 	selectedObject ifNil: [^self].
 
+	self renderChangeProcessStateFormOn: html.
+
 	assignmentBatchedList items: selectedObject userAssignments.
 	html div id: 'process-assignments'; class: 'default-gray-table ';
 		with:[html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].

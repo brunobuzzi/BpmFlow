@@ -26,7 +26,8 @@
 		"onProcessIdChanged:" : "BrunoBB 12/20/2015 14:54",
 		"registerProcessType:" : "BrunoBB 05/31/2016 15:52",
 		"renderApplicationComboOn:" : "BrunoBB 03/04/2016 12:10",
-		"renderContentOn:" : "BrunoBB 06/03/2016 17:05",
+		"renderChangeProcessStateFormOn:" : "brunobb 12/17/2017 12:00",
+		"renderContentOn:" : "brunobb 12/15/2017 12:17",
 		"renderFilterValuesAndButtonOn:" : "BrunoBB 06/03/2016 11:43",
 		"renderFormDefinitionComboOn:" : "BrunoBB 05/30/2016 17:45",
 		"renderFormFieldsComboOn:" : "BrunoBB 01/09/2017 06:13",
@@ -47,4 +48,4 @@
 		"selectedFormDefinition" : "BrunoBB 12/20/2015 14:54",
 		"selectedProcessDefinition" : "BrunoBB 05/31/2016 16:06",
 		"sewafTableForProcessAssignments" : "BrunoBB 06/12/2016 12:48",
-		"sewafTableForRunningFormProcesses" : "BrunoBB 06/13/2016 11:15" } }
+		"sewafTableForRunningFormProcesses" : "brunobb 12/15/2017 11:18" } }
