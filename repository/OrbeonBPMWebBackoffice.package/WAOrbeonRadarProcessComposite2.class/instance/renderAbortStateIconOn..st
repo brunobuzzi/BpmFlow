@@ -1,11 +1,16 @@
 process state
 renderAbortStateIconOn: html
+   | jQueryId |
+
+	jQueryId := self renderJQueryConfirmationDialogOn: html title: 'Abort Process' forActionNamed: 'abortSelectedProcess' actionMethod: #abortSelectedProcess.
 
 	selectedObject isAborted ifFalse: [
 		html div class: 'float-left margin-left-5px'; with: [
-			html anchor callback: [self abortSelectedProcess]; 
-							with: [html image url: (SEWAFIconLibrary / #symboldelete24Png); 
-													title: ('Abort Process' translateFor: self session user); 
-													altText: ('Abort Process' translateFor: self session user)]
+			html anchor
+					class: 'cursor-pointer';
+					onClick: (html jQuery id: jQueryId) dialog open; 
+					with: [html image url: (SEWAFIconLibrary / #symboldelete24Png); 
+											title: ('Abort Process' translateFor: self session user); 
+											altText: ('Abort Process' translateFor: self session user)]
 		]
 	].
