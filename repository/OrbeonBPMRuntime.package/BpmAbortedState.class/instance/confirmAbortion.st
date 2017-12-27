@@ -8,10 +8,9 @@ confirmAbortion
 	- Remove all AppFieldValue subinstances from BpmProcessDefinition formFieldInstances
     - What else ?
 "
+	self removeTakenAssignmentsFromUsers.
 
 	self removeAllAssigmentsFromRunningMatrix.
-
-	self removeTakenAssignmentsFromUsers.
 
 	self removeTimerEventsFromEventMonitor.
 

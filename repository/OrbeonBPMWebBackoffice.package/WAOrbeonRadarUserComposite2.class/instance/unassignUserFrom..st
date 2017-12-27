@@ -1,6 +1,6 @@
 free transitions
 unassignUserFrom: aBpmTaskAssignment
-	"The receiver unassing the assignment <aBpmTaskAssignment> from the selected user <selectedObject>"
+	"The receiver unassign the assignment <aBpmTaskAssignment> from the selected user <selectedObject>"
 
 	aBpmTaskAssignment isTaken ifFalse: [
 		self closeAllInformationComponents.

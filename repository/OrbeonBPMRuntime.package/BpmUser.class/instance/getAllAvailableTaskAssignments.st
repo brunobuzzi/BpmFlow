@@ -8,4 +8,4 @@ getAllAvailableTaskAssignments
 		matrix := self getMatrixManagerClass getMatrixForApplicationNamed: eachRole getApplicationName.
 		assignments addAll: (matrix getAvailableTasksFor: eachRole name)].
 
-	^assignments select: [:each | each isAvailableFor: self].
+	^assignments select: [:each | each isAvailableFor: self]. "check for runtime context"
