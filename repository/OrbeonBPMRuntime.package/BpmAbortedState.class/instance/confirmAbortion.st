@@ -1,8 +1,18 @@
 execution
 confirmAbortion
 "
-    - Remove all tasks from BpmFinishedTasksMatrix and BpmRunningTasksMatrix
+    - Remove all tasks from BpmRunningTasksMatrix
     - Remove assignments from BpmUsers.
     - Remove timer events from BpmTimerEventMonitor
+	- Remove BpmProcessInstance from BpmProcessDefinition processInstances
+	- Remove all AppFieldValue subinstances from BpmProcessDefinition formFieldInstances
     - What else ?
 "
+
+	self removeAllAssigmentsFromRunningMatrix.
+
+	self removeTakenAssignmentsFromUsers.
+
+	self removeTimerEventsFromEventMonitor.
+
+	self removeAppFieldValuesFromProcessDefinition. "this maybe not the case"

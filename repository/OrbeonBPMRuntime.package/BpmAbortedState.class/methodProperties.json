@@ -2,8 +2,13 @@
 	"class" : {
 		"stateName" : "brunobb 12/15/2017 12:12" },
 	"instance" : {
-		"confirmAbortion" : "brunobb 12/12/2017 17:00",
+		"confirmAbortion" : "brunobb 12/27/2017 10:16",
+		"getAllProcessRoles" : "brunobb 12/27/2017 09:12",
 		"initialize" : "brunobb 12/12/2017 16:56",
 		"isAborted" : "brunobb 12/11/2017 17:14",
 		"isConfirmed" : "brunobb 12/12/2017 16:56",
-		"isConfirmed:" : "brunobb 12/12/2017 16:56" } }
+		"isConfirmed:" : "brunobb 12/12/2017 16:56",
+		"removeAllAssigmentsFromRunningMatrix" : "brunobb 12/27/2017 09:50",
+		"removeAppFieldValuesFromProcessDefinition" : "brunobb 12/27/2017 10:17",
+		"removeTakenAssignmentsFromUsers" : "brunobb 12/27/2017 10:16",
+		"removeTimerEventsFromEventMonitor" : "brunobb 12/27/2017 10:16" } }

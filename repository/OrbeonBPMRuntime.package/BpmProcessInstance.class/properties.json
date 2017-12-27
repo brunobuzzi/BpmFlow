@@ -23,7 +23,8 @@
 		"userAssignments",
 		"executedScripts",
 		"intermediateEvents",
-		"states" ],
+		"states",
+		"externalVariables" ],
 	"name" : "BpmProcessInstance",
 	"pools" : [
 		 ],
