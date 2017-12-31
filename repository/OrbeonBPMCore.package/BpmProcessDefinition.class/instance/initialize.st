@@ -11,3 +11,4 @@ initialize
 	subProcesses := Dictionary new.
 	processInstances := RcKeyValueDictionary new.
 	formFieldInstances := Dictionary new.
+	abortedProcesses := RcIdentityBag new.

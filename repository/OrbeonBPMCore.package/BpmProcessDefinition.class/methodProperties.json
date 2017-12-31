@@ -40,6 +40,8 @@
 		"resetAll" : "BrunoBB 08/06/2016 09:21",
 		"unregisterAnonymousMappingFor:in:" : "BrunoBB 03/30/2016 16:08" },
 	"instance" : {
+		"abortedProcesses" : "brunobb 12/31/2017 09:59",
+		"abortedProcesses:" : "brunobb 12/31/2017 09:59",
 		"addAllParticipants:" : "BrunoBB 11/28/2015 19:55",
 		"addEndEvent:" : "BrunoBB 11/28/2015 19:56",
 		"addGateway:" : "BrunoBB 11/28/2015 19:56",
@@ -139,7 +141,7 @@
 		"hasTaskNamed:" : "BrunoBB 12/21/2015 09:45",
 		"id" : "BrunoBB 10/26/2015 18:31",
 		"id:" : "BrunoBB 10/26/2015 18:31",
-		"initialize" : "BrunoBB 03/26/2016 14:36",
+		"initialize" : "brunobb 12/31/2017 10:00",
 		"isAnonymousStartEnabled" : "BrunoBB 04/10/2016 17:59",
 		"isSubProcess" : "BrunoBB 11/29/2015 17:18",
 		"isTopProcess" : "BrunoBB 11/29/2015 17:17",

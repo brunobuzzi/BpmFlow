@@ -18,7 +18,8 @@
 		"subProcesses",
 		"formFieldInstances",
 		"participants",
-		"xmlString" ],
+		"xmlString",
+		"abortedProcesses" ],
 	"name" : "BpmProcessDefinition",
 	"pools" : [
 		 ],
