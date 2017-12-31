@@ -4,6 +4,7 @@
 		"newFor:user:" : "brunobb 12/11/2017 17:26",
 		"stateName" : "brunobb 12/15/2017 12:13" },
 	"instance" : {
+		"confirmAbortion" : "brunobb 12/31/2017 11:19",
 		"getStateNameFor:" : "brunobb 12/15/2017 11:13",
 		"hasUser" : "brunobb 12/11/2017 17:03",
 		"initialize" : "brunobb 12/11/2017 17:01",

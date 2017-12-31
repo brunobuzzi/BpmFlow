@@ -6,7 +6,7 @@ generateFormFieldValueSet
 	"#getAllFields answer aDictionary where each key is the name of the field and each value is a collection of string values"
 	self getAllFields keysAndValuesDo: [:key :valuesCollection | | valueHolder |
 			valueHolder := (fieldsValues includesKey: key) "<fieldsValues at:> answer aFieldValueHolder"
-								ifFalse: [fieldsValues at: key put: (BpmFieldValueHolder forFieldNamed: key)]
+								ifFalse: [fieldsValues at: key put: (BpmFieldValueHolder parentObject: self forFieldNamed: key)]
 								ifTrue: [fieldsValues at: key].
 			"convert string values to real type values or update added/removed values"
 			valueHolder processFieldValueCollection: valuesCollection withFieldClass: (self classOf: key) in: self isStObject: true.

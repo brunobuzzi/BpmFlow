@@ -7,10 +7,12 @@ removeFrom: formNamed fieldValue: anAppFieldValue
 
 	fieldsDictionary := (formFieldInstances includesKey: formNamed) 
 		ifTrue: [formFieldInstances at: formNamed]
-		ifFalse: [^nil].
+		ifFalse: [^NoFormNameCollectionException signal: 'No Form collection for form named [', formNamed, ']'].
 
 	fieldCollection := (fieldsDictionary includesKey: anAppFieldValue getKeyName)
 		ifTrue: [fieldsDictionary at: anAppFieldValue getKeyName]
-		ifFalse: [^nil].
+		ifFalse: [^NoFieldNameCollectionException signal: 'No Field collection for field named [', anAppFieldValue getKeyName, ']'].
 
-	^fieldCollection remove: anAppFieldValue ifAbsent: [nil]
+	^fieldCollection 
+		remove: anAppFieldValue 
+		ifAbsent: [NoFieldValueFoundException signal: 'No App Field Value found in form named [', formNamed, '] for field named [', anAppFieldValue getKeyName, ']' ]
