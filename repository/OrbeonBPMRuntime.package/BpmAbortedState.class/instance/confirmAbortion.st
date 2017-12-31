@@ -11,7 +11,10 @@ confirmAbortion
 	self removeTakenAssignmentsFromUsers.
 
 	self removeAllAssigmentsFromRunningMatrix.
+	self removeAllAssigmentsFromFinishedMatrix.
 
 	self removeTimerEventsFromEventMonitor.
 
 	self removeAppFieldValuesFromProcessDefinition. "this maybe not the case"
+
+	process addToAbortedProcess.
