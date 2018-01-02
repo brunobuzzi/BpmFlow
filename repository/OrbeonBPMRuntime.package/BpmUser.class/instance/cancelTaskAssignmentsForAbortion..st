@@ -1,8 +1,11 @@
 assignment
 cancelTaskAssignmentsForAbortion: aBpmProcessInstance
-	"The receiver cancel all <BpmTaskAssignment> because the <BpmProcessInstance> has been aborted"
+	"The receiver cancel all <BpmTaskAssignment> taken by the receiver because the <BpmProcessInstance> has been aborted"
+	| takenAssigments |
 
-	(self getAllAvailableTaskAssignments select: [:eachAssignment | eachAssignment process == aBpmProcessInstance]) do: [:eachAssignment |  
+	takenAssigments := OrderedCollection withAll: self getCurrentAssigments.
+
+	(takenAssigments select: [:eachAssignment | eachAssignment process == aBpmProcessInstance]) do: [:eachAssignment |  
 
 		eachAssignment user: nil. "add to free matrix, user set to nil"
 

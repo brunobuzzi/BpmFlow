@@ -6,9 +6,11 @@ removeAppFieldValuesFromProcessDefinition
 	processDefinition := process definition.
 
 	process getAllArtifacts do: [:eachArtifact |
-		eachArtifact fieldValuesDo: [:fieldValueHolder |
-			fieldValueHolder currentValues do: [:appFieldValue | 
-				processDefinition removeFrom: fieldValueHolder formName fieldValue: appFieldValue.
+		eachArtifact hasForm ifTrue: [ "maybe the task was created but the form has not been created by any user"
+			eachArtifact externalObject fieldValuesDo: [:fieldValueHolder |
+				fieldValueHolder currentValues do: [:appFieldValue | 
+					processDefinition removeFrom: fieldValueHolder formName fieldValue: appFieldValue.
+				].
 			].
 		].
 	].

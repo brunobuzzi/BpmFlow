@@ -3,7 +3,7 @@ removeAllAssigmentsFromMatrix: aBpmTasksHolderMatrix
 	"The receiver remove all <BpmTaskAssignment> from the <aBpmTasksHolderMatrix> for the aborted <BpmProcessInstance> <process>"
 	| processId taskAssigments |
 
-	taskAssigments := OrderedCollection new.
+	taskAssigments := Set new.
 	processId := process processId.
 
 	"all roles in the <BpmProcessInstance>"
