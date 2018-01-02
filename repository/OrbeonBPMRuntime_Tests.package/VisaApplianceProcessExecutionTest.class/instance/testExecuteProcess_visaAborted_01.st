@@ -27,3 +27,10 @@ testExecuteProcess_visaAborted_01
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:e | e.processId = processId}) notEmpty.
+
+	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:e | e.processId = processId}) size = 2).
+
+	"here the process is cancelled"
+	procInstance abortProcess: nil; confirmAbortion.
+	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:e | e.processId = processId}) isEmpty.
+	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:e | e.processId = processId}) size = 0).
