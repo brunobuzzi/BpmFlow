@@ -1,4 +1,4 @@
-other
+test
 testFieldsInGatewayConditions
 
 	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'checkResult').

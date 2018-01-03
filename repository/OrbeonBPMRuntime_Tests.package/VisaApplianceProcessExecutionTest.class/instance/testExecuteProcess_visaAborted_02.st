@@ -1,6 +1,6 @@
 test
-testExecuteProcess_visaAborted_01
-	| currentTask currentProcessMatrix finishedProcessMatrix processId |
+testExecuteProcess_visaAborted_02
+	| currentTask gateway currentProcessMatrix finishedProcessMatrix processId |
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 	processId := procInstance id.
@@ -17,6 +17,18 @@ testExecuteProcess_visaAborted_01
 	currentTask :=  procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'check-basic-data').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
+	self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data.
+
+	"Step 3 - Gateway Evaluation"
+	gateway := procInstance executedGateways asOrderedCollection last.
+	self assert: (gateway getDefinitionName = 'accept basic data').
+
+	"Step 4 - Form [check-previous-appliance]"
+	currentTask := procInstance currentActivities last.
+	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
+	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
+
+	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
 	"here the process is cancelled"
 	procInstance abortProcess: nil; confirmAbortion.

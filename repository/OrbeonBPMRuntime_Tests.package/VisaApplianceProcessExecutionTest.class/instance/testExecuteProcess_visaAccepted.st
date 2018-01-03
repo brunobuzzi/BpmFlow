@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_visaAccepted
 	| currentTask gateway endArtifact subProcessL1 subProcessL2 |
 

@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_visaRejected
 	| currentTask gateway endArtifact |
 

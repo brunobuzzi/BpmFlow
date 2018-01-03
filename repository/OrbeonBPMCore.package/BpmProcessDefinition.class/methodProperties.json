@@ -133,6 +133,7 @@
 		"getValueDistributionForFieldCollection:" : "BrunoBB 11/05/2016 12:55",
 		"getValueDistributionForFieldName:secondaryField:in:satisfying:" : "brunobb 11/27/2017 12:08",
 		"getZipProcessMapStream" : "BrunoBB 01/13/2017 12:32",
+		"hasAbortedProcess:" : "brunobb 01/03/2018 12:30",
 		"hasCreationTimer" : "brunobb 07/31/2017 12:07",
 		"hasFinishedProcesses" : "BrunoBB 12/10/2015 06:51",
 		"hasGatewayConditionIncludingFieldNamed:" : "BrunoBB 04/19/2016 15:06",
