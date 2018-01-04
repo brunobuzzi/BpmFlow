@@ -8,6 +8,9 @@ confirmAbortion
 	- Remove all AppFieldValue subinstances from BpmProcessDefinition formFieldInstances
     - What else ?
 "
+
+	isConfirmed ifFalse: [^AbortionNotConfirmedException signal: 'The Aborted state must be confirmed before execution'].
+
 	self removeTakenAssignmentsFromUsers.
 
 	self removeAllAssigmentsFromRunningMatrix.
