@@ -31,7 +31,9 @@ testExecuteProcess_visaAborted_02
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
 	"here the process is cancelled"
-	procInstance abortProcess: nil; confirmAbortion.
+	procInstance abortProcess: nil.
+	procInstance currentState isConfirmed: true. 
+	procInstance confirmAbortion.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (procDefinition hasAbortedProcess: processId).
