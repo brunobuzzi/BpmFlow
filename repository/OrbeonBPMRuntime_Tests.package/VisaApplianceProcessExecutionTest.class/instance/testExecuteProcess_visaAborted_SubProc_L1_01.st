@@ -1,5 +1,5 @@
 test
-testExecuteProcess_visaAborted_SubProc_01
+testExecuteProcess_visaAborted_SubProc_L1_01
 	| currentTask gateway subProcessL1 processId subProcId currentProcessMatrix finishedProcessMatrix subProcCurrentMatrix subProcFinishedMatrix |
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
