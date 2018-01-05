@@ -27,11 +27,11 @@ testExecuteProcess_visaAnalizeAndRejected
 		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
 		"Step 1 [subproc] - Form [check-applicant-record]"
 		currentTask := subProcessL1 currentActivities last.
-		self processTask: currentTask withUserNamed: 'andrew vc' withForm: self formInstance_check_applicant_record on: subProcessL1.
+		self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1.
 		self assert: (currentTask getDefinitionName = 'check-applicant-record').
 		"Step 2 [subproc] - Form [applicant-home-office-report]"
 		currentTask := subProcessL1 currentActivities last.
-		self processTask: currentTask withUserNamed: 'andrew vc' withForm: self formInstance_applicant_home_office_report on: subProcessL1.
+		self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_applicant_home_office_report: subProcessL1) on: subProcessL1.
 		self assert: (currentTask getDefinitionName = 'applicant-home-office-report').
 		"Sub Process Execution [check-financial-data]"
 			subProcessL2 := subProcessL1 subprocesses last.
@@ -40,19 +40,19 @@ testExecuteProcess_visaAnalizeAndRejected
 			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').
 			"Step 1 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: self formInstance_check_accounts on: subProcessL2.
+			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'check-accounts').
 			"Step 2 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew po' withForm: self formInstance_check_properties on: subProcessL2.
+			self processTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'check-properties').
 			"Step 3 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew do' withForm: self formInstance_check_debts.
+			self processTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
 			self assert: (currentTask getDefinitionName = 'check-debts').
 			"Step 3 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: self formInstance_financial_report on: subProcessL2.
+			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_financial_report: subProcessL2) on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'financial-report').
 			"Sub Process [check-financial-data] ends and gives control to previous process"
 		"Sub Process [check-applicant-record] ends and gives control to main process"
