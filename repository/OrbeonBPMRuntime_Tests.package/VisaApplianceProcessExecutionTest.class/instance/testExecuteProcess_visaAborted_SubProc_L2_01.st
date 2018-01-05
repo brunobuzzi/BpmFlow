@@ -1,6 +1,6 @@
 test
 testExecuteProcess_visaAborted_SubProc_L2_01
-	| currentTask gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix subProcId finishedProcessMatrix subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
+	| currentTask gateway subProcessL1 subProcessL2 processId currentProcessMatrix subProcId finishedProcessMatrix subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 	processId := procInstance id.
@@ -66,40 +66,49 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 
 			"Step 1 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: self formInstance_check_accounts on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'check-accounts').
+			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
+			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
-			"Step 2 [subproc] - Form [check-accounts]"
+			"Step 2 [subproc] - Form [check-properties]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew po' withForm: self formInstance_check_properties on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'check-properties').
+			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
+			self processTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
-			"Step 3 [subproc] - Form [check-accounts]"
+			"Step 3 [subproc] - Form [check-debts]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew do' withForm: self formInstance_check_debts.
 			self assert: (currentTask getDefinitionName = 'check-debts').
+			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
+			self processTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
-			"Step 3 [subproc] - Form [check-accounts]"
+			"Step 4 [subproc] - Form [financial-report]"
 			currentTask := subProcessL2 currentActivities last.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: self formInstance_financial_report on: subProcessL2.
 			self assert: (currentTask getDefinitionName = 'financial-report').
-			"Sub Process [check-financial-data] ends and gives control to previous process"
-		"Sub Process [check-applicant-record] ends and gives control to main process"
 
-	"Top Process [visa-appliance] resume execution "
-	"Step 5 - Form [analyze-appliance]"
-	currentTask := procInstance currentActivities last.
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_analyze_appliance.
-	self assert: (currentTask getDefinitionName = 'analyze-appliance').
+			"here the process is cancelled"
+			subProcessL1 abortProcess: nil.
+			subProcessL1 currentState isConfirmed: true. 
+			subProcessL1 confirmAbortion. "cancel all process tree -sub processes and the top process-"
 
-	"Step 6 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
-	self assert: (gateway getDefinitionName = 'granted').
+			self assert: (subProcessL2 definition hasAbortedProcess: subProc2Id).
+			self assert: (subProcCurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcFinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcCurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcFinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcCurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcFinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 
-	"Step 7 - Form [emit-visa]"
-	currentTask := procInstance currentActivities last.
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_emit_visa.
-	self assert: (currentTask getDefinitionName = 'emit-visa').
 
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'visa apply end') and: [endArtifact isEndEvent]).
+			self assert: (subProcessL1 definition hasAbortedProcess: subProcId).
+			self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+			self assert: (subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+
+			self assert: (procDefinition hasAbortedProcess: processId).
+			self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
+			self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
+			self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
+			self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.

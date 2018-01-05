@@ -52,9 +52,13 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 		subProcessL1 abortProcess: nil.
 		subProcessL1 currentState isConfirmed: true. 
 		subProcessL1 confirmAbortion. "cancel all process tree -sub processes and the top process-"
+
+		self assert: (subProcessL1 definition hasAbortedProcess: subProcId).
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 		self assert: (subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
-		self assert: (subProcessL1 definition hasAbortedProcess: subProcId).
+
 		self assert: (procDefinition hasAbortedProcess: processId).
 		self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
+		self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 		self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
+		self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
