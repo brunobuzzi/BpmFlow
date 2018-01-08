@@ -18,6 +18,6 @@ confirmAbortion
 
 	self removeTimerEventsFromEventMonitor.
 
-	self removeAppFieldValuesFromProcessDefinition. "this maybe not the case"
+	self removeAppFieldValuesFromProcessDefinition.
 
 	process addToAbortedProcess.
