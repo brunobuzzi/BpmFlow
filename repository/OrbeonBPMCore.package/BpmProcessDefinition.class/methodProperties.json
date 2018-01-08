@@ -86,6 +86,7 @@
 		"getAverageTimeForAllTasksFrom:to:satisfying:" : "BrunoBB 11/12/2016 07:32",
 		"getAverageTimeForTaskNamed:" : "BrunoBB 11/07/2016 14:31",
 		"getAverageTimeForTaskNamed:from:to:satisfying:" : "BrunoBB 11/13/2016 09:45",
+		"getCollectionForFieldsNamed:in:" : "brunobb 01/08/2018 13:32",
 		"getEndEventNamed:ifNone:" : "BrunoBB 11/28/2015 19:49",
 		"getFieldNamesOfTask:" : "BrunoBB 04/23/2016 12:42",
 		"getFieldsNamed:in:initialValue:endValue:" : "BrunoBB 04/23/2016 12:55",
