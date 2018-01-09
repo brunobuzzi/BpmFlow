@@ -93,33 +93,42 @@ testExecuteProcess_visaAborted_03
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-accounts').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
-			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
+			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
+
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
+			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'accountsDetails[s]' in: 'check-accounts') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
 			"Step 2 [subproc] - Form [check-properties]"
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-properties').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
-			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
+			self processTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
+
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
+			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'propertiesDetails[s]' in: 'check-properties') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
 			"Step 3 [subproc] - Form [check-debts]"
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-debts').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
-			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 
+			self processTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
+
+			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
+			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'debtsDetails[s]' in: 'check-debts') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
 			"Step 4 [subproc] - Form [financial-report]"
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'financial-report').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
+
 			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_financial_report: subProcessL2) on: subProcessL2.
+
 			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 2).
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
-
+			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'assetValue[n]' in: 'financial-report') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
+			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'assetType[s]' in: 'financial-report') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
 			"Sub Process [check-financial-data] ends and gives control to previous process"
 		"Sub Process [check-applicant-record] ends and gives control to main process"
 
@@ -164,3 +173,19 @@ testExecuteProcess_visaAborted_03
 	self assert: (subProcFinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 	self assert: (subProcCurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 	self assert: (subProcFinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
+
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenSurname[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'originCountry[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'gender[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenId[n]' in: 'check-previous-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self assert: ((procDefinition getCollectionForFieldsNamed: 'expirationDate[d]' in: 'check-previous-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+
+	self assert: ((subProcessL1 definition getCollectionForFieldsNamed: 'checkApplicantRecord[s]' in: 'check-applicant-record') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.
+	self assert: ((subProcessL1 definition getCollectionForFieldsNamed: 'offenseDate[d]' in: 'applicant-home-office-report') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.
+	self assert: ((subProcessL1 definition getCollectionForFieldsNamed: 'offenseExpiration[d]' in: 'applicant-home-office-report') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.	
+
+	self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'accountsDetails[s]' in: 'check-accounts') select: [:fieldValue | fieldValue processId = subProc2Id]) isEmpty.
+	self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'debtsDetails[s]' in: 'check-debts') select: [:fieldValue | fieldValue processId = subProc2Id]) isEmpty.
+	self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'assetValue[n]' in: 'financial-report') select: [:fieldValue | fieldValue processId = subProc2Id]) isEmpty.
+	self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'assetType[s]' in: 'financial-report') select: [:fieldValue | fieldValue processId = subProc2Id]) isEmpty.
