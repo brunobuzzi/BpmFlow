@@ -7,7 +7,7 @@ triggerArtifactTimersWith: aTimeStamp
 
 		lastExecutionTime := self getLastEventInstanceExecutionFor: eventInstance.
 
-		((eventInstance getTimerBlock value: lastExecutionTime value: aTimeStamp value: eventInstance process) and: [eventInstance process isRunning])
+		((eventInstance getTimerBlock value: lastExecutionTime value: aTimeStamp value: eventInstance process) and: [eventInstance processIsRunning])
 		ifTrue: [eventInstance generateNextRunningTransitions].
 	].
 

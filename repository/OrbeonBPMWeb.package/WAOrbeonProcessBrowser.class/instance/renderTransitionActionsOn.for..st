@@ -4,7 +4,7 @@ renderTransitionActionsOn: html for: aBpmArtifactInstance
 	aBpmArtifactInstance isTask ifFalse: [^self].
 
 	
-	aBpmArtifactInstance process isRunning "if the BpmProcess has been paused or aborted --> no link to the task"
+	aBpmArtifactInstance processIsRunning "if the BpmProcess has been paused or aborted --> no link to the task"
 	ifTrue: [
 		aBpmArtifactInstance renderHtmlOn: html for: self. "double dispatching to render an Orbeon Link or a Seaside Component"
 

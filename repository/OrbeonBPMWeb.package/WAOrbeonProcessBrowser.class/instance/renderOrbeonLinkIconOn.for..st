@@ -1,7 +1,7 @@
 process
 renderOrbeonLinkIconOn: html for: aBpmTaskInstance
 
-	aBpmTaskInstance process isRunning ifFalse: [^self]. "if the process is paused or aborted no operation is possible with the task <aBpmTaskInstance>"
+	aBpmTaskInstance processIsRunning ifFalse: [^self]. "if the process is paused or aborted no operation is possible with the task <aBpmTaskInstance>"
 
 	"a granted user with edit permission"
 	(aBpmTaskInstance isGrantedUser: self session user) 
