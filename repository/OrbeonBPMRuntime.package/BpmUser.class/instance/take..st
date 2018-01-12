@@ -2,6 +2,8 @@ assignment
 take: aBpmTaskAssignment
 	"The receiver take the unassigned task <aBpmTaskAssignment>"
 
+	aBpmTaskAssignment processIsRunning ifFalse: [^self].
+
 	aBpmTaskAssignment 
 		removeFromMatrix; "is not available for other users to take it"
 		setAssignationDate; "time stamp when the task was taken"

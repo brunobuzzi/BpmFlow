@@ -2,6 +2,8 @@ assignment
 untake: aBpmTaskAssignment
 	"The receiver untake the assigned task <aBpmTaskAssignment>"
 
+	aBpmTaskAssignment processIsRunning ifFalse: [^self].
+
 	"the task was finalized by the user before the manager could make the untake operation"
 	(self includesCurrentAssignment: aBpmTaskAssignment) ifFalse: [^self].
 
