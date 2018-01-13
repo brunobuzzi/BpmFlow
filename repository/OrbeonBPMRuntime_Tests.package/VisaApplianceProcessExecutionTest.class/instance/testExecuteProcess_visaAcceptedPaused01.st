@@ -36,8 +36,17 @@ testExecuteProcess_visaAcceptedPaused01
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 
-	"Step 4 - Form [check-previous-appliance]"
 	currentTask := procInstance currentActivities last.
+	"TEST Paused Process"
+	procInstance pauseProcess: nil. "the process is Paused"
+
+	[self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data] on: ProcessNotRunningException do: [:ex | self assert: true].
+
+	self assert: procInstance isPaused.
+	procInstance resumeProcess: nil. 
+	self assert: procInstance isRunning.
+
+	"Step 4 - Form [check-previous-appliance]"
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance.
@@ -54,8 +63,18 @@ testExecuteProcess_visaAcceptedPaused01
 		self assert:  subProcessL1 isSubProcess.
 		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
 
-		"Step 1 [subproc] - Form [check-applicant-record]"
 		currentTask := subProcessL1 currentActivities last.
+		"TEST Paused Process"
+		subProcessL1 pauseProcess: nil. "the process is Paused"
+
+		[self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1] on: ProcessNotRunningException do: [:ex | self assert: true].
+		self assert: procInstance isRunning. 
+
+		self assert: subProcessL1 isPaused.
+		subProcessL1 resumeProcess: nil. 
+		self assert: subProcessL1 isRunning.
+
+		"Step 1 [subproc] - Form [check-applicant-record]"
 		self assert: (currentTask getDefinitionName = 'check-applicant-record').
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) notEmpty.
 		self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1.
@@ -79,8 +98,20 @@ testExecuteProcess_visaAcceptedPaused01
 			self assert:  subProcessL2 isSubProcess.
 			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').
 
-			"Step 1 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
+
+			"TEST Paused Process"
+			subProcessL2 pauseProcess: nil. "the process is Paused"
+
+			[self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2] on: ProcessNotRunningException do: [:ex | self assert: true].
+
+			self assert: procInstance isRunning. 
+			self assert: subProcessL1 isRunning.
+			self assert: subProcessL2 isPaused.
+			subProcessL2 resumeProcess: nil. 
+			self assert: subProcessL2 isRunning.
+
+			"Step 1 [subproc] - Form [check-accounts]"
 			self assert: (currentTask getDefinitionName = 'check-accounts').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
 			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
