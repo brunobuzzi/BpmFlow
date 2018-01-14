@@ -1,4 +1,4 @@
 other
 getFinishedMatrix
 
-	^BpmFinishedTasksMatrix getMatrixForApplicationNamed: 'st'
+	^self getFinishedMatrixManagerClass getMatrixForApplicationNamed: 'st'

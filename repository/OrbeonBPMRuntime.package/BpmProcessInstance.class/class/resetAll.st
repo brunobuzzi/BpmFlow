@@ -3,7 +3,7 @@ resetAll
 
 	BpmUser resetAll. "remove user's assignments"
 
-	BpmRunningTasksMatrix resetAll. "remove all assignments from the matrix"
+	self getMatrixManagerClass resetAll. "remove all assignments from the matrix"
 
 	BpmProcessDefinition removeAllFormFieldInstances.
 

@@ -8,7 +8,7 @@ searchByApplication
 
 	app := self searchValueAt: 'application'.
 	searchCollectionResult :=
-		app ifNotNil: [BpmRunningTasksMatrix 
+		app ifNotNil: [self getMatrixManagerClass 
 								getAllAvailableTaskAssignmentsIn: 
 									(OrderedCollection with: 
 										(self getApplicationManagerClass getAnyApplicationNamed: app ifNone: [#()])).]
