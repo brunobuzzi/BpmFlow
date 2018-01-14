@@ -12,8 +12,10 @@ testExecuteProcess_01
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
+	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) notEmpty.
 
-	"formInstance_set_timer_term: is set with 60 seconds and this number is used by timer named Term to wait before finishing the process"
+	"formInstance_set_timer_term: is set with 15 seconds and this number is used by timer named Term to wait before finishing the process"
+	"the attached event wait for 10 seconds and after that trigger a new transition"
 
 	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3.  "15 seconds to wait"
 
@@ -24,11 +26,16 @@ testExecuteProcess_01
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
+	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) notEmpty.
+
 	(Delay forSeconds: 8) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
+	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) notEmpty.
+
 	(Delay forSeconds: 9) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: procInstance hasFinalized.
+	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) isEmpty.
