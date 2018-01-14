@@ -8,5 +8,5 @@ searchByApplicationAndFormDefinition
 
 	searchCollectionResult := BpmRunningTasksMatrix getAllAvailableTaskAssignmentsIn: (OrderedCollection with: application).
 
-	searchCollectionResult := (searchCollectionResult select: [:each | each process hasTaskNamed: self getSelectedFormDefinition])
+	searchCollectionResult := (searchCollectionResult select: [:each | each process hasCurrentActivityNamed: self getSelectedFormDefinition])
 											collect: [:each | each process]

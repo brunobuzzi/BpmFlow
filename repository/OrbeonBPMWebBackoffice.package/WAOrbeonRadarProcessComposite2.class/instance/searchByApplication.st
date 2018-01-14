@@ -16,6 +16,8 @@ searchByApplication
 
 	searchCollectionResult := searchCollectionResult collect: [:each | each process].
 
+	self getProcessType notEmpty ifTrue: [searchCollectionResult := searchCollectionResult select: [:each | each processName = self getProcessType] ].
+
 	searchValues 
 		removeKey: 'form-definition' ifAbsent: [];
 		removeKey: 'form-field' ifAbsent: [].
