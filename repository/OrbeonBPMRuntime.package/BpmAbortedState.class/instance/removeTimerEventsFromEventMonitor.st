@@ -4,7 +4,7 @@ removeTimerEventsFromEventMonitor
 	| processId eventsToRemove |
 
 	processId := process id.
-
-	eventsToRemove := (GsQuery fromSelectBlock: {:eventInstance | eventInstance.processId = processId} on: self defaultTimerEventMonitor monitoredEvents) queryResult.
 	
+	eventsToRemove := self defaultTimerEventMonitor selectMonitoredEventWith: processId. 
+
 	eventsToRemove do: [:eventInstance | self defaultTimerEventMonitor stopMonitoringArtifact: eventInstance]

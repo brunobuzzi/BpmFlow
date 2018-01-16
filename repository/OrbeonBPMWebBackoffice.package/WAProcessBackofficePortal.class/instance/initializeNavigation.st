@@ -8,6 +8,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'List Processes Definitions' command: #openDefinitionsManager);
 		addItem: (SewafCommandItem label: 'Define New Process' command: #openBizagiManager);
 		addItem: (SewafCommandItem label: 'Monitor Processes' command: #openProcessRadar);
+		addItem: (SewafCommandItem label: 'Cancelled Processes' command: #openCancelledProcessViewer);
 		addItem: (SewafCommandItem label: 'Process Categories' command: #openProcessCategoryManager);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #forms32Png)
