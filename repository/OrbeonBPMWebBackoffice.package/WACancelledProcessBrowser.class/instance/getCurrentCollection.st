@@ -1,4 +1,6 @@
 other
 getCurrentCollection
 
-	^BpmProcessDefinition getAllAbortedProcesses
+	searchApplied ifFalse: [^lateralCollection].
+
+	^searchResult

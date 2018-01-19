@@ -1,3 +1,3 @@
 Accessing
 abortedProcesses
-	^abortedProcesses
+	^abortedProcesses ifNil: [#()]

@@ -3,7 +3,8 @@
 		"anonymousFormMapping" : "BrunoBB 03/30/2016 10:48",
 		"cache" : "BrunoBB 10/31/2015 09:23",
 		"cacheAt:ifAbsent:" : "BrunoBB 06/03/2016 15:36",
-		"getAllAbortedProcesses" : "brunobb 01/18/2018 12:58",
+		"getAbortedProcessWith:" : "brunobb 01/18/2018 13:17",
+		"getAllAbortedProcesses" : "brunobb 01/18/2018 13:29",
 		"getAllArtifactInstances" : "BrunoBB 01/14/2017 10:01",
 		"getAllProcessDefinition" : "brunobb 07/30/2017 09:47",
 		"getAllProcessInstances" : "brunobb 07/30/2017 09:48",
@@ -41,7 +42,7 @@
 		"resetAll" : "brunobb 01/14/2018 09:31",
 		"unregisterAnonymousMappingFor:in:" : "BrunoBB 03/30/2016 16:08" },
 	"instance" : {
-		"abortedProcesses" : "brunobb 12/31/2017 09:59",
+		"abortedProcesses" : "brunobb 01/18/2018 13:44",
 		"abortedProcesses:" : "brunobb 12/31/2017 09:59",
 		"addAbortedProcess:" : "brunobb 12/31/2017 10:32",
 		"addAllParticipants:" : "BrunoBB 11/28/2015 19:55",
