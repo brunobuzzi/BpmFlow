@@ -40,7 +40,7 @@ testExecuteProcess_visaAcceptedPaused01
 	"TEST Paused Process"
 	procInstance pauseProcess: nil. "the process is Paused"
 
-	[self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data] on: ProcessNotRunningException do: [:ex | self assert: true].
+	[self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance] on: ProcessNotRunningException do: [:ex | self assert: true].
 
 	self assert: procInstance isPaused.
 	procInstance resumeProcess: nil. 
