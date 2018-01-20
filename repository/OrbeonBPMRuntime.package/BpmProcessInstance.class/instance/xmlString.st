@@ -1,0 +1,4 @@
+other
+xmlString
+
+	^definition xmlString
