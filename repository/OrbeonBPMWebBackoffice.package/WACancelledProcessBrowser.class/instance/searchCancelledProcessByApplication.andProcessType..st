@@ -1,4 +1,4 @@
-search area
+searching
 searchCancelledProcessByApplication: appName andProcessType: procName
 	| application cancelledProcess |
 

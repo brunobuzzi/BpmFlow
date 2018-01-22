@@ -1,4 +1,4 @@
-other
+render
 renderOneFilterOn: html
 
 	self addSearchValue: nil named: 'field-value-2'. "clean the second value --> is not going to be used"

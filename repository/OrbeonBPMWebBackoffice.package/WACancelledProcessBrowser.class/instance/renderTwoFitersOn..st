@@ -1,4 +1,4 @@
-other
+render
 renderTwoFitersOn: html
 
 	html label 

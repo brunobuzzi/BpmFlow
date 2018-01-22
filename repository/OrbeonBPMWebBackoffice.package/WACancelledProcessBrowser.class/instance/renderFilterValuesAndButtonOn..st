@@ -1,4 +1,4 @@
-other
+render
 renderFilterValuesAndButtonOn: html
 	| processName procDef formType fieldName fieldType |
 
