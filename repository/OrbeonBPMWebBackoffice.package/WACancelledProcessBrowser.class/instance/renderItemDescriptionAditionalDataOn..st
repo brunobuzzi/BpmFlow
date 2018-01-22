@@ -1,4 +1,4 @@
-other
+render
 renderItemDescriptionAditionalDataOn: html
 
 	html span with: [html strong: ('Creator Name:' translateFor: self session user)].

@@ -1,9 +1,9 @@
-search area
+other
 initialize
 
 	super initialize.
 
-	searchAvailable := false.
+	transitionsHeight := Dictionary new.
 
 	self setShowToElementNamed: 'search-area'. "the search-are is shown by default"
 

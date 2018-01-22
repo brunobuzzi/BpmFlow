@@ -1,0 +1,2 @@
+render
+renderTransitionActionsOn: html for: aBpmArtifactInstance

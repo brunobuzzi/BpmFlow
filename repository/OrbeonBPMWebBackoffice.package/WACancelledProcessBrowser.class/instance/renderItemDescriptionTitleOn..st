@@ -1,4 +1,4 @@
-other
+render
 renderItemDescriptionTitleOn: html
 	| jQueryId options |
 

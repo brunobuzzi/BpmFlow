@@ -1,4 +1,4 @@
-other
+render
 renderItemDescriptionSecondaryDataOn: html
 
 	html span with: [html strong: ('Application:' translateFor: self session user)].

@@ -1,4 +1,4 @@
-search area
+other
 renderSearchSubmitButtonOn: html
 	| styleOption |
 
