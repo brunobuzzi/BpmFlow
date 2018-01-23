@@ -10,6 +10,4 @@ renderFilterValuesAndButtonOn: html
 
 	fieldType := (procDef getTypeOfFieldNamed: fieldName) ifNil: [^self renderSearchSubmitButtonOn: html]  ifNotNil: [:type | type].
 
-	((OrderedCollection with: String with: Boolean) includes: fieldType) ifTrue: [^html div class: 'top-search-filters-one'; with: [self renderOneFilterOn: html]].
-
-	^html div class: 'top-search-filters-two'; with: [self renderTwoFitersOn: html].
+	^html div class: 'top-search-filters-one'; with: [self renderOneFilterOn: html].

@@ -23,7 +23,7 @@ searchMatchingProcesses
 	(appName notEmpty and: [procName notEmpty and:[(procName ~= self viewAllText) and: [formName isEmpty]]]) 
 	ifTrue: [^self searchCancelledProcessByApplication: appName andProcessType: procName].
 
-	(fieldValue2 notNil and: [fieldValue2 notEmpty]) 
-	ifTrue: [^self searchCancelledProcessByApplication: appName processType: procName fieldName: fieldName fieldValue: fieldValue fieldValue2: fieldValue2].
+"	(fieldValue2 notNil and: [fieldValue2 notEmpty]) 
+	ifTrue: [^self searchCancelledProcessByApplication: appName processType: procName fieldName: fieldName fieldValue: fieldValue fieldValue2: fieldValue2]."
 
 	^self searchCancelledProcessByApplication: appName processType: procName fieldName: fieldName fieldValue: fieldValue
