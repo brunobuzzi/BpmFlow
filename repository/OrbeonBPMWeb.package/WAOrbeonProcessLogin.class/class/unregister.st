@@ -1,4 +1,4 @@
 other
 unregister
 
-	WAAdmin unregister: 'orbeonProcess'.
+	WAAdmin unregister: 'bpmflow-frontoffice'.

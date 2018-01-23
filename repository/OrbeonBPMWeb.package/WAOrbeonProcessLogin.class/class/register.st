@@ -2,9 +2,9 @@ other
 register
 	| application |
 
-	WAAdmin unregister: 'orbeonProcess'.
+	WAAdmin unregister: 'bpmflow-frontoffice'.
 
-	application := WAAdmin register: self asApplicationAt: 'orbeonProcess'.
+	application := WAAdmin register: self asApplicationAt: 'bpmflow-frontoffice'.
 	"application preferenceAt: #scriptGeneratorClass put: JQScriptGenerator."
 	application 
 		preferenceAt: #sessionClass put: WABpmSession;
