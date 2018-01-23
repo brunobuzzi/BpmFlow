@@ -13,8 +13,4 @@ processTask: aBpmTaskInstance withUserNamed: aString withForm: anOrbeonFormInsta
 	(self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: [nil]) 
 	ifNotNil: [self assert: false]. "the assignment has been already taken --> this must answer nil"
 
-	(self getUserNamed: aString) finalizeAssignment: assignment.
-
-	"the assignment has been finished (by the role or by all performers) --> this must be in the finished matrix"
-	(aBpmTaskInstance isFinishedByPerformers)
-	ifTrue: [(self getFinishedAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: [nil]) ifNil: [self assert: false]]
+	self processAssignment: assignment withUserNamed: aString on: aBpmProcessInstance
