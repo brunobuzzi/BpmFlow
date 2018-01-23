@@ -8,3 +8,5 @@ resetAll
 	BpmProcessDefinition removeAllFormFieldInstances.
 
 	BpmProcessInstanceCategory resetAll.
+
+	self defaultTimerEventMonitor class initializeDefault.

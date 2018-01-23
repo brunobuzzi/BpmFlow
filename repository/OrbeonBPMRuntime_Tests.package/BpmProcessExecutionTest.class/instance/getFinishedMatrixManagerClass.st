@@ -1,0 +1,4 @@
+other
+getFinishedMatrixManagerClass
+
+	^self class getFinishedMatrixManagerClass

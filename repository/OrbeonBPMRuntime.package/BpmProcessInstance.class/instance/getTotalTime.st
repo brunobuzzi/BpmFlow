@@ -1,4 +1,4 @@
-Accessing
+other
 getTotalTime
 
 	self hasFinalized ifTrue: [^self getTotalTimeFrom: (endEvents at: (endEvents keys asArray last)) creationTime].

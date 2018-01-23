@@ -2,7 +2,7 @@
 	"class" : {
 		"definition:" : "BrunoBB 12/01/2015 12:57",
 		"definition:user:" : "BrunoBB 11/29/2015 16:16",
-		"resetAll" : "brunobb 01/14/2018 09:29" },
+		"resetAll" : "brunobb 01/23/2018 11:19" },
 	"instance" : {
 		"abortProcess:" : "brunobb 12/11/2017 17:28",
 		"addActivityToPerform:" : "brunobb 10/24/2017 11:57",
@@ -57,7 +57,9 @@
 		"getEventsNamed:ifNone:" : "brunobb 11/02/2017 12:35",
 		"getExecutedActivityNamed:ifNone:" : "brunobb 10/17/2017 14:01",
 		"getExecutedArtifacts" : "BrunoBB 12/10/2015 13:23",
+		"getExecutedArtifactsReversed" : "brunobb 01/23/2018 10:01",
 		"getExecutedScriptNamed:ifNone:" : "BrunoBB 06/24/2016 10:53",
+		"getExecutedScriptsReversed" : "brunobb 01/23/2018 10:02",
 		"getFinishedProcessMatrix" : "brunobb 12/31/2017 12:26",
 		"getLastEventNamed:ifNone:" : "brunobb 10/24/2017 14:31",
 		"getProcessMapStreamFor:" : "BrunoBB 01/13/2017 13:06",
@@ -76,7 +78,8 @@
 		"getTotalTimeFrom:" : "BrunoBB 11/05/2016 12:16",
 		"getTotalTimeOfTaskNamed:" : "BrunoBB 11/07/2016 14:25",
 		"getValueOf:" : "BrunoBB 04/24/2016 15:36",
-		"getValueOfProcessField:" : "BrunoBB 07/02/2016 13:46",
+		"getValueOfProcessField:" : "brunobb 01/23/2018 11:31",
+		"getValuesOfProcessField:" : "brunobb 01/23/2018 11:32",
 		"getZipProcessMapStreamFor:" : "BrunoBB 01/13/2017 13:09",
 		"hasAndContext" : "BrunoBB 12/19/2015 11:16",
 		"hasContextApplications" : "BrunoBB 12/06/2015 13:41",

@@ -18,6 +18,7 @@
 		"formInstance_financial_report:" : "brunobb 01/05/2018 12:09",
 		"setUp" : "BrunoBB 09/16/2016 09:11",
 		"tearDown" : "BrunoBB 03/26/2016 15:51",
+		"testExecuteProcess_issue_366" : "brunobb 01/23/2018 11:09",
 		"testExecuteProcess_visaAborted_01" : "brunobb 01/09/2018 13:38",
 		"testExecuteProcess_visaAborted_02" : "brunobb 01/09/2018 13:43",
 		"testExecuteProcess_visaAborted_03" : "brunobb 01/09/2018 15:10",
