@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_data_entry_approved
 	| currentTask endArtifact |
 

@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_timeStamp_exit
 	| currentTask gateway endArtifact |
 

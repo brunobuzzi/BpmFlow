@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_amount_exit
 	| currentTask gateway endArtifact |
 

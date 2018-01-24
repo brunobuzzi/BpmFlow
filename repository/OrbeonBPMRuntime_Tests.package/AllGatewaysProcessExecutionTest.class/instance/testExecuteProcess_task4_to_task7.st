@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_task4_to_task7
 	| currentTask currentTask2 gateway endArtifact |
 

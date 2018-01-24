@@ -1,4 +1,4 @@
-other
+test
 testProcessCreation
 
 	self assert: true

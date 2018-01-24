@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_02
 	"formInstance_set_timer_term: is set with 15 seconds and this number is used by timer named Term to wait before finishing the process"
 	"the attached event wait for 10 seconds and after that trigger a new transition"

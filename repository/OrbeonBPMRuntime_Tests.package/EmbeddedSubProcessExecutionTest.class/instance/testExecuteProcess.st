@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess
 	| script endArtifact subProcessEmb subProcessReus |
 

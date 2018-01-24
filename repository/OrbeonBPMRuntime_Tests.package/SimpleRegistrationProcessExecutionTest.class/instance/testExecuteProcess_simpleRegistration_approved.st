@@ -1,4 +1,4 @@
-other
+test
 testExecuteProcess_simpleRegistration_approved
 	| currentTask endArtifact formInstance |
 
