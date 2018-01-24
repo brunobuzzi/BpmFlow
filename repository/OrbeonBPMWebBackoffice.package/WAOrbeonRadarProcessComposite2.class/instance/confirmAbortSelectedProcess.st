@@ -5,4 +5,8 @@ confirmAbortSelectedProcess
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	^selectedObject confirmAbortion
+	selectedObject confirmAbortion.
+
+	searchCollectionResult remove: selectedObject.
+
+	selectedObject := nil

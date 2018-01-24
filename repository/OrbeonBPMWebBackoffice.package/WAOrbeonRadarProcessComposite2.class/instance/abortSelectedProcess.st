@@ -5,4 +5,4 @@ abortSelectedProcess
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	^selectedObject abortProcess: self session user
+	^selectedObject abortProcess: self session user.
