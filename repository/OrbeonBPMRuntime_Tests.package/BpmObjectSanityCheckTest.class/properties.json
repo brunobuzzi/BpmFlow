@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmObjectSanityCheckTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
