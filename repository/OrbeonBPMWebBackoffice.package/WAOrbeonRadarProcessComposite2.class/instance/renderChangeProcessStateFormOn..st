@@ -18,4 +18,6 @@ renderChangeProcessStateFormOn: html
 		self renderResumeStateIconOn: html.
 		self renderAbortStateIconOn: html.
 
+		(selectedObject isAborted and: [selectedObject isConfirmed not]) ifTrue: [self renderAbortConfirmationOn: html].
+		
 	].

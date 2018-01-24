@@ -16,7 +16,7 @@ searchByApplication
 
 	searchCollectionResult := searchCollectionResult collect: [:each | each process].
 
-	self getProcessType notEmpty ifTrue: [searchCollectionResult := searchCollectionResult select: [:each | each processName = self getProcessType] ].
+	self getProcessType notEmpty ifTrue: [searchCollectionResult := (searchCollectionResult select: [:each | each processName = self getProcessType]) asSet asOrderedCollection].
 
 	searchValues 
 		removeKey: 'form-definition' ifAbsent: [];

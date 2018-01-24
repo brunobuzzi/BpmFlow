@@ -1,0 +1,3 @@
+other
+isConfirmed
+	^true

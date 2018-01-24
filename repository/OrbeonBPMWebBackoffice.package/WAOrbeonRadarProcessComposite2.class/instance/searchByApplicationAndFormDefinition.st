@@ -8,5 +8,5 @@ searchByApplicationAndFormDefinition
 
 	searchCollectionResult := self getMatrixManagerClass getAllAvailableTaskAssignmentsIn: (OrderedCollection with: application).
 
-	searchCollectionResult := (searchCollectionResult select: [:each | each process hasCurrentActivityNamed: self getSelectedFormDefinition])
-											collect: [:each | each process]
+	searchCollectionResult := ((searchCollectionResult select: [:each | each process hasCurrentActivityNamed: self getSelectedFormDefinition])
+											collect: [:each | each process]) asSet asOrderedCollection

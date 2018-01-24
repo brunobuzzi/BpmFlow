@@ -6,6 +6,7 @@
 		"getAllProcessRoles" : "brunobb 12/27/2017 09:12",
 		"initialize" : "brunobb 12/12/2017 16:56",
 		"isAborted" : "brunobb 12/11/2017 17:14",
+		"isAbortedAndConfirmed" : "brunobb 01/24/2018 10:36",
 		"isConfirmed" : "brunobb 12/12/2017 16:56",
 		"isConfirmed:" : "brunobb 12/12/2017 16:56",
 		"printProcessState" : "brunobb 01/13/2018 14:52",
