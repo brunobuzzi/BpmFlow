@@ -1,10 +1,12 @@
 searching
 searchCancelledProcessByApplication: appName processType: procName fieldName: fieldName fieldValue: fieldValue
-	| convertedValue |
+	| stMappedClass convertedValue |
 
-	convertedValue := (self getSelectedProcessDefinitionOrNil 
+	stMappedClass := (self getSelectedProcessDefinitionOrNil 
 										ifNil: [^searchResult := OrderedCollection new] 
-										ifNotNil: [:procDef | procDef  getTypeOfFieldNamed: fieldName]) fromString: fieldValue.
+										ifNotNil: [:procDef | procDef  getTypeOfFieldNamed: fieldName]).
+
+	convertedValue := [stMappedClass fromString: fieldValue] on: Error do: [:ex | ^searchResult := OrderedCollection new].
 	
 	self searchCancelledProcessByApplication: appName andProcessType: procName.
 
