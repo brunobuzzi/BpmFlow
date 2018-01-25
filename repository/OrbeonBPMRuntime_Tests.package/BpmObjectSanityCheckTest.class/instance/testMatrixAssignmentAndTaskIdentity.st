@@ -1,5 +1,6 @@
 test
 testMatrixAssignmentAndTaskIdentity
+	"Check process tasks with assignments in the current and finished matrix"
 
 	BpmProcessDefinition getAllProcessDefinition do: [:eachProcDef | 
 		(eachProcDef processInstances reject: [:each | each isAborted])  do: [:procInstance | | currentMatrix finishedMatrix currentAssignments finishedAssignments executedActivities |
