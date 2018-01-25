@@ -1,0 +1,4 @@
+other
+isAnonymousStartEnabled
+
+	^definition isAnonymousStartEnabled

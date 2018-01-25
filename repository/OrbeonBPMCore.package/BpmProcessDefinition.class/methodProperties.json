@@ -44,7 +44,7 @@
 	"instance" : {
 		"abortedProcesses" : "brunobb 01/18/2018 13:44",
 		"abortedProcesses:" : "brunobb 12/31/2017 09:59",
-		"addAbortedProcess:" : "brunobb 12/31/2017 10:32",
+		"addAbortedProcess:" : "brunobb 01/25/2018 11:06",
 		"addAllParticipants:" : "BrunoBB 11/28/2015 19:55",
 		"addEndEvent:" : "BrunoBB 11/28/2015 19:56",
 		"addGateway:" : "BrunoBB 11/28/2015 19:56",
@@ -166,7 +166,7 @@
 		"removeFrom:fieldValue:" : "brunobb 12/31/2017 13:02",
 		"removeFromAnonymousStart" : "BrunoBB 04/10/2016 17:59",
 		"removeFromCache" : "BrunoBB 08/31/2016 10:59",
-		"removeProcessInstance:" : "BrunoBB 11/28/2015 19:59",
+		"removeProcessInstance:" : "brunobb 01/25/2018 11:05",
 		"reportAverageTimeDistributionForAllTasksFor:" : "BrunoBB 11/18/2016 03:30",
 		"reportAverageTimeDistributionForAllTasksFor:from:to:satisfying:" : "BrunoBB 11/18/2016 03:30",
 		"reportAverageTimeDistributionForTaskNamed:" : "BrunoBB 11/18/2016 03:30",
