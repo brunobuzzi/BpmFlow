@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmRoundRobinTaskAssignationPolicy",
+	"pools" : [
+		 ],
+	"super" : "BpmRoundRobinAssignationPolicy",
+	"type" : "normal" }

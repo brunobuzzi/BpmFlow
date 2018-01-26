@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 
-	assignmentsByRole := Dictionary new.
+	assignments := Dictionary new.

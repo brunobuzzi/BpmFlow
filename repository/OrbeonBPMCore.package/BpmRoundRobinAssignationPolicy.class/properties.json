@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "brunobb 01/25/2018 16:47",
 	"instvars" : [
-		"assignmentsByRole" ],
+		"assignments" ],
 	"name" : "BpmRoundRobinAssignationPolicy",
 	"pools" : [
 		 ],
