@@ -2,9 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyOn:" : "brunobb 01/26/2018 13:30",
-		"applyToAllOn:" : "brunobb 01/26/2018 11:10",
 		"assignments" : "brunobb 01/26/2018 13:26",
 		"assignments:" : "brunobb 01/26/2018 13:26",
+		"getAssignationCollectionFor:in:" : "brunobb 01/26/2018 13:50",
 		"getAssignationFilterFor:" : "brunobb 01/26/2018 13:30",
 		"initialize" : "brunobb 01/26/2018 13:26" } }

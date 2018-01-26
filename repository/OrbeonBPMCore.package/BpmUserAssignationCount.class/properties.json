@@ -8,7 +8,7 @@
 	"instvars" : [
 		"user",
 		"count" ],
-	"name" : "BpmRoundRobinCount",
+	"name" : "BpmUserAssignationCount",
 	"pools" : [
 		 ],
 	"super" : "BpmObject",
