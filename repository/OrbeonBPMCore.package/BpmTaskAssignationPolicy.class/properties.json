@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"processDefinition" ],
+		"processDefinition",
+		"isAutomatic" ],
 	"name" : "BpmTaskAssignationPolicy",
 	"pools" : [
 		 ],
