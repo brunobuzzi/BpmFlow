@@ -1,0 +1,1 @@
+This class try to balance all assignations for all users (taking into account the current work load).

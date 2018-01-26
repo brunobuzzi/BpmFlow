@@ -19,7 +19,8 @@
 		"formFieldInstances",
 		"participants",
 		"xmlString",
-		"abortedProcesses" ],
+		"abortedProcesses",
+		"assignationPolicy" ],
 	"name" : "BpmProcessDefinition",
 	"pools" : [
 		 ],
