@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyOn:" : "brunobb 01/26/2018 11:09",
-		"applyToAllOn:" : "brunobb 01/26/2018 11:10" } }
+		"applyOn:" : "brunobb 01/26/2018 12:31",
+		"applyToAllOn:" : "brunobb 01/26/2018 11:10",
+		"assignmentsByRole" : "brunobb 01/26/2018 12:21",
+		"assignmentsByRole:" : "brunobb 01/26/2018 12:21",
+		"initialize" : "brunobb 01/26/2018 12:22" } }

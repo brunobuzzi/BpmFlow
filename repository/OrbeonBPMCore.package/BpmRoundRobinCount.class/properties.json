@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"count" ],
+	"name" : "BpmRoundRobinCount",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
