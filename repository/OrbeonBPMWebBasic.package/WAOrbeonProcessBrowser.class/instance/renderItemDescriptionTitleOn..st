@@ -7,13 +7,13 @@ renderItemDescriptionTitleOn: html
 	selectedLateralItem isInCorruptedState 
 	ifTrue: [html span with: [html strong: ('(Corrupted)' translateFor: self session user)]].
 
-	selectedLateralItem hasFinalized
-	ifFalse: [
+	(selectedLateralItem hasFinalized not and: [selectedLateralItem canUnassign])
+	ifTrue: [
 		html anchor 
 			callback: [self freeSelectedAssignment]; 
 			with: [html image url: (SEWAFIconLibrary / #gointo24Png); 
-						title: ('Free Process' translateFor: self session user);
-						altText: ('Free Process' translateFor: self session user)]].
+						title: ('Release Task' translateFor: self session user);
+						altText: ('Release Task' translateFor: self session user)]].
 
 	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
 	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120.
