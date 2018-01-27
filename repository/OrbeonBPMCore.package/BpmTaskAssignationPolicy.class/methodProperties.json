@@ -2,10 +2,12 @@
 	"class" : {
 		"newOn:" : "brunobb 01/25/2018 16:11" },
 	"instance" : {
-		"applyOn:" : "brunobb 01/26/2018 13:56",
+		"applyOn:" : "brunobb 01/26/2018 18:13",
 		"applyToAllOn:" : "brunobb 01/26/2018 11:10",
+		"getAssignationCountCollectionFor:in:" : "brunobb 01/26/2018 17:46",
 		"initialize" : "brunobb 01/25/2018 16:50",
 		"isAutomatic" : "brunobb 01/25/2018 16:48",
 		"isAutomatic:" : "brunobb 01/25/2018 16:48",
 		"processDefinition" : "brunobb 01/25/2018 16:10",
-		"processDefinition:" : "brunobb 01/25/2018 16:10" } }
+		"processDefinition:" : "brunobb 01/25/2018 16:10",
+		"updateSortedCollectionForNewGrants:with:" : "brunobb 01/26/2018 18:04" } }

@@ -1,2 +1,0 @@
-assignation
-getAssignationCollectionFor: aBpmTaskAssignment in: possibleUsers

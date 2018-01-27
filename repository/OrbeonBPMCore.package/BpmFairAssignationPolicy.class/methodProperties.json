@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getAssignationCollectionFor:in:" : "brunobb 01/26/2018 13:50" } }
+		"getAssignationCountCollectionFor:in:" : "brunobb 01/26/2018 17:50",
+		"updateSortedCollectionForNewGrants:with:" : "brunobb 01/26/2018 18:04" } }
