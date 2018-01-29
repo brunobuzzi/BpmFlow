@@ -1,4 +1,4 @@
-other
+task query
 getAvailableUsersToTake: aBpmTaskAssignment
 	"The receiver answer a collection of <BpmUser>s having permissions to take the assignment <aBpmTaskAssignment> "
 

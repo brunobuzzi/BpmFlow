@@ -1,4 +1,4 @@
-other
+task query
 getUserFinishedTask: aBpmTaskInstance
 	"The receiver answer <aBpmUser> that has take the assignment to work on <aBpmTaskInstance>"
 

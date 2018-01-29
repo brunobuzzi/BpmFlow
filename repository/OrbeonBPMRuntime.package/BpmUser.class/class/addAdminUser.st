@@ -1,4 +1,4 @@
-other
+cache
 addAdminUser
 	| user role |
 

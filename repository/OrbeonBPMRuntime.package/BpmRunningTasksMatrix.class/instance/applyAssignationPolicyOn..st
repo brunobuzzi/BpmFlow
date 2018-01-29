@@ -4,4 +4,5 @@ applyAssignationPolicyOn: aBpmTaskAssignment
 	"Assignation policy is only applied to Running Matrix.
 	Finished Matrix do NOT use Assignation Policy"
 
-	aBpmTaskAssignment applyAssignationPolicy
+	aBpmTaskAssignment assignationPolicy isAutomatic 
+	ifTrue: [aBpmTaskAssignment applyAssignationPolicy].

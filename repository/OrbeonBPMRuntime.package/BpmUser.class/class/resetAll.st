@@ -1,4 +1,4 @@
-other
+cache
 resetAll
 	"Reset all user's inboxes"
 

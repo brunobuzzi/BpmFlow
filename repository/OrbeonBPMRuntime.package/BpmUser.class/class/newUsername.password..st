@@ -1,4 +1,4 @@
-other
+user creation
 newUsername: username password: password 
 	| user centralUser |
 
