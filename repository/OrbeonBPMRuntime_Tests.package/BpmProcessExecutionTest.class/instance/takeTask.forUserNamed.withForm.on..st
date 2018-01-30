@@ -8,13 +8,10 @@ takeTask: aBpmTaskInstance forUserNamed: aString withForm: anOrbeonFormInstance 
 	4- Answer the assignment <aBpmTaskAssignment>"
 	| assignment |
 
-	assignment := self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance.
-
-	aBpmTaskInstance externalObject: anOrbeonFormInstance.
-	anOrbeonFormInstance assignment: assignment.
+	assignment := self getAssignmentAndAssociate: aBpmTaskInstance withForm: anOrbeonFormInstance on: aBpmProcessInstance.
 
 	"if <aBpmProcessInstance> is not running the anException stop the execution.
-	Before #take: the object structure has to be connected (see above sentence):
+	Before #take: the object structure has to be connected (see above method):
 		aBpmTaskInstance externalObject: anOrbeonFormInstance.
 		anOrbeonFormInstance assignment: assignment.
 	if not --> the object structure is broken (see issue #364)"

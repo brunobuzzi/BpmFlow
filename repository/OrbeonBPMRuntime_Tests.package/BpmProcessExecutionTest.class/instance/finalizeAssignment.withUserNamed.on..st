@@ -1,6 +1,6 @@
 execution simulation
-processAssignment: aBpmTaskAssignment withUserNamed: aString on: aBpmProcessInstance
-	""
+finalizeAssignment: aBpmTaskAssignment withUserNamed: aString on: aBpmProcessInstance
+	"The receiver get the <BpmUser> named <aString> to finalize the assignment <aBpmTaskAssignment>"
 
 	(self getUserNamed: aString) finalizeAssignment: aBpmTaskAssignment.
 

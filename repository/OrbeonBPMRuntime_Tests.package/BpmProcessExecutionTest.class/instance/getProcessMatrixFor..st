@@ -1,4 +1,4 @@
-other
+task matrix
 getProcessMatrixFor: aBpmProcessInstance
 
 	^aBpmProcessInstance getProcessMatrix

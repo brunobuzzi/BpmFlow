@@ -18,7 +18,7 @@ testExecuteProcess_boolean_exit_aborted
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) isEmpty.
 
-	self processAssignment: assignment withUserNamed: 'alberto' on: procInstance. "assignment is finished"
+	self finalizeAssignment: assignment withUserNamed: 'alberto' on: procInstance. "assignment is finished"
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
 

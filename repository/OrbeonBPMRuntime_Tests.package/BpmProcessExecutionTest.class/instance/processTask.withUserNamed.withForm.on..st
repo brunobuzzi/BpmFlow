@@ -13,4 +13,4 @@ processTask: aBpmTaskInstance withUserNamed: aString withForm: anOrbeonFormInsta
 	(self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: [nil]) 
 	ifNotNil: [self assert: false]. "the assignment has been already taken --> this must answer nil"
 
-	self processAssignment: assignment withUserNamed: aString on: aBpmProcessInstance
+	self finalizeAssignment: assignment withUserNamed: aString on: aBpmProcessInstance

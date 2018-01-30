@@ -1,4 +1,4 @@
-execution simulation
+forms creation
 createDefinition: formName with: definitionMethod in: anOrbeonApplication
 	| savedDefinition |
 

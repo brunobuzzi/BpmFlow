@@ -7,6 +7,7 @@ setUp
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
+	procDefinition assignationPolicy: (BpmNoneAssignationPolicy newOn: procDefinition). 
 
 	users at: 'andrew vo' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo').
 	users at: 'andrew vm' put: (BpmUser getExistingOrNewUserNamed: 'andrew vm').

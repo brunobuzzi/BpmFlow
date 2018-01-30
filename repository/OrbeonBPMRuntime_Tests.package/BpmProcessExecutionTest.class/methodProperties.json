@@ -6,6 +6,8 @@
 		"createFormInstance:definitionNamed:app:definitionMethod:" : "brunobb 01/04/2018 13:05",
 		"createFormInstance:definitionNamed:app:definitionMethod:in:" : "brunobb 01/04/2018 13:04",
 		"defaultTimerEventMonitor" : "brunobb 11/02/2017 12:44",
+		"finalizeAssignment:withUserNamed:on:" : "brunobb 01/30/2018 13:42",
+		"getAssignmentAndAssociate:withForm:on:" : "brunobb 01/30/2018 13:41",
 		"getAssignmentFor:on:" : "BrunoBB 03/29/2016 14:31",
 		"getAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:30",
 		"getFinishedAssignmentFor:on:" : "BrunoBB 03/29/2016 14:44",
@@ -18,8 +20,7 @@
 		"getUserNamed:" : "BrunoBB 03/27/2016 16:13",
 		"procInstance" : "BrunoBB 12/07/2015 06:51",
 		"procInstance:" : "BrunoBB 12/07/2015 06:51",
-		"processAssignment:withUserNamed:on:" : "brunobb 01/23/2018 14:36",
 		"processTask:withUserNamed:withForm:" : "BrunoBB 12/07/2015 06:59",
-		"processTask:withUserNamed:withForm:on:" : "brunobb 01/23/2018 14:36",
+		"processTask:withUserNamed:withForm:on:" : "brunobb 01/30/2018 13:43",
 		"setUp" : "BrunoBB 09/17/2016 07:40",
-		"takeTask:forUserNamed:withForm:on:" : "brunobb 01/19/2018 13:41" } }
+		"takeTask:forUserNamed:withForm:on:" : "brunobb 01/30/2018 13:37" } }
