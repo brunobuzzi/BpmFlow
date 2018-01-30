@@ -29,9 +29,9 @@
 		"renderFormDefinitionComboOn:" : "BrunoBB 09/28/2015 16:52",
 		"renderGatewayDefinition:on:" : "BrunoBB 06/18/2016 16:06",
 		"renderItemComponentOn:" : "BrunoBB 12/04/2016 12:49",
-		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 04/10/2016 18:18",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 01/29/2018 16:57",
 		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 06/18/2016 16:21",
-		"renderItemDescriptionTitleOn:" : "BrunoBB 09/11/2016 13:44",
+		"renderItemDescriptionTitleOn:" : "brunobb 01/29/2018 17:32",
 		"renderLateralItemDetailsOn:for:" : "BrunoBB 06/27/2015 13:59",
 		"renderProcessTypeComboOn:" : "BrunoBB 12/10/2015 08:56",
 		"renderSearchAreaOn:" : "BrunoBB 04/14/2017 16:05",
@@ -50,5 +50,6 @@
 		"searchMatchingCategories" : "BrunoBB 12/15/2015 10:11",
 		"searchMatchingProcesses" : "BrunoBB 09/28/2015 16:48",
 		"selectedLateralItem:" : "BrunoBB 06/16/2016 14:03",
+		"setAssignationPolicy" : "brunobb 01/29/2018 17:18",
 		"toggleAnonymousStart" : "BrunoBB 04/10/2016 18:23",
 		"xmlHeader" : "BrunoBB 01/13/2017 13:23" } }

@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 01/25/2018 16:11" },
+		"getAllAssignationPoliciesArray" : "brunobb 01/29/2018 17:18",
+		"newOn:" : "brunobb 01/25/2018 16:11",
+		"printPolicyName" : "brunobb 01/29/2018 16:21" },
 	"instance" : {
 		"applyOn:" : "brunobb 01/26/2018 18:13",
 		"applyToAllOn:" : "brunobb 01/26/2018 11:10",
@@ -8,6 +10,7 @@
 		"initialize" : "brunobb 01/25/2018 16:50",
 		"isAutomatic" : "brunobb 01/25/2018 16:48",
 		"isAutomatic:" : "brunobb 01/25/2018 16:48",
+		"printPolicyName" : "brunobb 01/29/2018 16:21",
 		"processDefinition" : "brunobb 01/25/2018 16:10",
 		"processDefinition:" : "brunobb 01/25/2018 16:10",
 		"updateSortedCollectionForNewGrants:with:" : "brunobb 01/26/2018 18:04" } }

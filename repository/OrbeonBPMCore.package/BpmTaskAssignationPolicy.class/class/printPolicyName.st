@@ -1,0 +1,4 @@
+other
+printPolicyName
+
+	^self subclassResponsibility
