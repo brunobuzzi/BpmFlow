@@ -1,4 +1,4 @@
-other
+responsibility
 grantUser: aBpmUser
 	"The user <aBpmUser> is granted in the receiver"
 

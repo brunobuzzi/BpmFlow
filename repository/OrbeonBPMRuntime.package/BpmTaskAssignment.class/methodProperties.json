@@ -3,7 +3,6 @@
 		"newFor:task:in:" : "BrunoBB 12/04/2015 09:57" },
 	"instance" : {
 		"addToMatrix" : "BrunoBB 01/17/2016 13:51",
-		"addWorkerUser:" : "BrunoBB 04/12/2016 14:04",
 		"application" : "brunobb 01/29/2018 13:44",
 		"applicationName" : "BrunoBB 12/11/2015 14:15",
 		"applyAssignationPolicy" : "brunobb 01/28/2018 18:02",
@@ -69,6 +68,8 @@
 		"removeFromMatrix" : "BrunoBB 01/17/2016 14:00",
 		"removeLastWorker" : "BrunoBB 01/18/2016 09:37",
 		"resetAll" : "BrunoBB 12/11/2015 13:29",
+		"role" : "brunobb 01/31/2018 09:52",
+		"role:" : "brunobb 01/31/2018 09:53",
 		"roleName" : "BrunoBB 12/03/2015 12:13",
 		"roleName:" : "BrunoBB 12/03/2015 12:13",
 		"setAssignationDate" : "BrunoBB 06/01/2016 13:41",

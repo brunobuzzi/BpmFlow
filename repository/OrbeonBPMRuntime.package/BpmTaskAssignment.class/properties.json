@@ -17,6 +17,7 @@
 		"process",
 		"task",
 		"user",
+		"role",
 		"matrix",
 		"hasContextApplications",
 		"canUnassign" ],
