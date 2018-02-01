@@ -2,6 +2,7 @@
 	"class" : {
 		"getFinishedMatrixManagerClass" : "brunobb 01/23/2018 11:11" },
 	"instance" : {
+		"associate:withForm:on:" : "brunobb 02/01/2018 13:19",
 		"createDefinition:with:in:" : "BrunoBB 08/13/2016 09:53",
 		"createFormInstance:definitionNamed:app:definitionMethod:" : "brunobb 01/04/2018 13:05",
 		"createFormInstance:definitionNamed:app:definitionMethod:in:" : "brunobb 01/04/2018 13:04",

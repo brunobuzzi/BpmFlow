@@ -1,66 +1,31 @@
-test
-testExecuteProcess_issue_373
-	| currentTask assignment gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
+execution and test
+resumeFromTask3AndTestProcess: aBpmProcessInstance
+	"The receiver resume the execution of <aBpmProcessInstance> from the <aBpmTaskInstance> number 2 and finish it execution"
+	| currentTask gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
-
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
-	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
-	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
-
-	"Step 1 - Form [citizen-appliance]"
-	currentTask := procInstance currentActivities last.
-	self assert: (currentTask getDefinitionName = 'citizen-appliance').
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-
-	assignment := self takeTask: currentTask forUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance on: procInstance.
-
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
-	self assert: ((users at: 'andrew vo') getCurrentAssignments select: [:each | each processId = processId]) notEmpty.
-	
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') ungrantUser: (users at: 'andrew vo').
-
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self assert: ((users at: 'andrew vo') getCurrentAssignments select: [:each | each processId = processId]) isEmpty.
-
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo').
-	(users at: 'andrew vo') take: assignment.
-
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
-	self assert: ((users at: 'andrew vo') getCurrentAssignments select: [:each | each processId = processId]) notEmpty.
-
-	self finalizeAssignment: assignment withUserNamed: 'andrew vo' on: procInstance.
-
-	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 1).
-
-	"Step 2 - Form [check-basic-data]"
-	currentTask :=  procInstance currentActivities last.
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self assert: (currentTask getDefinitionName = 'check-basic-data').
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data.
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
-	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
+	processId := aBpmProcessInstance id.
+	currentProcessMatrix := aBpmProcessInstance getProcessMatrix.
+	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 3 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 
 	"Step 4 - Form [check-previous-appliance]"
-	currentTask := procInstance currentActivities last.
+	currentTask := aBpmProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance.
+	self processTask: currentTask withUserNamed: 'andrew vm' withForm: (self formInstance_check_previous_appliance: aBpmProcessInstance).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 1).
 
 	"Sub Process Execution [home-office-check] starts here "
-		subProcessL1 := procInstance subprocesses last.
+		subProcessL1 := aBpmProcessInstance subprocesses last.
 		subProcId := subProcessL1 id.
 		subProcCurrentMatrix := subProcessL1 getProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
 
-		self assert: (procInstance includesSubProcess: subProcessL1).
+		self assert: (aBpmProcessInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
 		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
 
@@ -126,24 +91,24 @@ testExecuteProcess_issue_373
 	"Top Process [visa-appliance] resume execution "
 
 	"Step 5 - Form [analyze-appliance]"
-	currentTask := procInstance currentActivities last.
+	currentTask := aBpmProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'analyze-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_analyze_appliance.
+	self processTask: currentTask withUserNamed: 'andrew vm' withForm: (self formInstance_analyze_appliance: aBpmProcessInstance).
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 2).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
 	"Step 6 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'granted').
 
 	"Step 7 - Form [emit-visa]"
-	currentTask := procInstance currentActivities last.
+	currentTask := aBpmProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'emit-visa').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_emit_visa.
+	self processTask: currentTask withUserNamed: 'andrew vm' withForm: (self formInstance_emit_visa: aBpmProcessInstance).
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 3).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 
-	endArtifact := procInstance endEvents asOrderedCollection last.
+	endArtifact := aBpmProcessInstance endEvents asOrderedCollection last.
 	self assert: ((endArtifact getDefinitionName = 'visa apply end') and: [endArtifact isEndEvent]).

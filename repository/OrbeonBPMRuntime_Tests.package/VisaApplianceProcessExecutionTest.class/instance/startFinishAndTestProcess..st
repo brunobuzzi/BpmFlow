@@ -1,4 +1,4 @@
-process
+execution and test
 startFinishAndTestProcess: aBpmProcessInstance
 	"The receiver start the execution of the new created <aBpmProcessInstance> and finish it execution"
 	| currentTask processId currentProcessMatrix finishedProcessMatrix |
