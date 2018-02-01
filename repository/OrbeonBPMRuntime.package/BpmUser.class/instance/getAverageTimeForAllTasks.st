@@ -1,4 +1,4 @@
 distribution
 getAverageTimeForAllTasks
 
-	^self getAverageTimeForTasksIn: self getFinishedAssigments
+	^self getAverageTimeForTasksIn: self getFinishedAssignments

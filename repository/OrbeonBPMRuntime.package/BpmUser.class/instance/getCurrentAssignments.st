@@ -1,5 +1,5 @@
 inbox
-getFinishedAssigments
+getCurrentAssignments
 	"Answer receiver's finished assignment <BpmTaskAssignment>"
 
-	^self getFinishedAssigmentsInbox messages
+	^self getCurrentAssignmentsInbox messages

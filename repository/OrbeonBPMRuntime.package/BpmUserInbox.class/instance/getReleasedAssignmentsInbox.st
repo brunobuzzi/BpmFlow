@@ -1,5 +1,5 @@
 default boxes
-getReleasedAssigmentsInbox
+getReleasedAssignmentsInbox
 
 	^boxChildren 
 		at: self getReleasedAssignmentsName 

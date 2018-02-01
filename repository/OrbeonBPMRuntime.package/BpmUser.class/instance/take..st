@@ -9,7 +9,7 @@ take: aBpmTaskAssignment
 		setAssignationDate; "time stamp when the task was taken"
 		registerInProcess. "for historic purpose"
 
-	self getCurrentAssigmentsInbox acceptEntry: aBpmTaskAssignment. "store the assignment in the current assignment inbox"
+	self getCurrentAssignmentsInbox acceptEntry: aBpmTaskAssignment. "store the assignment in the current assignment inbox"
 
 	aBpmTaskAssignment user: self.
 

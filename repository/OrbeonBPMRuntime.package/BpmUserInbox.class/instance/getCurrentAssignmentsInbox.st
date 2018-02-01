@@ -1,5 +1,5 @@
 default boxes
-getCurrentAssigmentsInbox
+getCurrentAssignmentsInbox
 
 	^boxChildren 
 		at: self getCurrentAssignmentsName 

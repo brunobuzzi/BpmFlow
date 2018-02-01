@@ -1,5 +1,5 @@
 inbox
-getReleasedAssigments
+getReleasedAssignments
 	"Answer receiver's released assignment <BpmTaskAssignment>"
 
-	^self getReleasedAssigmentsInbox messages
+	^self getReleasedAssignmentsInbox messages

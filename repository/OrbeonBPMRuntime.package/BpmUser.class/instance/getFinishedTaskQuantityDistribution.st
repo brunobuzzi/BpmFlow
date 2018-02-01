@@ -1,4 +1,4 @@
 distribution
 getFinishedTaskQuantityDistribution
 
-	^self getTaskQuantityDistributionIn: self getFinishedAssigments
+	^self getTaskQuantityDistributionIn: self getFinishedAssignments
