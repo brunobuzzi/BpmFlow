@@ -1,4 +1,4 @@
 free transitions
 getSelectedUserAssignments
 
-	^selectedObject getCurrentAssigments asOrderedCollection
+	^selectedObject getCurrentAssignments asOrderedCollection

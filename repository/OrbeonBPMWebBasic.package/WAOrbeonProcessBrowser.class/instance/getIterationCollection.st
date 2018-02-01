@@ -4,4 +4,4 @@ getIterationCollection
 
 	self modeIsFinishedTasks ifFalse: [^lateralCollection].
 
-	^self session user getFinishedAssigments asArray
+	^self session user getFinishedAssignments asArray
