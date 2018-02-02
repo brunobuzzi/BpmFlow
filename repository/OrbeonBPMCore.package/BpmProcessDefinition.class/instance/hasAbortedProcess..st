@@ -1,4 +1,4 @@
-other
+aborted
 hasAbortedProcess: procId
 	"Answer whether or not the receiver has an aborted process <aBpmProcessInstance> with id <procId>"
 

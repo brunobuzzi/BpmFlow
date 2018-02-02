@@ -1,4 +1,4 @@
-other
+assignation policy
 printPolicyName
 
 	^assignationPolicy printPolicyName

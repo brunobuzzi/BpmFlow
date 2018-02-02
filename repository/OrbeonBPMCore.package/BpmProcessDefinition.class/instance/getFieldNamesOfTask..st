@@ -1,4 +1,4 @@
-other
+get artifacts
 getFieldNamesOfTask: taskName
 	"Answer a collection with all field names for task named <taskName>.
 	Includes field of all form definition versions and types of the fields.

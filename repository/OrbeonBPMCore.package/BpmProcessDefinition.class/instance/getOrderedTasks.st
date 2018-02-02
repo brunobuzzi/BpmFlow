@@ -1,4 +1,4 @@
-other
+get artifacts
 getOrderedTasks
 
 	^executionPath getOrderedTasks

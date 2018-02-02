@@ -1,3 +1,3 @@
-other
+subprocesses
 getTopProcess
 	^self subclassResponsibility
