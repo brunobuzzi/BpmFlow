@@ -9,3 +9,4 @@ renderItemDescriptionAditionalDataOn: html
 	html output: selectedLateralItem hasFinishedProcesses.
 	html span: [html strong: ('Assignation Policy:' translateFor: self session user)]. 
 	html output: (selectedLateralItem printPolicyName translateFor: self session user).
+	selectedLateralItem hasAutomaticTaskAssignation ifTrue: [html output: ' @'].

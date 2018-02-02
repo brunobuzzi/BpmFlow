@@ -1,4 +1,4 @@
-jquery
+assignation policy
 renderJQueryComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod: actionMethod arguments: arguments extent: aPoint
    | id |
 

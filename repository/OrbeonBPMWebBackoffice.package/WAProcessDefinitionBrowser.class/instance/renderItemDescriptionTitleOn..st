@@ -16,7 +16,7 @@ renderItemDescriptionTitleOn: html
 					altText: ('Process Map' translateFor: self session user)].
 
 	list := BpmTaskAssignationPolicy getAllAssignationPoliciesArray.
-	jQueryIdAp := self renderJQueryComboBoxDialogOn: html list: list forActionNamed: 'assignationPolicy' actionMethod: #setAssignationPolicy arguments: #() extent: 430@140.
+	jQueryIdAp := self renderJQueryComboBoxDialogOn: html list: list forActionNamed: 'assignationPolicy' actionMethod: #setAssignationPolicy arguments: #() extent: 430@160.
 	html anchor 
 		class: 'cursor-pointer';
 		"callback: [self downloadProcessMap]; "

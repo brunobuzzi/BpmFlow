@@ -11,7 +11,7 @@ untake: aBpmTaskAssignment
 	aBpmTaskAssignment hasPerformers 
 	ifTrue: [aBpmTaskAssignment removeLastWorker]. "remove the last user and role from the BpmTaskInstace"
 
-	aBpmTaskAssignment free. "add to free matrix, user set to nil"
+	aBpmTaskAssignment free. "add to free matrix, <user> set to nil"
 
 	"remove it from the the current assignment inbox"
 	"add the assignment to released inbox"

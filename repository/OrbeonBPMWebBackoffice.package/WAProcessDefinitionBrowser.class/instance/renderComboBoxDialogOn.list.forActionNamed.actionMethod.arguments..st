@@ -1,4 +1,4 @@
-jquery
+assignation policy
 renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod: actionMethod arguments: arguments
 	"<buttonsNames> Array with: (Array with: name with: value) with: (Array with: name2 with: value2)
 	Array with: #('First Value' #firstValue) with: #('Second Value' #secondValue)"
@@ -13,7 +13,17 @@ renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod:
 					callback: [:policyName | self setAssignationPolicy: policyName];
 					selected: selectedLateralItem printPolicyName.
 
-				html submitButton with: ('Confirm' translateFor: self session user).
+				html label: [ 
+					html checkbox class: 'margin-top-20px';
+						id: html nextId;
+						value: selectedLateralItem assignationPolicy isAutomatic;
+						callback: [ :value | self setAutomaticAssignationPolicy: value ];
+						onChange: (html jQuery ajax serializeForm).
+				html text: ('Is Automatic' translateFor: self session user).].
+
+				html submitButton 
+					with: ('Confirm' translateFor: self session user);	
+					callback: [self saveAssignationPolicy] .
 			]
 		] 
 	].

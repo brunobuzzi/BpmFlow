@@ -1,4 +1,4 @@
 other
 printPolicyName
 
-	^'Round Robin Task Policy'
+	^'Round Robin Role Policy'
