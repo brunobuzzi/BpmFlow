@@ -19,10 +19,6 @@ test_fairAssignation_visaAccepted
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
 
-	assignments := Dictionary new.
-	assignments at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: (users at: 'andrew vo') getCurrentAssignments size);
-					at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: (users at: 'andrew vo2') getCurrentAssignments size);
-					at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: (users at: 'andrew vo3') getCurrentAssignments size).
 
 	1 to: 10 do: [:index | | newProcess |
 		newProcess := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
@@ -34,42 +30,13 @@ test_fairAssignation_visaAccepted
 	assignmentsInProcess at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: ((users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 	assignmentsInProcess at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: ((users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 
-	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo2') count)].
-	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo3') count)].
-	((assignments at: 'andrew vo2') count > (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count < (assignmentsInProcess at: 'andrew vo3') count)].
-
-	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo2') count)].
-	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo3') count)].
-	((assignments at: 'andrew vo2') count < (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count > (assignmentsInProcess at: 'andrew vo3') count)].
-
-	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo2') count) 
-								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)]) ]. 
-	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo3') count) 
-								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo3') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo3') count)])]. 
-	((assignments at: 'andrew vo3') count = (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo3') count = (assignmentsInProcess at: 'andrew vo2') count) 
-								or: [((assignmentsInProcess at: 'andrew vo3') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo3') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)])]. 
-
+	self assert: (((assignmentsInProcess at: 'andrew vo') count - (assignmentsInProcess at: 'andrew vo2') count) abs < 2).
+	self assert: (((assignmentsInProcess at: 'andrew vo') count - (assignmentsInProcess at: 'andrew vo2') count) abs < 2).
+	self assert: (((assignmentsInProcess at: 'andrew vo2') count - (assignmentsInProcess at: 'andrew vo3') count) abs < 2).	
 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
 	self assert: ((users at: 'andrew vo2') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
-
-	assignments := Dictionary new.
-	assignments at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: (users at: 'andrew vo') getCurrentAssignments size);
-					at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: (users at: 'andrew vo2') getCurrentAssignments size);
-					at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: (users at: 'andrew vo3') getCurrentAssignments size).
 
 	"Here we send all 10 processes to the second task <check-basic-data> by finalizing current task <citizen-appliance> "
 	"Step 1 - Form [citizen-appliance]" 
@@ -91,32 +58,9 @@ test_fairAssignation_visaAccepted
 	assignmentsInProcess at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: ((users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 	assignmentsInProcess at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: ((users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 
-	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo2') count)].
-	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo3') count)].
-	((assignments at: 'andrew vo2') count > (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count < (assignmentsInProcess at: 'andrew vo3') count)].
-
-	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo2') count)].
-	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo3') count)].
-	((assignments at: 'andrew vo2') count < (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count > (assignmentsInProcess at: 'andrew vo3') count)].
-
-	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo2') count) 
-								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)]) ]. 
-	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo3') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo3') count) 
-								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo3') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo3') count)])]. 
-	((assignments at: 'andrew vo3') count = (assignments at: 'andrew vo2') count) 
-	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo3') count = (assignmentsInProcess at: 'andrew vo2') count) 
-								or: [((assignmentsInProcess at: 'andrew vo3') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
-								or: [((assignmentsInProcess at: 'andrew vo3') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)])]. 
+	self assert: (((assignmentsInProcess at: 'andrew vo') count - (assignmentsInProcess at: 'andrew vo2') count) abs < 2).
+	self assert: (((assignmentsInProcess at: 'andrew vo') count - (assignmentsInProcess at: 'andrew vo2') count) abs < 2).
+	self assert: (((assignmentsInProcess at: 'andrew vo2') count - (assignmentsInProcess at: 'andrew vo3') count) abs < 2).	
 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 

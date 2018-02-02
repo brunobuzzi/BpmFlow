@@ -15,4 +15,4 @@ resumeAssignFromTask2AndTestProcess: aBpmProcessInstance
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
-	self resumeFromTask3AndTestProcess: aBpmProcessInstance.
+	self resumeAssignFromTask3AndTestProcess: aBpmProcessInstance.
