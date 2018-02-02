@@ -1,5 +1,6 @@
 other
 setUp
+	| subProcDef |
 
 	super setUp.
 	users := Dictionary new.
@@ -7,7 +8,11 @@ setUp
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
-	procDefinition assignationPolicy: (BpmNoneAssignationPolicy newOn: procDefinition). 
+	procDefinition setNoneAssignationPolicy.
+	subProcDef := procDefinition subProcesses asArray last.
+	subProcDef setNoneAssignationPolicy.
+	subProcDef := subProcDef subProcesses asArray last.
+	subProcDef setNoneAssignationPolicy.
 
 	users at: 'andrew vo' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo').
 	users at: 'andrew vm' put: (BpmUser getExistingOrNewUserNamed: 'andrew vm').

@@ -1,7 +1,7 @@
 test
 test_fairAssignation_visaAccepted
 	"Testing Assignation Policy Fair (global)"
-	| newRoundRobinProcesses availableUsers assignations assignmentsInProcess subProc |
+	| newRoundRobinProcesses availableUsers assignmentsInProcess subProc assignments |
 
 	users at: 'andrew vo2' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo2').
 	users at: 'andrew vo3' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo3').
@@ -19,28 +19,57 @@ test_fairAssignation_visaAccepted
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
 
-	self assert: (procDefinition assignationPolicy assignments allSatisfy: [:eachCount | eachCount count = 0]). 
+	assignments := Dictionary new.
+	assignments at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: (users at: 'andrew vo') getCurrentAssignments size);
+					at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: (users at: 'andrew vo2') getCurrentAssignments size);
+					at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: (users at: 'andrew vo3') getCurrentAssignments size).
 
 	1 to: 10 do: [:index | | newProcess |
 		newProcess := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 		newRoundRobinProcesses add: newProcess.
 	].
 
-	assignations := procDefinition assignationPolicy assignments at: 'visa officer'. "answer <aSortedCollection>"
+	assignmentsInProcess := Dictionary new.
+	assignmentsInProcess at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: ((users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
+	assignmentsInProcess at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: ((users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
+	assignmentsInProcess at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: ((users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 
-	self assert: ((assignations select: [:each | each count = 3]) size = 2).
-	self assert: ((assignations select: [:each | each count = 4]) size = 1).
+	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo2') count)].
+	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo3') count)].
+	((assignments at: 'andrew vo2') count > (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count < (assignmentsInProcess at: 'andrew vo3') count)].
 
-	assignmentsInProcess := (users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
-	assignmentsInProcess := (users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
-	assignmentsInProcess := (users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
+	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo2') count)].
+	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo3') count)].
+	((assignments at: 'andrew vo2') count < (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count > (assignmentsInProcess at: 'andrew vo3') count)].
+
+	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo2') count) 
+								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)]) ]. 
+	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo3') count) 
+								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo3') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo3') count)])]. 
+	((assignments at: 'andrew vo3') count = (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo3') count = (assignmentsInProcess at: 'andrew vo2') count) 
+								or: [((assignmentsInProcess at: 'andrew vo3') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo3') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)])]. 
+
 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
 	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
 	self assert: ((users at: 'andrew vo2') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
+
+	assignments := Dictionary new.
+	assignments at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: (users at: 'andrew vo') getCurrentAssignments size);
+					at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: (users at: 'andrew vo2') getCurrentAssignments size);
+					at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: (users at: 'andrew vo3') getCurrentAssignments size).
 
 	"Here we send all 10 processes to the second task <check-basic-data> by finalizing current task <citizen-appliance> "
 	"Step 1 - Form [citizen-appliance]" 
@@ -57,15 +86,40 @@ test_fairAssignation_visaAccepted
 		self finalizeAssignment: assignment withUserNamed: 'andrew vo3' on: assignment process.
 	].
 
-	self assert: ((assignations select: [:each | each count = 6]) size = 1).
-	self assert: ((assignations select: [:each | each count = 7]) size = 2).
+	assignmentsInProcess := Dictionary new.
+	assignmentsInProcess at: 'andrew vo' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo') count: ((users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
+	assignmentsInProcess at: 'andrew vo2' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo2') count: ((users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
+	assignmentsInProcess at: 'andrew vo3' put: (BpmUserAssignationCount newFor: (users at: 'andrew vo3') count: ((users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process]) size).
 
-	"here we compare with 2,3 and 4. 2 is also used because first distribution can be 3,3,4 and the second 4,4,2 "
-	assignmentsInProcess := (users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
-	assignmentsInProcess := (users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
-	assignmentsInProcess := (users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
+	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo2') count)].
+	((assignments at: 'andrew vo') count > (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count < (assignmentsInProcess at: 'andrew vo3') count)].
+	((assignments at: 'andrew vo2') count > (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count < (assignmentsInProcess at: 'andrew vo3') count)].
+
+	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo2') count)].
+	((assignments at: 'andrew vo') count < (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo') count > (assignmentsInProcess at: 'andrew vo3') count)].
+	((assignments at: 'andrew vo2') count < (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((assignmentsInProcess at: 'andrew vo2') count > (assignmentsInProcess at: 'andrew vo3') count)].
+
+	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo2') count) 
+								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)]) ]. 
+	((assignments at: 'andrew vo') count = (assignments at: 'andrew vo3') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo') count = (assignmentsInProcess at: 'andrew vo3') count) 
+								or: [((assignmentsInProcess at: 'andrew vo') count = ((assignmentsInProcess at: 'andrew vo3') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo') count + 1) = ((assignmentsInProcess at: 'andrew vo3') count)])]. 
+	((assignments at: 'andrew vo3') count = (assignments at: 'andrew vo2') count) 
+	ifTrue: [self assert: ((((assignmentsInProcess at: 'andrew vo3') count = (assignmentsInProcess at: 'andrew vo2') count) 
+								or: [((assignmentsInProcess at: 'andrew vo3') count = ((assignmentsInProcess at: 'andrew vo2') count + 1))])
+								or: [((assignmentsInProcess at: 'andrew vo3') count + 1) = ((assignmentsInProcess at: 'andrew vo2') count)])]. 
+
+	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
+	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
+	self assert: ((users at: 'andrew vo2') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
 
 	newRoundRobinProcesses do: [:procInst | self resumeFromTask2AndTestProcess: procInst]
