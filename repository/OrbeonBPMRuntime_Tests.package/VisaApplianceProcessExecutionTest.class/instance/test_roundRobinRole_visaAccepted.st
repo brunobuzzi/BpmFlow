@@ -10,14 +10,13 @@ test_roundRobinRole_visaAccepted
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo2').
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo3').
 
-	procDefinition assignationPolicy: (BpmRoundRobinRoleAssignationPolicy newOn: procDefinition). "new assignation policy is created here (all user has count := 0)"
-	procDefinition assignationPolicy isAutomatic: true.
+	procDefinition setRoundRobinRoleAssignationPolicy.
+
+	procDefinition setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 	subProc := procDefinition subProcesses asArray last.
-	subProc assignationPolicy: (BpmRoundRobinRoleAssignationPolicy newOn: procDefinition). "new assignation policy is created here (all user has count := 0)"
-	subProc assignationPolicy isAutomatic: true.
+	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 	subProc := subProc subProcesses asArray last.
-	subProc assignationPolicy: (BpmRoundRobinRoleAssignationPolicy newOn: procDefinition). "new assignation policy is created here (all user has count := 0)"
-	subProc assignationPolicy isAutomatic: true.
+	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
