@@ -1,5 +1,5 @@
 test
-test_roundRobinRole_visaAccepted
+test_roundRobinTaskAssignation_visaAccepted
 	"Testing Assignation Policy Round Robin by Role"
 	| newRoundRobinProcesses availableUsers assignations assignmentsInProcess subProc |
 
@@ -10,13 +10,11 @@ test_roundRobinRole_visaAccepted
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo2').
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo3').
 
-	procDefinition setRoundRobinRoleAssignationPolicy.
-
-	procDefinition setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
+	procDefinition setRoundRobinTaskAssignationPolicy: true . "new assignation policy is created here (all user has count := 0)"
 	subProc := procDefinition subProcesses asArray last.
-	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
+	subProc setRoundRobinTaskAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 	subProc := subProc subProcesses asArray last.
-	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
+	subProc setRoundRobinTaskAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
@@ -28,7 +26,7 @@ test_roundRobinRole_visaAccepted
 		newRoundRobinProcesses add: newProcess.
 	].
 
-	assignations := procDefinition assignationPolicy assignments at: 'visa officer'. "answer <aSortedCollection>"
+	assignations := procDefinition assignationPolicy assignments at: 'citizen-appliance'. "answer <aSortedCollection>"
 
 	self assert: ((assignations select: [:each | each count = 3]) size = 2).
 	self assert: ((assignations select: [:each | each count = 4]) size = 1).
@@ -59,15 +57,20 @@ test_roundRobinRole_visaAccepted
 		self finalizeAssignment: assignment withUserNamed: 'andrew vo3' on: assignment process.
 	].
 
-	self assert: ((assignations select: [:each | each count = 6]) size = 1).
-	self assert: ((assignations select: [:each | each count = 7]) size = 2).
+	assignations := procDefinition assignationPolicy assignments at: 'check-basic-data'. "answer <aSortedCollection>"
 
-	"here we compare with 2,3 and 4. 2 is also used because first distribution can be 3,3,4 and the second 4,4,2 "
+	self assert: ((assignations select: [:each | each count = 3]) size = 2).
+	self assert: ((assignations select: [:each | each count = 4]) size = 1).
+
 	assignmentsInProcess := (users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
+	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
 	assignmentsInProcess := (users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
+	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
 	assignmentsInProcess := (users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
-	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
+	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
+
+	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
+	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
+	self assert: ((users at: 'andrew vo2') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
 
 	newRoundRobinProcesses do: [:procInst | self resumeFromTask2AndTestProcess: procInst]

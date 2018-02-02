@@ -43,4 +43,6 @@
 		"testExecuteProcess_visaAnalizeAndRejected" : "brunobb 01/05/2018 13:11",
 		"testExecuteProcess_visaRejected" : "BrunoBB 04/23/2016 16:03",
 		"testFieldsInGatewayConditions" : "BrunoBB 04/19/2016 16:13",
-		"test_roundRobinRole_visaAccepted" : "brunobb 02/02/2018 10:30" } }
+		"test_fairAssignation_visaAccepted" : "brunobb 02/02/2018 11:05",
+		"test_roundRobinRoleAssignation_visaAccepted" : "brunobb 02/02/2018 11:03",
+		"test_roundRobinTaskAssignation_visaAccepted" : "brunobb 02/02/2018 11:24" } }
