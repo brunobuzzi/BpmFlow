@@ -9,6 +9,8 @@ getValueOfProcessField: fieldName
 		(eachProcInstance getExecutedArtifactsReversed select: [:each | each hasForm]) do: [:each | (each getValueOfFormField: fieldName) ifNotNil: [:value | ^value]].
 
 		eachProcInstance getExecutedScriptsReversed do: [:each | (each getValueOfFormField: fieldName) ifNotNil: [:value | ^value]].
+
+		(externalVariables includesKey: fieldName) ifTrue: [^self valueAtExternalVariable: fieldName].
 	].
 
 	^nil
