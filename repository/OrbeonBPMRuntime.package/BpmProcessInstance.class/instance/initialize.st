@@ -16,3 +16,4 @@ initialize
 	executedScripts := OrderedCollection new.
 	intermediateEvents := Dictionary new.
 	states := OrderedCollection with: (BpmRunningState newFor: self).
+	externalVariables := RcKeyValueDictionary new.
