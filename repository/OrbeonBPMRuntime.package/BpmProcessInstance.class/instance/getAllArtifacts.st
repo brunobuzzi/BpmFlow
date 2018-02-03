@@ -1,4 +1,4 @@
-other
+tasks
 getAllArtifacts
 
 	^currentActivities, executedActivities

@@ -15,6 +15,9 @@ renderItemDescriptionTitleOn: html
 					title: ('Process Map' translateFor: self session user);
 					altText: ('Process Map' translateFor: self session user)].
 
+	"with <BpmNoneAssignationPolicy> there is nothing to Apply. with an autimatic assignation policy --> there is nothing to Apply"
+	(selectedLateralItem hasNoneAssignationPolicy or:[selectedLateralItem hasAutomaticTaskAssignation]) ifFalse: [self renderApplyAssignationPolicyOn: html.]. 
+
 	list := BpmTaskAssignationPolicy getAllAssignationPoliciesArray.
 	jQueryIdAp := self renderJQueryComboBoxDialogOn: html list: list forActionNamed: 'assignationPolicy' actionMethod: #setAssignationPolicy arguments: #() extent: 430@160.
 	html anchor 

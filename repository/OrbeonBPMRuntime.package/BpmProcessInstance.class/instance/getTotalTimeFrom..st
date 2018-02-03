@@ -1,4 +1,4 @@
-other
+execution time
 getTotalTimeFrom: aTimeStamp
 	| totalTime |
 

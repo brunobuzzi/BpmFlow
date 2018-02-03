@@ -1,4 +1,4 @@
-other
+tasks
 indexOfTransition: anBpmArtifactInstance
 	"Answer the index of the receiver transition <anBpmArtifactInstance>"
 

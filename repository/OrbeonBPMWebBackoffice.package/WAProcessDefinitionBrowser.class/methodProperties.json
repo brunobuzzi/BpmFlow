@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"applyAssignationPolicy" : "brunobb 02/03/2018 09:38",
 		"categories" : "BrunoBB 07/02/2015 12:37",
 		"categories:" : "BrunoBB 07/02/2015 12:37",
 		"downloadProcessMap" : "BrunoBB 01/13/2017 13:18",
@@ -23,6 +24,7 @@
 		"onTransitionSelected:" : "BrunoBB 06/16/2016 13:41",
 		"registerProcessType:" : "BrunoBB 06/13/2015 08:39",
 		"removeProcessDefinition" : "BrunoBB 08/30/2016 13:34",
+		"renderApplyAssignationPolicyOn:" : "brunobb 02/03/2018 08:50",
 		"renderCategoriesListOn:" : "BrunoBB 05/13/2016 13:47",
 		"renderComboBoxDialogOn:list:forActionNamed:actionMethod:arguments:" : "brunobb 02/02/2018 14:32",
 		"renderCustomItemElementOn:forItem:" : "BrunoBB 12/15/2015 10:12",
@@ -32,7 +34,7 @@
 		"renderItemComponentOn:" : "BrunoBB 12/04/2016 12:49",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/02/2018 14:07",
 		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 06/18/2016 16:21",
-		"renderItemDescriptionTitleOn:" : "brunobb 02/02/2018 14:10",
+		"renderItemDescriptionTitleOn:" : "brunobb 02/03/2018 08:45",
 		"renderJQueryComboBoxDialogOn:list:forActionNamed:actionMethod:arguments:extent:" : "brunobb 01/30/2018 11:45",
 		"renderLateralItemDetailsOn:for:" : "BrunoBB 06/27/2015 13:59",
 		"renderProcessTypeComboOn:" : "BrunoBB 12/10/2015 08:56",

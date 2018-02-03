@@ -1,4 +1,4 @@
-other
+xpdl
 getColorForActivityNamed: aString
 
 	(currentActivities anySatisfy: [:each | each getDefinitionName = aString]) ifTrue: [^'lightblue'].

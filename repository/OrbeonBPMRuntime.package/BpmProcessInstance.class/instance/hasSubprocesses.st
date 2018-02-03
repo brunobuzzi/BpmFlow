@@ -1,4 +1,4 @@
-other
+subprocesses
 hasSubprocesses
 
 	^subprocesses notEmpty

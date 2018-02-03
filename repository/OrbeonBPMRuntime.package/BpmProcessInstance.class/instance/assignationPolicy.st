@@ -1,4 +1,4 @@
-other
+assignation policy
 assignationPolicy
 
 	^definition assignationPolicy

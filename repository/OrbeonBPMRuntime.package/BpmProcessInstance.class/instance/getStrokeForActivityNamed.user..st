@@ -1,4 +1,4 @@
-other
+xpdl
 getStrokeForActivityNamed: aString user: aBpmUser
 
 	(currentActivities anySatisfy: [:each | each getDefinitionName = aString]) 

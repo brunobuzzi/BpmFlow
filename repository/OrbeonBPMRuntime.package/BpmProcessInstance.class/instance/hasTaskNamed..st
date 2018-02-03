@@ -1,4 +1,4 @@
-other
+tasks
 hasTaskNamed: aString
 
 	^definition hasTaskNamed: aString

@@ -1,4 +1,4 @@
-other
+xpdl
 getColorForActivityNamed: aString user: aBpmUser
 
 	(currentActivities anySatisfy: [:each | each getDefinitionName = aString]) 

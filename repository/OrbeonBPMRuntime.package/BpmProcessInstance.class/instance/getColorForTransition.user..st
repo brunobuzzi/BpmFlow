@@ -1,4 +1,4 @@
-other
+xpdl
 getColorForTransition: xpdlTransitionNode user: aBpmUser
 
 	^(transitions anySatisfy: [:each | each startArtifactName = xpdlTransitionNode startNodeName and: [each endArtifactName = xpdlTransitionNode endNodeName]]) 

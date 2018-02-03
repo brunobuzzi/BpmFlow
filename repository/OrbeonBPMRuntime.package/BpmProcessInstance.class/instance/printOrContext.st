@@ -1,4 +1,4 @@
-other
+application
 printOrContext
 
 	^self subclassResponsibility
