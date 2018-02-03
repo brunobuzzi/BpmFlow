@@ -3,7 +3,7 @@ renderContentOn: html
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; with: [self renderSearchOptionsOn: html].
 
-	selectedObject ifNotNil: [self renderChangeProcessStateFormOn: html].
+	self renderChangeProcessStateFormOn: html.
 
 	batchedList items: searchCollectionResult.
 	html div id: 'process-instances'; class: 'default-gray-table ';
