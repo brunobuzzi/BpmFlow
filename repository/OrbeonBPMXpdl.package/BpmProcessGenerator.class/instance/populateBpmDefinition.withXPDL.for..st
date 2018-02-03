@@ -7,7 +7,11 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	aBpmProcessDefinition addAllParticipants: participants.
 	roles := Dictionary new.
 
-	aXPDLWorflowProcess parentLanes keysDo: [:laneName | roles at: laneName put: (BpmFrontOfficeRole createNewOrGetExisting: laneName in: anOrbeonApplication applicationName)].
+	aXPDLWorflowProcess parentLanes keysDo: [:laneName | | newOrExistingRole |
+		newOrExistingRole := BpmFrontOfficeRole createNewOrGetExisting: laneName in: anOrbeonApplication applicationName.
+		aBpmProcessDefinition addRole: newOrExistingRole.
+		roles at: laneName put: newOrExistingRole.
+	].
 
 	"it create the corresponding Bpm definition for each Xpdl artifact <xpdlActivity> in the pool <aXPDLPool>"
 	aXPDLWorflowProcess activities do: [:xpdlActivity | | newArtifact lanesNames |
