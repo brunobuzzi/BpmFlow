@@ -15,4 +15,4 @@ take: aBpmTaskAssignment
 	aBpmTaskAssignment user: self.
 
 	aBpmTaskAssignment hasPerformers 
-	ifTrue: [aBpmTaskAssignment addWorkerUser: self] "add a user and a role to the BpmTaskInstace"
+	ifTrue: [aBpmTaskAssignment addWorkerUser: self] "add a user <aBpmUser> and a role <aBpmRole> to the <BpmTaskInstance>"
