@@ -4,4 +4,5 @@ asAssignmentFor: aBpmRole in: aBpmRunningTasksMatrix
 
 	^(BpmTaskAssignment newFor: process task: self in: aBpmRunningTasksMatrix)
 			role: aBpmRole;
+			canUnassign: self canUnassign;
 			yourself

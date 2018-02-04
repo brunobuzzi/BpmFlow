@@ -1,4 +1,4 @@
-other
+fields
 getFieldNames
 
 	^#()

@@ -3,9 +3,10 @@
 		 },
 	"instance" : {
 		"addWorkerUser:as:" : "BrunoBB 04/12/2016 13:28",
-		"asAssignmentFor:in:" : "brunobb 01/31/2018 09:53",
+		"asAssignmentFor:in:" : "brunobb 02/04/2018 14:36",
 		"canCloseAndSend" : "BrunoBB 04/12/2016 12:12",
 		"canCloseAndSendPerformer:" : "BrunoBB 04/13/2016 11:49",
+		"canUnassign" : "brunobb 02/04/2018 13:50",
 		"expectedResultValues" : "BrunoBB 03/23/2016 09:11",
 		"externalObject" : "BrunoBB 12/15/2015 08:56",
 		"externalObject:" : "BrunoBB 12/15/2015 11:45",

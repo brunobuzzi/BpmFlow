@@ -1,4 +1,4 @@
-other
+roles
 ungrantAllRoles
 		"The receiver ungrant all roles "
 

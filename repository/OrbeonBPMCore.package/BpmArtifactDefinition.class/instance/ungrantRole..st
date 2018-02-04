@@ -1,4 +1,4 @@
-other
+roles
 ungrantRole: aBpmRole
 
 	aBpmRole removeResponsibility: self.

@@ -1,4 +1,4 @@
-Updating
+extended attributes
 setExtendedAttributesWith: attributesDictionary
 
 	extendedAttributes := attributesDictionary.

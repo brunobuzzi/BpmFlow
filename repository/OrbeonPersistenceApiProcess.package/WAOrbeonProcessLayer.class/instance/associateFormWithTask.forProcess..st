@@ -14,6 +14,7 @@ associateFormWithTask: aBpmTaskInstance forProcess: aBpmProcessInstace
 							task: aBpmTaskInstance 
 							in: (self getFinishedMatrixForApplication: formInstance getApplicationName))
 						role: role;
+						canUnassign: aBpmTaskInstance canUnassign;
 						yourself.
 
 	formInstance assignment: assigment.

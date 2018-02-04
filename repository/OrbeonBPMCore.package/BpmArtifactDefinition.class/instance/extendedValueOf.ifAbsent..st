@@ -1,4 +1,4 @@
-other
+extended attributes
 extendedValueOf: attrName ifAbsent: aBlock
 
 	^extendedAttributes at: attrName ifAbsent: aBlock

@@ -3,10 +3,15 @@
 		 },
 	"instance" : {
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:22",
+		"canUnassign" : "brunobb 02/04/2018 13:52",
+		"canUnassign:" : "brunobb 02/04/2018 13:52",
 		"getComponentClass" : "BrunoBB 02/17/2016 11:22",
 		"getFieldNames" : "BrunoBB 11/12/2016 07:51",
 		"getObjectModel" : "BrunoBB 02/23/2016 09:13",
+		"initialize" : "brunobb 02/04/2018 13:52",
 		"instanceClass" : "BrunoBB 11/13/2015 10:39",
 		"printOnType" : "BrunoBB 10/28/2015 14:15",
 		"printSummaryFields" : "BrunoBB 06/18/2016 14:55",
+		"setCanUnassignAttribute" : "brunobb 02/04/2018 13:56",
+		"setExtendedAttributesWith:" : "brunobb 02/04/2018 14:39",
 		"summaryFields" : "BrunoBB 06/18/2016 14:49" } }

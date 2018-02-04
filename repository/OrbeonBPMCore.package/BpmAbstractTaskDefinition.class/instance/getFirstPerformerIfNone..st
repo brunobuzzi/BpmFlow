@@ -1,4 +1,4 @@
-other
+roles
 getFirstPerformerIfNone: aBlock
 
 	^performers notEmpty

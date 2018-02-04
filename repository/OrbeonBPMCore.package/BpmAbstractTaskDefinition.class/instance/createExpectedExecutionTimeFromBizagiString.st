@@ -1,4 +1,4 @@
-other
+extended attributes
 createExpectedExecutionTimeFromBizagiString
 	"The receiver convert the current value of extended attribute <executionTime> to a Domain model"
 	| bizagiString arrayValues timeType value percentage calendarName |

@@ -1,4 +1,4 @@
-other
+transitions
 addOutTransition: aBpmTransitionDefinition
 	"The receiver add transition <aBpmTransitionDefinition> as an OUTgoing transition.
 	If the transition is the default flow then set it."

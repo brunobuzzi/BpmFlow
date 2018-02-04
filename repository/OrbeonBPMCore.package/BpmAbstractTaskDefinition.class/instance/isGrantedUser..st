@@ -1,4 +1,4 @@
-other
+roles
 isGrantedUser: aBpmUser
 	"Answer whether or not the user <aBpmUser> is granted in the receiver.
 	If there is NO <performers> in the receiver --> check in each role of the receiver if the user <aBpmUser> is granted on it.

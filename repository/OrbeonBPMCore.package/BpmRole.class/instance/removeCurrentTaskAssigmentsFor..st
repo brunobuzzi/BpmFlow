@@ -8,6 +8,6 @@ removeCurrentTaskAssigmentsFor: aBpmUser
 
 	currentAssignments do: [:taskAssignment | | tempCanUnassign |
 		tempCanUnassign := taskAssignment canUnassign.
-		taskAssignment canUnassign: true. "force the assignment remove"
+		taskAssignment canUnassign: true. "force the assignment to be untaken by <aBpmUser>"
 		aBpmUser untake: taskAssignment.
 		taskAssignment canUnassign: tempCanUnassign]
