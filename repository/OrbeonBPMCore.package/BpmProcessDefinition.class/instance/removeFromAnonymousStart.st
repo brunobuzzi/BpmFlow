@@ -1,6 +1,5 @@
 anonymous form
 removeFromAnonymousStart
+	"The receiver unregister as an anonymous start <aBpmProcessDefinition> associated the form named <formName> for application named <appName> "
 
-	^self class anonymousFormMapping 
-		removeKey: self getAnonymousFormName 
-		ifAbsent: [FormToProcessDefinitionMappingException signal: 'This process is NOT mapped to a Form for an anonymous start']
+	^self class unregisterAnonymousStartFor: self

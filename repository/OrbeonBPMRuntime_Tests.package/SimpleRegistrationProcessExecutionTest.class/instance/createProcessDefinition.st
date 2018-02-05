@@ -11,9 +11,6 @@ createProcessDefinition
 	processGenerator processes do: [:each | each addToCache].
 
 	"Associate the anonymous form with the ProcessDefinition"
-	BpmProcessDefinition 
-		registerAnonymousMappingForm: 'simple-registration' 
-		in: 'st' 
-		for: (BpmProcessDefinition getAllProcessesNamed: 'Simple Registration' in: 'st') last.
+	BpmProcessDefinition registerAnonymousStartFor:(BpmProcessDefinition getAllProcessesNamed: 'Simple Registration' in: 'st') last.
 
 	^processGenerator getProcessDefinitionNamed: 'Simple Registration' ifNone: [self assert: false].

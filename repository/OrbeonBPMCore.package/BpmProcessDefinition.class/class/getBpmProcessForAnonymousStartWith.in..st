@@ -1,5 +1,5 @@
 anonymous mapping
-getBpmProcessDefinitionForForm: formName in: appName
+getBpmProcessForAnonymousStartWith: formName in: appName
 	"The receiver answer a <BpmProcessDefinition> associated with the Form <formName> in Application <appName>. If none is associated raise an Exception.
 	This process can have an anonymous starter/user (nil)"
 

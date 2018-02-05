@@ -12,7 +12,7 @@ newProcessFromOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVe
 	application := self getOrbeonApplicationClass applicationNamed: app ifNone: [^NoApplicationException signal: 'No such application [', app, ']'].
 	formInstance := application getAnyInstanceWithId: id of: form ifNone: [^NoOrbeonFormException signal: 'No such form [', id, ']'].
 
-	procDefinition := BpmProcessDefinition getBpmProcessDefinitionForForm: form in: app.
+	procDefinition := BpmProcessDefinition getBpmProcessForAnonymousStartWith: form in: app.
 	newProcess := procDefinition createAndStartProcessInstance: nil "anonymous user ".
 	newProcess currentActivities isEmpty ifTrue: [^NoRunningTaskException signal: 'The BpmProcessInstance can not be executed because the collection <currentActivities> is empty'].
 	currentTask := newProcess currentActivities last.
