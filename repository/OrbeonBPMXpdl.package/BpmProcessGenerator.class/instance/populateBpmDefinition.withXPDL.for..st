@@ -38,4 +38,6 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	"the receiver attach events to task. At this point both exist but are unrelated "
 	self attachEventsToTaskIn: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess.
 
+	aBpmProcessDefinition checkAndRegisterAsAnonymousStart. "if it is the case register <aBpmProcessDefinition> with anonynous start"
+
 	^aBpmProcessDefinition
