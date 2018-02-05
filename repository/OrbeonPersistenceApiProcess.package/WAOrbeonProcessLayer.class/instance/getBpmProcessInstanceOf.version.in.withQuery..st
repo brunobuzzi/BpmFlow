@@ -2,27 +2,29 @@ external variables
 getBpmProcessInstanceOf: processName version: version in: appName withQuery: xmlDocument
 	"The receiver answer <aBpmProcessInstance> of the process definition named <processName> with version <version> in application named <appName> with filters contained in <xmlDocument>.
 	If there is none process answer <nil>"
-	| processDefinition queryFieldValues xPathNodes filters |
+	| processDefinition queryFieldValues xPathNodes processFilters |
 
 	processDefinition := BpmProcessDefinition getProcessNamed: processName version: version in: appName.
 	processDefinition ifNil: [^nil].
 
-	queryFieldValues := Dictionary new.
+	xPathNodes := (xmlDocument xPath: '//query') collection ifEmpty: [^nil] ifNotEmpty: [:collection | collection].
+	
+	processFilters := xPathNodes first elements collection.
 
-	xPathNodes := (xmlDocument xPath: '//query') collection.
-	xPathNodes isEmpty ifTrue: [^nil]. 
+	queryFieldValues := (self getProcessFiltersFromCollection: processFilters) ifEmpty: [^nil] ifNotEmpty: [:collection | collection].
 
-	filters := xPathNodes first descendantElements collection.
-
-	filters do: [:each | queryFieldValues at: each name put: each innerXML]. 
-
+	
 "<setvariables>
 	<query>
 		<number>
-			<userid>123456</userid>
+			<citizen-appliance>
+				<userid>123456</userid>
+			</citizen-appliance>
 		</number>
 		<string>
-			<usercountry>US</usercountry>
+			<check-basic-data>
+				<usercountry>US</usercountry>
+			</check-basic-data>
 		</string>
 	</query>
 	<externalvariables>
