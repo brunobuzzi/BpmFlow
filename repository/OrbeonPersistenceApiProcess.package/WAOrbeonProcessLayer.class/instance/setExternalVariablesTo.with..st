@@ -1,0 +1,2 @@
+external variables
+setExternalVariablesTo: aBpmProcessInstance with: xmlDocument
