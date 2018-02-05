@@ -23,6 +23,7 @@
 		"getProcessInstanceDistributionFor:in:" : "BrunoBB 11/02/2016 08:32",
 		"getProcessInstanceWithId:" : "BrunoBB 06/03/2016 15:25",
 		"getProcessInstanceWithId:onApplications:" : "BrunoBB 06/03/2016 15:31",
+		"getProcessNamed:version:in:" : "brunobb 02/05/2018 12:40",
 		"getVersionsAverageTimeFor:in:" : "BrunoBB 11/07/2016 07:10",
 		"hasAnyProcessApplicationNamed:" : "BrunoBB 02/29/2016 09:25",
 		"initializeAnonymousFormMapping" : "BrunoBB 03/30/2016 10:45",
