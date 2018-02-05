@@ -2,7 +2,7 @@ external variables
 getBpmProcessInstanceOf: processName version: version in: appName withQuery: xmlDocument
 	"The receiver answer <aBpmProcessInstance> of the process definition named <processName> with version <version> in application named <appName> with filters contained in <xmlDocument>.
 	If there is none process answer <nil>"
-	| processDefinition queryFieldValues xPathNodes processFilters |
+	| processDefinition queryFieldValues xPathNodes processFilters result |
 
 	processDefinition := BpmProcessDefinition getProcessNamed: processName version: version in: appName.
 	processDefinition ifNil: [^nil].
@@ -13,6 +13,12 @@ getBpmProcessInstanceOf: processName version: version in: appName withQuery: xml
 
 	queryFieldValues := (self getProcessFiltersFromCollection: processFilters) ifEmpty: [^nil] ifNotEmpty: [:collection | collection].
 
+	result := Set new.
+	queryFieldValues keysAndValuesDo: [:formFieldArray :fieldValue |
+		result addAll: (BpmProcessDefinition getFieldsNamed: (formFieldArray at: 2) in: (formFieldArray at: 1) withValue: fieldValue).
+	].
+
+	^result
 	
 "<setvariables>
 	<query>
