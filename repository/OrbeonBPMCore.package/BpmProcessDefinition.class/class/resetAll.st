@@ -3,6 +3,7 @@ resetAll
 
 	self removeAllDefinitions.
 	self removeAllFormFieldInstances.
+	self initializeAnonymousFormMapping.
 
 	BpmUser cache do: [:each | each resetAll].
 	

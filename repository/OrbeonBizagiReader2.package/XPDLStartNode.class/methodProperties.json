@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"createBpmDefinitionOn:" : "brunobb 02/05/2018 10:18",
 		"getLanesFrom:" : "BrunoBB 10/29/2015 19:25",
 		"initialize" : "BrunoBB 10/24/2015 17:02",
 		"isStartNode" : "BrunoBB 10/25/2015 08:43",
 		"outTransitions" : "BrunoBB 10/25/2015 09:43",
 		"outTransitions:" : "BrunoBB 10/25/2015 09:43",
-		"setInternalAttributesWithNode:" : "brunobb 07/31/2017 05:54",
+		"setInternalAttributesWithNode:" : "brunobb 02/05/2018 10:18",
 		"shortType" : "BrunoBB 10/25/2015 10:03" } }

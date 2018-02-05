@@ -7,7 +7,7 @@ processDefinition_simple_registration
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-03-30T19:55:34.2905721-03:00</Created>
-    <ModificationDate>2016-03-30T19:59:47.9035828-03:00</ModificationDate>
+    <ModificationDate>2018-02-05T14:47:27.3918237-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -21,7 +21,7 @@ processDefinition_simple_registration
     <Pool Id="bf80a638-e1da-46f5-a7fb-5506a1267897" Name="Main Process" Process="461bcfa3-952a-4d2e-958a-5ce873510e7c" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
@@ -55,7 +55,7 @@ processDefinition_simple_registration
   <WorkflowProcesses>
     <WorkflowProcess Id="461bcfa3-952a-4d2e-958a-5ce873510e7c" Name="Main Process">
       <ProcessHeader>
-        <Created>2016-03-30T20:00:05.9397147-03:00</Created>
+        <Created>2018-02-05T14:48:08.1079998-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -66,12 +66,12 @@ processDefinition_simple_registration
       <ActivitySets />
       <DataInputOutputs />
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.2985775-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.2985775-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.2985775-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.2985775-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
     <WorkflowProcess Id="7a40afc1-246e-45c3-a268-aadcec628a45" Name="Simple Registration">
       <ProcessHeader>
-        <Created>2016-03-30T20:00:05.9407145-03:00</Created>
+        <Created>2018-02-05T14:48:08.1090009-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -82,21 +82,6 @@ processDefinition_simple_registration
       <ActivitySets />
       <DataInputOutputs />
       <Activities>
-        <Activity Id="67bcc06b-e76f-4c6f-b416-62a01c50bda7" Name="start-registration">
-          <Description />
-          <Event>
-            <StartEvent Trigger="None" />
-          </Event>
-          <Documentation />
-          <NodeGraphicsInfos>
-            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
-              <Coordinates XCoordinate="151" YCoordinate="70" />
-            </NodeGraphicsInfo>
-          </NodeGraphicsInfos>
-          <ExtendedAttributes>
-            <ExtendedAttribute Name="RuntimeProperties" Value="{}" />
-          </ExtendedAttributes>
-        </Activity>
         <Activity Id="f41c9dc5-a211-4607-8ef4-bdf1a4c2ea4d" Name="simple-registration">
           <Description />
           <Implementation>
@@ -140,6 +125,23 @@ processDefinition_simple_registration
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
+        <Activity Id="67bcc06b-e76f-4c6f-b416-62a01c50bda7" Name="start-registration">
+          <Description />
+          <Event>
+            <StartEvent Trigger="Message">
+              <TriggerResultMessage>
+                <Message Id="2afb4392-c450-46b5-9602-5fc3642bc47e" />
+              </TriggerResultMessage>
+            </StartEvent>
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
+              <Coordinates XCoordinate="151" YCoordinate="70" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
       </Activities>
       <Transitions>
         <Transition Id="fc77e949-7ffc-4f89-9b50-ccf43380b4c5" From="67bcc06b-e76f-4c6f-b416-62a01c50bda7" To="f41c9dc5-a211-4607-8ef4-bdf1a4c2ea4d">
@@ -177,7 +179,7 @@ processDefinition_simple_registration
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
