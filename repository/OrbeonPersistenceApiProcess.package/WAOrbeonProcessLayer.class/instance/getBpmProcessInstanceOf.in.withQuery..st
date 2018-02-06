@@ -1,10 +1,11 @@
 external variables
-getBpmProcessInstanceOf: processName version: version in: appName withQuery: xmlDocument
-	"The receiver answer <aBpmProcessInstance> of the process definition named <processName> with version <version> in application named <appName> with filters contained in <xmlDocument>.
-	If there is none process answer <nil>"
+getBpmProcessInstanceOf: processDefinitionId in: appName withQuery: xmlDocument
+	"The receiver answer <aBpmProcessInstance> of the process definition with id <processDefinitionId> in application named <appName> with filters contained in <xmlDocument>.
+	If there is none process answer <nil>.
+	If there is more than one process that fit the filters answer <aSet>"
 	| processDefinition queryFieldValues xPathNodes processFilters result |
 
-	processDefinition := BpmProcessDefinition getProcessNamed: processName version: version in: appName.
+	processDefinition := BpmProcessDefinition getProcessDefnitionWith: processDefinitionId in: appName.
 	processDefinition ifNil: [^nil].
 
 	xPathNodes := (xmlDocument xPath: '//query') collection ifEmpty: [^nil] ifNotEmpty: [:collection | collection].
@@ -14,11 +15,14 @@ getBpmProcessInstanceOf: processName version: version in: appName withQuery: xml
 	queryFieldValues := (self getProcessFiltersFromCollection: processFilters) ifEmpty: [^nil] ifNotEmpty: [:collection | collection].
 
 	result := Set new.
-	queryFieldValues keysAndValuesDo: [:formFieldArray :fieldValue |
-		result addAll: (BpmProcessDefinition getFieldsNamed: (formFieldArray at: 2) in: (formFieldArray at: 1) withValue: fieldValue).
+	queryFieldValues keysAndValuesDo: [:formFieldArray :fieldValue | | filteredFieldValues |
+		filteredFieldValues := BpmProcessDefinition getFieldsNamed: (formFieldArray at: 2) in: (formFieldArray at: 1) withValue: fieldValue.
+		result addAll: (filteredFieldValues collect: [:each | each getProcess]).
 	].
+	
+	(result size = 1) ifTrue: [^result at: 1]. 
 
-	^result
+	^result "<aSet>"
 	
 "<setvariables>
 	<query>
