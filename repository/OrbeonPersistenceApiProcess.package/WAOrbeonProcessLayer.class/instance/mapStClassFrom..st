@@ -13,4 +13,6 @@ mapStClassFrom: xmlStringType
 
 	(xmlStringType asLowercase = 'timestamp') ifTrue: [^TimeStamp].
 
+	(xmlStringType asLowercase = 'nil') ifTrue: [^UndefinedObject].
+
 	^nil
