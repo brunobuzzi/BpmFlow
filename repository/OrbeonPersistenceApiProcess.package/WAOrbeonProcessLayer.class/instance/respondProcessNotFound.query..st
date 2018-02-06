@@ -6,7 +6,7 @@ respondProcessNotFound: processId query: xmlDocument
 	xmlWriter := XMLWriter new.
 
 	xmlWriter tag: 'response' with: [
-		xmlWriter tag: 'result' with: 'No Process Found'.
+		xmlWriter tag: 'result' with: 'Error: No Process Found'.
 		xmlWriter tag: 'processid' with: processId printString.
 
 		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].

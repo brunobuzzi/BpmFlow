@@ -6,7 +6,7 @@ respondMoreThanOneProcessFound: aSet query: xmlDocument
 	xmlWriter := XMLWriter new.
 
 	xmlWriter tag: 'response' with: [
-		xmlWriter tag: 'result' with: 'No Process Found'.
+		xmlWriter tag: 'result' with: 'Error: More than one Process Found'.
 		xmlWriter tag: 'processes' with: [
 			aSet do: [:each | xmlWriter tag: 'processid' with: each id printString].
 		].

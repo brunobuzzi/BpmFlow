@@ -6,7 +6,7 @@ respondXmlParseError: badXmlString
 	xmlWriter := XMLWriter new.
 
 	xmlWriter tag: 'response' with: [
-		xmlWriter tag: 'result' with: 'XML Parse Error'.
+		xmlWriter tag: 'result' with: 'Error: XML Parse Error'.
 		xmlWriter tag: 'errorstring' with: [
 			xmlWriter nextPutAll: badXmlString .
 		].
