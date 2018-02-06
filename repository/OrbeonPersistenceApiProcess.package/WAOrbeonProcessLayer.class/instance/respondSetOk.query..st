@@ -9,8 +9,8 @@ respondSetOk: aBpmProcessInstance query: xmlDocument
 		xmlWriter tag: 'result' with: 'Successful'.
 		xmlWriter tag: 'details' with: 'Variables has been added to the Bpm Process Instance'.
 		xmlWriter tag: 'processid' with: aBpmProcessInstance id printString.
-		xmlWriter tag: 'query' with: [xmlWriter nextPutAll: xmlDocument innerXML].
- 
+
+		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].
 	].
 
 	^xmlWriter contents

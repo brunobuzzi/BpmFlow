@@ -10,7 +10,7 @@ respondMoreThanOneProcessFound: aSet query: xmlDocument
 		xmlWriter tag: 'processes' with: [
 			aSet do: [:each | xmlWriter tag: 'processid' with: each id printString].
 		].
-		xmlWriter tag: 'query' with: [xmlWriter nextPutAll: xmlDocument innerXML].
+		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].
  
 	].
 

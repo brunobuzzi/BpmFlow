@@ -3,9 +3,11 @@ getBpmProcessInstanceOf: processDefinitionId in: appName withQuery: xmlDocument
 	"The receiver answer <aBpmProcessInstance> of the process definition with id <processDefinitionId> in application named <appName> with filters contained in <xmlDocument>.
 	If there is none process answer <nil>.
 	If there is more than one process that fit the filters answer <aSet>"
-	| processDefinition queryFieldValues xPathNodes processFilters result |
+	| processDefinition procDefNumberId queryFieldValues xPathNodes processFilters result |
 
-	processDefinition := BpmProcessDefinition getProcessDefnitionWith: processDefinitionId in: appName.
+	[procDefNumberId := Number fromString: procDefNumberId] on: Error do: [:ex | ^nil].
+	processDefinition := BpmProcessDefinition getProcessDefnitionWith: procDefNumberId in: appName.
+
 	processDefinition ifNil: [^nil].
 
 	xPathNodes := (xmlDocument xPath: '//query') collection ifEmpty: [^nil] ifNotEmpty: [:collection | collection].

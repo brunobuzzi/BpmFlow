@@ -8,7 +8,8 @@ respondProcessNotFound: processId query: xmlDocument
 	xmlWriter tag: 'response' with: [
 		xmlWriter tag: 'result' with: 'No Process Found'.
 		xmlWriter tag: 'processid' with: processId printString.
-		xmlWriter tag: 'query' with: [xmlWriter nextPutAll: xmlDocument innerXML].
+
+		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].
  
 	].
 
