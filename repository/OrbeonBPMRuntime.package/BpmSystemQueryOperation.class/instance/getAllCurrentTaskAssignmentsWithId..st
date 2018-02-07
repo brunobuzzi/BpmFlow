@@ -7,11 +7,9 @@ getAllCurrentTaskAssignmentsWithId: processId
 	assignments := user getAllTaskAssignmentsWithId: processId.
 
 	"here search for already TAKEN <BpmTaskAssignment>"
-	self getAllUsers do: [:eachUser | 
-		(user getMatchedRolesWith: eachUser) do: [:eachRole | | rcIdentityBag |
-			rcIdentityBag := self getMatrixManagerClass getAssignmentsCollectionFor: eachRole.
-			assignments addAll: (GsQuery fromSelectBlock: {:each | each.processId = processId} on: rcIdentityBag) queryResult.
-		]
+	self getAllUsers do: [:eachUser | | possibleAssignments |
+			possibleAssignments := (GsQuery fromSelectBlock: {:each | each.processId = processId} on: eachUser getCurrentAssignments) queryResult.
+			assignments addAll: (possibleAssignments select: [:eachAssignment | user roles identityIncludes: eachAssignment role]) .
 	].
 
 	^assignments

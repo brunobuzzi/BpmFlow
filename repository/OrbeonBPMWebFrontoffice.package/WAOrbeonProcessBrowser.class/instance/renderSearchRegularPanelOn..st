@@ -5,11 +5,8 @@ renderSearchRegularPanelOn: html
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; with: ('Search Task' translateFor: self session user).
 			self renderSwitchWindowOn: html.
-			html div class: 'top-search-div'; with: [
-				html label attributeAt: 'for' put: 'processId'; with: ('Process Id' translateFor: self session user).
-				html textInput attributeAt: 'id' put: 'processId'; 
-						callback: [:value | self addSearchValue: value named: 'id'];
-						value: (self searchValueAt: 'id')].
+			html div class: 'top-search-div width-100px'; with: [self renderSearchScopeComboOn: html].
+			html div class: 'top-search-div width-100px'; with: [self renderSearchProcessIdFieldOn: html].
 			html div class: 'top-search-div'; with: [self renderApplicationComboOn: html].
 			html div class: 'top-search-div'; with: [self renderProcessTypeComboOn: html].
 			html div class: 'top-search-div'; with: [self renderFormDefinitionComboOn: html].
