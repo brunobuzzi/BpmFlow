@@ -4,6 +4,7 @@
 		"cache:" : "BrunoBB 12/22/2015 10:22",
 		"getAllAvailableTaskAssignments" : "BrunoBB 02/09/2016 13:37",
 		"getAllAvailableTaskAssignmentsIn:" : "BrunoBB 02/08/2016 12:32",
+		"getAssignmentsCollectionFor:" : "brunobb 02/07/2018 13:39",
 		"getMatrixForApplicationNamed:" : "BrunoBB 02/25/2016 12:37",
 		"getMatrixForApplicationNamed:ifAbsent:" : "BrunoBB 12/22/2015 10:28",
 		"initializeCache" : "BrunoBB 12/22/2015 10:22",
