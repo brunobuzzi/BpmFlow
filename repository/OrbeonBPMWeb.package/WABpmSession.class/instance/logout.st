@@ -1,3 +1,0 @@
-other
-logout
-    user := nil
