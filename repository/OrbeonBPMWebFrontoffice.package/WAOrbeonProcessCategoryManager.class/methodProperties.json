@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"categoryColorColumn" : "BrunoBB 01/10/2017 03:07",
+		"createNewCategory" : "BrunoBB 01/26/2017 03:46",
+		"getAllUserCategories" : "BrunoBB 03/08/2016 11:42",
+		"gitbookUrl" : "brunobb 07/27/2017 06:09",
+		"initialize" : "BrunoBB 03/15/2016 07:25",
+		"modifyCategory" : "BrunoBB 03/08/2016 11:42",
+		"removeCategory" : "BrunoBB 03/09/2016 11:25",
+		"renderCategoryFormOn:" : "BrunoBB 03/08/2016 11:42",
+		"renderContentOn:" : "BrunoBB 03/11/2016 11:01",
+		"renderNewCategoryFormOn:" : "BrunoBB 03/08/2016 11:42",
+		"renderSelectedCategoryFormOn:" : "BrunoBB 03/08/2016 11:42",
+		"selectedCategory" : "BrunoBB 03/08/2016 11:42",
+		"selectedCategory:" : "BrunoBB 03/08/2016 11:42",
+		"sewafTableForUserCategories" : "BrunoBB 06/12/2016 12:53" } }

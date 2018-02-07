@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawAverageTaskTimeChart" : "BrunoBB 11/18/2016 07:17",
+		"drawUserNumberOfTasksChart" : "BrunoBB 11/18/2016 07:17",
+		"drawUserPossibleTasksChart" : "BrunoBB 11/18/2016 07:17",
+		"gitbookUrl" : "brunobb 07/27/2017 06:07",
+		"renderChartTypeComboOn:" : "BrunoBB 11/09/2016 04:29",
+		"renderDistributionComboOn:" : "BrunoBB 11/11/2016 02:34",
+		"renderSearchAreaOn:" : "BrunoBB 11/10/2016 03:15",
+		"showChart" : "BrunoBB 11/09/2016 08:02" } }

@@ -40,7 +40,7 @@ baseline: spec
 		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
 		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
 		spec package: 'OrbeonBPMWebBasic' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'Jasvgi')].
-		spec package: 'OrbeonBPMWeb' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
+		spec package: 'OrbeonBPMWebFrontoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
@@ -51,7 +51,7 @@ baseline: spec
 		spec
 			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter'); 
 			group: 'web-backoffice' with: #('OrbeonBPMWebBackoffice');
-			group: 'web-frontoffice' with: #('OrbeonBPMWeb');
+			group: 'web-frontoffice' with: #('OrbeonBPMWebFrontoffice');
 			group: 'rest' with: #('OrbeonPersistenceApiProcess');
 			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntime_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'rest' 'test').

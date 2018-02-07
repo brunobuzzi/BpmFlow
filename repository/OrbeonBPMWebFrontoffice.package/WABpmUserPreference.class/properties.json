@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmUserPreference",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }
