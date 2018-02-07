@@ -1,4 +1,0 @@
-task matrix
-getFinishedMatrixManagerClass
-
-	^self class getFinishedMatrixManagerClass

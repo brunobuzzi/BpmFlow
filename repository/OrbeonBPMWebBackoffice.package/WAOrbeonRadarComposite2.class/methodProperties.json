@@ -1,11 +1,10 @@
 {
 	"class" : {
-		"getMatrixManagerClass" : "brunobb 01/24/2018 10:32" },
+		 },
 	"instance" : {
 		"batchedList" : "BrunoBB 06/03/2016 15:48",
 		"batchedList:" : "BrunoBB 06/03/2016 15:48",
 		"getFreeTransitions" : "BrunoBB 12/20/2015 14:53",
-		"getMatrixManagerClass" : "brunobb 01/24/2018 10:32",
 		"getProcessWithFreeTransitions" : "BrunoBB 12/20/2015 14:55",
 		"initialize" : "BrunoBB 06/03/2016 16:59",
 		"searchCollectionResult" : "BrunoBB 12/20/2015 14:53",

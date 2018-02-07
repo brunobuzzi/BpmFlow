@@ -1,4 +1,0 @@
-other
-getMatrixManagerClass
-
-	^BpmRunningTasksMatrix
