@@ -1,8 +1,8 @@
 search area
 searchMatchingProcesses
-	"Answer a collection of <OrbeonProcessAssignment> that match the search criteria in receiver's web interface.
+	"Answer a collection of <BpmTaskAssignment> that match the search criteria in receiver's web interface.
 	The fast search performed against a field name and a field value in a Form (<formName>, <fieldName> and <fieldValue>). 
-	If these values are not specified then answer a collection of <OrbeonProcessAssignment> for the process name <procName> in application <appName>"
+	If these values are not specified then answer a collection of <BpmTaskAssignment> for the process name <procName> in application <appName>"
 	| appName procName formName fieldName fieldValue fieldValue2 |
 
 	searchApplied := true.

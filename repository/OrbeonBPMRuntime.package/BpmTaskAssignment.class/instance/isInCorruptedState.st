@@ -1,4 +1,4 @@
-other
+testing
 isInCorruptedState
 
 	^process isInCorruptedState

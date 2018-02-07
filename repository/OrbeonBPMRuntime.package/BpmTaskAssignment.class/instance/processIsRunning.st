@@ -1,4 +1,4 @@
-other
+execution
 processIsRunning
 
 	^process isRunning

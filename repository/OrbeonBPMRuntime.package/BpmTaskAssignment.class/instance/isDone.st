@@ -1,4 +1,4 @@
-other
+testing
 isDone
 
 	^task isDone

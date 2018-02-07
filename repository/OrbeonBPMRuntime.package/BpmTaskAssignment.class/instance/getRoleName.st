@@ -1,4 +1,4 @@
-other
+execution
 getRoleName
 
 	self hasPerformers ifFalse: [^roleName].

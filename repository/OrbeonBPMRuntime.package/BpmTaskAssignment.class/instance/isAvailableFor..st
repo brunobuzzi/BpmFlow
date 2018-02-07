@@ -1,4 +1,4 @@
-other
+testing
 isAvailableFor: aBpmUser
 	"The receiver answer whether or not the user <aBpmUser> has a context application that match with context application of <process> <BpmProcessInstance> "
 

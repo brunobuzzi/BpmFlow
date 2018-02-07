@@ -1,4 +1,4 @@
-other
+execution
 generateNextRunningTransitions
 	"The receiver <BpmTask> fetch the possibles next transitions to transition definition.
 	1- Ask the path definition for next transitions.
