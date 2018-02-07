@@ -1,5 +1,10 @@
 other
 getAllCurrentTaskAssignmentsWithId: processId
 	"The receiver answer a collection of current <BpmTaskAssignment> with process id equal to <processId>"
+	| assignments |
 
-	^user getAllTaskAssignmentsWithId: processId
+	assignments := user getAllTaskAssignmentsWithId: processId.
+
+	self getAllUsers do: [:eachUser | 
+		user getMatchedRolesWith: eachUser
+	].
