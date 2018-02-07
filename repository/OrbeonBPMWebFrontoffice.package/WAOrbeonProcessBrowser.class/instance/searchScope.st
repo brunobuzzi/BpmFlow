@@ -1,0 +1,3 @@
+Accessing
+searchScope
+	^searchScope

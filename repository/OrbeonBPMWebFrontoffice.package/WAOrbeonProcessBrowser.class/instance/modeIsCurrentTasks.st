@@ -1,4 +1,4 @@
-search area
+search operation
 modeIsCurrentTasks
 
 	^mode = #normal

@@ -1,4 +1,4 @@
-search area
+search operation
 searchMatchingProcesses
 	"Answer a collection of <BpmTaskAssignment> that match the search criteria in receiver's web interface.
 	The fast search performed against a field name and a field value in a Form (<formName>, <fieldName> and <fieldValue>). 
