@@ -1,6 +1,6 @@
 other
 generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
-	| xpdlReader svgCanvas |
+	| xpdlReader svgCanvas yCoordinate |
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
 	svgCanvas := self getSVGCanvasClass newWidth: '1000px' height: '1000px'.
@@ -18,8 +18,8 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 			color := aBpmTaskAssignment process getColorForTransition: eachTransition user: aBpmUser.
 			eachTransition drawOn: svgCanvas color: color].
 	].
-
-	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText yCoordinate text |
+	"draw transition conditions at the bottom of the SVG"
+	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText text |
 		yCoordinate := eachWorkflow getLaneMaxYCoordinate + 20.
 		eachWorkflow getGatewayNodes do: [:gatewayNode | 
 			(gatewayNode outTransitions select: [:each | each hasCondition]) do: [:trNode | 
@@ -29,6 +29,7 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 				yCoordinate := yCoordinate + 20.
 			].
 		].
+		"draw timer block code at the bottom of the SVG"
 		eachWorkflow getTimerNodes do: [:timerNode |
 			text := svgCanvas drawText: (timerNode getName, ' - ' , timerNode getActivationBlockValue) at: 10 @ yCoordinate.
 			svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
@@ -36,4 +37,16 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 		].
 	].
 
+	aBpmTaskAssignment process getAllScriptVariables keysAndValuesDo: [:varName :value | | text |
+		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+
+	aBpmTaskAssignment process externalVariables keysAndValuesDo: [:varName :value | | text |
+		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+ 
 	^svgCanvas contents

@@ -6,7 +6,7 @@ respondBadExternalVariablesConfiguration: aBpmProcessInstance with: xmlDocument
 	xmlWriter := XMLWriter new.
 
 	xmlWriter tag: 'response' with: [
-		xmlWriter tag: 'result' with: 'Error: Bad Xml  Configuration to set variables'.
+		xmlWriter tag: 'result' with: 'Error: Bad Xml Configuration to set variables'.
 		xmlWriter tag: 'processid' with: aBpmProcessInstance id printString.
 
 		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].

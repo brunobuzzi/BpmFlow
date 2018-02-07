@@ -1,4 +1,4 @@
-process
+export
 exportProcessInstanceAs
 	| selectedOption stream converter |
 

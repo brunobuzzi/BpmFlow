@@ -1,6 +1,6 @@
 other
 generateSVGFor: aBpmUser process: aBpmProcessInstance
-	| xpdlReader svgCanvas |
+	| xpdlReader svgCanvas yCoordinate|
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
 	svgCanvas := self getSVGCanvasClass newWidth: '1000px' height: '1000px'.
@@ -19,7 +19,7 @@ generateSVGFor: aBpmUser process: aBpmProcessInstance
 			eachTransition drawOn: svgCanvas color: color].
 	].
 
-	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText yCoordinate text |
+	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText  text |
 		yCoordinate := eachWorkflow getLaneMaxYCoordinate + 20.
 		eachWorkflow getGatewayNodes do: [:gatewayNode | 
 			(gatewayNode outTransitions select: [:each | each hasCondition]) do: [:trNode | 
@@ -36,4 +36,15 @@ generateSVGFor: aBpmUser process: aBpmProcessInstance
 		].
 	].
 
+	aBpmProcessInstance getAllScriptVariables keysAndValuesDo: [:varName :value | | text |
+		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+
+	aBpmProcessInstance externalVariables keysAndValuesDo: [:varName :value | | text |
+		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
 	^svgCanvas contents
