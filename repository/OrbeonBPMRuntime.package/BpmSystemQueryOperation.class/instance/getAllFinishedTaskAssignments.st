@@ -6,7 +6,7 @@ getAllFinishedTaskAssignments
 
 	self getAllUsers do: [:eachUser | | roles |
 			roles := user roles.
-			assignments addAll: (eachUser getFinishedAssignments select: [:assingment | roles identityIncludes: assingment role]).
+			assignments addAll: (eachUser getFinishedAssignments select: [:assingment | (roles identityIncludes: assingment role) and: [assingment isAvailableFor: user]]).
 	].
 
 	^assignments

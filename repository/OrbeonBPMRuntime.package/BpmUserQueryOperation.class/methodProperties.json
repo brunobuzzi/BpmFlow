@@ -4,9 +4,9 @@
 	"instance" : {
 		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 10:21",
 		"getAllCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 11:54",
-		"getAllCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:03",
+		"getAllCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:10",
 		"getAllCurrentTaskAssignmentsWithId:" : "brunobb 02/07/2018 12:32",
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:21",
 		"getAllFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 11:54",
-		"getAllFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:03",
+		"getAllFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:10",
 		"getAllFinishedTaskAssignmentsWithId:" : "brunobb 02/07/2018 12:32" } }

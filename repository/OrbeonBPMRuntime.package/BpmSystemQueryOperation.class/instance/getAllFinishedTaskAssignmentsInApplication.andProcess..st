@@ -1,4 +1,13 @@
 application&process
 getAllFinishedTaskAssignmentsInApplication: appName andProcess: procName
+	| assignments |
 
-	self subclassResponsibility
+	assignments := OrderedCollection new.
+
+	self getAllUsers do: [:eachUser | | roles appAssignments |
+			roles := user roles.
+			appAssignments := eachUser getFinishedAssignments select: {:each | (each.applicationName = appName) & (each.processName = procName)}.
+			assignments addAll: (appAssignments select: [:assingment | roles identityIncludes: assingment role]).
+	].
+
+	^assignments

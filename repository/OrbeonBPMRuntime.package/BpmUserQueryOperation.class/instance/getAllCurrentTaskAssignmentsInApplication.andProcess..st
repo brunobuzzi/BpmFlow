@@ -1,4 +1,4 @@
 application&process
 getAllCurrentTaskAssignmentsInApplication: appName andProcess: procName
 
-	self subclassResponsibility
+	^self user getCurrentAssignments select: {:each | (each.applicationName = appName) & (each.processName = procName)}

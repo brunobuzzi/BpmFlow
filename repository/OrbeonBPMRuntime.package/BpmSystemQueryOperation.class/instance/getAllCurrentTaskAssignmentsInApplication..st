@@ -2,7 +2,7 @@ application
 getAllCurrentTaskAssignmentsInApplication: appName
 	| assignments |
 
-	assignments := OrderedCollection new.
+	assignments := user getAllAvailableTaskAssignments select: [:each | each applicationName = appName].
 
 	self getAllUsers do: [:eachUser | | roles appAssignments |
 			roles := user roles.
