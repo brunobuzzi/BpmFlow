@@ -4,13 +4,13 @@
 	"instance" : {
 		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 10:21",
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:21",
-		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:27",
-		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:27",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:41",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:41",
 		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
 		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
 		"getCurrentTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25",
-		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:27",
-		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:27",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:40",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:40",
 		"getFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
 		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
 		"getFinishedTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25" } }

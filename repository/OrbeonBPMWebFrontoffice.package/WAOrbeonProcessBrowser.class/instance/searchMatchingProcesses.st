@@ -18,12 +18,14 @@ searchMatchingProcesses
 	fieldValue  := self searchValueAt: 'field-value' ifAbsent: [''].
 	fieldValue2 := self searchValueAt: 'field-value-2' ifAbsent: [''].
 
-	(formName isEmpty and: [fieldName isEmpty and: [fieldValue isEmpty]]) ifTrue: [^self getAllAssignmentsFor: procName in: appName].
+	(formName isEmpty and: [fieldName isEmpty and: [fieldValue isEmpty]]) ifTrue: [^self searchMatchingAssignmentsFor: procName in: appName].
 
-	searchResult := self isRangeSearch
-		ifFalse: [BpmProcessDefinition getAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName withValue: fieldValue]
-		ifTrue: [BpmProcessDefinition getAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName initialValue: fieldValue endValue: fieldValue2].
-
-	searchResult := self modeIsFinishedTasks 
-		ifFalse: [searchResult reject: [:each | each hasFinalized]] 
-		ifTrue: [searchResult select: [:each | each hasFinalized]]
+	searchResult := self getQueryOperation 
+									getAssignmentsIn: appName 
+									processName: procName 
+									formName: formName 
+									fieldName: fieldName 
+									initialValue: fieldValue 
+									endValue: fieldValue2 
+									isCurrent: self modeIsCurrentTasks 
+									isRange: self isRangeSearch.

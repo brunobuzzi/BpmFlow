@@ -1,5 +1,5 @@
 search operation
-getAllAssignmentsFor: procName in: appName
+searchMatchingAssignmentsFor: procName in: appName
 	"Answer a collection of <BpmTaskAssignment> for the process named <procName> in application <appName>"
 
 	(appName isNil or: [appName isEmpty]) ifTrue: [^searchResult := self getQueryOperation getAllTaskAssignments: self modeIsCurrentTasks].
