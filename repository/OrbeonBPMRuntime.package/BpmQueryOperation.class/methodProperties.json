@@ -8,7 +8,7 @@
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:17",
 		"getAllTaskAssignments:" : "brunobb 02/08/2018 10:17",
 		"getAllUsers" : "brunobb 02/07/2018 13:20",
-		"getAssignmentsIn:processName:formName:fieldName:initialValue:endValue:isCurrent:isRange:" : "brunobb 02/08/2018 13:05",
+		"getAssignmentsIn:processName:formName:fieldName:initialValue:endValue:isCurrent:isRange:" : "brunobb 02/08/2018 13:49",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:13",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:13",
 		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:15",

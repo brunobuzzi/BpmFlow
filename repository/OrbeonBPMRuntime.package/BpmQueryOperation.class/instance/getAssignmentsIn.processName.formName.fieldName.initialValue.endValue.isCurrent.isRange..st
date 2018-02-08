@@ -1,7 +1,7 @@
 field value
 getAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName initialValue: fieldValue endValue: fieldValue2 isCurrent: currentBoolean isRange: rangeBoolean
 
-	currentBoolean 
+	^currentBoolean 
 		ifTrue: [rangeBoolean 
 						ifTrue: [self getCurrentAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName initialValue: fieldValue endValue: fieldValue2] 
 						ifFalse: [self getCurrentAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName initialValue: fieldValue] 
