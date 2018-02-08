@@ -1,0 +1,2 @@
+application
+getAllCurrentTaskAssignmentsInApplication: appName

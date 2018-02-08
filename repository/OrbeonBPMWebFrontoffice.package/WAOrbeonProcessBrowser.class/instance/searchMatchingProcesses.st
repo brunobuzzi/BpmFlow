@@ -12,7 +12,8 @@ searchMatchingProcesses
 
 	appName := self searchValueAt: 'application' ifAbsent: [''].
 	procName := self searchValueAt: 'process-type' ifAbsent: [''].
-	formName := self searchValueAt: 'form-type' ifAbsent: ['']. (formName = self viewAllText) ifTrue: [formName := ''].
+	formName := self searchValueAt: 'form-type' ifAbsent: ['']. 
+	(formName = self viewAllText) ifTrue: [formName := ''].
 	fieldName  := self searchValueAt: 'field-name' ifAbsent: [''].
 	fieldValue  := self searchValueAt: 'field-value' ifAbsent: [''].
 	fieldValue2 := self searchValueAt: 'field-value-2' ifAbsent: [''].

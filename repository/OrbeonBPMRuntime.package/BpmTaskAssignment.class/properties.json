@@ -17,6 +17,8 @@
 		"process",
 		"task",
 		"user",
+		"application",
+		"applicationName",
 		"role",
 		"matrix",
 		"hasContextApplications",
