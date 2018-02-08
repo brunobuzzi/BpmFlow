@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getCurrentCollection" : "brunobb 02/08/2018 14:17",
+		"registerProcessType:" : "brunobb 02/08/2018 14:21",
+		"renderApplicationComboOn:" : "brunobb 02/08/2018 14:18",
+		"renderProcessTypeComboOn:" : "brunobb 02/08/2018 14:21",
+		"renderSearchAreaOn:" : "brunobb 02/08/2018 14:22",
+		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20" } }

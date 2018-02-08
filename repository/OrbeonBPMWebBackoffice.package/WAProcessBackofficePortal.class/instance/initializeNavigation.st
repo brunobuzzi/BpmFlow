@@ -5,11 +5,12 @@ initializeNavigation
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
 		set24Icon: #process24Png;
-		addItem: (SewafCommandItem label: 'List Processes Definitions' command: #openDefinitionsManager);
+		addItem: (SewafCommandItem label: 'Process Definitions' command: #openDefinitionsManager);
 		addItem: (SewafCommandItem label: 'Define New Process' command: #openBizagiManager);
 		addItem: (SewafCommandItem label: 'Monitor Processes' command: #openProcessRadar);
-		addItem: (SewafCommandItem label: 'Cancelled Processes' command: #openCancelledProcessViewer);
+		addItem: (SewafCommandItem label: 'Browse Timers' command: #openTimerEventBrowser);
 		addItem: (SewafCommandItem label: 'Process Categories' command: #openProcessCategoryManager);
+		addItem: (SewafCommandItem label: 'Cancelled Processes' command: #openCancelledProcessViewer);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #forms32Png)
 		set24Icon: #forms24Png;
