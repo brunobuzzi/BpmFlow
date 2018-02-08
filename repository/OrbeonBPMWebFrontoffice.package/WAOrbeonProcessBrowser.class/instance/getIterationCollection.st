@@ -1,4 +1,4 @@
-search area
+search operation
 getIterationCollection
 	"Get the iteration collection where the search process will iterate over to find a specific element"
 

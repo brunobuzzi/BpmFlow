@@ -1,9 +1,9 @@
-search area
+search operation
 getAllAssignmentsFor: procName in: appName
-	"Answer a collection of <OrbeonProcessAssignment> for the process named <procName> in application <appName>"
+	"Answer a collection of <BpmTaskAssignment> for the process named <procName> in application <appName>"
 	| selectBlock |
 
-	(appName isNil or: [appName isEmpty]) ifTrue: [^searchResult := self getIterationCollection].
+	(appName isNil or: [appName isEmpty]) ifTrue: [^searchResult := self getQueryOperation getAllTaskAssignments: self modeIsCurrentTasks].
 
 	selectBlock := (procName = self viewAllText)
 		ifTrue: [[:each | each applicationName = appName]]

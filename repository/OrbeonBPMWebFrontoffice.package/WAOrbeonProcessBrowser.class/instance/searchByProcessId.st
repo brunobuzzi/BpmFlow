@@ -1,16 +1,13 @@
 search operation
 searchByProcessId
-	| id searchClass |
+	"The receiver search for a collection of <BpmProcessInstance> with a given <id> entered in the web application.
+	The search scope can be <User> or <System>"
+	| id |
 
 	id  := [Number fromString: (self searchValueAt: 'id' ifAbsent: ['0'])] on: Error do: [:err | 0].
 
-"	searchResult := self modeIsFinishedTasks 
-								ifTrue: [self session user getAllFinishedTaskAssignmentsWithId: id] 
-								ifFalse: [self session user getAllTaskAssignmentsWithId: id].
-"
-	searchClass := BpmQueryOperation getQueryOperationClassFor: (self searchValueAt: 'scope' ifAbsent: ['']) translatedTo: self session user.
-
-	searchResult := (searchClass newFor: self session user) getAllTaskAssignmentsWithId: id isCurrent: self modeIsCurrentTasks.
+	searchResult := self getQueryOperation getAllTaskAssignmentsWithId: id isCurrent: self modeIsCurrentTasks.
 
 	selectedLateralItem := nil.
+
 	"selectedTransition := nil."
