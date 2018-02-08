@@ -1,4 +1,0 @@
-application&process
-getAllCurrentTaskAssignmentsInApplication: appName andProcess: procName
-
-	self subclassResponsibility

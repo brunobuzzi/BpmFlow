@@ -18,8 +18,7 @@ searchMatchingProcesses
 	fieldValue  := self searchValueAt: 'field-value' ifAbsent: [''].
 	fieldValue2 := self searchValueAt: 'field-value-2' ifAbsent: [''].
 
-	(formName isEmpty and: [fieldName isEmpty and: [fieldValue isEmpty]]) 
-	ifTrue: [^self getAllAssignmentsFor: procName in: appName].
+	(formName isEmpty and: [fieldName isEmpty and: [fieldValue isEmpty]]) ifTrue: [^self getAllAssignmentsFor: procName in: appName].
 
 	searchResult := self isRangeSearch
 		ifFalse: [BpmProcessDefinition getAssignmentsIn: appName processName: procName formName: formName fieldName: fieldName withValue: fieldValue]

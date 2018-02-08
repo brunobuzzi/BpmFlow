@@ -1,2 +1,0 @@
-application
-getAllCurrentTaskAssignmentsInApplication: appName

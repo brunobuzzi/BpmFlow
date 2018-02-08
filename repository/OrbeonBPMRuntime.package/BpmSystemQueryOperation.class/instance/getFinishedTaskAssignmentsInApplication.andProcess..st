@@ -1,5 +1,5 @@
 application&process
-getAllFinishedTaskAssignmentsInApplication: appName andProcess: procName
+getFinishedTaskAssignmentsInApplication: appName andProcess: procName
 	| assignments |
 
 	assignments := OrderedCollection new.

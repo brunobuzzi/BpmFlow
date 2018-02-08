@@ -1,5 +1,5 @@
 application
-getAllFinishedTaskAssignmentsInApplication: appName
+getFinishedTaskAssignmentsInApplication: appName
 	| assignments |
 
 	assignments := OrderedCollection new.

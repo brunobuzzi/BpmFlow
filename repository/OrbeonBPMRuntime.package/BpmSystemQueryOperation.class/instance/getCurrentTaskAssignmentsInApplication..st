@@ -1,5 +1,5 @@
 application
-getAllCurrentTaskAssignmentsInApplication: appName
+getCurrentTaskAssignmentsInApplication: appName
 	| assignments |
 
 	assignments := user getAllAvailableTaskAssignments select: [:each | each applicationName = appName].

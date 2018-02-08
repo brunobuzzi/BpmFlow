@@ -1,5 +1,5 @@
 application&process
-getAllCurrentTaskAssignmentsInApplication: appName andProcess: procName
+getCurrentTaskAssignmentsInApplication: appName andProcess: procName
 	| assignments |
 
 	assignments := user getAllAvailableTaskAssignments select: [:each | (each applicationName = appName) and: [each processName = procName] ].

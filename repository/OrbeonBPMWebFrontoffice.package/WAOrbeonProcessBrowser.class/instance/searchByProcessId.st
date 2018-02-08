@@ -6,7 +6,7 @@ searchByProcessId
 
 	id  := [Number fromString: (self searchValueAt: 'id' ifAbsent: ['0'])] on: Error do: [:err | 0].
 
-	searchResult := self getQueryOperation getAllTaskAssignmentsWithId: id isCurrent: self modeIsCurrentTasks.
+	searchResult := self getQueryOperation getTaskAssignmentsWithId: id isCurrent: self modeIsCurrentTasks.
 
 	selectedLateralItem := nil.
 

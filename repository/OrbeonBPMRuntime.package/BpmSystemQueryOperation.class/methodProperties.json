@@ -3,10 +3,14 @@
 		"getComboBoxNameFor:" : "brunobb 02/07/2018 14:07" },
 	"instance" : {
 		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 12:34",
-		"getAllCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 12:35",
-		"getAllCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:37",
-		"getAllCurrentTaskAssignmentsWithId:" : "brunobb 02/08/2018 11:18",
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 12:32",
-		"getAllFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 11:58",
-		"getAllFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 12:38",
-		"getAllFinishedTaskAssignmentsWithId:" : "brunobb 02/07/2018 12:12" } }
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:27",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:27",
+		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
+		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
+		"getCurrentTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:27",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:27",
+		"getFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
+		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
+		"getFinishedTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25" } }

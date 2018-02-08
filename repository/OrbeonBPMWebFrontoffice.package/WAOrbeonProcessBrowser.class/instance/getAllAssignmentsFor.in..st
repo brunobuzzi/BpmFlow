@@ -5,5 +5,5 @@ getAllAssignmentsFor: procName in: appName
 	(appName isNil or: [appName isEmpty]) ifTrue: [^searchResult := self getQueryOperation getAllTaskAssignments: self modeIsCurrentTasks].
 
 	searchResult := (procName = self viewAllText)
-		ifTrue: [self getQueryOperation getAllTaskAssignmentsInApplication: appName isCurrent: self modeIsCurrentTasks]
-		ifFalse: [self getQueryOperation getAllTaskAssignmentsInApplication: appName andProcess: procName isCurrent: self modeIsCurrentTasks].
+		ifTrue: [self getQueryOperation getTaskAssignmentsInApplication: appName isCurrent: self modeIsCurrentTasks]
+		ifFalse: [self getQueryOperation getTaskAssignmentsInApplication: appName andProcess: procName isCurrent: self modeIsCurrentTasks].

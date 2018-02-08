@@ -1,4 +1,4 @@
 application
-getAllFinishedTaskAssignmentsInApplication: appName
+getFinishedTaskAssignmentsInApplication: appName
 
 	^self user getFinishedAssignments select: {:each | each.applicationName = appName}
