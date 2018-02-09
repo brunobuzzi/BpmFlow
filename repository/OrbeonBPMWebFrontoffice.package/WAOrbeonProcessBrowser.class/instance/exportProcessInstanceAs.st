@@ -1,6 +1,6 @@
 export
 exportProcessInstanceAs
-	| selectedOption stream converter |
+	| selectedOption |
 
 	selectedOption := (self componentValueAt: 'exportProcess') "the jqdialog set this value"ifNil: [^self] ifNotNil: [:value | value].
 

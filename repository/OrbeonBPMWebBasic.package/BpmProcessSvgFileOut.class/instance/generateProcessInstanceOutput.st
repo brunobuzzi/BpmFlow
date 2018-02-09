@@ -1,11 +1,16 @@
 file out
 generateProcessInstanceOutput
-	| stream converter |
+	| stream converter selectedObject |
 
 	stream := PrintStream on: String new.
 	converter := BizagiSvgConverter convert: (fileOutObject generateProcessMapFor: user) prettyPrinted.
 
 	stream nextPutAll: self xmlHeader, String lf.
-	stream nextPutAll: (converter generateSVGFor: user assignment: fileOutObject).
+
+	(fileOutObject isProcessDefinition or: [fileOutObject isTimerEvent]) 
+	ifTrue: [stream nextPutAll: (converter generateSVGFor: user process: selectedObject).] 
+	ifFalse: [stream nextPutAll: (converter generateSVGFor: user assignment: selectedObject)].
+
+	
 
 	self downloadSvg: stream
