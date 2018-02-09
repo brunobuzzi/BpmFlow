@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonBPMWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"webComponent",
+		"fileOutObject",
+		"user" ],
+	"name" : "BpmProcessFileOut",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

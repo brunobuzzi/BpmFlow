@@ -8,14 +8,4 @@ exportProcessInstanceAs
 
 	(selectedOption = #svg) ifFalse: [^self].
 
-	stream := PrintStream on: String new.
-	converter := BizagiSvgConverter convert: (selectedLateralItem process generateProcessMapFor: self session user) prettyPrinted.
-
-	stream nextPutAll: self xmlHeader, String lf;
-		nextPutAll: (converter generateSVGFor: self session user assignment: selectedLateralItem).
-
-	self requestContext respond: [:response | 
-        response document: ((stream contents asByteArray seasideMimeDocument) 
-                                        mimeType: 'image/svg+xml'; 
-                                        fileName: (selectedLateralItem processName, '.svg'); 
-                                        yourself)].
+	(BpmProcessSvgFileOut newFor: self object: selectedLateralItem user: self session user) generateProcessInstanceOutput
