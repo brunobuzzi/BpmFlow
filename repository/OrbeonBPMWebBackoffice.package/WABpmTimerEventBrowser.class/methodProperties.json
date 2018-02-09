@@ -2,11 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getCurrentCollection" : "brunobb 02/08/2018 14:17",
+		"getCurrentCollection" : "brunobb 02/09/2018 10:20",
+		"getIconNameFormItem" : "brunobb 02/09/2018 10:24",
+		"getTextForItem:" : "brunobb 02/09/2018 10:25",
+		"isTimerTypeCreation" : "brunobb 02/09/2018 10:06",
 		"registerProcessType:" : "brunobb 02/08/2018 14:21",
 		"renderApplicationComboOn:" : "brunobb 02/08/2018 14:18",
+		"renderItemComponentOn:" : "brunobb 02/09/2018 10:28",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/09/2018 10:28",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 02/09/2018 10:27",
+		"renderItemDescriptionTitleOn:" : "brunobb 02/09/2018 10:26",
+		"renderLateralItemDetailsOn:for:" : "brunobb 02/09/2018 10:26",
 		"renderProcessTypeComboOn:" : "brunobb 02/08/2018 14:21",
-		"renderSearchAreaOn:" : "brunobb 02/09/2018 09:09",
+		"renderSearchAreaOn:" : "brunobb 02/09/2018 09:43",
 		"renderSearchSubmitButtonOn:" : "brunobb 02/09/2018 09:12",
 		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20",
-		"searchTimerEvents" : "brunobb 02/09/2018 09:19" } }
+		"renderTimerTypeComboOn:" : "brunobb 02/09/2018 09:41",
+		"searchTimerEvents" : "brunobb 02/09/2018 10:13" } }

@@ -1,4 +1,4 @@
-other
+search area
 renderSearchSubmitButtonOn: html
 
 	html div class: 'top-search-filters-one'; style: 'margin-top: 20px;'; with: [

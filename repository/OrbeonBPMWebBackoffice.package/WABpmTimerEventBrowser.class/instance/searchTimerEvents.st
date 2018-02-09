@@ -1,8 +1,10 @@
-other
+search operation
 searchTimerEvents
 	| appName procName |
 	
 	appName := self searchValueAt: 'application' ifAbsent: [''].
 	procName := self searchValueAt: 'process-type' ifAbsent: [''].
 
-	self defaultTimerEventMonitor
+	searchResult := self isTimerTypeCreation
+							ifTrue: [self defaultTimerEventMonitor getAllTimerEventsForProcessCreation] 
+							ifFalse: [self defaultTimerEventMonitor getAllIntermediateTimerEvents].

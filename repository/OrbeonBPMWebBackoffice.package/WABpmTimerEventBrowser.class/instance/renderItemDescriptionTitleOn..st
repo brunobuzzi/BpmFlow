@@ -1,0 +1,2 @@
+other
+renderItemDescriptionTitleOn: html
