@@ -4,5 +4,6 @@
 		"new" : "BrunoBB 06/26/2016 14:37" },
 	"instance" : {
 		"getProcessDefinitionCache" : "brunobb 01/19/2018 10:00",
+		"isTimerEvent" : "brunobb 02/09/2018 11:17",
 		"throwExceptionTaskAssignmentNotFound" : "BrunoBB 12/04/2015 10:36",
 		"throwNoProcessMatrixExceptionFor:" : "BrunoBB 12/05/2015 13:57" } }
