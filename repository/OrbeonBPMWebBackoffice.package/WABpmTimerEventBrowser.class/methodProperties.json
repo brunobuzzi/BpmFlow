@@ -6,5 +6,7 @@
 		"registerProcessType:" : "brunobb 02/08/2018 14:21",
 		"renderApplicationComboOn:" : "brunobb 02/08/2018 14:18",
 		"renderProcessTypeComboOn:" : "brunobb 02/08/2018 14:21",
-		"renderSearchAreaOn:" : "brunobb 02/08/2018 14:22",
-		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20" } }
+		"renderSearchAreaOn:" : "brunobb 02/09/2018 09:09",
+		"renderSearchSubmitButtonOn:" : "brunobb 02/09/2018 09:12",
+		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20",
+		"searchTimerEvents" : "brunobb 02/09/2018 09:19" } }
