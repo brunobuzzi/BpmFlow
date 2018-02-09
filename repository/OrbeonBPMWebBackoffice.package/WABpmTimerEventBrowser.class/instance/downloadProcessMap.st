@@ -1,4 +1,4 @@
-other
+export
 downloadProcessMap
 
 	self selectedLateralItem hasSubProcesses

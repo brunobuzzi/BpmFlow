@@ -13,4 +13,4 @@ renderItemComponentOn: html
 		ifFalse: [blockSource].
 
 
-	html output: cleanBlockSource
+	html div class: 'timer-block-code'; with: [html output: cleanBlockSource]

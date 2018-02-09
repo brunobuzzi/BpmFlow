@@ -1,4 +1,4 @@
-other
+export
 downloadProcessMapOf: aBpmProcessDefinition
 
 	self requestContext respond: [:response | 
