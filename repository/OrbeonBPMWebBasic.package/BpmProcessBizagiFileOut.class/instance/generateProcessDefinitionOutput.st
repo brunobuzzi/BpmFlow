@@ -1,4 +1,4 @@
-other
+file out
 generateProcessDefinitionOutput
 
 	fileOutObject getTopProcess hasSubProcesses

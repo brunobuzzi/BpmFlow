@@ -1,4 +1,4 @@
-other
+testing
 isProcessInstance
 
 	^false

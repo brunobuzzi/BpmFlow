@@ -1,4 +1,4 @@
-other
+file out
 downloadZipProcessMap
 	| fileName stream |
 
