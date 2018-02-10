@@ -26,3 +26,11 @@ renderServerConfigurationViewOn: html
 		callback: [:value | self getGemStoneServerConfiguration gemstoneIP: value]; 
 		readonly: true; 
 		with: self getGemStoneServerConfiguration gemstoneIP.
+	html textInput attributeAt: 'id' put: 'baseUrl'; 
+			callback: [:value | self getGemStoneServerConfiguration baseUrlDocumentation: value]; 
+			readonly: true; 
+			with: self getGemStoneServerConfiguration baseUrlDocumentation.
+	html textInput attributeAt: 'id' put: 'time-span'; 
+			callback: [:value | self getGemStoneServerConfiguration timersTimespan: value]; 
+			readonly: true; 
+			with: self getGemStoneServerConfiguration timersTimespan.

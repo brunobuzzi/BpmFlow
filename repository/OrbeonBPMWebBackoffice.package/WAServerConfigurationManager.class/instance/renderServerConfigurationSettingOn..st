@@ -25,4 +25,7 @@ renderServerConfigurationSettingOn: html
 	html textInput attributeAt: 'id' put: 'baseUrl'; 
 			callback: [:value | self getGemStoneServerConfiguration baseUrlDocumentation: value]; 
 			with: self getGemStoneServerConfiguration baseUrlDocumentation.
+	html textInput attributeAt: 'id' put: 'time-span'; 
+			callback: [:value | [self getGemStoneServerConfiguration timersTimespan: value] on: Exception do: [:ex |] ]; 
+			with: self getGemStoneServerConfiguration timersTimespan.
 	html submitButton callback: [self savePreferences]; with: ('Save Preferences' translateFor: self session user).
