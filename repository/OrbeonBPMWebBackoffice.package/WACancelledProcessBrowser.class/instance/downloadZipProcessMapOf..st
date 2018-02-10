@@ -1,4 +1,4 @@
-other
+export
 downloadZipProcessMapOf: aBpmProcessDefinition
 	| fileName stream |
 

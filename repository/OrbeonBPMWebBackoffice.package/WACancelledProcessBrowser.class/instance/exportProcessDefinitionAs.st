@@ -1,11 +1,11 @@
-other
+export
 exportProcessDefinitionAs
 	| selectedOption |
 
 	selectedOption := (self componentValueAt: 'exportProcess') "the jqdialog set this value"ifNil: [^self] ifNotNil: [:value | value].
 
-	(selectedOption = #xpdl) ifTrue: [^(BpmProcessBizagiFileOut newFor: self object: selectedLateralItem user: self session user) generateProcessDefinitionOutput].
+	(selectedOption = #xpdl) ifTrue: [^(BpmProcessBizagiFileOut newFor: self object: selectedLateralItem user: self session user) generateOutput].
 
 	(selectedOption = #svg) ifFalse: [^self].
 
-	(BpmProcessSvgFileOut newFor: self object: selectedLateralItem user: self session user) generateProcessDefinitionOutput
+	(BpmProcessSvgFileOut newFor: self object: selectedLateralItem user: self session user) generateOutput

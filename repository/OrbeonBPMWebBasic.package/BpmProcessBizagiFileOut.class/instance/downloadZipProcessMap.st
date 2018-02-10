@@ -2,7 +2,8 @@ other
 downloadZipProcessMap
 	| fileName stream |
 
-	stream := fileOutObject getProcessMapStream.
+	stream := fileOutObject isProcessDefinition ifTrue: [fileOutObject getProcessMapStream] ifFalse: [fileOutObject getProcessMapStreamFor: user].
+
 	fileName := stream gsfile name.
 
 	webComponent requestContext respond: [:response | 

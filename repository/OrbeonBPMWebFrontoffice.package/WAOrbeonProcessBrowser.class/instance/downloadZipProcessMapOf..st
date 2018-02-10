@@ -1,8 +1,8 @@
 export
-downloadZipProcessMapOf: aBpmProcessDefinition
+downloadZipProcessMapOf: aBpmProcessInstance
 	| fileName stream |
 
-	stream := aBpmProcessDefinition getProcessMapStreamFor: self session user.
+	stream := aBpmProcessInstance getProcessMapStreamFor: self session user.
 	fileName := stream gsfile name.
 
 	self requestContext respond: [:response | 
