@@ -19,9 +19,6 @@
 		"createOrbeonLinkOn:for:" : "BrunoBB 08/03/2016 05:32",
 		"createSeasideLinkOn:for:" : "BrunoBB 08/03/2016 05:32",
 		"displayModeFor:" : "BrunoBB 08/03/2016 05:32",
-		"downloadProcessMap" : "BrunoBB 01/13/2017 12:57",
-		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 13:13",
-		"downloadZipProcessMapOf:" : "brunobb 02/10/2018 05:25",
 		"exportProcessInstanceAs" : "brunobb 02/10/2018 05:15",
 		"filterProcessDefinitionByCategory:" : "BrunoBB 08/03/2016 05:32",
 		"freeSelectedAssignment" : "brunobb 01/26/2018 18:16",
@@ -101,5 +98,4 @@
 		"setTransitionsHeight" : "BrunoBB 08/03/2016 05:32",
 		"switchOpenCloseTransition:" : "BrunoBB 08/03/2016 05:32",
 		"transitionsHeight" : "BrunoBB 08/03/2016 05:32",
-		"transitionsHeight:" : "BrunoBB 08/03/2016 05:32",
-		"xmlHeader" : "BrunoBB 01/13/2017 13:24" } }
+		"transitionsHeight:" : "BrunoBB 08/03/2016 05:32" } }

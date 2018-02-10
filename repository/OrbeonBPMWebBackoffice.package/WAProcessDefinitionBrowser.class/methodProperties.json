@@ -5,9 +5,6 @@
 		"applyAssignationPolicy" : "brunobb 02/03/2018 09:38",
 		"categories" : "BrunoBB 07/02/2015 12:37",
 		"categories:" : "BrunoBB 07/02/2015 12:37",
-		"downloadProcessMap" : "BrunoBB 01/13/2017 13:18",
-		"downloadProcessMapOf:" : "BrunoBB 01/13/2017 13:19",
-		"downloadZipProcessMapOf:" : "BrunoBB 01/13/2017 13:19",
 		"exportProcessDefinitionAs" : "brunobb 02/10/2018 05:14",
 		"filterProcessDefinitionByCategory:" : "BrunoBB 12/15/2015 10:11",
 		"getCurrentCollection" : "BrunoBB 06/27/2015 13:10",
@@ -57,5 +54,4 @@
 		"selectedLateralItem:" : "BrunoBB 06/16/2016 14:03",
 		"setAssignationPolicy:" : "brunobb 02/02/2018 14:03",
 		"setAutomaticAssignationPolicy:" : "brunobb 02/02/2018 14:00",
-		"toggleAnonymousStart" : "BrunoBB 04/10/2016 18:23",
-		"xmlHeader" : "BrunoBB 01/13/2017 13:23" } }
+		"toggleAnonymousStart" : "BrunoBB 04/10/2016 18:23" } }

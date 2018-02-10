@@ -2,9 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"downloadProcessMap" : "brunobb 02/09/2018 11:22",
-		"downloadProcessMapOf:" : "brunobb 02/09/2018 11:22",
-		"downloadZipProcessMapOf:" : "brunobb 02/09/2018 11:22",
 		"exportProcessDefinitionAs" : "brunobb 02/09/2018 14:29",
 		"getCurrentCollection" : "brunobb 02/09/2018 10:20",
 		"getIconNameFormItem" : "brunobb 02/09/2018 10:24",
@@ -22,5 +19,4 @@
 		"renderSearchSubmitButtonOn:" : "brunobb 02/09/2018 09:12",
 		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20",
 		"renderTimerTypeComboOn:" : "brunobb 02/09/2018 09:41",
-		"searchTimerEvents" : "brunobb 02/09/2018 10:13",
-		"xmlHeader" : "brunobb 02/09/2018 11:24" } }
+		"searchTimerEvents" : "brunobb 02/09/2018 10:13" } }
