@@ -8,4 +8,7 @@ drawOn: aJasvgiBpmCanvas
 			color: 'gray'
 			widthPx: '1px'.
 
-	transition setMarkerEnd: 'arrow'
+	startNode drawOn: aJasvgiBpmCanvas.
+	endNode drawOn: aJasvgiBpmCanvas.
+
+	transition setMarkerEnd: 'arrow'.

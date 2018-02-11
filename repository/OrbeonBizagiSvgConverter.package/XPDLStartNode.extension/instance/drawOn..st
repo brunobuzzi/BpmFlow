@@ -1,4 +1,6 @@
 *orbeonBizagiSvgConverter
 drawOn: aJasvgiBpmCanvas
 
-	^aJasvgiBpmCanvas drawStartNamed: self getName at: self getXcoordinate @ self getYcoordinate
+	^self isTimerNode
+	ifTrue: [aJasvgiBpmCanvas drawTimeEvent: self at: (self getXcoordinate @ self getYcoordinate)]
+	ifFalse: [aJasvgiBpmCanvas drawStartNamed: self getName at: self getXcoordinate @ self getYcoordinate]
