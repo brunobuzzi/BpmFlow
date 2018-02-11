@@ -11,5 +11,7 @@ startUninterruptedLoop
 		self triggerArtifactTimers.
 		self triggerProcessCreation.
 
+		System commit. "commit changes in the system and if <timersTimespan> has been changed read the new value"
+
 		(Delay forSeconds: timespanInSeconds) wait. "rest for 10 minutes"
 	].
