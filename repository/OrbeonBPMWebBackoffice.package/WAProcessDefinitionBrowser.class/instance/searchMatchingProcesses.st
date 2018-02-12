@@ -1,6 +1,7 @@
 search area
 searchMatchingProcesses
 
+	selectedLateralItem := nil.
 	searchApplied := true.
 
 	((searchValues includesKey: 'id') and: [(searchValues at: 'id') notEmpty])

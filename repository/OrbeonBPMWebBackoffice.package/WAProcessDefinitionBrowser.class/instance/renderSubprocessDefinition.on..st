@@ -1,9 +1,9 @@
 process
-renderSubprocessDefinition: artifactDefinition on: html
+renderSubprocessDefinition: aBpmProcessDefinition on: html
 
-	html div with: [html strong with: [html output: artifactDefinition name]].
-
-	html anchor 
-		class: 'no-underline';
-		callback: [self onSubProcessSelected: artifactDefinition]; 
-		with: [html output: '@', artifactDefinition name]
+	html div with: [
+		html anchor 
+			class: 'no-underline';
+			callback: [self onSubProcessSelected: aBpmProcessDefinition]; 
+			with: [html output: aBpmProcessDefinition processName]
+	].

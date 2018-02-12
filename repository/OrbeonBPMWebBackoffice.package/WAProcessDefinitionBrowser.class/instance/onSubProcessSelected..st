@@ -1,9 +1,9 @@
 process
-onSubProcessSelected: artifactDefinition
+onSubProcessSelected: aBpmTransitionDefinition
 
 	selectedObject := nil.
 
 	searchApplied := true.
-	searchResult := OrderedCollection withAll: artifactDefinition processDefinition getProcessesTreeAsCollection.
+	searchResult := OrderedCollection withAll: aBpmTransitionDefinition getProcessesTreeAsCollection.
 
-	selectedLateralItem := artifactDefinition subProcessDefinition
+	selectedLateralItem := aBpmTransitionDefinition
