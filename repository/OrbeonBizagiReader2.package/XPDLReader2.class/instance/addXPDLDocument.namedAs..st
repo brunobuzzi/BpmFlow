@@ -1,4 +1,4 @@
-other
+process xpdl
 addXPDLDocument: xpdlDocument namedAs: xpdlPathFileName
 	"The receiver add a collection of processes contained in <xpdlDocument> "
 	| newPackage |

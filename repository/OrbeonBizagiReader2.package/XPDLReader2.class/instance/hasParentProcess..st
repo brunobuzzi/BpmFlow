@@ -1,4 +1,4 @@
-other
+query
 hasParentProcess: aXPDLPackageNode
 	"Answer whether or not the xpdl package <aXPDLPackageNode> has parent process"
 

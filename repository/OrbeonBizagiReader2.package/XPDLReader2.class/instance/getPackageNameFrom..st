@@ -1,4 +1,4 @@
-other
+query
 getPackageNameFrom: xpdlDocument
 
 	^(xpdlDocument findElementNamed: 'Package')

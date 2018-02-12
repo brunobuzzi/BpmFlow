@@ -1,4 +1,4 @@
-other
+svg generator
 getSVGTitleForAssignment: aBpmTaskAssignment
 
 	^'#', aBpmTaskAssignment processId printString, 

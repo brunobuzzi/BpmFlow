@@ -1,4 +1,4 @@
-other
+svg generator
 getSVGTitleForDefinition: aBpmProcessDefinition
 
 	^'#', aBpmProcessDefinition processId printString, 

@@ -1,4 +1,4 @@
-other
+enumerating
 getAllSubProcessNodes
 	"Answer a collection with all sub process nodes of all pools"
 	| subProcessNodes |

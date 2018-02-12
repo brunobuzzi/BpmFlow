@@ -1,4 +1,4 @@
-other
+svg generator
 getSVGTitleForProcess: aBpmProcessInstance
 
 	^'#', aBpmProcessInstance id printString, 

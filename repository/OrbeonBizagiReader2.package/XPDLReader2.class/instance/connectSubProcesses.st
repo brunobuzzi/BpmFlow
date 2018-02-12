@@ -1,4 +1,4 @@
-other
+connecting
 connectSubProcesses
 	"The receiver connect each <XPDLSubProcess> node with it's process definition <XPDLPoolNode>"
 

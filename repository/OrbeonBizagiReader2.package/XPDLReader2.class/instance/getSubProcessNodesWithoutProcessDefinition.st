@@ -1,4 +1,4 @@
-other
+warnings
 getSubProcessNodesWithoutProcessDefinition
 	"Answer a collection of <XPDLSubProcessActivity> where it's Process Definition is NOT defined in <allProcesses>.
 	This will cause an error because some subprocesses are NOT defined"

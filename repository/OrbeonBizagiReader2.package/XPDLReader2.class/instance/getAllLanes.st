@@ -1,4 +1,4 @@
-other
+enumerating
 getAllLanes
 	"Answer a collection with all XPDLLaneNode of the receiver"
 	| allLanes |

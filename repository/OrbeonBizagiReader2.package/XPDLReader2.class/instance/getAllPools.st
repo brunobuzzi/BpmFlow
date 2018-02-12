@@ -1,4 +1,4 @@
-other
+enumerating
 getAllPools
 	"Answer a collection with all XPDLPoolNode of the receiver"
 	| allPools |

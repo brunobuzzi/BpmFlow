@@ -1,4 +1,4 @@
-other
+warnings
 getImportWarningReportWith: mapperDictionary
 	"The receiver generates the import report of the XPDL files.
 	1- Do basic checks to the process definition.

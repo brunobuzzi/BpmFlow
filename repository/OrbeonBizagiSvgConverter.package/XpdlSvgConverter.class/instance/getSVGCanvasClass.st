@@ -1,4 +1,4 @@
-other
+svg generator
 getSVGCanvasClass
 
 	^JASVGIBpmCanvas

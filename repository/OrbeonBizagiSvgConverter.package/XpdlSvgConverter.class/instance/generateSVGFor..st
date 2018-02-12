@@ -1,10 +1,11 @@
-other
+svg generator
 generateSVGFor: aBpmDefinition
 	"The receiver answer a SVG string for BPM process <aBpmDefinition>"
-	| xpdlReader svgCanvas |
+	| xpdlReader svgCanvas dimensions |
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
-	svgCanvas := self getSVGCanvasClass newWidth: '1000px' height: '1000px'.
+	dimensions := xpdlReader getDiagramDimensions.
+	svgCanvas := self getSVGCanvasClass newWidth: (dimensions x printString, 'px') height: (dimensions y printString, 'px').
 	svgCanvas addMarker: (svgCanvas markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	svgCanvas drawText: (self getSVGTitleForDefinition: aBpmDefinition) at: 20@20 textSizePx: '14px'.

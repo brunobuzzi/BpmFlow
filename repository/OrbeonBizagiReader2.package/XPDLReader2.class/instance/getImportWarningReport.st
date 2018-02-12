@@ -1,4 +1,4 @@
-other
+warnings
 getImportWarningReport
 
 	importReport addAll: self getSubProcessNodesWithoutProcessDefinition;

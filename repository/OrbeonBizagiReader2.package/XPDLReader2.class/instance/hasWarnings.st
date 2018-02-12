@@ -1,4 +1,4 @@
-other
+warnings
 hasWarnings
 
 	^importReport notEmpty

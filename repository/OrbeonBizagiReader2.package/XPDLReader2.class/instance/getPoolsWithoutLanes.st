@@ -1,4 +1,4 @@
-other
+warnings
 getPoolsWithoutLanes
 	"Answer a collection of <XPDLPools> that has NO Lanes (XPDLLanes)"
 	| report |

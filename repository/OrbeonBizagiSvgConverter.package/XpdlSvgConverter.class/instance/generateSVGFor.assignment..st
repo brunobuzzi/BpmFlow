@@ -1,9 +1,10 @@
-other
+svg generator
 generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
-	| xpdlReader svgCanvas yCoordinate |
+	| xpdlReader svgCanvas yCoordinate dimensions |
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
-	svgCanvas := self getSVGCanvasClass newWidth: '1000px' height: '1000px'.
+	dimensions := xpdlReader getDiagramDimensions.
+	svgCanvas := self getSVGCanvasClass newWidth: (dimensions x printString, 'px') height: (dimensions y printString, 'px').
 	svgCanvas addMarker: (svgCanvas markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	svgCanvas drawText: (self getSVGTitleForAssignment: aBpmTaskAssignment) at: 20@20 textSizePx: '14px'.
