@@ -1,7 +1,7 @@
 svg generator
 generateSVGFor: aBpmDefinition
 	"The receiver answer a SVG string for BPM process <aBpmDefinition>"
-	| xpdlReader svgCanvas dimensions |
+	| xpdlReader svgCanvas dimensions yCoordinate |
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
 	dimensions := xpdlReader getDiagramDimensions.
@@ -16,7 +16,7 @@ generateSVGFor: aBpmDefinition
 		eachWorkflow activities do: [:eachActivityNode | eachActivityNode drawOn: svgCanvas].
 	].
 
-	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText yCoordinate text |
+	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText text |
 		yCoordinate := eachWorkflow getLaneMaxYCoordinate + 20.
 		eachWorkflow getGatewayNodes do: [:gatewayNode | 
 			(gatewayNode outTransitions select: [:each | each hasCondition]) do: [:trNode | 
@@ -32,4 +32,11 @@ generateSVGFor: aBpmDefinition
 			yCoordinate := yCoordinate + 20.
 		].
 	].
+
+	aBpmDefinition getScripts keysAndValuesDo: [:varName :script | | text |
+		text := svgCanvas drawText: (varName, ': ', script scriptCode) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+
 	^svgCanvas contents

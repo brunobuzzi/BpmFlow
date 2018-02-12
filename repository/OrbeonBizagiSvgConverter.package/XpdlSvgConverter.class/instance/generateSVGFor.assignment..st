@@ -38,6 +38,12 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 		].
 	].
 
+	aBpmTaskAssignment process definition getScripts keysAndValuesDo: [:varName :script | | text |
+		text := svgCanvas drawText: (varName, ': ', script scriptCode) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+
 	aBpmTaskAssignment process getAllScriptVariables keysAndValuesDo: [:varName :value | | text |
 		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
 		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.

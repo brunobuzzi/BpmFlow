@@ -37,6 +37,12 @@ generateSVGFor: aBpmUser process: aBpmProcessInstance
 		].
 	].
 
+	aBpmProcessInstance definition getScripts keysAndValuesDo: [:varName :script | | text |
+		text := svgCanvas drawText: (varName, ': ', script scriptCode) at: 10 @ yCoordinate.
+		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
+		yCoordinate := yCoordinate + 20.
+	].
+
 	aBpmProcessInstance getAllScriptVariables keysAndValuesDo: [:varName :value | | text |
 		text := svgCanvas drawText: (varName, ': ', value printString) at: 10 @ yCoordinate.
 		svgCanvas addFigure: text toGroup: svgCanvas defaultNameForProcessGroup.
