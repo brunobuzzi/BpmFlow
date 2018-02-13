@@ -1,11 +1,10 @@
 search area
 getFormDefinitionList
-	| allFormsNames |
+	"The receiver answer a collection with all form definitions of the selected process type at <searchValues> 'process-type'"
+	| procDef |
 
-	allFormsNames := OrderedCollection new.
+	procDef := self getSelectedProcessDefinitionOrNil.
 
-	lateralCollection do: [:each | allFormsNames addAll: each getTaskNames].
+	procDef ifNil: [^#()].
 
-	^self viewAllArray, allFormsNames asSet asSortedCollection
-
-"	^#('-View All-'), (allFormsNames asSet asSortedCollection) "
+	^self viewAllArray, procDef getTaskNames asSet asSortedCollection

@@ -10,6 +10,7 @@ renderSearchRegularPanelOn: html
 				html textInput attributeAt: 'id' put: 'processId';
 					callback: [:value | searchValues at: 'id' put: value].
 			].
+			html div class: 'top-search-div'; with: [self renderApplicationComboOn: html].
 			html div class: 'top-search-div'; with: [self renderProcessTypeComboOn: html].
 			html div class: 'top-search-div'; with: [self renderFormDefinitionComboOn: html].
 			html div class: 'top-search-filters-two'; with: [
