@@ -10,7 +10,7 @@ updateLastExecutionTimeFor: aBpmProcessInstance
 
 	procInstancesCollection := procNameDictionary at: aBpmProcessInstance processName 
 									ifAbsent: [procNameDictionary at: aBpmProcessInstance processName put: OrderedCollection new] 
-									ifPresent: [:dictionary | dictionary].
+									ifPresent: [:collection | collection].
 
 
 	^procInstancesCollection add: aBpmProcessInstance

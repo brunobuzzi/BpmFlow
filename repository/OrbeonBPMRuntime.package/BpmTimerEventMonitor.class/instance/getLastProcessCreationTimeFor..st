@@ -10,7 +10,7 @@ getLastProcessCreationTimeFor: aBpmProcessDefinition
 
 	procInstancesCollection := procNameDictionary at: aBpmProcessDefinition processName 
 									ifAbsent: [procNameDictionary at: aBpmProcessDefinition processName put: OrderedCollection new] 
-									ifPresent: [:dictionary | dictionary].
+									ifPresent: [:collection | collection].
 
 	^(procInstancesCollection select: [:each | each version = aBpmProcessDefinition version]) 
 		ifNotEmpty: [:value | value last createdTime]
