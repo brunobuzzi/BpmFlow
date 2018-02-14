@@ -1,8 +1,12 @@
 top menu
 initializeNavigation
-	| subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
+	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
+	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
+		set24Icon: #placesuserhome24Png;
+		addItem: (SewafCommandItem label: 'Home' command: #openHome);
+		yourself.
 	subMenu1 := (SewafSubMenuItem label: 'My Processes' icon: #worksinprogress32Png)
 		set24Icon: #worksinprogress24Png;
 		addItem: (SewafCommandItem label: 'Current Processes' command: #showCurrentProcess);
@@ -28,6 +32,9 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Display Preferences' command: #showDisplayPreferences);
 		addItem: (SewafCommandItem label: 'Set Language' command: #showLanguageConfiguration);
 		yourself.
+
+	layout isTop ifTrue: [navigation addItem: homeMenu].
+
 	navigation addItem: subMenu1;
 		addItem: subMenu2;
 		addItem: subMenu3;
