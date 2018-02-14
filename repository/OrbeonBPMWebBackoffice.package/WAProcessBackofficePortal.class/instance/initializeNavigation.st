@@ -1,8 +1,12 @@
 other
 initializeNavigation
-	| subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
+	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
+	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
+		set24Icon: #placesuserhome24Png;
+		addItem: (SewafCommandItem label: 'Home' command: #openHome);
+		yourself.
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
 		set24Icon: #process24Png;
 		addItem: (SewafCommandItem label: 'Process Definitions' command: #openDefinitionsManager);
@@ -45,7 +49,9 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Set Language' command: #openLanguageConfiguration);
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
-	navigation addItem: subMenu2;
+	navigation 
+		addItem: homeMenu;
+		addItem: subMenu2;
 		addItem: subMenu1;
 		addItem: subMenu3;
 		addItem: subMenu4;
