@@ -49,8 +49,10 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Set Language' command: #openLanguageConfiguration);
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
+
+	layout isTop ifTrue: [navigation addItem: homeMenu].
+
 	navigation 
-		addItem: homeMenu;
 		addItem: subMenu2;
 		addItem: subMenu1;
 		addItem: subMenu3;
