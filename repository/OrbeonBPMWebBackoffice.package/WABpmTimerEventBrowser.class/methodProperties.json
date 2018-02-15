@@ -9,7 +9,7 @@
 		"isTimerTypeCreation" : "brunobb 02/09/2018 10:06",
 		"registerProcessType:" : "brunobb 02/08/2018 14:21",
 		"renderApplicationComboOn:" : "brunobb 02/08/2018 14:18",
-		"renderItemComponentOn:" : "brunobb 02/09/2018 13:02",
+		"renderItemComponentOn:" : "brunobb 02/15/2018 09:06",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/09/2018 11:34",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 02/09/2018 11:19",
 		"renderItemDescriptionTitleOn:" : "brunobb 02/09/2018 11:36",
@@ -19,4 +19,4 @@
 		"renderSearchSubmitButtonOn:" : "brunobb 02/09/2018 09:12",
 		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20",
 		"renderTimerTypeComboOn:" : "brunobb 02/09/2018 09:41",
-		"searchTimerEvents" : "brunobb 02/09/2018 10:13" } }
+		"searchTimerEvents" : "brunobb 02/15/2018 09:19" } }

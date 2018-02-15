@@ -1,6 +1,6 @@
 other
 renderItemComponentOn: html
-	| timer blockSource cleanBlockSource stringToRemove |
+	| timer blockSource cleanBlockSource stringToRemove lastExecutionOutput |
 
 	timer := selectedLateralItem isTimerEvent 
 		ifFalse: [selectedLateralItem getStartEvent]
@@ -13,4 +13,14 @@ renderItemComponentOn: html
 		ifFalse: [blockSource].
 
 
-	html div class: 'timer-block-code'; with: [html output: cleanBlockSource]
+	html div class: 'timer-block-code'; with: [html output: cleanBlockSource].
+
+	lastExecutionOutput := self isTimerTypeCreation 
+		ifTrue: [self defaultTimerEventMonitor getLastProcessCreationTimeFor: selectedLateralItem] 
+		ifFalse: [self defaultTimerEventMonitor getLastEventInstanceExecutionFor: selectedLateralItem].
+
+	html div class: 'timer-last-execution'; with: [html output: ('Last Execution' translateFor: self session user)].
+	html div class: 'timer-last-execution'; with: [html output: lastExecutionOutput].
+	html break.
+	html div class: 'timer-last-execution'; with: [html output: ('Current Time' translateFor: self session user)].
+	html div class: 'timer-last-execution'; with: [html output: TimeStamp now].
