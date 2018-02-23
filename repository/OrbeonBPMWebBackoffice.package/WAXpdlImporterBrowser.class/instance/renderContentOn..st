@@ -1,4 +1,4 @@
-upload
+other
 renderContentOn: html
 
 	html div id: 'import-forms'; with: [
@@ -9,5 +9,6 @@ renderContentOn: html
 			with: [html div id: 'add-new-form-button'; with: [self renderAddNewImportFormButtonOn: html].
 					html div id: 'remove-new-form-button'; with: [self renderRemoveImportFormButtonOn: html].
 					self renderImportAllButtonOn: html].
+	].
 
-	]
+	html div id: 'imported-processes'; with: [self renderSVGForImportedProcessesOn: html].

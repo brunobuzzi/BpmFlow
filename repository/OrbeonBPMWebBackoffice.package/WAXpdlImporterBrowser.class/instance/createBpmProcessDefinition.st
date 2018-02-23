@@ -5,12 +5,15 @@ createBpmProcessDefinition
 	"create the BpmProcessDefinition"
 	tempProcesses := processGenerator generateAllProcess.
 
-"	processGenerator generateProcessesAndStoreOnCache."
+"	processGenerator generateProcessesAndStoreOnCache.
 
 	topProcesses := processes select: [:each | each isTopProcess].
-	topProcesses ifEmpty: [^self].
+	topProcesses ifEmpty: [^self]."
+	^self
+
 	"redirect from the current page the process definition page"
-	messages := OrderedCollection new.
+
+"	messages := OrderedCollection new.
 
 	subMenu := mainPanel selectSubTabNamed: 'List Processes Definitions' inMenu: 'Processes' ifNone: [^nil].
 
@@ -21,4 +24,4 @@ createBpmProcessDefinition
 		add: (MessageSend receiver: mainPanel selector: #searchResult: arguments: (Array with: topProcesses));
 		add: (MessageSend receiver: mainPanel selector: #selectedLateralItem: argument: topProcesses first).
 
-	subMenu addMessagesToSend: messages.
+	subMenu addMessagesToSend: messages."
