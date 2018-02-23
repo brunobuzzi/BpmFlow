@@ -5,10 +5,10 @@ createBpmProcessDefinition
 	"create the BpmProcessDefinition"
 	tempProcesses := processGenerator generateAllProcess.
 
-"	processGenerator generateProcessesAndStoreOnCache.
+	processes := processGenerator generateProcessesAndStoreOnCache.
 
 	topProcesses := processes select: [:each | each isTopProcess].
-	topProcesses ifEmpty: [^self]."
+	topProcesses ifEmpty: [^self].
 	^self
 
 	"redirect from the current page the process definition page"
