@@ -1,9 +1,12 @@
 import
-createBpmProcessDefinitionFrom: aBpmProcessGenerator
-	| messages subMenu processes topProcesses |
+createBpmProcessDefinition
+	| messages subMenu tempProcesses processes topProcesses |
 
 	"create the BpmProcessDefinition"
-	processes := (aBpmProcessGenerator generateAllProcess collect: [:each | each addToCache]) asArray.
+	tempProcesses := processGenerator generateAllProcess.
+
+"	processGenerator generateProcessesAndStoreOnCache."
+
 	topProcesses := processes select: [:each | each isTopProcess].
 	topProcesses ifEmpty: [^self].
 	"redirect from the current page the process definition page"

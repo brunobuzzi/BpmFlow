@@ -17,7 +17,8 @@
 		"processesNames",
 		"fileFormats",
 		"invalidFormatError",
-		"packageFile" ],
+		"packageFile",
+		"processGenerator" ],
 	"name" : "WAXpdlImporterBrowser",
 	"pools" : [
 		 ],

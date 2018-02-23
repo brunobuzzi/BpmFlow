@@ -1,6 +1,6 @@
 import
 importBizagiFiles
-	| appDictionary fileArray generator |
+	| appDictionary fileArray |
 
 	appDictionary := Dictionary new.
 	fileArray := OrderedCollection new.
@@ -15,18 +15,18 @@ importBizagiFiles
 	"ERROR handler"
 	reader := XPDLReader2 forFiles: fileArray asArray.
 
-	generator := BpmProcessGenerator on: reader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
-	generator xpdlPackages do: [:eachPackage | 
+	processGenerator xpdlPackages do: [:eachPackage | 
 		eachPackage pools do: [:eachPool | 
-			generator mapProcess: eachPool getName toApplication: (self getApplicationFor: eachPackage).
+			processGenerator mapProcess: eachPool getName toApplication: (self getApplicationFor: eachPackage).
 		].
 	].
 
 	reader getImportWarningReportWith: self generateMapperDictionary.
 
 	"If false (no warnings) -> the processes definition are created and stored"
-	reader hasWarnings ifFalse: [^self createBpmProcessDefinitionFrom: generator].
+	reader hasWarnings ifFalse: [^self createBpmProcessDefinition].
 
 	self show: ((WABizagiImportReport parent: self)
 						warnings: reader importReport;
