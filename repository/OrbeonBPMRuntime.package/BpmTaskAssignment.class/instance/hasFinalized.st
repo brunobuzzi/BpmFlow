@@ -1,4 +1,6 @@
 finalizing
 hasFinalized
 
-	^process hasFinalized
+	"^process hasFinalized"
+
+	^taskEndDate notNil
