@@ -1,10 +1,10 @@
 service-put
-saveFinalFormInstance: formName app: app withId: id valid: aBoolean
+saveFinalFormInstance: formName app: app withId: id dataFormat: dataFormatVersion valid: aBoolean
 	"This method is called by Orbeon when a user click 'Send' in a Form Instance page"
 	| application definition instance version |
 	<put>
 	<produces: 'application/xml'>
-	<path: '/crud/{2}/{1}/data/{3}/data.xml?valid={4}'>
+	<path: '/crud/{2}/{1}/data/{3}/data.xml?data-format-version={4}&valid={5}'>
 
 	application := self getOrbeonApplicationClass applicationNamed: app ifNone: [^self signalNoApplicationException: app].
 	version := Number fromString: (self requestContext request headerAt: 'orbeon-form-definition-version').
@@ -29,3 +29,5 @@ saveFinalFormInstance: formName app: app withId: id valid: aBoolean
 		processXML.
 
 	definition removeDraft: instance. "this is the final version so we remove the current draft if any"
+
+	^instance xmlString
