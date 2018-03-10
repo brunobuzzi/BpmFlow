@@ -13,4 +13,7 @@ getColorForActivityNamed: aString user: aBpmUser
 	(executedGateways anySatisfy: [:each | each getDefinitionName = aString]) 
 	ifTrue: [^aBpmUser getProperty: 'svg.task.fillColor.done'].
 
+	(subprocesses anySatisfy: [:each | (each getDefinitionName = aString) and: [each hasFinalized]])
+	ifTrue: [^aBpmUser getProperty: 'svg.task.fillColor.done'].
+
 	^'lightgray'
