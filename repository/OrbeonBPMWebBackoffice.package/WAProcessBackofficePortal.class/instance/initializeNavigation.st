@@ -3,10 +3,10 @@ initializeNavigation
 	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
-	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
+"	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
 		set24Icon: #placesuserhome24Png;
 		addItem: (SewafCommandItem label: 'Home' command: #openHome);
-		yourself.
+		yourself."
 	subMenu1 := (SewafSubMenuItem label: 'Processes' icon: #process32Png)
 		set24Icon: #process24Png;
 		addItem: (SewafCommandItem label: 'Process Definitions' command: #openDefinitionsManager);
@@ -50,7 +50,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
 
-	layout isTop ifTrue: [navigation addItem: homeMenu].
+"	layout isTop ifTrue: [navigation addItem: homeMenu]."
 
 	navigation 
 		addItem: subMenu2;
