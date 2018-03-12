@@ -12,7 +12,7 @@
 		"createParticipantDefinitionsOf:" : "BrunoBB 11/01/2015 08:19",
 		"generateAllProcess" : "BrunoBB 06/27/2016 10:21",
 		"generateProcessBasedOnWorkflow:" : "BrunoBB 06/26/2016 13:47",
-		"generateProcessBasedOnWorkflow:for:" : "BrunoBB 06/26/2016 13:47",
+		"generateProcessBasedOnWorkflow:for:" : "brunobb 03/12/2018 12:24",
 		"generateProcessesAndStoreOnCache" : "brunobb 02/23/2018 09:03",
 		"getProcessDefinitionClassFrom:" : "BrunoBB 06/26/2016 13:32",
 		"getProcessDefinitionNamed:ifNone:" : "BrunoBB 10/29/2015 13:53",
