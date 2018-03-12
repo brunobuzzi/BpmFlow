@@ -18,7 +18,8 @@ createWorkflowFrom: aXMLDocument
 						connectActivitiesToParentLane;
 						connectActivitiesAndTrasitions;
 						createEmbeddedSubProcesses;
-						attachEventsToTasks.
+						attachEventsToTasks;
+						createExtendedAttributes.
 		].
 	].
 

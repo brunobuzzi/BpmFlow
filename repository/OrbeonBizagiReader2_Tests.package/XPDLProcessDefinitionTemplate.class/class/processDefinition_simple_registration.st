@@ -7,7 +7,7 @@ processDefinition_simple_registration
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-03-30T19:55:34.2905721-03:00</Created>
-    <ModificationDate>2018-02-05T14:47:27.3918237-03:00</ModificationDate>
+    <ModificationDate>2018-03-12T09:11:31.9398492-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -55,7 +55,7 @@ processDefinition_simple_registration
   <WorkflowProcesses>
     <WorkflowProcess Id="461bcfa3-952a-4d2e-958a-5ce873510e7c" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-02-05T14:48:08.1079998-03:00</Created>
+        <Created>2018-03-12T09:12:13.2598977-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -71,7 +71,7 @@ processDefinition_simple_registration
     </WorkflowProcess>
     <WorkflowProcess Id="7a40afc1-246e-45c3-a268-aadcec628a45" Name="Simple Registration">
       <ProcessHeader>
-        <Created>2018-02-05T14:48:08.1090009-03:00</Created>
+        <Created>2018-03-12T09:12:13.2598977-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -179,7 +179,8 @@ processDefinition_simple_registration
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="assignationPolicy" Value="BpmRoundRobinRoleAssignationPolicy" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-03-30T19:55:34.3025802-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
