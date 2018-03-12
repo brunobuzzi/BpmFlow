@@ -7,6 +7,8 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	aBpmProcessDefinition addAllParticipants: participants.
 	roles := Dictionary new.
 
+	aBpmProcessDefinition setExtendedAttributesWith: aXPDLWorflowProcess extendedAttributes.
+
 	aXPDLWorflowProcess parentLanes keysDo: [:laneName | | newOrExistingRole |
 		newOrExistingRole := BpmFrontOfficeRole createNewOrGetExisting: laneName in: anOrbeonApplication applicationName.
 		aBpmProcessDefinition addRole: newOrExistingRole.
