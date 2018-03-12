@@ -17,7 +17,8 @@ createEmbeddedSubProcesses
 			createTransitionNodesFrom: xmlActivitySet;
 			setStartAndEndNodes;
 			"connectActivitiesToParentLane;"  "embedded suprocess does NOT have lanes by standart"
-			connectActivitiesAndTrasitions.
+			connectActivitiesAndTrasitions;
+			createExtendedAttributes.
 		embeddedSubProcs add: newWorkflow.
 	].
 	embeddedSubProcs do: [:eachWorkflow1 |
