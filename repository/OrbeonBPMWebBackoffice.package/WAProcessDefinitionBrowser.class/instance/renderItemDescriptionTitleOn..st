@@ -27,3 +27,10 @@ renderItemDescriptionTitleOn: html
 		with: [html image url: (SEWAFIconLibrary / #gamecasino24Png); 
 					title: ('Assignation Policy' translateFor: self session user);
 					altText: ('Assignation Policy' translateFor: self session user)].
+
+	html anchor 
+		class: 'cursor-pointer';
+		callback: [self exportInstancesToCSV]; 
+		with: [html image url: (SEWAFIconLibrary / #filescsv24Png); 
+					title: ('Export Instances to CSV' translateFor: self session user);
+					altText: ('Export Instances to CSV' translateFor: self session user)].
