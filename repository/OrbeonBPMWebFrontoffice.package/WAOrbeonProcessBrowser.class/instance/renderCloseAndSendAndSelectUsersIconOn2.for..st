@@ -1,12 +1,12 @@
 process
-renderCloseAndSendAndSelectUsersIconOn: html for: aBpmArtifactInstance
+renderCloseAndSendAndSelectUsersIconOn2: html for: aBpmArtifactInstance
 	| jQueryId |
 
-	jQueryId := self renderJQueryPopupCompositeOn: html 
-							width: 500 
-							height: 500 
-							compositeInstance: (WAAssignTasksToUsers new selectedTask: aBpmArtifactInstance; yourself) 
-							title: 'Assign Users'.
+	jQueryId := self renderJQueryConfirmationDialogOn: html 
+							title: 'Close, Send and Assign' 
+							forActionNamed: 'confirmCloseSendAndAssign' 
+							actionMethod: #closeSendAndSelectUsers:
+							arguments: (Array with: aBpmArtifactInstance).
 
 	html anchor "callback: [self closeSendAndSelectUsers: aBpmArtifactInstance]; "
 			class: 'cursor-pointer';

@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"assignationTable" : "brunobb 03/15/2018 09:56",
+		"assignationTable:" : "brunobb 03/15/2018 09:56",
 		"closeWindow" : "brunobb 03/14/2018 13:37",
 		"getColumnsForTasks" : "BrunoBB 08/07/2016 07:28",
-		"initialize" : "BrunoBB 08/03/2016 11:00",
+		"initialize" : "brunobb 03/15/2018 11:03",
 		"initializeSewafTableForTasks" : "BrunoBB 08/03/2016 11:00",
 		"initializeSewafTableForUsers" : "BrunoBB 01/10/2017 03:44",
 		"isSelected:" : "BrunoBB 08/03/2016 11:17",

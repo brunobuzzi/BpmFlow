@@ -1,5 +1,5 @@
 process
-closeSendAndSelectUsers: aBpmArtifactInstance
+closeSendAndSelectUsers2: aBpmArtifactInstance
 	| assignmentFinalization currentActivities newTasks |
 
 	(self componentValueAt: 'confirmCloseSendAndAssign') "the jqdialog set this value"
@@ -14,7 +14,4 @@ closeSendAndSelectUsers: aBpmArtifactInstance
 
 	newTasks ifEmpty: [^self].
 
-	assignationComposite 
-		isOpened: true;
-		mainPanel: self;
-		model: newTasks.
+	assignationComposite := WAAssignTasksToUsers parent: self on: newTasks.

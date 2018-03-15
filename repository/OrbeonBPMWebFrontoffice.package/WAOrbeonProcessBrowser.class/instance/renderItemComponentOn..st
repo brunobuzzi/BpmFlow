@@ -2,9 +2,9 @@ process
 renderItemComponentOn: html
 	| heightClass |
 
-	assignationComposite 
-		ifNotNil: [html render: assignationComposite]
-		ifNil: [
+	assignationComposite notNil
+		ifTrue: ["html render: assignationComposite"]
+		ifFalse: [
 			self getAllTasks do:[:eachArtifact | | cssClass |
 				cssClass := eachArtifact isTask 
 					ifFalse: ['process-transition-gateway']
