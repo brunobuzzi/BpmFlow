@@ -2,7 +2,10 @@ process
 closeSendAndSelectUsers: aBpmArtifactInstance
 	| assignmentFinalization currentActivities newTasks |
 
-"	self inform: 'Not Implemented Yet'."
+	(self componentValueAt: 'confirmCloseSendAndAssign') "the jqdialog set this value"
+	ifNil: [^self]
+	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
+
 	currentActivities := OrderedCollection withAll: (selectedLateralItem process currentActivities asArray remove: aBpmArtifactInstance; yourself).
 
 	assignmentFinalization := self session user finalizeAssignment: selectedLateralItem.
