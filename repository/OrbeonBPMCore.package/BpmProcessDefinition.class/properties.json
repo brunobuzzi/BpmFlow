@@ -20,7 +20,8 @@
 		"participants",
 		"xmlString",
 		"abortedProcesses",
-		"assignationPolicy" ],
+		"assignationPolicy",
+		"isImmutable" ],
 	"name" : "BpmProcessDefinition",
 	"pools" : [
 		 ],

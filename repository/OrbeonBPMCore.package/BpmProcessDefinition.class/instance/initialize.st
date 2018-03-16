@@ -13,3 +13,4 @@ initialize
 	formFieldInstances := Dictionary new.
 	abortedProcesses := RcIdentityBag new.
 	assignationPolicy := BpmNoneAssignationPolicy newOn: self.
+	isImmutable := false.
