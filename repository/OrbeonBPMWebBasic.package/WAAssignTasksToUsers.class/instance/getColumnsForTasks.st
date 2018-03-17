@@ -11,7 +11,7 @@ getColumnsForTasks
 			add: (SewafReportColumn 
 						selector: #state 
 						title: ('Task State' translateFor: self session user));
-			add: (SewafReportColumn 
+	"		add: (SewafReportColumn 
 						selector: #processId 
-						title: ('Process Id' translateFor: self session user));
+						title: ('Process Id' translateFor: self session user));"
 			yourself

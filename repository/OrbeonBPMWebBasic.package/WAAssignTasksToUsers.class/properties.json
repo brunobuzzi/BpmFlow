@@ -9,7 +9,8 @@
 		"tasksBatchedList",
 		"usersBatchedList",
 		"selectedTask",
-		"assignationTable" ],
+		"assignationTable",
+		"finishedTask" ],
 	"name" : "WAAssignTasksToUsers",
 	"pools" : [
 		 ],
