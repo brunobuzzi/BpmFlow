@@ -8,8 +8,7 @@
 	"instvars" : [
 		"webComponent",
 		"fileOutObject",
-		"user",
-		"isDownload" ],
+		"user" ],
 	"name" : "BpmProcessFileOut",
 	"pools" : [
 		 ],

@@ -1,3 +1,4 @@
-Accessing
+other
 isDownload
-	^isDownload
+
+	^true

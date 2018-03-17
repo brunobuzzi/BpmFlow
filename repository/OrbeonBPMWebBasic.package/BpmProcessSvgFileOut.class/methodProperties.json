@@ -4,4 +4,7 @@
 	"instance" : {
 		"downloadSvg:" : "brunobb 02/09/2018 13:59",
 		"generateProcessDefinitionOutput" : "brunobb 02/09/2018 13:59",
-		"generateProcessInstanceOutput" : "brunobb 02/10/2018 05:48" } }
+		"generateProcessInstanceOutput" : "brunobb 02/10/2018 05:48",
+		"initialize" : "brunobb 03/17/2018 10:16",
+		"isDownload" : "brunobb 03/17/2018 10:16",
+		"isDownload:" : "brunobb 03/17/2018 10:16" } }
