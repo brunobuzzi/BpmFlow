@@ -10,5 +10,7 @@ generateProcessInstanceOutput
 	fileOutObject isTaskAssignment ifTrue: [stream nextPutAll: (converter generateSVGFor: user assignment: fileOutObject)].
 	fileOutObject isProcessInstance ifTrue: [stream nextPutAll: (converter generateSVGFor: user process: fileOutObject)].
 	fileOutObject isTimerEvent ifTrue: [stream nextPutAll: (converter generateSVGFor: user process: fileOutObject process)].
-	
-	self downloadSvg: stream
+
+	isDownload ifTrue: [^self downloadSvg: stream]. "to download as regular file"
+
+	^stream contents "to show in a javascript popup"
