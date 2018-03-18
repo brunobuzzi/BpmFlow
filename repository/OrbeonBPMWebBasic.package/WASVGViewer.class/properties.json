@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"svgCode" ],
+	"name" : "WASVGViewer",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

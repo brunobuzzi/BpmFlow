@@ -3,8 +3,7 @@ renderContentOn: html
 
 	html div with: [
 		html anchor 
-			callback: [html html: self viewProcessAsSVG];
-			"onClick: (html html: self viewProcessAsSVG); "
+			document: self viewProcessAsSVG mimeType: 'application/xhtml+xml';
 			target: '_blank'; "open the SVG in a new tab or page"
 			with: [html image url: (SEWAFIconLibrary / #fileadobeillustratorSVG0148Png); 
 							title: ('SVG Map' translateFor: self session user);
