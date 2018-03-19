@@ -1,9 +1,9 @@
 export
 renderProcessMapOn: html
-	| options jQueryId |
+	| popUpComponent jQueryId |
 
-	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
-	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120.
+	popUpComponent := WAProcessViewerSelector parent: self process: selectedObject.
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
 	html anchor 
 		class: 'cursor-pointer margin-right-20px';

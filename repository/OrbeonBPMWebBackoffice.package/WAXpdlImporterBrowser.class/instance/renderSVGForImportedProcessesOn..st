@@ -2,10 +2,12 @@ svg
 renderSVGForImportedProcessesOn: html
 
 	processGenerator processes do: [:processDefinition |  
-		html div class: 'imported-process'; with: [
+		html div class: 'imported-process'; with: [ | popUpComponent jQueryId |
+			popUpComponent := WAProcessViewerSelector parent: self process: processDefinition.
+			jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 			html anchor 
 				class: 'cursor-pointer';
-				callback: [self showSVGfor: processDefinition];
+				onClick: (html jQuery id: jQueryId) dialog open;
 				with: [html image url: (SEWAFIconLibrary / #documentflowcharticonPng); 
 						altText: (('View [', processDefinition processName, ']') translateFor: self session user); 
 						title: (('View [', processDefinition processName, ']') translateFor: self session user).

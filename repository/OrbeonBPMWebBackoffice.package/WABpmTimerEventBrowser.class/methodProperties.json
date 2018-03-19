@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"exportProcessDefinitionAs" : "brunobb 02/09/2018 14:29",
 		"getCurrentCollection" : "brunobb 02/09/2018 10:20",
 		"getIconNameFormItem" : "brunobb 02/09/2018 10:24",
 		"getTextForItem:" : "brunobb 02/09/2018 10:25",
@@ -12,7 +11,7 @@
 		"renderItemComponentOn:" : "brunobb 02/15/2018 09:06",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/09/2018 11:34",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 02/09/2018 11:19",
-		"renderItemDescriptionTitleOn:" : "brunobb 02/09/2018 11:36",
+		"renderItemDescriptionTitleOn:" : "brunobb 03/19/2018 12:37",
 		"renderLateralItemDetailsOn:for:" : "brunobb 02/09/2018 11:10",
 		"renderProcessTypeComboOn:" : "brunobb 02/08/2018 14:21",
 		"renderSearchAreaOn:" : "brunobb 02/09/2018 11:15",

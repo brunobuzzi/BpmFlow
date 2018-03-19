@@ -2,10 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"downloadProcessMap:" : "BrunoBB 02/17/2017 13:50",
-		"downloadProcessMapOf:" : "BrunoBB 02/17/2017 13:50",
-		"downloadZipProcessMapOf:" : "BrunoBB 02/17/2017 13:50",
-		"exportProcessDefinitionAs:" : "brunobb 02/10/2018 05:22",
 		"getCurrentCollection" : "BrunoBB 02/17/2017 13:50",
 		"getIconNameFormItem" : "BrunoBB 02/17/2017 13:50",
 		"getTextForItem:" : "BrunoBB 02/17/2017 13:50",
@@ -14,7 +10,7 @@
 		"removeApplication" : "BrunoBB 02/17/2017 13:50",
 		"renderAddApplicationOn:" : "BrunoBB 02/17/2017 13:50",
 		"renderDeleteApplicationOn:" : "BrunoBB 02/17/2017 13:50",
-		"renderDownloadProcessMapOn:for:" : "BrunoBB 02/17/2017 13:50",
+		"renderDownloadProcessMapOn:for:" : "brunobb 03/19/2018 12:03",
 		"renderItemComponentOn:" : "BrunoBB 02/17/2017 13:50",
 		"renderItemDescriptionAditionalDataOn:" : "BrunoBB 02/17/2017 13:50",
 		"renderItemDescriptionSecondaryDataOn:" : "BrunoBB 02/17/2017 13:50",

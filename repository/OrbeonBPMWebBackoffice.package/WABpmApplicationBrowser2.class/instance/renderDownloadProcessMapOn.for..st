@@ -1,10 +1,10 @@
 xpdl download
 renderDownloadProcessMapOn: html for: procName
-	| jQueryId options |
+	| jQueryId procDefinition popUpComponent |
 
-	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
-
-	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessDefinitionAs: arguments: (Array with: procName) extent: 420@120.
+	procDefinition := BpmProcessDefinition getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
+	popUpComponent := WAProcessViewerSelector parent: self process: procDefinition.
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
 	html anchor 
 		class: 'cursor-pointer';
