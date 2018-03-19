@@ -1,6 +1,6 @@
 file out
 generateOutput
 
-	fileOutObject isProcessDefinition
+	^fileOutObject isProcessDefinition
 	ifTrue: [self generateProcessDefinitionOutput] 
 	ifFalse: [self generateProcessInstanceOutput]

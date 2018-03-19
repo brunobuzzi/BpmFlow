@@ -1,7 +1,7 @@
 process
-renderItemDescriptionTitleOn: html
+renderItemDescriptionTitleOn2: html
 	"The receiver render the summary of the object selected on the Lateral List "
-	| jQueryId popUpComponent |
+	| jQueryId options |
 
 	html output:  selectedLateralItem processName. "process name"
 	selectedLateralItem isInCorruptedState 
@@ -15,9 +15,8 @@ renderItemDescriptionTitleOn: html
 						title: ('Release Task' translateFor: self session user);
 						altText: ('Release Task' translateFor: self session user)]].
 
-"	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120."
-	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem.
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
+	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
+	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120.
 
 	html anchor 
 		class: 'cursor-pointer';

@@ -8,4 +8,6 @@ generateProcessDefinitionOutput
 	stream nextPutAll: self xmlHeader, String lf.
 	stream nextPutAll: (converter generateSVGFor: fileOutObject).
 
-	self downloadSvg: stream
+	isDownload ifTrue: [^self downloadSvg: stream]. "to download as regular file"
+
+	^stream contents "to show in a javascript popup"

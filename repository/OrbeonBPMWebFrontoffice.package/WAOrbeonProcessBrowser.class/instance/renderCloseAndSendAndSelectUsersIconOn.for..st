@@ -3,10 +3,12 @@ renderCloseAndSendAndSelectUsersIconOn: html for: aBpmArtifactInstance
 	| jQueryId |
 
 	jQueryId := self renderJQueryPopupCompositeOn: html 
-							width: 500 
-							height: 500 
-							compositeInstance: (WAAssignTasksToUsers new selectedTask: aBpmArtifactInstance; yourself) 
+							width: 600 
+							height: 450 
+							compositeInstance: (WAAssignTasksToUsers new finishedTask: aBpmArtifactInstance; yourself) 
 							title: 'Assign Users'.
+
+	self addValue: jQueryId named: 'jQueryId'.
 
 	html anchor "callback: [self closeSendAndSelectUsers: aBpmArtifactInstance]; "
 			class: 'cursor-pointer';

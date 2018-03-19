@@ -6,4 +6,4 @@ viewProcessAsSVG
 
 	svgOutput isDownload: false.
 
-	^svgOutput generateProcessInstanceOutput
+	^svgOutput generateOutput

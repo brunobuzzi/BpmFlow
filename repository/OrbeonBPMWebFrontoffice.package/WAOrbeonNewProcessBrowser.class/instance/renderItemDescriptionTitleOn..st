@@ -1,11 +1,11 @@
 other
 renderItemDescriptionTitleOn: html
-	| jQueryId options |
+	| jQueryId popUpComponent |
 
 	html output:  selectedLateralItem processName.
-	options := Array with: #('Export XPDL' #xpdl) with: #('View SVG' #svg).
 
-	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessDefinitionAs arguments: #() extent: 420@120.
+	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem.
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
 	html anchor 
 		class: 'cursor-pointer';
