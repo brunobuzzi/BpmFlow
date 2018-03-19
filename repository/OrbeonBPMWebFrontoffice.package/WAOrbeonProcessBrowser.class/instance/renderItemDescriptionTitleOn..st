@@ -15,7 +15,6 @@ renderItemDescriptionTitleOn: html
 						title: ('Release Task' translateFor: self session user);
 						altText: ('Release Task' translateFor: self session user)]].
 
-"	jQueryId := self renderJQuerySelectOptionDialogOn: html buttonsNames: options forActionNamed: 'exportProcess' actionMethod: #exportProcessInstanceAs arguments: #() extent: 420@120."
 	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem.
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
