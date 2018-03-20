@@ -10,7 +10,8 @@
 		"usersBatchedList",
 		"selectedTask",
 		"assignationTable",
-		"finishedTask" ],
+		"taskToFinish",
+		"assignmentToFinish" ],
 	"name" : "WAAssignTasksToUsers",
 	"pools" : [
 		 ],

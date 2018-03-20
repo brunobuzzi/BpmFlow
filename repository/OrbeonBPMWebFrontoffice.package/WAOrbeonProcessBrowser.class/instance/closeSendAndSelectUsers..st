@@ -6,15 +6,14 @@ closeSendAndSelectUsers: aBpmArtifactInstance
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	currentActivities := OrderedCollection withAll: (selectedLateralItem process currentActivities asArray remove: aBpmArtifactInstance; yourself).
+"	currentActivities := OrderedCollection withAll: (selectedLateralItem process currentActivities asArray remove: aBpmArtifactInstance; yourself).
 
 	assignmentFinalization := self session user finalizeAssignment: selectedLateralItem.
 
-	newTasks := selectedLateralItem process currentActivities asArray removeAll: currentActivities; yourself.
+	newTasks := selectedLateralItem process currentActivities asArray removeAll: currentActivities; yourself."
 
 	newTasks ifEmpty: [^self].
 
-	assignationComposite 
-		isOpened: true;
-		mainPanel: self;
-		model: newTasks.
+	assignationComposite := WAAssignTasksToUsers parent: self.
+	assignationComposite taskToFinish: aBpmArtifactInstance;
+		assignmentToFinish: selectedLateralItem.
