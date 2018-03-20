@@ -2,8 +2,9 @@ process
 renderItemComponentOn: html
 	| heightClass |
 
-	(self hasComponentValueAt: 'jQueryId') ifTrue: [(html jQuery id: (self componentValueAt: 'jQueryId')) dialog open].
-	"	ifFalse: ["
+	assignationComposite 
+		ifNotNil: [html render: assignationComposite]
+		ifNil: [
 			self getAllTasks do:[:eachArtifact | | cssClass |
 				cssClass := eachArtifact isTask 
 					ifFalse: ['process-transition-gateway']
@@ -18,4 +19,4 @@ renderItemComponentOn: html
 				html div class: (cssClass, ' ', heightClass); with: [
 					self renderTransitionDataOn: html for: eachArtifact].
 			]. 
-	"	]."
+		].

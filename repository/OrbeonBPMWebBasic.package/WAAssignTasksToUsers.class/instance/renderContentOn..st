@@ -14,7 +14,6 @@ renderContentOn: html
 
 			html div id: 'users-to-add';class: 'center default-gray-table float-left float-left'; with: [
 				html render: (usersBatchedList table: self sewafTableForUsers)].
-
-			html div id: 'assignation-close-form'; class: 'right'; with: [self renderCloseWindowsButtonOn: html].
 		].
+		html div id: 'assignation-close-form'; class: 'right'; with: [self renderCloseWindowsButtonOn: html].
 	].

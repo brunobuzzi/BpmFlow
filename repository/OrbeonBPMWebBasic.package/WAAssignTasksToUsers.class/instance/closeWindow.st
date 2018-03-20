@@ -7,5 +7,5 @@ closeWindow
 		(assignment notNil and: [availableAssignments includes: assignment]) ifTrue: [bpmUser take: assignment].
 	].
 
-	mainPanel clearAssignationCompostite.
+	mainPanel clearAssignationCompostite. "set <assignationComposite> to <nil>"
 	assignationTable notEmpty ifTrue: [mainPanel removeSelectionAndRefreshLateralCollection].
