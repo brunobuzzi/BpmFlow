@@ -6,7 +6,7 @@ renderContentOn: html
 
 	html div with: [
 		html div class: 'left default-gray-table float-left '; with: [
-			html render: (tasksBatchedList table: self sewafTableForTasks)].
+			html render: (tasksBatchedList table: (self sewafTableForTasksOn: html))].
 
 		selectedTask ifNotNil: [
 		"if <orderMode> is true --> the user list has been sorted and it is already with the correct items"
