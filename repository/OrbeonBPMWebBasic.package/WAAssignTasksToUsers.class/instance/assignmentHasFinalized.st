@@ -1,0 +1,4 @@
+tasks
+assignmentHasFinalized
+
+	^assignmentToFinish hasFinalized

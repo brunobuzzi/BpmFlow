@@ -8,3 +8,4 @@ onTaskClicked: aBpmTaskInstance
 							ifFalse: [aBpmTaskInstance]].
 
 	usersBatchedList clearOrderMode.
+	usersBatchedList searchApplied: false.
