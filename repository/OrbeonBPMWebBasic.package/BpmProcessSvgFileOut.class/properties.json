@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"isDownload" ],
+		"isDownload",
+		"withXmlHeader" ],
 	"name" : "BpmProcessSvgFileOut",
 	"pools" : [
 		 ],

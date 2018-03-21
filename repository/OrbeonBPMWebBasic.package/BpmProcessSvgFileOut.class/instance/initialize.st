@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	isDownload := true
+	isDownload := true.
+	withXmlHeader := true.

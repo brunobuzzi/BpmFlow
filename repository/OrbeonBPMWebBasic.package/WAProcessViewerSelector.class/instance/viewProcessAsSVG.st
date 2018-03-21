@@ -1,9 +1,17 @@
 other
 viewProcessAsSVG
-	| svgOutput |
+	| svgOutput svgStream |
 
-	svgOutput := BpmProcessSvgFileOut newFor: self object: selectedProcess user: self session user.
+	svgStream := PrintStream on: String new.
 
-	svgOutput isDownload: false.
+	svgStream nextPutAll: '<svgs>'.
 
-	^svgOutput generateOutput
+	selectedProcess getProcessesTreeAsCollection do: [:each | 	
+		svgOutput := BpmProcessSvgFileOut newFor: self object: each user: self session user.
+		svgOutput isDownload: false;
+			withXmlHeader: false. 
+		svgStream nextPutAll: svgOutput generateOutput.
+	].
+
+	svgStream nextPutAll: '</svgs>'.
+	^svgStream contents
