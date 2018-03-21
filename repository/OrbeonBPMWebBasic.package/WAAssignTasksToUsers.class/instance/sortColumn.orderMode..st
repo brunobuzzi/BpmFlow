@@ -1,4 +1,4 @@
-other
+users
 sortColumn: sortBlock orderMode: aSymbol
 
 	usersBatchedList orderMode: aSymbol.

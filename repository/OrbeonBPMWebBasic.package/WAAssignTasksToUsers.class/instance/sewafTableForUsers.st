@@ -1,4 +1,4 @@
-other
+users
 sewafTableForUsers
 	"Table with all Users that are NOT present in the role <selectedObject> "
 	| table |

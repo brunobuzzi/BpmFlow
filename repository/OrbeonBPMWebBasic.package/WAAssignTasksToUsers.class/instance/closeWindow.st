@@ -1,4 +1,4 @@
-other
+close
 closeWindow
 
 	assignationTable keysAndValuesDo: [:taskInstance :bpmUser | | assignment availableAssignments |

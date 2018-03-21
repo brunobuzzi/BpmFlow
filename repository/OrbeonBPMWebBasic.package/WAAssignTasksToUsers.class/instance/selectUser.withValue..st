@@ -1,4 +1,4 @@
-other
+users
 selectUser: aBpmUser withValue: aBoolean
 
 	aBoolean 

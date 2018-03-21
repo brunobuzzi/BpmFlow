@@ -1,4 +1,4 @@
-other
+users
 initializeSewafTableForUsers
 	"Table with all Users that are NOT present in the role <selectedObject> "
 	| table column|
@@ -8,7 +8,7 @@ initializeSewafTableForUsers
 	table := (SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
 		backcolor: self session user userOptions getBooleanTableBackcolor;
-		buttonLabel: ('Confirm' translateFor: self session user);
+		buttonLabel: ('Assign' translateFor: self session user);
 		booleanSelector: #isSelected:;
 		callbackSelector: #selectUser:withValue:;
 		columns: (OrderedCollection new add: column; 

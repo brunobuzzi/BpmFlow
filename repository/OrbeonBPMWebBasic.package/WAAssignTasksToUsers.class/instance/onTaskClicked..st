@@ -1,4 +1,4 @@
-other
+tasks
 onTaskClicked: aBpmTaskInstance
 
 	selectedTask := selectedTask 

@@ -1,4 +1,4 @@
-other
+tasks
 initializeSewafTableForTasksOn: html
 	| table |
 

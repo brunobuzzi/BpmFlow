@@ -8,12 +8,12 @@ renderContentOn: html
 		html div class: 'left default-gray-table float-left '; with: [
 			html render: (tasksBatchedList table: (self sewafTableForTasksOn: html))].
 
-		selectedTask ifNotNil: [
-		"if <orderMode> is true --> the user list has been sorted and it is already with the correct items"
-			usersBatchedList hasOrderMode ifFalse: [usersBatchedList items: selectedTask getGrantedUsers].
-
-			html div id: 'users-to-add';class: 'center default-gray-table float-left float-left'; with: [
-				html render: (usersBatchedList table: self sewafTableForUsers)].
+		html div id: 'users-to-add';class: 'center default-gray-table float-left float-left'; with: [
+			selectedTask ifNotNil: [
+			"if <orderMode> is true --> the user list has been sorted and it is already with the correct items"
+				(usersBatchedList hasOrderMode not and: [usersBatchedList searchApplied not]) ifTrue: [usersBatchedList items: selectedTask getGrantedUsers].
+			].
+			html render: (usersBatchedList table: self sewafTableForUsers).
 		].
 		html div id: 'assignation-close-form'; class: 'right'; with: [self renderCloseWindowsButtonOn: html].
 	].

@@ -1,11 +1,9 @@
-other
+close
 renderCloseWindowsButtonOn: html
 
-	html form with: [
-		html fieldSet with:[
-			html submitButton class: 'border-radius10px';
-				callback: [self closeWindow]; 
-				with: ('Close' translateFor: self session user).
-			html legend with: [html strong: ('Close' translateFor: self session user)].
-		].
-	].
+	html anchor 
+			class: 'cursor-pointer';
+			callback: [self closeWindow];
+			with: [html image url: (SEWAFIconLibrary / #close32Png); 
+			title: ('Close' translateFor: self session user);
+			altText: ('Close' translateFor: self session user)].
