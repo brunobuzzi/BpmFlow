@@ -27,14 +27,14 @@ testExecuteProcess_03
 	(Delay forSeconds: 7) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 2).
-	lastExecutionTime := eventInstance creationTime.
+	lastExecutionTime := eventInstance lastExecutionTime.
 	self deny: procInstance hasFinalized.
 	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
 
 	(Delay forSeconds: 12) wait.
 	self defaultTimerEventMonitor triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 3). "two [user-form] tasks"
-	self assert: (lastExecutionTime ~= eventInstance creationTime).
+	self deny: (lastExecutionTime = eventInstance lastExecutionTime).
 	currentTask := procInstance currentActivities first.
 
 	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"

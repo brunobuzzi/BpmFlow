@@ -4,16 +4,20 @@
 	"instance" : {
 		"attachedTask" : "brunobb 10/18/2017 13:02",
 		"attachedTask:" : "brunobb 10/18/2017 13:02",
+		"executions" : "brunobb 03/22/2018 11:26",
+		"executions:" : "brunobb 03/22/2018 11:26",
 		"finalize" : "brunobb 11/03/2017 05:15",
 		"generateNextRunningTransitions" : "brunobb 11/02/2017 07:48",
 		"getTimerBlock" : "brunobb 10/24/2017 14:51",
-		"initialize" : "BrunoBB 11/07/2016 07:39",
+		"initialize" : "brunobb 03/22/2018 11:52",
 		"isAnonymousEvent" : "BrunoBB 03/30/2016 16:43",
 		"isAttachedEvent" : "brunobb 10/20/2017 12:42",
 		"isInterrupting" : "brunobb 10/20/2017 12:59",
 		"isTimerEvent" : "brunobb 10/28/2017 15:38",
+		"lastExecutionTime" : "brunobb 03/22/2018 11:52",
 		"performInitializationOn:" : "brunobb 10/29/2017 14:41",
 		"performInitializationOn:attachTo:" : "brunobb 10/25/2017 07:21",
 		"summaryTitle" : "brunobb 02/09/2018 11:08",
 		"trigger" : "BrunoBB 03/30/2016 16:42",
-		"trigger:" : "BrunoBB 03/30/2016 16:42" } }
+		"trigger:" : "BrunoBB 03/30/2016 16:42",
+		"triggerExecution:" : "brunobb 03/22/2018 11:33" } }

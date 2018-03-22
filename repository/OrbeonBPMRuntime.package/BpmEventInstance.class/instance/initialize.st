@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	endTime := TimeStamp now.
+	creationTime := TimeStamp now.
+	executions := OrderedCollection with: creationTime.
