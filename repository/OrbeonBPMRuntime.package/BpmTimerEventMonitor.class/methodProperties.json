@@ -14,6 +14,7 @@
 		"getLastProcessCreationTimeFor:" : "brunobb 02/13/2018 15:01",
 		"getTimerEventsForProcessCreationIn:" : "brunobb 02/09/2018 09:24",
 		"getTimerEventsForProcessCreationIn:processName:" : "brunobb 02/09/2018 09:25",
+		"includesProcessCreationFor:" : "brunobb 03/23/2018 11:49",
 		"initialize" : "brunobb 10/20/2017 12:33",
 		"monitoredEvents" : "brunobb 10/20/2017 12:31",
 		"monitoredEvents:" : "brunobb 10/20/2017 12:31",

@@ -35,11 +35,16 @@ renderItemDescriptionTitleOn: html
 					title: ('Export Instances to CSV' translateFor: self session user);
 					altText: ('Export Instances to CSV' translateFor: self session user)].
 
-	selectedLateralItem hasCreationTimer ifTrue: [
+	selectedLateralItem hasCreationTimer ifTrue: [ | anchorText iconName |
+		selectedLateralItem automaticCreationIsActive 
+		ifTrue: [anchorText := 'Remove from Timer Event Monitor'.
+					iconName := #clock24Png] 
+		ifFalse: [anchorText := 'Add to Timer Event Monitor'.
+					iconName := #utilitiesclock24Png].
 		html anchor 
 			class: 'cursor-pointer';
-			callback: [self startProcessCreationTimer]; 
-			with: [html image url: (SEWAFIconLibrary / #utilitiesclock24Png); 
-						title: ('Export Instances to CSV' translateFor: self session user);
-						altText: ('Export Instances to CSV' translateFor: self session user)].
+			callback: [self switchCreationTimerStatus]; 
+			with: [html image url: (SEWAFIconLibrary / iconName); 
+						title: (anchorText translateFor: self session user);
+						altText: (anchorText translateFor: self session user)].
 	].
