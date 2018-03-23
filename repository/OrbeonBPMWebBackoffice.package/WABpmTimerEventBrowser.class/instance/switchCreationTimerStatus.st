@@ -1,4 +1,4 @@
-process
+other
 switchCreationTimerStatus
 
 	selectedLateralItem automaticCreationIsActive

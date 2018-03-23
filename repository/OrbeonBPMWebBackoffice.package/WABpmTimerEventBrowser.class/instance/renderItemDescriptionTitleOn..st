@@ -15,3 +15,17 @@ renderItemDescriptionTitleOn: html
 		with: [html image url: (SEWAFIconLibrary / #documentflowchart24Png); 
 					title: ('Process Map' translateFor: self session user);
 					altText: ('Process Map' translateFor: self session user)].
+
+	selectedLateralItem hasCreationTimer ifTrue: [ | anchorText iconName |
+		selectedLateralItem automaticCreationIsActive 
+		ifTrue: [anchorText := 'Make Timer Passive'.
+					iconName := #clock24Png] 
+		ifFalse: [anchorText := 'Make Timer Active'.
+					iconName := #utilitiesclock24Png].
+		html anchor 
+			class: 'cursor-pointer';
+			callback: [self switchCreationTimerStatus]; 
+			with: [html image url: (SEWAFIconLibrary / iconName); 
+						title: (anchorText translateFor: self session user);
+						altText: (anchorText translateFor: self session user)].
+	].

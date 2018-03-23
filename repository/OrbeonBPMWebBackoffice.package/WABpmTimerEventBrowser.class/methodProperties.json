@@ -9,13 +9,14 @@
 		"registerProcessType:" : "brunobb 02/08/2018 14:21",
 		"renderApplicationComboOn:" : "brunobb 02/08/2018 14:18",
 		"renderItemComponentOn:" : "brunobb 02/15/2018 09:06",
-		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/09/2018 11:34",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 03/23/2018 12:42",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 02/09/2018 11:19",
-		"renderItemDescriptionTitleOn:" : "brunobb 03/19/2018 12:37",
+		"renderItemDescriptionTitleOn:" : "brunobb 03/23/2018 12:44",
 		"renderLateralItemDetailsOn:for:" : "brunobb 02/09/2018 11:10",
 		"renderProcessTypeComboOn:" : "brunobb 02/08/2018 14:21",
-		"renderSearchAreaOn:" : "brunobb 02/09/2018 11:15",
+		"renderSearchAreaOn:" : "brunobb 03/23/2018 12:45",
 		"renderSearchSubmitButtonOn:" : "brunobb 02/09/2018 09:12",
 		"renderSwitchWindowOn:" : "brunobb 02/08/2018 14:20",
 		"renderTimerTypeComboOn:" : "brunobb 02/09/2018 09:41",
-		"searchTimerEvents" : "brunobb 02/15/2018 09:19" } }
+		"searchTimerEvents" : "brunobb 03/23/2018 12:41",
+		"switchCreationTimerStatus" : "brunobb 03/23/2018 12:43" } }
