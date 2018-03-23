@@ -34,3 +34,12 @@ renderItemDescriptionTitleOn: html
 		with: [html image url: (SEWAFIconLibrary / #filescsv24Png); 
 					title: ('Export Instances to CSV' translateFor: self session user);
 					altText: ('Export Instances to CSV' translateFor: self session user)].
+
+	selectedLateralItem hasCreationTimer ifTrue: [
+		html anchor 
+			class: 'cursor-pointer';
+			callback: [self startProcessCreationTimer]; 
+			with: [html image url: (SEWAFIconLibrary / #utilitiesclock24Png); 
+						title: ('Export Instances to CSV' translateFor: self session user);
+						altText: ('Export Instances to CSV' translateFor: self session user)].
+	].
