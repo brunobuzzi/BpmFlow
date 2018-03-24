@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonPersistenceApiProcess",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isValid",
+		"username",
+		"modifiedUser",
+		"groupname" ],
+	"name" : "BpmOrbeonFormSaveFinalApi",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApi",
+	"type" : "normal" }
