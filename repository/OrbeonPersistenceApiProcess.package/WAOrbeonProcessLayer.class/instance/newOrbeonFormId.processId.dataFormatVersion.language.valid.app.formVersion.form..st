@@ -13,5 +13,4 @@ newOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVersion langu
 						ifNone: [self getOrbeonApplicationClass getAnyDraftWith: id formName: formName in: app
 										ifNone: [^self signalNoFormException: formName id: id app: app version: formVersion]].
 
-
 	^self processAndRedirectForm: instance language: lan valid: valid
