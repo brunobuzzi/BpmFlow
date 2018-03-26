@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonPersistenceApiProcess",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinitionId",
+		"processInstanceId" ],
+	"name" : "BpmSetExternalVariableApi",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApi",
+	"type" : "normal" }
