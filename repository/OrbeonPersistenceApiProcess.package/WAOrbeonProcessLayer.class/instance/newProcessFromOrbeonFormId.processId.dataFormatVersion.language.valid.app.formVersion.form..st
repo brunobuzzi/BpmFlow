@@ -7,20 +7,10 @@ newProcessFromOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVe
 	<post>
 	<path: '/createprocess?document={1}&process={2}&data-format-version={3}&language={4}&valid={5}&app={6}&form-version={7}&form={8}'>
 	<produces: 'text/html'>
-	| application formInstance procDefinition newProcess currentTask |
+	| apiOperation |
 
-	application := self getOrbeonApplicationClass applicationNamed: app ifNone: [^NoApplicationException signal: 'No such application [', app, ']'].
-	formInstance := application getAnyInstanceWithId: id of: form ifNone: [^NoOrbeonFormException signal: 'No such form [', id, ']'].
+	apiOperation := BpmCreateNewProcessApi newFor: self id: id.
+	apiOperation appName: app;
+		formName: form. 
 
-	procDefinition := BpmProcessDefinition getBpmProcessForAnonymousStartWith: form in: app.
-	newProcess := procDefinition createAndStartProcessInstance: nil "anonymous user ".
-	newProcess currentActivities isEmpty ifTrue: [^NoRunningTaskException signal: 'The BpmProcessInstance can not be executed because the collection <currentActivities> is empty'].
-	currentTask := newProcess currentActivities last.
-
-	currentTask externalObject: formInstance.
-	self associateFormWithTask: currentTask forProcess: newProcess.
-	currentTask finalize.
-	newProcess generateNextTransitionsFrom: currentTask.
-	procDefinition updateFieldsOf: formInstance. "the indexes of the BpmProcessDefinition are updated here"
-
-	^self redirectToStaticMessagePageFor: newProcess
+	^apiOperation doIt

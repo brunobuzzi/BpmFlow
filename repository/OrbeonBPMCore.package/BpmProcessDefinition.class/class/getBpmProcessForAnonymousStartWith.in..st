@@ -5,4 +5,4 @@ getBpmProcessForAnonymousStartWith: formName in: appName
 
 	^self anonymousFormMapping 
 		at: (appName, '.', formName)
-		ifAbsent: [^FormToProcessDefinitionMappingException signal: 'There is NO BpmProcessDefinition mapped to form [', formName, '] in Application [', appName, ']']
+		ifAbsent: [^FormToProcessDefinitionMappingException signal: 'There is NO <BpmProcessDefinition> mapped to form [', formName, '] in Application [', appName, '] for anonymous start']
