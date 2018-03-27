@@ -1,6 +1,6 @@
 sub components
 showAvailableProcesses
 
-	^(arena class == WAOrbeonNewProcessBrowser)
+	^(arena class == WANewBpmProcessBrowser)
 	ifTrue: [arena setParent: self]
-	ifFalse: [WAOrbeonNewProcessBrowser parent: self]
+	ifFalse: [WANewBpmProcessBrowser parent: self]

@@ -11,7 +11,7 @@
 		"andApplications",
 		"orApplications",
 		"processInstance" ],
-	"name" : "WAOrbeonNewProcessBrowser",
+	"name" : "WANewBpmProcessBrowser",
 	"pools" : [
 		 ],
 	"super" : "SewafLateralListComposite",
