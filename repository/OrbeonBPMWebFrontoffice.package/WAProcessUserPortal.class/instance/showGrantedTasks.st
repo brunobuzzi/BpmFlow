@@ -1,7 +1,7 @@
 sub components
 showGrantedTasks
 
-	(arena isKindOf: WAOrbeonGrantedTransitionManager)
+	(arena isKindOf: WAGrantedBpmTransitions)
 	ifTrue: [^arena].
 
-	^WAOrbeonGrantedTransitionManager parent: self
+	^WAGrantedBpmTransitions parent: self
