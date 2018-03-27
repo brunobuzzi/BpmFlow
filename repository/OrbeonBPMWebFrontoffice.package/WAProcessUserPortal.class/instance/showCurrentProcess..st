@@ -2,7 +2,7 @@ sub components
 showCurrentProcess: anOrderedCollection
 	| subComponent |
 
-	(arena isKindOf: WAOrbeonProcessBrowser)
+	(arena isKindOf: WABpmProcessesBrowser)
 	ifTrue: [
 		(arena mode = #normal) ifFalse: [arena searchApplied: false].
 		arena mode: #normal.

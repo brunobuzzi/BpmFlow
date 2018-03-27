@@ -2,7 +2,7 @@ sub components
 showFinishedProcess
 	| subComponent |
 
-	(arena isKindOf: WAOrbeonProcessBrowser)
+	(arena isKindOf: WABpmProcessesBrowser)
 	ifTrue: [
 		(arena mode = #finished) ifFalse: [arena searchApplied: false].
 		arena mode: #finished.

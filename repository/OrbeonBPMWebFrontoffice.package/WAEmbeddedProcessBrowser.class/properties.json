@@ -12,5 +12,5 @@
 	"name" : "WAEmbeddedProcessBrowser",
 	"pools" : [
 		 ],
-	"super" : "WAOrbeonProcessBrowser",
+	"super" : "WABpmProcessesBrowser",
 	"type" : "normal" }
