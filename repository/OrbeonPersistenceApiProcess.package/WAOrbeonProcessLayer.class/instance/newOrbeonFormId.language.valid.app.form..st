@@ -4,13 +4,13 @@ newOrbeonFormId: id language: lan valid: valid app: app form: formName
 	1- Register the XML in the system and update Domain Objects.
 	2- With data context inside the XML (inside the post) generate an url link to the previous page but with domain data updated.
 	3- The POST service answer a HTML code with a redirect (with javascript) to the url build in step 2."
-	| instance |
+	| apiOperation |
 	<post>
 	<path: '/processform?document={1}&language={2}&valid={3}&app={4}&form={5}'>
 	<produces: 'text/html'>
 
-	instance := self getOrbeonApplicationClass getAnyInstanceWith: id formName: formName in: app
-						ifNone: [self getOrbeonApplicationClass getAnyDraftWith: id formName: formName in: app
-										ifNone: [^self signalNoFormException: formName id: id app: app]].
+	apiOperation := BpmSendFormAndRedirectApi newFor: self id: id.
+	apiOperation language: lan;
+		valid: valid.
 
-	^self processAndRedirectForm: instance language: lan valid: valid
+	^apiOperation doIt

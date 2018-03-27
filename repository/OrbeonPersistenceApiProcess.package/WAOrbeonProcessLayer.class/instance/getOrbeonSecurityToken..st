@@ -7,14 +7,9 @@ getOrbeonSecurityToken: uuidToken
 	<get>
     <path: '/securityToken?token={1}'> 
 	<produces: 'text/xml'>
-	| serviceRegistry serviceValue |
+	| apiOperation |
 
-	serviceRegistry := OrbeonTempServiceRegistry default. 
-	"get the XML associate with the token <uuidToken>"
-	serviceValue := serviceRegistry getSecureValueForToken: uuidToken. 
-	"if the token <uuidToken> is not registered then answer an empty XML with the same structure"
-	serviceValue ifNil: [^self answerXMLErrorWith: uuidToken]. 
-	"remove the toke <uuidToken> for security reasons -can not be used again-"
-	serviceRegistry unregister: uuidToken. 
-	
-  ^serviceValue "the XML associated with token <uuidToken> with the values of the Orbeon form"
+	apiOperation := BpmGetXmlDataFromTokenApi newFor: self.
+	apiOperation token: uuidToken.
+
+	^apiOperation doIt
