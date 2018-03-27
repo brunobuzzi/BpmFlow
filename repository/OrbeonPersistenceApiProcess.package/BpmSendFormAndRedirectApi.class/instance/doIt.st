@@ -10,4 +10,4 @@ doIt
 						ifNone: [self getOrbeonApplicationClass getAnyDraftWith: id formName: formName in: appName	
 										ifNone: [^self signalNoFormException: formName id: id app: appName version: version]].
 
-	^self processAndRedirectForm: instance language: language valid: valid
+	^self processAndRedirectForm: instance

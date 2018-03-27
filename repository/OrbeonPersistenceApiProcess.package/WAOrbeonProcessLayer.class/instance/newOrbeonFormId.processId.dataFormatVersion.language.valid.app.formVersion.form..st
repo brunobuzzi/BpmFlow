@@ -10,7 +10,10 @@ newOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVersion langu
 	<produces: 'text/html'>
 
 	apiOperation := BpmSendFormAndRedirectApi newFor: self id: id.
-	apiOperation language: lan;
+	apiOperation appName: app;
+		formName: formName;
+		version: formVersion;
+		language: lan;
 		valid: valid.
 
 	^apiOperation doIt

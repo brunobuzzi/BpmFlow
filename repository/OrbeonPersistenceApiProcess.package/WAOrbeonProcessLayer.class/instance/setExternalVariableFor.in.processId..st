@@ -8,7 +8,8 @@ setExternalVariableFor: processDefinitionId in: appName processId: processId
 	<produces: 'application/xml'>
 
 	apiOperation := BpmSetExternalVariableApi newFor: self withXml: self requestContext request rawBody. 
-	apiOperation processDefinitionId: processDefinitionId;
+	apiOperation appName: appName;
+		processDefinitionId: processDefinitionId;
 		processInstanceId: processId.
 
 	^apiOperation doIt

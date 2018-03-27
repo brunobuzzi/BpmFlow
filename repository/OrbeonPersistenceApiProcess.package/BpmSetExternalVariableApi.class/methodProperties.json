@@ -6,6 +6,7 @@
 		"getBpmProcessInstanceFromId" : "brunobb 03/26/2018 16:51",
 		"getBpmProcessInstanceFromQuery" : "brunobb 03/26/2018 16:50",
 		"getExternalVariablesValuesFrom:" : "brunobb 03/26/2018 16:52",
+		"getProcessFiltersFromCollection:" : "brunobb 03/27/2018 09:02",
 		"mapStClassFrom:" : "brunobb 03/26/2018 16:53",
 		"processDefinitionId" : "brunobb 03/26/2018 16:45",
 		"processDefinitionId:" : "brunobb 03/26/2018 16:45",

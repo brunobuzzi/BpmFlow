@@ -1,4 +1,4 @@
-external variables
+other
 getProcessFiltersFromCollection: aCollection
 	| processFilters |
 

@@ -10,7 +10,9 @@ newOrbeonFormId: id language: lan valid: valid app: app form: formName
 	<produces: 'text/html'>
 
 	apiOperation := BpmSendFormAndRedirectApi newFor: self id: id.
-	apiOperation language: lan;
+	apiOperation appName: app;
+		formName: formName;
+		language: lan;
 		valid: valid.
 
 	^apiOperation doIt
