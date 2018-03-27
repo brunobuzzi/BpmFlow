@@ -1,7 +1,7 @@
 sub components
 showProcessCategories
 
-	(arena isKindOf: WAOrbeonProcessCategoryManager)
+	(arena isKindOf: WABpmProcessCategoryManager)
 	ifTrue: [^arena].
 
-	^WAOrbeonProcessCategoryManager parent: self
+	^WABpmProcessCategoryManager parent: self
