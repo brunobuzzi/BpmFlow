@@ -6,7 +6,7 @@ doIt
 	3- If not then answer a XML string with the same structure as 2 but with empty nodes values."
 	| serviceRegistry serviceValue |
 
-	serviceRegistry := OrbeonTempServiceRegistry default. 
+	serviceRegistry := BpmOrbeonTempTokenRegistry default. 
 	"get the XML associate with the token <token>"
 	serviceValue := serviceRegistry getSecureValueForToken: token. 
 	"if the token <token> is not registered then answer an empty XML with the same structure"

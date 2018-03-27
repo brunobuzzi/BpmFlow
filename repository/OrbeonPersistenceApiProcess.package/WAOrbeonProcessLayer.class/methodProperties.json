@@ -4,7 +4,7 @@
 		"unregister" : "BrunoBB 02/07/2017 10:49" },
 	"instance" : {
 		"answerXMLErrorWith:" : "BrunoBB 12/16/2016 12:57",
-		"generateEmbeddedUrlFor:user:s:k:params:" : "BrunoBB 02/03/2016 09:53",
+		"generateEmbeddedUrlFor:user:s:k:params:" : "brunobb 03/27/2018 10:35",
 		"generateHtmlExceptionFor:params:" : "BrunoBB 09/25/2015 07:39",
 		"generateHtmlFor:xml:params:" : "BrunoBB 08/01/2016 10:27",
 		"generateHtmlForRedirectTo:" : "BrunoBB 09/25/2015 07:20",

@@ -4,7 +4,7 @@ generateEmbeddedUrlFor: anOrbeonFormTransition user: user s: seasideS k: seaside
 	The form is saved and displayed again as a iframe inside GemStone application"
 	| uuid |
 
-	uuid := OrbeonTempServiceRegistry default 
+	uuid := BpmOrbeonTempTokenRegistry default 
 					createEntryToOrbeonFor: anOrbeonFormTransition 
 					for: user.
 

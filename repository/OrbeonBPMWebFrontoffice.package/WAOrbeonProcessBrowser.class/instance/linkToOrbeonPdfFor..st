@@ -2,7 +2,7 @@ link to components
 linkToOrbeonPdfFor: aBpmArtifactInstance
 	| uuid |
 
-	uuid  := OrbeonTempServiceRegistry default 
+	uuid  := BpmOrbeonTempTokenRegistry default 
 					createEntryToOrbeonFor: aBpmArtifactInstance 
 					for: self session user.
 

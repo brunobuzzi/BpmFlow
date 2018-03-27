@@ -3,7 +3,7 @@ linkToOrbeonFormFor: aBpmArtifactInstance
 	"The receiver gives the control to Orbeon Java application."
 	| uuid |
 
-	uuid  := OrbeonTempServiceRegistry default 
+	uuid  := BpmOrbeonTempTokenRegistry default 
 					createEntryToOrbeonFor: aBpmArtifactInstance 
 					for: self session user.
 

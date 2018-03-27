@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonPersistenceApiProcess",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tokens",
+		"failedTokens",
+		"results" ],
+	"name" : "BpmOrbeonTempTokenRegistry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
