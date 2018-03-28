@@ -5,6 +5,8 @@ createBpmProcessDefinition
 	"create the BpmProcessDefinition"
 	tempProcesses := processGenerator generateAllProcess.
 
+	processGenerator hasImmutableProcess ifTrue: [].
+
 	processes := processGenerator generateProcessesAndStoreOnCache.
 
 	topProcesses := processes select: [:each | each isTopProcess].
