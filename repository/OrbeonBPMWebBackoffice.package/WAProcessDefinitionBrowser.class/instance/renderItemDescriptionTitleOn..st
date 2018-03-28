@@ -1,6 +1,6 @@
 process
 renderItemDescriptionTitleOn: html
-	| jQueryId popUpComponent jQueryIdAp list |
+	| jQueryId popUpComponent jQueryIdAp list lockIcon |
 
 	html output:  selectedLateralItem processName.
 
@@ -34,3 +34,14 @@ renderItemDescriptionTitleOn: html
 		with: [html image url: (SEWAFIconLibrary / #filescsv24Png); 
 					title: ('Export Instances to CSV' translateFor: self session user);
 					altText: ('Export Instances to CSV' translateFor: self session user)].
+
+	self session user isBackofficeUserAndAdmin ifFalse: [^self].
+
+	lockIcon := selectedLateralItem isImmutable ifTrue: [#locklock24Png] ifFalse: [#lockunlock24Png].
+
+	html anchor 
+		class: 'cursor-pointer';
+		callback: [self switchImmutableValue]; 
+		with: [html image url: (SEWAFIconLibrary / lockIcon); 
+					title: ('Switch Immutable Value' translateFor: self session user);
+					altText: ('Switch Immutable Value' translateFor: self session user)].
