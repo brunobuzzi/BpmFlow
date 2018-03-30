@@ -16,3 +16,5 @@ renderItemDescriptionSecondaryDataOn: html
 		callback: [self onTopProcessSelected: selectedLateralItem parentProcess]; 
 		with: [html output: '@', parentName]
 	].
+	html span with: [html strong: ('Immutable:' translateFor: self session user)].
+	html output: selectedLateralItem isImmutable.

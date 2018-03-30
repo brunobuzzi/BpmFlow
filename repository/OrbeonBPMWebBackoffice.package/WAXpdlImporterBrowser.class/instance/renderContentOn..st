@@ -1,4 +1,4 @@
-other
+import
 renderContentOn: html
 	| importTitle |
 
@@ -14,6 +14,8 @@ renderContentOn: html
 
 	(processGenerator notNil and: [processGenerator hasImportedProcesses]) ifFalse: [^self].
 
+	processGenerator hasImmutableProcess ifTrue: [^self renderImmutableExceptionOn: html].
+	
 	importTitle := (processGenerator processes size > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
 
 	html div id: 'imported-processes-title'; with: [html output: (importTitle translateFor: self session user)].
