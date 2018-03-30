@@ -1,0 +1,4 @@
+other
+hasAnonymousStart
+
+	^startNode isAnonymousStart

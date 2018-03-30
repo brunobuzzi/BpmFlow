@@ -26,6 +26,7 @@
 		"getTaskNamed:ifNone:" : "BrunoBB 10/31/2015 14:33",
 		"getTaskNodes" : "BrunoBB 10/31/2015 14:33",
 		"getTransitionNamed:ifNone:" : "BrunoBB 10/31/2015 14:33",
+		"hasAnonymousStart" : "brunobb 03/30/2018 15:41",
 		"hasParentProcess" : "BrunoBB 11/29/2015 17:09",
 		"initialize" : "BrunoBB 10/31/2015 14:33",
 		"lanes" : "BrunoBB 10/31/2015 14:33",
