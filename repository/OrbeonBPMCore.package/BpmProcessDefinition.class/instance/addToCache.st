@@ -9,6 +9,6 @@ addToCache
 	ifFalse: [version := processDefinitions last version + 1]
 	ifTrue: [version := 1].
 
-	((version > 1) and: [processDefinitions last isImmutable]) ifTrue: [ImmutableProcessException signal: 'The lasted version of this process is immutable then no more processes can be added to the cache'].
+	((version > 1) and: [processDefinitions last isImmutable]) ifTrue: [^ImmutableProcessException signal: 'The lasted version of this process is immutable then no more processes can be added to the cache'].
 
 	processDefinitions add: self
