@@ -1,6 +1,11 @@
 import
 renderImmutableExceptionOn: html
+	| immutableProcesses |
 
-	html strong with: 'One of BPM Processes to import is marked as Immutable'.
+	immutableProcesses := processGenerator immutableProcess.
 
-	html output with: 'Import process has been aborted. Contact a Backoffice Administator'.
+	html div id: 'immutable-import-exception'; with: [
+		html strong with: ('The following BPM Processes to import are marked as Immutable:' translateFor: self session user).
+		immutableProcesses do: [:eachDef | html output: eachDef processName]. 
+		html strong with: ('Import process has been aborted. Contact a Backoffice Administator' translateFor: self session user).
+	].
