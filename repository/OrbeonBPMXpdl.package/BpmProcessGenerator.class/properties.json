@@ -9,7 +9,8 @@
 		"xpdlPackages",
 		"processes",
 		"participants",
-		"processesMapping" ],
+		"processesMapping",
+		"successfulImport" ],
 	"name" : "BpmProcessGenerator",
 	"pools" : [
 		 ],

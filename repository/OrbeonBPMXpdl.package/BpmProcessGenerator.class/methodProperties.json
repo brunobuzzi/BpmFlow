@@ -19,7 +19,7 @@
 		"hasImmutableProcess" : "brunobb 03/31/2018 12:50",
 		"hasImportedProcesses" : "brunobb 02/23/2018 10:23",
 		"immutableProcess" : "brunobb 03/31/2018 12:48",
-		"initialize" : "BrunoBB 11/22/2015 14:28",
+		"initialize" : "brunobb 04/01/2018 08:31",
 		"mapProcess:toApplication:" : "BrunoBB 12/09/2015 11:17",
 		"participants" : "BrunoBB 10/31/2015 16:29",
 		"participants:" : "BrunoBB 10/31/2015 16:29",
@@ -28,6 +28,8 @@
 		"processes:" : "BrunoBB 10/26/2015 17:48",
 		"processesMapping" : "BrunoBB 01/21/2016 12:34",
 		"processesMapping:" : "BrunoBB 01/21/2016 12:34",
+		"successfulImport" : "brunobb 04/01/2018 08:31",
+		"successfulImport:" : "brunobb 04/01/2018 08:31",
 		"throwMappingExceptionFor:" : "BrunoBB 03/29/2016 15:27",
 		"xpdlPackages" : "BrunoBB 10/31/2015 15:54",
 		"xpdlPackages:" : "BrunoBB 10/31/2015 15:54" } }
