@@ -3,6 +3,7 @@ renderContentOn: html
 	| importTitle |
 
 	html div id: 'import-forms'; with: [
+		self renderResetButtonOn: html.
 		1 to: numberOfProcess do: [:index |
 			self renderFormToUploadProcessOn: html index: index].
 

@@ -16,7 +16,7 @@ renderImportAllButtonOn: html
 						class: 'cursor-pointer';
 						onClick: (html jQuery id: jQueryId) dialog open;
 						"callback: [self importBizagiFiles];"
-						with: [html image url: (SEWAFFileLibrary / #actionsdocumentsaveasiconPng); 
+						with: [html image url: (SEWAFIconLibrary / #actionsdocumentsaveasiconPng); 
 								altText: ('Import All Files' translateFor: self session user); 
 								title: ('Import All Files' translateFor: self session user)].
 	]

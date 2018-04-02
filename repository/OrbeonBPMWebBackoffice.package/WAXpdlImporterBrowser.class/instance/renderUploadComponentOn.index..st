@@ -13,5 +13,4 @@ renderUploadComponentOn: html index: index
 			(fileFormats includesKey: (selectedUploads at: index)) "file format error"
 			ifTrue: [html paragraph class: 'error-text';
 				with: (fileFormats at: (selectedUploads at: index))].
-			invalidFormatError notNil ifTrue: [html paragraph class: 'error-text'; with: invalidFormatError].
 	].
