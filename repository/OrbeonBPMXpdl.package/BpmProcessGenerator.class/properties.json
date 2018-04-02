@@ -10,7 +10,9 @@
 		"processes",
 		"participants",
 		"processesMapping",
-		"successfulImport" ],
+		"successfulImport",
+		"importResultText",
+		"failedImportProcesses" ],
 	"name" : "BpmProcessGenerator",
 	"pools" : [
 		 ],
