@@ -17,8 +17,8 @@ renderContentOn: html
 
 	processGenerator hasImmutableProcess ifTrue: [^self renderImmutableExceptionOn: html].
 	
-	importTitle := (processGenerator processes size > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
-
-	html div id: 'imported-processes-title'; with: [html output: (importTitle translateFor: self session user)].
-
-	html div id: 'imported-processes'; with: [self renderSVGForImportedProcessesOn: html].
+	processGenerator successfulImport
+	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateFor: self session user)].]
+	ifFalse: [importTitle := (processGenerator processes size > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
+		html div id: 'imported-processes-title'; with: [html output: (importTitle translateFor: self session user)].
+		html div id: 'imported-processes'; with: [self renderSVGForImportedProcessesOn: html]].

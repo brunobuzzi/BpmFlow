@@ -23,7 +23,7 @@
 		"receiveFile:index:" : "BrunoBB 12/09/2015 11:46",
 		"removeImportProcessForm" : "BrunoBB 12/02/2016 03:36",
 		"renderAddNewImportFormButtonOn:" : "BrunoBB 12/09/2015 10:23",
-		"renderContentOn:" : "brunobb 04/02/2018 12:05",
+		"renderContentOn:" : "brunobb 04/02/2018 13:50",
 		"renderEmptyUploadFormOn:index:" : "BrunoBB 12/01/2016 09:11",
 		"renderFormToUploadProcessOn:index:" : "BrunoBB 12/01/2016 09:03",
 		"renderImmutableExceptionOn:" : "brunobb 03/31/2018 11:42",
@@ -38,5 +38,6 @@
 		"selectedUploads:" : "BrunoBB 12/09/2015 10:23",
 		"sewafImportReportTable:" : "BrunoBB 06/12/2016 12:42",
 		"storeBpmProcessDefinition" : "brunobb 03/31/2018 12:00",
+		"successfulImport" : "brunobb 04/02/2018 12:45",
 		"uploadProcesses" : "BrunoBB 01/21/2016 11:50",
 		"uploadProcesses:" : "BrunoBB 01/21/2016 11:50" } }
