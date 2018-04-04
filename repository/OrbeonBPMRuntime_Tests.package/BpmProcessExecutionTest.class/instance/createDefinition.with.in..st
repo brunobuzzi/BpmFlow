@@ -6,7 +6,7 @@ createDefinition: formName with: definitionMethod in: anOrbeonApplication
 	savedDefinition id: UUID new asString;
 		version: 1;
 		title: formName;
-		setXmlString: (OrbeonFormReader getCurrentOrbeonXmlPath templateClass perform: definitionMethod). "answer a sublcass of <OrbeonFormDefinitionTemplate>"
+		setXmlString: (self getOrbeonWebServerConfiguration orbeonXpathVersion templateClass perform: definitionMethod). "answer a sublcass of <OrbeonFormDefinitionTemplate>"
 
 	anOrbeonApplication addSavedDefinition: savedDefinition.
 
