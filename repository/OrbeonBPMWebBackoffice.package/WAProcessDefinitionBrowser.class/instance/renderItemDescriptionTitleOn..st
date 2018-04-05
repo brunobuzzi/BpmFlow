@@ -35,6 +35,8 @@ renderItemDescriptionTitleOn: html
 					title: ('Export Instances to CSV' translateFor: self session user);
 					altText: ('Export Instances to CSV' translateFor: self session user)].
 
+	selectedLateralItem canBeStartedByAnonymousForm ifTrue: [self renderToggleOn: html].
+
 	self session user isBackofficeUserAndAdmin ifFalse: [^self].
 
 	lockIcon := selectedLateralItem isImmutable ifTrue: [#locklock24Png] ifFalse: [#lockunlock24Png].
