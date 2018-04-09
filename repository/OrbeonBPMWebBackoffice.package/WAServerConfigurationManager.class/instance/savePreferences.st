@@ -1,2 +1,2 @@
-other
+edit properties
 savePreferences

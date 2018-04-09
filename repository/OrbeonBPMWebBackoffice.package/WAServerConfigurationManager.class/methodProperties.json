@@ -3,8 +3,12 @@
 		 },
 	"instance" : {
 		"gitbookUrl" : "brunobb 07/27/2017 06:10",
-		"renderContentOn:" : "BrunoBB 03/15/2016 10:59",
-		"renderServerConfigurationFormOn:" : "BrunoBB 03/15/2016 10:59",
-		"renderServerConfigurationSettingOn:" : "brunobb 02/25/2018 16:36",
+		"renderContentOn:" : "brunobb 04/09/2018 10:27",
+		"renderDocumentationConfigurationSettingOn:" : "brunobb 04/09/2018 10:22",
+		"renderGemStoneConfigurationSettingOn:" : "brunobb 04/09/2018 10:22",
+		"renderOrbeonConfigurationSettingOn:" : "brunobb 04/09/2018 11:21",
+		"renderServerConfigurationFormOn:" : "brunobb 04/09/2018 10:27",
+		"renderServerConfigurationSettingOn:" : "brunobb 04/09/2018 10:19",
 		"renderServerConfigurationViewOn:" : "brunobb 02/10/2018 07:01",
-		"savePreferences" : "BrunoBB 03/15/2016 10:59" } }
+		"savePreferences" : "BrunoBB 03/15/2016 10:59",
+		"setOrbeonVersion:" : "brunobb 04/09/2018 11:27" } }
