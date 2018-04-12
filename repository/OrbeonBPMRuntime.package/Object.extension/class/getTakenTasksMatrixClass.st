@@ -1,0 +1,4 @@
+*orbeonBPMRuntime
+getTakenTasksMatrixClass
+
+	^BpmTakenTasksMatrix
