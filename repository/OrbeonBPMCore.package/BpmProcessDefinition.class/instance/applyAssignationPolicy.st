@@ -5,7 +5,7 @@ applyAssignationPolicy
 
 	self hasAutomaticTaskAssignation ifTrue: [AutomaticPolicyException signal: 'The current assignation policy is automatic and can not be forced'].
 
-	runningTaskMatrix := self getProcessMatrix.
+	runningTaskMatrix := self getAvailableProcessMatrix.
 
 	allAssignments := OrderedCollection new.
 
