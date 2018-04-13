@@ -2,7 +2,7 @@
 	"class" : {
 		"definition:" : "BrunoBB 12/01/2015 12:57",
 		"definition:user:" : "BrunoBB 11/29/2015 16:16",
-		"resetAll" : "brunobb 01/23/2018 11:19" },
+		"resetAll" : "brunobb 04/13/2018 11:04" },
 	"instance" : {
 		"abortProcess:" : "brunobb 12/11/2017 17:28",
 		"addActivityToPerform:" : "brunobb 10/24/2017 11:57",
@@ -70,7 +70,7 @@
 		"getLastEventNamed:ifNone:" : "brunobb 10/24/2017 14:31",
 		"getPrintableValueFrom:" : "brunobb 03/13/2018 07:33",
 		"getProcessMapStreamFor:" : "BrunoBB 01/13/2017 13:06",
-		"getProcessMatrix" : "brunobb 02/03/2018 08:59",
+		"getProcessMatrix" : "brunobb 04/13/2018 11:02",
 		"getProcessTree:" : "BrunoBB 03/23/2016 14:27",
 		"getProcessesTreeAsCollection" : "BrunoBB 03/23/2016 14:32",
 		"getRunningArtifacts" : "BrunoBB 12/10/2015 13:24",

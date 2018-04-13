@@ -5,7 +5,7 @@ getAllTaskAssignmentsWithId: processId
 
 	assignments := OrderedCollection new.
 	self roles do: [:eachRole | | matrix |
-		matrix := self getMatrixManagerClass getMatrixForApplicationNamed: eachRole getApplicationName.
+		matrix := self getAvailableTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
 		assignments addAll: (matrix getAvailableTasksFor: eachRole name satisfying: {:each | each.processId = processId})
 	].
 
