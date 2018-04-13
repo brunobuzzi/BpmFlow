@@ -4,7 +4,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 
@@ -48,7 +48,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 	"Sub Process Execution [home-office-check] starts here "
 		subProcessL1 := procInstance subprocesses last.
 		subProcId := subProcessL1 id.
-		subProcCurrentMatrix := subProcessL1 getProcessMatrix.
+		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
  
 		self assert: (procInstance includesSubProcess: subProcessL1).

@@ -6,7 +6,7 @@ testExecuteProcessAbort_01
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vm').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').

@@ -6,7 +6,7 @@ testExecuteProcess_visaAccepted_03
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	"Step 1 - Form [citizen-appliance]"

@@ -5,7 +5,7 @@ startAssignFinishAndTestProcess: aBpmProcessInstance
 
 	self assert: (aBpmProcessInstance startEvent getDefinitionName = 'visa apply start').
 	processId := aBpmProcessInstance id.
-	currentProcessMatrix := aBpmProcessInstance getProcessMatrix.
+	currentProcessMatrix := aBpmProcessInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 1 - Form [citizen-appliance]"

@@ -4,7 +4,7 @@ resumeAssignFromTask2AndTestProcess: aBpmProcessInstance
 	| currentTask currentProcessMatrix finishedProcessMatrix processId |
 
 	processId := aBpmProcessInstance id.
-	currentProcessMatrix := aBpmProcessInstance getProcessMatrix.
+	currentProcessMatrix := aBpmProcessInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 2 - Form [check-basic-data]"

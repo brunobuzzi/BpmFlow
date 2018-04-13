@@ -4,7 +4,7 @@ testMatrixAssignmentAndTaskIdentity
 
 	BpmProcessDefinition getAllProcessDefinition do: [:eachProcDef | 
 		(eachProcDef processInstances reject: [:each | each isAborted])  do: [:procInstance | | currentMatrix finishedMatrix currentAssignments finishedAssignments executedActivities |
-			currentMatrix := procInstance getProcessMatrix.
+			currentMatrix := procInstance getAvailableProcessMatrix.
 			finishedMatrix := procInstance getFinishedProcessMatrix.
 
 			currentAssignments := currentMatrix getAllAssignments.

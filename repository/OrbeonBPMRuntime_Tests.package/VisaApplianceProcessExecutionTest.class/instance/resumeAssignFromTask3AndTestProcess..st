@@ -4,7 +4,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 	| currentTask gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
 	processId := aBpmProcessInstance id.
-	currentProcessMatrix := aBpmProcessInstance getProcessMatrix.
+	currentProcessMatrix := aBpmProcessInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 3 - Gateway Evaluation"
@@ -22,7 +22,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 	"Sub Process Execution [home-office-check] starts here "
 		subProcessL1 := aBpmProcessInstance subprocesses last.
 		subProcId := subProcessL1 id.
-		subProcCurrentMatrix := subProcessL1 getProcessMatrix.
+		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
 
 		self assert: (aBpmProcessInstance includesSubProcess: subProcessL1).
@@ -48,7 +48,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 		"Sub Process Execution [check-financial-data]"
 			subProcessL2 := subProcessL1 subprocesses last.
 			subProc2Id := subProcessL2 id.
-			subProc2CurrentMatrix := subProcessL2 getProcessMatrix.
+			subProc2CurrentMatrix := subProcessL2 getAvailableProcessMatrix.
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.

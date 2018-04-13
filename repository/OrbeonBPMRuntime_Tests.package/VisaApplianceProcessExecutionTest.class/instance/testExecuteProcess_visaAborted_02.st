@@ -4,7 +4,7 @@ testExecuteProcess_visaAborted_02
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').

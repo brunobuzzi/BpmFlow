@@ -8,7 +8,7 @@ testExecuteProcess_issue_366
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	"Step 1 - Form [citizen-appliance]"
@@ -41,7 +41,7 @@ testExecuteProcess_issue_366
 	"Sub Process Execution [home-office-check] starts here "
 		subProcessL1 := procInstance subprocesses last.
 		subProcId := subProcessL1 id.
-		subProcCurrentMatrix := subProcessL1 getProcessMatrix.
+		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
 
 		self assert: (procInstance includesSubProcess: subProcessL1).
@@ -67,7 +67,7 @@ testExecuteProcess_issue_366
 		"Sub Process Execution [check-financial-data]"
 			subProcessL2 := subProcessL1 subprocesses last.
 			subProc2Id := subProcessL2 id.
-			subProc2CurrentMatrix := subProcessL2 getProcessMatrix.
+			subProc2CurrentMatrix := subProcessL2 getAvailableProcessMatrix.
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.

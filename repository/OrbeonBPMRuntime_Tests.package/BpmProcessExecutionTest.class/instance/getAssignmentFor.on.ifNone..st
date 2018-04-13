@@ -4,4 +4,4 @@ getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: aBlock
 	1- Get the matrix (BpmTasksHolderMatrix) based on the application that the process <aBpmProcessInstance> belong.
 	2- Get the assignment for the roles of the task <aBpmTaskInstance>"
 
-	^(self getProcessMatrixFor: aBpmProcessInstance) getAssignmentFor: aBpmTaskInstance ifNone: aBlock
+	^(self getAvailableProcessMatrixFor: aBpmProcessInstance) getAssignmentFor: aBpmTaskInstance ifNone: aBlock

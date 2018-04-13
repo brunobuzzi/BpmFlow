@@ -4,7 +4,7 @@ testExecuteProcess_boolean_exit_aborted
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 	processId := procInstance id.
-	currentProcessMatrix := procInstance getProcessMatrix.
+	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').
