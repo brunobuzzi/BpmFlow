@@ -1,4 +1,4 @@
 process execution
 getAssignment
 
-	^self getProcessMatrix getAssignmentFor: self
+	^self getAvailableProcessMatrix getAssignmentFor: self
