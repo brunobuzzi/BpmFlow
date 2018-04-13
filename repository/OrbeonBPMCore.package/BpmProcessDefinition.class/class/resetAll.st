@@ -15,5 +15,5 @@ resetAll
 	(BpmBackofficeRole getRoleNamed: 'admin' in: 'admins') grantUser: (BpmUser getExistingOrNewUserNamed: 'admin' password: 'admin').
 	BpmFrontOfficeRole initializeCache.
 
-	self getMatrixManagerClass initializeCache.
+	self getAvailableTasksMatrixClass initializeCache.
 	self getFinishedMatrixManagerClass initializeCache.
