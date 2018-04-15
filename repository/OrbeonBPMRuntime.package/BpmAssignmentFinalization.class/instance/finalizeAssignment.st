@@ -9,7 +9,7 @@ finalizeAssignment
 	user moveFromCurrentToFinished: assignment. "<user> move from current assignments to finished <assignment> "
 
 	"add the assignment to finished matrix"
-	finishedMatrix := self getFinishedMatrixManagerClass getMatrixForApplicationNamed: assignment applicationName.
+	finishedMatrix := self getFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
 	finishedMatrix addAssignment: assignment.
 
 	"generate next transitions and put New Tasks in the Application Running Matrix"

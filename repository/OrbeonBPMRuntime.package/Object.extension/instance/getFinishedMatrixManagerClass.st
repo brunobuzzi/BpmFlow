@@ -1,4 +1,0 @@
-*orbeonBPMRuntime
-getFinishedMatrixManagerClass
-
-	^self class getFinishedMatrixManagerClass

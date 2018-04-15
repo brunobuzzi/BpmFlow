@@ -42,7 +42,7 @@
 		"reportProcessInstancesQuantityDistribution" : "BrunoBB 11/01/2016 04:34",
 		"reportProcessInstancesQuantityDistributionFor:" : "BrunoBB 11/01/2016 07:59",
 		"reportProcessInstancesQuantityDistributionFor:in:" : "BrunoBB 11/02/2016 08:28",
-		"resetAll" : "brunobb 04/13/2018 11:01",
+		"resetAll" : "brunobb 04/15/2018 15:47",
 		"unregisterAnonymousStartFor:" : "brunobb 02/05/2018 09:32" },
 	"instance" : {
 		"abortedProcesses" : "brunobb 01/18/2018 13:44",
@@ -107,7 +107,7 @@
 		"getFieldNamesOfTask:" : "BrunoBB 04/23/2016 12:42",
 		"getFieldsNamed:in:initialValue:endValue:" : "BrunoBB 04/23/2016 12:55",
 		"getFieldsNamed:in:withValue:" : "BrunoBB 04/23/2016 12:55",
-		"getFinishedProcessMatrix" : "brunobb 02/03/2018 08:59",
+		"getFinishedProcessMatrix" : "brunobb 04/15/2018 15:46",
 		"getFormDefinitionNamed:ifNone:" : "BrunoBB 02/23/2016 14:13",
 		"getGatewayNamed:ifNone:" : "BrunoBB 11/28/2015 19:50",
 		"getInstancesCreationDayDistributionQuantityFrom:to:satisfying:" : "BrunoBB 11/04/2016 05:13",
