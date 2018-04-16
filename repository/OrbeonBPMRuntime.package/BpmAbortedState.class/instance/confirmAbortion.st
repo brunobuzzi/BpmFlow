@@ -13,7 +13,8 @@ confirmAbortion
 
 	self removeTakenAssignmentsFromUsers.
 
-	self removeAllAssigmentsFromRunningMatrix.
+	self removeAllAssigmentsFromAvailableMatrix.
+	self removeAllAssigmentsFromTakenMatrix.
 	self removeAllAssigmentsFromFinishedMatrix.
 
 	self removeTimerEventsFromEventMonitor.

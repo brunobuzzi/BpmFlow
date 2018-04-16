@@ -6,9 +6,11 @@ take: aBpmTaskAssignment
 	aBpmTaskAssignment user ifNotNil: [^TaskAlreadyTakenException signal: 'This task is already taken by user [', aBpmTaskAssignment getUsername, ']']. 
 
 	aBpmTaskAssignment 
-		removeFromMatrix; "is not available for other users to take it"
+		removeFromCurrentMatrix; "is not available for other users to take it"
 		setAssignationDate; "time stamp when the task was taken"
 		registerInProcess. "for historic purpose"
+
+	aBpmTaskAssignment addToTakenMatrix. "store the assignment to taken tasks matrix"
 
 	self getCurrentAssignmentsInbox acceptEntry: aBpmTaskAssignment. "store the assignment in the current assignment inbox"
 

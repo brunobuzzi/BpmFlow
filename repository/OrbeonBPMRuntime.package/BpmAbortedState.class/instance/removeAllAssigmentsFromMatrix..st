@@ -11,4 +11,4 @@ removeAllAssigmentsFromMatrix: aBpmTasksHolderMatrix
 		taskAssigments addAll: (aBpmTasksHolderMatrix getAvailableTasksFor: eachRole name satisfying: {:e | e.processId = processId}).		
 	].
 
-	taskAssigments do: [:each | each removeFromMatrix].
+	taskAssigments do: [:each | each removeFromCurrentMatrix].

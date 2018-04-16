@@ -18,6 +18,6 @@ finalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	aBpmTaskAssignment isFinishedByPerformers ifTrue: [^self basicFinalizeAssignment: aBpmTaskAssignment takeNext: aBoolean].
 
 	self moveFromCurrentToFinished: aBpmTaskAssignment. "finalized by a Performer (NOT all performers have worked on the task)"
-	aBpmTaskAssignment free.
+	aBpmTaskAssignment addToAvailableMatrix.
 
 	^BpmAssignmentFinalization on: aBpmTaskAssignment by: self "assignment not finalized"
