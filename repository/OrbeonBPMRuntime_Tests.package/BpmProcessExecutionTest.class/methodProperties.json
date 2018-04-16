@@ -16,6 +16,8 @@
 		"getFinishedAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:43",
 		"getFinishedProcessMatrix" : "BrunoBB 03/29/2016 14:41",
 		"getFinishedProcessMatrixFor:" : "BrunoBB 03/29/2016 14:41",
+		"getTakenProcessMatrix" : "brunobb 04/16/2018 08:51",
+		"getTakenProcessMatrixFor:" : "brunobb 04/16/2018 08:51",
 		"getUserNamed:" : "BrunoBB 03/27/2016 16:13",
 		"procInstance" : "BrunoBB 12/07/2015 06:51",
 		"procInstance:" : "BrunoBB 12/07/2015 06:51",
