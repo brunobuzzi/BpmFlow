@@ -9,7 +9,7 @@ finalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	aBpmTaskAssignment processIsRunning ifFalse: [^ProcessNotRunningException signal: 'The assigment can not be finalized because the process is NOT [running]'].
 
 	"a manager has untaken the assignment from the receiver --> the assignment can NOT be finalized by the receiver"
-	(aBpmTaskAssignment user == self) ifFalse: [^BpmAssignmentFinalization on: aBpmTaskAssignment by: self].
+	(aBpmTaskAssignment user == self) ifFalse: [^BpmFinalizeAssignment on: aBpmTaskAssignment by: self].
 
 	"remove the assignment from taken matrix"
 	takenMatrix := aBpmTaskAssignment process getTakenProcessMatrix.
@@ -25,4 +25,4 @@ finalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	self moveFromCurrentToFinished: aBpmTaskAssignment. "finalized by a Performer (NOT all performers have worked on the task)"
 	aBpmTaskAssignment addToAvailableMatrix.
 
-	^BpmAssignmentFinalization on: aBpmTaskAssignment by: self "assignment not finalized"
+	^BpmFinalizeAssignment on: aBpmTaskAssignment by: self "assignment not finalized"

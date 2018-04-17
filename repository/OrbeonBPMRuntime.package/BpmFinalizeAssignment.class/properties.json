@@ -9,7 +9,7 @@
 		"nextTransitions",
 		"isFinalized",
 		"assignNextToUser" ],
-	"name" : "BpmAssignmentFinalization",
+	"name" : "BpmFinalizeAssignment",
 	"pools" : [
 		 ],
 	"super" : "BpmAssignmentProcess",
