@@ -6,10 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"assignment",
-		"user" ],
-	"name" : "BpmAssignmentProcess",
+		"nextTransitions",
+		"isFinalized",
+		"assignNextToUser" ],
+	"name" : "BpmFinalizeAssignmentProcedure",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmAssignmentProcedure",
 	"type" : "normal" }

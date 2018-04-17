@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmTakeAssignment",
+	"name" : "BpmTakeAssignmentProcedure",
 	"pools" : [
 		 ],
-	"super" : "BpmAssignmentProcess",
+	"super" : "BpmAssignmentProcedure",
 	"type" : "normal" }
