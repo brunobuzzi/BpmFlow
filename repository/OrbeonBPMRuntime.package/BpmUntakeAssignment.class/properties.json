@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmUntakeAssignment",
+	"pools" : [
+		 ],
+	"super" : "BpmAssignmentProcess",
+	"type" : "normal" }
