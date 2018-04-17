@@ -4,8 +4,6 @@
 	"instance" : {
 		"assignNextToUser" : "BrunoBB 07/25/2016 10:15",
 		"assignNextToUser:" : "BrunoBB 07/25/2016 10:15",
-		"assignment" : "BrunoBB 07/25/2016 09:22",
-		"assignment:" : "BrunoBB 07/25/2016 09:22",
 		"finalizeAssignment" : "brunobb 04/16/2018 15:45",
 		"getAvailableProcessMatrix" : "brunobb 04/13/2018 11:21",
 		"getNewCreatedTasks" : "BrunoBB 08/03/2016 14:12",
@@ -14,7 +12,5 @@
 		"isFinalized:" : "BrunoBB 07/25/2016 09:22",
 		"nextTransitions" : "BrunoBB 07/25/2016 09:22",
 		"nextTransitions:" : "BrunoBB 07/25/2016 09:22",
-		"process" : "BrunoBB 07/31/2016 13:40",
-		"setUserToTakeNextTasks" : "BrunoBB 07/25/2016 10:27",
-		"user" : "BrunoBB 07/25/2016 09:28",
-		"user:" : "BrunoBB 07/25/2016 09:28" } }
+		"process" : "brunobb 04/17/2018 04:09",
+		"setUserToTakeNextTasks" : "BrunoBB 07/25/2016 10:27" } }
