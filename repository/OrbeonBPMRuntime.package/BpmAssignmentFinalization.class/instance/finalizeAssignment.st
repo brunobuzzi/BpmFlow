@@ -2,7 +2,7 @@ other
 finalizeAssignment
 	"The receiver finalize it's assignment <aBpmTaskAssignment> and the finalizer is the <BpmUser> <user>"
 	| finishedMatrix currentActivities |
-
+	<matrix>
 	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
 	isFinalized := true.
 

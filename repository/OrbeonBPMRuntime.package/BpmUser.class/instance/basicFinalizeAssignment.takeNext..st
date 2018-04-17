@@ -2,7 +2,7 @@ assignment
 basicFinalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	"The receiver finalize the assignment <aBpmTaskAssignment>"
 	| assignmentFinalization |
-
+	<matrix>
 	assignmentFinalization := BpmAssignmentFinalization on: aBpmTaskAssignment by: self.
 	aBoolean ifTrue: [assignmentFinalization setUserToTakeNextTasks].
 	"1- move assignment from <user> current to <user> finished assignments.

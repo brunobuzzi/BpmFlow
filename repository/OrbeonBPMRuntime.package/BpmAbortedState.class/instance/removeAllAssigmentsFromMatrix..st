@@ -2,7 +2,7 @@ execution
 removeAllAssigmentsFromMatrix: aBpmTasksHolderMatrix
 	"The receiver remove all <BpmTaskAssignment> from the <aBpmTasksHolderMatrix> for the aborted <BpmProcessInstance> <process>"
 	| processId taskAssigments |
-
+	<matrix>
 	taskAssigments := Set new.
 	processId := process processId.
 
