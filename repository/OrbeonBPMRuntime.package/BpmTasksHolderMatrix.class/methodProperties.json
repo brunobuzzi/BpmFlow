@@ -24,7 +24,7 @@
 		"getAssignmentFor:ifNone:" : "BrunoBB 04/01/2016 14:20",
 		"getAvailableTasksFor:" : "BrunoBB 08/06/2016 12:19",
 		"getAvailableTasksFor:satisfying:" : "BrunoBB 08/06/2016 12:02",
-		"includesAssignment:" : "brunobb 01/25/2018 10:32",
+		"includesAssignment:" : "brunobb 04/18/2018 09:31",
 		"initialize" : "BrunoBB 12/22/2015 10:32",
 		"removeAssignment:" : "brunobb 04/16/2018 15:44",
 		"resetAll" : "BrunoBB 06/20/2016 14:30",
