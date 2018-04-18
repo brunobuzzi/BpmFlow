@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "BpmUntakeAssignmentProcedure",
+		"assignment",
+		"user" ],
+	"name" : "BpmAssignmentOperation",
 	"pools" : [
 		 ],
-	"super" : "BpmAssignmentProcedure",
+	"super" : "BpmObject",
 	"type" : "normal" }
