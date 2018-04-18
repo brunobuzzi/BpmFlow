@@ -1,11 +1,12 @@
 execution and test
 resumeFromTask2AndTestProcess: aBpmProcessInstance
 	"The receiver resume the execution of <aBpmProcessInstance> from the <aBpmTaskInstance> number 2 and finish it execution"
-	| currentTask assignment currentProcessMatrix finishedProcessMatrix processId |
+	| currentTask assignment currentProcessMatrix takenProcessMatrix finishedProcessMatrix processId |
 
 	processId := aBpmProcessInstance id.
-	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 	currentProcessMatrix := aBpmProcessInstance getAvailableProcessMatrix.
+	takenProcessMatrix := aBpmProcessInstance getTakenProcessMatrix.
+	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 2 - Form [check-basic-data]"
 	currentTask :=  aBpmProcessInstance currentActivities last.

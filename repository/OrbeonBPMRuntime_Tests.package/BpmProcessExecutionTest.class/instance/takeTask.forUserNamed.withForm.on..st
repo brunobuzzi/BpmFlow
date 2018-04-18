@@ -15,6 +15,13 @@ takeTask: aBpmTaskInstance forUserNamed: aString withForm: anOrbeonFormInstance 
 		aBpmTaskInstance externalObject: anOrbeonFormInstance.
 		anOrbeonFormInstance assignment: assignment.
 	if not --> the object structure is broken (see issue #364)"
-	(self getUserNamed: aString) take: assignment. 
+
+	self assert: (aBpmProcessInstance getAvailableProcessMatrix includesAssignment: assignment).
+	self deny: (aBpmProcessInstance getTakenProcessMatrix includesAssignment: assignment).
+
+	(self getUserNamed: aString) take: assignment. "the user take the <BpmTaskAssignment>"
+
+	self assert: (aBpmProcessInstance getTakenProcessMatrix includesAssignment: assignment).
+	self deny: (aBpmProcessInstance getAvailableProcessMatrix includesAssignment: assignment).
 
 	^assignment
