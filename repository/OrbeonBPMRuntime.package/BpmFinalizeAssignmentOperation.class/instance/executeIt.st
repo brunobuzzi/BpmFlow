@@ -1,26 +1,24 @@
 action
 executeIt
 	"The receiver finalize it's assignment <aBpmTaskAssignment> and the finalizer is the <BpmUser> <user>"
-	| finishedMatrix currentActivities |
+	| takenMatrix |
 	<matrix>
-	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
-	isFinalized := true.
 
-	user moveFromCurrentToFinished: assignment. "<user> move from current assignments to finished <assignment> "
+	"a manager has untaken the assignment from the receiver --> the assignment can NOT be finalized by the receiver"
+	(assignment user == user) ifFalse: [^self].
 
-	"add the assignment to finished matrix"
-	finishedMatrix := self getFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
-	finishedMatrix addAssignment: assignment.
+	"remove the assignment from taken matrix"
+	takenMatrix := assignment process getTakenProcessMatrix.
+	takenMatrix removeAssignment: assignment.
 
-	"generate next transitions and put New Tasks in the Application Running Matrix"
-	currentActivities := OrderedCollection withAll: self process currentActivities.
-	nextTransitions := assignment generateNextRunningTransitions. 
+	"regular assignment with one role only"
+	assignment hasPerformers ifFalse: [^self finalizeAssignment]. 
 
-	"ifTrue: the same user <user> that finished the task is going to take next generated tasks"
-	assignNextToUser ifTrue: [ | assignments availableAssignments newActivities |
-		availableAssignments := user getAllAvailableTaskAssignments.
-		newActivities := self process currentActivities asArray removeAll: currentActivities; yourself.
-		assignments := newActivities collect: [:each | self getAvailableProcessMatrix getAssignmentFor: each].
-		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
-			do:[:each | user take: each].
-		].
+	"more than one role is going to work with this assignment "
+	assignment incrementPerformerCounter.
+	assignment isFinishedByPerformers ifTrue: [^self finalizeAssignment].
+
+	user moveFromCurrentToFinished: assignment. "finalized by a Performer (NOT all performers have worked on the task)"
+	assignment addToAvailableMatrix.
+
+	^self "assignment not finalized"
