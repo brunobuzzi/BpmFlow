@@ -1,4 +1,4 @@
-other
+action
 finalizeAssignment
 	| finishedMatrix currentActivities |
 

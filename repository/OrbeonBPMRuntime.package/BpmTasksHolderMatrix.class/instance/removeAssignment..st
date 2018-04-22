@@ -4,6 +4,4 @@ removeAssignment: aBpmTaskAssignment
 	1- Get the collection for the task role
 	2- Remove the object"
 	<matrix>
-	^(rolesAndAssignment at: aBpmTaskAssignment getRoleName ifAbsent: [self throwExceptionNoSlotFor: aBpmTaskAssignment roleName])
-			remove: aBpmTaskAssignment
-			ifAbsent: [self throwExceptionTaskAssignmentNotFound]
+	^self removeAssignment: aBpmTaskAssignment fromRoleNamed: aBpmTaskAssignment getRoleName

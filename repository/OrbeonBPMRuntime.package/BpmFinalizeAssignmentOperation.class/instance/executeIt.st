@@ -19,6 +19,6 @@ executeIt
 	assignment isFinishedByPerformers ifTrue: [^self finalizeAssignment].
 
 	user moveFromCurrentToFinished: assignment. "finalized by a Performer (NOT all performers have worked on the task)"
-	assignment addToAvailableMatrix.
+	assignment addToAvailableMatrixForNextPerformer.
 
 	^self "assignment not finalized"

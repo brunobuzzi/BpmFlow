@@ -1,4 +1,4 @@
-other
+query
 getAssignmentsCollectionFor: aBpmFrontOfficeRole
 	"The receiver answer <aRcIdentitySet> with all <BpmTaskAssignment> for the role <aBpmFrontOfficeRole>"
 	| matrix |

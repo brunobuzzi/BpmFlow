@@ -1,4 +1,4 @@
-other
+query
 getMatrixForApplicationNamed: aString
 	"The receiver answer an instance of itself for the Application named <aString>.
 	If the Matrix does not exist --> create a newone.

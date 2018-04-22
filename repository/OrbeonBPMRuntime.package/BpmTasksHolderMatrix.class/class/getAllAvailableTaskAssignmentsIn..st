@@ -1,4 +1,4 @@
-other
+query
 getAllAvailableTaskAssignmentsIn: anOrderedCollection
 	"The receiver answer a collection with all running/pending tasks for all Applications contained in collection <anOrderedCollection>"
 	| tasks |
