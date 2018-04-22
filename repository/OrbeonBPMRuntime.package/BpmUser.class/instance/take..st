@@ -2,7 +2,7 @@ assignment
 take: aBpmTaskAssignment
 	"The receiver take the unassigned task <aBpmTaskAssignment>"
 	| takeProcedure |
-	<matrix>
+
 	aBpmTaskAssignment processIsRunning ifFalse: [^ProcessNotRunningException signal: 'The assignment can not be taken by the user because the process is NOT [running]'].
 	aBpmTaskAssignment user ifNotNil: [^TaskAlreadyTakenException signal: 'This task is already taken by user [', aBpmTaskAssignment getUsername, ']']. 
 

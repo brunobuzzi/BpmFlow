@@ -2,7 +2,6 @@ action
 executeIt
 	"The receiver finalize it's assignment <aBpmTaskAssignment> and the finalizer is the <BpmUser> <user>"
 	| takenMatrix |
-	<matrix>
 
 	"a manager has untaken the assignment from the receiver --> the assignment can NOT be finalized by the receiver"
 	(assignment user == user) ifFalse: [^self].
