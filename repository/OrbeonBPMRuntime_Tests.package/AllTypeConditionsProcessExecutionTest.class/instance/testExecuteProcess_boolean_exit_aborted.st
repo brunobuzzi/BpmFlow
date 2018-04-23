@@ -1,10 +1,11 @@
 test
 testExecuteProcess_boolean_exit_aborted
-	| currentTask assignment processId currentProcessMatrix finishedProcessMatrix |
+	| currentTask assignment processId currentProcessMatrix takenProcessMatrix finishedProcessMatrix |
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
+	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').
@@ -28,4 +29,5 @@ testExecuteProcess_boolean_exit_aborted
 
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'boolean[b]' in: 'all-field-types') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) isEmpty.
+	self assert: (takenProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) isEmpty.

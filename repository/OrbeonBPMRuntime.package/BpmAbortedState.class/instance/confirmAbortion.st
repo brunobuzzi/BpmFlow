@@ -1,7 +1,7 @@
 execution
 confirmAbortion
 "
-    - Remove all tasks from BpmRunningTasksMatrix
+    - Remove all tasks from BpmAvailabeTasksMatrix, BpmTakenTasksMatrix, BpmFinishedTasksMatrix
     - Remove assignments from BpmUsers.
     - Remove timer events from BpmTimerEventMonitor
 	- Remove BpmProcessInstance from BpmProcessDefinition processInstances
