@@ -4,6 +4,7 @@
 	"instance" : {
 		"testAbortedProcessInNormalCollection" : "brunobb 01/25/2018 11:28",
 		"testApplicationsIdentity" : "brunobb 01/25/2018 09:21",
+		"testEmptyUnionInAvailableAndTakenAssignments" : "brunobb 04/23/2018 14:23",
 		"testFormFieldValueAssignments" : "brunobb 01/25/2018 09:31",
 		"testMatrixAssignmentAndTaskIdentity" : "brunobb 04/18/2018 04:45",
 		"testMatrixFinishedAssignmentAndUserIdentity" : "brunobb 01/25/2018 12:20",
