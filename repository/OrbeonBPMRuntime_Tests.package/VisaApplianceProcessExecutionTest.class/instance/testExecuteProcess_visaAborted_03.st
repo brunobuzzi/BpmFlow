@@ -1,12 +1,13 @@
 test
 testExecuteProcess_visaAborted_03
-	| currentTask gateway subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
+	| currentTask gateway subProcessL1 subProcessL2 processId currentProcessMatrix takenProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id assignment |
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
+	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	"Step 1 - Form [citizen-appliance]"
@@ -149,6 +150,8 @@ testExecuteProcess_visaAborted_03
 	self assert: (currentTask getDefinitionName = 'emit-visa').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
+	assignment := self takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_emit_visa on: procInstance.
+
 	"here the process is cancelled"
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
@@ -156,9 +159,11 @@ testExecuteProcess_visaAborted_03
 
 	self assert: (procDefinition hasAbortedProcess: processId).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
+	self assert: (takenProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
+	self assert: (takenProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 
 	self assert: (subProcessL1 definition hasAbortedProcess: subProcId).
 	self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.

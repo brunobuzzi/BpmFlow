@@ -1,10 +1,11 @@
 test
 testExecuteProcess_visaAborted_02
-	| currentTask gateway currentProcessMatrix finishedProcessMatrix processId |
+	| currentTask gateway currentProcessMatrix takenProcessMatrix finishedProcessMatrix processId assignment |
 
 	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
+	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
@@ -37,11 +38,14 @@ testExecuteProcess_visaAborted_02
 
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
+	assignment := self takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance. 
+
 	"here the process is cancelled"
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
 	procInstance confirmAbortion.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
+	self assert: (takenProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (procDefinition hasAbortedProcess: processId).
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
