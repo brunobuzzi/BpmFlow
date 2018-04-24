@@ -7,11 +7,13 @@ renderContentOn: html
 
 	batchedList items: searchCollectionResult.
 	html div id: 'process-instances'; class: 'default-gray-table ';
-		with:[html render: (batchedList table: self sewafTableForRunningFormProcesses).].
+		with:[html div class: 'default-gray-table-title'; with: [html output with: ('Processes' translateFor: self session user)].
+				html render: (batchedList table: self sewafTableForRunningFormProcesses).].
 
 	searchCollectionResult isEmpty ifTrue: [^self].
 	selectedObject ifNil: [^self].
 
 	assignmentBatchedList items: selectedObject userAssignments.
 	html div id: 'process-assignments'; class: 'default-gray-table ';
-		with:[html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
+		with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Tasks' translateFor: self session user)].
+				html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
