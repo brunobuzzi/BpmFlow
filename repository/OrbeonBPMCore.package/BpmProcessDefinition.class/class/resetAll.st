@@ -16,4 +16,5 @@ resetAll
 	BpmFrontOfficeRole initializeCache.
 
 	self getAvailableTasksMatrixClass initializeCache.
+	self getTakenTasksMatrixClass initializeCache.
 	self getFinishedTasksMatrixClass initializeCache.
