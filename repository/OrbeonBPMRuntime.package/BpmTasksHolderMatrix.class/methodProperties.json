@@ -5,6 +5,7 @@
 		"getAllAvailableTaskAssignments" : "BrunoBB 02/09/2016 13:37",
 		"getAllAvailableTaskAssignmentsIn:" : "BrunoBB 02/08/2016 12:32",
 		"getAllMatrixDictionaries" : "brunobb 04/22/2018 13:16",
+		"getAnyAssignmentWithProcessId:" : "brunobb 04/24/2018 08:22",
 		"getAssignmentsCollectionFor:" : "brunobb 02/07/2018 13:39",
 		"getMatrixAndRoleNameFor:" : "brunobb 04/22/2018 13:22",
 		"getMatrixAndRoleNameFor:ifNone:" : "brunobb 04/22/2018 13:22",
