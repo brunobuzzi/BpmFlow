@@ -1,18 +1,15 @@
 searching
 searchByApplication
-	| app |
+	| application |
 
 	selectedObject := nil.
-	self hasSelectedApplication ifFalse: [^self].
+	application := self getApplicationManagerClass getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [nil].
+	application ifNil: [^searchCollectionResult := #()].
+
 	self hasFormDefinition ifTrue: [^self searchByApplicationAndFormDefinition].
 
-	app := self searchValueAt: 'application'.
-	searchCollectionResult :=
-		app ifNotNil: [self getAvailableTasksMatrixClass 
-								getAllAvailableTaskAssignmentsIn: 
-									(OrderedCollection with: 
-										(self getApplicationManagerClass getAnyApplicationNamed: app ifNone: [#()])).]
-		ifNil: [#()].
+	searchCollectionResult := (self getAvailableTasksMatrixClass getAllAvailableTaskAssignmentsIn: (OrderedCollection with: application)) ,
+										(self getTakenTasksMatrixClass getAllAvailableTaskAssignmentsIn: (OrderedCollection with: application)).
 
 	searchCollectionResult := searchCollectionResult collect: [:each | each process].
 
