@@ -1,0 +1,4 @@
+other
+printTransmitter
+
+	^category categoryName

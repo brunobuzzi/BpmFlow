@@ -6,8 +6,10 @@
 		"getProcessDefinitionCache" : "brunobb 01/19/2018 10:00",
 		"isProcessDefinition" : "brunobb 02/09/2018 13:31",
 		"isProcessInstance" : "brunobb 02/09/2018 13:31",
+		"isRole" : "brunobb 04/25/2018 08:18",
 		"isTaskAssignment" : "brunobb 02/10/2018 05:45",
 		"isTimerEvent" : "brunobb 02/09/2018 11:17",
+		"isUser" : "brunobb 04/25/2018 08:18",
 		"throwExceptionTaskAssignmentNotFound" : "BrunoBB 12/04/2015 10:36",
 		"throwNoProcessMatrixExceptionFor:" : "BrunoBB 12/05/2015 13:57",
 		"xmlHeader" : "brunobb 02/10/2018 06:16" } }

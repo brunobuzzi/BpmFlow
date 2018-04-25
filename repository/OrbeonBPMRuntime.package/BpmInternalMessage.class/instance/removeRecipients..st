@@ -1,4 +1,4 @@
-other
+message
 removeRecipients: aBpmUserOrRole
 	"The receiver remove the recipient <aBpmUserOrRole>"
 
