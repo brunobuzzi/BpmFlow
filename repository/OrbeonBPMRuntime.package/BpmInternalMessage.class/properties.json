@@ -1,0 +1,22 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"createdTime",
+		"sentTime",
+		"id",
+		"from",
+		"to",
+		"body",
+		"category",
+		"respondTo",
+		"sendExternalMail" ],
+	"name" : "BpmInternalMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
