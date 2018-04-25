@@ -1,7 +1,11 @@
 {
 	"class" : {
-		 },
+		"new" : "brunobb 04/25/2018 07:58",
+		"newFromApplication" : "brunobb 04/25/2018 05:43",
+		"newFromSystem" : "brunobb 04/25/2018 07:58",
+		"newFromUser:" : "brunobb 04/25/2018 05:42" },
 	"instance" : {
+		"addRecipients:" : "brunobb 04/25/2018 08:11",
 		"body" : "brunobb 04/25/2018 05:28",
 		"body:" : "brunobb 04/25/2018 05:28",
 		"category" : "brunobb 04/25/2018 05:28",
@@ -12,9 +16,9 @@
 		"from:" : "brunobb 04/25/2018 05:28",
 		"id" : "brunobb 04/25/2018 05:28",
 		"id:" : "brunobb 04/25/2018 05:28",
-		"initialize" : "brunobb 04/25/2018 05:30",
-		"respondTo" : "brunobb 04/25/2018 05:28",
-		"respondTo:" : "brunobb 04/25/2018 05:28",
+		"initialize" : "brunobb 04/25/2018 08:12",
+		"removeRecipients:" : "brunobb 04/25/2018 08:11",
+		"send" : "brunobb 04/25/2018 07:59",
 		"sendExternalMail" : "brunobb 04/25/2018 05:30",
 		"sendExternalMail:" : "brunobb 04/25/2018 05:30",
 		"sentTime" : "brunobb 04/25/2018 05:28",

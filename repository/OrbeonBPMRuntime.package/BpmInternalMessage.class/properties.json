@@ -13,8 +13,8 @@
 		"to",
 		"body",
 		"category",
-		"respondTo",
-		"sendExternalMail" ],
+		"sendExternalMail",
+		"inResponseTo" ],
 	"name" : "BpmInternalMessage",
 	"pools" : [
 		 ],
