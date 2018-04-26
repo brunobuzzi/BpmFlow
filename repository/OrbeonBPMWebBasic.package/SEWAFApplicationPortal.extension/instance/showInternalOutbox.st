@@ -1,5 +1,5 @@
 *orbeonBPMWebBasic
-showOutInbox
+showInternalOutbox
 
 	(arena isKindOf: WABpmInternalOutbox)
 	ifTrue: [^arena].

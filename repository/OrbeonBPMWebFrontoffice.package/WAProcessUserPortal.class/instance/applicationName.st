@@ -1,4 +1,4 @@
 other
 applicationName
 
-	^'Form Flow'
+	^'Flow Frontoffice'

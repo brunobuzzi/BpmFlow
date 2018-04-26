@@ -1,6 +1,6 @@
 other
 initializeNavigation
-	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 |
+	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 subMenu6 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 "	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
@@ -50,11 +50,17 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
 
+	subMenu6 := (SewafSubMenuItem label: 'Inbox' icon: #emailinbox32Png)
+		set24Icon: #emailinbox24Png;
+		addItem: (SewafCommandItem label: 'Inbox' command: #showInternalInbox);
+		addItem: (SewafCommandItem label: 'Outbox' command: #showInternalOutbox);
+		yourself.
 "	layout isTop ifTrue: [navigation addItem: homeMenu]."
 
 	navigation 
 		addItem: subMenu2;
 		addItem: subMenu1;
 		addItem: subMenu3;
+		addItem: subMenu6;
 		addItem: subMenu4;
 		addItem: subMenu5.

@@ -2,4 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"getCurrentCollection" : "brunobb 04/25/2018 10:35",
+		"getIconNameFormItem" : "brunobb 04/26/2018 05:20",
+		"getTextForItem:" : "brunobb 04/26/2018 05:26",
+		"renderItemComponentOn:" : "brunobb 04/26/2018 08:37",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 04/26/2018 08:36",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 04/26/2018 08:36",
+		"renderItemDescriptionTitleOn:" : "brunobb 04/26/2018 08:35",
+		"renderLateralItemDetailsOn:for:" : "brunobb 04/26/2018 08:39",
+		"renderSearchAreaOn:" : "brunobb 04/25/2018 10:34" } }

@@ -1,0 +1,4 @@
+other
+getIconNameFormItem
+
+	self subclassResponsibility
