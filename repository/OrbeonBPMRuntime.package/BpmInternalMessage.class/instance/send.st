@@ -10,4 +10,7 @@ send
 	"transform roles into users"
 	(to select: [:each | each isRole]) do: [:eachRole | recipients addAll: eachRole users].
 
+	self isUserMessage ifTrue: [from outbox acceptEntry: self].
 	recipients do: [:eachUser | eachUser getSystemNotificationsInbox acceptEntry: self].
+
+	sendExternalMail ifTrue: [self sendExternalMailToRecipients: recipients]

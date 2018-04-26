@@ -17,12 +17,15 @@
 		"id" : "brunobb 04/25/2018 05:28",
 		"id:" : "brunobb 04/25/2018 05:28",
 		"initialize" : "brunobb 04/25/2018 08:12",
+		"isUserMessage" : "brunobb 04/25/2018 10:14",
 		"printTransmitter" : "brunobb 04/25/2018 08:39",
 		"removeRecipients:" : "brunobb 04/25/2018 08:11",
-		"send" : "brunobb 04/25/2018 08:34",
+		"send" : "brunobb 04/25/2018 10:15",
 		"sendExternalMail" : "brunobb 04/25/2018 05:30",
 		"sendExternalMail:" : "brunobb 04/25/2018 05:30",
+		"sendExternalMailToRecipients:" : "brunobb 04/25/2018 08:55",
 		"sentTime" : "brunobb 04/25/2018 05:28",
 		"sentTime:" : "brunobb 04/25/2018 05:28",
 		"to" : "brunobb 04/25/2018 05:28",
-		"to:" : "brunobb 04/25/2018 05:28" } }
+		"to:" : "brunobb 04/25/2018 05:28",
+		"unsend" : "brunobb 04/25/2018 08:53" } }
