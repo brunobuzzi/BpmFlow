@@ -11,6 +11,7 @@
 		"id",
 		"from",
 		"to",
+		"subject",
 		"body",
 		"category",
 		"sendExternalMail",

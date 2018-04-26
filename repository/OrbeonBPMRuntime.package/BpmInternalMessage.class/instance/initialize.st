@@ -4,6 +4,7 @@ initialize
 	super initialize.
 
 	createdTime := TimeStamp now.
+	subject := ''.
 	body := ''.
 	to := Set new.
 	sendExternalMail := false.
