@@ -2,12 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
+		"deleteMessage:" : "brunobb 04/26/2018 09:37",
 		"getCurrentCollection" : "brunobb 04/25/2018 10:35",
 		"getIconNameFormItem" : "brunobb 04/26/2018 05:20",
 		"getTextForItem:" : "brunobb 04/26/2018 05:26",
-		"renderItemComponentOn:" : "brunobb 04/26/2018 08:37",
-		"renderItemDescriptionAditionalDataOn:" : "brunobb 04/26/2018 08:36",
-		"renderItemDescriptionSecondaryDataOn:" : "brunobb 04/26/2018 08:36",
-		"renderItemDescriptionTitleOn:" : "brunobb 04/26/2018 08:35",
-		"renderLateralItemDetailsOn:for:" : "brunobb 04/26/2018 08:39",
-		"renderSearchAreaOn:" : "brunobb 04/25/2018 10:34" } }
+		"initialize" : "brunobb 04/26/2018 10:41",
+		"initializeTables" : "brunobb 04/26/2018 10:32",
+		"initializeUsersBatchedList" : "brunobb 04/26/2018 10:41",
+		"renderItemComponentOn:" : "brunobb 04/27/2018 09:15",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 04/26/2018 08:51",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 04/27/2018 09:01",
+		"renderItemDescriptionTitleOn:" : "brunobb 04/26/2018 09:16",
+		"renderLateralItemDetailsOn:for:" : "brunobb 04/27/2018 09:05",
+		"renderSearchAreaOn:" : "brunobb 04/25/2018 10:34",
+		"renderUserListOn:" : "brunobb 04/26/2018 10:44",
+		"sewafTableForUsers" : "brunobb 04/26/2018 10:36" } }

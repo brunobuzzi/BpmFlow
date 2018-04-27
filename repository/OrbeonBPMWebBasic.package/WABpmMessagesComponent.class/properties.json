@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"userBatchedList" ],
 	"name" : "WABpmMessagesComponent",
 	"pools" : [
 		 ],
