@@ -11,7 +11,7 @@ initialize
 	createdTime := TimeStamp now.
 	runningGateways := Dictionary new.
 	executedGateways := OrderedCollection new.
-	userAssignments := OrderedCollection new.
+	userAssignments := Set new.
 	endEvents := Dictionary new.
 	executedScripts := OrderedCollection new.
 	intermediateEvents := Dictionary new.

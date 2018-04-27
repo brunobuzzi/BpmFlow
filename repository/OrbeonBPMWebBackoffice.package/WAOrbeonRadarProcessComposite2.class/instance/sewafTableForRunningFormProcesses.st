@@ -8,6 +8,7 @@ sewafTableForRunningFormProcesses
 		columns: (OrderedCollection new  
 						add: (SewafReportColumn selector: #applicationName title: ('Application' translateFor: self session user) onClick: [:each | selectedObject := each]);
 						add: (SewafReportColumn selector: #processName title: ('Name' translateFor: self session user));
+						add: (SewafReportColumn selector: #version title: ('Version' translateFor: self session user));
 						add: (SewafReportColumn selector: #processId title: ('Process Id' translateFor: self session user));
 						add: (SewafReportColumn selector: #printRunningArtifacts title: ('Current Tasks' translateFor: self session user));
 						add: (SewafReportColumn selector: #hasFinalized title: ('Finished' translateFor: self session user));
