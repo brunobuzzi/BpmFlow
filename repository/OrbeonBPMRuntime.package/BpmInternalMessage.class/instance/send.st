@@ -5,10 +5,7 @@ send
 
 	sentTime := TimeStamp now.
 
-	recipients := to select: [:each | each isUser].
-
-	"transform roles into users"
-	(to select: [:each | each isRole]) do: [:eachRole | recipients addAll: eachRole users].
+	recipients := self getRecipients.
 
 	self isUserMessage ifTrue: [from outbox acceptEntry: self].
 	recipients do: [:eachUser | eachUser getSystemNotificationsInbox acceptEntry: self].
