@@ -7,7 +7,7 @@ processDefinition_data_entry
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-04-01T13:14:34.9372935-03:00</Created>
-    <ModificationDate>2016-04-01T14:01:47.602767-03:00</ModificationDate>
+    <ModificationDate>2018-04-27T16:38:40.1764252-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -39,12 +39,19 @@ processDefinition_data_entry
         <ExtendedAttribute Name="data-entry-3" />
       </ExtendedAttributes>
     </Participant>
+    <Participant Id="d32e291a-2180-4d28-8f20-7b3d8f7d03b2" Name="data-entry-manager">
+      <ParticipantType Type="ROLE" />
+      <Description />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="data-entry-manager" />
+      </ExtendedAttributes>
+    </Participant>
   </Participants>
   <Pools>
     <Pool Id="ffbda6fb-14c6-4c87-b8bf-0355b0718084" Name="Main Process" Process="8920aeb8-5d09-4025-be92-e57d1710b874" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
@@ -78,7 +85,7 @@ processDefinition_data_entry
   <WorkflowProcesses>
     <WorkflowProcess Id="8920aeb8-5d09-4025-be92-e57d1710b874" Name="Main Process">
       <ProcessHeader>
-        <Created>2016-04-01T14:07:23.633727-03:00</Created>
+        <Created>2018-04-27T16:41:03.3722585-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -89,12 +96,12 @@ processDefinition_data_entry
       <ActivitySets />
       <DataInputOutputs />
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-01T13:14:34.9462991-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-04-01T13:14:34.9462991-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-01T13:14:34.9462991-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-04-01T13:14:34.9462991-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
     <WorkflowProcess Id="43c27433-1a5d-4c9d-aa45-b8157f4c699c" Name="multi-role">
       <ProcessHeader>
-        <Created>2016-04-01T14:07:23.633727-03:00</Created>
+        <Created>2018-04-27T16:41:03.3722585-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -137,7 +144,9 @@ processDefinition_data_entry
               <Coordinates XCoordinate="336" YCoordinate="66" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
-          <ExtendedAttributes />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="BizagiInformed" Value="data-entry-manager" />
+          </ExtendedAttributes>
         </Activity>
         <Activity Id="5da08d4b-30cc-44ed-8346-fde613c37a44" Name="data-approved">
           <Description />
@@ -204,7 +213,7 @@ processDefinition_data_entry
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-01T13:14:34.9503018-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-04-01T13:14:34.9503018-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-01T13:14:34.9503018-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-04-01T13:14:34.9503018-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
