@@ -1,5 +1,5 @@
 other
 setUp
 
-	reader := (XPDLReader2 forProcessNamed: 'timer_task' withString: XPDLProcessDefinitionTemplate processDefinition_data_entry)
+	reader := (XPDLReader2 forProcessNamed: 'multi-role' withString: XPDLProcessDefinitionTemplate processDefinition_data_entry)
 				yourself
