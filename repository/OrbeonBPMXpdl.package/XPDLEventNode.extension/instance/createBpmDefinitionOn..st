@@ -9,4 +9,6 @@ createBpmDefinitionOn: aBpmProcessDefinition
 		tag: (self getBpmTagComponentDefinitionClass event: event);
 		yourself.
 
+	self setInformedTo: event.
+
 	^event

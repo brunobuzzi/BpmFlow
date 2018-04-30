@@ -7,6 +7,8 @@ createBpmDefinitionOn: aBpmProcessDefinition
 		name: self getName;
 		yourself.
 
+	self setInformedTo: activityDefinition.
+
 	loop := self getLoopTypeClass for: activityDefinition.
 	loop startQuantity: self getStartQuantity;
 		completionQuantity: self getCompletionQuantity;
