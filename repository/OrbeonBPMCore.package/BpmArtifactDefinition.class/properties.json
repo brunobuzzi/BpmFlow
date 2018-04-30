@@ -12,7 +12,8 @@
 		"outTransitions",
 		"roles",
 		"extendedAttributes",
-		"defaultTransition" ],
+		"defaultTransition",
+		"informTo" ],
 	"name" : "BpmArtifactDefinition",
 	"pools" : [
 		 ],
