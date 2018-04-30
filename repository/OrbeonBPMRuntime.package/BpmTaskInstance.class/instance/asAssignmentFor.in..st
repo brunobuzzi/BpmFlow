@@ -1,4 +1,4 @@
-other
+assignment
 asAssignmentFor: aBpmRole in: aBpmRunningTasksMatrix
 	"The receiver answer a task assignment for a <BpmRole> based on it self"
 

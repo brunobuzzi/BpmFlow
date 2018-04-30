@@ -1,4 +1,4 @@
-other
+process execution
 canCloseAndSend
 	"Answer whether or not the receiver can be closed and send to the next task"
 
