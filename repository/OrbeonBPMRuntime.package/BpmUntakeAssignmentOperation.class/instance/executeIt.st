@@ -13,3 +13,5 @@ executeIt
 	"remove it from the the current assignment inbox"
 	"add the assignment to released inbox"
 	user moveFromCurrentToReleased: assignment.
+
+	(assignment getRolesToInformOn: #untake) do: [:eachRole | ].

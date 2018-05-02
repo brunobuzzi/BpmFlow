@@ -15,7 +15,7 @@ finalizeAssignment
 	currentActivities := OrderedCollection withAll: self process currentActivities.
 	nextTransitions := assignment generateNextRunningTransitions. 
 
-	"ifTrue: the same user <user> that finished the task is going to take next generated tasks"
+	"ifTrue: the same <user> <aBpmUser> that finished the task is going to take next generated tasks"
 	assignNextToUser ifTrue: [ | assignments availableAssignments newActivities |
 		availableAssignments := user getAllAvailableTaskAssignments.
 		newActivities := self process currentActivities asArray removeAll: currentActivities; yourself.
@@ -23,3 +23,5 @@ finalizeAssignment
 		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
 			do:[:each | user take: each].
 		].
+
+	(assignment getRolesToInformOn: #finalization) do: [:eachRole | ].
