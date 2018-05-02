@@ -17,3 +17,6 @@ executeIt
 	"This has to be done after #addWorkerUser: because now the task is the next role --> the assignment is add to the correct Matrix"
 	"see issue #448"
 	assignment addToTakenMatrix.
+
+	assignment hasInformedRoles 
+	ifTrue: [].
