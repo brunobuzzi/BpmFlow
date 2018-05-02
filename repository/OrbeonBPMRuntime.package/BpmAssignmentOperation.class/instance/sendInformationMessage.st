@@ -1,0 +1,4 @@
+action
+sendInformationMessage
+
+	self subclassResponsibility

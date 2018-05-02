@@ -1,4 +1,4 @@
-other
+action
 executeIt
 	"The receiver execute all steps to assign the <BpmTaskAssignment> <assignment> to the <BpmUser> <user>"
 
@@ -17,4 +17,4 @@ executeIt
 	"This has to be done after #addWorkerUser: because now the task is in the next role --> the assignment is added to the correct Matrix"
 	assignment addToTakenMatrix."see issue #448"
 
-	(assignment getRolesToInformOn: #take) do: [:eachRole | ].
+	self sendInformationMessage.

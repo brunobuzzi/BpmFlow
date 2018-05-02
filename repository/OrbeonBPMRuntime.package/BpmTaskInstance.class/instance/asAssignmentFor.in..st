@@ -8,6 +8,6 @@ asAssignmentFor: aBpmRole in: aBpmRunningTasksMatrix
 							canUnassign: self canUnassign;
 							yourself.
 
-	(self getRolesToInformOn: #creation) do: [:eachRole | ].
+	self sendInformationMessageFor: assignment.
  
 	^assignment

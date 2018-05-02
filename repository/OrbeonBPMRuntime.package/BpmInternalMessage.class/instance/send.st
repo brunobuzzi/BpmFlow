@@ -8,6 +8,6 @@ send
 	recipients := self getRecipients.
 
 	self isUserMessage ifTrue: [from outbox acceptEntry: self].
-	recipients do: [:eachUser | eachUser getSystemNotificationsInbox acceptEntry: self].
+	recipients do: [:eachUser | eachUser getSystemNotificationsInbox acceptEntry: self]. "this need DOUBLE DISPATCHING to use other inbox not only system notifications"
 
 	sendExternalMail ifTrue: [self sendExternalMailToRecipients: recipients]

@@ -24,4 +24,4 @@ finalizeAssignment
 			do:[:each | user take: each].
 		].
 
-	(assignment getRolesToInformOn: #finalization) do: [:eachRole | ].
+	self sendInformationMessage.

@@ -5,7 +5,7 @@
 		"assignNextToUser" : "brunobb 04/18/2018 03:38",
 		"assignNextToUser:" : "brunobb 04/18/2018 03:38",
 		"executeIt" : "brunobb 04/22/2018 13:58",
-		"finalizeAssignment" : "brunobb 05/02/2018 08:51",
+		"finalizeAssignment" : "brunobb 05/02/2018 10:14",
 		"getAvailableProcessMatrix" : "brunobb 04/18/2018 03:38",
 		"getNewCreatedTasks" : "brunobb 04/18/2018 03:38",
 		"initialize" : "brunobb 04/18/2018 03:38",
@@ -14,4 +14,5 @@
 		"nextTransitions" : "brunobb 04/18/2018 03:38",
 		"nextTransitions:" : "brunobb 04/18/2018 03:38",
 		"process" : "brunobb 04/18/2018 03:38",
+		"sendInformationMessage" : "brunobb 05/02/2018 10:55",
 		"setUserToTakeNextTasks" : "brunobb 04/18/2018 03:38" } }

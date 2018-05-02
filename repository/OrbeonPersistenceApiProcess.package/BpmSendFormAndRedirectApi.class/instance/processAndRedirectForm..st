@@ -15,7 +15,7 @@ processAndRedirectForm: anOrbeonFormInstance
 	assignment := Object _objectForOop: (Integer fromString: assignOop).] on: Error
 		do: [:ex | ^BpmCodeEvaluationResult exception: ex].
 
-	(assignment getRolesToInformOn: #modification) do: [:eachRole | ].
+	self sendInformationMessageFor: assignment.
 
 	artifact externalObject: anOrbeonFormInstance. "artifact <aBpmArtifactInstance> associated with the Form <instance>"
 	anOrbeonFormInstance assignment: assignment. "set the assignment where the form was edited"

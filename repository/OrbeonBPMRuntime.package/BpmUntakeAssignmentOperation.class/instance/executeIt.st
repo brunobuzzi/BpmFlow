@@ -1,4 +1,4 @@
-other
+action
 executeIt
 	"The receiver execute all steps to unassign the <BpmTaskAssignment> <assignment> from the <BpmUser> <user>"
 
@@ -14,4 +14,4 @@ executeIt
 	"add the assignment to released inbox"
 	user moveFromCurrentToReleased: assignment.
 
-	(assignment getRolesToInformOn: #untake) do: [:eachRole | ].
+	self sendInformationMessage.
