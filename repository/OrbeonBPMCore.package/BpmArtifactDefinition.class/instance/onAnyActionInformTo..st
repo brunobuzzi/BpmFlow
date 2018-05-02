@@ -7,3 +7,7 @@ onAnyActionInformTo: aBpmRole
 	self on: #modification informTo: aBpmRole.
 
 	self on: #finalization informTo: aBpmRole.
+
+	self on: #take informTo: aBpmRole.
+
+	self on: #untake informTo: aBpmRole.
