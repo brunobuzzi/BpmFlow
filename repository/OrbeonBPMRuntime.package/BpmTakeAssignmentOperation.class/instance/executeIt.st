@@ -14,9 +14,8 @@ executeIt
 	assignment hasPerformers 
 	ifTrue: [assignment addWorkerUser: user]. "add a user <aBpmUser> and a role <aBpmRole> to the <BpmTaskInstance>"
 
-	"This has to be done after #addWorkerUser: because now the task is the next role --> the assignment is add to the correct Matrix"
-	"see issue #448"
-	assignment addToTakenMatrix.
+	"This has to be done after #addWorkerUser: because now the task is in the next role --> the assignment is added to the correct Matrix"
+	assignment addToTakenMatrix."see issue #448"
 
 	assignment hasInformedRoles 
 	ifTrue: [].

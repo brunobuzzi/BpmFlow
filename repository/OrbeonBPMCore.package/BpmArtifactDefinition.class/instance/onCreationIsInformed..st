@@ -2,6 +2,6 @@ inform
 onCreationIsInformed: aBpmRole
 	"Answer whether or not <aBpmRole> must informed on creation action"
 
-	(informTo includesKey: aBpmRole) ifFalse: [^false].
+	(informTo includesKey: #creation) ifFalse: [^false].
 
-	^(informTo at: aBpmRole) identityIncludes: #creation
+	^(informTo at: #creation) identityIncludes: aBpmRole
