@@ -2,8 +2,8 @@ other
 resetAll
 	"Reset all user's inboxes"
 
-	self getCurrentAssignmentsInbox resetMessages.
-	self getFinishedAssignmentsInbox resetMessages.
-	self getReleasedAssignmentsInbox resetMessages.
+	self getCurrentAssignmentsInbox removeAll.
+	self getFinishedAssignmentsInbox removeAll.
+	self getReleasedAssignmentsInbox removeAll.
 
 	roles := Set new.

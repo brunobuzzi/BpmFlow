@@ -1,4 +1,4 @@
 messages
-resetMessages
+removeAll
 
 	messages := RcIdentityBag new.

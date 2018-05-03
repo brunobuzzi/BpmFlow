@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"deleteAllMessages" : "brunobb 05/03/2018 08:35",
 		"deleteMessage:" : "brunobb 04/26/2018 09:37",
 		"getCurrentCollection" : "brunobb 04/25/2018 10:35",
 		"getIconNameFormItem" : "brunobb 04/26/2018 05:20",
@@ -12,7 +13,7 @@
 		"renderItemComponentOn:" : "brunobb 05/03/2018 04:55",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 04/26/2018 08:51",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 04/27/2018 09:01",
-		"renderItemDescriptionTitleOn:" : "brunobb 04/26/2018 09:16",
+		"renderItemDescriptionTitleOn:" : "brunobb 05/03/2018 08:50",
 		"renderLateralItemDetailsOn:for:" : "brunobb 04/27/2018 09:05",
 		"renderSearchAreaOn:" : "brunobb 04/25/2018 10:34",
 		"renderUserListOn:" : "brunobb 04/26/2018 10:44",

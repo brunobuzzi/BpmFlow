@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"deleteAllMessages" : "brunobb 05/03/2018 08:37",
 		"deleteMessage:" : "brunobb 04/26/2018 11:15",
 		"getCurrentCollection" : "brunobb 04/25/2018 10:37",
 		"getIconNameFormItem" : "brunobb 04/26/2018 05:21" } }
