@@ -2,7 +2,7 @@ activity multi role
 drawMultiInstaceMultiRoleActivityNamed: aString roles: roles at: aPoint extent: extent color: color stroke: stroke textSizePx: nameSizePx
 	| rect center line1 line2 line3 textPoint textSize |
 
-	center := (aPoint x + (extent x // 2)) @ (aPoint y + (extent y // 2) + 20) .
+	center := (aPoint x + (extent x // 2)) @ (aPoint y + (extent y // 2) - 20) .
 
 	rect := self drawActivityNamed: aString at: aPoint extent: extent color: color stroke: stroke textSizePx: nameSizePx.
 
