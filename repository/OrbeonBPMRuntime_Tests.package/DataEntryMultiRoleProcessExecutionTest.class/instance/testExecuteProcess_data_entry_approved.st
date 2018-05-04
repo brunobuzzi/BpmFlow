@@ -7,6 +7,10 @@ testExecuteProcess_data_entry_approved
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask finalizedPerformerCounter = 0).
 	self processTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry.
+
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 2]. "2: creation and take messages"
+
 	self assert: ((currentTask getCurrentRoleIfNone: [self assert: false]) name = 'data-entry-1').
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-1').
 	self assert: (currentTask getDefinitionName = 'data-entry').
@@ -18,6 +22,10 @@ testExecuteProcess_data_entry_approved
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-2').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 2).
+
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 3]. "plus 1: take messages"
+
 	"Step 1.3 - Form [data-entry]" "Performer 3"
 	currentTask := procInstance currentActivities last.
 	self processTask: currentTask withUserNamed: 'mario' withForm: self formInstance_data_entry.
@@ -25,9 +33,17 @@ testExecuteProcess_data_entry_approved
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-3').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 3).
+
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 6]. "plus 3: take, finalization & new assign message"
+
 	"Step 2 - Form [data-approved]" 
 	currentTask := procInstance currentActivities last.
 	self processTask: currentTask withUserNamed: 'bruno' withForm: self formInstance_data_approved.
+
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 8].  "plus 2: one take & finalization"
+
 	self assert: (currentTask getDefinitionName = 'data-approved').
 	endArtifact := procInstance endEvents asOrderedCollection last.
 	self assert: ((endArtifact getDefinitionName = 'end multi role') and: [endArtifact isEndEvent]).
