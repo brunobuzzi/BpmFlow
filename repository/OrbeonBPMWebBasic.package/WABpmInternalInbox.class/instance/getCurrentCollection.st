@@ -1,4 +1,8 @@
 other
 getCurrentCollection
 
-	^self session user getSystemNotifications, self session user getUserNotifications
+	self isSystemInboxSelected ifTrue: [^self session user getSystemNotifications].
+
+	self isUserInboxSelected ifTrue: [^self session user getUserNotifications].
+
+	^#()

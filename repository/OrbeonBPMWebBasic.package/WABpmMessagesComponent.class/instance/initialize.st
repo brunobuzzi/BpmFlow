@@ -8,3 +8,5 @@ initialize
 		navigationCssClass: 'batch-div-lateral-top'.
 
 	self initializeUsersBatchedList.
+
+	selectedInbox := 'System'.

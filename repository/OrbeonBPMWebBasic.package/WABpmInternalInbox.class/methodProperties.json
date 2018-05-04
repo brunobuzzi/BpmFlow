@@ -2,7 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"deleteAllMessages" : "brunobb 05/03/2018 08:36",
-		"deleteMessage:" : "brunobb 04/26/2018 11:15",
-		"getCurrentCollection" : "brunobb 04/25/2018 10:37",
-		"getIconNameFormItem" : "brunobb 04/26/2018 05:20" } }
+		"deleteAllMessages" : "brunobb 05/04/2018 10:30",
+		"deleteMessage:" : "brunobb 05/04/2018 10:27",
+		"elements" : "brunobb 05/04/2018 10:20",
+		"getCurrentCollection" : "brunobb 05/04/2018 10:28",
+		"getIconNameFormItem" : "brunobb 04/26/2018 05:20",
+		"isSystemInboxSelected" : "brunobb 05/04/2018 10:26",
+		"isUserInboxSelected" : "brunobb 05/04/2018 10:26",
+		"onRadioButtonChanged:" : "brunobb 05/04/2018 10:30",
+		"renderSearchAreaOn:" : "brunobb 05/04/2018 10:23" } }

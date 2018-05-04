@@ -1,0 +1,4 @@
+other
+isSystemInboxSelected
+
+	^selectedInbox = 'System'
