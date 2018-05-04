@@ -4,10 +4,10 @@ sendInformationMessageFor: aBpmTaskAssignment
 
 	aBpmTaskAssignment hasInformedRoles ifFalse: [^self].
 
-	message := BpmInternalMessage newFromApplication.
+	message := BpmAssignmentInternalMessage newFromApplication.
 
 	message to: (aBpmTaskAssignment getRolesToInformOn: #creation);
 		subject: ('Assignment Creation in [', aBpmTaskAssignment processName, ']');
-		body: aBpmTaskAssignment createMessageBody.
+		setValuesFrom: aBpmTaskAssignment.
 	
 	message send.

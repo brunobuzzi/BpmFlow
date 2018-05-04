@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"roleName",
+		"taskName",
+		"username" ],
 	"name" : "BpmAssignmentInternalMessage",
 	"pools" : [
 		 ],

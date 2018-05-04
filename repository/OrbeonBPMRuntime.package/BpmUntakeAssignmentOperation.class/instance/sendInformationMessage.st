@@ -4,10 +4,10 @@ sendInformationMessage
 
 	assignment hasInformedRoles ifFalse: [^self].
 
-	message := BpmInternalMessage newFromApplication.
+	message := BpmAssignmentInternalMessage newFromApplication.
 
 	message to: (assignment getRolesToInformOn: #untake);
 		subject: ('Assignment Released in [', assignment processName, ']');
-		body: assignment createMessageBody.
+		setValuesFrom: assignment.
 	
 	message send.
