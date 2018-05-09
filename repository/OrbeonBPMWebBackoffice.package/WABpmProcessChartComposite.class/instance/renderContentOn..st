@@ -12,4 +12,7 @@ renderContentOn: html
 	self isProcessesAverageTimeDistributionAndBarChart ifTrue: [^self renderProcessVersionAverageTimeBarChartOn: html].
 	self isProcessesAverageTimeDistributionAndPieChart ifTrue: [^self renderProcessVersionAverageTimePieChartOn: html].
 
+	self isFieldValueDistributionAndBarChart ifTrue: [^self renderFieldValueDistributionBarChartOn: html].
+	self isFieldValueDistributionAndPieChart ifTrue: [^self renderFieldValueDistributionPieChartOn: html].
+
 	canvas notNil ifTrue: [self renderGraphOn: html]
