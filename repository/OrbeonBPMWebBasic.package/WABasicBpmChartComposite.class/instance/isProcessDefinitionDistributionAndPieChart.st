@@ -1,0 +1,4 @@
+query variables
+isProcessDefinitionDistributionAndPieChart
+
+	^self isProcessDefinitionDistribution and:[self isPieChart]

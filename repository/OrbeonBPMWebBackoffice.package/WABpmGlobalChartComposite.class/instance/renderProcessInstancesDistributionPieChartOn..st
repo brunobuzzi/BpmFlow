@@ -8,7 +8,7 @@ renderProcessInstancesDistributionPieChartOn: html
 		data add: (ChartDatum belongingTo: key withValue: value).
 	].
 	
-	series := ChartSeries named: 'John' composedOf: data.
+	series := ChartSeries named: 'Instances' composedOf: data.
 	
 	html text: 'chart: '.
 	chart := html highcharts newChart.
@@ -17,7 +17,7 @@ renderProcessInstancesDistributionPieChartOn: html
 	chart chart type: 'pie'.
 	chart title text: 'Distribution of BPM Process Instances'.
 	chart subtitle text: 'Scope: Global'.
-	chart xAxis title text: 'Site'.
+	chart xAxis title text: 'Application Name'.
 	chart xAxis type: 'category'.
 	"chart plotOptions pie colorByPoint: true."
 	chart plotOptions pie dataLabels enabled: true.
