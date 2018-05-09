@@ -53,7 +53,7 @@
 		"queryBlockFailedWith:" : "BrunoBB 11/13/2016 12:58",
 		"renderActiveDistributionComboOn:withDistribution:" : "BrunoBB 11/19/2016 06:10",
 		"renderApplicationComboOn:" : "BrunoBB 11/01/2016 09:36",
-		"renderApplicationComboOn:withApplications:" : "BrunoBB 11/19/2016 06:10",
+		"renderApplicationComboOn:withApplications:" : "brunobb 05/09/2018 08:13",
 		"renderChartTypeComboOn:withCharts:" : "BrunoBB 11/19/2016 06:10",
 		"renderContentOn:" : "BrunoBB 11/01/2016 09:19",
 		"renderDistributionComboOn:withDistribution:" : "BrunoBB 11/19/2016 06:10",
@@ -67,5 +67,5 @@
 		"report" : "BrunoBB 11/18/2016 07:07",
 		"report:" : "BrunoBB 11/18/2016 07:07",
 		"saveChart" : "BrunoBB 11/19/2016 07:34",
-		"showChart" : "BrunoBB 11/01/2016 07:59",
+		"showChart" : "brunobb 05/09/2018 08:09",
 		"svgCanvasClass" : "BrunoBB 10/31/2016 10:29" } }

@@ -1,4 +1,2 @@
 other
 showChart
-
-	^self subclassResponsibility
