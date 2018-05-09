@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAOrbeonBIandChartsLogin",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebLogin",
+	"type" : "normal" }

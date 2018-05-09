@@ -1,0 +1,4 @@
+other
+applicationName
+
+	^'Flow BI'
