@@ -8,9 +8,11 @@
 		"drawProcessInstanceDistributionAndDonutChart" : "BrunoBB 11/19/2016 08:05",
 		"gitbookUrl" : "brunobb 07/27/2017 06:07",
 		"renderChartTypeComboOn:" : "BrunoBB 11/04/2016 04:55",
-		"renderContentOn:" : "brunobb 05/09/2018 05:52",
+		"renderContentOn:" : "brunobb 05/09/2018 06:02",
 		"renderDistributionComboOn:" : "BrunoBB 11/04/2016 04:57",
 		"renderProcessDefinitionDistributionBarChartOn:" : "brunobb 05/09/2018 05:44",
 		"renderProcessDefinitionDistributionPieChartOn:" : "brunobb 05/09/2018 05:50",
+		"renderProcessInstancesDistributionBarChartOn:" : "brunobb 05/09/2018 06:00",
+		"renderProcessInstancesDistributionPieChartOn:" : "brunobb 05/09/2018 06:00",
 		"renderSearchAreaOn:" : "BrunoBB 11/18/2016 07:11",
 		"showChart" : "BrunoBB 10/31/2016 11:06" } }

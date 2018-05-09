@@ -6,3 +6,6 @@ renderContentOn: html
 
 	self isProcessDefinitionDistributionAndBarChart ifTrue: [^self renderProcessDefinitionDistributionBarChartOn: html].
 	self isProcessDefinitionDistributionAndDonutChart ifTrue: [^self renderProcessDefinitionDistributionPieChartOn: html].
+
+	self isProcessInstanceDistributionAndBarChart ifTrue: [^self renderProcessInstancesDistributionBarChartOn: html].
+	self isProcessInstanceDistributionAndDonutChart ifTrue: [^self renderProcessInstancesDistributionPieChartOn: html].
