@@ -1,11 +1,11 @@
 other
-renderProcessInstancesDistributionBarChartOn: html
+renderProcessInstanceVersionDistributionBarChartOn: html
 	| chart series data |
 
 	data := OrderedCollection new.
-	report := BpmProcessDefinition reportProcessInstancesQuantityDistributionFor: self getApplicationName.	
+	report := BpmProcessDefinition reportProcessInstancesQuantityDistributionFor: self getProcessName in: self getApplicationName.
 	report distributionKeysAndValuesDo: [:key :value | 
-		data add: (ChartDatum belongingTo: key withValue: value).
+		data add: (ChartDatum belongingTo: ('version: ', key) withValue: value).
 	].
 	
 	series := ChartSeries named: 'Instances' composedOf: data.

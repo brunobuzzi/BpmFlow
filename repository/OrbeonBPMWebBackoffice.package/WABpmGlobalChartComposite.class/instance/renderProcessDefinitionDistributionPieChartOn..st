@@ -15,7 +15,7 @@ renderProcessDefinitionDistributionPieChartOn: html
 	chart yAxis title text: 'Process Definitions'.
 	chart legend enabled: false.
 	chart chart type: 'pie'.
-	chart title text: 'Distribution of BPM Process Definitions'.
+	chart title text: ('Distribution of BPM Process Definitions (', report getTotalValue printString, ')').
 	chart subtitle text: 'Scope: Global'.
 	chart xAxis title text: 'Application Name'.
 	chart xAxis type: 'category'.

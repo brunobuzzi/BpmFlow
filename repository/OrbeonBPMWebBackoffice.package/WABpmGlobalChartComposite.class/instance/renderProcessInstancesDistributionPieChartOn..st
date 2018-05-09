@@ -15,7 +15,7 @@ renderProcessInstancesDistributionPieChartOn: html
 	chart yAxis title text: 'Process Instances'.
 	chart legend enabled: false.
 	chart chart type: 'pie'.
-	chart title text: 'Distribution of BPM Process Instances'.
+	chart title text: ('Distribution of BPM Process Instances (', report getTotalValue printString, ')').
 	chart subtitle text: 'Scope: Global'.
 	chart xAxis title text: 'Application Name'.
 	chart xAxis type: 'category'.
