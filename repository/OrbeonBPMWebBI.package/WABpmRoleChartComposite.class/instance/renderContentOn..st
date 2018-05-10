@@ -12,3 +12,6 @@ renderContentOn: html
 
 	(self isUnassignedTasksDistributionAndBarChart and: [self isAllRolesSelected]) ifTrue: [^self renderUnassignedTasksBarChartOn: html].
 	(self isUnassignedTasksDistributionAndPieChart and: [self isAllRolesSelected]) ifTrue: [^self renderUnassignedTasksPieChartOn: html].
+
+	(self isTasksAverageTimeDistributionAndBarChart and: [self isAllRolesSelected not]) ifTrue: [^self renderRoleTaskAverageTimeBarChartOn: html].
+	(self isTasksAverageTimeDistributionAndPieChart and: [self isAllRolesSelected not]) ifTrue: [^self renderRoleTaskAverageTimePieChartOn: html].
