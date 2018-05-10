@@ -4,17 +4,17 @@ initializeNavigation
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 
-	subMenu1 := (SewafSubMenuItem label: 'My Charts' icon: #monitorchart32Png)
+	subMenu1 := (SewafSubMenuItem label: 'User Charts' icon: #monitorchart32Png)
 		set24Icon: #worksinprogress24Png;
-		addItem: (SewafCommandItem label: 'Current User Charts' command: #showCurrentProcess);
+		addItem: (SewafCommandItem label: 'My Charts' command: #showMyChartsComposite);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'System Charts' icon: #barchart32Png)
 		set24Icon: #folderscheduledtasks24Png;
-		addItem: (SewafCommandItem label: 'Global Charts' command: #showUnassignedTasks);
-		addItem: (SewafCommandItem label: 'Applications Charts' command: #showUnassignedTasks);
-		addItem: (SewafCommandItem label: 'Processes Charts' command: #showUnassignedTasks);
-		addItem: (SewafCommandItem label: 'Roles Charts' command: #showUnassignedTasks);
-		addItem: (SewafCommandItem label: 'Users Charts' command: #showUnassignedTasks);
+		addItem: (SewafCommandItem label: 'Global Charts' command: #openGlobalCharts);
+		addItem: (SewafCommandItem label: 'Applications Charts' command: #openBpmApplicationsCharts);
+		addItem: (SewafCommandItem label: 'Processes Charts' command: #openBpmProcessCharts);
+		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
+		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
 		yourself.
 	navigation addItem: subMenu1;
 		addItem: subMenu2.

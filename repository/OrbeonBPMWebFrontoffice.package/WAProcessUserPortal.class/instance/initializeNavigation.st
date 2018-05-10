@@ -1,6 +1,6 @@
 top menu
 initializeNavigation
-	| homeMenu subMenu1 subMenu2 subMenu3 subMenu4 subMenu5 subMenu6 |
+	| homeMenu subMenu1 subMenu2 subMenu3 subMenu5 subMenu6 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 "	homeMenu := (SewafSubMenuItem label: 'Home' icon: #placesuserhome32Png)
@@ -22,10 +22,6 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Available Processes' command: #showAvailableProcesses);
 		addItem: (SewafCommandItem label: 'Granted Tasks' command: #showGrantedTasks);
 		yourself.
-	subMenu4 := (SewafSubMenuItem label: 'Charts' icon: #chart32Png)
-		set24Icon: #chart24Png;
-		addItem: (SewafCommandItem label: 'My Charts' command: #showMyChartsComposite);
-		yourself.
 	subMenu5 := (SewafSubMenuItem label: 'Configuration' icon: #applicationsettings32Png)
 		set24Icon: #applicationsettings24Png;
 		addItem: (SewafCommandItem label: 'Change Password' command: #showChangePassword);
@@ -45,5 +41,4 @@ initializeNavigation
 		addItem: subMenu2;
 		addItem: subMenu3;
 		addItem: subMenu6;
-		addItem: subMenu4;
 		addItem: subMenu5.

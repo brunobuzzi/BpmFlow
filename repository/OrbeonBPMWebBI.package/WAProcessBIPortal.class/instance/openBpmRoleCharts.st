@@ -1,4 +1,4 @@
-subcomponents
+top menu
 openBpmRoleCharts
 
 	(arena isKindOf: WABpmRoleChartComposite)

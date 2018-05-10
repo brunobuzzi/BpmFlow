@@ -1,4 +1,4 @@
-subcomponents
+top menu
 openBpmChartsRepository
 
 	(arena isKindOf: WABpmChartRepositoryComposite)

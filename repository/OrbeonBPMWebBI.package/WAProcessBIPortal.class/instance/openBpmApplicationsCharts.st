@@ -1,4 +1,4 @@
-subcomponents
+top menu
 openBpmApplicationsCharts
 
 	(arena isKindOf: WABpmApplicationChartComposite)

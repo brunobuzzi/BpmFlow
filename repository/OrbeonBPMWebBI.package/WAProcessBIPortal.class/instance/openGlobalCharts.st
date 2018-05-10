@@ -1,4 +1,4 @@
-subcomponents
+top menu
 openGlobalCharts
 
 	(arena isKindOf: WABpmGlobalChartComposite)
