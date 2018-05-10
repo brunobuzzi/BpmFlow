@@ -11,7 +11,10 @@
 		"isCurrentTaskTypeQuantityDistribution" : "BrunoBB 11/23/2016 08:10",
 		"isFinishedTaskTypeQuantityDistribution" : "BrunoBB 11/23/2016 08:10",
 		"renderBpmUsersComboOn:" : "BrunoBB 11/19/2016 06:10",
-		"renderChartTypeComboOn:" : "BrunoBB 11/08/2016 13:55",
+		"renderChartTypeComboOn:" : "brunobb 05/10/2018 10:45",
+		"renderContentOn:" : "brunobb 05/10/2018 10:46",
 		"renderDistributionComboOn:" : "BrunoBB 11/23/2016 08:09",
 		"renderSearchAreaOn:" : "BrunoBB 11/08/2016 13:36",
+		"renderUserFinishedTasksBarChartOn:" : "brunobb 05/10/2018 10:52",
+		"renderUserFinishedTasksBarPieOn:" : "brunobb 05/10/2018 10:52",
 		"showChart" : "BrunoBB 11/09/2016 09:20" } }
