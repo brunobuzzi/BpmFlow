@@ -6,3 +6,6 @@ renderContentOn: html
 
 	self isFinishedTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserFinishedTasksBarChartOn: html].
 	self isFinishedTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserFinishedTasksBarPieOn: html].
+
+	self isCurrentTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserCurrentTasksBarBarOn: html].
+	self isCurrentTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserCurrentTasksBarPieOn: html].
