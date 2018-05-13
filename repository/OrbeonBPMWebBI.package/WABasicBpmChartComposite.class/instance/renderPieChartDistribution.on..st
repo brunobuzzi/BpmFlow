@@ -14,8 +14,8 @@ renderPieChartDistribution: anAppDistributionReport on: html
 	chart yAxis title text: 'Process Instances'.
 	chart legend enabled: false.
 	chart chart type: 'pie'.
-	chart title text: ('Distribution of BPM Process Instances (', report getTotalValue printString, ')').
-	chart subtitle text: 'Application Scope: ', self getApplicationName.
+	chart title text: anAppDistributionReport name.
+	chart subtitle text: anAppDistributionReport description.
 	chart xAxis title text: 'Process Name'.
 	chart xAxis type: 'category'.
 	"chart plotOptions pie colorByPoint: true."
