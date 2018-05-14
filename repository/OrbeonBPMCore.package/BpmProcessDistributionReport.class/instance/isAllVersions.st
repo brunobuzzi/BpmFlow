@@ -1,4 +1,4 @@
-Accessing
+other
 isAllVersions
 
 	^version isNil

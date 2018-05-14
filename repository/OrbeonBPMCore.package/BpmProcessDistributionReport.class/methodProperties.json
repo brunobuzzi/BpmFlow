@@ -1,11 +1,12 @@
 {
 	"class" : {
-		 },
+		"getComboName" : "brunobb 05/14/2018 05:12",
+		"processName:applicationName:distribution:" : "brunobb 05/14/2018 05:12" },
 	"instance" : {
-		"initialize" : "brunobb 05/13/2018 09:16",
-		"isAllVersions" : "BrunoBB 11/18/2016 03:19",
-		"isProcess" : "BrunoBB 11/19/2016 09:25",
-		"processName" : "BrunoBB 11/02/2016 07:49",
-		"processName:" : "BrunoBB 11/02/2016 07:49",
-		"version" : "BrunoBB 11/18/2016 03:19",
-		"version:" : "BrunoBB 11/18/2016 03:19" } }
+		"getDescriptionItems" : "brunobb 05/14/2018 05:12",
+		"isAllVersions" : "brunobb 05/14/2018 05:12",
+		"isProcess" : "brunobb 05/14/2018 05:12",
+		"processName" : "brunobb 05/14/2018 05:12",
+		"processName:" : "brunobb 05/14/2018 05:12",
+		"version" : "brunobb 05/14/2018 05:12",
+		"version:" : "brunobb 05/14/2018 05:12" } }
