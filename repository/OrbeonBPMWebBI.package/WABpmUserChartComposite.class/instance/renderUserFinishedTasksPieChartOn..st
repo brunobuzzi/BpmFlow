@@ -1,5 +1,5 @@
 other
-renderUserFinishedTasksBarChartOn: html
+renderUserFinishedTasksPieChartOn: html
 
 	report := self getSelectedUser reportFinishedTaskQuantity.
 	report name: 'Task Distribution per Role';
@@ -8,4 +8,4 @@ renderUserFinishedTasksBarChartOn: html
 		xTitle: 'Role Name';
 		yTitle: 'Number of Tasks'. 
 
-	self renderBarChartDistribution: report on: html
+	self renderPieChartDistribution: report on: html

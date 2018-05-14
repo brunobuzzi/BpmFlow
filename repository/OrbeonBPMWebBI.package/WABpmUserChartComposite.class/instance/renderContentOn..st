@@ -5,7 +5,10 @@ renderContentOn: html
 		with: [self renderSearchAreaOn: html].
 
 	self isFinishedTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserFinishedTasksBarChartOn: html].
-	self isFinishedTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserFinishedTasksBarPieOn: html].
+	self isFinishedTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserFinishedTasksPieChartOn: html].
 
-	self isCurrentTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserCurrentTasksBarBarOn: html].
-	self isCurrentTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserCurrentTasksBarPieOn: html].
+	self isCurrentTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserCurrentTasksBarChartOn: html].
+	self isCurrentTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserCurrentTasksPieChartOn: html].
+
+	self isAverageTaskTimeDistributionAndBarChart ifTrue: [^self renderUserAverageTimePerTaskBarChartOn: html].
+	self isAverageTaskTimeDistributionAndPieChart ifTrue: [^self renderUserAverageTimePerTaskPieChartOn: html].
