@@ -1,0 +1,9 @@
+form instances
+formInstance_withValues: anArray in: aBpmProcessInstance
+
+	^self createFormInstance: #form_allTypes_name:amount:time:timeStamp:date:bool:
+			withValues: anArray 
+			definitionNamed: 'all-field-types' 
+			app: 'ue' 
+			definitionMethod: #formDefinition_all_types
+			in: aBpmProcessInstance

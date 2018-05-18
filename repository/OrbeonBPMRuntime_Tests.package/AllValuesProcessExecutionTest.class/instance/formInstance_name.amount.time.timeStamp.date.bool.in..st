@@ -1,4 +1,4 @@
-test
+form instances
 formInstance_name: nameString amount: amountString time: timeString timeStamp: timeStampString date: dateString bool: boolString in: aBpmProcessInstance
 	| arguments |
 
@@ -11,9 +11,4 @@ formInstance_name: nameString amount: amountString time: timeString timeStamp: t
 		add: boolString;
 		asArray.
 
-	^self createFormInstance: #form_allTypes_name:amount:time:timeStamp:date:bool:
-			withValues: arguments 
-			definitionNamed: 'all-field-types' 
-			app: 'ue' 
-			definitionMethod: #formDefinition_all_types
-			in: aBpmProcessInstance
+	^self formInstance_withValues: arguments in: aBpmProcessInstance
