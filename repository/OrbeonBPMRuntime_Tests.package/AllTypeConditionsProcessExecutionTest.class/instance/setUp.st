@@ -2,6 +2,7 @@ other
 setUp
 
 	super setUp.
+
 	users := Dictionary new.
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'all-type-conditions' in: 'ue'. "answer a collection with all versions"
