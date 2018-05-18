@@ -1,4 +1,4 @@
-other
+render
 renderFieldValueDistributionBarChartOn: html
 	| definition |
 

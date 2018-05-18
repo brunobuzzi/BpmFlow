@@ -6,6 +6,12 @@ getProcessFieldList
 	selectedFormName := self getFormName.
 
 	self getSelectedProcessDefinitions do: [:procDef | 
-		(procDef getTasks select: [:each | each name = selectedFormName]) do: [:eachTask | fields addAll: eachTask getComponentClass getFieldsNames]].
+		fields addAll: (procDef getFieldNamesOfTask: selectedFormName)
+	].
 
-	^fields asSet asSortedCollection
+	^(fields remove: 'assignmentOop[s]' ifAbsent: []; 
+			remove: 'k[s]' ifAbsent: []; 
+			remove: 's[s]' ifAbsent: [];
+			remove: 'oop[s]' ifAbsent: [];
+			remove: 'uuid[s]' ifAbsent: [];
+			yourself) asSortedCollection

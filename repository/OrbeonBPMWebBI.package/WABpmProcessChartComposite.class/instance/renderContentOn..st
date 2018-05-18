@@ -1,4 +1,4 @@
-other
+render
 renderContentOn: html
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
@@ -14,5 +14,7 @@ renderContentOn: html
 
 	self isFieldValueDistributionAndBarChart ifTrue: [^self renderFieldValueDistributionBarChartOn: html].
 	self isFieldValueDistributionAndPieChart ifTrue: [^self renderFieldValueDistributionPieChartOn: html].
+
+	self isFieldValueEvolution ifTrue: [^self renderFieldValueSumEvolutionOn: html].
 
 	canvas notNil ifTrue: [self renderGraphOn: html]

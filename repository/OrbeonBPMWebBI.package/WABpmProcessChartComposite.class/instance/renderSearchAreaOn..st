@@ -19,9 +19,9 @@ renderSearchAreaOn: html
 					self renderDistributionComboOn: html.
 					self renderChartTypeComboOn: html.
 					self renderShowChartButtonOn: html.
-					(self isCreationDayDistribution or: [self isFieldValueDistribution or:[self isTasksAverageTimeDistribution]])
+					(self isCreationDayDistribution or: [self isFieldValueDistribution or:[self isTasksAverageTimeDistribution or: [self isFieldValueEvolution]]])
 					ifTrue: [
-						self isFieldValueDistribution ifTrue: [self renderProcessFormsComboOn: html]. 
+						(self isFieldValueDistribution or: [self isFieldValueEvolution]) ifTrue: [self renderProcessFormsComboOn: html]. 
 						self renderStartEndDatesOn: html.
 						self renderQueryConditionOn: html.
 					].
