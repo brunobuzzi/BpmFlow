@@ -18,4 +18,4 @@ renderFieldValueSumEvolutionOn: html
 		xTitle: 'Time';
 		yTitle: 'Summatory'. 
 
-	self renderSplineAreaChartDistribution: report on: html.
+	self renderSplineAreaChartDistribution2: report on: html.
