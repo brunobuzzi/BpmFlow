@@ -1,6 +1,7 @@
 render
 renderFieldValueSumEvolutionOn: html
-	| |
+
+	self getFieldName ifNil: [^self].
 
 	report := BpmProcessDefinition reportValueSumDistributionFor: self getProcessName 
 								in: self getApplicationName 
