@@ -6,7 +6,7 @@ renderFieldValueSumEvolutionOn: html
 								in: self getApplicationName 
 								fieldNamed: (self getFieldName allButLast: 3)
 								from: self getStartDate 
-								to: self getEndDate 
+								to: self getEndDate  
 								satisfying: self queryBlock.
 
 	self analyzeQueryBlockIfFail: [:analyzer | ^self queryBlockFailedWith: analyzer].
@@ -17,4 +17,4 @@ renderFieldValueSumEvolutionOn: html
 		xTitle: 'Time';
 		yTitle: 'Summatory'. 
 
-	self renderBarChartDistribution: report on: html.
+	self renderSplineAreaChartDistribution: report on: html.
