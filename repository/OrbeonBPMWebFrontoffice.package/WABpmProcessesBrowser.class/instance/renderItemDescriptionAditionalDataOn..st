@@ -1,8 +1,8 @@
 process
 renderItemDescriptionAditionalDataOn: html
 
-	html span with: [html strong: ('Assigned Date:' translateFor: self session user)].
-	html output: selectedLateralItem printAssignmentDate.
+	html span with: [html strong: ('Created Time:' translateFor: self session user)].
+	html output: selectedLateralItem process createdTime.
 	html span: [html strong: ('Current Forms:' translateFor: self session user)].
 	html output: selectedLateralItem printProcessRunningArtifacts.
 	html span: [html strong: ('Process Creator:' translateFor: self session user)].
