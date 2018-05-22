@@ -12,7 +12,6 @@ renderFormFieldComboOn: html
 			attributeAt: 'id' put: 'form-fields';
 			class: 'width-200px';
 			list: fieldNames;
-			onChange: 'submit()';
 			callback: [:value | self addSearchValue: value named: 'field-name'];
 			selected: (self searchValueAt: 'field-name' ifAbsent: [fieldNames ifNotEmpty: [fieldNames first].]).
 	].

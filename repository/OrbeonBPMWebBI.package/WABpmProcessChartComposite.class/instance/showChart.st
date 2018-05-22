@@ -1,6 +1,8 @@
 other
 showChart
 
+	self setShowChartExecuted.
+
 	self isCreationDayDistribution ifTrue: [^self drawCreationDayDistributionChart].
 "
 	(self isFieldValueDistribution and: [self isDoubleChart not]) ifTrue: [^self drawFieldValueDistribution].

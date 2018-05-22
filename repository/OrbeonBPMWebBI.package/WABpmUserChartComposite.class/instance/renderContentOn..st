@@ -4,6 +4,9 @@ renderContentOn: html
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
 		with: [self renderSearchAreaOn: html].
 
+	self showChartExecuted ifFalse: [^self].
+	self resetShowChartExecuted.
+
 	self isFinishedTaskTypeQuantityDistributionAndBarChart ifTrue: [^self renderUserFinishedTasksBarChartOn: html].
 	self isFinishedTaskTypeQuantityDistributionAndPieChart ifTrue: [^self renderUserFinishedTasksPieChartOn: html].
 

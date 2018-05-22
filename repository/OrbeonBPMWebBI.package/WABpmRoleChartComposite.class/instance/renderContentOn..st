@@ -4,6 +4,9 @@ renderContentOn: html
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
 		with: [self renderSearchAreaOn: html].
 
+	self showChartExecuted ifFalse: [^self].
+	self resetShowChartExecuted.
+
 	(self isNumberOfTasksDistributionAndBarChart and: [self isAllRolesSelected]) ifTrue: [^self renderNumberOfTasksBarChartOn: html].
 	(self isNumberOfTasksDistributionAndPieChart and: [self isAllRolesSelected]) ifTrue: [^self renderNumberOfTasksBarPieOn: html].
 

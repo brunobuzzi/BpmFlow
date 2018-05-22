@@ -1,2 +1,4 @@
 other
 showChart
+
+	self setShowChartExecuted
