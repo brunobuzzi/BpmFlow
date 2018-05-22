@@ -1,4 +1,4 @@
-charts
+charts basic
 renderChart: aHighchart distributions: distributionCollection chartsTypes: seriesClassCollection on: html
 	| mainDistribution |
 

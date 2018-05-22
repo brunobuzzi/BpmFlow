@@ -1,4 +1,4 @@
-charts
+charts defined
 renderSplineAreaChartDistribution2: anAppDistributionReport on: html
 	| chart series series2 data data2 |
 

@@ -1,4 +1,4 @@
-charts
+charts defined
 renderPieChartDistribution: anAppDistributionReport on: html
 
 	^self renderChart: html highcharts newChart 
