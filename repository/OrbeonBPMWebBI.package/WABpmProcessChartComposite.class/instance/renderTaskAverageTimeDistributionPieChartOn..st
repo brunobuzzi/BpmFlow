@@ -1,4 +1,4 @@
-render
+charts
 renderTaskAverageTimeDistributionPieChartOn: html
 	| definition |
 

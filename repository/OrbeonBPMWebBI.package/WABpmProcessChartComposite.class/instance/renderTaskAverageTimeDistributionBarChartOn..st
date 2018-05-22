@@ -1,4 +1,4 @@
-render
+charts
 renderTaskAverageTimeDistributionBarChartOn: html
 	| definition |
 

@@ -1,4 +1,4 @@
-render
+charts
 renderProcessVersionAverageTimeBarChartOn: html
 
 	report := BpmProcessDefinition reportProcessAverageTimeDistributionFor: self getProcessName in: self getApplicationName.

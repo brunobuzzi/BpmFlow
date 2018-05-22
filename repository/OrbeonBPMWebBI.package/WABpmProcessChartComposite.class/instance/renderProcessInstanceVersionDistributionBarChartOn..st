@@ -1,4 +1,4 @@
-render
+charts
 renderProcessInstanceVersionDistributionBarChartOn: html
 
 	report := BpmProcessDefinition reportProcessInstancesQuantityDistributionFor: self getProcessName in: self getApplicationName.	

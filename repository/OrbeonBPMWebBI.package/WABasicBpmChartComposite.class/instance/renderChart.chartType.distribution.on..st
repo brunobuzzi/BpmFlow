@@ -1,7 +1,7 @@
 charts basic
-renderChart: aHighchart chartType: seriesClass distribution: anAppDistributionReport on: html
+renderChart: aHighchart chartType: seriesClassCollection distribution: anAppDistributionReport on: html
 
 	^self renderChart: aHighchart 
 			distributions: (OrderedCollection with: anAppDistributionReport) 
-			chartsTypes: (OrderedCollection with: seriesClass) 
+			chartsTypes: (OrderedCollection with: seriesClassCollection) 
 			on: html

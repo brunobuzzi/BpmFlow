@@ -1,4 +1,4 @@
-render
+search area
 renderFormFieldCombo2On: html
 	|  fieldNames |
 

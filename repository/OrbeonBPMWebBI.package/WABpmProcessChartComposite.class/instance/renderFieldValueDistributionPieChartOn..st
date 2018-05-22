@@ -1,4 +1,4 @@
-render
+charts
 renderFieldValueDistributionPieChartOn: html
 	| definition |
 

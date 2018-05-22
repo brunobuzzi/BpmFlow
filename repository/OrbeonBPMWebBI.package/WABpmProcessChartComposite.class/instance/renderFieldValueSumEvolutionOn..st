@@ -1,4 +1,4 @@
-render
+charts
 renderFieldValueSumEvolutionOn: html
 
 	self getFieldName ifNil: [^self].
