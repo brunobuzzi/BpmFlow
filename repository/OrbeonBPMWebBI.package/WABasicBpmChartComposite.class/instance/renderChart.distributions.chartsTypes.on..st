@@ -10,6 +10,7 @@ renderChart: aHighchart distributions: distributionCollection chartsTypes: serie
 	aHighchart title text: mainDistribution name.
 	aHighchart subtitle text: mainDistribution description.
 	aHighchart xAxis title text: mainDistribution xTitle.
+	aHighchart xAxis type: 'category'.
 
 	distributionCollection keysAndValuesDo: [:index :eachDistribution | | data serie serieClass |
 		data := OrderedCollection new.
