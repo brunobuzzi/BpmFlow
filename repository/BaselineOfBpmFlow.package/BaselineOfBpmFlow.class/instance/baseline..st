@@ -39,9 +39,11 @@ baseline: spec
 		spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
 		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
+		spec package: 'OrbeonBPMBI' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
 		spec package: 'OrbeonBPMWebBasic' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'Jasvgi')].
 		spec package: 'OrbeonBPMWebFrontoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
+		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice')].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
 		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
