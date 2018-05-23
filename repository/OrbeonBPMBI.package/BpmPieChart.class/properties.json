@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmPieChart",
+	"pools" : [
+		 ],
+	"super" : "BpmChartType",
+	"type" : "normal" }
