@@ -12,7 +12,7 @@ renderContentOn: html
 	chartDefinition scope: BpmChartGlobalScope new;
 		distribution: (BpmChartDistribution createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName));
 		distributionType: BpmChartQuantityDistribution new;
-		chartTypes: (OrderedCollection with: BpmBarChart new with: BpmPieChart new). 
+		chartType: (BpmChartType createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName)). 
 
 	self isProcessDefinitionDistributionAndBarChart ifTrue: [^self renderProcessDefinitionDistributionBarChartOn: html].
 	self isProcessDefinitionDistributionAndPieChart ifTrue: [^self renderProcessDefinitionDistributionPieChartOn: html].

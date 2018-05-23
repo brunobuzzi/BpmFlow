@@ -9,7 +9,8 @@
 		"scope",
 		"distribution",
 		"distributionType",
-		"chartTypes" ],
+		"chartTypes",
+		"chartType" ],
 	"name" : "BpmChartDefinition",
 	"pools" : [
 		 ],
