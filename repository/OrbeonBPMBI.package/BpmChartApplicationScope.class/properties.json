@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"application" ],
+	"name" : "BpmChartApplicationScope",
+	"pools" : [
+		 ],
+	"super" : "BpmChartScope",
+	"type" : "normal" }

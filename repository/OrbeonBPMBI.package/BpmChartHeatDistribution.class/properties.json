@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmChartHeatDistribution",
+	"pools" : [
+		 ],
+	"super" : "BpmChartDistributionType",
+	"type" : "normal" }

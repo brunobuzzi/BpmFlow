@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmChartNumberOfTasksDistribution",
+	"pools" : [
+		 ],
+	"super" : "BpmChartDistribution",
+	"type" : "normal" }
