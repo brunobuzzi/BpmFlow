@@ -1,13 +1,10 @@
 query variables
 getProcessFieldList
-	| fields selectedFormName |
+	| fields |
 
-	fields := OrderedCollection new.
-	selectedFormName := self getFormName.
+	self isFieldValueEvolution ifTrue: [^self getProcessNumberFieldList].
 
-	self getSelectedProcessDefinitions do: [:procDef | 
-		fields addAll: (procDef getFieldNamesOfTask: selectedFormName)
-	].
+	fields := self getBasicProcessFieldList.
 
 	^(fields remove: 'assignmentOop[s]' ifAbsent: []; 
 			remove: 'k[s]' ifAbsent: []; 
