@@ -30,4 +30,5 @@ renderContentOn: html
 
 	self isFieldValueEvolution ifTrue: [^self renderFieldValueSumEvolutionOn: html].
 
-	canvas notNil ifTrue: [self renderGraphOn: html]"
+	canvas notNil ifTrue: [self renderGraphOn: html]
+"

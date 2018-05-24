@@ -2,8 +2,6 @@
 	"class" : {
 		"getComboName" : "brunobb 05/23/2018 11:13" },
 	"instance" : {
-		"applicationName" : "brunobb 05/24/2018 10:41",
-		"applicationName:" : "brunobb 05/24/2018 10:42",
 		"createDistributionReport" : "brunobb 05/24/2018 04:08",
 		"endDate" : "brunobb 05/24/2018 10:10",
 		"endDate:" : "brunobb 05/24/2018 10:10",
@@ -11,8 +9,6 @@
 		"fieldName:" : "brunobb 05/24/2018 10:09",
 		"formName" : "brunobb 05/24/2018 10:11",
 		"formName:" : "brunobb 05/24/2018 10:09",
-		"processName" : "brunobb 05/24/2018 10:41",
-		"processName:" : "brunobb 05/24/2018 10:42",
 		"queryBlock" : "brunobb 05/24/2018 10:12",
 		"queryBlock:" : "brunobb 05/24/2018 10:10",
 		"startDate" : "brunobb 05/24/2018 10:11",

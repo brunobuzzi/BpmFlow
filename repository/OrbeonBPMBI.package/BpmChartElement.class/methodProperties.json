@@ -3,6 +3,8 @@
 		"createSubInstanceFrom:on:" : "brunobb 05/24/2018 10:06",
 		"newOn:" : "brunobb 05/24/2018 10:06" },
 	"instance" : {
+		"applicationName" : "brunobb 05/24/2018 11:16",
+		"applicationName:" : "brunobb 05/24/2018 11:16",
 		"atProperty:put:" : "brunobb 05/24/2018 10:07",
 		"chartDefinition" : "brunobb 05/24/2018 10:06",
 		"chartDefinition:" : "brunobb 05/24/2018 10:06",
@@ -11,5 +13,7 @@
 		"distributionType" : "brunobb 05/24/2018 10:06",
 		"getProperty:" : "brunobb 05/24/2018 10:08",
 		"initialize" : "brunobb 05/24/2018 10:06",
+		"processName" : "brunobb 05/24/2018 11:16",
+		"processName:" : "brunobb 05/24/2018 11:16",
 		"scope" : "brunobb 05/24/2018 10:06",
 		"user" : "brunobb 05/24/2018 10:06" } }

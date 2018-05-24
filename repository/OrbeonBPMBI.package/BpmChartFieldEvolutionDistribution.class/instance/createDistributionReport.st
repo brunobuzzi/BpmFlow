@@ -10,7 +10,7 @@ createDistributionReport
 								satisfying: self queryBlock.
 
 	report name: ('Field Value Evolution' translateFor: self user);
-		description: ('Evolution in Time', self scope scopeName translateFor: self user);
+		description: ('Evolution in Time' translateFor: self user);
 		seriesName: ('Total' translateFor: self user);
 		xTitle: ('Time' translateFor: self user);
 		yTitle: ('Summatory' translateFor: self user).

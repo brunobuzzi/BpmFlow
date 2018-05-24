@@ -1,4 +1,4 @@
 other
 getComboName
 
-	^'Process Average Time'
+	^'Processes Average Time'
