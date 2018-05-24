@@ -10,7 +10,8 @@
 		"distribution",
 		"distributionType",
 		"chartTypes",
-		"chartType" ],
+		"chartType",
+		"user" ],
 	"name" : "BpmChartDefinition",
 	"pools" : [
 		 ],

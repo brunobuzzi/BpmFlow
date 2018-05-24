@@ -1,15 +1,15 @@
 {
 	"class" : {
-		 },
+		"newFor:" : "brunobb 05/24/2018 05:13" },
 	"instance" : {
-		"chartType" : "brunobb 05/23/2018 12:16",
-		"chartType:" : "brunobb 05/23/2018 12:16",
-		"chartTypes" : "brunobb 05/23/2018 08:21",
-		"chartTypes:" : "brunobb 05/23/2018 08:21",
-		"distribution" : "brunobb 05/23/2018 08:21",
-		"distribution:" : "brunobb 05/23/2018 08:21",
-		"distributionType" : "brunobb 05/23/2018 08:21",
-		"distributionType:" : "brunobb 05/23/2018 08:21",
+		"chartType" : "brunobb 05/24/2018 05:13",
+		"chartType:" : "brunobb 05/24/2018 05:13",
+		"chartTypes" : "brunobb 05/24/2018 05:13",
+		"chartTypes:" : "brunobb 05/24/2018 05:13",
+		"distribution" : "brunobb 05/24/2018 05:13",
+		"distribution:" : "brunobb 05/24/2018 05:13",
+		"distributionType" : "brunobb 05/24/2018 05:13",
+		"distributionType:" : "brunobb 05/24/2018 05:13",
 		"renderBarChartDistribution:on:" : "brunobb 05/24/2018 04:28",
 		"renderChart:chartType:distribution:on:" : "brunobb 05/24/2018 04:16",
 		"renderChart:distributions:chartsTypes:on:" : "brunobb 05/24/2018 04:16",
@@ -17,5 +17,7 @@
 		"renderPieChartDistribution:on:" : "brunobb 05/24/2018 04:28",
 		"renderSplineAreaChartDistribution:on:" : "brunobb 05/24/2018 04:29",
 		"renderSplineChartDistribution:on:" : "brunobb 05/24/2018 04:29",
-		"scope" : "brunobb 05/23/2018 08:21",
-		"scope:" : "brunobb 05/23/2018 08:21" } }
+		"scope" : "brunobb 05/24/2018 05:13",
+		"scope:" : "brunobb 05/24/2018 05:13",
+		"user" : "brunobb 05/24/2018 05:13",
+		"user:" : "brunobb 05/24/2018 05:13" } }
