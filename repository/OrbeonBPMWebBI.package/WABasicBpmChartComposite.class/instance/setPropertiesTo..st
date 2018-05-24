@@ -1,0 +1,2 @@
+other
+setPropertiesTo: aBpmChartDistribution
