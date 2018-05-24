@@ -1,4 +1,4 @@
-other
+render
 renderProcessDefinitionDistributionBarChartOn: html
 
 	report := BpmProcessDefinition reportProcessDefinitionsQuantityDistribution.	

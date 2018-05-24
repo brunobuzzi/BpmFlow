@@ -1,0 +1,4 @@
+other
+createDistributionReport
+
+	^BpmProcessDefinition reportProcessDefinitionsQuantityDistribution

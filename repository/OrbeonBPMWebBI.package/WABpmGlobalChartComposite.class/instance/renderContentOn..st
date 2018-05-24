@@ -1,4 +1,4 @@
-other
+render
 renderContentOn: html
 	| chartDefinition |
 
@@ -9,10 +9,12 @@ renderContentOn: html
 	self resetShowChartExecuted.
 
 	chartDefinition := BpmChartDefinition new.
-	chartDefinition scope: BpmChartGlobalScope new;
-		distribution: (BpmChartDistribution createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName));
-		distributionType: BpmChartQuantityDistribution new;
-		chartType: (BpmChartType createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName)). 
+	chartDefinition scope: (BpmChartGlobalScope newOn: chartDefinition) ;
+		distribution: (BpmChartDistribution createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName) on: chartDefinition);
+		distributionType: (BpmChartQuantityDistribution newOn: chartDefinition);
+		chartType: (BpmChartType createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName) on: chartDefinition). 
+
+	"chartDefinition renderOn: html."
 
 	self isProcessDefinitionDistributionAndBarChart ifTrue: [^self renderProcessDefinitionDistributionBarChartOn: html].
 	self isProcessDefinitionDistributionAndPieChart ifTrue: [^self renderProcessDefinitionDistributionPieChartOn: html].
