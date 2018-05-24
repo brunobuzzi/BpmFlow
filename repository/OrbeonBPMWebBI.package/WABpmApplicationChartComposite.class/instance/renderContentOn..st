@@ -9,13 +9,9 @@ renderContentOn: html
 	self resetShowChartExecuted.
 
 	chartDefinition := BpmChartDefinition newFor: self session user.
-	chartDefinition scope: (BpmChartApplicationScope newOn: chartDefinition) ;
+	chartDefinition scope: (BpmChartApplicationScope newOn: chartDefinition applicationName: self getApplicationName) ;
 		distribution: (BpmChartDistribution createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getDistributionName) on: chartDefinition);
 		distributionType: (BpmChartQuantityDistribution newOn: chartDefinition);
 		chartType: (BpmChartType createSubInstanceFrom: (self reverseTranslation getOriginalStringFrom: self getChartType) on: chartDefinition). 
 
 	chartDefinition renderOn: html.
-"
-	self isProcessInstanceDistributionAndBarChart ifTrue: [^self renderProcessInstancesDistributionBarChartOn: html].
-	self isProcessInstanceDistributionAndPieChart ifTrue: [^self renderProcessInstancesDistributionPieChartOn: html].
-"

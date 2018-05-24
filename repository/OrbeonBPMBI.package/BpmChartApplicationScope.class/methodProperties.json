@@ -1,6 +1,9 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 05/24/2018 05:27" },
+		"newOn:applicationName:" : "brunobb 05/24/2018 05:30",
+		"scopeName" : "brunobb 05/24/2018 05:40" },
 	"instance" : {
 		"applicationName" : "brunobb 05/24/2018 05:27",
-		"applicationName:" : "brunobb 05/24/2018 05:27" } }
+		"applicationName:" : "brunobb 05/24/2018 05:27",
+		"getProcessInstancesDistribution" : "brunobb 05/24/2018 05:39",
+		"getProcessInstancesXtitle" : "brunobb 05/24/2018 05:47" } }

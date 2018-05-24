@@ -1,5 +1,6 @@
 {
 	"class" : {
-		 },
+		"scopeName" : "brunobb 05/24/2018 05:40" },
 	"instance" : {
-		 } }
+		"getProcessInstancesDistribution" : "brunobb 05/24/2018 05:39",
+		"getProcessInstancesXtitle" : "brunobb 05/24/2018 05:46" } }
