@@ -1,4 +1,4 @@
-other
+charts
 renderNumberOfTasksPieChartOn: html
 
 	report := self session user reportFinishedTaskQuantityFrom: self getStartDate to: self getEndDate satisfying: self queryBlock.

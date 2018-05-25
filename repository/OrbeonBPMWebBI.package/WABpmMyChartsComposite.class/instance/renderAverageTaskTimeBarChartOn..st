@@ -1,4 +1,4 @@
-other
+charts
 renderAverageTaskTimeBarChartOn: html
 
 	report := self session user reportAverageTimePerTaskFrom: self getStartDate to: self getEndDate satisfying: self queryBlock.

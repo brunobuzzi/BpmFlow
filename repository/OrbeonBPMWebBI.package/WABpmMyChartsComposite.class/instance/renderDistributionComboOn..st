@@ -1,7 +1,7 @@
-other
+search area
 renderDistributionComboOn: html
 	| distributionNames |
 
-	distributionNames := #('Average Time per Task' 'Number of Tasks' 'Possible Tasks').
+	distributionNames := #('Finished Tasks by Type' 'Possible Tasks' 'Tasks Average Time').
 
 	self renderActiveDistributionComboOn: html withDistribution: distributionNames.

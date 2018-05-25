@@ -1,4 +1,4 @@
-other
+charts
 renderPossibleTasksBarChartOn: html
 
 	report := self session user reportPossibleTaskDefinitionsQuantity.
