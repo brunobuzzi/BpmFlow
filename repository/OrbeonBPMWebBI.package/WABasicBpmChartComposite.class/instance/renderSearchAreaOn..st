@@ -1,4 +1,4 @@
-render
+search area
 renderSearchAreaOn: html
 
 	self renderShowHideWindowIconOn: html. "show/hide search area"

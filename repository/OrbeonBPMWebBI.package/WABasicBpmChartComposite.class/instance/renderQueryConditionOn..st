@@ -1,4 +1,4 @@
-render
+search area
 renderQueryConditionOn: html
 
 	html div class: 'top-search-div'; with: [

@@ -1,4 +1,4 @@
-render
+search area
 renderActiveDistributionComboOn: html withDistribution: distributionNames
 	| distributionTypes |
 

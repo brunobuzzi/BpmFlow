@@ -1,4 +1,4 @@
-render
+search area
 renderShowChartButtonOn: html
 
 	html div class: 'top-search-filters-one'; 

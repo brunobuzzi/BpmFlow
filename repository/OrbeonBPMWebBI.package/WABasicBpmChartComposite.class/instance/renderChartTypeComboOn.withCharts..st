@@ -1,4 +1,4 @@
-render
+search area
 renderChartTypeComboOn: html withCharts: chartsNames
 	| chartTypes |
 
