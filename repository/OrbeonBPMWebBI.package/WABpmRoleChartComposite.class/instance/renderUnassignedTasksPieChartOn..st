@@ -1,4 +1,4 @@
-other
+charts
 renderUnassignedTasksPieChartOn: html
 
 	report := BpmFrontOfficeRole reportNumberOfUnassignedTasksFor: self getApplicationName.	

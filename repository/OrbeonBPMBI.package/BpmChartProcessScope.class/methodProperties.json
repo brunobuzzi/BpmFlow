@@ -3,6 +3,7 @@
 		"newOn:processes:" : "brunobb 05/24/2018 09:57",
 		"scopeName" : "brunobb 05/24/2018 05:41" },
 	"instance" : {
+		"createAverageTimeDistributionReport" : "brunobb 05/25/2018 09:17",
 		"getProcessInstancesDistribution" : "brunobb 05/24/2018 11:23",
 		"getProcessInstancesXtitle" : "brunobb 05/24/2018 11:17",
 		"initialize" : "brunobb 05/23/2018 08:36",

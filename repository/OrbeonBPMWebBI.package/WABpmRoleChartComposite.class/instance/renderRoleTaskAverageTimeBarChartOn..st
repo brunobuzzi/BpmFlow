@@ -1,4 +1,4 @@
-other
+charts
 renderRoleTaskAverageTimeBarChartOn: html
 
 	report := self getSelectedRole reportAverageTimeDistributionForAllTasks.

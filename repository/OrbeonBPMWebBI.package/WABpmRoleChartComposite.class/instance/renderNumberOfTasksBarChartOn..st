@@ -1,4 +1,4 @@
-other
+charts
 renderNumberOfTasksBarChartOn: html
 
 	report := BpmFrontOfficeRole reportNumberOfTasksDistributionFor: self getApplicationName.

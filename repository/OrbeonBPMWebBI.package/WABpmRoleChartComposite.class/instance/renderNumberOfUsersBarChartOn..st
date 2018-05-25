@@ -1,4 +1,4 @@
-other
+charts
 renderNumberOfUsersBarChartOn: html
 
 	report := BpmFrontOfficeRole reportNumberOfUsersDistributionFor: self getApplicationName.

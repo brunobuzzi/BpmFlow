@@ -1,6 +1,13 @@
 {
 	"class" : {
-		"scopeName" : "brunobb 05/24/2018 05:41" },
+		"newOn:applicationName:" : "brunobb 05/25/2018 08:32",
+		"newOn:applicationName:role:" : "brunobb 05/25/2018 08:34",
+		"newOn:role:" : "brunobb 05/25/2018 08:33",
+		"scopeName" : "brunobb 05/25/2018 08:32" },
 	"instance" : {
-		"role" : "brunobb 05/23/2018 08:37",
-		"role:" : "brunobb 05/23/2018 08:37" } }
+		"applicationName" : "brunobb 05/25/2018 08:32",
+		"applicationName:" : "brunobb 05/25/2018 08:32",
+		"createAverageTimeDistributionReport" : "brunobb 05/25/2018 09:19",
+		"hasSpecificRole" : "brunobb 05/25/2018 08:35",
+		"role" : "brunobb 05/25/2018 08:32",
+		"role:" : "brunobb 05/25/2018 08:32" } }

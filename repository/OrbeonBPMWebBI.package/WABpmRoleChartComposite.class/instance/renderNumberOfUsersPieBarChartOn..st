@@ -1,4 +1,4 @@
-other
+charts
 renderNumberOfUsersPieBarChartOn: html
 
 	report := BpmFrontOfficeRole reportNumberOfUsersDistributionFor: self getApplicationName.
