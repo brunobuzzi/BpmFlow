@@ -4,4 +4,5 @@
 	"instance" : {
 		"createDistributionReport" : "brunobb 05/25/2018 09:16",
 		"createProcessTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 09:17",
-		"createRoleTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 09:35" } }
+		"createRoleTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 09:35",
+		"createUserTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 10:11" } }

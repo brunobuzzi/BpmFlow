@@ -1,4 +1,4 @@
-other
+charts
 renderUserAverageTimePerTaskBarChartOn: html
 
 	report := self getSelectedUser reportAverageTimePerTask.

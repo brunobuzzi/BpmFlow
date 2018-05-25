@@ -1,4 +1,4 @@
-other
+charts
 renderUserCurrentTasksBarChartOn: html
 
 	report := self getSelectedUser reportCurrentTaskQuantity.

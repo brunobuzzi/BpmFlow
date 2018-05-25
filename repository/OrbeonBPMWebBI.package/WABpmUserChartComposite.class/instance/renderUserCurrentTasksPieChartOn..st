@@ -1,4 +1,4 @@
-other
+charts
 renderUserCurrentTasksPieChartOn: html
 
 	report := self getSelectedUser reportCurrentTaskQuantity.
