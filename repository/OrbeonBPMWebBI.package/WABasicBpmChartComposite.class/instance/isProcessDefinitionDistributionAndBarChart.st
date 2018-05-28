@@ -1,4 +1,0 @@
-query variables
-isProcessDefinitionDistributionAndBarChart
-
-	^self isProcessDefinitionDistribution and:[self isBarChart]

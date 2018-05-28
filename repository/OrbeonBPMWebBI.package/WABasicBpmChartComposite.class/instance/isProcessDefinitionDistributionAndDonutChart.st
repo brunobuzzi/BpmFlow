@@ -1,4 +1,0 @@
-query variables
-isProcessDefinitionDistributionAndDonutChart
-
-	^self isProcessDefinitionDistribution and:[self isDonutChart]
