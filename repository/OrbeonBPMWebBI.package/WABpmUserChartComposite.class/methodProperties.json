@@ -8,10 +8,4 @@
 		"renderBpmUsersComboOn:" : "BrunoBB 11/19/2016 06:10",
 		"renderChartTypeComboOn:" : "brunobb 05/10/2018 10:45",
 		"renderDistributionComboOn:" : "brunobb 05/25/2018 10:06",
-		"renderSearchAreaOn:" : "BrunoBB 11/08/2016 13:36",
-		"renderUserAverageTimePerTaskBarChartOn:" : "brunobb 05/14/2018 08:36",
-		"renderUserAverageTimePerTaskPieChartOn:" : "brunobb 05/14/2018 08:36",
-		"renderUserCurrentTasksBarChartOn:" : "brunobb 05/14/2018 08:33",
-		"renderUserCurrentTasksPieChartOn:" : "brunobb 05/14/2018 08:33",
-		"renderUserFinishedTasksBarChartOn:" : "brunobb 05/14/2018 08:24",
-		"renderUserFinishedTasksPieChartOn:" : "brunobb 05/14/2018 08:33" } }
+		"renderSearchAreaOn:" : "BrunoBB 11/08/2016 13:36" } }
