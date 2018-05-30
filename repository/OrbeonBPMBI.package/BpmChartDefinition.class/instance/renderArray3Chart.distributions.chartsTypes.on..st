@@ -1,12 +1,14 @@
 html render
 renderArray3Chart: aHighchart distributions: distributionCollection chartsTypes: seriesClassCollection on: html
-	| mainDistribution yAxis |
+	| mainDistribution yAxis newSerie |
 
 	distributionCollection ifEmpty: [^self].
 
 	yAxis := #('Sunday' 'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday').
 	
 	mainDistribution := distributionCollection at: 1.
+	aHighchart colorAxis minColor: '#ffffff'.
+	aHighchart colorAxis maxColor: '#000099'.
 	aHighchart addYAxis categories: yAxis.
 	aHighchart yAxis first title text: 'Days'.
 
@@ -22,10 +24,14 @@ renderArray3Chart: aHighchart distributions: distributionCollection chartsTypes:
 			data add: (Array with: (keyArray at: 1) with: (keyArray at: 2) with: value).
 		].
 		serieClass := seriesClassCollection at: index.
-		(aHighchart addSeriesOf: serieClass)
+		newSerie := aHighchart addSeriesOf: serieClass.
+		newSerie
 			index: 0;
 			name: eachDistribution seriesName;
 			data: data asArray.
+		newSerie dataLabels color: '#000000';
+							enabled: true.
+				
 	]. 
 
 	html div script: aHighchart.
