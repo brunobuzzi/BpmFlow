@@ -1,15 +1,15 @@
 html render
 renderArray3Chart: aHighchart distributions: distributionCollection chartsTypes: seriesClassCollection on: html
-	| mainDistribution yAxis newSerie |
+	| mainDistribution yAxisCategories newSerie |
 
 	distributionCollection ifEmpty: [^self].
 
-	yAxis := #('Sunday' 'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday').
+	yAxisCategories := #('Sunday' 'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday') collect: [:each | each translateFor: self user].
 	
 	mainDistribution := distributionCollection at: 1.
 	aHighchart colorAxis minColor: '#ffffff'.
 	aHighchart colorAxis maxColor: '#000099'.
-	aHighchart addYAxis categories: yAxis.
+	aHighchart addYAxis categories: yAxisCategories.
 	aHighchart yAxis first title text: 'Days'.
 
 	aHighchart legend enabled: false.
@@ -17,6 +17,7 @@ renderArray3Chart: aHighchart distributions: distributionCollection chartsTypes:
 	aHighchart subtitle text: mainDistribution description.
 	aHighchart xAxis title text: mainDistribution xTitle.
 	aHighchart xAxis type: 'category'.
+	aHighchart xAxis categories: mainDistribution getHeatMapXAxisDaysCollection.
 
 	distributionCollection keysAndValuesDo: [:index :eachDistribution | | data serieClass |
 		data := OrderedCollection new.
