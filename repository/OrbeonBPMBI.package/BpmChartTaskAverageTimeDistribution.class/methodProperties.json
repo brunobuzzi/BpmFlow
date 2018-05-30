@@ -3,6 +3,6 @@
 		"getComboName" : "brunobb 05/24/2018 11:35" },
 	"instance" : {
 		"createDistributionReport" : "brunobb 05/25/2018 09:16",
-		"createProcessTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 09:17",
-		"createRoleTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 09:35",
-		"createUserTasksAverageTimeDistributionReport" : "brunobb 05/25/2018 10:11" } }
+		"createProcessTasksAverageTimeDistributionReport" : "brunobb 05/30/2018 10:25",
+		"createRoleTasksAverageTimeDistributionReport" : "brunobb 05/30/2018 10:25",
+		"createUserTasksAverageTimeDistributionReport" : "brunobb 05/30/2018 10:51" } }

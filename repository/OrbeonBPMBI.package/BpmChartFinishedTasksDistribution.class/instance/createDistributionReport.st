@@ -2,9 +2,9 @@ other
 createDistributionReport
 	| report |
 
-	report := self scope user reportFinishedTaskQuantity.
-	report name: ('Task Distribution per Role' translateFor: self user);
-		description: ('Scope: Application Role' translateFor: self user);
+	report := self scope user reportFinishedTaskQuantityFrom: self startDate to: self endDate satisfying: self queryBlock.
+	report name: (('Finished Tasks (' translateFor: self user), report getTotalValue printString,')');
+		description: ('Scope: User' translateFor: self user);
 		seriesName: ('Finished Tasks' translateFor: self user);
 		xTitle: ('Task Name' translateFor: self user);
 		yTitle: ('Number of Tasks' translateFor: self user).

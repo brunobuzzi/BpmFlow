@@ -2,7 +2,7 @@ other
 createUserTasksAverageTimeDistributionReport
 	| report |
 
-	report := self scope user reportAverageTimePerTask.
+	report := self scope user reportAverageTimePerTaskFrom: self startDate to: self endDate.
 	report name: ('User Average Time per Task' translateFor: self user);
 		description: ('Scope: User' translateFor: self user);
 		seriesName: ('Time (s)' translateFor: self user);
