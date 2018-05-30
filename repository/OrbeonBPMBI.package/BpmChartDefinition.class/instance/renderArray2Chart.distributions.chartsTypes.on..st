@@ -1,5 +1,5 @@
-remove
-renderChart: aHighchart distributions: distributionCollection chartsTypes: seriesClassCollection on: html
+html render
+renderArray2Chart: aHighchart distributions: distributionCollection chartsTypes: seriesClassCollection on: html
 	| mainDistribution |
 
 	distributionCollection ifEmpty: [^self].
@@ -12,17 +12,16 @@ renderChart: aHighchart distributions: distributionCollection chartsTypes: serie
 	aHighchart xAxis title text: mainDistribution xTitle.
 	aHighchart xAxis type: 'category'.
 
-	distributionCollection keysAndValuesDo: [:index :eachDistribution | | data serie serieClass |
+	distributionCollection keysAndValuesDo: [:index :eachDistribution | | data serieClass |
 		data := OrderedCollection new.
 		eachDistribution distributionKeysAndValuesDo: [:key :value | 
-			data add: (ChartDatum belongingTo: key withValue: value).
+			data add: (Array with: key with: value).
 		].
-		serie := ChartSeries named: eachDistribution seriesName composedOf: data creatingChartSeriesWith: #addLineSeries configuredUsing: [ :aHighchartSeries |  ].
 		serieClass := seriesClassCollection at: index.
 		(aHighchart addSeriesOf: serieClass)
 			index: 0;
-			name: serie name;
-			data: (serie dataAsPointsOn: html).
+			name: eachDistribution seriesName;
+			data: data asArray.
 	]. 
 
 	html div script: aHighchart.

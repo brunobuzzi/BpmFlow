@@ -1,7 +1,7 @@
-html render
+remove
 renderChart: aHighchart chartType: seriesClassCollection distribution: anAppDistributionReport on: html
 
-	^self renderChart: aHighchart 
+	^self renderArray2Chart: aHighchart 
 			distributions: (OrderedCollection with: anAppDistributionReport) 
 			chartsTypes: (OrderedCollection with: seriesClassCollection) 
 			on: html
