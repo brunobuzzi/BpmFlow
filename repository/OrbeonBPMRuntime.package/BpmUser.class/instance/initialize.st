@@ -4,6 +4,7 @@ initialize
 	super initialize.
 
 	roles := Set new.
+	rolesAssociation := Set new.
 
 	userOptions := BpmUserOptions new.
 
