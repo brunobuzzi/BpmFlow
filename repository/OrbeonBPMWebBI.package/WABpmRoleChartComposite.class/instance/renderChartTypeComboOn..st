@@ -2,6 +2,8 @@ search area
 renderChartTypeComboOn: html
 	| chartTypes |
 
-	chartTypes := #('Bar Chart' 'Pie Chart').
-	
-	^self renderChartTypeComboOn: html withCharts: chartTypes
+	chartTypes := OrderedCollection withAll: #('Bar Chart' 'Pie Chart').
+
+	self isUsersInTimeDistribution ifTrue: [chartTypes add: 'Heat Map'].	
+
+	^self renderChartTypeComboOn: html withCharts: chartTypes asArray

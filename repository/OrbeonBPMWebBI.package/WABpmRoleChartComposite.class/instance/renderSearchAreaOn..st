@@ -14,6 +14,7 @@ renderSearchAreaOn: html
 			self renderRolesComboOn: html.
 			self renderDistributionComboOn: html.
 			self renderChartTypeComboOn: html.
+			self isUsersInTimeDistribution ifTrue: [self renderStartEndDatesOn: html].
 			self renderShowChartButtonOn: html.
 		].
 	].

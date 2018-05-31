@@ -5,6 +5,7 @@
 		"getAllRoles" : "BrunoBB 11/08/2016 07:52",
 		"getNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:12",
 		"getNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:52",
+		"getNumberOfUsersInTimeDistributionFor:" : "brunobb 05/31/2018 05:25",
 		"getUnassignedTasksDistributionFor:" : "brunobb 04/13/2018 11:01",
 		"reportNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:11",
 		"reportNumberOfUnassignedTasksFor:" : "BrunoBB 11/08/2016 14:38",

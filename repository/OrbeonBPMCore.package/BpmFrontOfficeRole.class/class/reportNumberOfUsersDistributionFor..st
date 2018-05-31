@@ -1,4 +1,4 @@
-distribution
+distribution report
 reportNumberOfUsersDistributionFor: appName
 	| secondsToRun distribution |
 

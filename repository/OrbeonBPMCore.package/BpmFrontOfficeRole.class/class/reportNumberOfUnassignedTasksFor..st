@@ -1,4 +1,4 @@
-distribution
+distribution report
 reportNumberOfUnassignedTasksFor: appName
 	| secondsToRun distribution |
 
