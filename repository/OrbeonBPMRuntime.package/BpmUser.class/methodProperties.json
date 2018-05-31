@@ -73,6 +73,7 @@
 		"getProperty:ifAbsent:" : "BrunoBB 08/02/2016 04:19",
 		"getReleasedAssignments" : "brunobb 02/01/2018 11:27",
 		"getReleasedAssignmentsInbox" : "brunobb 02/01/2018 11:27",
+		"getRoleAssociationsFor:" : "brunobb 05/31/2018 03:27",
 		"getSubprocessDoneBorderColor" : "BrunoBB 08/02/2016 05:48",
 		"getSubprocessDoneFillColor" : "BrunoBB 08/02/2016 05:48",
 		"getSystemNotifications" : "BrunoBB 04/17/2016 17:57",
