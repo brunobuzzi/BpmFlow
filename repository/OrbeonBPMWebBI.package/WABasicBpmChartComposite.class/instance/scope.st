@@ -1,0 +1,4 @@
+render
+scope
+
+	^chartDefinition scope
