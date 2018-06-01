@@ -6,4 +6,4 @@ getSelectedProcessDefinitions
 
 	self isAllVersionSelected ifTrue: [^versions].
 
-	^versions select: [:each | each version printString = self getVersion]
+	^versions select: [:each | each version = self getVersion]

@@ -1,4 +1,4 @@
 other
 isForSpecificVersion
 
-	^processes size = 1
+	^version notNil

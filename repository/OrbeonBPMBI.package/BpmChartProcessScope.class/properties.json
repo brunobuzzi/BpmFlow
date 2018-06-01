@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"processes" ],
+		"processes",
+		"version" ],
 	"name" : "BpmChartProcessScope",
 	"pools" : [
 		 ],

@@ -1,13 +1,15 @@
 {
 	"class" : {
-		"newOn:processes:" : "brunobb 05/24/2018 09:57",
-		"scopeName" : "brunobb 05/24/2018 05:41" },
+		"newOn:processes:version:" : "brunobb 06/01/2018 11:10",
+		"scopeName" : "brunobb 06/01/2018 11:09" },
 	"instance" : {
-		"createAverageTimeDistributionReport" : "brunobb 05/25/2018 09:17",
-		"getDistributionOptions" : "brunobb 05/31/2018 09:40",
-		"getProcessInstancesDistribution" : "brunobb 05/24/2018 11:23",
-		"getProcessInstancesXtitle" : "brunobb 05/24/2018 11:17",
-		"initialize" : "brunobb 05/23/2018 08:36",
-		"isForSpecificVersion" : "brunobb 05/23/2018 08:37",
-		"processes" : "brunobb 05/23/2018 08:36",
-		"processes:" : "brunobb 05/23/2018 08:36" } }
+		"createAverageTimeDistributionReport" : "brunobb 06/01/2018 11:09",
+		"getDistributionOptions" : "brunobb 06/01/2018 11:09",
+		"getProcessInstancesDistribution" : "brunobb 06/01/2018 11:09",
+		"getProcessInstancesXtitle" : "brunobb 06/01/2018 11:09",
+		"initialize" : "brunobb 06/01/2018 11:09",
+		"isForSpecificVersion" : "brunobb 06/01/2018 11:09",
+		"processes" : "brunobb 06/01/2018 11:09",
+		"processes:" : "brunobb 06/01/2018 11:09",
+		"version" : "brunobb 06/01/2018 11:09",
+		"version:" : "brunobb 06/01/2018 11:09" } }
