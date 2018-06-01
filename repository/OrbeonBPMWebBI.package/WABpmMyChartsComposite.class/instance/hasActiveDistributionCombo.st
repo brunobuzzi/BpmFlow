@@ -1,0 +1,4 @@
+search area
+hasActiveDistributionCombo
+
+	^true
