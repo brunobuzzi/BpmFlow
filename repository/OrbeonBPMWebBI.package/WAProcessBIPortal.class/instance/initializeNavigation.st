@@ -16,5 +16,6 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
 		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
 		yourself.
-	navigation addItem: subMenu1;
-		addItem: subMenu2.
+
+	navigation addItem: subMenu1.
+	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2].
