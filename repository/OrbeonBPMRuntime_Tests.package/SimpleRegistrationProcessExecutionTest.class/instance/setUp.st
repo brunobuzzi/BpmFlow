@@ -13,6 +13,6 @@ setUp
 
 	users at: 'alberto' put: (BpmUser getExistingOrNewUserNamed: 'alberto').
 
-	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'st') grantUser: (users at: 'alberto').
+	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'st') grantUser: (users at: 'alberto') ifPresent: [].
 
 	procInstance := procDefinition createAndStartProcessInstance: nil. "this process is started by an anonymous user"

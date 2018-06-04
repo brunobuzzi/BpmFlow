@@ -10,6 +10,6 @@ setUp
 
 	users at: 'andrew vm' put: (BpmUser getExistingOrNewUserNamed: 'andrew vm').
 
-	(BpmFrontOfficeRole createNewOrGetExisting: 'executer' in: 'ue') grantUser: (users at: 'andrew vm').
+	(BpmFrontOfficeRole createNewOrGetExisting: 'executer' in: 'ue') grantUser: (users at: 'andrew vm') ifPresent: [].
 
 	self defaultTimerEventMonitor startMonitoringProcessCreation: procDefinition.

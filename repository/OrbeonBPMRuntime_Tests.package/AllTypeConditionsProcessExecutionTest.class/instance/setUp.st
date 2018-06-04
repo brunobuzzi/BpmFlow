@@ -11,4 +11,4 @@ setUp
 
 	users at: 'alberto' put: (BpmUser getExistingOrNewUserNamed: 'alberto').
 
-	(BpmFrontOfficeRole getRoleNamed: 'runner' in: 'ue') grantUser: (users at: 'alberto').
+	(BpmFrontOfficeRole getRoleNamed: 'runner' in: 'ue') grantUser: (users at: 'alberto') ifPresent: []

@@ -21,9 +21,9 @@ setUp
 	users at: 'andrew po' put: (BpmUser getExistingOrNewUserNamed: 'andrew po').
 	users at: 'andrew do' put: (BpmUser getExistingOrNewUserNamed: 'andrew do').
 
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo').
-	(BpmFrontOfficeRole getRoleNamed: 'visa manager' in: 'ue') grantUser: (users at: 'andrew vm').
-	(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (users at: 'andrew vc').
-	(BpmFrontOfficeRole getRoleNamed: 'finance officer' in: 'ue') grantUser: (users at: 'andrew fo').
-	(BpmFrontOfficeRole getRoleNamed: 'properties officer' in: 'ue') grantUser: (users at: 'andrew po').
-	(BpmFrontOfficeRole getRoleNamed: 'debts officer' in: 'ue') grantUser: (users at: 'andrew do').
+	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'visa manager' in: 'ue') grantUser: (users at: 'andrew vm') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (users at: 'andrew vc') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'finance officer' in: 'ue') grantUser: (users at: 'andrew fo') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'properties officer' in: 'ue') grantUser: (users at: 'andrew po') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'debts officer' in: 'ue') grantUser: (users at: 'andrew do') ifPresent: [].

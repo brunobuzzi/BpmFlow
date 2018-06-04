@@ -13,9 +13,9 @@ setUp
 	users at: 'mario' put: (BpmUser getExistingOrNewUserNamed: 'mario')."data-entry-3"
 	users at: 'bruno' put: (BpmUser getExistingOrNewUserNamed: 'bruno')."approver"
 
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (users at: 'alberto').
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (users at: 'juan').
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (users at: 'mario').
-	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'ue') grantUser: (users at: 'bruno').
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (users at: 'alberto') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (users at: 'juan') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (users at: 'mario') ifPresent: [].
+	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'ue') grantUser: (users at: 'bruno') ifPresent: [].
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
