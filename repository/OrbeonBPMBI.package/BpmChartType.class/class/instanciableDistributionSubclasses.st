@@ -1,0 +1,4 @@
+other
+instanciableDistributionSubclasses
+
+	^self subclasses

@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"createSubInstanceFrom:on:" : "brunobb 05/31/2018 10:25",
-		"createSubInstanceFrom:on:ifNone:" : "brunobb 05/31/2018 10:26",
+		"createSubInstanceFrom:on:ifNone:" : "brunobb 06/04/2018 10:42",
+		"instanciableDistributionSubclasses" : "brunobb 06/04/2018 10:42",
 		"newOn:" : "brunobb 05/24/2018 10:06" },
 	"instance" : {
 		"applicationName" : "brunobb 05/24/2018 11:16",

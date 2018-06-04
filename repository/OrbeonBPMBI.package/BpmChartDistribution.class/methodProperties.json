@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"getComboName" : "brunobb 05/23/2018 11:13" },
+		"getComboName" : "brunobb 05/23/2018 11:13",
+		"instanciableDistributionSubclasses" : "brunobb 06/04/2018 10:42" },
 	"instance" : {
 		"createDistributionReport" : "brunobb 05/24/2018 04:08",
 		"endDate" : "brunobb 05/24/2018 10:10",
