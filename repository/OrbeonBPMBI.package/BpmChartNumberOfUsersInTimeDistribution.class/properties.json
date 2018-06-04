@@ -10,5 +10,5 @@
 	"name" : "BpmChartNumberOfUsersInTimeDistribution",
 	"pools" : [
 		 ],
-	"super" : "BpmChartDistribution",
+	"super" : "BpmChartSingleDistribution",
 	"type" : "normal" }
