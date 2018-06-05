@@ -2,9 +2,9 @@ distribution report
 reportProcessInstancesQuantityByVersionDistributionFor: appName
 	| secondsToRun distribution |
 
-	secondsToRun := Time secondsElapsedTime: [distribution := self getProcessInstanceDistributionByVersionFor: appName].
+	secondsToRun := Time secondsElapsedTime: [distribution := self getTransversalByVersionQuantityFor: appName].
  
 	^(BpmApplicationDistributionReport applicationName: appName distribution: distribution)
 		sumSecondsToConstruct: secondsToRun;
-		categories: distribution keys "version number"
+		categories: (self cacheAt: appName ifAbsent: [Dictionary new]) keys asSortedCollection "processes names"
 		yourself.

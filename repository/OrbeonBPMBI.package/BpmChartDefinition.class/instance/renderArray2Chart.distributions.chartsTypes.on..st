@@ -18,14 +18,6 @@ renderArray2Chart: aHighchart distributions: distributionCollection chartsTypes:
 		self distribution isGrouped
 		ifFalse: [self setRegularFrom: eachDistribution for: aHighchart withSerie: serieClass] 
 		ifTrue: [self setGroupedDataFrom: eachDistribution for: aHighchart withSerie: serieClass].
-"		data := OrderedCollection new.
-		eachDistribution distributionKeysAndValuesDo: [:key :value | 
-			data add: (Array with: key with: value).
-		].
-		(aHighchart addSeriesOf: serieClass)
-			index: 0;
-			name: eachDistribution seriesName;
-			data: data asArray."
 	]. 
 
 	html div script: aHighchart.
