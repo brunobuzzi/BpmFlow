@@ -11,6 +11,7 @@ renderArray2Chart: aHighchart distributions: distributionCollection chartsTypes:
 	aHighchart subtitle text: mainDistribution description.
 	aHighchart xAxis title text: mainDistribution xTitle.
 	aHighchart xAxis type: 'category'.
+	mainDistribution categories ifNotNil: [:categories | aHighchart xAxis categories: categories]. 
 
 	distributionCollection keysAndValuesDo: [:index :eachDistribution | | data serieClass |
 		data := OrderedCollection new.
