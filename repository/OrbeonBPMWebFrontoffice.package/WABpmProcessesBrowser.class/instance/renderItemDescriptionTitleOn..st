@@ -7,7 +7,7 @@ renderItemDescriptionTitleOn: html
 	selectedLateralItem isInCorruptedState 
 	ifTrue: [html span with: [html strong: ('(Corrupted)' translateFor: self session user)]].
 
-	(selectedLateralItem hasFinalized not and: [selectedLateralItem canUnassign and:[selectedLateralItem user == self session user]])
+	(selectedLateralItem hasFinalized not and: [selectedLateralItem canUnassign and:[(selectedLateralItem user == self session user) and: [selectedLateralItem hasAutomaticTaskAssignation not]]])
 	ifTrue: [
 		html anchor 
 			callback: [self freeSelectedAssignment]; 
