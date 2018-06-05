@@ -1,4 +1,4 @@
 other
-isMultiple
+isMultiChart
 
 	^true

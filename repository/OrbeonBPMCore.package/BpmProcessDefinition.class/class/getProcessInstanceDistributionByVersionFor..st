@@ -1,11 +1,12 @@
 distribution
 getProcessInstanceDistributionByVersionFor: appName
-	| distribution transversal |
+	| distribution appDictionary |
 
 	distribution := OrderPreservingDictionary new.
 
-	transversal := self getTransversalByVersionQuantityFor: appName.
+	appDictionary := self cacheAt: appName ifAbsent: [^#()].
+	appDictionary isEmpty ifTrue: [^#()].
 
-	transversal keysAndValuesDo: [:index :array | distribution at: 'version ', index printString put: array]. 
+	appDictionary keysAndValuesDo: [:proName :versionCollection | distribution at: proName put: (versionCollection collect: [:procDef | procDef processInstances size]) asArray]. 
 
 	^distribution
