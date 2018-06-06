@@ -2,6 +2,7 @@
 	"class" : {
 		"newFor:" : "brunobb 06/06/2018 11:51" },
 	"instance" : {
+		"addToCache" : "brunobb 06/06/2018 12:06",
 		"chartType" : "brunobb 06/06/2018 11:51",
 		"chartType:" : "brunobb 06/06/2018 11:51",
 		"chartTypes" : "brunobb 06/06/2018 11:51",
@@ -10,6 +11,7 @@
 		"distribution:" : "brunobb 06/06/2018 11:51",
 		"distributionType" : "brunobb 06/06/2018 11:51",
 		"distributionType:" : "brunobb 06/06/2018 11:51",
+		"removeFromCache" : "brunobb 06/06/2018 12:06",
 		"renderArray2Chart:distributions:chartsTypes:on:" : "brunobb 06/06/2018 11:51",
 		"renderArray3Chart:distributions:chartsTypes:on:" : "brunobb 06/06/2018 11:51",
 		"renderBarChartDistribution:on:" : "brunobb 06/06/2018 11:51",
@@ -23,9 +25,11 @@
 		"renderSplineChartDistribution:on:" : "brunobb 06/06/2018 11:51",
 		"report" : "brunobb 06/06/2018 11:51",
 		"report:" : "brunobb 06/06/2018 11:51",
+		"reportRepository" : "brunobb 06/06/2018 11:57",
 		"scope" : "brunobb 06/06/2018 11:51",
 		"scope:" : "brunobb 06/06/2018 11:51",
 		"setGroupedDataFrom:for:withSerie:" : "brunobb 06/06/2018 11:51",
 		"setRegularFrom:for:withSerie:" : "brunobb 06/06/2018 11:51",
 		"user" : "brunobb 06/06/2018 11:51",
-		"user:" : "brunobb 06/06/2018 11:51" } }
+		"user:" : "brunobb 06/06/2018 11:51",
+		"username" : "brunobb 06/06/2018 11:59" } }
