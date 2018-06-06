@@ -1,4 +1,6 @@
 html render
 renderOn: html
 
-	self chartType renderReport: distribution createDistributionReport on: html
+	report := distribution createDistributionReport. "anAppDistributionReport"
+
+	self chartType renderReport: report on: html

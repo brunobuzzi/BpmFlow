@@ -11,7 +11,8 @@
 		"distributionType",
 		"chartTypes",
 		"chartType",
-		"user" ],
+		"user",
+		"report" ],
 	"name" : "BpmChartDefinition",
 	"pools" : [
 		 ],
