@@ -1,7 +1,7 @@
 top menu
 openSavedCharts
 
-	(arena isKindOf: WABpmChartRepositoryComposite)
+	(arena isKindOf: WAMyChartsRepositoryComposite)
 	ifTrue: [^arena].
 
-	^WABpmChartRepositoryComposite parent: self
+	^WAMyChartsRepositoryComposite parent: self

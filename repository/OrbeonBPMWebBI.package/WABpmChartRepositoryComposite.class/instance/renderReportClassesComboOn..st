@@ -1,4 +1,4 @@
-other
+search area
 renderReportClassesComboOn: html
 	| reportTypes |
 

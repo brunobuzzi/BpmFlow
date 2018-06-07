@@ -1,4 +1,4 @@
-other
+search area
 renderSearchButtonOn: html
 
 	html div class: 'top-search-filters-one'; 

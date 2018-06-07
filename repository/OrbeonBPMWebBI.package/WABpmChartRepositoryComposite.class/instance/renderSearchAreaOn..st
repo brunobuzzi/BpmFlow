@@ -1,4 +1,4 @@
-other
+search area
 renderSearchAreaOn: html
 
 	self renderShowHideWindowIconOn: html. "show/hide search area"
@@ -9,7 +9,8 @@ renderSearchAreaOn: html
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; 
 				with: ('Search Chart Report' translateFor: self session user).
-			self renderReportClassesComboOn: html.
+			self renderChartScopeComboOn: html.
+"			self renderReportClassesComboOn: html.
 			self isApplicationComboAvailable 
 				ifTrue: [self renderApplicationComboOn: html].
 			self isProcessDefinitionComboAvailable
@@ -18,7 +19,7 @@ renderSearchAreaOn: html
 				ifTrue: [self renderProcessVersionsComboOn: html.
 							self renderProcessFormsComboOn: html].
 			self isUserComboAvailable 
-				ifTrue: [self renderUsersComboOn: html].
+				ifTrue: [self renderUsersComboOn: html]."
 			self renderSearchButtonOn: html.
 		].
 	].

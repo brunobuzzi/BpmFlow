@@ -1,4 +1,4 @@
-other
+search area
 renderProcessDefinitionComboOn: html
 	| definitionNames |
 

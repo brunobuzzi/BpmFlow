@@ -1,4 +1,4 @@
-other
+search area
 renderProcessFormsComboOn: html
 	| forms |
 

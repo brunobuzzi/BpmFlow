@@ -1,4 +1,4 @@
-other
+search area
 renderUsersComboOn: html
 
 	^self renderGenericActiveComboOn: html 

@@ -1,4 +1,4 @@
-other
+search area
 renderProcessVersionsComboOn: html
 	| procVersions versions |
 
