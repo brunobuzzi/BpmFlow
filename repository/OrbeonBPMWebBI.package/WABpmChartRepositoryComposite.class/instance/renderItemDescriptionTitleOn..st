@@ -1,4 +1,4 @@
 other
 renderItemDescriptionTitleOn: html
 
-	html output:  selectedLateralItem name.
+	html output:  selectedLateralItem reportName.

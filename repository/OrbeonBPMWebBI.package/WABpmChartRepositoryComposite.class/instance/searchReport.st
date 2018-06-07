@@ -4,7 +4,7 @@ searchReport
 	searchApplied := true.
 	selectedLateralItem := nil.
 
-	self isGlobalReportSelected ifTrue: [^self showGlobalReports].
+	self isGlobalScopeSelected ifTrue: [^self showGlobalScopeCharts].
 
 	self isApplicationReportSelected ifTrue: [^self showApplicationReports].
 

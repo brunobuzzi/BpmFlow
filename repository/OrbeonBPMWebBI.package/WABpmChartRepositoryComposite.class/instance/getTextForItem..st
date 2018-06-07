@@ -1,4 +1,4 @@
 subclass responsibility
 getTextForItem: aLateralListItem
 
-	^aLateralListItem name
+	^aLateralListItem reportName
