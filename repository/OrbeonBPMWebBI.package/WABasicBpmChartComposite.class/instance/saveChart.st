@@ -5,6 +5,8 @@ saveChart
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
+	chartDefinition addToCache.
 
+	self removeValueNamed: 'saveChart'.
 
-	self removeValueNamed: 'saveChart'
+	self basicCreateChartDefinition.

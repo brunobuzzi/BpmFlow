@@ -1,6 +1,6 @@
 top menu
 initializeNavigation
-	| subMenu1 subMenu2 |
+	| subMenu1 subMenu2 subMenu3 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 
@@ -16,6 +16,11 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
 		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
 		yourself.
+	subMenu3 := (SewafSubMenuItem label: 'Charts Repository' icon: #placesfoldersavedsearch32Png)
+		set24Icon: #placesfoldersavedsearch24Png;
+		addItem: (SewafCommandItem label: 'Saved Charts' command: #openSavedCharts);
+		yourself.
 
 	navigation addItem: subMenu1.
 	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2].
+	navigation addItem: subMenu3.
