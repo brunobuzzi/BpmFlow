@@ -9,8 +9,8 @@ createDistributionReport
 								to: self endDate  
 								satisfying: self queryBlock.
 
-	report name: ('Creation of Processes in Calendar' translateFor: self user);
-		description: ('Calendar View' translateFor: self user);
+	report name: ('Calendar of Creations' translateFor: self user);
+		description: ('Creation of Processes in Calendar' translateFor: self user);
 		seriesName: ('Created Processes' translateFor: self user);
 		xTitle: ('Time' translateFor: self user);
 		yTitle: ('Time' translateFor: self user).

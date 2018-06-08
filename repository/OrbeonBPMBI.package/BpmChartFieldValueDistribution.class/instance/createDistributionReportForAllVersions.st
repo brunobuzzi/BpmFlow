@@ -9,8 +9,8 @@ createDistributionReportForAllVersions
 	report 
 		applicationName: self applicationName;
 		processName: self processName;
-		name: ('Processes Distribution by Field Value' translateFor: self user);
-		description: ('Field Distribution', self scope scopeName translateFor: self user);
+		name: ('Field Value Distribution' translateFor: self user);
+		description: ('Processes Distribution by Field Value' translateFor: self user);
 		seriesName: ('Occurrences' translateFor: self user);
 		xTitle: ('Field Value' translateFor: self user);
 		yTitle: ('Value Occurrences' translateFor: self user).
