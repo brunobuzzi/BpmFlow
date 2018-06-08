@@ -1,17 +1,17 @@
-other
+search area
 searchReport
 
 	searchApplied := true.
 	selectedLateralItem := nil.
 
-	self isGlobalScopeSelected ifTrue: [^self showGlobalScopeCharts].
+	self isGlobalScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartGlobalScope].
 
-	self isApplicationReportSelected ifTrue: [^self showApplicationReports].
+	self isApplicationScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartApplicationScope].
 
-	self isFieldReportSelected ifTrue: [^self showFieldReports].
+	self isProcessScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartProcessScope].
 
-	self isProcessReportSelected ifTrue: [^self showProcessReports].
+	self isRoleScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartRoleScope].
 
-	self isRoleReportSelected ifTrue: [^self showRoleReports].
+	self isUserScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartUserScope].
 
-	self isUserReportSelected ifTrue: [^self showUserReports].
+	searchResult := #().

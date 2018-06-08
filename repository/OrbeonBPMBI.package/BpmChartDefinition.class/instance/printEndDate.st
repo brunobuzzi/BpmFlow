@@ -1,4 +1,4 @@
-report data
+other
 printEndDate
 
-	^report printEndDate
+	^self distribution endDate printString

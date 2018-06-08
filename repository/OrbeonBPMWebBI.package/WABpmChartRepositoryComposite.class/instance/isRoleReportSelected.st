@@ -1,4 +1,4 @@
 other
 isRoleReportSelected
 
-	^(self searchValueAt: 'report-type' ifAbsent: [^true]) = ('Role Report' translateFor: self session user)
+	^(self searchValueAt: 'report-type' ifAbsent: [^true]) = ('Role' translateFor: self session user)

@@ -1,4 +1,4 @@
 other
 isGlobalReportSelected
 
-	^(self searchValueAt: 'report-type' ifAbsent: [^true]) = ('Global Report' translateFor: self session user)
+	^(self searchValueAt: 'scope' ifAbsent: [^true]) = ('Global Report' translateFor: self session user)

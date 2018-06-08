@@ -1,4 +1,0 @@
-other
-showGlobalScopeCharts
-
-	self subclassResponsibility
