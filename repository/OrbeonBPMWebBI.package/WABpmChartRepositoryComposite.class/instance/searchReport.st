@@ -4,9 +4,9 @@ searchReport
 	searchApplied := true.
 	selectedLateralItem := nil.
 
-	self isGlobalScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartGlobalScope].
+	self isGlobalScopeSelected ifTrue: [^self searchByGlobalScope].
 
-	self isApplicationScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartApplicationScope].
+	self isApplicationScopeSelected ifTrue: [^self searchByApplicationScope].
 
 	self isProcessScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartProcessScope].
 

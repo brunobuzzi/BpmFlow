@@ -1,4 +1,4 @@
 other
 isGlobalScopeSelected
 
-	^(self searchValueAt: 'scope' ifAbsent: [^true]) = ('Global' translateFor: self session user)
+	^(self searchValueAt: 'scope' ifAbsent: [^false]) = ('Global' translateFor: self session user)
