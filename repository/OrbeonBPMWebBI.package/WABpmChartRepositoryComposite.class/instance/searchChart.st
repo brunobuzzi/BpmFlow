@@ -1,5 +1,5 @@
 search area
-searchReport
+searchChart
 
 	searchApplied := true.
 	selectedLateralItem := nil.
@@ -8,7 +8,7 @@ searchReport
 
 	self isApplicationScopeSelected ifTrue: [^self searchByApplicationScope].
 
-	self isProcessScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartProcessScope].
+	self isProcessScopeSelected ifTrue: [^self searchByProcessScope].
 
 	self isRoleScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartRoleScope].
 

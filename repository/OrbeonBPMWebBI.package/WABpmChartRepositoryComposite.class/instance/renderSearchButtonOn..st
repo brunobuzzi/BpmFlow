@@ -5,6 +5,6 @@ renderSearchButtonOn: html
 		class: 'width-100px margin-top-20px';
 		with: [
 			html submitButton 
-				callback: [self searchReport]; 
+				callback: [self searchChart]; 
 				with: ('Search Report' translateFor: self session user).
 		].

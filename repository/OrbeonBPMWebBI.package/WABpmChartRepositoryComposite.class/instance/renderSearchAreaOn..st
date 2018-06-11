@@ -10,11 +10,9 @@ renderSearchAreaOn: html
 			html legend class: 'top-search-legend'; 
 				with: ('Search Chart Report' translateFor: self session user).
 			self renderChartScopeComboOn: html.
-			self isApplicationScopeSelected ifTrue: [self renderApplicationComboOn: html].
-"			self renderReportClassesComboOn: html.
-			self isApplicationComboAvailable 
-				ifTrue: [self renderApplicationComboOn: html].
-			self isProcessDefinitionComboAvailable
+			(self isApplicationScopeSelected or:[self isProcessScopeSelected]) ifTrue: [self renderApplicationComboOn: html].
+			self isProcessScopeSelected ifTrue: [self renderProcessDefinitionComboOn: html].
+"			self isProcessDefinitionComboAvailable
 				ifTrue: [self renderProcessDefinitionComboOn: html].
 			self isFieldComboAvailable 
 				ifTrue: [self renderProcessVersionsComboOn: html.
