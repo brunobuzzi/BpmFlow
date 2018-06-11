@@ -1,4 +1,0 @@
-other
-isUserComboAvailable
-
-	^self isUserReportSelected

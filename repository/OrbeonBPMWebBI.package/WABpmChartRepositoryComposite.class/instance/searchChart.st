@@ -10,7 +10,7 @@ searchChart
 
 	self isProcessScopeSelected ifTrue: [^self searchByProcessScope].
 
-	self isRoleScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartRoleScope].
+	self isRoleScopeSelected ifTrue: [^self searchByRoleScope].
 
 	self isUserScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartUserScope].
 
