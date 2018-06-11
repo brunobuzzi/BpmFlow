@@ -12,6 +12,6 @@ searchChart
 
 	self isRoleScopeSelected ifTrue: [^self searchByRoleScope].
 
-	self isUserScopeSelected ifTrue: [^searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartUserScope].
+	self isUserScopeSelected ifTrue: [^self searchByUserScope].
 
 	searchResult := #().

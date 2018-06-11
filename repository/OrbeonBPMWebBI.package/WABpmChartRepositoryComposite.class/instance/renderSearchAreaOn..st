@@ -13,13 +13,7 @@ renderSearchAreaOn: html
 			(self isApplicationScopeSelected or:[self isProcessScopeSelected or:[self isRoleScopeSelected]]) ifTrue: [self renderApplicationComboOn: html].
 			self isProcessScopeSelected ifTrue: [self renderProcessDefinitionComboOn: html].
 			self isRoleScopeSelected ifTrue: [self renderRolesComboOn: html].
-"			self isProcessDefinitionComboAvailable
-				ifTrue: [self renderProcessDefinitionComboOn: html].
-			self isFieldComboAvailable 
-				ifTrue: [self renderProcessVersionsComboOn: html.
-							self renderProcessFormsComboOn: html].
-			self isUserComboAvailable 
-				ifTrue: [self renderUsersComboOn: html]."
+			self isUserScopeSelected ifTrue: [self renderUsersComboOn: html].
 			self renderSearchButtonOn: html.
 		].
 	].
