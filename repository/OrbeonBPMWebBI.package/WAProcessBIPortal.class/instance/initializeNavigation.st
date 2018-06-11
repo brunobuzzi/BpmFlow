@@ -19,7 +19,7 @@ initializeNavigation
 	subMenu3 := (SewafSubMenuItem label: 'Charts Repository' icon: #placesfoldersavedsearch32Png)
 		set24Icon: #placesfoldersavedsearch24Png;
 		addItem: (SewafCommandItem label: 'My Saved Charts' command: #openSavedCharts);
-		addItem: (SewafCommandItem label: 'Other Saved Charts' command: #openUsersSavedCharts);
+		addItem: (SewafCommandItem label: 'System Saved Charts' command: #openUsersSavedCharts);
 		yourself.
 
 	navigation addItem: subMenu1.
