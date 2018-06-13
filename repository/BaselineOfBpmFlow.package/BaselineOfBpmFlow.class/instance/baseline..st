@@ -33,6 +33,8 @@ baseline: spec
 			spec repository: 'github://GsDevKit/Seaside31:gs_master/repository' ].
 		spec baseline: 'Sewaf' with: [
 			spec repository: 'github://brunobuzzi/SEWAF:master/repository' ].
+"		spec baseline: 'HighchartsSt' with: [
+			spec repository: 'github://brunobuzzi/HighchartsSt:v6.0.0gs/repository' ]."
 
 		spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
@@ -44,6 +46,7 @@ baseline: spec
 		spec package: 'OrbeonBPMWebFrontoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice')].
+"		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
 		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
