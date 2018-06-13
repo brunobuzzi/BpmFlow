@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"register" : "brunobb 06/12/2018 10:36",
+		"unregister" : "brunobb 06/12/2018 10:30" },
 	"instance" : {
 		"selectorsToInclude" : "brunobb 05/09/2018 10:32",
 		"tryLogin" : "brunobb 05/09/2018 10:41" } }
