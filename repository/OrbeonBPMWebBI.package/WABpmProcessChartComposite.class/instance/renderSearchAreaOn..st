@@ -22,6 +22,7 @@ renderSearchAreaOn: html
 						(self isFieldValueDistribution or: [self isFieldValueEvolution]) ifTrue: [self renderProcessFormsComboOn: html]. 
 						self renderStartEndDatesOn: html.
 						self renderQueryConditionOn: html.
+						self isFieldValueEvolution ifTrue: [self renderDateGroupsOptionsOn: html].
 					].
 				].
 			].
