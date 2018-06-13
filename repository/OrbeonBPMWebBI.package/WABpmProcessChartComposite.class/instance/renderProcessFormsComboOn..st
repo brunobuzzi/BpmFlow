@@ -7,7 +7,7 @@ renderProcessFormsComboOn: html
 			attributeAt: 'for' put: 'process-forms';
 			with: ('Forms' translateFor: self session user).
 
-		forms := self getProcessFormsList.
+		forms := #(''), self getProcessFormsList.
 		html select "Field Definition List" 
 			attributeAt: 'id' put: 'process-forms';
 			class: 'width-200px';
