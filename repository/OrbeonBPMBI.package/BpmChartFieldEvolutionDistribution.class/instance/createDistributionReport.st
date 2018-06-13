@@ -13,6 +13,7 @@ createDistributionReport
 		description: ('Evolution in Time' translateFor: self user);
 		seriesName: ('Total' translateFor: self user);
 		xTitle: ('Time' translateFor: self user);
-		yTitle: ('Summatory' translateFor: self user).
+		yTitle: ('Summatory' translateFor: self user);
+		xAxisIsDate: true. 
 
 	^report

@@ -8,4 +8,5 @@ reportValueSumDistributionFor: procName in: appName fieldNamed: fieldName from: 
 	^(BpmFieldDistributionReport processName: procName applicationName: appName distribution: distribution)
 		fieldName: fieldName;
 		sumSecondsToConstruct: secondsToRun;
+		xAxisIsDate: true;
 		yourself.
