@@ -1,13 +1,13 @@
 html render
 getDistributionToRender
 
-	dateGroupName ifNil: [^report rootDistribution].
-	dateGroupName isEmpty ifTrue: [^report rootDistribution].
+	dateGroupName ifNil: [^self rootDistribution].
+	dateGroupName isEmpty ifTrue: [^self rootDistribution].
 
-	(dateGroupName = 'Year') ifTrue: [^report getYearDistribution].
+	(dateGroupName = 'Year') ifTrue: [^self getYearDistribution].
 
-	(dateGroupName = 'Month') ifTrue: [^report getMonthDistribution].
+	(dateGroupName = 'Month') ifTrue: [^self getMonthDistribution].
 
-	(dateGroupName = 'Week') ifTrue: [^report getWeekDistribution].
+	(dateGroupName = 'Week') ifTrue: [^self getWeekDistribution].
 
 	^Dictionary new

@@ -5,8 +5,8 @@ renderOn: html
 
 	report := distribution createDistributionReport. "<anAppDistributionReport>"
 
-	(dateGroupName = 'Year') ifTrue: [report createSecondayDistributionByYear].
-	(dateGroupName = 'Month') ifTrue: [report createSecondayDistributionByMonth].
-	(dateGroupName = 'Week') ifTrue: [report createSecondayDistributionByWeek].
+	(dateGroupName = 'Year') ifTrue: [self createSecondayDistributionByYear].
+	(dateGroupName = 'Month') ifTrue: [self createSecondayDistributionByMonth].
+	(dateGroupName = 'Week') ifTrue: [self createSecondayDistributionByWeek].
 
 	self chartType renderReport: report on: html
