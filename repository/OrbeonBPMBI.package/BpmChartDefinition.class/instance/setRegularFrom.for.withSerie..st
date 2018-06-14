@@ -4,7 +4,7 @@ setRegularFrom: anAppDistributionReport for: aHighchart withSerie: serieClass
 	| data |
 
 	data := OrderedCollection new.
-	anAppDistributionReport distributionKeysAndValuesDo: [:key :value | 
+	self getDistributionToRender keysAndValuesDo: [:key :value | 
 		data add: (Array with: key with: value).
 	].
 	(aHighchart addSeriesOf: serieClass)

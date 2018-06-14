@@ -12,7 +12,8 @@
 		"chartTypes",
 		"chartType",
 		"user",
-		"report" ],
+		"report",
+		"dateGroupName" ],
 	"name" : "BpmChartDefinition",
 	"pools" : [
 		 ],

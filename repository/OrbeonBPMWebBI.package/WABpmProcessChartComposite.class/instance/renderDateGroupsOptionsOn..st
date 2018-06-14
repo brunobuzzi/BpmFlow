@@ -2,7 +2,7 @@ search area
 renderDateGroupsOptionsOn: html
 	|  groupsOptions |
 
-	groupsOptions := #('Year' 'Month' 'Week') collect: [:each | each translateFor: self session user].
+	groupsOptions := #('' 'Year' 'Month' 'Week') collect: [:each | each translateFor: self session user].
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'date-groups';

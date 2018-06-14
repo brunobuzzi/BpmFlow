@@ -10,6 +10,7 @@ renderContentOn: html
 	self resetShowChartExecuted.
 
 	self setPropertiesTo: chartDefinition distribution.
+	chartDefinition dateGroupName: self getDateGroup. 
 
 	chartDefinition renderOn: html.
 
