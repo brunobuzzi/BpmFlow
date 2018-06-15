@@ -16,7 +16,7 @@
 		"endDate",
 		"minValue",
 		"maxValue",
-		"calculationMode" ],
+		"calculationBlock" ],
 	"name" : "BpmDashboardThreshold",
 	"pools" : [
 		 ],
