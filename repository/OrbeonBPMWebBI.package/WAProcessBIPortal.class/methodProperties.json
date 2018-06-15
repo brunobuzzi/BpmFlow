@@ -5,7 +5,7 @@
 		"applicationIcon" : "brunobb 05/09/2018 10:39",
 		"applicationName" : "brunobb 05/09/2018 10:35",
 		"initialize" : "brunobb 05/09/2018 10:34",
-		"initializeNavigation" : "brunobb 06/08/2018 11:50",
+		"initializeNavigation" : "brunobb 06/15/2018 10:11",
 		"logout" : "brunobb 05/23/2018 11:43",
 		"openBpmApplicationsCharts" : "brunobb 05/10/2018 08:55",
 		"openBpmChartsRepository" : "brunobb 05/10/2018 09:00",
@@ -16,5 +16,6 @@
 		"openSavedCharts" : "brunobb 06/07/2018 09:54",
 		"openUsersSavedCharts" : "brunobb 06/07/2018 09:54",
 		"showMyChartsComposite" : "brunobb 05/10/2018 08:54",
+		"showMyDashboardComposite" : "brunobb 06/15/2018 10:10",
 		"updateRoot:" : "brunobb 05/09/2018 10:35",
 		"versionName" : "brunobb 05/09/2018 10:34" } }

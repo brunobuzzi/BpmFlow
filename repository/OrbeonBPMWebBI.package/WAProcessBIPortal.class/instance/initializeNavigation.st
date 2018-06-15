@@ -1,9 +1,13 @@
 top menu
 initializeNavigation
-	| subMenu1 subMenu2 subMenu3 |
+	| subMenu0 subMenu1 subMenu2 subMenu3 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 
+	subMenu0 := (SewafSubMenuItem label: 'Dashboards' icon: #dashboard32Png)
+		set24Icon: #dashboard24Png;
+		addItem: (SewafCommandItem label: 'My Dashboards' command: #showMyDashboardComposite);
+		yourself.
 	subMenu1 := (SewafSubMenuItem label: 'User Charts' icon: #monitorchart32Png)
 		set24Icon: #worksinprogress24Png;
 		addItem: (SewafCommandItem label: 'My Charts' command: #showMyChartsComposite);
@@ -22,6 +26,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'System Saved Charts' command: #openUsersSavedCharts);
 		yourself.
 
+	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu0].
 	navigation addItem: subMenu1.
 	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2].
 	navigation addItem: subMenu3.
