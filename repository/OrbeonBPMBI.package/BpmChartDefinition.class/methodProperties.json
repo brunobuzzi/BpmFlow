@@ -43,7 +43,7 @@
 		"renderChart:distributions:chartsTypes:on:" : "brunobb 06/13/2018 12:45",
 		"renderExistingChartOn:" : "brunobb 06/13/2018 12:45",
 		"renderHeatmapChartDistribution:on:" : "brunobb 06/13/2018 12:45",
-		"renderOn:" : "brunobb 06/15/2018 09:16",
+		"renderOn:" : "brunobb 06/15/2018 11:56",
 		"renderPieChartDistribution:on:" : "brunobb 06/13/2018 12:45",
 		"renderSplineAreaChartDistribution:on:" : "brunobb 06/13/2018 12:45",
 		"renderSplineChartDistribution:on:" : "brunobb 06/13/2018 12:45",
@@ -61,4 +61,5 @@
 		"setRegularFrom:for:withSerie:" : "brunobb 06/13/2018 12:49",
 		"user" : "brunobb 06/13/2018 12:45",
 		"user:" : "brunobb 06/13/2018 12:45",
-		"username" : "brunobb 06/13/2018 12:45" } }
+		"username" : "brunobb 06/13/2018 12:45",
+		"xAxisIsDate" : "brunobb 06/15/2018 11:56" } }
