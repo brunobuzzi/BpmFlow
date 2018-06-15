@@ -1,0 +1,24 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"description",
+		"applicationName",
+		"processName",
+		"formName",
+		"fieldName",
+		"startDate",
+		"endDate",
+		"minValue",
+		"maxValue",
+		"calculationMode" ],
+	"name" : "BpmDashboardThreshold",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
