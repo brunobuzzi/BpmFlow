@@ -1,5 +1,5 @@
 top menu
-showMyDashboardComposite
+showMySavedDashboardComposite
 
 	(arena isKindOf: WAMyBpmDashboardsComposite)
 	ifTrue: [^arena].
