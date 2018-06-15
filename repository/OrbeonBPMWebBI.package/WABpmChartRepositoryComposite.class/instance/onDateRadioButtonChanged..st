@@ -1,0 +1,4 @@
+date groups
+onDateRadioButtonChanged: timeSpanName
+
+	selectedLateralItem dateGroupName: timeSpanName

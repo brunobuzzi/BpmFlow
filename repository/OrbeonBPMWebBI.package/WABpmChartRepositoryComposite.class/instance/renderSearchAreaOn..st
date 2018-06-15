@@ -14,7 +14,6 @@ renderSearchAreaOn: html
 			self isProcessScopeSelected ifTrue: [self renderProcessDefinitionComboOn: html].
 			self isRoleScopeSelected ifTrue: [self renderRolesComboOn: html].
 			self isUserScopeSelected ifTrue: [self renderUsersComboOn: html].
-			selectedLateralItem ifNotNil: [selectedLateralItem hasSecondaryDistritbution ifTrue: [self renderDateGroupsOptionsOn: html]]. 
 			self renderSearchButtonOn: html.
 		].
 	].
