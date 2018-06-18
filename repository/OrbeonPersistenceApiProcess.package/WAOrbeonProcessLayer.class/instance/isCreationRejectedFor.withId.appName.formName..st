@@ -4,17 +4,20 @@ isCreationRejectedFor: anOrbeonSavedFormDefinition withId: id appName: appName f
 	This case happend when a pair <appName,formName> is saved with different id. [IN THIS PERSISTENCE LAYER THIS IS FORBIDDEN BY CODE]"
 
 	"This control is implemented here because BPM issue #395 (https://github.com/brunobuzzi/BpmFlow/issues/395)
+		(app or form change name after BpmOrbeonTaskInstance has been created or finalized)
 
 	If BpmProcessDefinition has been already created without any BpmProcessInstances and FormInstances, and a FormDefinition or Application is renamed 
 	--> when a BpmProcessInstance is created the execution is going fail because the forms were move to another app or form name.
 
 	So if aBpmProcessDefinition already exist (using) FormDefinitions 
 	--> app name and form name can NOT be renamed."
-	(BpmProcessDefinition getAllVersionsIn: anOrbeonSavedFormDefinition getApplicationName) do: [:eachDef | 
-		(eachDef getOrbeonTasks anySatisfy: [:eachTask | anOrbeonSavedFormDefinition notNil and: 
-																				[(eachTask name = anOrbeonSavedFormDefinition formName) and: 
-																				[anOrbeonSavedFormDefinition id ~= id]]]) 
-		ifTrue: [^true "creation rejected"]
+	anOrbeonSavedFormDefinition ifNotNil: [ 
+		(BpmProcessDefinition getAllVersionsIn: anOrbeonSavedFormDefinition getApplicationName) do: [:eachDef | 
+			(eachDef getOrbeonTasks anySatisfy: [:eachTask | anOrbeonSavedFormDefinition notNil and: 
+																					[(eachTask name = anOrbeonSavedFormDefinition formName) and: 
+																					[anOrbeonSavedFormDefinition id ~= id]]]) 
+			ifTrue: [^true "creation rejected"]
+		].
 	].
 
 	^((self getOrbeonApplicationClass includesDefinitionNamed: formName in: appName) 
