@@ -1,6 +1,6 @@
 top menu
 initializeNavigation
-	| subMenu0 subMenu1 subMenu2 subMenu3 |
+	| subMenu0 subMenu1 subMenu2 subMenu3 subMenu4 |
 
 	navigation := SewafPortalMenu new iconLibrary: SEWAFIconLibrary.
 
@@ -22,7 +22,12 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Roles Charts' command: #openBpmRoleCharts);
 		addItem: (SewafCommandItem label: 'Users Charts' command: #openBpmUserCharts);
 		yourself.
-	subMenu3 := (SewafSubMenuItem label: 'Charts Repository' icon: #placesfoldersavedsearch32Png)
+	subMenu3 := (SewafSubMenuItem label: 'Compare Fields' icon: #linechart32Png)
+		set24Icon: #linechart24Png;
+		addItem: (SewafCommandItem label: 'Fields Comparison' command: #openCompareFieldsCharts);
+		yourself.
+
+	subMenu4 := (SewafSubMenuItem label: 'Charts Repository' icon: #placesfoldersavedsearch32Png)
 		set24Icon: #placesfoldersavedsearch24Png;
 		addItem: (SewafCommandItem label: 'My Saved Charts' command: #openSavedCharts);
 		addItem: (SewafCommandItem label: 'System Saved Charts' command: #openUsersSavedCharts);
@@ -30,5 +35,5 @@ initializeNavigation
 
 	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu0].
 	navigation addItem: subMenu1.
-	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2].
-	navigation addItem: subMenu3.
+	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2; addItem: subMenu3].
+	navigation addItem: subMenu4.
