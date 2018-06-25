@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fieldEvolutions" ],
+	"name" : "BpmChartMultiFieldEvolutionDistribution",
+	"pools" : [
+		 ],
+	"super" : "BpmChartFieldEvolutionDistribution",
+	"type" : "normal" }
