@@ -16,7 +16,7 @@ renderArray2Chart: aHighchart distributions: distributionCollection chartsTypes:
 	distributionCollection keysAndValuesDo: [:index :eachDistribution | | serieClass |
 		serieClass := seriesClassCollection at: index.
 		self distribution isGrouped
-		ifFalse: [self setRegularFrom: eachDistribution for: aHighchart withSerie: serieClass] 
+		ifFalse: [self setRegularDataFrom: eachDistribution for: aHighchart withSerie: serieClass] 
 		ifTrue: [self setGroupedDataFrom: eachDistribution for: aHighchart withSerie: serieClass].
 	]. 
 
