@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fieldDistributions" ],
+	"name" : "BpmFieldCollectionDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessDistributionReport",
+	"type" : "normal" }

@@ -15,9 +15,9 @@ renderArray2Chart: aHighchart distributions: distributionCollection chartsTypes:
 
 	distributionCollection keysAndValuesDo: [:index :eachDistribution | | serieClass |
 		serieClass := seriesClassCollection at: index.
-		self distribution isGrouped
-		ifFalse: [self setRegularDataFrom: eachDistribution for: aHighchart withSerie: serieClass] 
-		ifTrue: [self setGroupedDataFrom: eachDistribution for: aHighchart withSerie: serieClass].
+		self distribution isGrouped "this is used to group BarCharts (to display versions of different processes)"
+		ifFalse: [self setRegularDataFrom: eachDistribution for: aHighchart withSerie: serieClass] "<AppDistributionReport> distribution: dictionary of key and value"
+		ifTrue: [self setGroupedDataFrom: eachDistribution for: aHighchart withSerie: serieClass]. "<AppDistributionReport> distribution: dictionary of key and anArray of values"
 	]. 
 
 	html div script: aHighchart.
