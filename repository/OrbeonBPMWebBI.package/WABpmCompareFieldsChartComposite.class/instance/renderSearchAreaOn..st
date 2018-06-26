@@ -1,0 +1,27 @@
+search area
+renderSearchAreaOn: html
+
+	super renderSearchAreaOn: html. 
+
+	html form with: [
+		html fieldSet with: [
+			html legend class: 'top-search-legend'; 
+				with: ('Draw Chart' translateFor: self session user).
+			self renderApplicationComboOn: html.
+			self getApplicationName notNil
+			ifTrue: [
+				self renderProcessDefinitionComboOn: html.
+				self getProcessName notNil 
+				ifTrue: [
+					self renderProcessVersionsComboOn: html.
+					self renderShowChartButtonOn: html.
+					self renderProcessFormsComboOn: html. 
+					self renderStartEndDatesOn: html.
+					self renderQueryConditionOn: html.
+					self renderDateGroupsOptionsOn: html.
+				].
+			].
+		].
+	].
+
+	self renderSaveChartIconOn: html.
