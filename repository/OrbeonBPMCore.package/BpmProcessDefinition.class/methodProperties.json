@@ -30,6 +30,7 @@
 		"getTransversalByVersionQuantityFor:" : "brunobb 06/05/2018 05:12",
 		"getValueDistributionForFieldCollection:from:to:satisfying:" : "brunobb 06/05/2018 10:08",
 		"getValueSumDistributionFor:in:fieldNamed:from:to:satisfying:" : "brunobb 06/13/2018 10:29",
+		"getValueSumMultiDistributionFor:" : "brunobb 06/27/2018 10:28",
 		"getVersionsAverageTimeFor:in:" : "BrunoBB 11/07/2016 07:10",
 		"hasAnyProcessApplicationNamed:" : "BrunoBB 02/29/2016 09:25",
 		"initializeAnonymousFormMapping" : "BrunoBB 03/30/2016 10:45",
@@ -50,6 +51,7 @@
 		"reportProcessInstancesQuantityDistributionFor:in:" : "brunobb 05/14/2018 04:54",
 		"reportValueDistributionForFieldCollection:from:to:satisfying:" : "brunobb 06/05/2018 10:11",
 		"reportValueSumDistributionFor:in:fieldNamed:from:to:satisfying:" : "brunobb 06/13/2018 11:30",
+		"reportValueSumMultuDistributionFor:" : "brunobb 06/27/2018 10:50",
 		"resetAll" : "brunobb 04/24/2018 08:50",
 		"unregisterAnonymousStartFor:" : "brunobb 02/05/2018 09:32" },
 	"instance" : {
