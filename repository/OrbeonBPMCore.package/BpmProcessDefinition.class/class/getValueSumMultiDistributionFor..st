@@ -1,7 +1,8 @@
 distribution
 getValueSumMultiDistributionFor: distributionDataCollection
 	"Answer <aCollection> of <Dictionaries> where each <Dictionary> is Sum distribution for each element in <distributionDataCollection>.
-	Check: #getValueSumDistributionFor:in:fieldNamed:from:to:satisfying:"
+	Check: #getValueSumDistributionFor:in:fieldNamed:from:to:satisfying:.
+	<distributionDataCollection> is a collection of Arrays"
 	|  distribution |
 
 	distribution := OrderedCollection new.

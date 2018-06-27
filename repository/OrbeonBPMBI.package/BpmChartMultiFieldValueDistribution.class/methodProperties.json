@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createDistributionReport" : "brunobb 06/27/2018 11:04",
+		"addFieldDescritionArray:" : "brunobb 06/27/2018 11:39",
+		"createDistributionReport" : "brunobb 06/27/2018 11:36",
 		"fieldsCollection" : "brunobb 06/27/2018 11:04",
-		"fieldsCollection:" : "brunobb 06/27/2018 11:04" } }
+		"fieldsCollection:" : "brunobb 06/27/2018 11:04",
+		"initialize" : "brunobb 06/27/2018 11:39" } }

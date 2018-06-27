@@ -1,5 +1,5 @@
 distribution report
-reportValueSumMultuDistributionFor: distributionDataCollection
+reportValueSumMultiDistributionFor: distributionDataCollection
 	| secondsToRun distribution |
 
 	secondsToRun := Time secondsElapsedTime: [
