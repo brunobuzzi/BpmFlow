@@ -13,7 +13,6 @@ renderSearchAreaOn: html
 				self renderProcessDefinitionComboOn: html.
 				self getProcessName notNil 
 				ifTrue: [
-					self renderProcessVersionsComboOn: html.
 					self renderShowChartButtonOn: html.
 					self renderProcessFormsComboOn: html. 
 					self renderStartEndDatesOn: html.

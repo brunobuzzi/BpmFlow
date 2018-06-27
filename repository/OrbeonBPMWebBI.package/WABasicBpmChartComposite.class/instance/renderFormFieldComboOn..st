@@ -15,5 +15,3 @@ renderFormFieldComboOn: html
 			callback: [:value | self addSearchValue: value named: 'field-name'];
 			selected: (self searchValueAt: 'field-name' ifAbsent: [fieldNames ifNotEmpty: [fieldNames first].]).
 	].
-
-"	(self isDoubleDonutChart or: [self isDoubleBarChart]) ifTrue: [self renderFormFieldCombo2On: html]"
