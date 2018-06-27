@@ -1,4 +1,0 @@
-other
-addEvolution: aBpmChartFieldEvolutionDistribution
-
-	^fieldEvolutions add: aBpmChartFieldEvolutionDistribution

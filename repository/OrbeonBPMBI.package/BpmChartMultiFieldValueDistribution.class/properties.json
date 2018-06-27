@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fieldEvolutions" ],
-	"name" : "BpmChartMultiFieldEvolutionDistribution",
+		 ],
+	"name" : "BpmChartMultiFieldValueDistribution",
 	"pools" : [
 		 ],
-	"super" : "BpmChartFieldEvolutionDistribution",
+	"super" : "BpmChartSingleDistribution",
 	"type" : "normal" }

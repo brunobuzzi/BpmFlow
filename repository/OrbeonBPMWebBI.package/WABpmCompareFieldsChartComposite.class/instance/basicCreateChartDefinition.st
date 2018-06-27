@@ -3,6 +3,6 @@ basicCreateChartDefinition
  
 	chartDefinition
 		scope: (self newChartScopeFor: chartDefinition);
-		distribution: (BpmChartMultipleFieldsScope newOn: chartDefinition);
+		distribution: (BpmChartMultiFieldValueDistribution newOn: chartDefinition);
 		distributionType: (BpmChartQuantityDistribution newOn: chartDefinition);
 		chartType: (BpmSplineChart newOn: chartDefinition).
