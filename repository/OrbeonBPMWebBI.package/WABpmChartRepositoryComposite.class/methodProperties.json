@@ -19,6 +19,7 @@
 		"initialize" : "BrunoBB 11/19/2016 05:53",
 		"isApplicationScopeSelected" : "brunobb 06/11/2018 08:35",
 		"isGlobalScopeSelected" : "brunobb 06/11/2018 08:33",
+		"isMultiFieldScopeSelected" : "brunobb 06/28/2018 09:54",
 		"isProcessScopeSelected" : "brunobb 06/11/2018 09:02",
 		"isRoleScopeSelected" : "brunobb 06/08/2018 10:53",
 		"isUserScopeSelected" : "brunobb 06/08/2018 10:54",
@@ -45,7 +46,8 @@
 		"reportsRepository" : "BrunoBB 11/19/2016 07:39",
 		"searchByApplicationScope" : "brunobb 06/11/2018 10:01",
 		"searchByGlobalScope" : "brunobb 06/11/2018 08:49",
+		"searchByMultiFieldScope" : "brunobb 06/28/2018 09:50",
 		"searchByProcessScope" : "brunobb 06/11/2018 10:27",
 		"searchByRoleScope" : "brunobb 06/11/2018 11:22",
 		"searchByUserScope" : "brunobb 06/11/2018 11:46",
-		"searchChart" : "brunobb 06/11/2018 11:32" } }
+		"searchChart" : "brunobb 06/28/2018 09:50" } }

@@ -14,4 +14,6 @@ searchChart
 
 	self isUserScopeSelected ifTrue: [^self searchByUserScope].
 
+	self isMultiFieldScopeSelected ifTrue: [^self searchByMultiFieldScope].
+
 	searchResult := #().
