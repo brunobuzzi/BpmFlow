@@ -18,5 +18,5 @@ reportValueSumMultiDistributionFor: distributionDataCollection
 
 	^(BpmFieldCollectionDistributionReport distribution: distribution)
 		sumSecondsToConstruct: secondsToRun;
-		xAxisIsDate: true;
+		canonizeXAxis;
 		yourself.
