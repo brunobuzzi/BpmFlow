@@ -3,6 +3,9 @@
 		"distribution:" : "brunobb 06/27/2018 10:53" },
 	"instance" : {
 		"addFieldDistribution:" : "brunobb 06/26/2018 04:56",
+		"createSecondayDistributionByMonth" : "brunobb 06/28/2018 08:05",
+		"createSecondayDistributionByWeek" : "brunobb 06/28/2018 08:05",
+		"createSecondayDistributionByYear" : "brunobb 06/28/2018 08:05",
 		"fieldDistributions" : "brunobb 06/26/2018 04:56",
 		"fieldDistributions:" : "brunobb 06/26/2018 04:56",
 		"generateFieldReportFrom:" : "brunobb 06/28/2018 05:35",
