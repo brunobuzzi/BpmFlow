@@ -12,6 +12,7 @@ reportValueSumMultiDistributionFor: distributionDataCollection
 			endTimeStamp := dataArray at: 5.
 			aBlock := dataArray at: 6.
 			dataDistribution := self reportValueSumDistributionFor: procName in: appName fieldNamed: fieldName from: startTimeStamp to: endTimeStamp satisfying: aBlock.
+			dataDistribution seriesName: fieldName.
 			distribution add: dataDistribution.
 		].
 	].
