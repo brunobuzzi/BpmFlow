@@ -1,9 +1,9 @@
 {
 	"class" : {
-		 },
+		"getComboName" : "brunobb 06/28/2018 04:43" },
 	"instance" : {
 		"addFieldDescritionArray:" : "brunobb 06/27/2018 11:39",
-		"createDistributionReport" : "brunobb 06/27/2018 11:36",
+		"createDistributionReport" : "brunobb 06/28/2018 05:10",
 		"fieldsCollection" : "brunobb 06/27/2018 11:04",
 		"fieldsCollection:" : "brunobb 06/27/2018 11:04",
 		"initialize" : "brunobb 06/27/2018 11:39" } }

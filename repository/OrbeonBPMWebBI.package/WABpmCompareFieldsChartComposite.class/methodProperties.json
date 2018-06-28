@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"addField" : "brunobb 06/27/2018 11:40",
-		"basicCreateChartDefinition" : "brunobb 06/27/2018 09:21",
+		"basicCreateChartDefinition" : "brunobb 06/28/2018 05:07",
 		"getProcessFieldList" : "brunobb 06/26/2018 08:33",
 		"getSelectedFieldDescription" : "brunobb 06/27/2018 11:42",
 		"getSelectedProcessDefinitions" : "brunobb 06/26/2018 08:35",
 		"newChartScopeFor:" : "brunobb 06/26/2018 08:12",
 		"renderApplicationComboOn:withApplications:" : "brunobb 06/26/2018 08:28",
 		"renderSearchAreaOn:" : "brunobb 06/26/2018 08:31",
+		"renderShowChartButtonOn:" : "brunobb 06/28/2018 04:44",
 		"setChartDefinition" : "brunobb 06/26/2018 10:24" } }
