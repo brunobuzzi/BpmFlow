@@ -1,0 +1,2 @@
+other
+setSelectedField: aBpmReportFieldDescriptor value: aBoolean
