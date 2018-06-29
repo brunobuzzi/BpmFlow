@@ -1,4 +1,4 @@
 field collection
 addField
 
-	chartDefinition distribution addFieldDescritionArray: self getSelectedFieldDescription
+	chartDefinition distribution addFieldDescrition: self getSelectedFieldDescription

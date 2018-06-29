@@ -1,0 +1,19 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"appName",
+		"procName",
+		"fieldName",
+		"startTimeStamp",
+		"endTimeStamp",
+		"satisfyingBlock" ],
+	"name" : "BpmReportFieldDescriptor",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

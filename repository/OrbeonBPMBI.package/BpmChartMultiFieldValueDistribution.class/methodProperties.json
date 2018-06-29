@@ -2,9 +2,10 @@
 	"class" : {
 		"getComboName" : "brunobb 06/28/2018 04:43" },
 	"instance" : {
-		"addFieldDescritionArray:" : "brunobb 06/27/2018 11:39",
+		"addFieldDescrition:" : "brunobb 06/29/2018 11:14",
 		"createDistributionReport" : "brunobb 06/28/2018 10:19",
 		"fieldsCollection" : "brunobb 06/27/2018 11:04",
 		"fieldsCollection:" : "brunobb 06/27/2018 11:04",
 		"initialize" : "brunobb 06/27/2018 11:39",
-		"isMultiFieldDistribution" : "brunobb 06/28/2018 10:13" } }
+		"isMultiFieldDistribution" : "brunobb 06/28/2018 10:13",
+		"selectedFieldsToRender" : "brunobb 06/29/2018 10:44" } }
