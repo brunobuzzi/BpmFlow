@@ -1,2 +1,4 @@
 other
 fieldIsSelected: aBpmReportFieldDescriptor
+
+	^false

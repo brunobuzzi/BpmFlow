@@ -3,6 +3,7 @@ initializeSewafTableForFields
 	| table |
 
 	table := (SewafBooleanSelectTable parent: self)
+		buttonLabel: 'Remove Selected Fields';
 		summary: 'Selected Fields';
 		backcolor: self session user userOptions getBooleanTableBackcolor;
 		booleanSelector: #fieldIsSelected:;

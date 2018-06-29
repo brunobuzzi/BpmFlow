@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fieldsBatchedList" ],
+		"fieldsBatchedList",
+		"selectedFieldsOnTable" ],
 	"name" : "WABpmCompareFieldsChartComposite",
 	"pools" : [
 		 ],
