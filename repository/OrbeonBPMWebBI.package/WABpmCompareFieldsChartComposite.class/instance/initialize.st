@@ -7,5 +7,3 @@ initialize
 	fieldsBatchedList batchSize: self session user regularListPagingSize;
 		navigationCssClass: 'batch-div-bottom';
 		isBottomBatch: true.
-
-	selectedFieldsOnTable := Dictionary new.
