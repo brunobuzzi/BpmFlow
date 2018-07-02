@@ -17,6 +17,7 @@ renderSearchAreaOn: html
 					self renderStartEndDatesOn: html.
 					self renderQueryConditionOn: html.
 					self renderDateGroupsOptionsOn: html.
+					self renderChartTypeComboOn: html.
 					self renderShowChartButtonOn: html.
 				].
 			].
