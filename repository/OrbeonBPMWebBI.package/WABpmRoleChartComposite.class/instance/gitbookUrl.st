@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'roles_charts.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, 'bpm-bi-and-charts/main-menu/system-charts/roles-charts.html'
