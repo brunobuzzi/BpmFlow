@@ -8,3 +8,4 @@ initialize
 	isActive := true.
 	items := OrderedCollection new.
 	instanceRecursion := BpmDashboardRecursionDefinition new.
+	isPrivate := false.

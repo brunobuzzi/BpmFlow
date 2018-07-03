@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fieldDefinition",
+		"applicationName",
+		"processName",
+		"fieldName",
 		"conditionBlock" ],
 	"name" : "BpmDashboardFieldDefinition",
 	"pools" : [

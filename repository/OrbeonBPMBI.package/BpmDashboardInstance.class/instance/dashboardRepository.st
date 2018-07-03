@@ -1,0 +1,4 @@
+repository
+dashboardRepository
+
+	^BpmDashboardRepository default

@@ -3,17 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Default" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"description",
-		"isActive",
-		"items",
-		"instanceRecursion",
-		"isPrivate",
-		"owner" ],
-	"name" : "BpmDashboardDefinition",
+		"definitions",
+		"instances" ],
+	"name" : "BpmDashboardRepository",
 	"pools" : [
 		 ],
 	"super" : "BpmObject",

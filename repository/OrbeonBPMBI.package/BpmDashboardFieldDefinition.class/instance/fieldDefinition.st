@@ -1,3 +1,0 @@
-Accessing
-fieldDefinition
-	^fieldDefinition

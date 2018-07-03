@@ -1,0 +1,4 @@
+other
+ownerName
+
+	^definition ownerName
