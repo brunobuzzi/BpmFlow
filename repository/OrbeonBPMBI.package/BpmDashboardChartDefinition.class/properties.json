@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"definition",
-		"startDate",
-		"endDate",
-		"values",
-		"creationTime",
-		"isClosed" ],
-	"name" : "BpmDashboardInstance",
+		"chartDefinition" ],
+	"name" : "BpmDashboardChartDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmDashboardItemDefinition",
 	"type" : "normal" }
