@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fieldDefinition",
+		"conditionBlock" ],
+	"name" : "BpmDashboardFieldDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmDashboardItemDefinition",
+	"type" : "normal" }

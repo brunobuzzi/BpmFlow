@@ -1,0 +1,3 @@
+Accessing
+conditionBlock
+	^conditionBlock

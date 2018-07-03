@@ -1,0 +1,4 @@
+other
+setAsMonthRecursion
+
+	recursionName := #month

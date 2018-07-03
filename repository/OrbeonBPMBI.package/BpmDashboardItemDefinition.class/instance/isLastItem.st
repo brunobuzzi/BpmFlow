@@ -1,0 +1,4 @@
+other
+isLastItem
+
+	^nextItem isNil

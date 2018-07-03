@@ -1,0 +1,4 @@
+other
+setAsWeekRecursion
+
+	recursionName := #week

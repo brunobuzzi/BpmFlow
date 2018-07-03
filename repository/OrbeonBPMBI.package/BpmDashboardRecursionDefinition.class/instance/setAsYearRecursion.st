@@ -1,0 +1,4 @@
+other
+setAsYearRecursion
+
+	recursionName := #year
