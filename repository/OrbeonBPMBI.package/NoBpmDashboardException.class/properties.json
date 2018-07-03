@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"definition",
-		"startDate",
-		"endDate",
-		"values",
-		"creationTime" ],
-	"name" : "BpmDashboardInstance",
+		 ],
+	"name" : "NoBpmDashboardException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "OrbeonBpmException",
 	"type" : "normal" }

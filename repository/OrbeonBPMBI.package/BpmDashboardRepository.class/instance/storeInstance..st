@@ -1,4 +1,4 @@
-other
+storing
 storeInstance: aBpmDashboardInstance
 
 	(instances includesKey: aBpmDashboardInstance ownerName) ifFalse: [instances at: aBpmDashboardInstance ownerName put: OrderedCollection new].

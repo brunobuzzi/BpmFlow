@@ -1,0 +1,4 @@
+other
+isPrivate
+
+	^definition isPrivate

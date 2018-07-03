@@ -3,10 +3,12 @@
 		 },
 	"instance" : {
 		"addToCache" : "brunobb 07/03/2018 05:46",
+		"creationTime" : "brunobb 07/03/2018 06:03",
+		"creationTime:" : "brunobb 07/03/2018 06:03",
 		"dashboardRepository" : "brunobb 07/03/2018 05:46",
 		"description" : "brunobb 07/03/2018 05:35",
 		"description:" : "brunobb 07/03/2018 05:35",
-		"initialize" : "brunobb 07/03/2018 05:35",
+		"initialize" : "brunobb 07/03/2018 06:03",
 		"instanceRecursion" : "brunobb 07/03/2018 05:35",
 		"instanceRecursion:" : "brunobb 07/03/2018 05:35",
 		"isActive" : "brunobb 07/03/2018 05:35",
@@ -20,4 +22,6 @@
 		"owner" : "brunobb 07/03/2018 05:36",
 		"owner:" : "brunobb 07/03/2018 05:36",
 		"ownerName" : "brunobb 07/03/2018 05:37",
+		"removeDashboardFrom:" : "brunobb 07/03/2018 05:54",
+		"removeFromCache" : "brunobb 07/03/2018 05:53",
 		"storeDashboardOn:" : "brunobb 07/03/2018 05:44" } }

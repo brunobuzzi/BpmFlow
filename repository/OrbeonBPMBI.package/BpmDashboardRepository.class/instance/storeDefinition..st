@@ -1,4 +1,4 @@
-other
+storing
 storeDefinition: aBpmDashboardDefinition
 
 	(definitions includesKey: aBpmDashboardDefinition ownerName) ifFalse: [definitions at: aBpmDashboardDefinition ownerName put: OrderedCollection new].

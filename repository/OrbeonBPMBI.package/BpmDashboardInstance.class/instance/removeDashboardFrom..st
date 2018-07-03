@@ -1,0 +1,4 @@
+repository
+removeDashboardFrom: aBpmDashboardRepository
+
+	^aBpmDashboardRepository removeInstance: self
