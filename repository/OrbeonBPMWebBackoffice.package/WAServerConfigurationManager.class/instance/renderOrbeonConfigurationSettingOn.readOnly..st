@@ -22,7 +22,7 @@ renderOrbeonConfigurationSettingOn: html readOnly: aBoolean
 			callback: [:value | self getOrbeonWebServerConfiguration orbeonIP: value]; 
 			with: self getOrbeonWebServerConfiguration orbeonIP.
 
-	html label class: 'margin-right-10px'; attributeAt: 'for' put: 'versionName'; with: ('Version Name' translateFor: self session user).
+	html label class: 'margin-right-10px'; attributeAt: 'for' put: 'versionName'; with: ('XPath Orbeon Version' translateFor: self session user).
 	html select 
 		disabled: aBoolean;
 		attributeAt: 'id' put: 'versionName';

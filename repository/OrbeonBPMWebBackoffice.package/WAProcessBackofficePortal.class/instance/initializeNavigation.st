@@ -42,7 +42,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Internationalization' command: #openInternationalizationManager);
 		yourself.
 
-	subMenu6 := (SewafSubMenuItem label: 'Inbox' icon: #emailinbox32Png)
+	subMenu6 := (SewafSubMenuItem label: 'Messages' icon: #emailinbox32Png)
 		set24Icon: #emailinbox24Png;
 		addItem: (SewafCommandItem label: 'Inbox' command: #showInternalInbox);
 		addItem: (SewafCommandItem label: 'Outbox' command: #showInternalOutbox);
