@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'display_preferences.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/frontoffice-manual/main-menu/configuration/display-references'

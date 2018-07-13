@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'frontoffice_process_categories.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/frontoffice-manual/main-menu/my-processes/process-categories'

@@ -2,5 +2,5 @@ other
 gitbookUrl
 
 	^self modeIsFinishedTasks
-	ifTrue: [self getGemStoneServerConfiguration baseUrlDocumentation, 'finished_processes.html']
-	ifFalse: [self getGemStoneServerConfiguration baseUrlDocumentation, 'current_processes.html']
+	ifTrue: [self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/frontoffice-manual/main-menu/my-processes/finished-processes']
+	ifFalse: [self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/frontoffice-manual/main-menu/my-processes/current-processes']

@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'granted_tasks.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/frontoffice-manual/main-menu/new-process/granted-tasks'
