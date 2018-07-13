@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/backoffice-manual/main-menu/configuration/login-mode'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/configuration/login-mode'

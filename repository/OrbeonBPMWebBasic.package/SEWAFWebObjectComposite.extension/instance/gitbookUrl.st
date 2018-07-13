@@ -1,4 +1,4 @@
 *orbeonBPMWebBasic
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'applicationmanual_md.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals'

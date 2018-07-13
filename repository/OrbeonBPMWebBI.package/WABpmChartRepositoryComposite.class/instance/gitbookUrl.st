@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'bpm-bi-and-charts/main-menu/chart-repository.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/bi-manual/main-menu/chart-repository'
