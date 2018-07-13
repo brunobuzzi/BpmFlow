@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'change_password.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/backoffice-manual/main-menu/configuration/change-password'

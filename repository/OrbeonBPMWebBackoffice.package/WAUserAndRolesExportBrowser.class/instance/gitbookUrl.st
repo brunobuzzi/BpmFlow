@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, 'export_users_&_roles.html'
+	^self getGemStoneServerConfiguration baseUrlDocumentation, '/backoffice-manual/main-menu/users-and-roles/export-roles-and-users'
