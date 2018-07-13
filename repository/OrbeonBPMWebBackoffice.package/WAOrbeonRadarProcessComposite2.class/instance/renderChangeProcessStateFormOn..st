@@ -5,7 +5,7 @@ renderChangeProcessStateFormOn: html
 
 		html anchor class: 'margin-right-20px margin-top-5px';
 			target: '_blank';
-			callback: [self requestContext redirectTo: self getGemStoneServerConfiguration baseUrlDocumentation, 'states/process-states.html'];
+			callback: [self requestContext redirectTo: self getGemStoneServerConfiguration baseUrlDocumentation, '/functional-and-technical-information/states/process-states'];
 			with: [
 				html image url: (SEWAFIconLibrary / #helpicon16Png); 
 					altText: 'Help on Process State'; 
