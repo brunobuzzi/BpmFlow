@@ -11,7 +11,7 @@ renderSearchAreaOn: html
 			self getBpmUserName ifNil: [^self].
 			self renderDistributionComboOn: html.
 			self renderChartTypeComboOn: html.
-			self isFinishedTasksDistribution 
+			(self isFinishedTasksDistribution or: [self isTasksAverageTimeDistribution])
 			ifTrue: [self renderStartEndDatesOn: html.
 						self renderQueryConditionOn: html]. 
 			self renderShowChartButtonOn: html.
