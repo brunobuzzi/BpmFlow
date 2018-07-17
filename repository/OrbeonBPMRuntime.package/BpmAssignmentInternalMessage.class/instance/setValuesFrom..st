@@ -3,7 +3,7 @@ setValuesFrom: aBpmTaskAssignment
 
 	super setValuesFrom: aBpmTaskAssignment.
 
-	roleName := aBpmTaskAssignment roleName.
+	roleName := aBpmTaskAssignment getPerfomerOrRoleName.
 	taskName := aBpmTaskAssignment taskName.
 	username := aBpmTaskAssignment printUserName.
 
