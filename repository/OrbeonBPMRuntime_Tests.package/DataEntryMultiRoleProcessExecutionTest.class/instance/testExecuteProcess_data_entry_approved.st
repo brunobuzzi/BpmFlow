@@ -35,14 +35,14 @@ testExecuteProcess_data_entry_approved
 	self assert: (currentTask finalizedPerformerCounter = 3).
 
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
-		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 6]. "plus 3: take, finalization & new assign message"
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 5]. "plus 2: take, finalization"
 
 	"Step 2 - Form [data-approved]" 
 	currentTask := procInstance currentActivities last.
 	self processTask: currentTask withUserNamed: 'bruno' withForm: self formInstance_data_approved.
 
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
-		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 8].  "plus 2: one take & finalization"
+		self assert: (eachUser getSystemNotificationsInbox selectSatisfying: [:each | each processId = procInstance processId]) size = 5].  "this task def has not Inform role"
 
 	self assert: (currentTask getDefinitionName = 'data-approved').
 	endArtifact := procInstance endEvents asOrderedCollection last.
