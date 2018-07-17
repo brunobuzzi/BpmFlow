@@ -10,3 +10,5 @@ initialize
 	self initializeUsersBatchedList.
 
 	selectedInbox := 'System'.
+
+	"self setShowToElementNamed: 'search-area'."

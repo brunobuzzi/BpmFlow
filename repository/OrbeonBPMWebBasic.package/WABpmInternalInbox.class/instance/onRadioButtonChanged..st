@@ -1,4 +1,4 @@
-search
+search area
 onRadioButtonChanged: value
 
 	selectedInbox := value.
