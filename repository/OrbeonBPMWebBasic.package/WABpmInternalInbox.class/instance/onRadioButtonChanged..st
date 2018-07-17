@@ -5,4 +5,7 @@ onRadioButtonChanged: value
 	batchedList currentPage: 1.
 	userBatchedList currentPage: 1.
 
-	selectedLateralItem := nil
+	selectedLateralItem := nil.
+
+	searchResult := #().
+	searchApplied := false.
