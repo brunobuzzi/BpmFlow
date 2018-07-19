@@ -10,6 +10,6 @@ ungrantUser: aBpmUser ifAbsent: aBlock
 	usersAssociations add: association.
 	aBpmUser addRoleAssociation: association.
 
-	self removeCurrentTaskAssigmentsFor: aBpmUser. "if <aBpmUser> currently has any assigment related to the receiver --> the assigment is untaken from the user"
+	self removeCurrentTaskAssigmentsFrom: aBpmUser. "if <aBpmUser> currently has any assigment related to the receiver --> the assigment is untaken from the user"
 
 	^aBpmUser removeRole: self
