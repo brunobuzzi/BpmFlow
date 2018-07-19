@@ -2,6 +2,6 @@
 	"class" : {
 		"printPolicyName" : "brunobb 01/29/2018 16:22" },
 	"instance" : {
-		"getAssignationCountCollectionFor:in:" : "brunobb 02/02/2018 11:32",
+		"getAssignationCountCollectionFor:in:" : "brunobb 07/19/2018 06:01",
 		"getTaskCountFor:" : "brunobb 02/01/2018 11:30",
 		"updateSortedCollectionForNewGrants:with:" : "brunobb 01/26/2018 18:04" } }
