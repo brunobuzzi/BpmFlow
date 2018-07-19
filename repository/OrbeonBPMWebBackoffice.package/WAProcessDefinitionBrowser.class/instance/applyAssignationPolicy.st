@@ -5,4 +5,5 @@ applyAssignationPolicy
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	selectedLateralItem applyAssignationPolicy
+	selectedLateralItem hasAutomaticTaskAssignation "with automatic task assignation --> assignation can not be enforced"
+	ifFalse: [selectedLateralItem applyAssignationPolicy]
