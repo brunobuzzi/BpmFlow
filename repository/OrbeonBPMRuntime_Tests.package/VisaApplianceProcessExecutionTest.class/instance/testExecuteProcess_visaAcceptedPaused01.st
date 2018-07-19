@@ -108,6 +108,14 @@ testExecuteProcess_visaAcceptedPaused01
 			self assert: procInstance isRunning. 
 			self assert: subProcessL1 isRunning.
 			self assert: subProcessL2 isPaused.
+
+			"this was added for issue #576"
+			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') ungrantUser: (users at: 'andrew vc').
+			self deny: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (users at: 'andrew vc')).
+			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (users at: 'andrew vc').
+			self assert: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (users at: 'andrew vc')).
+			"end test for issue #576"
+
 			subProcessL2 resumeProcess: nil. 
 			self assert: subProcessL2 isRunning.
 
