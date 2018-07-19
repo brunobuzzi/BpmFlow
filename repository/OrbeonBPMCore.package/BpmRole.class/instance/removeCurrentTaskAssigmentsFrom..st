@@ -6,7 +6,7 @@ removeCurrentTaskAssigmentsFrom: aBpmUser
 
 	currentAssignments := aBpmUser getCurrentAssignments select: [:each | (each application == application) and: [each roleName = name]].
 
-	currentAssignments do: [:taskAssignment | | tempCanUnassign |
+	(currentAssignments select: [:taskAssignment | taskAssignment canUntakeFromCurrentUser]) do: [:taskAssignment | | tempCanUnassign |
 		tempCanUnassign := taskAssignment canUnassign.
 		taskAssignment canUnassign: true. "force the assignment to be untaken by <aBpmUser>"
 		aBpmUser untake: taskAssignment.
