@@ -2,7 +2,7 @@ subclass responsibility
 renderDeleteChartIconOn: html
    | jQueryId |
 
-	jQueryId := self renderJQueryConfirmationDialogOn: html title: 'Delete Chart' forActionNamed: 'deleteChart' actionMethod: #deleteChart.
+	jQueryId := self renderJQueryConfirmationDialogOn: html title: ('Delete Chart' translateFor: self session user) forActionNamed: 'deleteChart' actionMethod: #deleteChart.
 
 	html div class: 'float-right'; with: [
 		html anchor 
