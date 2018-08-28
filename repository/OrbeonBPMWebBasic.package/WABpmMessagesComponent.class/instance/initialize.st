@@ -11,4 +11,4 @@ initialize
 
 	selectedInbox := 'System'.
 
-	"self setShowToElementNamed: 'search-area'."
+	self setShowToElementNamed: 'search-area'.

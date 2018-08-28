@@ -1,6 +1,10 @@
 search area
 renderSearchAreaOn: html
 
+	self renderShowHideWindowIconOn: html. "show/hide search area"
+
+	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
+
 	html form class: 'width-200px'; with: [ 
 		html fieldSet with: [
 			html radioGroup
