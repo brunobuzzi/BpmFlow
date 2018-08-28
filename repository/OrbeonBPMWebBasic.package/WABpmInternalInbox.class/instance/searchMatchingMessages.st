@@ -10,7 +10,7 @@ searchMatchingMessages
 		^self.
 	].
 
-	processId := Number fromString: processId.
+	processId := [Number fromString: processId] on: Error do: [:ex | 0].
 
 	searchResult := self getCurrentCollection select: {:eachMessage | eachMessage.processId = processId}.
 
