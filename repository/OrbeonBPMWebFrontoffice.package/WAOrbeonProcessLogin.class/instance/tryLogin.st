@@ -9,6 +9,6 @@ tryLogin
 
 	self session user: logedUser.
 
-	"self show: (WAOrbeonFormUser on: logedUser)."
+	self setLanguage.
 
 	self show: (WAProcessUserPortal on: logedUser).

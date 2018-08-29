@@ -9,4 +9,6 @@ tryLogin
 
 	self session user: logedUser.
 
+	self setLanguage.
+
 	self show: (WAProcessBIPortal on: logedUser).
