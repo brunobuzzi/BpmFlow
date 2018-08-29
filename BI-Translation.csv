@@ -1,0 +1,134 @@
+Target Translation;English;French;German;Italian;Portuguese;Spanish
+Add Field;Add Field;Ajouter le champ;Feld hinzufügen;Aggiungi campo;Adicionar campo;Agregue campo
+All;All;Tout;Alle;Tutti;Todos;Todas
+Application;Application;Application;Anwendung;Applicazione;Aplicação;Solicitud
+Application Name;Application Name;Nom de l'application;Anwendungsname;Nome dell'applicazione;Nome da Aplicação;Nombre de la aplicación
+Application:;Application:;Application:;Anwendung:;Applicazione:;Aplicação:;Solicitud:
+Applications Charts;Applications Charts;Graphiques d'applications;Anwendungsdiagramme;Grafici delle applicazioni;Gráficos de Aplicações;Gráficos de aplicaciones
+Assigned/Unassigned Users;Assigned/Unassigned Users;Utilisateurs assignés / non affectés;Zugewiesene / nicht zugewiesene Benutzer;Utenti assegnati / non assegnati;Usuários atribuídos / não atribuídos;Usuarios asignados / no asignados
+Bar Chart;Bar Chart;Diagramme à bandes;Balkendiagramm;Grafico a barre;Gráfico de barras;Gráfico de barras
+Calendar of Creations;Calendar of Creations;Calendrier des créations;Kalender der Kreationen;Calendario delle creazioni;Calendário de Criações;Calendario de Creaciones
+Chart Scope;Chart Scope;Portée du graphique;Diagrammumfang;Ambito del grafico;Escopo do gráfico;Alcance de la carta
+Chart Type;Chart Type;Type de graphique;Diagramm Typ;Tipo di grafico;Tipo de gráfico;Tipo de gráfico
+Charts Repository;Charts Repository;Dépôt de graphiques;Charts-Repository;Repertorio dei grafici;Repositório de Gráficos;Repositorio de Gráficos
+Compare Fields;Compare Fields;Comparer les champs;Felder vergleichen;Confronta i campi;Comparar campos;Comparar campos
+Condition Block;Condition Block;Bloc d'état;Bedingungsblock;Blocco delle condizioni;Bloco de Condição;Bloque de condición
+Confirm;Confirm;Confirmer;Bestätigen;Confermare;confirme;Confirmar
+Created Processes;Created Processes;Processus créés;Erstellte Prozesse;Processi creati;Processos Criados;Procesos creados
+Created Time:;Created Time:;Temps créé:;Erstellte Zeit:;Tempo creato:;Tempo criado:;Hora creada:
+Creation Day;Creation Day;Jour de la création;Schöpfungstag;Giorno della creazione;Dia da criação;Día de la creación
+Creation of Processes in Calendar;Creation of Processes in Calendar;Création de processus dans le calendrier;Erstellen von Prozessen im Kalender;Creazione di processi in calendario;Criação de Processos no Calendário;Creación de procesos en el calendario
+Current Dashboards;Current Dashboards;Tableaux de bord actuels;Aktuelle Dashboards;Cruscotti correnti;Painéis atuais;Tableros actuales
+Current Tasks;Current Tasks;Tâches actuelles;Aktuelle Aufgaben;Attività correnti;Tarefas atuais;Tareas actuales
+Current Tasks by Type;Current Tasks by Type;Tâches actuelles par type;Aktuelle Aufgaben nach Typ;Attività correnti per tipo;Tarefas atuais por tipo;Tareas actuales por tipo
+Dashboards;Dashboards;Tableaux de bord;Dashboards;cruscotti;Dashboards;Dashboards
+Date Groups;Date Groups;Groupes de dates;Datumsgruppen;Gruppi di date;Grupos de datas;Grupos de fechas
+Day;Day;journée;Tag;Giorno;Dia;Día
+Delete Chart;Delete Chart;Supprimer le graphique;Diagramm löschen;Elimina grafico;Excluir gráfico;Eliminar gráfico
+Distribution;Distribution;Distribution;Verteilung;Distribuzione;Distribuição;Distribución
+Distribution of BPM Process Definitions;Distribution of BPM Process Definitions;Distribution des définitions de processus BPM;Verteilung von BPM-Prozessdefinitionen;Distribuzione delle definizioni di processo BPM;Distribuição das definições do processo de BPM;Distribución de las definiciones de proceso BPM
+Distribution of BPM Process Instances;Distribution of BPM Process Instances;Distribution des instances de processus BPM;Verteilung von BPM-Prozessinstanzen;Distribuzione delle istanze di processo BPM;Distribuição de instâncias de processos de BPM;Distribución de instancias de proceso BPM
+Draw Chart;Draw Chart;Diagramme de tirage;Diagramm zeichnen;Disegna il grafico;Desenhar gráfico;Dibujar tabla
+End;End;Fin;Ende;Fine;Fim;Fin
+End Time;End Time;Heure de fin;Endzeit;Fine del tempo;Fim do tempo;Hora de finalización
+Field;Field;Champ;Feld;Campo;Campo;Campo
+Field Evolution;Field Evolution;Evolution du terrain;Feld Entwicklung;Field Evolution;Evolução de Campo;Evolución de campo
+Field Name;Field Name;Nom de domaine;Feldname;Nome del campo;Nome do campo;Nombre del campo
+Field Value;Field Value;Valeur du champ;Feldwert;Valore di campo;Valor do Campo;Valor de campo
+Field Value Distribution;Field Value Distribution;Distribution de la valeur du champ;Feld Wert Verteilung;Field Value Distribution;Distribuição de valor de campo;Distribución del valor de campo
+Field Value Evolution;Field Value Evolution;Evolution de la valeur du champ;Feld Wert Evolution;Field Value Evolution;Evolução do valor do campo;Evolución del valor de campo
+Fields Comparison;Fields Comparison;Comparaison des champs;Vergleich der Felder;Confronto campi;Comparação de Campos;Comparación de campos
+Finished Tasks;Finished Tasks;Tâches terminées;Beendete Aufgaben;Attività finite;Tarefas Concluídas;Tareas terminadas
+Finished Tasks (;Finished Tasks (;Tâches terminées (;Beendete Aufgaben (;Attività finite (;Tarefas Concluídas (;Tareas terminadas (
+Finished Tasks by Type;Finished Tasks by Type;Tâches terminées par type;Beendete Aufgaben nach Typ;Attività completate per tipo;Tarefas concluídas por tipo;Tareas terminadas por tipo
+Forms;Forms;Formes;Formen;Forme;Formulários;Formularios
+Friday;Friday;Vendredi;Freitag;Venerdì;Sexta-feira;viernes
+From:;From:;De:;Von:;A partire dal:;A partir de:;De:
+Global;Global;Global;Global;Globale;Global;Global
+Global Charts;Global Charts;Graphiques globaux;Globale Diagramme;Grafici globali;Gráficos Globais;Gráficos globales
+Heat Map;Heat Map;Carte de chaleur;Wärmekarte;Mappa di calore;Mapa de calor;Mapa de calor
+Incorrect User or Password (;Incorrect User or Password (;Utilisateur ou mot de passe incorrect (;Falscher Benutzer oder Passwort (;Utente o password errati (;Usuário ou Senha Incorreta (;Usuario o contraseña incorrecta (
+Instances;Instances;Instances;Instanzen;istanze;Instâncias;Instancias
+Login;Login;S'identifier;Anmeldung;Accesso;Entrar;Iniciar sesión
+Logout from Application;Logout from Application;Déconnexion de l'application;Aus der Anwendung abmelden;Disconnetti dall'applicazione;Logout do aplicativo;Salir de la aplicación
+Monday;Monday;Lundi;Montag;Lunedi;Segunda-feira;lunes
+Month;Month;Mois;Monat;Mese;Mês;Mes
+Multi Field Value Evolution;Multi Field Value Evolution;Evolution de la valeur multi-champs;Multi-Feld-Wert-Entwicklung;Multi Field Value Evolution;Evolução do valor de múltiplos campos;Evolución del valor de campo múltiple
+Multiple Fields;Multiple Fields;Plusieurs champs;Mehrere Felder;Campi multipli;Múltiplos Campos;Campos múltiples
+My Charts;My Charts;Mes graphiques;Meine Karten;Le mie carte;Meus gráficos;Mis Gráficos
+My Saved Charts;My Saved Charts;Mes graphiques sauvegardés;Meine gespeicherten Diagramme;I miei grafici salvati;Meus gráficos salvos;Mis gráficos guardados
+New Dashboard;New Dashboard;Nouveau tableau de bord;Neues Dashboard;Nuovo dashboard;Novo painel;Nuevo tablero de instrumentos
+No;No;Non;Nein;No;Não;No
+Number of Tasks;Number of Tasks;Nombre de tâches;Anzahl der Aufgaben;Numero di attività;Número de Tarefas;Cantidad de tareas
+Number of Users;Number of Users;Nombre d'utilisateurs;Anzahl der Nutzer;Numero di utenti;Número de usuários;Número de usuarios
+Occurrences;Occurrences;Les occurrences;Vorkommen;Presenze;Ocorrências;Ocurrencias
+Old Dashboards;Old Dashboards;Vieux tableaux de bord;Alte Dashboards;Dashboard vecchi;Painéis antigos;Tableros antiguos
+Password;Password;Mot de passe;Passwort;Parola d'ordine;Senha;Contraseña
+Pie Chart;Pie Chart;Camembert;Kuchendiagramm;Grafico a torta;Gráfico de pizza;Gráfico circular
+Possible Tasks;Possible Tasks;Tâches possibles;Mögliche Aufgaben;Possibili compiti;Tarefas Possíveis;Tareas posibles
+Possible Tasks in this Role;Possible Tasks in this Role;Tâches possibles dans ce rôle;Mögliche Aufgaben in dieser Rolle;Possibili compiti in questo ruolo;Possíveis tarefas nesta função;Posibles tareas en este rol
+Possible Tasks per Role (total: ;Possible Tasks per Role (total: ;Tâches possibles par rôle (total:;Mögliche Aufgaben pro Rolle (insgesamt:;Attività possibili per ruolo (totale:;Tarefas possíveis por função (total:;Tareas posibles por rol (total:
+Process;Process;Processus;Verarbeiten;Processi;Processo;Proceso
+Process Definition;Process Definition;Définition du processus;Prozessdefinition;Definizione del processo;Definição de Processo;Definición del proceso
+Process Definitions;Process Definitions;Définitions de processus;Prozessdefinitionen;Definizioni di processo;Definições de Processos;Definiciones de proceso
+Process Instances;Process Instances;Instances de processus;Prozessinstanzen;Istanze di processo;Instâncias de processo;Instancias de proceso
+Process Instances - Grouped;Process Instances - Grouped;Instances de processus - groupées;Prozessinstanzen - gruppiert;Istanze di processo - Raggruppate;Instâncias de processo - agrupadas;Instancias de proceso - Agrupadas
+Process Name;Process Name;Nom du processus;Prozessname;Nome del processo;Nome do processo;Nombre del proceso
+Process Name:;Process Name:;Nom du processus:;Prozessname:;Nome del processo:;Nome do processo:;Nombre del proceso:
+Processes Average Time;Processes Average Time;Temps moyen des processus;Verarbeitet die durchschnittliche Zeit;Processa tempo medio;Tempo Médio dos Processos;Tiempo promedio de los procesos
+Processes Charts;Processes Charts;Graphiques des processus;Prozessdiagramme;Elabora i grafici;Gráficos de Processos;Gráficos de procesos
+Processes Distribution by Field Value;Processes Distribution by Field Value;Processus Distribution par valeur de champ;Verteilt die Verteilung nach Feldwert;Elabora la distribuzione in base al valore del campo;Distribuição de processos por valor de campo;Procesos de distribución por valor de campo
+Query Block;Query Block;Bloc d'interrogation;Abfrageblock;Blocco di query;Bloco de Consulta;Bloque de consulta
+Report Creator:;Report Creator:;Créateur du rapport:;Bericht-Ersteller:;Segnala Creatore:;Criador do relatório:;Creador de informes:
+Role;Role;Rôle;Rolle;Ruolo;Função;Papel
+Role Name;Role Name;Nom de rôle;Rollenname;Nome del ruolo;Nome do papel;Nombre de rol
+Roles Charts;Roles Charts;Roles Charts;Rollen Diagramme;Classi dei ruoli;Gráficos de Funções;Gráficos de roles
+Saturday;Saturday;samedi;Samstag;Sabato;sábado;sábado
+Save Chart;Save Chart;Enregistrer le graphique;Diagramm speichern;Salva grafico;Salvar gráfico;Guardar gráfico
+Scope: Application;Scope: Application;Portée: Application;Geltungsbereich: Anwendung;Ambito: applicazione;Âmbito: aplicação;Alcance: Aplicación
+Scope: Application Role;Scope: Application Role;Portée: Rôle d'application;Bereich: Anwendungsrolle;Ambito: ruolo dell'applicazione;Âmbito: Função de Aplicação;Alcance: función de aplicación
+Scope: Application Role [;Scope: Application Role [;Portée: Rôle d'application [;Scope: Anwendungsrolle [;Ambito: ruolo dell'applicazione [;Escopo: Função de aplicativo [;Alcance: Rol de aplicación [
+Scope: Global;Scope: Global;Portée: Global;Geltungsbereich: Global;Ambito: globale;Âmbito: global;Alcance: Global
+Scope: User;Scope: User;Portée: Utilisateur;Umfang: Benutzer;Ambito: utente;Âmbito: usuário;Alcance: Usuario
+Search Chart Report;Search Chart Report;Rapport de graphique de recherche;Diagrammbericht durchsuchen;Rapporto del grafico di ricerca;Relatório do gráfico de pesquisa;Informe de gráfico de búsqueda
+Search Report;Search Report;Rapport de recherche;Suchbericht;Rapporto di ricerca;Relatório de pesquisa;Informe de búsqueda
+Show Chart;Show Chart;Afficher le graphique;Diagramm anzeigen;Mostra grafico;Mostrar gráfico;Mostrar gráfico
+Show Hide Search Area;Show Hide Search Area;Afficher la zone de recherche;Zeige Suchbereich ausblenden;Mostra Nascondi area di ricerca;Mostrar Ocultar Área de Pesquisa;Mostrar Ocultar área de búsqueda
+Spline Area Chart;Spline Area Chart;Diagramme de zone spline;Spline-Bereich Diagramm;Diagramma di area spline;Gráfico de área do spline;Gráfico de área de spline
+Start;Start;Début;Anfang;Inizio;Começar;comienzo
+Start Time;Start Time;Heure de début;Startzeit;Ora di inizio;Hora de início;Hora de inicio
+Summatory;Summatory;Sommation;Zusammenfassend;sommatoria;Resumo;Summatory
+Sunday;Sunday;dimanche;Sonntag;Domenica;domingo;domingo
+System Charts;System Charts;Graphiques du système;Systemdiagramme;Grafici di sistema;Gráficos do sistema;Gráficos del sistema
+System Saved Charts;System Saved Charts;Diagrammes sauvegardés par le système;System gespeicherte Diagramme;Dati salvati di sistema;Gráficos salvas do sistema;Gráficos guardados del sistema
+Task Distribution per Role;Task Distribution per Role;Répartition des tâches par rôle;Aufgabenverteilung pro Rolle;Distribuzione delle attività per ruolo;Distribuição de tarefas por função;Distribución de tareas por rol
+Task Distribution per Role (;Task Distribution per Role (;Répartition des tâches par rôle (;Aufgabenverteilung pro Rolle (;Distribuzione delle attività per ruolo (;Distribuição de Tarefas por Função (;Distribución de tareas por rol (
+Task Name;Task Name;Nom de la tâche;Aufgabennname;Nome dell'attività;Nome da tarefa;Nombre de la tarea
+Tasks;Tasks;les tâches;Aufgaben;Compiti;Tarefas;Tareas
+Tasks Average Time;Tasks Average Time;Tâches Durée moyenne;Aufgaben Durchschnittliche Zeit;Attività Tempo medio;Tempo Médio das Tarefas;Tiempo promedio de las tareas
+Thursday;Thursday;Jeudi;Donnerstag;giovedi;Quinta-feira;jueves
+Time;Time;Temps;Zeit;Tempo;Tempo;Hora
+Time (s);Time (s);Heure (s);Zeit (en);Tempo (s);Tempo (s);Tiempo (s)
+Time to Build:;Time to Build:;Temps de construction:;Zeit zu bauen:;Tempo di costruire:;Hora de construir:;Tiempo de construir:
+To:;To:;À:;Zu:;A:;Para:;A:
+Toggle Lateral List;Toggle Lateral List;Activer / Désactiver la liste latérale;Toggle Seitliche Liste;Attiva / disattiva lista laterale;Alternar lista lateral;Alternar lista lateral
+Total: ;Total: ;Total:;Gesamt:;Totale:;Total:;Total:
+Tuesday;Tuesday;Mardi;Dienstag;martedì;terça;martes
+Unassigned Tasks;Unassigned Tasks;Tâches non attribuées;Nicht zugewiesene Aufgaben;Attività non assegnate;Tarefas não atribuídas;Tareas no asignadas
+Unassigned Tasks per Role (;Unassigned Tasks per Role (;Tâches non attribuées par rôle (;Nicht zugewiesene Aufgaben pro Rolle (;Attività non assegnate per ruolo (;Tarefas não atribuídas por função (;Tareas no asignadas por rol (
+User;User;Utilisateur;Benutzer;Utente;Do utilizador;Usuario
+User Average Time per Task;User Average Time per Task;Temps moyen par utilisateur par tâche;Durchschnittliche Benutzerzeit pro Aufgabe;Tempo medio dell'utente per attività;Tempo médio do usuário por tarefa;Tiempo promedio del usuario por tarea
+User Charts;User Charts;Graphiques utilisateur;Benutzerkarten;Grafici utente;Gráficos do usuário;Gráficos de usuario
+User Login;User Login;Utilisateur en ligne;Benutzer-Anmeldung;Login utente;Login de usuário;Inicio de sesión de usuario
+Users;Users;Utilisateurs;Benutzer;utenti;Comercial;Usuarios
+Users Charts;Users Charts;Graphiques utilisateurs;Benutzerdiagramme;Grafici utenti;Gráficos de Usuários;Gráficos de usuarios
+Users Distribution per Role (;Users Distribution per Role (;Distribution des utilisateurs par rôle (;Benutzerverteilung pro Rolle (;Distribuzione degli utenti per ruolo (;Distribuição de usuários por função (;Distribución de usuarios por rol (
+Users in Time;Users in Time;Utilisateurs à temps;Benutzer in der Zeit;Utenti nel tempo;Usuários no tempo;Usuarios en el tiempo
+Users in Time (;Users in Time (;Utilisateurs dans le temps (;Benutzer in der Zeit (;Utenti nel tempo (;Usuários no tempo (;Usuarios en el tiempo (
+Value Occurrences;Value Occurrences;Occurrences de valeur;Wertvorkommen;Occorrenze di valore;Ocorrências de valor;Ocurrencias de valor
+Version;Version;Version;Ausführung;Versione;Versão;Versión
+View Fields;View Fields;Champs d'affichage;Felder anzeigen;Visualizza campi;Visualizar campos;Ver campos
+Wednesday;Wednesday;Mercredi;Mittwoch;mercoledì;Quarta-feira;miércoles
+Week;Week;La semaine;Woche;Settimana;Semana;Semana
+Year;Year;An;Jahr;Anno;Ano;Año
+Yes;Yes;Oui;Ja;sì;sim;Sí
