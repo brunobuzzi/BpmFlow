@@ -3,8 +3,11 @@ getValueDistributionForFieldCollection: fieldInstancesCollection from: startDate
 	"Answera Dictionary where the key is a value of field <fieldName> and value is a quantity in the whole collection <fieldInstancesCollection>"
 	| filteredCollection |
 
-	filteredCollection := fieldInstancesCollection select: [:fieldInst | (startDate <= fieldInst parentObject createdTime) 
-																							and: [(fieldInst parentObject createdTime <= endDate)
-																							and: [formConditionBlock asBpmBlock value: fieldInst parentObject]]].
+	filteredCollection := (GsQuery fromString: ('(each.parentObject.createdTime >= startDate) & (each.parentObject.createdTime <= endDate)') on: fieldInstancesCollection) 
+		bind: 'startDate' to: startDate; 
+		bind: 'endDate' to: endDate; 
+		queryResult.
+
+	filteredCollection := filteredCollection select: [:fieldInst | formConditionBlock asBpmBlock value: fieldInst parentObject].
 
 	^self getValueDistributionForFieldCollection: filteredCollection

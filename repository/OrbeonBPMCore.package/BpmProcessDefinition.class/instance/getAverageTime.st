@@ -1,7 +1,8 @@
 distribution
 getAverageTime
+	"The receiver answer the average time in seconds to execute an instance of itself "
 	| totalTime |
 
-	totalTime := processInstances inject: 0 into: [:sum :each | sum + each getTotalTime asSeconds].
+	totalTime := processInstancesSet inject: 0 into: [:sum :each | sum + each getTotalTime asSeconds].
 
-	^(totalTime / processInstances size) asScaledDecimal: 2
+	^(totalTime / processInstancesSet size) asScaledDecimal: 2

@@ -1,5 +1,7 @@
 distribution
 getAverageTimeForAllTasks
+	"The receiver answer the average time in seconds to execute all tasks.
+	Answer <aDictionary> where the key is the name of the task and the value is the average time in seconds"
 	| distribution |
 
 	distribution := OrderPreservingDictionary new.
