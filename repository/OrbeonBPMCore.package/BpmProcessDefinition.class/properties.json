@@ -21,7 +21,8 @@
 		"xmlString",
 		"abortedProcesses",
 		"assignationPolicy",
-		"isImmutable" ],
+		"isImmutable",
+		"processInstancesSet" ],
 	"name" : "BpmProcessDefinition",
 	"pools" : [
 		 ],

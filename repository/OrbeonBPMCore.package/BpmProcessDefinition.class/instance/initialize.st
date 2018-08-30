@@ -14,3 +14,4 @@ initialize
 	abortedProcesses := RcIdentityBag new.
 	assignationPolicy := BpmNoneAssignationPolicy newOn: self.
 	isImmutable := false.
+	processInstancesSet := RcIdentityBag new.
