@@ -7,8 +7,8 @@ getValueSumEvolutionForFieldNamed: fieldName from: startTimeStamp to: endTimeSta
  
 	distribution := Dictionary new.
 
-	processCollection := (processInstances select: [:each | startTimeStamp <= each createdTime and: [each createdTime <= endTimeStamp]]) asSortedCollection: [:a :b | a createdTime <= b createdTime].
-	processCollection := processCollection  select: aBlock.
+	processCollection := (self getProcessInstancesCreatedFrom: startTimeStamp asDate to: endTimeStamp asDate) asSortedCollection: [:a :b | a createdTime <= b createdTime].
+	processCollection := processCollection select: aBlock.
 
 	processCollection do: [:procInstance |  | fieldValues |
 		fieldValues := procInstance getValuesOfProcessField: fieldName.
