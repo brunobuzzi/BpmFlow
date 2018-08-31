@@ -16,8 +16,8 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Process Categories' command: #openProcessCategoryManager);
 		addItem: (SewafCommandItem label: 'Cancelled Processes' command: #openCancelledProcessViewer);
 		yourself.
-	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #forms32Png)
-		set24Icon: #forms24Png;
+	subMenu2 := (SewafSubMenuItem label: 'Applications' icon: #package32Png)
+		set24Icon: #package24Png;
 		addItem: (SewafCommandItem label: 'Manage Applications' command: #openApplicationManager);
 		addItem: (SewafCommandItem label: 'Available Orbeon Forms' command: #openFormManager);
 		yourself.
