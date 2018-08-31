@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ApplicationWithBpmEnvironmentException",
+	"pools" : [
+		 ],
+	"super" : "OrbeonBpmException",
+	"type" : "normal" }

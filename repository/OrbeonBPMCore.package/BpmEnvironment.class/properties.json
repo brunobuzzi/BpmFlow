@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"applications" ],
+	"name" : "BpmEnvironment",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"cache" : "brunobb 08/31/2018 08:19" },
+	"instance" : {
+		"includesApplication:" : "brunobb 08/31/2018 08:25",
+		"includesApplicationName:" : "brunobb 08/31/2018 08:36",
+		"initialize" : "brunobb 08/31/2018 08:18",
+		"registerApplication:" : "brunobb 08/31/2018 08:35",
+		"unregisterApplication:" : "brunobb 08/31/2018 08:37" } }
