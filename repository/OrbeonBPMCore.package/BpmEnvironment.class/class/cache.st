@@ -1,6 +1,6 @@
 other
 cache
 
-	Cache ifNil: [Cache := OrderedCollection new]. 
+	Cache ifNil: [Cache := Set new]. 
 
 	^Cache
