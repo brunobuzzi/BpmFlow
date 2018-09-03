@@ -7,6 +7,8 @@ tryLogin
 
 	logedUser := BpmUser getExistingOrNewUserNamed: name.
 
+	(logedUser getEnvironments anySatisfy: [:each | each == self session bpmEnvironment]) ifFalse: [^loginAttempts := loginAttempts + 1].
+
 	self session user: logedUser.
 
 	self setLanguage.

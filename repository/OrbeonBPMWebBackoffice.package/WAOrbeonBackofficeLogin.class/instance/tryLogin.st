@@ -9,6 +9,8 @@ tryLogin
 
 	logedUser isBackofficeUser ifFalse: [^loginAttempts := loginAttempts + 1].
 
+	(logedUser getEnvironments anySatisfy: [:each | each == self session bpmEnvironment]) ifFalse: [^loginAttempts := loginAttempts + 1].
+
 	self session user: logedUser. 
 
 	self setLanguage.
