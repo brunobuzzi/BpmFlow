@@ -1,12 +1,18 @@
 {
 	"class" : {
 		"cache" : "brunobb 08/31/2018 08:50",
-		"initializeCache" : "brunobb 08/31/2018 08:51" },
+		"initializeCache" : "brunobb 08/31/2018 08:51",
+		"newNamed:" : "brunobb 08/31/2018 11:10" },
 	"instance" : {
-		"addToCache" : "brunobb 08/31/2018 08:48",
+		"addToCache" : "brunobb 08/31/2018 11:09",
+		"applications" : "brunobb 08/31/2018 11:11",
+		"applications:" : "brunobb 08/31/2018 11:11",
+		"canDelete" : "brunobb 08/31/2018 11:51",
 		"includesApplication:" : "brunobb 08/31/2018 08:25",
 		"includesApplicationName:" : "brunobb 08/31/2018 08:36",
 		"initialize" : "brunobb 08/31/2018 08:18",
+		"name" : "brunobb 08/31/2018 11:11",
+		"name:" : "brunobb 08/31/2018 11:11",
 		"registerApplication:" : "brunobb 08/31/2018 08:35",
 		"removeFromCache" : "brunobb 08/31/2018 08:49",
 		"unregisterApplication:" : "brunobb 08/31/2018 08:37" } }

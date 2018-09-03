@@ -4,7 +4,7 @@ renderOn: html
 	html div "class: 'jquery-dialog-yes-no';" with: [
 		html form with: [
 			html fieldSet with: [
-				html legend: 'New Application'.
+				html legend: ('New Application' translateFor: self session user).
 				html label for: 'app-name'; with: ('Application Name' translateFor: self session user).
 				html textInput id: 'app-name'; callback: [:value | self addValue: value named: 'appName']. 
 				html div class: 'top-search-div margin-top-20px width-120px'; with: [

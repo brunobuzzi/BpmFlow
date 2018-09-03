@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmEnvironmentAlreadyExistException",
+	"pools" : [
+		 ],
+	"super" : "OrbeonBpmException",
+	"type" : "normal" }

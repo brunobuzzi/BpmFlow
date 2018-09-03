@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getCurrentCollection" : "brunobb 08/31/2018 11:01",
+		"getIconNameFormItem" : "brunobb 08/31/2018 11:48",
+		"getTextForItem:" : "brunobb 08/31/2018 11:49",
+		"gitbookUrl" : "brunobb 08/31/2018 11:49",
+		"initialize" : "brunobb 08/31/2018 12:06",
+		"removeEnvironment" : "brunobb 08/31/2018 11:53",
+		"renderAddApplicationToEnvironmentOn:" : "brunobb 08/31/2018 12:29",
+		"renderAddEnvironmentOn:" : "brunobb 08/31/2018 11:59",
+		"renderDeleteEnvironmentOn:" : "brunobb 08/31/2018 11:53",
+		"renderItemComponentOn:" : "brunobb 08/31/2018 12:12",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 08/31/2018 11:49",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 08/31/2018 11:50",
+		"renderItemDescriptionTitleOn:" : "brunobb 08/31/2018 11:51",
+		"renderLateralItemDetailsOn:for:" : "brunobb 08/31/2018 12:00",
+		"renderSearchAreaOn:" : "brunobb 08/31/2018 10:58",
+		"renderSearchEnvironmentOn:" : "brunobb 08/31/2018 10:59",
+		"renderSearchSubmitButtonOn:" : "brunobb 08/31/2018 11:02",
+		"searchMatchingEnvironments" : "brunobb 08/31/2018 11:03" } }

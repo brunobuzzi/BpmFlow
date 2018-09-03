@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WANewEnvironmentPopupComponent",
+	"pools" : [
+		 ],
+	"super" : "SewafPopupComponent",
+	"type" : "normal" }

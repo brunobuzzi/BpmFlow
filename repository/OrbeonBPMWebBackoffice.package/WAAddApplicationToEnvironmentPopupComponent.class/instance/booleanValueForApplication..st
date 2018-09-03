@@ -1,0 +1,4 @@
+other
+booleanValueForApplication: anApplication
+
+	^false
