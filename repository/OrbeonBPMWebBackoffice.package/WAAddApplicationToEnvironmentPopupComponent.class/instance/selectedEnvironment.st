@@ -1,0 +1,4 @@
+other
+selectedEnvironment
+
+	^parent selectedLateralItem

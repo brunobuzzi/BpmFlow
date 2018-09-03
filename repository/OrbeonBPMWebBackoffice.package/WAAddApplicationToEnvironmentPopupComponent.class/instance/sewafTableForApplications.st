@@ -8,7 +8,7 @@ sewafTableForApplications
 		buttonLabel: ('Assign and Close' translateFor: self session user);
 		booleanSelector: #booleanValueForApplication:;
 		callbackSelector: #modifyApplication:value:;
-		rows: AbstractApplication cache asOrderedCollection; 
+		rows: self getAvailableApplications; 
 		columns: (OrderedCollection new  
 						add: (SewafReportColumn selector: #applicationName title: 'Application');
 						add: (SewafReportColumn selector: #printType title: 'Type');

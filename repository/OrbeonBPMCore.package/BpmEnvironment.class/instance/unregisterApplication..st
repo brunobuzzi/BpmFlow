@@ -5,4 +5,5 @@ unregisterApplication: anApplication
 	anApplication hasBpmEnvironment 
 	ifFalse: [^ApplicationWithBpmEnvironmentException signal: 'The Application named [', anApplication applicationName,'] has no BPM Environment'].
 
+	anApplication bpmEnvironment: nil. 
 	^applications removeKey: anApplication applicationName

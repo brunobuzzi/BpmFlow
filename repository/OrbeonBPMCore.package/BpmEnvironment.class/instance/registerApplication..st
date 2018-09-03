@@ -5,4 +5,5 @@ registerApplication: anApplication
 	anApplication hasBpmEnvironment 
 	ifTrue: [^ApplicationWithBpmEnvironmentException signal: 'The Application named [', anApplication applicationName,'] is already included in the BPM environment named [', anApplication environmentName, ']'].
 
+	anApplication bpmEnvironment: self. 
 	^applications at: anApplication applicationName put: anApplication

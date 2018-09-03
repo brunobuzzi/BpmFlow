@@ -5,4 +5,4 @@ createEnviroment
 	envName := self componentValueAt: 'envName'.
 	(envName isNil or: [envName isEmpty]) ifTrue: [^self].
 
-	(BpmEnvironment newNamed: envName) addToCache.
+	BpmEnvironment getExistingEnvironmentOrCreateNewNamed: envName

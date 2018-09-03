@@ -1,6 +1,9 @@
 {
 	"class" : {
 		"cache" : "brunobb 08/31/2018 08:50",
+		"getEnvironmentNamed:ifNone:" : "brunobb 09/03/2018 08:16",
+		"getExistingEnvironmentOrCreateNewNamed:" : "brunobb 09/03/2018 08:17",
+		"includesEnvironmentNamed:" : "brunobb 09/03/2018 08:11",
 		"initializeCache" : "brunobb 08/31/2018 08:51",
 		"newNamed:" : "brunobb 08/31/2018 11:10" },
 	"instance" : {
@@ -13,6 +16,6 @@
 		"initialize" : "brunobb 08/31/2018 08:18",
 		"name" : "brunobb 08/31/2018 11:11",
 		"name:" : "brunobb 08/31/2018 11:11",
-		"registerApplication:" : "brunobb 08/31/2018 08:35",
+		"registerApplication:" : "brunobb 09/03/2018 09:13",
 		"removeFromCache" : "brunobb 08/31/2018 08:49",
-		"unregisterApplication:" : "brunobb 08/31/2018 08:37" } }
+		"unregisterApplication:" : "brunobb 09/03/2018 09:03" } }
