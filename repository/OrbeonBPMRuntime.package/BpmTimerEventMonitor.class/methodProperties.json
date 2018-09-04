@@ -5,8 +5,7 @@
 		"initializeDefault" : "brunobb 09/03/2017 14:02" },
 	"instance" : {
 		"getAllIntermediateTimerEvents" : "brunobb 02/09/2018 10:09",
-		"getAllIntermediateTimerEventsIn:" : "brunobb 02/09/2018 09:28",
-		"getAllIntermediateTimerEventsIn:processName:" : "brunobb 02/09/2018 09:29",
+		"getAllIntermediateTimerEventsIn:" : "brunobb 09/04/2018 09:13",
 		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:11",
 		"getAllTimerEventsForProcessCreation" : "brunobb 02/09/2018 10:19",
 		"getFirstComparisionTimeStamp" : "brunobb 02/13/2018 15:02",

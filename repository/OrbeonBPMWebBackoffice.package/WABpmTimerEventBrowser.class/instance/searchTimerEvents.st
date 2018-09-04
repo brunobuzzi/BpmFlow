@@ -9,5 +9,5 @@ searchTimerEvents
 	procName := self searchValueAt: 'process-type' ifAbsent: [''].
 
 	searchResult := self isTimerTypeCreation
-							ifTrue: [self session user getAllProcessDefinition select: [:each | each hasCreationTimer] ] 
-							ifFalse: [self defaultTimerEventMonitor getAllIntermediateTimerEvents].
+							ifTrue: [(self session user getAllProcessDefinitionIn: self session bpmEnvironment) select: [:each | each hasCreationTimer] ] 
+							ifFalse: [self defaultTimerEventMonitor getAllIntermediateTimerEventsIn: self session bpmEnvironment].
