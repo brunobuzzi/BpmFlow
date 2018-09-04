@@ -1,4 +1,4 @@
 subcomponents
 getDefinitionCollection
 
-	^self session user getAllProcessDefinition
+	^self session user getAllProcessDefinitionIn: self session bpmEnvironment
