@@ -8,7 +8,7 @@ searchProcessId
 	id := [Integer fromString: (searchValues at: 'id')] on: Error do: [:err | 0].
 
 	contextApplications := 
-		(self session user getBackofficeApplications 
+		((self session user getBackofficeApplicationsIn: self session bpmEnvironment)
 			collect: [:each | 
 				BpmProcessDefinition cacheAt: each applicationName ifAbsent: [nil]]) 
 		select: [:each | each notNil].
