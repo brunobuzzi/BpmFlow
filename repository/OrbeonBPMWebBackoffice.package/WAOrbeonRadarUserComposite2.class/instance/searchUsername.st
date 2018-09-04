@@ -7,4 +7,4 @@ searchUsername
 
 	username := searchValues at: 'username' ifAbsent: ''.
 
-	usersBatchedList items: (self session user getVisibleUsers select: [:each | username match: each username]).
+	usersBatchedList items: ((self session user getVisibleUsersIn: self session bpmEnvironment) select: [:each | username match: each username]).
