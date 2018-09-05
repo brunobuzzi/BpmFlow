@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"downloadSystemRoleStructure" : "BrunoBB 06/20/2016 10:14",
+		"downloadSystemRoleStructure" : "brunobb 09/05/2018 09:11",
 		"gitbookUrl" : "brunobb 07/13/2018 11:09",
 		"initialize" : "BrunoBB 06/19/2016 16:58",
 		"initializeBatchedLists" : "BrunoBB 06/19/2016 16:58",
-		"initializeSewafTableForGrantConfiguration" : "BrunoBB 06/19/2016 16:32",
+		"initializeSewafTableForGrantConfiguration" : "brunobb 09/05/2018 09:11",
 		"renderCSVDownloadOn:" : "BrunoBB 06/19/2016 17:54",
-		"renderContentOn:" : "BrunoBB 06/20/2016 10:15",
+		"renderContentOn:" : "brunobb 09/05/2018 09:12",
 		"renderDownloadComponentOn:" : "BrunoBB 07/23/2016 16:25",
 		"renderHelpOn:" : "BrunoBB 06/19/2016 17:34" } }
