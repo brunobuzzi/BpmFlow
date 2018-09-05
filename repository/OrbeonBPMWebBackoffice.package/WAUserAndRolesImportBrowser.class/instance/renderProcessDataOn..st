@@ -1,7 +1,7 @@
 other
 renderProcessDataOn: html
 
-	componentValues notEmpty
+	fileRows notEmpty
 	ifTrue: [
 		html submitButton class: 'display-block';
 				callback: [self importConfiguration]; 

@@ -1,12 +1,12 @@
 other
 importCSVString: csvString
 	"The receiver separate the contents of <csvString> by String lf.  
-	And each line is put as aString in <componentValues> variable.
+	And each line is put as aString in <fileRows> variable.
 	key: 1 value: first line, key: n value: line n
 	Each line is separated by ';' "
 	| rows |
 
-	self initializeComponentValues.
+	fileRows := Dictionary new.
 	rows := csvString subStrings: String lf.
 	(rows size = 1) ifTrue: [^self sewafTableForImportedData information: 'Wrong File Format' color: 'red'].
 	"first row are titles"
@@ -16,8 +16,8 @@ importCSVString: csvString
 		keysAndValuesDo: [:key :eachRow | | csvValues |
 			csvValues := eachRow subStrings: ';'.
 			(csvValues size = 5)
-			ifTrue: [self addValue: eachRow named: key]
-			ifFalse: [self initializeComponentValues.
+			ifTrue: [fileRows at: key put: eachRow]
+			ifFalse: [fileRows := Dictionary new.
 				^self sewafTableForImportedData information: 'Wrong File Format' color: 'red'].
 		].
 

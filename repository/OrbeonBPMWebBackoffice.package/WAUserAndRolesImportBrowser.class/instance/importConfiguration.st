@@ -1,11 +1,11 @@
 other
 importConfiguration
-	"The receiver iterate over instance variable <componentValues>. <eachRow> is line where values are separated by ';'.
+	"The receiver iterate over instance variable <fileRows>. <eachRow> is line where values are separated by ';'.
 	1- application name, 2- application type, 3- role name, 4- role type, 5- user name"
 	| configurations application |
 
 	configurations := OrderedCollection new.
-	componentValues do: [:eachRow | | csvData app appType user role roleType |
+	fileRows do: [:eachRow | | csvData app appType user role roleType |
 		csvData := eachRow subStrings: ';'.
 		app := (csvData at: 1) trimBlanks.
 		appType := (csvData at: 2) trimBlanks.
