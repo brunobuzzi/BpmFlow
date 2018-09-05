@@ -5,7 +5,7 @@ getAllRolesIn: aBpmEnvironment
 
 	allRols := OrderedCollection new.
 
-	((BpmFrontOfficeRole cache asOrderedCollection, BpmBackofficeRole cache asOrderedCollection) select: [:each | each bpmEnvironment == aBpmEnvironment]) 
-		do: [:each | allRols addAll: each].
+	(BpmFrontOfficeRole cache asOrderedCollection, BpmBackofficeRole cache asOrderedCollection) 
+		do: [:eachCollection | allRols addAll: eachCollection].
 
-	^allRols
+	^allRols select: [:each | each bpmEnvironment == aBpmEnvironment]

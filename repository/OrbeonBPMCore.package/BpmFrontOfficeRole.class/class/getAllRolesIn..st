@@ -4,6 +4,6 @@ getAllRolesIn: aBpmEnvironment
 
 	allRols := OrderedCollection new.
 
-	self cache asOrderedCollection do: [:each | allRols addAll: each].
+	self cache asOrderedCollection do: [:eachCollection | allRols addAll: eachCollection].
 
 	^allRols select: [:each | each bpmEnvironment == aBpmEnvironment]

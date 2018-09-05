@@ -2,7 +2,7 @@
 	"class" : {
 		"createNewOrGetExisting:in:" : "BrunoBB 11/22/2015 15:11",
 		"getAllRoles" : "BrunoBB 04/23/2016 14:49",
-		"getAllRolesIn:" : "brunobb 09/04/2018 10:21",
+		"getAllRolesIn:" : "brunobb 09/04/2018 10:58",
 		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 05/31/2018 05:42",
 		"getRoleNamed:in:" : "BrunoBB 04/23/2016 14:44",
 		"getRolsInApp:" : "BrunoBB 04/23/2016 14:46",
