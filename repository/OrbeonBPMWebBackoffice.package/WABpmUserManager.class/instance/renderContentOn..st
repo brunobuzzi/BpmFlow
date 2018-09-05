@@ -14,7 +14,7 @@ renderContentOn: html
 
 		html div id: 'users-and-rols'; with: [
 				html div class: 'default-gray-table ';
-					with:[userRolesBatchedList items: selectedObject roles.
+					with:[userRolesBatchedList items: (selectedObject rolesIn: self session bpmEnvironment).
 							html render:  (userRolesBatchedList table: self sewafTableRolsOfUser).
 				]
 		]

@@ -15,5 +15,5 @@ renderContentOn: html
 							html render: (usersWithSelectedRoleBatchList table: self sewafTableUsersWithRol)].
 			selectedUser ifNotNil: [
 				html div id: 'user-rols'; class: 'default-gray-table ';
-					with:[rolesWithSelectedUserBatchList items: selectedUser roles.
+					with:[rolesWithSelectedUserBatchList items: (selectedUser rolesIn: self session bpmEnvironment).
 								html render: (rolesWithSelectedUserBatchList table: self sewafTableRolsOfUser).]]].
