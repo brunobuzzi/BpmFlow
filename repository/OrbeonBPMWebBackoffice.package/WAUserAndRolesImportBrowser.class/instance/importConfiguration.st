@@ -22,6 +22,7 @@ importConfiguration
 				role: (((roleType = 'F') ifTrue: [BpmFrontOfficeRole] ifFalse: [BpmBackofficeRole]) createNewOrGetExisting: role in: app)
 			).
 		].
-	importedConfigurationBatchList items: configurations.
 
-	"configurations do: [:each | each applyConfiguration]"
+	(configurations allSatisfy: [:eachConf| eachConf applicationHasEnvironment]) 
+	ifTrue: [importedConfigurationBatchList items: configurations]
+	ifFalse: [self sewafTableForImportedData information: 'There are Applications without Environments' color: 'red'.].
