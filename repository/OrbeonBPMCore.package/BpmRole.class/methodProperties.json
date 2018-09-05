@@ -5,6 +5,7 @@
 		"getAllRolesIn:" : "brunobb 09/04/2018 10:58",
 		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 05/31/2018 05:42",
 		"getRoleNamed:in:" : "BrunoBB 04/23/2016 14:44",
+		"getRolsIn:forApplication:" : "brunobb 09/05/2018 05:38",
 		"getRolsInApp:" : "BrunoBB 04/23/2016 14:46",
 		"getRolsInAppName:" : "BrunoBB 04/23/2016 14:46",
 		"hasRoleNamed:in:" : "BrunoBB 04/23/2016 14:48",
