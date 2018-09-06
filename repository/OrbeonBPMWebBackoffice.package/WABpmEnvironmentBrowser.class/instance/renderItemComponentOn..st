@@ -5,8 +5,8 @@ renderItemComponentOn: html
 	selectedLateralItem ifNil: [^self].
 
 	html div id: 'environment-applications'; with: [
+		html div id: 'enviroment-applications-title'; with: [html output: ('Applications' translateFor: self session user)].
 		self renderAddApplicationToEnvironmentOn: html.
-		html div id: 'enviroment-applications-title'; with: [html output: ('Applications' translateFor: self session user)]. 
 		point := 10@10.
 		self selectedLateralItem applications do: [:application |
 			self renderApplicationNameOn: html at: point application: application.
@@ -14,7 +14,7 @@ renderItemComponentOn: html
 	].
 
 	html div id: 'environment-users'; with: [
-		self renderAddUserToEnvironmentOn: html.
 		html div id: 'enviroment-users-title'; with: [html output: ('Users' translateFor: self session user)]. 
+		self renderAddUserToEnvironmentOn: html.
 		self renderUsersOfSelectedEnvironmentOn: html.
 	].

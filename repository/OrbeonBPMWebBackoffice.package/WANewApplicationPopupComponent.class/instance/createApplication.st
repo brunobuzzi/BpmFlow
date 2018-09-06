@@ -1,6 +1,6 @@
 other
 createApplication
-	| appClass appName |
+	| appClass appName newApplication |
 
 	appName := self componentValueAt: 'appName'.
 	(appName isNil or: [appName isEmpty]) ifTrue: [^self].
@@ -9,4 +9,6 @@ createApplication
 		ifNil: [^self]
 		ifNotNil: [:aBoolean | aBoolean ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]].
 
-	(appClass newNamed: appName) addToCache.
+	newApplication := (appClass newNamed: appName) addToCache.
+
+	[self session bpmEnvironment registerApplication: newApplication] on: Error do: [:ex | ].
