@@ -1,10 +1,13 @@
 {
 	"class" : {
-		"addCalendar:named:" : "BrunoBB 02/05/2017 11:51",
+		"addCalendar:" : "brunobb 09/06/2018 09:26",
 		"addDefaultCalendar" : "BrunoBB 02/05/2017 11:48",
-		"cache" : "BrunoBB 02/05/2017 11:43",
-		"default" : "BrunoBB 02/05/2017 11:44",
+		"addDefaultCalendarIn:" : "brunobb 09/06/2018 09:28",
+		"cache" : "brunobb 09/06/2018 09:24",
+		"defaultIn:" : "brunobb 09/06/2018 09:30",
 		"getCalendarNamedOrDefault:" : "BrunoBB 02/06/2017 06:51",
+		"getCalendarNamedOrDefault:in:" : "brunobb 09/06/2018 09:35",
+		"getCalendarsIn:" : "brunobb 09/06/2018 09:16",
 		"newExceptWeekEnds" : "BrunoBB 02/05/2017 11:45" },
 	"instance" : {
 		"addAllDaysNamed:ofYear:" : "BrunoBB 03/03/2017 12:45",
@@ -13,7 +16,9 @@
 		"addAllWeekEndsOf:" : "BrunoBB 03/03/2017 12:46",
 		"addExceptionDay:" : "BrunoBB 02/02/2017 03:56",
 		"addExceptionTimeFrom:to:" : "BrunoBB 02/13/2017 11:30",
-		"addToCache" : "BrunoBB 02/05/2017 11:54",
+		"addToCache" : "brunobb 09/06/2018 09:26",
+		"bpmEnvironment" : "brunobb 09/06/2018 08:55",
+		"bpmEnvironment:" : "brunobb 09/06/2018 08:55",
 		"days" : "BrunoBB 02/02/2017 03:48",
 		"days:" : "BrunoBB 02/02/2017 03:48",
 		"daysHistory" : "BrunoBB 02/05/2017 09:47",

@@ -1,5 +1,5 @@
 other
-value: value withCalendar: aBpmExceptionCalendar
+newValue: value withCalendar: aBpmExceptionCalendar
 
 	^super new initialize
 		value: value;

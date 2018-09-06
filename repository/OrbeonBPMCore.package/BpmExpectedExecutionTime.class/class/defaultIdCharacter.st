@@ -1,4 +1,4 @@
 other
-defaultCharacter
+defaultIdCharacter
 
 	self subclassResponsibility

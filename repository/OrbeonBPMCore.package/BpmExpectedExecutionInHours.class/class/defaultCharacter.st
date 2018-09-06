@@ -1,4 +1,0 @@
-other
-defaultCharacter
-
-	^$h

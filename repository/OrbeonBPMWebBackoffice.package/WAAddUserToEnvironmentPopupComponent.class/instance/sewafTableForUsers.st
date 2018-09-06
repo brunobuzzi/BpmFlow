@@ -4,7 +4,7 @@ sewafTableForUsers
 	| table column|
 
 	column := SewafReportColumn selector: #username title: ('Username' translateFor: self session user).
-	column beSortable; beSearchable; sortBlock: [:a :b | a username <= b username]. 
+	column sortBlock: [:a :b | a username <= b username]. 
 	table := (SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
 		backcolor: self session user userOptions getBooleanTableBackcolor;

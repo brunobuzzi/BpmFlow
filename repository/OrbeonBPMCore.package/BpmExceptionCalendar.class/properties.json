@@ -10,7 +10,8 @@
 		"days",
 		"hours",
 		"daysHistory",
-		"hoursHistory" ],
+		"hoursHistory",
+		"bpmEnvironment" ],
 	"name" : "BpmExceptionCalendar",
 	"pools" : [
 		 ],

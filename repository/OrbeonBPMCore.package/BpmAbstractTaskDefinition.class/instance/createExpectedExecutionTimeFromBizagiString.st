@@ -16,7 +16,7 @@ createExpectedExecutionTimeFromBizagiString
 	calendarName := arrayValues last.
 
 	expectedExecutionTime := (BpmExpectedExecutionTime getSubClassFor: timeType) 
-												value: value 
-												withCalendar: (BpmExceptionCalendar getCalendarNamedOrDefault: calendarName).
+												newValue: value 
+												withCalendar: (BpmExceptionCalendar getCalendarNamedOrDefault: calendarName in: self bpmEnvironment).
 
 	expectedExecutionTime warningThreshold: percentage.

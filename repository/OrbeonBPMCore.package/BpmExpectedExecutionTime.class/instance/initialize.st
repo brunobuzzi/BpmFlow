@@ -4,7 +4,6 @@ initialize
 	super initialize.
 
 	value := 0.
-	calendar := BpmExceptionCalendar default.
 	warningThreshold := 0.7. "70% - when 70% of value variable <value> is reached then the receiver enter in the Warning zone"
 
 	"when <warningThreshold> is reached then a notification to a backoffice user is sent. 

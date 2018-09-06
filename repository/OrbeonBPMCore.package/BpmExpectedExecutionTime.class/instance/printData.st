@@ -4,7 +4,7 @@ printData
 
 	aStream := PrintStream on: String new.
 
-	aStream nextPutAll: '[',value printString, self defaultCharacter asString;
+	aStream nextPutAll: '[',value printString, self defaultIdCharacter asString;
 				nextPutAll: ', ', warningThreshold printString;
 				nextPutAll: ', ', calendar name, ']'.
 

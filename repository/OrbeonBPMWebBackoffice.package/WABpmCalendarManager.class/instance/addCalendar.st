@@ -1,7 +1,10 @@
 other
 addCalendar
-	| calendarName |
+	| calendarName newCalendar |
 
 	calendarName := self componentValueAt: 'prompt' ifAbsent: [^self].
 
-	(BpmExceptionCalendar new name: calendarName) addToCache.
+	newCalendar := BpmExceptionCalendar new name: calendarName.
+	newCalendar 
+		bpmEnvironment: self session bpmEnvironment;
+		addToCache
