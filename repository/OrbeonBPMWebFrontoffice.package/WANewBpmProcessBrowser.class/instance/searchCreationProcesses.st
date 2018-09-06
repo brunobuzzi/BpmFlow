@@ -5,8 +5,8 @@ searchCreationProcesses
 	searchApplied := true.
 
 	searchResult :=  (self hasSearchValueAt: 'application') 
-					ifFalse: [self session user getCreationProcesses]
+					ifFalse: [self session user getCreationProcessesIn: self session bpmEnvironment]
 					ifTrue: [application := AbstractApplication getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [^nil].
-								(self session user getCreationProcesses select: [:each | each application == application])].
+								((self session user getCreationProcessesIn: self session bpmEnvironment) select: [:each | each application == application])].
 
 	batchedList items: searchResult

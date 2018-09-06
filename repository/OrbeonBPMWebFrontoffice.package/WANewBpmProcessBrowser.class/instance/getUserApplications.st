@@ -1,6 +1,6 @@
 other
 getUserApplications
 
-	^self session user getApplications 
+	^(self session user getApplicationsIn: self session bpmEnvironment)
 		remove: selectedLateralItem application ifAbsent: [];
 		yourself

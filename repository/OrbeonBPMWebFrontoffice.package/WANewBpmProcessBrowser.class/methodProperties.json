@@ -9,12 +9,11 @@
 		"andApplications" : "brunobb 03/27/2018 11:14",
 		"andApplications:" : "brunobb 03/27/2018 11:14",
 		"createInstanceProcessFor:" : "brunobb 03/27/2018 11:14",
-		"getAllFormProcessDefinition" : "brunobb 03/27/2018 11:14",
 		"getCurrentCollection" : "brunobb 03/27/2018 11:14",
 		"getIconNameFormItem" : "brunobb 03/27/2018 11:14",
 		"getMainTextForItem:" : "brunobb 03/27/2018 11:14",
 		"getTextForItem:" : "brunobb 03/27/2018 11:14",
-		"getUserApplications" : "brunobb 03/27/2018 11:14",
+		"getUserApplications" : "brunobb 09/05/2018 12:36",
 		"gitbookUrl" : "brunobb 07/13/2018 10:41",
 		"initialize" : "brunobb 03/27/2018 11:14",
 		"orApplication" : "brunobb 03/27/2018 11:14",
@@ -26,7 +25,7 @@
 		"removeAllAnd" : "brunobb 03/27/2018 11:14",
 		"removeAllOr" : "brunobb 03/27/2018 11:14",
 		"renderAndDetailsOn:" : "brunobb 03/27/2018 11:14",
-		"renderApplicationComboOn:" : "brunobb 03/27/2018 11:14",
+		"renderApplicationComboOn:" : "brunobb 09/05/2018 12:42",
 		"renderApplicationContextOn:forApplication:withSeparator:" : "brunobb 03/27/2018 11:14",
 		"renderContentOn:" : "brunobb 03/27/2018 11:14",
 		"renderItemComponentOn:" : "brunobb 03/27/2018 11:14",
@@ -42,4 +41,4 @@
 		"renderProcessDefinitionOn:for:" : "brunobb 03/27/2018 11:14",
 		"renderSearchAreaOn:" : "brunobb 03/27/2018 11:14",
 		"renderSearchSubmitButtonOn:" : "brunobb 03/27/2018 11:14",
-		"searchCreationProcesses" : "brunobb 03/27/2018 11:14" } }
+		"searchCreationProcesses" : "brunobb 09/05/2018 12:42" } }

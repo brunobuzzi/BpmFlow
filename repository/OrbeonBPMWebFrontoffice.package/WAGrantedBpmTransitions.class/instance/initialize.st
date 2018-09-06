@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 
-	batchedList := SewafBatchedList parentComponent: self items: self session user getGrantedTasks.
+	batchedList := SewafBatchedList parentComponent: self items: (self session user getGrantedTasksIn: self session bpmEnvironment).
 
 	batchedList batchSize: self session user regularListPagingSize;
 		isBottomBatch: true;
