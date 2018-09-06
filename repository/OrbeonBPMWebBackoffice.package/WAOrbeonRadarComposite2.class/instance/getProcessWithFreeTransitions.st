@@ -1,4 +1,4 @@
 other
 getProcessWithFreeTransitions
 
-	^selectedObject getAllAvailableTaskAssignments
+	^selectedObject getAllAvailableTaskAssignmentsIn: self session bpmEnvironment

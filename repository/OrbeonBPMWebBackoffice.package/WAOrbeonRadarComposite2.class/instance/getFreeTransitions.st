@@ -3,4 +3,4 @@ getFreeTransitions
 
 	selectedObject ifNil: [^#()].
 
-	^selectedObject getAllAvailableTaskAssignments
+	^selectedObject getAllAvailableTaskAssignmentsIn: self session bpmEnvironment
