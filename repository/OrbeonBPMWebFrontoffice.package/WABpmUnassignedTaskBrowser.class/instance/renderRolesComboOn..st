@@ -4,7 +4,7 @@ renderRolesComboOn: html
 
 	appName := searchValues at: 'application' ifAbsent: [''].
 	roles := appName isEmpty
-		ifFalse: [self session user roles select: [:each | each getApplicationName = appName] thenCollect: [:each | each name]]
+		ifFalse: [(self session user rolesIn: self session bpmEnvironment) select: [:each | each getApplicationName = appName] thenCollect: [:each | each name]]
 		ifTrue: [#()].
 
 	html label attributeAt: 'for' put: 'roles'; with: ('Roles' translateFor: self session user).

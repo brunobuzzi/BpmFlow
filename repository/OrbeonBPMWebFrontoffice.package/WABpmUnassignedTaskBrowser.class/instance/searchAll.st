@@ -1,4 +1,4 @@
 other
 searchAll
 
-	unassignedTask := self session user getAllAvailableTaskAssignments
+	unassignedTask := self session user getAllAvailableTaskAssignmentsIn: self session bpmEnvironment

@@ -32,6 +32,7 @@
 		"finalizeAssignment:" : "brunobb 12/13/2017 17:01",
 		"finalizeAssignment:takeNext:" : "brunobb 04/22/2018 13:58",
 		"getAllAvailableTaskAssignments" : "brunobb 04/13/2018 11:01",
+		"getAllAvailableTaskAssignmentsIn:" : "brunobb 09/06/2018 05:00",
 		"getAllFinishedMatrix" : "brunobb 04/15/2018 15:46",
 		"getAllFinishedTaskAssignmentsWithId:" : "brunobb 04/15/2018 15:46",
 		"getAllMatrix" : "brunobb 04/13/2018 11:01",

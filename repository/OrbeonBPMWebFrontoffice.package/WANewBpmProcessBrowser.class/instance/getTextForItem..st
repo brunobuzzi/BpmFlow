@@ -1,4 +1,4 @@
 other
 getTextForItem: aLateralListItem
 
-	^('Element ' translateFor: self session user), aLateralListItem processName
+	^('Create Process: ' translateFor: self session user), aLateralListItem processName

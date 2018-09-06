@@ -17,7 +17,7 @@ finalizeAssignment
 
 	"ifTrue: the same <user> <aBpmUser> that finished the task is going to take next generated tasks"
 	assignNextToUser ifTrue: [ | assignments availableAssignments newActivities |
-		availableAssignments := user getAllAvailableTaskAssignments.
+		availableAssignments := user getAllAvailableTaskAssignmentsIn: self process bpmEnvironment.
 		newActivities := self process currentActivities asArray removeAll: currentActivities; yourself.
 		assignments := newActivities collect: [:each | self getAvailableProcessMatrix getAssignmentFor: each].
 		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
