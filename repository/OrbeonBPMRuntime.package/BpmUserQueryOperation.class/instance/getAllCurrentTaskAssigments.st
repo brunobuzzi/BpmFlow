@@ -1,4 +1,4 @@
 no filter
 getAllCurrentTaskAssigments
 
-	^self user getCurrentAssignments
+	^self user getCurrentAssignmentsIn: bpmEnvironment

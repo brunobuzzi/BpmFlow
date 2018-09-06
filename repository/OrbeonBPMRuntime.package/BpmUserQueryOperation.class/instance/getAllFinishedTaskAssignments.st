@@ -1,4 +1,4 @@
 no filter
 getAllFinishedTaskAssignments
 
-	^self user getFinishedAssignments
+	^self user getFinishedAssignmentsIn: bpmEnvironment

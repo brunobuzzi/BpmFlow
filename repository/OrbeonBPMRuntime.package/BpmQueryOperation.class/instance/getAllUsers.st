@@ -1,4 +1,4 @@
 other
 getAllUsers
 
-	^BpmUser cache
+	^bpmEnvironment users

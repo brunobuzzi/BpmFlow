@@ -2,11 +2,11 @@ no filter
 getAllCurrentTaskAssigments
 	| assignments |
 
-	assignments := user getAllAvailableTaskAssignments.
+	assignments := user getAllAvailableTaskAssignmentsIn: bpmEnvironment.
 
 	self getAllUsers do: [:eachUser | | roles |
-			roles := user roles.
-			assignments addAll: (eachUser getCurrentAssignments select: [:assingment | (roles identityIncludes: assingment role) and: [assingment isAvailableFor: user]]).
+			roles := user rolesIn: bpmEnvironment.
+			assignments addAll: ((eachUser getCurrentAssignmentsIn: bpmEnvironment) select: [:assingment | (roles identityIncludes: assingment role) and: [assingment isAvailableFor: user]]).
 	].
 
 	^assignments

@@ -2,15 +2,15 @@
 	"class" : {
 		"getComboBoxNameFor:" : "brunobb 02/07/2018 14:07" },
 	"instance" : {
-		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 12:34",
+		"getAllCurrentTaskAssigments" : "brunobb 09/06/2018 06:03",
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 12:32",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:35",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:35",
-		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
-		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
+		"getCurrentTaskAssignmentsInApplication:" : "brunobb 09/06/2018 07:57",
+		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 09/06/2018 07:58",
 		"getCurrentTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25",
 		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:36",
 		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:36",
-		"getFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
+		"getFinishedTaskAssignmentsInApplication:" : "brunobb 09/06/2018 07:55",
 		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
 		"getFinishedTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:25" } }

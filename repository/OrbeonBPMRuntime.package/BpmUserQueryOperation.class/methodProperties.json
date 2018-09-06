@@ -2,8 +2,8 @@
 	"class" : {
 		"getComboBoxNameFor:" : "brunobb 02/07/2018 14:07" },
 	"instance" : {
-		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 10:21",
-		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:21",
+		"getAllCurrentTaskAssigments" : "brunobb 09/06/2018 06:00",
+		"getAllFinishedTaskAssignments" : "brunobb 09/06/2018 06:00",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:41",
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:41",
 		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:16",
