@@ -5,8 +5,8 @@ getAllFinishedTaskAssignments
 	assignments := OrderedCollection new.
 
 	self getAllUsers do: [:eachUser | | roles |
-			roles := user roles.
-			assignments addAll: (eachUser getFinishedAssignments select: [:assingment | (roles identityIncludes: assingment role) and: [assingment isAvailableFor: user]]).
+			roles := user rolesIn: bpmEnvironment.
+			assignments addAll: ((eachUser getFinishedAssignmentsIn: bpmEnvironment) select: [:assingment | (roles identityIncludes: assingment role) and: [assingment isAvailableFor: user]]).
 	].
 
 	^assignments

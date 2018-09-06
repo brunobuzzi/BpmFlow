@@ -1,4 +1,4 @@
 application
 getFinishedTaskAssignmentsInApplication: appName
 
-	^self user getFinishedAssignments select: {:each | each.applicationName = appName}
+	^(self user getFinishedAssignmentsIn: bpmEnvironment) select: {:each | each.applicationName = appName}

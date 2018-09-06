@@ -1,4 +1,4 @@
 application
 getCurrentTaskAssignmentsInApplication: appName
 
-	^self user getCurrentAssignments select: {:each | each.applicationName = appName}
+	^(self user getCurrentAssignmentsIn: bpmEnvironment) select: {:each | each.applicationName = appName}

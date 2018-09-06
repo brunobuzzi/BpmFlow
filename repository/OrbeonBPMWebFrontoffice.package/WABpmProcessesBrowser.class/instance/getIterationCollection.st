@@ -4,4 +4,4 @@ getIterationCollection
 
 	self modeIsFinishedTasks ifFalse: [^lateralCollection].
 
-	^self session user getFinishedAssignments asArray
+	^(self session user getFinishedAssignmentsIn: self session bpmEnvironment) asArray

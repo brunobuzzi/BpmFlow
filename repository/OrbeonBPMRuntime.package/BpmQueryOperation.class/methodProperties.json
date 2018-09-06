@@ -4,6 +4,8 @@
 		"getQueryOperationClassFor:translatedTo:" : "brunobb 02/08/2018 09:51",
 		"newFor:in:" : "brunobb 09/06/2018 05:56" },
 	"instance" : {
+		"bpmEnvironment" : "brunobb 09/06/2018 08:33",
+		"bpmEnvironment:" : "brunobb 09/06/2018 08:33",
 		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 10:17",
 		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:17",
 		"getAllTaskAssignments:" : "brunobb 02/08/2018 10:17",
