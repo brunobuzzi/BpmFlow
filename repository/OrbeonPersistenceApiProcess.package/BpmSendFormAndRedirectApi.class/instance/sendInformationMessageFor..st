@@ -4,7 +4,7 @@ sendInformationMessageFor: aBpmTaskAssignment
 
 	aBpmTaskAssignment hasInformedRoles ifFalse: [^self].
 
-	message := BpmAssignmentInternalMessage newFromApplication.
+	message := BpmAssignmentInternalMessage newFromApplicationIn: aBpmTaskAssignment bpmEnvironment.
 
 	message to: (aBpmTaskAssignment getRolesToInformOn: #modification);
 		subject: ('Assignment Modification in [', aBpmTaskAssignment processName, ']');

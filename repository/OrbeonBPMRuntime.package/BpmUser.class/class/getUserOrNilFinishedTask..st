@@ -3,5 +3,5 @@ getUserOrNilFinishedTask: aBpmTaskInstance
 	"The receiver answer <aBpmUser> that has finished the assignment of task <aBpmTaskInstance>"
 
 	^self cache 
-		detect: [:each | each getFinishedAssignments anySatisfy: [:eachAssing | eachAssing task == aBpmTaskInstance] ] 
+		detect: [:each | (each getFinishedAssignmentsIn: aBpmTaskInstance bpmEnvironment) anySatisfy: [:eachAssing | eachAssing task == aBpmTaskInstance] ] 
 		ifNone: [nil]

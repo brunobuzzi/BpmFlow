@@ -1,4 +1,4 @@
 outbox
-outboxMessagesIn: aBpmEnviroment 
+outboxMessagesIn: aBpmEnvironment 
 
-	^outbox messages select: [:each | each bpmEnvironment == aBpmEnviroment]
+	^self filterObjectCollection: outbox messages messages by: aBpmEnvironment

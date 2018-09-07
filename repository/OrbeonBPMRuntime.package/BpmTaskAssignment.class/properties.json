@@ -22,7 +22,8 @@
 		"role",
 		"matrix",
 		"hasContextApplications",
-		"canUnassign" ],
+		"canUnassign",
+		"bpmEnvironmentName" ],
 	"name" : "BpmTaskAssignment",
 	"pools" : [
 		 ],
