@@ -4,4 +4,4 @@ getApplicationFor: xpdlPackage
 
 	appName := (uploadProcesses at: (selectedUploads keyAtValue: xpdlPackage fileName ifAbsent: [Error signal])).
 
-	^self getApplicationManagerClass getAnyApplicationNamed: appName
+	^self getApplicationManagerClass getAnyApplicationNamed: appName in: self session bpmEnvironment
