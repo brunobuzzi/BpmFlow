@@ -2,4 +2,4 @@ other
 canDelete
 	"Answer whether or not the receiver can be deleted from the system"
 
-	^roles isEmpty and:[self getCurrentAssignmentsInbox isEmpty]
+	^self getBpmEnvironments isEmpty and: [roles isEmpty and:[self getCurrentAssignmentsInbox isEmpty]]

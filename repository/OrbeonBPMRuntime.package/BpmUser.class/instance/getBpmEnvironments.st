@@ -1,4 +1,4 @@
-other
+bpm environments
 getBpmEnvironments
 
-	^BpmEnvironment cache select: [:eachEnv | eachEnv includesUserNamed: self username]
+	^BpmEnvironment cache select: [:environment | environment includesUserNamed: self username]
