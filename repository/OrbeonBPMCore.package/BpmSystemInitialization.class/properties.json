@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmSystemInitialization",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

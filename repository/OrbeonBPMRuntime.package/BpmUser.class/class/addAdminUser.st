@@ -11,3 +11,5 @@ addAdminUser
 	role isAdmin: true. 
 
 	role grantUser: user.
+
+	^user
