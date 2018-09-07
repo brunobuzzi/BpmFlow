@@ -4,7 +4,7 @@ getCurrentTaskAssignmentsWithId: processId
 	| assignments |
 
 	"here search for FREE <BpmTaskAssignment>"
-	assignments := user getAllTaskAssignmentsWithId: processId.
+	assignments := (user getAllTaskAssignmentsWithId: processId) select: [:each | each bpmEnvironmentName = bpmEnvironment name].
 
 	"here search for already TAKEN <BpmTaskAssignment>"
 	self getAllUsers do: [:eachUser | | possibleAssignments roles |
