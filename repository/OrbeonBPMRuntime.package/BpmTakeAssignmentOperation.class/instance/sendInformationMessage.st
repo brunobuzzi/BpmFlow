@@ -4,7 +4,7 @@ sendInformationMessage
 
 	assignment hasInformedRoles ifFalse: [^self].
 
-	message := BpmAssignmentInternalMessage newFromApplication.
+	message := BpmAssignmentInternalMessage newFromApplicationIn: self bpmEnvironment.
 
 	message to: (assignment getRolesToInformOn: #take);
 		subject: ('Assignment Taken in [', assignment processName, ']');

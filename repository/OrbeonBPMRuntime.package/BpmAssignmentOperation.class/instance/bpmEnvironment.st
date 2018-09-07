@@ -1,4 +1,4 @@
 bpm environment
 bpmEnvironment
 
-	^definition bpmEnvironment
+	^assignment bpmEnvironment

@@ -15,7 +15,8 @@
 		"body",
 		"category",
 		"sendExternalMail",
-		"inResponseTo" ],
+		"inResponseTo",
+		"bpmEnvironment" ],
 	"name" : "BpmInternalMessage",
 	"pools" : [
 		 ],
