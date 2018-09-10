@@ -13,7 +13,8 @@
 		"chartType",
 		"user",
 		"report",
-		"dateGroupName" ],
+		"dateGroupName",
+		"bpmEnvironment" ],
 	"name" : "BpmChartDefinition",
 	"pools" : [
 		 ],

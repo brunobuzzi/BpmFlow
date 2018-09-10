@@ -2,7 +2,8 @@ other
 createDistributionReport
 	| report |
 
-	report := self scope user reportFinishedTaskQuantityFrom: self startDate to: self endDate satisfying: self queryBlock.
+	report := self scope user getFinishedTaskQuantityDistributionIn: self bpmEnvironment from: self startDate to: self endDate satisfying: self queryBlock.
+
 	report name: (('Finished Tasks (' translateFor: self user), report getTotalValue printString,')');
 		description: ('Scope: User' translateFor: self user);
 		seriesName: ('Finished Tasks' translateFor: self user);

@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := self scope user reportCurrentTaskQuantity.
+	report := self scope user reportCurrentTaskQuantityIn: self bpmEnvironment.
 	report name: ('Task Distribution per Role' translateFor: self user);
 		description: ('Scope: Application Role' translateFor: self user);
 		seriesName: ('Current Tasks' translateFor: self user);
