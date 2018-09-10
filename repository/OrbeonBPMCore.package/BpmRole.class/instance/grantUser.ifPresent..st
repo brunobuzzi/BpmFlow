@@ -1,6 +1,6 @@
 responsibility
 grantUser: aBpmUser ifPresent: aBlock
-	"The user <aBpmUser> is granted in the receiver"
+	"The user <aBpmUser> is granted in the receiver if already present evaluate the niladic block <aBlock>"
 	| association |
 
 	(self bpmEnvironment includesUserNamed: aBpmUser username) 
