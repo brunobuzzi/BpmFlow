@@ -1,4 +1,0 @@
-outbox
-outboxMessages
-
-	^outbox messages

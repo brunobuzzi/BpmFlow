@@ -1,4 +1,4 @@
 application&process
 getCurrentTaskAssignmentsInApplication: appName andProcess: procName
 
-	^self user getCurrentAssignments select: {:each | (each.applicationName = appName) & (each.processName = procName)}
+	^(self user getCurrentAssignmentsIn: bpmEnvironment) select: {:each | (each.applicationName = appName) & (each.processName = procName)}

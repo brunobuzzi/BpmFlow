@@ -4,7 +4,7 @@ removeCurrentTaskAssigmentsFrom: aBpmUser
 	If <aBpmUser> has an unfinished task that is defined for the receiver then these assigment are removed from <aBpmUser>."
 	| currentAssignments |
 
-	currentAssignments := aBpmUser getCurrentAssignments select: [:each | (each application == application) and: [each roleName = name]].
+	currentAssignments := (aBpmUser getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (each application == application) and: [each roleName = name]].
 
 	(currentAssignments select: [:taskAssignment | taskAssignment canUntakeFromCurrentUser]) do: [:taskAssignment | | tempCanUnassign |
 		tempCanUnassign := taskAssignment canUnassign.
