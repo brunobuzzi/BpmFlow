@@ -17,7 +17,7 @@ executeIt
 	assignment incrementPerformerCounter.
 	assignment isFinishedByPerformers ifTrue: [^self finalizeAssignment].
 
-	user moveFromCurrentToFinished: assignment. "finalized by a Performer (NOT all performers have worked on the task)"
+	user moveFromCurrentToFinished: assignment in: self bpmEnvironment. "finalized by a Performer (NOT all performers have worked on the task)"
 	assignment addToAvailableMatrixForNextPerformer.
 
 	^self "assignment not finalized"

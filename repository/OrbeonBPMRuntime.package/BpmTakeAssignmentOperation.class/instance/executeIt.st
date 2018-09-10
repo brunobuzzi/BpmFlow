@@ -7,7 +7,7 @@ executeIt
 		setAssignationDate; "time stamp when the task was taken"
 		registerInProcess. "for historic purpose"
 
-	user getCurrentAssignmentsInbox acceptEntry: assignment. "store the assignment in the current assignment inbox"
+	(user getCurrentAssignmentsInboxIn: self bpmEnvironment) acceptEntry: assignment. "store the assignment in the current assignment inbox"
 
 	assignment user: user.
 

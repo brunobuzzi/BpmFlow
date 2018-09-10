@@ -9,4 +9,4 @@ unsend
 	"transform roles into users"
 	(to select: [:each | each isRole]) do: [:eachRole | recipients addAll: eachRole users].
 
-	recipients do: [:eachUser | eachUser getSystemNotificationsInbox removeEntry: self ifAbsent: []].
+	recipients do: [:eachUser | (eachUser getSystemNotificationsInboxIn: bpmEnvironment) removeEntry: self ifAbsent: []].

@@ -5,7 +5,7 @@ finalizeAssignment
 	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
 	isFinalized := true.
 
-	user moveFromCurrentToFinished: assignment. "<user> move from current assignments to finished <assignment> "
+	user moveFromCurrentToFinished: assignment in: self bpmEnvironment. "<user> move from current assignments to finished <assignment> "
 
 	"add the assignment to finished matrix"
 	finishedMatrix := self getFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
