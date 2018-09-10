@@ -1,4 +1,0 @@
-distribution
-getAverageTimeForAllTasks
-
-	^self getAverageTimeForTasksIn: self getFinishedAssignments
