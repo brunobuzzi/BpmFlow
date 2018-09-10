@@ -5,6 +5,6 @@ deleteMessage: aBpmInternalMessage
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self session user outbox removeEntry: aBpmInternalMessage ifAbsent: [].
+	(self session user getOutboxFor: self session bpmEnvironment) removeEntry: aBpmInternalMessage ifAbsent: [].
 
 	selectedLateralItem := nil

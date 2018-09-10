@@ -3,8 +3,8 @@ getCurrentCollection
 
 	searchApplied ifTrue: [^searchResult].
 	
-	self isSystemInboxSelected ifTrue: [^self session user getSystemNotifications].
+	self isSystemInboxSelected ifTrue: [^self session user getSystemNotificationsIn: self session bpmEnvironment].
 
-	self isUserInboxSelected ifTrue: [^self session user getUserNotifications].
+	self isUserInboxSelected ifTrue: [^self session user getUserNotificationsIn: self session bpmEnvironment].
 
 	^#()

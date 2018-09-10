@@ -5,7 +5,7 @@ deleteAllMessages
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self isSystemInboxSelected ifTrue: [self session user getSystemNotificationsInbox removeAll].
-	self isUserInboxSelected ifTrue: [self session user getUserNotificationsInbox removeAll].
+	self isSystemInboxSelected ifTrue: [(self session user getSystemNotificationsInboxIn: self session bpmEnvironment) removeAll].
+	self isUserInboxSelected ifTrue: [(self session user getUserNotificationsInboxIn: self session bpmEnvironment) removeAll].
 
 	selectedLateralItem := nil

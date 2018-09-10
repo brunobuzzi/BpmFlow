@@ -5,6 +5,6 @@ deleteAllMessages
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self session user outbox removeAll.
+	(self session user getOutboxFor: self session bpmEnvironment) removeAll.
 
 	selectedLateralItem := nil

@@ -1,4 +1,4 @@
 other
 getCurrentCollection
 
-	^self session user outboxMessages
+	^self session user outboxMessagesIn: self session bpmEnvironment

@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"deleteAllMessages" : "brunobb 05/03/2018 08:37",
-		"deleteMessage:" : "brunobb 04/26/2018 11:15",
-		"getCurrentCollection" : "brunobb 04/25/2018 10:37",
+		"deleteAllMessages" : "brunobb 09/10/2018 09:23",
+		"deleteMessage:" : "brunobb 09/10/2018 09:23",
+		"getCurrentCollection" : "brunobb 09/10/2018 09:09",
 		"getIconNameFormItem" : "brunobb 04/26/2018 05:21",
 		"gitbookUrl" : "brunobb 07/13/2018 10:31",
 		"renderSearchAreaOn:" : "brunobb 08/28/2018 08:57",
