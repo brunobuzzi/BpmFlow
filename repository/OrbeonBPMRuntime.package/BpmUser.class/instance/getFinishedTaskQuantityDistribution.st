@@ -1,4 +1,0 @@
-distribution
-getFinishedTaskQuantityDistribution
-
-	^self getTaskQuantityDistributionIn: self getFinishedAssignments

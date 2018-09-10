@@ -1,4 +1,0 @@
-distribution
-getCurrentTaskQuantityDistribution
-
-	^self getTaskQuantityDistributionIn: self getCurrentAssignments

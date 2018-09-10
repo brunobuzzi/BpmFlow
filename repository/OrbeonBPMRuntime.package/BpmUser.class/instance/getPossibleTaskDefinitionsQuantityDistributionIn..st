@@ -1,10 +1,10 @@
 distribution
-getPossibleTaskDefinitionsQuantityDistribution
+getPossibleTaskDefinitionsQuantityDistributionIn: aBpmEnvironment
 	| distribution |
 
 	distribution := OrderPreservingDictionary new.
 
-	self roles do: [:eachRole |
+	(self rolesIn: aBpmEnvironment) do: [:eachRole |
 		distribution at: eachRole name put: eachRole numberOfTasks.
 	]. 
 

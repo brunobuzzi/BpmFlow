@@ -1,8 +1,8 @@
 distribution report
-reportAverageTimePerTask
+reportCurrentTaskQuantityIn: aBpmEnvironment
 	| secondsToRun distribution |
 
-	secondsToRun := Time secondsElapsedTime: [distribution := self getAverageTimeForAllTasks].
+	secondsToRun := Time secondsElapsedTime: [distribution := self getCurrentTaskQuantityDistributionIn: aBpmEnvironment].
  
 	^(BpmUserDistributionReport userName: self username distribution: distribution)
 		sumSecondsToConstruct: secondsToRun;
