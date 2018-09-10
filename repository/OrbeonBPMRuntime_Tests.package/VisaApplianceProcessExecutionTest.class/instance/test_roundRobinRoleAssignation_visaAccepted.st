@@ -31,28 +31,28 @@ test_roundRobinRoleAssignation_visaAccepted
 	self assert: ((assignations select: [:each | each count = 3]) size = 2).
 	self assert: ((assignations select: [:each | each count = 4]) size = 1).
 
-	assignmentsInProcess := (users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
-	assignmentsInProcess := (users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
-	assignmentsInProcess := (users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]).
 
-	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo2') getCurrentAssignments identityIncludes: each]) not. 
-	self assert: ((users at: 'andrew vo') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
-	self assert: ((users at: 'andrew vo2') getCurrentAssignments anySatisfy: [:each | (users at: 'andrew vo3') getCurrentAssignments identityIncludes: each]) not. 
+	self assert: (((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) anySatisfy: [:each | ((users at: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) identityIncludes: each]) not. 
+	self assert: (((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) anySatisfy: [:each | ((users at: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) identityIncludes: each]) not. 
+	self assert: (((users at: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) anySatisfy: [:each | ((users at: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) identityIncludes: each]) not. 
 
 	"Here we send all 10 processes to the second task <check-basic-data> by finalizing current task <citizen-appliance> "
 	"Step 1 - Form [citizen-appliance]" 
-	((users at: 'andrew vo') getCurrentAssignments select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
+	(((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
 		self associate: assignment withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
 		self finalizeAssignment: assignment withUserNamed: 'andrew vo' on: assignment process.
 	].
-	((users at: 'andrew vo2') getCurrentAssignments select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
+	(((users at: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
 		self associate: assignment withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
 		self finalizeAssignment: assignment withUserNamed: 'andrew vo2' on: assignment process.
 	].
-	((users at: 'andrew vo3') getCurrentAssignments select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
+	(((users at: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
 		self associate: assignment  withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
 		self finalizeAssignment: assignment withUserNamed: 'andrew vo3' on: assignment process.
 	].
@@ -61,11 +61,11 @@ test_roundRobinRoleAssignation_visaAccepted
 	self assert: ((assignations select: [:each | each count = 7]) size = 2).
 
 	"here we compare with 2,3 and 4. 2 is also used because first distribution can be 3,3,4 and the second 4,4,2 "
-	assignmentsInProcess := (users at: 'andrew vo') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
-	assignmentsInProcess := (users at: 'andrew vo2') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
-	assignmentsInProcess := (users at: 'andrew vo3') getCurrentAssignments select: [:each | newRoundRobinProcesses identityIncludes: each process].
+	assignmentsInProcess := ((users at: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | newRoundRobinProcesses identityIncludes: each process].
 	self assert: ((assignmentsInProcess size = 2) or: [(assignmentsInProcess size = 3) or: [assignmentsInProcess size = 4]]).
 
 	newRoundRobinProcesses do: [:procInst | self resumeFromTask2AndTestProcess: procInst]

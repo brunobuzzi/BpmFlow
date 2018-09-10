@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"application" : "brunobb 09/10/2018 10:40",
 		"associate:withForm:on:" : "brunobb 02/01/2018 13:19",
+		"bpmEnvironment" : "brunobb 09/10/2018 10:41",
 		"createDefinition:with:in:" : "brunobb 04/03/2018 12:35",
 		"createFormInstance:definitionNamed:app:definitionMethod:" : "brunobb 01/04/2018 13:05",
 		"createFormInstance:definitionNamed:app:definitionMethod:in:" : "brunobb 05/18/2018 04:06",
