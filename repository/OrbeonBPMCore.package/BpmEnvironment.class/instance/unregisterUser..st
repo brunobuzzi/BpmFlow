@@ -7,4 +7,6 @@ unregisterUser: aBpmUser
 	"<aBpmUser> is ungranted from all roles beloging to the receiver"
 	(aBpmUser rolesIn: self) do: [:eachRole | eachRole ungrantUser: aBpmUser].
 
+	aBpmUser destroyInboxFor: self.
+	aBpmUser destroyOutboxFor: self.
 	^users removeKey: aBpmUser username ifAbsent: []

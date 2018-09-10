@@ -1,4 +1,4 @@
 outbox
-outboxMessagesIn: aBpmEnvironment 
+outboxMessagesIn: aBpmEnvironment
 
-	^self filterObjectCollection: outbox messages messages by: aBpmEnvironment
+	^(self getOutboxFor: aBpmEnvironment) messages

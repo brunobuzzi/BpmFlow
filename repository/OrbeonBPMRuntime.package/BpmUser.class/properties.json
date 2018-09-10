@@ -11,7 +11,9 @@
 		"userOptions",
 		"inbox",
 		"outbox",
-		"rolesAssociation" ],
+		"rolesAssociation",
+		"inboxes",
+		"outboxes" ],
 	"name" : "BpmUser",
 	"pools" : [
 		 ],

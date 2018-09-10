@@ -8,6 +8,6 @@ send
 	recipients := self getRecipients.
 
 	self isUserMessage ifTrue: [from outbox acceptEntry: self].
-	recipients do: [:eachUser | (eachUser getInboxFor: category) acceptEntry: self]. "this need DOUBLE DISPATCHING to use other inbox not only system notifications"
+	recipients do: [:eachUser | (eachUser getInboxFor: bpmEnvironment withCategory:category) acceptEntry: self]. "this need DOUBLE DISPATCHING to use other inbox not only system notifications"
 
 	sendExternalMail ifTrue: [self sendExternalMailToRecipients: recipients]

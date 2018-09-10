@@ -3,7 +3,7 @@ executeIt
 	"The receiver execute all steps to unassign the <BpmTaskAssignment> <assignment> from the <BpmUser> <user>"
 
 	"the task was finalized by the user before the manager could make the untake operation"
-	(user includesCurrentAssignment: assignment) ifFalse: [^self].
+	(user includesCurrentAssignment: assignment in: self bpmEnvironment) ifFalse: [^self].
 
 	assignment hasPerformers ifTrue: [assignment removeLastWorker]. "remove the last user and role from the BpmTaskInstace"
 
