@@ -1,8 +1,12 @@
 distribution
 getProcessInstancesCreatedFrom: startDate to: endDate
 	"The receiver answer a collection of <BpmProcessInstance>s created from start date <startDate> to end date <endDate>"
+	| startTimeStamp endTimeStamp |
 
-	^(GsQuery fromString: ('(each.createdTime >= startDate) & (each.createdTime <= endDate)') on: processInstancesSet) 
-		bind: 'startDate' to: startDate; 
-		bind: 'endDate' to: endDate; 
+	startTimeStamp := startDate asTimeStamp.
+	endTimeStamp := endDate asTimeStamp.
+
+	^(GsQuery fromString: ('(each.createdTime >= startTimeStamp) & (each.createdTime <= endTimeStamp)') on: processInstancesSet) 
+		bind: 'startTimeStamp' to: startTimeStamp; 
+		bind: 'endTimeStamp' to: endTimeStamp; 
 		queryResult

@@ -140,7 +140,7 @@
 		"getParentSubProcessTaskDefinition" : "BrunoBB 06/29/2016 09:42",
 		"getParentTopSubProcessTaskDefinition" : "BrunoBB 06/29/2016 11:00",
 		"getProcessInstanceWith:ifAbsent:" : "BrunoBB 05/31/2016 17:23",
-		"getProcessInstancesCreatedFrom:to:" : "brunobb 08/30/2018 08:34",
+		"getProcessInstancesCreatedFrom:to:" : "brunobb 09/11/2018 10:22",
 		"getProcessMapStream" : "BrunoBB 01/13/2017 12:32",
 		"getProcessTree:" : "BrunoBB 04/10/2016 18:49",
 		"getProcessesTreeAsCollection" : "BrunoBB 04/10/2016 18:49",
