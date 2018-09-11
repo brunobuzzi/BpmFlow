@@ -11,3 +11,4 @@ initializeCurrentSystem
 	BpmFrontOfficeRole initializeCache.
 	BpmProcessCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
+	BpmProcessDefinition initializeCache.
