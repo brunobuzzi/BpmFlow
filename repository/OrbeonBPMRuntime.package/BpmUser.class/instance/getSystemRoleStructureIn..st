@@ -5,7 +5,7 @@ getSystemRoleStructureIn: aBpmEnvironment
 	grants := OrderedCollection new.
 
 	(self getVisibleApplicationsIn: aBpmEnvironment) do: [:eachApp | 
-		(BpmRole getRolsInApp: eachApp) do: [:eachRole | 
+		(BpmRole getRolsIn: aBpmEnvironment forApplication: eachApp) do: [:eachRole | 
 			eachRole users do: [:eachUsr | grants add: (BpmUserGrantConfiguration for: eachUsr app: eachApp role: eachRole)]]
 		].
 
