@@ -1,9 +1,10 @@
 other
 setUp
+	| application environment |
 
-	self getApplicationManagerClass 
-		getAnyApplicationNamed: 'st' 
-		ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
+	application := self getApplicationManagerClass getAnyApplicationNamed: 'st' ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
+	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-st'.
+	application hasBpmEnvironment ifFalse: [environment registerApplication: application].
 
 	users := Dictionary new.
 
@@ -12,6 +13,7 @@ setUp
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 
 	users at: 'alberto' put: (BpmUser getExistingOrNewUserNamed: 'alberto').
+	environment registerUser: (users at: 'alberto') ifPresent: []. 
 
 	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'st') grantUser: (users at: 'alberto') ifPresent: [].
 

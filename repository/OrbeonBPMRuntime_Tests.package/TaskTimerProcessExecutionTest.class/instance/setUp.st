@@ -1,5 +1,6 @@
 other
 setUp
+	| environment |
 
 	super setUp.
 	users := Dictionary new.
@@ -7,7 +8,9 @@ setUp
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'task_timer' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
+	environment := procDefinition bpmEnvironment.
 
 	users at: 'andrew vm' put: (BpmUser getExistingOrNewUserNamed: 'andrew vm').
+	environment registerUser: (users at: 'andrew vm') ifPresent: [].
 
 	(BpmFrontOfficeRole createNewOrGetExisting: 'timer-role' in: 'ue') grantUser: (users at: 'andrew vm') ifPresent: [].

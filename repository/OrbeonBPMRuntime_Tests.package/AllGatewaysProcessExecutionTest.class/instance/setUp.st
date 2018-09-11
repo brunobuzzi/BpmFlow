@@ -1,5 +1,6 @@
 other
 setUp
+	| environment |
 
 	super setUp.
 
@@ -8,7 +9,9 @@ setUp
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
+	environment := procDefinition bpmEnvironment.
 
 	users at: 'alberto' put: (BpmUser getExistingOrNewUserNamed: 'alberto').
+	environment registerUser: (users at: 'alberto').
 
 	(BpmFrontOfficeRole getRoleNamed: 'manager' in: 'ue') grantUser: (users at: 'alberto') ifPresent: []
