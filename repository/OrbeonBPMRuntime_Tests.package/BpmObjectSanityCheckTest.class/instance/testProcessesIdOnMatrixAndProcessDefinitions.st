@@ -9,9 +9,9 @@ testProcessesIdOnMatrixAndProcessDefinitions
 
 		fromDefnitionIds := fromDefnitionIds asSortedCollection.
 
-		fromMatrixIds := ((BpmAvailableTasksMatrix getAllAvailableTaskAssignments collect: [:each | each processId]),
-								(BpmTakenTasksMatrix getAllAvailableTaskAssignments collect: [:each | each processId]),
-								(BpmFinishedTasksMatrix getAllAvailableTaskAssignments collect: [:each | each processId])) asSet asSortedCollection.
+		fromMatrixIds := (((BpmAvailableTasksMatrix getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId]),
+								((BpmTakenTasksMatrix getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId]),
+								((BpmFinishedTasksMatrix getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId])) asSet asSortedCollection.
 
-		self assert: (fromDefnitionIds size = fromMatrixIds size).
+		self assert: (fromDefnitionIds asSet size = fromMatrixIds asSet size).
 	].

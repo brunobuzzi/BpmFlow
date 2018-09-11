@@ -2,8 +2,8 @@ task query
 getAvailableUsersToTake: aBpmTaskAssignment
 	"The receiver answer a collection of <BpmUser>s having permissions to take the assignment <aBpmTaskAssignment> "
 
-	^self cache select: [:eachUser | 
-			eachUser roles 
+	^(self getUsersIn: aBpmTaskAssignment bpmEnvironment) select: [:eachUser | 
+			(eachUser rolesIn: aBpmTaskAssignment bpmEnvironment)
 				anySatisfy: [:eachRole | (eachRole application ==  aBpmTaskAssignment application) and: [eachRole isFrontofficeRole and: [eachRole name =  aBpmTaskAssignment roleName]]] 
 	]
 
