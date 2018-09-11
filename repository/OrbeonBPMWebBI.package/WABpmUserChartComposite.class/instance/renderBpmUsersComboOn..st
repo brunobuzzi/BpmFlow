@@ -2,6 +2,6 @@ search area
 renderBpmUsersComboOn: html
 
 	^self renderGenericActiveComboOn: html 
-			withList: ((self session user getVisibleUsers asSortedCollection: [:a :b | a username <= b username]) collect: [:each | each username])
+			withList: (((self session user getVisibleUsersIn: self session bpmEnvironment) asSortedCollection: [:a :b | a username <= b username]) collect: [:each | each username])
 			forVariable: 'bpm-user' 
 			label: ('User' translateFor: self session user)
