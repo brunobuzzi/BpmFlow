@@ -6,7 +6,7 @@ matchContextsWith: aBpmUser
 	If any of both <<AND> <OR> is true --> true "
 	| userApplications |
 
-	userApplications := aBpmUser getApplications.
+	userApplications := aBpmUser getApplicationsIn: self bpmEnvironment.
 
 	^(andContextApplications notEmpty and: [andContextApplications allSatisfy: [:each | userApplications includes: each]]) 
 		or: [orContextApplications anySatisfy: [:each | userApplications includes: each]]

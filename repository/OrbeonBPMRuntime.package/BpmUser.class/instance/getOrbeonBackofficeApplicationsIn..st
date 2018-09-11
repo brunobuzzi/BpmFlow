@@ -6,4 +6,4 @@ getOrbeonBackofficeApplicationsIn: aBpmEnvironment
 
 	self isBackofficeUserAndAdmin ifTrue: [^self getOrbeonCache select: [:each | each bpmEnvironment == aBpmEnvironment]].
 
-	^self getOrbeonApplications select: [:each | each bpmEnvironment == aBpmEnvironment]
+	^self getOrbeonApplicationsIn: aBpmEnvironment
