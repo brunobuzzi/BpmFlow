@@ -132,6 +132,7 @@
 		"reportAverageTimePerTaskIn:from:to:" : "brunobb 09/10/2018 10:13",
 		"reportAverageTimePerTaskIn:from:to:satisfying:" : "brunobb 09/10/2018 10:09",
 		"reportCurrentTaskQuantityIn:" : "brunobb 09/10/2018 09:53",
+		"reportFinishedTaskQuantityIn:from:to:satisfying:" : "brunobb 09/11/2018 09:48",
 		"reportPossibleTaskDefinitionsQuantityIn:" : "brunobb 09/10/2018 10:04",
 		"resetAll" : "brunobb 09/10/2018 10:21",
 		"resetPassword" : "BrunoBB 05/14/2016 15:47",
