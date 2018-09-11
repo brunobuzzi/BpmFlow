@@ -10,6 +10,6 @@ cancelTaskAssignmentsForAbortion: aBpmProcessInstance
 		eachAssignment user: nil. "add to free matrix, user set to nil"
 
 		"remove the <aBpmTaskAssignment> from the inbox"
-		(self getCurrentAssignmentsIn: aBpmProcessInstance bpmEnvironment) removeEntry: eachAssignment ifAbsent: [self throwExceptionTaskAssignmentNotFound].
+		(self getCurrentAssignmentsInboxIn: aBpmProcessInstance bpmEnvironment) removeEntry: eachAssignment ifAbsent: [self throwExceptionTaskAssignmentNotFound].
 
 	].
