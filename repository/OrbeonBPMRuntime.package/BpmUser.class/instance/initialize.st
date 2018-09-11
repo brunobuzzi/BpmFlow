@@ -8,8 +8,6 @@ initialize
 
 	userOptions := BpmUserOptions new.
 
-	inbox := BpmUserInbox newMainInboxFor: self.
-	outbox := BpmUserOutbox newMainOutboxFor: self.
 	inboxes := Dictionary new.
 	outboxes := Dictionary new.
 

@@ -9,8 +9,6 @@
 		"centralUser",
 		"roles",
 		"userOptions",
-		"inbox",
-		"outbox",
 		"rolesAssociation",
 		"inboxes",
 		"outboxes" ],
