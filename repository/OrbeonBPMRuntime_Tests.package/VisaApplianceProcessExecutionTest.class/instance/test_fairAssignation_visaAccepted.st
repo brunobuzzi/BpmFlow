@@ -3,8 +3,6 @@ test_fairAssignation_visaAccepted
 	"Testing Assignation Policy Fair (global)"
 	| newRoundRobinProcesses availableUsers assignmentsInProcess subProc |
 
-	users at: 'andrew vo2' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo2').
-	users at: 'andrew vo3' put: (BpmUser getExistingOrNewUserNamed: 'andrew vo3').
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') removeAllUsers.
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo').
 	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo2').
