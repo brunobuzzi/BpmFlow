@@ -5,6 +5,8 @@ removeApplication
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
+	self session bpmEnvironment unregisterApplication: selectedLateralItem.
+	 
 	selectedLateralItem removeFromCache.
 
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
