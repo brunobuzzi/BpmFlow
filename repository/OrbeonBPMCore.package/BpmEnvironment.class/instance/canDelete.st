@@ -1,4 +1,4 @@
 other
 canDelete
 
-	^applications isEmpty
+	^applications isEmpty and:[users isEmpty]
