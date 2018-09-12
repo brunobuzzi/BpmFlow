@@ -12,7 +12,9 @@ createNewRole
 
 	newRole := roleClass createNewOrGetExisting: roleName in: appName.
 
-	newRole isAdmin: (self componentValueAt: 'isAdmin').
+	self session user isBackofficeUserAndAdmin 
+	ifTrue: [newRole isAdmin: (self componentValueAt: 'isAdmin').]
+	ifFalse: [(roleClass == BpmBackofficeRole) ifTrue:[newRole isAdmin: false]]. "see issue #623 - "
 
 	"the role has been added because #addToCacheInAppName: has answer the same role"
 	parent updateRole: newRole.
