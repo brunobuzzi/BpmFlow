@@ -9,7 +9,9 @@ initializeCurrentSystem
 	BpmTakenTasksMatrix initializeCache.
 	BpmBackofficeRole initializeCache.
 	BpmFrontOfficeRole initializeCache.
-	BpmProcessCategory initializeCache.
+	BpmProcessDefinitionCategory initializeCache.
+	BpmProcessInstanceCategory initializeCache.
+	BpmProcessDynamicCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
 	BpmProcessDefinition initializeCache.
 	self defaultTimerEventMonitor initializeDefault.
