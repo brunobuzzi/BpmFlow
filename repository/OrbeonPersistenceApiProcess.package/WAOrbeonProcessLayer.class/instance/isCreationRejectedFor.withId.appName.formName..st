@@ -7,7 +7,8 @@ isCreationRejectedFor: anOrbeonSavedFormDefinition withId: id appName: appName f
 		(app or form change name after BpmOrbeonTaskInstance has been created or finalized)
 
 	If BpmProcessDefinition has been already created without any BpmProcessInstances and FormInstances, and a FormDefinition or Application is renamed 
-	--> when a BpmProcessInstance is created the execution is going fail because the forms were move to another app or form name.
+	--> when a BpmProcessInstance is created the execution is going fail because the forms were move to another app or form name 
+	(and the BpmProcessDefinition was not moved to the new application because the rename was done in Orbeon directly).
 
 	So if aBpmProcessDefinition already exist (using) FormDefinitions 
 	--> app name and form name can NOT be renamed."
