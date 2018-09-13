@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmProcessDefinition reportProcessDefinitionsQuantityDistribution.
+	report := BpmProcessDefinition reportProcessDefinitionsQuantityDistributionIn: self bpmEnvironment.
 	report name: (('Distribution of BPM Process Definitions' translateFor: self user),  ' (' , report getTotalValue printString, ')');
 		description: ('Scope: Global' translateFor: self user);
 		seriesName: 'Definitions';
