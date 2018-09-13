@@ -1,5 +1,5 @@
 {
-	"category" : "OrbeonBPMWebBackoffice",
+	"category" : "OrbeonBPMWebBasic",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -8,7 +8,7 @@
 	"instvars" : [
 		"selectedCategory",
 		"batchedList" ],
-	"name" : "WAManageFormProcessCategory",
+	"name" : "WABpmProcessCategoryBrowser",
 	"pools" : [
 		 ],
 	"super" : "SEWAFWebObjectComposite",

@@ -1,7 +1,7 @@
 sub components
 showProcessCategories
 
-	(arena isKindOf: WABpmProcessCategoryManager)
+	(arena isKindOf: WABpmProcessInstanceCategoryBrowser)
 	ifTrue: [^arena].
 
-	^WABpmProcessCategoryManager parent: self
+	^WABpmProcessInstanceCategoryBrowser parent: self

@@ -1,7 +1,7 @@
 subcomponents
 openProcessCategoryManager
 
-	(arena isKindOf: WAManageFormProcessCategory)
+	(arena isKindOf: WABpmProcessDefinitionCategoryBrowser)
 	ifTrue: [^arena].
 
-	^WAManageFormProcessCategory parent: self
+	^WABpmProcessDefinitionCategoryBrowser parent: self

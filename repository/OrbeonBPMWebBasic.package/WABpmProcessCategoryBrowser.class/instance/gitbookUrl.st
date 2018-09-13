@@ -1,0 +1,4 @@
+other
+gitbookUrl
+
+	self subclassResponsibility

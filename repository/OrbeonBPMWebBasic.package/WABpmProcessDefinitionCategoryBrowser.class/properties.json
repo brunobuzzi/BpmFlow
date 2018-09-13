@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmProcessDefinitionCategoryBrowser",
+	"pools" : [
+		 ],
+	"super" : "WABpmProcessCategoryBrowser",
+	"type" : "normal" }

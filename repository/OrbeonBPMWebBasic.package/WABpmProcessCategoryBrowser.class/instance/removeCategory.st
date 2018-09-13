@@ -7,4 +7,4 @@ removeCategory
 
 	selectedCategory := nil.
 
-	model := BpmProcessInstanceCategory new.
+	model := self defaultCategoryClass new.

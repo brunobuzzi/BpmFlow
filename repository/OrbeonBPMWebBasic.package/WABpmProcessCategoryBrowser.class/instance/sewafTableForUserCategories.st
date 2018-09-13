@@ -8,7 +8,7 @@ sewafTableForUserCategories
 		columns: (OrderedCollection new  
 						add: (SewafReportColumn selector: #name title: 'Category Name' onClick: 
 						[:each | (selectedCategory == each) 
-									ifTrue: [model := BpmProcessInstanceCategory new. selectedCategory := nil] 
+									ifTrue: [model := self defaultCategoryClass new. selectedCategory := nil] 
 									ifFalse: [model := selectedCategory := each]]);
 						add: self categoryColorColumn;
 						yourself);

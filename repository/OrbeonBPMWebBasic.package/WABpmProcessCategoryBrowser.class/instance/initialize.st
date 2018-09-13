@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 
-	model := BpmProcessInstanceCategory new.
+	model := self defaultCategoryClass new.
 	batchedList := SewafBatchedList parentComponent: self items: self getAllUserCategories.
 
 	batchedList batchSize: self session user regularListPagingSize;
