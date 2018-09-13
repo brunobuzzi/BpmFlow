@@ -1,4 +1,4 @@
-other
+system initilization
 createSystemDefaultObjects
 	"The receiver create the minimal objects to allow the BPM System to start:
 	1- Create a default Environment <BpmEnvironment>.
@@ -12,7 +12,7 @@ createSystemDefaultObjects
 	defaultEnvironment := BpmEnvironment addDefaultEnvironment.
 	BpmExceptionCalendar addDefaultCalendarIn: defaultEnvironment. "set a default calendar for the environment"
 
-	BpmApplication initializeCache.
+	self getBpmApplicationClass initializeCache.
 	application := 	(BpmApplication newNamed: 'admins') addToCache.
 
 	adminUser := BpmUser addAdminUser.
@@ -22,4 +22,4 @@ createSystemDefaultObjects
 
 	role := BpmBackofficeRole createNewOrGetExisting: 'admin' in: 'admins'.
 	role isAdmin: true. 
-	role grantUser: adminUser ifPresent: [].
+	role grantUser: adminUser.

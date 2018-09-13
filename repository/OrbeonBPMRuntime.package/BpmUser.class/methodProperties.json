@@ -15,8 +15,7 @@
 		"getUsersIn:" : "brunobb 09/11/2018 08:24",
 		"initializeCache" : "BrunoBB 03/10/2016 08:18",
 		"migrateToApplicationUser" : "BrunoBB 12/20/2015 11:39",
-		"newUsername:password:" : "BrunoBB 02/07/2016 15:08",
-		"resetAll" : "BrunoBB 06/20/2016 14:29" },
+		"newUsername:password:" : "BrunoBB 02/07/2016 15:08" },
 	"instance" : {
 		"addRole:" : "brunobb 01/31/2018 09:03",
 		"addRoleAssociation:" : "brunobb 05/30/2018 12:46",
@@ -134,7 +133,7 @@
 		"reportCurrentTaskQuantityIn:" : "brunobb 09/10/2018 09:53",
 		"reportFinishedTaskQuantityIn:from:to:satisfying:" : "brunobb 09/11/2018 09:48",
 		"reportPossibleTaskDefinitionsQuantityIn:" : "brunobb 09/10/2018 10:04",
-		"resetAll" : "brunobb 09/10/2018 10:21",
+		"resetMessagesBoxesAndRoles" : "brunobb 09/13/2018 04:21",
 		"resetPassword" : "BrunoBB 05/14/2016 15:47",
 		"roleName" : "BrunoBB 12/11/2015 09:27",
 		"roles" : "BrunoBB 11/22/2015 13:19",

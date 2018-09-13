@@ -14,7 +14,7 @@
 		"getMatrixForApplicationNamed:ifAbsent:" : "BrunoBB 12/22/2015 10:28",
 		"initializeCache" : "BrunoBB 12/22/2015 10:22",
 		"newFor:" : "BrunoBB 12/22/2015 10:30",
-		"resetAll" : "BrunoBB 06/20/2016 14:34" },
+		"resetAllRolesAndAssignments" : "brunobb 09/13/2018 04:30" },
 	"instance" : {
 		"addAssignment:" : "brunobb 04/22/2018 13:57",
 		"addAssignment:forRoleNamed:" : "brunobb 04/22/2018 13:57",
@@ -36,7 +36,7 @@
 		"printOn:" : "brunobb 04/22/2018 13:27",
 		"removeAssignment:" : "brunobb 04/22/2018 13:58",
 		"removeAssignment:fromRoleNamed:" : "brunobb 04/22/2018 13:58",
-		"resetAll" : "BrunoBB 06/20/2016 14:30",
+		"resetRolesAndAssignments" : "brunobb 09/13/2018 04:29",
 		"rolesAndAssignment" : "BrunoBB 12/22/2015 10:30",
 		"rolesAndAssignment:" : "BrunoBB 12/22/2015 10:30",
 		"throwExceptionNoOrbeonApplication" : "brunobb 04/12/2018 10:15",

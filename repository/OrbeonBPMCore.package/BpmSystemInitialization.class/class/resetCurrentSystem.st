@@ -1,4 +1,4 @@
-other
+system initilization
 resetCurrentSystem
 	"This method will remove all objects in the System but it will keep <BpmUser>s"
 
@@ -7,9 +7,8 @@ resetCurrentSystem
 			removeAllFormFieldInstances;
 			initializeAnonymousFormMapping.
 
-	BpmUser cache do: [:each | each resetAll].
+	BpmUser cache do: [:each | each resetMessagesBoxesAndRoles].
 	
-	BpmProcessInstance resetAll.
 	BpmProcessCategory resetAll.
 
 	AbstractApplication initializeCache.
@@ -17,6 +16,8 @@ resetCurrentSystem
 	BpmBackofficeRole initializeCache.
 	BpmFrontOfficeRole initializeCache.
 
-	self getAvailableTasksMatrixClass initializeCache.
-	self getTakenTasksMatrixClass initializeCache.
-	self getFinishedTasksMatrixClass initializeCache.
+	self getAvailableTasksMatrixClass resetAllRolesAndAssignments.
+	self getTakenTasksMatrixClass resetAllRolesAndAssignments.
+	self getFinishedTasksMatrixClass resetAllRolesAndAssignments.
+
+	self defaultTimerEventMonitor initializeDefault.

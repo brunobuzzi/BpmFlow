@@ -1,4 +1,4 @@
-other
+system initilization
 initializeCurrentSystem
 	"WARNING: THIS METHOD WILL DELETE ALL ROOT OBJECTS FROM THE SYSTEM"
 
@@ -12,3 +12,4 @@ initializeCurrentSystem
 	BpmProcessCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
 	BpmProcessDefinition initializeCache.
+	self defaultTimerEventMonitor initializeDefault.

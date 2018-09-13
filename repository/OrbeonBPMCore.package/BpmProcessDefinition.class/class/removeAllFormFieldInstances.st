@@ -1,11 +1,11 @@
 cache
 removeAllFormFieldInstances
-	"Remove ALL instances of <AppFieldValue> from each <BpmProcessInstance>."
+	"Remove ALL instances of <AppFieldValue> from each <BpmProcessDefinition>."
 
 	self cache do: [:eachDictionary | 
-		eachDictionary do: [:procCollection | 
-			procCollection do: [:eachProc | 
-				eachProc formFieldInstances: Dictionary new. "remove all form field instances"
+		eachDictionary do: [:processesCollection | 
+			processesCollection do: [:processDefinition | 
+				processDefinition formFieldInstances: Dictionary new. "remove all form field instances"
 			].
 		].
 	].
