@@ -1,7 +1,7 @@
 other
 removeCategory
 
-	selectedCategory removeFromCacheFrom: self session user username.
+	selectedCategory removeFromCacheIn: self session bpmEnvironment from: self session user username.
 
 	batchedList remove: selectedCategory.
 

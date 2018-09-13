@@ -1,4 +1,4 @@
 Accessing
-resetAll
+resetProcesses
 
 	processes := OrderedCollection new.

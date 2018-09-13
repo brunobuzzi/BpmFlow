@@ -3,7 +3,7 @@ createNewCategory
 
 	model name ifEmpty: [^self].
  
-	model addToCacheIn: self session user username.
+	model addToCacheIn: self session bpmEnvironment for: self session user username.
 
 	batchedList add: model.
 

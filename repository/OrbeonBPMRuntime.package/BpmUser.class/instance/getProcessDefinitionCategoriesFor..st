@@ -1,5 +1,5 @@
 processes
-getProcessDefinitionCategoriesFor: aBpmTaskAssignment
+getProcessDefinitionCategoriesFor: aBpmProcessDefinition
 
-	^(BpmProcessDefinitionCategory  getCategoriesFor: self) 
-		select: [:each | each includes: aBpmTaskAssignment]
+	^(BpmProcessDefinitionCategory getCategoriesIn: aBpmProcessDefinition bpmEnvironment forUser: self) 
+		select: [:each | each includes: aBpmProcessDefinition]

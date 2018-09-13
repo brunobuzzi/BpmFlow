@@ -1,5 +1,5 @@
 categories
 searchMatchingCategories
 
-	categories := (BpmProcessInstanceCategory getCategoriesFor: self session user) select: [:each | 
+	categories := (BpmProcessInstanceCategory getCategoriesIn: self session bpmEnvironment forUser: self session user) select: [:each | 
 		(self searchValueAt: 'category-name' ifAbsent: ['']) match: each name].

@@ -1,5 +1,5 @@
 processes
-getProcessInstanceCategoriesFor: aBpmProcessDefinition
+getProcessInstanceCategoriesFor: aBpmProcessInstance
 
-	^(BpmProcessInstanceCategory  getCategoriesFor: self) 
-		select: [:each | each includes: aBpmProcessDefinition]
+	^(BpmProcessInstanceCategory getCategoriesIn: aBpmProcessInstance bpmEnvironment forUser: self)
+		select: [:each | each includes: aBpmProcessInstance]

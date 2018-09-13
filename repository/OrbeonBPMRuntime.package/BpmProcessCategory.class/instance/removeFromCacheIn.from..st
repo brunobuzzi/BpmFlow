@@ -1,12 +1,14 @@
 other
-removeFromCacheFrom: username
-	| userCache |
+removeFromCacheIn: aBpmEnvironment from: username
+	| userCache key |
 
 	name ifNil: [^CategoryWithNoNameException signal]. 
 	username ifNil: [^CategoryWithNoNameException signal].
 	name isEmpty ifTrue: [^CategoryWithNoNameException signal].	
 	username isEmpty ifTrue: [^CategoryWithNoNameException signal].
 
-	userCache := self class cache at: username ifAbsent: [^AppObjectNotInCacheException signal].
+	key := self class getKeyForUserNamed: username in: aBpmEnvironment.
+
+	userCache := self class cache at: key ifAbsent: [^AppObjectNotInCacheException signal].
 
 	^userCache removeKey: name ifAbsent: [^AppObjectNotInCacheException signal]

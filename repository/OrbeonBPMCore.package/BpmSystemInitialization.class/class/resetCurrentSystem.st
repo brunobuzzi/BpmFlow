@@ -9,7 +9,7 @@ resetCurrentSystem
 
 	BpmUser cache do: [:each | each resetMessagesBoxesAndRoles].
 	
-	BpmProcessCategory resetAll.
+	BpmProcessCategory resetAllCategorizedProcesses.
 
 	AbstractApplication initializeCache.
 
