@@ -13,7 +13,8 @@
 		"instanceRecursion",
 		"isPrivate",
 		"owner",
-		"creationTime" ],
+		"creationTime",
+		"bpmEnvironment" ],
 	"name" : "BpmDashboardDefinition",
 	"pools" : [
 		 ],

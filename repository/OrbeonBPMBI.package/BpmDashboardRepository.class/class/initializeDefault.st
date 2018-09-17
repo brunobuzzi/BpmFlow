@@ -1,4 +1,4 @@
 other
 initializeDefault
 
-	Default := super new initialize.
+	Default := Dictionary new.

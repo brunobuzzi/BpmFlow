@@ -1,4 +1,4 @@
 repository
 dashboardRepository
 
-	^BpmDashboardRepository default
+	^definition dashboardRepository
