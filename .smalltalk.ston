@@ -8,4 +8,13 @@ SmalltalkCISpec {
       #platforms : [ #gemstone ]
     }
   ]
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'travis',
+     #stoneConfPath : 'gemstone/system.conf',
+     #gemConfPath : 'gemstone/gem.conf',
+     #timeZone : 'UTC',
+     #platforms : [ #gemstone, #gemstoneClient ] 
+    }
+  ]
 }
