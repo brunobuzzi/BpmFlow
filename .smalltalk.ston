@@ -1,13 +1,4 @@
 SmalltalkCISpec {
-  #loading : [
-    SCIMetacelloLoadSpec {
-      #baseline : 'BpmFlow',
-      #directory : 'repository',
-      #onWarningLog : true,
-      #load : [ 'default' ],
-      #platforms : [ #gemstone ]
-    }
-  ]
   #configuring : [
     SCIGemStoneServerConfigSpec {
      #defaultSessionName : 'travis',
@@ -15,6 +6,15 @@ SmalltalkCISpec {
      #gemConfPath : 'gemstone/gem.conf',
      #timeZone : 'UTC',
      #platforms : [ #gemstone, #gemstoneClient ] 
+    }
+  ],
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'BpmFlow',
+      #directory : 'repository',
+      #onWarningLog : true,
+      #load : [ 'default' ],
+      #platforms : [ #gemstone ]
     }
   ]
 }
