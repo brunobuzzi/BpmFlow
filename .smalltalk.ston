@@ -2,8 +2,8 @@ SmalltalkCISpec {
   #configuring : [
     SCIGemStoneServerConfigSpec {
      #defaultSessionName : 'travis',
-     #stoneConfPath : 'gemstone/system.conf',
-     #gemConfPath : 'gemstone/gem.conf',
+     #stoneConfPath : '/home/travis/build/brunobuzzi/BpmFlow/gemstone/system.conf',
+     #gemConfPath : '/home/travis/build/brunobuzzi/BpmFlow/gemstone/gem.conf',
      #timeZone : 'UTC',
      #platforms : [ #gemstone, #gemstoneClient ] 
     }
