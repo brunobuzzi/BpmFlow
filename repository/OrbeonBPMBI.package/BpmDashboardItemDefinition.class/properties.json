@@ -8,7 +8,8 @@
 	"instvars" : [
 		"definition",
 		"nextItem",
-		"operator" ],
+		"operator",
+		"hasFixedDates" ],
 	"name" : "BpmDashboardItemDefinition",
 	"pools" : [
 		 ],

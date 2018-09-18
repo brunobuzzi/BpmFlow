@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"getLastDashboardInstanceFor:" : "brunobb 09/18/2018 09:30",
+		"getNewEndDateFor:" : "brunobb 09/18/2018 09:31",
+		"getNewStartDateFrom:" : "brunobb 09/18/2018 09:30",
 		"initialize" : "brunobb 07/03/2018 04:30",
 		"setAsMonthRecursion" : "brunobb 07/03/2018 04:31",
 		"setAsWeekRecursion" : "brunobb 07/03/2018 04:30",

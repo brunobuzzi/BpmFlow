@@ -4,8 +4,9 @@ generateDashboardInstanceFrom: startDate to: endDate
 
 	dashboard := BpmDashboardInstance newForItemDefinition: self.
 
-	self hasDates
+	(self hasDates and: [hasFixedDates not])
 	ifTrue: [dashboard startDate: startDate;
-								endDate: endDate].
+								endDate: endDate;
+								setChartDates].
 
 	^dashboard
