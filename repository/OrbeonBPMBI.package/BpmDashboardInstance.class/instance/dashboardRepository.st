@@ -1,4 +1,0 @@
-repository
-dashboardRepository
-
-	^definition dashboardRepository

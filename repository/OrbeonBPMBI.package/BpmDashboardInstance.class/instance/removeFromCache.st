@@ -1,4 +1,4 @@
 repository
 removeFromCache
 
-	^self dashboardRepository remove: self
+	^self dashboardDefinition removeInstance: self

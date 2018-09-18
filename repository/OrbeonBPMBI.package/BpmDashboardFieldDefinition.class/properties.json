@@ -9,7 +9,7 @@
 		"applicationName",
 		"processName",
 		"fieldName",
-		"conditionBlock" ],
+		"itemConditionBlock" ],
 	"name" : "BpmDashboardFieldDefinition",
 	"pools" : [
 		 ],

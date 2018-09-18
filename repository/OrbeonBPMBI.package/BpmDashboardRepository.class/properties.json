@@ -6,8 +6,7 @@
 		"Default" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"definitions",
-		"instances" ],
+		"definitions" ],
 	"name" : "BpmDashboardRepository",
 	"pools" : [
 		 ],

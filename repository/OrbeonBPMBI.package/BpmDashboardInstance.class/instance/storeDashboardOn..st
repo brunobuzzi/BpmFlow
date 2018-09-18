@@ -1,4 +1,0 @@
-repository
-storeDashboardOn: aBpmDashboardRepository
-
-	^aBpmDashboardRepository storeInstance: self

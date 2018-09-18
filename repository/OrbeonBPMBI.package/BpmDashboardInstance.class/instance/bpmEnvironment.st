@@ -1,4 +1,4 @@
 other
 bpmEnvironment
 
-	^definition bpmEnvironment
+	^self dashboardDefinition bpmEnvironment

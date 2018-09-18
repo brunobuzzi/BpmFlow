@@ -1,9 +1,11 @@
 {
 	"class" : {
-		 },
+		"newForDashboard:" : "brunobb 09/17/2018 13:11" },
 	"instance" : {
-		"isLastItem" : "brunobb 07/03/2018 04:32",
-		"nextItem" : "brunobb 07/03/2018 04:13",
-		"nextItem:" : "brunobb 07/03/2018 04:13",
-		"operator" : "brunobb 07/03/2018 04:13",
-		"operator:" : "brunobb 07/03/2018 04:13" } }
+		"definition" : "brunobb 09/17/2018 13:10",
+		"definition:" : "brunobb 09/17/2018 13:10",
+		"isLastItem" : "brunobb 09/17/2018 13:10",
+		"nextItem" : "brunobb 09/17/2018 13:10",
+		"nextItem:" : "brunobb 09/17/2018 13:10",
+		"operator" : "brunobb 09/17/2018 13:10",
+		"operator:" : "brunobb 09/17/2018 13:10" } }

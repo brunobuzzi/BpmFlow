@@ -1,4 +1,4 @@
-other
+repository
 owner
 
-	^definition owner
+	^self dashboardDefinition owner

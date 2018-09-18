@@ -1,4 +1,4 @@
-other
+repository
 ownerName
 
-	^definition ownerName
+	^self dashboardDefinition ownerName

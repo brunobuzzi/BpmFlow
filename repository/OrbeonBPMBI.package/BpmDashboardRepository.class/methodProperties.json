@@ -1,19 +1,11 @@
 {
 	"class" : {
-		"default" : "brunobb 07/03/2018 05:31",
-		"defaultFor:" : "brunobb 09/17/2018 11:13",
-		"initializeDefault" : "brunobb 09/17/2018 11:06" },
+		"default" : "brunobb 09/17/2018 12:33",
+		"defaultFor:" : "brunobb 09/17/2018 12:33",
+		"initializeDefault" : "brunobb 09/17/2018 12:33" },
 	"instance" : {
-		"definitions" : "brunobb 07/03/2018 05:30",
-		"definitions:" : "brunobb 07/03/2018 05:30",
-		"initialize" : "brunobb 07/03/2018 05:31",
-		"instances" : "brunobb 07/03/2018 05:30",
-		"instances:" : "brunobb 07/03/2018 05:30",
-		"remove:" : "brunobb 07/03/2018 05:54",
-		"removeDashboard:from:" : "brunobb 07/03/2018 06:00",
-		"removeDefinition:" : "brunobb 07/03/2018 05:59",
-		"removeInstance:" : "brunobb 07/03/2018 05:59",
-		"store:" : "brunobb 07/03/2018 05:44",
-		"storeDashboard:on:" : "brunobb 07/03/2018 05:39",
-		"storeDefinition:" : "brunobb 07/03/2018 05:40",
-		"storeInstance:" : "brunobb 07/03/2018 05:41" } }
+		"definitions" : "brunobb 09/17/2018 12:33",
+		"definitions:" : "brunobb 09/17/2018 12:33",
+		"initialize" : "brunobb 09/17/2018 12:33",
+		"remove:" : "brunobb 09/17/2018 12:41",
+		"store:" : "brunobb 09/17/2018 12:39" } }

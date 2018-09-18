@@ -1,4 +1,0 @@
-other
-isPrivate
-
-	^definition isPrivate
