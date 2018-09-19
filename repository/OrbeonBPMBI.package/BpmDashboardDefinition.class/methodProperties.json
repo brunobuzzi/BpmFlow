@@ -1,7 +1,11 @@
 {
 	"class" : {
-		 },
+		"createNewDashboardDefinitionNamed:in:for:" : "brunobb 09/19/2018 09:57",
+		"dashboardRepositoryFor:" : "brunobb 09/19/2018 09:49",
+		"getDashboardNamed:in:for:" : "brunobb 09/19/2018 10:11",
+		"getDashboardOrCreateNewNamed:in:for:" : "brunobb 09/19/2018 09:57" },
 	"instance" : {
+		"addItem:" : "brunobb 09/19/2018 10:34",
 		"addToCache" : "brunobb 09/17/2018 12:31",
 		"bpmEnvironment" : "brunobb 09/17/2018 12:31",
 		"bpmEnvironment:" : "brunobb 09/17/2018 12:31",
@@ -9,7 +13,7 @@
 		"creationTime:" : "brunobb 09/17/2018 12:31",
 		"dashboardInstances" : "brunobb 09/17/2018 12:31",
 		"dashboardInstances:" : "brunobb 09/17/2018 12:31",
-		"dashboardRepository" : "brunobb 09/17/2018 12:31",
+		"dashboardRepository" : "brunobb 09/19/2018 09:49",
 		"description" : "brunobb 09/17/2018 12:31",
 		"description:" : "brunobb 09/17/2018 12:31",
 		"generateDashboards" : "brunobb 09/18/2018 09:31",
@@ -29,4 +33,5 @@
 		"ownerName" : "brunobb 09/17/2018 12:31",
 		"removeFromCache" : "brunobb 09/17/2018 12:31",
 		"removeInstance:" : "brunobb 09/17/2018 13:02",
+		"removeItem:" : "brunobb 09/19/2018 10:34",
 		"storeInstance:" : "brunobb 09/17/2018 13:01" } }

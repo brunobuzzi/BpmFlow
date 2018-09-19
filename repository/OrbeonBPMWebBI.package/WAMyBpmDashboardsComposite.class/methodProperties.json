@@ -2,6 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getCurrentCollection" : "brunobb 06/26/2018 08:22",
+		"getCurrentCollection" : "brunobb 09/19/2018 11:06",
+		"getIconNameFormItem" : "brunobb 09/19/2018 11:08",
+		"getTextForItem:" : "brunobb 09/19/2018 11:09",
 		"gitbookUrl" : "brunobb 07/13/2018 10:53",
+		"renderItemComponentOn:" : "brunobb 09/19/2018 11:10",
+		"renderItemDescriptionAditionalDataOn:" : "brunobb 09/19/2018 11:11",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 09/19/2018 11:11",
+		"renderItemDescriptionTitleOn:" : "brunobb 09/19/2018 11:11",
+		"renderLateralItemDetailsOn:for:" : "brunobb 09/19/2018 11:12",
 		"renderSearchAreaOn:" : "brunobb 06/26/2018 08:22" } }

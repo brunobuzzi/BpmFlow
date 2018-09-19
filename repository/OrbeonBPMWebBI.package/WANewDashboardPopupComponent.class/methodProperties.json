@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createDashboard" : "brunobb 09/19/2018 09:16",
+		"addChartToDashboard:" : "brunobb 09/19/2018 10:35",
+		"createDashboard" : "brunobb 09/19/2018 10:19",
+		"getRecursionFrom:" : "brunobb 09/19/2018 10:21",
 		"renderOn:" : "brunobb 09/19/2018 09:32",
 		"renderRecursionComboOn:" : "brunobb 09/19/2018 09:32" } }

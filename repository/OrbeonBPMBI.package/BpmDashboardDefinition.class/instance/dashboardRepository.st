@@ -1,4 +1,4 @@
 repository
 dashboardRepository
 
-	^BpmDashboardRepository defaultFor: bpmEnvironment
+	^self class dashboardRepositoryFor: bpmEnvironment
