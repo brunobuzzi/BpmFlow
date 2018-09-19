@@ -2,6 +2,7 @@ search area
 searchByApplicationScope
 
 	searchResult := self chartsRepository 
-									getChartsFor: self session user 
+									getChartsIn: self session bpmEnvironment
+									for: self session user 
 									withScope: BpmChartApplicationScope 
 									satisfying: [:chart | chart applicationName = self getApplicationName]

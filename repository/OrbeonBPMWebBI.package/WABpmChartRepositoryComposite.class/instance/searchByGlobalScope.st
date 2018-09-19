@@ -1,4 +1,4 @@
 search area
 searchByGlobalScope
 
-	searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartGlobalScope
+	searchResult := self chartsRepository getChartsIn: self session bpmEnvironment for: self session user withScope: BpmChartGlobalScope
