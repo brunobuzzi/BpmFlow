@@ -1,5 +1,5 @@
 other
-renderEditDashboardOn: html
+renderEditDashboardIconOn: html
    | jQueryId |
 
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 350 composite: WANewDashboardPopupComponent title: 'Edit Dashboard' domainObject: selectedLateralItem

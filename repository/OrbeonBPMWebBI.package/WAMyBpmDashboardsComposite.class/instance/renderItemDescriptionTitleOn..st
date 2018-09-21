@@ -3,4 +3,6 @@ renderItemDescriptionTitleOn: html
 
 	html output:  selectedLateralItem name.
 
-	self renderEditDashboardOn: html.
+	self renderEditDashboardIconOn: html.
+	self renderRefreshDashboardIconOn: html.
+	self renderSelectDashboardInstanceIconOn: html
