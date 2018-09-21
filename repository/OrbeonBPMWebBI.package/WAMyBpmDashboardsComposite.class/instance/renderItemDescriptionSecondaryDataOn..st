@@ -1,11 +1,8 @@
 other
 renderItemDescriptionSecondaryDataOn: html
 
-	"selectedLateralItem applicationName ifNotNil: [:value | 
-		html span: [html strong: ('Application:' translateFor: self session user)].
-		html output: value.
-	].
-	selectedLateralItem processName ifNotNil: [:value | 
-		html span: [html strong: ('Process Name:' translateFor: self session user)].
-		html output: value.
-	]."
+	html span: [html strong: ('Creation Time:' translateFor: self session user)].
+	html output: selectedLateralItem creationTime.
+
+	html span: [html strong: ('Recursion:' translateFor: self session user)].
+	html output: selectedLateralItem printRecursionDefinitionName.
