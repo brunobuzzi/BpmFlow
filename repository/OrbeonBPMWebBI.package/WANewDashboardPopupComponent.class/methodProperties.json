@@ -5,5 +5,11 @@
 		"addChartToDashboard:" : "brunobb 09/19/2018 10:35",
 		"createDashboard" : "brunobb 09/19/2018 10:19",
 		"getRecursionFrom:" : "brunobb 09/19/2018 10:21",
-		"renderOn:" : "brunobb 09/19/2018 09:32",
-		"renderRecursionComboOn:" : "brunobb 09/19/2018 09:32" } }
+		"renderCurrentRecursionComboOn:" : "brunobb 09/21/2018 10:06",
+		"renderEditDashboardOn:" : "brunobb 09/21/2018 12:10",
+		"renderIsActiveCheckboxOn:" : "brunobb 09/21/2018 12:09",
+		"renderIsPrivateCheckboxOn:" : "brunobb 09/21/2018 12:08",
+		"renderNewEditDashbordFromChartOn:" : "brunobb 09/21/2018 12:09",
+		"renderOn:" : "brunobb 09/21/2018 09:51",
+		"renderRecursionComboOn:" : "brunobb 09/19/2018 09:32",
+		"saveDashboard" : "brunobb 09/21/2018 09:57" } }

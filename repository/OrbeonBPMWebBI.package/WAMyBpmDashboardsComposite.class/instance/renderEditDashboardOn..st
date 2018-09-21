@@ -2,7 +2,8 @@ other
 renderEditDashboardOn: html
    | jQueryId |
 
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 350 composite: WANewDashboardPopupComponent title: 'Edit Dashboard' domainObject: nil arguments: #().
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 350 composite: WANewDashboardPopupComponent title: 'Edit Dashboard' domainObject: selectedLateralItem
+	 arguments: #().
 
 	html div class: 'float-right margin-left-5px'; with: [
 		html anchor 
