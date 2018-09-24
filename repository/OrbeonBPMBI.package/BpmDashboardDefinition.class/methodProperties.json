@@ -16,7 +16,6 @@
 		"dashboardRepository" : "brunobb 09/19/2018 09:49",
 		"description" : "brunobb 09/17/2018 12:31",
 		"description:" : "brunobb 09/17/2018 12:31",
-		"generateDashboards" : "brunobb 09/18/2018 09:31",
 		"getChartDefinitions" : "brunobb 09/19/2018 11:38",
 		"getDashboardItemDefinitionFor:" : "brunobb 09/24/2018 09:29",
 		"initialize" : "brunobb 09/17/2018 12:32",
@@ -40,4 +39,5 @@
 		"removeFromCache" : "brunobb 09/17/2018 12:31",
 		"removeInstance:" : "brunobb 09/17/2018 13:02",
 		"removeItem:" : "brunobb 09/19/2018 10:34",
-		"storeInstance:" : "brunobb 09/17/2018 13:01" } }
+		"storeInstance:" : "brunobb 09/17/2018 13:01",
+		"updateDashboardInstances" : "brunobb 09/24/2018 10:29" } }

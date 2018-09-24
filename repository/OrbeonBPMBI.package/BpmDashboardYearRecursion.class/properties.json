@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMBI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmDashboardYearRecursion",
+	"pools" : [
+		 ],
+	"super" : "BpmDashboardRecursionDefinition",
+	"type" : "normal" }

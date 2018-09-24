@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"comboBoxName" : "brunobb 09/24/2018 10:49",
+		"getComboBoxNames" : "brunobb 09/24/2018 10:52",
+		"getRecursionClassFrom:ifNone:" : "brunobb 09/24/2018 10:51" },
 	"instance" : {
-		"comboBoxName" : "brunobb 09/21/2018 10:04",
+		"comboBoxName" : "brunobb 09/24/2018 10:48",
 		"getLastDashboardInstanceFor:" : "brunobb 09/18/2018 09:30",
 		"getNewEndDateFor:" : "brunobb 09/18/2018 09:31",
 		"getNewStartDateFrom:" : "brunobb 09/18/2018 09:30",

@@ -1,2 +1,4 @@
 other
 refreshDashboard
+
+	selectedLateralItem updateDashboardInstances

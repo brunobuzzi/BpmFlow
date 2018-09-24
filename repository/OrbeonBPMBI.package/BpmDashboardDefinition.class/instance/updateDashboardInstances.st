@@ -1,5 +1,5 @@
 dashboard generation
-generateDashboards
+updateDashboardInstances
 
 	items do: [:itemDefinition | | lastInstance startDate endDate |
 		lastInstance := instanceRecursion getLastDashboardInstanceFor: self.
