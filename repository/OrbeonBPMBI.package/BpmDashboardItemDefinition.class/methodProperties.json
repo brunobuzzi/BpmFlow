@@ -1,14 +1,19 @@
 {
 	"class" : {
-		"newForDashboard:" : "brunobb 09/17/2018 13:11" },
+		"newForDashboard:" : "brunobb 09/24/2018 12:15" },
 	"instance" : {
-		"definition" : "brunobb 09/17/2018 13:10",
-		"definition:" : "brunobb 09/17/2018 13:10",
-		"hasFixedDates" : "brunobb 09/18/2018 10:17",
-		"hasFixedDates:" : "brunobb 09/18/2018 10:17",
-		"initialize" : "brunobb 09/18/2018 10:18",
-		"isLastItem" : "brunobb 09/17/2018 13:10",
-		"nextItem" : "brunobb 09/17/2018 13:10",
-		"nextItem:" : "brunobb 09/17/2018 13:10",
-		"operator" : "brunobb 09/17/2018 13:10",
-		"operator:" : "brunobb 09/17/2018 13:10" } }
+		"dashboardInstances" : "brunobb 09/24/2018 12:15",
+		"dashboardInstances:" : "brunobb 09/24/2018 12:15",
+		"definition" : "brunobb 09/24/2018 12:15",
+		"definition:" : "brunobb 09/24/2018 12:15",
+		"hasFixedDates" : "brunobb 09/24/2018 12:15",
+		"hasFixedDates:" : "brunobb 09/24/2018 12:15",
+		"initialize" : "brunobb 09/24/2018 12:15",
+		"isLastItem" : "brunobb 09/24/2018 12:15",
+		"nextItem" : "brunobb 09/24/2018 12:15",
+		"nextItem:" : "brunobb 09/24/2018 12:15",
+		"operator" : "brunobb 09/24/2018 12:15",
+		"operator:" : "brunobb 09/24/2018 12:15",
+		"printLastUpdate" : "brunobb 09/24/2018 12:17",
+		"removeInstance:" : "brunobb 09/24/2018 12:20",
+		"storeInstance:" : "brunobb 09/24/2018 12:19" } }

@@ -1,4 +1,4 @@
 repository
 addToCache
 
-	^self dashboardDefinition storeInstance: self
+	^itemDefinition storeInstance: self

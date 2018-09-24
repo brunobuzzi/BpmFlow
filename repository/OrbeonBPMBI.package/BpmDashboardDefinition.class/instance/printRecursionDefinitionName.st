@@ -1,4 +1,4 @@
 other
 printRecursionDefinitionName
 
-	^instanceRecursion recursionName
+	^instanceRecursion comboBoxName

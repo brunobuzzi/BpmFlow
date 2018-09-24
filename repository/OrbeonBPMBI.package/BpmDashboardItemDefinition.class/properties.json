@@ -9,7 +9,8 @@
 		"definition",
 		"nextItem",
 		"operator",
-		"hasFixedDates" ],
+		"hasFixedDates",
+		"dashboardInstances" ],
 	"name" : "BpmDashboardItemDefinition",
 	"pools" : [
 		 ],

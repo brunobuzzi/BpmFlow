@@ -1,6 +1,6 @@
 other
 printLastUpdate
 
-	dashboardInstances isEmpty ifTrue: [^'-'].
+	items isEmpty ifTrue: [^'-'].
 
-	^dashboardInstances last creationTime
+	^items last printLastUpdate

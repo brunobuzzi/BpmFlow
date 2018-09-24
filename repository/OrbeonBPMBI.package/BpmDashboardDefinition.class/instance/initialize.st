@@ -10,4 +10,3 @@ initialize
 	instanceRecursion := BpmDashboardRecursionDefinition new.
 	isPrivate := false.
 	creationTime := TimeStamp now.
-	dashboardInstances := OrderedCollection new.

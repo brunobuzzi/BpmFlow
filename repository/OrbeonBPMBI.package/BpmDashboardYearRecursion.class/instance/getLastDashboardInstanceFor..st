@@ -1,0 +1,4 @@
+other
+getLastDashboardInstanceFor: aBpmDashboardDefinition
+
+	^aBpmDashboardDefinition getLastDashboardInstanceForYearRecursion
