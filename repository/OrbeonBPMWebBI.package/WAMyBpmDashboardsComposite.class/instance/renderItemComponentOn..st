@@ -5,6 +5,7 @@ renderItemComponentOn: html
 
 	html div with: [
 		selectedLateralItem getChartDefinitions do: [:eachChart |
+			self renderDownUpIconsOn: html forChart: eachChart.
 			eachChart renderExistingChartOn: html.
 		].
 	].
