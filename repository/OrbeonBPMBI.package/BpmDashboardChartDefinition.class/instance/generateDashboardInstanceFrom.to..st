@@ -10,4 +10,6 @@ generateDashboardInstanceFrom: startDate to: endDate
 								endDate: endDate;
 								setChartDates].
 
+	dashboard report: chartDefinition createDistributionReport.
+
 	^dashboard

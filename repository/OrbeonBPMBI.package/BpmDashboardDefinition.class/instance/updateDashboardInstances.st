@@ -1,5 +1,6 @@
 dashboard generation
 updateDashboardInstances
+	"The receiver update its <BpmDashboardInstance>s depending on the recursion policy <aBpmDashboardRecursionDefinition> "
 
 	self isOutDated ifFalse: [^self].
 
@@ -7,5 +8,5 @@ updateDashboardInstances
 		lastItemInstanceOrDefinition := itemDefinition lastDashboardInstanceOrNil ifNil: [itemDefinition] ifNotNil: [:itemInstance | itemInstance].
 		startDate := lastItemInstanceOrDefinition startDate.
 		endDate := lastItemInstanceOrDefinition endDate.
-		itemDefinition generateDashboardInstanceFrom: startDate to: endDate.
+		itemDefinition generateDashboardInstanceFrom: startDate to: endDate.	
 	].

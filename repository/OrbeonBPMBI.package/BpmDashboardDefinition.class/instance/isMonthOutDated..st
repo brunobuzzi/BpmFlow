@@ -1,7 +1,8 @@
 outdate
 isMonthOutDated: aTimeStamp
-	| timeThreshold |
+	"Answer whether or not the receiver is outdated based on it recursion policy <instanceRecursion> <aBpmDashboardMonthRecursion> with last execution <aTimeStamp>"
+	| nextTime |
 
-	timeThreshold := TimeStamp date: (aTimeStamp date addMonths: 1) time: aTimeStamp time.
+	nextTime := TimeStamp date: (aTimeStamp date addMonths: 1) time: aTimeStamp time.
  
-	^timeThreshold >= TimeStamp now
+	^nextTime <= TimeStamp now

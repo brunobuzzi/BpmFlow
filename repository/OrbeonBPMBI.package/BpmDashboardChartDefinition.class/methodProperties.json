@@ -4,5 +4,7 @@
 	"instance" : {
 		"chartDefinition" : "brunobb 09/18/2018 10:17",
 		"chartDefinition:" : "brunobb 09/18/2018 10:17",
-		"generateDashboardInstanceFrom:to:" : "brunobb 09/24/2018 12:44",
-		"hasDates" : "brunobb 09/18/2018 10:17" } }
+		"endDate" : "brunobb 09/25/2018 07:58",
+		"generateDashboardInstanceFrom:to:" : "brunobb 09/25/2018 08:10",
+		"hasDates" : "brunobb 09/18/2018 10:17",
+		"startDate" : "brunobb 09/25/2018 07:58" } }

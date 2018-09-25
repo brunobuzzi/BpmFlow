@@ -1,7 +1,8 @@
 outdate
 isWeekOutDated: aTimeStamp
-	| timeThreshold |
+	"Answer whether or not the receiver is outdated based on it recursion policy <instanceRecursion> <aBpmDashboardWeekRecursion> with last execution <aTimeStamp>"
+	| nextTime |
 
-	timeThreshold := TimeStamp date: (aTimeStamp date addDays: 7) time: aTimeStamp time.
+	nextTime := TimeStamp date: (aTimeStamp date addDays: 7) time: aTimeStamp time.
  
-	^timeThreshold >= TimeStamp now
+	^nextTime <= TimeStamp now

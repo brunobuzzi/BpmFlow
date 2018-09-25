@@ -11,7 +11,8 @@
 		"endDate",
 		"values",
 		"creationTime",
-		"isClosed" ],
+		"isClosed",
+		"report" ],
 	"name" : "BpmDashboardInstance",
 	"pools" : [
 		 ],
