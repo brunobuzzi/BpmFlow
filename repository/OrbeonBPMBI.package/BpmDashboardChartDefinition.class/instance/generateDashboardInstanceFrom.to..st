@@ -3,6 +3,7 @@ generateDashboardInstanceFrom: startDate to: endDate
 	| dashboard |
 
 	dashboard := BpmDashboardInstance newForItemDefinition: self.
+	self storeInstance: dashboard.
 
 	(self hasDates and: [hasFixedDates not])
 	ifTrue: [dashboard startDate: startDate;

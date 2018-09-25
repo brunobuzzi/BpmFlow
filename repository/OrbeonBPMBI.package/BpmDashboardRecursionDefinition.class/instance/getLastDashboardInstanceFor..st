@@ -1,4 +1,0 @@
-other
-getLastDashboardInstanceFor: aBpmDashboardDefinition
-
-	self subclassResponsibility
