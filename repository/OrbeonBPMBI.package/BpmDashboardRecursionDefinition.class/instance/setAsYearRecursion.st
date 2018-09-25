@@ -1,4 +1,0 @@
-other
-setAsYearRecursion
-
-	recursionName := #year

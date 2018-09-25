@@ -1,4 +1,0 @@
-other
-setAsWeekRecursion
-
-	recursionName := #week

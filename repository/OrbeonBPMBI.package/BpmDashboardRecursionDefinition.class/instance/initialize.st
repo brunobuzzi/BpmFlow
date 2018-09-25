@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 
-	recursionName := #year.
+	modifyStartDateOnUpdate := true.
