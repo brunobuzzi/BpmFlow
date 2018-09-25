@@ -12,4 +12,11 @@ generateDashboardInstanceFrom: startDate to: endDate
 
 	dashboard report: chartDefinition createDistributionReport.
 
+	dashboard report xAxisIsDate ifTrue: [
+		dashboard report createSecondayDistributionByYear.
+		dashboard report createSecondayDistributionByMonth.
+		dashboard report createSecondayDistributionByWeek.
+	].
+	
+
 	^dashboard
