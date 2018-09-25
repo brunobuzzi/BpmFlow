@@ -4,8 +4,8 @@ getApplicationAndProcessDefinitionDistributionIn: aBpmEnvironment
 
 	distribution := OrderPreservingDictionary new.
 
-	(self cache select: [:appName| aBpmEnvironment includesApplicationName: appName]) keysAndValuesDo: [:appName :procDefDictionary | 
-		distribution at: appName put: procDefDictionary size.
+	aBpmEnvironment applications do: [:application | 
+		distribution at: application applicationName put: (self cache at: application applicationName) size.
 	].
 
 	^distribution

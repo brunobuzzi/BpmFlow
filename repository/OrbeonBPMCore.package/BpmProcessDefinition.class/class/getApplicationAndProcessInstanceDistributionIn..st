@@ -4,11 +4,20 @@ getApplicationAndProcessInstanceDistributionIn: aBpmEnvironment
 
 	distribution := OrderPreservingDictionary new.
 
-	(self cache select: [:appName| aBpmEnvironment includesApplicationName: appName]) keysAndValuesDo: [:appName :procDefDictionary | | sum |
+"	aBpmEnvironment applications keysAndValuesDo: [:appName :procDefDictionary | | sum |
 		sum := 0.
 		procDefDictionary do: [:procDefCollection |
 			procDefCollection do: [:each | sum := sum + each processInstances size].
 			distribution at: appName put: sum] 
+	]."
+
+	aBpmEnvironment applications do: [:application | | sum | 
+		sum := 0.
+		(self cache at: application applicationName) keysAndValuesDo: [:appName :versionCollection | 
+			versionCollection do: [:eachVersion | sum := sum + eachVersion processInstances size].
+		].
+		distribution at: application applicationName put: sum.
 	].
+
 
 	^distribution
