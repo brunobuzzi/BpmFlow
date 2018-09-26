@@ -1,4 +1,0 @@
-other
-isLastItem
-
-	^nextItem isNil

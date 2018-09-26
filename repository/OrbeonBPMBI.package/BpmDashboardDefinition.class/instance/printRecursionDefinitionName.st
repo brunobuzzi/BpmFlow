@@ -1,4 +1,0 @@
-other
-printRecursionDefinitionName
-
-	^instanceRecursion comboBoxName

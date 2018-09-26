@@ -1,5 +1,5 @@
 other
-isOutDated: aTimeStmap for: aBpmDashboardDefinition
-	"Answer whether or not <aBpmDashboardDefinition> is outdated based on receiver recursion policy with last update was on <aTimeStamp>"
+isOutDated: aTimeStmap for: aBpmDashboardItemDefinition
+	"Answer whether or not <aBpmDashboardItemDefinition> is outdated based on receiver recursion policy with last update was on <aTimeStamp>"
 
 	self subclassResponsibility
