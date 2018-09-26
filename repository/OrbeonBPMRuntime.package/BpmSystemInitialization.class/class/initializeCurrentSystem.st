@@ -14,4 +14,5 @@ initializeCurrentSystem
 	BpmProcessDynamicCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
 	BpmProcessDefinition initializeCache.
+	BpmDashboardRepository initializeDefault.
 	self defaultTimerEventMonitor initializeDefault.

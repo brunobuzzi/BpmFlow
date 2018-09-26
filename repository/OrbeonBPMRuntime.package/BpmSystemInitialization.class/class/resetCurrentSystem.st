@@ -8,6 +8,7 @@ resetCurrentSystem
 			initializeAnonymousFormMapping.
 
 	BpmUser cache do: [:each | each resetMessagesBoxesAndRoles].
+	BpmDashboardRepository initializeDefault.
 	
 	BpmProcessDefinitionCategory resetAllCategorizedProcesses.
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.
