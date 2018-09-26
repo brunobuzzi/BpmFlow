@@ -1,5 +1,5 @@
 {
-	"category" : "OrbeonBPMCore",
+	"category" : "OrbeonBPMRuntime",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
