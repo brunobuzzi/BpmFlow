@@ -2,9 +2,10 @@ dashboard generation
 updateDashboardInstances
 	"The receiver update its <BpmDashboardInstance>s depending on the recursion policy <aBpmDashboardRecursionDefinition> "
 
-	(items select: [:each | each isOutDated]) do: [:itemDefinition | | lastItemInstanceOrDefinition startDate endDate |
+	(items select: [:itemDefinition | itemDefinition isOutDated]) do: [:itemDefinition | | lastItemInstanceOrDefinition startDate |
 		lastItemInstanceOrDefinition := itemDefinition lastDashboardInstanceOrNil ifNil: [itemDefinition] ifNotNil: [:itemInstance | itemInstance].
-		startDate := lastItemInstanceOrDefinition startDate. "??????????" 
-		endDate := lastItemInstanceOrDefinition endDate. "Date current ?????"
-		itemDefinition generateDashboardInstanceFrom: startDate to: endDate.	
+		startDate := itemDefinition modifyStartDateOnUpdate
+			ifTrue: [itemDefinition updateStartDate: lastItemInstanceOrDefinition startDate]
+			ifFalse: [lastItemInstanceOrDefinition startDate].
+		itemDefinition generateDashboardInstanceFrom: startDate to: Date today.	
 	].
