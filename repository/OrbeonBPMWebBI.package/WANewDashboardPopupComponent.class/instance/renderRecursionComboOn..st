@@ -4,7 +4,7 @@ renderRecursionComboOn: html
 	html label attributeAt: 'for' put: 'recursion'; with: ('Recursion' translateFor: self session user).
 	html select 
 		attributeAt: 'id' put: 'recursion';
-		list: #('Year' 'Month' 'Week') ; 
+		list: BpmDashboardRecursionDefinition getComboBoxNames; 
 		callback: [:value |
 			self addValue: value named: 'recursion'.
 		]

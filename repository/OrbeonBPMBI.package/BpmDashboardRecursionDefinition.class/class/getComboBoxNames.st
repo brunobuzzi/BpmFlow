@@ -1,4 +1,7 @@
 other
 getComboBoxNames
 
-	^self subclasses collect: [:each | each comboBoxName]
+	^Array with: BpmDashboardDayRecursion comboBoxName
+		with: BpmDashboardWeekRecursion comboBoxName
+		with: BpmDashboardMonthRecursion comboBoxName
+		with: BpmDashboardYearRecursion comboBoxName

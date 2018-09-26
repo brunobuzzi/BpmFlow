@@ -9,8 +9,10 @@ renderNewEditDashbordFromChartOn: html
 					html label for: 'dashboardName'; with: ('Dashboard Name' translateFor: self session user).
 					html textInput id: 'dashboardName'; callback: [:value | self addValue: value named: 'dashboardName']. 
 					html label for: 'description'; with: ('Description' translateFor: self session user).
-					self renderRecursionComboOn: html.
 					html textArea id: 'description'; callback: [:value | self addValue: value named: 'description']. 
+					self renderRecursionComboOn: html.
+					self renderHasFixedDatesCheckboxOn: html.
+					self renderModifyStartDateOnUpdateCheckboxOn: html.
 				].
 				html button 
 					callback: [self createDashboard];

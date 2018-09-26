@@ -1,4 +1,4 @@
-subclass responsibility
+dashboard
 renderAddToDashboardIconOn: html
    | jQueryId |
 

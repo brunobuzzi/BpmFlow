@@ -2,14 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addChartToDashboard:" : "brunobb 09/19/2018 10:35",
-		"createDashboard" : "brunobb 09/19/2018 10:19",
+		"addChartToDashboard:" : "brunobb 09/26/2018 10:22",
+		"createDashboard" : "brunobb 09/26/2018 10:19",
 		"getRecursionFrom:" : "brunobb 09/24/2018 10:54",
 		"renderCurrentRecursionComboOn:" : "brunobb 09/24/2018 10:52",
 		"renderEditDashboardOn:" : "brunobb 09/21/2018 12:10",
+		"renderHasFixedDatesCheckboxOn:" : "brunobb 09/26/2018 10:28",
 		"renderIsActiveCheckboxOn:" : "brunobb 09/21/2018 12:09",
 		"renderIsPrivateCheckboxOn:" : "brunobb 09/21/2018 12:08",
-		"renderNewEditDashbordFromChartOn:" : "brunobb 09/21/2018 12:09",
+		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 09/26/2018 10:28",
+		"renderNewEditDashbordFromChartOn:" : "brunobb 09/26/2018 10:24",
 		"renderOn:" : "brunobb 09/21/2018 09:51",
-		"renderRecursionComboOn:" : "brunobb 09/19/2018 09:32",
+		"renderRecursionComboOn:" : "brunobb 09/26/2018 10:32",
 		"saveDashboard" : "brunobb 09/21/2018 09:57" } }

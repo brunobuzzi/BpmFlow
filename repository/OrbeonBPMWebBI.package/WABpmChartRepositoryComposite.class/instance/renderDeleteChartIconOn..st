@@ -1,4 +1,4 @@
-subclass responsibility
+other
 renderDeleteChartIconOn: html
    | jQueryId |
 

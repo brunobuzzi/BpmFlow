@@ -1,4 +1,4 @@
-subclass responsibility
+other
 deleteChart
 
 	(self componentValueAt: 'deleteChart') "the jqdialog set this value"
