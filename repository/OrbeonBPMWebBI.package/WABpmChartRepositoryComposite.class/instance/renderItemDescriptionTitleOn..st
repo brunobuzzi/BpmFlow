@@ -1,7 +1,7 @@
 subclass responsibility
 renderItemDescriptionTitleOn: html
 
-	html output:  selectedLateralItem reportName.
+	html output: selectedLateralItem reportName.
 
 	self renderDeleteChartIconOn: html.
 
