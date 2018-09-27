@@ -5,4 +5,6 @@ renderItemDescriptionTitleOn: html
 
 	self renderDeleteChartIconOn: html.
 
-	self renderAddToDashboardIconOn: html.
+	self renderAddToExistingDashboardIconOn: html.
+
+	self renderAddToNewDashboardIconOn: html.

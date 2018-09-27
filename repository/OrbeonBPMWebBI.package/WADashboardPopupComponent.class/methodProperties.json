@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addChartToDashboard:" : "brunobb 09/27/2018 09:57",
+		"createDashboard" : "brunobb 09/27/2018 09:57",
+		"getRecursionFrom:" : "brunobb 09/27/2018 09:57",
+		"renderCurrentRecursionComboOn:" : "brunobb 09/27/2018 09:57",
+		"renderEditDashboardOn:" : "brunobb 09/27/2018 09:57",
+		"renderHasFixedDatesCheckboxOn:" : "brunobb 09/27/2018 09:57",
+		"renderIsActiveCheckboxOn:" : "brunobb 09/27/2018 09:57",
+		"renderIsPrivateCheckboxOn:" : "brunobb 09/27/2018 09:57",
+		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 09/27/2018 09:57",
+		"renderNewEditDashbordFromChartOn:" : "brunobb 09/27/2018 09:57",
+		"renderOn:" : "brunobb 09/27/2018 09:57",
+		"renderRecursionComboOn:" : "brunobb 09/27/2018 09:57",
+		"saveDashboard" : "brunobb 09/27/2018 09:57" } }

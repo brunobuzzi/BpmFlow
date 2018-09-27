@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "WANewDashboardPopupComponent",
+	"name" : "WAExistingDashboardPopupComponent",
 	"pools" : [
 		 ],
 	"super" : "WADashboardPopupComponent",

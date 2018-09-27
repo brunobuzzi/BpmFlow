@@ -1,5 +1,5 @@
 dashboard
-renderAddToDashboardIconOn: html
+renderAddToNewDashboardIconOn: html
    | jQueryId |
 
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 350 composite: WANewDashboardPopupComponent title: 'Add to Dashboard' domainObject: nil arguments: #().
@@ -8,7 +8,7 @@ renderAddToDashboardIconOn: html
 		html anchor 
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
-						with: [html image url: (SEWAFIconLibrary / #dashboard24Png); 
-												title: ('Add to Dashboard' translateFor: self session user); 
-												altText: ('Add to Dashboard' translateFor: self session user) ]
+						with: [html image url: (SEWAFIconLibrary / #dashboardnew24Png); 
+												title: ('Add to New Dashboard' translateFor: self session user); 
+												altText: ('Add to New Dashboard' translateFor: self session user) ]
 	]
