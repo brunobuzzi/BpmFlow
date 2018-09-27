@@ -1,0 +1,4 @@
+other
+hasFixedDates
+
+	^itemDefinition hasFixedDates

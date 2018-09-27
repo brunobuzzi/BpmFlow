@@ -1,0 +1,4 @@
+other
+getDistributionName
+
+	^chartDefinition getDistributionName
