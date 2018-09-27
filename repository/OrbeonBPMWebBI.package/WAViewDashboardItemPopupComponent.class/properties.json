@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"instancesToRender" ],
-	"name" : "WAMyBpmDashboardsComposite",
+		 ],
+	"name" : "WAViewDashboardItemPopupComponent",
 	"pools" : [
 		 ],
-	"super" : "SewafLateralListComposite",
+	"super" : "SewafPopupComponent",
 	"type" : "normal" }
