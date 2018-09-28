@@ -1,4 +1,4 @@
 other
 getRecursionFrom: aString
 
-	^(BpmDashboardRecursionDefinition getRecursionClassFrom: aString ifNone: [BpmDashboardMonthRecursion]) new.
+	^(BpmDashboardRecursionDefinition getRecursionClassFrom: (parent reverseTranslation getOriginalStringFrom: aString) ifNone: [BpmDashboardMonthRecursion]) new.
