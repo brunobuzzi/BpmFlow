@@ -5,21 +5,22 @@ renderContentOn: html
 		html form 
 			with: [
 				html fieldSet with: [
-					html legend: ('Edit Dashboard' translateFor: self session user).
+					html legend: ('Select Dashboard' translateFor: self session user).
 					html label for: 'dashboardName'; with: ('Dashboard Name' translateFor: self session user).
 					html select
 						class: 'display-block';
 						attributeAt: 'id' put: 'dashboardsNames'; 
 						list: (#(''), self getAllDashboardsNames) asSortedCollection;
 						callback: [:dashboardName | self onDashboardChanged: dashboardName].
-					"self renderCurrentRecursionComboOn: html."
-					html label for: 'description'; with: ('Description' translateFor: self session user).
-					html textArea id: 'description'; callback: [:value | self addValue: value named: 'description']; class: 'display-block'. 
-					self renderIsPrivateCheckboxOn: html.
-					self renderIsActiveCheckboxOn: html.
+				].
+				html fieldSet with: [
+					html legend: ('Recursion Options' translateFor: self session user).
+					self renderRecursionComboOn: html.
+					self renderHasFixedDatesCheckboxOn: html.
+					self renderModifyStartDateOnUpdateCheckboxOn: html.
 				].
 				html button 
-					callback: [self saveDashboard];
+					callback: [self createDashboard];
 					with: ('Save' translateFor: self session user).
 			]
 	]
