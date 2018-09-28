@@ -10,7 +10,7 @@ removeApplication
 	selectedLateralItem removeFromCache.
 
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
-	batchedList  remove: selectedLateralItem.
+	batchedList remove: selectedLateralItem.
 
 	selectedLateralItem := nil.
 
