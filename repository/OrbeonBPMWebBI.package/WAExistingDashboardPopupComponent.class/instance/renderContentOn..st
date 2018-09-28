@@ -9,7 +9,7 @@ renderContentOn: html
 					html label for: 'dashboardName'; with: ('Dashboard Name' translateFor: self session user).
 					html select
 						class: 'display-block';
-						attributeAt: 'id' put: 'dashboardsNames'; 
+						attributeAt: 'id' put: 'dashboardName'; 
 						list: (#(''), self getAllDashboardsNames) asSortedCollection;
 						callback: [:dashboardName | self onDashboardChanged: dashboardName].
 				].
