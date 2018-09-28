@@ -5,4 +5,4 @@ searchByMultiFieldScope
 									getChartsIn: self session bpmEnvironment
 									for: self session user 
 									withScope: BpmChartMultipleFieldsScope
-									satisfying: [:chart | true]
+									satisfying: [:chart | true].
