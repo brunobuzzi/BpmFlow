@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"getAllDashboardsNames" : "brunobb 09/27/2018 10:18",
+		"onDashboardChanged:" : "brunobb 09/27/2018 10:17",
+		"renderContentOn:" : "brunobb 09/27/2018 10:18",
+		"renderIsActiveCheckboxOn:" : "brunobb 09/27/2018 10:13",
+		"renderIsPrivateCheckboxOn:" : "brunobb 09/27/2018 10:14" } }

@@ -1,0 +1,2 @@
+other
+onDashboardChanged: dashboardName
