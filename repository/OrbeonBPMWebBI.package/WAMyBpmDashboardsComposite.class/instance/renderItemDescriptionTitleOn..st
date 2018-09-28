@@ -8,3 +8,5 @@ renderItemDescriptionTitleOn: html
 	selectedLateralItem isOutDated ifTrue: [self renderRefreshDashboardIconOn: html].
 
 	self renderSelectDashboardInstanceIconOn: html.
+
+	self renderRemoveDashboardIconOn: html.
