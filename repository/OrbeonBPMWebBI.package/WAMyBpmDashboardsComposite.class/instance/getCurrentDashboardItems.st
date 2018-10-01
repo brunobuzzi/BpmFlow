@@ -1,6 +1,13 @@
 other
 getCurrentDashboardItems
+	| itemsToRender |
 
-	^instancesToRender isEmpty 
-		ifTrue: [selectedLateralItem getLastDashboardInstances] 
-		ifFalse: [instancesToRender]
+	itemsToRender := OrderedCollection new.
+	
+	selectedLateralItem getLastDashboardInstances keysAndValuesDo: [:index :dashboard | 
+		itemsToRender add: ((instancesToRender includesKey: index) 
+										ifTrue: [instancesToRender at: index]
+										ifFalse: [dashboard])
+	].
+
+	^itemsToRender

@@ -7,7 +7,7 @@ initialize
 
 	searchAvailable := false.
 
-	instancesToRender := OrderedCollection new.
+	instancesToRender := Dictionary new.
 
 	batchedList := SewafLateralBatchedList parentComponent: self.
 	batchedList batchSize: self session user lateralListPagingSize;
