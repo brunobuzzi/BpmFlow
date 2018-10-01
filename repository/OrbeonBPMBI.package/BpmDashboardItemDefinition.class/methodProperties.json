@@ -6,6 +6,8 @@
 		"dashboardInstances:" : "brunobb 09/26/2018 05:18",
 		"definition" : "brunobb 09/26/2018 05:18",
 		"definition:" : "brunobb 09/26/2018 05:18",
+		"getNextDashboardInstance:" : "brunobb 10/01/2018 06:02",
+		"getPreviousDashboardInstance:" : "brunobb 10/01/2018 06:03",
 		"hasFixedDates" : "brunobb 09/26/2018 05:18",
 		"hasFixedDates:" : "brunobb 09/26/2018 05:18",
 		"initialize" : "brunobb 09/26/2018 05:19",

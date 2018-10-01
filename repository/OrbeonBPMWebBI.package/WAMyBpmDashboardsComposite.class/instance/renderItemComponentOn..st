@@ -7,6 +7,7 @@ renderItemComponentOn: html
 		self getCurrentDashboardItems do: [:dashboardInstance | | chartDefinition |
 			chartDefinition := dashboardInstance itemDefinition chartDefinition.
 			self renderDownUpIconsOn: html forChart: chartDefinition dashboard: dashboardInstance.
+			self renderBackForwardIconsOn: html dashboard: dashboardInstance.
 			chartDefinition renderReport: dashboardInstance report on: html.
 		].
 	].
