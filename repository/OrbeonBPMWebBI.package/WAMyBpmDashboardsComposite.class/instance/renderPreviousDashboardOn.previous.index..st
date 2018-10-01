@@ -1,4 +1,4 @@
-other
+browsing
 renderPreviousDashboardOn: html previous: aBpmDashboardInstance index: index
 
 	html div class: 'float-left margin-left-5px'; with: [

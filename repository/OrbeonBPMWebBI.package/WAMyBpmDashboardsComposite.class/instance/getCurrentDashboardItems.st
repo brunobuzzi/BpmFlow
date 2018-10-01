@@ -1,4 +1,4 @@
-other
+browsing
 getCurrentDashboardItems
 	| itemsToRender |
 

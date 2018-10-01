@@ -7,7 +7,7 @@ renderItemComponentOn: html
 		self getCurrentDashboardItems keysAndValuesDo: [:index :dashboardInstance | | chartDefinition |
 			chartDefinition := dashboardInstance itemDefinition chartDefinition.
 			self renderDownUpIconsOn: html forChart: chartDefinition dashboard: dashboardInstance.
-			self renderBackForwardIconsOn: html dashboard: (instancesToRender at: index ifAbsent: [dashboardInstance]) index: index.
+			self renderBackForwardIconsOn: html dashboard: dashboardInstance index: index.
 			chartDefinition renderReport: dashboardInstance report on: html.
 		].
 	].
