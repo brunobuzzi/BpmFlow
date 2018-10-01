@@ -1,7 +1,7 @@
 top menu
 showMyDashboardComposite
 
-	(arena isKindOf: WAMyBpmDashboardsComposite)
+	(arena isKindOf: WAMyCurrentDashboardsComposite)
 	ifTrue: [^arena].
 
-	^WAMyBpmDashboardsComposite parent: self
+	^WAMyCurrentDashboardsComposite parent: self
