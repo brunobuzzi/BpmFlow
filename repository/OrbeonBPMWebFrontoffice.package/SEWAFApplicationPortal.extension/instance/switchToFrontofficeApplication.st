@@ -1,4 +1,4 @@
 *orbeonBPMWebFrontoffice
 switchToFrontofficeApplication
 
-	self show: (WAProcessUserPortal on: self session user)
+	self switchToApplication: WAProcessUserPortal
