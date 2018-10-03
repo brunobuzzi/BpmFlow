@@ -1,4 +1,4 @@
-other
+users
 registerUser: aBpmUser ifPresent: aBlock
 
 	(users includesKey: aBpmUser username) ifTrue: [^aBlock value].

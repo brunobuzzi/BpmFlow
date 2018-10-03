@@ -1,4 +1,4 @@
-other
+applications
 includesApplicationName: aString
 
 	^applications includesKey: aString

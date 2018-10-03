@@ -8,7 +8,9 @@
 	"instvars" : [
 		"name",
 		"applications",
-		"users" ],
+		"users",
+		"applicationsNames",
+		"applicationsLogos" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],
