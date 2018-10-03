@@ -4,7 +4,7 @@ newRemoveUserFromRolButton
 	^(SewafReportColumn 
 			renderBlock: [:each :html | 
 				html anchor callback: [self removeUserFromRole: each]; 
-								with: [html image url: (SEWAFFileLibrary / #remove24Png); 
+								with: [html image url: (SEWAFIconLibrary / #remove24Png); 
 														title: ('Remove User from Role' translateFor: self session user); 
 														altText: ('Remove User from Role' translateFor: self session user).]] 
 				title: 'DEL') sortBlock: nil; 
