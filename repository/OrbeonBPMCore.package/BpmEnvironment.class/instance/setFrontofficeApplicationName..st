@@ -1,4 +1,4 @@
 env names
-setFrontofficeName: aString
+setFrontofficeApplicationName: aString
 
 	^applicationsNames at: 'frontoffice' put: aString

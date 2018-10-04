@@ -1,4 +1,4 @@
 env names
-setBIName: aString
+setBIApplicationName: aString
 
 	^applicationsNames at: 'bi' put: aString

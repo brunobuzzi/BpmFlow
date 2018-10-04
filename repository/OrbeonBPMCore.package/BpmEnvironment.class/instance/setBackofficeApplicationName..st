@@ -1,4 +1,4 @@
 env names
-setBackofficeName: aString
+setBackofficeApplicationName: aString
 
 	^applicationsNames at: 'backoffice' put: aString

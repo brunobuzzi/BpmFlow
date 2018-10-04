@@ -1,4 +1,4 @@
 env names
-getNameForBI
+getBIApplicationName
 
 	^applicationsNames at: 'bi' ifAbsent: ['Flow BI']

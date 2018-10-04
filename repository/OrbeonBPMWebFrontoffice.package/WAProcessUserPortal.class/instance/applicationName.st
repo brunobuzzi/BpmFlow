@@ -1,4 +1,4 @@
 other
 applicationName
 
-	^'Flow Frontoffice'
+	^self session bpmEnvironment getFrontofficeApplicationName

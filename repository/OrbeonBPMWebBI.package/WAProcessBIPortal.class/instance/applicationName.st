@@ -1,4 +1,4 @@
 other
 applicationName
 
-	^'Flow BI'
+	^self session bpmEnvironment getBIApplicationName

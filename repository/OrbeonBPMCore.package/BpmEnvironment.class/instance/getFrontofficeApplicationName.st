@@ -1,4 +1,4 @@
 env names
-getNameForFrontoffice
+getFrontofficeApplicationName
 
 	^applicationsNames at: 'frontoffice' ifAbsent: ['Flow Frontoffice']

@@ -1,4 +1,4 @@
 env names
-getNameForBackoffice
+getBackofficeApplicationName
 
 	^applicationsNames at: 'backoffice' ifAbsent: ['Flow Backoffice']
