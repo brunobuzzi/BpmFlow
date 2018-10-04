@@ -17,6 +17,7 @@
 		"migrateToApplicationUser" : "BrunoBB 12/20/2015 11:39",
 		"newUsername:password:" : "BrunoBB 02/07/2016 15:08" },
 	"instance" : {
+		"addPinnedProcess:" : "brunobb 10/04/2018 09:40",
 		"addRole:" : "brunobb 01/31/2018 09:03",
 		"addRoleAssociation:" : "brunobb 05/30/2018 12:46",
 		"addToCache" : "BrunoBB 04/11/2016 12:25",
@@ -106,6 +107,7 @@
 		"isBackofficeUser" : "BrunoBB 12/09/2015 10:12",
 		"isBackofficeUserAndAdmin" : "BrunoBB 12/10/2015 10:29",
 		"isFrontOfficeUser" : "brunobb 12/27/2017 13:23",
+		"isPinnedProcess:" : "brunobb 10/04/2018 09:40",
 		"isUser" : "brunobb 04/25/2018 08:17",
 		"languageName" : "BrunoBB 12/08/2015 09:46",
 		"lateralListPagingSize" : "BrunoBB 03/15/2016 07:29",
@@ -126,6 +128,7 @@
 		"regularListPagingSize" : "BrunoBB 03/15/2016 07:29",
 		"regularListPagingSize:" : "BrunoBB 03/15/2016 10:07",
 		"removeFromCache" : "brunobb 09/05/2018 12:31",
+		"removePinnedProcess:" : "brunobb 10/04/2018 09:40",
 		"removeProperty:" : "BrunoBB 08/02/2016 04:20",
 		"removeRole:" : "brunobb 01/31/2018 09:06",
 		"reportAverageTimePerTaskIn:from:to:" : "brunobb 09/10/2018 10:13",

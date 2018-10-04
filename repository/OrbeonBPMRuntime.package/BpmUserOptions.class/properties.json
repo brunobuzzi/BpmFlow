@@ -11,7 +11,8 @@
 		"initialTransitionDisplayMode",
 		"lateralListPagingSize",
 		"regularListPagingSize",
-		"applicationOptions" ],
+		"applicationOptions",
+		"pinnedProcessesDefinitions" ],
 	"name" : "BpmUserOptions",
 	"pools" : [
 		 ],

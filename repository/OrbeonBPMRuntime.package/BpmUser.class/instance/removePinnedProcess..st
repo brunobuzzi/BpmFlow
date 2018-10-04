@@ -1,0 +1,4 @@
+processes
+removePinnedProcess: aBpmProcessDefinition
+
+	^userOptions removePinnedProcess: aBpmProcessDefinition

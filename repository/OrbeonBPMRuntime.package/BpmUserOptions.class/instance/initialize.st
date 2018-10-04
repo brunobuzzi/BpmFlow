@@ -10,5 +10,6 @@ initialize
 	lateralListPagingSize := 5.
 	regularListPagingSize := 5.
 	applicationOptions := Dictionary new.
+	pinnedProcessesDefinitions := Dictionary new.
 
 	self initializeProperties.

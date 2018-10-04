@@ -1,0 +1,4 @@
+processes
+addPinnedProcess: aBpmProcessDefinition
+
+	^userOptions addPinnedProcess: aBpmProcessDefinition
