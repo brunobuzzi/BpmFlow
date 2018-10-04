@@ -1,4 +1,4 @@
 env logos
-getLogoSymbolForBI
+getBILogoSymbol
 
 	^applicationsLogos at: 'bi' ifAbsent: [#piechart32Png]

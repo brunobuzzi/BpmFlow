@@ -1,4 +1,4 @@
 env logos
-getLogoSymbolForBackoffice
+getBackofficeLogoSymbol
 
 	^applicationsLogos at: 'backoffice' ifAbsent: [#applicationsettings32Png]

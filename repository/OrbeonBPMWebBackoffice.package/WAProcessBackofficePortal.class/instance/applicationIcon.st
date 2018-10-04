@@ -1,4 +1,4 @@
 other
 applicationIcon
 
-	^SEWAFIconLibrary / #applicationsettings32Png
+	^SEWAFIconLibrary / (self session bpmEnvironment getBackofficeLogoSymbol)
