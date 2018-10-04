@@ -19,6 +19,7 @@ initializeNavigation
 		yourself.
 	subMenu3 := (SewafSubMenuItem label: 'New Process' icon: #processadd32Png)
 		set24Icon: #processadd24Png;
+		addItem: (SewafCommandItem label: 'Pinned Processes' command: #showPinnedProcesses);
 		addItem: (SewafCommandItem label: 'Available Processes' command: #showAvailableProcesses);
 		addItem: (SewafCommandItem label: 'Granted Tasks' command: #showGrantedTasks);
 		yourself.
