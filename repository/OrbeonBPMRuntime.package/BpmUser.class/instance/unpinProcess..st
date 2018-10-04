@@ -1,4 +1,4 @@
 processes
-removePinnedProcess: aBpmProcessDefinition
+unpinProcess: aBpmProcessDefinition
 
 	^userOptions removePinnedProcess: aBpmProcessDefinition

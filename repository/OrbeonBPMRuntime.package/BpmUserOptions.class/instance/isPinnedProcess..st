@@ -1,4 +1,4 @@
 other
 isPinnedProcess: aBpmProcessDefinition
 
-	^(self at: aBpmProcessDefinition bpmEnvironment ifAbsent: [^false]) includes: aBpmProcessDefinition
+	^(pinnedProcessesDefinitions at: aBpmProcessDefinition bpmEnvironment ifAbsent: [^false]) includes: aBpmProcessDefinition
