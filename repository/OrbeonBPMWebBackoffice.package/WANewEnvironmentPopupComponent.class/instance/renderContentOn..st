@@ -1,5 +1,5 @@
 other
-renderOn: html
+renderContentOn: html
 
 	html div "class: 'jquery-dialog-yes-no';" with: [
 		html form with: [

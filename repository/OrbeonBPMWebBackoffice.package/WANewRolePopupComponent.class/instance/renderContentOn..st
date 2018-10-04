@@ -1,5 +1,5 @@
 other
-renderOn: html
+renderContentOn: html
 
 	html form with: [
 		html fieldSet with: [
