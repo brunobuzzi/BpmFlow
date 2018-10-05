@@ -10,4 +10,4 @@ searchTimerEvents
 
 	searchResult := self isTimerTypeCreation
 							ifTrue: [(self session user getAllProcessDefinitionIn: self session bpmEnvironment) select: [:each | each hasCreationTimer] ] 
-							ifFalse: [self defaultTimerEventMonitor getAllIntermediateTimerEventsIn: self session bpmEnvironment].
+							ifFalse: [self defaultTimerEventMonitor getIntermediateTimerEventsIn: self session bpmEnvironment for: self session user].
