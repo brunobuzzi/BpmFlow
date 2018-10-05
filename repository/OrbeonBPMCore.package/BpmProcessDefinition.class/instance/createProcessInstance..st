@@ -6,7 +6,7 @@ createProcessInstance: aBpmUser
 
 	(self canCreateProcessInstance: aBpmUser) ifFalse: [^self throwNoCreationPermissionExceptionFor: aBpmUser username].
 
-	newProcess := self getProcessInstanceClass definition: self user: aBpmUser.
+	newProcess := self getProcessInstanceClass newBasedOn: self user: aBpmUser.
 
 	self addProcessInstance: newProcess. "add the new process instance dictionary"
 

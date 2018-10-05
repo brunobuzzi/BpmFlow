@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"definition:" : "BrunoBB 11/13/2015 10:46",
-		"process:definition:" : "BrunoBB 11/13/2015 10:46" },
+		"newBasedOn:" : "brunobb 10/05/2018 12:11",
+		"newBasedOn:inProcess:" : "brunobb 10/05/2018 12:12" },
 	"instance" : {
 		"addIncommingTransition:" : "BrunoBB 11/16/2015 18:08",
 		"addOutgoingTransition:" : "BrunoBB 11/16/2015 18:08",
@@ -72,6 +72,8 @@
 		"isTask" : "BrunoBB 07/31/2016 13:27",
 		"outTransitions" : "BrunoBB 11/01/2015 12:57",
 		"outTransitions:" : "BrunoBB 11/01/2015 12:57",
+		"parentArtifact" : "brunobb 10/05/2018 12:03",
+		"parentArtifact:" : "brunobb 10/05/2018 12:03",
 		"performInitializationOn:" : "BrunoBB 11/16/2015 17:33",
 		"previousFieldValues" : "BrunoBB 12/15/2015 11:43",
 		"printFormLargeNameForWebButton" : "BrunoBB 12/11/2015 06:35",

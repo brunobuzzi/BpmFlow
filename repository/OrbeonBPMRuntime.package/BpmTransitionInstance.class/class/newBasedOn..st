@@ -1,5 +1,5 @@
 other
-definition: aBpmTransitionDefinition
+newBasedOn: aBpmTransitionDefinition
 
 	^super new initialize
 		definition: aBpmTransitionDefinition;

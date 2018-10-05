@@ -2,9 +2,7 @@ instantiation
 createNewGatewayOn: aBpmProcessInstance
 	| newGateway |
 
-	newGateway := (self instanceClass definition: self)
-								process: aBpmProcessInstance;
-								yourself.
+	newGateway := self createInstanceOn: aBpmProcessInstance parentArtifact: self.
 
 	aBpmProcessInstance startGateway: newGateway. "add the gateway to running gateways collection"
 

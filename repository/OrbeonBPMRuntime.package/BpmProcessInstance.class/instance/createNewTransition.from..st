@@ -3,7 +3,7 @@ createNewTransition: aBpmTransitionDefinition from: aBpmArtifactInstance
 	"The receiver creates a new concrete transition based on the definition <aBpmTransitionDefinition> and this transition has been started from the artifact <aBpmArtifactInstance>"
 	| newTransition nextArtifactDefinition nextArtifactInstance |
 
-	newTransition := BpmTransitionInstance definition: aBpmTransitionDefinition.
+	newTransition := BpmTransitionInstance newBasedOn: aBpmTransitionDefinition.
 	nextArtifactDefinition := aBpmTransitionDefinition endArtifact.
 	"create the end artifact of the new transition"
 	nextArtifactInstance := nextArtifactDefinition createInstanceOn: self.

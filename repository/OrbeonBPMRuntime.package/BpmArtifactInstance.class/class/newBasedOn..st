@@ -1,5 +1,5 @@
 other
-definition: aBpmArtifactDefinition
+newBasedOn: aBpmArtifactDefinition
 
 	^super new initialize
 		definition: aBpmArtifactDefinition;

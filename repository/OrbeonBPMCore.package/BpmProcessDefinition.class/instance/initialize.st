@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	id := Lag1MwcRandom new integer.
-	executionPath := BpmProcessPathDefinition definition: self.
+	executionPath := BpmProcessPathDefinition newForDefinition: self.
 	roles := Dictionary new.
 	participants := Dictionary new.
 	version := 1.

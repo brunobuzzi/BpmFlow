@@ -1,7 +1,6 @@
 {
 	"class" : {
-		"definition:" : "BrunoBB 12/01/2015 12:57",
-		"definition:user:" : "BrunoBB 11/29/2015 16:16" },
+		"newBasedOn:user:" : "brunobb 10/05/2018 12:22" },
 	"instance" : {
 		"abortProcess:" : "brunobb 12/11/2017 17:28",
 		"addActivityToPerform:" : "brunobb 04/13/2018 11:15",
@@ -17,7 +16,7 @@
 		"changeColorOfTransitionsReaching:in:for:" : "BrunoBB 09/13/2016 09:46",
 		"changeColorTo:fillColor:borderColor:" : "BrunoBB 04/15/2016 11:20",
 		"confirmAbortion" : "brunobb 01/04/2018 11:20",
-		"createNewTransition:from:" : "brunobb 04/30/2018 07:49",
+		"createNewTransition:from:" : "brunobb 10/05/2018 12:17",
 		"createZipFileWithName:for:" : "BrunoBB 01/13/2017 13:09",
 		"createdTime" : "BrunoBB 11/29/2015 16:16",
 		"createdTime:" : "BrunoBB 11/29/2015 16:16",
@@ -160,7 +159,7 @@
 		"transitions" : "BrunoBB 11/29/2015 16:16",
 		"transitions:" : "BrunoBB 11/29/2015 16:16",
 		"triggerStartEvent" : "BrunoBB 03/30/2016 16:48",
-		"triggerStartEventWith:" : "BrunoBB 03/30/2016 16:49",
+		"triggerStartEventWith:" : "brunobb 10/05/2018 12:13",
 		"userAssignments" : "BrunoBB 11/29/2015 16:16",
 		"userAssignments:" : "BrunoBB 11/29/2015 16:16",
 		"valueAtExternalVariable:" : "brunobb 02/03/2018 12:36",

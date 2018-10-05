@@ -1,5 +1,5 @@
 other
-definition: aBpmProcessDefinition
+newForDefinition: aBpmProcessDefinition
 
 	^super new initialize
 			processDefinition: aBpmProcessDefinition;

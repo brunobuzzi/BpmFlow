@@ -1,5 +1,5 @@
 other
-definition: aBpmProcessDefinition user: aBpmUser
+newBasedOn: aBpmProcessDefinition user: aBpmUser
 
 	^super new initialize
 		definition: aBpmProcessDefinition;
