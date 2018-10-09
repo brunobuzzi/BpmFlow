@@ -7,7 +7,7 @@ processDefinition_event_based_gateway_01
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-10-08T17:24:35.1606708-03:00</Created>
-    <ModificationDate>2018-10-08T17:43:15.2053903-03:00</ModificationDate>
+    <ModificationDate>2018-10-09T09:37:20.863507-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -21,7 +21,7 @@ processDefinition_event_based_gateway_01
     <Pool Id="cc6516e2-7cd6-412a-b74e-4ebfbe4a0c97" Name="Main Process" Process="63589e99-86c4-4321-b9e8-4fb82dd5f22b" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
@@ -47,7 +47,7 @@ processDefinition_event_based_gateway_01
   <WorkflowProcesses>
     <WorkflowProcess Id="63589e99-86c4-4321-b9e8-4fb82dd5f22b" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-10-08T17:44:04.6924999-03:00</Created>
+        <Created>2018-10-09T09:37:43.7239352-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -63,7 +63,7 @@ processDefinition_event_based_gateway_01
     </WorkflowProcess>
     <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="Event Based Gateway">
       <ProcessHeader>
-        <Created>2018-10-08T17:44:04.6924999-03:00</Created>
+        <Created>2018-10-09T09:37:43.7249359-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -196,7 +196,7 @@ processDefinition_event_based_gateway_01
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="f277c196-1cc6-4e5f-886d-75ea1b658c22" Name="">
+        <Activity Id="f277c196-1cc6-4e5f-886d-75ea1b658c22" Name="end">
           <Description />
           <Event>
             <EndEvent Result="None" />
@@ -204,7 +204,7 @@ processDefinition_event_based_gateway_01
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
-              <Coordinates XCoordinate="774" YCoordinate="265" />
+              <Coordinates XCoordinate="775" YCoordinate="265" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -354,8 +354,8 @@ processDefinition_event_based_gateway_01
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="724" YCoordinate="71" />
-              <Coordinates XCoordinate="789" YCoordinate="71" />
-              <Coordinates XCoordinate="789" YCoordinate="265" />
+              <Coordinates XCoordinate="790" YCoordinate="71" />
+              <Coordinates XCoordinate="790" YCoordinate="265" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -377,8 +377,8 @@ processDefinition_event_based_gateway_01
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="722" YCoordinate="151" />
-              <Coordinates XCoordinate="789" YCoordinate="151" />
-              <Coordinates XCoordinate="789" YCoordinate="265" />
+              <Coordinates XCoordinate="790" YCoordinate="151" />
+              <Coordinates XCoordinate="790" YCoordinate="265" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -400,8 +400,8 @@ processDefinition_event_based_gateway_01
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <Coordinates XCoordinate="700" YCoordinate="317" />
-              <Coordinates XCoordinate="789" YCoordinate="317" />
-              <Coordinates XCoordinate="789" YCoordinate="295" />
+              <Coordinates XCoordinate="790" YCoordinate="317" />
+              <Coordinates XCoordinate="790" YCoordinate="295" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -425,14 +425,14 @@ processDefinition_event_based_gateway_01
               <Coordinates XCoordinate="684" YCoordinate="231" />
               <Coordinates XCoordinate="729" YCoordinate="231" />
               <Coordinates XCoordinate="729" YCoordinate="280" />
-              <Coordinates XCoordinate="774" YCoordinate="280" />
+              <Coordinates XCoordinate="775" YCoordinate="280" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
