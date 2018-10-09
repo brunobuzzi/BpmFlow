@@ -7,7 +7,7 @@ processDefinition_event_based_gateway_01
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-10-08T17:24:35.1606708-03:00</Created>
-    <ModificationDate>2018-10-09T09:37:20.863507-03:00</ModificationDate>
+    <ModificationDate>2018-10-09T16:25:23.2940851-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -47,7 +47,7 @@ processDefinition_event_based_gateway_01
   <WorkflowProcesses>
     <WorkflowProcess Id="63589e99-86c4-4321-b9e8-4fb82dd5f22b" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-10-09T09:37:43.7239352-03:00</Created>
+        <Created>2018-10-09T16:25:37.8957133-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -63,7 +63,7 @@ processDefinition_event_based_gateway_01
     </WorkflowProcess>
     <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="Event Based Gateway">
       <ProcessHeader>
-        <Created>2018-10-09T09:37:43.7249359-03:00</Created>
+        <Created>2018-10-09T16:25:37.896714-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -104,22 +104,11 @@ processDefinition_event_based_gateway_01
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="a64d3f3f-bad4-4a40-8c95-7971af737bd0" Name="event">
-          <Description />
-          <Route ExclusiveType="Event" />
-          <Documentation />
-          <NodeGraphicsInfos>
-            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
-              <Coordinates XCoordinate="370" YCoordinate="247" />
-            </NodeGraphicsInfo>
-          </NodeGraphicsInfos>
-          <ExtendedAttributes />
-        </Activity>
         <Activity Id="a94f499e-cde3-4bc6-a3cb-ea42a14d4f8d" Name="timer">
           <Description />
           <Event>
             <IntermediateEvent Trigger="Timer">
-              <TriggerTimer />
+              <TriggerTimer TimeDate="2018-10-09T00:00:00" />
             </IntermediateEvent>
           </Event>
           <Documentation />
@@ -130,6 +119,7 @@ processDefinition_event_based_gateway_01
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0}" />
+            <ExtendedAttribute Name="activationBlock" Value="[:lastExecutedTime :currentTime | (lastExecutedTime addDays: 1) &gt;= currentTime]" />
           </ExtendedAttributes>
         </Activity>
         <Activity Id="107d8111-55a2-476d-95b9-93ed54dc1a24" Name="message">
@@ -258,6 +248,17 @@ processDefinition_event_based_gateway_01
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
               <Coordinates XCoordinate="594" YCoordinate="201" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="a64d3f3f-bad4-4a40-8c95-7971af737bd0" Name="event">
+          <Description />
+          <Route ExclusiveType="Event" />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="370" YCoordinate="247" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
