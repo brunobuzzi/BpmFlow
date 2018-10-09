@@ -14,7 +14,8 @@ getImportWarningReport
 			addAll: each getLanesWithoutName; "lanes without name"
 			addAll: each getStartNodeReport; "has no start node"
 			addAll: each getSuspiciousConditions;
-			addAll: each getTaskScriptWarnings.
+			addAll: each getTaskScriptWarnings;
+			addAll: each getTimerBlockWarnings.
 	].
 
 	^importReport
