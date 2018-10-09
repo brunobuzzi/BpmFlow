@@ -7,4 +7,10 @@ getGatewayClass
 
 	(type = 'Complex') ifTrue: [^BpmComplexGatewayDefinition].
 
+	(type = 'ParallelEvent') ifTrue: [^BpmParallelEventBasedGatewayDefinition].
+
+	(type = 'ExclusiveEvent') ifTrue: [^BpmExclusiveEventBasedGatewayDefinition].
+
+	(type = 'InclusiveEvent') ifTrue: [^BpmEventBasedGatewayDefinition].
+
 	^BpmExclusiveGatewayDefinition

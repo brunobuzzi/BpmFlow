@@ -9,7 +9,8 @@ getActivityInstanceFrom: xmlActivityNode
 	(xmlActivityNode findElementNamed: 'Route') 
 	ifNotNil: [:node | | gate type | 
 		gate := XPDLGatewayNode new.
-		type := node attributeAt: 'GatewayType' ifAbsent: ['']. "set the type of the gateway"
+		"set the type of the gateway"
+		type := self getGatewayTypeFrom: node.
 		^gate type: type].
 
 	(xmlActivityNode findElementNamed: 'StartEvent') ifNotNil: [^XPDLStartNode new].
