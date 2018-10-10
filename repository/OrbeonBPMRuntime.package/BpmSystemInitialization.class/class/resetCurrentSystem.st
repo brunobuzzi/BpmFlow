@@ -8,7 +8,7 @@ resetCurrentSystem
 			initializeAnonymousFormMapping.
 
 	BpmUser cache do: [:each | each resetMessagesBoxesAndRoles].
-	BpmDashboardRepository initializeDefault.
+	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
 	
 	BpmProcessDefinitionCategory resetAllCategorizedProcesses.
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.

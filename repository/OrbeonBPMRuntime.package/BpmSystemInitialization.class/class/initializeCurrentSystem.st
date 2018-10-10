@@ -14,5 +14,5 @@ initializeCurrentSystem
 	BpmProcessDynamicCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
 	BpmProcessDefinition initializeCache.
-	BpmDashboardRepository initializeDefault.
+	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
 	self defaultTimerEventMonitor initializeDefault.
