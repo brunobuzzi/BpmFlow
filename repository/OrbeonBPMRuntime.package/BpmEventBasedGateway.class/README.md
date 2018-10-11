@@ -1,3 +1,6 @@
+Wait for all events until the Timer finalize. When the Timer answer true then the Gateway is finalized.
+If there is NO timer then wait for event until the process is finalized (similar to parallel).
+
 Splitting
 
 This type of Gateway requires the use of one or more catching Intermediate Events. The valid types of events are as follows:

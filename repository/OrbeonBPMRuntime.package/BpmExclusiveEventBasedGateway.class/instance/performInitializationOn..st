@@ -8,9 +8,5 @@ performInitializationOn: aBpmProcessInstance
 	self isSplitting 
 	ifTrue: [definition getNextTimers do: [:timerEvent| self createEventBasedTimerEventForGateway: timerEvent].].
 
-"	self isSplitting 
-	ifTrue: [aBpmProcessInstance finalizeGateway: self.
-				self evaluateOutgoingTransitionsOn: aBpmProcessInstance]."
-
 	"merging is disallowed in Gateway Events - use regular gateways"
 	"self isMerging ifTrue: []. "
