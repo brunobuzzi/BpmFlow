@@ -4,7 +4,6 @@
 	"instance" : {
 		"abortProcess:" : "brunobb 12/11/2017 17:28",
 		"addActivityToPerform:" : "brunobb 04/13/2018 11:15",
-		"addEvent:" : "brunobb 10/29/2017 15:02",
 		"addSubProcess:" : "BrunoBB 12/01/2015 12:01",
 		"addToAbortedProcess" : "brunobb 12/31/2017 10:31",
 		"applicationName" : "BrunoBB 02/08/2016 12:32",
@@ -138,6 +137,7 @@
 		"processName" : "brunobb 01/20/2018 13:16",
 		"processName:" : "BrunoBB 11/29/2015 16:16",
 		"registerAssignment:" : "BrunoBB 06/01/2016 13:26",
+		"registerEvent:" : "brunobb 10/10/2018 12:25",
 		"removeExternalVariable:" : "brunobb 02/03/2018 12:01",
 		"removeRunningGatewayNamed:" : "BrunoBB 11/29/2015 16:16",
 		"resumeProcess:" : "brunobb 12/11/2017 17:29",

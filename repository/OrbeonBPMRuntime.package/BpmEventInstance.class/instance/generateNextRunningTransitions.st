@@ -6,5 +6,5 @@ generateNextRunningTransitions
 
 	super generateNextRunningTransitions.
 
-	"if the receiver is independent then is finalized. if the receiver is attached to <aBpmTask> then is the task that send the #finalize to the event"
+	"if the receiver is independent --> is finalized. if the receiver is attached to <aBpmTask> --> the owner task send #finalize to the event"
 	self isAttachedEvent ifFalse: [self finalize].

@@ -1,5 +1,5 @@
 execution
-addEvent: aBpmEventInstance
+registerEvent: aBpmEventInstance
 	"The receiver add <aBpmEventInstance> to it's event collection"
 
 	^intermediateEvents 
