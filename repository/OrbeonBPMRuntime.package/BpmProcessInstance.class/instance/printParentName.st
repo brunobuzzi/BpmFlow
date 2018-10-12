@@ -1,4 +1,4 @@
-execution
+other
 printParentName
 
 	^definition printParentName

@@ -1,4 +1,4 @@
-execution
+execution query
 getScriptVariableNamed: aString ifNone: aBlock
 	"Answer the first variable named (in ALL script) that has a variable named <aString> if there is none evaluate the zero arg block <aBlock>"
 	| script |

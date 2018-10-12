@@ -1,0 +1,5 @@
+other
+generateNextRunningTransitionsFromEvent: aBpmIntermediateEventInstance
+	""
+
+	^aBpmIntermediateEventInstance generateNextTranstionsForParallelEventGateway: self

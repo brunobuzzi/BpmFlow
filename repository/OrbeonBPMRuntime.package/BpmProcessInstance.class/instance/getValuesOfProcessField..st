@@ -1,4 +1,4 @@
-execution
+execution query
 getValuesOfProcessField: fieldName
 	"Answer aCollection of values of field named <fieldName> in the receiver's collection of <executedActivities>.
 	The search is performed only in activities that have anOrbeonFormInstance <hasForm>.

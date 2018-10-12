@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "BrunoBB 11/24/2015 13:13",
 	"instvars" : [
-		 ],
+		"events" ],
 	"name" : "BpmEventBasedGateway",
 	"pools" : [
 		 ],

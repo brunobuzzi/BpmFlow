@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 10/11/2018 09:55",
 	"instvars" : [
-		 ],
+		"events" ],
 	"name" : "BpmParallelEventBasedGateway",
 	"pools" : [
 		 ],

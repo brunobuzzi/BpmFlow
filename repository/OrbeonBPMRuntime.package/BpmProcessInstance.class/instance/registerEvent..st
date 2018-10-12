@@ -1,4 +1,4 @@
-execution
+events
 registerEvent: aBpmEventInstance
 	"The receiver add <aBpmEventInstance> to it's event collection"
 

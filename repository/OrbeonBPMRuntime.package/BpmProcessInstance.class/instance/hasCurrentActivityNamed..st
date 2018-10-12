@@ -1,4 +1,4 @@
-execution
+execution query
 hasCurrentActivityNamed: aString
 	"Anwer whether or not the receiver has in its collection <currentActivities> a task named <aString>"
 

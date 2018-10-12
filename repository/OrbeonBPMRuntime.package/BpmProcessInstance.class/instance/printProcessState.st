@@ -1,4 +1,4 @@
-execution
+other
 printProcessState
 
 	self isRunning ifFalse: [^self currentState printProcessState].

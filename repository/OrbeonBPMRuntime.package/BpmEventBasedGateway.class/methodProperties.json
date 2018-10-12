@@ -2,5 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"events" : "brunobb 10/11/2018 09:54",
+		"events:" : "brunobb 10/11/2018 09:54",
+		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:17",
+		"initialize" : "brunobb 10/11/2018 09:54",
 		"isGatewayEvent" : "brunobb 10/10/2018 12:03",
-		"performInitializationOn:" : "brunobb 10/11/2018 04:59" } }
+		"performInitializationOn:" : "brunobb 10/11/2018 04:59",
+		"registerEvent:" : "brunobb 10/11/2018 10:19" } }
