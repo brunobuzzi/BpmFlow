@@ -1,0 +1,4 @@
+other
+getReceiverProcessDefinition
+
+	^BpmProcessDefinition getProcessDefnitionWith: receiverDefinitionId in: receiverAppName

@@ -9,4 +9,6 @@ acceptEvent: aBpmEventInstance atGatewayNamed: aString
 
 	self registerEvent: aBpmEventInstance.
 
+	aBpmEventInstance parentArtifact: gateway.
+
 	^aBpmEventInstance generateNextRunningTransitions

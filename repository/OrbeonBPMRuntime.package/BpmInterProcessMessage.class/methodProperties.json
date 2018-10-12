@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getReceiverEventDefinition" : "brunobb 10/12/2018 12:37",
+		"getReceiverGateway" : "brunobb 10/12/2018 12:35",
+		"getReceiverProcessDefinition" : "brunobb 10/12/2018 12:32",
+		"getReceiverProcessInstance" : "brunobb 10/12/2018 12:35",
+		"getReceiverProcessInstanceFromQuery" : "brunobb 10/12/2018 12:35",
+		"receiverAppName" : "brunobb 10/12/2018 12:30",
+		"receiverAppName:" : "brunobb 10/12/2018 12:30",
+		"receiverDefinitionId" : "brunobb 10/12/2018 12:24",
+		"receiverDefinitionId:" : "brunobb 10/12/2018 12:24",
+		"receiverEventName" : "brunobb 10/12/2018 12:24",
+		"receiverEventName:" : "brunobb 10/12/2018 12:24",
+		"receiverGatewayName" : "brunobb 10/12/2018 12:24",
+		"receiverGatewayName:" : "brunobb 10/12/2018 12:24",
+		"receiverProcessId" : "brunobb 10/12/2018 12:24",
+		"receiverProcessId:" : "brunobb 10/12/2018 12:24",
+		"receiverXmlQuery" : "brunobb 10/12/2018 12:24",
+		"receiverXmlQuery:" : "brunobb 10/12/2018 12:24",
+		"senderAppName" : "brunobb 10/12/2018 12:30",
+		"senderAppName:" : "brunobb 10/12/2018 12:30",
+		"senderId" : "brunobb 10/12/2018 12:24",
+		"senderId:" : "brunobb 10/12/2018 12:24",
+		"variablesToSet" : "brunobb 10/12/2018 12:24",
+		"variablesToSet:" : "brunobb 10/12/2018 12:24" } }
