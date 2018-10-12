@@ -32,6 +32,7 @@
 		"getOrbeonTasks" : "BrunoBB 11/04/2016 10:42",
 		"getOrderedTasks" : "BrunoBB 12/16/2015 13:09",
 		"getOrderedTasksFrom:as:" : "brunobb 10/18/2017 12:52",
+		"getParentOf:ifNone:" : "brunobb 10/12/2018 10:39",
 		"getScriptNamed:ifNone:" : "BrunoBB 06/22/2016 11:45",
 		"getSeasideTasks" : "brunobb 04/24/2018 08:57",
 		"getSubProcessTaskNamed:ifNone:" : "BrunoBB 10/28/2015 12:13",
