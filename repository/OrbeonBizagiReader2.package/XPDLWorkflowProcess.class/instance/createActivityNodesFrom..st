@@ -5,7 +5,7 @@ createActivityNodesFrom: aXMLDocument
 
 	performers := self getAllPerformers.
 	(aXMLDocument xPath: 'Activities/Activity') do: [:eachNode | | newActivity |
-		newActivity := (self getActivityInstanceFrom: eachNode)
+		newActivity := (self basicCreateActivityInstanceFrom: eachNode)
 			id: (eachNode attributeAt: 'Id');
 			name: (eachNode attributeAt: 'Name');
 			xmlSegment: eachNode; 

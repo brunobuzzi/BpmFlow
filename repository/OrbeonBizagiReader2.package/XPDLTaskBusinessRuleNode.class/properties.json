@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBizagiReader2",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLTaskBusinessRuleNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLTaskNode",
+	"type" : "normal" }

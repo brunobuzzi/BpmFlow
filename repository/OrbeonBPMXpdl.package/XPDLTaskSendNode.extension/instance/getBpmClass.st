@@ -1,0 +1,4 @@
+*orbeonBPMXpdl
+getBpmClass
+	
+	^BpmSendTaskDefinition

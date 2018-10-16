@@ -1,5 +1,5 @@
 components creation
-getActivityInstanceFrom: xmlActivityNode
+basicCreateActivityInstanceFrom: xmlActivityNode
 	"The receiver answer the most fittable XPDL class to represent the xml node <xmlActivityNode>"
 
 	(xmlActivityNode findElementNamed: 'SubFlow') ifNotNil: [^XPDLSubProcessNode new]."Reusable Subprocess"
@@ -21,4 +21,6 @@ getActivityInstanceFrom: xmlActivityNode
 
 	(xmlActivityNode findElementNamed: 'Script') ifNotNil: [^XPDLScriptNode new].
 
-	^XPDLTaskNode new
+	(xmlActivityNode findElementNamed: 'TaskSend') ifNotNil: [^XPDLTaskSendNode new].
+
+	^XPDLTaskNoneNode new
