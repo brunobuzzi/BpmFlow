@@ -3,10 +3,8 @@
 		 },
 	"instance" : {
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:22",
-		"createProcessInstance:" : "BrunoBB 12/01/2015 11:51",
 		"drawOn:at:" : "BrunoBB 12/06/2016 04:22",
 		"initialize" : "BrunoBB 06/26/2016 14:11",
-		"instanceClass" : "BrunoBB 12/01/2015 12:59",
 		"isEmbedded" : "BrunoBB 06/26/2016 14:11",
 		"isEmbedded:" : "BrunoBB 06/26/2016 14:11",
 		"isSubprocessDefinition" : "BrunoBB 12/11/2015 06:43",

@@ -1,4 +1,0 @@
-other
-instanceClass
-
-	^BpmStartEventInstance

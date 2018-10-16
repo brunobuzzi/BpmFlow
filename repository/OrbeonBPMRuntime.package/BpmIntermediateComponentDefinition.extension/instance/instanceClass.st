@@ -1,0 +1,4 @@
+*orbeonBPMRuntime
+instanceClass
+
+	^BpmIntermediateEventInstance
