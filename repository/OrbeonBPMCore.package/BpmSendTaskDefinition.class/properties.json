@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"processIdField",
+		"identificationFields" ],
 	"name" : "BpmSendTaskDefinition",
 	"pools" : [
 		 ],
