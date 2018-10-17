@@ -3,7 +3,7 @@ createBpmDefinitionOn: aBpmProcessDefinition
 	"The receiver answer a sub instance of <BpmArtifactDefinition> that represent the XPDL element (the receiver) in the BPM model"
 	| loop activityDefinition |
 
-	activityDefinition := (self getBpmClass process: aBpmProcessDefinition)
+	activityDefinition := (self getBpmClass newInProcess: aBpmProcessDefinition)
 		name: self getName;
 		yourself.
 

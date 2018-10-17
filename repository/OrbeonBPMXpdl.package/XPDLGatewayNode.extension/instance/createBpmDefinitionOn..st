@@ -1,6 +1,6 @@
 *orbeonBPMXpdl
 createBpmDefinitionOn: aBpmProcessDefinition
 
-	^(self getGatewayClass process: aBpmProcessDefinition)
+	^(self getGatewayClass newInProcess: aBpmProcessDefinition)
 		name: self getName;
 		yourself
