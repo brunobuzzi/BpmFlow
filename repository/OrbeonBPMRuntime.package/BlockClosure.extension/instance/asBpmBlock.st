@@ -1,4 +1,4 @@
 *orbeonBPMRuntime
 asBpmBlock
 
-	^BpmCodeCondition fromBlock: self
+	^BpmCodeCondition newFromBlock: self
