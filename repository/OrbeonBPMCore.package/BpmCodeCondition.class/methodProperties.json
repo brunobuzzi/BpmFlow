@@ -1,9 +1,8 @@
 {
 	"class" : {
-		"code:" : "BrunoBB 10/29/2015 13:10",
-		"fromBlock:" : "BrunoBB 11/13/2016 09:32" },
+		"newFromBlock:" : "brunobb 10/16/2018 10:58",
+		"newFromBlock:for:" : "brunobb 10/16/2018 10:58" },
 	"instance" : {
-		"evaluateConditionIn2:" : "BrunoBB 11/13/2016 12:50",
 		"evaluateConditionIn:" : "BrunoBB 11/13/2016 12:51",
 		"evaluationCode" : "BrunoBB 10/29/2015 13:10",
 		"evaluationCode:" : "BrunoBB 10/29/2015 13:10",
@@ -11,4 +10,6 @@
 		"hasEvaluationConditionWithFieldNamed:" : "BrunoBB 04/19/2016 16:18",
 		"printEvaluationCode" : "BrunoBB 11/13/2016 09:42",
 		"printOn:" : "BrunoBB 11/13/2015 10:27",
+		"transition" : "brunobb 10/16/2018 10:54",
+		"transition:" : "brunobb 10/16/2018 10:54",
 		"value:" : "BrunoBB 11/13/2016 09:43" } }
