@@ -1,4 +1,4 @@
-other
+query
 getReceiverEventDefinition
 
 	^self getReceiverProcessDefinition 

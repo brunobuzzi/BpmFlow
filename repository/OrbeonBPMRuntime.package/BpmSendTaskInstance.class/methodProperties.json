@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performInitializationOn:" : "brunobb 10/16/2018 10:22" } }
+		"collectValuesOf:in:" : "brunobb 10/17/2018 09:44",
+		"createInterProcessMessageFor:" : "brunobb 10/17/2018 10:03",
+		"performInitializationOn:" : "brunobb 10/17/2018 11:52" } }

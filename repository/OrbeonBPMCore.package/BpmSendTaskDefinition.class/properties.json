@@ -4,10 +4,15 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 10/17/2018 09:00",
 	"instvars" : [
+		"appName",
+		"processName",
+		"gatewayName",
+		"eventName",
 		"processIdField",
-		"identificationFields" ],
+		"identificationFields",
+		"fieldNamesToSet" ],
 	"name" : "BpmSendTaskDefinition",
 	"pools" : [
 		 ],

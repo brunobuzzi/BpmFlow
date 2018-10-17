@@ -120,6 +120,7 @@
 		"getFieldsNamed:in:withValue:" : "BrunoBB 04/23/2016 12:55",
 		"getFinishedProcessMatrix" : "brunobb 04/16/2018 08:48",
 		"getFormDefinitionNamed:ifNone:" : "BrunoBB 02/23/2016 14:13",
+		"getFormsNamesWithFieldNamed:" : "brunobb 10/17/2018 11:16",
 		"getGatewayNamed:ifNone:" : "BrunoBB 11/28/2015 19:50",
 		"getInstancesCreationDayDistributionQuantityFrom:to:satisfying:" : "BrunoBB 11/04/2016 05:13",
 		"getInstancesDayDistributionQuantityUsing:from:to:satisfying:" : "BrunoBB 11/04/2016 05:23",

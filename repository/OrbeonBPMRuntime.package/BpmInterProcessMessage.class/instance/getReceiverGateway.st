@@ -1,2 +1,2 @@
-other
+query
 getReceiverGateway

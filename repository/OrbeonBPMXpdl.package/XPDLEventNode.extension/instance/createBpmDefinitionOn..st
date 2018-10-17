@@ -2,7 +2,7 @@
 createBpmDefinitionOn: aBpmProcessDefinition
 	| event |
 
-	event := BpmEventDefinition newInProcess: aBpmProcessDefinition.
+	event := self getBpmClass newInProcess: aBpmProcessDefinition.
 	event name: self getName;
 		cycle: (self getCycleComponentDefinitionClass event: event);
 		type: (self getBpmTypeComponentDefinitionClass event: event);
