@@ -5,6 +5,6 @@ generateNextTranstionsForExclusiveEventGateway: aBpmExclusiveEventBasedGateway
 
 	process finalizeGateway: aBpmExclusiveEventBasedGateway.
 
-	self finalize. "the event is remove from <BpmTimerEventMonitor> singleton"
+	self finalize. "the event is removed from <BpmTimerEventMonitor> singleton"
 
 	super generateNextRunningTransitions.

@@ -12,5 +12,5 @@ send
 		"the event instance is created here"
 		transitionInstance := procInstance createNewTransition: transitionDefinition from: gatewayInstance.
 		eventInstance := transitionInstance endArtifact.
-		eventInstance receiveMessage: self.
+		eventInstance processMessage: self inTarget: procInstance.
 	]

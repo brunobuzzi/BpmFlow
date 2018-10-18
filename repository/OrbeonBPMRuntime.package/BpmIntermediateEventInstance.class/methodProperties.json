@@ -3,10 +3,10 @@
 		 },
 	"instance" : {
 		"generateNextRunningTransitions" : "brunobb 10/11/2018 10:30",
-		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 10/11/2018 10:29",
-		"generateNextTranstionsForInclusiveEventGateway:" : "brunobb 10/11/2018 10:31",
+		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 10/18/2018 04:58",
+		"generateNextTranstionsForInclusiveEventGateway:" : "brunobb 10/18/2018 04:58",
 		"generateNextTranstionsForParallelEventGateway:" : "brunobb 10/11/2018 10:29",
-		"receiveMessage:" : "brunobb 10/17/2018 12:47",
+		"processMessage:inTarget:" : "brunobb 10/18/2018 05:05",
 		"receivedMessage" : "brunobb 10/17/2018 12:44",
 		"receivedMessage:" : "brunobb 10/17/2018 12:44",
 		"summaryTitle" : "brunobb 02/09/2018 11:08" } }
