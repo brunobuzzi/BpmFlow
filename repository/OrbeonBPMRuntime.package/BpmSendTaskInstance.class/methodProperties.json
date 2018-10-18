@@ -4,6 +4,9 @@
 	"instance" : {
 		"collectValuesOf:in:" : "brunobb 10/17/2018 09:44",
 		"createInterProcessMessageFor:" : "brunobb 10/18/2018 03:50",
+		"hasException" : "brunobb 10/18/2018 10:27",
 		"message" : "brunobb 10/17/2018 12:38",
 		"message:" : "brunobb 10/17/2018 12:38",
-		"performInitializationOn:" : "brunobb 10/18/2018 04:26" } }
+		"performInitializationOn:" : "brunobb 10/18/2018 04:26",
+		"sendException" : "brunobb 10/18/2018 10:27",
+		"sendException:" : "brunobb 10/18/2018 10:27" } }

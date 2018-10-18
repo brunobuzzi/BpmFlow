@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"message",
-		"sendException" ],
-	"name" : "BpmSendTaskInstance",
+		 ],
+	"name" : "NoProcessException",
 	"pools" : [
 		 ],
-	"super" : "BpmAbstractTaskInstance",
+	"super" : "OrbeonBpmException",
 	"type" : "normal" }
