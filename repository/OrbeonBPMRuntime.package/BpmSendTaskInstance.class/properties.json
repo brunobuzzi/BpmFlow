@@ -10,5 +10,5 @@
 	"name" : "BpmSendTaskInstance",
 	"pools" : [
 		 ],
-	"super" : "BpmTaskInstance",
+	"super" : "BpmAbstractTaskInstance",
 	"type" : "normal" }

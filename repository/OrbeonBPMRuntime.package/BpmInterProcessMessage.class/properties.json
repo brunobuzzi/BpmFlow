@@ -6,9 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"senderAppName",
-		"senderProcessName",
-		"senderId",
+		"senderProcess",
 		"receiverProcessName",
 		"receiverAppName",
 		"receiverProcessId",
@@ -17,7 +15,8 @@
 		"receiverProcessDefinition",
 		"receiverGatewayName",
 		"receiverEventName",
-		"variablesToSet" ],
+		"variablesToSet",
+		"targetProcesses" ],
 	"name" : "BpmInterProcessMessage",
 	"pools" : [
 		 ],

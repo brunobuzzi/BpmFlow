@@ -3,9 +3,7 @@ createInterProcessMessageFor: aBpmProcessInstance
 	"Create an instance of <BpmInterProcessMessage> to sent by the receiver to other bpm process <aBpmProcessInstance>"
 
 	^message := BpmInterProcessMessage new
-							senderAppName: self applicationName;
-							senderId: aBpmProcessInstance processId;
-							senderProcessName: aBpmProcessInstance processName;
+							senderProcess: aBpmProcessInstance;
 							receiverAppName: definition appName;
 							receiverProcessName: definition processName;
 							receiverGatewayName: definition gatewayName;

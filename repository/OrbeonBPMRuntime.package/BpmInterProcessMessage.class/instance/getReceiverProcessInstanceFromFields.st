@@ -1,8 +1,9 @@
 query
 getReceiverProcessInstanceFromFields
-	"The receiver detect the targe bpm process <BpmProcessInstance> from dictionary <receiverIdentificationFields>.
+	"The receiver detect target bpm processes <BpmProcessInstance> from <Dictionary> <receiverIdentificationFields>.
 	The search is an AND for all fields in <receiverIdentificationFields>.
-	This implementation support multi processes to be reached by the receiver. It is the process designer to assure the correct orchestation between processes"
+	This implementation support multi processes to be reached by the receiver. 
+	Note: It is responsibility of the process designer to assure the correct orchestation between processes"
 	| processes |
 
 	processes := Set new.
