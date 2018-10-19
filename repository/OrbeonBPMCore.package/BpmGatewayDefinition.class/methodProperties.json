@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"isEventGateway" : "brunobb 10/19/2018 11:57" },
 	"instance" : {
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:22",
 		"drawFirstOn:" : "BrunoBB 12/06/2016 04:24",
@@ -8,7 +8,7 @@
 		"drawOn:at:" : "BrunoBB 12/05/2016 11:01",
 		"hasEvaluationConditionWithFieldNamed:" : "BrunoBB 04/19/2016 16:21",
 		"initialize" : "BrunoBB 11/23/2015 13:38",
-		"isEventGateway" : "brunobb 10/18/2018 05:14",
+		"isEventGateway" : "brunobb 10/19/2018 11:56",
 		"isGateway" : "BrunoBB 06/18/2016 12:59",
 		"isMerging" : "BrunoBB 11/28/2015 14:18",
 		"isSplitting" : "BrunoBB 11/28/2015 14:19",

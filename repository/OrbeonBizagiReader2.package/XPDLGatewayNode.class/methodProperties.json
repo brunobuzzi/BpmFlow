@@ -8,6 +8,7 @@
 		"inTransitions" : "BrunoBB 10/25/2015 19:30",
 		"inTransitions:" : "BrunoBB 10/25/2015 19:30",
 		"initialize" : "BrunoBB 10/25/2015 19:30",
+		"isEventGateway" : "brunobb 10/19/2018 11:56",
 		"isGatewayNode" : "BrunoBB 01/20/2016 11:32",
 		"outConditionsAreMandatory" : "BrunoBB 01/21/2016 11:27",
 		"outTransitions" : "BrunoBB 10/25/2015 19:30",

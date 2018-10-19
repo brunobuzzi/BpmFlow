@@ -7,7 +7,7 @@ getGatewaysWithoutConditions
 	report := OrderedCollection new.
 
 	activitiesNames := Dictionary new.
-	(activities select: [:each |each isGatewayNode and: [each outConditionsAreMandatory]]) do: [:xpdlGateway | 
+	(activities select: [:each |each isGatewayNode and: [each outConditionsAreMandatory and:[each isEventGateway not]]]) do: [:xpdlGateway | 
 			(xpdlGateway outTransitions reject: [:eachTr | eachTr hasCondition]) do: [:eachTr | | reportItem |		
 				reportItem := XPDLItemImportReport new type: 'Error';
 					title: 'Gateway without condition';
