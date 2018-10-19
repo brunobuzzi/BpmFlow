@@ -10,7 +10,8 @@ performInitializationOn: aBpmProcessInstance
 
 	message variablesToSet: (self collectValuesOf: definition fieldNamesToSet in: aBpmProcessInstance).
 
-	message send.
+	"for some reason the message could not be sent. (no target process found, event gateway or event does not exist)"
+	[message send] on: Error do: [:ex | sendException:= ex].
 
 	self finalize.
 
