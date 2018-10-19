@@ -4,6 +4,7 @@ createInterProcessMessageFor: aBpmProcessInstance
 
 	^message := BpmInterProcessMessage new
 							senderProcess: aBpmProcessInstance;
+							parentTask: self; 
 							receiverAppName: definition appName;
 							receiverProcessName: definition processName;
 							receiverGatewayName: definition gatewayName;
