@@ -4,7 +4,7 @@ getNonExistingFormNamesIn: anOrbeonApplication
 
 	Right now only checks for OrbeonApplication, but must work with general Application (subclass of AbstractApplication)"
 
-	^((activities reject: [:each | each isGatewayNode or:[each isScriptNode]])
+	^((activities select: [:each | each isOrbeonTaskNode])
 		reject: [:each | (anOrbeonApplication hasDefinitionNamed: each getName) 
 															or:[each isEventNode or:[each isSubProcessNode]]])
 			collect: [:each | each getName]
