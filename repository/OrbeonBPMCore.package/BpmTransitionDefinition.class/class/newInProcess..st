@@ -1,5 +1,5 @@
 other
-process: aBpmProcessDefinition
+newInProcess: aBpmProcessDefinition
 
 	^super new initialize
 		processDefinition: aBpmProcessDefinition;
