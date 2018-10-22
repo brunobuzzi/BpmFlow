@@ -21,4 +21,4 @@ drawGatewayIconFor: type at: aPoint height: height width: width
 		self addFigure: lineD1 toGroup: self defaultNameForProcessGroup.
 		^self addFigure: lineD2 toGroup: self defaultNameForProcessGroup].
 
-	^self addFigure: (self drawCircleAt: center r: 10 fillColor: 'red' stroke: 'red') toGroup: self defaultNameForProcessGroup
+	^self addFigure: (self drawCircleAt: center r: 10 stroke: 'red' fillColor: 'red') toGroup: self defaultNameForProcessGroup
