@@ -14,4 +14,4 @@ setUp
 	users at: 'alberto' put: (BpmUser getExistingOrNewUserNamed: 'alberto').
 	environment registerUser: (users at: 'alberto').
 
-	(BpmFrontOfficeRole getRoleNamed: 'manager' in: 'ue') grantUser: (users at: 'alberto') ifPresent: []
+	(BpmFrontOfficeRole getRoleNamed: 'manager' in: 'ue') grantUser: (users at: 'alberto') ifPresent: [].

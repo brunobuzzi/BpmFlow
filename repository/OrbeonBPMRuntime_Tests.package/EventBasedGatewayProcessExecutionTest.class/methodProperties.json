@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"createProcessesDefinition" : "brunobb 10/23/2018 04:38",
-		"formInstance_house_purchase_application" : "brunobb 10/23/2018 05:27",
-		"formInstance_loan_application" : "brunobb 10/23/2018 05:20",
-		"formInstance_study_loan_application_1:in:" : "brunobb 10/23/2018 05:36",
-		"setUp" : "brunobb 10/23/2018 04:40",
-		"testExecuteProcess_LoanAccepted" : "brunobb 10/23/2018 05:38" } }
+		"formInstance_cancel_purchase:" : "brunobb 10/23/2018 08:02",
+		"formInstance_house_purchase_application:" : "brunobb 10/23/2018 07:59",
+		"formInstance_loan_application:" : "brunobb 10/23/2018 07:58",
+		"formInstance_proceed_purchase:" : "brunobb 10/23/2018 08:01",
+		"formInstance_study_loan_application_1:in:" : "brunobb 10/23/2018 08:22",
+		"setUp" : "brunobb 10/23/2018 10:25",
+		"testExecuteProcess_LoanAccepted" : "brunobb 10/23/2018 08:37" } }
