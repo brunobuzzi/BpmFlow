@@ -39,7 +39,7 @@
 		"getEventNodes" : "brunobb 10/16/2017 07:35",
 		"getGatewayNamed:ifNone:" : "BrunoBB 06/25/2016 13:27",
 		"getGatewayNodes" : "BrunoBB 06/25/2016 13:27",
-		"getGatewayTypeFrom:" : "brunobb 10/09/2018 10:15",
+		"getGatewayTypeFrom:" : "brunobb 10/23/2018 10:01",
 		"getGatewaysWithoutConditions" : "brunobb 10/19/2018 11:59",
 		"getIntermediateAttachedEvents" : "BrunoBB 03/05/2017 11:26",
 		"getIsolatedActivities" : "BrunoBB 06/25/2016 13:27",

@@ -8,6 +8,8 @@ getGatewayTypeFrom: gatewayNode
 
 	((gatewayType = 'Parallel') and: [(gatewayNode attributeAt: 'ParallelEventBased' ifAbsent: ['']) = 'true']) ifTrue: [^'ParallelEvent'].
 
+	(gatewayType = 'Parallel') ifTrue: [^'Parallel'].
+
 	gatewayType := gatewayNode attributeAt: 'ExclusiveType' ifAbsent: [^''].
 
 	((gatewayType = 'Event') and: [(gatewayNode attributeAt: 'Instantiate' ifAbsent: ['']) = 'true']) ifTrue: [^'ExclusiveEvent'].
