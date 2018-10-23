@@ -4,7 +4,8 @@ doesNotUnderstand: aMessageDescriptor
 
 	(executedActivities, executedScripts)
 		detect: [:each | each hasFieldNamed: aMessageDescriptor selector asString] "check the variable name in the process instance"
-		ifNone: [^(self hasFieldNamed: aMessageDescriptor selector asString) "check the variable name in the process definition"
+		ifNone: [(externalVariables includesKey: aMessageDescriptor selector asString) ifTrue: [^self valueAtExternalVariable: aMessageDescriptor selector asString].
+				^(self hasFieldNamed: aMessageDescriptor selector asString) "check the variable name in the process definition"
 					ifTrue: [nil] "the <variable name> exist but is not initialized --> nil"
 					ifFalse: [super doesNotUnderstand: aMessageDescriptor] "if not --> default doesNotUnderstand:"
 					].
