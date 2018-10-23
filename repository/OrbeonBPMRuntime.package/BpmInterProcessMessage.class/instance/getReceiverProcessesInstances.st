@@ -4,7 +4,7 @@ getReceiverProcessesInstances
 	1- If <receiverProcessId> is NOT <nil> then the process id is taken from a field in the sender process.
 	2- If <receiverIdentificationFields> is NOT nil then an AND process search is done with values in <Dictionary> <receiverIdentificationFields>"
 
-	receiverProcessId ifNil: [^self getReceiverProcessInstanceFromFields].
+	receiverProcessIdField ifNil: [^self getReceiverProcessInstanceFromFields].
 
 	"Get the value of the targer process from a field in the sender process"
 	receiverProcessId := senderProcess getValueOfProcessField: receiverProcessIdField.
