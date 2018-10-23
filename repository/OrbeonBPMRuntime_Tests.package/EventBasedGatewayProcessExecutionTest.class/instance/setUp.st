@@ -5,7 +5,10 @@ setUp
 	super setUp.
 	users := Dictionary new.
 
-	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'Event Based Gateway' in: 'ue'. "answer a collection with all versions"
+	"answer a collection with all versions"
+	senderProcessDef := (BpmProcessDefinition getAllProcessesNamed: 'House Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last].
+	"answer a collection with all versions"
+	receiverProcesDef := (BpmProcessDefinition getAllProcessesNamed: 'House Purchase with Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last]. 
 	
-	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
-	environment := procDefinition bpmEnvironment.
+	(senderProcessDef isNil or: [receiverProcesDef isNil]) ifTrue: [self createProcessesDefinition].
+	environment := senderProcessDef bpmEnvironment.
