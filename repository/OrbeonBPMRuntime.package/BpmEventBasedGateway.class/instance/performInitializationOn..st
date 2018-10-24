@@ -6,7 +6,7 @@ performInitializationOn: aBpmProcessInstance
 	isClosed ifTrue: [^self]. "a transition has already triggered the receiver so there is nothing to do"
 
 	self isSplitting 
-	ifTrue: [definition getNextTimers do: [:timerEvent| self createEventBasedTimerEventForGateway: timerEvent].].
+	ifTrue: [definition getNextTimers do: [:timerEvent| events add: (self createEventBasedTimerEventForGateway: timerEvent)].].
 
 "	self isSplitting 
 	ifTrue: [aBpmProcessInstance finalizeGateway: self.

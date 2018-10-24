@@ -4,6 +4,7 @@
 		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:12",
 		"initializeDefault" : "brunobb 09/03/2017 14:02" },
 	"instance" : {
+		"detectMonitoredEventNamed:withProcessId:" : "brunobb 10/24/2018 09:28",
 		"getAllIntermediateTimerEvents" : "brunobb 02/09/2018 10:09",
 		"getAllIntermediateTimerEventsIn:" : "brunobb 10/05/2018 09:31",
 		"getAllMonitoredProcessDefinition" : "brunobb 08/10/2017 13:11",
