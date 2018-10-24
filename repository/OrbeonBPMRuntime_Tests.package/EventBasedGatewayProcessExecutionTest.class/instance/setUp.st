@@ -24,6 +24,3 @@ setUp
 	users at: 'andrew la' put: (BpmUser getExistingOrNewUserNamed: 'andrew la').
 	environment registerUser: (users at: 'andrew la').
 	(BpmFrontOfficeRole getRoleNamed: 'loan approver' in: 'ue') grantUser: (users at: 'andrew la') ifPresent: [].
-
-"	self createDefinition: 'cancel-purchase' with: #form_cancel_purchase in: receiverProcesDef application.
-	self createDefinition: 'proceed-purchase' with: #form_proceed_purchase in: receiverProcesDef application."
