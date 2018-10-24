@@ -7,7 +7,7 @@ processDefinition_event_based_gateway_01
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-10-08T17:24:35.1606708-03:00</Created>
-    <ModificationDate>2018-10-22T18:19:25.8154518-03:00</ModificationDate>
+    <ModificationDate>2018-10-24T16:47:02.5872454-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -80,7 +80,7 @@ processDefinition_event_based_gateway_01
   <WorkflowProcesses>
     <WorkflowProcess Id="63589e99-86c4-4321-b9e8-4fb82dd5f22b" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-10-22T18:19:48.6646441-03:00</Created>
+        <Created>2018-10-24T16:47:22.0376004-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -96,7 +96,7 @@ processDefinition_event_based_gateway_01
     </WorkflowProcess>
     <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="House Purchase with Loan">
       <ProcessHeader>
-        <Created>2018-10-22T18:19:48.6646441-03:00</Created>
+        <Created>2018-10-24T16:47:22.0376004-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -152,7 +152,7 @@ processDefinition_event_based_gateway_01
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0}" />
-            <ExtendedAttribute Name="activationBlock" Value="[:lastExecutedTime :currentTime | (lastExecutedTime addDays: 1) &gt;= currentTime]" />
+            <ExtendedAttribute Name="activationBlock" Value="[:lastExecutedTime :currentTime :process | (lastExecutedTime addDays: 1) &gt;= currentTime]" />
           </ExtendedAttributes>
         </Activity>
         <Activity Id="107d8111-55a2-476d-95b9-93ed54dc1a24" Name="loan message">
@@ -365,7 +365,7 @@ processDefinition_event_based_gateway_01
     </WorkflowProcess>
     <WorkflowProcess Id="865c6773-20c9-47f1-ab37-f8102cf635a7" Name="House Loan">
       <ProcessHeader>
-        <Created>2018-10-22T18:19:48.6706489-03:00</Created>
+        <Created>2018-10-24T16:47:22.0386015-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
