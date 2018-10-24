@@ -1,10 +1,10 @@
 test
-testExecuteProcess_LoanRejected
+testExecuteProcess_LoanRejectedByTimer
 	| senderProcessInstance receiverProcessInstance currentProcessMatrix takenProcessMatrix finishedProcessMatrix currentTask processId |
 
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (users at: 'andrew ap').
 	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (users at: 'andrew ap').
-
+	self setTimerEventToFiveSeconds.
 	self assert: (senderProcessInstance startEvent getDefinitionName = 'start').
 	self assert: (receiverProcessInstance startEvent getDefinitionName = 'start').
 
@@ -30,21 +30,26 @@ testExecuteProcess_LoanRejected
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
+	"Timer is executed here"
+	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+	(Delay forSeconds: 8) wait.
+	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+
 	"Sender Process: Step 2 - Form [study-loan-application]"
 	processId := senderProcessInstance processId.
 	currentTask := senderProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'study-loan-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_2: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
-	self assert: (senderProcessInstance loanApproved not).
+	self processTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_1: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
+	self assert: (senderProcessInstance loanApproved).
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: senderProcessInstance endEvents notEmpty. "the sender process has finalized"
 
 	"Sender Process: Step 2 - Form [cancel-purchase]"
-	self assert: (receiverProcessInstance loanApproved not).
-	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil. "this gateway time is only finalized by a timer or process termination"
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (receiverProcessInstance valueAtExternalVariable: 'loanApproved') isNil.
+	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
+	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil. "event already removed from <BpmTimerEventMonitor>"
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').
@@ -54,3 +59,5 @@ testExecuteProcess_LoanRejected
 	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+
+	self setTimerEventToOneDay.
