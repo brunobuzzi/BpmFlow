@@ -6,5 +6,8 @@ generateNextRunningTransitions
 
 	super generateNextRunningTransitions.
 
-	"if the receiver is independent --> is finalized. if the receiver is attached to <aBpmTask> --> the owner task send #finalize to the event"
-	self isAttachedEvent ifFalse: [self finalize].
+	"if <parentArtifact> is a gateway event --> is already finalized"
+	parentArtifact isEventGateway
+	ifFalse: ["if the receiver is independent --> is finalized. if the receiver is attached to <aBpmTask> --> the owner task send #finalize to the event"
+				self isAttachedEvent ifFalse: [self finalize].
+	].

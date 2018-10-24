@@ -4,9 +4,9 @@
 	"instance" : {
 		"events" : "brunobb 10/11/2018 09:55",
 		"events:" : "brunobb 10/11/2018 09:55",
-		"finalize" : "brunobb 10/24/2018 10:00",
+		"finalize" : "brunobb 10/24/2018 11:17",
 		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:18",
 		"initialize" : "brunobb 10/11/2018 09:55",
 		"isGatewayEvent" : "brunobb 10/10/2018 12:03",
-		"performInitializationOn:" : "brunobb 10/24/2018 09:57",
+		"performInitializationOn:" : "brunobb 10/24/2018 12:19",
 		"registerEvent:" : "brunobb 10/11/2018 10:20" } }
