@@ -1,5 +1,5 @@
 test
-testExecuteProcess_LoanAccepted
+testExecuteProcess_LoanRejected
 	| senderProcessInstance receiverProcessInstance currentProcessMatrix takenProcessMatrix finishedProcessMatrix currentTask processId |
 
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (users at: 'andrew ap').
@@ -35,19 +35,19 @@ testExecuteProcess_LoanAccepted
 	currentTask := senderProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'study-loan-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_1: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
-	self assert: (senderProcessInstance loanApproved).
+	self processTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_2: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
+	self assert: (senderProcessInstance loanApproved not).
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: senderProcessInstance endEvents notEmpty. "the sender process has finalized"
 
-	"Sender Process: Step 2 - Form [proceed-purchase]"
-	self assert: (receiverProcessInstance loanApproved).
+	"Sender Process: Step 2 - Form [cancel-purchase]"
+	self assert: (receiverProcessInstance loanApproved not).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
-	self assert: (currentTask getDefinitionName = 'proceed-purchase').
+	self assert: (currentTask getDefinitionName = 'cancel-purchase').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_loan_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
