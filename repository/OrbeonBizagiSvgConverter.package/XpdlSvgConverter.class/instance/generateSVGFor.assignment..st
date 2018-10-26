@@ -1,6 +1,6 @@
 svg generator
 generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
-	| xpdlReader svgCanvas yCoordinate dimensions |
+	| xpdlReader svgCanvas yCoordinate dimensions xpdlWorkflows |
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
 	dimensions := xpdlReader getDiagramDimensions.
@@ -9,7 +9,10 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 
 	svgCanvas drawText: (self getSVGTitleForAssignment: aBpmTaskAssignment) at: 20@20 textSizePx: '14px'.
 
-	xpdlReader getAllWorkflows do: [:eachWorkflow | 
+	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
+	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = aBpmTaskAssignment processName]. 
+
+	xpdlWorkflows do: [:eachWorkflow | 
 		eachWorkflow parentLanes do: [:eachLaneNode | eachLaneNode drawOn: svgCanvas].
 		eachWorkflow activities do: [:eachActivityNode | | color stroke |
 			color := aBpmTaskAssignment process getColorForActivityNamed: eachActivityNode getName user: aBpmUser.
@@ -20,7 +23,7 @@ generateSVGFor: aBpmUser assignment: aBpmTaskAssignment
 			eachTransition drawOn: svgCanvas color: color].
 	].
 	"draw transition conditions at the bottom of the SVG"
-	xpdlReader getAllWorkflows do: [:eachWorkflow | | gatewayText text |
+	xpdlWorkflows do: [:eachWorkflow | | gatewayText text |
 		yCoordinate := eachWorkflow getLaneMaxYCoordinate + 20.
 		eachWorkflow getGatewayNodes do: [:gatewayNode | 
 			(gatewayNode outTransitions select: [:each | each hasCondition]) do: [:trNode | 
