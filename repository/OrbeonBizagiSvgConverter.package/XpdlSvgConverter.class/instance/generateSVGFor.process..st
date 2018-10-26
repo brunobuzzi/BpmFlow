@@ -4,7 +4,11 @@ generateSVGFor: aBpmUser process: aBpmProcessInstance
 
 	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
 	dimensions := xpdlReader getDiagramDimensions.
-	svgCanvas := self getSVGCanvasClass newWidth: (dimensions x printString, 'px') height: (dimensions y printString, 'px').
+	svgCanvas := self getSVGCanvasClass 
+								newWidth: (dimensions x printString, 'px') 
+								height: (dimensions y printString, 'px') 
+								headers: (self generateHeaderTranslationForProcess: aBpmProcessInstance processName reader: xpdlReader).
+
 	svgCanvas addMarker: (svgCanvas markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	svgCanvas drawText: (self getSVGTitleForProcess: aBpmProcessInstance) at: 20@20 textSizePx: '14px'.
