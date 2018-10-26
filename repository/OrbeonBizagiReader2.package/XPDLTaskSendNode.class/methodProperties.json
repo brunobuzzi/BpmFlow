@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"drawOn:" : "brunobb 10/25/2018 10:31",
 		"getApplicationName" : "brunobb 10/17/2018 08:59",
 		"getEventName" : "brunobb 10/17/2018 09:12",
 		"getFieldNamesToSet" : "brunobb 10/23/2018 08:29",
