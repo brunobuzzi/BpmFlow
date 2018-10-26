@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonBPMRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"senderProcessDef",
+		"receiverProcesDef" ],
+	"name" : "EventBasedGatewayProcessExecutionTest3",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessExecutionTest",
+	"type" : "normal" }
