@@ -1,4 +1,4 @@
 *orbeonBPMRuntime
 instanceClass
 
-	^self subclassResponsibility
+	^BpmParallelEventBasedGateway
