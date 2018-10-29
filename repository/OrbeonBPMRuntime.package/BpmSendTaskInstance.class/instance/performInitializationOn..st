@@ -3,6 +3,8 @@ performInitializationOn: aBpmProcessInstance
 	"The receiver perform the creation operation in the process instance <aBpmProcessInstance>.
 	This operatoin initialize the receiver inside the process <aBpmProcessInstance>"
 
+	aBpmProcessInstance registerEvent: self. "this task is registered as an event in <aBpmProcessInstance>"
+ 
 	message := self createInterProcessMessageFor: aBpmProcessInstance.
 
 	"here the target process identification is done by a set of values rather than the process id"
