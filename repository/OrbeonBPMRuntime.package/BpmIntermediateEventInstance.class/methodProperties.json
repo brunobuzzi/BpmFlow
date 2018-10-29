@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"generateNextRunningTransitions" : "brunobb 10/24/2018 12:20",
-		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 10/18/2018 04:58",
+		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 10/29/2018 12:17",
 		"generateNextTranstionsForInclusiveEventGateway:" : "brunobb 10/24/2018 12:36",
 		"generateNextTranstionsForParallelEventGateway:" : "brunobb 10/24/2018 12:44",
 		"processMessage:inTarget:" : "brunobb 10/18/2018 05:05",

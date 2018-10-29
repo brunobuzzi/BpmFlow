@@ -7,7 +7,7 @@ processDefinition_event_based_gateway_02
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-10-08T17:24:35.1606708-03:00</Created>
-    <ModificationDate>2018-10-29T15:43:50.5968819-03:00</ModificationDate>
+    <ModificationDate>2018-10-29T17:23:04.0797779-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -80,7 +80,7 @@ processDefinition_event_based_gateway_02
   <WorkflowProcesses>
     <WorkflowProcess Id="63589e99-86c4-4321-b9e8-4fb82dd5f22b" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-10-29T15:44:02.4063469-03:00</Created>
+        <Created>2018-10-29T17:23:31.1716819-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -96,7 +96,7 @@ processDefinition_event_based_gateway_02
     </WorkflowProcess>
     <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="House Purchase with Loan 2">
       <ProcessHeader>
-        <Created>2018-10-29T15:44:02.407348-03:00</Created>
+        <Created>2018-10-29T17:23:31.1716819-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -360,12 +360,12 @@ processDefinition_event_based_gateway_02
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
     <WorkflowProcess Id="865c6773-20c9-47f1-ab37-f8102cf635a7" Name="House Loan 2">
       <ProcessHeader>
-        <Created>2018-10-29T15:44:02.407348-03:00</Created>
+        <Created>2018-10-29T17:23:31.1736836-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -438,7 +438,7 @@ processDefinition_event_based_gateway_02
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="applicationName" Value="ue" />
-            <ExtendedAttribute Name="processName" Value="House Purchase with Loan" />
+            <ExtendedAttribute Name="processName" Value="House Purchase with Loan 2" />
             <ExtendedAttribute Name="gatewayName" Value="loan event" />
             <ExtendedAttribute Name="eventName" Value="loan message" />
             <ExtendedAttribute Name="processIdField" Value="purchaseProcessId" />
@@ -507,7 +507,7 @@ processDefinition_event_based_gateway_02
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-19T16:21:54.3233913-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-19T16:21:54.3233913-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-19T16:21:54.3233913-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-19T16:21:54.3233913-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
