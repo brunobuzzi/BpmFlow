@@ -47,9 +47,10 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: senderProcessInstance endEvents notEmpty. "the sender process has finalized"
 
 	"Sender Process: Step 2 - Form [cancel-purchase]"
-	self assert: (receiverProcessInstance valueAtExternalVariable: 'loanApproved') isNil.
-	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil. "event already removed from <BpmTimerEventMonitor>"
+	self assert: (receiverProcessInstance valueAtExternalVariable: 'loanApproved') notNil.
+	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
+	"timer event is NOT removed from <BpmTimerEventMonitor> until the process is finished"
+	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').

@@ -13,7 +13,7 @@ testExecuteProcess_LoanAccepted
 	finishedProcessMatrix := senderProcessInstance getFinishedProcessMatrix.
 
 	"Sender Process: Step 1 - Form [loan-application]"
-	processId := senderProcessInstance processId.
+	processId := senderProcessInstance processId.	
 	currentTask := senderProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'loan-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) notEmpty.
@@ -43,8 +43,9 @@ testExecuteProcess_LoanAccepted
 
 	"Sender Process: Step 2 - Form [proceed-purchase]"
 	self assert: (receiverProcessInstance loanApproved).
-	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	"this kind of gateway is closed after the first event"
+	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
+	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'proceed-purchase').
@@ -52,5 +53,3 @@ testExecuteProcess_LoanAccepted
 	self processTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
-	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.

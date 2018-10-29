@@ -44,6 +44,7 @@ testExecuteProcess_LoanAccepted
 	"Sender Process: Step 2 - Form [proceed-purchase]"
 	self assert: (receiverProcessInstance loanApproved).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
+	"in this kind of gateway the timer is finalized when the process is finalized"
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
