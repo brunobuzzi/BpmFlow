@@ -60,6 +60,7 @@
 		"drawGatewayType:at:id:height:width:fillColor:stroke:" : "BrunoBB 10/01/2016 08:58",
 		"drawLaneNamed:at:width:height:" : "BrunoBB 09/11/2016 07:46",
 		"drawLaneNamed:at:width:height:color:stroke:" : "BrunoBB 09/28/2016 08:29",
+		"drawMessageEvent:at:" : "brunobb 10/30/2018 05:18",
 		"drawMultiInstaceActivityNamed:at:extent:" : "BrunoBB 09/14/2016 05:21",
 		"drawMultiInstaceActivityNamed:at:extent:color:stroke:" : "brunobb 05/03/2018 10:47",
 		"drawMultiInstaceActivityNamed:at:extent:color:stroke:textSizePx:" : "BrunoBB 01/13/2017 09:13",
