@@ -6,4 +6,6 @@ finalizeWith: aBpmEventInstance
 	Depending on the event gateway configuration it could be open when the process is finalized (see class documentation of gateways instances)"
 	(runningGateways select: [:eachGateway | eachGateway isEventGateway]) do: [:eachGateway | self finalizeGateway: eachGateway].
  
-	^endEvents at: aBpmEventInstance getDefinitionName put: aBpmEventInstance
+	(endEvents includesKey: aBpmEventInstance getDefinitionName) ifFalse: [endEvents at: aBpmEventInstance getDefinitionName put: OrderedCollection new].
+
+	^(endEvents at: aBpmEventInstance getDefinitionName) add: aBpmEventInstance
