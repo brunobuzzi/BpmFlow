@@ -1,6 +1,8 @@
 *orbeonBPMXpdl
 getBpmTypeComponentDefinitionClass
 
-	self isTimerNode ifFalse: [^BpmNoneComponentDefinition].
+	self isTimerNode ifTrue: [^BpmTimerComponentDefinition].
 
-	^BpmTimerComponentDefinition
+	self isMessageNode ifTrue: [^BpmMessageComponentDefinition].
+
+	^BpmNoneComponentDefinition
