@@ -110,5 +110,5 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 3).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 
-	endArtifact := aBpmProcessInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'visa apply end') and: [endArtifact isEndEvent]).
+	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'visa apply end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

@@ -15,17 +15,17 @@ testExecuteProcess
 		self assert:  subProcessEmb isSubProcess.
 		self assert: (subProcessEmb startEvent getDefinitionName = 'start-embedded').
 		self assert: (subProcessEmb hasFinalized).
-		endArtifact := subProcessEmb endEvents asOrderedCollection last.
-		self assert: ((endArtifact getDefinitionName = 'end-embedded') and: [endArtifact isEndEvent]).
+		endArtifact := subProcessEmb endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end-embedded'] ifNone: [self assert: false].
+		self assert: endArtifact isEndEvent.
 
 		subProcessReus := procInstance subprocesses last.
 		self assert: (procInstance includesSubProcess: subProcessReus).
 		self assert:  subProcessReus isSubProcess.
 		self assert: (subProcessReus startEvent getDefinitionName = 'start-resusable').
 		self assert: (subProcessReus hasFinalized).
-		endArtifact := subProcessReus endEvents asOrderedCollection last.
-		self assert: ((endArtifact getDefinitionName = 'end-reusable') and: [endArtifact isEndEvent]).
+		endArtifact := subProcessReus endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end-reusable'] ifNone: [self assert: false].
+		self assert: endArtifact isEndEvent.
 	"Step X - Process End"
 	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end') and: [endArtifact isEndEvent]).
-	self assert: procInstance hasFinalized.
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

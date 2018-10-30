@@ -11,5 +11,5 @@ executeProcess: aBpmProcessInstance withFormValues: anArray
 	self processTask: currentTask withUserNamed: 'andrew vo' withForm: formInstance on: aBpmProcessInstance.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Process End"
-	endArtifact := aBpmProcessInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end') and: [endArtifact isEndEvent]).
+	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

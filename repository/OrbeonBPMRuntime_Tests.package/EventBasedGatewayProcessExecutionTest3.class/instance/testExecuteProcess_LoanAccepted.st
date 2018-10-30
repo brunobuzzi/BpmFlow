@@ -39,7 +39,7 @@ testExecuteProcess_LoanAccepted
 	self assert: (senderProcessInstance loanApproved).
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
-	self assert: senderProcessInstance endEvents notEmpty. "the sender process has finalized"
+	self assert: (senderProcessInstance endEventsSize > 0). "the sender process has finalized"
 
 	"Sender Process: Step 2 - Form [proceed-purchase]"
 	self assert: (receiverProcessInstance loanApproved).
@@ -51,6 +51,6 @@ testExecuteProcess_LoanAccepted
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
-	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
+	self assert: (receiverProcessInstance endEventsSize > 0). "the sender process has finalized"
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.

@@ -45,5 +45,5 @@ testExecuteProcess_data_entry_approved
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 5].  "this task def has not Inform role"
 
 	self assert: (currentTask getDefinitionName = 'data-approved').
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end multi role') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end multi role'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

@@ -12,6 +12,6 @@ testExecuteProcess
 	self assert: (procInstance getScriptVariableNamed: 'myTempVar' ifNone: [^self assert: false]) = 64.
 
 	"Step 2 - Process End"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end') and: [endArtifact isEndEvent]).
 	self assert: procInstance hasFinalized.
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

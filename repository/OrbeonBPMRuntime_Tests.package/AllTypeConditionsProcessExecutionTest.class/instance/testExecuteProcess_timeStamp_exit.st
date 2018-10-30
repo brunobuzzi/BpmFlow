@@ -13,5 +13,5 @@ testExecuteProcess_timeStamp_exit
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'gateway split').
 	"Step 3 - Process End"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'time stamp end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'time stamp end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

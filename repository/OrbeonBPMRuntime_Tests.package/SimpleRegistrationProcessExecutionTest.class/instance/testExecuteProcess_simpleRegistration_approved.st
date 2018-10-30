@@ -19,5 +19,5 @@ testExecuteProcess_simpleRegistration_approved
 	self processTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_registration_approval.
 	self assert: (currentTask getDefinitionName = 'registration-approval').
 
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

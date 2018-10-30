@@ -22,7 +22,6 @@ testExecuteProcess_boolean_exit_aborted
 	self finalizeAssignment: assignment withUserNamed: 'alberto' on: procInstance. "assignment is finished"
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
-
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
 	procInstance confirmAbortion.

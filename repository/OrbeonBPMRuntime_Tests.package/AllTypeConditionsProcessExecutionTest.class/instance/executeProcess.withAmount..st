@@ -11,5 +11,5 @@ executeProcess: aBpmProcessInstance withAmount: amountString
 	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'gateway split').
 	"Step 3 - Process End"
-	endArtifact := aBpmProcessInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'integer end') and: [endArtifact isEndEvent]).
+	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'integer end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

@@ -18,5 +18,5 @@ testExecuteProcess_visaRejected
 	self assert: (gateway getDefinitionName = 'accept basic data').
 	"Step 4 - Visa has been rejected"
 	self assert: (procInstance currentActivities isEmpty).
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'visa apply end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'visa apply end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

@@ -13,5 +13,5 @@ testExecuteProcess_date_exit
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'gateway split').
 	"Step 3 - Process End"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'date end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'date end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

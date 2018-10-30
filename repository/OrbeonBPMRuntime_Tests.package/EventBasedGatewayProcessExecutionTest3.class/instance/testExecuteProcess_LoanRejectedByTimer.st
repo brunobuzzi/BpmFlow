@@ -1,6 +1,6 @@
 test
 testExecuteProcess_LoanRejectedByTimer
-	| senderProcessInstance receiverProcessInstance currentProcessMatrix takenProcessMatrix finishedProcessMatrix currentTask processId |
+	| senderProcessInstance receiverProcessInstance currentProcessMatrix takenProcessMatrix finishedProcessMatrix currentTask currentTask2 processId |
 
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (users at: 'andrew ap').
 	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (users at: 'andrew ap').
@@ -52,13 +52,21 @@ testExecuteProcess_LoanRejectedByTimer
 	"timer event is NOT removed from <BpmTimerEventMonitor> until the process is finished"
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
-	currentTask := receiverProcessInstance currentActivities last.
+	"timers do NOT close parallel event gateways only keep triggering the event of the timer until the process is finalized"
+	"so we have two current task [cancel-purchase] and [proceed-purchase] (this situation does no make sense from business point of view -proceed&cancel- but is ok as a test)"
+	self assert: (receiverProcessInstance currentActivities size = 2).
+	currentTask := receiverProcessInstance currentActivities first.
+	currentTask2 := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').
-	self assert: (currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) notEmpty.
+	self assert: ((currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
+	"after this task is done the process is finalized (although there is still a task to be finished)"
 	self processTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_cancel_purchase: receiverProcessInstance) on: receiverProcessInstance.
-	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
-	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
+	self assert: ((currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
+	self assert: (receiverProcessInstance endEventsSize = 1). "the sender process has finalized"
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+	self processTask: currentTask2 withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
+	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
+	self assert: (receiverProcessInstance endEventsSize = 2). 
 
 	self setTimerEventToOneDay.

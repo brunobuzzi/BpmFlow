@@ -8,8 +8,9 @@ testExecuteProcess
 	self assert: (procInstance startEvent getDefinitionName = 'start').
 
 	"End Step"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.
+
 	self assert: procInstance hasFinalized.
 
 	self assert: (procInstance randomInteger = 10). "<randomInteger> is a variable is a Script"

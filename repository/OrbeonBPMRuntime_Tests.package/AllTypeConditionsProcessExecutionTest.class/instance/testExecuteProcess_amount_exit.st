@@ -13,5 +13,5 @@ testExecuteProcess_amount_exit
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'gateway split').
 	"Step 3 - Process End"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'integer end') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'integer end'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.

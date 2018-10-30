@@ -37,5 +37,5 @@ testExecuteProcess_task4_to_task7
 	self processTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_task7.
 	self assert: (currentTask getDefinitionName = 'task-7').
 	"Step 8 - Process End"
-	endArtifact := procInstance endEvents asOrderedCollection last.
-	self assert: ((endArtifact getDefinitionName = 'end all') and: [endArtifact isEndEvent]).
+	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end all'] ifNone: [self assert: false].
+	self assert: endArtifact isEndEvent.
