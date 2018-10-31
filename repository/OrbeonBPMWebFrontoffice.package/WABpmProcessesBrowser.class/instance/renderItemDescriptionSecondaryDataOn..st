@@ -9,3 +9,7 @@ renderItemDescriptionSecondaryDataOn: html
 	html output: selectedLateralItem version.
 	html span: [html strong: ('Process State:' translateFor: self session user)].
 	html output: (selectedLateralItem printProcessState translateFor: self session user).
+
+	selectedLateralItem isWaitingEvent
+	ifTrue: [html span: [html strong: ('Waiting Event:' translateFor: self session user)].
+				html output: ('true' translateFor: self session user)].
