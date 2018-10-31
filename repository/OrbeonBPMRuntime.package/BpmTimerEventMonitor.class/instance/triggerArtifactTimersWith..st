@@ -6,7 +6,7 @@ triggerArtifactTimersWith: aTimeStamp
 
 	monitoredEvents asArray do: [:eventInstance | | lastExecutionTime |
 
-		lastExecutionTime := self getLastEventInstanceExecutionFor: eventInstance.
+		lastExecutionTime := self getLastEventInstanceExecutionFor: eventInstance ifNoneExecution: [eventInstance lastExecutionTime].
 
 		((eventInstance getTimerBlock value: lastExecutionTime value: aTimeStamp value: eventInstance process) and: [eventInstance processIsRunning])
 		ifTrue: [eventInstance generateNextRunningTransitions.
