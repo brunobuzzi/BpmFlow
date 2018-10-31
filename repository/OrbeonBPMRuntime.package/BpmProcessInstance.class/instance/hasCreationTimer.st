@@ -1,0 +1,4 @@
+other
+hasCreationTimer
+
+	^definition hasCreationTimer

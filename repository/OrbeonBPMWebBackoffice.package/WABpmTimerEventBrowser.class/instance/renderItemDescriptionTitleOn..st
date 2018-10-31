@@ -4,7 +4,7 @@ renderItemDescriptionTitleOn: html
 
 	html output:  selectedLateralItem processName.
 
-	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem.
+	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem process.
 
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
@@ -16,8 +16,8 @@ renderItemDescriptionTitleOn: html
 					title: ('Process Map' translateFor: self session user);
 					altText: ('Process Map' translateFor: self session user)].
 
-	selectedLateralItem hasCreationTimer ifTrue: [ | anchorText iconName |
-		selectedLateralItem automaticCreationIsActive 
+	self selectedProcess hasCreationTimer ifTrue: [ | anchorText iconName |
+		self selectedProcess automaticCreationIsActive 
 		ifTrue: [anchorText := 'Make Timer Passive'.
 					iconName := #clock24Png] 
 		ifFalse: [anchorText := 'Make Timer Active'.
