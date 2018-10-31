@@ -4,7 +4,7 @@ renderItemDescriptionTitleOn: html
 
 	html output:  selectedLateralItem processName.
 
-	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem process.
+	popUpComponent := WAProcessViewerSelector parent: self process: self selectedProcess.
 
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
