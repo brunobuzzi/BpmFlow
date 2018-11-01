@@ -1,4 +1,4 @@
-other
+lanes
 getLanesForSubProcessTaskNamed: aString
 
 	^self isEmbedded

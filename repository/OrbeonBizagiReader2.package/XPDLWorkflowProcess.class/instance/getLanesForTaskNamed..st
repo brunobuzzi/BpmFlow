@@ -1,4 +1,4 @@
-other
+lanes
 getLanesForTaskNamed: aString
 
 	^self isEmbedded

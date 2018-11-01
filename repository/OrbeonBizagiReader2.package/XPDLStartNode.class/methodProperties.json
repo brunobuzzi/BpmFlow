@@ -2,8 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createBpmDefinitionOn:" : "brunobb 02/05/2018 10:18",
-		"getLanesFrom:" : "BrunoBB 10/29/2015 19:25",
+		"createBpmDefinitionOn:" : "brunobb 11/01/2018 04:06",
 		"initialize" : "BrunoBB 10/24/2015 17:02",
 		"isStartNode" : "BrunoBB 10/25/2015 08:43",
 		"outTransitions" : "BrunoBB 10/25/2015 09:43",

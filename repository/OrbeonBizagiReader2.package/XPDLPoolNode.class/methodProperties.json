@@ -14,6 +14,7 @@
 		"getGatewayNamed:ifNone:" : "BrunoBB 10/31/2015 14:33",
 		"getGatewayNodes" : "BrunoBB 10/31/2015 14:33",
 		"getLaneNamed:ifNone:" : "BrunoBB 10/31/2015 14:33",
+		"getLanesForEventNamed:" : "brunobb 11/01/2018 04:04",
 		"getLanesForGatewayNamed:" : "BrunoBB 10/31/2015 14:33",
 		"getLanesForScriptNamed:" : "BrunoBB 06/21/2016 13:45",
 		"getLanesForSubProcessTaskNamed:" : "BrunoBB 10/31/2015 14:33",

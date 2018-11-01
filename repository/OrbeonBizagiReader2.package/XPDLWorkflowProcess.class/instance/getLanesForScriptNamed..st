@@ -1,4 +1,4 @@
-other
+lanes
 getLanesForScriptNamed: aString
 
 	^self isEmbedded

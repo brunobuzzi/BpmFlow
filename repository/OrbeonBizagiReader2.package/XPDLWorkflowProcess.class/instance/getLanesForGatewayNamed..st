@@ -1,4 +1,4 @@
-other
+lanes
 getLanesForGatewayNamed: aString
 
 	^self isEmbedded
