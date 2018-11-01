@@ -4,4 +4,4 @@ canCreateProcess: aBpmUser
 
 	aBpmUser ifNil: [^true]. "a process can be created with anonymous user"
 
-	^aBpmUser includesAnyRoleOf: startEvent roles
+	^aBpmUser isBackofficeUserAndAdmin or: [aBpmUser includesAnyRoleOf: startEvent roles]

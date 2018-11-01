@@ -37,6 +37,8 @@
 		"finalizeAssignment:takeNext:" : "brunobb 04/22/2018 13:58",
 		"getAllAvailableTaskAssignments" : "brunobb 04/13/2018 11:01",
 		"getAllAvailableTaskAssignmentsIn:" : "brunobb 09/06/2018 05:00",
+		"getAllCreationProcessesIn:" : "brunobb 11/01/2018 04:58",
+		"getAllCreationProcessesWithStartTimerIn:" : "brunobb 11/01/2018 04:59",
 		"getAllCurrentAssignments" : "brunobb 09/10/2018 10:55",
 		"getAllFinishedTaskAssignmentsWithId:in:" : "brunobb 09/10/2018 09:33",
 		"getAllProcessDefinitionIn:" : "brunobb 10/05/2018 10:00",
