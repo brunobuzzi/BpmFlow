@@ -12,6 +12,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Current Processes' command: #showCurrentProcess);
 		addItem: (SewafCommandItem label: 'Finished Processes' command: #showFinishedProcess);
 		addItem: (SewafCommandItem label: 'Process Categories' command: #showProcessCategories);
+		addItem: (SewafCommandItem label: 'Browse Timers' command: #openTimerEventBrowser);
 		yourself.
 	subMenu2 := (SewafSubMenuItem label: 'Unassigned Tasks' icon: #folderscheduledtasks32Png)
 		set24Icon: #folderscheduledtasks24Png;
