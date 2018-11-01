@@ -1,4 +1,4 @@
 other
 getAllUserCategories
 
-	^self defaultCategoryClass getCategoriesIn: self session bpmEnvironment for: self session user
+	^self defaultCategoryClass getCategoriesIn: self session bpmEnvironment forUser: self session user
