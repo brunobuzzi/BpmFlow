@@ -1,0 +1,19 @@
+{
+	"category" : "OrbeonBPMXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processGenerator",
+		"xpdlReader",
+		"applications",
+		"indexApplicationMapper",
+		"indexXpdlFileMapper",
+		"fileFormatErrors" ],
+	"name" : "BpmXpdlImportProcess",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
