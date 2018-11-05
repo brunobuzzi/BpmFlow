@@ -15,7 +15,8 @@ getImportWarningReport
 			addAll: each getStartNodeReport; "has no start node"
 			addAll: each getSuspiciousConditions;
 			addAll: each getTaskScriptWarnings;
-			addAll: each getTimerBlockWarnings.
+			addAll: each getTimerBlockWarnings;
+			addAll: each getInterProcessCommunicationsWarnings.
 	].
 
 	^importReport

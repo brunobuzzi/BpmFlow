@@ -38,6 +38,7 @@
 		"isStartOrEndActivity" : "BrunoBB 01/21/2016 11:25",
 		"isSubProcessNode" : "BrunoBB 12/13/2015 13:15",
 		"isTaskNode" : "BrunoBB 12/13/2015 13:15",
+		"isTaskSendNode" : "brunobb 11/05/2018 08:03",
 		"name:" : "BrunoBB 12/13/2015 13:15",
 		"originPoint" : "BrunoBB 07/06/2016 10:57",
 		"outTransitions" : "BrunoBB 12/13/2015 13:15",
