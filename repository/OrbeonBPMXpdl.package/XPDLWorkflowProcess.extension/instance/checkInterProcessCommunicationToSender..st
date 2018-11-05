@@ -19,10 +19,13 @@ checkInterProcessCommunicationToSender: aXPDLTaskSendNode
 																		description: 'Target Application or Process in Task Send does NOT exist';
 																		solution: 'Change configuration of Task Send in Bizagi';
 																		yourself)].
-	targetProcesses anySatisfy: [:procDefinition | 
-			procDefinition getGatewayNamed: aXPDLTaskSendNode getGatewayName ifNone: [].
-			procDefinition getIntermediateEventNamed: aXPDLTaskSendNode getEventName ifNone: [].
-			aXPDLTaskSendNode getProcessIdField ifNotNil: [:idField | ].
-	].
-
+	targetProcesses detect: [:procDefinition | 
+										(procDefinition getGatewayNamed: aXPDLTaskSendNode getGatewayName ifNone: [nil]) notNil and: [
+										(procDefinition getIntermediateEventNamed: aXPDLTaskSendNode getEventName ifNone: []) notNil]]
+							ifNone: [warnings add: (XPDLItemImportReport new 
+																		type: 'Error';
+																		title: 'Missing Gateway or Event';
+																		description: 'Target Process does NOT have configured Gateway or Event';
+																		solution: 'Change configuration of Task Send in Bizagi';
+																		yourself)].
 	^warnings
