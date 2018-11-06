@@ -18,7 +18,7 @@ renderSVGForImportedProcessesOn: html
 	html div id: 'imported-processes-confirmation'; with: [
 		html anchor 
 			class: 'cursor-pointer';
-			callback: [self storeBpmProcessDefinition];
+			callback: [model storeBpmProcessDefinition];
 			with: [html image url: (SEWAFIconLibrary / #actionsdocumentsaveas48pngPng); 
 					altText: ('Proceed with Import Process' translateFor: self session user); 
 					title: ('Proceed with Import Process' translateFor: self session user).

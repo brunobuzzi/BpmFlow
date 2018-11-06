@@ -5,8 +5,8 @@ renderUploadComponentOn: html index: index
 
 	(model xpdlFileMapperIncludesKey: index)
 	ifFalse: [
-		html label attributeAt: 'for' put: 'selectFile'; with: ('Select File' translateFor: self session user).
-		html fileUpload attributeAt: 'id' put: 'selectFile'; 
+		html label attributeAt: 'for' put: ('selectFile-', index printString); with: ('Select File' translateFor: self session user).
+		html fileUpload attributeAt: 'id' put: ('selectFile-', index printString); 
 			callback: [:aFile | model storeTemporaryXpdlFile: aFile atIndex: index]. "the user upload the XPDL file"
 		html submitButton: ('Send File [' translateFor: self session user), index printString, ']']
 	ifTrue:[html strong with: [html paragraph with: (model getMappedXpdlFileNameAt: index)].

@@ -11,7 +11,8 @@
 		"applications",
 		"indexApplicationMapper",
 		"indexXpdlFileMapper",
-		"fileFormatErrors" ],
+		"fileFormatErrors",
+		"bpmEnvironment" ],
 	"name" : "BpmXpdlImportProcess",
 	"pools" : [
 		 ],
