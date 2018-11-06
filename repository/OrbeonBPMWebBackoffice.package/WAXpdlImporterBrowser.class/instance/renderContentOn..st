@@ -13,12 +13,12 @@ renderContentOn: html
 					self renderImportAllButtonOn: html].
 	].
 
-	(processGenerator notNil and: [processGenerator hasImportedProcesses]) ifFalse: [^self].
+	(model hasProcessGenerator and: [model hasImportedProcesses]) ifFalse: [^self].
 
-	processGenerator hasImmutableProcess ifTrue: [^self renderImmutableExceptionOn: html].
+	model hasImmutableProcesses ifTrue: [^self renderImmutableExceptionOn: html].
 	
-	processGenerator successfulImport
+	model isImportSuccessful
 	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateFor: self session user)].]
-	ifFalse: [importTitle := (processGenerator processes size > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
+	ifFalse: [importTitle := (model numberOfGeneratedProcesses > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
 		html div id: 'imported-processes-title'; with: [html output: (importTitle translateFor: self session user)].
 		html div id: 'imported-processes'; with: [self renderSVGForImportedProcessesOn: html]].

@@ -4,4 +4,4 @@ openBizagiManager
 	(arena isKindOf: WAXpdlImporterBrowser)
 	ifTrue: [^arena].
 
-	^WAXpdlImporterBrowser new orbeonApplications: (self session user getVisibleApplicationsIn: self session bpmEnvironment).
+	^WAXpdlImporterBrowser newOn: (self session user getVisibleApplicationsIn: self session bpmEnvironment).

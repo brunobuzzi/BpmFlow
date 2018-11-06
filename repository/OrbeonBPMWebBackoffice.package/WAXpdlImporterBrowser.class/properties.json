@@ -7,12 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"orbeonApplications",
-		"reader",
-		"numberOfProcess",
-		"uploadProcesses",
-		"selectedUploads",
-		"fileFormats",
-		"processGenerator" ],
+		"numberOfProcess" ],
 	"name" : "WAXpdlImporterBrowser",
 	"pools" : [
 		 ],

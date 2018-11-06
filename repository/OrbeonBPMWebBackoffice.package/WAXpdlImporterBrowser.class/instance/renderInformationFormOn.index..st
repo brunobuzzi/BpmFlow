@@ -12,10 +12,10 @@ renderInformationFormOn: html index: index
 				].
 				html div class: 'margin-top-10px'; with: [
 					html span with: [html strong: ('Application:' translateFor: self session user)].
-					html output: (uploadProcesses at: index ifAbsent: [nil]).
+					html output: (model getMappedApplicationNameAt: index).
 				].
 				html div class: 'margin-top-10px'; with: [
 					html span with: [html strong: ('FileName:' translateFor: self session user)].
-					html output: (selectedUploads at: index ifAbsent: [nil]).
+					html output: (model getMappedXpdlFileNameAt: index).
 				].
 		].

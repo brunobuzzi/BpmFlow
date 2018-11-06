@@ -1,8 +1,6 @@
 other
 resetComponent
 
-	self initialize.
+	numberOfProcess := 1.
 
-	reader := nil.
-
-	processGenerator := nil.
+	self setOrbeonApplications: model applications.

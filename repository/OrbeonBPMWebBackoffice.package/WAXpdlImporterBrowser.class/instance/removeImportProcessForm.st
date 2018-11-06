@@ -1,7 +1,6 @@
 upload
 removeImportProcessForm
 
-	uploadProcesses removeKey: numberOfProcess ifAbsent: [].
-	selectedUploads removeKey: numberOfProcess ifAbsent: [].
+	model removeLastImportedProcess.
 
 	(numberOfProcess > 1) ifTrue: [numberOfProcess := numberOfProcess - 1].

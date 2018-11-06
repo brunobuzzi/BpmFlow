@@ -11,11 +11,10 @@ renderImportAllButtonOn: html
 	cssClass := (numberOfProcess = 1) ifTrue: ['import-all-button-1'] ifFalse: ['import-all-button-2'].
 
 	html div class: cssClass; with: [
-		(selectedUploads size = numberOfProcess) ifFalse: [^self].
+		(model indexXpdlFileMapperSize = numberOfProcess) ifFalse: [^self]. "compare the number of uploaded XPDL file with the number of forms to upload XPDL (can not be empty form)"
 					html anchor 
 						class: 'cursor-pointer';
 						onClick: (html jQuery id: jQueryId) dialog open;
-						"callback: [self importBizagiFiles];"
 						with: [html image url: (SEWAFIconLibrary / #actionsdocumentsaveasiconPng); 
 								altText: ('Import All Files' translateFor: self session user); 
 								title: ('Import All Files' translateFor: self session user)].
