@@ -3,7 +3,7 @@ generateSVGFor: aBpmDefinition
 	"The receiver answer a SVG string for BPM process <aBpmDefinition>"
 	| xpdlReader svgCanvas dimensions yCoordinate xpdlWorkflows |
 
-	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
+	xpdlReader := self getXpdlReaderClass forProcessNamed: 'convert' withString: xpdlString.
 	dimensions := xpdlReader getDiagramDimensions.
 	svgCanvas := self getSVGCanvasClass 
 								newWidth: (dimensions x printString, 'px') 

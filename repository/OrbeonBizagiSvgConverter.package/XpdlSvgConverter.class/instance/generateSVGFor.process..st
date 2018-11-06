@@ -2,7 +2,7 @@ svg generator
 generateSVGFor: aBpmUser process: aBpmProcessInstance
 	| xpdlReader svgCanvas yCoordinate dimensions xpdlWorkflows |
 
-	xpdlReader := XPDLReader2 forProcessNamed: 'convert' withString: xpdlString.
+	xpdlReader := self getXpdlReaderClass forProcessNamed: 'convert' withString: xpdlString.
 	dimensions := xpdlReader getDiagramDimensions.
 	svgCanvas := self getSVGCanvasClass 
 								newWidth: (dimensions x printString, 'px') 

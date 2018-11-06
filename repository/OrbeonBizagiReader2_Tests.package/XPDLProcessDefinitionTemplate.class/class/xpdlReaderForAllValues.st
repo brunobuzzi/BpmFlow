@@ -1,6 +1,6 @@
 all values
 xpdlReaderForAllValues
 
-	^(XPDLReader2 forProcessNamed: 'all values' withString: self processDefinition_all_values)
+	^(self getXpdlReaderClass forProcessNamed: 'all values' withString: self processDefinition_all_values)
 			connectProcesses;
 			yourself

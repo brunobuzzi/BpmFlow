@@ -9,7 +9,7 @@
 		"xpdlDocuments",
 		"xpdlPackages",
 		"importReport" ],
-	"name" : "XPDLReader2",
+	"name" : "XPDLReader",
 	"pools" : [
 		 ],
 	"super" : "Object",

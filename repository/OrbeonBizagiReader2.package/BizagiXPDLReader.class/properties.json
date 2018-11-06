@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BizagiXPDLReader2",
+	"name" : "BizagiXPDLReader",
 	"pools" : [
 		 ],
-	"super" : "XPDLReader2",
+	"super" : "XPDLReader",
 	"type" : "normal" }

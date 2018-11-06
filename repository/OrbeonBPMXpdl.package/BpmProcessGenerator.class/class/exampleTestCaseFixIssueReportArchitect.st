@@ -2,7 +2,7 @@ example
 exampleTestCaseFixIssueReportArchitect
 	| generator |
 
-	generator := self on: (XPDLReader2 exampleMultipleProcesses) xpdlPackages.
+	generator := self on: (self getXpdlReaderClass exampleMultipleProcesses) xpdlPackages.
 
 	generator 
 		mapProcess: 'test-case-process' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');

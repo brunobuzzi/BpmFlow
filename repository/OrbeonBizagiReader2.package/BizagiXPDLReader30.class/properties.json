@@ -10,5 +10,5 @@
 	"name" : "BizagiXPDLReader30",
 	"pools" : [
 		 ],
-	"super" : "BizagiXPDLReader2",
+	"super" : "BizagiXPDLReader",
 	"type" : "normal" }

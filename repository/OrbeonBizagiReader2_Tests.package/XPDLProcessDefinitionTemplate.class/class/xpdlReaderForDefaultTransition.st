@@ -1,6 +1,6 @@
 default transition
 xpdlReaderForDefaultTransition
 
-	^(XPDLReader2 forProcessNamed: 'default-transition-process' withString: self processDefinition_default_transition)
+	^(self getXpdlReaderClass forProcessNamed: 'default-transition-process' withString: self processDefinition_default_transition)
 			connectProcesses;
 			yourself
