@@ -11,5 +11,5 @@
 	"name" : "XPDLLaneNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLObject2",
+	"super" : "XPDLObject",
 	"type" : "normal" }

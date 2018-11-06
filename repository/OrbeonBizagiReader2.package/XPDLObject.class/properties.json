@@ -9,7 +9,7 @@
 		"xmlSegment",
 		"attributes",
 		"extendedAttributes" ],
-	"name" : "XPDLObject2",
+	"name" : "XPDLObject",
 	"pools" : [
 		 ],
 	"super" : "Object",

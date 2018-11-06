@@ -17,5 +17,5 @@
 	"name" : "XPDLTransitionNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLObject2",
+	"super" : "XPDLObject",
 	"type" : "normal" }

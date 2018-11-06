@@ -10,5 +10,5 @@
 	"name" : "XPDLEventNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLObject2",
+	"super" : "XPDLObject",
 	"type" : "normal" }
