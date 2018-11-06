@@ -1,0 +1,4 @@
+other
+indexApplicationMapperSize
+
+	^indexApplicationMapper size

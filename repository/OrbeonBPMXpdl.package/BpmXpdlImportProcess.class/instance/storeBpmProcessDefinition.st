@@ -1,6 +1,6 @@
 import
 storeBpmProcessDefinition
 
-	processGenerator hasImmutableProcess ifTrue: [^self].
+	processGenerator hasImmutableProcesses ifTrue: [^self].
 
 	processGenerator generateProcessesAndStoreOnCache.

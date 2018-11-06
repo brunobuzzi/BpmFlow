@@ -1,5 +1,5 @@
 process definition creation
-immutableProcess
+immutableProcesses
 	"Answer a collection of Bpm processes <BpmProcessDefinition> with immutable flag on <true>"
 
 	^self processes select: [:each | | latestVersion | 

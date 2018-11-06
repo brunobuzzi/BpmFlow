@@ -1,0 +1,4 @@
+other
+hasImmutableProcesses
+
+	^processGenerator hasImmutableProcesses
