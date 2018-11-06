@@ -1,4 +1,4 @@
 other
 getWorkflow
 
-	^(reader getPackageNamed: 'Diagram 1') getWorkflowNamed: 'Event Based Gateway' ifNone: [self assert: false]
+	^(reader getPackageNamed: 'Diagram 1') getWorkflowNamed: 'House Purchase with Loan' ifNone: [self assert: false]
