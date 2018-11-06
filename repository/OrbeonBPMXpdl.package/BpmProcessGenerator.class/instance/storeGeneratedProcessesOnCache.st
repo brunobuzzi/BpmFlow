@@ -1,5 +1,5 @@
 process definition creation
-generateProcessesAndStoreOnCache
+storeGeneratedProcessesOnCache
 	"The receiver store on cache of class <BpmProcessDefinition> all new process definitions in <processes> instance variable"
 	| newProcesses |
 

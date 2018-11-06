@@ -11,7 +11,7 @@ importBizagiFiles
 		appDictionary at: shortName put: (indexApplicationMapper at: index).
 		fileArray add: ((FileDirectory default directoryNamed: 'tmp') pathName, '/', fileName)].
 
-	(self checkFilesFormatOf: fileArray) ifFalse: [^self].
+	(self checkFilesFormatOf: fileArray) ifFalse: [^XpdlFileFormatException signal: 'Wrong XPDL file format'].
 	"ERROR handler"
 	xpdlReader := XPDLReader2 forFiles: fileArray asArray.
 
@@ -26,4 +26,4 @@ importBizagiFiles
 	xpdlReader getImportWarningReportWith: self createXpdlFileApplicationMapping.
 
 	"If false (no warnings) -> the processes definition are created and stored"
-	xpdlReader hasWarnings ifFalse: [^self createBpmProcessDefinition].
+	xpdlReader hasWarnings ifFalse: [^self createBpmProcessesDefinitions].
