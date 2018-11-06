@@ -16,7 +16,8 @@ getImportWarningReport
 			addAll: each getSuspiciousConditions;
 			addAll: each getTaskScriptWarnings;
 			addAll: each getTimerBlockWarnings;
-			addAll: each getInterProcessCommunicationsWarnings.
+			addAll: each getInterProcessCommunicationsWarnings;
+			addAll: each getMergingGatewayEvents. "merging gateway events are not allowed - instead use a regular gateway"
 	].
 
 	^importReport
