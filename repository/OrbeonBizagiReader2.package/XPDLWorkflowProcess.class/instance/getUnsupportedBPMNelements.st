@@ -1,7 +1,7 @@
 import unsupported
 getUnsupportedBPMNelements
 	"The receiver detect gateway events used to merge transitions (not allowed)"
-	| report activitiesNames |
+	| report |
 
 	report := OrderedCollection new.
 
@@ -22,6 +22,7 @@ getUnsupportedBPMNelements
 		addAll: self getSignalEventsItemsReport;
 		addAll: self getMultipleEventsItemsReport.
 
+	"Unsupported gateways"
 	report addAll: self getComplexGateways.
 
 	^report
