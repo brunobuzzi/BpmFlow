@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntimePEF",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PEFFormCreator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

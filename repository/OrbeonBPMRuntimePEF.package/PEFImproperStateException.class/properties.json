@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonBPMRuntimePEF",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PEFImproperStateException",
+	"pools" : [
+		 ],
+	"super" : "PEFBpmException",
+	"type" : "normal" }
