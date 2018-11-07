@@ -50,14 +50,15 @@ baseline: spec
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
 		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
+		spec package: 'OrbeonBPMRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'OrbeonBPMRuntime')].
 		spec package: 'OrbeonBPMCore_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
+		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMRuntimePEF')].
 
 		spec
-			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter'); 
+			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter' 'OrbeonBPMRuntimePEF'); 
 			group: 'web-backoffice' with: #('OrbeonBPMWebBackoffice');
 			group: 'web-frontoffice' with: #('OrbeonBPMWebFrontoffice');
 			group: 'rest' with: #('OrbeonPersistenceApiProcess');
-			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntime_Tests');
+			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntimePEF' 'OrbeonBPMRuntime_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'rest' 'test').
 		]
