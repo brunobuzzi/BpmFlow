@@ -15,5 +15,7 @@ getGatewayTypeFrom: gatewayNode
 	((gatewayType = 'Event') and: [(gatewayNode attributeAt: 'Instantiate' ifAbsent: ['']) = 'true']) ifTrue: [^'ExclusiveEvent'].
 
 	(gatewayType = 'Event') ifTrue: [^'InclusiveEvent'].
+	
+	(gatewayType = 'Complex') ifTrue: [^'Complex'].
 
 	^''

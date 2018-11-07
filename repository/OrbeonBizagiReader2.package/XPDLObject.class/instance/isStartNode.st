@@ -1,4 +1,4 @@
-other
+testing
 isStartNode
 
 	^false

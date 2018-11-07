@@ -1,0 +1,4 @@
+testing
+isBusinessRuleTaskNode
+
+	^false

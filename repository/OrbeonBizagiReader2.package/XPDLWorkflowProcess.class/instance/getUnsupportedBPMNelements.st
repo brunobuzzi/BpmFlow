@@ -22,4 +22,6 @@ getUnsupportedBPMNelements
 		addAll: self getSignalEventsItemsReport;
 		addAll: self getMultipleEventsItemsReport.
 
+	report addAll: self getComplexGateways.
+
 	^report

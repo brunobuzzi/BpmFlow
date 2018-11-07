@@ -1,0 +1,4 @@
+testing
+isComplexGateway
+
+	^type = 'Complex'

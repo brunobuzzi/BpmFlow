@@ -14,13 +14,14 @@ basicCreateActivityInstanceFrom: xmlActivityNode
 		^gate type: type].
 
 	(xmlActivityNode findElementNamed: 'StartEvent') ifNotNil: [^XPDLStartNode new].
-
 	(xmlActivityNode findElementNamed: 'EndEvent') ifNotNil: [^XPDLEndNode new].
-
 	(xmlActivityNode findElementNamed: 'IntermediateEvent') ifNotNil: [^XPDLIntermediateNode new].
-
 	(xmlActivityNode findElementNamed: 'Script') ifNotNil: [^XPDLScriptNode new].
-
 	(xmlActivityNode findElementNamed: 'TaskSend') ifNotNil: [^XPDLTaskSendNode new].
+	(xmlActivityNode findElementNamed: 'TaskService') ifNotNil: [^XPDLTaskServiceNode new].
+	(xmlActivityNode findElementNamed: 'TaskManual') ifNotNil: [^XPDLTaskManualNode new].
+	(xmlActivityNode findElementNamed: 'TaskBusinessRule') ifNotNil: [^XPDLTaskBusinessRuleNode new].
+	(xmlActivityNode findElementNamed: 'TaskUser') ifNotNil: [^XPDLTaskBusinessRuleNode new].
+	(xmlActivityNode findElementNamed: 'TaskReceive') ifNotNil: [^XPDLTaskReceiveNode new].
 
 	^XPDLTaskNoneNode new

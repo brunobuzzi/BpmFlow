@@ -1,4 +1,4 @@
 testing
-isGatewayNode
+isUserTaskNode
 
 	^true

@@ -1,0 +1,4 @@
+testing
+isTaskReceiveNode
+
+	^true

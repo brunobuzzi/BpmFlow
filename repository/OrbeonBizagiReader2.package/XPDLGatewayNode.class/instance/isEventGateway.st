@@ -1,4 +1,4 @@
-other
+testing
 isEventGateway
 
 	^self getGatewayClass isEventGateway
