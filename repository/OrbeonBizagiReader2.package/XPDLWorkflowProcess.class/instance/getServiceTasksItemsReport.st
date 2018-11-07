@@ -1,4 +1,7 @@
 import unsupported items
 getServiceTasksItemsReport
 
-	^self getItemsReportForSymbolElement: #isServiceTaskNode title: 'Service Tasks are NOT supported'
+	^self getItemsReportForElementSatisfying: [:each | each isServiceTaskNode] 
+			title: 'Unsupported Element' 
+			description: 'Service Tasks are NOT supported' 
+			solution: 'Change the Task Type'

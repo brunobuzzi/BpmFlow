@@ -1,4 +1,7 @@
 import unsupported items
 getManualTasksItemsReport
 
-	^self getItemsReportForSymbolElement: #isManualTaskNode title: 'Manual Tasks are NOT supported'
+	^self getItemsReportForElementSatisfying: [:each | each isManualTaskNode] 
+			title: 'Unsupported Element' 
+			description: 'Manual Tasks are NOT supported' 
+			solution: 'Change the Task Type'

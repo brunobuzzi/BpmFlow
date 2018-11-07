@@ -1,4 +1,4 @@
-other
+testing
 isMessageNode
 	"Answer whether or not the receiver is a -Message- type"
 

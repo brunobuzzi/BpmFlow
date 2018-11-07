@@ -1,4 +1,7 @@
 import unsupported items
 getReceiverTasksItemsReport
 
-	^self getItemsReportForSymbolElement: #isTaskReceiveNode title: 'Receive Tasks are NOT supported'
+	^self getItemsReportForElementSatisfying: [:each | each isTaskReceiveNode] 
+			title: 'Unsupported Element' 
+			description: 'Receive Tasks are NOT supported' 
+			solution: 'Change the Task Type'

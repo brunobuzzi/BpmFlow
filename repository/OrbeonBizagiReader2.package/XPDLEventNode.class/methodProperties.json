@@ -5,8 +5,6 @@
 		"getActivationBlockValue" : "brunobb 10/16/2017 07:41",
 		"getLanesFrom:" : "brunobb 11/06/2018 06:56",
 		"isAnonymousStart" : "brunobb 03/30/2018 15:22",
-		"isEventNode" : "BrunoBB 01/20/2016 11:31",
-		"isMessageNode" : "brunobb 11/06/2018 06:56",
-		"isTimerNode" : "brunobb 10/16/2017 07:32",
+		"isEventNode" : "brunobb 11/06/2018 06:56",
 		"printOn:" : "BrunoBB 10/28/2015 12:04",
 		"setInternalAttributesWithNode:" : "brunobb 07/31/2017 05:53" } }

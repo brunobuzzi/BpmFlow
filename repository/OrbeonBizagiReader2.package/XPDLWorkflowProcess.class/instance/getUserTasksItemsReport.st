@@ -1,4 +1,7 @@
 import unsupported items
 getUserTasksItemsReport
 
-	^self getItemsReportForSymbolElement: #isUserTaskNode title: 'User Tasks are NOT supported'
+	^self getItemsReportForElementSatisfying: [:each | each isUserTaskNode] 
+			title: 'Unsupported Element' 
+			description: 'User Tasks are NOT supported' 
+			solution: 'Change the Task Type'
