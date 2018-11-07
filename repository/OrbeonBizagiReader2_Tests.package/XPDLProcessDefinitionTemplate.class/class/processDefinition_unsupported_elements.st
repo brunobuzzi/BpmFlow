@@ -7,7 +7,7 @@ processDefinition_unsupported_elements
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-11-06T15:51:26.451592-03:00</Created>
-    <ModificationDate>2018-11-06T16:14:06.6400085-03:00</ModificationDate>
+    <ModificationDate>2018-11-07T11:47:40.4992238-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -21,7 +21,7 @@ processDefinition_unsupported_elements
     <Pool Id="ac81eefb-6b87-4b46-8c6d-63104b148921" Name="Main Process" Process="a472a957-35cb-4115-a7d2-d4cb04d05c51" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
@@ -60,7 +60,7 @@ processDefinition_unsupported_elements
   <WorkflowProcesses>
     <WorkflowProcess Id="a472a957-35cb-4115-a7d2-d4cb04d05c51" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-11-06T16:14:22.5146493-03:00</Created>
+        <Created>2018-11-07T11:48:00.9322818-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -76,7 +76,7 @@ processDefinition_unsupported_elements
     </WorkflowProcess>
     <WorkflowProcess Id="0b362591-c61f-4ecc-bf49-c6fb4e4623ce" Name="Unsupported Elements">
       <ProcessHeader>
-        <Created>2018-11-06T16:14:22.5146493-03:00</Created>
+        <Created>2018-11-07T11:48:00.933282-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -214,7 +214,7 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="436" YCoordinate="198" />
+              <Coordinates XCoordinate="425" YCoordinate="187" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -244,7 +244,7 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="325" YCoordinate="408" />
+              <Coordinates XCoordinate="314" YCoordinate="397" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -259,7 +259,7 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="353" YCoordinate="408" />
+              <Coordinates XCoordinate="342" YCoordinate="397" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -283,7 +283,7 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="381" YCoordinate="408" />
+              <Coordinates XCoordinate="370" YCoordinate="397" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -298,12 +298,12 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="344" YCoordinate="317" />
+              <Coordinates XCoordinate="333" YCoordinate="306" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="d619474c-96d9-43f3-90d8-911a1595fdd2" Name="">
+        <Activity Id="d619474c-96d9-43f3-90d8-911a1595fdd2" Name="message t2">
           <Description />
           <Event>
             <IntermediateEvent Trigger="Message" Target="93475189-9712-4feb-81b5-5ac764df3e80" IsAttached="true">
@@ -320,7 +320,7 @@ processDefinition_unsupported_elements
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="1a50dabe-f16a-436e-9c6f-147655c9ecd3" Name="">
+        <Activity Id="1a50dabe-f16a-436e-9c6f-147655c9ecd3" Name="parallel multiple t4">
           <Description />
           <Event>
             <IntermediateEvent Trigger="ParallelMultiple" Target="11abdd55-81d6-44fc-bdb9-9fbde4b2e0a2" IsAttached="true">
@@ -359,7 +359,7 @@ processDefinition_unsupported_elements
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="efd1f37f-a2ef-4200-bd7a-a30effd1f719" Name="">
+        <Activity Id="efd1f37f-a2ef-4200-bd7a-a30effd1f719" Name="compensation t3">
           <Description />
           <Event>
             <IntermediateEvent Trigger="Compensation" Target="c09231fd-f228-4e0d-9922-d4e5e4ca70c6" IsAttached="true">
@@ -369,7 +369,7 @@ processDefinition_unsupported_elements
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="471" YCoordinate="198" />
+              <Coordinates XCoordinate="460" YCoordinate="187" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
