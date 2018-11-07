@@ -18,7 +18,8 @@ getImportWarningReport
 			addAll: each getTimerBlockWarnings;
 			addAll: each getInterProcessCommunicationsWarnings;
 			addAll: each getMergingEventGateways; "merging gateway events are not allowed - instead use a regular gateway"
-			addAll: each getNonEventsAfterEventGateways. "after event gateways only events are allowed (non events will be never triggered)"
+			addAll: each getNonEventsAfterEventGateways; "after event gateways only events are allowed (non events will be never triggered)"
+			addAll: each getUnsupportedBPMNelements. "not all BPMN elements are supported"
 	].
 
 	^importReport

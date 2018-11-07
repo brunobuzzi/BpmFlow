@@ -1,0 +1,2 @@
+import unsupported
+getSignalEventsItemsReport
