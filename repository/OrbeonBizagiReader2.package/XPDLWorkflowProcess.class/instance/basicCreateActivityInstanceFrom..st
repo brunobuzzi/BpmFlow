@@ -21,7 +21,7 @@ basicCreateActivityInstanceFrom: xmlActivityNode
 	(xmlActivityNode findElementNamed: 'TaskService') ifNotNil: [^XPDLTaskServiceNode new].
 	(xmlActivityNode findElementNamed: 'TaskManual') ifNotNil: [^XPDLTaskManualNode new].
 	(xmlActivityNode findElementNamed: 'TaskBusinessRule') ifNotNil: [^XPDLTaskBusinessRuleNode new].
-	(xmlActivityNode findElementNamed: 'TaskUser') ifNotNil: [^XPDLTaskBusinessRuleNode new].
+	(xmlActivityNode findElementNamed: 'TaskUser') ifNotNil: [^XPDLTaskUserNode new].
 	(xmlActivityNode findElementNamed: 'TaskReceive') ifNotNil: [^XPDLTaskReceiveNode new].
 
 	^XPDLTaskNoneNode new
