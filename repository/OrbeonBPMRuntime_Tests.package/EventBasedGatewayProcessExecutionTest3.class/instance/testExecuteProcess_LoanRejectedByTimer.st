@@ -17,7 +17,7 @@ testExecuteProcess_LoanRejectedByTimer
 	currentTask := senderProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'loan-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_loan_application: senderProcessInstance) on: senderProcessInstance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_loan_application: senderProcessInstance) on: senderProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 
 	"Receiver Process: Step 1 - Form [house-purchase-application]"
@@ -25,7 +25,7 @@ testExecuteProcess_LoanRejectedByTimer
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'house-purchase-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
@@ -40,7 +40,7 @@ testExecuteProcess_LoanRejectedByTimer
 	currentTask := senderProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'study-loan-application').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_1: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew la' withForm: (self formInstance_study_loan_application_1: receiverProcessInstance processId in: senderProcessInstance) on: senderProcessInstance.
 	self assert: (senderProcessInstance loanApproved).
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
@@ -60,12 +60,12 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').
 	self assert: ((currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
 	"after this task is done the process is finalized (although there is still a task to be finished)"
-	self processTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_cancel_purchase: receiverProcessInstance) on: receiverProcessInstance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_cancel_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
 	self assert: (receiverProcessInstance endEventsSize = 1). "the sender process has finalized"
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
-	self processTask: currentTask2 withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
+	self takeAndFinalizeTask: currentTask2 withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
 	self assert: (receiverProcessInstance endEventsSize = 2). 
 

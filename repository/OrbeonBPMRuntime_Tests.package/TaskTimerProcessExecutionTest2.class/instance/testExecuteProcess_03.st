@@ -37,7 +37,7 @@ testExecuteProcess_03
 	self deny: (lastExecutionTime = eventInstance lastExecutionTime).
 	currentTask := procInstance currentActivities first.
 
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"
 
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).

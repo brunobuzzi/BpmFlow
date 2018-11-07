@@ -8,7 +8,7 @@ executeProcess: aBpmProcessInstance withFormValues: anArray
 	formInstance := self formInstance_withValues: anArray in: aBpmProcessInstance.
 	formInstance createdTime: (TimeStamp fromOrbeonString: (anArray at: 4));
 		modifiedTime: (TimeStamp fromOrbeonString: (anArray at: 4)). 
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: formInstance on: aBpmProcessInstance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: formInstance on: aBpmProcessInstance.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Process End"
 	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].

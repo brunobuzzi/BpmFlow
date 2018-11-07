@@ -12,7 +12,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance.
 
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
@@ -22,7 +22,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 	self assert: (currentTask getDefinitionName = 'check-basic-data').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
@@ -38,7 +38,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 1).
@@ -58,7 +58,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 		currentTask := subProcessL1 currentActivities last.
 		self assert: (currentTask getDefinitionName = 'check-applicant-record').
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) notEmpty.
-		self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1.
+		self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1.
 
 		self assert: ((subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) size = 1).
 		self assert: ((subProcessL1 definition getCollectionForFieldsNamed: 'checkApplicantRecord[s]' in: 'check-applicant-record') select: [:fieldValue | fieldValue processId = subProcId]) notEmpty.
@@ -67,7 +67,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 		currentTask := subProcessL1 currentActivities last.
 		self assert: (currentTask getDefinitionName = 'applicant-home-office-report').
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) notEmpty.
-		self processTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_applicant_home_office_report: subProcessL1) on: subProcessL1.
+		self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_applicant_home_office_report: subProcessL1) on: subProcessL1.
 
 		self assert: ((subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) size = 2).
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
@@ -87,7 +87,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-accounts').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
+			self takeAndFinalizeTask: currentTask withUserNamed: 'andrew fo' withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
 
 			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'accountsDetails[s]' in: 'check-accounts') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
@@ -96,7 +96,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-properties').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
+			self takeAndFinalizeTask: currentTask withUserNamed: 'andrew po' withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
 
 			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'propertiesDetails[s]' in: 'check-properties') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.
@@ -105,7 +105,7 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'check-debts').
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) notEmpty.
-			self processTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
+			self takeAndFinalizeTask: currentTask withUserNamed: 'andrew do' withForm: (self formInstance_check_debts: subProcessL2).
 
 			self assert: ((subProc2FinishedMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) size = 1).
 			self assert: ((subProcessL2 definition getCollectionForFieldsNamed: 'debtsDetails[s]' in: 'check-debts') select: [:fieldValue | fieldValue processId = subProc2Id]) notEmpty.

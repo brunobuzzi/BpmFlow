@@ -1,5 +1,5 @@
 execution simulation
-processTask: aBpmTaskInstance withUserNamed: aString withForm: anOrbeonFormInstance on: aBpmProcessInstance
+takeAndFinalizeTask: aBpmTaskInstance withUserNamed: aString withForm: anOrbeonFormInstance on: aBpmProcessInstance
 	"The receiver simulate the task processing of <aBpmTaskInstance> by user named <aString> in the process <aBpmProcessInstance>. 
 	The task has the form instance <anOrbeonFormInstance>.
 	1- Get the actual assignment of the task <aBpmTaskAssignment> from the tasks matrix.

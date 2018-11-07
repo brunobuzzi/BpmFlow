@@ -25,8 +25,8 @@
 		"getUserNamed:" : "BrunoBB 03/27/2016 16:13",
 		"procInstance" : "BrunoBB 12/07/2015 06:51",
 		"procInstance:" : "BrunoBB 12/07/2015 06:51",
-		"processTask:withUserNamed:withForm:" : "BrunoBB 12/07/2015 06:59",
-		"processTask:withUserNamed:withForm:on:" : "brunobb 01/30/2018 13:43",
 		"randomGenerator" : "brunobb 05/18/2018 06:03",
 		"setUp" : "brunobb 09/11/2018 05:40",
+		"takeAndFinalizeTask:withUserNamed:withForm:" : "brunobb 11/07/2018 11:23",
+		"takeAndFinalizeTask:withUserNamed:withForm:on:" : "brunobb 11/07/2018 11:23",
 		"takeTask:forUserNamed:withForm:on:" : "brunobb 04/19/2018 11:21" } }

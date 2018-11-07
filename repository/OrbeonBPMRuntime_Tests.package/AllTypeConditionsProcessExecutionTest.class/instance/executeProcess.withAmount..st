@@ -5,7 +5,7 @@ executeProcess: aBpmProcessInstance withAmount: amountString
 	self assert: (aBpmProcessInstance startEvent getDefinitionName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := aBpmProcessInstance currentActivities last.
-	self processTask: currentTask withUserNamed: 'alberto' withForm: (self formInstance_amount_exit: amountString in: aBpmProcessInstance).
+	self takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: (self formInstance_amount_exit: amountString in: aBpmProcessInstance).
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Gateway Evaluation"
 	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.

@@ -28,7 +28,7 @@ testExecuteProcess_02
 	self assert: (procInstance currentActivities size = 2).
 	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
 
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3. "15 seconds to wait"
 
 	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
 	self assert: (procInstance currentActivities size = 1).

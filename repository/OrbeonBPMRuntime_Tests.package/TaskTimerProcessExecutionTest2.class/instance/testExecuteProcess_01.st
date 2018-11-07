@@ -17,7 +17,7 @@ testExecuteProcess_01
 	"formInstance_set_timer_term: is set with 15 seconds and this number is used by timer named Term to wait before finishing the process"
 	"the attached event wait for 10 seconds and after that trigger a new transition"
 
-	self processTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3.  "15 seconds to wait"
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3.  "15 seconds to wait"
 
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: procInstance currentActivities isEmpty.

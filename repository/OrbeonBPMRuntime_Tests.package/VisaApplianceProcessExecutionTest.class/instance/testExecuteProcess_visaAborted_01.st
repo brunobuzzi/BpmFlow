@@ -13,7 +13,7 @@ testExecuteProcess_visaAborted_01
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance.
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance.
 	"Step 2 - Form [check-basic-data]"
 	currentTask :=  procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'check-basic-data').

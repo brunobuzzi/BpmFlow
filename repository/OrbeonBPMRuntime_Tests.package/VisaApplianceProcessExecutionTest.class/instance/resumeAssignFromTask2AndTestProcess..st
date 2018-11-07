@@ -11,7 +11,7 @@ resumeAssignFromTask2AndTestProcess: aBpmProcessInstance
 	currentTask :=  aBpmProcessInstance currentActivities last.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self assert: (currentTask getDefinitionName = 'check-basic-data').
-	self processTask: currentTask withUserNamed: 'andrew vo' withForm: (self formInstance_check_basic_data: aBpmProcessInstance).
+	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: (self formInstance_check_basic_data: aBpmProcessInstance).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
