@@ -1,4 +1,4 @@
 users
 getUserNamed: aString
 
-	^users at: aString ifAbsent: [PEFImproperStateException signal: 'No User Found']
+	^self getUserNamed: aString ifNone: [PEFImproperStateException signal: 'No User Found']
