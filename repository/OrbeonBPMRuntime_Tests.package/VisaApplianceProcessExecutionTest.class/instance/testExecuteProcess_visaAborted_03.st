@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAborted_03
 	| currentTask gateway subProcessL1 subProcessL2 processId currentProcessMatrix takenProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id assignment |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.

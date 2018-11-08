@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAccepted_05
 	| currentTask gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix takenProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.

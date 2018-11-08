@@ -2,7 +2,7 @@ test
 testExecuteProcess_issue_373
 	| currentTask assignment gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.
@@ -17,18 +17,18 @@ testExecuteProcess_issue_373
 	assignment := self takeTask: currentTask forUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance on: procInstance.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
-	self assert: (((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) notEmpty.
+	self assert: (((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) notEmpty.
 	
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') ungrantUser: (users at: 'andrew vo').
+	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') ungrantUser: (self getUserNamed: 'andrew vo').
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
-	self assert: (((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) isEmpty.
+	self assert: (((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) isEmpty.
 
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (users at: 'andrew vo').
-	(users at: 'andrew vo') take: assignment.
+	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
+	(self getUserNamed: 'andrew vo') take: assignment.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
-	self assert: (((users at: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) notEmpty.
+	self assert: (((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) notEmpty.
 
 	self finalizeAssignment: assignment withUserNamed: 'andrew vo' on: procInstance.
 

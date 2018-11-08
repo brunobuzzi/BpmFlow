@@ -2,8 +2,8 @@ test
 testExecuteProcess_LoanAccepted
 	| senderProcessInstance receiverProcessInstance currentProcessMatrix takenProcessMatrix finishedProcessMatrix currentTask processId |
 
-	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (users at: 'andrew ap').
-	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (users at: 'andrew ap').
+	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
+	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 
 	self assert: (senderProcessInstance startEvent getDefinitionName = 'start').
 	self assert: (receiverProcessInstance startEvent getDefinitionName = 'start').

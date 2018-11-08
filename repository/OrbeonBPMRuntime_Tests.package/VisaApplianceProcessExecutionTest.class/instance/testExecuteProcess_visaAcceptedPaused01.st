@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAcceptedPaused01
 	| currentTask gateway endArtifact subProcessL1 subProcessL2 processId currentProcessMatrix finishedProcessMatrix subProcId subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.
@@ -110,10 +110,10 @@ testExecuteProcess_visaAcceptedPaused01
 			self assert: subProcessL2 isPaused.
 
 			"this was added for issue #576"
-			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') ungrantUser: (users at: 'andrew vc').
-			self deny: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (users at: 'andrew vc')).
-			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (users at: 'andrew vc').
-			self assert: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (users at: 'andrew vc')).
+			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') ungrantUser: (self getUserNamed: 'andrew vc').
+			self deny: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (self getUserNamed: 'andrew vc')).
+			(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (self getUserNamed: 'andrew vc').
+			self assert: ((BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') isGranted: (self getUserNamed: 'andrew vc')).
 			"end test for issue #576"
 
 			subProcessL2 resumeProcess: nil. 

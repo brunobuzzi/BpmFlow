@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAnalizeAndRejected
 	| currentTask gateway endArtifact subProcessL1 subProcessL2 |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	"Step 1 - Form [citizen-appliance]"

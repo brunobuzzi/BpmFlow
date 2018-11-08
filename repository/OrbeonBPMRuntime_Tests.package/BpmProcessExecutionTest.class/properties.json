@@ -8,8 +8,7 @@
 	"instvars" : [
 		"procInstance",
 		"procDefinition",
-		"users",
-		"roles" ],
+		"processExecutionSimulator" ],
 	"name" : "BpmProcessExecutionTest",
 	"pools" : [
 		 ],

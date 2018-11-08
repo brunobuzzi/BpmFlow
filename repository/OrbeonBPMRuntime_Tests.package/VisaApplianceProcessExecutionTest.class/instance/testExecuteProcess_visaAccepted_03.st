@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAccepted_03
 	| currentTask currentProcessMatrix finishedProcessMatrix processId |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
 	processId := procInstance id.

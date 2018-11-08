@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAborted_SubProc_L2_01
 	| currentTask gateway subProcessL1 subProcessL2 processId currentProcessMatrix subProcId finishedProcessMatrix subProcCurrentMatrix subProcFinishedMatrix subProc2CurrentMatrix subProc2FinishedMatrix subProc2Id |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.

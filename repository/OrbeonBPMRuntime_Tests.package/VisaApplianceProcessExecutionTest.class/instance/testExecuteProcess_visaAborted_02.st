@@ -2,7 +2,7 @@ test
 testExecuteProcess_visaAborted_02
 	| currentTask gateway currentProcessMatrix takenProcessMatrix finishedProcessMatrix processId assignment |
 
-	procInstance := procDefinition createAndStartProcessInstance: (users at: 'andrew vo').
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
