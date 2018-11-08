@@ -2,7 +2,7 @@
 	"class" : {
 		"newWithUsers:" : "brunobb 11/07/2018 11:09" },
 	"instance" : {
-		"associate:withForm:on:" : "brunobb 11/07/2018 10:42",
+		"associate:withForm:on:" : "brunobb 11/08/2018 09:47",
 		"finalizeAssignment:withUserNamed:on:" : "brunobb 11/07/2018 10:42",
 		"getAssignmentAndAssociate:withForm:on:" : "brunobb 11/07/2018 10:42",
 		"getAssignmentFor:on:" : "brunobb 11/07/2018 10:42",
