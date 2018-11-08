@@ -1,7 +1,7 @@
 form instances
 formInstance_cancel_purchase: aBpmProcessInstance
 
-	^self createFormInstance: #form_cancel_purchase
+	^self formCreatorClass createFormInstance: #form_cancel_purchase
 			withValues: #() 
 			definitionNamed: 'cancel-purchase' 
 			app: 'ue' 
