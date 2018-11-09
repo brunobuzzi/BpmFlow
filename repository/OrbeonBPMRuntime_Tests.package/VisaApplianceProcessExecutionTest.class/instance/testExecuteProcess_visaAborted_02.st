@@ -14,7 +14,7 @@ testExecuteProcess_visaAborted_02
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
-	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance on: procInstance.
 
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenSurname[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
@@ -23,7 +23,7 @@ testExecuteProcess_visaAborted_02
 	self assert: (currentTask getDefinitionName = 'check-basic-data').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
-	self takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data on: procInstance.
 
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'originCountry[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'gender[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
@@ -38,7 +38,7 @@ testExecuteProcess_visaAborted_02
 
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
-	assignment := self takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance. 
+	assignment := self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance. 
 
 	"here the process is cancelled"
 	procInstance abortProcess: nil.

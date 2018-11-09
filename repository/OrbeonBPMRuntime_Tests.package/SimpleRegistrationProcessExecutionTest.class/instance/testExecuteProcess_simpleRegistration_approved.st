@@ -16,7 +16,7 @@ testExecuteProcess_simpleRegistration_approved
 	procInstance generateNextTransitionsFrom: currentTask.
 	"Step 2 - Form [registration-approval]"
 	currentTask := procInstance currentActivities last.
-	self takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_registration_approval.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_registration_approval on: procInstance.
 	self assert: (currentTask getDefinitionName = 'registration-approval').
 
 	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].

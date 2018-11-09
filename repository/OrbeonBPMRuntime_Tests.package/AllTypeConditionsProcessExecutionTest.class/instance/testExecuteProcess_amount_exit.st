@@ -7,7 +7,7 @@ testExecuteProcess_amount_exit
 	self assert: (procInstance startEvent getDefinitionName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
-	self takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_amount_exit.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_amount_exit on: procInstance.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Gateway Evaluation"
 	gateway := procInstance executedGateways asOrderedCollection last.

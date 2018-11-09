@@ -6,7 +6,7 @@ testExecuteProcess_data_entry_approved
 	"Step 1.1 - Form [data-entry]" "Performer 1"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask finalizedPerformerCounter = 0).
-	self takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry on: procInstance.
 
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 2]. "2: creation and take messages"
@@ -17,7 +17,7 @@ testExecuteProcess_data_entry_approved
 	self assert: (currentTask finalizedPerformerCounter = 1).
 	"Step 1.2 - Form [data-entry]" "Performer 2"
 	currentTask := procInstance currentActivities last.
-	self takeAndFinalizeTask: currentTask withUserNamed: 'juan' withForm: self formInstance_data_entry.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'juan' withForm: self formInstance_data_entry on: procInstance.
 	self assert: ((currentTask getCurrentRoleIfNone: [self assert: false]) name = 'data-entry-2').
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-2').
 	self assert: (currentTask getDefinitionName = 'data-entry').
@@ -28,7 +28,7 @@ testExecuteProcess_data_entry_approved
 
 	"Step 1.3 - Form [data-entry]" "Performer 3"
 	currentTask := procInstance currentActivities last.
-	self takeAndFinalizeTask: currentTask withUserNamed: 'mario' withForm: self formInstance_data_entry.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'mario' withForm: self formInstance_data_entry on: procInstance.
 	self assert: ((currentTask getCurrentRoleIfNone: [self assert: false]) name = 'data-entry-3').
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-3').
 	self assert: (currentTask getDefinitionName = 'data-entry').
@@ -39,7 +39,7 @@ testExecuteProcess_data_entry_approved
 
 	"Step 2 - Form [data-approved]" 
 	currentTask := procInstance currentActivities last.
-	self takeAndFinalizeTask: currentTask withUserNamed: 'bruno' withForm: self formInstance_data_approved.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'bruno' withForm: self formInstance_data_approved on: procInstance.
 
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 5].  "this task def has not Inform role"

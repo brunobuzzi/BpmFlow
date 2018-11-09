@@ -13,8 +13,8 @@ resumeFromTask2AndTestProcess: aBpmProcessInstance
 	self assert: (currentTask getDefinitionName = 'check-basic-data').
 
 	assignment := aBpmProcessInstance getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-	self associate: assignment withForm: (self formInstance_check_basic_data: aBpmProcessInstance) on: aBpmProcessInstance.
-	self finalizeAssignment: assignment withUserNamed: assignment getUsername on: aBpmProcessInstance.
+	self processExecutionSimulator associate: assignment withForm: (self formInstance_check_basic_data: aBpmProcessInstance) on: aBpmProcessInstance.
+	self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: aBpmProcessInstance.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).

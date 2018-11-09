@@ -3,17 +3,10 @@
 		 },
 	"instance" : {
 		"application" : "brunobb 09/10/2018 10:40",
-		"associate:withForm:on:" : "brunobb 02/01/2018 13:19",
 		"bpmEnvironment" : "brunobb 09/10/2018 10:41",
-		"finalizeAssignment:withUserNamed:on:" : "brunobb 01/30/2018 13:42",
 		"formCreatorClass" : "brunobb 11/08/2018 08:22",
-		"getAssignmentAndAssociate:withForm:on:" : "brunobb 02/01/2018 17:44",
-		"getAssignmentFor:on:" : "BrunoBB 03/29/2016 14:31",
-		"getAssignmentFor:on:ifNone:" : "brunobb 04/13/2018 11:24",
 		"getAvailableProcessMatrix" : "brunobb 04/13/2018 11:24",
 		"getAvailableProcessMatrixFor:" : "brunobb 04/13/2018 11:24",
-		"getFinishedAssignmentFor:on:" : "BrunoBB 03/29/2016 14:44",
-		"getFinishedAssignmentFor:on:ifNone:" : "BrunoBB 03/29/2016 14:43",
 		"getFinishedProcessMatrix" : "BrunoBB 03/29/2016 14:41",
 		"getFinishedProcessMatrixFor:" : "BrunoBB 03/29/2016 14:41",
 		"getTakenProcessMatrix" : "brunobb 04/16/2018 08:51",
@@ -28,7 +21,4 @@
 		"randomGenerator" : "brunobb 05/18/2018 06:03",
 		"roles" : "brunobb 11/08/2018 07:39",
 		"roles:" : "brunobb 11/08/2018 07:39",
-		"setUp" : "brunobb 11/08/2018 07:36",
-		"takeAndFinalizeTask:withUserNamed:withForm:" : "brunobb 11/07/2018 11:23",
-		"takeAndFinalizeTask:withUserNamed:withForm:on:" : "brunobb 11/07/2018 11:23",
-		"takeTask:forUserNamed:withForm:on:" : "brunobb 04/19/2018 11:21" } }
+		"setUp" : "brunobb 11/08/2018 07:36" } }
