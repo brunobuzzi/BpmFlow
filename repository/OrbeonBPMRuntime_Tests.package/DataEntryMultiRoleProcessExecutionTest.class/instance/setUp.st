@@ -19,6 +19,7 @@ setUp
 	environment registerUser: (self getUserNamed: 'mario'). 
 	environment registerUser: (self getUserNamed: 'bruno'). 
 
+	(BpmFrontOfficeRole getRoleNamed: 'empry role' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (self getUserNamed: 'juan') ifPresent: [].
 	(BpmFrontOfficeRole getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (self getUserNamed: 'mario') ifPresent: [].
