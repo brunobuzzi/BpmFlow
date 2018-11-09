@@ -56,9 +56,10 @@ baseline: spec
 
 		spec
 			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter' 'OrbeonBPMRuntimePEF'); 
-			group: 'web-backoffice' with: #('OrbeonBPMWebBackoffice');
-			group: 'web-frontoffice' with: #('OrbeonBPMWebFrontoffice');
+			group: 'web-backoffice' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebBackoffice');
+			group: 'web-frontoffice' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebFrontoffice');
+			group: 'web-bi' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebBI');
 			group: 'rest' with: #('OrbeonPersistenceApiProcess');
 			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntimePEF' 'OrbeonBPMRuntime_Tests');
-			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'rest' 'test').
+			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
