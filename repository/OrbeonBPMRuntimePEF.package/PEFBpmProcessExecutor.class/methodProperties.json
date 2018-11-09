@@ -12,7 +12,6 @@
 		"getUserNamed:" : "brunobb 11/08/2018 07:38",
 		"getUserNamed:ifNone:" : "brunobb 11/08/2018 07:38",
 		"initialize" : "brunobb 11/07/2018 10:43",
-		"processTask:withUserNamed:withForm:on:" : "brunobb 11/07/2018 10:42",
 		"registerUser:" : "brunobb 11/08/2018 07:29",
 		"takeAndFinalizeTask:withUserNamed:withForm:on:" : "brunobb 11/07/2018 11:22",
 		"takeTask:forUserNamed:withForm:on:" : "brunobb 11/07/2018 10:47",
