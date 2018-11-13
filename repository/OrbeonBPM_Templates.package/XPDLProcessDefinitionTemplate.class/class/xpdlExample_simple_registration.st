@@ -1,5 +1,5 @@
 simple registration
-processDefinition_simple_registration
+xpdlExample_simple_registration
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="928591b1-254b-48bf-b8a5-1143e2f39f3b" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">

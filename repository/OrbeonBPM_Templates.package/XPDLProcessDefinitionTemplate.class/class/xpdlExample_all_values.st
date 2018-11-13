@@ -1,5 +1,5 @@
 all values
-processDefinition_all_values
+xpdlExample_all_values
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="7e810ae1-43ec-48c7-80de-f31035207a56" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">

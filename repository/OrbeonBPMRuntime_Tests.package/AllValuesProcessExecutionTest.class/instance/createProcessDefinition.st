@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'all values' withString: XPDLProcessDefinitionTemplate processDefinition_all_values)
+	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'all values' withString: XPDLProcessDefinitionTemplate xpdlExample_all_values)
 			connectProcesses;
 			yourself.
 

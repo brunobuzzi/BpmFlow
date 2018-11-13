@@ -1,5 +1,5 @@
 data entry multirole
-processDefinition_data_entry
+xpdlExample_data_entry
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="52f2d5be-3a8f-46a7-a7ec-32e318fa4331" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">

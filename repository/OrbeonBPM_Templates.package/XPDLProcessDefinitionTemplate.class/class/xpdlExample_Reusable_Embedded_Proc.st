@@ -1,5 +1,5 @@
 embedded subproc
-processDefinition_Reusable_Embedded_Proc
+xpdlExample_Reusable_Embedded_Proc
 
 ^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="a882c7ed-83b9-4174-aeda-4c8a49e596e6" Name="ReusableEmbeddedProc" xmlns="http://www.wfmc.org/2009/XPDL2.2">

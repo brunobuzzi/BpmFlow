@@ -1,5 +1,5 @@
 event based gateway
-processDefinition_event_based_gateway_02
+xpdlExample_event_based_gateway_02
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="0027ccd4-50e6-419a-a22e-8ca4b5f9fb3c" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">

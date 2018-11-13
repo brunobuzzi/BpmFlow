@@ -1,5 +1,5 @@
 event based gateway
-processDefinition_event_based_gateway_03
+xpdlExample_event_based_gateway_01
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="0027ccd4-50e6-419a-a22e-8ca4b5f9fb3c" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">
@@ -7,7 +7,7 @@ processDefinition_event_based_gateway_03
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2018-10-08T17:24:35.1606708-03:00</Created>
-    <ModificationDate>2018-10-29T17:23:52.8422069-03:00</ModificationDate>
+    <ModificationDate>2018-10-24T16:52:00.7576665-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -26,7 +26,7 @@ processDefinition_event_based_gateway_03
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
-    <Pool Id="c0fda1d4-bb4d-4c09-a3bc-6d5d5d89bea4" Name="House Purchase with Loan 3" Process="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" BoundaryVisible="true">
+    <Pool Id="c0fda1d4-bb4d-4c09-a3bc-6d5d5d89bea4" Name="House Purchase with Loan" Process="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" BoundaryVisible="true">
       <Lanes>
         <Lane Id="0271d506-1e4f-4ea6-be93-dc3c7cdd6b4c" Name="applicant" ParentPool="c0fda1d4-bb4d-4c09-a3bc-6d5d5d89bea4">
           <NodeGraphicsInfos>
@@ -51,7 +51,7 @@ processDefinition_event_based_gateway_03
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
-    <Pool Id="3e6f0528-cc7c-4204-951b-4f21ffb91cf4" Name="House Loan 3" Process="865c6773-20c9-47f1-ab37-f8102cf635a7" BoundaryVisible="true">
+    <Pool Id="3e6f0528-cc7c-4204-951b-4f21ffb91cf4" Name="House Loan" Process="865c6773-20c9-47f1-ab37-f8102cf635a7" BoundaryVisible="true">
       <Lanes>
         <Lane Id="ce501c53-4227-4179-9a01-e7cadeeb17c3" Name="applicant" ParentPool="3e6f0528-cc7c-4204-951b-4f21ffb91cf4">
           <NodeGraphicsInfos>
@@ -80,7 +80,7 @@ processDefinition_event_based_gateway_03
   <WorkflowProcesses>
     <WorkflowProcess Id="63589e99-86c4-4321-b9e8-4fb82dd5f22b" Name="Main Process">
       <ProcessHeader>
-        <Created>2018-10-29T17:24:02.6929858-03:00</Created>
+        <Created>2018-10-24T16:52:10.2881685-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -94,9 +94,9 @@ processDefinition_event_based_gateway_03
         <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.1767952-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.1767952-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
-    <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="House Purchase with Loan 3">
+    <WorkflowProcess Id="9da9e006-e9ef-4c89-a5cb-8ad0919ec269" Name="House Purchase with Loan">
       <ProcessHeader>
-        <Created>2018-10-29T17:24:02.6929858-03:00</Created>
+        <Created>2018-10-24T16:52:10.2891691-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -200,6 +200,17 @@ processDefinition_event_based_gateway_03
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
+        <Activity Id="a64d3f3f-bad4-4a40-8c95-7971af737bd0" Name="loan event">
+          <Description />
+          <Route ExclusiveType="Event" />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="438" YCoordinate="49" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
         <Activity Id="6dffe2db-f43a-447d-89ca-2a21a8322e44" Name="proceed-purchase">
           <Description />
           <Implementation>
@@ -222,17 +233,6 @@ processDefinition_event_based_gateway_03
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
               <Coordinates XCoordinate="194" YCoordinate="251" />
-            </NodeGraphicsInfo>
-          </NodeGraphicsInfos>
-          <ExtendedAttributes />
-        </Activity>
-        <Activity Id="a64d3f3f-bad4-4a40-8c95-7971af737bd0" Name="loan event">
-          <Description />
-          <Route GatewayType="Parallel" Instantiate="true" ParallelEventBased="true" />
-          <Documentation />
-          <NodeGraphicsInfos>
-            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
-              <Coordinates XCoordinate="438" YCoordinate="49" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -363,9 +363,9 @@ processDefinition_event_based_gateway_03
         <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2018-10-08T17:24:35.203776-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
-    <WorkflowProcess Id="865c6773-20c9-47f1-ab37-f8102cf635a7" Name="House Loan 3">
+    <WorkflowProcess Id="865c6773-20c9-47f1-ab37-f8102cf635a7" Name="House Loan">
       <ProcessHeader>
-        <Created>2018-10-29T17:24:02.6939869-03:00</Created>
+        <Created>2018-10-24T16:52:10.2901698-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -438,7 +438,7 @@ processDefinition_event_based_gateway_03
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="applicationName" Value="ue" />
-            <ExtendedAttribute Name="processName" Value="House Purchase with Loan 3" />
+            <ExtendedAttribute Name="processName" Value="House Purchase with Loan" />
             <ExtendedAttribute Name="gatewayName" Value="loan event" />
             <ExtendedAttribute Name="eventName" Value="loan message" />
             <ExtendedAttribute Name="processIdField" Value="purchaseProcessId" />

@@ -1,5 +1,5 @@
 visa process
-processDefinition_check_financial_data
+xpdlExample_check_financial_data
 
 ^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="81d1922c-d685-41df-9fcd-4ff496379ce0" Name="check-financial-data" xmlns="http://www.wfmc.org/2009/XPDL2.2">

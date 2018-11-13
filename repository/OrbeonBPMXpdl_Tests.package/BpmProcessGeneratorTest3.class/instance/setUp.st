@@ -4,8 +4,8 @@ setUp
 
 	super setUp.
 
-	reader:= (self getXpdlReaderClass forProcessNamed: 'ReusableEmbeddedProc' withString: self processDefinition_Reusable_Embedded_Proc)
-			addXPDLDocument: (XMLDOMParser parse: self processDefinition_Reusable_Sub_Proc) namedAs: 'Reusable-Script';
+	reader:= (self getXpdlReaderClass forProcessNamed: 'ReusableEmbeddedProc' withString: XPDLProcessDefinitionTemplate xpdlExample_Reusable_Embedded_Proc)
+			addXPDLDocument: (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlExample_Reusable_Sub_Proc) namedAs: 'Reusable-Script';
 			connectProcesses;
 			yourself.
 

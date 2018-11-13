@@ -1,5 +1,5 @@
 default transition
-processDefinition_default_transition
+xpdlExample_default_transition
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="1fb6f2c5-cc62-4ac0-b8dd-f575127d1592" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">
