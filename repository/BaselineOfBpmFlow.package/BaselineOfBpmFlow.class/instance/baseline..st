@@ -47,12 +47,13 @@ baseline: spec
 		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
 		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice')].
 "		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice' 'HighchartsSt')]."
+		spec package: 'OrbeonBPM_Templates' with: [spec requires: #()].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
-		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2')].
-		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl')].
+		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPM_Templates')].
+		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl' 'OrbeonBPM_Templates')].
 		spec package: 'OrbeonBPMRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMCore_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMRuntimePEF')].
+		spec package: 'OrbeonBPMCore_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPM_Templates')].
+		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMRuntimePEF' 'OrbeonPersistenceLayer' 'OrbeonBPM_Templates')].
 
 		spec
 			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter' 'OrbeonBPMRuntimePEF'); 
@@ -60,6 +61,6 @@ baseline: spec
 			group: 'web-frontoffice' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebFrontoffice');
 			group: 'web-bi' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebBI');
 			group: 'rest' with: #('OrbeonPersistenceApiProcess');
-			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntimePEF' 'OrbeonBPMRuntime_Tests');
+			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntimePEF' 'OrbeonBPMCore_Tests' 'OrbeonBPMRuntime_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
