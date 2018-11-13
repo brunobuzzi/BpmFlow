@@ -2,7 +2,9 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForSimpleRegistrationProcess.
+	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'Simple Registration' withString: XPDLProcessDefinitionTemplate processDefinition_simple_registration)
+			connectProcesses;
+			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator mapProcess: 'Simple Registration' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'st');

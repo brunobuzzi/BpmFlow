@@ -2,8 +2,9 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForAllConditionsType.
-
+	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'all-type-conditions' withString: XPDLProcessDefinitionTemplate processDefinition_all_conditions_type)
+			connectProcesses;
+			yourself.
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator mapProcess: 'all-type-conditions' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.

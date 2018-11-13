@@ -2,7 +2,9 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := XPDLProcessDefinitionTemplate xpdlReaderForAllGatewaysProcess.
+	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'all gateways' withString: XPDLProcessDefinitionTemplate processDefinition_all_gateways)
+			connectProcesses;
+			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator mapProcess: 'all gateways' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
