@@ -1,4 +1,4 @@
-other
+forms
 formCreatorClass
 
-	^PEFFormCreator
+	^OrbeonSavedFormDefinition
