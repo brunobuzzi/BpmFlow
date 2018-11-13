@@ -2,6 +2,8 @@ other
 setUp
 	| application environment |
 
+	super setUp.
+
 	application := self getApplicationManagerClass getAnyApplicationNamed: 'st' ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
 	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-st'.
 	application hasBpmEnvironment ifFalse: [environment registerApplication: application].

@@ -5,9 +5,9 @@ setUp
 	super setUp.
 
 	"answer a collection with all versions"
-	senderProcessDef := (BpmProcessDefinition getAllProcessesNamed: 'House Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last].
+	senderProcessDef := (BpmProcessDefinition getAllProcessesNamed: 'House Loan 2' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last].
 	"answer a collection with all versions"
-	receiverProcesDef := (BpmProcessDefinition getAllProcessesNamed: 'House Purchase with Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last]. 
+	receiverProcesDef := (BpmProcessDefinition getAllProcessesNamed: 'House Purchase with Loan 2' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last]. 
 	
 	(senderProcessDef isNil or: [receiverProcesDef isNil]) ifTrue: [self createProcessesDefinition].
 	environment := senderProcessDef bpmEnvironment.

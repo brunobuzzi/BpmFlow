@@ -14,5 +14,5 @@ createProcessesDefinition
 
 	processGenerator processes do: [:each | each addToCache].
 
-	senderProcessDef := processGenerator getProcessDefinitionNamed: 'House Loan' ifNone: [self assert: false].
-	receiverProcesDef := processGenerator getProcessDefinitionNamed: 'House Purchase with Loan' ifNone: [self assert: false].
+	senderProcessDef := processGenerator getProcessDefinitionNamed: 'House Loan 3' ifNone: [self assert: false].
+	receiverProcesDef := processGenerator getProcessDefinitionNamed: 'House Purchase with Loan 3' ifNone: [self assert: false].
