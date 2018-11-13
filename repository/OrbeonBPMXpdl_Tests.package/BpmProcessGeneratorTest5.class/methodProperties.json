@@ -2,6 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "brunobb 07/30/2017 12:52",
+		"setUp" : "brunobb 11/13/2018 08:45",
 		"testExtendedAttributeCanUnassign" : "brunobb 02/04/2018 14:29",
 		"testProcessBasicCreation" : "brunobb 07/31/2017 04:36" } }

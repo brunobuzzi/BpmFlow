@@ -1,6 +1,17 @@
 other
 setUp
+	| reader |
 
 	super setUp.
 
-	processGenerator := BpmProcessGenerator exampleTestCaseProcessWithScript.
+	reader:=  (self getXpdlReaderClass forProcessNamed: 'Process with Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_script)
+				connectProcesses; 
+				yourself.
+
+	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
+
+	processGenerator 
+		mapProcess: 'Process with Scripts' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
+		generateAllProcess.
+
+	^processGenerator
