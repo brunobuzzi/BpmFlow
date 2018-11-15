@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "EvaluationNotBlockException",
+		"bpmProcess",
+		"exceptionBlock" ],
+	"name" : "CodeEvaluationException",
 	"pools" : [
 		 ],
-	"super" : "CodeEvaluationException",
+	"super" : "OrbeonBpmException",
 	"type" : "normal" }

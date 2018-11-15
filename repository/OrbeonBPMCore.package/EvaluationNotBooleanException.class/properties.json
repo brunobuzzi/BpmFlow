@@ -10,5 +10,5 @@
 	"name" : "EvaluationNotBooleanException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "CodeEvaluationException",
 	"type" : "normal" }

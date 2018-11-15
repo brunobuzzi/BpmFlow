@@ -1,4 +1,4 @@
 other
-newFromBlock: aStringBlock
+newFromBlock: aStringOrBlock
 
-	^self newFromBlock: aStringBlock for: nil
+	^self newFromBlock: aStringOrBlock for: nil

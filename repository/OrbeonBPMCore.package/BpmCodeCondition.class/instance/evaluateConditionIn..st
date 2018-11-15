@@ -9,14 +9,12 @@ evaluateConditionIn: blockArgumentObject
 			ifTrue: [self evaluate: evaluationCode] 
 			ifFalse: [evaluationCode]. "at this point the <evaluationCode> should be <aBlockClosure> otherwise it will set an exception in the receiver" 
 		blockEvaluation := blockClosure value: blockArgumentObject.
-		evaluation result: blockEvaluation] on: Error do:[:error | evaluation exception: error].
+		evaluation result: blockEvaluation] on: Exception do:[:error | EvaluationInBlockException signal: 'Error during condition evaluation' context: blockArgumentObject errorBlock: blockClosure].
 
-	"evaluation does not raised anException but the result is NOT a boolean value"
-	(evaluation hasNoException and: [evaluation resultNotBoolean]) 
-	ifTrue: [evaluation exception: EvaluationNotBooleanException new].
+	"the result is NOT a boolean value"
+	evaluation resultNotBoolean ifTrue: [EvaluationNotBooleanException signal: 'Condition Result is not a Boolean' context: blockArgumentObject errorBlock: blockClosure].
 
 	"the variable <blockClosure> MUST BE a BlockClosure because the <condition> could be a valid Smalltalk expression but NOT a block"
-	blockClosure isBlock
-	ifFalse: [evaluation exception: EvaluationNotBlockException new].
+	blockClosure isBlock ifFalse: [EvaluationNotBlockException signal: 'Condition is not a Block' context: blockArgumentObject errorBlock: blockClosure].
 
 	^evaluation
