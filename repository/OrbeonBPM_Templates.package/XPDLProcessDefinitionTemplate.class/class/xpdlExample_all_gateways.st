@@ -7,7 +7,7 @@ xpdlExample_all_gateways
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-04-07T18:01:00.808143-03:00</Created>
-    <ModificationDate>2016-04-24T14:16:15.379809-03:00</ModificationDate>
+    <ModificationDate>2018-11-16T15:48:53.9063036-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -47,7 +47,7 @@ xpdlExample_all_gateways
   <WorkflowProcesses>
     <WorkflowProcess Id="8d616f05-a39a-4e21-87ae-35df54ad21a7" Name="Main Process">
       <ProcessHeader>
-        <Created>2016-04-24T14:16:52.5285128-03:00</Created>
+        <Created>2018-11-16T15:49:09.9282-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -58,12 +58,12 @@ xpdlExample_all_gateways
       <ActivitySets />
       <DataInputOutputs />
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
     <WorkflowProcess Id="d6aa89da-947d-4414-bb53-9681b11f9090" Name="all gateways">
       <ProcessHeader>
-        <Created>2016-04-24T14:16:52.5285128-03:00</Created>
+        <Created>2018-11-16T15:49:09.9282-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -358,7 +358,7 @@ xpdlExample_all_gateways
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="778bf441-7636-4b4d-b597-3aab97ca7da4" From="1a278e1d-ce1e-43ad-9e14-778de81c7095" To="f40ff916-4532-4d2a-9e45-e81559284513">
+        <Transition Id="778bf441-7636-4b4d-b597-3aab97ca7da4" From="1a278e1d-ce1e-43ad-9e14-778de81c7095" To="f40ff916-4532-4d2a-9e45-e81559284513" Name="">
           <Condition />
           <Description />
           <ConnectorGraphicsInfos>
@@ -391,10 +391,10 @@ xpdlExample_all_gateways
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="8771b635-6500-4f9d-bcff-b6c306be81c0" From="f1f00093-2bbb-45ac-867a-398961a2a081" To="c7900244-a9ce-48a0-9a6f-7cc024de4baa">
+        <Transition Id="8771b635-6500-4f9d-bcff-b6c306be81c0" From="f1f00093-2bbb-45ac-867a-398961a2a081" To="c7900244-a9ce-48a0-9a6f-7cc024de4baa" Name="">
           <Condition Type="CONDITION">
-            <Expression>[:proc | proc taskSixTime &lt; (Time fromString: ''14:00'') or: [proc taskFiveDate &lt; (Date fromString: ''12/12/2015'')]
-]</Expression>
+            <Expression>[:proc | proc taskSixTime &lt; (Time fromString: ''14:00'') or: [proc taskFiveDate isNil or: [proc taskFiveDate &lt; (Date fromString: ''12/12/2015'')]
+]]</Expression>
           </Condition>
           <Description />
           <ConnectorGraphicsInfos>
@@ -417,10 +417,10 @@ xpdlExample_all_gateways
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="a94b7b40-aee4-4bfb-88d1-db58ece07a65" From="f1f00093-2bbb-45ac-867a-398961a2a081" To="3e844979-e36d-4bfb-9d4e-a7b3130f6227">
+        <Transition Id="a94b7b40-aee4-4bfb-88d1-db58ece07a65" From="f1f00093-2bbb-45ac-867a-398961a2a081" To="3e844979-e36d-4bfb-9d4e-a7b3130f6227" Name="">
           <Condition Type="CONDITION">
-            <Expression>[:proc | proc taskSixTime &gt;= (Time fromString: ''14:00'') or: [proc taskFiveDate &gt;= (Date fromString: ''12/12/2015'')]
-]</Expression>
+            <Expression>[:proc | proc taskSixTime &gt;= (Time fromString: ''14:00'') or: [proc taskFiveDate notNil and: [proc taskFiveDate &gt;= (Date fromString: ''12/12/2015'')]
+]]</Expression>
           </Condition>
           <Description />
           <ConnectorGraphicsInfos>
@@ -433,7 +433,7 @@ xpdlExample_all_gateways
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-04-07T18:01:00.8092249-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
