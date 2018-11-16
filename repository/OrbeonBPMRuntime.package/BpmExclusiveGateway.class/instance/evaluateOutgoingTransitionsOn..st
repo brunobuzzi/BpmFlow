@@ -4,10 +4,12 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 	| nextTransitionDef |
 
 	self getOutTransitionDefinitions do: [:trDefinition | | evaluationResult |
-		"if an exception occur when evaluating the condition --> the process is paused (CodeEvaluationException>>defaultAction)"
-		[evaluationResult := trDefinition evaluateConditionIn: aBpmProcessInstance] on: CodeEvaluationException do: [:ex | ^self].
-		(nextTransitionDef isNil and: [evaluationResult])
-		ifTrue: [nextTransitionDef := trDefinition]. "if more than one condition is true --> answer the first one  (check <nextTransitionDef> ifNil)"
+		(self defaultTransition == trDefinition) ifFalse: [ "default transition has no condition --> no evaluation"
+			"if an exception occur when evaluating the condition --> the process is paused (CodeEvaluationException>>defaultAction)"
+			[evaluationResult := trDefinition evaluateConditionIn: aBpmProcessInstance] on: CodeEvaluationException do: [:ex | ^self].
+			(nextTransitionDef isNil and: [evaluationResult])
+			ifTrue: [nextTransitionDef := trDefinition]. "if more than one condition is true --> answer the first one  (check <nextTransitionDef> ifNil)"
+		].
 	].
 
 	^nextTransitionDef 
