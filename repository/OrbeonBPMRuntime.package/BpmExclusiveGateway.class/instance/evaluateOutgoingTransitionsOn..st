@@ -3,8 +3,10 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 	"The receiver is Splitting and only one of all out going transition is going to be instantiated based on the evaluation of the condition"
 	| nextTransitionDef |
 
-	self getOutTransitionDefinitions do: [:trDefinition | 
-		(nextTransitionDef isNil and: [trDefinition evaluateConditionIn: aBpmProcessInstance])
+	self getOutTransitionDefinitions do: [:trDefinition | | evaluationResult |
+		"if an exception occur when evaluating the condition --> the process is paused (CodeEvaluationException>>defaultAction)"
+		[evaluationResult := trDefinition evaluateConditionIn: aBpmProcessInstance] on: CodeEvaluationException do: [:ex | ^self].
+		(nextTransitionDef isNil and: [evaluationResult])
 		ifTrue: [nextTransitionDef := trDefinition]. "if more than one condition is true --> answer the first one  (check <nextTransitionDef> ifNil)"
 	].
 

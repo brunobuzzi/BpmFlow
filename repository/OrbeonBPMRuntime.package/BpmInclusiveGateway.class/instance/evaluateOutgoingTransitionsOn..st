@@ -5,9 +5,10 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 
 	nextTransitionsDef := OrderedCollection new.
 
-	self getOutTransitionDefinitions do: [:trDefinition | 
-		(trDefinition evaluateConditionIn: aBpmProcessInstance)
-		ifTrue: [nextTransitionsDef add: trDefinition]. 
+	self getOutTransitionDefinitions do: [:trDefinition | | evaluationResult |
+		"if an exception occur when evaluating the condition --> the process is paused (CodeEvaluationException>>defaultAction)"
+		[evaluationResult := trDefinition evaluateConditionIn: aBpmProcessInstance] on: CodeEvaluationException do: [:ex | ^self].
+		evaluationResult ifTrue: [nextTransitionsDef add: trDefinition]. 
 	].
 
 	nextTransitionsDef do: [:each | aBpmProcessInstance createNewTransition: each from: self].

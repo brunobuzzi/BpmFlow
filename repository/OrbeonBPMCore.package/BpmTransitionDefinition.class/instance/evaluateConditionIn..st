@@ -5,7 +5,4 @@ evaluateConditionIn: aBpmProcessInstance
 
 	evaluationResult := self basicEvaluateConditionIn: aBpmProcessInstance.
 
-	evaluationResult hasException
-	ifTrue: [evaluationResult addToCache].
-
 	^evaluationResult result

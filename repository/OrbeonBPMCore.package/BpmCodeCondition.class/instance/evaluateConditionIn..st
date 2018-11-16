@@ -5,7 +5,7 @@ evaluateConditionIn: blockArgumentObject
 
 	evaluation := BpmCodeEvaluationResult new.
 
-	[ 	blockClosure := (evaluationCode class == String) 
+	[ 	blockClosure := (evaluationCode isOctetString) 
 			ifTrue: [self evaluate: evaluationCode] 
 			ifFalse: [evaluationCode]. "at this point the <evaluationCode> should be <aBlockClosure> otherwise it will set an exception in the receiver" 
 		blockEvaluation := blockClosure value: blockArgumentObject.
