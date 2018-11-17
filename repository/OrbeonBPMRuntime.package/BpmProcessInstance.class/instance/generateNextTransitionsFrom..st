@@ -10,8 +10,10 @@ generateNextTransitionsFrom: aBpmTaskInstance
 	nextTransitions := OrderedCollection new.
 	aBpmTaskInstance getOutTransitionDefinitions do: [:trDefinition | 
 																		trDefinition hasCondition
-																		ifTrue: [[(trDefinition evaluateConditionIn: self) ifTrue: [nextTransitions add: trDefinition]] on: CodeEvaluationException do: [:ex | ^self]]
-																		ifFalse: [nextTransitions add: trDefinition].																						
+																		"ifTrue: [[(trDefinition evaluateConditionIn: self) ifTrue: [nextTransitions add: trDefinition]] on: CodeEvaluationException do: [:ex | ^self pauseProcess: nil ]]"
+																		ifTrue: [(trDefinition evaluateConditionIn: self) result ifTrue: [nextTransitions add: trDefinition]]
+																		ifFalse: [nextTransitions add: trDefinition].
+
 	].
 
 	"after the selection of <BpmTransitionDefinition> the concrete transations are created <BpmTransitionInstance>"

@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"bpmProcess",
-		"exceptionBlock" ],
+		"exceptionBlock",
+		"evaluationResult" ],
 	"name" : "CodeEvaluationException",
 	"pools" : [
 		 ],
