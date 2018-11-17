@@ -9,7 +9,9 @@ testExecuteProcess_non_boolean_condition
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	"The non boolean result will produce an exception"
-	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_amount_exit on: procInstance.
+	[self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_amount_exit on: procInstance] 
+		on: EvaluationNotBooleanException 
+		do: [:ex | ex pass. self assert: procInstance isPaused].
 	self assert: procInstance isPaused.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Gateway Evaluation"
