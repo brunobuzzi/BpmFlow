@@ -13,8 +13,9 @@ generateNextTransitionsFrom: aBpmTaskInstance
 																		"ifTrue: [[(trDefinition evaluateConditionIn: self) ifTrue: [nextTransitions add: trDefinition]] on: CodeEvaluationException do: [:ex | ^self pauseProcess: nil ]]"
 																		ifTrue: [(trDefinition evaluateConditionIn: self) result ifTrue: [nextTransitions add: trDefinition]]
 																		ifFalse: [nextTransitions add: trDefinition].
-
 	].
 
 	"after the selection of <BpmTransitionDefinition> the concrete transations are created <BpmTransitionInstance>"
 	nextTransitions do: [:transitionDefinition | self createNewTransition: transitionDefinition from: aBpmTaskInstance].
+
+	nextTransitions ifEmpty: [NoNextArtifactBpmException signal: 'No next Task to execute']
