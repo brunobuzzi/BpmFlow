@@ -18,4 +18,4 @@ generateNextTransitionsFrom: aBpmTaskInstance
 	"after the selection of <BpmTransitionDefinition> the concrete transations are created <BpmTransitionInstance>"
 	nextTransitions do: [:transitionDefinition | self createNewTransition: transitionDefinition from: aBpmTaskInstance].
 
-	nextTransitions ifEmpty: [NoNextArtifactBpmException signal: 'No next Task to execute']
+	nextTransitions ifEmpty: [NoNextArtifactBpmException on: aBpmTaskInstance signal: 'No next Task to execute']

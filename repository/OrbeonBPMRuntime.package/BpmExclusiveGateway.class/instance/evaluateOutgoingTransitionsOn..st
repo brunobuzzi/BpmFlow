@@ -17,4 +17,4 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 	ifNotNil: [aBpmProcessInstance createNewTransition: nextTransitionDef from: self]
 	ifNil: [self defaultTransition 
 					ifNotNil: [:trDefinition | aBpmProcessInstance createNewTransition: trDefinition from: self]
-					ifNil: [self signal: (NoNextArtifactBpmException signal: 'No next Task to execute')]].
+					ifNil: [self signal: (NoNextArtifactBpmException on: self signal: 'No next Task to execute')]].
