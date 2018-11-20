@@ -1,0 +1,1 @@
+When <aBpmArtifactInstance> is not present in the system but is been removed the receiver is signaled

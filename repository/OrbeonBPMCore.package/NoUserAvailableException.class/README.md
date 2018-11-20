@@ -1,0 +1,1 @@
+When try to apply an assignation policy but there is no user available the receiver is signaled

@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 11/20/2018 06:51",
 	"instvars" : [
-		"bpmProcess",
-		"exceptionBlock",
-		"evaluationResult" ],
-	"name" : "CodeEvaluationException",
+		 ],
+	"name" : "BpmTimerDefinitionException",
 	"pools" : [
 		 ],
 	"super" : "BpmCodeException",

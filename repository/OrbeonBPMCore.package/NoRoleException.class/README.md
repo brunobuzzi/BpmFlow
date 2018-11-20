@@ -1,0 +1,1 @@
+Removing a non existing role from <aBpmProcessDefinition> the receiver is signaled

@@ -1,0 +1,1 @@
+<BpmEnvironment> has a unique name in the whole system. Two different environments can not have the same name

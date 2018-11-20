@@ -1,0 +1,1 @@
+When try to remove <aBpmProcessInstance> that is not in the system the receiver is signaled
