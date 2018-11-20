@@ -5,6 +5,6 @@ getMatrixForApplicationNamed: aString
 	If the Application does not exist --> throw an exception"
 	| application |
 
-	application := self getApplicationManagerClass getAnyApplicationNamed: aString ifNone: [^NoProcessMatrixException signal: 'No Matrix has been created for process named [', aString, ']'].
+	application := self getApplicationManagerClass getAnyApplicationNamed: aString ifNone: [^NoMatrixForApplicationException signal: 'No Matrix has been created for application named [', aString, ']'].
 
 	^self getMatrixForApplicationNamed: aString ifAbsent: [self newFor: application]

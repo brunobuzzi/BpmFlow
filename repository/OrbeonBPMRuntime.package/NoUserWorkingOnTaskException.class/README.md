@@ -1,0 +1,1 @@
+When querying for <aBpmUser> working on <aBpmTaskInstance> but there is none user the receiver is signaled

@@ -1,0 +1,1 @@
+When <aBpmEventBasedGateway> does not have a Timer Event Definition that was triggered by the process the receiver is signaled

@@ -1,0 +1,1 @@
+When try to remove a non existing role from a user the receiver is signaled
