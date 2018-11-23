@@ -6,7 +6,7 @@ getNonEventsAfterEventGateways
 	report := OrderedCollection new.
 
 	activitiesNames := Dictionary new.
-	(activities select: [:each |each isGatewayNode and:[each isEventGateway]]) do: [:xpdlGateway | 
+	(activities select: [:each |each isGatewayNode and:[each isGatewayForEventsNode]]) do: [:xpdlGateway | 
 			(xpdlGateway outTransitions reject: [:eachTr | eachTr endArtifact isEventNode]) do:[:each | | reportItem |		
 				reportItem := XPDLItemImportReport new type: 'Error';
 					title: ('Non Event Detected [', each getName, ']');

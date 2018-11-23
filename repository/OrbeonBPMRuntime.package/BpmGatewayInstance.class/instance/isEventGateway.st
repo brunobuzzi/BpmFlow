@@ -1,4 +1,0 @@
-other
-isEventGateway
-
-	^definition isEventGateway

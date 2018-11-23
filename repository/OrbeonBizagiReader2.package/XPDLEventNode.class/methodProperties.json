@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getActivationBlockValue" : "brunobb 10/16/2017 07:41",
+		"getActivationBlockValue" : "brunobb 11/06/2018 06:56",
 		"getLanesFrom:" : "brunobb 11/06/2018 06:56",
-		"isAnonymousStart" : "brunobb 03/30/2018 15:22",
+		"isAnonymousStart" : "brunobb 11/06/2018 06:56",
 		"isEventNode" : "brunobb 11/06/2018 06:56",
-		"printOn:" : "BrunoBB 10/28/2015 12:04",
-		"setInternalAttributesWithNode:" : "brunobb 07/31/2017 05:53" } }
+		"printOn:" : "brunobb 11/06/2018 06:56",
+		"setInternalAttributesWithNode:" : "brunobb 11/06/2018 06:56" } }
