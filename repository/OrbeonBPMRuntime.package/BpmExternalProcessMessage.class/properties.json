@@ -6,9 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"senderProcess",
-		"parentTask" ],
-	"name" : "BpmInterProcessMessage",
+		 ],
+	"name" : "BpmExternalProcessMessage",
 	"pools" : [
 		 ],
 	"super" : "BpmAbstractProcessMessage",

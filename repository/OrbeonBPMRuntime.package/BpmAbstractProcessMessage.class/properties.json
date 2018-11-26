@@ -1,0 +1,23 @@
+{
+	"category" : "OrbeonBPMRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"receiverProcessName",
+		"receiverAppName",
+		"receiverProcessId",
+		"receiverProcessIdField",
+		"receiverIdentificationFields",
+		"receiverProcessDefinition",
+		"receiverGatewayName",
+		"receiverEventName",
+		"variablesToSet",
+		"targetProcesses" ],
+	"name" : "BpmAbstractProcessMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
