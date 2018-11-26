@@ -11,6 +11,6 @@ getAssignmentsIn: appName processName: processNamed formName: formNamed fieldNam
 	^procDefinition getFieldsNamed: fieldNamed in: formNamed initialValue: intialValue endValue: endValue"
 
 	procDefinition do: [:eachProcDef | 
-		assignments addAll: (eachProcDef getFieldsNamed: fieldNamed in: formNamed initialValue: intialValue endValue: endValue)].
+		assignments addAll: (eachProcDef getAssignmentFromFieldsNamed: fieldNamed in: formNamed initialValue: intialValue endValue: endValue)].
 
 	^assignments

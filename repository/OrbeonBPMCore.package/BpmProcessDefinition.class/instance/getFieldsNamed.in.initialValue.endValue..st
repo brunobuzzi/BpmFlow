@@ -13,7 +13,7 @@ getFieldsNamed: fieldNamed in: formNamed initialValue: intialValue endValue: end
 	stValue := [stType fromString: intialValue] on: Error do: [:err | ^#()].
 	stValue2 := [stType fromString: endValue] on: Error do: [:err | ^#()].
 
-	^((GsQuery fromString: ('(each.value >= intialValue) & (each.value <= endValue)') on: fieldRcUnCollection) 
+	^(GsQuery fromString: ('(each.value >= intialValue) & (each.value <= endValue)') on: fieldRcUnCollection) 
 		bind: 'intialValue' to: stValue; 
 		bind: 'endValue' to: stValue2; 
-		queryResult) collect: [:each | each getAssignment]
+		queryResult

@@ -13,6 +13,6 @@ getFieldsNamed: fieldNamed in: formNamed withValue: fieldValue
 	stType := self getTypeOfFieldNamed: fieldNamed.
 	stValue := [stType fromString: fieldValue] on: Error do: [:err | ^#()].
 
-	^((GsQuery fromString: ('each.value = stValue') on: fieldRcUnCollection) 
+	^(GsQuery fromString: ('each.value = stValue') on: fieldRcUnCollection) 
 		bind: 'stValue' to: stValue; 
-		queryResult) collect: [:each | each getAssignment]
+		queryResult
