@@ -1,8 +1,10 @@
 send
 send
-	"The receiver is sent from the sender process <aBpmProcessInstance> to the receiver process <aBpmProcessInstance>.
-	The sender must have a <BpmSendTaskInstance> in order to send a meessage and the receiver must have a <BpmEventBasedGateway>.
-	The gateway must have a transition to <aBpmEventDefinition> with a <BpmMessageComponentDefinition>"
+	"The receiver is sent to the receiver process <aBpmProcessInstance>.
+	 If receiver is sent from another <aBpmProcessInstance> in the case of <BpmInterProcessMessage> then the sender process must have a <BpmSendTaskInstance> in order to send the meessage.
+	 If the receiver is sent from an external resource in the case of <BpmExternalProcessMessage> then the external resource must have all infor to identify the target process.
+	 The receiver must have a <BpmEventBasedGateway>.
+	 The gateway must have a transition to <aBpmEventDefinition> with a <BpmMessageComponentDefinition>"
 
 	targetProcesses := self getReceiverProcessesInstances.
 

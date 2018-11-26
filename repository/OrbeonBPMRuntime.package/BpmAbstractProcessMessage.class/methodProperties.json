@@ -2,7 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"getReceiverProcessFromId" : "brunobb 11/26/2018 08:32",
+		"getReceiverProcessInstanceFromFields" : "brunobb 11/26/2018 08:25",
 		"getReceiverProcessesDefinitions" : "brunobb 11/26/2018 07:30",
+		"getReceiverProcessesInstances" : "brunobb 11/26/2018 08:26",
 		"receiverAppName" : "brunobb 11/26/2018 07:29",
 		"receiverAppName:" : "brunobb 11/26/2018 07:29",
 		"receiverEventName" : "brunobb 11/26/2018 07:29",
@@ -19,7 +22,7 @@
 		"receiverProcessIdField:" : "brunobb 11/26/2018 07:29",
 		"receiverProcessName" : "brunobb 11/26/2018 07:29",
 		"receiverProcessName:" : "brunobb 11/26/2018 07:29",
-		"send" : "brunobb 11/26/2018 07:34",
+		"send" : "brunobb 11/26/2018 08:41",
 		"targetProcesses" : "brunobb 11/26/2018 07:29",
 		"targetProcesses:" : "brunobb 11/26/2018 07:29",
 		"throwNoEventException" : "brunobb 11/26/2018 07:33",

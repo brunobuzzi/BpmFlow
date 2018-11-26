@@ -9,11 +9,4 @@ getReceiverProcessesInstances
 	"Get the value of the target process from a field in the sender process"
 	receiverProcessId := senderProcess getValueOfProcessField: receiverProcessIdField.
 
-	"check in all versions of the process"
-	self getReceiverProcessesDefinitions do: [:procDefinition |
-			(procDefinition getProcessInstanceWith: receiverProcessId ifAbsent: []) 
-			ifNotNil: [:procInstance| 
-				receiverProcessDefinition := procInstance definition.
-				^OrderedCollection with: procInstance]].
-
-	^#()
+	^self getReceiverProcessFromId

@@ -2,8 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getReceiverProcessInstanceFromFields" : "brunobb 11/26/2018 08:06",
-		"getReceiverProcessesInstances" : "brunobb 11/26/2018 07:44",
+		"getReceiverProcessesInstances" : "brunobb 11/26/2018 08:33",
 		"parentTask" : "brunobb 11/26/2018 07:44",
 		"parentTask:" : "brunobb 11/26/2018 07:44",
 		"senderProcess" : "brunobb 11/26/2018 07:44",

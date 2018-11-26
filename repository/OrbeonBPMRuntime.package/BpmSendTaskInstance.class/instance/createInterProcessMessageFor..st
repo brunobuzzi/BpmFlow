@@ -10,5 +10,4 @@ createInterProcessMessageFor: aBpmProcessInstance
 							receiverGatewayName: definition gatewayName;
 							receiverEventName: definition eventName;
 							receiverProcessIdField: definition processIdField;
-							receiverIdentificationFields: definition identificationFields;
 							yourself

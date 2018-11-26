@@ -9,7 +9,6 @@
 		"receiverProcessName",
 		"receiverAppName",
 		"receiverProcessId",
-		"receiverProcessIdField",
 		"receiverIdentificationFields",
 		"receiverProcessDefinition",
 		"receiverGatewayName",
