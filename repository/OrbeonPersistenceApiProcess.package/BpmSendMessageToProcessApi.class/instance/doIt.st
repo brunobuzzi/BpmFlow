@@ -1,0 +1,4 @@
+other
+doIt
+
+	self createExternalMessage.
