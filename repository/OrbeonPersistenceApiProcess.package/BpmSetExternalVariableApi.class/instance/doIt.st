@@ -4,7 +4,7 @@ doIt
 	If <processId> is 0 then the body <rawBody> it contain additional filters to get the <BpmProcessInstances>"
 	| processInstance |
 
-	[xmlDocument := XMLDOMParser parse: xmlString] on: Error do: [:ex | ^BpmServiceXmlParseException newWith: xmlString].
+	[self parseXmlString] on: Exception do: [:ex | ^(BpmServiceXmlParseException newWith: xmlString) signal].
 	processInstance := (processInstanceId = '0')
 		ifTrue: [self getBpmProcessInstanceFromQuery] 
 		ifFalse: [self getBpmProcessInstanceFromId].

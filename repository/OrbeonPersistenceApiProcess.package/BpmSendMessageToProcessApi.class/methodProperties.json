@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"bodyFormatExample" : "brunobb 11/27/2018 02:46",
-		"createExternalMessage" : "brunobb 11/26/2018 08:54",
-		"doIt" : "brunobb 11/27/2018 05:09",
-		"setValuesFromBody" : "brunobb 11/26/2018 11:23" } }
+		"createExternalMessage" : "brunobb 11/27/2018 07:24",
+		"doIt" : "brunobb 11/27/2018 07:35",
+		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 07:44",
+		"getProcessFiltersFromCollection:" : "brunobb 11/27/2018 07:43",
+		"setValuesFromBodyTo:" : "brunobb 11/27/2018 07:46" } }

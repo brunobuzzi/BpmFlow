@@ -1,10 +1,9 @@
 other
 doIt
-	| message processInstance |
+	| message |
 
-	self setValuesFromBody.
 	message := self createExternalMessage.
 
-	processInstance := (id = '0')
-		ifTrue: [self getBpmProcessInstanceFromQuery] 
-		ifFalse: [self getBpmProcessInstanceFromId].
+	self setValuesFromBodyTo: message.
+
+	[message send] on: Exception do: [:ex | ]
