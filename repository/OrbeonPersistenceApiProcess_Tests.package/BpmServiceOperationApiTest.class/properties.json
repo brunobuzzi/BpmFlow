@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonPersistenceApiProcess_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"apiOperation",
+		"procDefinition",
+		"procInstance",
+		"processExecutionSimulator" ],
+	"name" : "BpmServiceOperationApiTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

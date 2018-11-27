@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "brunobb 11/27/2018 03:47",
+		"testSetVariableWithProcessId" : "brunobb 11/27/2018 03:52",
+		"testSetVariableWithProcessQuery" : "brunobb 11/27/2018 03:52" } }
