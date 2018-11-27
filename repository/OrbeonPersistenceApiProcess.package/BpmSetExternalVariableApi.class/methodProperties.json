@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"bodyFormatExample" : "brunobb 11/27/2018 02:46",
 		"doIt" : "brunobb 03/26/2018 16:52",
 		"getBpmProcessInstanceFromId" : "brunobb 03/26/2018 16:51",
-		"getBpmProcessInstanceFromQuery" : "brunobb 03/26/2018 16:50",
-		"getExternalVariablesValuesFrom:" : "brunobb 03/26/2018 16:52",
-		"getProcessFiltersFromCollection:" : "brunobb 03/27/2018 09:02",
-		"mapStClassFrom:" : "brunobb 03/26/2018 16:53",
+		"getBpmProcessInstanceFromQuery" : "brunobb 11/27/2018 02:46",
+		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 02:59",
+		"getProcessFiltersFromCollection:" : "brunobb 11/27/2018 03:04",
+		"mapStClassFrom:" : "brunobb 11/27/2018 03:01",
 		"processDefinitionId" : "brunobb 03/26/2018 16:45",
 		"processDefinitionId:" : "brunobb 03/26/2018 16:45",
 		"processInstanceId" : "brunobb 03/26/2018 16:45",

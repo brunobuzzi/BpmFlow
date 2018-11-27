@@ -1,4 +1,6 @@
 other
 doIt
+	| message |
 
-	self createExternalMessage.
+	self setValuesFromBody.
+	message := self createExternalMessage.

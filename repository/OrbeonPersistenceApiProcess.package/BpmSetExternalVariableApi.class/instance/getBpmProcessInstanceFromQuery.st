@@ -25,26 +25,3 @@ getBpmProcessInstanceFromQuery
 	(result size = 1) ifTrue: [^result at: 1]. 
 
 	^result "<aSet>"
-	
-"<setvariables>
-	<query>
-		<number>
-			<citizen-appliance>
-				<userid>123456</userid>
-			</citizen-appliance>
-		</number>
-		<string>
-			<check-basic-data>
-				<usercountry>US</usercountry>
-			</check-basic-data>
-		</string>
-	</query>
-	<externalvariables>
-		<boolean>
-			<approved>true</approved>
-		</boolean>
-		<number>
-			<amount>50000</amount>
-		</number>
-	</externalvariables>
-</setvariables>"
