@@ -1,23 +1,19 @@
 other
 testSetVariableWithProcessQuery
+	| currentTask value |
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
+	currentTask := procInstance currentActivities last.
+	value := Lag1MwcRandom new integer printString.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: (self formInstance_task1: value) on: procInstance.
+	self assert: (currentTask getDefinitionName = 'task-1').
 
 	apiOperation appName: 'ue';
 		processDefinitionId: procDefinition id printString;
-		processInstanceId: procInstance id printString;
-		xmlString: '<setvariables>
-	<externalvariables>
-		<boolean>
-			<approved>true</approved>
-		</boolean>
-		<number>
-			<amount>50000</amount>
-		</number>
-	</externalvariables>
-</setvariables>'.
+		processInstanceId: '0';
+		xmlString: (self bodyExample2: value).
 
 	apiOperation doIt.
 
-	self assert: (procInstance valueAtExternalVariable: 'approved').
-	self assert: ((procInstance valueAtExternalVariable: 'amount') = 50000)
+	self deny: (procInstance valueAtExternalVariable: 'approved').
+	self assert: ((procInstance valueAtExternalVariable: 'amount') = 125)
