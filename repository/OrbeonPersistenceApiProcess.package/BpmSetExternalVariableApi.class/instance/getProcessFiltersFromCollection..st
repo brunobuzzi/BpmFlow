@@ -6,11 +6,11 @@ getProcessFiltersFromCollection: aCollection
 
 	processFilters := Dictionary new.
 
-	aCollection do: [:xmlTypeElement | | stClass |
-		stClass := self mapStClassFrom: xmlTypeElement name.
-		stClass ifNil: [^processFilters].
+	aCollection do: [:xmlTypeElement | 
 		xmlTypeElement elements do: [:eachForm | 
-			eachForm elements do: [:eachField |  processFilters at: (Array with: eachForm name with: eachField name) put: (stClass fromString: eachField innerXML)]. 
+			eachForm elements do: [:eachField |  | fieldName |
+				fieldName := eachField name, '[', xmlTypeElement name first asString, ']'. "the type of the field is added here"
+				processFilters at: (Array with: eachForm name with: fieldName) put: eachField innerXML]. 
 		].
 	].
 

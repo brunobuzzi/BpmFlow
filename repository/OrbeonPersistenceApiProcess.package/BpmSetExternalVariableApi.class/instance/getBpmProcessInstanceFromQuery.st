@@ -5,7 +5,7 @@ getBpmProcessInstanceFromQuery
 	If there is more than one process that fit the filters answer <aSet>"
 	| processDefinition procDefNumberId queryFieldValues xPathNodes processFilters result |
 
-	[procDefNumberId := Number fromString: procDefNumberId] on: Error do: [:ex | ^nil].
+	[procDefNumberId := Number fromString: processDefinitionId] on: Error do: [:ex | ^nil].
 	processDefinition := BpmProcessDefinition getProcessDefnitionWith: procDefNumberId in: appName.
 
 	processDefinition ifNil: [^nil].
@@ -18,10 +18,10 @@ getBpmProcessInstanceFromQuery
 
 	result := Set new.
 	queryFieldValues keysAndValuesDo: [:formFieldArray :fieldValue | | filteredFieldValues |
-		filteredFieldValues := BpmProcessDefinition getFieldsNamed: (formFieldArray at: 2) in: (formFieldArray at: 1) withValue: fieldValue.
+		filteredFieldValues := processDefinition getFieldsNamed: (formFieldArray at: 2) in: (formFieldArray at: 1) withValue: fieldValue.
 		result addAll: (filteredFieldValues collect: [:each | each getProcess]).
 	].
-	
+
 	(result size = 1) ifTrue: [^result at: 1]. 
 
 	^result "<aSet>"
