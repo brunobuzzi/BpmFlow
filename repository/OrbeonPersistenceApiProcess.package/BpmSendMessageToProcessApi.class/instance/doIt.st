@@ -6,4 +6,4 @@ doIt
 
 	self setValuesFromBodyTo: message.
 
-	[message send] on: Exception do: [:ex | ]
+	[message send] on: Exception do: [:ex | ^(BpmProcessMessageException newWithErrorMessage: ex printString) signal]
