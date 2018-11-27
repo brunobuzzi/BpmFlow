@@ -1,0 +1,20 @@
+other
+bodyExample2
+
+	^'<setvariables>
+	<query>
+		<number>
+			<house-purchase-application>
+				<personID>123456789</personID>
+			</house-purchase-application>
+		</number>
+	</query>
+	<externalvariables>
+		<boolean>
+			<loanApproved>false</loanApproved>
+		</boolean>
+		<number>
+			<amount>111</amount>
+		</number>
+	</externalvariables>
+</setvariables>'

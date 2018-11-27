@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApiProcess_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"receiverProcesDef" ],
+	"name" : "BpmSendMessageToProcessApiTest",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApiTest",
+	"type" : "normal" }
