@@ -1,5 +1,5 @@
-errors
-respondProcessNotFound: processId
+other
+defaultAction
 	"The receiver answer aXml string with process NOT found with id <processId> or filters <xmlDocument>"
 	| xmlWriter |
 
@@ -7,7 +7,6 @@ respondProcessNotFound: processId
 
 	xmlWriter tag: 'response' with: [
 		xmlWriter tag: 'result' with: 'Error: No Process Found'.
-		xmlWriter tag: 'processid' with: processId printString.
 
 		xmlDocument ifNotNil: [xmlWriter tag: 'query' with: [xmlWriter cdata: xmlDocument printString]].
  

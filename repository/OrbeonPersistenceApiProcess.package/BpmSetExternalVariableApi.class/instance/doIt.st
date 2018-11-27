@@ -9,9 +9,9 @@ doIt
 		ifTrue: [self getBpmProcessInstanceFromQuery] 
 		ifFalse: [self getBpmProcessInstanceFromId].
 
-	processInstance ifNil: [^self respondProcessNotFound: processInstanceId]. 
-	(processInstance class == Set) ifTrue: [^self respondMoreThanOneProcessFound: processInstance]. 
+	processInstance ifNil: [^(NoTargetProcessException newWith: nil xmlDocument: xmlDocument) signal: 'No Target Process Found']. 
+	(processInstance class == Set) ifTrue: [^(MultipleTargetProcessesException newWith: processInstance xmlDocument: xmlDocument) signal: 'Multiple Target Processes Found']. 
 
-	(self setExternalVariablesTo: processInstance) ifNil: [^self respondBadExternalVariablesConfiguration: processInstance].
+	(self setExternalVariablesTo: processInstance) ifNil: [^(BadExternalVariableConfigException newWith: processInstance xmlDocument: xmlDocument) signal: 'Bad Set Configuration'].
 
 	^self respondSetOk: processInstance

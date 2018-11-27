@@ -22,6 +22,6 @@ getBpmProcessInstanceFromQuery
 		result addAll: (filteredFieldValues collect: [:each | each getProcess]).
 	].
 
-	(result size = 1) ifTrue: [^result at: 1]. 
+	(result size = 1) ifTrue: [^result asArray at: 1]. 
 
 	^result "<aSet>"
