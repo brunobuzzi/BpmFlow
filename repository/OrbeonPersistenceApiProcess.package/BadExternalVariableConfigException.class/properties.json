@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApiProcess",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BadExternalVariableConfigException",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceException",
+	"type" : "normal" }

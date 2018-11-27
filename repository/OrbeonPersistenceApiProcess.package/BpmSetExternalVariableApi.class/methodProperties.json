@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"doIt" : "brunobb 11/27/2018 04:32",
+		"doIt" : "brunobb 11/27/2018 05:05",
 		"getBpmProcessInstanceFromId" : "brunobb 11/27/2018 03:51",
 		"getBpmProcessInstanceFromQuery" : "brunobb 11/27/2018 04:44",
 		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 02:59",
@@ -12,4 +12,8 @@
 		"processDefinitionId:" : "brunobb 03/26/2018 16:45",
 		"processInstanceId" : "brunobb 03/26/2018 16:45",
 		"processInstanceId:" : "brunobb 03/26/2018 16:45",
+		"respondBadExternalVariablesConfiguration:" : "brunobb 11/27/2018 05:02",
+		"respondMoreThanOneProcessFound:" : "brunobb 11/27/2018 05:01",
+		"respondProcessNotFound:" : "brunobb 11/27/2018 05:02",
+		"respondSetOk:" : "brunobb 11/27/2018 05:05",
 		"setExternalVariablesTo:" : "brunobb 03/26/2018 16:52" } }

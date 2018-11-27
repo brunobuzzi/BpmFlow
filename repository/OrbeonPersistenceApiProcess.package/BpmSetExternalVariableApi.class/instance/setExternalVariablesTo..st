@@ -1,4 +1,4 @@
-other
+execute
 setExternalVariablesTo: aBpmProcessInstance
 	"The receiver add external variables values to <aBpmProcessInstance> contained in XML document <xmlDocument>"
 	| xPathNodes variablesCollection |
