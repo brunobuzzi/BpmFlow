@@ -49,6 +49,7 @@ baseline: spec
 "		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'OrbeonBPM_Templates' with: [spec requires: #()].
 		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
+		spec package: 'OrbeonPersistenceApiProcess_Tests' with: [spec requires: #('OrbeonPersistenceApiProcess')].
 		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPM_Templates')].
 		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl' 'OrbeonBPM_Templates' 'OrbeonBizagiReader2')].
 		spec package: 'OrbeonBPMRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'OrbeonBPMRuntime')].
