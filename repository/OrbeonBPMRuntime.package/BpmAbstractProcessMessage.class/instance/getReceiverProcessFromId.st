@@ -7,6 +7,6 @@ getReceiverProcessFromId
 			(procDefinition getProcessInstanceWith: receiverProcessId ifAbsent: []) 
 			ifNotNil: [:procInstance| 
 				receiverProcessDefinition := procInstance definition.
-				^OrderedCollection with: procInstance]].
+				^Set with: procInstance]].
 
 	^#()
