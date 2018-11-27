@@ -4,6 +4,17 @@
 	"instance" : {
 		"createExternalMessage" : "brunobb 11/27/2018 07:24",
 		"doIt" : "brunobb 11/27/2018 07:53",
-		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 07:44",
+		"eventName" : "brunobb 11/27/2018 08:43",
+		"eventName:" : "brunobb 11/27/2018 08:43",
+		"gatewayName" : "brunobb 11/27/2018 08:43",
+		"gatewayName:" : "brunobb 11/27/2018 08:43",
+		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 08:47",
 		"getProcessFiltersFromCollection:" : "brunobb 11/27/2018 07:43",
-		"setValuesFromBodyTo:" : "brunobb 11/27/2018 07:46" } }
+		"identificationFields" : "brunobb 11/27/2018 08:43",
+		"identificationFields:" : "brunobb 11/27/2018 08:43",
+		"mapStClassFrom:" : "brunobb 11/27/2018 08:44",
+		"processName" : "brunobb 11/27/2018 08:43",
+		"processName:" : "brunobb 11/27/2018 08:43",
+		"setValuesFromBodyTo:" : "brunobb 11/27/2018 07:46",
+		"variablesToSet" : "brunobb 11/27/2018 08:43",
+		"variablesToSet:" : "brunobb 11/27/2018 08:43" } }

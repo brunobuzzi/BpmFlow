@@ -15,3 +15,5 @@ getExternalVariablesValuesFrom: aCollection
 			externalVariables at: eachVariable name put: (stClass fromString: eachVariable innerXML). 
 		].
 	].
+
+	^externalVariables
