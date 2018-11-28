@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "brunobb 11/28/2018 06:33",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "ProcessDefinitionWithoutTimerException",
+	"name" : "BpmRuntimeException",
 	"pools" : [
 		 ],
-	"super" : "BpmRuntimeException",
+	"super" : "Exception",
 	"type" : "normal" }

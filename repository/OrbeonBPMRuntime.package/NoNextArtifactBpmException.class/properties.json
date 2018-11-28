@@ -10,5 +10,5 @@
 	"name" : "NoNextArtifactBpmException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "BpmRuntimeException",
 	"type" : "normal" }

@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 11/28/2018 06:29",
 	"instvars" : [
 		 ],
 	"name" : "CategoryWithNoNameException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "BpmRuntimeException",
 	"type" : "normal" }
