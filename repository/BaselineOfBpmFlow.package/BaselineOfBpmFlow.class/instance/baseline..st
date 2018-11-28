@@ -42,13 +42,13 @@ baseline: spec
 		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmBizagiReader')].
 		spec package: 'BpmBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
 		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
-		spec package: 'BpmWebBasic' with: [spec requires: #('BpmCore' 'BpmRuntime' 'Jasvgi')].
-		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
-		spec package: 'BpmWebBackoffice' with: [spec requires: #('Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
-		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
+		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'Jasvgi')].
+		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
-		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
+		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmWebRestApiLayer_Tests' with: [spec requires: #('BpmWebRestApiLayer')].
 		spec package: 'BpmBizagiReader_Tests' with: [spec requires: #('BpmBizagiReader' 'BpmXpdlTemplates')].
 		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmBizagiReader')].
