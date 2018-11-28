@@ -1,0 +1,4 @@
+other
+addIntermediateEvent: aBpmIntermediateEventDefinition
+
+	^intermediateEvents at: aBpmIntermediateEventDefinition name put: aBpmIntermediateEventDefinition

@@ -1,0 +1,4 @@
+other
+isOk
+
+	^objectResult notNil

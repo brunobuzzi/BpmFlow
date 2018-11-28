@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAProcessBIPortal",
+	"pools" : [
+		 ],
+	"super" : "SEWAFApplicationPortal",
+	"type" : "normal" }

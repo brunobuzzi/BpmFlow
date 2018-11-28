@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"default" : "brunobb 03/27/2018 10:35",
+		"default:" : "brunobb 03/27/2018 10:35" },
+	"instance" : {
+		"addFailedToken:" : "brunobb 03/27/2018 10:35",
+		"createEntryToOrbeonFor:for:" : "brunobb 03/27/2018 10:35",
+		"failedTokens" : "brunobb 03/27/2018 10:35",
+		"failedTokens:" : "brunobb 03/27/2018 10:35",
+		"generateXMLFor:for:" : "brunobb 03/27/2018 10:35",
+		"getSecureValueForToken:" : "brunobb 03/27/2018 10:35",
+		"initialize" : "brunobb 03/27/2018 10:35",
+		"register:object:for:" : "brunobb 03/27/2018 10:35",
+		"results" : "brunobb 03/27/2018 10:35",
+		"results:" : "brunobb 03/27/2018 10:35",
+		"tokens" : "brunobb 03/27/2018 10:35",
+		"tokens:" : "brunobb 03/27/2018 10:35",
+		"unregister:" : "brunobb 03/27/2018 10:35" } }

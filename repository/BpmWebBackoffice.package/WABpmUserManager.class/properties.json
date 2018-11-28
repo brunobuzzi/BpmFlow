@@ -1,0 +1,18 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isAddingRol",
+		"resetPasswords",
+		"usersBatchedList",
+		"userRolesBatchedList",
+		"addRoleBatchedList" ],
+	"name" : "WABpmUserManager",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

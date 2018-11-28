@@ -1,0 +1,1 @@
+When sending <aBpmInterProcessMessage> but the target process does not exist the receiver is signaled

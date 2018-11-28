@@ -1,0 +1,4 @@
+*bpmxpdl
+getBpmClass
+
+	self subclassResponsibility

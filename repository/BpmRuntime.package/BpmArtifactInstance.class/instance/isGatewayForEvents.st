@@ -1,0 +1,4 @@
+testing
+isGatewayForEvents
+
+	^definition isGatewayForEvents

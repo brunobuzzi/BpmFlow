@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fieldsBatchedList" ],
+	"name" : "WABpmCompareFieldsChartComposite",
+	"pools" : [
+		 ],
+	"super" : "WABasicBpmChartComposite",
+	"type" : "normal" }

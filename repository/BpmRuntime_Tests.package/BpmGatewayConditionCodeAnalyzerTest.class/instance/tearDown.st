@@ -1,0 +1,4 @@
+other
+tearDown
+
+	analyzer := nil

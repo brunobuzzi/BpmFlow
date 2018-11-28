@@ -1,0 +1,4 @@
+application
+getContextApplications
+
+	^self subclassResponsibility

@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"stateName" : "brunobb 12/15/2017 12:12" },
+	"instance" : {
+		"confirmAbortion" : "brunobb 04/23/2018 14:01",
+		"getAllProcessRoles" : "brunobb 09/10/2018 11:13",
+		"initialize" : "brunobb 12/12/2017 16:56",
+		"isAborted" : "brunobb 12/11/2017 17:14",
+		"isAbortedAndConfirmed" : "brunobb 01/24/2018 10:36",
+		"isConfirmed" : "brunobb 12/12/2017 16:56",
+		"isConfirmed:" : "brunobb 12/12/2017 16:56",
+		"printProcessState" : "brunobb 01/13/2018 14:52",
+		"removeAllAssigmentsFromAvailableMatrix" : "brunobb 04/15/2018 17:06",
+		"removeAllAssigmentsFromFinishedMatrix" : "brunobb 04/15/2018 15:46",
+		"removeAllAssigmentsFromMatrix:" : "brunobb 04/22/2018 13:58",
+		"removeAllAssigmentsFromTakenMatrix" : "brunobb 04/15/2018 17:05",
+		"removeAppFieldValuesFromProcessDefinition" : "brunobb 01/02/2018 14:23",
+		"removeTakenAssignmentsFromUsers" : "brunobb 12/31/2017 10:12",
+		"removeTimerEventsFromEventMonitor" : "brunobb 01/14/2018 18:47" } }

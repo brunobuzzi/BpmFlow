@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignment",
+		"user" ],
+	"name" : "BpmAssignmentOperation",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

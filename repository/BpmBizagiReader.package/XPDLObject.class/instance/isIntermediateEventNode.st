@@ -1,0 +1,4 @@
+testing
+isIntermediateEventNode
+
+	^false

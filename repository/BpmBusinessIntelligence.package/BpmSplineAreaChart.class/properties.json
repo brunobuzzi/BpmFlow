@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmSplineAreaChart",
+	"pools" : [
+		 ],
+	"super" : "BpmChartType",
+	"type" : "normal" }

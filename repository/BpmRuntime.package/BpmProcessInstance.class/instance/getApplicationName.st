@@ -1,0 +1,4 @@
+application
+getApplicationName
+
+	^definition getApplicationName

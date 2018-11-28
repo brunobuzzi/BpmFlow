@@ -1,0 +1,4 @@
+task matrix
+getTakenProcessMatrixFor: aBpmProcessInstance
+
+	^aBpmProcessInstance getTakenProcessMatrix

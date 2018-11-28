@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XpdlFileFormatException",
+	"pools" : [
+		 ],
+	"super" : "BpmXpdlException",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+getTopProcess
+
+	^parentProcess getTopProcess

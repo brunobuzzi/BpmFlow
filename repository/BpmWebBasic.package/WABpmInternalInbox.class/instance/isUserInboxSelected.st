@@ -1,0 +1,4 @@
+other
+isUserInboxSelected
+
+	^selectedInbox = 'User'

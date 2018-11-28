@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"batchedList" ],
+	"name" : "WAGrantedBpmTransitions",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

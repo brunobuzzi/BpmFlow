@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmProcessBizagiFileOut",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessFileOut",
+	"type" : "normal" }

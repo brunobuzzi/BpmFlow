@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmTopProcessDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessDefinition",
+	"type" : "normal" }

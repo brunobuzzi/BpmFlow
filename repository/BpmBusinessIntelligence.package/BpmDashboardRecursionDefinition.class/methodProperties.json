@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"comboBoxName" : "brunobb 09/25/2018 10:47",
+		"getComboBoxNames" : "brunobb 09/26/2018 10:31",
+		"getRecursionClassFrom:ifNone:" : "brunobb 09/25/2018 10:47" },
+	"instance" : {
+		"comboBoxName" : "brunobb 09/25/2018 10:47",
+		"getNewEndDateFor:" : "brunobb 09/25/2018 10:47",
+		"getNewStartDateFrom:" : "brunobb 09/25/2018 10:47",
+		"initialize" : "brunobb 09/25/2018 10:47",
+		"isOutDated:for:" : "brunobb 09/26/2018 05:21",
+		"modifyStartDateOnUpdate" : "brunobb 09/25/2018 10:47",
+		"modifyStartDateOnUpdate:" : "brunobb 09/25/2018 10:47",
+		"updateStartDate:" : "brunobb 09/26/2018 05:52" } }

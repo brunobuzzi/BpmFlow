@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntimePEF",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PEFBpmException",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"roleName",
+		"taskName",
+		"username" ],
+	"name" : "BpmAssignmentInternalMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmObjectInternalMessage",
+	"type" : "normal" }

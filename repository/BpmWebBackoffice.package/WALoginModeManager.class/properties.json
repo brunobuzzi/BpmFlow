@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"modeType" ],
+	"name" : "WALoginModeManager",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"default" : "BrunoBB 06/10/2014 17:43",
+		"default:" : "BrunoBB 12/31/2014 15:10" },
+	"instance" : {
+		"addFailedToken:" : "BrunoBB 11/08/2014 09:40",
+		"createEntryToOrbeonFor:for:" : "BrunoBB 12/15/2015 11:29",
+		"failedTokens" : "BrunoBB 06/11/2014 18:19",
+		"failedTokens:" : "BrunoBB 06/11/2014 18:19",
+		"generateXMLFor:for:" : "BrunoBB 12/16/2016 12:57",
+		"getSecureValueForToken:" : "BrunoBB 04/24/2016 07:40",
+		"initialize" : "BrunoBB 12/31/2014 15:07",
+		"register:object:for:" : "BrunoBB 11/08/2014 09:15",
+		"results" : "BrunoBB 12/31/2014 15:07",
+		"results:" : "BrunoBB 12/31/2014 15:07",
+		"tokens" : "BrunoBB 06/10/2014 17:43",
+		"tokens:" : "BrunoBB 06/10/2014 17:43",
+		"unregister:" : "BrunoBB 09/16/2014 17:26" } }

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"importedDataBatchList",
+		"importedConfigurationBatchList",
+		"fileRows" ],
+	"name" : "WAUserAndRolesImportBrowser",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

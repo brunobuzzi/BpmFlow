@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"convert:" : "BrunoBB 09/10/2016 07:33" },
+	"instance" : {
+		"generateHeaderTranslationForProcess:reader:" : "brunobb 10/26/2018 11:34",
+		"generateSVGFor:" : "brunobb 11/06/2018 07:20",
+		"generateSVGFor:assignment:" : "brunobb 11/06/2018 07:20",
+		"generateSVGFor:process:" : "brunobb 11/06/2018 07:20",
+		"generateSVGForTransition:" : "BrunoBB 12/05/2016 10:55",
+		"getSVGCanvasClass" : "BrunoBB 12/04/2016 13:01",
+		"getSVGTitleForAssignment:" : "BrunoBB 09/13/2016 14:59",
+		"getSVGTitleForDefinition:" : "BrunoBB 09/13/2016 15:00",
+		"getSVGTitleForProcess:" : "brunobb 01/13/2018 14:51",
+		"xpdlString" : "BrunoBB 09/10/2016 07:32",
+		"xpdlString:" : "BrunoBB 09/10/2016 07:32" } }

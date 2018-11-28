@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdlTemplates",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLProcessDefinitionTemplate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

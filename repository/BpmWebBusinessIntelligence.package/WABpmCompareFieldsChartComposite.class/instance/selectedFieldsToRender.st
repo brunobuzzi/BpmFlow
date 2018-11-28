@@ -1,0 +1,4 @@
+other
+selectedFieldsToRender
+
+	^chartDefinition selectedFieldsToRender

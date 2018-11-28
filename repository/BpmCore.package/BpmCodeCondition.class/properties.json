@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"evaluationCode",
+		"transition" ],
+	"name" : "BpmCodeCondition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+process
+switchImmutableValue
+
+	selectedLateralItem switchImmutableValue

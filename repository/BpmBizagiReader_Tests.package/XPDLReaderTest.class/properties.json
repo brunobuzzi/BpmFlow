@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBizagiReader_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"reader" ],
+	"name" : "XPDLReaderTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

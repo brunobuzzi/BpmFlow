@@ -1,0 +1,4 @@
+events
+hasAttachedEvents
+
+	^attachedEvents notEmpty

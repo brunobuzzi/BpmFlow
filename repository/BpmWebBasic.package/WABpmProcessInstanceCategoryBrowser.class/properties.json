@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmProcessInstanceCategoryBrowser",
+	"pools" : [
+		 ],
+	"super" : "WABpmProcessCategoryBrowser",
+	"type" : "normal" }

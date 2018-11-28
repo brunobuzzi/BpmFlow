@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ImproperBpmOperationException",
+	"pools" : [
+		 ],
+	"super" : "BpmCoreException",
+	"type" : "normal" }

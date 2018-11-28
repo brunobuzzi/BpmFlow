@@ -1,0 +1,4 @@
+file out
+generateProcessDefinitionOutput
+
+	self subclassResponsibility

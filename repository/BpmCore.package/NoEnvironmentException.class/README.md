@@ -1,0 +1,1 @@
+For some business objects is mandatory to a have <aBpmEnvironment>

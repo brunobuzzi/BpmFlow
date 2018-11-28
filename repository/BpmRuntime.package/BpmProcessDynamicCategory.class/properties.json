@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectMethod",
+		"selectorBlock" ],
+	"name" : "BpmProcessDynamicCategory",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessCategory",
+	"type" : "normal" }

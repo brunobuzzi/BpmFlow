@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"valid",
+		"language" ],
+	"name" : "BpmSendFormAndRedirectApi",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApi",
+	"type" : "normal" }

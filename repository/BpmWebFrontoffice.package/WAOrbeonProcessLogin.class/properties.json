@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAOrbeonProcessLogin",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebLogin",
+	"type" : "normal" }

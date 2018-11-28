@@ -1,0 +1,4 @@
+other
+setLocalLoginMode
+
+	self getGemStoneServerConfiguration setLocalForProcesses

@@ -1,0 +1,4 @@
+other
+printAndContext
+
+	^process printAndContext

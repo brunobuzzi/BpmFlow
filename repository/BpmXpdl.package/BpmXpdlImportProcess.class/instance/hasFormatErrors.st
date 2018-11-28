@@ -1,0 +1,4 @@
+other
+hasFormatErrors
+
+	^fileFormatErrors notEmpty

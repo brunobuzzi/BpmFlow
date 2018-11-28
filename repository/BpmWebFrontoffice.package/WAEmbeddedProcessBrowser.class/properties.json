@@ -1,0 +1,16 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"orbeonFrame",
+		"orbeonIsOnPage",
+		"isEditMode" ],
+	"name" : "WAEmbeddedProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "WABpmProcessesBrowser",
+	"type" : "normal" }

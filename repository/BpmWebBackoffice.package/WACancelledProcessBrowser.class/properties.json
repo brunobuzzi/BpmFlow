@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"transitionsHeight" ],
+	"name" : "WACancelledProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

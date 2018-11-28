@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"getComboBoxListFor:" : "brunobb 02/07/2018 14:10",
+		"getQueryOperationClassFor:translatedTo:" : "brunobb 02/08/2018 09:51",
+		"newFor:in:" : "brunobb 09/06/2018 05:56" },
+	"instance" : {
+		"bpmEnvironment" : "brunobb 09/06/2018 08:33",
+		"bpmEnvironment:" : "brunobb 09/06/2018 08:33",
+		"getAllCurrentTaskAssigments" : "brunobb 02/08/2018 10:17",
+		"getAllFinishedTaskAssignments" : "brunobb 02/08/2018 10:17",
+		"getAllTaskAssignments:" : "brunobb 02/08/2018 10:17",
+		"getAllUsers" : "brunobb 09/06/2018 05:59",
+		"getAssignmentsIn:processName:formName:fieldName:initialValue:endValue:isCurrent:isRange:" : "brunobb 02/08/2018 13:49",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:13",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:13",
+		"getCurrentTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:15",
+		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
+		"getCurrentTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:24",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:14",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:14",
+		"getFinishedTaskAssignmentsInApplication:" : "brunobb 02/08/2018 13:15",
+		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 02/08/2018 13:17",
+		"getFinishedTaskAssignmentsWithId:" : "brunobb 02/08/2018 13:24",
+		"getTaskAssignmentsInApplication:andProcess:isCurrent:" : "brunobb 02/08/2018 13:16",
+		"getTaskAssignmentsInApplication:isCurrent:" : "brunobb 02/08/2018 13:15",
+		"getTaskAssignmentsWithId:isCurrent:" : "brunobb 02/08/2018 13:24",
+		"user" : "brunobb 02/07/2018 14:22",
+		"user:" : "brunobb 02/07/2018 14:22" } }

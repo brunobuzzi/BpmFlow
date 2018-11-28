@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmCalendarManager",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

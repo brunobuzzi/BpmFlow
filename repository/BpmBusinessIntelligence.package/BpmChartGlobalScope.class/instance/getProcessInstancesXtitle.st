@@ -1,0 +1,4 @@
+other
+getProcessInstancesXtitle
+
+	^'Application Name'

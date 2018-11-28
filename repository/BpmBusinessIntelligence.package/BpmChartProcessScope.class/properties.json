@@ -1,0 +1,15 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processes",
+		"version" ],
+	"name" : "BpmChartProcessScope",
+	"pools" : [
+		 ],
+	"super" : "BpmChartScope",
+	"type" : "normal" }

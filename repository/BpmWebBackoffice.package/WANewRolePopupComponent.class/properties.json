@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WANewRolePopupComponent",
+	"pools" : [
+		 ],
+	"super" : "SewafPopupComponent",
+	"type" : "normal" }

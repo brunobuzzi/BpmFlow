@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmEnvironmentBrowser",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

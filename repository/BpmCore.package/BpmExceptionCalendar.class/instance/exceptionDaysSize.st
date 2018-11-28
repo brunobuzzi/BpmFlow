@@ -1,0 +1,4 @@
+other
+exceptionDaysSize
+
+	^days size

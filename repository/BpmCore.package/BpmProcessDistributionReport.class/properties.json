@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processName",
+		"version" ],
+	"name" : "BpmProcessDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "AppLocalDistributionReport",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+chartsRepository
+
+	^AppChartDefinitionRepository default

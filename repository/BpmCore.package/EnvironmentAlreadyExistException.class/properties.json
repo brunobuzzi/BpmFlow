@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "EnvironmentAlreadyExistException",
+	"pools" : [
+		 ],
+	"super" : "BpmCoreException",
+	"type" : "normal" }

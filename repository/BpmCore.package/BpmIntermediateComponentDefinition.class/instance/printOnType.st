@@ -1,0 +1,4 @@
+other
+printOnType
+
+	^'ev:inter'

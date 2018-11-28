@@ -1,0 +1,4 @@
+other
+roleIsAdmin
+
+	 ^role isAdmin

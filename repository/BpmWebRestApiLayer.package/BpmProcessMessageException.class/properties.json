@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"errorMessage" ],
+	"name" : "BpmProcessMessageException",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceException",
+	"type" : "normal" }

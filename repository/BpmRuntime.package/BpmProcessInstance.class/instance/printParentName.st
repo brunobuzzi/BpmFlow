@@ -1,0 +1,4 @@
+other
+printParentName
+
+	^definition printParentName

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"procInstance",
+		"procDefinition",
+		"processExecutionSimulator" ],
+	"name" : "BpmProcessExecutionTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+*bpmxpdl
+getCycleComponentDefinitionClass
+
+	^BpmEndComponentDefinition

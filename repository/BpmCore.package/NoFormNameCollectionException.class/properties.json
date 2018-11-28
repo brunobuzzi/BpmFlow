@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 11/28/2018 06:21",
+	"instvars" : [
+		 ],
+	"name" : "NoFormNameCollectionException",
+	"pools" : [
+		 ],
+	"super" : "BpmCoreException",
+	"type" : "normal" }

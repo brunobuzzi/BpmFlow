@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 11/28/2018 06:30",
+	"instvars" : [
+		 ],
+	"name" : "NoMatrixForApplicationException",
+	"pools" : [
+		 ],
+	"super" : "BpmRuntimeException",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+beNonInterrupt
+
+	isNonInterrupt := true.

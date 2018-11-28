@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntimePEF",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"users" ],
+	"name" : "PEFBpmProcessExecutor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

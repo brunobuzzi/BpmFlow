@@ -1,0 +1,4 @@
+other
+hasSecondaryDistritbution
+
+	^report hasSecondaryDistritbution

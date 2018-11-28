@@ -1,0 +1,4 @@
+other
+printProcessRunningArtifacts
+
+	^process printRunningArtifacts

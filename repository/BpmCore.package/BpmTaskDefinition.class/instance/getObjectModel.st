@@ -1,0 +1,4 @@
+other
+getObjectModel
+
+	^self subclassResponsibility

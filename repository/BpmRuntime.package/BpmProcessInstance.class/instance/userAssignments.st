@@ -1,0 +1,3 @@
+Accessing
+userAssignments
+	^userAssignments

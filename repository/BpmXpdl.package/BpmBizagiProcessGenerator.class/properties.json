@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmBizagiProcessGenerator",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessGenerator",
+	"type" : "normal" }

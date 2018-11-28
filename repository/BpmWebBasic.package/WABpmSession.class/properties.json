@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"bpmEnvironment" ],
+	"name" : "WABpmSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createInnerBoxes" : "BrunoBB 04/17/2016 16:39",
+		"getCurrentAssignmentsInbox" : "brunobb 02/01/2018 11:28",
+		"getCurrentAssignmentsName" : "BrunoBB 04/17/2016 12:31",
+		"getFinishedAssignmentsInbox" : "brunobb 02/01/2018 11:28",
+		"getFinishedAssignmentsName" : "BrunoBB 04/17/2016 12:32",
+		"getReleasedAssignmentsInbox" : "brunobb 02/01/2018 11:28",
+		"getReleasedAssignmentsName" : "BrunoBB 04/17/2016 16:38",
+		"getSystemNotificationsInbox" : "BrunoBB 04/17/2016 16:59",
+		"getSystemNotificationsName" : "BrunoBB 04/17/2016 12:32",
+		"getUserNotificationsInbox" : "BrunoBB 04/17/2016 16:59",
+		"getUserNotificationsName" : "BrunoBB 04/17/2016 12:33" } }

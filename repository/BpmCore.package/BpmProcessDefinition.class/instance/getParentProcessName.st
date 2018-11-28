@@ -1,0 +1,4 @@
+subprocesses
+getParentProcessName
+
+	^self subclassResponsibility

@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"count" ],
+	"name" : "BpmUserAssignationCount",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

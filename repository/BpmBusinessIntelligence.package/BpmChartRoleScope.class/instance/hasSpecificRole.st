@@ -1,0 +1,4 @@
+other
+hasSpecificRole
+
+	^role notNil

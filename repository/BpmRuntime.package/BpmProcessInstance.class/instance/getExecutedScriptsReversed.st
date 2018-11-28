@@ -1,0 +1,4 @@
+tasks
+getExecutedScriptsReversed
+
+	^executedScripts reverse

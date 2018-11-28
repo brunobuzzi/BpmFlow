@@ -1,0 +1,16 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bpmProcess",
+		"exceptionBlock",
+		"evaluationResult" ],
+	"name" : "CodeEvaluationException",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeException",
+	"type" : "normal" }

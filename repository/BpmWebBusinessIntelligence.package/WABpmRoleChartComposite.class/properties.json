@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmRoleChartComposite",
+	"pools" : [
+		 ],
+	"super" : "WABasicBpmChartComposite",
+	"type" : "normal" }

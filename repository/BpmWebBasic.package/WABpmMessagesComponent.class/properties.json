@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"userBatchedList",
+		"selectedInbox" ],
+	"name" : "WABpmMessagesComponent",
+	"pools" : [
+		 ],
+	"super" : "SewafLateralListComposite",
+	"type" : "normal" }

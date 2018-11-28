@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scriptCode" ],
+	"name" : "BpmScriptTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmAbstractTaskDefinition",
+	"type" : "normal" }

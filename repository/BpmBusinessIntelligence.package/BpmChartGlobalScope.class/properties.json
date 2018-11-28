@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmChartGlobalScope",
+	"pools" : [
+		 ],
+	"super" : "BpmChartScope",
+	"type" : "normal" }

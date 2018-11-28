@@ -1,0 +1,4 @@
+Accessing
+getContextApplications
+
+	^andContextApplications, orContextApplications

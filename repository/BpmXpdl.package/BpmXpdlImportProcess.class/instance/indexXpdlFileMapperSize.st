@@ -1,0 +1,4 @@
+other
+indexXpdlFileMapperSize
+
+	^indexXpdlFileMapper size

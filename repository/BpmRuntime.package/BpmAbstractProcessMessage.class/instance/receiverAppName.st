@@ -1,0 +1,3 @@
+Accessing
+receiverAppName
+	^receiverAppName

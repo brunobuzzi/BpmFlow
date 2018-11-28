@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"events" : "brunobb 10/11/2018 09:54",
+		"events:" : "brunobb 10/11/2018 09:54",
+		"finalize" : "brunobb 10/24/2018 11:16",
+		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:17",
+		"initialize" : "brunobb 10/11/2018 09:54",
+		"performInitializationOn:" : "brunobb 10/24/2018 12:19",
+		"registerEvent:" : "brunobb 10/24/2018 12:26" } }

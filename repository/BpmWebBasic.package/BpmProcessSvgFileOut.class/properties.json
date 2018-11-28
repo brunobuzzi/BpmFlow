@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isDownload",
+		"withXmlHeader" ],
+	"name" : "BpmProcessSvgFileOut",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessFileOut",
+	"type" : "normal" }

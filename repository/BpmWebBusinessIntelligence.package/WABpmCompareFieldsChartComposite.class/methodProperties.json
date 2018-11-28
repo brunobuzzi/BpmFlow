@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addField" : "brunobb 06/29/2018 11:03",
+		"basicCreateChartDefinition" : "brunobb 09/10/2018 09:49",
+		"fieldIsSelected:" : "brunobb 06/29/2018 12:26",
+		"fieldsBatchedList" : "brunobb 06/29/2018 11:43",
+		"fieldsBatchedList:" : "brunobb 06/29/2018 11:43",
+		"getProcessFieldList" : "brunobb 06/26/2018 08:33",
+		"getSelectedFieldDescription" : "brunobb 06/29/2018 11:02",
+		"getSelectedProcessDefinitions" : "brunobb 06/26/2018 08:35",
+		"gitbookUrl" : "brunobb 07/13/2018 10:59",
+		"initialize" : "brunobb 06/29/2018 12:32",
+		"initializeSewafTableForFields" : "brunobb 06/29/2018 12:03",
+		"newChartScopeFor:" : "brunobb 06/26/2018 08:12",
+		"renderApplicationComboOn:withApplications:" : "brunobb 06/26/2018 08:28",
+		"renderChartTypeComboOn:" : "brunobb 07/02/2018 09:17",
+		"renderComponentButChartOn:" : "brunobb 06/29/2018 11:55",
+		"renderSearchAreaOn:" : "brunobb 07/02/2018 09:17",
+		"renderShowChartButtonOn:" : "brunobb 06/29/2018 12:38",
+		"selectedFieldsToRender" : "brunobb 06/29/2018 10:44",
+		"setChartDefinition" : "brunobb 07/02/2018 09:20",
+		"setSelectedField:value:" : "brunobb 06/29/2018 12:09",
+		"sewafTableForFields" : "brunobb 06/29/2018 11:33",
+		"showSelectedFields" : "brunobb 06/29/2018 12:36" } }

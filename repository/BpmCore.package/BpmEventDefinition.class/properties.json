@@ -1,0 +1,17 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"cycle",
+		"type",
+		"tag",
+		"attachedTask" ],
+	"name" : "BpmEventDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmArtifactDefinition",
+	"type" : "normal" }

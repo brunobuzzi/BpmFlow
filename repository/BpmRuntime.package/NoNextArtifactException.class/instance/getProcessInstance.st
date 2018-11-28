@@ -1,0 +1,4 @@
+other
+getProcessInstance
+
+	^bpmArtifact process

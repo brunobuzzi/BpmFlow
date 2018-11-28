@@ -1,0 +1,17 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parentProcess",
+		"creatorTask",
+		"creatorEvent",
+		"inheritContextApplications" ],
+	"name" : "BpmSubProcessInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessInstance",
+	"type" : "normal" }

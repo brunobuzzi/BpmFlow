@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createProcessDefinition" : "brunobb 11/13/2018 09:05",
+		"formInstance_registration_approval" : "brunobb 11/08/2018 08:44",
+		"formInstance_simple_registration" : "brunobb 11/08/2018 08:44",
+		"getAssignmentFor:" : "brunobb 01/31/2018 09:59",
+		"getFinishedMatrix" : "brunobb 04/15/2018 15:46",
+		"setUp" : "brunobb 11/13/2018 09:15",
+		"testAssignationPolicyDefinedInBizagi" : "brunobb 03/12/2018 10:41",
+		"testExecuteProcess_simpleRegistration_approved" : "brunobb 11/09/2018 10:02" } }

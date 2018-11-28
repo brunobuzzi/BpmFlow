@@ -1,0 +1,4 @@
+other
+getAllUsers
+
+	^bpmEnvironment users

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmSeasideTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTaskDefinition",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"canUnassign" ],
+	"name" : "BpmTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmAbstractTaskDefinition",
+	"type" : "normal" }

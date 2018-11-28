@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmInternalInbox",
+	"pools" : [
+		 ],
+	"super" : "WABpmMessagesComponent",
+	"type" : "normal" }

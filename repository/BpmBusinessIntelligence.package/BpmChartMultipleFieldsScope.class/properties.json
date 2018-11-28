@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fields" ],
+	"name" : "BpmChartMultipleFieldsScope",
+	"pools" : [
+		 ],
+	"super" : "BpmChartScope",
+	"type" : "normal" }

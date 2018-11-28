@@ -1,0 +1,4 @@
+application
+getApplication
+
+	^definition application

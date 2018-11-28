@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"counter",
+		"iterations" ],
+	"name" : "BpmTaskLoopCounter",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

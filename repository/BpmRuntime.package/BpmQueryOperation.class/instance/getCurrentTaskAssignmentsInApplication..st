@@ -1,0 +1,4 @@
+application
+getCurrentTaskAssignmentsInApplication: appName
+
+	self subclassResponsibility

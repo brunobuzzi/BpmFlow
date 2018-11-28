@@ -1,0 +1,4 @@
+testing
+isServiceTaskNode
+
+	^false

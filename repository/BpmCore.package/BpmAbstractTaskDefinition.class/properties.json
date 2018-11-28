@@ -1,0 +1,17 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"loop",
+		"performers",
+		"expectedExecutionTime",
+		"attachedEvents" ],
+	"name" : "BpmAbstractTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityDefinition",
+	"type" : "normal" }

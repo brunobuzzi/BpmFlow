@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getTargetId" : "BrunoBB 03/05/2017 11:30",
+		"hostNode" : "BrunoBB 03/05/2017 11:30",
+		"hostNode:" : "BrunoBB 03/05/2017 11:30",
+		"inTransitions" : "BrunoBB 03/05/2017 11:30",
+		"inTransitions:" : "BrunoBB 03/05/2017 11:30",
+		"initialize" : "BrunoBB 03/05/2017 11:30",
+		"isIntermediateEventNode" : "BrunoBB 03/05/2017 11:30",
+		"outTransitions" : "BrunoBB 03/05/2017 11:30",
+		"outTransitions:" : "BrunoBB 03/05/2017 11:30",
+		"setInternalAttributesWithNode:" : "brunobb 07/31/2017 05:54" } }

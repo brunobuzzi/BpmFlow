@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"unassignedTask" ],
+	"name" : "WABpmUnassignedTaskBrowser",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

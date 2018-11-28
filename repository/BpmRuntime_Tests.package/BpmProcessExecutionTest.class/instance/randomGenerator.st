@@ -1,0 +1,4 @@
+random values
+randomGenerator
+
+	^ApplicationBasicValuesGenerator

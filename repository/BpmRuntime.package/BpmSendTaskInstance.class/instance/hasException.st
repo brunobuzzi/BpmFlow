@@ -1,0 +1,4 @@
+other
+hasException
+
+	^sendException notNi

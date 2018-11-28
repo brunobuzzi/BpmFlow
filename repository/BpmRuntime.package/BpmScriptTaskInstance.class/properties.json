@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scriptVariables",
+		"scriptBlock" ],
+	"name" : "BpmScriptTaskInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmActivityInstance",
+	"type" : "normal" }

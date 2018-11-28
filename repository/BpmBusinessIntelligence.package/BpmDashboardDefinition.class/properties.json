@@ -1,0 +1,21 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"description",
+		"isActive",
+		"items",
+		"isPrivate",
+		"owner",
+		"creationTime",
+		"bpmEnvironment" ],
+	"name" : "BpmDashboardDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

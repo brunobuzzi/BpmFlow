@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAExistingDashboardPopupComponent",
+	"pools" : [
+		 ],
+	"super" : "WADashboardPopupComponent",
+	"type" : "normal" }

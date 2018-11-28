@@ -1,0 +1,1 @@
+When try to remove a running Gateway that is not running the receiver is signaled

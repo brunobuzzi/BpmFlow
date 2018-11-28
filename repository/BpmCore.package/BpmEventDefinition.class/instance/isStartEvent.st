@@ -1,0 +1,4 @@
+other
+isStartEvent
+
+	^cycle isStartEvent

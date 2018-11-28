@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addChartToDashboard:" : "brunobb 09/27/2018 09:57",
+		"createDashboard" : "brunobb 09/27/2018 09:57",
+		"createReverseTranslation" : "brunobb 09/28/2018 11:38",
+		"getRecursionFrom:" : "brunobb 09/28/2018 11:36",
+		"renderHasFixedDatesCheckboxOn:" : "brunobb 09/28/2018 09:13",
+		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 09/27/2018 09:57",
+		"renderRecursionComboOn:" : "brunobb 09/28/2018 11:39" } }

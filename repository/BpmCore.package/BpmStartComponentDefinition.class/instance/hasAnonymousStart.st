@@ -1,0 +1,3 @@
+Accessing
+hasAnonymousStart
+	^hasAnonymousStart

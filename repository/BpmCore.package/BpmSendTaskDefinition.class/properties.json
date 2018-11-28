@@ -1,0 +1,20 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 10/17/2018 09:00",
+	"instvars" : [
+		"appName",
+		"processName",
+		"gatewayName",
+		"eventName",
+		"processIdField",
+		"identificationFields",
+		"fieldNamesToSet" ],
+	"name" : "BpmSendTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTaskDefinition",
+	"type" : "normal" }

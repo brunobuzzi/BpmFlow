@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"xmlDocument" ],
+	"name" : "BpmServiceException",
+	"pools" : [
+		 ],
+	"super" : "OrbeonBpmException",
+	"type" : "normal" }

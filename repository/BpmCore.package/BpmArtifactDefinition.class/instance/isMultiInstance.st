@@ -1,0 +1,4 @@
+testing
+isMultiInstance
+
+	^false

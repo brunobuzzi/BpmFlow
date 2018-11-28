@@ -1,0 +1,4 @@
+performers
+removeLastWorker
+
+	^task removeLastWorker

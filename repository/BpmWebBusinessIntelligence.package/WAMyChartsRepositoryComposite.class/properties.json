@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAMyChartsRepositoryComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmChartRepositoryComposite",
+	"type" : "normal" }

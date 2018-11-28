@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"absoluteRectangleIncludesActivity:" : "brunobb 11/06/2018 06:56",
+		"addAllXpdlObject:" : "brunobb 11/06/2018 06:56",
+		"getAbsoluteRectangle" : "brunobb 11/06/2018 06:56",
+		"getAnyObjectNamed:ifNone:" : "brunobb 11/06/2018 06:56",
+		"getEventsNodes" : "brunobb 11/06/2018 06:56",
+		"getGatewayNodes" : "brunobb 11/06/2018 06:56",
+		"getRelativeRectangle" : "brunobb 11/06/2018 06:56",
+		"getScriptNodes" : "brunobb 11/06/2018 06:56",
+		"getSubProcessNodes" : "brunobb 11/06/2018 06:56",
+		"getTaskNodes" : "brunobb 11/06/2018 06:56",
+		"getXcoordinate" : "brunobb 11/06/2018 06:56",
+		"getYcoordinate" : "brunobb 11/06/2018 06:56",
+		"hasEventNamed:" : "brunobb 11/06/2018 06:56",
+		"hasGatewayNamed:" : "brunobb 11/06/2018 06:56",
+		"hasScriptNamed:" : "brunobb 11/06/2018 06:56",
+		"hasSubProcessTaskNamed:" : "brunobb 11/06/2018 06:56",
+		"hasTaskNamed:" : "brunobb 11/06/2018 06:56",
+		"initialize" : "brunobb 11/06/2018 06:56",
+		"pool" : "brunobb 11/06/2018 06:56",
+		"pool:" : "brunobb 11/06/2018 06:56",
+		"rectangleIncludesActivity:" : "brunobb 11/06/2018 06:56",
+		"workflow" : "brunobb 11/06/2018 06:56",
+		"xpdlObjects" : "brunobb 11/06/2018 06:56",
+		"xpdlObjects:" : "brunobb 11/06/2018 06:56" } }

@@ -1,0 +1,4 @@
+other
+result
+
+	^result

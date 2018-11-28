@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"eventDefinition" ],
+	"name" : "BpmEventComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

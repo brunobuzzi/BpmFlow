@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"timeStamp",
+		"title",
+		"notification" ],
+	"name" : "BpmNotification",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

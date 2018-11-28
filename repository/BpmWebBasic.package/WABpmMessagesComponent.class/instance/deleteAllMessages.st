@@ -1,0 +1,4 @@
+other
+deleteAllMessages
+
+	self subclassResponsibility

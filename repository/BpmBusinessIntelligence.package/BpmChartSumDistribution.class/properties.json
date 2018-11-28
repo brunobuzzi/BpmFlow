@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmChartSumDistribution",
+	"pools" : [
+		 ],
+	"super" : "BpmChartDistributionType",
+	"type" : "normal" }

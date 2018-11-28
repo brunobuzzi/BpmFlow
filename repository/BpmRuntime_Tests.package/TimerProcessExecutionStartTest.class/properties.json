@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TimerProcessExecutionStartTest",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessExecutionTest",
+	"type" : "normal" }

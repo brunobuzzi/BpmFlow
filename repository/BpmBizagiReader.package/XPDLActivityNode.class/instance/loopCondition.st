@@ -1,0 +1,3 @@
+Accessing
+loopCondition
+	^loopCondition

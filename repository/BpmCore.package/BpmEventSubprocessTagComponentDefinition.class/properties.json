@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isNonInterrupt" ],
+	"name" : "BpmEventSubprocessTagComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTagComponentDefinition",
+	"type" : "normal" }

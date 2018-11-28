@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmNoneTaskLoop",
+	"pools" : [
+		 ],
+	"super" : "BpmTaskLoop",
+	"type" : "normal" }

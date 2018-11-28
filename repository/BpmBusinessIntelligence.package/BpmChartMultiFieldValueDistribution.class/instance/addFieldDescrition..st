@@ -1,0 +1,4 @@
+other
+addFieldDescrition: anBpmReportFieldDescriptor
+
+	^fieldsCollection add: anBpmReportFieldDescriptor

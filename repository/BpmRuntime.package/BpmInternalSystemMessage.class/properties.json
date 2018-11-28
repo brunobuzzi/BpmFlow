@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmInternalSystemMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmInternalMessageCategory",
+	"type" : "normal" }

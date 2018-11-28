@@ -1,0 +1,4 @@
+other
+isCreated
+
+	^self hasForm

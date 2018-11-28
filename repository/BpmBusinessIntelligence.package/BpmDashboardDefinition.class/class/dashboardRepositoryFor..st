@@ -1,0 +1,4 @@
+other
+dashboardRepositoryFor: aBpmEnvironment
+
+	^BpmDashboardRepository defaultFor: aBpmEnvironment

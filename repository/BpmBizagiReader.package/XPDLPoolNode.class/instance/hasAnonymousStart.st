@@ -1,0 +1,4 @@
+other
+hasAnonymousStart
+
+	^workflow hasAnonymousStart

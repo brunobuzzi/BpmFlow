@@ -1,0 +1,20 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"itemDefinition",
+		"startDate",
+		"endDate",
+		"values",
+		"creationTime",
+		"isClosed",
+		"report" ],
+	"name" : "BpmDashboardInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

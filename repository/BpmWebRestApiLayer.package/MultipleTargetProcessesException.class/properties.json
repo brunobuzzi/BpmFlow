@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MultipleTargetProcessesException",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceException",
+	"type" : "normal" }

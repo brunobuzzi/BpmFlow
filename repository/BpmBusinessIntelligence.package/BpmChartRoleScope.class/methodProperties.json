@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"newOn:applicationName:" : "brunobb 05/25/2018 08:32",
+		"newOn:applicationName:role:" : "brunobb 05/25/2018 08:34",
+		"newOn:role:" : "brunobb 05/25/2018 08:33",
+		"scopeName" : "brunobb 05/25/2018 08:32" },
+	"instance" : {
+		"applicationName" : "brunobb 05/25/2018 08:32",
+		"applicationName:" : "brunobb 05/25/2018 08:32",
+		"createAverageTimeDistributionReport" : "brunobb 05/25/2018 09:19",
+		"createNumberOfUserInTimeReport" : "brunobb 05/31/2018 08:25",
+		"getDistributionOptions" : "brunobb 05/31/2018 09:39",
+		"hasSpecificRole" : "brunobb 05/25/2018 08:35",
+		"role" : "brunobb 05/25/2018 08:32",
+		"role:" : "brunobb 05/25/2018 08:32",
+		"roleName" : "brunobb 06/11/2018 11:18" } }

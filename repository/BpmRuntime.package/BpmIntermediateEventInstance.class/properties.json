@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"receivedMessage" ],
+	"name" : "BpmIntermediateEventInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmEventInstance",
+	"type" : "normal" }

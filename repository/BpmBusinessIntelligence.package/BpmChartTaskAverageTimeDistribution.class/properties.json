@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmChartTaskAverageTimeDistribution",
+	"pools" : [
+		 ],
+	"super" : "BpmChartSingleDistribution",
+	"type" : "normal" }

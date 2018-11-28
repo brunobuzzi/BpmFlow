@@ -1,0 +1,4 @@
+application&process
+getFinishedTaskAssignmentsInApplication: appName andProcess: procName
+
+	self subclassResponsibility

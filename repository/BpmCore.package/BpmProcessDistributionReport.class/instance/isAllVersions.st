@@ -1,0 +1,4 @@
+other
+isAllVersions
+
+	^version isNil

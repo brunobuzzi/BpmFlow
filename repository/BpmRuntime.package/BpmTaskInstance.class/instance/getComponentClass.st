@@ -1,0 +1,4 @@
+other
+getComponentClass
+
+	^definition getComponentClass

@@ -1,0 +1,4 @@
+scope
+newChartScopeFor: aBpmChartDefinition
+
+	self subclassResponsibility

@@ -1,0 +1,4 @@
+other
+canCloseAndSend
+
+	^true

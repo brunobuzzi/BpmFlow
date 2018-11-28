@@ -1,0 +1,4 @@
+other
+processIsRunning
+
+	^process isRunning

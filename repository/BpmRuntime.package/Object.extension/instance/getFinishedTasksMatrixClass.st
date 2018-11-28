@@ -1,0 +1,4 @@
+*bpmruntime
+getFinishedTasksMatrixClass
+
+	^self class getFinishedTasksMatrixClass

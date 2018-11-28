@@ -1,0 +1,4 @@
+forms
+formCreatorClass
+
+	^OrbeonSavedFormDefinition

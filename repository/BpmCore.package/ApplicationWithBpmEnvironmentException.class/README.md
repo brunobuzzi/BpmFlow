@@ -1,0 +1,1 @@
+An application that is already in <aBpmEnvironment> can no be assigned to another environment.

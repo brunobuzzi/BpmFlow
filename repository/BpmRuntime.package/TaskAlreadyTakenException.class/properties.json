@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 11/28/2018 06:34",
+	"instvars" : [
+		 ],
+	"name" : "TaskAlreadyTakenException",
+	"pools" : [
+		 ],
+	"super" : "BpmRuntimeException",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+testing
+isActivityNode
+
+	^false

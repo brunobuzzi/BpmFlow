@@ -1,0 +1,1 @@
+When try to remove <aBpmRole> from the system but is not present the receiver is signaled

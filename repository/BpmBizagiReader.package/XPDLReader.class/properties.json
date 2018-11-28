@@ -1,0 +1,16 @@
+{
+	"category" : "BpmBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xpdlDocuments",
+		"xpdlPackages",
+		"importReport" ],
+	"name" : "XPDLReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

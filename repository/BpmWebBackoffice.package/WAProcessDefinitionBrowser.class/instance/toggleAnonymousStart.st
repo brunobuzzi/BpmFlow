@@ -1,0 +1,4 @@
+anonymous start
+toggleAnonymousStart
+
+	selectedLateralItem toggleAnonymousStart

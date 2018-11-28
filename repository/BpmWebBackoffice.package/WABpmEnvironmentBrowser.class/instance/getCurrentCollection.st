@@ -1,0 +1,4 @@
+other
+getCurrentCollection
+
+	^BpmEnvironment cache

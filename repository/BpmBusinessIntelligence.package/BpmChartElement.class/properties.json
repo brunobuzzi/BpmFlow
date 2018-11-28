@@ -1,0 +1,15 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"chartDefinition",
+		"properties" ],
+	"name" : "BpmChartElement",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

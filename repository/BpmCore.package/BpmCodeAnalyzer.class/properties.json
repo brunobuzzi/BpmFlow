@@ -1,0 +1,17 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"blockCode",
+		"codeWarnings",
+		"parser",
+		"infoWarnings" ],
+	"name" : "BpmCodeAnalyzer",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"msgTitle",
+		"msgText",
+		"msgData" ],
+	"name" : "WABpmProcessCreationStaticMessage",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }

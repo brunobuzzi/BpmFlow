@@ -1,0 +1,4 @@
+other
+isGatewayForEventsNode
+
+	^false

@@ -1,0 +1,4 @@
+other
+getTotalTime
+
+	^processInstance getTotalTime

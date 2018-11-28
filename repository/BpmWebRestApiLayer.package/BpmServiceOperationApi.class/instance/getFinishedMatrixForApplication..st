@@ -1,0 +1,4 @@
+other
+getFinishedMatrixForApplication: aString
+
+	^self getFinishedTasksMatrixClass getMatrixForApplicationNamed: aString

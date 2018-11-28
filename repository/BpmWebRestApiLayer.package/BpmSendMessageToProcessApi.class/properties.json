@@ -1,0 +1,18 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processName",
+		"identificationFields",
+		"gatewayName",
+		"eventName",
+		"variablesToSet" ],
+	"name" : "BpmSendMessageToProcessApi",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApi",
+	"type" : "normal" }

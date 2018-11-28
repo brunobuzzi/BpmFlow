@@ -1,0 +1,4 @@
+other
+application
+
+	^definition application

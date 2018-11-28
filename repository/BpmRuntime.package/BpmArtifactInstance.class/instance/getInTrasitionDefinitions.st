@@ -1,0 +1,4 @@
+other
+getInTrasitionDefinitions
+
+	^definition inTransitions

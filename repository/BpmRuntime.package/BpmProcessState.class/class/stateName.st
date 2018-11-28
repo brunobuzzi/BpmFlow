@@ -1,0 +1,4 @@
+other
+stateName
+
+	^self subclassResponsibility

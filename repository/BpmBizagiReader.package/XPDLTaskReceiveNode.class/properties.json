@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLTaskReceiveNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLTaskNode",
+	"type" : "normal" }

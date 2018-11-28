@@ -1,0 +1,4 @@
+assignation
+isAutomatic
+
+	^false

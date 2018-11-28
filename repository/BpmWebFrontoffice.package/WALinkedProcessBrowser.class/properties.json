@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebFrontoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WALinkedProcessBrowser",
+	"pools" : [
+		 ],
+	"super" : "WABpmProcessesBrowser",
+	"type" : "normal" }

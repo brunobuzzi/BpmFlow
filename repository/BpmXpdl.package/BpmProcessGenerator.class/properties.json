@@ -1,0 +1,20 @@
+{
+	"category" : "BpmXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xpdlPackages",
+		"processes",
+		"participants",
+		"processesMapping",
+		"successfulImport",
+		"importResultText",
+		"failedImportProcesses" ],
+	"name" : "BpmProcessGenerator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

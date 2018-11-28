@@ -1,0 +1,4 @@
+testing
+isStartNode
+
+	^false

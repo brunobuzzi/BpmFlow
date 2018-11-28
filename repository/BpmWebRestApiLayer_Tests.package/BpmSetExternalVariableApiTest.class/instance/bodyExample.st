@@ -1,0 +1,20 @@
+other
+bodyExample
+
+	^'<setvariables>
+	<query>
+		<number>
+			<task-1>
+				<taskOnevalue>98</taskOnevalue>
+			</task-1>
+		</number>
+	</query>
+	<externalvariables>
+		<boolean>
+			<approved>false</approved>
+		</boolean>
+		<number>
+			<amount>20</amount>
+		</number>
+	</externalvariables>
+</setvariables>'

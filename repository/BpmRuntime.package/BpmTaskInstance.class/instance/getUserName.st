@@ -1,0 +1,4 @@
+other
+getUserName
+
+	^self subclassResponsibility

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"value" ],
+	"name" : "BpmDashboardConstantDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmDashboardItemDefinition",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+hasPerformers
+
+	^performers notEmpty

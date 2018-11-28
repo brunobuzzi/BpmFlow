@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAProcessBackofficePortal",
+	"pools" : [
+		 ],
+	"super" : "SEWAFApplicationPortal",
+	"type" : "normal" }

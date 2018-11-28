@@ -1,0 +1,4 @@
+other
+addFieldDistribution: aBpmFieldDistributionReport
+
+	^fieldDistributions add: aBpmFieldDistributionReport

@@ -1,0 +1,19 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"centralUser",
+		"roles",
+		"userOptions",
+		"rolesAssociation",
+		"inboxes",
+		"outboxes" ],
+	"name" : "BpmUser",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

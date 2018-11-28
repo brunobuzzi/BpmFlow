@@ -1,0 +1,16 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"application",
+		"role" ],
+	"name" : "BpmUserGrantConfiguration",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

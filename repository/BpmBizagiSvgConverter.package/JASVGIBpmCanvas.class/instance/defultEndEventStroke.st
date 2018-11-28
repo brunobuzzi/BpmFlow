@@ -1,0 +1,4 @@
+default values
+defultEndEventStroke
+
+	^'darkblue'

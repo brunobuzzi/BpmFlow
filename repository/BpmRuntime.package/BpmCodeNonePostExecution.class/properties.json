@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmCodeNonePostExecution",
+	"pools" : [
+		 ],
+	"super" : "BpmCodePostExecution",
+	"type" : "normal" }

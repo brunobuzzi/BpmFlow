@@ -1,0 +1,4 @@
+other
+isForSpecificVersion
+
+	^version notNil

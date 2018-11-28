@@ -1,0 +1,4 @@
+other
+isSingleChart
+
+	^false

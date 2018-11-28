@@ -1,0 +1,4 @@
+other
+hasWarinings
+
+	^codeWarnings notEmpty

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"token" ],
+	"name" : "BpmGetXmlDataFromTokenApi",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApi",
+	"type" : "normal" }

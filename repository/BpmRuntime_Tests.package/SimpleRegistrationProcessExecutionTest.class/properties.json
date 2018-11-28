@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "BrunoBB 04/19/2016 15:10",
+	"instvars" : [
+		 ],
+	"name" : "SimpleRegistrationProcessExecutionTest",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessExecutionTest",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+getFieldsNames
+
+	^externalObject getFieldsNames

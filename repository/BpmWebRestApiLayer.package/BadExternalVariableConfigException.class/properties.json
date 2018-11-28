@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BadExternalVariableConfigException",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceException",
+	"type" : "normal" }

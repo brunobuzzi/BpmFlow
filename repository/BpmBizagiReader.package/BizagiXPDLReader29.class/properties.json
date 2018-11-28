@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BizagiXPDLReader29",
+	"pools" : [
+		 ],
+	"super" : "BizagiXPDLReader",
+	"type" : "normal" }

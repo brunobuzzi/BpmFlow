@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 11/28/2018 06:29",
+	"instvars" : [
+		 ],
+	"name" : "BasicUserBoxNotFoundException",
+	"pools" : [
+		 ],
+	"super" : "BpmRuntimeException",
+	"type" : "normal" }

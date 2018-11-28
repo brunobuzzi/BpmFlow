@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subProcessDefinition",
+		"isEmbedded" ],
+	"name" : "BpmSubProcessTaskDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmAbstractTaskDefinition",
+	"type" : "normal" }

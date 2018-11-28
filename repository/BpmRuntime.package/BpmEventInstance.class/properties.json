@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"trigger",
+		"attachedTask",
+		"executions" ],
+	"name" : "BpmEventInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmArtifactInstance",
+	"type" : "normal" }

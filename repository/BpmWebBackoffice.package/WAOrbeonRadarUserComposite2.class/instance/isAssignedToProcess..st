@@ -1,0 +1,4 @@
+other
+isAssignedToProcess: anOrbeonFormUser
+
+	^false

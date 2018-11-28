@@ -1,0 +1,3 @@
+Accessing
+transitionsHeight
+	^transitionsHeight

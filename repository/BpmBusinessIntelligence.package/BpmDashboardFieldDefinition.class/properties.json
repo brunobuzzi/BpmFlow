@@ -1,0 +1,17 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"applicationName",
+		"processName",
+		"fieldName",
+		"itemConditionBlock" ],
+	"name" : "BpmDashboardFieldDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmDashboardItemDefinition",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmServiceOperationApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonServiceOperationApi",
+	"type" : "normal" }

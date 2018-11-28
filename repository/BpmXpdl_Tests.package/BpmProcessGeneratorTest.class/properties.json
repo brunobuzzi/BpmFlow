@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdl_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processGenerator" ],
+	"name" : "BpmProcessGeneratorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

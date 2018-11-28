@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmSetExternalVariableApiTest",
+	"pools" : [
+		 ],
+	"super" : "BpmServiceOperationApiTest",
+	"type" : "normal" }

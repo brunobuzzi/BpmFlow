@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"collectValuesOf:in:" : "brunobb 10/17/2018 09:44",
+		"createInterProcessMessageFor:" : "brunobb 11/26/2018 08:13",
+		"hasException" : "brunobb 10/18/2018 10:27",
+		"message" : "brunobb 10/17/2018 12:38",
+		"message:" : "brunobb 10/17/2018 12:38",
+		"performInitializationOn:" : "brunobb 10/29/2018 11:18",
+		"sendException" : "brunobb 10/18/2018 10:27",
+		"sendException:" : "brunobb 10/18/2018 10:27" } }

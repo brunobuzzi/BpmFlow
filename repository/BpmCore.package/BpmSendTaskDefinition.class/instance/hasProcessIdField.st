@@ -1,0 +1,4 @@
+other
+hasProcessIdField
+
+	^processIdField notNil

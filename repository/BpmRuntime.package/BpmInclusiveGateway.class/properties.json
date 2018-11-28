@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "BrunoBB 11/24/2015 13:13",
+	"instvars" : [
+		 ],
+	"name" : "BpmInclusiveGateway",
+	"pools" : [
+		 ],
+	"super" : "BpmGatewayInstance",
+	"type" : "normal" }

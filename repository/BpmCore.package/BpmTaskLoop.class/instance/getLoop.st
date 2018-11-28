@@ -1,0 +1,4 @@
+other
+getLoop
+
+	self subclassResponsibility

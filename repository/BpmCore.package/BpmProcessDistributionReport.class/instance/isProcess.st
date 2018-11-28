@@ -1,0 +1,4 @@
+other
+isProcess
+
+	^true

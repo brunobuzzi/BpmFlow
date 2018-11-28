@@ -1,0 +1,4 @@
+other
+hasImportedProcesses
+
+	^processGenerator hasImportedProcesses

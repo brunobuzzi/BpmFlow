@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"modifyStartDateOnUpdate" ],
+	"name" : "BpmDashboardRecursionDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

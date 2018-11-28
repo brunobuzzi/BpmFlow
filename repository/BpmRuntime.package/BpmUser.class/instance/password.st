@@ -1,0 +1,3 @@
+Accessing
+password
+	^centralUser password

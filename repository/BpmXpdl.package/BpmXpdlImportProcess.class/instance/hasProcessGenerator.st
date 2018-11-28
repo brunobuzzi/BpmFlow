@@ -1,0 +1,4 @@
+other
+hasProcessGenerator
+
+	^processGenerator notNil

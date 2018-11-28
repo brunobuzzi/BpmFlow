@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"newForDashboard:" : "brunobb 09/26/2018 05:18" },
+	"instance" : {
+		"dashboardInstances" : "brunobb 09/26/2018 05:18",
+		"dashboardInstances:" : "brunobb 09/26/2018 05:18",
+		"definition" : "brunobb 09/26/2018 05:18",
+		"definition:" : "brunobb 09/26/2018 05:18",
+		"getNextDashboardInstance:" : "brunobb 10/01/2018 06:02",
+		"getPreviousDashboardInstance:" : "brunobb 10/01/2018 06:03",
+		"hasFixedDates" : "brunobb 09/26/2018 05:18",
+		"hasFixedDates:" : "brunobb 09/26/2018 05:18",
+		"initialize" : "brunobb 09/26/2018 05:19",
+		"isDayOutDated:" : "brunobb 09/26/2018 05:20",
+		"isMonthOutDated:" : "brunobb 09/26/2018 05:20",
+		"isOutDated" : "brunobb 09/26/2018 05:19",
+		"isWeekOutDated:" : "brunobb 09/26/2018 05:21",
+		"isYearOutDated:" : "brunobb 09/26/2018 05:21",
+		"lastDashboardInstanceOrNil" : "brunobb 09/26/2018 05:18",
+		"lastUpdate" : "brunobb 09/26/2018 05:18",
+		"modifyStartDateOnUpdate" : "brunobb 09/26/2018 05:40",
+		"printLastUpdate" : "brunobb 09/26/2018 05:18",
+		"printRecursionName" : "brunobb 09/27/2018 06:03",
+		"recursion" : "brunobb 09/26/2018 05:18",
+		"recursion:" : "brunobb 09/26/2018 05:18",
+		"removeInstance:" : "brunobb 09/26/2018 05:18",
+		"storeInstance:" : "brunobb 09/26/2018 05:18",
+		"updateStartDate:" : "brunobb 09/26/2018 05:55" } }

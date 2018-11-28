@@ -1,0 +1,4 @@
+tasks
+getExecutedArtifactsReversed
+
+	^executedActivities reverse

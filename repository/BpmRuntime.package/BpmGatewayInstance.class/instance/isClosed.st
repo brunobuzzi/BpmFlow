@@ -1,0 +1,3 @@
+Accessing
+isClosed
+	^isClosed

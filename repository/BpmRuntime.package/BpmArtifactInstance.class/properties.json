@@ -1,0 +1,23 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definition",
+		"id",
+		"process",
+		"inTransitions",
+		"outTransitions",
+		"creationTime",
+		"state",
+		"exceptions",
+		"endTime",
+		"parentArtifact" ],
+	"name" : "BpmArtifactInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

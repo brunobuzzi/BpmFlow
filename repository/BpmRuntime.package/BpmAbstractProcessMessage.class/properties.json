@@ -1,0 +1,22 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"receiverProcessName",
+		"receiverAppName",
+		"receiverProcessId",
+		"receiverIdentificationFields",
+		"receiverProcessDefinition",
+		"receiverGatewayName",
+		"receiverEventName",
+		"variablesToSet",
+		"targetProcesses" ],
+	"name" : "BpmAbstractProcessMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

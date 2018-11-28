@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmFieldValueHolder",
+	"pools" : [
+		 ],
+	"super" : "AppFieldValueHolder",
+	"type" : "normal" }

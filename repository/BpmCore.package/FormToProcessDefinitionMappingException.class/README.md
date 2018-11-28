@@ -1,0 +1,1 @@
+In order to perform an anonymous start of a process there's must be a mapping between the filled form (form name, application name) with <aBpmProcessDefinition>

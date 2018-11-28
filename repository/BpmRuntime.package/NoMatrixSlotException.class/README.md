@@ -1,0 +1,1 @@
+When a Matrix has no slot for a <rolename> the receiver is signaled

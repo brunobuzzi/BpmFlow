@@ -1,0 +1,3 @@
+Accessing
+result
+	^result

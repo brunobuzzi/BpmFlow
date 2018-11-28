@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"appName" : "brunobb 10/17/2018 09:00",
+		"appName:" : "brunobb 10/17/2018 09:00",
+		"eventName" : "brunobb 10/17/2018 09:12",
+		"eventName:" : "brunobb 10/17/2018 09:12",
+		"fieldNamesToSet" : "brunobb 10/17/2018 09:15",
+		"fieldNamesToSet:" : "brunobb 10/17/2018 09:15",
+		"gatewayName" : "brunobb 10/17/2018 09:09",
+		"gatewayName:" : "brunobb 10/17/2018 09:09",
+		"hasProcessIdField" : "brunobb 10/16/2018 10:18",
+		"identificationFields" : "brunobb 10/16/2018 10:47",
+		"identificationFields:" : "brunobb 10/16/2018 10:47",
+		"processIdField" : "brunobb 10/16/2018 10:18",
+		"processIdField:" : "brunobb 10/16/2018 10:18",
+		"processName" : "brunobb 10/17/2018 09:00",
+		"processName:" : "brunobb 10/17/2018 09:00" } }

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"forms",
+		"formsHistory",
+		"requestCache" ],
+	"name" : "OrbeonFormPostRegistry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"creatorEvent" : "BrunoBB 12/01/2015 12:09",
+		"creatorEvent:" : "BrunoBB 12/01/2015 12:09",
+		"creatorTask" : "BrunoBB 12/01/2015 12:09",
+		"creatorTask:" : "BrunoBB 12/01/2015 12:09",
+		"finalizeWith:" : "BrunoBB 12/02/2015 14:09",
+		"getContextApplications" : "BrunoBB 12/06/2015 13:10",
+		"getProcessTree:" : "BrunoBB 03/23/2016 14:30",
+		"getTopProcess" : "BrunoBB 03/23/2016 14:01",
+		"inheritContextApplications" : "BrunoBB 12/06/2015 12:51",
+		"inheritContextApplications:" : "BrunoBB 12/06/2015 12:51",
+		"initialize" : "BrunoBB 12/06/2015 12:51",
+		"isSubProcess" : "BrunoBB 12/01/2015 12:53",
+		"parentProcess" : "BrunoBB 11/29/2015 16:17",
+		"parentProcess:" : "BrunoBB 11/29/2015 16:17",
+		"printAndContext" : "BrunoBB 12/28/2015 11:43",
+		"printOrContext" : "BrunoBB 12/28/2015 11:43" } }
