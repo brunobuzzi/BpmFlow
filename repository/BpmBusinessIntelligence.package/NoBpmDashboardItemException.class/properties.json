@@ -10,5 +10,5 @@
 	"name" : "NoBpmDashboardItemException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "BpmRuntimeException",
 	"type" : "normal" }
