@@ -30,7 +30,8 @@ baseline: spec
 		spec baseline: 'OrbeonPersistenceLayer' with: [
 			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository' ].
 		spec baseline: 'Seaside3' with: [
-			spec repository: 'github://GsDevKit/Seaside31:gs_master/repository' ].
+			spec loads: #('Core' 'REST' 'Seaside-Tools-Web');
+				repository: 'github://GsDevKit/Seaside31:gs_master/repository' ].
 		spec baseline: 'Sewaf' with: [
 			spec repository: 'github://brunobuzzi/SEWAF:master/repository' ].
 "		spec baseline: 'HighchartsSt' with: [
