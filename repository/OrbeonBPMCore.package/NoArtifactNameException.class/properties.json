@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "brunobb 11/28/2018 06:18",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "NoBpmNameException",
+	"name" : "NoArtifactNameException",
 	"pools" : [
 		 ],
 	"super" : "BpmCoreException",

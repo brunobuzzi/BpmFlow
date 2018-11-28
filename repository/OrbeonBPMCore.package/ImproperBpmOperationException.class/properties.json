@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "brunobb 11/28/2018 06:17",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmImproperOperationException",
+	"name" : "ImproperBpmOperationException",
 	"pools" : [
 		 ],
 	"super" : "BpmCoreException",

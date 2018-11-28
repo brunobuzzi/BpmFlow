@@ -1,8 +1,0 @@
-{
-	"class" : {
-		"on:signal:" : "brunobb 11/20/2018 03:18" },
-	"instance" : {
-		"bpmArtifact" : "brunobb 11/19/2018 11:03",
-		"bpmArtifact:" : "brunobb 11/19/2018 11:03",
-		"defaultAction" : "brunobb 11/20/2018 03:12",
-		"getProcessInstance" : "brunobb 11/19/2018 11:03" } }

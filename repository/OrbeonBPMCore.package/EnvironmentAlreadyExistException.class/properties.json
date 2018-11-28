@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "brunobb 11/20/2018 06:51",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmTimerDefinitionException",
+	"name" : "EnvironmentAlreadyExistException",
 	"pools" : [
 		 ],
-	"super" : "BpmCodeException",
+	"super" : "BpmCoreException",
 	"type" : "normal" }

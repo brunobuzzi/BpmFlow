@@ -11,7 +11,7 @@ testExecuteProcess_non_block_condition
 	"The non boolean result will produce an exception"
 	[[self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_boolean_exit on: procInstance]
 		on: EvaluationNotBlockException 
-		do: [:ex | ex pass. self assert: procInstance isPaused.] ] on: NoNextArtifactBpmException do: [:ex | ex pass. self assert: true].
+		do: [:ex | ex pass. self assert: procInstance isPaused.] ] on: NoNextArtifactException do: [:ex | ex pass. self assert: true].
 	self assert: procInstance isPaused.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Gateway Evaluation"
@@ -19,5 +19,5 @@ testExecuteProcess_non_block_condition
 	self assert: (gateway getDefinitionName = 'gateway split').
 	self assert: procInstance isPaused.
 
-	"The gateway has an invalid condition --> the process is paused --> the gateway has no next transition --> NoNextArtifactBpmException --> message to the user"
+	"The gateway has an invalid condition --> the process is paused --> the gateway has no next transition --> NoNextArtifactException --> message to the user"
 	self assert: (((self getUserNamed: 'alberto') getSystemNotificationsIn: procInstance bpmEnvironment) anySatisfy: [:each | each processId = procInstance processId])

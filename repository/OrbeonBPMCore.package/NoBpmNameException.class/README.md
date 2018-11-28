@@ -1,1 +1,0 @@
-For some business objects is mandatory to have a name

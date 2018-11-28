@@ -1,1 +1,0 @@
-Timer definition must be a valid Smalltalk block.
