@@ -1,4 +1,0 @@
-other
-isForSpecificVersion
-
-	^version notNil

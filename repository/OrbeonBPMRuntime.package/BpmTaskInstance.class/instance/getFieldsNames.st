@@ -1,4 +1,0 @@
-other
-getFieldsNames
-
-	^externalObject getFieldsNames

@@ -1,4 +1,0 @@
-other
-deleteMessage: aBpmInternalMessage
-
-	self subclassResponsibility

@@ -1,4 +1,0 @@
-other
-beNonInterrupt
-
-	isNonInterrupt := true.

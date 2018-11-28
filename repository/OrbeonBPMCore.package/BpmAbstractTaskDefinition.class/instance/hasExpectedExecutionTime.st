@@ -1,4 +1,0 @@
-other
-hasExpectedExecutionTime
-
-	^expectedExecutionTime notNil

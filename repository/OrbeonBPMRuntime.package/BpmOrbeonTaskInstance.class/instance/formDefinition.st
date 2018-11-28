@@ -1,4 +1,0 @@
-other
-formDefinition
-
-	^externalObject definition

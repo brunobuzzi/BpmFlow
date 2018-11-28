@@ -1,4 +1,0 @@
-other
-isAnonymousStartEnabled
-
-	^definition isAnonymousStartEnabled

@@ -1,4 +1,0 @@
-other
-expectedResultValues
-
-	^Dictionary new

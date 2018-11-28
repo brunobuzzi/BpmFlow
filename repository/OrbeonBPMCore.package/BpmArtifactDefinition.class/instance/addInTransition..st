@@ -1,4 +1,0 @@
-transitions
-addInTransition: aBpmTransitionDefinition
-
-	^inTransitions add: aBpmTransitionDefinition

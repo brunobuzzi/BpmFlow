@@ -1,4 +1,0 @@
-*orbeonBPMRuntime
-instanceClass
-
-	^cycle instanceClass

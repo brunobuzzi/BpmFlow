@@ -1,4 +1,0 @@
-other
-createDistributionReport
-
-	self subclassResponsibility

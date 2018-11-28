@@ -1,4 +1,0 @@
-other
-isEmbedded
-
-	^parentWorkflow notNil

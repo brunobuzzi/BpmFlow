@@ -1,4 +1,0 @@
-report distribution
-getProcessInstancesDistribution
-
-	^BpmProcessDefinition reportProcessInstancesQuantityDistributionFor: applicationName

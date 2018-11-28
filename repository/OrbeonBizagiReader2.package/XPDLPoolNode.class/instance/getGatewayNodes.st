@@ -1,4 +1,0 @@
-searching
-getGatewayNodes
-
-	^workflow getGatewayNodes

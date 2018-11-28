@@ -1,4 +1,0 @@
-application
-getFinishedTaskAssignmentsInApplication: appName
-
-	self subclassResponsibility

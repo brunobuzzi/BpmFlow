@@ -1,4 +1,0 @@
-other
-processDefinition
-
-	^eventDefinition processDefinition

@@ -1,4 +1,0 @@
-execution
-isRunning
-
-	^false

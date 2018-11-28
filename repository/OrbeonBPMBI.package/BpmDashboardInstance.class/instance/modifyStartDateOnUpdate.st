@@ -1,4 +1,0 @@
-other
-modifyStartDateOnUpdate
-
-	^itemDefinition modifyStartDateOnUpdate

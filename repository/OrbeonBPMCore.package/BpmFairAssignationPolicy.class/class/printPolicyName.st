@@ -1,4 +1,0 @@
-other
-printPolicyName
-
-	^'Fair Policy'

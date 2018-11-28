@@ -1,4 +1,0 @@
-other
-canCloseAndSend
-
-	^true

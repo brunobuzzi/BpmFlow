@@ -1,4 +1,0 @@
-other
-hasException
-
-	^sendException notNi

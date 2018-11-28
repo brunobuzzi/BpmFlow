@@ -1,4 +1,0 @@
-other
-isEndEvent
-
-	^cycle isEndEvent

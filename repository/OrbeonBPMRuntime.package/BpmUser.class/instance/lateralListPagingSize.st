@@ -1,4 +1,0 @@
-user preferences
-lateralListPagingSize
-
-	^userOptions lateralListPagingSize

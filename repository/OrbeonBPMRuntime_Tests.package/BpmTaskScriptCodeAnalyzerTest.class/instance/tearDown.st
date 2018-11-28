@@ -1,4 +1,0 @@
-other
-tearDown
-
-	analyzer := nil

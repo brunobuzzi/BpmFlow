@@ -1,5 +1,0 @@
-other
-generateNextRunningTransitionsFromEvent: aBpmIntermediateEventInstance
-	""
-
-	^aBpmIntermediateEventInstance generateNextTranstionsForExclusiveEventGateway: self

@@ -1,4 +1,0 @@
-other
-selectedEnvironment
-
-	^parent selectedLateralItem

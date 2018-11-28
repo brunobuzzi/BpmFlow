@@ -1,3 +1,0 @@
-other
-processId
-	^0

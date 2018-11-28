@@ -1,4 +1,0 @@
-*orbeonBPMXpdl
-getCycleComponentDefinitionClass
-
-	self subclassResponsibility

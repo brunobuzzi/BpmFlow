@@ -1,4 +1,0 @@
-other
-printAssignmentDate
-
-	^creationDate printString

@@ -1,4 +1,0 @@
-other
-roleName
-
-	^role name

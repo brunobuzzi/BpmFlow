@@ -1,4 +1,0 @@
-responsibility
-numberOfUsers
-
-	^users size

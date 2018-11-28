@@ -1,4 +1,0 @@
-other
-getProcessInstancesXtitle
-
-	^'Process Name'

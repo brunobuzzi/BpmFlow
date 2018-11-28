@@ -1,1 +1,0 @@
-When try to remove a non existing external variable the receiver is signaled

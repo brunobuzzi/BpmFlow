@@ -1,1 +1,0 @@
-Check if a process can be started by anonynous user.

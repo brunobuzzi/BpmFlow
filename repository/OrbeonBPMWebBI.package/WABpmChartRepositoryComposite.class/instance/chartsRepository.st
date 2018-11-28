@@ -1,4 +1,0 @@
-other
-chartsRepository
-
-	^AppChartDefinitionRepository default

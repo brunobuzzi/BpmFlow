@@ -1,4 +1,0 @@
-other
-executeIt
-
-	self subclassResponsibility

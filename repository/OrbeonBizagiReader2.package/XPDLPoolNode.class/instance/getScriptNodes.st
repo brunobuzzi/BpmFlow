@@ -1,4 +1,0 @@
-searching
-getScriptNodes
-
-	^workflow getScriptNodes

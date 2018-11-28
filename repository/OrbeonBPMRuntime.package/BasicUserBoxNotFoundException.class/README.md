@@ -1,1 +1,0 @@
-When a basic user box is not present the receiver is signaled

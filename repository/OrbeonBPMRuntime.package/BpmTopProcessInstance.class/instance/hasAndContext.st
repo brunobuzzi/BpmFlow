@@ -1,4 +1,0 @@
-other
-hasAndContext
-
-	^andContextApplications notEmpty

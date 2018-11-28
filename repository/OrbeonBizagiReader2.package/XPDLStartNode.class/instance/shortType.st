@@ -1,4 +1,0 @@
-other
-shortType
-
-	^'Str'

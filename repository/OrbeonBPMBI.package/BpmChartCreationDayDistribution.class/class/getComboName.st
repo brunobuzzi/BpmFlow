@@ -1,4 +1,0 @@
-other
-getComboName
-
-	^'Creation Day'

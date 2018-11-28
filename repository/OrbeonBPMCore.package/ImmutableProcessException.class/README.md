@@ -1,1 +1,0 @@
-New <BpmProcessDefinition> versions can be created only if the previous <BpmProcessDefinition> version is muttable.

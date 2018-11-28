@@ -1,4 +1,0 @@
-distribution
-getCurrentTaskQuantityDistributionIn: aBpmEnvironment
-
-	^self getTaskQuantityDistributionIn: (self getCurrentAssignmentsIn: aBpmEnvironment)

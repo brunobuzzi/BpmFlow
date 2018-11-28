@@ -1,4 +1,0 @@
-processes
-isPinnedProcess: aBpmProcessDefinition
-
-	^userOptions isPinnedProcess: aBpmProcessDefinition

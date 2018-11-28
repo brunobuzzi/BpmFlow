@@ -1,4 +1,0 @@
-other
-getRoleForPerformer: aBpmRoleParticipantDefinition
-
-	^definition getRoleForPerformer: aBpmRoleParticipantDefinition

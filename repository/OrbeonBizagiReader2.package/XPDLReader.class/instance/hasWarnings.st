@@ -1,4 +1,0 @@
-warnings
-hasWarnings
-
-	^importReport notEmpty

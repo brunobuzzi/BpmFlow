@@ -1,4 +1,0 @@
-other
-hasFormatErrors
-
-	^fileFormatErrors notEmpty

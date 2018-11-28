@@ -1,4 +1,0 @@
-other
-isUserInboxSelected
-
-	^selectedInbox = 'User'

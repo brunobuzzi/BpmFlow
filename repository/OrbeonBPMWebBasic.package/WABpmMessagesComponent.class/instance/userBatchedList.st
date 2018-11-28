@@ -1,3 +1,0 @@
-Accessing
-userBatchedList
-	^userBatchedList

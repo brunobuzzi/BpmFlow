@@ -1,4 +1,0 @@
-searching
-getTaskNodes
-
-	^workflow getTaskNodes

@@ -1,4 +1,0 @@
-other
-xmlString
-
-	^definition xmlString

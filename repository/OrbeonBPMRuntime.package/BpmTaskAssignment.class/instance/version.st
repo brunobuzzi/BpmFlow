@@ -1,4 +1,0 @@
-other
-version
-
-	^process version

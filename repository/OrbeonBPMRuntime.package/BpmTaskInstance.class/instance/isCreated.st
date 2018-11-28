@@ -1,4 +1,0 @@
-other
-isCreated
-
-	^self hasForm

@@ -1,4 +1,0 @@
-tasks
-getExecutedScriptsReversed
-
-	^executedScripts reverse

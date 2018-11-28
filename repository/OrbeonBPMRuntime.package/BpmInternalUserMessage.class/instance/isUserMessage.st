@@ -1,4 +1,0 @@
-other
-isUserMessage
-
-	^true

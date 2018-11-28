@@ -1,4 +1,0 @@
-other
-isAllVersions
-
-	^version isNil

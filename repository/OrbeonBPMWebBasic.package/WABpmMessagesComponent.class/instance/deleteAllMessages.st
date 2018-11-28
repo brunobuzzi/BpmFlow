@@ -1,4 +1,0 @@
-other
-deleteAllMessages
-
-	self subclassResponsibility

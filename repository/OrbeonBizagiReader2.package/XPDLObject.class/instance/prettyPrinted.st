@@ -1,4 +1,0 @@
-other
-prettyPrinted
-
-	^xmlSegment prettyPrinted

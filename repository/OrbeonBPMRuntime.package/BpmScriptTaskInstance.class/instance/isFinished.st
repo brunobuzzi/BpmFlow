@@ -1,4 +1,0 @@
-script
-isFinished
-
-	^scriptBlock notNil

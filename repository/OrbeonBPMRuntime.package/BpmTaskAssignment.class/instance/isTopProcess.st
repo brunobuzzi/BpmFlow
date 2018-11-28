@@ -1,4 +1,0 @@
-testing
-isTopProcess
-
-	^process isTopProcess

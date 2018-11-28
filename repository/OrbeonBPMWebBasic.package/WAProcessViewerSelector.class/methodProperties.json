@@ -1,9 +1,0 @@
-{
-	"class" : {
-		"parent:process:" : "brunobb 03/17/2018 13:57" },
-	"instance" : {
-		"downloadXPDL" : "brunobb 03/17/2018 13:58",
-		"renderContentOn:" : "brunobb 03/18/2018 17:43",
-		"selectedProcess" : "brunobb 03/17/2018 13:56",
-		"selectedProcess:" : "brunobb 03/17/2018 13:56",
-		"viewProcessAsSVG" : "brunobb 03/21/2018 15:25" } }

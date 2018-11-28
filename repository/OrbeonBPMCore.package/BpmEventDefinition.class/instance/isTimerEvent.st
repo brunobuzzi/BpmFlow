@@ -1,4 +1,0 @@
-other
-isTimerEvent
-
-	^type isTimerDefinition

@@ -1,4 +1,0 @@
-other
-isMultiInstance
-
-	^loopType = 'MultiInstance'

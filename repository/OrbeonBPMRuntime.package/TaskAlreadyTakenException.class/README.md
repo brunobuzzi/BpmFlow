@@ -1,1 +1,0 @@
-When trying to take an assignment that has been already taken the receiver is signaled

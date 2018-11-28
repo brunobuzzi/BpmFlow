@@ -1,4 +1,0 @@
-other
-getComponentClass
-
-	^definition getComponentClass

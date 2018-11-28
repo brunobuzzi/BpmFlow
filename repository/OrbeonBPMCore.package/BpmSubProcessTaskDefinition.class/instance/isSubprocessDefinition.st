@@ -1,4 +1,0 @@
-other
-isSubprocessDefinition
-
-	^true

@@ -1,4 +1,0 @@
-application
-getApplication
-
-	^definition application

@@ -1,4 +1,0 @@
-random values
-randomGenerator
-
-	^ApplicationBasicValuesGenerator

@@ -1,4 +1,0 @@
-other
-result
-
-	^result

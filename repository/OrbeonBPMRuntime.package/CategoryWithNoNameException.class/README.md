@@ -1,1 +1,0 @@
-Categories must have a name

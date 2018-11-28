@@ -1,2 +1,0 @@
-*orbeonBizagiSvgConverter
-drawOn: aJasvgiBpmCanvas

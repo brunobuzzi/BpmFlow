@@ -1,4 +1,0 @@
-number of
-getNumberOfTransitions
-
-	^executionPath getNumberOfTransitions

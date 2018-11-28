@@ -1,1 +1,0 @@
-Wait until the first event arrive then the receiver is closed.

@@ -1,4 +1,0 @@
-other
-isAssignedToProcess: anOrbeonFormUser
-
-	^false

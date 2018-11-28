@@ -1,4 +1,0 @@
-other
-exceptionDaysSize
-
-	^days size

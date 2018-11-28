@@ -1,1 +1,0 @@
-When trying to grant a user that already has the permission the receiver is signaled

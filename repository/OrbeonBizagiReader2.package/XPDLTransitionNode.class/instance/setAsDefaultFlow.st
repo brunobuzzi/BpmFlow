@@ -1,4 +1,0 @@
-other
-setAsDefaultFlow
-
-	isDefaultFlow := true

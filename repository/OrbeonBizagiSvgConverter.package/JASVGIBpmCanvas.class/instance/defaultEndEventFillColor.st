@@ -1,4 +1,0 @@
-default values
-defaultEndEventFillColor
-
-	^'red'

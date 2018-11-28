@@ -1,4 +1,0 @@
-other
-hasWarnings
-
-	^xpdlReader hasWarnings

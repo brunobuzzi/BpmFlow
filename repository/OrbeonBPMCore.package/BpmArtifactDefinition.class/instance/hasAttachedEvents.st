@@ -1,4 +1,0 @@
-other
-hasAttachedEvents
-
-	^false

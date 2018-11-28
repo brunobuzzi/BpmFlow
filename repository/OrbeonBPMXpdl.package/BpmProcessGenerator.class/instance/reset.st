@@ -1,4 +1,0 @@
-other
-reset
-
-	self initialize.

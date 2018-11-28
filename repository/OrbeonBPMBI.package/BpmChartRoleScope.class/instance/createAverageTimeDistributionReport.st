@@ -1,4 +1,0 @@
-other
-createAverageTimeDistributionReport
-
-	^self distribution createRoleTasksAverageTimeDistributionReport

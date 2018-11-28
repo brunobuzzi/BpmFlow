@@ -1,4 +1,0 @@
-other
-definition
-
-	^self

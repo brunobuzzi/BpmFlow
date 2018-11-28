@@ -1,3 +1,0 @@
-Accessing
-rolesWhoWorked
-	^rolesWhoWorked

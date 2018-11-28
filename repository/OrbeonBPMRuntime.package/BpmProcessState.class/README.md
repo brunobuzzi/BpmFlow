@@ -1,1 +1,0 @@
-These classes are intented for execution purpose and it is outside of BPM standart.

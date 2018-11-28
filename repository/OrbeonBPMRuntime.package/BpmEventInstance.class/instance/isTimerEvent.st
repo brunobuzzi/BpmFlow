@@ -1,4 +1,0 @@
-other
-isTimerEvent
-
-	^definition isTimerEvent

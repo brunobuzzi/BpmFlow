@@ -1,4 +1,0 @@
-performers
-getPerformers
-
-	^definition performers

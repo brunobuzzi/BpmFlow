@@ -1,4 +1,0 @@
-number of
-getNumberOfIntermediateEvents
-
-	^executionPath getNumberOfIntermediateEvents

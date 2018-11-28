@@ -1,4 +1,0 @@
-other
-getApplication
-
-	^process getApplication

@@ -1,4 +1,0 @@
-other
-canUnassign
-
-	^definition canUnassign

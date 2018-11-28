@@ -1,4 +1,0 @@
-other
-indexXpdlFileMapperSize
-
-	^indexXpdlFileMapper size

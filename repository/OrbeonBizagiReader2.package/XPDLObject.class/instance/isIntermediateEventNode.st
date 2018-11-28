@@ -1,4 +1,0 @@
-testing
-isIntermediateEventNode
-
-	^false

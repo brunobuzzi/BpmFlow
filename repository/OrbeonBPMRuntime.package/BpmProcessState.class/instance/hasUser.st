@@ -1,4 +1,0 @@
-other
-hasUser
-
-	^user notNil

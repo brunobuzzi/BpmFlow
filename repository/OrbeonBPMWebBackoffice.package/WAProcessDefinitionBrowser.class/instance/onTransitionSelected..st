@@ -1,4 +1,0 @@
-process
-onTransitionSelected: aBpmTransitionDefinition
-
-	selectedObject := aBpmTransitionDefinition

@@ -1,4 +1,0 @@
-file out
-generateProcessInstanceOutput
-
-	self subclassResponsibility

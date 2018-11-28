@@ -1,4 +1,0 @@
-other
-process
-
-	^assignment process

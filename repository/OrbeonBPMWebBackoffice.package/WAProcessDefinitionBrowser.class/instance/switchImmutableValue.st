@@ -1,4 +1,0 @@
-process
-switchImmutableValue
-
-	selectedLateralItem switchImmutableValue

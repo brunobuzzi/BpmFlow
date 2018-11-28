@@ -1,4 +1,0 @@
-other
-hasPerformers
-
-	^performers notEmpty

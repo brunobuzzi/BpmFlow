@@ -1,4 +1,0 @@
-other
-summaryTitle
-
-	^'Customized Task'

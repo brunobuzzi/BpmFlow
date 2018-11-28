@@ -1,4 +1,0 @@
-other
-hasIFrame
-
-	^orbeonFrame notNil

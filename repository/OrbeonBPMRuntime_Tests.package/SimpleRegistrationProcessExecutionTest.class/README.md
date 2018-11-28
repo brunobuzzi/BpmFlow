@@ -1,1 +1,0 @@
-This is an Anonymous Process. The process is started by an Anonymous User.

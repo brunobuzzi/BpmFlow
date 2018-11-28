@@ -1,4 +1,0 @@
-other
-isSystemInboxSelected
-
-	^selectedInbox = 'System'

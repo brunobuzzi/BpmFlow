@@ -1,4 +1,0 @@
-other
-getObjectModel
-
-	^definition getObjectModel

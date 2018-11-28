@@ -1,4 +1,0 @@
-other
-addToParentProcess
-
-	^self subclassResponsibility

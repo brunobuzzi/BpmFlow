@@ -1,4 +1,0 @@
-other
-refreshDashboard
-
-	selectedLateralItem updateDashboardInstances

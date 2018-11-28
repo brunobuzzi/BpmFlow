@@ -1,4 +1,0 @@
-message
-sendExternalMailToRecipients: recipients
-
-	self notYetImplemented

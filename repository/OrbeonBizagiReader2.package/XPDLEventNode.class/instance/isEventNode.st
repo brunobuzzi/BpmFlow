@@ -1,4 +1,0 @@
-testing
-isEventNode
-
-	^true

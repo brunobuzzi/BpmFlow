@@ -1,4 +1,0 @@
-other
-hasAnonymousStart
-
-	^startNode isAnonymousStart

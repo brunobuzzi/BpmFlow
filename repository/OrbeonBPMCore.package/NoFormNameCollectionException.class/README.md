@@ -1,1 +1,0 @@
-Forms and field values are grouped in collection at <BpmProcessDefinition> level. If the form name does not exist the receiver is signaled.

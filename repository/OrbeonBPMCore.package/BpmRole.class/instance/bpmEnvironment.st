@@ -1,4 +1,0 @@
-other
-bpmEnvironment
-
-	^application bpmEnvironment

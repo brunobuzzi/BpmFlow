@@ -1,4 +1,0 @@
-other
-defaultCategoryClass
-
-	self subclassResponsibility

@@ -1,4 +1,0 @@
-execution
-isAborted
-
-	^true

@@ -1,4 +1,0 @@
-other
-hasProcessGenerator
-
-	^processGenerator notNil

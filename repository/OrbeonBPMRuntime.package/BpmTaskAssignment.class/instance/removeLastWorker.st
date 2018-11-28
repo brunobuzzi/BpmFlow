@@ -1,4 +1,0 @@
-performers
-removeLastWorker
-
-	^task removeLastWorker

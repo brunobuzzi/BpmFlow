@@ -1,1 +1,0 @@
-Field values are grouped in collection at <BpmProcessDefinition> level. If field name does not exist the receiver is signaled.

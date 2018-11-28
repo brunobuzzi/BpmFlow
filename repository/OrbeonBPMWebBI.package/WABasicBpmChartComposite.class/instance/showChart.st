@@ -1,4 +1,0 @@
-other
-showChart
-
-	self setShowChartExecuted

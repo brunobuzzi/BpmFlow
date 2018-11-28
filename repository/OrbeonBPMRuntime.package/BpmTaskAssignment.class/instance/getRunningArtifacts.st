@@ -1,4 +1,0 @@
-execution
-getRunningArtifacts
-
-	^process getRunningArtifacts

@@ -1,3 +1,0 @@
-subprocesses
-getTopProcess
-	^self subclassResponsibility

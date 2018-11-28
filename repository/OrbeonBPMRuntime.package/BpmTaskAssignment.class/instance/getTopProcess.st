@@ -1,4 +1,0 @@
-other
-getTopProcess
-
-	^process getTopProcess

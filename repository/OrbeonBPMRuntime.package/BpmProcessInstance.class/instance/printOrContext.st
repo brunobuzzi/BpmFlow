@@ -1,4 +1,0 @@
-application
-printOrContext
-
-	^self subclassResponsibility

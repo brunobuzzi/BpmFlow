@@ -1,4 +1,0 @@
-extended attributes
-setExtendedAttributes
-
-	^self setExtendedAttributesWithNode: xmlSegment

@@ -1,4 +1,0 @@
-*orbeonBPMRuntime
-getFinishedTasksMatrixClass
-
-	^BpmFinishedTasksMatrix

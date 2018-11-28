@@ -1,4 +1,0 @@
-other
-isNonePolicy
-
-	^false

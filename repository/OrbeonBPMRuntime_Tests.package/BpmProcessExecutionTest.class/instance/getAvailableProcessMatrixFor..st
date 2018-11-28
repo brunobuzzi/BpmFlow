@@ -1,4 +1,0 @@
-task matrix
-getAvailableProcessMatrixFor: aBpmProcessInstance
-
-	^aBpmProcessInstance getAvailableProcessMatrix

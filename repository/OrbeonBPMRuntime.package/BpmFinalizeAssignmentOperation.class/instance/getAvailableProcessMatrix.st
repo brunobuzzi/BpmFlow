@@ -1,4 +1,0 @@
-other
-getAvailableProcessMatrix
-
-	^self process getAvailableProcessMatrix

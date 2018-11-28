@@ -1,4 +1,0 @@
-*orbeonBPMRuntime
-getAvailableTasksMatrixClass
-
-	^self class getAvailableTasksMatrixClass

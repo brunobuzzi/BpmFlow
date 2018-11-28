@@ -1,4 +1,0 @@
-other
-hasWarinings
-
-	^codeWarnings notEmpty

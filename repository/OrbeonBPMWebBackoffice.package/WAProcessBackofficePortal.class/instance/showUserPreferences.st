@@ -1,4 +1,0 @@
-other
-showUserPreferences
-
-	^WABkBpmUserPreference new

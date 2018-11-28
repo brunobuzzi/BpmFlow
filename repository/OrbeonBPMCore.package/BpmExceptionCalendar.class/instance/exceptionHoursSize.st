@@ -1,4 +1,0 @@
-other
-exceptionHoursSize
-
-	^hours size

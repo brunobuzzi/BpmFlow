@@ -1,4 +1,0 @@
-testing
-isComplexGateway
-
-	^type = 'Complex'

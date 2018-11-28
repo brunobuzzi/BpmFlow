@@ -1,4 +1,0 @@
-other
-isDone
-
-	^processInstance hasFinalized

@@ -1,4 +1,0 @@
-other
-printRunningArtifacts
-
-	^task getDefinitionName

@@ -1,4 +1,0 @@
-other
-creatorName
-
-	^process creatorName

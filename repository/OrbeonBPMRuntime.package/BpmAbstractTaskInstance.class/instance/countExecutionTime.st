@@ -1,4 +1,0 @@
-time warnings
-countExecutionTime
-
-	^self expectedExecutionTime countExecutionTimeFrom: creationTime

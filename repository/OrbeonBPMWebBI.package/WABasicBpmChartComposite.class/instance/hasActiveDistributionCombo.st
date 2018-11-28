@@ -1,4 +1,0 @@
-search area
-hasActiveDistributionCombo
-
-	^false

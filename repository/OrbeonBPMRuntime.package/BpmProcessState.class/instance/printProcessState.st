@@ -1,4 +1,0 @@
-execution
-printProcessState
-
-	^self subclassResponsibility

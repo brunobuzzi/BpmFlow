@@ -1,4 +1,0 @@
-other
-isOk
-
-	^objectResult notNil

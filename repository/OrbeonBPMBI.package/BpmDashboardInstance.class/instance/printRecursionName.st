@@ -1,4 +1,0 @@
-other
-printRecursionName
-
-	^itemDefinition printRecursionName

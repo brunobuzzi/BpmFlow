@@ -1,4 +1,0 @@
-other
-printParentName
-
-	^process printParentName

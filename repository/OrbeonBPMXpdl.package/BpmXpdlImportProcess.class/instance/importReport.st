@@ -1,4 +1,0 @@
-other
-importReport
-
-	^xpdlReader importReport

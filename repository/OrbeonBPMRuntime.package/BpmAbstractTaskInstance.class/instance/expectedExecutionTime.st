@@ -1,4 +1,0 @@
-time warnings
-expectedExecutionTime
-
-	^definition expectedExecutionTime

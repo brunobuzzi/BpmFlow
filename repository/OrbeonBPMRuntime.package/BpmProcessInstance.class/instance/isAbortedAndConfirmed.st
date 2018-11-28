@@ -1,4 +1,0 @@
-execution states
-isAbortedAndConfirmed
-
-	^self currentState isAbortedAndConfirmed

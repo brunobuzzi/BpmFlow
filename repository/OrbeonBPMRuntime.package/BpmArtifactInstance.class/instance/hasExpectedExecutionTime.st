@@ -1,4 +1,0 @@
-process execution
-hasExpectedExecutionTime
-
-	^false

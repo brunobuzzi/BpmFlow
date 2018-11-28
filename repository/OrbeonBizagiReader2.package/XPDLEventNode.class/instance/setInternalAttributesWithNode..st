@@ -1,4 +1,0 @@
-other
-setInternalAttributesWithNode: xmlNode
-
-	self subclassResponsibility

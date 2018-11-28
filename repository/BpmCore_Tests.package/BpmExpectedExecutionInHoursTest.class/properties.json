@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmExpectedExecutionInHoursTest",
+	"pools" : [
+		 ],
+	"super" : "BpmExpectedExecutionTimeTest",
+	"type" : "normal" }

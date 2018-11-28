@@ -1,4 +1,0 @@
-searching
-getSubProcessNodes
-
-	^workflow getSubProcessNodes

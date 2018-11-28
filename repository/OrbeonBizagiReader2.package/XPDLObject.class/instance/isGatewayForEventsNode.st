@@ -1,4 +1,0 @@
-other
-isGatewayForEventsNode
-
-	^false

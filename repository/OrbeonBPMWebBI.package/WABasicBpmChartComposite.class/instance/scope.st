@@ -1,4 +1,0 @@
-render
-scope
-
-	^chartDefinition scope

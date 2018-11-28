@@ -1,4 +1,0 @@
-other
-isSeasideTask
-
-	^false

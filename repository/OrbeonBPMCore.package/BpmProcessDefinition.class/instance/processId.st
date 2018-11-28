@@ -1,4 +1,0 @@
-get artifacts
-processId
-
-	^id

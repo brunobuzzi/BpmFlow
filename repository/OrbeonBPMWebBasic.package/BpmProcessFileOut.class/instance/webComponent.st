@@ -1,3 +1,0 @@
-Accessing
-webComponent
-	^webComponent

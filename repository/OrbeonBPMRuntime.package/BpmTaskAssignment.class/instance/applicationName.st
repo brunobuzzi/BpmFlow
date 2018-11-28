@@ -1,4 +1,0 @@
-other
-applicationName
-
-	^task applicationName

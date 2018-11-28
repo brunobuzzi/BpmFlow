@@ -1,3 +1,0 @@
-Accessing
-receivedMessage
-	^receivedMessage

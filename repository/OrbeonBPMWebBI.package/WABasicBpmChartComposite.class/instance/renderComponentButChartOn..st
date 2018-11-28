@@ -1,2 +1,0 @@
-render
-renderComponentButChartOn: html

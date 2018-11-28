@@ -1,4 +1,0 @@
-assignation
-isAutomatic
-
-	^false

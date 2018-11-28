@@ -1,4 +1,0 @@
-other
-printOnType
-
-	^cycle printOnType

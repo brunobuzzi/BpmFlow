@@ -1,4 +1,0 @@
-tasks
-getAllArtifacts
-
-	^currentActivities, executedActivities

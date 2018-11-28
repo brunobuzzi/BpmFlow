@@ -1,4 +1,0 @@
-other
-getProcessInstance
-
-	^bpmArtifact process

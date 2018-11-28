@@ -1,4 +1,0 @@
-other
-hasSpecificRole
-
-	^role notNil

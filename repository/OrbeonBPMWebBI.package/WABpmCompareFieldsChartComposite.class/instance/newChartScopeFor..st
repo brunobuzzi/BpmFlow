@@ -1,4 +1,0 @@
-scope
-newChartScopeFor: aBpmChartDefinition
-
-	^BpmChartMultipleFieldsScope newOn: aBpmChartDefinition

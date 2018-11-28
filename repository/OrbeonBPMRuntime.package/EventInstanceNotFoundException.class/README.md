@@ -1,1 +1,0 @@
-When try to remove a monitored event but the event is not present the receiver is signaled

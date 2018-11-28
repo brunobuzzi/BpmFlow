@@ -1,4 +1,0 @@
-application
-hasAndContext
-
-	^false

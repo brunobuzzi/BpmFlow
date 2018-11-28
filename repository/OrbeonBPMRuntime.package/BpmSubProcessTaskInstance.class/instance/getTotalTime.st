@@ -1,4 +1,0 @@
-other
-getTotalTime
-
-	^processInstance getTotalTime

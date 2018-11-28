@@ -1,3 +1,0 @@
-Accessing
-bpmArtifact
-	^bpmArtifact

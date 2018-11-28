@@ -1,4 +1,0 @@
-other
-getInTrasitionDefinitions
-
-	^definition inTransitions

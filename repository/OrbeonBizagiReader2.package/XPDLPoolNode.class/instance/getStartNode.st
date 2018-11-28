@@ -1,4 +1,0 @@
-searching
-getStartNode
-
-	^workflow startNode
