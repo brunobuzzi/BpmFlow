@@ -36,32 +36,32 @@ baseline: spec
 "		spec baseline: 'HighchartsSt' with: [
 			spec repository: 'github://brunobuzzi/HighchartsSt:v6.0.0gs/repository' ]."
 
-		spec package: 'OrbeonBPMCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
-		spec package: 'OrbeonBPMRuntime' with: [spec requires: #('OrbeonBPMCore')].
-		spec package: 'OrbeonBizagiReader2' with: [spec requires: #('XMLParser' 'XPath')].
-		spec package: 'OrbeonBPMXpdl' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBizagiReader2')].
-		spec package: 'OrbeonBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
-		spec package: 'OrbeonBPMBI' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMWebBasic' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'Jasvgi')].
-		spec package: 'OrbeonBPMWebFrontoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
-		spec package: 'OrbeonBPMWebBackoffice' with: [spec requires: #('Sewaf' 'OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBizagiSvgConverter' 'OrbeonBPMWebBasic')].
-		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice')].
-"		spec package: 'OrbeonBPMWebBI' with: [spec requires: #('OrbeonBPMBI' 'OrbeonBPMWebBackoffice' 'OrbeonBPMWebFrontoffice' 'HighchartsSt')]."
-		spec package: 'OrbeonBPM_Templates' with: [spec requires: #()].
-		spec package: 'OrbeonPersistenceApiProcess' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
-		spec package: 'OrbeonPersistenceApiProcess_Tests' with: [spec requires: #('OrbeonPersistenceApiProcess')].
-		spec package: 'OrbeonBizagiReader2_Tests' with: [spec requires: #('OrbeonBizagiReader2' 'OrbeonBPM_Templates')].
-		spec package: 'OrbeonBPMXpdl_Tests' with: [spec requires: #('OrbeonBPMXpdl' 'OrbeonBPM_Templates' 'OrbeonBizagiReader2')].
-		spec package: 'OrbeonBPMRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'OrbeonBPMRuntime')].
-		spec package: 'OrbeonBPMCore_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPM_Templates')].
-		spec package: 'OrbeonBPMRuntime_Tests' with: [spec requires: #('OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMRuntimePEF' 'OrbeonPersistenceLayer' 'OrbeonBPM_Templates')].
+		spec package: 'BpmCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
+		spec package: 'BpmRuntime' with: [spec requires: #('BpmCore')].
+		spec package: 'BpmBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
+		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmBizagiReader')].
+		spec package: 'BpmBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
+		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
+		spec package: 'BpmWebBasic' with: [spec requires: #('BpmCore' 'BpmRuntime' 'Jasvgi')].
+		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebBackoffice' with: [spec requires: #('Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
+"		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
+		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
+		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
+		spec package: 'BpmWebRestApiLayer_Tests' with: [spec requires: #('BpmWebRestApiLayer')].
+		spec package: 'BpmBizagiReader_Tests' with: [spec requires: #('BpmBizagiReader' 'BpmXpdlTemplates')].
+		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmBizagiReader')].
+		spec package: 'BpmRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'BpmRuntime')].
+		spec package: 'BpmCore_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmXpdlTemplates')].
+		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
 
 		spec
-			group: 'core' with: #('OrbeonBizagiReader2' 'OrbeonBPMCore' 'OrbeonBPMRuntime' 'OrbeonBPMXpdl' 'OrbeonBizagiSvgConverter' 'OrbeonBPMRuntimePEF'); 
-			group: 'web-backoffice' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebBackoffice');
-			group: 'web-frontoffice' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebFrontoffice');
-			group: 'web-bi' with: #('OrbeonBPMWebBasic' 'OrbeonBPMWebBI');
-			group: 'rest' with: #('OrbeonPersistenceApiProcess');
-			group: 'test' with: #('OrbeonBizagiReader2_Tests' 'OrbeonBPMXpdl_Tests' 'OrbeonBPMRuntimePEF' 'OrbeonBPMCore_Tests' 'OrbeonBPMRuntime_Tests');
+			group: 'core' with: #('BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmBizagiSvgConverter' 'BpmRuntimePEF'); 
+			group: 'web-backoffice' with: #('BpmWebBasic' 'BpmWebBackoffice');
+			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
+			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
+			group: 'rest' with: #('BpmWebRestApiLayer');
+			group: 'test' with: #('BpmBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
