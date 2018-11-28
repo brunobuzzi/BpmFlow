@@ -10,5 +10,5 @@
 	"name" : "BpmCodeException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "BpmCoreException",
 	"type" : "normal" }

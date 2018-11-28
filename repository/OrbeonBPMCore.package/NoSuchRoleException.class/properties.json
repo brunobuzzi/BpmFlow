@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 11/28/2018 06:22",
 	"instvars" : [
 		 ],
 	"name" : "NoSuchRoleException",
 	"pools" : [
 		 ],
-	"super" : "OrbeonBpmException",
+	"super" : "BpmCoreException",
 	"type" : "normal" }
