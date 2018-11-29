@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createDescriptionColumn" : "BrunoBB 03/12/2015 17:23",
-		"createSolutionColumn" : "BrunoBB 10/10/2015 15:01",
-		"createTitleColumn" : "BrunoBB 03/12/2015 17:23",
-		"createTypeColumn" : "BrunoBB 03/12/2015 17:22",
+		"createCodeColumn" : "brunobb 11/29/2018 04:32",
+		"createDescriptionColumn" : "brunobb 11/29/2018 04:15",
+		"createSolutionColumn" : "brunobb 11/29/2018 04:15",
+		"createTitleColumn" : "brunobb 11/29/2018 04:15",
+		"createTypeColumn" : "brunobb 11/29/2018 04:16",
 		"initialize" : "BrunoBB 03/12/2015 17:21",
 		"renderContentOn:" : "BrunoBB 07/21/2015 14:45",
-		"reportTable" : "BrunoBB 06/12/2016 12:48",
+		"reportTable" : "brunobb 11/29/2018 04:35",
 		"warnings" : "BrunoBB 03/12/2015 17:42",
 		"warnings:" : "BrunoBB 03/12/2015 17:42" } }

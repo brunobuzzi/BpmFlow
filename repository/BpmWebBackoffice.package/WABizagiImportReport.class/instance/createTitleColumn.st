@@ -1,7 +1,4 @@
 other
 createTitleColumn
 
-	^(SewafReportColumn 
-			renderBlock: [:each :html | 			
-					html text: each title]
-			title: 'Title')
+	^SewafReportColumn renderBlock: [:each :html | html text: each title] title: 'Title'
