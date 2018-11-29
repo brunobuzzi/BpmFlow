@@ -1,0 +1,18 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"title",
+		"description",
+		"solution",
+		"code" ],
+	"name" : "XPDLItemImportReport",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

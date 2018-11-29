@@ -1,0 +1,16 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inTransitions",
+		"outTransitions",
+		"hostNode" ],
+	"name" : "XPDLIntermediateNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLEventNode",
+	"type" : "normal" }

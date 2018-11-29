@@ -1,0 +1,2 @@
+*bpmxpdlbizagisvgconverter
+drawOn: aJasvgiBpmCanvas

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLParticipantNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLObject",
+	"type" : "normal" }

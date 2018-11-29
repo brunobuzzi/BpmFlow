@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdlBizagiSvgConverter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BizagiSvgConverter",
+	"pools" : [
+		 ],
+	"super" : "XpdlSvgConverter",
+	"type" : "normal" }

@@ -1,0 +1,19 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xpdlReader",
+		"pools",
+		"participants",
+		"associations",
+		"artifacts",
+		"fileName" ],
+	"name" : "XPDLPackageNode",
+	"pools" : [
+		 ],
+	"super" : "XPDLObject",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xmlSegment",
+		"attributes",
+		"extendedAttributes" ],
+	"name" : "XPDLObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
