@@ -4,6 +4,7 @@ initializeCurrentSystem
 
 	AbstractApplication initializeCache.
 	BpmUser initializeCache.
+	ApplicationUser initializeCache.
 	BpmAvailableTasksMatrix initializeCache.
 	BpmFinishedTasksMatrix initializeCache.
 	BpmTakenTasksMatrix initializeCache.
