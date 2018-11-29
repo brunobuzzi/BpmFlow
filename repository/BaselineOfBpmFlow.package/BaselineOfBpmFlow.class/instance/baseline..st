@@ -39,30 +39,30 @@ baseline: spec
 
 		spec package: 'BpmCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmRuntime' with: [spec requires: #('BpmCore')].
-		spec package: 'BpmBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
-		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmBizagiReader')].
-		spec package: 'BpmBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
+		spec package: 'BpmXpdlBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
+		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmXpdlBizagiReader')].
+		spec package: 'BpmXpdlBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
 		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
 		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'Jasvgi')].
-		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
-		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdlBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdlBizagiSvgConverter' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
 		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmWebRestApiLayer_Tests' with: [spec requires: #('BpmWebRestApiLayer')].
-		spec package: 'BpmBizagiReader_Tests' with: [spec requires: #('BpmBizagiReader' 'BpmXpdlTemplates')].
-		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmBizagiReader')].
+		spec package: 'BpmXpdlBizagiReader_Tests' with: [spec requires: #('BpmXpdlBizagiReader' 'BpmXpdlTemplates')].
+		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmXpdlBizagiReader')].
 		spec package: 'BpmRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'BpmRuntime')].
 		spec package: 'BpmCore_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmXpdlTemplates')].
 		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
 
 		spec
-			group: 'core' with: #('BpmBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmBizagiSvgConverter' 'BpmRuntimePEF'); 
+			group: 'core' with: #('BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmXpdlBizagiSvgConverter' 'BpmRuntimePEF'); 
 			group: 'web-backoffice' with: #('BpmWebBasic' 'BpmWebBackoffice');
 			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
 			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
 			group: 'rest' with: #('BpmWebRestApiLayer');
-			group: 'test' with: #('BpmBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests');
+			group: 'test' with: #('BpmXpdlBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
