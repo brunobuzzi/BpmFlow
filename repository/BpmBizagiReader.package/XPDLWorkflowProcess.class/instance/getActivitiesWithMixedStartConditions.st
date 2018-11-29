@@ -9,6 +9,7 @@ getActivitiesWithMixedStartConditions
 
 	(activities select: [:eachAct | eachAct hasMixedStartConditions]) do: [:eachAct | | reportItem |
 		reportItem := XPDLItemImportReport new type: 'Warning';
+			code: 100;
 			title: 'Mixed Start Conditions';
 			description: 'Activity [', eachAct getName, '] in Process [', self getName, '] has Mixed Start Conditions (maybe not an error)';
 			solution: 'If it is applicable: Add a condition to all transitions or remove all conditions from all transitions';

@@ -12,8 +12,10 @@ appendFormsWithMissingMandatoryFieldsIn: anOrbeonApplication to: anOrderedCollec
 		def := anOrbeonApplication definitionNamed: each getName.
 		def ifNotNil: [ 
 			def getMandatoryFieldsMissing do: [:eachName | | item |
-				item := XPDLItemImportReport new type: 'Error';
-							title: 'Missing Mandatory Field';
+				item := XPDLItemImportReport new 
+							code: 604;
+							type: 'Error';
+							title: 'Missing Mandatory Forms Field';
 							description: 'Form [', def formName, '] in Orbeon Application [', anOrbeonApplication applicationName, '] has NO mandatory field [', eachName ,']';
 							solution: 'Add missing mandatory fields to the Form Definition. Mandatori fields (s, k, oop, uuid, assignmentOop, username, rol, processId)';
 						yourself.

@@ -8,7 +8,9 @@ getMergingEventGateways
 	activitiesNames := Dictionary new.
 	(activities select: [:each |each isGatewayNode and:[each isGatewayForEventsNode]]) do: [:xpdlGateway | 
 			(xpdlGateway inTransitions size > 1) ifTrue:[ | reportItem |		
-				reportItem := XPDLItemImportReport new type: 'Error';
+				reportItem := XPDLItemImportReport new 
+					code: 204;
+					type: 'Error';
 					title: 'Merging Event Gateway';
 					description: 'Merging Events Gateway are NOT allowed';
 					solution: 'User a regular Gateway for Merging';

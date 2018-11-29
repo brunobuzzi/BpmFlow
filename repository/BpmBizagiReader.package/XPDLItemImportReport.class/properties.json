@@ -9,7 +9,8 @@
 		"type",
 		"title",
 		"description",
-		"solution" ],
+		"solution",
+		"code" ],
 	"name" : "XPDLItemImportReport",
 	"pools" : [
 		 ],

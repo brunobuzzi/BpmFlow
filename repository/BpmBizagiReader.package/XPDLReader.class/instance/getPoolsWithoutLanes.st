@@ -7,8 +7,10 @@ getPoolsWithoutLanes
 
 	self getAllPools do: [:eachPool |
 		eachPool lanes isEmpty ifTrue: [ | reportItem |
-			reportItem := XPDLItemImportReport new type: 'Error';
-				title: 'Pools must have Lanes';
+			reportItem := XPDLItemImportReport new 
+				code: 54;
+				type: 'Error';
+				title: 'Pools wihout Lanes';
 				description: 'Each Pool must have at least one Lane';
 				solution: 'Edit the Process Definition and add Lanes to Pools';
 				yourself.

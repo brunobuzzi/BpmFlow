@@ -5,7 +5,9 @@ getStartNodeReport
 	self hasStartNode ifTrue: [^#()].
 
 	report := OrderedCollection new.
-	reportItem := XPDLItemImportReport new type: 'Error';
+	reportItem := XPDLItemImportReport new 
+		code: 112;
+		type: 'Error';
 		title: 'Process without Start';
 		description: 'Process [', self getName, '] does NOT have a Start Node';
 		solution: 'Create a Start node in the Process definition';

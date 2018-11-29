@@ -1,7 +1,8 @@
 import unsupported items
 getErrorEventsItemsReport
 
-	^self getItemsReportForElementSatisfying: [:each | each isErrorNode] 
+	^self createtemsReportForElementSatisfying: [:each | each isErrorNode] 
+			code: 720
 			title: 'Unsupported Element' 
 			description: 'Error Events are NOT supported' 
 			solution: 'Remove the Event'

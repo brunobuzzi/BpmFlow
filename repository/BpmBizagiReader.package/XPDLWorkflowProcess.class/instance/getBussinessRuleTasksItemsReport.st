@@ -1,7 +1,8 @@
 import unsupported items
 getBussinessRuleTasksItemsReport
 
-	^self getItemsReportForElementSatisfying: [:each | each isBusinessRuleTaskNode] 
+	^self createtemsReportForElementSatisfying: [:each | each isBusinessRuleTaskNode] 
+			code: 704
 			title: 'Unsupported Element' 
 			description: 'Business Rules Tasks are NOT supported' 
 			solution: 'Change the Task Type'

@@ -1,7 +1,8 @@
 import unsupported items
 getMultipleEventsItemsReport
 
-	^self getItemsReportForElementSatisfying: [:each | each isMultipleNode] 
+	^self createtemsReportForElementSatisfying: [:each | each isMultipleNode] 
+			code: 732
 			title: 'Unsupported Element' 
 			description: 'Multiple Events are NOT supported' 
 			solution: 'Remove the Event'

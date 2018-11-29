@@ -8,6 +8,7 @@ getActivitiesWithoutName
 
 	(activities select: [:each | each getName isNil or:[each getName isEmpty]]) do: [:eachAct | | reportItem |
 		reportItem := XPDLItemImportReport new type: 'Error';
+			code: 104;
 			title: 'Activities without Name';
 			description: 'Activity type [', eachAct getName, '] in Process [', self getName, '] without name';
 			solution: 'Add a name to the Activity';

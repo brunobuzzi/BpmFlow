@@ -11,7 +11,9 @@ getSuspiciousConditions
 		blockAnalysis := BpmProcessConditionCodeAnalyzer for: eachTr startCondition.
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
-			reportItem := XPDLItemImportReport new type: 'Error';
+			reportItem := XPDLItemImportReport new 
+				code: 404;
+				type: 'Error';
 				title: 'Suspicious Code';
 				description: eachString;
 				solution: 'Make the Condition send messages only to the process. If it''s a forbidden field name then use #getValueOf: instead.';

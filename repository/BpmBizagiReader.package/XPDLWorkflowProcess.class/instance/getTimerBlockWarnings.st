@@ -9,7 +9,9 @@ getTimerBlockWarnings
 		blockAnalysis := BpmTimerCodeAnalyzer new blockCode: (eachEventNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
-			reportItem := XPDLItemImportReport new type: 'Error';
+			reportItem := XPDLItemImportReport new 
+				code: 400;
+				type: 'Error';
 				title: 'Timer Block Error';
 				description: eachString;
 				solution: 'The Timer Block must be a block with two arguments: [:lastExecutedTime :currentTime | ]';

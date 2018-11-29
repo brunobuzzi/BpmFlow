@@ -14,7 +14,9 @@ getImportWarningReportWith: mapperDictionary
 				appendNonExistingRolesReportFor: app to: importReport.
 		]
 			ifNil: [ | itemError |
-				itemError := XPDLItemImportReport new type: 'Error';
+				itemError := XPDLItemImportReport new 
+					code: 600;
+					type: 'Error';
 					title: 'Orbeon Application Not found';
 					description: 'Workflow named [',each getName, '] is not mapped to any Orbeon Application';
 					solution: 'Rename the XPDL file to match an Orbeon Application';

@@ -6,7 +6,9 @@ getIsolatedActivities
 	report := OrderedCollection new.
 
 	self getIsolatedActivitiesNodes do: [:eachAct | | reportItem |
-		reportItem := XPDLItemImportReport new type: 'Warning';
+		reportItem := XPDLItemImportReport new 
+			code: 120;
+			type: 'Warning';
 			title: 'Isolated Activity';
 			description: 'Activity [', eachAct getName, '] in Process [', self getName, '] is Isolated';
 			solution: 'Delete the Activity or connect the Activity to some other element in the Process definition';
