@@ -2,4 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"isMultiChart" : "brunobb 06/05/2018 03:40" } }
+		"createDistributionReport" : "brunobb 11/30/2018 10:32",
+		"initialize" : "brunobb 11/30/2018 10:32",
+		"isMultiChart" : "brunobb 11/30/2018 10:32",
+		"reports" : "brunobb 11/30/2018 10:32",
+		"reports:" : "brunobb 11/30/2018 10:32",
+		"singleDistributions" : "brunobb 11/30/2018 10:32",
+		"singleDistributions:" : "brunobb 11/30/2018 10:32" } }
