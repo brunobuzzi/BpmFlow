@@ -5,7 +5,7 @@ exportInstancesToCSV
 	selectedLateralItem ifNil: [^self].
 
 	stream := PrintStream on: String new.
-	selectedLateralItem exportProcessesFieldsTo: stream fieldSeparator: ';' valueSeparator: '|'.
+	selectedLateralItem exportFieldsOfAllProcessesTo: stream fieldSeparator: ';' valueSeparator: '|'.
 
 	self requestContext respond: [:response | 
         response document: ((stream contents asByteArray seasideMimeDocument) 
