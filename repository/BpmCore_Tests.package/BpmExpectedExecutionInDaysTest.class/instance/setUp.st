@@ -6,7 +6,8 @@ setUp
 
 	expectedTime := BpmExpectedExecutionInDays new.
 
-	calendar := expectedTime calendar.
+	calendar := BpmExceptionCalendar addDefaultCalendarIn: (BpmEnvironment newNamed: 'Test').
+	expectedTime calendar: calendar.
 
 	calendar 
 		addExceptionDay: (Date fromString: '01/01/2017');
