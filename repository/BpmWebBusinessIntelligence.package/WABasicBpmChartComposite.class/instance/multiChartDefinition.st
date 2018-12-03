@@ -1,0 +1,3 @@
+Accessing
+multiChartDefinition
+	^multiChartDefinition

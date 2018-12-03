@@ -1,0 +1,20 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scope",
+		"distribution",
+		"distributionType",
+		"chartTypes",
+		"chartType",
+		"report",
+		"dateGroupName" ],
+	"name" : "BpmSingleChartDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmChartDefinition2",
+	"type" : "normal" }

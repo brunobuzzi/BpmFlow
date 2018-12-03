@@ -8,7 +8,9 @@
 	"instvars" : [
 		"canvas",
 		"report",
-		"chartDefinition" ],
+		"chartDefinition",
+		"multiChartDefinition",
+		"multiChartIsEnabled" ],
 	"name" : "WABasicBpmChartComposite",
 	"pools" : [
 		 ],

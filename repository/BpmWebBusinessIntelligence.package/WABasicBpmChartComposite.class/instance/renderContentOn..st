@@ -1,6 +1,8 @@
 render
 renderContentOn: html
 
+	multiChartIsEnabled ifTrue: [^self renderMultiChartsDefinitionsOn: html].
+ 
 	self setChartDefinition.
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';

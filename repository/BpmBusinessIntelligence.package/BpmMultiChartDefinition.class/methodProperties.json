@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addChart:" : "brunobb 12/03/2018 11:56",
+		"initialize" : "brunobb 12/03/2018 12:02",
+		"removeChart:" : "brunobb 12/03/2018 11:57",
+		"renderOn:" : "brunobb 12/03/2018 11:59",
+		"singleChartDefinitions" : "brunobb 12/03/2018 11:39",
+		"singleChartDefinitions:" : "brunobb 12/03/2018 11:39" } }
