@@ -1,6 +1,6 @@
 process
 renderItemDescriptionTitleOn: html
-	| jQueryId popUpComponent jQueryIdAp list lockIcon |
+	| jQueryId popUpComponent jQueryIdAp list lockIcon availableIcon |
 
 	html output:  selectedLateralItem processName.
 
@@ -40,10 +40,17 @@ renderItemDescriptionTitleOn: html
 	self session user isBackofficeUserAndAdmin ifFalse: [^self].
 
 	lockIcon := selectedLateralItem isImmutable ifTrue: [#locklock24Png] ifFalse: [#lockunlock24Png].
-
 	html anchor 
 		class: 'cursor-pointer';
 		callback: [self switchImmutableValue]; 
 		with: [html image url: (SEWAFIconLibrary / lockIcon); 
 					title: ('Switch Immutable Value' translateFor: self session user);
 					altText: ('Switch Immutable Value' translateFor: self session user)].
+
+	availableIcon := selectedLateralItem isAvailable ifTrue: [#switchoff24Png] ifFalse: [#switchon24Png].
+	html anchor 
+		class: 'cursor-pointer margin-right-5px';
+		callback: [self switchAvailableValue]; 
+		with: [html image url: (SEWAFIconLibrary / availableIcon); 
+					title: ('Switch Is Available' translateFor: self session user);
+					altText: ('Switch Is Available' translateFor: self session user)].

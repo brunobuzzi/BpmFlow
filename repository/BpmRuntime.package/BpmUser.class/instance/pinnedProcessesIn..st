@@ -10,4 +10,4 @@ pinnedProcessesIn: aBpmEnvironment
 	"remove pinned processes that has been ungranted for the user"
 	(pinnedProcs difference: grantedProcs) do: [:each | self unpinProcess: each]. 
 
-	^userOptions pinnedProcessesIn: aBpmEnvironment.
+	^(userOptions pinnedProcessesIn: aBpmEnvironment) select: [:each | each isAvailable]

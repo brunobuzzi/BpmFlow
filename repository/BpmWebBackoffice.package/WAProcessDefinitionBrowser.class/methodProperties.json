@@ -32,8 +32,8 @@
 		"renderGatewayDefinition:on:" : "BrunoBB 06/18/2016 16:06",
 		"renderItemComponentOn:" : "brunobb 04/05/2018 10:02",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 02/02/2018 14:07",
-		"renderItemDescriptionSecondaryDataOn:" : "brunobb 03/28/2018 14:38",
-		"renderItemDescriptionTitleOn:" : "brunobb 04/05/2018 10:03",
+		"renderItemDescriptionSecondaryDataOn:" : "brunobb 12/04/2018 07:15",
+		"renderItemDescriptionTitleOn:" : "brunobb 12/04/2018 07:33",
 		"renderJQueryComboBoxDialogOn:list:forActionNamed:actionMethod:arguments:extent:" : "brunobb 01/30/2018 11:45",
 		"renderLateralItemDetailsOn:for:" : "BrunoBB 06/27/2015 13:59",
 		"renderProcessMapOn:" : "brunobb 02/11/2018 15:39",
@@ -57,5 +57,6 @@
 		"selectedLateralItem:" : "BrunoBB 06/16/2016 14:03",
 		"setAssignationPolicy:" : "brunobb 02/02/2018 14:03",
 		"setAutomaticAssignationPolicy:" : "brunobb 02/02/2018 14:00",
+		"switchAvailableValue" : "brunobb 12/04/2018 07:32",
 		"switchImmutableValue" : "brunobb 03/28/2018 09:47",
 		"toggleAnonymousStart" : "BrunoBB 04/10/2016 18:23" } }

@@ -18,3 +18,5 @@ renderItemDescriptionSecondaryDataOn: html
 	].
 	html span with: [html strong: ('Immutable:' translateFor: self session user)].
 	html output: selectedLateralItem isImmutable.
+	html span with: [html strong: ('Is Available:' translateFor: self session user)].
+	html output: selectedLateralItem isAvailable.

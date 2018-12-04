@@ -8,5 +8,9 @@
 		"getParentTopSubProcessTaskDefinition" : "BrunoBB 06/29/2016 10:59",
 		"getProcessTree:" : "BrunoBB 04/10/2016 18:50",
 		"getTopProcess" : "BrunoBB 06/28/2016 12:20",
+		"initialize" : "brunobb 12/04/2018 07:02",
+		"isAvailable" : "brunobb 12/04/2018 07:02",
+		"isAvailable:" : "brunobb 12/04/2018 07:02",
 		"isTopProcess" : "BrunoBB 11/29/2015 17:36",
-		"parentProcess" : "BrunoBB 11/29/2015 17:36" } }
+		"parentProcess" : "BrunoBB 11/29/2015 17:36",
+		"switchAvailableValue" : "brunobb 12/04/2018 07:32" } }
