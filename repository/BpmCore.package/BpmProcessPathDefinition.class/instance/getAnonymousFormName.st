@@ -8,4 +8,4 @@ getAnonymousFormName
 
 	taskDefinition := startEvent outTransitions last endArtifact.
 
-	^taskDefinition applicationName, '.', taskDefinition name
+	^taskDefinition applicationName, '.', processDefinition processName, '.', taskDefinition name
