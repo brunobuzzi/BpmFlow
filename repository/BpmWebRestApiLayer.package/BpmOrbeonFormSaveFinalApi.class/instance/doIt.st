@@ -2,9 +2,9 @@ other
 doIt
 	| application definition instance |
 
-	application := self getOrbeonApplicationClass applicationNamed: appName ifNone: [^restHandler signalNoApplicationException: appName].
+	application := self getOrbeonApplicationClass applicationNamed: appName ifNone: [^self signalNoApplicationException: appName].
 
-	definition := application getDefinitionNamed: formName withVersion: version ifNone: [^restHandler signalNoFormException: formName id: id app: appName version: version].
+	definition := application getDefinitionNamed: formName withVersion: version ifNone: [^self signalNoFormException].
 
 	instance := definition getInstanceWithId: id ifNone: [definition getDraftWithId: id ifNone: [OrbeonFormInstance newFor: definition withId: id]].
 

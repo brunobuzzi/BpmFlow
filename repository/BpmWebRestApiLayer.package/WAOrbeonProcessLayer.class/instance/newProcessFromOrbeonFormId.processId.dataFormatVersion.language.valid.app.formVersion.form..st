@@ -13,4 +13,6 @@ newProcessFromOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVe
 	apiOperation appName: app;
 		formName: form. 
 
-	^apiOperation doIt
+	apiOperation doIt.
+
+	^self redirectToStaticMessagePageFor: apiOperation newBpmProcess

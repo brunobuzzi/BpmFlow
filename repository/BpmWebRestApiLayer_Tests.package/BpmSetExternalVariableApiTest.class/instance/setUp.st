@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	apiOperation := BpmSetExternalVariableApi newFor: WAOrbeonProcessLayer new.
+	apiOperation := BpmSetExternalVariableApi new.
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	

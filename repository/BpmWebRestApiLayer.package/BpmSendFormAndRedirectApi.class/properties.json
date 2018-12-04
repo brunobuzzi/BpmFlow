@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"valid",
-		"language" ],
+		"language",
+		"orbeonFormInstance",
+		"bpmArtifact" ],
 	"name" : "BpmSendFormAndRedirectApi",
 	"pools" : [
 		 ],

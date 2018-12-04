@@ -10,7 +10,7 @@ doIt
 	"get the XML associate with the token <token>"
 	serviceValue := serviceRegistry getSecureValueForToken: token. 
 	"if the token <token> is not registered then answer an empty XML with the same structure"
-	serviceValue ifNil: [^restHandler answerXMLErrorWith: token]. 
+	serviceValue ifNil: [^self answerXMLErrorWith: token]. 
 	"remove the toke <token> for security reasons -can not be used again-"
 	serviceRegistry unregister: token. 
 	
