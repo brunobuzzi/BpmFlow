@@ -11,7 +11,8 @@ newProcessFromOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVe
 
 	apiOperation := BpmCreateNewProcessApi newFor: self id: id.
 	apiOperation appName: app;
-		formName: form. 
+		formName: form;
+		processId: procId.
 
 	apiOperation doIt.
 

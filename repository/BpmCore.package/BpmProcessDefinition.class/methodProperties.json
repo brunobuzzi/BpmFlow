@@ -16,7 +16,6 @@
 		"getApplicationAndProcessInstanceDistributionIn:" : "brunobb 09/25/2018 09:19",
 		"getAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 11/26/2018 12:07",
 		"getAssignmentsIn:processName:formName:fieldName:withValue:" : "brunobb 11/26/2018 12:02",
-		"getBpmProcessForAnonymousStartWith:in:" : "brunobb 03/26/2018 15:49",
 		"getLatestProcessDefinitionNamed:in:" : "BrunoBB 01/13/2017 07:18",
 		"getLatestProcessDefinitions" : "brunobb 07/31/2017 12:01",
 		"getProcessDefinitionWithCreationTimer" : "brunobb 07/31/2017 12:22",

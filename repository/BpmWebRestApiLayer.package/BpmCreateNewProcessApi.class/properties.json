@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"newBpmProcess" ],
+		"newBpmProcess",
+		"processId" ],
 	"name" : "BpmCreateNewProcessApi",
 	"pools" : [
 		 ],
