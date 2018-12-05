@@ -8,8 +8,8 @@ processAndRedirectForm: anOrbeonFormInstance
 	5- Answer an HTML with the redirect to be performed by Orbeon (and then Orbeon do the redirect to the Seaside application)"
 	| artifactOop assignOop assignment |
 
-	artifactOop := anOrbeonFormInstance valueAt: 'oop'. "get the oop of the <anOrbeonFormTransition>"
-	assignOop := anOrbeonFormInstance valueAt: 'assignmentOop'. "get the oop of the <anOrbeonProcessAssignment>"
+	artifactOop := anOrbeonFormInstance valueAt: 'oop'. "get the oop of the <aBpmTaskInstance>"
+	assignOop := anOrbeonFormInstance valueAt: 'assignmentOop'. "get the oop of the <aBpmTaskAssignment>"
 		"get the Domain Object with -oop- in the form"
 	[bpmArtifact := Object _objectForOop: (Integer fromString: artifactOop).
 	assignment := Object _objectForOop: (Integer fromString: assignOop).] on: Error
