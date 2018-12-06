@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"setUp" : "brunobb 12/06/2018 04:21",
+		"testGetXmlFromTokenFailed" : "brunobb 12/06/2018 04:38",
+		"testGetXmlFromTokenOk" : "brunobb 12/06/2018 04:36" } }
