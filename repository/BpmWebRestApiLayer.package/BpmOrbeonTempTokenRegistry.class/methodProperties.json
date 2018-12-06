@@ -3,14 +3,11 @@
 		"default" : "brunobb 12/06/2018 03:39",
 		"default:" : "brunobb 12/06/2018 03:39" },
 	"instance" : {
-		"addFailedToken:" : "brunobb 12/06/2018 03:39",
-		"createEntryToOrbeonFor:for:" : "brunobb 12/06/2018 03:39",
+		"createEntryToOrbeonFor:for:" : "brunobb 12/06/2018 04:09",
 		"failedTokens" : "brunobb 12/06/2018 03:39",
 		"failedTokens:" : "brunobb 12/06/2018 03:39",
-		"generateXMLFor:for:" : "brunobb 12/06/2018 03:39",
-		"getSecureValueForToken:" : "brunobb 12/06/2018 03:39",
+		"generateXMLFor:for:" : "brunobb 12/06/2018 04:12",
+		"getSecureValueForToken:" : "brunobb 12/06/2018 04:13",
 		"initialize" : "brunobb 12/06/2018 03:40",
-		"register:object:for:" : "brunobb 12/06/2018 03:39",
 		"tokens" : "brunobb 12/06/2018 03:39",
-		"tokens:" : "brunobb 12/06/2018 03:39",
-		"unregister:" : "brunobb 12/06/2018 03:39" } }
+		"tokens:" : "brunobb 12/06/2018 03:39" } }

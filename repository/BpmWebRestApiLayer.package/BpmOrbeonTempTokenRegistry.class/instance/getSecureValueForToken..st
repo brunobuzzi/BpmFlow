@@ -1,5 +1,6 @@
 other
 getSecureValueForToken: uuidToken
+	"The receiver answer a XML String associated with the token value <uuidToken>"
 	| result |
 
 	(tokens includesKey: uuidToken) 

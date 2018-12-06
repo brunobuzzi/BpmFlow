@@ -1,10 +1,12 @@
 other
-generateXMLFor: anObject for: anOrbeonFormUser
+generateXMLFor: anObject for: aBpmUser
+	"The receiver generate a XML String with data from <anObject> to be accessed by <aBpmUser>.
+	The XML string can have values of previous forms of the <BpmProcessInstance>. (see: #previousFieldValues)"
 	| result |
 
 	result := '<result>
-		<username>', anOrbeonFormUser username,'</username>
-		<rol>', anOrbeonFormUser roleName,'</rol>', String lf.
+		<username>', aBpmUser username,'</username>
+		<rol>', aBpmUser roleName,'</rol>', String lf.
 
 	anObject serviceIds keysAndValuesDo: [:key :value | | conValue |
 		conValue := value ifNil: ['nil'] ifNotNil: [value].

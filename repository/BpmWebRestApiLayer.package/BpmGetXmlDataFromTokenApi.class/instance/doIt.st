@@ -7,11 +7,9 @@ doIt
 	| serviceRegistry serviceValue |
 
 	serviceRegistry := BpmOrbeonTempTokenRegistry default. 
-	"get the XML associate with the token <token>"
+	"get the XML associate with the token <token> and remove the token <token> for security reasons -can not be used again-"
 	serviceValue := serviceRegistry getSecureValueForToken: token. 
 	"if the token <token> is not registered then answer an empty XML with the same structure"
 	serviceValue ifNil: [^self answerXMLErrorWith: token]. 
-	"remove the toke <token> for security reasons -can not be used again-"
-	serviceRegistry unregister: token. 
 	
   ^serviceValue "the XML associated with token <token> with the values of the Orbeon form"
