@@ -3,7 +3,5 @@ initialize
 
 	super initialize.
 
-	tokens := Dictionary new.
-
-	failedTokens := OrderedCollection new.
-	results := OrderedCollection new.
+	tokens := RcKeyValueDictionary new.
+	failedTokens := RcIdentitySet new.

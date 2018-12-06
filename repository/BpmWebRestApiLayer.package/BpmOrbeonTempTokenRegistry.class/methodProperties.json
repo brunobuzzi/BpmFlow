@@ -1,18 +1,16 @@
 {
 	"class" : {
-		"default" : "brunobb 03/27/2018 10:35",
-		"default:" : "brunobb 03/27/2018 10:35" },
+		"default" : "brunobb 12/06/2018 03:39",
+		"default:" : "brunobb 12/06/2018 03:39" },
 	"instance" : {
-		"addFailedToken:" : "brunobb 03/27/2018 10:35",
-		"createEntryToOrbeonFor:for:" : "brunobb 03/27/2018 10:35",
-		"failedTokens" : "brunobb 03/27/2018 10:35",
-		"failedTokens:" : "brunobb 03/27/2018 10:35",
-		"generateXMLFor:for:" : "brunobb 03/27/2018 10:35",
-		"getSecureValueForToken:" : "brunobb 03/27/2018 10:35",
-		"initialize" : "brunobb 03/27/2018 10:35",
-		"register:object:for:" : "brunobb 03/27/2018 10:35",
-		"results" : "brunobb 03/27/2018 10:35",
-		"results:" : "brunobb 03/27/2018 10:35",
-		"tokens" : "brunobb 03/27/2018 10:35",
-		"tokens:" : "brunobb 03/27/2018 10:35",
-		"unregister:" : "brunobb 03/27/2018 10:35" } }
+		"addFailedToken:" : "brunobb 12/06/2018 03:39",
+		"createEntryToOrbeonFor:for:" : "brunobb 12/06/2018 03:39",
+		"failedTokens" : "brunobb 12/06/2018 03:39",
+		"failedTokens:" : "brunobb 12/06/2018 03:39",
+		"generateXMLFor:for:" : "brunobb 12/06/2018 03:39",
+		"getSecureValueForToken:" : "brunobb 12/06/2018 03:39",
+		"initialize" : "brunobb 12/06/2018 03:40",
+		"register:object:for:" : "brunobb 12/06/2018 03:39",
+		"tokens" : "brunobb 12/06/2018 03:39",
+		"tokens:" : "brunobb 12/06/2018 03:39",
+		"unregister:" : "brunobb 12/06/2018 03:39" } }
