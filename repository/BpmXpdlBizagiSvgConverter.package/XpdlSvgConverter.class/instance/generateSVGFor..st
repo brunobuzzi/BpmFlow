@@ -10,6 +10,7 @@ generateSVGFor: aBpmDefinition
 								height: (dimensions y printString, 'px') 
 								headers: (self generateHeaderTranslationForProcess: aBpmDefinition processName reader: xpdlReader).
 
+	svgCanvas bpmProcess: aBpmDefinition.
 	svgCanvas addMarker: (svgCanvas markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height:10).
 
 	svgCanvas drawText: (self getSVGTitleForDefinition: aBpmDefinition) at: 20@20 textSizePx: '14px'.
@@ -17,8 +18,9 @@ generateSVGFor: aBpmDefinition
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
 	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = aBpmDefinition processName]. 
 
+	"insert SVG elements <JASVGITagElement> in <svgCanvas> based on <XPDLElement> contained in <eachWorkflow>"
 	xpdlWorkflows do: [:eachWorkflow | 
-		eachWorkflow parentLanes do: [:eachLaneNode | eachLaneNode drawOn: svgCanvas].
+		eachWorkflow parentLanes do: [:eachLaneNode | eachLaneNode drawOn: svgCanvas]. 
 		eachWorkflow transitions do: [:eachTransition | eachTransition drawOn: svgCanvas].
 		eachWorkflow activities do: [:eachActivityNode | eachActivityNode drawOn: svgCanvas].
 	].

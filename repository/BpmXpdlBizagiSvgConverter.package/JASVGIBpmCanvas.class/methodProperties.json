@@ -5,6 +5,8 @@
 		"example2" : "BrunoBB 12/04/2016 12:58",
 		"example3" : "BrunoBB 12/04/2016 12:59" },
 	"instance" : {
+		"bpmProcess" : "brunobb 12/10/2018 06:58",
+		"bpmProcess:" : "brunobb 12/10/2018 06:58",
 		"cancelDefaultGroupTranslation" : "BrunoBB 01/13/2017 06:15",
 		"connect:to:" : "BrunoBB 09/11/2016 07:16",
 		"connect:to:color:" : "BrunoBB 09/11/2016 07:16",
@@ -43,7 +45,7 @@
 		"drawActivityNamed:at:color:stroke:textSizePx:" : "brunobb 09/03/2018 10:25",
 		"drawActivityNamed:at:extent:" : "BrunoBB 09/14/2016 05:22",
 		"drawActivityNamed:at:extent:color:stroke:" : "BrunoBB 01/13/2017 09:13",
-		"drawActivityNamed:at:extent:color:stroke:textSizePx:" : "BrunoBB 01/13/2017 09:11",
+		"drawActivityNamed:at:extent:color:stroke:textSizePx:" : "brunobb 12/10/2018 07:49",
 		"drawAnonymousStartNamed:at:" : "brunobb 04/03/2018 08:09",
 		"drawEndNamed:at:" : "BrunoBB 09/30/2016 09:55",
 		"drawEventNamed:at:" : "brunobb 08/01/2017 12:52",
@@ -93,6 +95,7 @@
 		"getJasvgiTagNamed:" : "BrunoBB 09/06/2016 10:26",
 		"getJasvgiTagNamed:ifAbsent:" : "BrunoBB 09/10/2016 05:54",
 		"getMarkerNamed:" : "BrunoBB 09/10/2016 08:34",
+		"getUrlForOrbeonFormDefinitionNamed:" : "brunobb 12/10/2018 07:49",
 		"initialize" : "BrunoBB 09/11/2016 12:31",
 		"namesAndTags" : "BrunoBB 09/06/2016 10:21",
 		"namesAndTags:" : "BrunoBB 09/06/2016 10:21" } }
