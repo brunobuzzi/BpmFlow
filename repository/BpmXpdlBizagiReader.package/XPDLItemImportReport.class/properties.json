@@ -10,7 +10,8 @@
 		"title",
 		"description",
 		"solution",
-		"code" ],
+		"code",
+		"isImportResumable" ],
 	"name" : "XPDLItemImportReport",
 	"pools" : [
 		 ],

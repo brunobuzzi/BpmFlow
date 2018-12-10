@@ -1,4 +1,4 @@
 warnings
 hasWarnings
 
-	^importReport notEmpty
+	^(importReport reject: [:each | each isImportResumable]) notEmpty

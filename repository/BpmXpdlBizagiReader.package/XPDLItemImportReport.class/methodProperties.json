@@ -1,11 +1,15 @@
 {
 	"class" : {
-		 },
+		"new" : "brunobb 12/10/2018 11:00" },
 	"instance" : {
+		"beResumable" : "brunobb 12/10/2018 11:01",
 		"code" : "brunobb 11/29/2018 02:50",
 		"code:" : "brunobb 11/29/2018 02:50",
 		"description" : "brunobb 11/29/2018 02:50",
 		"description:" : "brunobb 11/29/2018 02:50",
+		"initialize" : "brunobb 12/10/2018 11:04",
+		"isImportResumable" : "brunobb 12/10/2018 10:59",
+		"isImportResumable:" : "brunobb 12/10/2018 10:59",
 		"solution" : "brunobb 11/29/2018 02:50",
 		"solution:" : "brunobb 11/29/2018 02:50",
 		"title" : "brunobb 11/29/2018 02:50",
