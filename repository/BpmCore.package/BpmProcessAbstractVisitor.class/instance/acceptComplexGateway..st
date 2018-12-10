@@ -1,0 +1,4 @@
+other
+acceptComplexGateway: aBpmComplexGatewayDefinition
+
+	self subclassResponsibility

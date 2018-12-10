@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 11:57",
 		"addToParentProcess" : "BrunoBB 08/06/2016 15:01",
 		"isEndEvent" : "BrunoBB 08/06/2016 14:50",
 		"printOnType" : "BrunoBB 08/06/2016 14:47" } }

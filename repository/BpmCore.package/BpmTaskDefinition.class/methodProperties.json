@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 12:10",
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:22",
 		"canUnassign" : "brunobb 02/04/2018 13:52",
 		"canUnassign:" : "brunobb 02/04/2018 13:52",

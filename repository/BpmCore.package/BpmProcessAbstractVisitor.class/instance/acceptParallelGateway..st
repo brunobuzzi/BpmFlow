@@ -1,0 +1,4 @@
+other
+acceptParallelGateway: aBpmParallelGatewayDefinition
+
+	self subclassResponsibility

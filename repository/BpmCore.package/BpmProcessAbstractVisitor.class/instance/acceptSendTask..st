@@ -1,0 +1,4 @@
+other
+acceptSendTask: aBpmSendTaskDefinition
+
+	self subclassResponsibility

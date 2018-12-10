@@ -1,0 +1,4 @@
+other
+acceptExclusiveGateway: aBpmExclusiveGatewayDefinition
+
+	self subclassResponsibility

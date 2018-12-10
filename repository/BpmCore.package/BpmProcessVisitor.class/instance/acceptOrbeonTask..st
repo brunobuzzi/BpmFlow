@@ -1,0 +1,4 @@
+other
+acceptOrbeonTask: aBpmOrbeonTaskDefinition
+
+	self subclassResponsibility

@@ -1,0 +1,4 @@
+other
+acceptSeasideTask: aBpmSeasideTaskDefinition
+
+	self subclassResponsibility

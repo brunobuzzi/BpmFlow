@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 12:06",
 		"drawOn:at:" : "BrunoBB 12/05/2016 11:06",
 		"initialize" : "BrunoBB 11/23/2015 13:39" } }

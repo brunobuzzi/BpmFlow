@@ -1,0 +1,4 @@
+other
+acceptParallelEventBasedGateway: aBpmParallelEventBasedGatewayDefinition
+
+	self subclassResponsibility

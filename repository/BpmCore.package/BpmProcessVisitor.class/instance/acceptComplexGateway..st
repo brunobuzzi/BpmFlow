@@ -1,0 +1,2 @@
+other
+acceptComplexGateway: aBpmComplexGatewayDefinition

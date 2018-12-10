@@ -1,0 +1,4 @@
+other
+acceptScriptTask: aBpmScriptTaskDefinition
+
+	self subclassResponsibility

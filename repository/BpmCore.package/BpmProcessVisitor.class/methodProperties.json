@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptComplexGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptEndEvent:" : "brunobb 12/10/2018 12:07",
+		"acceptEventBasedGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptExclusiveEventBasedGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptExclusiveGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptInclusiveGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptIntermediateEvent:" : "brunobb 12/10/2018 12:07",
+		"acceptOrbeonTask:" : "brunobb 12/10/2018 12:11",
+		"acceptParallelEventBasedGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptParallelGateway:" : "brunobb 12/10/2018 12:07",
+		"acceptScriptTask:" : "brunobb 12/10/2018 12:09",
+		"acceptSeasideTask:" : "brunobb 12/10/2018 12:12",
+		"acceptSendTask:" : "brunobb 12/10/2018 12:13",
+		"acceptStartEvent:" : "brunobb 12/10/2018 12:07",
+		"acceptSubProcessTask:" : "brunobb 12/10/2018 12:10" } }

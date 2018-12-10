@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 12:09",
 		"addToParentProcess" : "BrunoBB 06/22/2016 11:45",
 		"printNameAndDefinitionType" : "brunobb 12/11/2017 15:04",
 		"scriptCode" : "BrunoBB 06/21/2016 12:27",

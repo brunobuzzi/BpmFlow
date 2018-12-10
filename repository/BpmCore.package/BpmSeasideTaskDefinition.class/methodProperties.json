@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 12:11",
 		"getComponentClass" : "BrunoBB 02/19/2016 13:31",
 		"getObjectModel" : "BrunoBB 02/19/2016 13:32",
 		"isSeasideTask" : "brunobb 04/24/2018 08:56",

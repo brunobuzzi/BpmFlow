@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 12:11",
 		"getComponentClass" : "BrunoBB 04/09/2016 09:22",
 		"getObjectModel" : "BrunoBB 02/23/2016 09:13",
 		"isOrbeonTask" : "BrunoBB 12/20/2015 15:50",

@@ -1,0 +1,2 @@
+other
+acceptSeasideTask: aBpmSeasideTaskDefinition
