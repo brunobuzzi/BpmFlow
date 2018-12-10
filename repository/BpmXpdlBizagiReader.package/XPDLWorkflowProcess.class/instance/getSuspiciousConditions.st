@@ -11,7 +11,7 @@ getSuspiciousConditions
 		blockAnalysis := BpmProcessConditionCodeAnalyzer for: eachTr startCondition.
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
-			reportItem := XPDLItemImportReport new 
+			reportItem := self xpdlItemReportClass new 
 				code: 404;
 				type: 'Error';
 				title: 'Suspicious Code';

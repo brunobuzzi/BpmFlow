@@ -2,7 +2,7 @@ import warning
 appendNonExistingRolesReportFor: anOrbeonApplication to: anOrderedCollection
 
 	(self getNonExistingRolesNamesIn: anOrbeonApplication) do: [:rolName | | itemReport |
-		itemReport := XPDLItemImportReport new 
+		itemReport := self xpdlItemReportClass new 
 			code: 612;
 			type: 'Warning';
 			title: 'Missing Role';

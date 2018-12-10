@@ -6,7 +6,7 @@ getIsolatedActivities
 	report := OrderedCollection new.
 
 	self getIsolatedActivitiesNodes do: [:eachAct | | reportItem |
-		reportItem := XPDLItemImportReport new 
+		reportItem := self xpdlItemReportClass new 
 			code: 120;
 			type: 'Warning';
 			title: 'Isolated Activity';

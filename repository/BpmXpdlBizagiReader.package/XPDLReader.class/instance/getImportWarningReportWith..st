@@ -14,7 +14,7 @@ getImportWarningReportWith: mapperDictionary
 				appendNonExistingRolesReportFor: app to: importReport.
 		]
 			ifNil: [ | itemError |
-				itemError := XPDLItemImportReport new 
+				itemError := self xpdlItemReportClass new 
 					code: 600;
 					type: 'Error';
 					title: 'Orbeon Application Not found';

@@ -9,7 +9,7 @@ getTimerBlockWarnings
 		blockAnalysis := BpmTimerCodeAnalyzer new blockCode: (eachEventNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
-			reportItem := XPDLItemImportReport new 
+			reportItem := self xpdlItemReportClass new 
 				code: 400;
 				type: 'Error';
 				title: 'Timer Block Error';

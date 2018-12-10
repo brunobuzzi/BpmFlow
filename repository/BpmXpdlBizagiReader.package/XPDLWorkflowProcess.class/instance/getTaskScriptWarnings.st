@@ -9,7 +9,7 @@ getTaskScriptWarnings
 		blockAnalysis := BpmTaskScriptCodeAnalyzer new blockCode: eachScrpt script.
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | | reportItem |
-			reportItem := XPDLItemImportReport new 
+			reportItem := self xpdlItemReportClass new 
 				code: 124;
 				type: 'Error';
 				title: 'Task Script Error';

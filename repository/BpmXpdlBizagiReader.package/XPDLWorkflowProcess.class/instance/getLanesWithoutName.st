@@ -6,7 +6,7 @@ getLanesWithoutName
 	report := OrderedCollection new.
 
 	(lanes select: [:each | each getName notNil and: [each getName notEmpty]]) do: [:eachLane | | reportItem |
-		reportItem := XPDLItemImportReport new 
+		reportItem := self xpdlItemReportClass new 
 			code: 50;
 			type: 'Warning';
 			title: 'Lane without name';

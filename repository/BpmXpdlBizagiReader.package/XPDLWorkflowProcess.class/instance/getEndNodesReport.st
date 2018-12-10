@@ -5,7 +5,7 @@ getEndNodesReport
 	self hasEndNodes ifTrue: [^#()].
 
 	report := OrderedCollection new.
-	reportItem := XPDLItemImportReport new 
+	reportItem := self xpdlItemReportClass new 
 		code: 116;
 		type: 'Error';
 		title: 'Process without End';

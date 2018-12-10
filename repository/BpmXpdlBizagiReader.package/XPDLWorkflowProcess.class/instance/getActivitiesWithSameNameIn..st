@@ -11,7 +11,7 @@ getActivitiesWithSameNameIn: aDictionary
 			ifPresent: [:value | aDictionary at: each getName put: value + 1] 
 			ifAbsent: [aDictionary at: each getName put: 1].
 	(aDictionary select: [:eachValue | eachValue > 1]) keysAndValuesDo: [:key :value | | reportItem |
-		reportItem := XPDLItemImportReport new 
+		reportItem := self xpdlItemReportClass new 
 			code: 108;
 			type: 'Error';
 			title: 'Activities with the same Name';

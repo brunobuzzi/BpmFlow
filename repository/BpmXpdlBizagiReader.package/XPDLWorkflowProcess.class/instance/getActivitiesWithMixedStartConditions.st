@@ -8,7 +8,7 @@ getActivitiesWithMixedStartConditions
 	report := OrderedCollection new.
 
 	(activities select: [:eachAct | eachAct hasMixedStartConditions]) do: [:eachAct | | reportItem |
-		reportItem := XPDLItemImportReport new type: 'Warning';
+		reportItem := self xpdlItemReportClass new type: 'Warning';
 			code: 100;
 			title: 'Mixed Start Conditions';
 			description: 'Activity [', eachAct getName, '] in Process [', self getName, '] has Mixed Start Conditions (maybe not an error)';

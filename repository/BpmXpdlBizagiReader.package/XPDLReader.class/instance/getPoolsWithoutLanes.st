@@ -7,7 +7,7 @@ getPoolsWithoutLanes
 
 	self getAllPools do: [:eachPool |
 		eachPool lanes isEmpty ifTrue: [ | reportItem |
-			reportItem := XPDLItemImportReport new 
+			reportItem := self xpdlItemReportClass new 
 				code: 54;
 				type: 'Error';
 				title: 'Pools wihout Lanes';

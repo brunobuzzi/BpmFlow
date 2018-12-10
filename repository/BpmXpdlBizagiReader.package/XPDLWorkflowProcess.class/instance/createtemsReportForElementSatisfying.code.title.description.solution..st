@@ -5,7 +5,7 @@ createtemsReportForElementSatisfying: aBlock code: code title: title description
 	report := OrderedCollection new.
 
 	(activities select: aBlock) do: [:each | 
-		reportItem := XPDLItemImportReport new 
+		reportItem := self xpdlItemReportClass new 
 			code: code;
 			type: 'Error';
 			title: title;

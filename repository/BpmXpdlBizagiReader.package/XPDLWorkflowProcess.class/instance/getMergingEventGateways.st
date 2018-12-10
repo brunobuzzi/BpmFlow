@@ -8,7 +8,7 @@ getMergingEventGateways
 	activitiesNames := Dictionary new.
 	(activities select: [:each |each isGatewayNode and:[each isGatewayForEventsNode]]) do: [:xpdlGateway | 
 			(xpdlGateway inTransitions size > 1) ifTrue:[ | reportItem |		
-				reportItem := XPDLItemImportReport new 
+				reportItem := self xpdlItemReportClass new 
 					code: 204;
 					type: 'Error';
 					title: 'Merging Event Gateway';

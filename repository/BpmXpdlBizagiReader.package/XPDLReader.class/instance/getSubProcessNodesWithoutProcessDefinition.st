@@ -9,7 +9,7 @@ getSubProcessNodesWithoutProcessDefinition
 
 	xpdlPackages do: [:eachPack | 
 		(eachPack getAllSubProcessNodes reject: [:eachAct | allPackagesNames includes: eachAct getName]) do: [:eachAct | | reportItem |
-			reportItem := XPDLItemImportReport new 
+			reportItem := self xpdlItemReportClass new 
 				code: 300;
 				type: 'Error';
 				title: 'Sub Process Activity without Process Definition';

@@ -1,0 +1,4 @@
+other
+xpdlItemReportClass
+
+	^XPDLItemImportReport

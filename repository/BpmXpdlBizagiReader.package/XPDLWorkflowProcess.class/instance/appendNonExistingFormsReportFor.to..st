@@ -4,7 +4,7 @@ appendNonExistingFormsReportFor: anApplication to: anOrderedCollection
 	anApplication isObeonApplication ifFalse: [^anOrderedCollection].
 
 	(self getNonExistingFormNamesIn: anApplication) do: [:formName | | itemReport |
-		itemReport := XPDLItemImportReport new 
+		itemReport := self xpdlItemReportClass new 
 			code: 608;
 			type: 'Error';
 			title: 'Missing Orbeon Form';

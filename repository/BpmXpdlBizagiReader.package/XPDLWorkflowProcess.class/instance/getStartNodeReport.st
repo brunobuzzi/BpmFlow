@@ -5,7 +5,7 @@ getStartNodeReport
 	self hasStartNode ifTrue: [^#()].
 
 	report := OrderedCollection new.
-	reportItem := XPDLItemImportReport new 
+	reportItem := self xpdlItemReportClass new 
 		code: 112;
 		type: 'Error';
 		title: 'Process without Start';

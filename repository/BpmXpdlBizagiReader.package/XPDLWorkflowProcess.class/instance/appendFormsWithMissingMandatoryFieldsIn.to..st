@@ -13,7 +13,7 @@ appendFormsWithMissingMandatoryFieldsIn: anApplication to: anOrderedCollection
 		def := anApplication definitionNamed: each getName.
 		def ifNotNil: [ 
 			def getMandatoryFieldsMissing do: [:eachName | | item |
-				item := XPDLItemImportReport new 
+				item := self xpdlItemReportClass new 
 							code: 604;
 							type: 'Error';
 							title: 'Missing Mandatory Forms Field';
