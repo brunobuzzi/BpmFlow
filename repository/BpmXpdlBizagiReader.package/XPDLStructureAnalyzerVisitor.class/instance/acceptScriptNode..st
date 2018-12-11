@@ -1,4 +1,9 @@
 tasks
 acceptScriptNode: aXPDLScriptNode
+	| blockAnalysis | 
 
-	self acceptActivityNode: aXPDLScriptNode
+	blockAnalysis := BpmTaskScriptCodeAnalyzer new blockCode: aXPDLScriptNode script.
+	blockAnalysis analyze.
+	blockAnalysis codeWarnings do: [:eachString | self addScriptCodeWarningItem: eachString].
+
+	self acceptActivityNode: aXPDLScriptNode.
