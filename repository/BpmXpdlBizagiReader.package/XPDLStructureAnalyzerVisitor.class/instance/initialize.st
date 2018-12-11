@@ -4,6 +4,6 @@ initialize
 	super initialize.
 
 	detectedItems := OrderedCollection new.
-	xpdlObjects := Set new.
+	xpdlObjects := Dictionary new.
 	hasStartNode := false.
 	hasEndNode := false.

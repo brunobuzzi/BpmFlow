@@ -1,9 +1,11 @@
 xpdl top elements
 acceptXpdlNode: aXPDLObject
 
-	(xpdlObjects includes: aXPDLObject) ifTrue: [self addRepeatedNameItemFor: aXPDLObject].
+	"check repeated names in different artifacts"
+	(aXPDLObject isTransitionNode not and: [(xpdlObjects includesKey: aXPDLObject getName) and: [((xpdlObjects at: aXPDLObject getName) == aXPDLObject) not]])
+	ifTrue: [self addRepeatedNameItemFor: aXPDLObject].
 
-	xpdlObjects add: aXPDLObject.
+	xpdlObjects at: aXPDLObject getName put: aXPDLObject.
 	
 	aXPDLObject hasNoInOrOutTransitions ifTrue: [self addIsolatedActivityItemFor: aXPDLObject].
 
