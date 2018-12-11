@@ -1,0 +1,2 @@
+other
+acceptXpdlNode: aXPDLObject

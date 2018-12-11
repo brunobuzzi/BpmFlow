@@ -10,7 +10,7 @@ getNonEventsAfterEventGateways
 			(xpdlGateway outTransitions reject: [:eachTr | eachTr endArtifact isEventNode]) do:[:each | | reportItem |		
 				reportItem := self xpdlItemReportClass new type: 'Error';
 					title: ('Non Event Detected [', each getName, ']');
-					description: 'Non Event Artifacts not allowed after Event Gateways';
+					description: 'Non Event Artifacts are not allowed after Event Gateways';
 					solution: 'Remove Non Events Artifacts from all Event Gateways';
 					yourself.
 				report add: reportItem].

@@ -1,4 +1,8 @@
 events
 acceptStartEventNode: aXPDLStartNode
 
-	aXPDLStartNode outTransitions do: [:each | each acceptVisitor: self]
+	hasStartNode := true.
+
+	self acceptXpdlNode: aXPDLStartNode.
+
+	aXPDLStartNode outTransitions do: [:each | each acceptVisitor: self].

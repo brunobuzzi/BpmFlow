@@ -5,7 +5,7 @@ getLanesWithoutName
 
 	report := OrderedCollection new.
 
-	(lanes select: [:each | each getName notNil and: [each getName notEmpty]]) do: [:eachLane | | reportItem |
+	(lanes select: [:each | each getName isNil or: [each getName isEmpty]]) do: [:eachLane | | reportItem |
 		reportItem := self xpdlItemReportClass new 
 			code: 50;
 			type: 'Warning';

@@ -1,4 +1,6 @@
 events
 acceptEndEventNode: aXPDLEndNode
 
-	hasEndNode := true
+	hasEndNode := true.
+
+	self acceptXpdlNode: aXPDLEndNode.
