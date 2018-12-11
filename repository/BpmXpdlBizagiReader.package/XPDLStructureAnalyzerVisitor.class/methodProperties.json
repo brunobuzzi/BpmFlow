@@ -1,10 +1,10 @@
 {
 	"class" : {
-		 },
+		"newOn:" : "brunobb 12/11/2018 08:13" },
 	"instance" : {
 		"acceptActivityNode:" : "brunobb 12/11/2018 04:46",
 		"acceptEndEventNode:" : "brunobb 12/11/2018 05:16",
-		"acceptGatewayNode:" : "brunobb 12/11/2018 04:55",
+		"acceptGatewayNode:" : "brunobb 12/11/2018 08:17",
 		"acceptIntermediateEventNode:" : "brunobb 12/11/2018 04:35",
 		"acceptLaneNode:" : "brunobb 12/11/2018 05:13",
 		"acceptPoolNode:" : "brunobb 12/11/2018 02:45",
@@ -25,7 +25,7 @@
 		"addActivityWithNoNameItem:" : "brunobb 12/11/2018 04:25",
 		"addEventCodeWarningItem:" : "brunobb 12/11/2018 06:50",
 		"addEventGatewayUsedForMergingItem:" : "brunobb 12/11/2018 04:55",
-		"addGatewayWithoutConditionsItem:in:" : "brunobb 12/11/2018 04:24",
+		"addGatewayWithoutConditionsItem:in:" : "brunobb 12/11/2018 08:16",
 		"addIsolatedActivityItemFor:" : "brunobb 12/11/2018 04:39",
 		"addLaneWithNoNameItem:" : "brunobb 12/11/2018 04:45",
 		"addMissingGatewayOrEventItem" : "brunobb 12/11/2018 07:57",
@@ -67,5 +67,6 @@
 		"hasStartNode:" : "brunobb 12/11/2018 05:14",
 		"initialize" : "brunobb 12/11/2018 05:15",
 		"visitXpdlPackage:" : "brunobb 12/11/2018 05:18",
+		"xpdlItemReportClass" : "brunobb 12/11/2018 08:15",
 		"xpdlNames" : "brunobb 12/11/2018 03:48",
 		"xpdlNames:" : "brunobb 12/11/2018 03:48" } }
