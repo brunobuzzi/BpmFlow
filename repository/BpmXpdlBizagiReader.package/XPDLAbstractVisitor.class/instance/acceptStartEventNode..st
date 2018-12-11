@@ -1,0 +1,4 @@
+other
+acceptStartEventNode: aXPDLStartNode
+
+	self subclassResponsibility

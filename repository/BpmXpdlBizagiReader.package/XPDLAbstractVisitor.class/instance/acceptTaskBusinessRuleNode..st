@@ -1,0 +1,4 @@
+other
+acceptTaskBusinessRuleNode: aXPDLTaskBusinessRuleNode
+
+	self subclassResponsibility

@@ -1,0 +1,4 @@
+other
+acceptActivityNode: aXPDLActivityNode
+
+	self subclassResponsibility

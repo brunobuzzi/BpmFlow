@@ -1,0 +1,4 @@
+other
+acceptTaskUserNode: aXPDLTaskUserNode
+
+	self subclassResponsibility

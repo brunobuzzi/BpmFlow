@@ -1,0 +1,4 @@
+other
+acceptIntermediateEventNode: aXPDLIntermediateNode
+
+	self subclassResponsibility

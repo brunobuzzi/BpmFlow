@@ -1,0 +1,4 @@
+other
+acceptTaskManualNode: aXPDLTaskManualNode
+
+	self subclassResponsibility

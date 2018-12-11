@@ -1,0 +1,4 @@
+other
+acceptTransitionNode: aXPDLTransitionNode
+
+	self subclassResponsibility

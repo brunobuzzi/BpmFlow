@@ -1,0 +1,4 @@
+other
+acceptGatewayNode: aXPDLGatewayNode
+
+	self subclassResponsibility

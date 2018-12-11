@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptActivityNode:" : "brunobb 12/11/2018 03:21",
+		"acceptEndEventNode:" : "brunobb 12/11/2018 03:21",
+		"acceptGatewayNode:" : "brunobb 12/11/2018 03:21",
+		"acceptIntermediateEventNode:" : "brunobb 12/11/2018 03:21",
+		"acceptLaneNode:" : "brunobb 12/11/2018 03:21",
+		"acceptPoolNode:" : "brunobb 12/11/2018 03:21",
+		"acceptScriptNode:" : "brunobb 12/11/2018 03:21",
+		"acceptStartEventNode:" : "brunobb 12/11/2018 03:21",
+		"acceptSubProcessNode:" : "brunobb 12/11/2018 03:21",
+		"acceptTaskBusinessRuleNode:" : "brunobb 12/11/2018 03:21",
+		"acceptTaskManualNode:" : "brunobb 12/11/2018 03:21",
+		"acceptTaskNodeNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTaskNoneNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTaskReceiveNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTaskSendNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTaskServiceNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTaskUserNode:" : "brunobb 12/11/2018 03:22",
+		"acceptTransitionNode:" : "brunobb 12/11/2018 03:22",
+		"acceptWorkflowNode:" : "brunobb 12/11/2018 03:22",
+		"visitXpdlPackage:" : "brunobb 12/11/2018 02:35" } }

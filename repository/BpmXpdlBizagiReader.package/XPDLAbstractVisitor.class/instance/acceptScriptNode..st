@@ -1,0 +1,4 @@
+other
+acceptScriptNode: aXPDLScriptNode
+
+	self subclassResponsibility
