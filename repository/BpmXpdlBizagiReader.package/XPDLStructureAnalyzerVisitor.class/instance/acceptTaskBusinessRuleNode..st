@@ -1,4 +1,4 @@
-other
+tasks
 acceptTaskBusinessRuleNode: aXPDLTaskBusinessRuleNode
 
-	aXPDLTaskBusinessRuleNode outTransitions do: [:each | each acceptVisitor: self ]
+	self acceptActivityNode: aXPDLTaskBusinessRuleNode

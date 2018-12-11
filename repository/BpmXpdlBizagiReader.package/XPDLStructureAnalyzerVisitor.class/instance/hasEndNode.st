@@ -1,0 +1,3 @@
+Accessing
+hasEndNode
+	^hasEndNode

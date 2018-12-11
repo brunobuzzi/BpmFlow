@@ -1,4 +1,4 @@
-other
+transitions
 acceptTransitionNode: aXPDLTransitionNode
 
 	aXPDLTransitionNode endNode acceptVisitor: self

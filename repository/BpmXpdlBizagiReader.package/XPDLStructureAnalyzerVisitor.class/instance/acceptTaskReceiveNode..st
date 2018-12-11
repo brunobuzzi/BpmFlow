@@ -1,4 +1,4 @@
-other
+tasks
 acceptTaskReceiveNode: aXPDLTaskReceiveNode
 
-	aXPDLTaskReceiveNode outTransitions do: [:each | each acceptVisitor: self ]
+	self acceptActivityNode: aXPDLTaskReceiveNode

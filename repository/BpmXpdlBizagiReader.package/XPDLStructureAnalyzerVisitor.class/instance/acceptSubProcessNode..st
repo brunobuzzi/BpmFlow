@@ -1,4 +1,4 @@
-other
+tasks
 acceptSubProcessNode: aXPDLSubProcessNode
 
-	aXPDLSubProcessNode outTransitions do: [:each | each acceptVisitor: self ]
+	self acceptActivityNode: aXPDLSubProcessNode

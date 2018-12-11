@@ -1,4 +1,4 @@
-other
+xpdl top elements
 acceptWorkflowNode: aXPDLWorkflowProcess
 
 	aXPDLWorkflowProcess startNode acceptVisitor: self.

@@ -11,7 +11,8 @@
 		"loopType",
 		"loopCondition",
 		"performers",
-		"attachedEvents" ],
+		"attachedEvents",
+		"lane" ],
 	"name" : "XPDLActivityNode",
 	"pools" : [
 		 ],

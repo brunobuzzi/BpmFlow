@@ -1,4 +1,4 @@
-other
+tasks
 acceptScriptNode: aXPDLScriptNode
 
-	aXPDLScriptNode outTransitions do: [:each | each acceptVisitor: self ]
+	self acceptActivityNode: aXPDLScriptNode

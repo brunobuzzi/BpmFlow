@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"detectedItems",
+		"xpdlNames",
+		"hasEndNode" ],
 	"name" : "XPDLStructureAnalyzerVisitor",
 	"pools" : [
 		 ],
