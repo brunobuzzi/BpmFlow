@@ -1,6 +1,10 @@
 xpdl top elements
 acceptXpdlNode: aXPDLObject
 
+	(xpdlObjects includes: aXPDLObject) ifTrue: [self addRepeatedNameItemFor: aXPDLObject].
+
+	xpdlObjects add: aXPDLObject.
+	
 	aXPDLObject hasNoInOrOutTransitions ifTrue: [self addIsolatedActivityItemFor: aXPDLObject].
 
 	(aXPDLObject hasMixedStartConditions) ifTrue: [self addActivityWithMixedConditionsItem: aXPDLObject].
