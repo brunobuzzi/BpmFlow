@@ -1,4 +1,4 @@
 other
 importReport
 
-	^xpdlReader importReport
+	^xpdlStructureVisitor detectedItems

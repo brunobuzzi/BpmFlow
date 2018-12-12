@@ -1,4 +1,4 @@
-other
+mapping
 getApplicationFor: aXPDLObject
 	"The receiver answer <anApplication> associated with the element <aXPDLObject>"
 

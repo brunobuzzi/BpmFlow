@@ -1,0 +1,4 @@
+other
+visitAllXpdlPackages
+
+	self subclassResponsibility

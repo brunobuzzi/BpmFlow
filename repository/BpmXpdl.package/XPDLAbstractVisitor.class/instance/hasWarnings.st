@@ -1,0 +1,4 @@
+other
+hasWarnings
+
+	self subclassResponsibility

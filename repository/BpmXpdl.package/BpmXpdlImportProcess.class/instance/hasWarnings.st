@@ -1,4 +1,4 @@
 other
 hasWarnings
 
-	^xpdlReader hasWarnings
+	^xpdlStructureVisitor hasWarnings

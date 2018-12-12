@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 12/11/2018 08:13",
 		"newWithMapping:" : "brunobb 12/12/2018 09:32" },
 	"instance" : {
 		"acceptActivityNode:" : "brunobb 12/12/2018 07:23",
@@ -68,11 +67,13 @@
 		"hasEndNode:" : "brunobb 12/11/2018 03:53",
 		"hasStartNode" : "brunobb 12/11/2018 05:14",
 		"hasStartNode:" : "brunobb 12/11/2018 05:14",
+		"hasWarnings" : "brunobb 12/12/2018 09:42",
 		"initialize" : "brunobb 12/12/2018 09:32",
 		"packageApplication" : "brunobb 12/12/2018 09:32",
 		"packageApplication:" : "brunobb 12/12/2018 09:32",
-		"visitXpdlPackage:" : "brunobb 12/12/2018 07:22",
-		"visitXpdlPackages:" : "brunobb 12/12/2018 08:07",
+		"visitAllXpdlPackages" : "brunobb 12/12/2018 09:40",
+		"visitXpdlPackage:" : "brunobb 12/12/2018 09:32",
+		"visitXpdlPackages:" : "brunobb 12/12/2018 09:32",
 		"visitedTransitions" : "brunobb 12/12/2018 07:07",
 		"visitedTransitions:" : "brunobb 12/12/2018 07:07",
 		"xpdlItemReportClass" : "brunobb 12/11/2018 08:15",

@@ -23,7 +23,9 @@ importBizagiFiles
 		].
 	].
 
-	xpdlReader getImportWarningReportWith: self createXpdlFileApplicationMapping.
+	"xpdlReader getImportWarningReportWith: self createXpdlFileApplicationMapping."
+	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: self createXpdlPackageApplicationMapping.
+	xpdlStructureVisitor visitAllXpdlPackages.
 
 	"If false (no warnings) -> the processes definition are created and stored"
-	xpdlReader hasWarnings ifFalse: [^self createBpmProcessesDefinitions].
+	xpdlStructureVisitor hasWarnings ifFalse: [^self createBpmProcessesDefinitions].

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 12/12/2018 09:50",
 	"instvars" : [
 		"processGenerator",
 		"xpdlReader",
@@ -12,7 +12,8 @@
 		"indexApplicationMapper",
 		"indexXpdlFileMapper",
 		"fileFormatErrors",
-		"bpmEnvironment" ],
+		"bpmEnvironment",
+		"xpdlStructureVisitor" ],
 	"name" : "BpmXpdlImportProcess",
 	"pools" : [
 		 ],

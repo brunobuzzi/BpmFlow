@@ -1,0 +1,4 @@
+import
+getXpdlPackages
+
+	^xpdlReader xpdlPackages
