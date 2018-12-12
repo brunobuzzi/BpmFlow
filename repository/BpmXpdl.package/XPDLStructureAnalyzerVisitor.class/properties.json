@@ -10,9 +10,9 @@
 		"xpdlObjects",
 		"hasEndNode",
 		"hasStartNode",
-		"application",
 		"currentWorkflow",
-		"visitedTransitions" ],
+		"visitedTransitions",
+		"packageApplication" ],
 	"name" : "XPDLStructureAnalyzerVisitor",
 	"pools" : [
 		 ],
