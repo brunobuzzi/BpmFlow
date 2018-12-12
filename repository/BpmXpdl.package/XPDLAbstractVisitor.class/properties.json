@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLAbstractVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

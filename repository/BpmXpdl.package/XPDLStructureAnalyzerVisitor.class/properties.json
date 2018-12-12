@@ -1,0 +1,20 @@
+{
+	"category" : "BpmXpdl",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"detectedItems",
+		"xpdlObjects",
+		"hasEndNode",
+		"hasStartNode",
+		"application",
+		"currentWorkflow",
+		"visitedTransitions" ],
+	"name" : "XPDLStructureAnalyzerVisitor",
+	"pools" : [
+		 ],
+	"super" : "XPDLAbstractVisitor",
+	"type" : "normal" }
