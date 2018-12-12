@@ -1,7 +1,7 @@
 warning items creation
 addRepeatedNameItemFor: aXPDLActivityNode
 
-	^detectedItems add: 
+	detectedItems add: 
 		(self xpdlItemReportClass new 
 			code: 108;
 			type: 'Error';

@@ -1,7 +1,7 @@
 warning items creation
 addTransitionCodeWarningItem: aString
 
-	^detectedItems add: 
+	detectedItems add: 
 		(self xpdlItemReportClass new 
 				code: 404;
 				type: 'Error';

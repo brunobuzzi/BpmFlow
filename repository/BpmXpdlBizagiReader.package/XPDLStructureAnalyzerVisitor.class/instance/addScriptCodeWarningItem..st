@@ -1,7 +1,7 @@
 warning items creation
 addScriptCodeWarningItem: aString
 
-	^detectedItems add: 
+	detectedItems add: 
 		(self xpdlItemReportClass new 
 				code: 124;
 				type: 'Error';

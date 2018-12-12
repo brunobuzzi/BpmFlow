@@ -1,7 +1,7 @@
 warning items creation
 addIsolatedActivityItemFor: aXPDLObject
 
-	^detectedItems add: 
+	detectedItems add: 
 		(self xpdlItemReportClass new 
 			code: 120;
 			type: 'Warning';

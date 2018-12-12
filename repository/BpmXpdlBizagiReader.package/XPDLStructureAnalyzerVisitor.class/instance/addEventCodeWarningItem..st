@@ -1,7 +1,7 @@
 warning items creation
 addEventCodeWarningItem: aString
 
-	^detectedItems add: 
+	detectedItems add: 
 		(self xpdlItemReportClass new 
 				code: 400;
 				type: 'Error';
