@@ -1,0 +1,2 @@
+other
+acceptInclusiveGateway: aBpmInclusiveGatewayDefinition
