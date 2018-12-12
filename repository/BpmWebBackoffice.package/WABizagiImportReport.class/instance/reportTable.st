@@ -8,6 +8,7 @@ reportTable
 		columns: (OrderedCollection new 
 						add: self createTypeColumn;
 						add: self createCodeColumn;
+						add: self createIsResumableColumn;
 						add: self createTitleColumn;
 						add: self createDescriptionColumn;
 						add: self createSolutionColumn;
