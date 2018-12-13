@@ -12,7 +12,9 @@
 		"hasStartNode",
 		"currentWorkflow",
 		"visitedTransitions",
-		"packageApplication" ],
+		"packageApplication",
+		"visitedEvents",
+		"visitedActivities" ],
 	"name" : "XPDLStructureAnalyzerVisitor",
 	"pools" : [
 		 ],

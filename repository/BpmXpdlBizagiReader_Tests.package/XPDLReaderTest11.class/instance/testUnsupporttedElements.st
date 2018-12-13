@@ -1,22 +1,26 @@
 other
 testUnsupporttedElements
-	| workflow |
+	| visitor map |
 
-	workflow := self getWorkflow.
+	map := Dictionary new.
+	reader xpdlPackages do: [:pack | map at: pack put: (OrbeonApplication getExistingApplicationOrCreateNewNamed: 'ue')].
 
-	self assert: (workflow getUnsupportedBPMNelements size = 14).
+	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map.
+	visitor visitAllXpdlPackages.
 
-	self assert: (workflow getAttachedMessageEventsItemsReport size = 1).
-	self assert: (workflow getBussinessRuleTasksItemsReport size = 1).
-	self assert: (workflow getCompensationEventsItemsReport size = 1).
-	self assert: (workflow getComplexGateways size = 1).
-	self assert: (workflow getConditionalEventsItemsReport size = 1).
-	self assert: (workflow getErrorEventsItemsReport size = 1).
-	self assert: (workflow getEscalationEventsItemsReport size = 1).
-	self assert: (workflow getManualTasksItemsReport size = 1).
-	self assert: (workflow getMultipleEventsItemsReport size = 1).
-	self assert: (workflow getParallelMultipleEventsItemsReport size = 1).
-	self assert: (workflow getReceiverTasksItemsReport size = 1).
-	self assert: (workflow getServiceTasksItemsReport size = 1).
-	self assert: (workflow getSignalEventsItemsReport size = 1).
-	self assert: (workflow getUserTasksItemsReport size = 1).
+	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 14).
+
+	self assert: ((visitor detectedItems select: [:each | each code = 700]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 704]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 708]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 712]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 716]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 720]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 724]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 728]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 732]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 736]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 740]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 744]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 748]) size = 1).
+	self assert: ((visitor detectedItems select: [:each | each code = 752]) size = 1).
