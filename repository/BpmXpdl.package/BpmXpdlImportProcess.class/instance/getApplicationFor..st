@@ -1,4 +1,4 @@
-other
+mapping
 getApplicationFor: xpdlPackage
 	| appName |
 

@@ -1,4 +1,4 @@
-other
+import
 generatedProcesses
 
 	^processGenerator processes
