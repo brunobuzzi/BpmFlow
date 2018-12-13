@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptTaskServiceNode: aXPDLTaskServiceNode
 
 	self acceptActivityNode: aXPDLTaskServiceNode

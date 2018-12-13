@@ -1,4 +1,4 @@
-transitions
+xpdl transitions
 acceptTransitionNode: aXPDLTransitionNode
 	"The receiver check for:
 	* Cyclic loops

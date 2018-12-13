@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptSubProcessNode: aXPDLSubProcessNode
 
 	self acceptActivityNode: aXPDLSubProcessNode

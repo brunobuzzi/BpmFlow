@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptTaskSendNode: aXPDLTaskSendNode
 	"The receiver check for:
 	* Existence of the target application 

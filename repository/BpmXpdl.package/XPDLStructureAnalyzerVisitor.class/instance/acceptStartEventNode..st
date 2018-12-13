@@ -1,4 +1,4 @@
-events
+xpdl events
 acceptStartEventNode: aXPDLStartNode
 	"The receiver check if the start node exist and if the start node is timer check the <activationBlock> validity"
 

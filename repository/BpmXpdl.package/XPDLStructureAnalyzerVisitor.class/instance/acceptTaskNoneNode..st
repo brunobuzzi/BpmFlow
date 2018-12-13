@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptTaskNoneNode: aXPDLTaskNoneNode
 	"The receiver check for:
 	* Existence of <OrbeonPublishedFormDefinition> in the receiver <application>

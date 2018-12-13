@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptActivityNode: aXPDLActivityNode
 	"The receiver check for:
 	* Activities with no name or empty name"

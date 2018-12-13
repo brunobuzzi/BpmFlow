@@ -1,0 +1,4 @@
+import
+hasNonResumableWarnings
+
+	^xpdlStructureVisitor hasNonResumableWarnings

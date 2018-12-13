@@ -1,0 +1,4 @@
+import
+hasResumableWarnings
+
+	^xpdlStructureVisitor hasResumableWarnings

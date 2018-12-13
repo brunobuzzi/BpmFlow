@@ -1,4 +1,4 @@
-gateways
+xpdl gateways
 acceptGatewayNode: aXPDLGatewayNode
 	"The receiver check for:
 	* Mandatory conditions for normal Gateways

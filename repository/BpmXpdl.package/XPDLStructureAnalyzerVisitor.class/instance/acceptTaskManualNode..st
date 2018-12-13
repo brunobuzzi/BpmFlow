@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptTaskManualNode: aXPDLTaskManualNode
 
 	self acceptActivityNode: aXPDLTaskManualNode

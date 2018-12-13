@@ -1,4 +1,4 @@
-events
+xpdl events
 acceptIntermediateEventNode: aXPDLIntermediateNode
 
 	self acceptXpdlNode: aXPDLIntermediateNode.

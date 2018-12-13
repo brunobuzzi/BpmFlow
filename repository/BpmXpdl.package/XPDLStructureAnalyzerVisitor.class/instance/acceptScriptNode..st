@@ -1,4 +1,4 @@
-tasks
+xpdl tasks
 acceptScriptNode: aXPDLScriptNode
 	"The receiver check for:
 	* Validity of the script Block"

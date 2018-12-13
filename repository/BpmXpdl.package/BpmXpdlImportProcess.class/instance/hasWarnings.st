@@ -1,4 +1,4 @@
-other
+import
 hasWarnings
 
 	^xpdlStructureVisitor hasWarnings

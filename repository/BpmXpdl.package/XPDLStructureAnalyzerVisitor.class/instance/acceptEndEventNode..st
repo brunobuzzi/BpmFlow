@@ -1,4 +1,4 @@
-events
+xpdl events
 acceptEndEventNode: aXPDLEndNode
 	"The receiver check if the end node exist"
 
