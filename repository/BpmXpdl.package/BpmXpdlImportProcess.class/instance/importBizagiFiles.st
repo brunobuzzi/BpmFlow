@@ -23,7 +23,6 @@ importBizagiFiles
 		].
 	].
 
-	"xpdlReader getImportWarningReportWith: self createXpdlFileApplicationMapping."
 	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: self createXpdlPackageApplicationMapping.
 	xpdlStructureVisitor visitAllXpdlPackages.
 

@@ -11,8 +11,6 @@
 		"getAllSubProcessNodes" : "brunobb 11/06/2018 07:22",
 		"getAllWorkflows" : "brunobb 11/06/2018 07:22",
 		"getDiagramDimensions" : "brunobb 11/06/2018 07:22",
-		"getImportWarningReport" : "brunobb 11/06/2018 08:50",
-		"getImportWarningReportWith:" : "brunobb 12/10/2018 10:51",
 		"getPackageFrom:" : "brunobb 11/06/2018 07:22",
 		"getPackageNameFrom:" : "brunobb 11/06/2018 07:22",
 		"getPackageNamed:" : "brunobb 11/06/2018 07:22",
