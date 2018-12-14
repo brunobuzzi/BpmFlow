@@ -13,6 +13,7 @@
 		"extendedAttributes:" : "BrunoBB 12/13/2015 13:47",
 		"extendedValueOf:" : "BrunoBB 12/13/2015 13:47",
 		"extendedValueOf:ifAbsent:" : "BrunoBB 12/13/2015 13:47",
+		"getUsedFieldsNamesInCondition" : "brunobb 12/14/2018 09:44",
 		"hasCondition" : "BrunoBB 07/02/2016 12:12",
 		"hasEvaluationConditionWithFieldNamed:" : "BrunoBB 04/19/2016 16:20",
 		"initialize" : "BrunoBB 06/30/2016 10:22",

@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"visitedTasks" ],
+		"visitedTasks",
+		"visitedTransitions",
+		"missingEvaluationFields" ],
 	"name" : "BpmProcessPathAnalyzerVisitor",
 	"pools" : [
 		 ],
