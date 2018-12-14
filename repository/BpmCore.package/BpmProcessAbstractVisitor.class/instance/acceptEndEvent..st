@@ -1,4 +1,4 @@
-other
+events
 acceptEndEvent: aBpmEndComponentDefinition
 
 	self subclassResponsibility

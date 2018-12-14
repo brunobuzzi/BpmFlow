@@ -1,0 +1,2 @@
+gateways
+acceptParallelEventBasedGateway: aBpmParallelEventBasedGatewayDefinition

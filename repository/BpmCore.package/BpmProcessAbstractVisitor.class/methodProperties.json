@@ -7,6 +7,7 @@
 		"acceptEventBasedGateway:" : "brunobb 12/10/2018 12:07",
 		"acceptExclusiveEventBasedGateway:" : "brunobb 12/10/2018 12:08",
 		"acceptExclusiveGateway:" : "brunobb 12/10/2018 12:08",
+		"acceptGateway:" : "brunobb 12/14/2018 09:18",
 		"acceptInclusiveGateway:" : "brunobb 12/10/2018 12:08",
 		"acceptIntermediateEvent:" : "brunobb 12/10/2018 12:08",
 		"acceptOrbeonTask:" : "brunobb 12/10/2018 12:11",
@@ -17,4 +18,7 @@
 		"acceptSendTask:" : "brunobb 12/10/2018 12:12",
 		"acceptStartEvent:" : "brunobb 12/10/2018 12:08",
 		"acceptSubProcessTask:" : "brunobb 12/10/2018 12:10",
+		"acceptTask:" : "brunobb 12/14/2018 09:11",
+		"acceptTransition:" : "brunobb 12/14/2018 09:06",
+		"acceptTranstion:" : "brunobb 12/14/2018 08:03",
 		"visitProcess:" : "brunobb 12/10/2018 12:07" } }

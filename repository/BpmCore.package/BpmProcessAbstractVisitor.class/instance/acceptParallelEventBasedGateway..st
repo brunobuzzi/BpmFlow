@@ -1,4 +1,4 @@
-other
+gateways
 acceptParallelEventBasedGateway: aBpmParallelEventBasedGatewayDefinition
 
 	self subclassResponsibility

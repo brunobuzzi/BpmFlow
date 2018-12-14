@@ -1,4 +1,4 @@
-other
+gateways
 acceptExclusiveGateway: aBpmExclusiveGatewayDefinition
 
 	self subclassResponsibility

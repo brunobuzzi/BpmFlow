@@ -1,0 +1,2 @@
+gateways
+acceptGateway: aBpmGatewayDefinition

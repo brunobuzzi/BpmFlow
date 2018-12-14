@@ -1,4 +1,4 @@
-other
+events
 acceptStartEvent: aBpmStartComponentDefinition
 
 	self subclassResponsibility

@@ -1,0 +1,2 @@
+tasks
+acceptSubProcessTask: aBpmSubProcessTaskDefinition

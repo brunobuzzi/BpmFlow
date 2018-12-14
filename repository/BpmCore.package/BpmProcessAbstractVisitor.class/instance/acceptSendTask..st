@@ -1,4 +1,4 @@
-other
+tasks
 acceptSendTask: aBpmSendTaskDefinition
 
 	self subclassResponsibility

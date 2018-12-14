@@ -1,2 +1,4 @@
-other
+gateways
 acceptEventBasedGateway: aBpmEventBasedGatewayDefinition
+
+	self acceptGateway: aBpmEventBasedGatewayDefinition

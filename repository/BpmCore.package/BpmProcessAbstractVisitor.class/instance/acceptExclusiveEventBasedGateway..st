@@ -1,4 +1,4 @@
-other
+gateways
 acceptExclusiveEventBasedGateway: aBpmExclusiveEventBasedGatewayDefinition
 
 	self subclassResponsibility
