@@ -2,6 +2,7 @@
 	"class" : {
 		"newInProcess:" : "brunobb 10/22/2018 12:43" },
 	"instance" : {
+		"acceptVisitor:" : "brunobb 12/14/2018 11:00",
 		"addToParentProcess" : "BrunoBB 10/27/2015 17:31",
 		"conditionToRun" : "BrunoBB 10/29/2015 13:08",
 		"conditionToRun:" : "BrunoBB 10/29/2015 13:08",
