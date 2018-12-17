@@ -1,0 +1,4 @@
+other
+getUsedFieldsNamesInCondition
+
+	^transition getUsedFieldsNamesInCondition

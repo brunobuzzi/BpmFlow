@@ -1,0 +1,4 @@
+other
+endArtifact
+
+	^transition endArtifact

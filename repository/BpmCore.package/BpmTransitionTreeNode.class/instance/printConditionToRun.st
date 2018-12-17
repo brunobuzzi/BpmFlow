@@ -1,0 +1,4 @@
+other
+printConditionToRun
+
+	^transition printConditionToRun
