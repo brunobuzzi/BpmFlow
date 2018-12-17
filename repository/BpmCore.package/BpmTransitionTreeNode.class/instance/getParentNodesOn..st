@@ -3,6 +3,6 @@ getParentNodesOn: anOrderedCollection
 
 	anOrderedCollection add: self.
 
-	parent ifNil: [^self].
+	parent ifNil: [^anOrderedCollection].
 
 	^parent getParentNodesOn: anOrderedCollection

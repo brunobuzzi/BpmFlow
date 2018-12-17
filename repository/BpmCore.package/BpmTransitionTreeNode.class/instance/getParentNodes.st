@@ -1,4 +1,4 @@
 other
 getParentNodes
 
-	self getParentNodesOn: OrderedCollection new
+	^self getParentNodesOn: OrderedCollection new
