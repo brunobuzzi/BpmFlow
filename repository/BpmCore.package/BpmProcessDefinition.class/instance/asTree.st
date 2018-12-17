@@ -1,4 +1,4 @@
-other
+tree
 asTree
 
 	^BpmTransitionTree newOn: self
