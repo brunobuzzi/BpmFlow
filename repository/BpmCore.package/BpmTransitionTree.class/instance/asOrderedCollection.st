@@ -1,4 +1,4 @@
-other
+visiting
 asOrderedCollection
 	"Answer an <OrderedCollection> whose elements are those of the receiver
 	(ordering is that of the #do: operation as implemented by the receiver).

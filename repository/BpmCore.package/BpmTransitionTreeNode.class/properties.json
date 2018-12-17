@@ -8,7 +8,8 @@
 	"instvars" : [
 		"parent",
 		"children",
-		"artifact" ],
+		"transition",
+		"tree" ],
 	"name" : "BpmTransitionTreeNode",
 	"pools" : [
 		 ],

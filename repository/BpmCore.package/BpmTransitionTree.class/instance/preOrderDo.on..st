@@ -1,4 +1,4 @@
-other
+visiting
 preOrderDo: aBlock on: aTreeNode
 
 	aBlock value: aTreeNode.

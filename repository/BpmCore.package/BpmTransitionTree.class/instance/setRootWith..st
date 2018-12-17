@@ -1,10 +1,13 @@
-other
-setRootWith: aBpmEventDefinition
-	| rootNodes |
+visiting
+setRootWith: aBpmProcessDefinition
+	| rootNodes startEvent |
 
-	rootNodes := aBpmEventDefinition outTransitions collect: [:transition | | node |
-		node := BpmTransitionTreeNode newOn: transition.
-		nodesArtifactsMap at: node put: transition.
-		node].
+	startEvent := aBpmProcessDefinition startEvent.
+
+	rootNodes := startEvent outTransitions collect: [:transition |
+		self add: transition asChildOf: nil.
+	].
 
 	roots addAll: rootNodes.
+
+	roots do: [:each | self visitTransition: each]

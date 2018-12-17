@@ -1,6 +1,6 @@
 other
-newOn: startNode
+newOn: aBpmProcessDefinition
 
 	^super new initialize
-		setRootWith: startNode;
+		setRootWith: aBpmProcessDefinition;
 		yourself

@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"roots",
-		"nodesArtifactsMap" ],
+		"nodesArtifactsMap",
+		"allNodes" ],
 	"name" : "BpmTransitionTree",
 	"pools" : [
 		 ],

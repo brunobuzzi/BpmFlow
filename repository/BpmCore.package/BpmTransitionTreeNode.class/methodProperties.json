@@ -1,11 +1,21 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 12/14/2018 11:44" },
+		"newOn:for:" : "brunobb 12/17/2018 04:51" },
 	"instance" : {
-		"addChild:" : "brunobb 12/14/2018 11:43",
-		"artifact" : "brunobb 12/14/2018 11:44",
-		"artifact:" : "brunobb 12/14/2018 11:44",
+		"addChild:" : "brunobb 12/17/2018 04:59",
 		"children" : "brunobb 12/14/2018 11:43",
 		"children:" : "brunobb 12/14/2018 11:43",
+		"getParentNodes" : "brunobb 12/17/2018 05:14",
+		"getParentNodesOn:" : "brunobb 12/17/2018 05:14",
+		"getParentTransitions" : "brunobb 12/17/2018 06:48",
+		"getParentTransitionsOn:" : "brunobb 12/17/2018 07:10",
+		"initialize" : "brunobb 12/17/2018 07:11",
+		"outTransitions" : "brunobb 12/17/2018 04:54",
 		"parent" : "brunobb 12/14/2018 11:43",
-		"parent:" : "brunobb 12/14/2018 11:43" } }
+		"parent:" : "brunobb 12/14/2018 11:43",
+		"printTransition" : "brunobb 12/17/2018 07:43",
+		"sameAs:" : "brunobb 12/17/2018 07:57",
+		"transition" : "brunobb 12/17/2018 07:09",
+		"transition:" : "brunobb 12/17/2018 07:09",
+		"tree" : "brunobb 12/17/2018 04:50",
+		"tree:" : "brunobb 12/17/2018 04:50" } }
