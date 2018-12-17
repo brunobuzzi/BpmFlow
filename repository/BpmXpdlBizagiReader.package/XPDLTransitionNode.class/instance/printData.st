@@ -4,6 +4,6 @@ printData
 
 	stream := PrintStream on: String new.
 
-	stream nextPutAll: (startArtifact name, ' > ', endArtifact name).
+	stream nextPutAll: (startNode getName, ' > ', endNode getName).
 
 	^stream contents

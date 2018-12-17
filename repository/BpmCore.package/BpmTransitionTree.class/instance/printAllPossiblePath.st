@@ -6,7 +6,7 @@ printAllPossiblePath
 
 	self getAllPossiblePath keysAndValuesDo: [:key :collection | 
 		stream nextPutAll: ('[PATH START (', key printString, ') (s: ', collection size printString,')]'); cr.
-		collection do: [:node | stream nextPutAll: node printTransition].
+		collection do: [:node | stream nextPutAll: node printTransition, String lf].
 		stream cr; nextPutAll: '[PATH END]'; cr.
 	].
 
