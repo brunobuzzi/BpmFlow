@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"transtionTree" ],
+	"name" : "BpmTransitionTreeVisitor",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessAbstractVisitor",
+	"type" : "normal" }

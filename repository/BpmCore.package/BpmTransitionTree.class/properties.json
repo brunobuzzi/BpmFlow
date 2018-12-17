@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"roots",
+		"nodesArtifactsMap" ],
+	"name" : "BpmTransitionTree",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
