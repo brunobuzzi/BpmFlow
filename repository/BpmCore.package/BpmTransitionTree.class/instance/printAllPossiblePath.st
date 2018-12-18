@@ -1,5 +1,6 @@
 other
 printAllPossiblePath
+	"The receiver print all possible path"
 	| stream |
 
 	stream := PrintStream on: String new.

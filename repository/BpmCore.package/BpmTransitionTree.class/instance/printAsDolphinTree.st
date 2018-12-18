@@ -1,5 +1,7 @@
 other
 printAsDolphinTree
+	"The receiver print <aString> with Dolphin Smalltalk code to be evaluated by a Dolphin Smalltalk Virtual Machine.
+	This is only for development and testing purpose"
 	| stream |
 
 	stream := PrintStream on: String new.

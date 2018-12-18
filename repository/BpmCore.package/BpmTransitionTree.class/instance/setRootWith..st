@@ -1,5 +1,6 @@
 visiting
 setRootWith: aBpmProcessDefinition
+	"The receiver set the <roots> with out transitions of <aBpmProcessDefinition> start event"
 	| rootNodes startEvent |
 
 	startEvent := aBpmProcessDefinition startEvent.

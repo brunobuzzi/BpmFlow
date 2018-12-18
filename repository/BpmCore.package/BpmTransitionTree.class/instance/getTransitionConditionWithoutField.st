@@ -1,9 +1,11 @@
 visiting
 getTransitionConditionWithoutField
+	"Answer <aDictionary> with all possible transitions that may have a missing field in the Condition Block.
+	The key is <aBpmTransitionDefinition> and the value is <anArray> with the field name, the string Block and a collection with the followed path"
 	| missingFields |
 
 	missingFields := Dictionary new.
-	self getAllPossiblePath do: [:collection | | currentPath |
+	self getAllPossiblePath do: [:collection | | currentPath | "check missing field in all possible paths"
 		currentPath := collection reverse.
 		currentPath keysAndValuesDo: [:index :trNode | 
 			trNode getUsedFieldsNamesInCondition do: [:fieldName |
