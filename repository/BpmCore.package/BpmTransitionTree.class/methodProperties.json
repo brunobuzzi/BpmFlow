@@ -2,14 +2,14 @@
 	"class" : {
 		"newOn:" : "brunobb 12/17/2018 07:00" },
 	"instance" : {
-		"add:asChildOf:" : "brunobb 12/17/2018 07:05",
+		"add:asChildOf:" : "brunobb 12/18/2018 07:56",
 		"allNodes" : "brunobb 12/17/2018 07:00",
 		"allNodes:" : "brunobb 12/17/2018 07:00",
 		"asOrderedCollection" : "brunobb 12/17/2018 07:00",
 		"do:" : "brunobb 12/17/2018 07:00",
-		"endOrderDo:" : "brunobb 12/17/2018 08:24",
-		"endOrderDo:on:" : "brunobb 12/17/2018 08:24",
-		"fieldName:isContainedInAny:" : "brunobb 12/17/2018 11:30",
+		"endOrderDo:" : "brunobb 12/18/2018 07:58",
+		"endOrderDo:on:" : "brunobb 12/18/2018 08:00",
+		"fieldName:isContainedInAny:" : "brunobb 12/18/2018 08:02",
 		"getAllPossiblePath" : "brunobb 12/17/2018 08:56",
 		"getLeafNodes" : "brunobb 12/17/2018 08:29",
 		"getTransitionConditionWithoutField" : "brunobb 12/18/2018 02:02",

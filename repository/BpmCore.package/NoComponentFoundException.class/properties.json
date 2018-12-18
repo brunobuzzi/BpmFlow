@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NoComponentFoundException",
+	"pools" : [
+		 ],
+	"super" : "BpmCoreException",
+	"type" : "normal" }

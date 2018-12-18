@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"acceptVisitor:" : "brunobb 12/10/2018 12:11",
-		"getComponentClass" : "BrunoBB 02/19/2016 13:31",
+		"getComponentClass" : "brunobb 12/18/2018 08:07",
 		"getObjectModel" : "BrunoBB 02/19/2016 13:32",
 		"isSeasideTask" : "brunobb 04/24/2018 08:56",
 		"printNameAndDefinitionType" : "BrunoBB 03/08/2016 06:38",
-		"taskName" : "BrunoBB 02/19/2016 13:43" } }
+		"taskName" : "BrunoBB 02/19/2016 13:43",
+		"throwNoComponentFoundException" : "brunobb 12/18/2018 08:07" } }
