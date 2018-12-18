@@ -1,4 +1,4 @@
-import
+testing
 hasNonResumableWarnings
 
 	^xpdlStructureVisitor hasNonResumableWarnings

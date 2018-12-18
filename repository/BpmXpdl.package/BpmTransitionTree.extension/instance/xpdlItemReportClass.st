@@ -1,0 +1,4 @@
+*bpmXpdl
+xpdlItemReportClass
+
+	^XPDLItemImportReport

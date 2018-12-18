@@ -1,4 +1,4 @@
-import
+testing
 isImportSuccessful
 
 	processGenerator ifNil: [^false].

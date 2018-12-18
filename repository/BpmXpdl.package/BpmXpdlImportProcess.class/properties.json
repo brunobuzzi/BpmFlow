@@ -13,7 +13,8 @@
 		"indexXpdlFileMapper",
 		"fileFormatErrors",
 		"bpmEnvironment",
-		"xpdlStructureVisitor" ],
+		"xpdlStructureVisitor",
+		"processesAsTree" ],
 	"name" : "BpmXpdlImportProcess",
 	"pools" : [
 		 ],

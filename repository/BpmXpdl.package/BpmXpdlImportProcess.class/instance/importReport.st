@@ -1,4 +1,4 @@
 other
 importReport
 
-	^xpdlStructureVisitor detectedItems
+	^xpdlStructureVisitor detectedItems, self getPossibleInvalidConditions

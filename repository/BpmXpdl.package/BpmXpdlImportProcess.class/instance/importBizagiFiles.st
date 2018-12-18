@@ -26,5 +26,5 @@ importBizagiFiles
 	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: self createXpdlPackageApplicationMapping.
 	xpdlStructureVisitor visitAllXpdlPackages.
 
-	"If false (no warnings) -> the processes definition are created and stored"
+	"If false (no warnings) -> the processes definition are created and but not stored yet"
 	xpdlStructureVisitor hasWarnings ifFalse: [^self createBpmProcessesDefinitions].

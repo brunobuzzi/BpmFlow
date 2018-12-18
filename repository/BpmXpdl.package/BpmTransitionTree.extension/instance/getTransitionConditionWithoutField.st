@@ -1,4 +1,4 @@
-visiting
+*bpmXpdl
 getTransitionConditionWithoutField
 	"Answer <aDictionary> with all possible transitions that may have a missing field in the Condition Block.
 	The key is <aBpmTransitionDefinition> and the value is <anArray> with the field name, the string Block and a collection with the followed path"

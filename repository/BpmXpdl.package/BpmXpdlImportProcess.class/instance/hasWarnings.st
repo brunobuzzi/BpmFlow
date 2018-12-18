@@ -1,4 +1,4 @@
-import
+testing
 hasWarnings
 
-	^xpdlStructureVisitor hasWarnings
+	^xpdlStructureVisitor hasWarnings or: [self hasPossibleInvalidConditions]

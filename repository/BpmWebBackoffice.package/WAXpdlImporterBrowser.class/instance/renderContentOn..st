@@ -12,7 +12,7 @@ renderContentOn: html
 		html div id: 'add-new-import-form';
 			with: [html div id: 'add-new-form-button'; with: [self renderAddNewImportFormButtonOn: html].
 					html div id: 'remove-new-form-button'; with: [self renderRemoveImportFormButtonOn: html].
-					self renderImportAllButtonOn: html]."render the button to trigger the import process if warnings are detected a list of items is displayed"
+					self renderImportAllButtonOn: html]."render the button to trigger the import process (#importBizagiFiles) if warnings are detected a list of items is displayed"
 	].
 
 	model hasProcessGenerator ifFalse: [^self].

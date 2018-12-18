@@ -1,0 +1,4 @@
+testing
+hasPathWarnings
+
+	self generatedProcesses

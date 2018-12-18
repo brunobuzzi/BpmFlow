@@ -1,0 +1,4 @@
+testing
+hasPossibleInvalidConditions
+
+	^self getPossibleInvalidConditions notEmpty
