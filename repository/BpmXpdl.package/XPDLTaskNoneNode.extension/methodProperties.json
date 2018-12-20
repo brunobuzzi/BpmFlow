@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getBpmClass" : "brunobb 10/16/2018 08:22" } }
+		"getBpmClass" : "brunobb 10/16/2018 08:22",
+		"getTooltipOrNilFor:" : "brunobb 12/20/2018 03:50" } }
