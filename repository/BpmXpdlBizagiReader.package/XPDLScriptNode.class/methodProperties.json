@@ -5,6 +5,7 @@
 		"acceptVisitor:" : "brunobb 12/11/2018 03:12",
 		"getArtifactFrom:" : "BrunoBB 06/22/2016 11:49",
 		"getLanesFrom:" : "BrunoBB 06/21/2016 13:45",
+		"getTooltipOrNil" : "brunobb 12/20/2018 02:55",
 		"isScriptNode" : "BrunoBB 06/21/2016 13:32",
 		"script" : "BrunoBB 06/21/2016 13:32",
 		"script:" : "BrunoBB 06/21/2016 13:32",

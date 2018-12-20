@@ -19,7 +19,8 @@ drawOn: aJasvgiBpmCanvas
 	ifFalse: [^aJasvgiBpmCanvas 
 						drawActivityNamed: self getName 
 						at: self getXcoordinate @ self getYcoordinate 
-						extent: self getWidth @ self getHeight].
+						extent: self getWidth @ self getHeight
+						tooltip: self getTooltipOrNil].
 
 	^aJasvgiBpmCanvas 
 			drawMultiInstaceActivityNamed: self getName 
