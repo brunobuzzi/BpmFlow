@@ -6,14 +6,16 @@ drawOn: aJasvgiBpmCanvas
 						drawMultiInstaceMultiRoleActivityNamed: self getName 
 						roles: (performers collect: [:each | '[',each getName,']']) 
 						at: self getXcoordinate @ self getYcoordinate 
-						extent: self getWidth @ self getHeight].
+						extent: self getWidth @ self getHeight
+						tooltip: (self getTooltipOrNilFor: aJasvgiBpmCanvas application)].
 
 	self hasPerformers
 	ifTrue: [^aJasvgiBpmCanvas 
 						drawMultiRoleActivityNamed: self getName 
 						roles: (performers collect: [:each | '[',each getName,']']) 
 						at: self getXcoordinate @ self getYcoordinate 
-						extent: self getWidth @ self getHeight].
+						extent: self getWidth @ self getHeight
+						tooltip: (self getTooltipOrNilFor: aJasvgiBpmCanvas application)].
 
 	self isMultiInstance 
 	ifFalse: [^aJasvgiBpmCanvas 
@@ -26,3 +28,4 @@ drawOn: aJasvgiBpmCanvas
 			drawMultiInstaceActivityNamed: self getName 
 			at: self getXcoordinate @ self getYcoordinate 
 			extent: self getWidth @ self getHeight
+			tooltip: (self getTooltipOrNilFor: aJasvgiBpmCanvas application)
