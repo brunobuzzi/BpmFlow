@@ -2,6 +2,7 @@ system initilization
 initializeCurrentSystem
 	"WARNING: THIS METHOD WILL DELETE ALL ROOT OBJECTS FROM THE SYSTEM"
 
+	BpmEnvironment initializeCache.
 	AbstractApplication initializeCache.
 	BpmUser initializeCache.
 	ApplicationUser initializeCache.
