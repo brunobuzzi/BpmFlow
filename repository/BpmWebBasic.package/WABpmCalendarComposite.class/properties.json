@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"svgCode" ],
-	"name" : "WASVGViewer",
+		 ],
+	"name" : "WABpmCalendarComposite",
 	"pools" : [
 		 ],
-	"super" : "WARawSvgComposite",
+	"super" : "WASeasideSvgComposite",
 	"type" : "normal" }

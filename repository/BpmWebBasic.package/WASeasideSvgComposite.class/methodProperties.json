@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"renderLinkText:callback:at:textSizePx:color:" : "brunobb 12/21/2018 08:32",
+		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/21/2018 08:31",
+		"renderRectangleAt:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:34",
+		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:33",
+		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:33",
+		"renderRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:34",
+		"renderRectangleOn:at:width:height:stroke:fillColor:" : "brunobb 12/21/2018 08:35",
+		"renderRoundRectangleOn:at:id:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:35",
+		"renderRoundRectangleOn:at:id:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:36",
+		"renderRoundRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:37",
+		"renderRoundRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:40",
+		"renderTextOn:text:at:" : "brunobb 12/21/2018 08:40",
+		"renderTextOn:text:at:id:textSizePx:color:" : "brunobb 12/21/2018 08:41",
+		"renderTextOn:text:at:textSizePx:color:" : "brunobb 12/21/2018 08:42" } }

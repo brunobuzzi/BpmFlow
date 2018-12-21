@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"svgCode" ],
-	"name" : "WASVGViewer",
+		 ],
+	"name" : "WASeasideSvgComposite",
 	"pools" : [
 		 ],
-	"super" : "WARawSvgComposite",
+	"super" : "WASvgComposite",
 	"type" : "normal" }
