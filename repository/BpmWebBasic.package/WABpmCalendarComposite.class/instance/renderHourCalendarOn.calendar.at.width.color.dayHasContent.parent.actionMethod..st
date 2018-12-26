@@ -11,9 +11,9 @@ renderHourCalendarOn: html calendar: calendar at: aPoint width: width color: col
 		0 to: 11 do: [:hourIndex | | value rectHour currentTime |
 			currentTime := Time fromString: hourIndex printString ,':00'.
 			hourColor := (calendar timeIntervalExistFrom: currentTime to: (currentTime addSeconds: (60*60) - 1)) ifTrue: ['brown'] ifFalse: ['green'].
-			rectHour := self drawRoundRectangleAt: currentPosition width: width height: width rx: 5 ry: 5 strokeWidth: '1px' stroke: 'red' fillColor: hourColor opacity: '1'.
+			rectHour := self renderRoundRectangleOn: html at: currentPosition width: width height: width rx: 5 ry: 5 strokeWidth: '1px' stroke: 'red' fillColor: hourColor opacity: '1'.
 			(aBoolean and: [value ~= 0]) 
-			ifTrue: [self drawLinkText: currentTime printString callback: [sewafWebComposite perform: actionMethod with: currentTime] at: ((currentPosition x + 5) @ (currentPosition y + 12)) textSizePx: '10px' color: 'white']. 
+			ifTrue: [self renderLinkTextOn: html label: currentTime printString callback: [sewafWebComposite perform: actionMethod with: currentTime] at: ((currentPosition x + 5) @ (currentPosition y + 12)) textSizePx: '10px' color: 'white']. 
 			"draw the named of the days"
 			currentPosition := (currentPosition x + width + 15) @ currentPosition y
 		].

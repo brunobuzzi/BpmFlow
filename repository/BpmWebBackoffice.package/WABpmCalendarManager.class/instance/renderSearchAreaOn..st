@@ -1,2 +1,2 @@
-other
+render
 renderSearchAreaOn: html

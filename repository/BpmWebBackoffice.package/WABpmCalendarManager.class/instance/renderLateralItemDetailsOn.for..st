@@ -1,4 +1,4 @@
-other
+render
 renderLateralItemDetailsOn: html for: aLateralItem
 
 	html strong with: [html output: aLateralItem name].

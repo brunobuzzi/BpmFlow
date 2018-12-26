@@ -1,11 +1,11 @@
-other
+render
 renderItemComponentOn: html
 
 	selectedLateralItem ifNil: [^self].
 
 	(selectedLateralItem name = 'Default') ifFalse: [self renderDeleteCalendarOn: html]. "Default calendar can not be removed"
 	self renderAddCalendarOn: html.
-
+"
 	html div class: 'float-left'; with: [
 		(self componentValueAt: 'hoursPane') 
 		ifFalse: [html div with: [
@@ -15,3 +15,5 @@ renderItemComponentOn: html
 			self renderCalendarHoursOperationsOn: html.
 			self renderCalendarHoursOn: html]].
 	].
+"
+	html render: calendarComposite

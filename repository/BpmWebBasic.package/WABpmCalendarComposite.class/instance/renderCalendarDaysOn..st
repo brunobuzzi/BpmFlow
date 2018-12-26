@@ -1,17 +1,18 @@
-render
+other
 renderCalendarDaysOn: html
 	| year notWorkingDays |
 
 	notWorkingDays := Dictionary new.
 	year := Date today year.
 
-	selectedLateralItem days do: [:each | notWorkingDays at: each dayOfYear put: 100].
+	model days do: [:each | notWorkingDays at: each dayOfYear put: 100].
 
 	html div class: 'float-left'; 
 		with: [html svgCanvas
 					attributeAt: 'width' put: '820px';
 					attributeAt: 'height' put: '200px';
-					with: [html drawCalendar: notWorkingDays 
+					with: [self renderCalendarOn: html
+									calendarDays: notWorkingDays 
 									at: 10@10 
 									from: (Date fromString: '01/01/', year printString) 
 									to: (Date fromString: '06/30/', year printString) 
@@ -26,7 +27,8 @@ renderCalendarDaysOn: html
 		with: [html svgCanvas
 					attributeAt: 'width' put: '820px';
 					attributeAt: 'height' put: '200px';
-					with: [html drawCalendar: notWorkingDays 
+					with: [self renderCalendarOn: html
+									calendarDays: notWorkingDays 
 									at: 10@10 
 									from: (Date fromString: '07/01/', year printString) 
 									to: (Date fromString: '12/31/', year printString) 

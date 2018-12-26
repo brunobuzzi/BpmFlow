@@ -1,4 +1,4 @@
-render
+other
 renderCalendarHoursOperationsOn: html
 
 	html div class: 'float-left'; with: [

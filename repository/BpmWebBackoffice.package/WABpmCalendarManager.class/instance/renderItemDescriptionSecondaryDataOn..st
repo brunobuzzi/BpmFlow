@@ -1,4 +1,4 @@
-other
+render
 renderItemDescriptionSecondaryDataOn: html
 
 	selectedLateralItem ifNil: [^self].

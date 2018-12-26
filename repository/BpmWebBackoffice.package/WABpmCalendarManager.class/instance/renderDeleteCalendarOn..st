@@ -1,4 +1,4 @@
-other
+render
 renderDeleteCalendarOn: html
    | jQueryId |
 
