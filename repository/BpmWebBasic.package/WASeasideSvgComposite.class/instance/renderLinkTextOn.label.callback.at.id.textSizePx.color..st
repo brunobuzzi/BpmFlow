@@ -5,7 +5,7 @@ renderLinkTextOn: html label: aString callback: aBlock at: aPoint id: id textSiz
 	html anchor 
 		callback: aBlock;
 		with: [
-			self svgText
+			html svgText
 				attributeAt: 'id' put: id;
 				attributeAt: 'x' put: aPoint x;
 				attributeAt: 'y' put: aPoint y;

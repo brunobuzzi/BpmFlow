@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/21/2018 08:31",
+		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/26/2018 04:07",
 		"renderLinkTextOn:label:callback:at:textSizePx:color:" : "brunobb 12/26/2018 04:04",
 		"renderRectangleAt:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:34",
 		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:33",

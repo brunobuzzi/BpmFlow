@@ -1,9 +1,9 @@
 render
 renderCompleteItemOn: html
 
-	selectedLateralItem ifNil: [^calendarComposite := nil.].
+	selectedLateralItem ifNil: [^self].
 
-	calendarComposite := WABpmCalendarComposite on: selectedLateralItem.
+	calendarComposite model: selectedLateralItem.
 	
 	html div id: 'item-customized-component'; class: 'margin-top-10px ';
 		with: [self renderItemComponentOn: html.].
