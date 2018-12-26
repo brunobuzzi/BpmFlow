@@ -4,4 +4,5 @@
 	"instance" : {
 		"drawOn:" : "brunobb 12/19/2018 12:27",
 		"drawOn:color:stroke:" : "brunobb 12/19/2018 12:26",
-		"getTooltipOrNil" : "brunobb 12/20/2018 02:22" } }
+		"getTooltipOrNil" : "brunobb 12/20/2018 02:22",
+		"renderOn:" : "brunobb 12/26/2018 08:43" } }

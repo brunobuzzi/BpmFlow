@@ -3,8 +3,6 @@
 		 },
 	"instance" : {
 		"acceptVisitor:" : "brunobb 12/11/2018 03:19",
-		"drawOn:" : "brunobb 12/20/2018 06:44",
-		"drawOn:color:stroke:" : "brunobb 10/31/2018 09:32",
 		"getApplicationName" : "brunobb 10/17/2018 08:59",
 		"getEventName" : "brunobb 10/17/2018 09:12",
 		"getFieldNamesToSet" : "brunobb 11/05/2018 09:06",

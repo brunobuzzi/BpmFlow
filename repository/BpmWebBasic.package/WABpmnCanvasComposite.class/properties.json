@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmnCanvasComposite",
+	"pools" : [
+		 ],
+	"super" : "WASeasideSvgComposite",
+	"type" : "normal" }
