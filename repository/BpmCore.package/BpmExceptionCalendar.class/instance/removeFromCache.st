@@ -1,4 +1,4 @@
 other
 removeFromCache
 
-	^self class cache removeKey: name ifAbsent: []
+	^self class cache remove: self ifAbsent: []
