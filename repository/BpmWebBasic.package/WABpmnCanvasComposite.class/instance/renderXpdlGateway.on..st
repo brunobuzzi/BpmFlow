@@ -18,4 +18,6 @@ renderXpdlGateway: aXPDLGatewayNode on: html
 
 	textPoint := aPoint x @ (aPoint y - 10).
 
+	self renderGatewayInnerIconFor: aXPDLGatewayNode on: html.
+
 	self renderTextOn: html text: aXPDLGatewayNode getName at: textPoint textSizePx: self defaultGatewayNameSize
