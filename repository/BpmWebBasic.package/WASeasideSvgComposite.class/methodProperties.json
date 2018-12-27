@@ -4,7 +4,10 @@
 	"instance" : {
 		"defaultLineStroke" : "brunobb 12/27/2018 05:04",
 		"defaultLineWidth" : "brunobb 12/27/2018 05:05",
+		"getConnectionPointsStringFrom:" : "brunobb 12/27/2018 06:23",
 		"renderCircleOn:at:r:strokeWidth:stroke:fillColor:tooltip:" : "brunobb 12/27/2018 04:40",
+		"renderLineMOn:coordinates:id:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 06:36",
+		"renderLineMOn:coordinates:widthPx:fillColor:" : "brunobb 12/27/2018 06:29",
 		"renderLineOn:from:to:fillColor:" : "brunobb 12/27/2018 05:03",
 		"renderLineOn:from:to:id:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 04:58",
 		"renderLineOn:from:to:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 05:02",

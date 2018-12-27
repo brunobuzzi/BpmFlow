@@ -12,4 +12,9 @@ renderContentOn: html
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
 	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = model processName].
 
-	svgCanvasTag with: [xpdlWorkflows do: [:eachWorkflow | eachWorkflow parentLanes do: [:eachLaneNode | self renderXpdlLane: eachLaneNode on: html]]].
+	svgCanvasTag with: [
+		xpdlWorkflows do: [:eachWorkflow | 
+			eachWorkflow parentLanes do: [:eachLaneNode | self renderXpdlLane: eachLaneNode on: html].
+			eachWorkflow transitions do: [:eachTransitionNode | self renderXpdlTransition: eachTransitionNode on: html].
+		].
+	].
