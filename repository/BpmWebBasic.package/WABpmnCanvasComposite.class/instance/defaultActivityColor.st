@@ -1,0 +1,4 @@
+parameter
+defaultActivityColor
+
+	^'lightsteelblue'

@@ -17,5 +17,6 @@ renderContentOn: html
 		xpdlWorkflows do: [:eachWorkflow | 
 			eachWorkflow parentLanes do: [:eachLaneNode | self renderXpdlLane: eachLaneNode on: html].
 			eachWorkflow transitions do: [:eachTransitionNode | self renderXpdlTransition: eachTransitionNode on: html].
+			eachWorkflow getTaskNodes  do: [:eachActivityNode | self renderXpdlActivity: eachActivityNode on: html] 
 		].
 	].

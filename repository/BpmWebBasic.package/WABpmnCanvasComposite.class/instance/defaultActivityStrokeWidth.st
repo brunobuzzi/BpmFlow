@@ -1,0 +1,4 @@
+parameter
+defaultActivityStrokeWidth
+
+	^'2'
