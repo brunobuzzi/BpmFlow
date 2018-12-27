@@ -13,6 +13,7 @@ renderContentOn: html
 	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = model processName].
 
 	svgCanvasTag with: [
+		self renderMarkerDefinitionOn: html at: 10@5 id: 'arrow' width: 10 height: 10.
 		xpdlWorkflows do: [:eachWorkflow | 
 			eachWorkflow parentLanes do: [:eachLaneNode | self renderXpdlLane: eachLaneNode on: html].
 			eachWorkflow transitions do: [:eachTransitionNode | self renderXpdlTransition: eachTransitionNode on: html].

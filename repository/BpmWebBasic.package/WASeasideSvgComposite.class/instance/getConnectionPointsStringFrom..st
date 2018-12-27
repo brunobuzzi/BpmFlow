@@ -1,4 +1,4 @@
-line
+line m
 getConnectionPointsStringFrom: coordinates
 	"The receiver answer <aString> with a line-m type for coordinates of transition <aXPDLTransitionNode>"
 	| pointsString |

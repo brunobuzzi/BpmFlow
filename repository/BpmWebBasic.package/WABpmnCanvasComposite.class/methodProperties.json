@@ -8,7 +8,7 @@
 		"defaultEventStroke" : "brunobb 12/27/2018 05:17",
 		"defaultEventStrokeWidth" : "brunobb 12/27/2018 05:15",
 		"getEventCenterFrom:" : "brunobb 12/27/2018 05:11",
-		"renderContentOn:" : "brunobb 12/27/2018 06:32",
+		"renderContentOn:" : "brunobb 12/27/2018 07:19",
 		"renderEvent:at:radius:stroke:color:on:" : "brunobb 12/27/2018 05:16",
 		"renderEvent:at:radius:strokeWidth:stroke:color:tooltip:on:" : "brunobb 12/27/2018 04:50",
 		"renderEvent:at:radius:tooltip:on:" : "brunobb 12/27/2018 05:14",
@@ -26,4 +26,4 @@
 		"renderXpdlStartEvent:on:" : "brunobb 12/26/2018 11:12",
 		"renderXpdlSubprocess:on:" : "brunobb 12/26/2018 11:12",
 		"renderXpdlTaskSend:on:" : "brunobb 12/26/2018 11:12",
-		"renderXpdlTransition:on:" : "brunobb 12/27/2018 06:35" } }
+		"renderXpdlTransition:on:" : "brunobb 12/27/2018 07:13" } }

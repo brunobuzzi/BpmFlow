@@ -1,5 +1,5 @@
 line m
-renderLineMOn: html coordinates: coordinates id: id widthPx: widthPx stroke: stroke fillColor: fillColor 
+renderLineMOn: html coordinates: coordinates id: id widthPx: widthPx stroke: stroke fillColor: fillColor markerEnd: markerId
 
 	^html svgPath
 			attributeAt: 'id' put: id;
@@ -7,4 +7,5 @@ renderLineMOn: html coordinates: coordinates id: id widthPx: widthPx stroke: str
 			attributeAt: 'stroke' put: stroke;
 			attributeAt: 'stroke-width' put: widthPx;
 			attributeAt: 'fill' put: fillColor;
+			attributeAt: 'marker-end' put: 'url(#', markerId, ')';
 			yourself
