@@ -2,6 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"defaultLineStroke" : "brunobb 12/27/2018 05:04",
+		"defaultLineWidth" : "brunobb 12/27/2018 05:05",
+		"renderCircleOn:at:r:strokeWidth:stroke:fillColor:tooltip:" : "brunobb 12/27/2018 04:40",
+		"renderLineOn:from:to:fillColor:" : "brunobb 12/27/2018 05:03",
+		"renderLineOn:from:to:id:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 04:58",
+		"renderLineOn:from:to:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 05:02",
 		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/26/2018 10:56",
 		"renderLinkTextOn:label:callback:at:textSizePx:color:" : "brunobb 12/26/2018 04:04",
 		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:33",

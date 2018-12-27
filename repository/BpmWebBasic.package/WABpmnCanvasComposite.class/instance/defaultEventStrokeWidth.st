@@ -1,0 +1,4 @@
+parameter
+defaultEventStrokeWidth
+
+	^'2'

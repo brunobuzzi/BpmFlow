@@ -1,4 +1,4 @@
-other
+text
 renderTextOn: html text: aString at: aPoint 
 	"The receiver draw the string <aString> at <aPoint>"
 

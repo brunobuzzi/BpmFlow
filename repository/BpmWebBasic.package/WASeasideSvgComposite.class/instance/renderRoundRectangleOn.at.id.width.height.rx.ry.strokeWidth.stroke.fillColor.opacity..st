@@ -1,4 +1,4 @@
-other
+round rectangle
 renderRoundRectangleOn: html at: aPoint id: id width: width height: height rx: rx ry: ry strokeWidth: widthPx stroke: stroke fillColor: fillColor opacity: opacity
 	"The receiver draw a round rectangle a <aPoint> with id <id> height <height> width <width> fill color <fillColor> and stroke color <stroke>"
 

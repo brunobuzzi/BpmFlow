@@ -1,4 +1,4 @@
-other
+render xpdl
 renderXpdlLane: aXPDLLaneNode on: html
 	| rect laneNameCenter aPoint stroke color |
 

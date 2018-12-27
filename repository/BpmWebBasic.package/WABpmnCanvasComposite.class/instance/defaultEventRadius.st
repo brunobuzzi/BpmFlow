@@ -1,0 +1,4 @@
+parameter
+defaultEventRadius
+
+	^15
