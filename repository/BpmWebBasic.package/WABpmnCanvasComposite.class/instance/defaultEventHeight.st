@@ -1,0 +1,4 @@
+parameter
+defaultEventHeight
+
+	^40

@@ -4,7 +4,7 @@ renderMessageEvent: anXPDLEventNode on: html
 
 	center := self getEventCenterFrom: anXPDLEventNode.
 
-	self renderEvent: anXPDLEventNode at: center radius: (anXPDLEventNode getWidth asNumber // 2) stroke: self defultEventStroke color: '#90a5bd' on: html.
+	self renderEvent: anXPDLEventNode at: center radius: (anXPDLEventNode getWidth asNumber // 2) stroke: self defaultEventStroke color: '#90a5bd' on: html.
 
 	rectCorner := (center x - 10) @ (center y - 6).
 	"render envelope rectangle"

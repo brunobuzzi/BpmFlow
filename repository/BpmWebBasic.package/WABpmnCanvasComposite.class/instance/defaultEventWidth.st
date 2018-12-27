@@ -1,0 +1,4 @@
+parameter
+defaultEventWidth
+
+	^40

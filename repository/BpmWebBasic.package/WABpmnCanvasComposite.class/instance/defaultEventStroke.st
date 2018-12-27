@@ -1,4 +1,4 @@
 parameter
 defaultEventStroke
 
-	^'gray'
+	^'black'
