@@ -1,0 +1,4 @@
+parameter
+defaultGatewayHeight
+
+	^30

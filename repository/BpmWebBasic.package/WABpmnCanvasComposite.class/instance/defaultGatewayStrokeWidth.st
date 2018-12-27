@@ -1,0 +1,4 @@
+parameter
+defaultGatewayStrokeWidth
+
+	^'2'
