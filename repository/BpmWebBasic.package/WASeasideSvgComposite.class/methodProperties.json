@@ -2,17 +2,19 @@
 	"class" : {
 		 },
 	"instance" : {
-		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/26/2018 04:07",
+		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/26/2018 10:56",
 		"renderLinkTextOn:label:callback:at:textSizePx:color:" : "brunobb 12/26/2018 04:04",
-		"renderRectangleAt:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:34",
 		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:33",
-		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:33",
+		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/26/2018 10:55",
 		"renderRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:34",
 		"renderRectangleOn:at:width:height:stroke:fillColor:" : "brunobb 12/21/2018 08:35",
 		"renderRoundRectangleOn:at:id:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:35",
-		"renderRoundRectangleOn:at:id:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:36",
+		"renderRoundRectangleOn:at:id:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/26/2018 10:55",
 		"renderRoundRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:37",
 		"renderRoundRectangleOn:at:width:height:rx:ry:strokeWidth:stroke:fillColor:opacity:" : "brunobb 12/21/2018 08:40",
 		"renderTextOn:text:at:" : "brunobb 12/21/2018 08:40",
-		"renderTextOn:text:at:id:textSizePx:color:" : "brunobb 12/21/2018 08:41",
-		"renderTextOn:text:at:textSizePx:color:" : "brunobb 12/21/2018 08:42" } }
+		"renderTextOn:text:at:id:textSizePx:color:" : "brunobb 12/26/2018 10:57",
+		"renderTextOn:text:at:id:textSizePx:color:transform:" : "brunobb 12/26/2018 12:10",
+		"renderTextOn:text:at:textSizePx:" : "brunobb 12/26/2018 11:24",
+		"renderTextOn:text:at:textSizePx:color:" : "brunobb 12/21/2018 08:42",
+		"renderTextOn:text:at:textSizePx:transform:" : "brunobb 12/26/2018 12:10" } }

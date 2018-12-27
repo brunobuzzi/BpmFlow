@@ -1,0 +1,2 @@
+other
+renderXpdlIntermediateEvent: aXPDLIntermediateNode on: html
