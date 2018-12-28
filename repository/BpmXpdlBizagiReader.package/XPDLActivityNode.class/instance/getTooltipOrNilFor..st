@@ -1,0 +1,4 @@
+other
+getTooltipOrNilFor: anOrbeonApplication
+
+	^nil

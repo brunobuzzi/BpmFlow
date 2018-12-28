@@ -1,23 +1,25 @@
 render xpdl
 renderXpdlActivity: aXPDLActivityNode on: html
-	| rect textPoint aPoint extent |
+	| associations textPoint |
 
-	aPoint := aXPDLActivityNode getXcoordinate @ aXPDLActivityNode getYcoordinate.
-	extent := aXPDLActivityNode getWidth @ aXPDLActivityNode getHeight.
+	associations := OrderedCollection  new.
+	associations 
+		add: ('id' -> UUID new asString);
+		add: ('x' -> aXPDLActivityNode getXcoordinate);
+		add: ('y' -> aXPDLActivityNode getYcoordinate);
+		add: ('rx' -> 5);
+		add: ('ry' -> 5);
+		add: ('height' -> aXPDLActivityNode getHeight);
+		add: ('width' -> aXPDLActivityNode getWidth);
+		add: ('stroke-width' -> self defaultActivityStrokeWidth);
+		add: ('stroke' -> self defaultActivityStroke);
+		add: ('fill' -> self defaultActivityColor).
 
-	rect := self renderRoundRectangleOn: html 
-						at: aPoint 
-						id: UUID new asString 
-						width: extent x 
-						height: extent y 
-						rx: 5 
-						ry: 5 
-						strokeWidth: self defaultActivityStrokeWidth 
-						stroke: self defaultActivityStroke 
-						fillColor: self defaultActivityColor.
+	textPoint := (aXPDLActivityNode getXcoordinate + 5) @ (aXPDLActivityNode getYcoordinate + 32).
 
-	textPoint := (aPoint x + 5) @ (aPoint y + 32).
+	self renderSvgElementOn: html tag: html svgRectangle attributes: associations with: [(aXPDLActivityNode getTooltipOrNilFor: model application) ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
 
-	self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize.
-
-	^rect
+	html anchor 
+		url: (self getUrlForOrbeonFormDefinitionNamed: aXPDLActivityNode getName);
+		target: '_blank';
+		with: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize].

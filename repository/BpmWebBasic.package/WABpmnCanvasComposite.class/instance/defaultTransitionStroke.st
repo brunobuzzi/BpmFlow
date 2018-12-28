@@ -1,0 +1,4 @@
+parameter
+defaultTransitionStroke
+
+	^'gray'
