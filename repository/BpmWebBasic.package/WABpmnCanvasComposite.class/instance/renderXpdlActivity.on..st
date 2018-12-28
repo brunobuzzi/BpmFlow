@@ -6,7 +6,7 @@ renderXpdlActivity: aXPDLActivityNode on: html
 
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 
-			attributes: (aXPDLActivityNode asSvgGeometryValuesFor: self) 
+			attributes: (aXPDLActivityNode asSvgGeometryFor: self) 
 			with: [(aXPDLActivityNode getTooltipOrNilFor: model application) ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
 
 	html anchor 

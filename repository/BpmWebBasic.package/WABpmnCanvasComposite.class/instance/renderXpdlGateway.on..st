@@ -7,7 +7,7 @@ renderXpdlGateway: aXPDLGatewayNode on: html
 
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 
-			attributes: (aXPDLGatewayNode asSvgGeometryValuesFor: self) 
+			attributes: (aXPDLGatewayNode asSvgGeometryFor: self) 
 			with: [aXPDLGatewayNode getTooltipOrNil ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
 
 	textPoint := aPoint x @ (aPoint y - 10).
