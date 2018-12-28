@@ -1,5 +1,5 @@
 other
-asSvgGeometryValuesFor: aSvgCanvas
+asSvgGeometryFor: aSvgCanvas
 	| rotation |
 
 	rotation := 'rotate(-45 ', self center x printString, ' ', self center y printString, ')'.

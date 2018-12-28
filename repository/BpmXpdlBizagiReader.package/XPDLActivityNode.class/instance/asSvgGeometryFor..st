@@ -1,5 +1,5 @@
 other
-asSvgGeometryValuesFor: aSvgCanvas
+asSvgGeometryFor: aSvgCanvas
 
 	^OrderedCollection  new 
 		add: ('id' -> UUID new asString);
