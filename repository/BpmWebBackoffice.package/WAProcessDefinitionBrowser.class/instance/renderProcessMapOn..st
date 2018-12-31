@@ -1,11 +1,13 @@
 process
 renderProcessMapOn: html
-	| svgCode |
+"	| svgCode |
 
-"	svgCode := (XpdlSvgConverter convert: selectedLateralItem xmlString) generateSVGFor: selectedLateralItem.
+	svgCode := (XpdlSvgConverter convert: selectedLateralItem xmlString) generateSVGFor: selectedLateralItem.
 
 	html div 
 		class: 'transition-artifact'; 
 		with: [html html: svgCode]."
 
-	html div with: [html render: (WABpmnCanvasComposite on: selectedLateralItem)]
+	svgCanvas model: selectedLateralItem.
+
+	html div with: [html render: svgCanvas]

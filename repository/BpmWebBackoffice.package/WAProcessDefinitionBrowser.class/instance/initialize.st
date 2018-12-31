@@ -6,6 +6,7 @@ initialize
 	mode := #normal.
 	searchAvailable := false.
 	categories := OrderedCollection new.
+	svgCanvas := WABpmnCanvasComposite parent: self.
 	"subprocessesTree := WATree new."
 
 	self setShowToElementNamed: 'search-area'.
