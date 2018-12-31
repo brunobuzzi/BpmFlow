@@ -2,6 +2,8 @@ other
 renderContentOn: html
 	| xpdlReader dimensions svgCanvasTag xpdlWorkflows |
 
+	self renderShowParentProcessIconOn: html.
+
 	xpdlReader := self getXpdlReaderClass forProcessNamed: 'convert' withString: self getModelOrSubProcess xmlString.
 	dimensions := xpdlReader getDiagramDimensions.
 
