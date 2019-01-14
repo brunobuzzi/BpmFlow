@@ -7,7 +7,6 @@ renderXpdlSubprocess: aXPDLSubProcessNode on: html
 
 	self renderXpdlActivity: aXPDLSubProcessNode on: html.
 
-
 	html anchor 
 		callback: [self selectSubProcessToRender: aXPDLSubProcessNode getName];
 		with: [self renderSubProcessInnerIconOn: html at: center].
