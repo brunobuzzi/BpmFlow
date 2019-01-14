@@ -1,10 +1,12 @@
 line m
 renderLineMOn: html coordinatesString: coordinatesString id: id widthPx: widthPx stroke: stroke fillColor: fillColor 
+	| associations |
 
-	^html svgPath
-			attributeAt: 'id' put: id;
-			attributeAt: 'd' put: coordinatesString;
-			attributeAt: 'stroke' put: stroke;
-			attributeAt: 'stroke-width' put: widthPx;
-			attributeAt: 'fill' put: fillColor;
-			yourself
+	associations := OrderedCollection new.
+	associations add: ('id' -> id);
+		add: ('d' -> coordinatesString);
+		add: ('fill' -> fillColor);
+		add: ('stroke' -> stroke);
+		add: ('stroke-width' -> widthPx).
+
+	^self renderSvgElementOn: html tag: html svgPath attributes: associations with: []

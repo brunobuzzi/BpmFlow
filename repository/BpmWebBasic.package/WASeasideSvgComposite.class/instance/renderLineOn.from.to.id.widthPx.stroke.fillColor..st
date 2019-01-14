@@ -1,13 +1,15 @@
 line
 renderLineOn: html from: originPoint to: finalPoint id: id widthPx: widthPx stroke: stroke fillColor: fillColor 
+	| associations |
 
-	^html svgLine
-		attributeAt: 'id' put: id;
-		attributeAt: 'x1' put: originPoint x;
-		attributeAt: 'y1' put: originPoint y;
-		attributeAt: 'x2' put: finalPoint x;
-		attributeAt: 'y2' put: finalPoint y;
-		attributeAt: 'stroke-width' put: widthPx;
-		attributeAt: 'stroke' put: stroke;
-		attributeAt: 'fill' put: fillColor;
-		yourself
+	associations := OrderedCollection new.
+	associations add: ('id' -> id);
+		add: ('x1' -> originPoint x);
+		add: ('y1' -> originPoint y);
+		add: ('x2' -> finalPoint x);
+		add: ('y2' -> finalPoint y);
+		add: ('fill' -> fillColor);
+		add: ('stroke' -> stroke);
+		add: ('stroke-width' -> widthPx).
+
+	^self renderSvgElementOn: html tag: html svgLine attributes: associations with: []
