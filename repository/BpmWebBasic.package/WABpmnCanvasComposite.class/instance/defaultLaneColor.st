@@ -1,0 +1,4 @@
+parameter
+defaultLaneColor
+
+	^'#BCBCBC'

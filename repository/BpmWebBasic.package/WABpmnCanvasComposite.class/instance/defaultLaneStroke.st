@@ -1,0 +1,4 @@
+parameter
+defaultLaneStroke
+
+	^'black'

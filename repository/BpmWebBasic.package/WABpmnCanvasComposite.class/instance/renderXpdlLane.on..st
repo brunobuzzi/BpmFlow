@@ -1,15 +1,20 @@
 render xpdl
 renderXpdlLane: aXPDLLaneNode on: html
-	| rect laneNameCenter aPoint stroke color |
+	| laneNameCenter aPoint |
 
-	stroke := 'black'.
-	color := 'none'.
 	aPoint := aXPDLLaneNode getXcoordinate @ aXPDLLaneNode getYcoordinate.
 	laneNameCenter := ((aPoint x - 20) @ (aPoint y + (aXPDLLaneNode getHeight // 2) + 35)).
-	"render main lane rectangle"
-	rect := self renderRectangleOn: html at: aPoint width: aXPDLLaneNode getWidth height: aXPDLLaneNode getHeight stroke: stroke fillColor: color.
-	"render role name rectangle"
-	self renderRectangleOn: html at: ((aPoint x - 50) @ aPoint y) width: 50 height: aXPDLLaneNode getHeight stroke: stroke fillColor: color.
-	self renderTextOn: html text: aXPDLLaneNode getName at: laneNameCenter textSizePx: '14px' transform: 'rotate(-90 ', laneNameCenter x printString, ' ', laneNameCenter y printString, ')'.
 
-	^rect
+	"render role name rectangle"
+	self renderSvgElementOn: html 
+			tag: html svgRectangle 
+			attributes: (aXPDLLaneNode asSvgSmallGeometryFor: self) 
+			with: [(self getTooltipOrNilForLane: aXPDLLaneNode in: model application) ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
+
+	"render the main lane rectabgle which contains bpmn elements"
+	self renderSvgElementOn: html 
+			tag: html svgRectangle 
+			attributes: (aXPDLLaneNode asSvgGeometryFor: self) 
+			with: [].
+
+	self renderTextOn: html text: aXPDLLaneNode getName at: laneNameCenter textSizePx: '14px' transform: 'rotate(-90 ', laneNameCenter x printString, ' ', laneNameCenter y printString, ')'.
