@@ -13,7 +13,7 @@ renderEvent: aXPDLEventNode at: aPoint radius: radius strokeWidth: strokeWidth s
 		add: ('stroke' -> stroke);
 		add: ('fill' -> color).
 
-	self renderSvgElementOn: html tag: html svgCircle attributes: associations with: [].
+	self renderSvgElementOn: html tag: html svgCircle attributes: associations with: [html tag: 'title' with: tooltip].
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 
