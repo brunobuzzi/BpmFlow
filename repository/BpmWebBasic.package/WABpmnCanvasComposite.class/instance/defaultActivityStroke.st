@@ -1,4 +1,0 @@
-parameter
-defaultActivityStroke
-
-	^'darkblue'

@@ -10,6 +10,6 @@ asSvgGeometryFor: aSvgCanvas
 		add: ('height' -> self getHeight);
 		add: ('width' -> self getWidth);
 		add: ('stroke-width' -> aSvgCanvas defaultActivityStrokeWidth);
-		add: ('stroke' -> aSvgCanvas defaultActivityStroke);
-		add: ('fill' -> aSvgCanvas defaultActivityColor);
+		add: ('stroke' -> (aSvgCanvas defaultActivityStrokeFor: self));
+		add: ('fill' -> (aSvgCanvas defaultActivityColorFor: self));
 		yourself

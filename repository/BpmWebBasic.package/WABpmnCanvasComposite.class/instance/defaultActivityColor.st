@@ -1,4 +1,0 @@
-parameter
-defaultActivityColor
-
-	^'lightsteelblue'

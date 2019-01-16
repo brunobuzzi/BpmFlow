@@ -5,7 +5,7 @@ asSvgGeometryFor: aSvgCanvas
 		add: ('id' -> UUID new asString);
 		add: ('d' -> ((aSvgCanvas getConnectionPointsStringFrom: self coordinates)));
 		add: ('stroke-width' -> '1.5');
-		add: ('stroke' -> aSvgCanvas defaultTransitionStroke);
+		add: ('stroke' -> (aSvgCanvas defaultTransitionStrokeFor: self));
 		add: ('fill' -> 'none');
 		add: ('marker-end' -> ('url(#arrow)'));
 		yourself
