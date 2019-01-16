@@ -1,0 +1,4 @@
+xpdl
+application
+
+	^definition application
