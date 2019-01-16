@@ -8,12 +8,7 @@ renderItemDescriptionTitleOn: html
 	ifTrue: [html span with: [html strong: ('(Corrupted)' translateFor: self session user)]].
 
 	(selectedLateralItem hasFinalized not and: [selectedLateralItem canUnassign and:[(selectedLateralItem user == self session user) and: [selectedLateralItem hasAutomaticTaskAssignation not]]])
-	ifTrue: [
-		html anchor 
-			callback: [self freeSelectedAssignment]; 
-			with: [html image url: (SEWAFIconLibrary / #gointo24Png); 
-						title: ('Release Task' translateFor: self session user);
-						altText: ('Release Task' translateFor: self session user)]].
+	ifTrue: [self renderReleaseAssignmentOn: html].
 
 	iconName := (self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [#documentorganizationchart24Png] ifFalse: [#documentflowchart24Png].
 	toolTip := (self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: ['View Process Tasks'] ifFalse: ['View Process Map'].
