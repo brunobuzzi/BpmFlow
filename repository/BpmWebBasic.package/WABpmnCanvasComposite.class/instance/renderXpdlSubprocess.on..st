@@ -7,6 +7,10 @@ renderXpdlSubprocess: aXPDLSubProcessNode on: html
 
 	self renderXpdlActivity: aXPDLSubProcessNode on: html.
 
-	html anchor 
-		callback: [self selectSubProcessToRender: aXPDLSubProcessNode getName];
-		with: [self renderSubProcessInnerIconOn: html at: center].
+	"when do not render sub process instance when click on sub process task, if the user has permissions then it has access to the assignment to see the process map"
+	model isProcessInstance 
+	ifTrue: [self renderSubProcessInnerIconOn: html at: center]
+	ifFalse: [html anchor 
+						callback: [self selectSubProcessToRender: aXPDLSubProcessNode getName];
+						with: [self renderSubProcessInnerIconOn: html at: center].
+	].
