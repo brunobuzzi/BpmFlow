@@ -7,10 +7,10 @@ initializeNavigation
 		set24Icon: #placesuserhome24Png;
 		addItem: (SewafCommandItem label: 'Home' command: #openHome);
 		yourself."
-	subMenu1 := (SewafSubMenuItem label: 'My Processes' icon: #worksinprogress32Png)
+	subMenu1 := (SewafSubMenuItem label: 'My Tasks' icon: #worksinprogress32Png)
 		set24Icon: #worksinprogress24Png;
-		addItem: (SewafCommandItem label: 'Current Processes' command: #showCurrentProcess);
-		addItem: (SewafCommandItem label: 'Finished Processes' command: #showFinishedProcess);
+		addItem: (SewafCommandItem label: 'Current Tasks' command: #showCurrentProcess);
+		addItem: (SewafCommandItem label: 'Finished Tasks' command: #showFinishedProcess);
 		addItem: (SewafCommandItem label: 'Process Categories' command: #showProcessCategories);
 		addItem: (SewafCommandItem label: 'Browse Timers' command: #openTimerEventBrowser);
 		yourself.
