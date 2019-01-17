@@ -1,4 +1,4 @@
-render xpdl
+other
 getTooltipOrNilForLane: aXPDLLaneNode in: anApplication
 
 	^(BpmFrontOfficeRole getRoleNamed: aXPDLLaneNode getName in: anApplication applicationName)
