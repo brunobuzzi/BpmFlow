@@ -1,4 +1,4 @@
 other
 addSundays
 
-	model addAllSundayOf: Date today year
+	model addAllSundayOf: selectedYear

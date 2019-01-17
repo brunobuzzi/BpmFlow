@@ -1,4 +1,4 @@
 other
 removeSaturdays
 
-	model removeAllSaturdayOf: Date today year
+	model removeAllSaturdayOf: selectedYear

@@ -1,11 +1,10 @@
 other
 renderCalendarDaysOn: html
-	| year notWorkingDays |
+	| notWorkingDays |
 
 	notWorkingDays := Dictionary new.
-	year := Date today year.
 
-	model days do: [:each | notWorkingDays at: each dayOfYear put: 100].
+	(model days select:[:each | each year = selectedYear]) do: [:each | notWorkingDays at: each dayOfYear put: 100].
 
 	html div class: 'float-left'; 
 		with: [html svgCanvas
@@ -14,8 +13,8 @@ renderCalendarDaysOn: html
 					with: [self renderCalendarOn: html
 									calendarDays: notWorkingDays 
 									at: 10@10 
-									from: (Date fromString: '01/01/', year printString) 
-									to: (Date fromString: '06/30/', year printString) 
+									from: (Date fromString: '01/01/', selectedYear printString) 
+									to: (Date fromString: '06/30/', selectedYear printString) 
 									width: 18 
 									color: 'darkred' 
 									dayHasContent: true
@@ -30,8 +29,8 @@ renderCalendarDaysOn: html
 					with: [self renderCalendarOn: html
 									calendarDays: notWorkingDays 
 									at: 10@10 
-									from: (Date fromString: '07/01/', year printString) 
-									to: (Date fromString: '12/31/', year printString) 
+									from: (Date fromString: '07/01/', selectedYear printString) 
+									to: (Date fromString: '12/31/', selectedYear printString) 
 									width: 18 
 									color: 'darkred' 
 									dayHasContent: true
