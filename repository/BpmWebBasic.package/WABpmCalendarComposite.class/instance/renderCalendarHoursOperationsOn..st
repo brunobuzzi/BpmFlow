@@ -1,7 +1,7 @@
 other
 renderCalendarHoursOperationsOn: html
 
-	html div class: 'float-left'; with: [
+	html div class: 'float-left margin-left-5px'; with: [
 		html anchor class: 'margin-left-5px';
 				callback: [self addValue: false named: 'hoursPane']; 
 				with: [html image url: (SEWAFIconLibrary / #calendaricon32Png);

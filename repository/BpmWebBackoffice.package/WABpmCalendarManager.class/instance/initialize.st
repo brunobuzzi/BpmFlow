@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	searchAvailable := false.
-	calendarComposite := WABpmCalendarComposite new.
+	calendarComposite := WABpmCalendarComposite parent: self.
 
 	self setShowToElementNamed: 'search-area'.
 
