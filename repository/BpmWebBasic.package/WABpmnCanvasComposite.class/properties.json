@@ -10,7 +10,9 @@
 		"svgTransform",
 		"viewPortArray",
 		"viewBoxArray",
-		"scaleArray" ],
+		"scaleArray",
+		"isScaledByParent",
+		"autoSetViewPort" ],
 	"name" : "WABpmnCanvasComposite",
 	"pools" : [
 		 ],
