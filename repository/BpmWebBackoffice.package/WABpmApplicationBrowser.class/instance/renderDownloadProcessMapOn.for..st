@@ -1,9 +1,8 @@
 xpdl download
-renderDownloadProcessMapOn: html for: procName
-	| jQueryId popUpComponent procDefinition |
+renderDownloadProcessMapOn: html for: aBpmProcessDefinition
+	| jQueryId popUpComponent |
 
-	procDefinition := BpmProcessDefinition getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
-	popUpComponent := WAProcessViewerSelector parent: self process: procDefinition.
+	popUpComponent := WAProcessViewerSelector parent: self process: aBpmProcessDefinition.
 	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
 	html anchor 

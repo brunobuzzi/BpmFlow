@@ -6,7 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"subProcess" ],
+		"subProcess",
+		"svgTransform",
+		"viewPortArray",
+		"viewBoxArray",
+		"scaleArray" ],
 	"name" : "WABpmnCanvasComposite",
 	"pools" : [
 		 ],

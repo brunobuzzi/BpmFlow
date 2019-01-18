@@ -8,9 +8,12 @@ renderContentOn: html
 	dimensions := xpdlReader getDiagramDimensions.
 
 	svgCanvasTag := html svgCanvas.
-	svgCanvasTag attributeAt: 'width' put: (dimensions x printString, 'px');
-		attributeAt: 'height' put: (dimensions y printString, 'px').
-
+"	svgScale 
+		ifNotNil: [svgCanvasTag attributeAt: 'transform' put: self getScaleString] 
+		ifNil: [svgCanvasTag attributeAt: 'width' put: (dimensions x printString, 'px');
+									attributeAt: 'height' put: (dimensions y printString, 'px')].
+svgCanvasTag attributeAt: 'width' put: (dimensions x printString, 'px');
+									attributeAt: 'height' put: (dimensions y printString, 'px')."
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
 	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName].
 

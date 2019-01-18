@@ -1,20 +1,16 @@
 xpdl download
 renderProcessWithLinkOn: html at: aPoint name: procName
-	| canvas |
+	| versionsInfo procDefinition bpmnCanvas2 |
 
-	canvas := JASVGIBpmCanvas newWidth: '200px' height: '72px'.
-	canvas cancelDefaultGroupTranslation.
-
-	(procName size > 28) 
+	"(procName size > 28) 
 	ifTrue: [canvas drawSubProcessActivityNamed: procName at: aPoint extent: 180@60 textSizePx: '12px'.] 
-	ifFalse: [canvas drawSubProcessActivityNamed: procName at: aPoint extent: 180@60].
+	ifFalse: [canvas drawSubProcessActivityNamed: procName at: aPoint extent: 180@60]."
 
-	html div class: 'float-left'; with: [ 
-		html div with: [html html: canvas contents].
-		html div class: 'float-right margin-right-10px'; with: [ | versionsInfo |
-			versionsInfo :=  (BpmProcessDefinition  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName) version
-									ifNil: ['v1'] ifNotNil: [:ver | 'v',ver printString]. 
-			html output: versionsInfo.	
-			self renderDownloadProcessMapOn: html for: procName.
-		].
-	].
+	"html div with: [html html: canvas contents]."
+	procDefinition := BpmProcessDefinition  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
+	versionsInfo :=  procDefinition version ifNil: ['v1'] ifNotNil: [:ver | 'v',ver printString]. 
+	"html output: versionsInfo.	"
+	bpmnCanvas2 := WABpmnCanvasComposite parent: self scale: (Array with: 0.25 with: 0.25).
+	bpmnCanvas2 model: procDefinition.
+	html div class: 'display-inline-block'; with: [html render: bpmnCanvas2].
+	"self renderDownloadProcessMapOn: html for: procDefinition."
