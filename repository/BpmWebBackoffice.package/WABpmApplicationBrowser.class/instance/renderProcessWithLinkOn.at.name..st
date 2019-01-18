@@ -13,6 +13,6 @@ renderProcessWithLinkOn: html at: aPoint name: procName
 	bpmnCanvas2 model: procDefinition;
 		beParentScaled;
 		disableViewPortAutoSet.
-	html div class: 'display-inline-block'; style: 'margin: 10px; width: 200px; height: 200px'; 
+	html div class: 'display-inline-block process-map-scaled'; 
 		with: [html output: procName, ' - ', versionsInfo.
 				html render: bpmnCanvas2].
