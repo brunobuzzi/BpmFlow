@@ -4,6 +4,8 @@ renderItemComponentOn: html
 
 	selectedLateralItem ifNil: [^self].
 
+	selectedProcess ifNotNil: [^self renderSelectedProcessOn: html].
+ 
 	point := 10@10.
 	html div with: [
 		(BpmProcessDefinition getAllProcessNamesIn: selectedLateralItem applicationName) do: [:procName |
