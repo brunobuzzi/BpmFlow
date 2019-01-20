@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AreUsersMultiEnvironment",
 		"Cache" ],
 	"commentStamp" : "",
 	"instvars" : [
