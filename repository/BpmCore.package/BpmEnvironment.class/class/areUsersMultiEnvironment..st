@@ -1,7 +1,10 @@
-other
+user multi environment
 areUsersMultiEnvironment: aBoolean
 	"Set whether or not <aBpmUser> can be assigned to more than one <aBpmEnvironment>.
 	See issue: #779"
+
+	(aBoolean not "false" and: [self checkIfAnyUsersIsInMoreThanOneEnvironment]) 
+	ifTrue: [ImproperBpmOperationException signal: 'Remove BpmUsers in more than one Environment before set this to [false]'].
 
 	^AreUsersMultiEnvironment := aBoolean
 

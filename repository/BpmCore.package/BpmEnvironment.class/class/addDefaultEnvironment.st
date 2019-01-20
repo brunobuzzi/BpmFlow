@@ -1,4 +1,4 @@
-other
+cache
 addDefaultEnvironment
 
 	self initializeCache.

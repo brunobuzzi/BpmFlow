@@ -1,4 +1,4 @@
-other
+user multi environment
 areUsersMultiEnvironment
 	"Answer whether or not <aBpmUser> can be assigned to more than one <aBpmEnvironment>.
 	See issue: #779"
