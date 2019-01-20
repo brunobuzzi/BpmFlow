@@ -1,4 +1,0 @@
-other
-adminEnvironmentName
-
-	^'admins'
