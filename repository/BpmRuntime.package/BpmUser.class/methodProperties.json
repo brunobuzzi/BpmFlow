@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"addAdminUser" : "brunobb 09/10/2018 06:02",
+		"addAdminUser" : "brunobb 01/20/2019 14:22",
+		"adminUserName" : "brunobb 01/20/2019 14:22",
 		"cache" : "BrunoBB 11/02/2015 14:51",
 		"cache:" : "BrunoBB 11/02/2015 14:51",
 		"getAvailableUsersToTake:" : "brunobb 09/11/2018 08:27",
@@ -24,7 +25,7 @@
 		"baseUrlDocumentation" : "brunobb 07/27/2017 05:56",
 		"basicFinalizeAssignment:" : "BrunoBB 07/31/2016 13:54",
 		"basicFinalizeAssignment:takeNext:" : "brunobb 04/22/2018 13:57",
-		"canDelete" : "brunobb 09/10/2018 10:35",
+		"canDelete" : "brunobb 01/20/2019 14:25",
 		"cancelTaskAssignmentsForAbortion:" : "brunobb 09/11/2018 05:58",
 		"centralUser" : "BrunoBB 12/20/2015 11:23",
 		"centralUser:" : "BrunoBB 12/20/2015 11:23",
@@ -105,6 +106,7 @@
 		"includesRoleNamed:" : "BrunoBB 04/13/2016 12:05",
 		"initialize" : "brunobb 09/11/2018 05:31",
 		"isAdmin" : "BrunoBB 12/10/2015 11:36",
+		"isAdminUser" : "brunobb 01/20/2019 14:23",
 		"isBackofficeUser" : "BrunoBB 12/09/2015 10:12",
 		"isBackofficeUserAndAdmin" : "BrunoBB 12/10/2015 10:29",
 		"isFrontOfficeUser" : "brunobb 12/27/2017 13:23",

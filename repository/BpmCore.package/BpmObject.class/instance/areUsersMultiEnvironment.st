@@ -1,4 +1,0 @@
-other
-areUsersMultiEnvironment
-
-	^self defaultEnvironmentClass areUsersMultiEnvironment

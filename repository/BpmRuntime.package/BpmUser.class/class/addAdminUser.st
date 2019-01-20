@@ -1,4 +1,4 @@
 cache
 addAdminUser
 
-	^self getExistingOrNewUserNamed: 'admin' password: 'admin'.
+	^self getExistingOrNewUserNamed: self adminUserName password: 'admin'.
