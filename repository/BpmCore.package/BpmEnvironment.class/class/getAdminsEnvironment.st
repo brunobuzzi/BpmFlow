@@ -1,4 +1,4 @@
-other
+cache
 getAdminsEnvironment
 
 	^self 
