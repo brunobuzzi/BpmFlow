@@ -3,4 +3,4 @@ addDefaultEnvironment
 
 	self initializeCache.
 
-	^(self newNamed: 'admins') addToCache.
+	^(self newNamed: self adminEnvironmentName) addToCache.

@@ -1,0 +1,4 @@
+other
+adminEnvironmentName
+
+	^'admins'

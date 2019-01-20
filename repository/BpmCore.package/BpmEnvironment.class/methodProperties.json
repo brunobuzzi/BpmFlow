@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"addDefaultEnvironment" : "brunobb 10/03/2018 12:27",
+		"addDefaultEnvironment" : "brunobb 01/20/2019 08:34",
+		"adminEnvironmentName" : "brunobb 01/20/2019 08:34",
 		"cache" : "brunobb 10/03/2018 12:27",
 		"getEnvironmentNamed:ifNone:" : "brunobb 10/03/2018 12:27",
 		"getExistingEnvironmentOrCreateNewNamed:" : "brunobb 10/03/2018 12:27",
@@ -11,7 +12,7 @@
 		"addToCache" : "brunobb 11/28/2018 06:38",
 		"applications" : "brunobb 10/03/2018 12:27",
 		"applications:" : "brunobb 10/03/2018 12:27",
-		"canDelete" : "brunobb 10/03/2018 12:27",
+		"canDelete" : "brunobb 01/20/2019 08:35",
 		"getBIApplicationName" : "brunobb 10/04/2018 03:08",
 		"getBILogoSymbol" : "brunobb 10/04/2018 06:07",
 		"getBackofficeApplicationName" : "brunobb 10/04/2018 03:07",
@@ -28,7 +29,7 @@
 		"registerApplication:" : "brunobb 10/03/2018 12:27",
 		"registerUser:" : "brunobb 10/03/2018 12:27",
 		"registerUser:ifPresent:" : "brunobb 10/03/2018 12:27",
-		"removeFromCache" : "brunobb 10/03/2018 12:27",
+		"removeFromCache" : "brunobb 01/20/2019 08:36",
 		"setBIApplicationName:" : "brunobb 10/04/2018 03:06",
 		"setBILogo:" : "brunobb 10/03/2018 12:45",
 		"setBackofficeApplicationName:" : "brunobb 10/04/2018 03:06",
