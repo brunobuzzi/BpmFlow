@@ -5,7 +5,6 @@
 		"areUsersMultiEnvironment" : "brunobb 01/20/2019 09:07",
 		"areUsersMultiEnvironment:" : "brunobb 01/20/2019 09:40",
 		"cache" : "brunobb 10/03/2018 12:27",
-		"checkIfAnyUsersIsInMoreThanOneEnvironment" : "brunobb 01/20/2019 14:38",
 		"getAdminsEnvironment" : "brunobb 01/20/2019 14:10",
 		"getEnvironmentNamed:ifNone:" : "brunobb 10/03/2018 12:27",
 		"getExistingEnvironmentOrCreateNewNamed:" : "brunobb 10/03/2018 12:27",
