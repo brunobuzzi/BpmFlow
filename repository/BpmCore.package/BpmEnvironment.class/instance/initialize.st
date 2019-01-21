@@ -5,6 +5,6 @@ initialize
 
 	name := ''.
 	applications := Dictionary new.
-	users := Dictionary new.
+	users := RcKeyValueDictionary new.
 	applicationsNames := Dictionary new.
 	applicationsLogos := Dictionary new.

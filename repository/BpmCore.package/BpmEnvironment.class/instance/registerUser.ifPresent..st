@@ -10,4 +10,6 @@ registerUser: aBpmUser ifPresent: aBlock
 	aBpmUser createInboxFor: self.
 	aBpmUser createOutboxFor: self.
 
+	aBpmUser basicAddEnvironment: self.
+
 	^users at: aBpmUser username put: aBpmUser

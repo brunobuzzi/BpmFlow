@@ -12,3 +12,5 @@ initialize
 	outboxes := Dictionary new.
 
 	centralUser := ApplicationUser new.
+
+	bpmEnvironments := RcKeyValueDictionary new.

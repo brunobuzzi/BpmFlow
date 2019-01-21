@@ -9,4 +9,7 @@ unregisterUser: aBpmUser
 
 	aBpmUser destroyInboxFor: self.
 	aBpmUser destroyOutboxFor: self.
-	^users removeKey: aBpmUser username ifAbsent: []
+
+	aBpmUser basicRemoveEnvironment: self ifAbsent: [ImproperBpmOperationException signal: 'User [', aBpmUser username , '] is not present in this Environment'].
+
+	^users removeKey: aBpmUser username ifAbsent: [ImproperBpmOperationException signal: 'User [', aBpmUser username , '] is not present in this Environment']
