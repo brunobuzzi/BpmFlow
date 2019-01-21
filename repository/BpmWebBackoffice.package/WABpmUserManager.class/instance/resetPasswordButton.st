@@ -1,4 +1,4 @@
-other
+reset password
 resetPasswordButton
 
 	^(SewafReportColumn 

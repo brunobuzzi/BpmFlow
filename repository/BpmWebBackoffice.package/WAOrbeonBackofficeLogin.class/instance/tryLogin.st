@@ -11,7 +11,7 @@ tryLogin
 
 	self defaultEnvironmentClass areUsersMultiEnvironment 
 	ifTrue: [(logedUser getBpmEnvironments anySatisfy: [:each | each == self session bpmEnvironment]) ifFalse: [^loginAttempts := loginAttempts + 1]]
-	ifFalse: [logedUser isAdminUser ifTrue: [^adminUser := logedUser]. "if is admin user and single environment --> we render the environment combo only for admin user"
+	ifFalse: [logedUser isInAdminEnvironment ifTrue: [^adminUser := logedUser]. "if is admin user and single environment --> we render the environment combo only for admin user"
 				(logedUser getBpmEnvironments size = 1) 
 				ifTrue: [self setUniqueEnvironmentFor: logedUser]
 				ifFalse: [^loginAttempts := loginAttempts + 1]].

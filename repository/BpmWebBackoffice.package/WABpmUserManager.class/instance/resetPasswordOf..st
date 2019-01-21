@@ -1,4 +1,4 @@
-other
-resetPasswordOf: anOrbeonFormUser
+reset password
+resetPasswordOf: aBpmUser
 
-	resetPasswords at: anOrbeonFormUser username put: anOrbeonFormUser resetPassword
+	resetPasswords at: aBpmUser username put: aBpmUser resetPassword
