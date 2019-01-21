@@ -1,8 +1,10 @@
 {
 	"class" : {
-		"register" : "brunobb 11/01/2018 10:03",
-		"unregister" : "brunobb 06/12/2018 10:31" },
+		"register" : "brunobb 01/21/2019 08:18",
+		"unregister" : "brunobb 01/21/2019 08:18" },
 	"instance" : {
-		"selectorsToInclude" : "BrunoBB 09/05/2016 15:31",
-		"tryLogin" : "brunobb 01/21/2019 05:25",
-		"updateRoot:" : "BrunoBB 09/05/2016 14:51" } }
+		"renderContentOn:" : "brunobb 01/21/2019 08:30",
+		"selectorsToInclude" : "brunobb 01/21/2019 08:18",
+		"showBackofficePortalFor:" : "brunobb 01/21/2019 08:18",
+		"tryLogin" : "brunobb 01/21/2019 08:28",
+		"updateRoot:" : "brunobb 01/21/2019 08:18" } }

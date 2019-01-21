@@ -4,7 +4,7 @@ areUsersMultiEnvironment: aBoolean
 	See issue: #779"
 
 	(aBoolean not "false" and: [self checkIfAnyUsersIsInMoreThanOneEnvironment]) 
-	ifTrue: [ImproperBpmOperationException signal: 'Remove BpmUsers in more than one Environment before set this to [false]'].
+	ifTrue: [ImproperBpmOperationException signal: 'Remove BpmUsers in more than one Environment before set this to [false] use [BpmEnvironment getUsersIsInMoreThanOneEnvironment]'].
 
 	^AreUsersMultiEnvironment := aBoolean
 
