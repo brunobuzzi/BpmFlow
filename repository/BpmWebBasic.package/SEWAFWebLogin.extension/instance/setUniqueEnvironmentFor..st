@@ -1,4 +1,4 @@
-*bpmwebbasic-as yet unclassified
+*bpmwebbasic
 setUniqueEnvironmentFor: aBpmUser
 
 	self session bpmEnvironment: aBpmUser getBpmEnvironments asOrderedCollection last

@@ -1,4 +1,4 @@
-*bpmwebbasic-as yet unclassified
+*bpmwebbasic
 setEnvironment: envName
 	| env |
 

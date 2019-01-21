@@ -1,4 +1,4 @@
-other
-isInAdminEnvironment
+bpm environments
+isInAdminsEnvironment
 
 	^bpmEnvironments includesKey: BpmEnvironment adminsEnvironmentName

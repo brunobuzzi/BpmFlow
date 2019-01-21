@@ -3,6 +3,8 @@ areUsersMultiEnvironment
 	"Answer whether or not <aBpmUser> can be assigned to more than one <aBpmEnvironment>.
 	See issue: #779"
 
+	AreUsersMultiEnvironment ifNil: [AreUsersMultiEnvironment := true].
+
 	^AreUsersMultiEnvironment
 
 "For BpmEnvironments there are two different scenarios:

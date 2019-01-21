@@ -20,7 +20,7 @@ initializeNavigation
 		set24Icon: #package24Png;
 		yourself.
 	"only backoffice global admin can manage BpmEnvironments"
-	self session user isBackofficeUserAndAdmin ifTrue: [subMenu2 addItem: (SewafCommandItem label: 'Manage Environments' command: #openEnvironmentManager)].
+	self session user hasAccessToEnvironmentManager ifTrue: [subMenu2 addItem: (SewafCommandItem label: 'Manage Environments' command: #openEnvironmentManager)].
 	subMenu2
 		addItem: (SewafCommandItem label: 'Manage Applications' command: #openApplicationManager);
 		addItem: (SewafCommandItem label: 'Available Orbeon Forms' command: #openFormManager);

@@ -2,7 +2,7 @@
 	"class" : {
 		"addDefaultEnvironment" : "brunobb 01/20/2019 08:56",
 		"adminsEnvironmentName" : "brunobb 01/20/2019 08:55",
-		"areUsersMultiEnvironment" : "brunobb 01/20/2019 09:07",
+		"areUsersMultiEnvironment" : "brunobb 01/21/2019 10:31",
 		"areUsersMultiEnvironment:" : "brunobb 01/21/2019 07:41",
 		"cache" : "brunobb 10/03/2018 12:27",
 		"getAdminsEnvironment" : "brunobb 01/20/2019 14:10",
@@ -33,7 +33,7 @@
 		"printOn:" : "brunobb 10/03/2018 12:27",
 		"registerApplication:" : "brunobb 10/03/2018 12:27",
 		"registerUser:" : "brunobb 10/03/2018 12:27",
-		"registerUser:ifPresent:" : "brunobb 01/21/2019 09:29",
+		"registerUser:ifPresent:" : "brunobb 01/21/2019 10:13",
 		"removeFromCache" : "brunobb 01/20/2019 08:58",
 		"setBIApplicationName:" : "brunobb 10/04/2018 03:06",
 		"setBILogo:" : "brunobb 10/03/2018 12:45",
