@@ -1,5 +1,6 @@
 other
 testUsersMultiEnvironment
+	"In a user muti environment (areUsersMultiEnvironment: true) the same user can be assigned to more than one <BpmEnvironment>"
 	| env1 env2 newUser currentMode |
 
 	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
@@ -13,7 +14,7 @@ testUsersMultiEnvironment
 
 	env1 registerUser: newUser.
 	self assert: (env1 includesUserNamed: newUser username).
-
+	"assigning the same user to the second environment"
 	env2 registerUser: newUser.
 	self assert: (env2 includesUserNamed: newUser username).
 

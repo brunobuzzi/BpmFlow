@@ -1,5 +1,8 @@
 other
 testAccessToEnvironmentManager
+	"Test the method BpmUser>>hasAccessToEnvironmentManager. 
+	Answer <true> only for users that are: backoffice and admin users and also belong to 'admins' <BpmEnvironment>.
+	The user with access to environment manager can assign users and applications to different environments"
 	| newUser adminRole |
 
 	self assert: BpmUser getAdminUser hasAccessToEnvironmentManager.

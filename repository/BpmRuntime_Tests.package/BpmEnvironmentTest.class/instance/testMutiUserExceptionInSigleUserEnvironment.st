@@ -1,5 +1,8 @@
 other
 testMutiUserExceptionInSigleUserEnvironment
+	"In a user single environment (areUsersMultiEnvironment: false) the same user can NOT be assigned to more than one <BpmEnvironment>.
+	With the exception of 'admins' <BpmEnvironment>.
+	So the rule is: a user can be assigned to 'admins' <BpmEnvironment> and other <BpmEnvironment>. A max of two if one of them is 'admins' "
 	| env1 env2 newUser currentMode |
 
 	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
