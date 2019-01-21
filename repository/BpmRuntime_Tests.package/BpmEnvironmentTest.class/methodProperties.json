@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAccessToEnvironmentManager" : "brunobb 01/21/2019 11:02",
+		"testAdminUserInAdminsEnvironment" : "brunobb 01/21/2019 10:43",
+		"testAdminsEnvironmentExistance" : "brunobb 01/21/2019 10:40",
+		"testMutiUserExceptionInSigleUserEnvironment" : "brunobb 01/21/2019 11:31",
+		"testUsersMultiEnvironment" : "brunobb 01/21/2019 11:23",
+		"testUsersSingleEnvironment" : "brunobb 01/21/2019 11:23" } }
