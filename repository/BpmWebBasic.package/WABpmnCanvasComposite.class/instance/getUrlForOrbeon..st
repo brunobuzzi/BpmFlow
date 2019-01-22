@@ -2,6 +2,8 @@ other
 getUrlForOrbeon: taskName
 	| taskInstance uuid |
 
+	mainPanel renderLinkToForms ifFalse: [^nil].
+
 	model isProcessInstance ifFalse: [^self getUrlForOrbeonFormDefinitionNamed: taskName].
 
 	taskInstance := model getTaskNamed: taskName ifNone: [^nil].

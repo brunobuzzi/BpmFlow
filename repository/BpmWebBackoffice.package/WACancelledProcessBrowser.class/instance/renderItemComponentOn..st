@@ -1,6 +1,8 @@
 render
 renderItemComponentOn: html
 
+	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [^self renderSvgProcessMapOn: html].
+
 	(selectedLateralItem executedActivities, selectedLateralItem getActiveArtifacts) do: [:eachArtifact | | cssClass heightClass |
 
 		cssClass := eachArtifact isTask 

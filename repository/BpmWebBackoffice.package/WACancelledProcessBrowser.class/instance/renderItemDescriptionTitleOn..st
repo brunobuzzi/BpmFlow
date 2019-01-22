@@ -1,16 +1,21 @@
 render
 renderItemDescriptionTitleOn: html
-	| jQueryId popUpComponent |
+	| iconName toolTip |
 
 	html output:  selectedLateralItem processName.
 
-	popUpComponent := WAProcessViewerSelector parent: self process: selectedLateralItem.
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
+	iconName := (self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [#documentorganizationchart24Png] ifFalse: [#documentflowchart24Png].
+	toolTip := (self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: ['View Process Tasks'] ifFalse: ['View Process Map'].
+	html anchor 
+		class: 'cursor-pointer margin-left-5px';
+		callback: [self viewSvgProcessMap]; 
+		with: [html image url: (SEWAFIconLibrary / iconName); 
+					title: (toolTip translateFor: self session user);
+					altText: (toolTip translateFor: self session user)].
 
 	html anchor 
 		class: 'cursor-pointer';
-		"callback: [self downloadProcessMap]; "
-		onClick: (html jQuery id: jQueryId) dialog open;
-		with: [html image url: (SEWAFIconLibrary / #documentflowchart24Png); 
-					title: ('Process Map' translateFor: self session user);
-					altText: ('Process Map' translateFor: self session user)].
+		callback: [self downloadXPDLFile];
+		with: [html image url: (SEWAFIconLibrary / #verybasicdownloadfromcloudfilled24Png); 
+					title: ('Download XPDL Bizagi File' translateFor: self session user);
+					altText: ('Download XPDL Bizagi File' translateFor: self session user)].

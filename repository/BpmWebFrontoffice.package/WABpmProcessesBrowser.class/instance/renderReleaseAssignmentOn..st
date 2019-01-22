@@ -6,7 +6,7 @@ renderReleaseAssignmentOn: html
 
 	html anchor 
 		"callback: [self freeSelectedAssignment]; "
-		class: 'cursor-pointer';
+		class: 'cursor-pointer margin-left-5px';
 		onClick: (html jQuery id: jQueryId) dialog open;
 		with: [html image url: (SEWAFIconLibrary / #gointo24Png); 
 					title: ('Release Task' translateFor: self session user);

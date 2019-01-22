@@ -22,6 +22,6 @@ renderItemDescriptionTitleOn: html
 	html anchor 
 		class: 'cursor-pointer';
 		callback: [self downloadXPDLFile];
-		with: [html image url: (SEWAFIconLibrary / #xpdlicon24Png); 
+		with: [html image url: (SEWAFIconLibrary / #verybasicdownloadfromcloudfilled24Png); 
 					title: ('Download XPDL Bizagi File' translateFor: self session user);
 					altText: ('Download XPDL Bizagi File' translateFor: self session user)].
