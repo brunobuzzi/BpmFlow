@@ -8,7 +8,7 @@ tryLogin
 
 	logedUser := BpmUser getExistingOrNewUserNamed: name.
 
-	logedUser isBackofficeUser ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
+	(self checkAccessToApplicationFor: logedUser) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
 	self defaultEnvironmentClass areUsersMultiEnvironment 
 	ifTrue: [(logedUser getBpmEnvironments anySatisfy: [:each | each == self session bpmEnvironment]) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1]]
@@ -20,4 +20,5 @@ tryLogin
 	loginFailed := false.
 	self session user: logedUser.
 
-	self defaultEnvironmentClass areUsersMultiEnvironment ifTrue: [self showPortalFor: self session user].
+	(self defaultEnvironmentClass areUsersMultiEnvironment or: [self defaultEnvironmentClass areUsersMultiEnvironment not and: [logedUser isInAdminsEnvironment not]]) 
+	ifTrue: [self showPortalFor: self session user].

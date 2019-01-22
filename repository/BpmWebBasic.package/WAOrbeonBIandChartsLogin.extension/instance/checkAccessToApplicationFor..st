@@ -1,0 +1,4 @@
+*bpmwebbasic
+checkAccessToApplicationFor: aBpmUser
+
+	^true
