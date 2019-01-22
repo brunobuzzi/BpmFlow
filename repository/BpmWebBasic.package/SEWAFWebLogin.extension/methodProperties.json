@@ -2,7 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"renderEnvironmentComboOn:" : "brunobb 01/21/2019 10:05",
-		"renderEnvironmentComboOn:for:" : "brunobb 01/21/2019 10:05",
-		"setEnvironment:" : "brunobb 09/03/2018 12:35",
-		"setUniqueEnvironmentFor:" : "brunobb 01/21/2019 05:24" } }
+		"renderEnvironmentComboOn:" : "brunobb 01/22/2019 03:11",
+		"renderEnvironmentComboOn:for:" : "brunobb 01/22/2019 03:03",
+		"renderSelectEnvironmentPaneOn:" : "brunobb 01/22/2019 03:24",
+		"setAdminUserWith:" : "brunobb 01/22/2019 03:22",
+		"setEnvironment:" : "brunobb 01/22/2019 03:03",
+		"setUniqueEnvironmentFor:" : "brunobb 01/22/2019 03:03",
+		"showPortalFor:" : "brunobb 01/22/2019 03:15",
+		"tryLogin" : "brunobb 01/22/2019 03:29" } }

@@ -1,4 +1,4 @@
 other
-showBackofficePortalFor: aBpmUser
+showPortalFor: aBpmUser
 
 	self show: (WAProcessBackofficePortal on: aBpmUser)
