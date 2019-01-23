@@ -50,3 +50,17 @@ renderItemDescriptionTitleOn: html
 		with: [html image url: (SEWAFIconLibrary / availableIcon); 
 					title: ('Switch Is Available' translateFor: self session user);
 					altText: ('Switch Is Available' translateFor: self session user)].
+
+	(selectedLateralItem isAvailable and: [selectedLateralItem hasCreationTimer]) ifTrue: [ | anchorText iconName |
+		selectedLateralItem automaticCreationIsActive 
+		ifTrue: [anchorText := 'Make Timer Passive'.
+					iconName := #clock24Png] 
+		ifFalse: [anchorText := 'Make Timer Active'.
+					iconName := #utilitiesclock24Png].
+		html anchor 
+			class: 'cursor-pointer';
+			callback: [self switchCreationTimerStatus]; 
+			with: [html image url: (SEWAFIconLibrary / iconName); 
+						title: (anchorText translateFor: self session user);
+						altText: (anchorText translateFor: self session user)].
+	].
