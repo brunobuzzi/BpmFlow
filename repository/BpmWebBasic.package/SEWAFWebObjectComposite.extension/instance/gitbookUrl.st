@@ -1,4 +1,4 @@
-*bpmwebbasic-as yet unclassified
+*bpmwebbasic
 gitbookUrl
 
 	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals'

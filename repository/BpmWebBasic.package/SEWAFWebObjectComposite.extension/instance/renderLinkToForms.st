@@ -1,0 +1,4 @@
+*bpmwebbasic
+renderLinkToForms
+
+	self subclassResponsibility

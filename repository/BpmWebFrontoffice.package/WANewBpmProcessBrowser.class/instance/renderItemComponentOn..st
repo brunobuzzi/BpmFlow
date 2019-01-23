@@ -1,6 +1,5 @@
 other
 renderItemComponentOn: html
-	| inform |
 
 	selectedLateralItem ifNil: [andApplications := OrderedCollection new. ^orApplications := OrderedCollection new].
 
@@ -11,16 +10,6 @@ renderItemComponentOn: html
 		self renderNewProcessOrOptionsOn: html.
 	].
 
-	html div id: 'artifact-definitions'; with: [
-		selectedLateralItem getOrderedTasks do: [:taskDefinition | 
-			html div class: 'artifact-definition'; with: [html output: taskDefinition printNameAndDefinitionType]]
-	].
+	self renderNewProcessInstanceNumberOn: html.
 
-	processInstance ifNil: [^self].
-
-	inform := SewafInformComponent parent: self.
-	inform information: (('New Process Created number: <' translateFor: self session user), processInstance id printString, '>') color: 'green'.
-
-	html div id: 'new-process-information'; with: [
-		html render: inform.
-	].
+	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].
