@@ -1,0 +1,4 @@
+export
+renderLinkToForms
+
+	^true

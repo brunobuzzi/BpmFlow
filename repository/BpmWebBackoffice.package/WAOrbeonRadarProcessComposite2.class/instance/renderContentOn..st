@@ -17,3 +17,5 @@ renderContentOn: html
 	html div id: 'process-assignments'; class: 'default-gray-table ';
 		with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Tasks' translateFor: self session user)].
 				html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
+
+	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].

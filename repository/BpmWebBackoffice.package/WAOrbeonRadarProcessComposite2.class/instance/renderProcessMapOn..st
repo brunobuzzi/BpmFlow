@@ -1,14 +1,15 @@
 export
 renderProcessMapOn: html
-	| popUpComponent jQueryId |
-
-	popUpComponent := WAProcessViewerSelector parent: self process: selectedObject.
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 450 height: 260 compositeInstance: popUpComponent title: 'Select Process Viewer'.
 
 	html anchor 
-		class: 'cursor-pointer margin-right-20px';
-		"callback: [self downloadProcessMap]; "
-		onClick: (html jQuery id: jQueryId) dialog open;
+		class: 'cursor-pointer margin-left-5px';
+		callback: [self viewSvgProcessMap]; 
 		with: [html image url: (SEWAFIconLibrary / #documentflowchart24Png); 
-					title: ('Process Map' translateFor: self session user);
-					altText: ('Process Map' translateFor: self session user)].
+					title: ('View Process Map' translateFor: self session user);
+					altText: ('View Process Map' translateFor: self session user)].
+	html anchor 
+		class: 'cursor-pointer margin-left-5px';
+		callback: [self downloadXPDLFile];
+		with: [html image url: (SEWAFIconLibrary / #verybasicdownloadfromcloudfilled24Png); 
+					title: ('Download XPDL Bizagi File' translateFor: self session user);
+					altText: ('Download XPDL Bizagi File' translateFor: self session user)].
