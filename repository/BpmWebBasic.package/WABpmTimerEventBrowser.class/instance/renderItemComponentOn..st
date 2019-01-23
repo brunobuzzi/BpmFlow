@@ -24,3 +24,5 @@ renderItemComponentOn: html
 	html break.
 	html div class: 'timer-last-execution'; with: [html output: ('Current Time' translateFor: self session user)].
 	html div class: 'timer-last-execution'; with: [html output: TimeStamp now].
+
+	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].
