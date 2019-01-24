@@ -41,11 +41,10 @@ baseline: spec
 		spec package: 'BpmRuntime' with: [spec requires: #('BpmCore')].
 		spec package: 'BpmXpdlBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmXpdlBizagiReader')].
-		spec package: 'BpmXpdlBizagiSvgConverter' with: [spec requires: #('Jasvgi')].
 		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
 		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'Jasvgi')].
-		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdlBizagiSvgConverter' 'BpmWebBasic')].
-		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdlBizagiSvgConverter' 'BpmWebBasic')].
+		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
+		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
@@ -58,7 +57,7 @@ baseline: spec
 		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
 
 		spec
-			group: 'core' with: #('BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmXpdlBizagiSvgConverter' 'BpmRuntimePEF'); 
+			group: 'core' with: #('BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmRuntimePEF'); 
 			group: 'web-backoffice' with: #('BpmWebBasic' 'BpmWebBackoffice');
 			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
 			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
