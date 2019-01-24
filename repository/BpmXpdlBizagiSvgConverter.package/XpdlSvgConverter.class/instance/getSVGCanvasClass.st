@@ -1,4 +1,0 @@
-svg generator
-getSVGCanvasClass
-
-	^JASVGIBpmCanvas
