@@ -1,4 +1,4 @@
-*bpmxpdlbizagisvgconverter
+other
 getTooltipOrNil
 	"The receiver answer a tooltip to be displayed in SVG diagram on the Web Application"
 	| tooltip |

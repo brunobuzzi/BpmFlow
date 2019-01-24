@@ -1,4 +1,0 @@
-other
-application
-
-	^bpmProcess application

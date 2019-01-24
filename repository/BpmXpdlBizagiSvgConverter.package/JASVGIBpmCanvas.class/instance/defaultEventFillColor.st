@@ -1,4 +1,0 @@
-default values
-defaultEventFillColor
-
-	^'lightblue'

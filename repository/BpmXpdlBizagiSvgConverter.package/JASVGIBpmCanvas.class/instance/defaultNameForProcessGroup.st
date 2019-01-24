@@ -1,4 +1,0 @@
-other
-defaultNameForProcessGroup
-
-	^self class defaultNameForProcessGroup
