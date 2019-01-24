@@ -1,4 +1,4 @@
-other
+render subprocess
 model: aModel
 
 	"the parent component has changed the model selection --> <subProcess> is reset"

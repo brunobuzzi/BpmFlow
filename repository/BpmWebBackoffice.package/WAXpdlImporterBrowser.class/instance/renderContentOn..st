@@ -25,5 +25,7 @@ renderContentOn: html
 		html div id: 'imported-processes-title'; 
 					with: [html output: (importTitle translateFor: self session user)].
 		html div id: 'imported-processes'; 
-					with: [self renderSVGForImportedProcessesOn: html] "here the user can confirm the import and processes are stored"
+					with: [self renderSVGForImportedProcessesOn: html]. "here the user can confirm the import and processes are stored"
+		html div id: 'process-map';
+					with: [(self componentValueAt: 'view.svg.map' ifAbsent: [nil]) ifNotNil: [:procDefinition | self renderSvgProcessMapFor: procDefinition on: html].]
 	].

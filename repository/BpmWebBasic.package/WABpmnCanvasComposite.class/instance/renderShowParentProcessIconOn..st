@@ -1,5 +1,7 @@
-other
+render subprocess
 renderShowParentProcessIconOn: html
+
+	(self componentValueAt: 'parent.process.icon' ifAbsent: [true]) ifFalse: [^self].
 
 	self getModelOrSubProcess isTopProcess ifTrue: [^self].
 
