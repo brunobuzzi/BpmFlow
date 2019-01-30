@@ -7,7 +7,6 @@ renderEmptyUploadFormOn: html index: index
 	html div class: 'centered-unique-form float-left';
 		with: [
 				html form multipart; 
-					"class: 'height300';"
 					with: [
 						html fieldSet with:[
 							html legend with: [html strong: ('XPDL Upload Form' translateFor: self session user)].
