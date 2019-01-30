@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmCentralPortal",
+	"pools" : [
+		 ],
+	"super" : "SEWAFApplicationPortal",
+	"type" : "normal" }
