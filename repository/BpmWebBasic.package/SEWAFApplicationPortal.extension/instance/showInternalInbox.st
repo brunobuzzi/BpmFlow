@@ -1,4 +1,4 @@
-*bpmwebbasic-as yet unclassified
+*bpmwebbasic
 showInternalInbox
 
 	(arena isKindOf: WABpmInternalInbox)

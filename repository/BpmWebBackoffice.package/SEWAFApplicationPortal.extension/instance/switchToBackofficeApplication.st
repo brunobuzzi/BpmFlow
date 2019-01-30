@@ -1,4 +1,4 @@
-*bpmwebbackoffice-as yet unclassified
+*bpmwebbackoffice
 switchToBackofficeApplication
 	"The receiver is closed and the user is switched to Backoffice Portal"
 

@@ -1,4 +1,4 @@
-*bpmwebbusinessintelligence-as yet unclassified
+*bpmwebbusinessintelligence
 switchToBIApplication
 	"The receiver is closed and the user is switched to BI Portal"
 

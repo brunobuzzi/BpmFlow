@@ -1,4 +1,4 @@
-*bpmwebbasic-as yet unclassified
+*bpmwebbasic
 showInternalOutbox
 
 	(arena isKindOf: WABpmInternalOutbox)

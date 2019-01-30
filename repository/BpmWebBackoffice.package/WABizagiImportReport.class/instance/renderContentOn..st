@@ -1,7 +1,7 @@
 other
 renderContentOn: html
 
-	html div id: 'imported-xpdl-report'; class: 'unique-centered-table unique-centered-table-width70'; with: [
+	html div id: 'imported-xpdl-report'; class: 'default-gray-table'; with: [
 		html render: self reportTable.
 	].
 
