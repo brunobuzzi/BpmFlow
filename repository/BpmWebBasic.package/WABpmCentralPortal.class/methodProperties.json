@@ -3,10 +3,11 @@
 		"register" : "brunobb 01/30/2019 11:39",
 		"unregister" : "brunobb 01/30/2019 11:39" },
 	"instance" : {
-		"renderContentOn:" : "brunobb 01/30/2019 11:29",
-		"renderLinkToBackofficeApplicationOn:" : "brunobb 01/30/2019 11:32",
-		"renderLinkToBusinessInteligenceApplicationOn:" : "brunobb 01/30/2019 11:33",
-		"renderLinkToFrontofficeApplicationOn:" : "brunobb 01/30/2019 11:35",
-		"showBackofficeApplication" : "brunobb 01/30/2019 11:34",
-		"showBusinessInteligenceApplication" : "brunobb 01/30/2019 11:34",
-		"showFrontofficeApplication" : "brunobb 01/30/2019 11:35" } }
+		"initializeNavigation" : "brunobb 01/31/2019 02:46",
+		"renderContentOn:" : "brunobb 01/31/2019 02:43",
+		"renderLinkToBackofficeApplicationOn:" : "brunobb 01/31/2019 02:47",
+		"renderLinkToBusinessIntelligenceApplicationOn:" : "brunobb 01/31/2019 02:47",
+		"renderLinkToFrontofficeApplicationOn:" : "brunobb 01/31/2019 03:04",
+		"showBackofficeLogin" : "brunobb 01/31/2019 02:55",
+		"showBusinessInteligenceLogin" : "brunobb 01/31/2019 03:02",
+		"showFrontofficeLogin" : "brunobb 01/31/2019 03:02" } }

@@ -5,8 +5,10 @@ registerScript
 
 	WAOrbeonProcessLayer register.
 
-	WAOrbeonProcessLogin register. 
+	WABpmFrontofficeLogin register. 
 
-	WAOrbeonBackofficeLogin register. 
+	WABpmBackofficeLogin register. 
+
+	WABpmBIandChartsLogin register.
 
 	WABpmProcessCreationStaticMessage register.

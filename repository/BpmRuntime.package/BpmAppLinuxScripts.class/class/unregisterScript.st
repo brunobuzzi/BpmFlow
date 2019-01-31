@@ -5,8 +5,10 @@ unregisterScript
 
 	WAOrbeonProcessLayer unregister.
 
-	WAOrbeonProcessLogin unregister. 
+	WABpmFrontofficeLogin unregister. 
 
-	WAOrbeonBackofficeLogin unregister. 
+	WABpmBackofficeLogin unregister.
+
+	WABpmBIandChartsLogin unregister.
 
 	WABpmProcessCreationStaticMessage unregister.
