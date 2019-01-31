@@ -1,4 +1,4 @@
 other
 showPortalFor: aBpmUser
 
-	self show: (WAProcessBackofficePortal on: aBpmUser)
+	self show: (WABpmBackofficePortal on: aBpmUser)

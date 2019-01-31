@@ -1,3 +1,4 @@
 other
 logout
-    user := nil
+    user := nil.
+	bpmEnvironment := nil.

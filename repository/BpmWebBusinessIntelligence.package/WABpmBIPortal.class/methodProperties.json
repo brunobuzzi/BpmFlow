@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applicationIcon" : "brunobb 01/31/2019 03:12",
+		"applicationName" : "brunobb 01/31/2019 03:12",
+		"initialize" : "brunobb 01/31/2019 03:12",
+		"initializeNavigation" : "brunobb 01/31/2019 03:12",
+		"isBIPortal" : "brunobb 01/31/2019 03:12",
+		"logout" : "brunobb 01/31/2019 03:17",
+		"openBpmApplicationsCharts" : "brunobb 01/31/2019 03:12",
+		"openBpmChartsRepository" : "brunobb 01/31/2019 03:12",
+		"openBpmProcessCharts" : "brunobb 01/31/2019 03:12",
+		"openBpmRoleCharts" : "brunobb 01/31/2019 03:12",
+		"openBpmUserCharts" : "brunobb 01/31/2019 03:12",
+		"openCompareFieldsCharts" : "brunobb 01/31/2019 03:12",
+		"openGlobalCharts" : "brunobb 01/31/2019 03:12",
+		"openSavedCharts" : "brunobb 01/31/2019 03:12",
+		"openUsersSavedCharts" : "brunobb 01/31/2019 03:12",
+		"renderSwitchPortalIconsOn:" : "brunobb 01/31/2019 03:12",
+		"showMyChartsComposite" : "brunobb 01/31/2019 03:12",
+		"showMyDashboardComposite" : "brunobb 01/31/2019 03:12",
+		"showMyOldDashboardsComposite" : "brunobb 01/31/2019 03:12",
+		"showNewDashboardComposite" : "brunobb 01/31/2019 03:12",
+		"updateRoot:" : "brunobb 01/31/2019 03:12",
+		"versionName" : "brunobb 01/31/2019 03:12" } }
