@@ -1,5 +1,18 @@
 {
 	"class" : {
-		 },
+		"register" : "brunobb 01/31/2019 06:35",
+		"unregister" : "brunobb 01/31/2019 06:35" },
 	"instance" : {
-		"renderContentOn:" : "brunobb 01/30/2019 11:25" } }
+		"getBpmEnvironmentNamed:" : "brunobb 01/31/2019 06:49",
+		"getSelectedLanguage" : "brunobb 01/31/2019 06:35",
+		"initializeNavigation" : "brunobb 01/31/2019 06:35",
+		"languageFlagsIconsAndNames" : "brunobb 01/31/2019 06:35",
+		"redirecToOrbeonForm:" : "brunobb 01/31/2019 07:20",
+		"redirecToOrbeonFormToStart:withTaskNamed:" : "brunobb 01/31/2019 07:21",
+		"renderAnonymousProcessesListOn:" : "brunobb 01/31/2019 07:30",
+		"renderContentOn:" : "brunobb 01/31/2019 06:48",
+		"renderLanguageFlagsOn:" : "brunobb 01/31/2019 06:35",
+		"renderNoEnvironmentSelectedOn:" : "brunobb 01/31/2019 07:31",
+		"selectedLanguage" : "brunobb 01/31/2019 06:35",
+		"selectedLanguage:" : "brunobb 01/31/2019 06:35",
+		"style" : "brunobb 01/31/2019 07:31" } }

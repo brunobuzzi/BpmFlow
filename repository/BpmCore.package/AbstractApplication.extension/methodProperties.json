@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"canDelete" : "brunobb 09/12/2018 08:26" } }
+		"canDelete" : "brunobb 09/12/2018 08:26",
+		"getNumberOfProcessesDefinition" : "brunobb 01/31/2019 06:54",
+		"getProcessesDefinition" : "brunobb 01/31/2019 06:53",
+		"getProcessesDefinitionWithAnonymouStart" : "brunobb 01/31/2019 07:03" } }

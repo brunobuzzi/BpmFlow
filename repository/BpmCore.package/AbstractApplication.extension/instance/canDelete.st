@@ -1,4 +1,4 @@
-*bpmcore-as yet unclassified
+*bpmcore
 canDelete
 	"Answer whether or not the receiver can be deleted from the system"
 
