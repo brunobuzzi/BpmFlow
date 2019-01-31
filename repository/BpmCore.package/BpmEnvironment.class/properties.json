@@ -11,7 +11,8 @@
 		"applications",
 		"users",
 		"applicationsNames",
-		"applicationsLogos" ],
+		"applicationsLogos",
+		"internationalization" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],
