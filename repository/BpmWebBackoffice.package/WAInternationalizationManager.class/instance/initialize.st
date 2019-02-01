@@ -3,4 +3,6 @@ initialize
 
 	super initialize.
 
-	mode := #languages
+	mode := #languages.
+
+	self initializeSewafTableForInternationalizations
