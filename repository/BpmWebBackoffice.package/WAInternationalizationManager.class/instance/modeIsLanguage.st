@@ -1,0 +1,4 @@
+other
+modeIsLanguage
+
+	^mode = #languages
