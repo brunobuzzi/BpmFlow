@@ -3,6 +3,8 @@ getInternationalization
 
 	self session bpmEnvironment isAdminsEnvironment ifFalse: [^self session getInternationalization].
 
-	currentInternationalization ifNil: [^self session getInternationalization].
+	selectedEnvironment ifNil: [^self session getInternationalization].
 
-	^currentInternationalization
+	^selectedEnvironment internationalization 
+		ifNil: [self session getInternationalization] 
+		ifNotNil: [selectedEnvironment internationalization]

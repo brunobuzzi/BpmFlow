@@ -9,8 +9,8 @@
 		"stringKey",
 		"translatedString",
 		"newLanguageName",
-		"currentInternationalization",
-		"mode" ],
+		"mode",
+		"selectedEnvironment" ],
 	"name" : "WAInternationalizationManager",
 	"pools" : [
 		 ],

@@ -1,2 +1,2 @@
-other
+buttons
 cloneSelectedInternationalization

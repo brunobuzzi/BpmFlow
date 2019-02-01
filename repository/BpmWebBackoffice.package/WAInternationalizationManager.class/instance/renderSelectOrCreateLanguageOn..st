@@ -4,7 +4,7 @@ renderSelectOrCreateLanguageOn: html
 	html div with: [
 		html form with: [ 
 			html fieldSet with: [
-			html legend with: [html strong: ('Languages' translateIn: self session)].
+			html legend with: [html strong: ('Languages for [' translateIn: self session), self printCurrentEnvironmentName, ']{', self printInternationalizationType, '}'].
 					html label attributeAt: 'for' put: 'language'; with: ('Languages' translateIn: self session).
 					html select attributeAt: 'id' put: 'language'; class: '';
 						list: (#(''), self getInternationalization currentDictionaries);

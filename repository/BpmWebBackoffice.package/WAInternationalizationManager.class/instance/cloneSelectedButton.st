@@ -1,12 +1,12 @@
-other
+buttons
 cloneSelectedButton
 
 	^(SewafReportColumn 
 			renderBlock: [:each :html | 
-				html anchor callback: [self cloneSelectedInternationalization]; 
-								with: [html image url: (SEWAFIconLibrary / #actionseditclear24Png); 
+				html anchor callback: [self cloneSelectedInternationalization: each]; 
+								with: [html image url: (SEWAFIconLibrary / #editingcopy24Png); 
 														title: ('Clone Selected' translateIn: self session); 
 														altText: ('Clone Selected' translateIn: self session).]] 
-				title: 'RP') sortBlock: nil; 
+				title: 'Clone Selected') sortBlock: nil; 
 				cssClass: 'width-6-percent';
 			yourself

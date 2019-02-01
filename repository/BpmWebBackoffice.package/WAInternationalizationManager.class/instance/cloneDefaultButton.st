@@ -1,12 +1,12 @@
-other
+buttons
 cloneDefaultButton
 
 	^(SewafReportColumn 
 			renderBlock: [:each :html | 
-				html anchor callback: [self cloneDefaultInternationalization]; 
-								with: [html image url: (SEWAFIconLibrary / #actionseditclear24Png); 
+				html anchor callback: [self cloneDefaultInternationalizationTo: each]; 
+								with: [html image url: (SEWAFIconLibrary / #editingcopy24Png); 
 														title: ('Clone Default' translateIn: self session); 
 														altText: ('Clone Default' translateIn: self session).]] 
-				title: 'RP') sortBlock: nil; 
+				title: 'Clone Default') sortBlock: nil; 
 				cssClass: 'width-6-percent';
 			yourself

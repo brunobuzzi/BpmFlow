@@ -1,2 +1,4 @@
-other
+buttons
 resetInternationalization: aBpmEnvironment
+
+	aBpmEnvironment resetInternationalization

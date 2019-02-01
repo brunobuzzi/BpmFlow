@@ -1,4 +1,6 @@
 other
 getInternationalization
 
-	^bpmEnvironment ifNil: [super getInternationalization] ifNotNil: [bpmEnvironment internationalization]
+	^(bpmEnvironment isNil or: [bpmEnvironment internationalization isNil])
+		ifTrue: [super getInternationalization]
+		ifFalse: [bpmEnvironment internationalization]
