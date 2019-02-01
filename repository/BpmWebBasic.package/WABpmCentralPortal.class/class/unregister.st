@@ -1,4 +1,4 @@
 other
 unregister
 
-	WAAdmin unregister: 'bpmflow-central'.
+	WAAdmin unregister: 'bpmflow'.

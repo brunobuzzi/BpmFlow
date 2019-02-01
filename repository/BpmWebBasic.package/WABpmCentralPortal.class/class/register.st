@@ -2,9 +2,9 @@ other
 register
 	| application |
 
-	WAAdmin unregister: 'bpmflow-central'.
+	WAAdmin unregister: 'bpmflow'.
 
-	application := WAAdmin register: self asApplicationAt: 'bpmflow-central'.
+	application := WAAdmin register: self asApplicationAt: 'bpmflow'.
 	"application preferenceAt: #scriptGeneratorClass put: JQScriptGenerator."
 	application 
 		preferenceAt: #sessionClass put: WABpmSession;
