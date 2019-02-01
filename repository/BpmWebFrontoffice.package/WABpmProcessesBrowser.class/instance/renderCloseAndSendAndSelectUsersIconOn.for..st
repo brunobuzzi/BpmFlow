@@ -6,5 +6,5 @@ renderCloseAndSendAndSelectUsersIconOn: html for: aBpmArtifactInstance
 			callback: [self closeSendAndSelectUsers: aBpmArtifactInstance];
 			"onClick: (html jQuery id: jQueryId) dialog open;"
 			with: [html image url: (SEWAFIconLibrary / #userarrowright32Png); 
-			title: ('Close, Send & Select Users' translateFor: self session user);
-			altText: ('Close, Send & Select Users' translateFor: self session user)].
+			title: ('Close, Send & Select Users' translateIn: self session);
+			altText: ('Close, Send & Select Users' translateIn: self session)].

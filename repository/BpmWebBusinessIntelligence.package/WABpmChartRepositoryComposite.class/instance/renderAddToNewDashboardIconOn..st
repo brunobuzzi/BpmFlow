@@ -9,6 +9,6 @@ renderAddToNewDashboardIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #dashboardnew24Png); 
-												title: ('Add to New Dashboard' translateFor: self session user); 
-												altText: ('Add to New Dashboard' translateFor: self session user) ]
+												title: ('Add to New Dashboard' translateIn: self session); 
+												altText: ('Add to New Dashboard' translateIn: self session) ]
 	]

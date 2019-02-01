@@ -9,7 +9,7 @@ initializeSewafTableForUsers
 		summary: 'Users to Assign';
 		sortColumnSelector: #sortUsers:orderMode:;
 		backcolor: self session user userOptions getBooleanTableBackcolor;
-		buttonLabel: ('Assign and Close' translateFor: self session user);
+		buttonLabel: ('Assign and Close' translateIn: self session);
 		booleanSelector: #booleanValueForUser:;
 		callbackSelector: #modifyUser:value:;
 		columns: (OrderedCollection new add: column; 

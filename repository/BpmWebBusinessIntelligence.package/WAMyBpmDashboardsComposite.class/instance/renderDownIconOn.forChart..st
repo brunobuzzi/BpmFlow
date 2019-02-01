@@ -6,6 +6,6 @@ renderDownIconOn: html forChart: aBpmChartDefinition
 					class: 'cursor-pointer';
 					callback: [self moveDown: aBpmChartDefinition];
 						with: [html image url: (SEWAFIconLibrary / #down16Png); 
-												title: ('Move Down' translateFor: self session user); 
-												altText: ('Move Down' translateFor: self session user) ]
+												title: ('Move Down' translateIn: self session); 
+												altText: ('Move Down' translateIn: self session) ]
 	]

@@ -3,7 +3,7 @@ renderFormDefinitionComboOn: html
 
 	html label 
 		attributeAt: 'for' put: 'formDefinitions';
-		with: ('Form' translateFor: self session user).
+		with: ('Form' translateIn: self session).
 
 	html select "Form Definition List" 
 		attributeAt: 'id' put: 'formDefinitions';

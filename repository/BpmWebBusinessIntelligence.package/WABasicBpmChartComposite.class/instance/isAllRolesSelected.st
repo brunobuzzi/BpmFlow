@@ -1,4 +1,4 @@
 query variables
 isAllRolesSelected
 
-	^(self searchValueAt: 'role' ifAbsent: [^true]) = ('All' translateFor: self session user)
+	^(self searchValueAt: 'role' ifAbsent: [^true]) = ('All' translateIn: self session)

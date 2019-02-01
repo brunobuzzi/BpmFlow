@@ -3,7 +3,7 @@ renderFormDefinitionComboOn: html
 
 	html div class: 'top-search-div'; with: [
 		html label attributeAt: 'for' put: 'formDefinitions';
-			with: ('Form Definition' translateFor: self session user).
+			with: ('Form Definition' translateIn: self session).
 
 		html select attributeAt: 'id' put: 'formDefinitions'; "Process Definition List"
 			list: self getFormDefinitions;

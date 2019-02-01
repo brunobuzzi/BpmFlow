@@ -9,6 +9,6 @@ renderDeleteApplicationOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #remove24Png); 
-												title: ('Remove Application' translateFor: self session user); 
-												altText: ('Remove Application' translateFor: self session user) ]
+												title: ('Remove Application' translateIn: self session); 
+												altText: ('Remove Application' translateIn: self session) ]
 	]

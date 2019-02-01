@@ -5,7 +5,7 @@ renderSearchOptionsOn: html
 	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
 	html form with: [ 
 		html fieldSet with: [
-			html legend class: 'top-search-legend'; with: ('Search Options' translateFor: self session user).
+			html legend class: 'top-search-legend'; with: ('Search Options' translateIn: self session).
 			self renderProcessIdOn: html.
 			"self renderIsFinishedOn: html."
 			html div class: 'top-search-div'; with: [self renderApplicationComboOn: html].

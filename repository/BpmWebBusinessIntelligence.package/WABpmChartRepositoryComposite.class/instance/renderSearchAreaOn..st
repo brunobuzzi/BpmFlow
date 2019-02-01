@@ -8,7 +8,7 @@ renderSearchAreaOn: html
 	html form with: [
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; 
-				with: ('Search Chart Report' translateFor: self session user).
+				with: ('Search Chart Report' translateIn: self session).
 			self renderChartScopeComboOn: html.
 			(self isApplicationScopeSelected or:[self isProcessScopeSelected or:[self isRoleScopeSelected]]) ifTrue: [self renderApplicationComboOn: html].
 			self isProcessScopeSelected ifTrue: [self renderProcessDefinitionComboOn: html].

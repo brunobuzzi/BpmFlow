@@ -9,6 +9,6 @@ renderAddApplicationOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #add24Png); 
-												title: ('Add Application' translateFor: self session user); 
-												altText: ('Add Application' translateFor: self session user) ]
+												title: ('Add Application' translateIn: self session); 
+												altText: ('Add Application' translateIn: self session) ]
 	]

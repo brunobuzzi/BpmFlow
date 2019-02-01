@@ -5,7 +5,7 @@ sewafTableForRols
 	^(SewafBooleanSelectTable parent: self)
 		summary: 'Users to Assign';
 		backcolor: self session user userOptions getBooleanTableBackcolor;
-		buttonLabel: ('Assign and Close' translateFor: self session user);
+		buttonLabel: ('Assign and Close' translateIn: self session);
 		booleanSelector: #booleanValueForRol:;
 		callbackSelector: #modifyRole:value:;
 		"rows: (self session user getVisibleRoles difference: selectedObject roles); "

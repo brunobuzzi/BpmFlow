@@ -7,5 +7,5 @@ removeRoleFromUser: aBpmRole
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'RolesOfSelectedUser' ifAbsent: [^self]) 
-			information: ('Rol removed !!!' translateFor: self session user)
+			information: ('Rol removed !!!' translateIn: self session)
 			color: 'green'.

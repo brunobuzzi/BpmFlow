@@ -4,7 +4,7 @@ renderTwoFitersOn: html
 	html label 
 		attributeAt: 'for' put: 'filterOne';
 		class: 'search-section-float'; 
-		with: ('Start Value' translateFor: self session user).
+		with: ('Start Value' translateIn: self session).
 	html textInput 
 		attributeAt: 'id' put: 'filterOne';
 		callback: [:value | self addSearchValue: value named: 'field-value'];
@@ -12,7 +12,7 @@ renderTwoFitersOn: html
 	html label 
 		attributeAt: 'for' put: 'filterTwo';
 		class: 'search-section-float'; 
-		with: ('End Value' translateFor: self session user).
+		with: ('End Value' translateIn: self session).
 	html textInput 
 		attributeAt: 'id' put: 'filterTwo';
 		callback: [:value | self addSearchValue: value named: 'field-value-2'];

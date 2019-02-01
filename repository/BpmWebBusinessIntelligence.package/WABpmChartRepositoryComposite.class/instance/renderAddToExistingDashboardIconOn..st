@@ -9,6 +9,6 @@ renderAddToExistingDashboardIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #dashboard24Png); 
-												title: ('Add to Existing Dashboard' translateFor: self session user); 
-												altText: ('Add to Existing Dashboard' translateFor: self session user) ]
+												title: ('Add to Existing Dashboard' translateIn: self session); 
+												altText: ('Add to Existing Dashboard' translateIn: self session) ]
 	]

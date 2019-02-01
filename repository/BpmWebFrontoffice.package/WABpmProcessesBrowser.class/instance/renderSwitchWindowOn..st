@@ -7,8 +7,8 @@ renderSwitchWindowOn: html
 			with: [
 				html div with: [
 					html image url: (SEWAFIconLibrary / #ezswitchuser16Png); 
-						altText: ('Switch Window' translateFor: self session user); 
-						title: ('Switch Window' translateFor: self session user).
+						altText: ('Switch Window' translateIn: self session); 
+						title: ('Switch Window' translateIn: self session).
 				].
 		].
 	].

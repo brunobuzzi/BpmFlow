@@ -9,6 +9,6 @@ renderSetEnvironmentIconsAndAppsNamesOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #appspreferencessystemwindowsactions24Png); 
-												title: ('Set Icons and Names' translateFor: self session user); 
-												altText: ('Set Icons and Names' translateFor: self session user) ]
+												title: ('Set Icons and Names' translateIn: self session); 
+												altText: ('Set Icons and Names' translateIn: self session) ]
 	]

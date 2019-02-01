@@ -6,5 +6,5 @@ renderShowChartButtonOn: html
 		with: [
 			html submitButton 
 				callback: [self showChart]; 
-				with: ('Show Chart' translateFor: self session user).
+				with: ('Show Chart' translateIn: self session).
 		].

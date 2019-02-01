@@ -4,7 +4,7 @@ categoryColorColumn
 	^(SewafReportColumn 
 			renderBlock: [:each :html | 
 				html colorInput 
-					attributeAt: 'title' put: ('Color' translateFor: self session user);
+					attributeAt: 'title' put: ('Color' translateIn: self session);
 					value: each color.] 
-			title: ('Color' translateFor: self session user)) sortBlock: nil; 
+			title: ('Color' translateIn: self session)) sortBlock: nil; 
 			yourself

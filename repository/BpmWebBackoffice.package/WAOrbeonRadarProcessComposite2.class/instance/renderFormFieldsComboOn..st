@@ -4,7 +4,7 @@ renderFormFieldsComboOn: html
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'formFields'; 
-			class: 'search-section-float-left'; with: ('Form Fields' translateFor: self session user).
+			class: 'search-section-float-left'; with: ('Form Fields' translateIn: self session).
 		html select attributeAt: 'id' put: 'formFields';
 			class: 'search-section-float-left';"Process Definition List"
 			list: (#(''), self getFormFields) asSortedCollection;

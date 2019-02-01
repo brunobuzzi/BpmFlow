@@ -6,7 +6,7 @@ renderSearchAreaOn: html
 	html form with: [
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; 
-				with: ('Draw Chart' translateFor: self session user).
+				with: ('Draw Chart' translateIn: self session).
 
 			self renderDistributionComboOn: html.
 			self renderChartTypeComboOn: html.

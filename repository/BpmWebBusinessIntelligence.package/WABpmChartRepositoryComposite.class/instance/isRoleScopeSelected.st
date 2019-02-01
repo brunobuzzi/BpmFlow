@@ -1,4 +1,4 @@
 testing
 isRoleScopeSelected
 
-	^(self searchValueAt: 'scope' ifAbsent: [^true]) = ('Role' translateFor: self session user)
+	^(self searchValueAt: 'scope' ifAbsent: [^true]) = ('Role' translateIn: self session)

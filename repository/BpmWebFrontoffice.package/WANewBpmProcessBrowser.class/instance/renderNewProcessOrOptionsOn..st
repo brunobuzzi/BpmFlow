@@ -10,8 +10,8 @@ renderNewProcessOrOptionsOn: html
 					title: 'Available Form Applications';
 					attributeAt: 'id' put: 'application-or';
 					callback: [:value | orApplication := value].
-				html submitButton callback: [self addOrApplication] ; with: ('Add Application' translateFor: self session user).
-				html submitButton callback: [self removeAllOr] ; with: ('Remove All' translateFor: self session user).
+				html submitButton callback: [self addOrApplication] ; with: ('Add Application' translateIn: self session).
+				html submitButton callback: [self removeAllOr] ; with: ('Remove All' translateIn: self session).
 			].
 			self renderApplicationContextOn: html forApplication: orApplications withSeparator: ' | '.
 			self renderOrDetailsOn: html.

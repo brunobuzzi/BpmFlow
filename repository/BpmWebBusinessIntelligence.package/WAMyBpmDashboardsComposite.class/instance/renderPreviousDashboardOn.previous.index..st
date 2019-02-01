@@ -6,6 +6,6 @@ renderPreviousDashboardOn: html previous: aBpmDashboardInstance index: index
 					class: 'cursor-pointer';
 					callback: [instancesToRender at: index put: aBpmDashboardInstance];
 						with: [html image url: (SEWAFIconLibrary / #back16Png); 
-												title: ('Previous Dashboard' translateFor: self session user); 
-												altText: ('Previous Dashboard' translateFor: self session user) ]
+												title: ('Previous Dashboard' translateIn: self session); 
+												altText: ('Previous Dashboard' translateIn: self session) ]
 	]

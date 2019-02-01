@@ -2,6 +2,6 @@ other
 createReverseTranslation
 
 	recursionNames := BpmDashboardRecursionDefinition getComboBoxNames collect: [:string | | translation |
-									translation := string translateFor: self session user.
+									translation := string translateIn: self session.
 									parent reverseTranslation atTransatedString: translation put: string.
 									translation].

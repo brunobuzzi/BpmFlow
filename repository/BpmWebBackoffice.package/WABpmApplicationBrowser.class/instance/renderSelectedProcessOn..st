@@ -9,8 +9,8 @@ renderSelectedProcessOn: html
 		html anchor 
 				callback: [selectedProcess := nil];
 				with: [html image url: (SEWAFIconLibrary / #arrowsupcircular32Png);
-							title: ('Back' translateFor: self session user);
-							altText: ('Back' translateFor: self session user)].
+							title: ('Back' translateIn: self session);
+							altText: ('Back' translateIn: self session)].
 	].
 
 	html render: bpmnCanvas2

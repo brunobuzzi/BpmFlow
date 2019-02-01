@@ -10,7 +10,7 @@ renderJQueryComboBoxDialogOn: html list: list forActionNamed: actionName actionM
 		modal: true;
 		width: aPoint x;
 		height: aPoint y;
-         title: ('Select Assignation Policy' translateFor: self session user);
+         title: ('Select Assignation Policy' translateIn: self session);
          autoOpen: false);
       with: [self renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod: actionMethod arguments: arguments].
 

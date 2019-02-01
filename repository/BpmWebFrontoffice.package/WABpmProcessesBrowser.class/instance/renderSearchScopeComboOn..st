@@ -3,7 +3,7 @@ renderSearchScopeComboOn: html
 
 	html label 
 		attributeAt: 'for' put: 'scope';
-		with: ('Scope' translateFor: self session user).
+		with: ('Scope' translateIn: self session).
 	html select "Process Definition List"
 		attributeAt: 'id' put: 'scope';
 		list: (BpmQueryOperation getComboBoxListFor: self session user);

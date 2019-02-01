@@ -5,7 +5,7 @@ renderOneFilterOn: html
 
 	html label 
 		attributeAt: 'for' put: 'filterOne';
-		class: 'search-section-float'; with: ('Field Value' translateFor: self session user).
+		class: 'search-section-float'; with: ('Field Value' translateIn: self session).
 
 	html textInput 
 		attributeAt: 'id' put: 'filterOne';

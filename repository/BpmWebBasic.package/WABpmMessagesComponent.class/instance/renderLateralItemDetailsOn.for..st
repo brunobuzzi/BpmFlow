@@ -2,7 +2,7 @@ other
 renderLateralItemDetailsOn: html for: aLateralItem
 	| boldData |
 
-	boldData := (aLateralItem printTransmitter translateFor: self session user).
+	boldData := (aLateralItem printTransmitter translateIn: self session).
 
 	aLateralItem isUserMessage ifTrue: [
 		boldData := boldData, ' (', aLateralItem from username, ')'.].

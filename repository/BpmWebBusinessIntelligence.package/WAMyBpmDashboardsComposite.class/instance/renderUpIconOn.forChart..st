@@ -6,6 +6,6 @@ renderUpIconOn: html forChart: aBpmChartDefinition
 					class: 'cursor-pointer';
 					callback: [self moveUp: aBpmChartDefinition];
 						with: [html image url: (SEWAFIconLibrary / #up16Png); 
-												title: ('Move Up' translateFor: self session user); 
-												altText: ('Move Up' translateFor: self session user) ]
+												title: ('Move Up' translateIn: self session); 
+												altText: ('Move Up' translateIn: self session) ]
 	]

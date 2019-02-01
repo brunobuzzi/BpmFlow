@@ -9,5 +9,5 @@ assignUserTo: aBpmTaskAssignment
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'Tasks' ifAbsent: [^self]) 
-		information: ('Task Assigned !!!' translateFor: self session user)
+		information: ('Task Assigned !!!' translateIn: self session)
 		color: 'green'.

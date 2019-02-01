@@ -7,7 +7,7 @@ renderRolesComboOn: html
 		ifFalse: [(self session user rolesIn: self session bpmEnvironment) select: [:each | each getApplicationName = appName] thenCollect: [:each | each name]]
 		ifTrue: [#()].
 
-	html label attributeAt: 'for' put: 'roles'; with: ('Roles' translateFor: self session user).
+	html label attributeAt: 'for' put: 'roles'; with: ('Roles' translateIn: self session).
 	html select "Process Definition List"
 		attributeAt: 'id' put: 'roles'; 
 		list: (#(''), roles asArray) asSortedCollection;

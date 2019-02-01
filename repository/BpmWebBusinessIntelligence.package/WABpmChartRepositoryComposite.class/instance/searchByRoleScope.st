@@ -2,7 +2,7 @@ search area
 searchByRoleScope
 	| queryBlock |
 
-	queryBlock := (('All' translateFor: self session user) = self getRoleName)
+	queryBlock := (('All' translateIn: self session) = self getRoleName)
 		ifTrue: [[:chart | chart applicationName = self getApplicationName]] 
 		ifFalse: [[:chart | chart applicationName = self getApplicationName and: [chart roleName = self getRoleName]]].
 

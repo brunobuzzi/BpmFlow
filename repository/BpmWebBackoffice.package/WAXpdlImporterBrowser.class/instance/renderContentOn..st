@@ -20,10 +20,10 @@ renderContentOn: html
 	model hasNonResumableWarnings ifTrue: [^self renderNonResumableWarningsOn: html].
 	
 	model isImportSuccessful
-	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateFor: self session user)].]
+	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateIn: self session)].]
 	ifFalse: [importTitle := (model numberOfGeneratedProcesses > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
 		html div id: 'imported-processes-title'; 
-					with: [html output: (importTitle translateFor: self session user)].
+					with: [html output: (importTitle translateIn: self session)].
 		html div id: 'imported-processes'; 
 					with: [self renderSVGForImportedProcessesOn: html]. "here the user can confirm the import and processes are stored"
 		html div id: 'process-map';

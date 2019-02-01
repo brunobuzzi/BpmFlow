@@ -10,6 +10,6 @@ renderEditDashboardIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #actionsdocumentedit24Png); 
-												title: ('Edit Dashboard' translateFor: self session user); 
-												altText: ('Edit Dashboard' translateFor: self session user) ]
+												title: ('Edit Dashboard' translateIn: self session); 
+												altText: ('Edit Dashboard' translateIn: self session) ]
 	]

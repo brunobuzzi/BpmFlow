@@ -10,7 +10,7 @@ renderAbortConfirmationOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open; 
 					with: [html image url: (SEWAFIconLibrary / #delete24Png); 
-											title: ('Confirm Abortion' translateFor: self session user); 
-											altText: ('Confirm Abortion' translateFor: self session user)]
+											title: ('Confirm Abortion' translateIn: self session); 
+											altText: ('Confirm Abortion' translateIn: self session)]
 		]
 	].

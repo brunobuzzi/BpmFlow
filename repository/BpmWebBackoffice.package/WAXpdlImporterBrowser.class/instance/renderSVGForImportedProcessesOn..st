@@ -7,8 +7,8 @@ renderSVGForImportedProcessesOn: html
 				class: 'cursor-pointer';
 				callback: [self viewSvgProcessMap: processDefinition]; 
 				with: [html image url: (SEWAFIconLibrary / #documentflowcharticonPng); 
-						altText: (('View [', processDefinition processName, ']') translateFor: self session user); 
-						title: (('View [', processDefinition processName, ']') translateFor: self session user).
+						altText: (('View [', processDefinition processName, ']') translateIn: self session); 
+						title: (('View [', processDefinition processName, ']') translateIn: self session).
 			].
 		].
 	].
@@ -18,7 +18,7 @@ renderSVGForImportedProcessesOn: html
 			class: 'cursor-pointer';
 			callback: [model storeBpmProcessDefinition];
 			with: [html image url: (SEWAFIconLibrary / #actionsdocumentsaveas48pngPng); 
-					altText: ('Proceed with Import Process' translateFor: self session user); 
-					title: ('Proceed with Import Process' translateFor: self session user).
+					altText: ('Proceed with Import Process' translateIn: self session); 
+					title: ('Proceed with Import Process' translateIn: self session).
 			].
 	].

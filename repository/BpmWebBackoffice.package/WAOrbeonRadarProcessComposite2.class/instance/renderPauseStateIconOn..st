@@ -10,7 +10,7 @@ renderPauseStateIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open; 
 					with: [html image url: (SEWAFIconLibrary / #pause24Png); 
-											title: ('Pause Process' translateFor: self session user); 
-											altText: ('Pause Process' translateFor: self session user)]
+											title: ('Pause Process' translateIn: self session); 
+											altText: ('Pause Process' translateIn: self session)]
 		]
 	].

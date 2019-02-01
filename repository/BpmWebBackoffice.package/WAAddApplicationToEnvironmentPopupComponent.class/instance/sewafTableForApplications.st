@@ -5,7 +5,7 @@ sewafTableForApplications
 	^(SewafBooleanSelectTable parent: self)
 		summary: 'Add Application';
 		backcolor: self session user userOptions getBooleanTableBackcolor;
-		buttonLabel: ('Assign and Close' translateFor: self session user);
+		buttonLabel: ('Assign and Close' translateIn: self session);
 		booleanSelector: #booleanValueForApplication:;
 		callbackSelector: #modifyApplication:value:;
 		rows: self getAvailableApplications; 

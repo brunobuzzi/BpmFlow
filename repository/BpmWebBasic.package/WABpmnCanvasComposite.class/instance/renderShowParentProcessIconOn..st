@@ -9,6 +9,6 @@ renderShowParentProcessIconOn: html
 		html anchor 
 					callback: [self selectParentProcessToRender];
 					with: [html image url: (SEWAFIconLibrary / #arrowsupcircular32Png); 
-											title: ('Show Parent Process' translateFor: self session user);
-											altText: ('Show Parent Process' translateFor: self session user)]
+											title: ('Show Parent Process' translateIn: self session);
+											altText: ('Show Parent Process' translateIn: self session)]
 	]

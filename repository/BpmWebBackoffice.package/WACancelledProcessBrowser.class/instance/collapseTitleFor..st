@@ -2,6 +2,6 @@ other
 collapseTitleFor: aBpmArtifactInstance
 
 	((transitionsHeight includesKey: aBpmArtifactInstance) and: [(transitionsHeight at: aBpmArtifactInstance) = #expanded]) 
-	ifFalse: [^'Expand' translateFor: self session user].
+	ifFalse: [^'Expand' translateIn: self session].
 
-	^'Collapse' translateFor: self session user
+	^'Collapse' translateIn: self session

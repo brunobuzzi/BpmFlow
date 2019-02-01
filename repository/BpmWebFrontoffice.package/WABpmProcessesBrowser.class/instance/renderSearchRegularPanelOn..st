@@ -3,7 +3,7 @@ renderSearchRegularPanelOn: html
 
 	html form with: [ 
 		html fieldSet with: [
-			html legend class: 'top-search-legend'; with: ('Search Task' translateFor: self session user).
+			html legend class: 'top-search-legend'; with: ('Search Task' translateIn: self session).
 			self renderSwitchWindowOn: html.
 			html div class: 'top-search-div width-100px'; with: [self renderSearchScopeComboOn: html].
 			html div class: 'top-search-div width-100px'; with: [self renderSearchProcessIdFieldOn: html].

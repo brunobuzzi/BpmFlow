@@ -11,5 +11,5 @@ modifyRole: rol value: aBoolean
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'RolsOfSelectedUser' ifAbsent: [^self]) 
-				information: ('User Granted !!!' translateFor: self session user)
+				information: ('User Granted !!!' translateIn: self session)
 				color: 'green'

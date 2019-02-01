@@ -6,5 +6,5 @@ renderSearchButtonOn: html
 		with: [
 			html submitButton 
 				callback: [self searchChart]; 
-				with: ('Search Report' translateFor: self session user).
+				with: ('Search Report' translateIn: self session).
 		].

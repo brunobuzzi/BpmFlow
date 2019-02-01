@@ -9,6 +9,6 @@ renderDeleteProcessDefintionOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #remove24Png); 
-												title: ('Remove Process Definition' translateFor: self session user); 
-												altText: ('Remove Process Definition' translateFor: self session user) ]
+												title: ('Remove Process Definition' translateIn: self session); 
+												altText: ('Remove Process Definition' translateIn: self session) ]
 	]

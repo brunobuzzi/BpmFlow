@@ -8,14 +8,14 @@ renderInformationFormOn: html index: index
 	html div class: 'information-xpdl-import float-left';
 		with: [
 				html div with: [
-					html output with: [html strong: ('Uploaded File' translateFor: self session user)].
+					html output with: [html strong: ('Uploaded File' translateIn: self session)].
 				].
 				html div class: 'margin-top-10px'; with: [
-					html span with: [html strong: ('Application:' translateFor: self session user)].
+					html span with: [html strong: ('Application:' translateIn: self session)].
 					html output: (model getMappedApplicationNameAt: index).
 				].
 				html div class: 'margin-top-10px'; with: [
-					html span with: [html strong: ('FileName:' translateFor: self session user)].
+					html span with: [html strong: ('FileName:' translateIn: self session)].
 					html output: (model getMappedXpdlFileNameAt: index).
 				].
 		].

@@ -3,7 +3,7 @@ renderLoginModeOn: html
 
 	html form with: [
 		html fieldSet with:[
-			html legend with: [html strong: ('Login Mode' translateFor: self session user)].
+			html legend with: [html strong: ('Login Mode' translateIn: self session)].
 			html radioGroup
 				callback: [:value | modeType := value];
 				selected: modeType;
@@ -14,6 +14,6 @@ renderLoginModeOn: html
 			(modeType = self ldapLoginModeName) 
 			ifTrue: [self renderLdapOptionsOn: html]
 			ifFalse: [self setLocalLoginMode].
-			html submitButton callback: [self saveLoginMode]; with: ('Save Login Mode' translateFor: self session user).
+			html submitButton callback: [self saveLoginMode]; with: ('Save Login Mode' translateIn: self session).
 		].
 	].

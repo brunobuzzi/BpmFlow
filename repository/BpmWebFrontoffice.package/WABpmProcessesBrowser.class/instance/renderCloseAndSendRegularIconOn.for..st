@@ -14,5 +14,5 @@ renderCloseAndSendRegularIconOn: html for: aBpmArtifactInstance
 			class: 'cursor-pointer';
 			onClick: (html jQuery id: jQueryId) dialog open;
 			with: [html image url: (SEWAFIconLibrary / symbolIcon); 
-			title: ('Close & Send Form' translateFor: self session user);
-			altText: ('Close & Send Form' translateFor: self session user)].
+			title: ('Close & Send Form' translateIn: self session);
+			altText: ('Close & Send Form' translateIn: self session)].

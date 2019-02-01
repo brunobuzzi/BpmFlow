@@ -6,5 +6,5 @@ renderSearchSubmitButtonOn: html
 			html submitButton 
 				class: '';
 				callback: [self searchMatchingMessages]; 
-				with: ('Search' translateFor: self session user).
+				with: ('Search' translateIn: self session).
 		]

@@ -9,5 +9,5 @@ renderReleaseAssignmentOn: html
 		class: 'cursor-pointer margin-left-5px';
 		onClick: (html jQuery id: jQueryId) dialog open;
 		with: [html image url: (SEWAFIconLibrary / #gointo24Png); 
-					title: ('Release Task' translateFor: self session user);
-					altText: ('Release Task' translateFor: self session user)]
+					title: ('Release Task' translateIn: self session);
+					altText: ('Release Task' translateIn: self session)]

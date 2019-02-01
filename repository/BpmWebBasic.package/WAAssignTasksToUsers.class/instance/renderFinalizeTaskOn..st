@@ -7,5 +7,5 @@ renderFinalizeTaskOn: html
 			callback: [self generateNextTasks];
 			class: 'cursor-pointer';
 			with: [html image url: (SEWAFIconLibrary / #emailsendiconPng); 
-			title: ('Generate Next Tasks' translateFor: self session user);
-			altText: ('Generate Next Tasks' translateFor: self session user)].
+			title: ('Generate Next Tasks' translateIn: self session);
+			altText: ('Generate Next Tasks' translateIn: self session)].

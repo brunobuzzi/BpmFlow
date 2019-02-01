@@ -9,6 +9,6 @@ renderAddCalendarOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #add24Png); 
-												title: ('Add Calendar' translateFor: self session user); 
-												altText: ('Add Calendar' translateFor: self session user) ]
+												title: ('Add Calendar' translateIn: self session); 
+												altText: ('Add Calendar' translateIn: self session) ]
 	]

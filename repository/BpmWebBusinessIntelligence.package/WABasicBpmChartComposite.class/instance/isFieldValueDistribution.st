@@ -1,4 +1,4 @@
 query variables
 isFieldValueDistribution
 
-	^(self searchValueAt: 'distribution' ifAbsent: [nil]) = ('Field Value' translateFor: self session user)
+	^(self searchValueAt: 'distribution' ifAbsent: [nil]) = ('Field Value' translateIn: self session)

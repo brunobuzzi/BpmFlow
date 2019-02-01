@@ -1,7 +1,7 @@
 process
 renderTransitionSummaryOn: html for: aBpmArtifactInstance
 
-	html header with: [html strong: (aBpmArtifactInstance summaryTitle translateFor: self session user)].
+	html header with: [html strong: (aBpmArtifactInstance summaryTitle translateIn: self session)].
 
 	aBpmArtifactInstance getSummaryFieldsValues keysAndValuesDo: [:key :value | 
 		html div class: 'transition-data'; with: [

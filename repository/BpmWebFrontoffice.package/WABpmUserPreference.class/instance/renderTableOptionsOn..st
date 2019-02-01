@@ -4,9 +4,9 @@ renderTableOptionsOn: html
 	html div id: 'user-preferences-backcolor'; class: 'centered-unique-form float-left';
 		with: [html form with: [
 					html fieldSet with:[
-						html legend with: [html strong: ('Backcolors' translateFor: self session user)].
+						html legend with: [html strong: ('Backcolors' translateIn: self session)].
 						self renderListBackcolorOn: html.
-						html submitButton callback: [self savePreferences]; with: ('Save Preferences' translateFor: self session user).
+						html submitButton callback: [self savePreferences]; with: ('Save Preferences' translateIn: self session).
 					].
 				].
 		].

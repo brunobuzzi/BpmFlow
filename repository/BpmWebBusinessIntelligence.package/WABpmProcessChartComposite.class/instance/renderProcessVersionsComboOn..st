@@ -6,6 +6,6 @@ renderProcessVersionsComboOn: html
 
 	versions := procVersions collect: [:each | each version printString].
 
-	self renderGenericActiveComboOn: html withList: (#('All') , versions) forVariable: 'version' label: ('Version' translateFor: self session user).
+	self renderGenericActiveComboOn: html withList: (#('All') , versions) forVariable: 'version' label: ('Version' translateIn: self session).
 
 	(self hasSearchValueAt: 'version') ifFalse: [self addSearchValue: 'All' named: 'version'].

@@ -3,7 +3,7 @@ renderFormFieldComboOn: html
 
 	html label 
 		attributeAt: 'for' put: 'formFields';
-		with: ('Field' translateFor: self session user).
+		with: ('Field' translateIn: self session).
 
 	html select "Field Definition List" 
 		attributeAt: 'id' put: 'formFields';

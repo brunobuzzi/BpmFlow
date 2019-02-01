@@ -9,6 +9,6 @@ renderAddUserOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #add24Png); 
-												title: ('Add User' translateFor: self session user); 
-												altText: ('Add User' translateFor: self session user) ]
+												title: ('Add User' translateIn: self session); 
+												altText: ('Add User' translateIn: self session) ]
 	]

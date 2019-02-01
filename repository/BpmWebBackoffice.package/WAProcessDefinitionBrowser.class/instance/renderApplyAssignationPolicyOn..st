@@ -9,5 +9,5 @@ renderApplyAssignationPolicyOn: html
 		"callback: [self downloadProcessMap]; "
 		onClick: (html jQuery id: jQueryApplyId) dialog open;
 		with: [html image url: (SEWAFIconLibrary / #actionsuserproperties24Png); 
-					title: ('Apply Policy' translateFor: self session user);
-					altText: ('Apply Policy' translateFor: self session user)].
+					title: ('Apply Policy' translateIn: self session);
+					altText: ('Apply Policy' translateIn: self session)].

@@ -8,7 +8,7 @@ renderTaskDataOn: html for: aBpmArtifactInstance
 								altText: (self collapseTitleFor: aBpmArtifactInstance)].
 
 	html header with: [html strong: aBpmArtifactInstance printFormLargeNameForWebButton].
-	html header with: [html strong: ('Task Data' translateFor: self session user)].
+	html header with: [html strong: ('Task Data' translateIn: self session)].
 
 	((self displayModeFor: aBpmArtifactInstance) = #collapsed) ifTrue: [^self].
 

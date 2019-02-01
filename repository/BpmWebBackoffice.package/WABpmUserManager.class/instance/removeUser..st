@@ -8,7 +8,7 @@ removeUser: aBpmUser
 	aBpmUser canDelete 
 	ifFalse: [self closeAllInformationComponents.
 				^(self getTableNamed: 'Users' ifAbsent: [^self]) 
-					information: ('User can not be deleted !!!' translateFor: self session user)
+					information: ('User can not be deleted !!!' translateIn: self session)
 					color: 'red'].
 
 	usersBatchedList remove: aBpmUser.
@@ -17,5 +17,5 @@ removeUser: aBpmUser
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'Users' ifAbsent: [^self]) 
-				information: ('User deleted !!!' translateFor: self session user)
+				information: ('User deleted !!!' translateIn: self session)
 				color: 'green'

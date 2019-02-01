@@ -9,6 +9,6 @@ renderDeleteEnvironmentOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #remove24Png); 
-												title: ('Remove Environment' translateFor: self session user); 
-												altText: ('Remove Environment' translateFor: self session user) ]
+												title: ('Remove Environment' translateIn: self session); 
+												altText: ('Remove Environment' translateIn: self session) ]
 	]

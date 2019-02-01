@@ -10,7 +10,7 @@ renderResumeStateIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open; 
 					with: [html image url: (SEWAFIconLibrary / #continue24Png); 
-											title: ('Resume Process' translateFor: self session user); 
-											altText: ('Resume Process' translateFor: self session user)]
+											title: ('Resume Process' translateIn: self session); 
+											altText: ('Resume Process' translateIn: self session)]
 		]
 	].

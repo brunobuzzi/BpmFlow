@@ -10,12 +10,12 @@ renderItemDescriptionTitleOn: html
 		class: 'cursor-pointer margin-left-5px';
 		callback: [self viewSvgProcessMap]; 
 		with: [html image url: (SEWAFIconLibrary / iconName); 
-					title: (toolTip translateFor: self session user);
-					altText: (toolTip translateFor: self session user)].
+					title: (toolTip translateIn: self session);
+					altText: (toolTip translateIn: self session)].
 
 	html anchor 
 		class: 'cursor-pointer';
 		callback: [self downloadXPDLFile];
 		with: [html image url: (SEWAFIconLibrary / #verybasicdownloadfromcloudfilled24Png); 
-					title: ('Download XPDL Bizagi File' translateFor: self session user);
-					altText: ('Download XPDL Bizagi File' translateFor: self session user)].
+					title: ('Download XPDL Bizagi File' translateIn: self session);
+					altText: ('Download XPDL Bizagi File' translateIn: self session)].

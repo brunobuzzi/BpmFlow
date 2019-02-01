@@ -14,6 +14,6 @@ renderAddUserToEnvironmentOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #usersadduser32Png); 
-												title: ('Add Users to Selected Environment' translateFor: self session user); 
-												altText: ('Add Users to Selected Environment' translateFor: self session user) ]
+												title: ('Add Users to Selected Environment' translateIn: self session); 
+												altText: ('Add Users to Selected Environment' translateIn: self session) ]
 	]

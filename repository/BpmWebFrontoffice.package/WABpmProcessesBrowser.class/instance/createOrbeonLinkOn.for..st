@@ -14,8 +14,8 @@ createOrbeonLinkOn: html for: aBpmArtifactInstance
 	ifTrue: [ html anchor callback: [self linkToOrbeonPdfFor: aBpmArtifactInstance];
 							target: '_blank'; "open the PDF in a new tab or page"
 							with: [html image url: (SEWAFIconLibrary / #pdf32Png);
-														title: ('View PDF' translateFor: self session user);
-														altText: ('View PDF' translateFor: self session user)].
+														title: ('View PDF' translateIn: self session);
+														altText: ('View PDF' translateIn: self session)].
 	]
 	"if the transition is done and has expected results --> we render an icon to show results summary"
 

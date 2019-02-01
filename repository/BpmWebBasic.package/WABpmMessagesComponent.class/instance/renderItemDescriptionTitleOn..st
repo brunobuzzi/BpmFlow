@@ -18,12 +18,12 @@ renderItemDescriptionTitleOn: html
 		class: 'cursor-pointer';
 		onClick: (html jQuery id: jQueryIdAll) dialog open;
 		with: [html image url: (SEWAFIconLibrary / #remove24Png); 
-					title: ('Delete All' translateFor: self session user);
-					altText: ('Delete All' translateFor: self session user)].
+					title: ('Delete All' translateIn: self session);
+					altText: ('Delete All' translateIn: self session)].
 
 	html anchor 
 		class: 'cursor-pointer';
 		onClick: (html jQuery id: jQueryId) dialog open;
 		with: [html image url: (SEWAFIconLibrary / #emaildelete24Png); 
-					title: ('Delete Message' translateFor: self session user);
-					altText: ('Delete Message' translateFor: self session user)].
+					title: ('Delete Message' translateIn: self session);
+					altText: ('Delete Message' translateIn: self session)].

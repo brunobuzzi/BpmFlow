@@ -11,5 +11,5 @@ modifyUser: user value: aBoolean
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'UsersOfSelectedRole' ifAbsent: [^self]) 
-			information: ('User added !!!' translateFor: self session user)
+			information: ('User added !!!' translateIn: self session)
 			color: 'green'.

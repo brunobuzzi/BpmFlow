@@ -10,7 +10,7 @@ renderAbortStateIconOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open; 
 					with: [html image url: (SEWAFIconLibrary / #symboldelete24Png); 
-											title: ('Abort Process' translateFor: self session user); 
-											altText: ('Abort Process' translateFor: self session user)]
+											title: ('Abort Process' translateIn: self session); 
+											altText: ('Abort Process' translateIn: self session)]
 		]
 	].

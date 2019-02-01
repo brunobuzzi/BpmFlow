@@ -1,7 +1,7 @@
 other
 renderApplicationComboOn: html
 
-	html label attributeAt: 'for' put: 'application'; with: ('Application' translateFor: self session user).
+	html label attributeAt: 'for' put: 'application'; with: ('Application' translateIn: self session).
 	html select 
 		attributeAt: 'id' put: 'application';
 		list: #(' '), ((self session user getBackofficeApplicationsIn: self session bpmEnvironment) collect: [:each | each getApplicationNameForCombo]) asSortedCollection; 

@@ -6,5 +6,5 @@ renderIsFinishedOn: html
 			html checkbox class: 'margin-top-20px float-left';
 				value: (searchValues at: 'filter-finished' ifAbsent: [false]);
 				callback: [ :value | self onCheckboxFinishedChanged: value ].
-		html text: ('Finished ?' translateFor: self session user).].
+		html text: ('Finished ?' translateIn: self session).].
 	].

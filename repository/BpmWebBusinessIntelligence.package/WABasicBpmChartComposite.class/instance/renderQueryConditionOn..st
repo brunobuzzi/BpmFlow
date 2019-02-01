@@ -2,7 +2,7 @@ search area
 renderQueryConditionOn: html
 
 	html div class: 'top-search-div'; with: [
-		html label attributeAt: 'for' put: 'process-condition'; with: ('Condition Block' translateFor: self session user).
+		html label attributeAt: 'for' put: 'process-condition'; with: ('Condition Block' translateIn: self session).
 
 		html textArea 
 			class: 'process-query-condition';

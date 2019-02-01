@@ -5,10 +5,10 @@ renderUploadComponentOn: html index: index
 
 	(model xpdlFileMapperIncludesKey: index)
 	ifFalse: [
-		html label attributeAt: 'for' put: ('selectFile-', index printString); with: ('Select File' translateFor: self session user).
+		html label attributeAt: 'for' put: ('selectFile-', index printString); with: ('Select File' translateIn: self session).
 		html fileUpload attributeAt: 'id' put: ('selectFile-', index printString); 
 			callback: [:aFile | model storeTemporaryXpdlFile: aFile atIndex: index]. "the user upload the XPDL file"
-		html submitButton: ('Send File [' translateFor: self session user), index printString, ']']
+		html submitButton: ('Send File [' translateIn: self session), index printString, ']']
 	ifTrue:[html strong with: [html paragraph with: (model getMappedXpdlFileNameAt: index)].
 			(model fileFormatIncludesKey: (model getMappedXpdlFileNameAt: index)) "file format error"
 			ifTrue: [html paragraph class: 'error-text';

@@ -1,7 +1,7 @@
 search area
 renderSearchProcessIdFieldOn: html
 
-	html label attributeAt: 'for' put: 'processId'; with: ('Process Id' translateFor: self session user).
+	html label attributeAt: 'for' put: 'processId'; with: ('Process Id' translateIn: self session).
 	html textInput 
 				class: 'width-200px';
 				attributeAt: 'id' put: 'processId'; 

@@ -2,7 +2,7 @@ search area
 searchByUserScope
 	| queryBlock |
 
-	queryBlock := (self getUserName = ('All' translateFor: self session user)) 
+	queryBlock := (self getUserName = ('All' translateIn: self session)) 
 		ifTrue: [[:chart | true]] 
 		ifFalse: [[:chart | chart scopeUsername = self getUserName]].
 

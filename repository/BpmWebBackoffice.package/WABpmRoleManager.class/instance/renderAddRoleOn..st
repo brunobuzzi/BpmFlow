@@ -9,6 +9,6 @@ renderAddRoleOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #add24Png); 
-												title: ('Add Role' translateFor: self session user); 
-												altText: ('Add Role' translateFor: self session user) ]
+												title: ('Add Role' translateIn: self session); 
+												altText: ('Add Role' translateIn: self session) ]
 	]

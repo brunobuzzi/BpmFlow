@@ -1,4 +1,4 @@
 testing
 isApplicationScopeSelected
 
-	^(self searchValueAt: 'scope' ifAbsent: [^false]) = ('Application' translateFor: self session user)
+	^(self searchValueAt: 'scope' ifAbsent: [^false]) = ('Application' translateIn: self session)

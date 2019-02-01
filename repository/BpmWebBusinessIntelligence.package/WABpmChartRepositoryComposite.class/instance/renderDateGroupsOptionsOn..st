@@ -2,7 +2,7 @@ date groups
 renderDateGroupsOptionsOn: html
 	|  groupsOptions |
 
-	groupsOptions := #('Year' 'Month' 'Week' 'Day') collect: [:each | each translateFor: self session user].
+	groupsOptions := #('Year' 'Month' 'Week' 'Day') collect: [:each | each translateIn: self session].
 
 	html div id: 'bpm-report-bottom-options'; with: [
 		html form with: [ 

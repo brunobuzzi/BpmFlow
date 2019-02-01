@@ -8,7 +8,7 @@ removeRol: aBpmRole
 	aBpmRole canDelete 
 	ifFalse: [self closeAllInformationComponents.
 				^(self getTableNamed: 'Roles' ifAbsent: [^self]) 
-					information: ('Role can not be deleted !!!' translateFor: self session user)
+					information: ('Role can not be deleted !!!' translateIn: self session)
 					color: 'red'].
 
 	rolesBatchList remove: aBpmRole.

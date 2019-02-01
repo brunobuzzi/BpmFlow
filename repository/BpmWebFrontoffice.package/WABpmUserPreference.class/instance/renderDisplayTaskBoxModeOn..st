@@ -7,4 +7,4 @@ renderDisplayTaskBoxModeOn: html
 		callback: [:value | self session user setTransitionsDisplayMode: value]; 
 		value: self session user transitionDisplayModeIsExpanded.
 
-	html label attributeAt: 'for' put: 'transitionsDisplayModel'; with: ('Display Task Mode - Expanded Box ?' translateFor: self session user).
+	html label attributeAt: 'for' put: 'transitionsDisplayModel'; with: ('Display Task Mode - Expanded Box ?' translateIn: self session).

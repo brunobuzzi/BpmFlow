@@ -6,7 +6,7 @@ renderShowChartButtonOn: html
 		with: [
 			html submitButton 
 				callback: [self addField]; 
-				with: ('Add Field' translateFor: self session user).
+				with: ('Add Field' translateIn: self session).
 		].
 
 	html div class: 'top-search-filters-one'; 
@@ -14,7 +14,7 @@ renderShowChartButtonOn: html
 		with: [
 			html submitButton 
 				callback: [self showSelectedFields]; 
-				with: ('View Fields' translateFor: self session user).
+				with: ('View Fields' translateIn: self session).
 		].
 
 

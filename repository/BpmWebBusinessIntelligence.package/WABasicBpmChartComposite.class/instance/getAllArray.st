@@ -1,4 +1,4 @@
 other
 getAllArray
 
-	^Array with: ('All' translateFor: self session user)
+	^Array with: ('All' translateIn: self session)

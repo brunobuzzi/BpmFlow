@@ -1,5 +1,5 @@
 other
 renderItemDescriptionAditionalDataOn: html
 
-	html span: [html strong: ('Last Update:' translateFor: self session user)].
+	html span: [html strong: ('Last Update:' translateIn: self session)].
 	html output: selectedLateralItem printLastUpdate.

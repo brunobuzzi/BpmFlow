@@ -5,12 +5,12 @@ renderPinIconOn: html
 	ifTrue: [html anchor 
 						callback: [self unpinProcess: selectedLateralItem];
 						with: [html image url: (SEWAFIconLibrary / #pin0124Png); 
-									altText: ('Unpin Process' translateFor: self session user);
-									title: ('Unpin Process' translateFor: self session user)].
+									altText: ('Unpin Process' translateIn: self session);
+									title: ('Unpin Process' translateIn: self session)].
 			]
 	ifFalse: [html anchor 
 						callback: [self pinProcess: selectedLateralItem];
 						with: [html image url: (SEWAFIconLibrary / #pin0224Png); 
-									altText: ('Pin Process' translateFor: self session user);
-									title: ('Pin Process' translateFor: self session user)].
+									altText: ('Pin Process' translateIn: self session);
+									title: ('Pin Process' translateIn: self session)].
 			]

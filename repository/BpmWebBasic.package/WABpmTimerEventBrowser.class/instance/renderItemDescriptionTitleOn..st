@@ -7,14 +7,14 @@ renderItemDescriptionTitleOn: html
 		class: 'cursor-pointer margin-left-5px';
 		callback: [self viewSvgProcessMap]; 
 		with: [html image url: (SEWAFIconLibrary / #documentflowchart24Png); 
-					title: ('View Process Map' translateFor: self session user);
-					altText: ('View Process Map' translateFor: self session user)].
+					title: ('View Process Map' translateIn: self session);
+					altText: ('View Process Map' translateIn: self session)].
 	html anchor 
 		class: 'cursor-pointer margin-left-5px';
 		callback: [self downloadXPDLFile];
 		with: [html image url: (SEWAFIconLibrary / #verybasicdownloadfromcloudfilled24Png); 
-					title: ('Download XPDL Bizagi File' translateFor: self session user);
-					altText: ('Download XPDL Bizagi File' translateFor: self session user)].
+					title: ('Download XPDL Bizagi File' translateIn: self session);
+					altText: ('Download XPDL Bizagi File' translateIn: self session)].
 
 	self selectedProcess hasCreationTimer ifTrue: [ | anchorText iconName |
 		self selectedProcess automaticCreationIsActive 
@@ -26,6 +26,6 @@ renderItemDescriptionTitleOn: html
 			class: 'cursor-pointer';
 			callback: [self switchCreationTimerStatus]; 
 			with: [html image url: (SEWAFIconLibrary / iconName); 
-						title: (anchorText translateFor: self session user);
-						altText: (anchorText translateFor: self session user)].
+						title: (anchorText translateIn: self session);
+						altText: (anchorText translateIn: self session)].
 	].

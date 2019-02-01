@@ -5,7 +5,7 @@ renderProcessFormsComboOn: html
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'process-forms';
-			with: ('Forms' translateFor: self session user).
+			with: ('Forms' translateIn: self session).
 
 		forms := #(''), self getProcessFormsList.
 		html select "Field Definition List" 

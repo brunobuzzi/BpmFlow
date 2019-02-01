@@ -10,6 +10,6 @@ renderViewDashboardItem: aBpmDashboardInstance on: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #dataviewdetails16Png); 
-												title: ('View Dashboard Item' translateFor: self session user); 
-												altText: ('View Dashboard Item' translateFor: self session user) ]
+												title: ('View Dashboard Item' translateIn: self session); 
+												altText: ('View Dashboard Item' translateIn: self session) ]
 	]

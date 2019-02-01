@@ -12,5 +12,5 @@ renderCloseAndSendAndTakeNextIconOn: html for: aBpmArtifactInstance
 			class: 'cursor-pointer';
 			onClick: (html jQuery id: jQueryId) dialog open;
 			with: [html image url: (SEWAFIconLibrary / #applicationarrowright32Png); 
-			title: ('Close, Send & Take Next Forms' translateFor: self session user);
-			altText: ('Close, Send & Take Next Forms' translateFor: self session user)].
+			title: ('Close, Send & Take Next Forms' translateIn: self session);
+			altText: ('Close, Send & Take Next Forms' translateIn: self session)].

@@ -6,7 +6,7 @@ renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod:
 	html div class: 'jquery-dialog-yes-no'; with: [
 		html form with: [
 			html fieldSet with: [
-				html label class: 'margin-right-10px'; attributeAt: 'for' put: 'assignationPolicy'; with: ('Assignation Policy' translateFor: self session user).
+				html label class: 'margin-right-10px'; attributeAt: 'for' put: 'assignationPolicy'; with: ('Assignation Policy' translateIn: self session).
 				html select 
 					attributeAt: 'id' put: 'assignationPolicy';
 					list: list;
@@ -19,10 +19,10 @@ renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod:
 						value: selectedLateralItem assignationPolicy isAutomatic;
 						callback: [ :value | self setAutomaticAssignationPolicy: value ];
 						onChange: (html jQuery ajax serializeForm).
-				html text: ('Is Automatic' translateFor: self session user).].
+				html text: ('Is Automatic' translateIn: self session).].
 
 				html submitButton 
-					with: ('Confirm' translateFor: self session user);	
+					with: ('Confirm' translateIn: self session);	
 					callback: [self saveAssignationPolicy] .
 			]
 		] 

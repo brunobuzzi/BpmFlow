@@ -8,5 +8,5 @@ renderToggleOn: html
 	
 	html anchor callback: [self toggleAnonymousStart]; 
 					with: [html image url: (SEWAFIconLibrary / iconName); 
-											title: ('Toggle Anonymous Start' translateFor: self session user); 
-											altText: ('Toggle Anonymous Start' translateFor: self session user)]
+											title: ('Toggle Anonymous Start' translateIn: self session); 
+											altText: ('Toggle Anonymous Start' translateIn: self session)]

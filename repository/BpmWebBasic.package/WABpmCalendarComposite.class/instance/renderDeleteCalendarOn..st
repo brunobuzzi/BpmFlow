@@ -9,6 +9,6 @@ renderDeleteCalendarOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #remove24Png); 
-												title: ('Remove Calendar' translateFor: self session user); 
-												altText: ('Remove Calendar' translateFor: self session user) ]
+												title: ('Remove Calendar' translateIn: self session); 
+												altText: ('Remove Calendar' translateIn: self session) ]
 	]

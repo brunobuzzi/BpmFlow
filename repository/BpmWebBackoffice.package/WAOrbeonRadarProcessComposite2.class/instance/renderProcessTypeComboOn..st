@@ -7,7 +7,7 @@ renderProcessTypeComboOn: html
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'processType';
-			with: ('Process Type' translateFor: self session user).
+			with: ('Process Type' translateIn: self session).
 
 		html select "Process Definition List"
 			attributeAt: 'id' put: 'processType';

@@ -7,7 +7,7 @@ renderSearchAreaOn: html
 
 	html form with: [ 
 		html fieldSet with: [
-			html legend class: 'top-search-legend'; with: ('Search Message' translateFor: self session user).
+			html legend class: 'top-search-legend'; with: ('Search Message' translateIn: self session).
 			self renderSearchProcessIdFieldOn: html.
 			self renderSearchSubmitButtonOn: html.
 		].

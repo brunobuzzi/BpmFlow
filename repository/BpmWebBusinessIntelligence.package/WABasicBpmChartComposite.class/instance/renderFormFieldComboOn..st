@@ -6,7 +6,7 @@ renderFormFieldComboOn: html
 	html div class: 'top-search-div'; with: [
 		html label 
 			attributeAt: 'for' put: 'form-fields';
-			with: ('Field' translateFor: self session user).
+			with: ('Field' translateIn: self session).
 
 		html select "Field Definition List" 
 			attributeAt: 'id' put: 'form-fields';

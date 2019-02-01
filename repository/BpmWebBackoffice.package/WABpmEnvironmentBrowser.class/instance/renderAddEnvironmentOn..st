@@ -9,6 +9,6 @@ renderAddEnvironmentOn: html
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
 						with: [html image url: (SEWAFIconLibrary / #add24Png); 
-												title: ('Add Environment' translateFor: self session user); 
-												altText: ('Add Environment' translateFor: self session user) ]
+												title: ('Add Environment' translateIn: self session); 
+												altText: ('Add Environment' translateIn: self session) ]
 	]

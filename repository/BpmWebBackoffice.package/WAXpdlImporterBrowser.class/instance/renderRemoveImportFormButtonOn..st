@@ -6,5 +6,5 @@ renderRemoveImportFormButtonOn: html
 
 	html anchor callback: [self removeImportProcessForm];
 					with: [html image url: (SEWAFIconLibrary / #delete132Png); 
-								altText: ('Remove Import Process Form' translateFor: self session user); 
-								title: ('Remove Import Process Form' translateFor: self session user)].
+								altText: ('Remove Import Process Form' translateIn: self session); 
+								title: ('Remove Import Process Form' translateIn: self session)].
