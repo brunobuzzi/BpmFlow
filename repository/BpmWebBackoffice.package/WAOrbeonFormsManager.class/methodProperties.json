@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"formDefinitionColumn" : "brunobb 02/01/2019 11:40",
 		"gitbookUrl" : "brunobb 07/13/2018 10:17",
 		"importNewApplications" : "BrunoBB 03/15/2016 11:32",
 		"initialize" : "BrunoBB 03/15/2016 11:32",
@@ -10,6 +11,6 @@
 		"renderFormDefinitionsOn:" : "BrunoBB 03/15/2016 11:32",
 		"renderFormOperationsOn:" : "brunobb 01/31/2019 09:17",
 		"selections:" : "BrunoBB 03/15/2016 11:32",
-		"sewafTableForOrbeonFormDefinitions" : "BrunoBB 06/12/2016 12:42",
+		"sewafTableForOrbeonFormDefinitions" : "brunobb 02/01/2019 11:36",
 		"showFormDefinitions" : "BrunoBB 03/15/2016 11:32",
 		"updateSelectedApplications" : "BrunoBB 03/15/2016 11:32" } }

@@ -6,7 +6,7 @@ sewafTableForOrbeonFormDefinitions
 		backcolor: self session user userOptions getTableReportBackcolor;
 		columns: (OrderedCollection new  
 						add: (SewafReportColumn selector: #applicationName title: 'Application');
-						add: (SewafReportColumn selector: #formName title: 'Form');
+						add: self formDefinitionColumn;
 						add: (SewafReportColumn selector: #version title: 'Version');
 						add: (SewafReportColumn selector: #createdTime title: 'Created');
 						add: (SewafReportColumn selector: #modifiedTime title: 'Modified');
