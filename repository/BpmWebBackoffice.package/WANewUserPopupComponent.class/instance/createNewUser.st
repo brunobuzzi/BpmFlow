@@ -8,10 +8,10 @@ createNewUser
 
 	pwd ifEmpty: [^parent informUserWithEmptyPassword].
 
+	userName := self defaultBpmUserClass getUniqueUserNameFor: userName for: self session bpmEnvironment.  "see issue #799"
+
 	(self defaultBpmUserClass getUserNamed: userName) ifNotNil: [:currentUser | ^parent informUserAlreadyExist: currentUser].
  
-	user := self defaultBpmUserClass getExistingOrNewUserNamed: userName password: pwd.
+	user := self defaultBpmUserClass newUsername: userName password: pwd forEnvironment: self session bpmEnvironment.
 
-	self session bpmEnvironment registerUser: user ifPresent: [].
-
-	parent updateListWith: user
+	parent updateListWith: user.

@@ -1,5 +1,6 @@
 user creation
 newUsername: username password: password 
+	"The receiver create a new <BpmUser> named <username> with password <username>"
 	| user centralUser |
 
 	centralUser := ApplicationUser getExistingOrNewUserNamed: username.
