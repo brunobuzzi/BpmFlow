@@ -8,7 +8,7 @@ testMutiUserExceptionInSigleUserEnvironment
 	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
 	self defaultEnvironmentClass areUsersMultiEnvironment: false.
 
-	newUser := BpmUser getExistingOrNewUserNamed: 'alfred'.
+	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'.
 	env1 := (BpmEnvironment newNamed: 'env1') addToCache.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
 	env2 := (BpmEnvironment newNamed: 'env2') addToCache.
@@ -39,6 +39,6 @@ testMutiUserExceptionInSigleUserEnvironment
 	self defaultEnvironmentClass areUsersMultiEnvironment: currentMode.
 
 	newUser removeFromCache.
-	self assert: (BpmUser getUserNamed: newUser username) isNil.
+	self assert: (self defaultBpmUserClass getUserNamed: newUser username) isNil.
 
 	self defaultEnvironmentClass areUsersMultiEnvironment: currentMode.

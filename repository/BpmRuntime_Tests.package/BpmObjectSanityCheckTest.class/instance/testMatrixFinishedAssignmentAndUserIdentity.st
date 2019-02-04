@@ -8,7 +8,7 @@ testMatrixFinishedAssignmentAndUserIdentity
 				finishedMatrix := procInstance getFinishedProcessMatrix.
 				finishedAssignments := finishedMatrix getAllAssignments.
 
-				self assert: (finishedAssignments allSatisfy: [:eachAssing | (BpmUser getUserOrNilFinishedTask: eachAssing task) notNil]). 
+				self assert: (finishedAssignments allSatisfy: [:eachAssing | (self defaultBpmUserClass getUserOrNilFinishedTask: eachAssing task) notNil]). 
 
 			].
 		].

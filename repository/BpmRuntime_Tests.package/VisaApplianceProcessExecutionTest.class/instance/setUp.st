@@ -14,14 +14,14 @@ setUp
 	subProcDef := subProcDef subProcesses asArray last.
 	subProcDef setNoneAssignationPolicy.
 
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew vo').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew vm').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew vc').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew fo').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew po').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew do').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew vo2').
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'andrew vo3').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vo').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vm').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vc').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew fo').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew po').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew do').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vo2').
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vo3').
 
 	environment registerUser: (self getUserNamed: 'andrew vo') ifPresent: [].
 	environment registerUser: (self getUserNamed: 'andrew vo2') ifPresent: [].

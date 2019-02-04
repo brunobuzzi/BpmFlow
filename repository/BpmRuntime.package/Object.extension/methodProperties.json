@@ -1,10 +1,12 @@
 {
 	"class" : {
+		"defaultBpmUserClass" : "brunobb 02/04/2019 06:36",
 		"defaultTimerEventMonitor" : "brunobb 02/07/2018 13:25",
 		"getAvailableTasksMatrixClass" : "brunobb 04/12/2018 10:50",
 		"getFinishedTasksMatrixClass" : "brunobb 04/12/2018 10:50",
 		"getTakenTasksMatrixClass" : "brunobb 04/12/2018 10:50" },
 	"instance" : {
+		"defaultBpmUserClass" : "brunobb 02/04/2019 06:35",
 		"defaultTimerEventMonitor" : "brunobb 02/07/2018 13:25",
 		"getAvailableTasksMatrixClass" : "brunobb 04/12/2018 10:51",
 		"getFinishedTasksMatrixClass" : "brunobb 04/12/2018 10:51",

@@ -9,10 +9,10 @@ setUp
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'alberto')."data-entry-1"
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'juan')."data-entry-2"
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'mario')."data-entry-3"
-	self processExecutionSimulator registerUser: (BpmUser getExistingOrNewUserNamed: 'bruno'). "approver"
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto')."data-entry-1"
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'juan')."data-entry-2"
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'mario')."data-entry-3"
+	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'bruno'). "approver"
 
 	environment registerUser: (self getUserNamed: 'alberto'). 
 	environment registerUser: (self getUserNamed: 'juan'). 

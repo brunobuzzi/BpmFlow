@@ -3,6 +3,6 @@
 		 },
 	"instance" : {
 		"createProcessDefinition" : "brunobb 11/13/2018 08:44",
-		"setUp" : "brunobb 11/08/2018 08:13",
+		"setUp" : "brunobb 02/04/2019 06:30",
 		"tearDown" : "brunobb 11/23/2018 09:43",
 		"testProcessCreation" : "brunobb 02/13/2018 15:17" } }

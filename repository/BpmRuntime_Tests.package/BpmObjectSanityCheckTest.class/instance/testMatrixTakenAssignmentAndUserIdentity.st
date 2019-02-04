@@ -2,7 +2,7 @@ test
 testMatrixTakenAssignmentAndUserIdentity
 	"Check sanity of Finished Assignments in the Matrix and in BpmUser inbox"
 
-	BpmUser cache do: [:eachUser | 
+	self defaultBpmUserClass cache do: [:eachUser | 
 		eachUser getAllCurrentAssignments do: [:userAssign | | takenMatrix takenAssignments |
 			takenMatrix := userAssign process getTakenProcessMatrix.
 			takenAssignments := takenMatrix getAllAssignments.

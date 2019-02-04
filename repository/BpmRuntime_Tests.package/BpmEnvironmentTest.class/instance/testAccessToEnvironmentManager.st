@@ -5,9 +5,9 @@ testAccessToEnvironmentManager
 	The user with access to environment manager can assign users and applications to different environments"
 	| newUser adminRole |
 
-	self assert: BpmUser getAdminUser hasAccessToEnvironmentManager.
+	self assert: self defaultBpmUserClass getAdminUser hasAccessToEnvironmentManager.
 
-	newUser := BpmUser getExistingOrNewUserNamed: 'alfred'.
+	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'.
 
 	self deny: newUser hasAccessToEnvironmentManager.
 
