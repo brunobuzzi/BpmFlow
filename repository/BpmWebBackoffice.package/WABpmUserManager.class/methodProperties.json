@@ -4,6 +4,8 @@
 	"instance" : {
 		"booleanValueForRol:" : "BrunoBB 03/15/2016 10:51",
 		"gitbookUrl" : "brunobb 07/13/2018 10:25",
+		"informUserAlreadyExist:" : "brunobb 02/04/2019 09:19",
+		"informUserWithEmptyPassword" : "brunobb 02/04/2019 09:24",
 		"initialize" : "BrunoBB 03/15/2016 10:51",
 		"initializeBatchedLists" : "BrunoBB 03/15/2016 10:51",
 		"initializeSewafTableForUsers" : "brunobb 01/21/2019 08:46",

@@ -4,5 +4,5 @@ getExistingOrNewUserNamed: aString password: password
 	If the user does not exist creates a new one with password <password>"
 
 	(self getUserNamed: aString) ifNotNil: [:user | ^user].
-
+ 
 	^self newUsername: aString password: password

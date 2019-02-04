@@ -4,4 +4,6 @@ canDelete
 
 	(self isInAdminsEnvironment and: [self username asLowercase = self class adminUserName asLowercase]) ifTrue: [^false].
 
-	^self getBpmEnvironments isEmpty and: [roles isEmpty and:[self getBpmEnvironments allSatisfy: [:env | (self getInboxFor: env) getCurrentAssignmentsInbox isEmpty]]]
+	^(self getBpmEnvironments size = 1)
+		and: [roles isEmpty 
+		and:[self getBpmEnvironments allSatisfy: [:env | (self getInboxFor: env) getCurrentAssignmentsInbox isEmpty]]]
