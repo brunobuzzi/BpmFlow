@@ -1,11 +1,17 @@
 user creation
 newUsername: username password: password forEnvironment: aBpmEnvironment
 	"The receiver create a new <BpmUser> named <username> with password <username> for environment <aBpmEnvironment>"
-	| user uniqueUsername |
+	| centralUser user uniqueUsername |
 
 	uniqueUsername := self getUniqueUserNameFor: username for: aBpmEnvironment. "(see issue #799)"
 
-	user := self newUsername: uniqueUsername password: password.
+	centralUser := ApplicationUser getExistingOrNewUserNamed: uniqueUsername.
+	centralUser password: password.
+
+	user := self new initialize.
+	user centralUser: centralUser.
+
+	user addToCache.
 
 	aBpmEnvironment registerUser: user ifPresent: [].
 

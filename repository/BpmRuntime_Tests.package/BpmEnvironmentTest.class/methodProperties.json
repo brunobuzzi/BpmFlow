@@ -5,6 +5,8 @@
 		"testAccessToEnvironmentManager" : "brunobb 02/04/2019 06:31",
 		"testAdminUserInAdminsEnvironment" : "brunobb 02/04/2019 06:32",
 		"testAdminsEnvironmentExistance" : "brunobb 01/21/2019 11:46",
-		"testMutiUserExceptionInSigleUserEnvironment" : "brunobb 02/04/2019 06:31",
+		"testMutiUserExceptionInSigleUserEnvironment" : "brunobb 02/04/2019 12:15",
+		"testUniqueUserNameInMultiEnvironment" : "brunobb 02/04/2019 12:09",
+		"testUniqueUserNameInSingleEnvironment" : "brunobb 02/04/2019 12:07",
 		"testUsersMultiEnvironment" : "brunobb 02/04/2019 06:31",
-		"testUsersSingleEnvironment" : "brunobb 02/04/2019 06:31" } }
+		"testUsersSingleEnvironment" : "brunobb 02/04/2019 12:13" } }

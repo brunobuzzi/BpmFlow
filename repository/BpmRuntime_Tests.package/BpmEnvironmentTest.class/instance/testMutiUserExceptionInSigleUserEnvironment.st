@@ -8,13 +8,12 @@ testMutiUserExceptionInSigleUserEnvironment
 	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
 	self defaultEnvironmentClass areUsersMultiEnvironment: false.
 
-	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'.
 	env1 := (BpmEnvironment newNamed: 'env1') addToCache.
+	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred' password: ' ' forEnvironment: env1.
+
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
 	env2 := (BpmEnvironment newNamed: 'env2') addToCache.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
-
-	env1 registerUser: newUser.
 	self assert: (env1 includesUserNamed: newUser username).
 
 	[env2 registerUser: newUser] on: ImproperBpmOperationException do: [:ex | self assert: true].
