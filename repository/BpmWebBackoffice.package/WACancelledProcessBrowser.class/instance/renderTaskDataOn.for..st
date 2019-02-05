@@ -17,5 +17,3 @@ renderTaskDataOn: html for: aBpmArtifactInstance
 
 	aBpmArtifactInstance isSubprocessDefinition
 	ifTrue: [^self renderTransitionSubProcessDataOn: html for: aBpmArtifactInstance].
-
-	^self renderTransitionGatewayDataOn: html for: aBpmArtifactInstance
