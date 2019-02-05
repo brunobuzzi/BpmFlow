@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 checkAccessToApplicationFor: aBpmUser
 
 	^true

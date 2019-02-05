@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 checkAccessToApplicationFor: aBpmUser
 
 	^aBpmUser isBackofficeUser
