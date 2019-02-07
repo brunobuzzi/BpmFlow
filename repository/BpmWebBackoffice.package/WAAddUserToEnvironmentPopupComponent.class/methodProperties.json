@@ -4,7 +4,8 @@
 	"instance" : {
 		"booleanValueForUser:" : "brunobb 09/05/2018 09:47",
 		"getAvailableUsers" : "brunobb 02/07/2019 08:42",
-		"modifyUser:value:" : "brunobb 02/07/2019 09:02",
+		"initialize" : "brunobb 02/07/2019 09:27",
+		"modifyUser:value:" : "brunobb 02/07/2019 09:28",
 		"renderContentOn:" : "brunobb 09/05/2018 09:41",
 		"selectedEnvironment" : "brunobb 09/05/2018 09:41",
 		"sewafTableForUsers" : "brunobb 01/31/2019 09:43" } }
