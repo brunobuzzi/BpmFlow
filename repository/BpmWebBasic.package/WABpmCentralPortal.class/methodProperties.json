@@ -4,7 +4,7 @@
 		"unregister" : "brunobb 02/01/2019 06:50" },
 	"instance" : {
 		"getSelectedLanguage" : "brunobb 01/31/2019 04:28",
-		"initializeNavigation" : "brunobb 01/31/2019 02:46",
+		"initializeNavigation" : "brunobb 01/31/2019 03:31",
 		"languageFlagsIconsAndNames" : "brunobb 01/31/2019 03:32",
 		"renderContentOn:" : "brunobb 01/31/2019 04:28",
 		"renderLanguageFlagsOn:" : "brunobb 01/31/2019 03:31",
@@ -13,7 +13,7 @@
 		"renderLinkToFrontofficeApplicationOn:" : "brunobb 01/31/2019 04:51",
 		"selectedLanguage" : "brunobb 01/31/2019 03:31",
 		"selectedLanguage:" : "brunobb 01/31/2019 03:31",
-		"showBackofficeLogin" : "brunobb 01/31/2019 02:55",
-		"showBusinessInteligenceLogin" : "brunobb 01/31/2019 03:02",
-		"showFrontofficeLogin" : "brunobb 01/31/2019 03:02",
+		"showBackofficeLogin" : "brunobb 01/31/2019 03:31",
+		"showBusinessInteligenceLogin" : "brunobb 01/31/2019 03:31",
+		"showFrontofficeLogin" : "brunobb 01/31/2019 03:31",
 		"style" : "brunobb 01/31/2019 04:52" } }

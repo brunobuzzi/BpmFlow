@@ -1,4 +1,0 @@
-render
-renderLinkToForms
-
-	^false

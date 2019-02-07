@@ -3,7 +3,7 @@ createOrbeonLinkOn: html for: aBpmArtifactInstance
 
 	"when a role has more than one active task with permission --> the edit and new icon is showed only with the properly assignment
  (aBpmArtifactInstance == selectedLateralItem task)"
-	(((aBpmArtifactInstance == selectedLateralItem task) and: [aBpmArtifactInstance isDone not]) or: [aBpmArtifactInstance isDone])
+	(aBpmArtifactInstance == selectedLateralItem task)
 	ifTrue: [
 		html anchor callback: [self linkToOrbeonFormFor: aBpmArtifactInstance]; 
 							with: [html image url: (SEWAFIconLibrary / (self iconFor: aBpmArtifactInstance));
