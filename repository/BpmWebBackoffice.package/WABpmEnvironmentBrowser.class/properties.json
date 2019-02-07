@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"usersBatchedList" ],
 	"name" : "WABpmEnvironmentBrowser",
 	"pools" : [
 		 ],

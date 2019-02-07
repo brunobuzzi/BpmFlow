@@ -4,5 +4,6 @@ renderUsersOfSelectedEnvironmentOn: html
 	selectedLateralItem users isEmpty ifTrue: [^self].
 	
 	html div id: 'environment-users-table'; class: 'default-gray-table '; with: [
-		html render: self sewafTableForUsers.
+		usersBatchedList items: selectedLateralItem users.
+		html render: (usersBatchedList table: self sewafTableForUsers).
 	]
