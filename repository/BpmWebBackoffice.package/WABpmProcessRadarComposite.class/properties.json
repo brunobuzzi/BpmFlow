@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignmentBatchedList" ],
+	"name" : "WABpmProcessRadarComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmObjectRadarComposite",
+	"type" : "normal" }

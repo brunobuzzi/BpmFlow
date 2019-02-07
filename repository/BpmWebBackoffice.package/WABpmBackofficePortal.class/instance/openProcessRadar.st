@@ -1,7 +1,7 @@
 subcomponents
 openProcessRadar
 
-	(arena isKindOf: WAOrbeonRadarProcessComposite2)
+	(arena isKindOf: WABpmProcessRadarComposite)
 	ifTrue: [^arena].
 
-	^WAOrbeonRadarProcessComposite2 parent: self
+	^WABpmProcessRadarComposite parent: self

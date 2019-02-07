@@ -1,7 +1,7 @@
 subcomponents
 openUsersRadar
 
-	(arena isKindOf: WAOrbeonRadarUserComposite2)
+	(arena isKindOf: WABpmUserRadarComposite)
 	ifTrue: [^arena].
 
-	^WAOrbeonRadarUserComposite2 parent: self
+	^WABpmUserRadarComposite parent: self

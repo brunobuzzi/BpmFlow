@@ -1,0 +1,4 @@
+free transitions
+getSelectedUserFinishedAssignments
+
+	^(selectedObject getFinishedAssignmentsIn: self session bpmEnvironment) asOrderedCollection
