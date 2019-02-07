@@ -7,10 +7,11 @@
 		"getTextForItem:" : "brunobb 02/06/2019 11:27",
 		"gitbookUrl" : "brunobb 02/06/2019 11:27",
 		"initialize" : "brunobb 02/06/2019 11:31",
+		"initializeSewafTableForUsers" : "brunobb 02/07/2019 08:31",
 		"initializeUserBatchedList" : "brunobb 02/06/2019 11:28",
 		"removeEnvironment" : "brunobb 02/06/2019 11:27",
-		"removeUser:" : "brunobb 02/06/2019 11:36",
-		"removeUserButton" : "brunobb 02/06/2019 11:33",
+		"removeUser:" : "brunobb 02/07/2019 09:09",
+		"removeUserButton" : "brunobb 02/07/2019 07:48",
 		"renderAddApplicationToEnvironmentOn:" : "brunobb 02/06/2019 11:27",
 		"renderAddEnvironmentOn:" : "brunobb 02/06/2019 11:27",
 		"renderAddUserToEnvironmentOn:" : "brunobb 02/06/2019 11:27",
@@ -27,4 +28,5 @@
 		"renderSetEnvironmentIconsAndAppsNamesOn:" : "brunobb 02/06/2019 11:27",
 		"renderUsersOfSelectedEnvironmentOn:" : "brunobb 02/06/2019 11:30",
 		"searchMatchingEnvironments" : "brunobb 02/06/2019 11:27",
-		"sewafTableForUsers" : "brunobb 02/06/2019 11:33" } }
+		"selectedLateralItem:" : "brunobb 02/07/2019 09:03",
+		"sewafTableForUsers" : "brunobb 02/07/2019 08:31" } }

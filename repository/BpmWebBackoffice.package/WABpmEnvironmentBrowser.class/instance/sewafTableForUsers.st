@@ -1,16 +1,10 @@
 other
 sewafTableForUsers
+	"Table with all Users that are NOT present in the role <selectedObject> "
 	| table |
 
-	table := (SewafTableReport summary: 'Users')
-		backcolor: self session user userOptions getTableReportBackcolor;
-		columns: (OrderedCollection new  
-						add: (SewafReportColumn selector: #username title: '');
-						add: self removeUserButton;
-						yourself);
-		rows: (selectedLateralItem users asSortedCollection: [:a :b | a username <= b username]); 
-		rowColors: #(white white);
-		rowPeriod: 1;
-		yourself.
+	table := (self hasTableNamed: 'Users') 
+		ifTrue: [self getTableNamed: 'Users' ifAbsent: []] 
+		ifFalse: [self initializeSewafTableForUsers].
 
 	^table

@@ -3,7 +3,7 @@ removeUserButton
 
 	^(SewafReportColumn 
 			renderBlock: [:each :html | | jQueryId |
-				each canDelete 
+				(each canBeRemovedFrom: selectedLateralItem)
 				ifTrue: [
 					jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeUser' actionMethod: #removeUser: arguments: (Array with: each).
 					html anchor "callback: [self removeUser: each]; "
