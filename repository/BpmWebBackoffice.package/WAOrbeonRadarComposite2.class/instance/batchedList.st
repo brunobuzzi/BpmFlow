@@ -1,3 +1,0 @@
-Accessing
-batchedList
-	^batchedList

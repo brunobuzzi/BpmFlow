@@ -3,6 +3,7 @@ unregisterUser: aBpmUser
 	"The user <aBpmUser> is unregistered from the receiver and is ungranted from all roles of the receiver "
 
 	(users includesKey: aBpmUser username) ifFalse: [^self].
+	(self isAdminsEnvironment and: [aBpmUser isAdminUser]) ifTrue: [ImproperBpmOperationException signal: '[admin] user can no be removed from [admins] environment'].
 
 	"<aBpmUser> is ungranted from all roles beloging to the receiver"
 	(aBpmUser rolesIn: self) do: [:eachRole | eachRole ungrantUser: aBpmUser].

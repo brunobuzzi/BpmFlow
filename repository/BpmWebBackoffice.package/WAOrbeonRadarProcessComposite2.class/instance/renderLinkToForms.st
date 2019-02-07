@@ -1,4 +1,0 @@
-export
-renderLinkToForms
-
-	^true
