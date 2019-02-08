@@ -4,7 +4,7 @@ take: aBpmTaskAssignment
 	| takeProcedure |
 
 	aBpmTaskAssignment processIsRunning ifFalse: [^ProcessNotRunningException signal: 'The assignment can not be taken by the user because the process is NOT [running]'].
-	aBpmTaskAssignment user ifNotNil: [^TaskAlreadyTakenException signal: 'This task is already taken by user [', aBpmTaskAssignment getUsername, ']']. 
+	aBpmTaskAssignment isFree ifFalse: [^TaskAlreadyTakenException signal: 'This task is already taken by user [', aBpmTaskAssignment getUsername, ']']. 
 
 	takeProcedure := BpmTakeAssignmentOperation on: aBpmTaskAssignment by: self.
 
