@@ -2,7 +2,7 @@ other
 canDelete
 	"Answer whether or not the receiver can be deleted from the system"
 
-	(self isInAdminsEnvironment and: [self username asLowercase = self class adminUserName asLowercase]) ifTrue: [^false].
+	(self isInAdminsEnvironment and: [self isAdminUser]) ifTrue: [^false].
 
 	^(self getBpmEnvironments size = 1)
 		and: [roles isEmpty 
