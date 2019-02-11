@@ -9,7 +9,8 @@
 		"mode",
 		"categories",
 		"subprocessesTree",
-		"svgCanvas" ],
+		"svgCanvas",
+		"relatedProcess" ],
 	"name" : "WAProcessDefinitionBrowser",
 	"pools" : [
 		 ],

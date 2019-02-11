@@ -1,13 +1,17 @@
 process
 renderProcessMapOn: html
-"	| svgCode |
-
-	svgCode := (XpdlSvgConverter convert: selectedLateralItem xmlString) generateSVGFor: selectedLateralItem.
-
-	html div 
-		class: 'transition-artifact'; 
-		with: [html html: svgCode]."
 
 	svgCanvas model: selectedLateralItem.
 
-	html div with: [html render: svgCanvas]
+	relatedProcess ifNotNil: [
+		svgCanvas model: relatedProcess.
+		html div class: 'margin-top-5px margin-left-5px'; with: [
+			html anchor 
+						callback: [relatedProcess := nil];
+						with: [html image url: (SEWAFIconLibrary / #arrowsleftcircular32Png); 
+												title: ('Show Caller Process' translateIn: self session);
+												altText: ('Show Caller Process' translateIn: self session)]
+		]
+	].
+
+	html div with: [html render: svgCanvas].

@@ -8,6 +8,7 @@ renderMessageEvent: anXPDLEventNode on: html
 
 	rectCorner := (center x - 10) @ (center y - 6).
 	"render envelope rectangle"
+
 	self renderRectangleOn: html at: rectCorner width: 21 height: 12 stroke: 'black' fillColor: 'darkred'.
 
 	"render envelope line 1"
