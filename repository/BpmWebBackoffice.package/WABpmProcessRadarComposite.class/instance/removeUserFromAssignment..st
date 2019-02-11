@@ -1,4 +1,4 @@
-other
+assign unassign
 removeUserFromAssignment: aBpmTaskAssignment
 
 	(self componentValueAt: 'removeAssignment') "the jqdialog set this value"

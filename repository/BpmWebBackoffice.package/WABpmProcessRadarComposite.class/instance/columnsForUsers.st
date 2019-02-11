@@ -1,11 +1,11 @@
-other
+assign unassign
 columnsForUsers
 
 	^OrderedCollection new  
 			add: ((SewafReportColumn 
 						selector: #username 
 						title: ('Username' translateIn: self session) 
-						onClick: [:each | selectedObject := each])
+						onClick: [:user | self assignUserToSelectedTask: user])
 						beSortable
 						beSearchable;
 						sortBlock: [:a :b | a username <= b username]);

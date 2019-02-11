@@ -1,4 +1,4 @@
-other
+assign unassign
 createRemoveAssignmentFromUserColumn
 
 	^(SewafReportColumn 

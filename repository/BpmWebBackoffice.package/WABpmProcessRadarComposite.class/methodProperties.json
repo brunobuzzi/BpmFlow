@@ -3,9 +3,10 @@
 		 },
 	"instance" : {
 		"abortSelectedProcess" : "brunobb 02/09/2019 13:47",
+		"assignUserToSelectedTask:" : "brunobb 02/11/2019 07:44",
 		"assignmentBatchedList" : "brunobb 02/09/2019 13:47",
 		"assignmentBatchedList:" : "brunobb 02/09/2019 13:47",
-		"columnsForUsers" : "brunobb 02/09/2019 13:53",
+		"columnsForUsers" : "brunobb 02/11/2019 07:41",
 		"confirmAbortSelectedProcess" : "brunobb 02/09/2019 13:47",
 		"createAssignUserColumn" : "brunobb 02/09/2019 14:00",
 		"createFilledFormsColumn" : "brunobb 02/09/2019 13:47",
@@ -39,7 +40,7 @@
 		"renderAbortStateIconOn:" : "brunobb 02/09/2019 13:47",
 		"renderApplicationComboOn:" : "brunobb 02/09/2019 13:47",
 		"renderChangeProcessStateFormOn:" : "brunobb 02/09/2019 13:47",
-		"renderContentOn:" : "brunobb 02/09/2019 13:59",
+		"renderContentOn:" : "brunobb 02/11/2019 07:32",
 		"renderFilterValuesAndButtonOn:" : "brunobb 02/09/2019 13:47",
 		"renderFormDefinitionComboOn:" : "brunobb 02/09/2019 13:47",
 		"renderFormFieldsComboOn:" : "brunobb 02/09/2019 13:47",
@@ -68,6 +69,6 @@
 		"setUsersTableFor:" : "brunobb 02/09/2019 13:47",
 		"sewafTableForProcessAssignments" : "brunobb 02/09/2019 13:47",
 		"sewafTableForRunningFormProcesses" : "brunobb 02/09/2019 13:47",
-		"sewafTableForUsers" : "brunobb 02/09/2019 13:52",
+		"sewafTableForUsers" : "brunobb 02/11/2019 07:37",
 		"shouldRenderLinkForFormTask:" : "brunobb 02/09/2019 13:47",
 		"viewSvgProcessMap" : "brunobb 02/09/2019 13:47" } }

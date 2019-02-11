@@ -1,4 +1,4 @@
-other
+assign unassign
 sewafTableForUsers
 
 	^(SewafSelectTableReport parent: self)
@@ -7,6 +7,5 @@ sewafTableForUsers
 		nonSelectedColor: self session user userOptions getSelectTableNonSelectedColor;
 		columns: self columnsForUsers;
 		rowColors: #(white white);
-		selectedObject: selectedObject;
 		rowPeriod: 1;
 		yourself.
