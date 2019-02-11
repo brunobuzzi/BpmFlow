@@ -12,6 +12,7 @@ sewafTableForProcessAssignments
 						add: (SewafReportColumn selector: #taskEndDate title: ('End Date' translateIn: self session));
 						add: (SewafReportColumn selector: #getRoleName title: ('Role' translateIn: self session));
 						add: self createFilledFormsColumn;
+						add: self createAssignUserColumn;
 						add: self createRemoveAssignmentFromUserColumn;
 						yourself);
 		rowColors: #(white white);

@@ -6,7 +6,7 @@ sewafTableForRunningFormProcesses
 		selectedColor: self session user userOptions getSelectTableSelectedColor;
 		nonSelectedColor: self session user userOptions getSelectTableNonSelectedColor;
 		columns: (OrderedCollection new  
-						add: (SewafReportColumn selector: #applicationName title: ('Application' translateIn: self session) onClick: [:each | selectedObject := each]);
+						add: (SewafReportColumn selector: #applicationName title: ('Application' translateIn: self session) onClick: [:each | self setSelectedProcess: each]);
 						add: (SewafReportColumn selector: #processName title: ('Name' translateIn: self session));
 						add: (SewafReportColumn selector: #version title: ('Version' translateIn: self session));
 						add: (SewafReportColumn selector: #processId title: ('Process Id' translateIn: self session));

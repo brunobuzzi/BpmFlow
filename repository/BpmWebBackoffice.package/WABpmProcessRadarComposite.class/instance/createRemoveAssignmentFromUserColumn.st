@@ -10,8 +10,8 @@ createRemoveAssignmentFromUserColumn
 								class: 'cursor-pointer';
 								onClick: (html jQuery id: jQueryId) dialog open;
 								with: [html image url: (SEWAFIconLibrary / #gointo24Png); 
-														title: ('Remove Assignment' translateIn: self session); 
-														altText: ('Remove Assignment' translateIn: self session).]
+														title: ('Unassign Current User' translateIn: self session); 
+														altText: ('Unassign Current User' translateIn: self session).]
 				]
 			]
 			title: 'Unassign') 

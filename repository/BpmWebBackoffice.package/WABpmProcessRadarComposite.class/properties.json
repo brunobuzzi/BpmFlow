@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"assignmentBatchedList" ],
+		"assignmentBatchedList",
+		"userAssignationBatchedList" ],
 	"name" : "WABpmProcessRadarComposite",
 	"pools" : [
 		 ],

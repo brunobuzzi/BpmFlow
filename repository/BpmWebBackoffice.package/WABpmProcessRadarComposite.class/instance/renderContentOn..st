@@ -18,4 +18,10 @@ renderContentOn: html
 		with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Tasks' translateIn: self session)].
 				html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
 
+	(self componentValueAt: 'userAssgination') ifNotNil: [:assination | 
+		userAssignationBatchedList items: assination possibleUsers.
+		html div class: 'default-gray-table ';
+			with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Possible Users' translateIn: self session)].
+					html render: (userAssignationBatchedList table: self sewafTableForUsers)].].
+
 	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].
