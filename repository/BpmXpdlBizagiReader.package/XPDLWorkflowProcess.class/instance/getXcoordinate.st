@@ -1,0 +1,4 @@
+other
+getXcoordinate
+
+	^parentPool getXcoordinate

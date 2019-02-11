@@ -22,6 +22,7 @@ renderContentOn: html
 
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
 	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName].
+	(xpdlWorkflows notEmpty and: [xpdlReader getAllWorkflows size > 1]) ifTrue: [svgCanvasTag attributeAt: 'transform' put: (self getTranslationStringFor: xpdlWorkflows last)].
 
 	svgCanvasTag with: [
 		self renderMarkerDefinitionOn: html at: 10@5 id: 'arrow' width: 10 height: 10.

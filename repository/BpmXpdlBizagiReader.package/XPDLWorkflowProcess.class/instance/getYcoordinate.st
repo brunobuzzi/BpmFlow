@@ -1,0 +1,4 @@
+other
+getYcoordinate
+
+	^parentPool getYcoordinate
