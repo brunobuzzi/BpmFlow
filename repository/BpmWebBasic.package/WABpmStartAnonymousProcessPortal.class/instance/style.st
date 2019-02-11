@@ -37,9 +37,10 @@ body {
 }
 .form-link a {
     text-decoration: none;
-    background-color: gray;
+    background-color: white;
     padding: 10px;
     border-radius: 8px;
+	font-size: x-large;
 }
 #header {
 	display: flex;
@@ -53,5 +54,8 @@ body {
 	width: 315px;
 	font-size: x-large;
 	color: red;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 '
