@@ -4,7 +4,7 @@ takeTaskAndGo: aBpmTaskAssignment
 	| messages subMenu |
 
 	aBpmTaskAssignment checkIfIsStillAvailableToTake
-	ifFalse: [^self searchAll]. 
+	ifFalse: [^self setAlertStringFor: aBpmTaskAssignment]. 
 
 	self session user take: aBpmTaskAssignment.
 	self answer.
