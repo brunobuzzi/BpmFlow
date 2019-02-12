@@ -26,7 +26,9 @@ takeTask: aBpmTaskInstance forUserNamed: aString withForm: anOrbeonFormInstance 
 		(aBpmProcessInstance getTakenProcessMatrix includesAssignment: assignment forRoleNamed: (assignment getNextRoleIfNone: []) name) ifTrue: [PEFImproperStateException signal: 'The assignment must be in Available Matrix'].
 	].
 
+	assignment checkIfIsStillAvailableToTake ifFalse: [PEFImproperStateException signal: 'The assignment must be Available'].
 	(self getUserNamed: aString) take: assignment. "the user take the <BpmTaskAssignment>"
+	assignment checkIfIsStillAvailableToTake ifTrue: [PEFImproperStateException signal: 'The assignment must be Taken'].
 
 	(aBpmProcessInstance getTakenProcessMatrix includesAssignment: assignment) ifFalse: [PEFImproperStateException signal: 'The Assignment must be in Taken Matrix'].
 	(aBpmProcessInstance getAvailableProcessMatrix includesAssignment: assignment) ifTrue: [PEFImproperStateException signal: 'The Assignment must be in Taken Matrix'].

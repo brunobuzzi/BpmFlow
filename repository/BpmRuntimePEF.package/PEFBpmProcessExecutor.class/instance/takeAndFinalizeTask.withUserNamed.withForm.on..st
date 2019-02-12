@@ -13,4 +13,6 @@ takeAndFinalizeTask: aBpmTaskInstance withUserNamed: aString withForm: anOrbeonF
 	(self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: [nil]) 
 	ifNotNil: [PEFImproperStateException signal: 'The assignment should be already taken and not present in Available Matrix']. "the assignment has been already taken --> this must answer nil"
 
-	self finalizeAssignment: assignment withUserNamed: aString on: aBpmProcessInstance
+	self finalizeAssignment: assignment withUserNamed: aString on: aBpmProcessInstance.
+
+	^assignment
