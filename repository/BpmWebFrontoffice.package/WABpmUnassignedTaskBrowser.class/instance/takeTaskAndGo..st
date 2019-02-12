@@ -11,7 +11,7 @@ takeTaskAndGo: aBpmTaskAssignment
 
 	messages := OrderedCollection new.
 
-	subMenu := mainPanel selectSubTabNamed: 'Current Processes' inMenu: 'My Processes' ifNone: [^nil].
+	subMenu := mainPanel selectSubTabNamed: 'Current Tasks' inMenu: 'My Tasks' ifNone: [^nil].
 
 	messages 
 		add: (MessageSend receiver: mainPanel selector: #showCurrentProcess: argument: (OrderedCollection with: aBpmTaskAssignment));
