@@ -1,9 +1,9 @@
 assign unassign
-setAlertStringFor: aBpmTaskAssignment
+setAlertUntakeStringFor: aBpmTaskAssignment
 	| alertString |
 
 	alertString := ('Task [' translateIn: self session), aBpmTaskAssignment taskName, 
 						('] in Process [' translateIn: self session), aBpmTaskAssignment processId printString, 
-						('] was taken by other user !!!' translateIn: self session).
+						('] was released by other user !!!' translateIn: self session).
 
-	self addValue: alertString named: 'alert'
+	self setAlertStringWith: alertString for: aBpmTaskAssignment

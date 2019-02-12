@@ -1,6 +1,10 @@
 other
 renderContentOn: html
 
+	(self componentValueAt: 'alert') ifNotNil: [:alertString | 
+		html document addLoadScript: (html javascript alert: alertString).
+		self removeValueNamed: 'alert'].
+
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; 
 		with: [self renderSearchOptionsOn: html].
 

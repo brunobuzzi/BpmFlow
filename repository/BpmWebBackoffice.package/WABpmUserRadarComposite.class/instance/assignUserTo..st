@@ -2,8 +2,7 @@ free transitions
 assignUserTo: aBpmTaskAssignment
 
 	"another user could be take the process already"
-	aBpmTaskAssignment checkIfIsStillAvailableToTake
-	ifFalse: [^self canNotTakeAssignment: aBpmTaskAssignment]. 
+	aBpmTaskAssignment checkIfIsStillAvailableToTake ifFalse: [^self setAlertTakeStringFor: aBpmTaskAssignment]. 
 
 	selectedObject take: aBpmTaskAssignment.
 

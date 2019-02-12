@@ -5,7 +5,7 @@ assignUserToSelectedTask: aBpmUser
 	taskAssignment := self componentValueAt: 'userAssgination' ifAbsent: [^self].
 
 	taskAssignment checkIfIsStillAvailableToTake 
-	ifFalse: [self setAlertStringFor: taskAssignment.
+	ifFalse: [self setAlertTakeStringFor: taskAssignment.
 				^self removeValueNamed: 'userAssgination'].
 
 	aBpmUser take: taskAssignment.
