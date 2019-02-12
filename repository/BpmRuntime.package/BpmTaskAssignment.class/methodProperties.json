@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"newFor:task:in:" : "brunobb 09/07/2018 11:12" },
+		"newFor:task:in:" : "brunobb 02/12/2019 04:38" },
 	"instance" : {
 		"addToAvailableMatrix" : "brunobb 09/07/2018 11:12",
 		"addToAvailableMatrixForNextPerformer" : "brunobb 09/07/2018 11:12",
-		"addToTakenMatrix" : "brunobb 09/07/2018 11:12",
+		"addToTakenMatrix" : "brunobb 02/12/2019 04:41",
 		"addWorkerUser:" : "brunobb 09/07/2018 11:12",
 		"application" : "brunobb 09/07/2018 11:12",
 		"application:" : "brunobb 09/07/2018 11:12",
@@ -21,7 +21,7 @@
 		"canUnassign" : "brunobb 09/07/2018 11:12",
 		"canUnassign:" : "brunobb 09/07/2018 11:12",
 		"canUntakeFromCurrentUser" : "brunobb 09/07/2018 11:12",
-		"checkIfIsStillAvailableToTake" : "brunobb 09/07/2018 11:12",
+		"checkIfIsStillAvailableToTake" : "brunobb 02/12/2019 04:44",
 		"createMessageBody" : "brunobb 09/07/2018 11:12",
 		"creationDate" : "brunobb 09/07/2018 11:12",
 		"creationDate:" : "brunobb 09/07/2018 11:12",

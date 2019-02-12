@@ -1,8 +1,8 @@
 other
-newFor: aBpmProcessInstance task: aBpmTaskInstance in: aBpmRunningTasksMatrix
+newFor: aBpmProcessInstance task: aBpmTaskInstance in: aBpmTasksMatrix
 
 	^super new initialize
 		setProcess: aBpmProcessInstance;
 		setTask: aBpmTaskInstance;
-		matrix: aBpmRunningTasksMatrix;
+		matrix: aBpmTasksMatrix;
 		yourself
