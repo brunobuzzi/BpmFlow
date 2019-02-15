@@ -1,0 +1,4 @@
+*bpmwebbasic
+defaultUserClass
+
+	^self defaultBpmUserClass

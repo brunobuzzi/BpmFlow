@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"checkAccessToApplicationFor:" : "brunobb 01/22/2019 04:10",
+		"defaultUserClass" : "brunobb 02/15/2019 04:54",
 		"renderEnvironmentComboOn:" : "brunobb 01/22/2019 03:11",
 		"renderEnvironmentComboOn:for:" : "brunobb 01/31/2019 09:16",
 		"renderSelectEnvironmentPaneOn:" : "brunobb 01/22/2019 03:24",
@@ -10,4 +11,4 @@
 		"setEnvironment:" : "brunobb 01/22/2019 03:03",
 		"setUniqueEnvironmentFor:" : "brunobb 01/22/2019 03:03",
 		"showPortalFor:" : "brunobb 01/22/2019 03:15",
-		"tryLogin" : "brunobb 01/22/2019 04:17" } }
+		"tryLogin" : "brunobb 02/15/2019 04:53" } }

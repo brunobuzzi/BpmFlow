@@ -6,7 +6,7 @@ tryLogin
 	loginMode := self getGemStoneServerConfiguration loginModeFor: 'orbeon-processes-web'.
 	(loginMode validateUser: name password: password) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
-	logedUser := BpmUser getExistingOrNewUserNamed: name.
+	logedUser := self defaultUserClass getExistingOrNewUserNamed: name.
 
 	(self checkAccessToApplicationFor: logedUser) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
