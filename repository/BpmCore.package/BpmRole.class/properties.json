@@ -10,7 +10,6 @@
 		"users",
 		"isAdmin",
 		"application",
-		"orbeonApplication",
 		"tasks",
 		"usersAssociations" ],
 	"name" : "BpmRole",
