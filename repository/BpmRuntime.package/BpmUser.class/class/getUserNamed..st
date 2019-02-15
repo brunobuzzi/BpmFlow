@@ -1,4 +1,4 @@
 user query
 getUserNamed: aString
 
-	^self cache at: aString ifAbsent: [nil]
+	^self getUserNamed: aString ifAbsent: []
