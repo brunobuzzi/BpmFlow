@@ -21,4 +21,6 @@ tryLogin
 	self session user: logedUser.
 
 	(self defaultEnvironmentClass areUsersMultiEnvironment or: [self defaultEnvironmentClass areUsersMultiEnvironment not and: [logedUser isInAdminsEnvironment not]]) 
-	ifTrue: [self showPortalFor: self session user].
+	ifTrue: [self showPortalFor: self session user].	
+	"if areUsersMultiEnvironment = false and: [logedUser is IN admin environment] --> display a combo to select the Environment.
+	otherwise render the Portal"
