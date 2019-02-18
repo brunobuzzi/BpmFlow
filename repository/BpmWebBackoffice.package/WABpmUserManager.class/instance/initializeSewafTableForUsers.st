@@ -9,7 +9,7 @@ initializeSewafTableForUsers
 		nonSelectedColor: self session user userOptions getSelectTableNonSelectedColor;
 		"rows: self session user getVisibleUsers; "
 		columns: (OrderedCollection new  
-						add: ((SewafReportColumn selector: #username title: 'Username' onClick: [:each | selectedObject := each]) beSortable; sortBlock: [:a :b | a username <= b username]; beSearchable; yourself);
+						add: ((SewafReportColumn selector: #username title: 'Username' onClick: [:each | self selectedObject: each]) beSortable; sortBlock: [:a :b | a username <= b username]; beSearchable; yourself);
 						add: ((SewafReportColumn selector: #isAdmin title: 'Admin?') beSortable; sortBlock: [:a :b | a isAdmin printString <= b isAdmin printString]; beSearchable; yourself);
 						add: self resetPasswordColumn;
 						add: self resetPasswordButton;
