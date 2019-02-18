@@ -1,5 +1,5 @@
 other
-renderNewRoleFormOn: html
+renderSearchRoleFormOn: html
 
 	self renderShowHideWindowIconOn: html. "show/hide search area"
 

@@ -1,7 +1,7 @@
 other
 renderContentOn: html
 
-	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; with: [self renderNewRoleFormOn: html].
+	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; with: [self renderSearchRoleFormOn: html].
 
 	html div id: 'system-rols'; class: 'default-gray-table '; with:[html render: (rolesBatchList table: self sewafTableForRoles).].
 	self renderAddRoleOn: html. 
