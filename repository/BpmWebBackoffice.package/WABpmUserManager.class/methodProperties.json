@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"booleanValueForRol:" : "BrunoBB 03/15/2016 10:51",
+		"defaultNewUserPopupComponent" : "brunobb 02/18/2019 06:52",
 		"gitbookUrl" : "brunobb 07/13/2018 10:25",
 		"informUserAdded:" : "brunobb 02/04/2019 11:22",
 		"informUserAlreadyExist:" : "brunobb 02/04/2019 09:19",
@@ -19,7 +20,7 @@
 		"removeUser:" : "brunobb 01/31/2019 09:09",
 		"removeUserButton" : "brunobb 01/31/2019 09:09",
 		"renderAddRolButtonOn:" : "brunobb 01/31/2019 09:10",
-		"renderAddUserOn:" : "brunobb 01/31/2019 09:11",
+		"renderAddUserOn:" : "brunobb 02/18/2019 06:52",
 		"renderAddingRolOn:" : "brunobb 09/05/2018 12:20",
 		"renderContentOn:" : "brunobb 09/05/2018 12:16",
 		"renderSearchAndNewFormOn:" : "brunobb 02/06/2019 09:04",

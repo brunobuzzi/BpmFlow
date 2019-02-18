@@ -1,0 +1,4 @@
+other
+checkUniqueUserName
+
+	^true

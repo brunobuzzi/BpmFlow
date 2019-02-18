@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createNewUser" : "brunobb 02/04/2019 11:22",
+		"checkUniqueUserName" : "brunobb 02/18/2019 06:46",
+		"createNewUser" : "brunobb 02/18/2019 06:46",
+		"defaultUserClass" : "brunobb 02/18/2019 06:46",
 		"renderContentOn:" : "brunobb 02/04/2019 09:09" } }

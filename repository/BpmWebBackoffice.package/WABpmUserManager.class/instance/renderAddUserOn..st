@@ -2,7 +2,7 @@ other
 renderAddUserOn: html
    | jQueryId |
 
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 250 composite: WANewUserPopupComponent title: 'Create User' domainObject: nil arguments: #().
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 250 composite: self defaultNewUserPopupComponent title: 'Create User' domainObject: nil arguments: #().
 
 	html div class: 'float-right margin-left-5px'; with: [
 		html anchor 

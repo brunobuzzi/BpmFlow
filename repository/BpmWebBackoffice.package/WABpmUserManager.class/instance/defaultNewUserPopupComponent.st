@@ -1,0 +1,4 @@
+other
+defaultNewUserPopupComponent
+
+	^WANewUserPopupComponent
