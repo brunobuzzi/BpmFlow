@@ -1,8 +1,10 @@
 other
 createEnviroment
-	| envName |
+	| envName environment |
 
 	envName := self componentValueAt: 'envName'.
 	(envName isNil or: [envName isEmpty]) ifTrue: [^self].
 
-	BpmEnvironment getExistingEnvironmentOrCreateNewNamed: envName
+	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: envName.
+
+	environment seasideApplicationName: (self componentValueAt: 'seasideApplicationName' ifAbsent: ['bpmflow'])

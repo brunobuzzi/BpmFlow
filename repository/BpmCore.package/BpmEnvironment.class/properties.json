@@ -12,7 +12,8 @@
 		"users",
 		"applicationsNames",
 		"applicationsLogos",
-		"internationalization" ],
+		"internationalization",
+		"seasideApplicationName" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],

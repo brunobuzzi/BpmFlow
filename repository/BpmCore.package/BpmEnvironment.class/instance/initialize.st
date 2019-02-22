@@ -8,3 +8,4 @@ initialize
 	users := RcKeyValueDictionary new.
 	applicationsNames := Dictionary new.
 	applicationsLogos := Dictionary new.
+	seasideApplicationName := 'bpmflow'.
