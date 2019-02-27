@@ -1,0 +1,4 @@
+other
+defaultModel
+
+	^self subclassResponsibility

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"taskInstance" ],
+	"name" : "WASeasideBpmIntegration",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebObjectComposite",
+	"type" : "normal" }
