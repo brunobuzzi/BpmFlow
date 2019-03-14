@@ -4,7 +4,9 @@ renderCompleteItemOn: html
 
 	selectedLateralItem ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
 
-	taskListComposite ifNil: [taskListComposite := self defaultTaskListCompositeClass parent: self on: selectedLateralItem].
+	taskListComposite 
+	ifNil: [taskListComposite := self defaultTaskListCompositeClass parent: self on: selectedLateralItem]
+	ifNotNil: [taskListComposite model: selectedLateralItem].
 	
 	html render: taskListComposite
 "
