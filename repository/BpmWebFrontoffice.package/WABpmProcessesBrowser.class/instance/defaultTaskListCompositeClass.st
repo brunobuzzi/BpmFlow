@@ -1,0 +1,4 @@
+process
+defaultTaskListCompositeClass
+
+	^WABpmProcessTaskListComposite
