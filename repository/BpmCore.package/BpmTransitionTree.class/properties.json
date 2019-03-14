@@ -9,7 +9,8 @@
 		"roots",
 		"nodesArtifactsMap",
 		"allNodes",
-		"visitedTransitions" ],
+		"visitedTransitions",
+		"loopTolerance" ],
 	"name" : "BpmTransitionTree",
 	"pools" : [
 		 ],

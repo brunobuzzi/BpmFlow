@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 03/13/2019 13:22" },
+		"newOn:" : "brunobb 03/14/2019 03:20",
+		"newOn:loopTolerance:" : "brunobb 03/14/2019 03:19" },
 	"instance" : {
 		"add:asChildOf:" : "brunobb 03/13/2019 13:22",
 		"allNodes" : "brunobb 03/13/2019 13:22",
@@ -10,9 +11,13 @@
 		"endOrderDo:" : "brunobb 03/13/2019 13:22",
 		"endOrderDo:on:" : "brunobb 03/13/2019 13:22",
 		"fieldName:isContainedInAny:" : "brunobb 03/13/2019 13:22",
+		"getAllPossibleLoops" : "brunobb 03/14/2019 03:39",
 		"getAllPossiblePath" : "brunobb 03/13/2019 13:22",
+		"getAllPossiblePathToEnd" : "brunobb 03/14/2019 03:35",
 		"getLeafNodes" : "brunobb 03/13/2019 13:22",
-		"initialize" : "brunobb 03/13/2019 13:22",
+		"initialize" : "brunobb 03/14/2019 03:16",
+		"loopTolerance" : "brunobb 03/14/2019 03:05",
+		"loopTolerance:" : "brunobb 03/14/2019 03:05",
 		"nodesArtifactsMap" : "brunobb 03/13/2019 13:22",
 		"nodesArtifactsMap:" : "brunobb 03/13/2019 13:22",
 		"pathAlreadyExistFor:" : "brunobb 03/13/2019 13:22",
@@ -24,6 +29,6 @@
 		"roots" : "brunobb 03/13/2019 13:22",
 		"roots:" : "brunobb 03/13/2019 13:22",
 		"setRootWith:" : "brunobb 03/13/2019 13:22",
-		"visitTransition:" : "brunobb 03/13/2019 13:25",
+		"visitTransition:" : "brunobb 03/14/2019 03:15",
 		"visitedTransitions" : "brunobb 03/13/2019 13:22",
 		"visitedTransitions:" : "brunobb 03/13/2019 13:22" } }

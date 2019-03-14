@@ -1,6 +1,4 @@
 other
 newOn: aBpmProcessDefinition
 
-	^super new initialize
-		setRootWith: aBpmProcessDefinition;
-		yourself
+	^self newOn: aBpmProcessDefinition loopTolerance: 0

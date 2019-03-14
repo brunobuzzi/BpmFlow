@@ -2,7 +2,7 @@ visiting
 visitTransition: aBpmTransitionTreeNode
 	"The receiver visit out transitions of <aBpmTransitionTreeNode> and add it as children of it"
 
-	(visitedTransitions identityIncludes: aBpmTransitionTreeNode transition) ifTrue: [^self].
+	((visitedTransitions select: [:eachTr | eachTr == aBpmTransitionTreeNode transition]) size > loopTolerance) ifTrue: [^self].
 
 	visitedTransitions add: aBpmTransitionTreeNode transition.
 
