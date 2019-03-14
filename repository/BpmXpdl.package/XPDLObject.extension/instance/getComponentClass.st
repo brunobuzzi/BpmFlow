@@ -1,0 +1,4 @@
+*bpmxpdl
+getComponentClass
+
+	^self subclassResponsibility
