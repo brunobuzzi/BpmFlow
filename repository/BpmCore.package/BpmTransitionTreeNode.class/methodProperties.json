@@ -2,7 +2,7 @@
 	"class" : {
 		"newOn:for:" : "brunobb 12/17/2018 04:51" },
 	"instance" : {
-		"addChild:" : "brunobb 12/17/2018 04:59",
+		"addChild:" : "brunobb 03/13/2019 12:52",
 		"children" : "brunobb 12/17/2018 04:50",
 		"children:" : "brunobb 12/17/2018 04:50",
 		"endArtifact" : "brunobb 12/17/2018 11:30",
@@ -13,7 +13,7 @@
 		"getUsedFieldsNamesInCondition" : "brunobb 12/18/2018 08:52",
 		"hasChildren" : "brunobb 12/17/2018 08:29",
 		"initialize" : "brunobb 12/17/2018 07:11",
-		"outTransitions" : "brunobb 12/18/2018 08:53",
+		"outTransitions" : "brunobb 03/13/2019 11:49",
 		"parent" : "brunobb 12/17/2018 04:50",
 		"parent:" : "brunobb 12/17/2018 04:50",
 		"printConditionToRun" : "brunobb 12/17/2018 11:31",
