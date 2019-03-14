@@ -11,7 +11,8 @@
 		"categories",
 		"transitionsHeight",
 		"assignationComposite",
-		"searchScope" ],
+		"searchScope",
+		"taskListComposite" ],
 	"name" : "WABpmProcessesBrowser",
 	"pools" : [
 		 ],

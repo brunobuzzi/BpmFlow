@@ -3,7 +3,9 @@
 		"defaultModel" : "BrunoBB 02/23/2016 09:47",
 		"getTooltipOrNil" : "brunobb 03/14/2019 05:31",
 		"new" : "BrunoBB 12/21/2015 12:44",
-		"newOn:task:assignment:" : "BrunoBB 12/21/2015 12:44" },
+		"newOn:task:" : "brunobb 03/14/2019 05:43",
+		"newOn:task:assignment:" : "BrunoBB 12/21/2015 12:44",
+		"newOn:task:parent:" : "brunobb 03/14/2019 05:45" },
 	"instance" : {
 		"answer" : "BrunoBB 02/14/2016 15:58",
 		"initialize" : "brunobb 03/14/2019 04:41",

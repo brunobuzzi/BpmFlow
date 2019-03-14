@@ -1,13 +1,7 @@
-process
-renderCompleteItemOn: html
+other
+renderContentOn: html
 	| heightClass |
 
-	selectedLateralItem ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
-
-	taskListComposite := WABpmProcessTaskListComposite parent: self on: selectedLateralItem.
-	
-	html render: taskListComposite
-"
 	html div id: 'item-complete-description'; class: 'lateral-right-component-description';
 		with: [self renderItemDescriptionOn: html.].
 
@@ -15,10 +9,9 @@ renderCompleteItemOn: html
 
 	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [^self renderSvgProcessMapOn: html].
 
-	heightClass := mainPanel showMainMenu 
+	heightClass := self portalComponent showMainMenu 
 							ifFalse: ['item-customized-component-hide-top'] 
 							ifTrue: ['item-customized-component-show-top'].
 
 	html div id: 'item-customized-component'; class: heightClass; 
 		with: [self renderItemComponentOn: html.].
-"
