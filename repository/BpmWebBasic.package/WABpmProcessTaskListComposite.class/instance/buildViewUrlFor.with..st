@@ -1,12 +1,12 @@
-*bpmwebbasic
-buildEditUrlFor: aBpmArtifactInstance with: anUUID
-	"Answer a string Link to EDIT the Orbeon Form associated with the transition <aBpmArtifactInstance> using the security token <anUUID>"
+external components
+buildViewUrlFor: aBpmArtifactInstance with: anUUID
+	"Answer a string Link to VIEW the Orbeon Form associated with the transition <aBpmArtifactInstance> using the security token <anUUID>"
 	| formDefinition |
 
 	formDefinition := aBpmArtifactInstance getDefinitionName.
 
 	^self getOrbeonWebServerConfiguration orbeonIP,'/orbeon/fr/', 
-			aBpmArtifactInstance applicationName ,'/',formDefinition,'/edit/', aBpmArtifactInstance getOrbeonFormId,
+			aBpmArtifactInstance applicationName ,'/',formDefinition,'/view/', aBpmArtifactInstance getOrbeonFormId,
 			'?token=', anUUID,
 			'&s=', self session key,
 			'&k=', self getSeasideKurlParameter, 

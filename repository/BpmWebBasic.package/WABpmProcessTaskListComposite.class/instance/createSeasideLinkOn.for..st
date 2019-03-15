@@ -1,4 +1,4 @@
-*bpmwebbasic
+external components
 createSeasideLinkOn: html for: aBpmArtifactInstance
 	"The receiver create a link to a Seaside Component. 
 	Used with: WASeasideBpmIntegration component"

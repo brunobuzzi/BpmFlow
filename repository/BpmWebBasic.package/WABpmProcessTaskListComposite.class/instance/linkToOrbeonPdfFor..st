@@ -1,4 +1,4 @@
-*bpmwebbasic
+external components
 linkToOrbeonPdfFor: aBpmArtifactInstance
 	| uuid |
 

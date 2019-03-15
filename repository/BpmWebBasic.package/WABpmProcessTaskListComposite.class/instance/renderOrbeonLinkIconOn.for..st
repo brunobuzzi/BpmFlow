@@ -1,4 +1,4 @@
-orbeon form link
+external components
 renderOrbeonLinkIconOn: html for: aBpmTaskInstance
 
 	aBpmTaskInstance processIsRunning ifFalse: [^self]. "if the process is paused or aborted no operation is possible with the task <aBpmTaskInstance>"

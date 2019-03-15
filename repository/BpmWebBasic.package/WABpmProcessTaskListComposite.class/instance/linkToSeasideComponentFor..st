@@ -1,4 +1,4 @@
-*bpmwebbasic
+external components
 linkToSeasideComponentFor: aBpmSeasideTaskInstance
   "The receiver gives the control to the component of task <aBpmSeasideTaskInstance>."
   | seasideModel |

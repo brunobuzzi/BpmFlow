@@ -1,4 +1,4 @@
-*bpmwebbasic
+external components
 getSeasideKurlParameter
 	"Answer the [k] parameter of the Seaside Session"
 
