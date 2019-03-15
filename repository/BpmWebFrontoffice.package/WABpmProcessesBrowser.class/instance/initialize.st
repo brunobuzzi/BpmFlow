@@ -6,7 +6,6 @@ initialize
 	searchAvailable := false.
 	mode := #normal.
 	categories := OrderedCollection new.
-	transitionsHeight := Dictionary new.
 
 	self setShowToElementNamed: 'search-area'. "the search-are is shown by default"
 

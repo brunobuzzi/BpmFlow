@@ -5,10 +5,14 @@ renderCompleteItemOn: html
 	selectedLateralItem ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
 
 	taskListComposite 
-	ifNil: [taskListComposite := self defaultTaskListCompositeClass parent: self on: selectedLateralItem]
-	ifNotNil: [taskListComposite model: selectedLateralItem].
+	ifNil: [taskListComposite := (self defaultTaskListCompositeClass parent: self) model: selectedLateralItem]
+	ifNotNil: [(selectedLateralItem == taskListComposite model) ifFalse: [taskListComposite model: selectedLateralItem]].
+
+	heightClass := mainPanel showMainMenu 
+							ifFalse: ['item-customized-component-hide-top'] 
+							ifTrue: ['item-customized-component-show-top'].
 	
-	html render: taskListComposite
+	html div id: 'item-customized-component'; class: heightClass; with: [html render: taskListComposite].
 "
 	html div id: 'item-complete-description'; class: 'lateral-right-component-description';
 		with: [self renderItemDescriptionOn: html.].

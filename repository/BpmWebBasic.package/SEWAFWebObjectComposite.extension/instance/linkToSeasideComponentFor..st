@@ -11,7 +11,7 @@ linkToSeasideComponentFor: aBpmSeasideTaskInstance
 
   seasideModel := aBpmSeasideTaskInstance externalObject.
 
-  self show: (aBpmSeasideTaskInstance getComponentClass 
+  self call: (aBpmSeasideTaskInstance getComponentClass 
 						newOn: seasideModel 
 						task: aBpmSeasideTaskInstance 
-						assignment: aBpmSeasideTaskInstance getAssignment)
+						parent: self)
