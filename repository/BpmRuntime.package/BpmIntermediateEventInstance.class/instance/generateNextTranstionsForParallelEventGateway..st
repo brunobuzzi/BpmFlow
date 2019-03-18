@@ -6,4 +6,4 @@ generateNextTranstionsForParallelEventGateway: aBpmParallelEventBasedGateway
 
 	self isTimerEvent ifFalse: [self finalize]. "for parallel event gateways all events but timers are finalized when generating next transitions"
 
-	super generateNextRunningTransitions.
+	^super generateNextRunningTransitions.

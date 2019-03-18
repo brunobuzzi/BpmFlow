@@ -3,9 +3,9 @@
 		 },
 	"instance" : {
 		"generateNextRunningTransitions" : "brunobb 11/23/2018 10:52",
-		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 10/29/2018 12:17",
-		"generateNextTranstionsForInclusiveEventGateway:" : "brunobb 10/24/2018 12:36",
-		"generateNextTranstionsForParallelEventGateway:" : "brunobb 10/24/2018 12:44",
+		"generateNextTranstionsForExclusiveEventGateway:" : "brunobb 03/18/2019 08:25",
+		"generateNextTranstionsForInclusiveEventGateway:" : "brunobb 03/18/2019 08:25",
+		"generateNextTranstionsForParallelEventGateway:" : "brunobb 03/18/2019 08:25",
 		"processMessage:inTarget:" : "brunobb 10/18/2018 05:05",
 		"receivedMessage" : "brunobb 10/17/2018 12:44",
 		"receivedMessage:" : "brunobb 10/17/2018 12:44",

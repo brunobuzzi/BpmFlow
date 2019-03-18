@@ -7,4 +7,4 @@ generateNextTranstionsForExclusiveEventGateway: aBpmExclusiveEventBasedGateway
 
 	process finalizeGateway: aBpmExclusiveEventBasedGateway.
 
-	super generateNextRunningTransitions.
+	^super generateNextRunningTransitions

@@ -7,4 +7,4 @@ generateNextTranstionsForInclusiveEventGateway: aBpmEventBasedGateway
 	ifTrue: [self finalize. "the event is removed from <BpmTimerEventMonitor> singleton"
 				process finalizeGateway: aBpmEventBasedGateway.].
 
-	super generateNextRunningTransitions.
+	^super generateNextRunningTransitions.
