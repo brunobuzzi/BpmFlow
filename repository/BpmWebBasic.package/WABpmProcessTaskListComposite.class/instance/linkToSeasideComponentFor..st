@@ -1,16 +1,9 @@
 external components
 linkToSeasideComponentFor: aBpmSeasideTaskInstance
   "The receiver gives the control to the component of task <aBpmSeasideTaskInstance>."
-  | seasideModel |
 
-	aBpmSeasideTaskInstance
-	externalObject:
-	  (aBpmSeasideTaskInstance hasForm
-		ifTrue: [aBpmSeasideTaskInstance externalObject]
-		ifFalse: [aBpmSeasideTaskInstance getObjectModel]).
+	aBpmSeasideTaskInstance externalObject ifNil: [aBpmSeasideTaskInstance setExternalObject].
 
-	seasideModel := aBpmSeasideTaskInstance externalObject.
-
-	innerSeasideComponent := aBpmSeasideTaskInstance getComponentClass newOn: seasideModel task: aBpmSeasideTaskInstance parent: self.
+	innerSeasideComponent := aBpmSeasideTaskInstance getComponentClass newOn: aBpmSeasideTaskInstance externalObject task: aBpmSeasideTaskInstance parent: self.
 
 	self call: innerSeasideComponent
