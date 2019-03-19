@@ -11,4 +11,4 @@ buildPDFUrlFor: aBpmArtifactInstance with: anUUID
 			'&s=', self session key,
 			'&k=', self getSeasideKurlParameter, 
 			'&oop=', aBpmArtifactInstance asOop printString, 
-			'&oop2=', aBpmArtifactInstance getAssignment asOop printString
+			'&oop2=', model asOop printString
