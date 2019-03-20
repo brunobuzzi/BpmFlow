@@ -6,4 +6,7 @@ getTooltipFor: aXPDLActivityNode
 
 	^aXPDLActivityNode isOrbeonTaskNode
 		ifTrue:[aXPDLActivityNode getTooltipOrNilFor: model application]
-		ifFalse: [(aXPDLActivityNode getArtifactFrom: self modelAsProcessDefinition) getComponentClass getTooltipOrNil]
+		ifFalse: [aXPDLActivityNode isSeasideTaskNode 
+					ifTrue: [(aXPDLActivityNode getArtifactFrom: self modelAsProcessDefinition) getComponentClass getTooltipOrNil]
+					ifFalse: [aXPDLActivityNode getTooltipOrNil].
+		]
