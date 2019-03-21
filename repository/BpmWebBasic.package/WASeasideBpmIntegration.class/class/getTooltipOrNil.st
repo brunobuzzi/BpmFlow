@@ -1,4 +1,4 @@
-other
+subclassResponsibility
 getTooltipOrNil
 
-	^nil
+	^self subclassResponsibility

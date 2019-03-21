@@ -1,7 +1,9 @@
 {
 	"class" : {
 		"defaultModel" : "BrunoBB 02/23/2016 09:47",
-		"getTooltipOrNil" : "brunobb 03/14/2019 05:31",
+		"getFieldsNames" : "brunobb 03/21/2019 02:40",
+		"getTooltipOrNil" : "brunobb 03/21/2019 02:41",
+		"hasFieldNamed:" : "brunobb 03/21/2019 02:40",
 		"new" : "BrunoBB 12/21/2015 12:44",
 		"newOn:task:" : "brunobb 03/14/2019 05:43",
 		"newOn:task:assignment:" : "BrunoBB 12/21/2015 12:44",

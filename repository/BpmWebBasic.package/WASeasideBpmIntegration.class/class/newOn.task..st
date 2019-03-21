@@ -1,4 +1,4 @@
-other
+instance creation
 newOn: aModel task: aBpmTaskInstance
 
 	^super new

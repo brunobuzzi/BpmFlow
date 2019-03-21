@@ -1,4 +1,4 @@
 subclassResponsibility
-defaultModel
+getFieldsNames
 
 	^self subclassResponsibility

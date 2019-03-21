@@ -1,4 +1,4 @@
 subclassResponsibility
-defaultModel
+hasFieldNamed: aString
 
 	^self subclassResponsibility
