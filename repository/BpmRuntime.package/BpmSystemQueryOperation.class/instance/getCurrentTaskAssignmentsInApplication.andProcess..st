@@ -1,5 +1,6 @@
 application&process
 getCurrentTaskAssignmentsInApplication: appName andProcess: procName
+	"The receiver answer a collection with all taken assignments (by any user) in Application <appName> and BpmProcess <procName>"
 	| assignments |
 
 	assignments := (user getAllAvailableTaskAssignmentsIn: bpmEnvironment) select: [:each | (each applicationName = appName) and: [each processName = procName] ].

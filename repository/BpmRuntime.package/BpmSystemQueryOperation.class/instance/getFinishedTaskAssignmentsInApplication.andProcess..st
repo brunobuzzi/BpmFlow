@@ -1,5 +1,6 @@
 application&process
 getFinishedTaskAssignmentsInApplication: appName andProcess: procName
+	"The receiver answer a collection with all finished assignments by any <BpmUser> in Application <appName> and BpmProcess <procName>"
 	| assignments |
 
 	assignments := OrderedCollection new.

@@ -1,5 +1,6 @@
 no filter
 getAllCurrentTaskAssigments
+	"The receiver answer a collection with all taken assignments by any <BpmUser> in <BpmEnvironment> <bpmEnvironment> "
 	| assignments |
 
 	assignments := user getAllAvailableTaskAssignmentsIn: bpmEnvironment.

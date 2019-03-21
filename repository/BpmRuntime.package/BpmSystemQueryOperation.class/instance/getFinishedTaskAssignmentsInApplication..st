@@ -1,5 +1,6 @@
 application
 getFinishedTaskAssignmentsInApplication: appName
+	"The receiver answer a collection with all finished assignments by any <BpmUser> in Application <appName>"
 	| assignments |
 
 	assignments := OrderedCollection new.

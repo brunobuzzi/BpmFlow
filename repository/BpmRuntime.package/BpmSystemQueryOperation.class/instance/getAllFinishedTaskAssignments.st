@@ -1,5 +1,6 @@
 no filter
 getAllFinishedTaskAssignments
+	"The receiver answer a collection with all finished assignments by any <BpmUser> in <BpmEnvironment> <bpmEnvironment> "
 	| assignments |
 
 	assignments := OrderedCollection new.
