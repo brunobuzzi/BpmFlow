@@ -8,9 +8,11 @@
 		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:35",
 		"getCurrentTaskAssignmentsInApplication:" : "brunobb 09/06/2018 08:26",
 		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 09/06/2018 08:28",
+		"getCurrentTaskAssignmentsInProcess:" : "brunobb 03/21/2019 03:28",
 		"getCurrentTaskAssignmentsWithId:" : "brunobb 09/10/2018 09:04",
 		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 02/08/2018 13:36",
 		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 02/08/2018 13:36",
 		"getFinishedTaskAssignmentsInApplication:" : "brunobb 09/06/2018 08:27",
 		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 09/06/2018 08:28",
+		"getFinishedTaskAssignmentsInProcess:" : "brunobb 03/21/2019 03:29",
 		"getFinishedTaskAssignmentsWithId:" : "brunobb 09/10/2018 09:34" } }
