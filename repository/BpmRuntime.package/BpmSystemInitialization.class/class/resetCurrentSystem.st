@@ -1,6 +1,6 @@
 system initilization
 resetCurrentSystem
-	"This method will remove all objects in the System but it will keep <BpmUser>s"
+	"WARNING: This method will remove all objects in the System but it will keep <BpmUser>s"
 
 	BpmProcessDefinition 
 			removeAllDefinitions; 
