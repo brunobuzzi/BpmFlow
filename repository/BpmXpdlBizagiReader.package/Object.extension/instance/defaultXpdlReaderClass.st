@@ -1,5 +1,5 @@
 *bpmxpdlbizagireader
-getXpdlReaderClass
+defaultXpdlReaderClass
 	"The receiver answer the class used to read XPDL files"
 
-	^self class getXpdlReaderClass
+	^self class defaultXpdlReaderClass

@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	reader:=  (self getXpdlReaderClass forProcessNamed: 'Process with Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_script)
+	reader:=  (self defaultXpdlReaderClass forProcessNamed: 'Process with Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_script)
 				connectProcesses; 
 				yourself.
 

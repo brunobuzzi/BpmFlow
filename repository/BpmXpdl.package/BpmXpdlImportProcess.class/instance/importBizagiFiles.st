@@ -13,7 +13,7 @@ importBizagiFiles
 
 	(self checkFilesFormatOf: fileArray) ifFalse: [^XpdlFileFormatException signal: 'Wrong XPDL file format'].
 	"ERROR handler"
-	xpdlReader := self getXpdlReaderClass forFiles: fileArray asArray.
+	xpdlReader := self defaultXpdlReaderClass forFiles: fileArray asArray.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 

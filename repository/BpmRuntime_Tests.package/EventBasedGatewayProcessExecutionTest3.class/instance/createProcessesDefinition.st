@@ -2,7 +2,7 @@ other
 createProcessesDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'Event Based Gateway' withString: XPDLProcessDefinitionTemplate xpdlExample_event_based_gateway_03)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'Event Based Gateway' withString: XPDLProcessDefinitionTemplate xpdlExample_event_based_gateway_03)
 			connectProcesses;
 			yourself.
 

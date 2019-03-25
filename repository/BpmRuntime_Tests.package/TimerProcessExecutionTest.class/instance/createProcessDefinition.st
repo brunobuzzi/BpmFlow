@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'timer-process' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Process)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'timer-process' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Process)
 			connectProcesses;
 			yourself.
 

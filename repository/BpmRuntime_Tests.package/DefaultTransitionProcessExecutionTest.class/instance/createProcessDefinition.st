@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'default-transition-process' withString: XPDLProcessDefinitionTemplate xpdlExample_default_transition)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'default-transition-process' withString: XPDLProcessDefinitionTemplate xpdlExample_default_transition)
 			connectProcesses;
 			yourself.
 

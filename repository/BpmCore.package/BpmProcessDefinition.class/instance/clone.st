@@ -3,7 +3,7 @@ clone
 	"The receiver is cloned with a new version number"
 	| xpdlReader processGenerator |
 
-	xpdlReader := self getXpdlReaderClass forProcessNamed: processName withString: xmlString.
+	xpdlReader := self defaultXpdlReaderClass forProcessNamed: processName withString: xmlString.
 
 	subProcesses do: [:each | xpdlReader addXPDLDocument:  (XMLDOMParser parse: each xmlString) namedAs: each processName].
 

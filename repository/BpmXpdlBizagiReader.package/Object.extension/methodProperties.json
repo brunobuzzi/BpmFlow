@@ -1,5 +1,5 @@
 {
 	"class" : {
-		"getXpdlReaderClass" : "brunobb 11/06/2018 07:23" },
+		"defaultXpdlReaderClass" : "brunobb 03/25/2019 08:22" },
 	"instance" : {
-		"getXpdlReaderClass" : "brunobb 11/06/2018 07:18" } }
+		"defaultXpdlReaderClass" : "brunobb 03/25/2019 08:22" } }

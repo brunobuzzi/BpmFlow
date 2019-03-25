@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'condition-exceptions' withString: XPDLProcessDefinitionTemplate xpdl_example_condition_Exceptions)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'condition-exceptions' withString: XPDLProcessDefinitionTemplate xpdl_example_condition_Exceptions)
 			connectProcesses;
 			yourself.
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.

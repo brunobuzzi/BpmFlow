@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'multi-role' withString: XPDLProcessDefinitionTemplate xpdlExample_data_entry)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'multi-role' withString: XPDLProcessDefinitionTemplate xpdlExample_data_entry)
 			connectProcesses;
 			yourself.
 

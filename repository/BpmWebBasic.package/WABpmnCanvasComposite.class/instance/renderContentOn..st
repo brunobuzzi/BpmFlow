@@ -4,7 +4,7 @@ renderContentOn: html
 
 	self renderShowParentProcessIconOn: html.
 
-	xpdlReader := self getXpdlReaderClass forProcessNamed: 'convert' withString: self getModelOrSubProcess xmlString.
+	xpdlReader := self defaultXpdlReaderClass forProcessNamed: 'convert' withString: self getModelOrSubProcess xmlString.
 	dimensions := xpdlReader getDiagramDimensions.
 
 	svgCanvasTag := html svgCanvas.

@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	xpdlReader := (self getXpdlReaderClass forProcessNamed: 'timer-process-start' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Process_Start)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'timer-process-start' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Process_Start)
 			connectProcesses;
 			yourself.
 
