@@ -8,6 +8,7 @@ testInitializeCurrentSystem
 	self assert: self defaultBpmUserClass cache isEmpty.
 	self assert: self defaultApplicationUserClass cache isEmpty.
 
+	self assert: BpmProcessDefinition cache isEmpty.
 	self assert: BpmAvailableTasksMatrix cache isEmpty.
 	self assert: BpmFinishedTasksMatrix cache isEmpty.
 	self assert: BpmTakenTasksMatrix cache isEmpty.
@@ -17,7 +18,6 @@ testInitializeCurrentSystem
 	self assert: BpmProcessInstanceCategory cache isEmpty.
 	self assert: BpmProcessDynamicCategory cache isEmpty.
 	self assert: BpmExceptionCalendar cache isEmpty.
-	self assert: BpmProcessDefinition cache isEmpty.
 
 	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | self assert: repositoryClass default isEmpty]. "issue #653"
 	self assert: self defaultTimerEventMonitor monitoredEvents isEmpty.
