@@ -9,9 +9,9 @@ testInitializeCurrentSystem
 	self assert: self defaultApplicationUserClass cache isEmpty.
 
 	self assert: self defaultProcessDefinitionClass cache isEmpty.
-	self assert: BpmAvailableTasksMatrix cache isEmpty.
-	self assert: BpmFinishedTasksMatrix cache isEmpty.
-	self assert: BpmTakenTasksMatrix cache isEmpty.
+	self assert: self defaultAvailableTasksMatrixClass cache isEmpty.
+	self assert: self defaultFinishedTasksMatrixClass cache isEmpty.
+	self assert: self defaultTakenTasksMatrixClass cache isEmpty.
 	self assert: BpmBackofficeRole cache isEmpty.
 	self assert: BpmFrontOfficeRole cache isEmpty.
 	self assert: BpmProcessDefinitionCategory cache isEmpty.

@@ -2,6 +2,6 @@ query
 getAllMatrixDictionaries
 
 	^OrderedCollection 
-		with: BpmAvailableTasksMatrix cache 
-		with: BpmTakenTasksMatrix cache 
-		with: BpmFinishedTasksMatrix cache
+		with: self defaultAvailableTasksMatrixClass cache 
+		with: self defaultTakenTasksMatrixClass cache 
+		with: self defaultFinishedTasksMatrixClass cache

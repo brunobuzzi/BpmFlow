@@ -2,8 +2,8 @@ test
 testEmptyUnionInAvailableAndTakenAssignments
 	| availableMatrixDictionary takenMatrixDictionary allAvailable allTaken |
 
-	availableMatrixDictionary := BpmAvailableTasksMatrix cache.
-	takenMatrixDictionary := BpmTakenTasksMatrix cache.
+	availableMatrixDictionary := self defaultAvailableTasksMatrixClass cache.
+	takenMatrixDictionary := self defaultTakenTasksMatrixClass cache.
 
 	allAvailable := OrderedCollection new.
 	allTaken := OrderedCollection new.
