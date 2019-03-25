@@ -19,10 +19,10 @@ setUp
 	environment registerUser: (self getUserNamed: 'mario'). 
 	environment registerUser: (self getUserNamed: 'bruno'). 
 
-	(BpmFrontOfficeRole getRoleNamed: 'empry role' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (self getUserNamed: 'juan') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (self getUserNamed: 'mario') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'ue') grantUser: (self getUserNamed: 'bruno') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'empry role' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (self getUserNamed: 'juan') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (self getUserNamed: 'mario') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'approver' in: 'ue') grantUser: (self getUserNamed: 'bruno') ifPresent: [].
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').

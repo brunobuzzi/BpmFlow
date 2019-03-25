@@ -3,10 +3,10 @@ test_fairAssignation_visaAccepted
 	"Testing Assignation Policy Fair (global)"
 	| newRoundRobinProcesses availableUsers assignmentsInProcess subProc |
 
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') removeAllUsers.
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo2').
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo3').
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') removeAllUsers.
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo2').
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo3').
 
 	procDefinition setFairAssignationPolicy: true.
 	subProc := procDefinition subProcesses asArray last.
@@ -15,7 +15,7 @@ test_fairAssignation_visaAccepted
 	subProc setFairAssignationPolicy: true.
 
 	newRoundRobinProcesses := OrderedCollection new.
-	availableUsers := (BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
+	availableUsers := (self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
 
 
 	1 to: 10 do: [:index | | newProcess |

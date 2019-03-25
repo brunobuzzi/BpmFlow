@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"createNewOrGetExisting:in:" : "brunobb 02/15/2019 07:08",
-		"getAllRolesIn:" : "brunobb 02/15/2019 07:08",
+		"getAllRolesIn:" : "brunobb 03/25/2019 09:05",
 		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 02/15/2019 07:08",
 		"getRoleNamed:in:" : "brunobb 02/15/2019 07:08",
 		"getRolsIn:forApplication:" : "brunobb 02/15/2019 07:08",

@@ -13,4 +13,4 @@ setUp
 
 	environment registerUser: (self getUserNamed: 'alberto'). 
 
-	(BpmFrontOfficeRole getRoleNamed: 'administrator' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'administrator' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].

@@ -5,8 +5,8 @@ getVisibleRolesIn: aBpmEnvironment
 
 	self isBackofficeUser ifFalse: [^OrderedCollection new].
 
-	self isBackofficeUserAndAdmin ifTrue: [^BpmRole getAllRolesIn: aBpmEnvironment].
+	self isBackofficeUserAndAdmin ifTrue: [^self defaultRoleClass getAllRolesIn: aBpmEnvironment].
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 
-	^(BpmRole getAllRolesIn: aBpmEnvironment) select: [:each | applications includes: each application]
+	^(self defaultRoleClass getAllRolesIn: aBpmEnvironment) select: [:each | applications includes: each application]

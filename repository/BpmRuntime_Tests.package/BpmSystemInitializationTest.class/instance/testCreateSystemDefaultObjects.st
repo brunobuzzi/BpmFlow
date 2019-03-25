@@ -14,7 +14,7 @@ testCreateSystemDefaultObjects
 	self assert: (self defaultEnvironmentClass getAdminsEnvironment includesApplication: self defaultBpmApplicationClass getAdminApplication).
 	self assert: (self defaultEnvironmentClass getAdminsEnvironment includesUserNamed: self defaultBpmApplicationClass getAdminUser username).
 
-	self assert: (BpmBackofficeRole getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) notNil.
-	self assert: (BpmBackofficeRole getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) isAdmin.
+	self assert: (self defaultBackOfficeRoleClass getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) notNil.
+	self assert: (self defaultBackOfficeRoleClass getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) isAdmin.
 
-	self assert: ((BpmBackofficeRole getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) isGranted: self defaultBpmUserClass getAdminUser).
+	self assert: ((self defaultBackOfficeRoleClass getRoleNamed: 'admin' in: self defaultBpmApplicationClass getAdminApplication applicationName) isGranted: self defaultBpmUserClass getAdminUser).

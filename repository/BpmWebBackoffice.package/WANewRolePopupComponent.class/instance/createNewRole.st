@@ -6,7 +6,7 @@ createNewRole
 
 	application := self defaultApplicationManagerClass getAnyApplicationNamed: appName ifNone: [^self].
 
-	roleClass := (self componentValueAt: 'isBackoffice') ifTrue: [BpmBackofficeRole] ifFalse: [BpmFrontOfficeRole].
+	roleClass := (self componentValueAt: 'isBackoffice') ifTrue: [self defaultBackOfficeRoleClass] ifFalse: [self defaultFrontOfficeRoleClass].
 
 	roleName := (self componentValueAt: 'rolename' ifAbsent: [^self]) ifNotEmpty: [:value | value] ifEmpty: [^self].
 
@@ -14,7 +14,7 @@ createNewRole
 
 	self session user isBackofficeUserAndAdmin 
 	ifTrue: [newRole isAdmin: (self componentValueAt: 'isAdmin').]
-	ifFalse: [(roleClass == BpmBackofficeRole) ifTrue:[newRole isAdmin: false]]. "see issue #623 - "
+	ifFalse: [(roleClass == self defaultBackOfficeRoleClass) ifTrue:[newRole isAdmin: false]]. "see issue #623 - "
 
 	"the role has been added because #addToCacheInAppName: has answer the same role"
 	parent updateRole: newRole.

@@ -19,12 +19,12 @@ testExecuteProcess_issue_373
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) notEmpty.
 	
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') ungrantUser: (self getUserNamed: 'andrew vo').
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') ungrantUser: (self getUserNamed: 'andrew vo').
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self assert: (((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | each processId = processId]) isEmpty.
 
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
 	(self getUserNamed: 'andrew vo') take: assignment.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) isEmpty.

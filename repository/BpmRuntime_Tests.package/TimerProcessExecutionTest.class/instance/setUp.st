@@ -13,4 +13,4 @@ setUp
 
 	environment registerUser: (self getUserNamed: 'andrew vm') ifPresent: [].
 
-	(BpmFrontOfficeRole createNewOrGetExisting: 'executer' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	(self defaultFrontOfficeRoleClass createNewOrGetExisting: 'executer' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].

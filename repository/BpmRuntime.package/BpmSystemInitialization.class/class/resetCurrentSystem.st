@@ -16,8 +16,8 @@ resetCurrentSystem
 
 	AbstractApplication initializeCache.
 
-	BpmBackofficeRole initializeCache.
-	BpmFrontOfficeRole initializeCache.
+	self defaultBackOfficeRoleClass initializeCache.
+	self defaultFrontOfficeRoleClass initializeCache.
 
 	self defaultAvailableTasksMatrixClass resetAllRolesAndAssignments.
 	self defaultTakenTasksMatrixClass resetAllRolesAndAssignments.

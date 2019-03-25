@@ -15,6 +15,6 @@ setUp
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto').
 	environment registerUser: (self getUserNamed: 'alberto') ifPresent: []. 
 
-	(BpmFrontOfficeRole getRoleNamed: 'approver' in: 'st') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'approver' in: 'st') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
 
 	procInstance := procDefinition createAndStartProcessInstance: nil. "this process is started by an anonymous user"

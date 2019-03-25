@@ -1,0 +1,4 @@
+*bpmcore
+defaultRoleClass
+
+	^BpmRole

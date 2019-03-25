@@ -32,9 +32,9 @@ setUp
 	environment registerUser: (self getUserNamed: 'andrew po') ifPresent: [].
 	environment registerUser: (self getUserNamed: 'andrew do') ifPresent: [].
 
-	(BpmFrontOfficeRole getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'visa manager' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'visa checker' in: 'ue') grantUser: (self getUserNamed: 'andrew vc') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'finance officer' in: 'ue') grantUser: (self getUserNamed: 'andrew fo') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'properties officer' in: 'ue') grantUser: (self getUserNamed: 'andrew po') ifPresent: [].
-	(BpmFrontOfficeRole getRoleNamed: 'debts officer' in: 'ue') grantUser: (self getUserNamed: 'andrew do') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa manager' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa checker' in: 'ue') grantUser: (self getUserNamed: 'andrew vc') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'finance officer' in: 'ue') grantUser: (self getUserNamed: 'andrew fo') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'properties officer' in: 'ue') grantUser: (self getUserNamed: 'andrew po') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'debts officer' in: 'ue') grantUser: (self getUserNamed: 'andrew do') ifPresent: [].

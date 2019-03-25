@@ -4,5 +4,5 @@
 	"instance" : {
 		"createProcessDefinition" : "brunobb 03/25/2019 08:22",
 		"formInstance_citizen_appliance_oop:assignOop:" : "brunobb 12/05/2018 11:16",
-		"setUp" : "brunobb 03/25/2019 08:48",
+		"setUp" : "brunobb 03/25/2019 09:07",
 		"testSendAndRedirect" : "brunobb 12/05/2018 11:44" } }

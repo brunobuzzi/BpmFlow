@@ -1,7 +1,7 @@
 other
 asFrontofficeRole
 
-	^BpmFrontOfficeRole new
+	^self defaultFrontOfficeRoleClass new
 		name: name;
 		isAdmin: isAdmin;
 		application: application;

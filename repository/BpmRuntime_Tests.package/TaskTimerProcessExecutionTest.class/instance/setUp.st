@@ -12,4 +12,4 @@ setUp
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vm').
 	environment registerUser: (self getUserNamed: 'andrew vm') ifPresent: [].
 
-	(BpmFrontOfficeRole createNewOrGetExisting: 'timer-role' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	(self defaultFrontOfficeRoleClass createNewOrGetExisting: 'timer-role' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].

@@ -11,8 +11,8 @@ setUp
 	
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew ap').
 	environment registerUser: (self getUserNamed: 'andrew ap').
-	(BpmFrontOfficeRole getRoleNamed: 'applicant' in: 'ue') grantUser: (self getUserNamed: 'andrew ap') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'applicant' in: 'ue') grantUser: (self getUserNamed: 'andrew ap') ifPresent: [].
 
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew se').
 	environment registerUser: (self getUserNamed: 'andrew se').
-	(BpmFrontOfficeRole getRoleNamed: 'seller' in: 'ue') grantUser: (self getUserNamed: 'andrew se') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'seller' in: 'ue') grantUser: (self getUserNamed: 'andrew se') ifPresent: [].

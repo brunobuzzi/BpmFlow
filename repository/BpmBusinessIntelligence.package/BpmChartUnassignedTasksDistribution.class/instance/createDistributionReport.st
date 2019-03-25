@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmFrontOfficeRole reportNumberOfUnassignedTasksFor: self applicationName.	
+	report := self defaultFrontOfficeRoleClass reportNumberOfUnassignedTasksFor: self applicationName.	
 	report name: (('Unassigned Tasks per Role (' translateFor: self user), report getTotalValue printString, ')');
 		description: (('Scope: Application Role [' translateFor: self user), self applicationName,']');
 		seriesName: ('Tasks' translateFor: self user);

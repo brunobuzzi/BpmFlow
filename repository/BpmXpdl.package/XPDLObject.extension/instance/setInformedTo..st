@@ -5,6 +5,6 @@ setInformedTo: aBpmActivityDefinition
 
 	(self hasExtendedAttribute: 'BizagiInformed') ifFalse: [^self].
 
-	role := BpmFrontOfficeRole createNewOrGetExisting: (self extendedValueOf: 'BizagiInformed') in: aBpmActivityDefinition applicationName.
+	role := self defaultFrontOfficeRoleClass createNewOrGetExisting: (self extendedValueOf: 'BizagiInformed') in: aBpmActivityDefinition applicationName.
 
 	aBpmActivityDefinition onAnyActionInformTo: role.

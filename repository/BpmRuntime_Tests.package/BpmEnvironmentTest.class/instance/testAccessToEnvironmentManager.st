@@ -16,7 +16,7 @@ testAccessToEnvironmentManager
 	self assert: (self defaultEnvironmentClass getAdminsEnvironment includesUserNamed: newUser username).
 	self deny: newUser hasAccessToEnvironmentManager.
 
-	adminRole := (BpmBackofficeRole getRolsIn: self defaultEnvironmentClass getAdminsEnvironment forApplication: self defaultBpmApplicationClass getAdminApplication) 
+	adminRole := (self defaultBackOfficeRoleClass getRolsIn: self defaultEnvironmentClass getAdminsEnvironment forApplication: self defaultBpmApplicationClass getAdminApplication) 
 						detect: [:each | each name = 'admin'] ifNone: [self assert: false].
 	adminRole grantUser: newUser.
 	self assert: newUser hasAccessToEnvironmentManager.

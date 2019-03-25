@@ -19,7 +19,7 @@ importConfiguration
 		configuration := BpmUserGrantConfiguration 
 				for: (self defaultBpmUserClass getExistingOrNewUserNamed: user)
 				app: application
-				role: (((roleType = 'F') ifTrue: [BpmFrontOfficeRole] ifFalse: [BpmBackofficeRole]) createNewOrGetExisting: role in: app).
+				role: (((roleType = 'F') ifTrue: [self defaultFrontOfficeRoleClass] ifFalse: [self defaultBackOfficeRoleClass]) createNewOrGetExisting: role in: app).
 		configuration role isAdmin: isAdmin.
 		configurations add: configuration.
 		].

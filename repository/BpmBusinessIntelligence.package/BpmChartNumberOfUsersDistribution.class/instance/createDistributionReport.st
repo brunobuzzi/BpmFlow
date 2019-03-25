@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmFrontOfficeRole reportNumberOfUsersDistributionFor: self applicationName.
+	report := self defaultFrontOfficeRoleClass reportNumberOfUsersDistributionFor: self applicationName.
 	report name: (('Users Distribution per Role (' translateFor: self user), report getTotalValue printString, ')');
 		description: (('Scope: Application Role [' translateFor: self user), self applicationName,']');
 		seriesName: ('Users' translateFor: self user);

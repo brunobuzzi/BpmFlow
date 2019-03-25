@@ -1,0 +1,4 @@
+*bpmcore
+defaultBackOfficeRoleClass
+
+	^BpmBackofficeRole

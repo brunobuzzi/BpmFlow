@@ -1,4 +1,4 @@
 other
 printRoleType
 
-	^(role class == BpmBackofficeRole) ifTrue: ['B'] ifFalse: ['F']
+	^(role class == self defaultBackOfficeRoleClass) ifTrue: ['B'] ifFalse: ['F']

@@ -1,4 +1,4 @@
 other
 getSelectedRole
 
-	^BpmFrontOfficeRole getRoleNamed: self getRoleName in: self getApplicationName
+	^self defaultFrontOfficeRoleClass getRoleNamed: self getRoleName in: self getApplicationName

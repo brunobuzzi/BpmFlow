@@ -14,4 +14,4 @@ setUp
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto').
 	environment registerUser: (self getUserNamed: 'alberto').
 
-	(BpmFrontOfficeRole getRoleNamed: 'manager' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'manager' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].

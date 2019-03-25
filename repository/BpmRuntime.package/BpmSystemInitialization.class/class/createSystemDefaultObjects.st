@@ -20,6 +20,6 @@ createSystemDefaultObjects
 	defaultEnvironment registerApplication: application;
 		registerUser: adminUser.
 
-	role := BpmBackofficeRole createNewOrGetExisting: 'admin' in: 'admins'.
+	role := self defaultBackOfficeRoleClass createNewOrGetExisting: 'admin' in: 'admins'.
 	role isAdmin: true. 
 	role grantUser: adminUser.
