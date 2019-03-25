@@ -7,6 +7,7 @@ initializeCurrentSystem
 	self defaultBpmUserClass initializeCache.
 	self defaultApplicationUserClass initializeCache.
 
+	BpmProcessDefinition initializeCache.
 	BpmAvailableTasksMatrix initializeCache.
 	BpmFinishedTasksMatrix initializeCache.
 	BpmTakenTasksMatrix initializeCache.
@@ -16,7 +17,6 @@ initializeCurrentSystem
 	BpmProcessInstanceCategory initializeCache.
 	BpmProcessDynamicCategory initializeCache.
 	BpmExceptionCalendar initializeCache.
-	BpmProcessDefinition initializeCache.
 
 	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
 	self defaultTimerEventMonitor initializeDefault.
