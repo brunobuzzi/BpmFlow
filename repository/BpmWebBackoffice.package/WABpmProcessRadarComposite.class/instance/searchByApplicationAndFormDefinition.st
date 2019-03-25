@@ -3,7 +3,7 @@ searchByApplicationAndFormDefinition
 	| application |
 	 "searchCollectionResult := OrbeonFormProcessDefinition getProcessInstancesOf: self getSelectedApplication ofFormNamed: self getSelectedFormDefinition."
 
-	application := self getApplicationManagerClass getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [nil].
+	application := self defaultApplicationManagerClass getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [nil].
 	application ifNil: [^searchCollectionResult := #()].
 
 	searchCollectionResult := (self getAvailableTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)) ,

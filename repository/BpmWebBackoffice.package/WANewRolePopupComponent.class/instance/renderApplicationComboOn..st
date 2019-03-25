@@ -7,7 +7,7 @@ renderApplicationComboOn: html
 		list: #(' '), ((self session user getBackofficeApplicationsIn: self session bpmEnvironment) collect: [:each | each getApplicationNameForCombo]) asSortedCollection; 
 		callback: [:value | | selectedApplication | 
 			selectedApplication :=  (value size > 9) 
-				ifTrue: [self getApplicationManagerClass getAnyApplicationNamed: (value allButLast: 9)]
+				ifTrue: [self defaultApplicationManagerClass getAnyApplicationNamed: (value allButLast: 9)]
 				ifFalse: [nil].
 			self addValue: selectedApplication applicationName named: 'application'.
 		]";

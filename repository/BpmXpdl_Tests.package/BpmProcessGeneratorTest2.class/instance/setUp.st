@@ -11,7 +11,7 @@ setUp
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
 	processGenerator 
-		mapProcess: 'Process with Scripts' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
+		mapProcess: 'Process with Scripts' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
 		generateAllProcess.
 
 	^processGenerator

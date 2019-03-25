@@ -3,7 +3,7 @@ initializeCurrentSystem
 	"WARNING: THIS METHOD WILL DELETE ALL ROOT OBJECTS FROM THE SYSTEM"
 
 	self defaultEnvironmentClass initializeCache.
-	self getApplicationManagerClass initializeCache.
+	self defaultApplicationManagerClass initializeCache.
 	self defaultBpmUserClass initializeCache.
 	self defaultApplicationUserClass initializeCache.
 

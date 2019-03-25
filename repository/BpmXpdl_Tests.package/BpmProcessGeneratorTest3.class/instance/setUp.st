@@ -12,8 +12,8 @@ setUp
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
 	processGenerator 
-		mapProcess: 'ReusableEmbeddedProc' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
-		mapProcess: 'Reusable-Script' toApplication: (self getApplicationManagerClass getAnyApplicationNamed: 'ue');
+		mapProcess: 'ReusableEmbeddedProc' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
+		mapProcess: 'Reusable-Script' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
 		generateAllProcess.
 
 	^processGenerator

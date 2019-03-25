@@ -3,7 +3,7 @@ searchByApplication
 	| application |
 
 	selectedObject := nil.
-	application := self getApplicationManagerClass getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [nil].
+	application := self defaultApplicationManagerClass getAnyApplicationNamed: (self searchValueAt: 'application') ifNone: [nil].
 	application ifNil: [^searchCollectionResult := #()].
 
 	self hasFormDefinition ifTrue: [^self searchByApplicationAndFormDefinition].

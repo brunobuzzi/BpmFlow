@@ -6,7 +6,7 @@ acceptTaskSendNode: aXPDLTaskSendNode
 	* Existence of the target gateway and target event"
 	| targetApplication targetProcesses |
 
-	targetApplication := self getApplicationManagerClass getAnyApplicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
+	targetApplication := self defaultApplicationManagerClass getAnyApplicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
 	targetProcesses := BpmProcessDefinition getAllProcessesNamed: aXPDLTaskSendNode getProcessName in: aXPDLTaskSendNode getApplicationName.
 
 	targetApplication ifNil: [self addMissingTargetApplicationItem].

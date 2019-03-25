@@ -4,7 +4,7 @@ testInitializeCurrentSystem
 	BpmSystemInitialization initializeCurrentSystem/
 
 	self assert: self defaultEnvironmentClass cache isEmpty.
-	self assert: self getApplicationManagerClass cache isEmpty.
+	self assert: self defaultApplicationManagerClass cache isEmpty.
 	self assert: self defaultBpmUserClass cache isEmpty.
 	self assert: self defaultApplicationUserClass cache isEmpty.
 

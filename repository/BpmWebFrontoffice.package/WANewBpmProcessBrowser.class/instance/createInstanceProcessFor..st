@@ -9,8 +9,8 @@ createInstanceProcessFor: anBpmProcessDefinition
 	processInstance := anBpmProcessDefinition createProcessInstance: self session user.
 
 	processInstance 
-		andContextApplications: ((andApplications collect: [:each | self getApplicationManagerClass getAnyApplicationNamed: each]) select: [:each | each notNil]);
-		orContextApplications: ((orApplications collect: [:each | self getApplicationManagerClass getAnyApplicationNamed: each]) select: [:each | each notNil]).
+		andContextApplications: ((andApplications collect: [:each | self defaultApplicationManagerClass getAnyApplicationNamed: each]) select: [:each | each notNil]);
+		orContextApplications: ((orApplications collect: [:each | self defaultApplicationManagerClass getAnyApplicationNamed: each]) select: [:each | each notNil]).
 
 	processInstance triggerStartEventWith: self session user.
 
