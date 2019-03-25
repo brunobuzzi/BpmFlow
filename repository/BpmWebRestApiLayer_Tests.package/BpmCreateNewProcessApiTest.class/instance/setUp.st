@@ -5,7 +5,7 @@ setUp
 	super setUp.
 
 	application := self defaultApplicationManagerClass getAnyApplicationNamed: 'st' ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
-	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-st'.
+	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-st'.
 	application hasBpmEnvironment ifFalse: [environment registerApplication: application].
 
 	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'Simple Registration' in: 'st'. "answer a collection with all versions"

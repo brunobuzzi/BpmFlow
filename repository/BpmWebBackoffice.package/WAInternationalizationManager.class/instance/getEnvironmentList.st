@@ -1,4 +1,4 @@
 other
 getEnvironmentList
 
-	^BpmEnvironment cache asArray
+	^self defaultEnvironmentClass cache asArray

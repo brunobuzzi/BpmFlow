@@ -7,9 +7,9 @@ testUsersMultiEnvironment
 	self defaultEnvironmentClass areUsersMultiEnvironment: true.
 
 	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'.
-	env1 := (BpmEnvironment newNamed: 'env1') addToCache.
+	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
-	env2 := (BpmEnvironment newNamed: 'env2') addToCache.
+	env2 := (self defaultEnvironmentClass newNamed: 'env2') addToCache.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
 
 	env1 registerUser: newUser.

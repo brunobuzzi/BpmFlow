@@ -6,7 +6,7 @@ setUp
 
 	processExecutionSimulator := PEFBpmProcessExecutor new.
 
-	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
 	application := self getOrbeonApplicationClass 
 							getAnyApplicationNamed: 'ue' 

@@ -1,4 +1,4 @@
 other
 getCurrentCollection
 
-	^BpmEnvironment cache
+	^self defaultEnvironmentClass cache

@@ -9,10 +9,10 @@ testUsersSingleEnvironment
 	self defaultEnvironmentClass areUsersMultiEnvironment: false.
 
 
-	env1 := (BpmEnvironment newNamed: 'env1') addToCache.
+	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
 	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred' password: ' ' forEnvironment: env1.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
-	env2 := (BpmEnvironment newNamed: 'env2') addToCache.
+	env2 := (self defaultEnvironmentClass newNamed: 'env2') addToCache.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
 
 	self assert: (env1 includesUserNamed: newUser username).

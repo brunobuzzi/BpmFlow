@@ -5,7 +5,7 @@ testUniqueUserNameInSingleEnvironment
 	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
 	self defaultEnvironmentClass areUsersMultiEnvironment: false.
 
-	env1 := (BpmEnvironment newNamed: 'env1') addToCache.
+	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
 
 	[newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'] on: ImproperBpmOperationException do: [:ex | self assert: newUser isNil].
 

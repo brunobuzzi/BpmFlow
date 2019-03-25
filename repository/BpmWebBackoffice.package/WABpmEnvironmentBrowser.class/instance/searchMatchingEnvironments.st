@@ -6,4 +6,4 @@ searchMatchingEnvironments
 
 	searchApplied := true.
 
-	^searchResult := BpmEnvironment cache select: [:each | (envName, '*') match: each name]
+	^searchResult := self defaultEnvironmentClass cache select: [:each | (envName, '*') match: each name]

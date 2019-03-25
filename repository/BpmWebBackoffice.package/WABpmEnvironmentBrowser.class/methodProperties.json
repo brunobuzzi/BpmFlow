@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getCurrentCollection" : "brunobb 02/06/2019 11:27",
+		"getCurrentCollection" : "brunobb 03/25/2019 08:33",
 		"getIconNameFormItem" : "brunobb 02/06/2019 11:27",
 		"getTextForItem:" : "brunobb 02/06/2019 11:27",
 		"gitbookUrl" : "brunobb 02/06/2019 11:27",
@@ -27,6 +27,6 @@
 		"renderSearchSubmitButtonOn:" : "brunobb 02/06/2019 11:27",
 		"renderSetEnvironmentIconsAndAppsNamesOn:" : "brunobb 02/06/2019 11:27",
 		"renderUsersOfSelectedEnvironmentOn:" : "brunobb 02/06/2019 11:30",
-		"searchMatchingEnvironments" : "brunobb 02/06/2019 11:27",
+		"searchMatchingEnvironments" : "brunobb 03/25/2019 08:34",
 		"selectedLateralItem:" : "brunobb 02/07/2019 09:03",
 		"sewafTableForUsers" : "brunobb 02/07/2019 08:31" } }

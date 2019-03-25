@@ -2,7 +2,7 @@ test
 testFormFieldValueAssignments
 	"<fieldRcCollection> - collection of the <BpmProcessDefinition>"
 
-	BpmEnvironment cache do: [:environment |
+	self defaultEnvironmentClass cache do: [:environment |
 		(BpmProcessDefinition getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
 			eachProcDef formFieldInstances do: [:formDictionary | 
 				formDictionary do: [:fieldRcCollection | 
