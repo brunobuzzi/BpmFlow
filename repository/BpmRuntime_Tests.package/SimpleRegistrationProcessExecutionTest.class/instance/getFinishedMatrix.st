@@ -1,4 +1,4 @@
 other
 getFinishedMatrix
 
-	^self getFinishedTasksMatrixClass getMatrixForApplicationNamed: 'st'
+	^self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: 'st'

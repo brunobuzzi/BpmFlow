@@ -2,7 +2,7 @@ execution
 addToAvailableMatrixForNextPerformer
 	"The receiver add itself to the global available assignment matrix for the next performer"
 
-	matrix := self getAvailableTasksMatrixClass
+	matrix := self defaultAvailableTasksMatrixClass
 				getMatrixForApplicationNamed: self applicationName 
 				ifAbsent: [NoMatrixForApplicationException signal: 'No Matrix for application named [', self applicationName, ']'].
 

@@ -19,8 +19,8 @@ resetCurrentSystem
 	BpmBackofficeRole initializeCache.
 	BpmFrontOfficeRole initializeCache.
 
-	self getAvailableTasksMatrixClass resetAllRolesAndAssignments.
+	self defaultAvailableTasksMatrixClass resetAllRolesAndAssignments.
 	self getTakenTasksMatrixClass resetAllRolesAndAssignments.
-	self getFinishedTasksMatrixClass resetAllRolesAndAssignments.
+	self defaultFinishedTasksMatrixClass resetAllRolesAndAssignments.
 
 	self defaultTimerEventMonitor initializeDefault.

@@ -5,7 +5,7 @@ getAllAvailableTaskAssignmentsIn: aBpmEnviroment
 
 	assignments := OrderedCollection new.
 	(self rolesIn: aBpmEnviroment) do: [:eachRole | | matrix |
-		matrix := self getAvailableTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
+		matrix := self defaultAvailableTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
 		assignments addAll: (matrix getAvailableTasksFor: eachRole name)].
 
 	^assignments select: [:each | each isAvailableFor: self]. "check for runtime context"

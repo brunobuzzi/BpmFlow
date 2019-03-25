@@ -4,7 +4,7 @@ getUnassignedTasksDistributionFor: appName
 
 	distribution := OrderPreservingDictionary new.
 	(self getRolsInAppName: appName) do: [:eachRole | | matrix |
-		matrix := self getAvailableTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
+		matrix := self defaultAvailableTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
 		distribution at: eachRole name put: (matrix getAvailableTasksFor: eachRole name) size].
 
 	^distribution
