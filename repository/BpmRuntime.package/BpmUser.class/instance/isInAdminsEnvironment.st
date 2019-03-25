@@ -1,4 +1,4 @@
 bpm environments
 isInAdminsEnvironment
 
-	^self defaultEnvironmentClass includesKey: self defaultEnvironmentClass adminsEnvironmentName
+	^bpmEnvironments includesKey: self defaultEnvironmentClass adminsEnvironmentName
