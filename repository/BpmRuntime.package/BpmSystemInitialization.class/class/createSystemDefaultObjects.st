@@ -12,7 +12,7 @@ createSystemDefaultObjects
 	defaultEnvironment := BpmEnvironment addDefaultEnvironment.
 	BpmExceptionCalendar addDefaultCalendarIn: defaultEnvironment. "set a default calendar for the environment"
 
-	self getBpmApplicationClass initializeCache.
+	self defaultBpmApplicationClass initializeCache.
 	application := 	(BpmApplication newNamed: 'admins') addToCache.
 
 	adminUser := self defaultBpmUserClass addAdminUser.

@@ -1,5 +1,5 @@
 *bpmcore
-getBpmApplicationClass
+defaultBpmApplicationClass
 	"The receiver answer the class used as Bpm applications holder"
 
-	^self class getBpmApplicationClass
+	^BpmApplication
