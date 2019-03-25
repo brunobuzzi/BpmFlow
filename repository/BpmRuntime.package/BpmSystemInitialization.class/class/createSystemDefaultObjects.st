@@ -15,7 +15,7 @@ createSystemDefaultObjects
 	self getBpmApplicationClass initializeCache.
 	application := 	(BpmApplication newNamed: 'admins') addToCache.
 
-	adminUser := BpmUser addAdminUser.
+	adminUser := self defaultBpmUserClass addAdminUser.
 
 	defaultEnvironment registerApplication: application;
 		registerUser: adminUser.

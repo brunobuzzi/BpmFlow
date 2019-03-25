@@ -4,4 +4,4 @@ validateUser: username password: password
 
 	password isEmpty ifTrue: [^false]. "the password can not be empty issue #766 - secure hash does not support empty string"
 
-	^BpmUser cache anySatisfy: [:each | each username = username and:[each password = (GRPlatform current secureHashFor: password)]]
+	^self defaultBpmUserClass cache anySatisfy: [:each | each username = username and:[each password = (GRPlatform current secureHashFor: password)]]

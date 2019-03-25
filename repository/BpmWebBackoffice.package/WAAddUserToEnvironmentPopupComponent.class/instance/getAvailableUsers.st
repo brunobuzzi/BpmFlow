@@ -2,7 +2,7 @@ other
 getAvailableUsers
 	| allUsers |
 
-	allUsers := (BpmUser cache reject: [:each | each hasAccessTo: self selectedEnvironment]) asSortedCollection: [:a :b | a username <= b username].
+	allUsers := (self defaultBpmUserClass cache reject: [:each | each hasAccessTo: self selectedEnvironment]) asSortedCollection: [:a :b | a username <= b username].
 
 	^self defaultEnvironmentClass areUsersMultiEnvironment
 	ifTrue: [allUsers]

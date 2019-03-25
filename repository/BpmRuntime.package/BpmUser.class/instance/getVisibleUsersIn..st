@@ -5,8 +5,8 @@ getVisibleUsersIn: aBpmEnvironment
 
 	self isBackofficeUser ifFalse: [^Dictionary new].
 
-	self isBackofficeUserAndAdmin ifTrue: [^BpmUser cache select: [:each | each hasAccessTo: aBpmEnvironment]].
+	self isBackofficeUserAndAdmin ifTrue: [^self class cache select: [:each | each hasAccessTo: aBpmEnvironment]].
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 
-	^BpmUser cache select: [:each | each includesAnyApplicationOf: applications in: aBpmEnvironment]
+	^self class cache select: [:each | each includesAnyApplicationOf: applications in: aBpmEnvironment]

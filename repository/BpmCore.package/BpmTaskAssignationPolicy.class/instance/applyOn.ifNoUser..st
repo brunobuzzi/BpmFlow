@@ -4,7 +4,7 @@ applyOn: aBpmTaskAssignment ifNoUser: aBlock
 	If no user can be assigned to <aBpmTaskAssignment> then evaluate the niladic block <aBlock>"
 	| possibleUsers sortedCollection |
 
-	possibleUsers := BpmUser getAvailableUsersToTake: aBpmTaskAssignment.
+	possibleUsers := self defaultBpmUserClass getAvailableUsersToTake: aBpmTaskAssignment.
 
 	possibleUsers ifEmpty: [^aBlock value].
 

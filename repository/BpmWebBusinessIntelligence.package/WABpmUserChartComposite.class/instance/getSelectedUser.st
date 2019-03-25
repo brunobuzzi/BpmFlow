@@ -1,4 +1,4 @@
 other
 getSelectedUser
 
-	^BpmUser getUserNamed: self getBpmUserName
+	^self defaultBpmUserClass getUserNamed: self getBpmUserName

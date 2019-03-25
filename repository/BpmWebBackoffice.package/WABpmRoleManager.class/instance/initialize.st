@@ -6,7 +6,7 @@ initialize
 	isAddingUser := false.
 	isBackoffice := false.
 	isAdmin := false.
-	newUser := BpmUser new.
+	newUser := self defaultBpmUserClass new.
 
 	self initializeBatchedLists.
 

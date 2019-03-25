@@ -17,7 +17,7 @@ importConfiguration
 		[application addToCache] on: Exception do: [:ex | ].
 
 		configuration := BpmUserGrantConfiguration 
-				for: (BpmUser getExistingOrNewUserNamed: user)
+				for: (self defaultBpmUserClass getExistingOrNewUserNamed: user)
 				app: application
 				role: (((roleType = 'F') ifTrue: [BpmFrontOfficeRole] ifFalse: [BpmBackofficeRole]) createNewOrGetExisting: role in: app).
 		configuration role isAdmin: isAdmin.
