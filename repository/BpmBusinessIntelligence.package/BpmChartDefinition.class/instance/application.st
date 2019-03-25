@@ -1,4 +1,4 @@
 other
 application
 
-	^AbstractApplication getAnyApplicationNamed: self applicationName ifNone: [nil]
+	^self defaultApplicationManagerClass getAnyApplicationNamed: self applicationName ifNone: [nil]

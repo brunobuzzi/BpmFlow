@@ -14,7 +14,7 @@ resetCurrentSystem
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.
 	BpmProcessDynamicCategory resetAllCategorizedProcesses.
 
-	AbstractApplication initializeCache.
+	self defaultApplicationManagerClass initializeCache.
 
 	self defaultBackOfficeRoleClass initializeCache.
 	self defaultFrontOfficeRoleClass initializeCache.
