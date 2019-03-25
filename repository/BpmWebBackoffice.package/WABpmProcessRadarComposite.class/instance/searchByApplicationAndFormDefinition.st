@@ -7,7 +7,7 @@ searchByApplicationAndFormDefinition
 	application ifNil: [^searchCollectionResult := #()].
 
 	searchCollectionResult := (self defaultAvailableTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)) ,
-										(self getTakenTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)).
+										(self defaultTakenTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)).
 
 	searchCollectionResult := ((searchCollectionResult select: [:each | each process hasCurrentActivityNamed: self getSelectedFormDefinition])
 											collect: [:each | each process]) asSet asOrderedCollection

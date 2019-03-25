@@ -9,7 +9,7 @@ searchByApplication
 	self hasFormDefinition ifTrue: [^self searchByApplicationAndFormDefinition].
 
 	searchCollectionResult := (self defaultAvailableTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)) ,
-										(self getTakenTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)).
+										(self defaultTakenTasksMatrixClass getAllAvailableTaskAssignmentsInApplications: (OrderedCollection with: application)).
 
 	searchCollectionResult := searchCollectionResult collect: [:each | each process].
 
