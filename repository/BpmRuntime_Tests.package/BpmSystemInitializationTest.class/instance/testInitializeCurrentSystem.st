@@ -8,7 +8,7 @@ testInitializeCurrentSystem
 	self assert: self defaultBpmUserClass cache isEmpty.
 	self assert: self defaultApplicationUserClass cache isEmpty.
 
-	self assert: BpmProcessDefinition cache isEmpty.
+	self assert: self defaultProcessDefinitionClass cache isEmpty.
 	self assert: BpmAvailableTasksMatrix cache isEmpty.
 	self assert: BpmFinishedTasksMatrix cache isEmpty.
 	self assert: BpmTakenTasksMatrix cache isEmpty.

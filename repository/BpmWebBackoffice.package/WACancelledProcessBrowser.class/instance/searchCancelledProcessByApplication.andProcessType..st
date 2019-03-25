@@ -7,7 +7,7 @@ searchCancelledProcessByApplication: appName andProcessType: procName
 
 	cancelledProcess := OrderedCollection new.
 	
-	(BpmProcessDefinition getAllProcessesNamed: procName in: appName) do: [:eachProcDef | 
+	(self defaultProcessDefinitionClass getAllProcessesNamed: procName in: appName) do: [:eachProcDef | 
 		 cancelledProcess addAll: eachProcDef abortedProcesses.
 	].
 

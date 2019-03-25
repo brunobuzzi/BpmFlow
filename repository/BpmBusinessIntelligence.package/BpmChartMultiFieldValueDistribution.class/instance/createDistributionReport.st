@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmProcessDefinition reportValueSumMultiDistributionFor: fieldsCollection.
+	report := self defaultProcessDefinitionClass reportValueSumMultiDistributionFor: fieldsCollection.
 
 	report name: ('Multi Field Value Evolution' translateFor: self user);
 		description: (('Total: ' translateFor: self user), report getTotalValue printString);

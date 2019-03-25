@@ -11,7 +11,7 @@ searchMatchingProcessesRange
 	(self hasSelectedApplication and:[self hasFormDefinition and:[self hasFormField not]])
 	ifTrue: [^self searchByApplicationAndFormDefinition].
 
-	assignments := BpmProcessDefinition getAssignmentsIn: self getSelectedApplication 
+	assignments := self defaultProcessDefinitionClass getAssignmentsIn: self getSelectedApplication 
 							processName: self getProcessType 
 							formName: self getSelectedFormDefinition 
 							fieldName: self getSelectedFormField

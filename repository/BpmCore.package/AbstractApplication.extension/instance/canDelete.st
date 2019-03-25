@@ -4,5 +4,5 @@ canDelete
 
 	^(BpmBackofficeRole getRolsIn: bpmEnvironment forApplication: self) isEmpty and: [
 		(BpmFrontOfficeRole getRolsIn: bpmEnvironment forApplication: self) isEmpty and: [
-		(BpmProcessDefinition hasAnyProcessApplicationNamed: applicationName) not
+		(self defaultProcessDefinitionClass hasAnyProcessApplicationNamed: applicationName) not
 		]]

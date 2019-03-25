@@ -3,7 +3,7 @@ testFormFieldValueAssignments
 	"<fieldRcCollection> - collection of the <BpmProcessDefinition>"
 
 	self defaultEnvironmentClass cache do: [:environment |
-		(BpmProcessDefinition getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
+		(self defaultProcessDefinitionClass getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
 			eachProcDef formFieldInstances do: [:formDictionary | 
 				formDictionary do: [:fieldRcCollection | 
 					fieldRcCollection do: [:appFieldValue |  | formInstance assignment process valueHolder |

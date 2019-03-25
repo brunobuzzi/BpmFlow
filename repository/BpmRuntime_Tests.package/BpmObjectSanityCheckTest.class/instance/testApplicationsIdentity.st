@@ -6,7 +6,7 @@ testApplicationsIdentity
 	applications := AbstractApplication cache asArray.
 
 	self defaultEnvironmentClass cache do: [:environment |
-		(BpmProcessDefinition getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
+		(self defaultProcessDefinitionClass getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
 			self assert: (applications anySatisfy: [:eachApp | eachApp == eachProcDef application]).
 		]
 	].

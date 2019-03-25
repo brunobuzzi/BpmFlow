@@ -10,10 +10,10 @@ searchProcessId
 	contextApplications := 
 		((self session user getBackofficeApplicationsIn: self session bpmEnvironment)
 			collect: [:each | 
-				BpmProcessDefinition cacheAt: each applicationName ifAbsent: [nil]]) 
+				self defaultProcessDefinitionClass cacheAt: each applicationName ifAbsent: [nil]]) 
 		select: [:each | each notNil].
 
-	searchCollectionResult := (BpmProcessDefinition getProcessInstanceWithId: id onApplications: contextApplications) 
+	searchCollectionResult := (self defaultProcessDefinitionClass getProcessInstanceWithId: id onApplications: contextApplications) 
 										ifNil: [#()] 
 										ifNotNil: [:object | OrderedCollection with: object].
 

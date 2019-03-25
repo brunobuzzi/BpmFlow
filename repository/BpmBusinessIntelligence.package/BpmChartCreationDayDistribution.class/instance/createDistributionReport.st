@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmProcessDefinition reportCreationDayFor: self processName 
+	report := self defaultProcessDefinitionClass reportCreationDayFor: self processName 
 								in: self applicationName 
 								version: self version 
 								from: self startDate 

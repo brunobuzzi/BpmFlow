@@ -2,7 +2,7 @@ search area
 getSelectedProcessDefinitionOrNil
 	| definitions |
 
-	definitions := BpmProcessDefinition 
+	definitions := self defaultProcessDefinitionClass 
 							getAllProcessesNamed: (self searchValueAt: 'process-type' ifAbsent: ['']) 
 							in: (self searchValueAt: 'application' ifAbsent: ['']).
 

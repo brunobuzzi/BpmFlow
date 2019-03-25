@@ -1,4 +1,4 @@
 report distribution
 getProcessInstancesDistribution
 
-	^BpmProcessDefinition reportProcessInstancesQuantityDistributionIn: self bpmEnvironment
+	^self defaultProcessDefinitionClass reportProcessInstancesQuantityDistributionIn: self bpmEnvironment

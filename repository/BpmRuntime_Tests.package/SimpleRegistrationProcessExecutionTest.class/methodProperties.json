@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessDefinition" : "brunobb 03/25/2019 08:23",
+		"createProcessDefinition" : "brunobb 03/25/2019 08:49",
 		"formInstance_registration_approval" : "brunobb 11/08/2018 08:44",
 		"formInstance_simple_registration" : "brunobb 11/08/2018 08:44",
 		"getAssignmentFor:" : "brunobb 01/31/2018 09:59",
 		"getFinishedMatrix" : "brunobb 03/25/2019 08:15",
-		"setUp" : "brunobb 03/25/2019 08:34",
+		"setUp" : "brunobb 03/25/2019 08:47",
 		"testAssignationPolicyDefinedInBizagi" : "brunobb 03/12/2018 10:41",
-		"testExecuteProcess_simpleRegistration_approved" : "brunobb 11/09/2018 10:02" } }
+		"testExecuteProcess_simpleRegistration_approved" : "brunobb 03/25/2019 08:46" } }

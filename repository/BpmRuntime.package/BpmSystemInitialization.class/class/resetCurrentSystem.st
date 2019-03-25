@@ -2,7 +2,7 @@ system initilization
 resetCurrentSystem
 	"WARNING: This method will remove all objects in the System but it will keep <BpmUser>s"
 
-	BpmProcessDefinition 
+	self defaultProcessDefinitionClass 
 			removeAllDefinitions; 
 			removeAllFormFieldInstances;
 			initializeAnonymousFormMapping.

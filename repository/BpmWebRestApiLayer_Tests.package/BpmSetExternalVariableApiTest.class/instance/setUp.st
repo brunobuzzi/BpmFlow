@@ -6,7 +6,7 @@ setUp
 
 	apiOperation := BpmSetExternalVariableApi new.
 
-	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
+	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.

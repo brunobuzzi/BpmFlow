@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	procDefinition := BpmProcessDefinition getAllProcessesNamed: 'timer-process-start-simple' in: 'ue'. "answer a collection with all versions"
+	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'timer-process-start-simple' in: 'ue'. "answer a collection with all versions"
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 

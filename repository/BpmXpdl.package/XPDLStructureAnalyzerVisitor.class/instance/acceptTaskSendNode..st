@@ -7,7 +7,7 @@ acceptTaskSendNode: aXPDLTaskSendNode
 	| targetApplication targetProcesses |
 
 	targetApplication := self defaultApplicationManagerClass getAnyApplicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
-	targetProcesses := BpmProcessDefinition getAllProcessesNamed: aXPDLTaskSendNode getProcessName in: aXPDLTaskSendNode getApplicationName.
+	targetProcesses := self defaultProcessDefinitionClass getAllProcessesNamed: aXPDLTaskSendNode getProcessName in: aXPDLTaskSendNode getApplicationName.
 
 	targetApplication ifNil: [self addMissingTargetApplicationItem].
 	targetProcesses isEmpty ifTrue: [self addMissingTargetProcessesItem].

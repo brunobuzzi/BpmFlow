@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := BpmProcessDefinition reportProcessInstancesQuantityByVersionDistributionFor: self applicationName.
+	report := self defaultProcessDefinitionClass reportProcessInstancesQuantityByVersionDistributionFor: self applicationName.
 	report name: (('Distribution of BPM Process Instances' translateFor: self user),  ' (' , report getTotalValue printString, ')');
 		description: ('Scope: ', self scope scopeName translateFor: self user);
 		seriesName: 'Instances';

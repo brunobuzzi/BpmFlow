@@ -1,4 +1,4 @@
 other
 selectedProcessDefinition
 
-	^BpmProcessDefinition getAllProcessesNamed: self getProcessType in: self getSelectedApplication
+	^self defaultProcessDefinitionClass getAllProcessesNamed: self getProcessType in: self getSelectedApplication

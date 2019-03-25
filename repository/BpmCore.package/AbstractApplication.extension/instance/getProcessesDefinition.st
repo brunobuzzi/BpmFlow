@@ -1,4 +1,4 @@
 *bpmcore
 getProcessesDefinition
 
-	^BpmProcessDefinition cacheAt: applicationName ifAbsent: [#()]
+	^self defaultProcessDefinitionClass cacheAt: applicationName ifAbsent: [#()]

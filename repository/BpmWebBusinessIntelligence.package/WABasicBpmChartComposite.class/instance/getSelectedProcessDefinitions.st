@@ -2,7 +2,7 @@ query variables
 getSelectedProcessDefinitions
 	| versions |
 
-	versions := BpmProcessDefinition getAllProcessesNamed: self getProcessName in: self getApplicationName.
+	versions := self defaultProcessDefinitionClass getAllProcessesNamed: self getProcessName in: self getApplicationName.
 
 	self isAllVersionSelected ifTrue: [^versions].
 

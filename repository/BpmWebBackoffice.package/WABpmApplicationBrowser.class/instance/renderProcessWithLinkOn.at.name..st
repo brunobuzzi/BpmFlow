@@ -6,7 +6,7 @@ renderProcessWithLinkOn: html at: aPoint name: procName
 	ifTrue: [canvas drawSubProcessActivityNamed: procName at: aPoint extent: 180@60 textSizePx: '12px'.] 
 	ifFalse: [canvas drawSubProcessActivityNamed: procName at: aPoint extent: 180@60]."
 
-	procDefinition := BpmProcessDefinition  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
+	procDefinition := self defaultProcessDefinitionClass  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
 	procDefinition isTopProcess ifFalse: [^self].
 	versionsInfo :=  procDefinition version ifNil: ['v1'] ifNotNil: [:ver | 'v',ver printString]. 
 	bpmnCanvas2 := WABpmnCanvasComposite parent: self.

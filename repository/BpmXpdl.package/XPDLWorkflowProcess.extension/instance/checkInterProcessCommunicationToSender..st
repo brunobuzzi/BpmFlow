@@ -5,7 +5,7 @@ checkInterProcessCommunicationToSender: aXPDLTaskSendNode
 
 	warnings := OrderedCollection new.
 	targetApplication := self defaultApplicationManagerClass getAnyApplicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
-	targetProcesses := BpmProcessDefinition getAllProcessesNamed: aXPDLTaskSendNode processName in: aXPDLTaskSendNode getApplicationName.
+	targetProcesses := self defaultProcessDefinitionClass getAllProcessesNamed: aXPDLTaskSendNode processName in: aXPDLTaskSendNode getApplicationName.
 	
 	targetApplication ifNil: [warnings add: (self xpdlItemReportClass new 
 															code: 500;

@@ -13,7 +13,7 @@ isCreationRejectedFor: anOrbeonSavedFormDefinition withId: id appName: appName f
 	So if aBpmProcessDefinition already exist (using) FormDefinitions 
 	--> app name and form name can NOT be renamed."
 	anOrbeonSavedFormDefinition ifNotNil: [ 
-		(BpmProcessDefinition getAllVersionsIn: anOrbeonSavedFormDefinition getApplicationName) do: [:eachDef | 
+		(self defaultProcessDefinitionClass getAllVersionsIn: anOrbeonSavedFormDefinition getApplicationName) do: [:eachDef | 
 			(eachDef getOrbeonTasks anySatisfy: [:eachTask | anOrbeonSavedFormDefinition notNil and: 
 																					[(eachTask name = anOrbeonSavedFormDefinition formName) and: 
 																					[anOrbeonSavedFormDefinition id ~= id]]]) 

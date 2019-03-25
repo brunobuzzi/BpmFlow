@@ -1,4 +1,4 @@
 other
 getProcessDefinitionCache
 
-	^BpmProcessDefinition cache
+	^self defaultProcessDefinitionClass cache

@@ -2,7 +2,7 @@ search area
 renderProcessTypeComboOn: html
 	| definitionsNames |
 
-	definitionsNames  := (BpmProcessDefinition getAllVersionsIn: self getSelectedApplication) collect: [:each | each processName].
+	definitionsNames  := (self defaultProcessDefinitionClass getAllVersionsIn: self getSelectedApplication) collect: [:each | each processName].
 
 	html div class: 'top-search-div'; with: [
 		html label 

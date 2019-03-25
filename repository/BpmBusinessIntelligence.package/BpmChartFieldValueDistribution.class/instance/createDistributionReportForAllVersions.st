@@ -5,7 +5,7 @@ createDistributionReportForAllVersions
 	fieldInstancesCollection := OrderedCollection new.
 	self scope processes do: [:procDef | fieldInstancesCollection addAll: (procDef fieldInstancesOf: self fieldName in: self formName)].
 
-	report := BpmProcessDefinition reportValueDistributionForFieldCollection: fieldInstancesCollection from: self startDate to: self endDate satisfying: self queryBlock.
+	report := self defaultProcessDefinitionClass reportValueDistributionForFieldCollection: fieldInstancesCollection from: self startDate to: self endDate satisfying: self queryBlock.
 	report 
 		applicationName: self applicationName;
 		processName: self processName;

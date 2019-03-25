@@ -5,7 +5,7 @@
 	"instance" : {
 		"createAverageTimeDistributionReport" : "brunobb 06/01/2018 11:09",
 		"getDistributionOptions" : "brunobb 06/01/2018 11:09",
-		"getProcessInstancesDistribution" : "brunobb 06/01/2018 11:09",
+		"getProcessInstancesDistribution" : "brunobb 03/25/2019 08:43",
 		"getProcessInstancesXtitle" : "brunobb 06/01/2018 11:09",
 		"initialize" : "brunobb 06/01/2018 11:09",
 		"isForSpecificVersion" : "brunobb 06/01/2018 11:09",
