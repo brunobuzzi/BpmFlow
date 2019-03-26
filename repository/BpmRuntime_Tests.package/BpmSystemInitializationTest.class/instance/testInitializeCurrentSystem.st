@@ -1,12 +1,12 @@
 tests
 testInitializeCurrentSystem
 
-	BpmSystemInitialization initializeCurrentSystem/
+	BpmSystemInitialization initializeCurrentSystem.
 
 	self assert: self defaultEnvironmentClass cache isEmpty.
 	self assert: self defaultApplicationManagerClass cache isEmpty.
-	self assert: self defaultBpmUserClass cache isEmpty.
 	self assert: self defaultApplicationUserClass cache isEmpty.
+	self assert: self defaultBpmUserClass cache isEmpty.
 
 	self assert: self defaultProcessDefinitionClass cache isEmpty.
 	self assert: self defaultAvailableTasksMatrixClass cache isEmpty.
