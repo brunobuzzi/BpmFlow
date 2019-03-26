@@ -1,6 +1,6 @@
 system initilization
 resetCurrentSystem
-	"WARNING: This method will remove all objects in the System but it will keep <BpmUser>s"
+	"WARNING: This method will remove all objects in the System but it will keep <BpmEnvironment> and <BpmUser> "
 
 	self defaultProcessDefinitionClass 
 			removeAllDefinitions; 
@@ -10,6 +10,8 @@ resetCurrentSystem
 	self defaultBpmUserClass cache do: [:each | each resetMessagesBoxesAndRoles].
 	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
 	
+	BpmExceptionCalendar removeUnusedCalendars.	
+
 	BpmProcessDefinitionCategory resetAllCategorizedProcesses.
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.
 	BpmProcessDynamicCategory resetAllCategorizedProcesses.
