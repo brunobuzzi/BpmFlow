@@ -1,5 +1,5 @@
 execution
-getAssignmentAndAssociate: aBpmTaskInstance withForm: anOrbeonFormInstance on: aBpmProcessInstance
+getAssignmentAndAssociate: aBpmTaskInstance withForm: anOrbeonFormInstanceOrBusinessObject on: aBpmProcessInstance
 	"The receiver get the <aBpmTaskAssignment> for <aBpmTaskInstance> from the <aBpmTasksHolderMatrix> and associate the three:
 	<aBpmTaskInstance> <--> <anOrbeonFormInstance>
 	<aBpmTaskAssignment> <--> <anOrbeonFormInstance>"
@@ -7,7 +7,10 @@ getAssignmentAndAssociate: aBpmTaskInstance withForm: anOrbeonFormInstance on: a
 
 	assignment := self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance.
 
-	aBpmTaskInstance externalObject: anOrbeonFormInstance.
-	anOrbeonFormInstance assignment: assignment.
+	aBpmTaskInstance externalObject: anOrbeonFormInstanceOrBusinessObject.
+
+	[anOrbeonFormInstanceOrBusinessObject assignment: assignment]
+		on: Error 
+		do: [:ex | PEFNoAssignmentAssociationException signal: anOrbeonFormInstanceOrBusinessObject className, ' must implement #assignment: message !'  ] . 
 
 	^assignment
