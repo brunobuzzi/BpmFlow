@@ -16,7 +16,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
 
 	assignment := aBpmProcessInstance getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-	self processExecutionSimulator associate: assignment withForm: (self formInstance_check_previous_appliance: aBpmProcessInstance) on: aBpmProcessInstance.
+	self processExecutionSimulator associate: assignment withForm: (self formInstance_check_previous_appliance: aBpmProcessInstance).
 	self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: aBpmProcessInstance.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.
@@ -37,7 +37,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 		self assert: (currentTask getDefinitionName = 'check-applicant-record').
 
 		assignment := subProcessL1 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-		self processExecutionSimulator associate: assignment withForm: (self formInstance_check_applicant_record: subProcessL1) on: subProcessL1.
+		self processExecutionSimulator associate: assignment withForm: (self formInstance_check_applicant_record: subProcessL1).
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL1.
 
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
@@ -48,7 +48,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 		self assert: (currentTask getDefinitionName = 'applicant-home-office-report').
 
 		assignment := subProcessL1 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-		self processExecutionSimulator associate: assignment withForm: (self formInstance_applicant_home_office_report: subProcessL1) on: subProcessL1.
+		self processExecutionSimulator associate: assignment withForm: (self formInstance_applicant_home_office_report: subProcessL1).
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL1.
 
 		self assert: ((subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) size = 2).
@@ -68,7 +68,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 			self assert: (currentTask getDefinitionName = 'check-accounts').
 
 			assignment := subProcessL2 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_accounts: subProcessL2) on: subProcessL2.
+			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_accounts: subProcessL2).
 			self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL2.
 
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
@@ -79,7 +79,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 			self assert: (currentTask getDefinitionName = 'check-properties').
 
 			assignment := subProcessL2 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_properties: subProcessL2) on: subProcessL2.
+			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_properties: subProcessL2).
 			self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL2.
 
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'properties officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
@@ -90,7 +90,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 			self assert: (currentTask getDefinitionName = 'check-debts').
 
 			assignment := subProcessL2 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_debts: subProcessL2) on: subProcessL2.
+			self processExecutionSimulator associate: assignment withForm: (self formInstance_check_debts: subProcessL2).
 			self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL2.
 
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'debts officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
@@ -101,7 +101,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 			self assert: (currentTask getDefinitionName = 'financial-report').
 
 			assignment := subProcessL2 getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-			self processExecutionSimulator associate: assignment withForm: (self formInstance_financial_report: subProcessL2) on: subProcessL2.
+			self processExecutionSimulator associate: assignment withForm: (self formInstance_financial_report: subProcessL2).
 			self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: subProcessL2.
 
 			self assert: (subProc2CurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProc2Id}) isEmpty.
@@ -120,7 +120,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: (currentTask getDefinitionName = 'analyze-appliance').
 
 	assignment := aBpmProcessInstance getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-	self processExecutionSimulator associate: assignment withForm: (self formInstance_analyze_appliance: aBpmProcessInstance) on: aBpmProcessInstance.
+	self processExecutionSimulator associate: assignment withForm: (self formInstance_analyze_appliance: aBpmProcessInstance).
 	self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: aBpmProcessInstance.
 
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 2).
@@ -135,7 +135,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: (currentTask getDefinitionName = 'emit-visa').
 
 	assignment := aBpmProcessInstance getCurrentTaskAssignmentFor: currentTask ifNone: [self assert: false].
-	self processExecutionSimulator associate: assignment withForm: (self formInstance_emit_visa: aBpmProcessInstance) on: aBpmProcessInstance.
+	self processExecutionSimulator associate: assignment withForm: (self formInstance_emit_visa: aBpmProcessInstance).
 	self processExecutionSimulator finalizeAssignment: assignment withUserNamed: assignment getUsername on: aBpmProcessInstance.
 
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 3).

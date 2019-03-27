@@ -39,15 +39,15 @@ test_fairAssignation_visaAccepted
 	"Here we send all 10 processes to the second task <check-basic-data> by finalizing current task <citizen-appliance> "
 	"Step 1 - Form [citizen-appliance]" 
 	(((self getUserNamed: 'andrew vo') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
-		self processExecutionSimulator associate: assignment withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
+		self processExecutionSimulator associate: assignment withForm: (self formInstance_citizen_appliance: assignment process).
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: 'andrew vo' on: assignment process.
 	].
 	(((self getUserNamed: 'andrew vo2') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
-		self processExecutionSimulator associate: assignment withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
+		self processExecutionSimulator associate: assignment withForm: (self formInstance_citizen_appliance: assignment process).
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: 'andrew vo2' on: assignment process.
 	].
 	(((self getUserNamed: 'andrew vo3') getCurrentAssignmentsIn: self bpmEnvironment) select: [:each | (newRoundRobinProcesses identityIncludes: each process) and:[each taskName = 'citizen-appliance']]) do: [:assignment | 
-		self processExecutionSimulator associate: assignment  withForm: (self formInstance_citizen_appliance: assignment process) on: assignment process.
+		self processExecutionSimulator associate: assignment  withForm: (self formInstance_citizen_appliance: assignment process).
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: 'andrew vo3' on: assignment process.
 	].
 

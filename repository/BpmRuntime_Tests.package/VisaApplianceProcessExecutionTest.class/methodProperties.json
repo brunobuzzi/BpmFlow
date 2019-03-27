@@ -26,8 +26,8 @@
 		"formInstance_financial_report:" : "brunobb 11/08/2018 08:44",
 		"resumeAssignFromTask2AndTestProcess:" : "brunobb 11/09/2018 10:13",
 		"resumeAssignFromTask3AndTestProcess:" : "brunobb 11/09/2018 09:50",
-		"resumeFromTask2AndTestProcess:" : "brunobb 11/09/2018 10:18",
-		"resumeFromTask3AndTestProcess:" : "brunobb 11/09/2018 10:19",
+		"resumeFromTask2AndTestProcess:" : "brunobb 03/27/2019 08:43",
+		"resumeFromTask3AndTestProcess:" : "brunobb 03/27/2019 08:45",
 		"setUp" : "brunobb 03/25/2019 09:08",
 		"startAssignFinishAndTestProcess:" : "brunobb 01/25/2019 10:24",
 		"tearDown" : "BrunoBB 03/26/2016 15:51",
@@ -47,6 +47,6 @@
 		"testExecuteProcess_visaAnalizeAndRejected" : "brunobb 11/09/2018 10:12",
 		"testExecuteProcess_visaRejected" : "brunobb 11/09/2018 10:17",
 		"testFieldsInGatewayConditions" : "BrunoBB 04/19/2016 16:13",
-		"test_fairAssignation_visaAccepted" : "brunobb 03/25/2019 09:12",
-		"test_roundRobinRoleAssignation_visaAccepted" : "brunobb 03/25/2019 09:12",
-		"test_roundRobinTaskAssignation_visaAccepted" : "brunobb 03/25/2019 09:09" } }
+		"test_fairAssignation_visaAccepted" : "brunobb 03/27/2019 08:45",
+		"test_roundRobinRoleAssignation_visaAccepted" : "brunobb 03/27/2019 08:46",
+		"test_roundRobinTaskAssignation_visaAccepted" : "brunobb 03/27/2019 08:46" } }
