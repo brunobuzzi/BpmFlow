@@ -6,9 +6,9 @@ tryLogin
 	loginMode := self getGemStoneServerConfiguration loginModeFor: 'orbeon-processes-web'.
 	(loginMode validateUser: name password: password) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
-	logedUser := self defaultUserClass getExistingOrNewUserNamed: name.
+	logedUser := self defaultUserClass getUserNamed: name.
 
-	(self checkAccessToApplicationFor: logedUser) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
+	(logedUser notNil and: [self checkAccessToApplicationFor: logedUser]) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
 	self defaultEnvironmentClass areUsersMultiEnvironment 
 	ifTrue: [(logedUser getBpmEnvironments anySatisfy: [:each | each == self session bpmEnvironment]) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1]]
