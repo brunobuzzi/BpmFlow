@@ -1,0 +1,4 @@
+*bpmWebRestApiLayer
+registerRestComponents
+
+	WABpmPersistenceOrbeonLayer register.

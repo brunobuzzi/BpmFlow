@@ -1,0 +1,4 @@
+*bpmWebRestApiLayer
+unregisterRestComponents
+
+	WABpmPersistenceOrbeonLayer unregister.

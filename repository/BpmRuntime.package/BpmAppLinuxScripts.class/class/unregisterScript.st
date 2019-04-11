@@ -3,8 +3,6 @@ unregisterScript
 
 	super unregisterScript.
 
-	WABpmPersistenceOrbeonLayer unregister.
+	self unregisterRestComponents.
 
-	WABpmCentralPortal unregister. 
-
-	WABpmProcessCreationStaticMessage unregister.
+	self unregisterWebComponents.

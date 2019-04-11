@@ -3,8 +3,6 @@ registerScript
 
 	super registerScript.
 
-	WABpmPersistenceOrbeonLayer register.
+	self registerRestComponents.
 
-	WABpmCentralPortal register. 
-
-	WABpmProcessCreationStaticMessage register.
+	self registerWebComponents.
