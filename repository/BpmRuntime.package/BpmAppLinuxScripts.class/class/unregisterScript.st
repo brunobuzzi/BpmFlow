@@ -5,10 +5,6 @@ unregisterScript
 
 	WABpmPersistenceOrbeonLayer unregister.
 
-	WABpmFrontofficeLogin unregister. 
-
-	WABpmBackofficeLogin unregister.
-
-	WABpmBIandChartsLogin unregister.
+	WABpmCentralPortal unregister. 
 
 	WABpmProcessCreationStaticMessage unregister.
