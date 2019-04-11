@@ -17,7 +17,7 @@ testSendMessageLoanRejected
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
-	apiOperation := BpmSendMessageToProcessApi newFor: WAOrbeonProcessLayer new withXml: self bodyExample2.
+	apiOperation := BpmSendMessageToProcessApi newFor: WABpmPersistenceOrbeonLayer new withXml: self bodyExample2.
 	apiOperation appName: 'ue';
 		processName: 'House Purchase with Loan';
 		gatewayName: 'loan event';

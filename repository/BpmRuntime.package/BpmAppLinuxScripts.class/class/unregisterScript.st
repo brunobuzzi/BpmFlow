@@ -3,7 +3,7 @@ unregisterScript
 
 	super unregisterScript.
 
-	WAOrbeonProcessLayer unregister.
+	WABpmPersistenceOrbeonLayer unregister.
 
 	WABpmFrontofficeLogin unregister. 
 

@@ -3,7 +3,7 @@ registerScript
 
 	super registerScript.
 
-	WAOrbeonProcessLayer register.
+	WABpmPersistenceOrbeonLayer register.
 
 	WABpmFrontofficeLogin register. 
 
