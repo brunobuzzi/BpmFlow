@@ -48,7 +48,7 @@ baseline: spec
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
-		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
+		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('BpmRuntime' 'Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmWebRestApiLayer_Tests' with: [spec requires: #('BpmWebRestApiLayer')].
 		spec package: 'BpmXpdlBizagiReader_Tests' with: [spec requires: #('BpmXpdlBizagiReader' 'BpmXpdlTemplates')].
 		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmXpdlBizagiReader')].
