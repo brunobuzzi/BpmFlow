@@ -1,4 +1,4 @@
-other
+render transitions
 renderTransitionSummaryOn: html for: aBpmArtifactInstance
 
 	html header with: [html strong: (aBpmArtifactInstance summaryTitle translateIn: self session)].

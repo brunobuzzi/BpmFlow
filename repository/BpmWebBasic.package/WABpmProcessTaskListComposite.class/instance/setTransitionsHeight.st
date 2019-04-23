@@ -1,4 +1,4 @@
-other
+render transitions
 setTransitionsHeight
 
 	transitionsHeight := Dictionary new.

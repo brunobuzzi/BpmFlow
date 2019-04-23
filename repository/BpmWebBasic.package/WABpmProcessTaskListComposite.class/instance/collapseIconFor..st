@@ -1,4 +1,4 @@
-other
+render transitions
 collapseIconFor: aBpmArtifactInstance
 
 	((transitionsHeight includesKey: aBpmArtifactInstance) and: [(transitionsHeight at: aBpmArtifactInstance) = #collapsed])

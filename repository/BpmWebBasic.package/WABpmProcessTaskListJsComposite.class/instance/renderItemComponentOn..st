@@ -5,6 +5,7 @@ renderItemComponentOn: html
 	assignationComposite 
 		ifNotNil: [html render: assignationComposite]
 		ifNil: [
+			html script: self javaScriptExpandCollapse.
 			self getAllTasks do:[:eachArtifact | | cssClass |
 				cssClass := eachArtifact isTask 
 					ifFalse: ['process-transition-gateway']
@@ -16,7 +17,12 @@ renderItemComponentOn: html
 										ifTrue: ['process-transition-expanded'] 
 										ifFalse: ['process-transition-collapsed'].
 
-				html div class: (cssClass, ' ', heightClass); with: [
-					self renderTransitionDataOn: html for: eachArtifact].
+			"	html script: (self javaScriptExpandCollapseFor: eachArtifact)."
+
+				html div 
+					id: ('t',eachArtifact id printString);
+					"class: (cssClass, ' ', heightClass);" 
+					class: cssClass;
+					with: [self renderTransitionDataOn: html for: eachArtifact].
 			]. 
 		].

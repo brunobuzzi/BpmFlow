@@ -1,4 +1,4 @@
-other
+render transitions
 renderTransitionActionsOn: html for: aBpmArtifactInstance
 
 	aBpmArtifactInstance isTask ifFalse: [^self].

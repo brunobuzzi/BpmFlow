@@ -1,8 +1,10 @@
 render transitions
 renderTransitionDataOn: html for: aBpmArtifactInstance
 
-	html anchor class: 'process-transition-icon-collapse';
-		callback: [self switchOpenCloseTransition: aBpmArtifactInstance]; 
+	html anchor 
+		class: 'process-transition-icon-collapse';
+		"callback: [self switchOpenCloseTransition: aBpmArtifactInstance]; "
+		onClick: 'expandCollapse(''t',aBpmArtifactInstance id printString,''')';
 		with: [html image url: (SEWAFIconLibrary / (self collapseIconFor: aBpmArtifactInstance));
 								title: (self collapseTitleFor: aBpmArtifactInstance);
 								altText: (self collapseTitleFor: aBpmArtifactInstance)].

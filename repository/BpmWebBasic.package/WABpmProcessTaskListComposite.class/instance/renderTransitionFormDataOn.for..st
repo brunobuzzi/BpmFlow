@@ -1,4 +1,4 @@
-other
+render transitions
 renderTransitionFormDataOn: html for: aBpmArtifactInstance
 
 	self renderFormDataOn: html for: aBpmArtifactInstance.

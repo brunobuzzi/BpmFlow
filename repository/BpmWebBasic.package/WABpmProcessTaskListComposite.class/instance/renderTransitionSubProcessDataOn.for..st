@@ -1,4 +1,4 @@
-other
+render transitions
 renderTransitionSubProcessDataOn: html for: aBpmArtifactInstance
 
 	html div class: 'transition-data'; with: [

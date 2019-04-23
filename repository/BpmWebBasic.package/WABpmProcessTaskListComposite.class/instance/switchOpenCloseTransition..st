@@ -1,4 +1,4 @@
-other
+render transitions
 switchOpenCloseTransition: aBpmArtifactInstance
 
 	((transitionsHeight includesKey: aBpmArtifactInstance) and: [(transitionsHeight at: aBpmArtifactInstance) = #expanded])
