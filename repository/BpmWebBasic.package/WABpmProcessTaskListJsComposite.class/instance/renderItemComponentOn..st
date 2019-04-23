@@ -5,7 +5,8 @@ renderItemComponentOn: html
 	assignationComposite 
 		ifNotNil: [html render: assignationComposite]
 		ifNil: [
-			html script: self javaScriptExpandCollapse.
+			html script: self javaScriptCurrentExpandCollapse, '; ',  self javaScriptExpandCollapse.
+			"html script: self javaScriptExpandCollapse."
 			self getAllTasks do:[:eachArtifact | | cssClass |
 				cssClass := eachArtifact isTask 
 					ifFalse: ['process-transition-gateway']
@@ -16,13 +17,10 @@ renderItemComponentOn: html
 				heightClass := ((transitionsHeight at: eachArtifact ifAbsent: [#expanded]) = #expanded) 
 										ifTrue: ['process-transition-expanded'] 
 										ifFalse: ['process-transition-collapsed'].
-
-			"	html script: (self javaScriptExpandCollapseFor: eachArtifact)."
-
 				html div 
 					id: ('t',eachArtifact id printString);
-					"class: (cssClass, ' ', heightClass);" 
 					class: cssClass;
 					with: [self renderTransitionDataOn: html for: eachArtifact].
+				html script: 'currentExpandCollapse(''t',eachArtifact id printString,''')'. "<div> does not support onload event --> a script with a call after the element must be added"
 			]. 
 		].
