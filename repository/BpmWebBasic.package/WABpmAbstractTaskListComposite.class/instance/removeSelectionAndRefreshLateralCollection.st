@@ -1,0 +1,4 @@
+other
+removeSelectionAndRefreshLateralCollection
+
+	mainPanel removeSelectionAndRefreshLateralCollection

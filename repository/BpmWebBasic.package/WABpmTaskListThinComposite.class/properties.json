@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"transitionsHeight" ],
+	"name" : "WABpmTaskListThinComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmAbstractTaskListComposite",
+	"type" : "normal" }
