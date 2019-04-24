@@ -1,6 +1,5 @@
 render transitions
 renderItemComponentOn: html
-	| heightClass |
 
 	assignationComposite 
 		ifNotNil: [html render: assignationComposite]
@@ -13,10 +12,6 @@ renderItemComponentOn: html
 					ifTrue: [eachArtifact isDone
 						ifTrue: ['process-transition-finished']
 						ifFalse: ['process-transition-running']].
-
-				heightClass := ((transitionsHeight at: eachArtifact ifAbsent: [#expanded]) = #expanded) 
-										ifTrue: ['process-transition-expanded'] 
-										ifFalse: ['process-transition-collapsed'].
 				html div 
 					id: ('t',eachArtifact id printString);
 					class: cssClass;
