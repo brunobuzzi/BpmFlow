@@ -7,7 +7,7 @@ jsSetExpandCollapseIconProperties
 	iconTiltle := 'Expand/Collapse' translateIn: self session.
  
 	jsStream nextPutAll: 
-'function setExpandCollapseIcon(divId, imageId) {
+'function setExpandCollapseTaskIcon(divId, imageId) {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.getItem(divId) == "collapsed") {
 		document.getElementById(imageId).src=''../files/SEWAFIconLibrary/circledown16Png'';

@@ -16,6 +16,6 @@ renderItemComponentOn: html
 					id: ('t',eachArtifact id printString);
 					class: cssClass;
 					with: [self renderTransitionDataOn: html for: eachArtifact].
-				html script: 'currentExpandCollapse(''t',eachArtifact id printString,''')'. "<div> does not support onload event --> a script with a call after the element must be added"
+				html script: 'currentExpandCollapseTask(''t',eachArtifact id printString,''')'. "<div> does not support onload event --> a script with a call after the element must be added"
 			]. 
 		].

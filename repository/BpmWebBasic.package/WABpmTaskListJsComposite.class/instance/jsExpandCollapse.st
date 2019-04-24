@@ -5,7 +5,7 @@ jsExpandCollapse
 	jsStream := WriteStream on: String new.
 
 	jsStream nextPutAll: 
-'function expandCollapse(storageId) {
+'function expandCollapseTask(storageId) {
   if (typeof(Storage) !== "undefined") {
     if ((localStorage.getItem(storageId) == "expanded") || (localStorage.getItem(storageId) == null)) {
 		localStorage.setItem(storageId,"collapsed"); 

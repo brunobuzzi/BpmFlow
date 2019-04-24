@@ -4,8 +4,8 @@ renderTransitionDataOn: html for: aBpmArtifactInstance
 
 	divId := '''t', aBpmArtifactInstance id printString, ''''.
 	imageId := 'i', aBpmArtifactInstance id printString.
-	jsCallExpandCollapse := 'expandCollapse(', divId, ')'.
-	jsCallSetIcon := 'setExpandCollapseIcon(', divId, ',''', imageId, ''')'.
+	jsCallExpandCollapse := 'expandCollapseTask(', divId, ')'.
+	jsCallSetIcon := 'setExpandCollapseTaskIcon(', divId, ',''', imageId, ''')'.
 	html anchor 
 		class: 'process-transition-icon-collapse cursor-pointer';
 		onClick: jsCallExpandCollapse, ';', jsCallSetIcon;
