@@ -5,7 +5,7 @@ renderItemComponentOn: html
 	assignationComposite 
 		ifNotNil: [html render: assignationComposite]
 		ifNil: [
-			html script: self javaScriptCurrentExpandCollapse, '; ',  self javaScriptExpandCollapse.
+			html script: self jsCurrentExpandCollapse, '; ',  self jsExpandCollapse, ';', self jsSetExpandCollapseIconProperties.
 			"html script: self javaScriptExpandCollapse."
 			self getAllTasks do:[:eachArtifact | | cssClass |
 				cssClass := eachArtifact isTask 

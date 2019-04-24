@@ -1,6 +1,6 @@
-render transitions
-javaScriptCurrentExpandCollapse
-	| storageId jsStream code |
+javascript
+jsCurrentExpandCollapse
+	| jsStream |
 
 	jsStream := WriteStream on: String new.
 
@@ -15,6 +15,4 @@ javaScriptCurrentExpandCollapse
   } else {}
 }'.
 
-	code := jsStream contents.
-
-	^code
+	^jsStream contents

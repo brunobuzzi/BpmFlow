@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"javaScriptCurrentExpandCollapse" : "brunobb 04/23/2019 06:21",
-		"javaScriptExpandCollapse" : "brunobb 04/23/2019 05:52",
-		"renderItemComponentOn:" : "brunobb 04/23/2019 10:58",
-		"renderTransitionDataOn:for:" : "brunobb 04/23/2019 05:47" } }
+		"jsCurrentExpandCollapse" : "brunobb 04/24/2019 05:31",
+		"jsExpandCollapse" : "brunobb 04/24/2019 05:31",
+		"jsSetExpandCollapseIconProperties" : "brunobb 04/24/2019 06:02",
+		"renderItemComponentOn:" : "brunobb 04/24/2019 05:54",
+		"renderTransitionDataOn:for:" : "brunobb 04/24/2019 06:01" } }
