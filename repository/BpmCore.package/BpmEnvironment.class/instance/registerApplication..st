@@ -1,6 +1,6 @@
 applications
 registerApplication: anApplication
-	"The receiver register <anApplication> as a part of itself if other <BpmEnviroment> already have the application <anApplication> registered raise <anExeception>"
+	"The receiver register <anApplication> if other <BpmEnviroment> already have <anApplication> registered then raise <anExeception>"
 
 	anApplication hasBpmEnvironment 
 	ifTrue: [^ApplicationWithBpmEnvironmentException signal: 'The Application named [', anApplication applicationName,'] is already included in BPM environment named [', anApplication environmentName, ']'].

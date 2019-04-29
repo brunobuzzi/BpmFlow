@@ -1,6 +1,6 @@
 applications
 unregisterApplication: anApplication
-	"The receiver unregister <anApplication> as a part of itself if other <BpmEnviroment> already have the application <anApplication> registered raise <anExeception>"
+	"The receiver unregister <anApplication> if the application is not registered in any <BpmEnvironment> then raise <anExeception>"
 
 	anApplication hasBpmEnvironment 
 	ifFalse: [^ApplicationWithBpmEnvironmentException signal: 'The Application named [', anApplication applicationName,'] has no BPM Environment'].
