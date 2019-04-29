@@ -1,7 +1,7 @@
 search area
 renderSearchRegularPanelOn: html
 
-	html form with: [ 
+	html form id: self topSearchFormId; with: [ 
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; with: ('Search Task' translateIn: self session).
 			self renderSwitchWindowOn: html.

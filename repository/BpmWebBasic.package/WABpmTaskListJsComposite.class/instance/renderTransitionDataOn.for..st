@@ -1,20 +1,15 @@
 render transitions
 renderTransitionDataOn: html for: aBpmArtifactInstance
-	| divId imageId jsCallExpandCollapse jsCallSetIcon |
+	| jsEcObject |
 
-	divId := '''t', aBpmArtifactInstance id printString, ''''.
-	imageId := 'i', aBpmArtifactInstance id printString.
-	jsCallExpandCollapse := 'expandCollapseTask(', divId, ')'.
-	jsCallSetIcon := 'setExpandCollapseTaskIcon(', divId, ',''', imageId, ''')'.
+	jsEcObject := self createEcTaskJsObjectFor: ('t',aBpmArtifactInstance id printString) imageId: ('i',aBpmArtifactInstance id printString).
+	jsEcObject callInitIconFunction; callExpandCollapseElementFunction.
+
 	html anchor 
 		class: 'process-transition-icon-collapse cursor-pointer';
-		onClick: jsCallExpandCollapse, ';', jsCallSetIcon;
-		with: [html image 
-							id: ('i', aBpmArtifactInstance id printString)";
-							url: (SEWAFIconLibrary / (self collapseIconFor: aBpmArtifactInstance));
-							title: (self collapseTitleFor: aBpmArtifactInstance);
-							altText: (self collapseTitleFor: aBpmArtifactInstance)"].
-	html script: jsCallSetIcon.
+		onClick: jsEcObject;
+		with: [html image id: ('i', aBpmArtifactInstance id printString)].
+
 
 	html header with: [html strong: aBpmArtifactInstance printFormLargeNameForWebButton].
 	html header with: [html strong: ('Task Data' translateIn: self session)].

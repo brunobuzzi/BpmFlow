@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"createEcTaskJsObjectFor:imageId:" : "brunobb 04/26/2019 13:28",
 		"jsCurrentExpandCollapse" : "brunobb 04/24/2019 08:22",
 		"jsExpandCollapse" : "brunobb 04/24/2019 08:22",
 		"jsSetExpandCollapseIconProperties" : "brunobb 04/24/2019 08:22",
-		"renderItemComponentOn:" : "brunobb 04/24/2019 08:22",
-		"renderTransitionDataOn:for:" : "brunobb 04/24/2019 08:23" } }
+		"renderItemComponentOn:" : "brunobb 04/26/2019 13:24",
+		"renderTransitionDataOn:for:" : "brunobb 04/26/2019 13:31" } }
