@@ -7,7 +7,7 @@ xpdl_alta_postulacion
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2019-02-27T17:32:42.9118492-03:00</Created>
-    <ModificationDate>2019-04-29T15:10:24.9661911-03:00</ModificationDate>
+    <ModificationDate>2019-04-30T09:39:09.1334351-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -59,7 +59,7 @@ xpdl_alta_postulacion
   <WorkflowProcesses>
     <WorkflowProcess Id="a4e9676e-94e4-4b95-8e18-42c96b0450df" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-04-29T15:10:46.2571053-03:00</Created>
+        <Created>2019-04-30T09:40:43.4248697-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -75,7 +75,7 @@ xpdl_alta_postulacion
     </WorkflowProcess>
     <WorkflowProcess Id="08f9f6ab-9043-41d5-94fd-7b2257a04fca" Name="postular-a-instrumento">
       <ProcessHeader>
-        <Created>2019-04-29T15:10:46.2581034-03:00</Created>
+        <Created>2019-04-30T09:40:43.4248697-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -148,7 +148,7 @@ xpdl_alta_postulacion
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="123" BorderColor="-11834615" FillColor="-6571175">
-              <Coordinates XCoordinate="147" YCoordinate="281" />
+              <Coordinates XCoordinate="147" YCoordinate="271" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -166,7 +166,7 @@ xpdl_alta_postulacion
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="125" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="400" YCoordinate="281" />
+              <Coordinates XCoordinate="400" YCoordinate="271" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -180,7 +180,7 @@ xpdl_alta_postulacion
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
-              <Coordinates XCoordinate="683" YCoordinate="459" />
+              <Coordinates XCoordinate="685" YCoordinate="432" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -200,7 +200,7 @@ xpdl_alta_postulacion
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="133" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="396" YCoordinate="444" />
+              <Coordinates XCoordinate="396" YCoordinate="417" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -212,7 +212,7 @@ xpdl_alta_postulacion
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
-              <Coordinates XCoordinate="598" YCoordinate="291" />
+              <Coordinates XCoordinate="603" YCoordinate="281" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -228,7 +228,7 @@ xpdl_alta_postulacion
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="105" BorderColor="-16553830" FillColor="-1249281">
-              <Coordinates XCoordinate="172" YCoordinate="429" />
+              <Coordinates XCoordinate="172" YCoordinate="444" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -240,7 +240,7 @@ xpdl_alta_postulacion
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
-              <Coordinates XCoordinate="442" YCoordinate="365" />
+              <Coordinates XCoordinate="442" YCoordinate="346" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -279,8 +279,8 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="270" YCoordinate="311" />
-              <Coordinates XCoordinate="400" YCoordinate="311" />
+              <Coordinates XCoordinate="270" YCoordinate="301" />
+              <Coordinates XCoordinate="400" YCoordinate="301" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -291,8 +291,8 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="529" YCoordinate="474" />
-              <Coordinates XCoordinate="683" YCoordinate="474" />
+              <Coordinates XCoordinate="529" YCoordinate="447" />
+              <Coordinates XCoordinate="685" YCoordinate="447" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -306,7 +306,7 @@ xpdl_alta_postulacion
               <Coordinates XCoordinate="437" YCoordinate="141" />
               <Coordinates XCoordinate="437" YCoordinate="211" />
               <Coordinates XCoordinate="208" YCoordinate="211" />
-              <Coordinates XCoordinate="208" YCoordinate="281" />
+              <Coordinates XCoordinate="208" YCoordinate="271" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -317,8 +317,8 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="525" YCoordinate="311" />
-              <Coordinates XCoordinate="598" YCoordinate="311" />
+              <Coordinates XCoordinate="525" YCoordinate="301" />
+              <Coordinates XCoordinate="603" YCoordinate="301" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -331,8 +331,8 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="618" YCoordinate="291" />
-              <Coordinates XCoordinate="618" YCoordinate="111" />
+              <Coordinates XCoordinate="623" YCoordinate="281" />
+              <Coordinates XCoordinate="623" YCoordinate="111" />
               <Coordinates XCoordinate="515" YCoordinate="111" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
@@ -346,9 +346,9 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="618" YCoordinate="331" />
-              <Coordinates XCoordinate="618" YCoordinate="385" />
-              <Coordinates XCoordinate="482" YCoordinate="385" />
+              <Coordinates XCoordinate="623" YCoordinate="321" />
+              <Coordinates XCoordinate="623" YCoordinate="366" />
+              <Coordinates XCoordinate="482" YCoordinate="366" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -361,8 +361,8 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="462" YCoordinate="405" />
-              <Coordinates XCoordinate="462" YCoordinate="444" />
+              <Coordinates XCoordinate="462" YCoordinate="386" />
+              <Coordinates XCoordinate="462" YCoordinate="417" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
@@ -375,9 +375,24 @@ xpdl_alta_postulacion
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
               <TextDirection xsi:nil="true" />
-              <Coordinates XCoordinate="442" YCoordinate="385" />
-              <Coordinates XCoordinate="224" YCoordinate="385" />
-              <Coordinates XCoordinate="224" YCoordinate="429" />
+              <Coordinates XCoordinate="442" YCoordinate="366" />
+              <Coordinates XCoordinate="224" YCoordinate="366" />
+              <Coordinates XCoordinate="224" YCoordinate="444" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="347a1e1d-21da-45b6-b6a7-b26ebea2a415" From="3967da94-4892-4f3c-a13d-750c71b183c8" To="424f3a70-2e40-48f5-bee2-1b2a483882a2">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <TextDirection xsi:nil="true" />
+              <Coordinates XCoordinate="277" YCoordinate="474" />
+              <Coordinates XCoordinate="313" YCoordinate="474" />
+              <Coordinates XCoordinate="313" YCoordinate="491" />
+              <Coordinates XCoordinate="700" YCoordinate="491" />
+              <Coordinates XCoordinate="700" YCoordinate="462" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
