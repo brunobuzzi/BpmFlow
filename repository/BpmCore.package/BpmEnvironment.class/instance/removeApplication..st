@@ -5,7 +5,7 @@ removeApplication: anApplication
 	anApplication hasBpmEnvironment 
 	ifFalse: [^ApplicationWithBpmEnvironmentException signal: 'The Application named [', anApplication applicationName,'] has no BPM Environment'].
 
-	(self defaultProcessDefinitionClass getAllProcessDefinitionIn: anApplication bpmEnvironment) do: [:procDefinition | procDefinition removeFromCache].
+	((self defaultProcessDefinitionClass getAllProcessDefinitionIn: anApplication bpmEnvironment) select: [:procDefinition | procDefinition application == anApplication]) do: [:procDefinition | procDefinition removeFromCache].
 
 	self defaultBackOfficeRoleClass cache do: [:eachRole | eachRole removeAllUsers. eachRole removeFromCache].
 	self defaultFrontOfficeRoleClass cache do: [:eachRole | eachRole removeAllUsers. eachRole removeFromCache].
