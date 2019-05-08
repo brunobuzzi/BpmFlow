@@ -9,7 +9,8 @@ getValuesOfProcessField: fieldName
 
 	self getProcessesTreeAsCollection do: [:eachProcInstance |  
 	
-		(eachProcInstance getExecutedArtifactsReversed select: [:each | each hasForm]) do: [:each | (each getValueOfFormField: fieldName) ifNotNil: [:value | values add: value]].
+		(eachProcInstance getExecutedArtifactsReversed select: [:each | each hasForm]) 
+			do: [:each | (each getValueOfFormField: fieldName) ifNotNil: [:valueOrCollection | valueOrCollection isCollection ifFalse: [values add: valueOrCollection] ifTrue: [values addAll: valueOrCollection]]].
 
 		eachProcInstance getExecutedScriptsReversed do: [:each | (each getValueOfFormField: fieldName) ifNotNil: [:value | values add: value]].
 
