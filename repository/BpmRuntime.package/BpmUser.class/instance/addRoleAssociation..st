@@ -1,4 +1,4 @@
-other
+role association
 addRoleAssociation: aBpmRoleUserAssociation
 
 	^rolesAssociation add: aBpmRoleUserAssociation

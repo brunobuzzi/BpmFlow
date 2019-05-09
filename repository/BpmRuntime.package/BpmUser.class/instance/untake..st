@@ -1,6 +1,6 @@
 assignment
 untake: aBpmTaskAssignment
-	"The receiver untake the assigned task <aBpmTaskAssignment>"
+	"The receiver untake the assigned task <aBpmTaskAssignment>. see #untakeForced:"
 	| untakeProcedure |
 
 	aBpmTaskAssignment canUnassign ifFalse: [^CanNotUntakeTaskException signal: 'The user [', self userName, '] can NOT untake the assignment' ].
