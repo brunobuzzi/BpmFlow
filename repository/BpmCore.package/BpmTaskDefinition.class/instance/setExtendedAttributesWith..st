@@ -4,3 +4,5 @@ setExtendedAttributesWith: attributesDictionary
 	super setExtendedAttributesWith: attributesDictionary.
 
 	self setCanUnassignAttribute.
+
+	self setReuseExternalObjectOfTaskNamed.

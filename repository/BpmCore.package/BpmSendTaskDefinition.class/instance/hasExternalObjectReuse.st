@@ -1,0 +1,4 @@
+extended attributes
+hasExternalObjectReuse
+
+	^false
