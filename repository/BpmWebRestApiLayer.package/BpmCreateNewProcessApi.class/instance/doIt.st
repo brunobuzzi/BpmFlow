@@ -1,5 +1,7 @@
 other
 doIt
+	"The receiver creates a new <BpmProcessInstance> with the first task already done.
+	The form of the task was sent anonymously to the REST service."
 	| application formInstance procDefinition currentTask |
 
 	application := self getOrbeonApplicationClass applicationNamed: appName ifNone: [^NoApplicationException signal: 'No such application [', appName, ']'].
@@ -16,6 +18,6 @@ doIt
 	self associateFormWithTask: currentTask forProcess: newBpmProcess.
 	currentTask finalize.
 	newBpmProcess generateNextTransitionsFrom: currentTask.
-	procDefinition updateFieldsOf: formInstance. "the indexes of the BpmProcessDefinition are updated here"
+	procDefinition updateFieldsOf: formInstance. "the first task is already done --> the indexes of the BpmProcessDefinition are updated here"
 
 	^self
