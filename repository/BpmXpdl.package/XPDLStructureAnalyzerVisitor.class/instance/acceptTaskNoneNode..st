@@ -6,7 +6,9 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 
 	self acceptActivityNode: aXPDLTaskNoneNode.
 
-	(aXPDLTaskNoneNode isOrbeonTaskNode and: [((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode getName) not])
+	(aXPDLTaskNoneNode isOrbeonTaskNode and: 
+		[(((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode getName) 
+			or: [((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode reuseExternalObjectOfTaskNamed)]) not ])
 	ifTrue: [self addNonExistingOrbeonFormItem: aXPDLTaskNoneNode inApplication: (self getApplicationFor: aXPDLTaskNoneNode)].
 
 	"Madatory fields are not needed when the Process has an anonymous start"
