@@ -1,4 +1,0 @@
-other
-clearAssignationCompostite
-
-	assignationComposite := nil

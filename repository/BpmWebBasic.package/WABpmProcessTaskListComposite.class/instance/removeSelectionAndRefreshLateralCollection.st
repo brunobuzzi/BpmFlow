@@ -1,4 +1,0 @@
-other
-removeSelectionAndRefreshLateralCollection
-
-	mainPanel removeSelectionAndRefreshLateralCollection

@@ -1,4 +1,0 @@
-other
-portalComponent
-
-	^mainPanel mainPanel
