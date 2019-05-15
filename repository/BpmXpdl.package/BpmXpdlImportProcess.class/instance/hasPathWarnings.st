@@ -1,4 +1,4 @@
-testing
+report errors
 hasPathWarnings
 
 	self generatedProcesses

@@ -1,4 +1,4 @@
-testing
+report errors
 hasPossibleInvalidConditions
 
 	^self getPossibleInvalidConditions notEmpty

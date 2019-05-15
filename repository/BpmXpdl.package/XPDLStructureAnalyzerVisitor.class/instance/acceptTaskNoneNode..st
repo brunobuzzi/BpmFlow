@@ -11,6 +11,9 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 			or: [((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode reuseExternalObjectOfTaskNamed)]) not ])
 	ifTrue: [self addNonExistingOrbeonFormItem: aXPDLTaskNoneNode inApplication: (self getApplicationFor: aXPDLTaskNoneNode)].
 
+	(aXPDLTaskNoneNode isSeasideTaskNode and:[(Smalltalk includesKey: aXPDLTaskNoneNode getSeasideComponentName asSymbol) not])
+	ifTrue: [self addNonExistingSeasideComponentItem: aXPDLTaskNoneNode].
+
 	"Madatory fields are not needed when the Process has an anonymous start"
 	(aXPDLTaskNoneNode workflow startNode isAnonymousStart and: [aXPDLTaskNoneNode workflow startNode outTransitions anySatisfy: [:each | each endNode == aXPDLTaskNoneNode]])
 	ifFalse: [| formDef |
