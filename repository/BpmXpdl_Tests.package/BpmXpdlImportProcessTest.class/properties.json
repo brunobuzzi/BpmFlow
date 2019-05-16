@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdl_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"importProcess" ],
+	"name" : "BpmXpdlImportProcessTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
