@@ -20,6 +20,7 @@
 		"getMappedXpdlFileNameAt:" : "brunobb 12/18/2018 11:28",
 		"getNumberOfProcesses" : "brunobb 12/18/2018 11:28",
 		"getPossibleInvalidConditions" : "brunobb 01/30/2019 10:14",
+		"getProcessDefinitionNamed:ifNone:" : "brunobb 05/16/2019 05:57",
 		"getProcessesAsTree" : "brunobb 01/30/2019 10:19",
 		"getXpdlPackageForFileNamed:" : "brunobb 12/18/2018 11:28",
 		"getXpdlPackages" : "brunobb 12/18/2018 11:28",
