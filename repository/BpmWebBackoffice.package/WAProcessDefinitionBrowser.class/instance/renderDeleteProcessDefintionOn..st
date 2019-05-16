@@ -4,7 +4,7 @@ renderDeleteProcessDefintionOn: html
 
 	jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeDefinition' actionMethod: #removeProcessDefinition.
 
-	html div class: 'float-left margin-left-5px'; with: [
+	html div class: 'margin-left-5px'; with: [
 		html anchor 
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;

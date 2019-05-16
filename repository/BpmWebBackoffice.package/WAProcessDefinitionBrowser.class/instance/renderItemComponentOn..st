@@ -1,8 +1,8 @@
 process
 renderItemComponentOn: html
 
-	html div class: 'float-left';with: [
-		html div class: 'width-15px'; with: [
+	html div class: 'float-right';with: [
+		html div with: [
 			selectedLateralItem canDelete ifTrue: [self renderDeleteProcessDefintionOn: html].
 		].
 	].
