@@ -1,4 +1,4 @@
-other
+external components
 iconFor: aBpmArtifactInstance
 
 	aBpmArtifactInstance isCreated ifFalse: [^#pageprocess32Png].
@@ -8,9 +8,6 @@ iconFor: aBpmArtifactInstance
 
 	aBpmArtifactInstance isDone ifTrue: [^#processacceptPng].
 
-	aBpmArtifactInstance isProcessing ifTrue: [^#documentediticonPng].
-"	aBpmArtifactInstance isPaused ifTrue: [^#stopwatchpausePng].
-	aBpmArtifactInstance isDelayed ifTrue: [^#clockPng].
-	aBpmArtifactInstance isPending ifTrue: [^#aquastrippedfolderclockPng]."
-
-	^#documentediticonPng
+	^(self canEditTask: aBpmArtifactInstance)
+	ifTrue: [#documentediticonPng]
+	ifFalse: [#processacceptPng]

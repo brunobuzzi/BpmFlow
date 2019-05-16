@@ -7,8 +7,7 @@ getUrlFor: aBpmArtifactInstance with: anUUID
 	^aBpmArtifactInstance hasForm "is a new or an edited form ?"
 		ifFalse: [(aBpmArtifactInstance isGrantedUser: self session user) "has permissions ?"
 					ifTrue: [self buildNewUrlFor: aBpmArtifactInstance with: anUUID]] "Orbeon NEW link"
-		ifTrue: [(aBpmArtifactInstance isDone 
-						or:[(aBpmArtifactInstance isGrantedUser: self session user) not 
-						or: [(aBpmArtifactInstance innerTaskHasBeenFinalizedBy: self session user) and: [self modeIsFinishedTasks]]])
-			ifFalse: [self buildEditUrlFor: aBpmArtifactInstance with: anUUID] "Orbeon EDIT link"
-			ifTrue: [self buildViewUrlFor: aBpmArtifactInstance with: anUUID]] "Orbeon VIEW link"
+		ifTrue: [(self canEditTask: aBpmArtifactInstance) 
+					ifTrue: [self buildEditUrlFor: aBpmArtifactInstance with: anUUID]
+					ifFalse: [self buildViewUrlFor: aBpmArtifactInstance with: anUUID]
+		].
