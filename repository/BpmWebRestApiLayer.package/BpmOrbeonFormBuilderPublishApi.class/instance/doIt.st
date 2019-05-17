@@ -15,7 +15,8 @@ doIt
 
 	(self defaultBackOfficeRoleClass getRolsIn: application bpmEnvironment forApplication: application) do: [:bpmRole | message addRecipients: bpmRole].
 
-	message createMessageBody;
+	message bePublishSubject;
+				createMessageBody;
 				send.
 
 	^self

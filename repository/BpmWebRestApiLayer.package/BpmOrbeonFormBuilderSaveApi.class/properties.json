@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebRestApiLayer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmOrbeonFormBuilderSaveApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormBuilderSaveApi",
+	"type" : "normal" }
