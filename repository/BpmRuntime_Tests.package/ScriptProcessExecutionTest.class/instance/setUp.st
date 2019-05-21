@@ -4,6 +4,8 @@ setUp
 
 	super setUp.
 
+	self createUeEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
+
 	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'Process with Scripts' in: 'ue'. "answer a collection with all versions"
 	
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
