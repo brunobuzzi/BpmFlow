@@ -1,9 +1,11 @@
 other
 testVisaApplianceImport
-	| environment applications file1 file2 file3 currentVersion |
+	| environment applications file1 file2 file3 currentVersion ue |
 
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
-	applications := OrderedCollection with: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue').
+	environment := self getDefaultEnvironment.
+	ue := self getDefaultApplication.
+	environment registerApplication: ue. 
+	applications := OrderedCollection with: ue.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
@@ -19,6 +21,7 @@ testVisaApplianceImport
 		storeTemporaryXpdlFile: file2 atIndex: 2;
 		storeTemporaryXpdlFile: file3 atIndex: 3.
 
+	self createOrbeonForms. "we create OrbeonFormInstance that create OrboenFormDefinitions first, if not --> the import process will fail"
 	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'visa-appliance' in: 'ue') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 

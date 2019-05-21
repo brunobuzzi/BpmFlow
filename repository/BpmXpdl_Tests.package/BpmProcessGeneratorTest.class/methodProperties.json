@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "brunobb 03/25/2019 07:55" } }
+		"setUp" : "brunobb 03/25/2019 07:55",
+		"tearDown" : "brunobb 05/20/2019 13:22" } }
