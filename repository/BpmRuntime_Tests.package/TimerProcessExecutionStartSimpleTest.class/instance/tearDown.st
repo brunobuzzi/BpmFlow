@@ -4,6 +4,8 @@ tearDown
 
 	super tearDown.
 
+	self keepTempObjectsInSystem ifTrue: [^self].
+
 	self defaultTimerEventMonitor stopMonitoringProcessCreation: procDefinition.
 
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.

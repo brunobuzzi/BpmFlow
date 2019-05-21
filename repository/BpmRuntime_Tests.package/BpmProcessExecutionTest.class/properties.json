@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"KeepTempObjectsInSystem" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"procInstance",

@@ -6,6 +6,8 @@ tearDown
 
 	Smalltalk removeKey: #Test_Temps ifAbsent: [].
 
+	self keepTempObjectsInSystem ifTrue: [^self].
+
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
 	environment unregisterApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue').

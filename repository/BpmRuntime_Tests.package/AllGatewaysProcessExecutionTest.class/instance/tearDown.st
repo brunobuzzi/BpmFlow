@@ -4,6 +4,8 @@ tearDown
 
 	super tearDown.
 
+	self keepTempObjectsInSystem ifTrue: [^self].
+
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 	environment unregisterApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue').
 
