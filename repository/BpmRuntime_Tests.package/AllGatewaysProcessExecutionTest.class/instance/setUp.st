@@ -4,10 +4,13 @@ setUp
 
 	super setUp.
 
+	self createUeEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
+
 	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	
+	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+ 
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
-	environment := procDefinition bpmEnvironment.
 
 	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto').
 	environment registerUser: (self getUserNamed: 'alberto').
