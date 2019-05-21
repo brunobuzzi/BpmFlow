@@ -1,5 +1,5 @@
 other
-createProcessDefinition
+createApplianceProcessDefinition
 	| xpdlReader processGenerator |
 
 	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'VisaAppliance' withString: XPDLProcessDefinitionTemplate xpdlExample_visa_apply)

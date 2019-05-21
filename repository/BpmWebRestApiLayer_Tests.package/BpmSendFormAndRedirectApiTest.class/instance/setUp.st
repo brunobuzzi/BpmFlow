@@ -6,7 +6,7 @@ setUp
 
 	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
 
-	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
+	procDefinition := procDefinition ifEmpty: [self createApplianceProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 	procDefinition setNoneAssignationPolicy.
 	subProcDef := procDefinition subProcesses asArray last.
