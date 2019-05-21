@@ -3,6 +3,8 @@ cancelTaskAssignmentsForAbortion: aBpmProcessInstance
 	"The receiver cancel all <BpmTaskAssignment> taken by the receiver because the <BpmProcessInstance> has been aborted"
 	| takenAssigments |
 
+	(self hasInboxFor: aBpmProcessInstance bpmEnvironment) ifFalse: [^self]. "the user has no inbox in the process environment -->  nothing to cancel"
+
 	takenAssigments := OrderedCollection withAll: (self getCurrentAssignmentsIn: aBpmProcessInstance bpmEnvironment).
 
 	(takenAssigments select: [:eachAssignment | eachAssignment process == aBpmProcessInstance]) do: [:eachAssignment |  
