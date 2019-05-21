@@ -8,7 +8,7 @@ setUp
 
 	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	
-	environment := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
  
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 
