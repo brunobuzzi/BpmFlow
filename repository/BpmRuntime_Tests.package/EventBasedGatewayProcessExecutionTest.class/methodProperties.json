@@ -11,7 +11,8 @@
 		"formInstance_study_loan_application_2:in:" : "brunobb 11/08/2018 08:49",
 		"setTimerEventToFiveSeconds" : "brunobb 10/24/2018 12:28",
 		"setTimerEventToOneDay" : "brunobb 10/24/2018 11:12",
-		"setUp" : "brunobb 03/25/2019 09:10",
+		"setUp" : "brunobb 05/21/2019 08:38",
+		"tearDown" : "brunobb 05/21/2019 08:40",
 		"testExecuteProcess_LoanAccepted" : "brunobb 12/21/2018 06:40",
 		"testExecuteProcess_LoanRejected" : "brunobb 11/09/2018 09:39",
 		"testExecuteProcess_LoanRejectedByTimer" : "brunobb 11/09/2018 09:40" } }
