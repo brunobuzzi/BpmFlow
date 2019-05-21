@@ -51,7 +51,7 @@ baseline: spec
 		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('BpmRuntime' 'Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmWebRestApiLayer_Tests' with: [spec requires: #('BpmWebRestApiLayer')].
 		spec package: 'BpmXpdlBizagiReader_Tests' with: [spec requires: #('BpmXpdlBizagiReader' 'BpmXpdlTemplates')].
-		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmXpdlBizagiReader')].
+		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmXpdlBizagiReader' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'BpmRuntime')].
 		spec package: 'BpmCore_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmXpdlTemplates')].
 		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
