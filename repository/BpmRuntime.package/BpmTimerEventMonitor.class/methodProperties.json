@@ -19,6 +19,8 @@
 		"includesProcessCreationFor:" : "brunobb 05/22/2019 09:20",
 		"initialize" : "brunobb 05/22/2019 09:20",
 		"initializeDefault" : "brunobb 05/22/2019 09:20",
+		"isMonitoringAnyEventFor:" : "brunobb 05/22/2019 10:36",
+		"isMonitoringAnyEventIn:" : "brunobb 05/22/2019 09:34",
 		"monitoredEvents" : "brunobb 05/22/2019 09:20",
 		"monitoredEvents:" : "brunobb 05/22/2019 09:20",
 		"monitoredProcessDefinitions" : "brunobb 05/22/2019 09:20",
