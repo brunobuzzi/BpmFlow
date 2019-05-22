@@ -31,3 +31,7 @@ testSendMessageLoanApproved
 
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'proceed-purchase').
+
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
+
+	self assert: receiverProcessInstance hasFinalized.

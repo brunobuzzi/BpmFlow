@@ -1,6 +1,12 @@
 other
 tearDown
+	| application |
 
 	super tearDown.
 
-	(self defaultApplicationManagerClass getAnyApplicationNamed: 'ue' ifNone: [^self]) removeFromCache.
+	application := self defaultApplicationManagerClass getAnyApplicationNamed: 'ue' ifNone: [^self].
+
+	application resetDefinitionRegistry.
+	(self defaultFrontOfficeRoleClass getRolsInAppName: application applicationName) do: [:each | each removeFromCache].
+
+	application removeFromCache.

@@ -15,9 +15,10 @@ tearDown
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-2' in: 'ue') removeFromCache.
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-3' in: 'ue') removeFromCache.
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'approver' in: 'ue') removeFromCache.
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') removeFromCache. "informed role"
 
-	(self defaultProcessDefinitionClass getAllProcessesNamed: 'multi-role' in: 'ue') do: [:each | each removeFromCache]. 
-	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') removeFromCache.
+	(self defaultProcessDefinitionClass getAllProcessesNamed: 'multi-role' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache]. 
+	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') resetDefinitionRegistry; removeFromCache.
 
 	environment unregisterUser: (self getUserNamed: 'alberto').
 	environment unregisterUser: (self getUserNamed: 'juan').

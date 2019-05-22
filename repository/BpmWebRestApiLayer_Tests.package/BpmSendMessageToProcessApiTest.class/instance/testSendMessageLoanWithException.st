@@ -31,3 +31,6 @@ testSendMessageLoanWithException
 
 	self assert: receiverProcessInstance currentActivities isEmpty.
 	self assert: (receiverProcessInstance hasRunningGatewayNamed: 'loan event').
+
+	receiverProcessInstance abortProcess: (self getUserNamed: 'andrew se').
+	receiverProcessInstance confirmAbortion.

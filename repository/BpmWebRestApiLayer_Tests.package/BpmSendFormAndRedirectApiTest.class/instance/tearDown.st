@@ -1,27 +1,21 @@
 other
 tearDown
-	| environment |
-
-	super tearDown.
-
-	self keepTempObjectsInSystem ifTrue: [^self].
+	| application environment |
 
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue'.
 
-	environment unregisterApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue').
-
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') removeFromCache.
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa manager' in: 'ue') removeFromCache.
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa checker' in: 'ue') removeFromCache.
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'finance officer' in: 'ue') removeFromCache.
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'properties officer' in: 'ue') removeFromCache.
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'debts officer' in: 'ue') removeFromCache.
+	(self defaultFrontOfficeRoleClass getRolsIn: environment forApplication: application) do: [:each | each removeFromCache].
 
 	(self defaultProcessDefinitionClass getAllProcessesNamed: 'visa-appliance' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache].
 	(self defaultProcessDefinitionClass getAllProcessesNamed: 'home-office-check' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache].
 	(self defaultProcessDefinitionClass getAllProcessesNamed: 'check-financial-data' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache].
-	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') resetDefinitionRegistry; removeFromCache.
 
+	environment unregisterApplication: application.
+
+	application resetDefinitionRegistry.
+
+	application removeFromCache.
 	environment unregisterUser: (self getUserNamed: 'andrew vo').
 	environment unregisterUser: (self getUserNamed: 'andrew vo2').
 	environment unregisterUser: (self getUserNamed: 'andrew vo3').

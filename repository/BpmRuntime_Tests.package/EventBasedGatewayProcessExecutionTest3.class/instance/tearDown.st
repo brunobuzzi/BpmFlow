@@ -14,9 +14,9 @@ tearDown
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'applicant' in: 'ue') removeFromCache.
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'loan approver' in: 'ue') removeFromCache.
 
-	(self defaultProcessDefinitionClass getAllProcessesNamed: 'House Loan 3' in: 'ue') do: [:each | each removeFromCache]. 
-	(self defaultProcessDefinitionClass getAllProcessesNamed: 'House Purchase with Loan 3' in: 'ue') do: [:each | each removeFromCache]. 
-	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') removeFromCache.
+	(self defaultProcessDefinitionClass getAllProcessesNamed: 'House Loan 3' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache]. 
+	(self defaultProcessDefinitionClass getAllProcessesNamed: 'House Purchase with Loan 3' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache]. 
+	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') resetDefinitionRegistry; removeFromCache.
 
 	environment unregisterUser: (self getUserNamed: 'andrew ap').
 	environment unregisterUser: (self getUserNamed: 'andrew se').

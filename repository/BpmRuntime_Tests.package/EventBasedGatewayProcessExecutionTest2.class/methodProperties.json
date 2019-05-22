@@ -12,7 +12,7 @@
 		"setTimerEventToFiveSeconds" : "brunobb 10/26/2018 09:53",
 		"setTimerEventToOneDay" : "brunobb 10/26/2018 09:53",
 		"setUp" : "brunobb 05/21/2019 08:50",
-		"tearDown" : "brunobb 05/21/2019 10:33",
+		"tearDown" : "brunobb 05/22/2019 12:57",
 		"testExecuteProcess_LoanAccepted" : "brunobb 11/09/2018 09:38",
 		"testExecuteProcess_LoanRejected" : "brunobb 11/09/2018 09:39",
 		"testExecuteProcess_LoanRejectedByTimer" : "brunobb 11/09/2018 10:15" } }

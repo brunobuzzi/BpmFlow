@@ -14,8 +14,8 @@ tearDown
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'manager' in: 'ue') removeFromCache.
 
-	(self defaultProcessDefinitionClass getAllProcessesNamed: 'Process with Scripts' in: 'ue') do: [:each | each removeFromCache]. 
-	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') removeFromCache.
+	(self defaultProcessDefinitionClass getAllProcessesNamed: 'Process with Scripts' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache]. 
+	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') resetDefinitionRegistry; removeFromCache.
 
 	environment unregisterUser: (self getUserNamed: 'alberto').
 	environment removeFromCache.

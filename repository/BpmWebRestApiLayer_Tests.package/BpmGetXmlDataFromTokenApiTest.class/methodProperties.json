@@ -3,5 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "brunobb 05/21/2019 05:49",
+		"tearDown" : "brunobb 05/22/2019 12:38",
 		"testGetXmlFromTokenFailed" : "brunobb 12/06/2018 04:38",
 		"testGetXmlFromTokenOk" : "brunobb 12/06/2018 04:36" } }

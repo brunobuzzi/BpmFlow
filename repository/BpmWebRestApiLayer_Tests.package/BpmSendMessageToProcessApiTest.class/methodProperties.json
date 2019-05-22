@@ -6,7 +6,9 @@
 		"bodyExample2" : "brunobb 11/27/2018 08:52",
 		"createProcessesDefinition" : "brunobb 03/25/2019 08:24",
 		"formInstance_house_purchase_application:" : "brunobb 11/28/2018 08:55",
+		"formInstance_proceed_purchase:" : "brunobb 05/22/2019 12:26",
 		"setUp" : "brunobb 03/25/2019 09:11",
-		"testSendMessageLoanApproved" : "brunobb 04/11/2019 04:51",
-		"testSendMessageLoanRejected" : "brunobb 04/11/2019 04:51",
-		"testSendMessageLoanWithException" : "brunobb 04/11/2019 04:51" } }
+		"tearDown" : "brunobb 05/22/2019 12:31",
+		"testSendMessageLoanApproved" : "brunobb 05/22/2019 12:28",
+		"testSendMessageLoanRejected" : "brunobb 05/22/2019 12:32",
+		"testSendMessageLoanWithException" : "brunobb 05/22/2019 12:35" } }
