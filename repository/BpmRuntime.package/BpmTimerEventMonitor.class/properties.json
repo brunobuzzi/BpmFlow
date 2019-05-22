@@ -7,9 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"processesCreationEventHistory",
-		"tasksCreationEventHistory",
 		"monitoredProcessDefinitions",
-		"monitoredProcessInstances",
 		"monitoredEvents" ],
 	"name" : "BpmTimerEventMonitor",
 	"pools" : [
