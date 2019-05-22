@@ -4,5 +4,6 @@ canDelete
 
 	^(self defaultBackOfficeRoleClass getRolsIn: bpmEnvironment forApplication: self) isEmpty and: [
 		(self defaultFrontOfficeRoleClass getRolsIn: bpmEnvironment forApplication: self) isEmpty and: [
-		(self defaultProcessDefinitionClass hasAnyProcessApplicationNamed: applicationName) not
-		]]
+		(self defaultProcessDefinitionClass hasAnyProcessApplicationNamed: applicationName) not and: [
+		(self defaultTimerEventMonitor isMonitoringAnyEventIn: self) not
+		]]]
