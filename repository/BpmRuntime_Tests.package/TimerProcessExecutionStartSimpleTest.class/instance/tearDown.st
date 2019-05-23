@@ -1,6 +1,5 @@
 other
 tearDown
-	| environment |
 
 	super tearDown.
 
@@ -8,14 +7,4 @@ tearDown
 
 	self defaultTimerEventMonitor stopMonitoringProcessCreation: procDefinition.
 
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
-
-	environment unregisterApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue').
-
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'executer' in: 'ue') removeFromCache.
-
-	(self defaultProcessDefinitionClass getAllProcessesNamed: 'timer-process-start-simple' in: 'ue') do: [:each | each resetFormFieldInstances; removeFromCache]. 
-	(self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue') resetDefinitionRegistry; removeFromCache.
-
-	environment unregisterUser: (self getUserNamed: 'andrew vm').
-	environment removeFromCache.
+	self removeFrom: 'env-ue' in: 'ue' processesName: #('timer-process-start-simple') rolesName: #('executer') usersName: #('andrew vm')

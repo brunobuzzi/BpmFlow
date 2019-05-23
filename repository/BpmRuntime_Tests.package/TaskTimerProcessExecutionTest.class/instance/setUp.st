@@ -11,7 +11,6 @@ setUp
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'andrew vm').
-	environment registerUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	self registerUsers: #('andrew vm') inExecutionAndEnvironment: environment.
 
-	(self defaultFrontOfficeRoleClass createNewOrGetExisting: 'timer-role' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	self grantUsers: {'andrew vm' -> 'timer-role'} in: 'ue'.

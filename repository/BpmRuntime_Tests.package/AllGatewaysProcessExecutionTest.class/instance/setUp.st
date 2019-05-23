@@ -12,7 +12,6 @@ setUp
  
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto').
-	environment registerUser: (self getUserNamed: 'alberto').
+	self registerUsers: #('alberto') inExecutionAndEnvironment: environment.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'manager' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
+	self grantUsers: {'alberto' -> 'manager'} in: 'ue'.

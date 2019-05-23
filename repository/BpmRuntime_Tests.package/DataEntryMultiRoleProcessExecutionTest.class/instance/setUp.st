@@ -11,20 +11,8 @@ setUp
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'alberto')."data-entry-1"
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'juan')."data-entry-2"
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'mario')."data-entry-3"
-	self processExecutionSimulator registerUser: (self defaultBpmUserClass getExistingOrNewUserNamed: 'bruno'). "approver"
+	self registerUsers: #('alberto' 'juan' 'mario' 'bruno') inExecutionAndEnvironment: environment.
 
-	environment registerUser: (self getUserNamed: 'alberto'). 
-	environment registerUser: (self getUserNamed: 'juan'). 
-	environment registerUser: (self getUserNamed: 'mario'). 
-	environment registerUser: (self getUserNamed: 'bruno'). 
-
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'empry role' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-1' in: 'ue') grantUser: (self getUserNamed: 'alberto') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-2' in: 'ue') grantUser: (self getUserNamed: 'juan') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-3' in: 'ue') grantUser: (self getUserNamed: 'mario') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'approver' in: 'ue') grantUser: (self getUserNamed: 'bruno') ifPresent: [].
+	self grantUsers: {'alberto' -> 'empry role'. 'alberto' -> 'data-entry-1'. 'juan' -> 'data-entry-2'. 'mario' -> 'data-entry-3'. 'bruno' -> 'approver'} in: 'ue'.
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').

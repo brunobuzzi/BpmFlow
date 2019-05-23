@@ -1,4 +1,4 @@
-other
+facilities
 createUeEnvironmentAndApplication
 	| environment application |
 

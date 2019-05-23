@@ -4,6 +4,6 @@
 	"instance" : {
 		"createProcessDefinition" : "brunobb 05/13/2019 12:12",
 		"formInstance_citizen_appliance" : "brunobb 05/13/2019 12:13",
-		"setUp" : "brunobb 05/21/2019 08:56",
-		"tearDown" : "brunobb 05/22/2019 12:59",
+		"setUp" : "brunobb 05/23/2019 09:53",
+		"tearDown" : "brunobb 05/23/2019 09:09",
 		"testReuseExternalObject" : "brunobb 05/14/2019 03:43" } }
