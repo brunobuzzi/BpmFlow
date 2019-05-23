@@ -8,4 +8,4 @@ createUeEnvironmentAndApplication
 
 	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue'.
 
-	environment registerApplication: application.
+	environment registerApplication: application ifPresent: [] ifTaken: [].

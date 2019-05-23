@@ -8,4 +8,4 @@ createStEnvironmentAndApplication
 
 	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'st'.
 
-	environment registerApplication: application.
+	environment registerApplication: application ifPresent: [] ifTaken: [].
