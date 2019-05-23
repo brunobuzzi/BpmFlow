@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bpmProcess",
+		"logEntries" ],
+	"name" : "BpmExecutionLog",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

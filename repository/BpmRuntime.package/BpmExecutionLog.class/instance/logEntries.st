@@ -1,0 +1,3 @@
+Accessing
+logEntries
+	^logEntries

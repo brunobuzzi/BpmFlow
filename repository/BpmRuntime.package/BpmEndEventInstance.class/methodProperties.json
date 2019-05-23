@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "brunobb 05/23/2019 04:36",
 		"performInitializationOn:" : "BrunoBB 12/01/2015 12:03",
 		"summaryTitle" : "brunobb 02/09/2018 11:08" } }

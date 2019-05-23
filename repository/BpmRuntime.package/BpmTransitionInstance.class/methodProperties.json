@@ -2,6 +2,8 @@
 	"class" : {
 		"newBasedOn:" : "brunobb 10/05/2018 12:17" },
 	"instance" : {
+		"asLogEntry" : "brunobb 05/23/2019 04:13",
+		"creationTime" : "brunobb 05/23/2019 03:40",
 		"definition" : "BrunoBB 11/01/2015 12:55",
 		"definition:" : "BrunoBB 11/01/2015 12:55",
 		"endArtifact" : "BrunoBB 11/01/2015 12:55",
