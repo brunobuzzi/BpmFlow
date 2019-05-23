@@ -20,4 +20,4 @@ generateLog
 		value: bpmProcess states;
 		value: bpmProcess userAssignments.
 
-	logEntries := logEntries asSortedCollection: [:a :b | a timeStamp <= b timeStamp].
+	logEntries := logEntries asSortedCollection: [:a :b | a getTimeStamp <= b getTimeStamp].
