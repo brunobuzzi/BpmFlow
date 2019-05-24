@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user",
-		"application",
-		"role" ],
-	"name" : "BpmUserGrantConfiguration",
+		 ],
+	"name" : "InvalidCsvConfigurationException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmCoreException",
 	"type" : "normal" }

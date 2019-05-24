@@ -1,0 +1,4 @@
+other
+hasConfigurations
+
+	^configurations notEmpty

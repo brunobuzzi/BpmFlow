@@ -1,4 +1,4 @@
 other
 roleName
 
-	^role name
+	^roleName

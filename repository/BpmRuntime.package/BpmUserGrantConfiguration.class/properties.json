@@ -1,0 +1,20 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"application",
+		"role",
+		"roleName",
+		"roleType",
+		"roleIsAdmin",
+		"environment" ],
+	"name" : "BpmUserGrantConfiguration",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

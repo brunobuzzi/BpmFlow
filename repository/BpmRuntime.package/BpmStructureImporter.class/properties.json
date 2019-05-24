@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"csvString",
+		"structure",
+		"configurations" ],
+	"name" : "BpmStructureImporter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
