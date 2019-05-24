@@ -1,4 +1,4 @@
-other
+upload
 renderCSVUploadOn: html
 
 	html div class: 'centered-unique-form float-left width-28per';

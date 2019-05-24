@@ -1,4 +1,4 @@
-other
+upload
 renderApplyImportedDataOn: html
 
 	importedConfigurationBatchList items notEmpty

@@ -1,6 +1,6 @@
 other
 applyImportedConfiguration
 
-	importedConfigurationBatchList items do: [:each | each applyConfiguration].
+	importer importBpmStructure.
 
 	self sewafTableForGrantConfiguration information: 'The Configuration has been imported !' color: 'green'.

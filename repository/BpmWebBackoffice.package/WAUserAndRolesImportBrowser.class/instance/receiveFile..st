@@ -1,4 +1,4 @@
-other
+upload
 receiveFile: aFile
 	"The receiver store the file <aFile> temporary directory -temp-"
     | stream |

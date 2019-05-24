@@ -1,4 +1,4 @@
-other
+upload
 renderHelpOn: html
 
 	html div class: 'import-csv-info';

@@ -5,6 +5,7 @@ initializeSewafTableForGrantConfiguration
 	table := (SewafTableReport summary: 'GrantConfigurartion')
 		backcolor: self session user userOptions getTableReportBackcolor;
 		columns: (OrderedCollection new  
+						add: (SewafReportColumn selector: #environmentName title: 'Environment');
 						add: (SewafReportColumn selector: #applicationName title: 'Application');
 						add: (SewafReportColumn selector: #applicationType title: 'Type');
 						add: (SewafReportColumn selector: #username title: 'Username');

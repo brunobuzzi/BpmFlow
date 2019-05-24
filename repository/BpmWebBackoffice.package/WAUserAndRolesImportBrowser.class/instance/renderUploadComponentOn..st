@@ -1,4 +1,4 @@
-other
+upload
 renderUploadComponentOn: html
 
 	html label attributeAt: 'for' put: 'selectFile'; with: ('Select CSV File' translateIn: self session).

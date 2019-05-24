@@ -1,7 +1,7 @@
-other
+upload
 renderProcessDataOn: html
 
-	fileRows notEmpty
+	importer hasConfigurations
 	ifTrue: [
 		html submitButton class: 'display-block';
 				callback: [self importConfiguration]; 
