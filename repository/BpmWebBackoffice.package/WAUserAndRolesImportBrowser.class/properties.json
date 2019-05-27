@@ -8,7 +8,6 @@
 	"instvars" : [
 		"importedDataBatchList",
 		"importedConfigurationBatchList",
-		"fileRows",
 		"importer" ],
 	"name" : "WAUserAndRolesImportBrowser",
 	"pools" : [
