@@ -1,8 +1,6 @@
 {
 	"class" : {
-		"for:app:role:" : "brunobb 05/24/2019 12:23",
 		"newOn:for:app:role:" : "brunobb 05/24/2019 12:23",
-		"newOn:for:app:roleName:roleType:" : "brunobb 05/24/2019 12:23",
 		"newOn:for:app:roleName:roleType:roleIsAdmin:" : "brunobb 05/24/2019 12:24" },
 	"instance" : {
 		"application" : "brunobb 05/24/2019 12:23",
@@ -10,7 +8,7 @@
 		"applicationHasEnvironment" : "brunobb 05/24/2019 12:23",
 		"applicationName" : "brunobb 05/24/2019 12:23",
 		"applicationType" : "brunobb 05/24/2019 12:23",
-		"applyConfiguration" : "brunobb 05/24/2019 12:23",
+		"applyConfiguration" : "brunobb 05/27/2019 12:47",
 		"environment" : "brunobb 05/24/2019 12:23",
 		"environment:" : "brunobb 05/24/2019 12:23",
 		"environmentName" : "brunobb 05/24/2019 12:33",

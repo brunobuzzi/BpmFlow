@@ -1,5 +1,7 @@
-other
+pre import
 mapCsvToDictionary
+	"The receiver split the <csvString> by line feed and then split each line by semicolon. The split by semicolon has to have 7 substrings otherwise is a CSV invalid format.
+	Each row is stored in dictionary <structure> to be later processed"
 	| rows |
 
 	structure := Dictionary new.

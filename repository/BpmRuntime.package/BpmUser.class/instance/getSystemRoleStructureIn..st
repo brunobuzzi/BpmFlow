@@ -6,7 +6,7 @@ getSystemRoleStructureIn: aBpmEnvironment
 
 	(self getVisibleApplicationsIn: aBpmEnvironment) do: [:eachApp | 
 		(self defaultRoleClass getRolsIn: aBpmEnvironment forApplication: eachApp) do: [:eachRole | 
-			eachRole users do: [:eachUsr | grants add: (BpmUserGrantConfiguration for: eachUsr app: eachApp role: eachRole)]]
+			eachRole users do: [:eachUsr | grants add: (BpmUserGrantConfiguration newOn: aBpmEnvironment for: eachUsr app: eachApp role: eachRole)]]
 		].
 
 	^grants

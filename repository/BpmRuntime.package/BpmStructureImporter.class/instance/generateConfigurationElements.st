@@ -1,4 +1,4 @@
-other
+pre import
 generateConfigurationElements
 	"The receiver iterate over instance variable <fileRows>. <eachRow> is line where values are separated by ';'.
 	1- environment name 2- application name, 3- application type, 4- role name, 5- role type, 6- isAdmin ,7- user name"
@@ -15,7 +15,7 @@ generateConfigurationElements
 		roleType := (csvData at: 5) trimBlanks.
 		isAdmin := [Boolean fromString: (csvData at: 6) trimBlanks] on: Error do: [:ex | false].
 		user := (csvData at: 7) trimBlanks.
-		application := ((appType = 'O') ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]) newNamed: app.
+		application := ((appType = 'O') ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]) getExistingApplicationOrCreateNewNamed: app.
 
 		configuration := BpmUserGrantConfiguration 
 									newOn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: env) 
