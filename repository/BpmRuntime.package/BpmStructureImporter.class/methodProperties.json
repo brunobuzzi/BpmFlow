@@ -1,15 +1,17 @@
 {
 	"class" : {
-		"newOn:" : "brunobb 05/24/2019 12:09" },
+		"newOn:" : "brunobb 05/24/2019 12:45" },
 	"instance" : {
-		"configurations" : "brunobb 05/24/2019 12:28",
-		"configurations:" : "brunobb 05/24/2019 12:28",
-		"csvString" : "brunobb 05/24/2019 12:09",
-		"csvString:" : "brunobb 05/24/2019 12:09",
-		"generateConfigurationElements" : "brunobb 05/24/2019 12:35",
-		"hasConfigurations" : "brunobb 05/24/2019 12:10",
-		"importBpmStructure" : "brunobb 05/24/2019 12:09",
-		"initialize" : "brunobb 05/24/2019 12:36",
-		"mapCsvToDictionary" : "brunobb 05/24/2019 12:36",
-		"structure" : "brunobb 05/24/2019 12:28",
-		"structure:" : "brunobb 05/24/2019 12:28" } }
+		"configurations" : "brunobb 05/24/2019 12:45",
+		"configurations:" : "brunobb 05/24/2019 12:45",
+		"csvString" : "brunobb 05/24/2019 12:45",
+		"csvString:" : "brunobb 05/24/2019 12:45",
+		"generateConfigurationElements" : "brunobb 05/24/2019 12:45",
+		"hasConfigurations" : "brunobb 05/24/2019 12:45",
+		"importBpmStructure" : "brunobb 05/24/2019 12:45",
+		"initialize" : "brunobb 05/24/2019 12:45",
+		"mapCsvToDictionary" : "brunobb 05/24/2019 12:45",
+		"structure" : "brunobb 05/24/2019 12:45",
+		"structure:" : "brunobb 05/24/2019 12:45",
+		"uploadUser" : "brunobb 05/24/2019 12:45",
+		"uploadUser:" : "brunobb 05/24/2019 12:45" } }
