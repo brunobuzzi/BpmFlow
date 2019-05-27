@@ -2,7 +2,7 @@ applications
 registerApplication: anApplication ifPresent: presentBlock ifTaken: takenBlock
 	"The receiver register <anApplication> if other <BpmEnviroment> already have <anApplication> registered then raise <anExeception>"
 
-	anApplication hasBpmEnvironment ifTrue: [^takenBlock value].
+	(anApplication hasBpmEnvironment and: [(anApplication bpmEnvironment == self) not]) ifTrue: [^takenBlock value].
 
 	(applications includesKey: anApplication applicationName) ifTrue: [^presentBlock value].
 
