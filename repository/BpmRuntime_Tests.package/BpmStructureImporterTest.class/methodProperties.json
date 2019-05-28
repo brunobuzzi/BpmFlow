@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"csvExample1" : "brunobb 05/28/2019 04:24",
+		"getUserNamed:" : "brunobb 05/28/2019 04:24",
+		"tearDown" : "brunobb 05/28/2019 04:53",
+		"testImportDifferentEnvironmentsByNoAdminUser" : "brunobb 05/28/2019 04:25",
+		"testImportWithNoUser" : "brunobb 05/28/2019 04:25",
+		"testInvalidCsvFormat" : "brunobb 05/28/2019 04:25",
+		"testValidImport" : "brunobb 05/28/2019 04:59" } }

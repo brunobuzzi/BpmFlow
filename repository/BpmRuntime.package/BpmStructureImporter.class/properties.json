@@ -9,7 +9,8 @@
 		"csvString",
 		"structure",
 		"configurations",
-		"uploadUser" ],
+		"uploadUser",
+		"executed" ],
 	"name" : "BpmStructureImporter",
 	"pools" : [
 		 ],
