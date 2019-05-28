@@ -13,7 +13,7 @@
 		"initialize" : "brunobb 05/27/2019 11:07",
 		"initializeBatchedLists" : "brunobb 05/27/2019 11:01",
 		"initializeSewafTableForGrantConfiguration" : "brunobb 05/27/2019 11:01",
-		"initializeSewafTableForImportedData" : "brunobb 05/27/2019 11:01",
+		"initializeSewafTableForImportedData" : "brunobb 05/28/2019 05:15",
 		"receiveFile:" : "brunobb 05/27/2019 11:01",
 		"renderApplyImportedDataOn:" : "brunobb 05/27/2019 11:01",
 		"renderCSVUploadOn:" : "brunobb 05/27/2019 11:01",
