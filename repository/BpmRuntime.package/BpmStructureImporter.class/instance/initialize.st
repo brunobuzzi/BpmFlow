@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	executed := false
+	configurations := OrderedCollection new.
+	executed := false.
