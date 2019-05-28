@@ -1,4 +1,4 @@
-other
+csv
 getSystemRoleStructureIn: aBpmEnvironment
 	| grants |
 
@@ -6,7 +6,13 @@ getSystemRoleStructureIn: aBpmEnvironment
 
 	(self getVisibleApplicationsIn: aBpmEnvironment) do: [:eachApp | 
 		(self defaultRoleClass getRolsIn: aBpmEnvironment forApplication: eachApp) do: [:eachRole | 
-			eachRole users do: [:eachUsr | grants add: (BpmUserGrantConfiguration newOn: aBpmEnvironment for: eachUsr app: eachApp role: eachRole)]]
+			eachRole users do: [:eachUsr |  | userGrantConfig |
+				userGrantConfig := BpmUserGrantConfiguration newOn: aBpmEnvironment for: eachUsr app: eachApp role: eachRole.
+				userGrantConfig 
+					roleName: eachRole name;
+					roleType: (eachRole isBackofficeRole ifTrue: ['B'] ifFalse: ['F']);
+					roleIsAdmin: eachRole isAdmin.
+				grants add: userGrantConfig]]
 		].
 
 	^grants
