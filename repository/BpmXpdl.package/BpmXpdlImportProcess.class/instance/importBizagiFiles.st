@@ -1,6 +1,7 @@
 import
 importBizagiFiles
-	| appDictionary fileArray |
+	"The receiver import all Bizagi (XPDL) files in collection <indexXpdlFileMapper> if there is an format error throw <anXpdlFileFormatException> "
+	| appDictionary fileArray packageApplicationMapping |
 
 	appDictionary := Dictionary new.
 	fileArray := OrderedCollection new.
@@ -13,7 +14,7 @@ importBizagiFiles
 
 	(self checkFilesFormatOf: fileArray) ifFalse: [^XpdlFileFormatException signal: 'Wrong XPDL file format'].
 	"ERROR handler"
-	xpdlReader := self defaultXpdlReaderClass forFiles: fileArray asArray.
+	xpdlReader := self defaultXpdlReaderClass forFiles: fileArray asArray. "create the <XPDLReader> to read selected XPDL files"
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 
@@ -22,8 +23,11 @@ importBizagiFiles
 			processGenerator mapProcess: eachPool getName toApplication: (self getApplicationFor: eachPackage).
 		].
 	].
+	"create a Dictionary with key <aXPDLPackageNode> and value <anApplication>. To define in which <Application> the Bpm process will be stored"
+	packageApplicationMapping := self createXpdlPackageApplicationMapping.
 
-	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: self createXpdlPackageApplicationMapping.
+	"the structure visitor check that all bpm artifacts are well formed"
+	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: packageApplicationMapping.
 	xpdlStructureVisitor visitAllXpdlPackages.
 
 	"If false (no warnings) -> the processes definition are created and but not stored yet"
