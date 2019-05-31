@@ -1,11 +1,16 @@
 other
 renderContentOn: html
+	| jsEcElement |
 
 	(self componentValueAt: 'alert') ifNotNil: [:alertString | 
 		html document addLoadScript: (html javascript alert: alertString).
 		self removeValueNamed: 'alert'].
 
-	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; with: [self renderSearchOptionsOn: html].
+	html div id: 'top-search-area'; class: 'top-search-area-box-shadow'; 
+		with: [self renderSearchOptionsOn: html.
+				jsEcElement := self createEcSearchAreaJsObject.
+				jsEcElement callInitIconFunction; callInitElementFunction;callInitElementSiblingFunction.
+				html script: jsEcElement.].
 
 	self renderChangeProcessStateFormOn: html.
 
