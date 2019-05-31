@@ -5,4 +5,4 @@ renderSearchAreaOn: html
 
 	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
 
-	html div id: 'searchUserForm'; with: [self renderSearchApplicationOn: html].
+	html div id: 'top-search-form'; with: [self renderSearchApplicationOn: html].

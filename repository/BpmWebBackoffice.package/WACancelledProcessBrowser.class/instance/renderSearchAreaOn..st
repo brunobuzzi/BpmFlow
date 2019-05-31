@@ -5,4 +5,4 @@ renderSearchAreaOn: html
 
 	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
 
-	self renderSearchRegularPanelOn: html
+	html div id: 'top-search-form'; with: [self renderSearchRegularPanelOn: html]
