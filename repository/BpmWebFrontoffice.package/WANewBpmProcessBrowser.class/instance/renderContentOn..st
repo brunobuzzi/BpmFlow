@@ -1,9 +1,12 @@
 other
 renderContentOn: html
-	| widthClass |
+	| widthClass jsEcElement |
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
-		with: [self renderSearchAreaOn: html.].
+		with: [self renderSearchAreaOn: html.
+				jsEcElement := self createEcSearchAreaJsObject.
+				jsEcElement callInitIconFunction; callInitElementFunction;callInitElementSiblingFunction.
+				html script: jsEcElement.].
 
 	showLateralList ifTrue: [
 		html div id: 'lateral-definition-list'; class: 'lateral-left-list'; 
