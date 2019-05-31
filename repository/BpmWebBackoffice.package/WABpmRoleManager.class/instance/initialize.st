@@ -9,5 +9,3 @@ initialize
 	newUser := self defaultBpmUserClass new.
 
 	self initializeBatchedLists.
-
-	self setShowToElementNamed: 'search-area'. "the search-are is shown by default"

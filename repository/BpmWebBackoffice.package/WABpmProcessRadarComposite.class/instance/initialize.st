@@ -5,8 +5,6 @@ initialize
 
 	searchCollectionResult := OrderedCollection new.
 
-	self setShowToElementNamed: 'search-area'.
-
 	assignmentBatchedList := SewafBatchedList parentComponent: self.
 	assignmentBatchedList batchSize: self session user regularListPagingSize;
 		navigationCssClass: 'batch-div-bottom';

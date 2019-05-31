@@ -3,8 +3,6 @@ initialize
 
 	super initialize.
 
-	self setShowToElementNamed: 'search-area'. "the search-are is shown by default"
-
 	searchAvailable := false.
 
 	instancesToRender := Dictionary new.

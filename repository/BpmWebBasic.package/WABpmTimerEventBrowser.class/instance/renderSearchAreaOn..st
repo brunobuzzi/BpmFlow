@@ -1,7 +1,7 @@
 search area
 renderSearchAreaOn: html
 
-	self renderShowHideWindowIconOn: html. "show/hide search area"
+	self renderShowHideJsWindowIconOn: html. "show/hide search area"
 
 	html div id: 'top-search-form'; with: [
 		html form with: [ 

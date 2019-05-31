@@ -1,8 +1,6 @@
 search area
 renderSearchAreaOn: html
 
-	self renderShowHideWindowIconOn: html. "show/hide search area"
-
-	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
+	self renderShowHideJsWindowIconOn: html. "show/hide search area"
 
 	html div id: 'top-search-form'; with: [self renderSearchRegularPanelOn: html]
