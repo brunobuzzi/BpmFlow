@@ -1,12 +1,16 @@
 render
 renderContentOn: html
+	| jsEcElement |
 
 	multiChartIsEnabled ifTrue: [^self renderMultiChartsDefinitionsOn: html].
  
 	self setChartDefinition.
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
-		with: [self renderSearchAreaOn: html].
+		with: [self renderSearchAreaOn: html.
+				jsEcElement := self createEcSearchAreaJsObject.
+				jsEcElement callInitIconFunction; callInitElementFunction;callInitElementSiblingFunction.
+				html script: jsEcElement.].
 
 	self showChartExecuted ifFalse: [^self renderComponentButChartOn: html]."render a component if the chart is not rendered. Used in one case"
 	self resetShowChartExecuted.

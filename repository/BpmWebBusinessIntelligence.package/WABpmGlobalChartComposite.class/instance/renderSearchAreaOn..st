@@ -3,16 +3,18 @@ renderSearchAreaOn: html
 
 	super renderSearchAreaOn: html.
 
-	html form with: [
-		html fieldSet with: [
-			html legend class: 'top-search-legend'; 
-				with: ('Draw Chart' translateIn: self session).
+	html div id: 'top-search-form'; with: [
+		html form with: [
+			html fieldSet with: [
+				html legend class: 'top-search-legend'; 
+					with: ('Draw Chart' translateIn: self session).
 
-			self renderDistributionComboOn: html.
-			self renderChartTypeComboOn: html.
+				self renderDistributionComboOn: html.
+				self renderChartTypeComboOn: html.
 
-			self renderShowChartButtonOn: html.
-		]
+				self renderShowChartButtonOn: html.
+			]
+		].
 	].
 
 	self renderSaveChartIconOn: html.
