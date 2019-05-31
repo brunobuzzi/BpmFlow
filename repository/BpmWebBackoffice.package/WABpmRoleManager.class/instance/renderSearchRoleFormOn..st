@@ -1,11 +1,9 @@
 other
 renderSearchRoleFormOn: html
 
-	self renderShowHideWindowIconOn: html. "show/hide search area"
+	self renderShowHideJsWindowIconOn: html. "show/hide search area"
 
-	(self isEnabledToShowElementNamed: 'search-area') ifFalse: [^self].
-
-	html div 
+	html div id: 'top-search-form';
 		with: [html form with: [
 					html fieldSet with: [
 						html legend class: 'top-search-legend'; 
