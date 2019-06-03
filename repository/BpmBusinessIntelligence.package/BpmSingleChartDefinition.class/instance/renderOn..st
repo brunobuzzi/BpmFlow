@@ -6,9 +6,9 @@ renderOn: html
 	report := self createDistributionReport. "<anAppDistributionReport>"
 
 	self xAxisIsDate ifTrue: [
-		self createSecondayDistributionByYear.
-		self createSecondayDistributionByMonth.
-		self createSecondayDistributionByWeek.
+		self createSecondaryDistributionByYear.
+		self createSecondaryDistributionByMonth.
+		self createSecondaryDistributionByWeek.
 	].
 
 	self chartType renderReport: report on: html

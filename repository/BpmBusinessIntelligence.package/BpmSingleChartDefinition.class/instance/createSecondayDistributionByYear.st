@@ -1,4 +1,0 @@
-report data
-createSecondayDistributionByYear
-
-	^report createSecondayDistributionByYear

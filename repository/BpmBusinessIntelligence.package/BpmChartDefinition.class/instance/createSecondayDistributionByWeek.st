@@ -1,4 +1,0 @@
-report data
-createSecondayDistributionByWeek
-
-	^report createSecondayDistributionByWeek

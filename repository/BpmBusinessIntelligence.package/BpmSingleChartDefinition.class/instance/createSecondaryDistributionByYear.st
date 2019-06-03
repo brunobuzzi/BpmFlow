@@ -1,0 +1,4 @@
+report data
+createSecondaryDistributionByYear
+
+	^report createSecondaryDistributionByYear
