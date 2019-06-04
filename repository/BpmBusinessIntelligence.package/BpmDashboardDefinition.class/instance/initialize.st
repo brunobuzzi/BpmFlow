@@ -9,3 +9,4 @@ initialize
 	items := OrderedCollection new.
 	isPrivate := false.
 	creationTime := TimeStamp now.
+	chartsPerColumn := 1.

@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"getCurrentCollection" : "brunobb 09/19/2018 11:06",
-		"getCurrentDashboardItems" : "brunobb 10/01/2018 07:12",
+		"getCurrentDashboardItems" : "brunobb 06/04/2019 02:59",
 		"getIconNameFormItem" : "brunobb 09/19/2018 11:08",
 		"getTextForItem:" : "brunobb 09/19/2018 11:09",
 		"gitbookUrl" : "brunobb 07/13/2018 10:53",
@@ -16,7 +16,7 @@
 		"renderDownIconOn:forChart:" : "brunobb 01/31/2019 09:15",
 		"renderDownUpIconsOn:forChart:dashboard:" : "brunobb 09/27/2018 05:59",
 		"renderEditDashboardIconOn:" : "brunobb 01/31/2019 09:15",
-		"renderItemComponentOn:" : "brunobb 10/01/2018 10:09",
+		"renderItemComponentOn:" : "brunobb 06/04/2019 04:35",
 		"renderItemDescriptionAditionalDataOn:" : "brunobb 01/31/2019 09:30",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 01/31/2019 09:31",
 		"renderItemDescriptionTitleOn:" : "brunobb 09/28/2018 10:36",

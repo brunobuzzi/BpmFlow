@@ -13,7 +13,8 @@
 		"isPrivate",
 		"owner",
 		"creationTime",
-		"bpmEnvironment" ],
+		"bpmEnvironment",
+		"chartsPerColumn" ],
 	"name" : "BpmDashboardDefinition",
 	"pools" : [
 		 ],
