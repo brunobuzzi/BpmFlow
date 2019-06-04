@@ -4,6 +4,7 @@ initialize
 	super initialize.
 
 	searchAvailable := false.
+	isJsEnhacementsEnabled := false.
 
 	instancesToRender := Dictionary new.
 
