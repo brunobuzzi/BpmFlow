@@ -11,7 +11,7 @@ An **Open Source** implementation of **BPM** standart using **GemStone/S**, **Or
 ![BpmFlow](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LH4gGgyMb1_fhOg782r%2F-LWpVpKsPpMtJ-U3TCUS%2F-LWpVtYdqza6vnesL2ib%2Fimage.png?alt=media&token=7104d8e1-a20b-4281-b6b0-cb90c7dd1f4f)<br>
 
 **Business Intelligence Application**
-![BpmFlow](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LH4gGgyMb1_fhOg782r%2F-LHEYtp6nhvcoDWvpx2y%2F-LHE_dbv88nMAyDn75op%2Ffield-comp-02.png?alt=media&token=f7d608be-1043-476f-a3b0-abcae8f64263)<br>
+![BpmFlow](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LH4gGgyMb1_fhOg782r%2F-Lgc2ZZSmmhUjfd20Vbb%2F-Lgc2aKdOcwBhJovTNiO%2Fimage.png?alt=media&token=b959cab3-faac-472b-9bae-e6431841e3aa)<br>
 
 The manuals of the Backoffice and Frontoffice Applications can be found here:<br>
 https://bpmflow.gitbook.io/project/introduction
