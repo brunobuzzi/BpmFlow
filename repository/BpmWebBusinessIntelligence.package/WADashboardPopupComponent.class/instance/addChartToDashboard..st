@@ -7,8 +7,8 @@ addChartToDashboard: aBpmDashboardDefinition
 	item := BpmDashboardChartDefinition newForDashboard: aBpmDashboardDefinition.
 	item chartDefinition: chartDefinition;
 		recursion: (self getRecursionFrom: (self componentValueAt: 'recursion'));
-		hasFixedDates: (self componentValueAt: 'hasFixedDates').
+		hasFixedDates: (self componentValueAt: 'hasFixedDates' ifAbsent: [false]).
 
-	item recursion modifyStartDateOnUpdate: (self componentValueAt: 'modifyStartDateOnUpdate').
+	item recursion modifyStartDateOnUpdate: (self componentValueAt: 'modifyStartDateOnUpdate' ifAbsent: [false]).
 
 	aBpmDashboardDefinition addItem: item

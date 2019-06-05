@@ -2,8 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addChartToDashboard:" : "brunobb 09/27/2018 09:57",
-		"createDashboard" : "brunobb 09/27/2018 09:57",
+		"addChartToDashboard:" : "brunobb 06/05/2019 06:10",
 		"createReverseTranslation" : "brunobb 01/31/2019 09:03",
 		"getAllDashboardsNames" : "brunobb 06/04/2019 07:04",
 		"getRecursionFrom:" : "brunobb 09/28/2018 11:36",

@@ -15,7 +15,7 @@ renderContentOn: html
 						selected: model name;
 						enabled: [:value | true].
 				html button 
-					callback: [self createDashboard];
+					callback: [self selectDashboard];
 					with: ('Select' translateIn: self session).
 			]
 		]

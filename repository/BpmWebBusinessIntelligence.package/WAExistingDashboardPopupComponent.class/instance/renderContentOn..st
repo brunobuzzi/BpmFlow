@@ -29,7 +29,7 @@ renderContentOn: html
 					self renderModifyStartDateOnUpdateCheckboxOn: html.
 				].
 				html button 
-					callback: [self createDashboard];
+					callback: [self saveDashboard];
 					with: ('Save' translateIn: self session).
 			]
 	]
