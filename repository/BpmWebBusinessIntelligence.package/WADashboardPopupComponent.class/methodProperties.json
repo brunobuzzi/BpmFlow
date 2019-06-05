@@ -5,7 +5,10 @@
 		"addChartToDashboard:" : "brunobb 09/27/2018 09:57",
 		"createDashboard" : "brunobb 09/27/2018 09:57",
 		"createReverseTranslation" : "brunobb 01/31/2019 09:03",
+		"getAllDashboardsNames" : "brunobb 06/04/2019 07:04",
 		"getRecursionFrom:" : "brunobb 09/28/2018 11:36",
+		"onChartsPerColumnChanged:" : "brunobb 06/04/2019 05:45",
+		"onDashboardChanged:" : "brunobb 06/04/2019 07:05",
 		"renderHasFixedDatesCheckboxOn:" : "brunobb 01/31/2019 09:18",
 		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 01/31/2019 09:33",
 		"renderRecursionComboOn:" : "brunobb 01/31/2019 09:37" } }

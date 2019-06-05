@@ -11,7 +11,16 @@ renderContentOn: html
 						class: 'display-block';
 						attributeAt: 'id' put: 'dashboardName'; 
 						list: (#(''), self getAllDashboardsNames) asSortedCollection;
-						callback: [:dashboardName | self onDashboardChanged: dashboardName].
+						callback: [:dashboardName | self onDashboardChanged: dashboardName];
+						selected: model name;
+						enabled: [:value | true].
+					html label for: 'charts-per-column'; with: ('Charts per Column' translateIn: self session).
+					html select
+						class: 'display-block';
+						attributeAt: 'id' put: 'charts-per-column'; 
+						list: #(1 2 3 4);
+						callback: [:value | self onChartsPerColumnChanged: value];
+						selected: (model ifNotNil: [model chartsPerColumn]).
 				].
 				html fieldSet with: [
 					html legend: ('Recursion Options' translateIn: self session).

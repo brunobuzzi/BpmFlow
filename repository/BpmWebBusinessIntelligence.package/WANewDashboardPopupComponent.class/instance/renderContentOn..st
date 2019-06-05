@@ -10,6 +10,12 @@ renderContentOn: html
 					html textInput id: 'dashboardName'; callback: [:value | self addValue: value named: 'dashboardName']; class: 'display-block'. 
 					html label for: 'description'; with: ('Description' translateIn: self session).
 					html textArea id: 'description'; callback: [:value | self addValue: value named: 'description']; class: 'display-block'.
+					html select
+						class: 'display-block';
+						attributeAt: 'id' put: 'charts-per-column'; 
+						list: #(1 2 3 4);
+						callback: [:value | self onChartsPerColumnChanged: value];
+						selected: (model ifNotNil: [model chartsPerColumn]).
 					self renderIsActiveCheckboxOn: html.
 					self renderIsPrivateCheckboxOn: html.
 				].
