@@ -1,7 +1,7 @@
 field collection
 basicCreateChartDefinition
  
-	chartDefinition := BpmChartDefinition newFor: self session user in: self session bpmEnvironment.
+	chartDefinition := BpmSingleChartDefinition newFor: self session user in: self session bpmEnvironment.
 
 	chartDefinition
 		scope: (self newChartScopeFor: chartDefinition);
