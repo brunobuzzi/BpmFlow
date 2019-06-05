@@ -2,7 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createDashboard" : "brunobb 06/05/2019 06:54",
-		"renderContentOn:" : "brunobb 06/04/2019 05:51",
-		"renderIsActiveCheckboxOn:" : "brunobb 01/31/2019 09:18",
-		"renderIsPrivateCheckboxOn:" : "brunobb 01/31/2019 09:18" } }
+		"defaultFormButtonLabel" : "brunobb 06/05/2019 12:20",
+		"performDefaultAction" : "brunobb 06/05/2019 13:01",
+		"renderContentOn:" : "brunobb 06/05/2019 12:17",
+		"renderEditDashboardOptionsOn:" : "brunobb 06/05/2019 12:41",
+		"renderHasFixedDatesCheckboxOn:" : "brunobb 06/05/2019 12:56",
+		"renderIsActiveCheckboxOn:" : "brunobb 06/05/2019 12:52",
+		"renderIsPrivateCheckboxOn:" : "brunobb 06/05/2019 12:52",
+		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 06/05/2019 12:26",
+		"renderRecursionComboOn:" : "brunobb 06/05/2019 12:25" } }

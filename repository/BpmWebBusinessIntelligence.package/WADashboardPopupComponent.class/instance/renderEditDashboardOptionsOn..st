@@ -1,0 +1,4 @@
+other
+renderEditDashboardOptionsOn: html
+
+	self subclassResponsibility
