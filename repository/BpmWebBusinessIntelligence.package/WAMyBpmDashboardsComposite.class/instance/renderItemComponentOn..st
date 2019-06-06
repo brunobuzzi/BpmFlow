@@ -7,14 +7,13 @@ renderItemComponentOn: html
 	columnsTemplate := ''.
 	1 to: selectedLateralItem chartsPerColumn do: [:index | columnsTemplate := columnsTemplate, width, ' ']. 
 
-	html div style: ('width: 100%; display: grid; grid-template-columns: ', columnsTemplate, '; grid-gap: 10px;') ;with: [
+	html div style: ('width: 100%; display: grid; grid-template-columns: ', columnsTemplate, ';') ;with: [
 		self getCurrentDashboardItems do: [:eachCollection | 
 			eachCollection keysAndValuesDo: [:index :dashboardInstance | | chartDefinition |
 				chartDefinition := dashboardInstance itemDefinition chartDefinition.
 				html div style: 'display: inline-grid;'; with: [
-				"	self renderDownUpIconsOn: html forChart: chartDefinition dashboard: dashboardInstance.
-					self renderBackForwardIconsOn: html dashboard: dashboardInstance index: index."
-					chartDefinition renderReport: dashboardInstance report on: html.
+					html div with: [self renderActionsOn: html forChart: chartDefinition in: dashboardInstance].
+					html div with: [chartDefinition renderReport: dashboardInstance report on: html].
 				].
 			].
 		].
