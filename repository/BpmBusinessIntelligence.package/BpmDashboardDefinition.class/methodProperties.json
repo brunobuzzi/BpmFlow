@@ -37,5 +37,7 @@
 		"ownerName" : "brunobb 06/03/2019 13:14",
 		"printLastUpdate" : "brunobb 06/03/2019 13:14",
 		"removeFromCache" : "brunobb 06/03/2019 13:14",
-		"removeItem:" : "brunobb 06/03/2019 13:14",
+		"removeItem:" : "brunobb 06/07/2019 10:07",
+		"removeItem:ifAbsent:" : "brunobb 06/07/2019 09:42",
+		"removeItemWithChart:ifAbsent:" : "brunobb 06/07/2019 10:08",
 		"updateDashboardInstances" : "brunobb 06/03/2019 13:14" } }

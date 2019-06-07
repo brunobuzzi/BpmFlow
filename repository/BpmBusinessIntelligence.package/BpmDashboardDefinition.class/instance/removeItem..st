@@ -1,4 +1,4 @@
 other
 removeItem: aBpmDashboardItemDefinition
 
-	^items remove: aBpmDashboardItemDefinition
+	^self removeItem: aBpmDashboardItemDefinition ifAbsent: []

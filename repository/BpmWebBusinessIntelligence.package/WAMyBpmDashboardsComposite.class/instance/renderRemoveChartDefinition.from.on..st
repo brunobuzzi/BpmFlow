@@ -1,8 +1,8 @@
 chart actions
-renderRemoveChartDefinition: aBpmDashboardChartDefinition from: aBpmDashboardInstance on: html
+renderRemoveChartDefinition: aBpmChartDefinition from: aBpmDashboardInstance on: html
    | jQueryId |
 
-	jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeChartDefinition' actionMethod: #removeChardDefinition.
+	jQueryId := self renderJQueryConfirmationDialogOn: html forActionNamed: 'removeChartDefinition' actionMethod: #removeChardDefinition:from: arguments: (Array with: aBpmChartDefinition with: aBpmDashboardInstance).
 
 	html div class: 'float-right margin-left-5px'; style: 'height: 10%'; with: [
 		html anchor 
