@@ -1,4 +1,4 @@
 chart actions
-removeChardDefinition: aBpmChartDefinition from: aBpmDashboardInstance
+removeChardDefinition: aBpmDashboardChartDefinition from: aBpmDashboardInstance
 
-	selectedLateralItem removeItemWithChart: aBpmChartDefinition ifAbsent: []
+	selectedLateralItem removeItem: aBpmDashboardChartDefinition ifAbsent: []

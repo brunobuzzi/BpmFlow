@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAEditChartOptionsPopupComponent",
+	"pools" : [
+		 ],
+	"super" : "WADashboardPopupComponent",
+	"type" : "normal" }

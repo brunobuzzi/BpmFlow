@@ -1,5 +1,5 @@
 other
-renderContentOn: html
+renderEditDashboardOptionsOn: html
 
 	html div "class: 'jquery-dialog-yes-no';" with: [
 		html form 
