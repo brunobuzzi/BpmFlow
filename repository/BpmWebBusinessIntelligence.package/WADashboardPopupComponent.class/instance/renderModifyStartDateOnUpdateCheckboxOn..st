@@ -1,4 +1,4 @@
-other
+chart options
 renderModifyStartDateOnUpdateCheckboxOn: html
 
 	html label attributeAt: 'for' put: 'modifyStartDateOnUpdate'; with: ('Modify Start Date on Update ?' translateIn: self session).

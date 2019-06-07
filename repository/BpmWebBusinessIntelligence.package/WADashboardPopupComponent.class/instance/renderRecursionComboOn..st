@@ -1,4 +1,4 @@
-other
+chart options
 renderRecursionComboOn: html
 
 	self createReverseTranslation.

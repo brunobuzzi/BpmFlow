@@ -1,5 +1,5 @@
 other
-selectDashboard
+performDefaultAction
 	| dashboardDefinition |
 
 	dashboardDefinition := (BpmDashboardRepository getDashboardsIn: self session bpmEnvironment for: self session user) 

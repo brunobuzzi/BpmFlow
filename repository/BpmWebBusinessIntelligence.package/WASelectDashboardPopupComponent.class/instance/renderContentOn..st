@@ -14,8 +14,14 @@ renderContentOn: html
 						callback: [:dashboardName | self onDashboardChanged: dashboardName];
 						selected: model name;
 						enabled: [:value | true].
+				html fieldSet with: [
+					html legend: ('Chart Recursion Options' translateIn: self session).
+					self renderRecursionComboOn: html.
+					self renderHasFixedDatesCheckboxOn: html.
+					self renderModifyStartDateOnUpdateCheckboxOn: html.
+				].
 				html button 
-					callback: [self selectDashboard];
+					callback: [self performDefaultAction];
 					with: ('Select' translateIn: self session).
 			]
 		]
