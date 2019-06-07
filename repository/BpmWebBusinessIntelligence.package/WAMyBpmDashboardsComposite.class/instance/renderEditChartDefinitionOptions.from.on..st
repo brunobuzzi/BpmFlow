@@ -8,7 +8,7 @@ renderEditChartDefinitionOptions: aBpmDashboardChartDefinition from: aBpmDashboa
 		html anchor 
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
-						with: [html image url: (SEWAFIconLibrary / #actionsdocumentedit16Png); 
+						with: [html image url: (SEWAFIconLibrary / #pencil16Png); 
 												title: ('Edit Chart' translateIn: self session); 
 												altText: ('Edit Chart' translateIn: self session) ]
 	]

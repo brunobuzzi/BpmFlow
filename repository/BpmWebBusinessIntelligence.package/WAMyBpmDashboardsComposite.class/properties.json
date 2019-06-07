@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"instancesToRender" ],
+		"instancesToRender",
+		"renderChartOptions" ],
 	"name" : "WAMyBpmDashboardsComposite",
 	"pools" : [
 		 ],

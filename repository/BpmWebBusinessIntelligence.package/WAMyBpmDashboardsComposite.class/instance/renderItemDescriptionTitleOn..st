@@ -3,8 +3,10 @@ renderItemDescriptionTitleOn: html
 
 	html output:  selectedLateralItem name.
 
-	self renderEditDashboardIconOn: html.
+	self renderRemoveDashboardIconOn: html.
 
 	selectedLateralItem isOutDated ifTrue: [self renderRefreshDashboardIconOn: html].
 
-	self renderRemoveDashboardIconOn: html.
+	self renderEditChartIconsOn: html.
+
+	self renderEditDashboardIconOn: html.

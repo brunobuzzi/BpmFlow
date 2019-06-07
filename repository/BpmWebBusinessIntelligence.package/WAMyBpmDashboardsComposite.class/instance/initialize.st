@@ -5,6 +5,7 @@ initialize
 
 	searchAvailable := false.
 	isJsEnhacementsEnabled := false.
+	renderChartOptions := false.
 
 	instancesToRender := Dictionary new.
 
