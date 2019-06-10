@@ -1,8 +1,8 @@
 other
-moveDown: aBpmChartDefinition
+moveDown: aBpmDashboardChartDefinition
 	| dashboardItemDef index |
 
-	dashboardItemDef := self getDashboardItemDefinitionFor: aBpmChartDefinition.
+	dashboardItemDef := self getDashboardItemDefinitionFor: aBpmDashboardChartDefinition.
 	index := items indexOf: dashboardItemDef.
 	(index = 0) ifTrue: [NoBpmDashboardItemException signal: 'No such DashboardItemDefinition'].
 	
