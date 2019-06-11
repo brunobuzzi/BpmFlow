@@ -1,4 +1,4 @@
-outdate
+outdated
 isMonthOutDated: aTimeStamp
 	"Answer whether or not the receiver is outdated based on it recursion policy <instanceRecursion> <aBpmDashboardMonthRecursion> with last execution <aTimeStamp>"
 	| nextTime |

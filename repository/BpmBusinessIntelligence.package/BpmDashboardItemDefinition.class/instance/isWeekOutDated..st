@@ -1,4 +1,4 @@
-outdate
+outdated
 isWeekOutDated: aTimeStamp
 	"Answer whether or not the receiver is outdated based on it recursion policy <instanceRecursion> <aBpmDashboardWeekRecursion> with last execution <aTimeStamp>"
 	| nextTime |

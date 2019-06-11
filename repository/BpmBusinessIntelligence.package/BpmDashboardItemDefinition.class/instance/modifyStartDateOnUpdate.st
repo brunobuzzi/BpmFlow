@@ -1,4 +1,4 @@
-outdate
+outdated
 modifyStartDateOnUpdate
 
 	^recursion modifyStartDateOnUpdate
