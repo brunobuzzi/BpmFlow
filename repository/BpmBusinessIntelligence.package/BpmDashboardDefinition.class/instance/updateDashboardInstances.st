@@ -7,7 +7,7 @@ updateDashboardInstances
 		lastItemInstanceOrDefinition := itemDefinition lastDashboardInstanceOrNil ifNil: [itemDefinition] ifNotNil: [:itemInstance | itemInstance].
 		startDate := itemDefinition modifyStartDateOnUpdate
 			ifTrue: [itemDefinition updateStartDate: lastItemInstanceOrDefinition startDate] "add recursion time (1day | 1 week | 1 month | 1 year) to <lastItemInstanceOrDefinition startDate>"
-			ifFalse: [lastItemInstanceOrDefinition startDate].
+			ifFalse: [lastItemInstanceOrDefinition startDate]. "if dashborad instance is nil --> is the start date of the Chart"
 		itemDefinition generateDashboardInstanceFrom: startDate to: Date today.	
 	].
 
