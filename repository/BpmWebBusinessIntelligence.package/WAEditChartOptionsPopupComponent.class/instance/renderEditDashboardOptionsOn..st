@@ -10,6 +10,10 @@ renderEditDashboardOptionsOn: html
 					self renderHasFixedDatesCheckboxOn: html.
 					self renderModifyStartDateOnUpdateCheckboxOn: html.
 				].
+				html fieldSet with: [
+					html legend: ('Chart Position' translateIn: self session).
+					self renderIndexComboOn: html.
+				].
 				html button 
 					callback: [self performDefaultAction];
 					with: (self defaultFormButtonLabel translateIn: self session).

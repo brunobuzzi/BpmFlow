@@ -2,6 +2,7 @@
 	"class" : {
 		"newForDashboard:" : "brunobb 09/26/2018 05:18" },
 	"instance" : {
+		"chartIndex" : "brunobb 06/11/2019 10:08",
 		"dashboardInstances" : "brunobb 09/26/2018 05:18",
 		"dashboardInstances:" : "brunobb 09/26/2018 05:18",
 		"definition" : "brunobb 09/26/2018 05:18",
@@ -25,5 +26,6 @@
 		"recursion" : "brunobb 09/26/2018 05:18",
 		"recursion:" : "brunobb 09/26/2018 05:18",
 		"removeInstance:" : "brunobb 09/26/2018 05:18",
+		"setIndex:" : "brunobb 06/11/2019 10:21",
 		"storeInstance:" : "brunobb 09/26/2018 05:18",
 		"updateStartDate:" : "brunobb 09/26/2018 05:55" } }

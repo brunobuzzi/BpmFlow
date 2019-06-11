@@ -4,7 +4,8 @@
 	"instance" : {
 		"defaultFormButtonLabel" : "brunobb 06/07/2019 10:53",
 		"performDefaultAction" : "brunobb 06/07/2019 10:53",
-		"renderEditDashboardOptionsOn:" : "brunobb 06/07/2019 10:52",
+		"renderEditDashboardOptionsOn:" : "brunobb 06/11/2019 10:40",
 		"renderHasFixedDatesCheckboxOn:" : "brunobb 06/07/2019 10:58",
+		"renderIndexComboOn:" : "brunobb 06/11/2019 10:39",
 		"renderModifyStartDateOnUpdateCheckboxOn:" : "brunobb 06/07/2019 11:00",
-		"renderRecursionComboOn:" : "brunobb 06/07/2019 12:37" } }
+		"renderRecursionComboOn:" : "brunobb 06/11/2019 10:12" } }
