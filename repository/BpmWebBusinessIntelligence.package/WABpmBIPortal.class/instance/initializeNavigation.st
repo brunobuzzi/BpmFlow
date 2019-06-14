@@ -9,6 +9,7 @@ initializeNavigation
 		"addItem: (SewafCommandItem label: 'New Dashboard' command: #showNewDashboardComposite);"
 		addItem: (SewafCommandItem label: 'Current Dashboards' command: #showMyDashboardComposite);
 		addItem: (SewafCommandItem label: 'Old Dashboards' command: #showMyOldDashboardsComposite);
+		addItem: (SewafCommandItem label: 'Historical Dashboards' command: #showMyHistoricalDashboardsComposite);
 		yourself.
 	subMenu1 := (SewafSubMenuItem label: 'User Charts' icon: #monitorchart32Png)
 		set24Icon: #worksinprogress24Png;
