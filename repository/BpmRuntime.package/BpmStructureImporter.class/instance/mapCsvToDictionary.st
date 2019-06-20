@@ -13,6 +13,6 @@ mapCsvToDictionary
 	(rows allButFirst reject: [:each | each trimBlanks isEmpty]) keysAndValuesDo: [:key :eachRow | | csvValues |
 		csvValues := eachRow subStrings: ';'.
 		(csvValues size = 7) 
-		ifFalse: [^InvalidCsvFormatException signal: 'Each has to have 7 rows (environment name;application name; application type(B|O); role name; role type; is admin; username)']
+		ifFalse: [^InvalidCsvFormatException signal: 'Each CSV line has to have 7 rows (environment name;application name; application type(B|O); role name; role type; is admin; username)']
 		ifTrue: [structure at: key put: eachRow].
 	].
