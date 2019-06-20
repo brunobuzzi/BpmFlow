@@ -5,9 +5,13 @@
 	"instance" : {
 		"application" : "brunobb 09/10/2018 10:40",
 		"bpmEnvironment" : "brunobb 09/10/2018 10:41",
+		"createRandomProcessWithUser:iterations:fromYear:toYear:fromMonthNumber:toMonthNumber:" : "brunobb 06/20/2019 05:44",
 		"createStEnvironmentAndApplication" : "brunobb 05/23/2019 08:35",
 		"createUeEnvironmentAndApplication" : "brunobb 05/23/2019 08:35",
+		"executeProcess:withFormValues:in:" : "brunobb 06/20/2019 05:44",
 		"formCreatorClass" : "brunobb 11/13/2018 02:58",
+		"formInstance_withValues:in:" : "brunobb 06/20/2019 05:18",
+		"generateRandomValuesIn:" : "brunobb 06/20/2019 05:26",
 		"getAvailableProcessMatrix" : "brunobb 04/13/2018 11:24",
 		"getAvailableProcessMatrixFor:" : "brunobb 04/13/2018 11:24",
 		"getFinishedProcessMatrix" : "BrunoBB 03/29/2016 14:41",

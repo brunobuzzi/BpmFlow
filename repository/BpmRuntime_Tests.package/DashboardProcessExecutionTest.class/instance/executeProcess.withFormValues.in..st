@@ -1,15 +1,15 @@
-execution
-executeProcess: aBpmProcessInstance withFormValues: anArray
+create random process
+executeProcess: aBpmProcessInstance withFormValues: anArray in: aTimeStamp
 	| currentTask endArtifact formInstance |
 
 	self assert: (aBpmProcessInstance startEvent getDefinitionName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := aBpmProcessInstance currentActivities last.
 	formInstance := self formInstance_withValues: anArray in: aBpmProcessInstance.
-	formInstance createdTime: (TimeStamp fromOrbeonString: (anArray at: 4));
-		modifiedTime: (TimeStamp fromOrbeonString: (anArray at: 4)). 
-	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: formInstance on: aBpmProcessInstance.
-	self assert: (currentTask getDefinitionName = 'all-field-types').
+	formInstance createdTime: aTimeStamp;
+		modifiedTime:aTimeStamp. 
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: aBpmProcessInstance.
+	self assert: (currentTask getDefinitionName = 'dashboard-form').
 	"Step 2 - Process End"
 	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
 	self assert: endArtifact isEndEvent.
