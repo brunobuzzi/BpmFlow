@@ -1,0 +1,4 @@
+script
+defaultScriptExecutor
+
+	^BpmScriptExecutor default

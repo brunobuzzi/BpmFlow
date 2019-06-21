@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"processesCreationEventHistory",
-		"monitoredProcessDefinitions",
-		"monitoredEvents" ],
-	"name" : "BpmTimerEventMonitor",
+		"scriptsToExecute",
+		"runningScripts",
+		"executedScripts" ],
+	"name" : "BpmScriptExecutor",
 	"pools" : [
 		 ],
 	"super" : "BpmDeferredExecution",

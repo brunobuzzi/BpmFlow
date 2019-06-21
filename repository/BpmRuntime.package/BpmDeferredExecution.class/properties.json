@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmDeferredExecution",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
