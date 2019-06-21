@@ -7,4 +7,6 @@ createBpmDefinitionOn: aBpmProcessDefinition
 
 	activityDefinition scriptCode: script.
 
+	((self extendedValueOf: 'runOnBackground') = 'true') ifTrue: [activityDefinition beDeferredExecuted].
+
 	^activityDefinition
