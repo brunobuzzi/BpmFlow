@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"scriptCode" ],
+		"scriptCode",
+		"runOnBackground" ],
 	"name" : "BpmScriptTaskDefinition",
 	"pools" : [
 		 ],

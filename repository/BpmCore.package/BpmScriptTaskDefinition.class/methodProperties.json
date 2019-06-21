@@ -2,8 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"acceptVisitor:" : "brunobb 12/10/2018 12:09",
-		"addToParentProcess" : "BrunoBB 06/22/2016 11:45",
-		"printNameAndDefinitionType" : "brunobb 12/11/2017 15:04",
-		"scriptCode" : "BrunoBB 06/21/2016 12:27",
-		"scriptCode:" : "BrunoBB 06/21/2016 12:27" } }
+		"acceptVisitor:" : "brunobb 06/21/2019 10:45",
+		"addToParentProcess" : "brunobb 06/21/2019 10:45",
+		"beDeferredExecuted" : "brunobb 06/21/2019 11:02",
+		"beOnlineExecuted" : "brunobb 06/21/2019 11:02",
+		"initialize" : "brunobb 06/21/2019 10:46",
+		"printNameAndDefinitionType" : "brunobb 06/21/2019 10:45",
+		"runOnBackground" : "brunobb 06/21/2019 10:46",
+		"scriptCode" : "brunobb 06/21/2019 10:45",
+		"scriptCode:" : "brunobb 06/21/2019 10:45" } }
