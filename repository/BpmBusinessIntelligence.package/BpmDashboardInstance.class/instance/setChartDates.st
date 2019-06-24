@@ -1,4 +1,4 @@
-other
+dates handler
 setChartDates
 
 	self hasDates ifFalse: [^self].

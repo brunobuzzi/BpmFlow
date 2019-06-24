@@ -12,7 +12,8 @@ generateDashboardInstanceFrom: startDate to: endDate
 	(self hasDates and: [hasFixedDates not])
 	ifTrue: [dashboard startDate: startDate;
 								endDate: endDate;
-								setChartDates]. "update the start date and end date of the <BpmChartDefinition>"
+								setChartDates] "update the start date and end date of the <BpmChartDefinition>"
+	ifFalse: [dashboard setDatesEqualsToChartDates].
 
 	dashboard report: chartDefinition createDistributionReport. "recalculate chart with new values"
 
