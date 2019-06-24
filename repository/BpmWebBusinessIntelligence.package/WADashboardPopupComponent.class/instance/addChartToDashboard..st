@@ -5,7 +5,7 @@ addChartToDashboard: aBpmDashboardDefinition
 	chartDefinition := parent selectedLateralItem.
 
 	item := BpmDashboardChartDefinition newForDashboard: aBpmDashboardDefinition.
-	item chartDefinition: chartDefinition;
+	item chartDefinition: chartDefinition clone;
 		recursion: (self getRecursionFrom: (self componentValueAt: 'recursion'));
 		hasFixedDates: (self componentValueAt: 'hasFixedDates' ifAbsent: [false]).
 
