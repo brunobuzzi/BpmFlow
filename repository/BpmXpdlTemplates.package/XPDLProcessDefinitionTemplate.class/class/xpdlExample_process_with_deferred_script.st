@@ -7,7 +7,7 @@ xpdlExample_process_with_deferred_script
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-06-21T16:59:42.9321613-03:00</Created>
-    <ModificationDate>2019-06-27T16:37:30.7390712-03:00</ModificationDate>
+    <ModificationDate>2019-06-28T14:42:31.030856-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -27,7 +27,7 @@ xpdlExample_process_with_deferred_script
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
-    <Pool Id="5518f598-db18-437b-8208-f9a3ca257b19" Name="Process with Scripts" Process="ba47f6f1-66ed-4873-98f8-cbb947485f85" BoundaryVisible="true">
+    <Pool Id="5518f598-db18-437b-8208-f9a3ca257b19" Name="Process with Deferred Scripts" Process="ba47f6f1-66ed-4873-98f8-cbb947485f85" BoundaryVisible="true">
       <Lanes>
         <Lane Id="b04b321c-6fb5-4ac9-87e5-d34773e574d9" Name="manager" ParentPool="5518f598-db18-437b-8208-f9a3ca257b19">
           <NodeGraphicsInfos>
@@ -50,7 +50,7 @@ xpdlExample_process_with_deferred_script
   <WorkflowProcesses>
     <WorkflowProcess Id="e9031899-fd8e-41eb-a9ca-adae6e78038e" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-06-27T16:37:39.853959-03:00</Created>
+        <Created>2019-06-28T14:43:38.4747181-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -64,9 +64,9 @@ xpdlExample_process_with_deferred_script
         <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-21T16:59:42.9501883-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-06-21T16:59:42.9501883-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
-    <WorkflowProcess Id="ba47f6f1-66ed-4873-98f8-cbb947485f85" Name="Process with Scripts">
+    <WorkflowProcess Id="ba47f6f1-66ed-4873-98f8-cbb947485f85" Name="Process with Deferred Scripts">
       <ProcessHeader>
-        <Created>2019-06-27T16:37:39.853959-03:00</Created>
+        <Created>2019-06-28T14:43:38.4757192-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -157,7 +157,7 @@ xpdlExample_process_with_deferred_script
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-21T16:59:42.9763742-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-06-21T16:59:42.9763742-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Process with Deferred Scripts&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-21T16:59:42.9763742-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-06-21T16:59:42.9763742-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
