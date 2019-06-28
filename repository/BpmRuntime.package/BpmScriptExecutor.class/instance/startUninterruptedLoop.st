@@ -11,4 +11,5 @@ startUninterruptedLoop
 		].
 		System commit. "commit changes in the system"
 
+		(Delay forSeconds: 1) wait. 
 	].
