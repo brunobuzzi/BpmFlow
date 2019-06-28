@@ -7,9 +7,7 @@ startUninterruptedLoop
 	[true] whileTrue: [ 
 		scriptsToExecute ifNotEmpty: [ | scriptToRun |
 			scriptToRun := scriptsToExecute at: 1.
-			scriptsToExecute remove: scriptToRun.
-			runningScripts add: scriptToRun.
-			[scriptToRun process executeScript: scriptToRun] ensure: [runningScripts remove: scriptToRun. executedScripts add: scriptToRun].
+			self executeScript: scriptToRun.
 		].
 		System commit. "commit changes in the system"
 

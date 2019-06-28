@@ -2,12 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"executeScript:" : "brunobb 06/28/2019 08:28",
 		"executedScripts" : "brunobb 06/21/2019 12:08",
 		"executedScripts:" : "brunobb 06/21/2019 12:08",
+		"executedScriptsSize" : "brunobb 06/28/2019 08:12",
 		"initialize" : "brunobb 06/21/2019 12:08",
 		"register:" : "brunobb 06/21/2019 13:08",
 		"runningScripts" : "brunobb 06/21/2019 12:08",
 		"runningScripts:" : "brunobb 06/21/2019 12:08",
+		"runningScriptsSize" : "brunobb 06/28/2019 08:12",
 		"scriptsToExecute" : "brunobb 06/21/2019 12:08",
 		"scriptsToExecute:" : "brunobb 06/21/2019 12:08",
-		"startUninterruptedLoop" : "brunobb 06/21/2019 12:48" } }
+		"scriptsToExecuteSize" : "brunobb 06/28/2019 08:12",
+		"startUninterruptedLoop" : "brunobb 06/28/2019 08:25" } }
