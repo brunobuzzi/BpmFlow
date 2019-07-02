@@ -9,7 +9,7 @@ renderItemComponentOn: html
 				cssClass := eachArtifact isTask 
 					ifFalse: ['process-transition-gateway']
 					ifTrue: [eachArtifact isDone
-						ifTrue: ['process-transition-finished']
+						ifTrue: [(eachArtifact == model task) ifFalse: ['process-transition-finished'] ifTrue: ['process-transition-finished process-transition-selected']]
 						ifFalse: ['process-transition-running']].
 				jsEcObject := self createEcTaskJsObjectFor: ('t',eachArtifact id printString) imageId: ('i',eachArtifact id printString).
 				jsEcObject callInitIconFunction; callInitElementFunction.
