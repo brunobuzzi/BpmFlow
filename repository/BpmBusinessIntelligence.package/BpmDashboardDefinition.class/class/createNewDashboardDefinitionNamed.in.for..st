@@ -1,7 +1,8 @@
-other
+cache
 createNewDashboardDefinitionNamed: aString in: aBpmEnvironment for: aBpmUser
+	"The receiver create a new instance of itself named <aString> in environment <aBpmEnvironment> with owner <aBpmUser>"
 
-	^BpmDashboardDefinition new
+	^self new
 		name: aString;
 		owner: aBpmUser;
 		bpmEnvironment: aBpmEnvironment;

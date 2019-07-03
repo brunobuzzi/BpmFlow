@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"createNewDashboardDefinitionNamed:in:for:" : "brunobb 06/03/2019 13:14",
-		"dashboardRepositoryFor:" : "brunobb 06/03/2019 13:14",
-		"getDashboardNamed:in:for:" : "brunobb 06/03/2019 13:14",
-		"getDashboardOrCreateNewNamed:in:for:" : "brunobb 06/03/2019 13:14" },
+		"createNewDashboardDefinitionNamed:in:for:" : "brunobb 07/03/2019 11:28",
+		"dashboardRepositoryFor:" : "brunobb 07/03/2019 11:28",
+		"getDashboardNamed:in:for:" : "brunobb 07/03/2019 11:30",
+		"getDashboardOrCreateNewNamed:in:for:" : "brunobb 07/03/2019 11:30" },
 	"instance" : {
 		"addItem:" : "brunobb 06/03/2019 13:14",
 		"addToCache" : "brunobb 06/03/2019 13:14",
@@ -13,7 +13,7 @@
 		"chartsPerColumn:" : "brunobb 06/03/2019 13:14",
 		"creationTime" : "brunobb 06/03/2019 13:14",
 		"creationTime:" : "brunobb 06/03/2019 13:14",
-		"dashboardRepository" : "brunobb 06/03/2019 13:14",
+		"dashboardRepository" : "brunobb 07/03/2019 11:31",
 		"description" : "brunobb 06/03/2019 13:14",
 		"description:" : "brunobb 06/03/2019 13:14",
 		"getChartDefinitions" : "brunobb 06/03/2019 13:14",

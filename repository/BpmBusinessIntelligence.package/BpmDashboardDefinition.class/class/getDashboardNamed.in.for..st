@@ -1,5 +1,6 @@
-other
+cache
 getDashboardNamed: aString in: aBpmEnvironment for: aBpmUser
+	"The receiver answer <aBpmDashboardDefinition> named <aString> in environment <aBpmEnvironment> owned by user <aBpmUser>"
 	| repository dashboardDefinition |
 
 	repository := self dashboardRepositoryFor: aBpmEnvironment.
