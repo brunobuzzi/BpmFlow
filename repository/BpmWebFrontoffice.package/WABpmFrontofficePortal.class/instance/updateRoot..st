@@ -5,6 +5,6 @@ updateRoot: anHtmlRoot
 
     SEWAFCssLibrary default updateRoot: anHtmlRoot.
 
-	anHtmlRoot stylesheet url: (SEWAFCssLibrary / layout cssFileName).
+	anHtmlRoot stylesheet url: (SEWAFCssLibrary / layout getBpmCssFileName).
 
 	anHtmlRoot javascript contents: SEWAFJavaScriptLibrary default jsExpandCollapseFunctions.
