@@ -1,5 +1,6 @@
 {
 	"class" : {
-		"default" : "brunobb 06/21/2019 11:57" },
+		"default" : "brunobb 07/16/2019 07:30",
+		"initializeDefault" : "brunobb 07/16/2019 07:30" },
 	"instance" : {
 		"startUninterruptedLoop" : "brunobb 06/21/2019 12:11" } }

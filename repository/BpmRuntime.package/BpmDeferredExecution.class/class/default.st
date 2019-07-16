@@ -1,6 +1,6 @@
 other
 default
 
-	default ifNil: [default := super new initialize].
+	default ifNil: [self initializeDefault].
 
 	^default

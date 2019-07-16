@@ -19,4 +19,4 @@ initializeCurrentSystem
 	BpmExceptionCalendar initializeCache.
 
 	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
-	self defaultTimerEventMonitor initializeDefault.
+	self defaultTimerEventMonitor class initializeDefault.
