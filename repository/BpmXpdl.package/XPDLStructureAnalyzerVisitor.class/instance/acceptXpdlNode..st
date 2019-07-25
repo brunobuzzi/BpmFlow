@@ -18,7 +18,7 @@ acceptXpdlNode: aXPDLObject
 	(aXPDLObject isCompensationNode) ifTrue: [self addUnsupportedCompensationEventItem].
 	(aXPDLObject isComplexGateway) ifTrue: [self addUnsupportedComplexGatewayItem].
 	(aXPDLObject isConditionalNode) ifTrue: [self addUnsupportedConditionalEventItem].
-	(aXPDLObject isErrorNode) ifTrue: [self addUnsupportedErrorEventItem].
+	"(aXPDLObject isErrorNode) ifTrue: [self addUnsupportedErrorEventItem]."
 	(aXPDLObject isEscalationNode) ifTrue: [self addUnsupportedEscalationEventItem].
 	(aXPDLObject isManualTaskNode) ifTrue: [self addUnsupportedManualTaskItem].
 	(aXPDLObject isMultipleNode) ifTrue: [self addUnsupportedMultipleEventItem].
