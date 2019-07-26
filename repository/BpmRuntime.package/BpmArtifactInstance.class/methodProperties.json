@@ -76,6 +76,7 @@
 		"isPending" : "BrunoBB 12/11/2015 08:58",
 		"isProcessing" : "BrunoBB 12/11/2015 08:58",
 		"isSubprocess" : "BrunoBB 12/11/2015 06:57",
+		"isSuspended" : "brunobb 07/26/2019 10:33",
 		"isTask" : "BrunoBB 07/31/2016 13:27",
 		"outTransitions" : "BrunoBB 11/01/2015 12:57",
 		"outTransitions:" : "BrunoBB 11/01/2015 12:57",
@@ -101,5 +102,6 @@
 		"state" : "BrunoBB 01/23/2016 07:34",
 		"state:" : "BrunoBB 01/23/2016 07:34",
 		"summaryTitle" : "BrunoBB 12/11/2015 06:52",
+		"suspend" : "brunobb 07/26/2019 10:33",
 		"taskName" : "brunobb 02/09/2018 11:35",
 		"version" : "brunobb 02/09/2018 11:16" } }
