@@ -7,7 +7,7 @@ xpdlExample_process_error
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2019-07-25T18:00:53.1015816-03:00</Created>
-    <ModificationDate>2019-07-25T19:03:58.8909288-03:00</ModificationDate>
+    <ModificationDate>2019-07-29T18:19:57.55556-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -21,7 +21,7 @@ xpdlExample_process_error
     <Pool Id="9883d42b-2be1-4b4e-a857-29534989b092" Name="Main Process" Process="ac5423b7-a2d6-4ccc-bf41-2e6acd06c38b" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
           <TextDirection xsi:nil="true" />
         </NodeGraphicsInfo>
@@ -50,7 +50,7 @@ xpdlExample_process_error
   <WorkflowProcesses>
     <WorkflowProcess Id="ac5423b7-a2d6-4ccc-bf41-2e6acd06c38b" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-07-25T19:04:13.1368828-03:00</Created>
+        <Created>2019-07-29T18:20:14.1957306-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -66,7 +66,7 @@ xpdlExample_process_error
     </WorkflowProcess>
     <WorkflowProcess Id="64b4008e-fa32-4362-8126-aa9956d65c44" Name="dashboard-error">
       <ProcessHeader>
-        <Created>2019-07-25T19:04:13.1368828-03:00</Created>
+        <Created>2019-07-29T18:20:14.1957306-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -127,7 +127,7 @@ xpdlExample_process_error
           <Description />
           <Event>
             <IntermediateEvent Trigger="Error" Target="577eab98-75fe-43d0-ba7b-a569375547db" IsAttached="true">
-              <ResultError ErrorCode="" />
+              <ResultError ErrorCode="1" />
             </IntermediateEvent>
           </Event>
           <Documentation />
@@ -213,7 +213,7 @@ xpdlExample_process_error
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-error&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-error&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
