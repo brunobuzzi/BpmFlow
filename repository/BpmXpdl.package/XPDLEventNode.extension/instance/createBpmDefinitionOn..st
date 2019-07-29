@@ -11,4 +11,6 @@ createBpmDefinitionOn: aBpmProcessDefinition
 
 	self setInformedTo: event.
 
+	self getErrorCode ifNotNil: [:value | event type errorCode: value]. 
+
 	^event
