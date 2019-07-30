@@ -29,8 +29,6 @@
 		"atProperty:put:" : "brunobb 01/21/2019 04:48",
 		"baseUrlDocumentation" : "brunobb 01/21/2019 04:48",
 		"basicAddEnvironment:" : "brunobb 01/21/2019 04:50",
-		"basicFinalizeAssignment:" : "brunobb 01/21/2019 04:48",
-		"basicFinalizeAssignment:takeNext:" : "brunobb 01/21/2019 04:48",
 		"basicRemoveEnvironment:ifAbsent:" : "brunobb 01/21/2019 04:51",
 		"bpmEnvironments" : "brunobb 01/21/2019 04:49",
 		"bpmEnvironments:" : "brunobb 01/21/2019 04:49",

@@ -1,0 +1,4 @@
+other
+errorCode
+
+	^type errorCode
