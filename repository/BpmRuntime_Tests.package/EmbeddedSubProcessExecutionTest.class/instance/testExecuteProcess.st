@@ -7,7 +7,7 @@ testExecuteProcess
 	self assert: (procInstance startEvent getDefinitionName = 'start').
 	"Step 1 - Script Execution"
 	script := procInstance executedScripts last.
-	self assert: (script isFinished).
+	self assert: (script isDone).
 
 	"Step 2 - After the Script the embedded subprocess is created"
 		subProcessEmb := procInstance subprocesses first.
