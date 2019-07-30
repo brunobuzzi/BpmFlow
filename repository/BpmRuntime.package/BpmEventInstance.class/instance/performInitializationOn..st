@@ -5,6 +5,8 @@ performInitializationOn: aBpmProcessInstance
 
 	aBpmProcessInstance registerEvent: self.
 
-	self isTimerEvent 
+	^definition performInitializationFor: self
+
+"	self isTimerEvent 
 	ifFalse: [self performRegularEventInitializationOn: aBpmProcessInstance]
-	ifTrue: [self performTimerEventInitializationOn: aBpmProcessInstance].
+	ifTrue: [self performTimerEventInitializationOn: aBpmProcessInstance]."

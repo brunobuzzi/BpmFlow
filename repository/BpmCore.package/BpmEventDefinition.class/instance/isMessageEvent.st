@@ -1,4 +1,0 @@
-other
-isMessageEvent
-
-	^type isMessageDefinition

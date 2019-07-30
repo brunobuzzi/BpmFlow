@@ -1,4 +1,0 @@
-other
-isMessageDefinition
-
-	^true
