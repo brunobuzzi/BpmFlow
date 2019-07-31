@@ -9,7 +9,8 @@
 		"rolesWhoWorked",
 		"externalObject",
 		"usersWhoWorked",
-		"finalizedPerformerCounter" ],
+		"finalizedPerformerCounter",
+		"assignment" ],
 	"name" : "BpmTaskInstance",
 	"pools" : [
 		 ],
