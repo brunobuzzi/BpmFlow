@@ -11,7 +11,7 @@ executeIt
 
 	assignment removeFromCurrentMatrix; "remove the assignment from taken matrix"
 		addToAvailableMatrix; "add to free matrix, <user> set to nil"
-		resetTask.
+		resetTask. "set task to nil"
 
 	"remove it from the the current assignment inbox"
 	"add the assignment to released inbox"
