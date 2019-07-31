@@ -2,6 +2,8 @@ action
 finalizeAssignment
 	| finishedMatrix currentActivities |
 
+	self sendInformationMessage.
+
 	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
 	isFinalized := true.
 
@@ -23,5 +25,3 @@ finalizeAssignment
 		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
 			do:[:each | user take: each].
 		].
-
-	self sendInformationMessage.

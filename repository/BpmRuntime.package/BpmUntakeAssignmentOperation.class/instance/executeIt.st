@@ -5,13 +5,14 @@ executeIt
 	"the task was finalized by the user before the manager could make the untake operation"
 	(user includesCurrentAssignment: assignment in: self bpmEnvironment) ifFalse: [^self].
 
+	self sendInformationMessage.
+
 	assignment hasPerformers ifTrue: [assignment removeLastWorker]. "remove the last user and role from the BpmTaskInstace"
 
 	assignment removeFromCurrentMatrix; "remove the assignment from taken matrix"
-		addToAvailableMatrix. "add to free matrix, <user> set to nil"
+		addToAvailableMatrix; "add to free matrix, <user> set to nil"
+		resetTask.
 
 	"remove it from the the current assignment inbox"
 	"add the assignment to released inbox"
 	user moveFromCurrentToReleased: assignment in: self bpmEnvironment.
-
-	self sendInformationMessage.
