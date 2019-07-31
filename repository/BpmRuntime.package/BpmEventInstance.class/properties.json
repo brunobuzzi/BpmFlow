@@ -8,7 +8,8 @@
 	"instvars" : [
 		"trigger",
 		"attachedTask",
-		"executions" ],
+		"executions",
+		"properties" ],
 	"name" : "BpmEventInstance",
 	"pools" : [
 		 ],
