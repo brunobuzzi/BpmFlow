@@ -21,7 +21,7 @@ finalizeAssignment
 	assignNextToUser ifTrue: [ | assignments availableAssignments newActivities |
 		availableAssignments := user getAllAvailableTaskAssignmentsIn: self process bpmEnvironment.
 		newActivities := self process currentActivities asArray removeAll: currentActivities; yourself.
-		assignments := newActivities collect: [:each | self getAvailableProcessMatrix getAssignmentFor: each].
+		assignments := newActivities collect: [:each | each assignment].
 		(assignments select: [:eachAssign | eachAssign notNil and: [availableAssignments includes: eachAssign]]) 
 			do:[:each | user take: each].
 		].
