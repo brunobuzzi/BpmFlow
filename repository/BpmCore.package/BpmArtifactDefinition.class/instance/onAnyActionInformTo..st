@@ -11,3 +11,5 @@ onAnyActionInformTo: aBpmRole
 	self on: #take informTo: aBpmRole.
 
 	self on: #untake informTo: aBpmRole.
+
+	self on: #cancelation informTo: aBpmRole.
