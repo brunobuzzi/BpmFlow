@@ -1,9 +1,8 @@
 render xpdl
 renderXpdlGateway: aXPDLGatewayNode on: html
-	| aPoint textPoint rotation |
+	| aPoint textPoint |
 
 	aPoint := aXPDLGatewayNode getXcoordinate @ aXPDLGatewayNode getYcoordinate.
-	rotation := 'rotate(-45 ', aXPDLGatewayNode center x printString, ' ', aXPDLGatewayNode center y printString, ')'. 
 
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 
