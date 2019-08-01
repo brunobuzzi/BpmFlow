@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmCancelAssignmentOperation",
+	"pools" : [
+		 ],
+	"super" : "BpmAssignmentOperation",
+	"type" : "normal" }
