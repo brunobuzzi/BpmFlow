@@ -3,7 +3,7 @@ executeIt
 	"The receiver execute all steps to cancel the <BpmTaskAssignment> <assignment>"
 	| finishedMatrix |
 
-	assignment isTaken ifTrue: [user cancelAssignment: assignment in: assignment]. "remove assignment from user Inbox"
+	assignment isTaken ifTrue: [user cancelAssignment: assignment in: self bpmEnvironment]. "remove assignment from user Inbox"
 
 	assignment finalize. "put status as #done but is must be #cancelled"
 	assignment task cancel. "set the status as #cancelled"
