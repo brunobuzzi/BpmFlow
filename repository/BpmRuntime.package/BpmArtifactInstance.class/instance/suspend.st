@@ -1,4 +1,4 @@
-process execution
+state
 suspend
 
 	state := #suspended

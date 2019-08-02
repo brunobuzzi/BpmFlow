@@ -1,4 +1,4 @@
-process execution
+state
 isPending
 
 	^state = #pending

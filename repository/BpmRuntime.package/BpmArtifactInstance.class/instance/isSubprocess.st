@@ -1,4 +1,4 @@
-process execution
+state
 isSubprocess
 
 	^definition isSubprocessDefinition

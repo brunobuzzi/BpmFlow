@@ -1,4 +1,4 @@
-process execution
+state
 isDone
 	"The receiver answer whether or not it'has been finalized"
 
