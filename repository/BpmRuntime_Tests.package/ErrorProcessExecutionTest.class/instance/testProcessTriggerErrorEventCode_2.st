@@ -11,7 +11,8 @@ testProcessTriggerErrorEventCode_2
 		modifiedTime:TimeStamp now.
 
 	self assert: (self getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 1.
-	self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vo' on: procInstance.
+	self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vo' withForm: formInstance on: procInstance.
+
 	self assert: (self getTakenProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 1.
 
 	currentTask triggerAttachedEventNamed: 'error-event' withProperties: (Dictionary newFromPairs: {'errorCode' . 2}).
