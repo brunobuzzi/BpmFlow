@@ -1,5 +1,5 @@
 other
-testProcessTriggerError
+testProcessTriggerErrorEventCode_9
 	| currentTask endArtifact formInstance |
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').
@@ -8,3 +8,5 @@ testProcessTriggerError
 	formInstance := self formInstance_withValues: self generateRandomValues in: procInstance.
 	formInstance createdTime: TimeStamp now;
 		modifiedTime:TimeStamp now.
+
+	currentTask triggerAttachedEventNamed: 'error-event' withProperties: (Dictionary newFromPairs: {'errorCode' . 1})
