@@ -9,7 +9,6 @@ renderErrorEvent: aXPDLEventNode tooltip: tooltip color: color on: html
 	"render internal clock"
 	self renderEvent: aXPDLEventNode at: center radius: ((aXPDLEventNode getWidth asNumber // 2) - 3) color: color tooltip: tooltip on: html.
 	
-	"self renderTextOn: html text: 'N' at: (center x - 4) @ (center y + 5) textSizePx: '12px'."
 	iconCenter := (center x -10) @ (center y -15).
 
 	innerIconAttributes := OrderedCollection new.
