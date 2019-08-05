@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdlBizagiReader",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XpdlIncompleteContentsException",
+	"pools" : [
+		 ],
+	"super" : "BpmXpdlReaderException",
+	"type" : "normal" }
