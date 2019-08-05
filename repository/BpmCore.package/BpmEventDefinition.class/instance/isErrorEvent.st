@@ -1,0 +1,4 @@
+other
+isErrorEvent
+
+	^type isErrorDefinition

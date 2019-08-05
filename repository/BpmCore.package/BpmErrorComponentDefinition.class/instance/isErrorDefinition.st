@@ -1,0 +1,4 @@
+other
+isErrorDefinition
+
+	^true

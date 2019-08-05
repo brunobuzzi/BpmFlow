@@ -35,6 +35,7 @@
 		"inTransitions:" : "BrunoBB 10/28/2015 11:57",
 		"initialize" : "brunobb 04/28/2018 13:14",
 		"isEndEvent" : "BrunoBB 11/29/2015 15:10",
+		"isErrorEvent" : "brunobb 08/05/2019 12:38",
 		"isEventDefinition" : "BrunoBB 06/28/2016 12:12",
 		"isGateway" : "BrunoBB 06/18/2016 12:59",
 		"isGatewayForEvents" : "brunobb 11/23/2018 10:48",
