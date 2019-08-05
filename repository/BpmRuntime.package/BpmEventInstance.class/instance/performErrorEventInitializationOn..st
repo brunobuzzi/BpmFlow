@@ -1,7 +1,8 @@
-double dispatch
+double dispatch type
 performErrorEventInitializationOn: aBpmProcessInstance
 	"The receiver perform the creation operation in the process instance <aBpmProcessInstance>.
-	This operatoin initialize the receiver inside the process <aBpmProcessInstance>."
+	This operation initialize the receiver inside the process <aBpmProcessInstance>.
+	The attached task can be a regular task or a subprocess task"
 
 	attachedTask ifNil: [ImproperBpmOperationException signal: 'Errors Event are always attached to a Task'].
 
@@ -9,9 +10,7 @@ performErrorEventInitializationOn: aBpmProcessInstance
 	ifTrue: [^self generateNextRunningTransitions].
 
 	(self errorCode = 2) "cancel assignment and error event generate next transitions"
-	ifTrue: [(BpmCancelAssignmentOperation on: attachedTask assignment by: attachedTask assignment user) 
-				canceller: self;
-				executeIt.
+	ifTrue: [attachedTask handleErrorCodeTwoWith: self.
 			^self generateNextRunningTransitions].
 
 	(self errorCode = 9) "cancel the entire process"
