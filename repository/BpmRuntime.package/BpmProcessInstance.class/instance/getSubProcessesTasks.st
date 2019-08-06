@@ -1,4 +1,4 @@
-other
+subprocesses
 getSubProcessesTasks
 	"Answer a collection of all <BpmSubProcessTaskInstance> created by the receiver"
 

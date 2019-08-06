@@ -1,27 +1,49 @@
 other
 testProcessTriggerErrorEventCode_9
-	| currentTask formInstance procId |
+	| currentTask formInstance subProcess subProcessTask procId subProcId |
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').
+	"Step 1 - It create the subprocess immediately"
 	procId := procInstance id.
-	"Step 1 - Form [task-1]"
-	currentTask := procInstance currentActivities last.
-	formInstance := self formInstance_withValues: self generateRandomValues in: procInstance.
-	formInstance createdTime: TimeStamp now;
-		modifiedTime:TimeStamp now.
+	"Sub Process Execution [form-process] starts here "
+		subProcess := procInstance subprocesses last.
+		subProcId := subProcess id.
+		currentTask := subProcess currentActivities last.
+		self assert: currentTask getDefinitionName equals: 'dashboard-form'.
+		formInstance := self formInstance_withValues: self generateRandomValues in: subProcess.
+		formInstance createdTime: TimeStamp now;
+			modifiedTime:TimeStamp now.
 
-	self assert: (self getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 1.
-	self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vo' withForm: formInstance on: procInstance.
-	self assert: (self getTakenProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 1.
+		self assert: (subProcess getValueOfProcessField: 'stamp') isNil.
 
-	currentTask triggerAttachedEventNamed: 'error-event' withProperties: (Dictionary newFromPairs: {'errorCode' . 9}). "the process is going to be aborted"
+		self assert: subProcess currentActivities size equals: 1.
+		self assert: currentTask state equals: #created.
+		self assert: (subProcess getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 1.
+		self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vo' withForm: formInstance on: subProcess.
+		self assert: (subProcess getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 0.
+		self assert: (subProcess getTakenProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 1.
 
-	self assert: (self getTakenProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 0.
-	self assert: (self getFinishedProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 0.
-	self assert: (self getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = procId}) size equals: 0.
+	subProcessTask := procInstance getSubProcessesTasks last.
+	subProcessTask triggerAttachedEventNamed: 'sub-proc-error' withProperties: (Dictionary newFromPairs: {'errorCode' . 9}).
 
+		self assert: subProcess endEventsAsOrderedCollection size equals: 0.
+		self assert: (subProcessTask attachedEventsNamed:'sub-proc-error') size equals: 1.
+		self assert: (procInstance getEventsNamed: 'sub-proc-error' ifNone: [#()]) size equals: 1.
+
+		self assert: (procInstance getValueOfProcessField: 'stamp') isNil. "the script task is never executed because the abort prevent the #nextRunningTransition to be executed"
+		self assert: procInstance currentActivities size equals: 0.
+
+	"Step 2 - The main process is automatically finish because next transition goes to an end event"
+	self assert: subProcess endEventsAsOrderedCollection size equals: 0.
+	self assert: procInstance endEventsAsOrderedCollection size equals: 0.
+
+	"Test Process Cancellation"
+	self assert: (subProcess getTakenProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 0.
+	self assert: (subProcess getFinishedProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 0.
+	self assert: (subProcess getAvailableProcessMatrix getAvailableTasksFor: 'chart-role' satisfying: {:each | each.processId = subProcId}) size equals: 0.
+	self assert: (subProcess definition hasAbortedProcess: subProcId).
 	self assert: (procDefinition hasAbortedProcess: procId).
-	self assert: ((procDefinition getCollectionForFieldsNamed: 'invoiceAmount[n]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = procId]) isEmpty.
-	self assert: ((procDefinition getCollectionForFieldsNamed: 'cost[n]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = procId]) isEmpty.
-	self assert: ((procDefinition getCollectionForFieldsNamed: 'industry[s]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = procId]) isEmpty.
-	self assert: ((procDefinition getCollectionForFieldsNamed: 'confirmed[b]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = procId]) isEmpty.
+	self assert: ((subProcess definition getCollectionForFieldsNamed: 'invoiceAmount[n]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.
+	self assert: ((subProcess definition getCollectionForFieldsNamed: 'cost[n]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.
+	self assert: ((subProcess definition getCollectionForFieldsNamed: 'industry[s]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.
+	self assert: ((subProcess definition getCollectionForFieldsNamed: 'confirmed[b]' in: 'dashboard-form') select: [:fieldValue | fieldValue processId = subProcId]) isEmpty.

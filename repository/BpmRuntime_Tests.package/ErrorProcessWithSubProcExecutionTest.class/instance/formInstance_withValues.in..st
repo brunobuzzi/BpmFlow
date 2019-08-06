@@ -7,4 +7,4 @@ formInstance_withValues: anArray in: aBpmProcessInstance
 				definitionNamed: 'dashboard-form' 
 				app: 'ue' 
 				definitionMethod: #formDefinition_dashboard_form 
-				in: procInstance
+				in: aBpmProcessInstance
