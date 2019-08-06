@@ -8,14 +8,14 @@ testUnsupporttedElements
 	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map.
 	visitor visitAllXpdlPackages.
 
-	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 14).
+	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 13).
 
 	self assert: ((visitor detectedItems select: [:each | each code = 700]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 704]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 708]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 712]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 716]) size = 1).
-	self assert: ((visitor detectedItems select: [:each | each code = 720]) size = 1).
+	"self assert: ((visitor detectedItems select: [:each | each code = 720]) size = 1)." "Error Events are supported now"
 	self assert: ((visitor detectedItems select: [:each | each code = 724]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 728]) size = 1).
 	self assert: ((visitor detectedItems select: [:each | each code = 732]) size = 1).
