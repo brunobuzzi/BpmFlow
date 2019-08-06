@@ -4,11 +4,11 @@ testMatrixFinishedAssignmentAndUserIdentity
 
 	self defaultEnvironmentClass cache do: [:environment |
 		(self defaultProcessDefinitionClass getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
-			(eachProcDef processInstances reject: [:each | each isAborted])  do: [:procInstance | | finishedMatrix finishedAssignments |
+			(eachProcDef processInstances reject: [:each | each isAborted]) do: [:procInstance | | finishedMatrix finishedAssignments |
 				finishedMatrix := procInstance getFinishedProcessMatrix.
-				finishedAssignments := finishedMatrix getAllAssignments.
+				finishedAssignments := finishedMatrix getAllAssignments. "finished assignments in the entire Application"
 
-				self assert: (finishedAssignments allSatisfy: [:eachAssing | (self defaultBpmUserClass getUserOrNilFinishedTask: eachAssing task) notNil]). 
+				finishedAssignments do: [:eachAssing | self assert: (self defaultBpmUserClass getUserOrNilFinishedTask: eachAssing task) notNil]
 
 			].
 		].
