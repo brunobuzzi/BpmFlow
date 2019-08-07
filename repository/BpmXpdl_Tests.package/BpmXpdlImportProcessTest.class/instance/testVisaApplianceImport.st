@@ -4,7 +4,6 @@ testVisaApplianceImport
 
 	environment := self getDefaultEnvironment.
 	ue := self getDefaultApplication.
-	environment registerApplication: ue. 
 	applications := OrderedCollection with: ue.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.

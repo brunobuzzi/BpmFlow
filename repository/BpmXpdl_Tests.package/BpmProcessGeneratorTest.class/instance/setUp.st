@@ -4,5 +4,5 @@ setUp
 	super setUp.
  
 	self defaultApplicationManagerClass 
-		getAnyApplicationNamed: 'ue' 
-		ifNone: [(self defaultApplicationManagerClass newNamed: 'ue') addToCache].
+		getAnyApplicationNamed: self defaultApplicationName
+		ifNone: [(self defaultApplicationManagerClass newNamed: self defaultApplicationName) addToCache].

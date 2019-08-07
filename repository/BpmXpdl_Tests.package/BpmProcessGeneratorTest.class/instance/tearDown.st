@@ -4,7 +4,7 @@ tearDown
 
 	super tearDown.
 
-	application := self defaultApplicationManagerClass getAnyApplicationNamed: 'ue' ifNone: [^self].
+	application := self defaultApplicationManagerClass getAnyApplicationNamed: self defaultApplicationName ifNone: [^self].
 
 	application resetDefinitionRegistry.
 	(self defaultFrontOfficeRoleClass getRolsInAppName: application applicationName) do: [:each | each removeFromCache].
