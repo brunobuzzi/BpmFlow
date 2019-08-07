@@ -1,12 +1,12 @@
 other
 tearDown
-	| application |
 
 	super tearDown.
+	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
 
-	application := self defaultApplicationManagerClass getAnyApplicationNamed: self defaultApplicationName ifNone: [^self].
+	self getDefaultApplication resetDefinitionRegistry.
+	(self defaultFrontOfficeRoleClass getRolsInAppName: self defaultApplicationName) do: [:each | each removeFromCache].
 
-	application resetDefinitionRegistry.
-	(self defaultFrontOfficeRoleClass getRolsInAppName: application applicationName) do: [:each | each removeFromCache].
+	self getDefaultApplication removeFromCache.
 
-	application removeFromCache.
+	self getDefaultEnvironment removeFromCache.

@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"senderProcessDef",
+		"receiverProcesDef" ],
+	"name" : "EventBasedGatewayErrorProcessExecutionTest",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessExecutionTest",
+	"type" : "normal" }
