@@ -1,4 +1,4 @@
 other
 getDefaultEnvironment
 
-	^self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'
+	^self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-test'

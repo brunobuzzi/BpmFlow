@@ -1,4 +1,4 @@
 other
 getDefaultApplication
 
-	^self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue'
+	^self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'import-test-app'

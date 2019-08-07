@@ -14,15 +14,15 @@ testVisaApplianceImport
 	file3 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_check_financial_data; fileName: 'check-financial-data.xpdl'; yourself.
 
 	importProcess 
-		setApplicationName: 'ue' atIndex: 1;
-		setApplicationName: 'ue' atIndex: 2;
-		setApplicationName: 'ue' atIndex: 3;
+		setApplicationName: 'import-test-app' atIndex: 1;
+		setApplicationName: 'import-test-app' atIndex: 2;
+		setApplicationName: 'import-test-app' atIndex: 3;
 		storeTemporaryXpdlFile: file1 atIndex: 1;
 		storeTemporaryXpdlFile: file2 atIndex: 2;
 		storeTemporaryXpdlFile: file3 atIndex: 3.
 
 	self createOrbeonForms. "we create OrbeonFormInstance that create OrboenFormDefinitions first, if not --> the import process will fail"
-	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'visa-appliance' in: 'ue') ifNil: [0] ifNotNil: [:proDef | proDef version].
+	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'visa-appliance' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 
 	self deny: importProcess hasWarnings.
