@@ -52,6 +52,9 @@
 		"testExecuteProcess_visaRejected" : "brunobb 11/09/2018 10:17",
 		"testFairAssignation_visaAccepted" : "brunobb 08/08/2019 10:33",
 		"testFieldsInGatewayConditions" : "BrunoBB 04/19/2016 16:13",
-		"testOrExecutionContext" : "brunobb 08/08/2019 10:35",
+		"testOrExecutionContext_1" : "brunobb 08/08/2019 13:01",
+		"testOrExecutionContext_2" : "brunobb 08/08/2019 13:01",
+		"testOrExecutionContext_3" : "brunobb 08/08/2019 13:03",
+		"testOrExecutionContext_4" : "brunobb 08/08/2019 13:04",
 		"testRoundRobinRoleAssignation_visaAccepted" : "brunobb 08/08/2019 10:33",
 		"testRoundRobinTaskAssignation_visaAccepted" : "brunobb 08/08/2019 10:34" } }
