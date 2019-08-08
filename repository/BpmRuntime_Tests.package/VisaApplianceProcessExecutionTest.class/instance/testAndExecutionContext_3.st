@@ -19,6 +19,10 @@ testAndExecutionContext_3
 	self assert: (((self getUserNamed: 'clark') getAllAvailableTaskAssignmentsIn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
 			equals: 0.
 
+	self grantUsers: {'andrew vo' -> 'visa officer'.} in: 'app-test-2'.
+	self assert: (((self getUserNamed: 'andrew vo') getAllAvailableTaskAssignmentsIn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
+			equals: 1.
+
 	"Step 1 - Form [citizen-appliance]"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').
@@ -27,3 +31,5 @@ testAndExecutionContext_3
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 1).
 
 	self resumeAssignFromTask2AndTestProcess: procInstance.
+
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'app-test-2') ungrantUser: (self getUserNamed: 'andrew vo').
