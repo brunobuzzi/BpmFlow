@@ -16,10 +16,11 @@ performInitializationOn: aBpmProcessInstance
 	[message send] on: Exception do: [:ex | 
 		sendException:= ex.
 		self getAttachedErrorEvent 
-		ifNil: [self generateNextRunningTransitions] 
 		ifNotNil: [:eventDefinition | | properties |
 			properties := Dictionary new at: 'errorCode' put: eventDefinition errorCode; yourself.
-			self triggerAttachedEventNamed: eventDefinition name withProperties: properties]
+			self triggerAttachedEventNamed: eventDefinition name withProperties: properties] "generate next transitions from the event"
 		].
 
 	self finalize.
+
+	self generateNextRunningTransitions.
