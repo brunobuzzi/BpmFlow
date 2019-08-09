@@ -28,4 +28,8 @@ setUp
 
 	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test'.
 	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test-2'.
+	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa manager' in: 'app-test'.
+	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa manager' in: 'app-test-2'.
 	self grantUsers: {'andrew vo' -> 'visa officer'.} in: 'app-test'.
+	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test'.
+	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test-2'.
