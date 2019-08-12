@@ -16,7 +16,7 @@ performErrorEventInitializationOn: aBpmProcessInstance
 	(self errorCode = 9) "cancel the entire process"
 	ifTrue: [process abortProcess: nil.
 			process currentState isConfirmed: true.
-			process confirmAbortion.
+			^process confirmAbortion.
 	].
 
 	^ImproperBpmOperationException signal: 'Supported Codes for Error Events are [1, 2 or 9]'
