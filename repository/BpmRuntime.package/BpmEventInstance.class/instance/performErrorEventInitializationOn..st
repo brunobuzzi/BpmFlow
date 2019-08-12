@@ -18,3 +18,5 @@ performErrorEventInitializationOn: aBpmProcessInstance
 			process currentState isConfirmed: true.
 			process confirmAbortion.
 	].
+
+	^ImproperBpmOperationException signal: 'Supported Codes for Error Events are [1, 2 or 9]'
