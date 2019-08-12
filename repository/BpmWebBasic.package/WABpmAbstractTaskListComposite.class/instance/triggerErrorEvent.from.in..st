@@ -1,5 +1,8 @@
 render transitions
 triggerErrorEvent: aBpmEventDefinition from: aBpmTaskInstance in: aBpmProcessInstance
 	"The receiver trigger the error <aBpmEventDefinition> from <aBpmArtifactInstance> in <aBpmProcessInstance>"
+	| errorCode |
 
-	^aBpmProcessInstance triggerEvent: aBpmEventDefinition withProperties: Dictionary new from: aBpmTaskInstance
+	errorCode := self componentValueAt: 'triggerErrorEvent' ifAbsent: [1].
+
+	^aBpmProcessInstance triggerEvent: aBpmEventDefinition withProperties: (Dictionary newFromPairs: {'errorCode' . errorCode}) from: aBpmTaskInstance
