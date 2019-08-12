@@ -11,7 +11,7 @@ visitXpdlPackages: aCollection
 		hasEndNode := false.
 		].
 
-	allPackagesNames := aCollection collect: [:each | each getName].
+	allPackagesNames := aCollection collect: [:each | each getName]. "package node name <Package Name='xxx'>"
 
 	aCollection do: [:eachPackage | 
 		(eachPackage getAllSubProcessNodes reject: [:eachSubProcAct | allPackagesNames includes: eachSubProcAct getName]) 
