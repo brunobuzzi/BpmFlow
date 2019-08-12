@@ -7,7 +7,7 @@ xpdlExample_process_error_main_proc
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2019-07-25T18:00:53.1015816-03:00</Created>
-    <ModificationDate>2019-08-05T16:06:54.5105065-03:00</ModificationDate>
+    <ModificationDate>2019-08-12T17:34:29.2387903-03:00</ModificationDate>
     <Description>main-proc</Description>
     <Documentation />
   </PackageHeader>
@@ -50,7 +50,7 @@ xpdlExample_process_error_main_proc
   <WorkflowProcesses>
     <WorkflowProcess Id="ac5423b7-a2d6-4ccc-bf41-2e6acd06c38b" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-08-05T16:07:09.7164845-03:00</Created>
+        <Created>2019-08-12T17:34:39.5372016-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -66,7 +66,7 @@ xpdlExample_process_error_main_proc
     </WorkflowProcess>
     <WorkflowProcess Id="64b4008e-fa32-4362-8126-aa9956d65c44" Name="dashboard-error-sub-proc">
       <ProcessHeader>
-        <Created>2019-08-05T16:07:09.7164845-03:00</Created>
+        <Created>2019-08-12T17:34:39.5377019-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -127,7 +127,7 @@ xpdlExample_process_error_main_proc
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="577eab98-75fe-43d0-ba7b-a569375547db" Name="sub-proc">
+        <Activity Id="577eab98-75fe-43d0-ba7b-a569375547db" Name="form-process">
           <Description />
           <Implementation>
             <SubFlow Id="5efa26c2-1998-4639-8b0a-1317f07fd7fd" />
@@ -155,7 +155,7 @@ xpdlExample_process_error_main_proc
           <Documentation />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="22" Width="22" BorderColor="-6909623" FillColor="-66833">
-              <Coordinates XCoordinate="282" YCoordinate="138" />
+              <Coordinates XCoordinate="271" YCoordinate="127" />
               <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
@@ -215,7 +215,7 @@ xpdlExample_process_error_main_proc
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-error-sub-proc&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-error-sub-proc&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-07-25T18:00:53.411406-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>

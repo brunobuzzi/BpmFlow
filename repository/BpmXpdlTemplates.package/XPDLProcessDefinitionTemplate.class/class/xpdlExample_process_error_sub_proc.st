@@ -2,13 +2,13 @@ error process sub proc
 xpdlExample_process_error_sub_proc
 
 	^'<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="008622db-28b2-499d-be91-2ff6d0c94077" Name="sub-proc" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="008622db-28b2-499d-be91-2ff6d0c94077" Name="form-process" xmlns="http://www.wfmc.org/2009/XPDL2.2">
   <PackageHeader>
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2019-08-05T13:45:17.321718-03:00</Created>
-    <ModificationDate>2019-08-05T16:06:54.5175112-03:00</ModificationDate>
-    <Description>sub-proc</Description>
+    <ModificationDate>2019-08-12T17:34:28.8820069-03:00</ModificationDate>
+    <Description>form-process</Description>
     <Documentation />
   </PackageHeader>
   <RedefinableHeader>
@@ -21,7 +21,7 @@ xpdlExample_process_error_sub_proc
     <Pool Id="dc94ec77-a150-4c03-8191-1275f0bdba82" Name="Main Process" Process="df566ded-947f-4335-af70-147fb3144e07" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
           <TextDirection xsi:nil="true" />
         </NodeGraphicsInfo>
@@ -50,7 +50,7 @@ xpdlExample_process_error_sub_proc
   <WorkflowProcesses>
     <WorkflowProcess Id="df566ded-947f-4335-af70-147fb3144e07" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-08-05T16:07:09.7174856-03:00</Created>
+        <Created>2019-08-12T17:34:39.5347623-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -66,7 +66,7 @@ xpdlExample_process_error_sub_proc
     </WorkflowProcess>
     <WorkflowProcess Id="5efa26c2-1998-4639-8b0a-1317f07fd7fd" Name="form-process">
       <ProcessHeader>
-        <Created>2019-08-05T16:07:09.7174856-03:00</Created>
+        <Created>2019-08-12T17:34:39.5352002-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
