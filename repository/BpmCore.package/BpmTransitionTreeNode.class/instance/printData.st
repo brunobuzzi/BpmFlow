@@ -1,0 +1,4 @@
+other
+printData
+
+	^transition printData
