@@ -1,4 +1,4 @@
 svg generator
 getSVGCanvasClass
 
-	"^JASVGIBpmCanvas"
+	^JASVGIBpmCanvas
