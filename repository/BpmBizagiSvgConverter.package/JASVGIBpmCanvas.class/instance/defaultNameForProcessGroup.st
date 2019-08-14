@@ -1,0 +1,4 @@
+default values
+defaultNameForProcessGroup
+
+	^self class defaultNameForProcessGroup

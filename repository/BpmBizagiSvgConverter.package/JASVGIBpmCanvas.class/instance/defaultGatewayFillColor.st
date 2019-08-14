@@ -1,0 +1,4 @@
+default values
+defaultGatewayFillColor
+
+	^'lightgray'

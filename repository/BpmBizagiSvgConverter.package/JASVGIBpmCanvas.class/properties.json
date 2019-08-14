@@ -1,0 +1,14 @@
+{
+	"category" : "BpmBizagiSvgConverter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"namesAndTags" ],
+	"name" : "JASVGIBpmCanvas",
+	"pools" : [
+		 ],
+	"super" : "JASVGICanvas",
+	"type" : "normal" }
