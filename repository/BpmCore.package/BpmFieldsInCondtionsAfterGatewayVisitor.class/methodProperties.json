@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptComplexGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptEndEvent:" : "brunobb 08/14/2019 13:01",
+		"acceptEventBasedGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptExclusiveEventBasedGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptExclusiveGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptInclusiveGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptIntermediateEvent:" : "brunobb 08/14/2019 13:01",
+		"acceptOrbeonTask:" : "brunobb 08/14/2019 13:01",
+		"acceptParallelEventBasedGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptParallelGateway:" : "brunobb 08/14/2019 13:01",
+		"acceptScriptTask:" : "brunobb 08/14/2019 13:01",
+		"acceptSeasideTask:" : "brunobb 08/14/2019 13:01",
+		"acceptSendTask:" : "brunobb 08/14/2019 13:01",
+		"acceptStartEvent:" : "brunobb 08/14/2019 13:01",
+		"acceptSubProcessTask:" : "brunobb 08/14/2019 13:01",
+		"acceptTask:" : "brunobb 08/14/2019 13:01",
+		"acceptTransition:" : "brunobb 08/14/2019 13:01" } }
