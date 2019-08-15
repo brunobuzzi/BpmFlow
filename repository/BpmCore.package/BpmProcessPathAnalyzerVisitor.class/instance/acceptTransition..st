@@ -9,7 +9,7 @@ acceptTransition: aBpmTransitionDefinition
 	visitedTransitions add: aBpmTransitionDefinition.
 	aBpmTransitionDefinition getUsedFieldsNamesInCondition do: [:fieldName | 
 		((visitedTasks select: [:each | each isOrbeonTask or:[each isSeasideTask]]) anySatisfy: [:task | task getComponentClass getFieldsNames includes: fieldName]) 
-		ifFalse: [self halt. missingEvaluationFields add: fieldName].
+		ifFalse: [missingEvaluationFields add: fieldName].
 	].
 
 	aBpmTransitionDefinition endArtifact acceptVisitor: self.
