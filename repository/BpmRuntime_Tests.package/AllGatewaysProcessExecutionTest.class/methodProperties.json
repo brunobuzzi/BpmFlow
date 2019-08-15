@@ -20,4 +20,6 @@
 		"testExecuteProcess_task4_to_task7" : "brunobb 11/30/2018 08:41",
 		"testExecuteProcess_task5_task7_to_end" : "brunobb 11/09/2018 09:55",
 		"testExecuteProcess_task5_to_end" : "brunobb 11/09/2018 09:56",
-		"testFieldsInGatewayConditions" : "BrunoBB 04/19/2016 16:13" } }
+		"testFieldsInGatewayConditions" : "BrunoBB 04/19/2016 16:13",
+		"testTransitionTreePossibleLoops" : "brunobb 08/15/2019 13:15",
+		"testTransitionTreePossiblePaths" : "brunobb 08/15/2019 13:13" } }
