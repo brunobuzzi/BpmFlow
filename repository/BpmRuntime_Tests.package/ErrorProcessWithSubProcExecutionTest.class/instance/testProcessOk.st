@@ -1,4 +1,4 @@
-other
+test
 testProcessOk
 	| currentTask endArtifact formInstance subProcess subProcId |
 

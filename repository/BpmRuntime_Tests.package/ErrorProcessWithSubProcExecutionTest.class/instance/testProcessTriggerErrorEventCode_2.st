@@ -1,4 +1,4 @@
-other
+test
 testProcessTriggerErrorEventCode_2
 
 	"error code = 2 is the same as error code = 1 for subprocesses until issues #913 and #914 are implemented.

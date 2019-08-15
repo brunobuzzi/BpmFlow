@@ -1,4 +1,4 @@
-other
+test
 testProcessTriggerErrorEventCode_1_pendingTask
 	| currentTask formInstance subProcess subProcessTask |
 

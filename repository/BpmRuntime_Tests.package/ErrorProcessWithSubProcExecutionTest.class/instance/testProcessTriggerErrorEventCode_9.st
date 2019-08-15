@@ -1,4 +1,4 @@
-other
+test
 testProcessTriggerErrorEventCode_9
 	| currentTask formInstance subProcess subProcessTask procId subProcId |
 
