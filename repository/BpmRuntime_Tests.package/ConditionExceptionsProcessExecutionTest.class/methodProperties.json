@@ -17,5 +17,6 @@
 		"tearDown" : "brunobb 05/23/2019 09:05",
 		"testExecuteProcess_non_block_condition" : "brunobb 11/28/2018 06:46",
 		"testExecuteProcess_non_boolean_condition" : "brunobb 11/28/2018 06:46",
-		"testTransitionTreePossibleLoops" : "brunobb 08/15/2019 13:18",
-		"testTransitionTreePossiblePaths" : "brunobb 08/15/2019 13:18" } }
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 11:52",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 11:52",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 11:52" } }

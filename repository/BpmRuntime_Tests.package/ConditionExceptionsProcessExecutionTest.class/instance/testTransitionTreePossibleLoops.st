@@ -1,4 +1,4 @@
 test
 testTransitionTreePossibleLoops
 
-	self assert: procDefinition asTree getAllPossibleLoops size equals: 0.
+	self assert: (procDefinition asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.

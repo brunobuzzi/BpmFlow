@@ -2,7 +2,7 @@ test
 testTransitionTreePossibleLoops
 	| subProc |
 
-	self assert: procDefinition asTree getAllPossibleLoops size equals: 0.
+	self assert: (procDefinition asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.
 
 	subProc := procDefinition subProcesses asArray first.
-	self assert:  subProc asTree getAllPossibleLoops size equals: 0.
+	self assert: (subProc asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.

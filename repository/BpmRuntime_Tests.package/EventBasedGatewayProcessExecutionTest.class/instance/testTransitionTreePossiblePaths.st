@@ -1,6 +1,6 @@
 test
 testTransitionTreePossiblePaths
 
-	self assert: senderProcessDef asTree getAllPossiblePath size equals: 1.
+	self assert: (senderProcessDef asTreeWithLoopTolerance: 5) getAllPossiblePath size equals: 1.
 
-	self assert: receiverProcesDef asTree getAllPossiblePath size equals: 3.
+	self assert: (receiverProcesDef asTreeWithLoopTolerance: 5) getAllPossiblePath size equals: 3.

@@ -12,5 +12,6 @@
 		"testProcessTriggerErrorEventCode_1_pendingTask" : "brunobb 08/06/2019 10:08",
 		"testProcessTriggerErrorEventCode_2" : "brunobb 08/06/2019 07:59",
 		"testProcessTriggerErrorEventCode_9" : "brunobb 08/06/2019 09:28",
-		"testTransitionTreePossibleLoops" : "brunobb 08/15/2019 13:51",
-		"testTransitionTreePossiblePaths" : "brunobb 08/15/2019 13:52" } }
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:13",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:13",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 08:33" } }

@@ -12,5 +12,6 @@
 		"setUp" : "brunobb 08/07/2019 11:23",
 		"tearDown" : "brunobb 08/07/2019 11:23",
 		"testExecuteProcess_errorCode_1" : "brunobb 08/07/2019 11:46",
-		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 08:09",
-		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 08:10" } }
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:14",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:14",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 12:15" } }

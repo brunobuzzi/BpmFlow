@@ -12,4 +12,5 @@
 		"testAssignationPolicyDefinedInBizagi" : "brunobb 03/12/2018 10:41",
 		"testExecuteProcess_simpleRegistration_approved" : "brunobb 03/25/2019 08:46",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 08:22",
-		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 08:22" } }
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 08:22",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 08:30" } }

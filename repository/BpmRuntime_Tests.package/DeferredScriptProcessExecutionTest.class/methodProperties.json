@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"createProcessDefinition" : "brunobb 06/28/2019 08:45",
-		"setUp" : "brunobb 06/28/2019 08:33",
-		"tearDown" : "brunobb 06/28/2019 08:33",
-		"testExecuteProcess" : "brunobb 07/30/2019 12:16",
-		"testTransitionTreePossibleLoops" : "brunobb 08/15/2019 13:24",
-		"testTransitionTreePossiblePaths" : "brunobb 08/15/2019 13:28" } }
+		"setUp" : "brunobb 08/16/2019 12:09",
+		"tearDown" : "brunobb 08/16/2019 12:09",
+		"testExecuteProcess" : "brunobb 08/16/2019 12:00",
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 11:53",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 11:53",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 11:54" } }
