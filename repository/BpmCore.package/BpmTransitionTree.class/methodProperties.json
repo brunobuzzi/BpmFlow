@@ -3,7 +3,7 @@
 		"newOn:" : "brunobb 03/14/2019 03:20",
 		"newOn:loopTolerance:" : "brunobb 03/14/2019 03:19" },
 	"instance" : {
-		"add:asChildOf:" : "brunobb 03/14/2019 03:05",
+		"add:asChildOf:" : "brunobb 08/16/2019 10:17",
 		"allNodes" : "brunobb 03/14/2019 03:05",
 		"allNodes:" : "brunobb 03/14/2019 03:05",
 		"asOrderedCollection" : "brunobb 03/14/2019 03:05",
@@ -12,8 +12,8 @@
 		"endOrderDo:on:" : "brunobb 03/14/2019 03:05",
 		"fieldName:isContainedInAny:" : "brunobb 03/14/2019 03:05",
 		"getAllPossibleLoops" : "brunobb 03/14/2019 03:39",
-		"getAllPossiblePath" : "brunobb 03/14/2019 03:05",
-		"getAllPossiblePathToEnd" : "brunobb 03/14/2019 03:35",
+		"getAllPossiblePath" : "brunobb 08/16/2019 11:43",
+		"getAllPossiblePathToEnd" : "brunobb 08/16/2019 08:41",
 		"getLeafNodes" : "brunobb 03/14/2019 03:05",
 		"initialize" : "brunobb 03/14/2019 03:16",
 		"loopTolerance" : "brunobb 03/14/2019 03:05",
@@ -29,6 +29,6 @@
 		"roots" : "brunobb 03/14/2019 03:05",
 		"roots:" : "brunobb 03/14/2019 03:05",
 		"setRootWith:" : "brunobb 03/14/2019 03:05",
-		"visitTransition:" : "brunobb 03/14/2019 03:15",
+		"visitTransition:" : "brunobb 08/16/2019 10:38",
 		"visitedTransitions" : "brunobb 03/14/2019 03:05",
 		"visitedTransitions:" : "brunobb 03/14/2019 03:05" } }

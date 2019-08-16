@@ -2,10 +2,11 @@
 	"class" : {
 		"newOn:for:" : "brunobb 12/17/2018 04:51" },
 	"instance" : {
-		"addChild:" : "brunobb 03/13/2019 12:52",
+		"addChild:" : "brunobb 08/16/2019 11:49",
 		"children" : "brunobb 12/17/2018 04:50",
 		"children:" : "brunobb 12/17/2018 04:50",
 		"endArtifact" : "brunobb 12/17/2018 11:30",
+		"endName" : "brunobb 08/16/2019 09:02",
 		"getParentNodes" : "brunobb 12/17/2018 08:35",
 		"getParentNodesOn:" : "brunobb 12/17/2018 08:35",
 		"getParentTransitions" : "brunobb 12/18/2018 08:50",
@@ -21,6 +22,7 @@
 		"printOn:" : "brunobb 12/17/2018 10:00",
 		"printTransition" : "brunobb 12/17/2018 07:43",
 		"sameAs:" : "brunobb 12/18/2018 08:54",
+		"startName" : "brunobb 08/16/2019 09:02",
 		"transition" : "brunobb 12/17/2018 07:09",
 		"transition:" : "brunobb 12/17/2018 07:09",
 		"tree" : "brunobb 12/17/2018 04:50",

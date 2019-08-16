@@ -4,7 +4,7 @@ add: aBpmTransitionDefinition asChildOf: aBpmTransitionTreeNode
 	| newNode |
 
 	newNode := BpmTransitionTreeNode newOn: self for: aBpmTransitionDefinition.
-	
+
 	(self pathAlreadyExistFor: newNode) ifTrue: [^nil]. "if the path is already registered then the node is not added"
 
 	allNodes add: newNode.
