@@ -1,4 +1,4 @@
-other
+test
 testReuseExternalObject
 	| currentTask currentProcessMatrix finishedProcessMatrix processId takenProcessMatrix endArtifact |
 

@@ -9,6 +9,6 @@
 		"setUp" : "brunobb 05/23/2019 09:50",
 		"tearDown" : "brunobb 05/23/2019 09:12",
 		"testExecuteProcess_01" : "brunobb 11/09/2018 09:58",
-		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 08:23",
-		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 08:23",
-		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 08:30" } }
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:20",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:20",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 12:21" } }
