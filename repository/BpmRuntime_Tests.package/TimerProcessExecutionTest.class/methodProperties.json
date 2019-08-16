@@ -5,4 +5,7 @@
 		"createProcessDefinition" : "brunobb 03/25/2019 08:25",
 		"setUp" : "brunobb 05/23/2019 09:47",
 		"tearDown" : "brunobb 05/23/2019 09:14",
-		"testProcessCreation" : "BrunoBB 04/03/2017 08:08" } }
+		"testProcessCreation" : "BrunoBB 04/03/2017 08:08",
+		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 08:26",
+		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 08:27",
+		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 08:27" } }
