@@ -6,3 +6,5 @@ setExtendedAttributesWith: attributesDictionary
 	self setCanUnassignAttribute.
 
 	self setReuseExternalObjectOfTaskNamed.
+
+	self setIsPreviousFormReusable.

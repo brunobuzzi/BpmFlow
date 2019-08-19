@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	canUnassign := true
+	canUnassign := true.
+	isPreviousFormReusable := true.
