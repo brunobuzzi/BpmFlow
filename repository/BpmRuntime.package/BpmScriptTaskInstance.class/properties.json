@@ -11,5 +11,5 @@
 	"name" : "BpmScriptTaskInstance",
 	"pools" : [
 		 ],
-	"super" : "BpmActivityInstance",
+	"super" : "BpmAbstractTaskInstance",
 	"type" : "normal" }
