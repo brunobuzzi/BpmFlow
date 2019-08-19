@@ -16,5 +16,5 @@
 	"name" : "BpmSendTaskDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmTaskDefinition",
+	"super" : "BpmAbstractTaskDefinition",
 	"type" : "normal" }
