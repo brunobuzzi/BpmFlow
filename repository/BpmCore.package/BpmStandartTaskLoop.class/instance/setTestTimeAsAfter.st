@@ -1,0 +1,4 @@
+other
+setTestTimeAsAfter
+
+	testTime := #after

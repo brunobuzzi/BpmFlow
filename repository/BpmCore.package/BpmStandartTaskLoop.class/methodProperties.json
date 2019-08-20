@@ -2,8 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getLoop" : "BrunoBB 11/02/2015 08:18",
-		"isStandart" : "BrunoBB 11/02/2015 08:19",
-		"loopCondition" : "BrunoBB 10/31/2015 10:52",
-		"loopCondition:" : "BrunoBB 10/31/2015 10:52",
-		"setLoop:" : "BrunoBB 11/01/2015 14:47" } }
+		"getLoop" : "brunobb 08/20/2019 04:34",
+		"initialize" : "brunobb 08/20/2019 04:35",
+		"isStandart" : "brunobb 08/20/2019 04:34",
+		"loopCondition" : "brunobb 08/20/2019 04:34",
+		"loopCondition:" : "brunobb 08/20/2019 04:34",
+		"loopMaximum" : "brunobb 08/20/2019 04:35",
+		"loopMaximum:" : "brunobb 08/20/2019 04:35",
+		"setLoop:" : "brunobb 08/20/2019 04:34",
+		"setTestTimeAsAfter" : "brunobb 08/20/2019 04:36",
+		"testTime" : "brunobb 08/20/2019 04:35",
+		"testTime:" : "brunobb 08/20/2019 04:35" } }

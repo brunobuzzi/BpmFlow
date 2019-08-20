@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "BrunoBB 10/31/2015 11:02",
 	"instvars" : [
-		"loopCondition" ],
+		"loopCondition",
+		"loopMaximum",
+		"testTime" ],
 	"name" : "BpmStandartTaskLoop",
 	"pools" : [
 		 ],
