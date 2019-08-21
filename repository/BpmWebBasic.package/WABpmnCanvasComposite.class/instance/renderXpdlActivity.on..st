@@ -15,4 +15,8 @@ renderXpdlActivity: aXPDLActivityNode on: html
 						target: (model isProcessInstance ifFalse: ['_blank'] ifTrue: ['_self']);
 						with: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize].
 	]
-	ifFalse: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize]
+	ifFalse: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize].
+
+	aXPDLActivityNode isStandardLoop 
+	ifTrue: [self renderStandardLoopIconOn: html 
+						at: ((aXPDLActivityNode getXcoordinate + (aXPDLActivityNode  getWidth // 2)) @ (aXPDLActivityNode getYcoordinate + aXPDLActivityNode getHeight - 15))]
