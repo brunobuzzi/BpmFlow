@@ -1,7 +1,7 @@
 svg
 drawOn: aJasvgiBpmCanvas at: aPoint
 
-	self isMultiInstance 
+	self isMultiInstanceLoop
 	ifFalse: [^aJasvgiBpmCanvas 
 						drawSubProcessActivityNamed: name
 						at: aPoint 
