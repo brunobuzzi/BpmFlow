@@ -1,4 +1,0 @@
-state
-isMultiInstance
-
-	^definition isMultiInstance

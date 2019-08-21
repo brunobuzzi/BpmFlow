@@ -1,0 +1,4 @@
+state
+isMultiInstanceLoop
+
+	^definition isMultiInstanceLoop
