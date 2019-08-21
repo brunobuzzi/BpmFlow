@@ -1,7 +1,7 @@
 *bpmBizagiSvgConverter
 drawOn: aJasvgiBpmCanvas
 
-	(self hasPerformers and: [self isMultiInstance])
+	(self hasPerformers and: [self isMultiInstanceLoop])
 	ifTrue: [^aJasvgiBpmCanvas drawMultiInstaceMultiRoleActivityNamed: self getName 
 							roles: (performers collect: [:each | '[',each getName,']']) 
 							at: self getXcoordinate @ self getYcoordinate 
@@ -13,7 +13,7 @@ drawOn: aJasvgiBpmCanvas
 							at: self getXcoordinate @ self getYcoordinate 
 							extent: self getWidth @ self getHeight].
 
-	self isMultiInstance 
+	self isMultiInstanceLoop
 	ifFalse: [^aJasvgiBpmCanvas 
 						drawActivityNamed: self getName 
 						at: self getXcoordinate @ self getYcoordinate 
