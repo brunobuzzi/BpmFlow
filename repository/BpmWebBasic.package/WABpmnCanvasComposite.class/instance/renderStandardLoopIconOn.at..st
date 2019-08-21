@@ -9,9 +9,10 @@ renderStandardLoopIconOn: html at: aPoint
 		add: ('cy' -> aPoint y);
 		add: ('r' -> 8);
 		add: ('stroke' -> 'black');
+		add: ('stroke-width' -> '2px');
 		add: ('fill' -> 'none').
 
 	self renderSvgElementOn: html tag: html svgCircle attributes: associations with: [html tag: 'title' with: nil].
 
-	self renderLineOn: html from: ((aPoint x + 2) @ (aPoint y + 8)) to: ((aPoint x - 3) @ (aPoint y + 2)) widthPx: '1px' stroke: 'black' fillColor: 'black'.
-	self renderLineOn: html from: ((aPoint x + 2) @ (aPoint y + 8)) to: ((aPoint x - 3) @ (aPoint y + 12)) widthPx: '1px' stroke: 'black' fillColor: 'black'.
+	self renderLineOn: html from: ((aPoint x + 2) @ (aPoint y + 8)) to: ((aPoint x - 3) @ (aPoint y + 2)) widthPx: '2px' stroke: 'black' fillColor: 'black'.
+	self renderLineOn: html from: ((aPoint x + 2) @ (aPoint y + 8)) to: ((aPoint x - 3) @ (aPoint y + 12)) widthPx: '2px' stroke: 'black' fillColor: 'black'.
