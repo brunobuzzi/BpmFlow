@@ -4,7 +4,7 @@ generateNextTasks
 
 	currentActivities := OrderedCollection withAll: (assignmentToFinish process currentActivities asArray remove: taskToFinish; yourself).
 
-	assignmentFinalization := self session user finalizeAssignment: assignmentToFinish.
+	assignmentFinalization := self session user finalizeAssignmentAndResume: assignmentToFinish.
 
 	newTasks := assignmentToFinish process currentActivities asArray removeAll: currentActivities; yourself.
 

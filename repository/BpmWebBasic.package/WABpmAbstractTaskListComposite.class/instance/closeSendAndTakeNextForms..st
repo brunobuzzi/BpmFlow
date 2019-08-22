@@ -7,6 +7,6 @@ closeSendAndTakeNextForms: aBpmArtifactInstance
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self session user finalizeAssignment: model takeNext: true.
+	self session user finalizeAssignmentAndResume: model takeNext: true.
 
 	mainPanel removeSelectionAndRefreshLateralCollection.

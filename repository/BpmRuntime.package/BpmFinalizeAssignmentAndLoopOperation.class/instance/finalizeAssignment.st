@@ -1,10 +1,10 @@
 action
 finalizeAssignment
-	| finishedMatrix currentActivities |
+	| finishedMatrix currentMatrix |
 
 	self sendInformationMessage.
 
-	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
+	assignment finalizeWithoutEndingTask. "finalize the assignment but does NOT the task"
 	isFinalized := true.
 
 	user moveFromCurrentToFinished: assignment in: self bpmEnvironment. "<user> move from current assignments to finished <assignment> "
@@ -13,7 +13,8 @@ finalizeAssignment
 	finishedMatrix := self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
 	finishedMatrix addAssignment: assignment.
 
-	"generate next transitions and put New Tasks in the Application Running Matrix"
-	currentActivities := OrderedCollection withAll: self process currentActivities.
+	currentMatrix := self defaultAvailableTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
 
-	"nextTransitions := assignment generateNextRunningTransitions. "
+	assignment task addIterationBy: user.
+
+	currentMatrix addTask: assignment task "a new Assignment is created for the same Task but other cycle in the Loop"

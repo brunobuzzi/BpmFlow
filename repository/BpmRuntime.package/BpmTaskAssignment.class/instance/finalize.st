@@ -4,6 +4,6 @@ finalize
 	1- Set the end timestamp for the <task>.
 	2- Finalize the <task>"
 
-	taskEndDate := TimeStamp now.
+	self finalizeWithoutEndingTask.
 
 	task finalize.

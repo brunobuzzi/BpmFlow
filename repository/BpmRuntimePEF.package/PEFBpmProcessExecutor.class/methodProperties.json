@@ -3,7 +3,7 @@
 		"newWithUsers:" : "brunobb 11/07/2018 11:09" },
 	"instance" : {
 		"associate:withForm:" : "brunobb 03/27/2019 08:54",
-		"finalizeAssignment:withUserNamed:on:" : "brunobb 11/07/2018 10:42",
+		"finalizeAssignment:withUserNamed:on:" : "brunobb 08/22/2019 11:57",
 		"getAssignmentAndAssociate:withForm:on:" : "brunobb 03/27/2019 08:54",
 		"getAssignmentFor:on:" : "brunobb 11/28/2018 08:36",
 		"getAssignmentFor:on:ifNone:" : "brunobb 11/07/2018 10:42",

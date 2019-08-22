@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "brunobb 08/22/2019 10:01",
+	"commentStamp" : "",
 	"instvars" : [
 		"nextTransitions",
 		"assignNextToUser" ],
-	"name" : "BpmFinalizeAssignmentAndGoOperation",
+	"name" : "BpmFinalizeAssignmentAndResumeOperation",
 	"pools" : [
 		 ],
 	"super" : "BpmFinalizeAssignmentOperation",

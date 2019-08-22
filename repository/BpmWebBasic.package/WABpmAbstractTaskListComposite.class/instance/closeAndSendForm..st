@@ -7,6 +7,6 @@ closeAndSendForm: aBpmArtifactInstance
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self session user finalizeAssignment: model.
+	self session user finalizeAssignmentAndResume: model.
 
 	self removeSelectionAndRefreshLateralCollection.
