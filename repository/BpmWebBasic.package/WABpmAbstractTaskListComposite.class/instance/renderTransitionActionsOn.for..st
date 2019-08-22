@@ -10,4 +10,5 @@ renderTransitionActionsOn: html for: aBpmArtifactInstance
 		ifTrue: [aBpmArtifactInstance definition getErrorsEvents do: [:errorDefinition | self renderTriggerErrorEventOn: html from: aBpmArtifactInstance event: errorDefinition]]. 
 
 		(aBpmArtifactInstance isSubprocess not and: [aBpmArtifactInstance isDone not]) ifTrue: [self renderCloseAndSendFormOn: html for: aBpmArtifactInstance.].
+		aBpmArtifactInstance isStandardLoop ifTrue: [self renderStandardLoopOn: html for: aBpmArtifactInstance].
 	]
