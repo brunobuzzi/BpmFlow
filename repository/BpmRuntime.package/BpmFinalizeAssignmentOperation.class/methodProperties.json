@@ -2,17 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assignNextToUser" : "brunobb 04/18/2018 03:38",
-		"assignNextToUser:" : "brunobb 04/18/2018 03:38",
-		"executeIt" : "brunobb 09/10/2018 09:29",
-		"finalizeAssignment" : "brunobb 07/31/2019 12:27",
-		"getAvailableProcessMatrix" : "brunobb 04/18/2018 03:38",
-		"getNewCreatedTasks" : "brunobb 04/18/2018 03:38",
-		"initialize" : "brunobb 04/18/2018 03:38",
-		"isFinalized" : "brunobb 04/18/2018 03:38",
-		"isFinalized:" : "brunobb 04/18/2018 03:38",
-		"nextTransitions" : "brunobb 04/18/2018 03:38",
-		"nextTransitions:" : "brunobb 04/18/2018 03:38",
-		"process" : "brunobb 04/18/2018 03:38",
-		"sendInformationMessage" : "brunobb 09/07/2018 10:28",
-		"setUserToTakeNextTasks" : "brunobb 04/18/2018 03:38" } }
+		"executeIt" : "brunobb 08/22/2019 10:07",
+		"finalizeAssignment" : "brunobb 08/22/2019 10:07",
+		"getAvailableProcessMatrix" : "brunobb 08/22/2019 10:07",
+		"initialize" : "brunobb 08/22/2019 10:07",
+		"isFinalized" : "brunobb 08/22/2019 10:07",
+		"isFinalized:" : "brunobb 08/22/2019 10:07",
+		"process" : "brunobb 08/22/2019 10:07",
+		"sendInformationMessage" : "brunobb 08/22/2019 10:07" } }

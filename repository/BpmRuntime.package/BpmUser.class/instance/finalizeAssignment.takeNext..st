@@ -8,7 +8,7 @@ finalizeAssignment: aBpmTaskAssignment takeNext: aBoolean
 	"if the process has been paused or aborted --> <aBpmTaskAssignment> can not be finalized (the process is freeze)"
 	aBpmTaskAssignment processIsRunning ifFalse: [^ProcessNotRunningException signal: 'The assigment can not be finalized because the process is NOT [running]'].
 
-	finalizeOperation := BpmFinalizeAssignmentOperation on: aBpmTaskAssignment by: self.
+	finalizeOperation := BpmFinalizeAssignmentAndGoOperation on: aBpmTaskAssignment by: self.
 	finalizeOperation assignNextToUser: aBoolean. "if <true> assign next generated tasks to the receiver"
 
 	^finalizeOperation executeIt

@@ -1,0 +1,1 @@
+This class Finalize <aBpmTaskAssignment> and generate next transitions.

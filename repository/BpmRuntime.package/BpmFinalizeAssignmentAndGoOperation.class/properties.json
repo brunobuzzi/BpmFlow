@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 08/22/2019 10:01",
+	"instvars" : [
+		"nextTransitions",
+		"assignNextToUser" ],
+	"name" : "BpmFinalizeAssignmentAndGoOperation",
+	"pools" : [
+		 ],
+	"super" : "BpmFinalizeAssignmentOperation",
+	"type" : "normal" }
