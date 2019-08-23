@@ -1,4 +1,4 @@
-other
+loop
 isMultiInstanceLoop
 	"Answer whether or not the receiver has multi instance behavior.
 

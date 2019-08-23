@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"evaluateLoopIn:" : "brunobb 08/23/2019 12:51",
 		"getLoop" : "brunobb 08/20/2019 04:34",
 		"initialize" : "brunobb 08/20/2019 04:35",
 		"isStandard" : "brunobb 08/20/2019 11:28",
@@ -10,7 +11,7 @@
 		"loopMaximum" : "brunobb 08/20/2019 04:35",
 		"loopMaximum:" : "brunobb 08/20/2019 04:35",
 		"setBpmLoopOptionsFrom:" : "brunobb 08/20/2019 10:34",
-		"setLoop:" : "brunobb 08/20/2019 04:34",
+		"setLoop:" : "brunobb 08/23/2019 12:46",
 		"setTestTimeAsAfter" : "brunobb 08/20/2019 04:36",
 		"testTime" : "brunobb 08/20/2019 04:35",
 		"testTime:" : "brunobb 08/20/2019 04:35" } }

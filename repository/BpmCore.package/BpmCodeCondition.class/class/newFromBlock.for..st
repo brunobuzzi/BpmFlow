@@ -1,7 +1,7 @@
 other
-newFromBlock: aStringOrBlock for: aBpmTransitionDefinition
+newFromBlock: aStringOrBlock for: aBpmObject
 
 	^super new initialize
 		evaluationCode: aStringOrBlock;
-		transition: aBpmTransitionDefinition;
+		bpmObject: aBpmObject;
 		yourself

@@ -1,0 +1,3 @@
+Accessing
+bpmObject
+	^bpmObject

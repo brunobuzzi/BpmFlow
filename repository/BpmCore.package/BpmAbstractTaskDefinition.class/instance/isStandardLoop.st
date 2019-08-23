@@ -1,4 +1,4 @@
-other
+loop
 isStandardLoop
 	"Answer whether or not the receiver has standard."
 

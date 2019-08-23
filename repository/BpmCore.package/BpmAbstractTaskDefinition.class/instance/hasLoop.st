@@ -1,4 +1,4 @@
-other
+loop
 hasLoop
 
 	^loop notNil
