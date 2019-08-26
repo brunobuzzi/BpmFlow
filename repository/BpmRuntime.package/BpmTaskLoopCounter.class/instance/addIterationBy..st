@@ -4,4 +4,4 @@ addIterationBy: aBpmUser
 
 	counter := counter + 1.
 
-	iterations at: counter put: aBpmUser
+	iterations at: counter put: aBpmUser.
