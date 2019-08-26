@@ -1,4 +1,4 @@
-other
+loop
 addIterationBy: aBpmUser
 	"The receiver increment the iteration counter <counter> triggered by the user <aBpmUser>"
 

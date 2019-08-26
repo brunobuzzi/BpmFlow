@@ -1,0 +1,4 @@
+other
+hasLoop
+
+	^definition hasLoop
