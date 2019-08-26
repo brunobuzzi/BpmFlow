@@ -1,0 +1,4 @@
+other
+testTimeIsBefore
+
+	^testTime = #before

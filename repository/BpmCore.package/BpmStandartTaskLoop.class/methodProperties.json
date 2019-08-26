@@ -4,7 +4,7 @@
 	"instance" : {
 		"evaluateLoopIn:" : "brunobb 08/23/2019 12:51",
 		"getLoop" : "brunobb 08/20/2019 04:34",
-		"initialize" : "brunobb 08/20/2019 04:35",
+		"initialize" : "brunobb 08/26/2019 10:55",
 		"isStandard" : "brunobb 08/20/2019 11:28",
 		"loopCondition" : "brunobb 08/20/2019 04:34",
 		"loopCondition:" : "brunobb 08/20/2019 04:34",
@@ -13,5 +13,8 @@
 		"setBpmLoopOptionsFrom:" : "brunobb 08/20/2019 10:34",
 		"setLoop:" : "brunobb 08/23/2019 12:46",
 		"setTestTimeAsAfter" : "brunobb 08/20/2019 04:36",
+		"setTestTimeAsBefore" : "brunobb 08/26/2019 10:55",
 		"testTime" : "brunobb 08/20/2019 04:35",
-		"testTime:" : "brunobb 08/20/2019 04:35" } }
+		"testTime:" : "brunobb 08/20/2019 04:35",
+		"testTimeIsAfter" : "brunobb 08/26/2019 08:52",
+		"testTimeIsBefore" : "brunobb 08/26/2019 08:52" } }
