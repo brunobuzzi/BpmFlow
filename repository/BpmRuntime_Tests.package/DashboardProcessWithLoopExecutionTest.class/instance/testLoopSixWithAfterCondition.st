@@ -1,7 +1,8 @@
 test
-testLoopFiveWithBeforeCondition
+testLoopSixWithAfterCondition
 	| currentTask endArtifact formInstance |
 
+	(procDefinition getTaskNamed: 'dashboard-form' ifNone: [self assert: false]) loop setTestTimeAsAfter.
 	procInstance atExternalVariable: 'condition' put: 11;
 		triggerStartEventWith: (self getUserNamed: 'john').
 
@@ -28,9 +29,15 @@ testLoopFiveWithBeforeCondition
 	self assert: (currentTask getDefinitionName = 'dashboard-form').
 	self assert: (currentTask numberOfIterations = 4).
 
-	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask getDefinitionName = 'dashboard-form').
 	self assert: (currentTask numberOfIterations = 5).
+
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask numberOfIterations = 6).
 
 	"Step 2 - Process End"
 	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
 	self assert: endArtifact isEndEvent.
+
+	(procDefinition getTaskNamed: 'dashboard-form' ifNone: [self assert: false]) loop setTestTimeAsBefore.

@@ -2,6 +2,9 @@ test
 testLoopSevenWithBeforeCondition
 	| currentTask endArtifact formInstance |
 
+	procInstance atExternalVariable: 'condition' put: 11;
+		triggerStartEventWith: (self getUserNamed: 'john').
+
 	self assert: (procInstance startEvent getDefinitionName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
