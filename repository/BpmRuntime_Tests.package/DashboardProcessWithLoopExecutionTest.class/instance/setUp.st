@@ -15,7 +15,9 @@ setUp
 
 	self grantUsers: {'john' -> 'dashboard-manager'} in: 'ue'.
 
-	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'john').
-
+	procInstance := procDefinition createProcessInstance: (self getUserNamed: 'john').
+	procInstance atExternalVariable: 'condition' put: 11;
+		triggerStartEventWith: (self getUserNamed: 'john').
+	
 	self randomGenerator countries ifEmpty: [self randomGenerator initializeCountries].
 	self randomGenerator industries ifEmpty: [self randomGenerator initializeIndustries].

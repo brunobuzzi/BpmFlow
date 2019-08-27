@@ -9,7 +9,9 @@ executeProcess: aBpmProcessInstance withFormValues: anArray in: aTimeStamp
 	formInstance createdTime: aTimeStamp;
 		modifiedTime:aTimeStamp. 
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: aBpmProcessInstance.
+"	self processExecutionSimulator takeTask: currentTask forUserNamed: 'john' withForm: formInstance on: aBpmProcessInstance."
 	self assert: (currentTask getDefinitionName = 'dashboard-form').
+
 	"Step 2 - Process End"
 	endArtifact := aBpmProcessInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
 	self assert: endArtifact isEndEvent.
