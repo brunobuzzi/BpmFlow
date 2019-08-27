@@ -12,8 +12,7 @@ createBpmDefinitionOn: aBpmProcessDefinition
 	loop := self getLoopTypeClass for: activityDefinition.
 	loop startQuantity: self getStartQuantity;
 		completionQuantity: self getCompletionQuantity;
+		setBpmLoopOptionsFrom: self;
 		setLoop: loopCondition.
-
-	loop setBpmLoopOptionsFrom: self. 
 
 	^activityDefinition loop: loop
