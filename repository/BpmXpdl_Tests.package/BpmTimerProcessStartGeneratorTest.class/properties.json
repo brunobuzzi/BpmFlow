@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmProcessGeneratorTest7",
+	"name" : "BpmTimerProcessStartGeneratorTest",
 	"pools" : [
 		 ],
 	"super" : "BpmProcessGeneratorTest",

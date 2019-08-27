@@ -2,7 +2,7 @@ other
 testLoop
 
 	self assert: 
-		((self getTestCaseProcess getTaskNamed: 'test-case' ifNone: [self assert: false]) loop isStandardLoop).
+		((self getTestCaseProcess getTaskNamed: 'test-case' ifNone: [self assert: false]) loop isStandard).
 
 	self assert: 
 		((self getTestCaseProcess getTaskNamed: 'test-case' ifNone: [self assert: false]) loop startQuantity = 1).
@@ -11,7 +11,7 @@ testLoop
 		((self getTestCaseProcess getTaskNamed: 'test-case' ifNone: [self assert: false]) loop completionQuantity = 5).
 
 	self assert: 
-		((self getTestCaseProcess getTaskNamed: 'execute-test' ifNone: [self assert: false]) loop isMultiInstanceLoop).
+		((self getTestCaseProcess getTaskNamed: 'execute-test' ifNone: [self assert: false]) loop isMultiInstance).
 
 	self assert: 
 		((self getTestCaseProcess getTaskNamed: 'execute-test' ifNone: [self assert: false]) loop startQuantity = 2).
@@ -20,7 +20,7 @@ testLoop
 		((self getTestCaseProcess getTaskNamed: 'execute-test' ifNone: [self assert: false]) loop completionQuantity = 10).
 
 	self assert: 
-		((self getTestCaseProcess getTaskNamed: 'analyze-issue-report' ifNone: [self assert: false]) loop isMultiInstanceLoop).
+		((self getTestCaseProcess getTaskNamed: 'analyze-issue-report' ifNone: [self assert: false]) loop isMultiInstance).
 
 	self assert: 
 		((self getTestCaseProcess getTaskNamed: 'analyze-issue-report' ifNone: [self assert: false]) loop startQuantity = 1).

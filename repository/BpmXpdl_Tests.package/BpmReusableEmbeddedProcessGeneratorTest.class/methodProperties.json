@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getEmbeddedSubProcess" : "brunobb 08/27/2019 08:53",
+		"getReusableSubProcess" : "brunobb 08/27/2019 08:53",
+		"getTopProcess" : "brunobb 08/27/2019 08:53",
+		"setUp" : "brunobb 08/27/2019 08:53",
+		"testActivitiesNames" : "brunobb 08/27/2019 08:53",
+		"testInOutTransitions" : "brunobb 08/27/2019 08:53",
+		"testInOutTransitions2" : "brunobb 08/27/2019 08:53",
+		"testInOutTransitions3" : "brunobb 08/27/2019 08:53",
+		"testRoles" : "brunobb 08/27/2019 08:53",
+		"testRoles2" : "brunobb 08/27/2019 08:53",
+		"testRolesResponsibility" : "brunobb 08/27/2019 08:53",
+		"testRolesResponsibility2" : "brunobb 08/27/2019 08:53",
+		"testRolesResponsibility3" : "brunobb 08/27/2019 08:53",
+		"testScriptCode" : "brunobb 08/27/2019 08:53",
+		"testScriptCode2" : "brunobb 08/27/2019 08:53",
+		"testScriptCode3" : "brunobb 08/27/2019 08:53",
+		"testSubProcess" : "brunobb 08/27/2019 08:53",
+		"testSubProcessTypes" : "brunobb 08/27/2019 08:53" } }
