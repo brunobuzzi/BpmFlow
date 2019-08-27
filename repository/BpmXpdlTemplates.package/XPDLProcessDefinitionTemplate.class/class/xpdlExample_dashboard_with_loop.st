@@ -7,7 +7,7 @@ xpdlExample_dashboard_with_loop
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2019-06-17T18:19:06.0806023-03:00</Created>
-    <ModificationDate>2019-08-20T16:36:56.5426785-03:00</ModificationDate>
+    <ModificationDate>2019-08-26T19:08:54.8666097-03:00</ModificationDate>
     <Description>Diagram 1</Description>
     <Documentation />
   </PackageHeader>
@@ -50,7 +50,7 @@ xpdlExample_dashboard_with_loop
   <WorkflowProcesses>
     <WorkflowProcess Id="14f4e8a4-ec00-4e0a-93ab-c16965b52d5c" Name="Main Process">
       <ProcessHeader>
-        <Created>2019-08-20T16:37:00.7374636-03:00</Created>
+        <Created>2019-08-26T19:09:10.9630161-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -66,7 +66,7 @@ xpdlExample_dashboard_with_loop
     </WorkflowProcess>
     <WorkflowProcess Id="1d87c883-087c-461a-8805-cd900aae2542" Name="dashboard-process-with-loop">
       <ProcessHeader>
-        <Created>2019-08-20T16:37:00.7374636-03:00</Created>
+        <Created>2019-08-26T19:09:10.9640172-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -101,8 +101,8 @@ xpdlExample_dashboard_with_loop
           <Performers />
           <Documentation />
           <Loop LoopType="Standard">
-            <LoopStandard LoopCounter="0" LoopMaximum="6">
-              <LoopCondition>[:process :task | ]</LoopCondition>
+            <LoopStandard LoopCounter="0" LoopMaximum="6" TestTime="Before">
+              <LoopCondition>[:process | (process getValueOfProcessField: ''condition'') &gt; 10 ]</LoopCondition>
             </LoopStandard>
           </Loop>
           <NodeGraphicsInfos>
@@ -159,7 +159,7 @@ xpdlExample_dashboard_with_loop
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-process-with-loop&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-06-17T18:19:06.5931677-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-06-17T18:19:06.5931677-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;dashboard-process-with-loop&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:1,&quot;useParentCaseNumber&quot;:true,&quot;enableAlarms&quot;:true,&quot;enableNotifications&quot;:true,&quot;creationDate&quot;:&quot;2019-06-17T18:19:06.5931677-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2019-06-17T18:19:06.5931677-03:00&quot;,&quot;supportsScopes&quot;:true,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
