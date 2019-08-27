@@ -4,7 +4,7 @@ performInitializationOn: aBpmProcessInstance
 	This operatoin initialize the receiver inside the process <aBpmProcessInstance>"
 
 	(definition hasLoop and:[definition isStandardLoop and:[definition testTimeIsBefore]])
-	ifTrue: [(definition evaluateLoopIn: aBpmProcessInstance) "it should no enter the loop --> finalize the task and generate next transitions"
+	ifTrue: [(definition evaluateLoopIn: aBpmProcessInstance) result "it should no enter the loop --> finalize the task and generate next transitions"
 				ifFalse: [self finalize.
 							^self generateNextRunningTransitions]].
 

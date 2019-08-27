@@ -1,8 +1,11 @@
 action
 finalizeAssignment
-	| finishedMatrix currentActivities |
+	| finishedMatrix currentActivities task |
 
 	self sendInformationMessage.
+
+	task := assignment task.
+	(task hasLoop and: [task isStandardLoop]) ifTrue: [task addIterationBy: user].
 
 	assignment finalize. "move the <task> of the <assignment> from process <currentActivities> to process <executedActivities>"
 	isFinalized := true.

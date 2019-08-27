@@ -1,2 +1,4 @@
 action
 finalizeAssignment
+
+	self subclassResponsibility
