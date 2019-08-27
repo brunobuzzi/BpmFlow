@@ -1,5 +1,5 @@
 test
-testLoopTwoWithBeforeCondition
+testLoopFiveWithBeforeCondition
 	| currentTask endArtifact formInstance |
 
 	self assert: (procInstance startEvent getDefinitionName = 'start').
@@ -13,8 +13,20 @@ testLoopTwoWithBeforeCondition
 	self assert: (currentTask getDefinitionName = 'dashboard-form').
 	self assert: (currentTask numberOfIterations = 1).
 
-	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask getDefinitionName = 'dashboard-form').
 	self assert: (currentTask numberOfIterations = 2).
+
+	self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask getDefinitionName = 'dashboard-form').
+	self assert: (currentTask numberOfIterations = 3).
+
+	self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask getDefinitionName = 'dashboard-form').
+	self assert: (currentTask numberOfIterations = 4).
+
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'john' withForm: formInstance on: procInstance.
+	self assert: (currentTask numberOfIterations = 5).
 
 	"Step 2 - Process End"
 	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end'] ifNone: [self assert: false].
