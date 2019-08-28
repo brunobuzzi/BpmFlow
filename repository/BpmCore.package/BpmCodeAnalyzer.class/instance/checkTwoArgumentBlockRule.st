@@ -1,7 +1,6 @@
-other
+code analyzer
 checkTwoArgumentBlockRule
-	"Receiver's block must be a TWO argument block.
-	[:process :script | ...  ]"
+	"Receiver's block must be a TWO argument block."
 
 	(parser arguments size = 0) 
 	ifTrue: [^self addBlockWarning: 'Block has no argument'].

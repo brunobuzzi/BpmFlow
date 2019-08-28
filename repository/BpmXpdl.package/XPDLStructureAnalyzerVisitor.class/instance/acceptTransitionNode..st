@@ -12,7 +12,7 @@ acceptTransitionNode: aXPDLTransitionNode
 
 	aXPDLTransitionNode startCondition notNil 
 	ifTrue: [| blockAnalysis | 
-		blockAnalysis := BpmProcessConditionCodeAnalyzer for: aXPDLTransitionNode startCondition.
+		blockAnalysis := BpmTransitionConditionCodeAnalyzer for: aXPDLTransitionNode startCondition.
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | self addTransitionCodeWarningItem: eachString]. 
 	].
