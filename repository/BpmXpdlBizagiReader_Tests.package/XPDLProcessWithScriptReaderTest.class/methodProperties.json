@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getProcess1Pool" : "brunobb 08/28/2019 09:32",
+		"getProcess1Workflow" : "brunobb 08/28/2019 09:32",
+		"setUp" : "brunobb 08/28/2019 09:32",
+		"testActivitiesNames" : "brunobb 08/28/2019 09:32",
+		"testInOutTransitions" : "brunobb 08/28/2019 09:32",
+		"testObjectsInLanes" : "brunobb 08/28/2019 09:32",
+		"testScript" : "brunobb 08/28/2019 09:32" } }

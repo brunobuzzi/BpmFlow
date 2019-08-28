@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getEmbeddedWorkflow" : "brunobb 08/28/2019 09:32",
+		"getMainProcessXpdlPackage" : "brunobb 08/28/2019 09:32",
+		"getMainWorkflow" : "brunobb 08/28/2019 09:32",
+		"getReusableWorkflow" : "brunobb 08/28/2019 09:32",
+		"getSubProcessXpdlPackage" : "brunobb 08/28/2019 09:32",
+		"setUp" : "brunobb 08/28/2019 09:32",
+		"testActivitiesNames" : "brunobb 08/28/2019 09:32",
+		"testActivitiesType" : "brunobb 08/28/2019 09:32",
+		"testEmbeddedActivitiesNames" : "brunobb 08/28/2019 09:32",
+		"testEmbeddedProcess" : "brunobb 08/28/2019 09:32",
+		"testObjectsInLanes" : "brunobb 08/28/2019 09:32",
+		"testObjectsInLanes2" : "brunobb 08/28/2019 09:32",
+		"testReusableActivitiesNames" : "brunobb 08/28/2019 09:32" } }

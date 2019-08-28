@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getWorkflow" : "brunobb 08/28/2019 09:26",
+		"setUp" : "brunobb 08/28/2019 09:26",
+		"testEventsNames" : "brunobb 08/28/2019 09:26",
+		"testGatewayName" : "brunobb 08/28/2019 09:26",
+		"testTimerNames" : "brunobb 08/28/2019 09:26" } }

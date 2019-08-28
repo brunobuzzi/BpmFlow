@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getLevel1_EmbeddedWorkflow" : "brunobb 08/28/2019 09:33",
+		"getLevel2_EmbeddedWorkflow" : "brunobb 08/28/2019 09:33",
+		"getMainProcessXpdlPackage" : "brunobb 08/28/2019 09:33",
+		"getMainWorkflow" : "brunobb 08/28/2019 09:33",
+		"setUp" : "brunobb 08/28/2019 09:33",
+		"testEmbeddedSubProcessesNames" : "brunobb 08/28/2019 09:33",
+		"testInOutTransitions" : "brunobb 08/28/2019 09:33",
+		"testInOutTransitions2" : "brunobb 08/28/2019 09:33",
+		"testInOutTransitions3" : "brunobb 08/28/2019 09:33",
+		"testObjectsInLanes" : "brunobb 08/28/2019 09:33",
+		"testScriptsNames" : "brunobb 08/28/2019 09:33" } }

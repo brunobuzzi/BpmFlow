@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getProcess1Pool" : "brunobb 08/28/2019 09:31",
+		"getProcess1Workflow" : "brunobb 08/28/2019 09:31",
+		"getProcess2Pool" : "brunobb 08/28/2019 09:31",
+		"getProcess2Workflow" : "brunobb 08/28/2019 09:31",
+		"setUp" : "brunobb 08/28/2019 09:31",
+		"testActivitiesNames" : "brunobb 08/28/2019 09:31",
+		"testActivitiesNames2" : "brunobb 08/28/2019 09:31",
+		"testEndsNodesNames" : "brunobb 08/28/2019 09:31",
+		"testEndsNodesNames2" : "brunobb 08/28/2019 09:31",
+		"testGatewaysNames" : "brunobb 08/28/2019 09:31",
+		"testGatewaysNames2" : "brunobb 08/28/2019 09:31",
+		"testInTransitions" : "brunobb 08/28/2019 09:31",
+		"testInTransitions2" : "brunobb 08/28/2019 09:31",
+		"testLanesNames" : "brunobb 08/28/2019 09:31",
+		"testLanesNames2" : "brunobb 08/28/2019 09:31",
+		"testObjectsInLanes" : "brunobb 08/28/2019 09:31",
+		"testObjectsInLanes2" : "brunobb 08/28/2019 09:31",
+		"testOutTransitions" : "brunobb 08/28/2019 09:31",
+		"testOutTransitions2" : "brunobb 08/28/2019 09:31",
+		"testStartNodeName" : "brunobb 08/28/2019 09:31",
+		"testStartNodeName2" : "brunobb 08/28/2019 09:31",
+		"testTransitionsNames" : "brunobb 08/28/2019 09:31",
+		"testTransitionsNames2" : "brunobb 08/28/2019 09:31" } }
