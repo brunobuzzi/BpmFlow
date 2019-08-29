@@ -21,4 +21,5 @@ checkReceiverVariableMessagesRule
 	(perfomMessages select: [:each | each arguments size > 1]) do: [:each | self addBlockWarning: 'Perform message sent with more than one argument.'].
 
 	"Check for suspicious string as argument of #perform: message, more than one string (subString: space) as argument of #perform: NOT allowed"
-	(perfomMessages select: [:each | (each arguments size = 1) and: [each arguments last token isLiteralToken and: [(each arguments last value subStrings: ' ') size > 1]]]) do: [:each | self addBlockWarning: 'Suspicious string inside #perform: message']
+	(perfomMessages select: [:each | (each arguments size = 1) and: [each arguments last token isLiteralToken and: [(each arguments last value subStrings: ' ') size > 1]]]) 
+	do: [:each | self addBlockWarning: 'Suspicious string inside #perform: message']
