@@ -19,7 +19,8 @@ finalizeAssignment
 				takenMatrix removeAssignment: assignment.
 				user moveFromCurrentToFinished: assignment in: self bpmEnvironment. "<user> move from current assignments to finished <assignment> "
 				currentMatrix := self defaultAvailableTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
-				currentMatrix addTask: assignment task. "a new Assignment is created for the same Task but is another cycle in the Loop"
+				currentMatrix addTask: task. "a new Assignment is created for the same Task but is another cycle in the Loop"
+				task createNewLoopForPerformers. "store current performers information and create newone for the next loop"
 				"add the assignment to finished matrix"
 				finishedMatrix := self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
 				finishedMatrix addAssignment: assignment.]

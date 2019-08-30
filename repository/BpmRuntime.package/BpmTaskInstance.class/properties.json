@@ -8,7 +8,8 @@
 	"instvars" : [
 		"externalObject",
 		"assignment",
-		"performersRegistry" ],
+		"performersRegistry",
+		"performersLoops" ],
 	"name" : "BpmTaskInstance",
 	"pools" : [
 		 ],
