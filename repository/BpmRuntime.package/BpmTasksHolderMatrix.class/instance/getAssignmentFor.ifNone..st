@@ -5,7 +5,7 @@ getAssignmentFor: aBpmTaskInstance ifNone: aBlock
 	| responsible |
 
 	responsible := aBpmTaskInstance hasPerformers
-		ifTrue: [aBpmTaskInstance getPerformers] "check in performers for the <BpmTaskAssignment> of task <BpmTaskInstance>"
+		ifTrue: [aBpmTaskInstance performers] "check in performers for the <BpmTaskAssignment> of task <BpmTaskInstance>"
 		ifFalse: [aBpmTaskInstance getRoles]. "check in roles for the <BpmTaskAssignment> of task <BpmTaskInstance>"
 	
 	responsible do: [:eachRole | 

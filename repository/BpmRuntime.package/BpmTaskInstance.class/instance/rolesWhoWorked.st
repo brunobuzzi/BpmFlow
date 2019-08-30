@@ -1,3 +1,4 @@
-Accessing
+performers
 rolesWhoWorked
-	^rolesWhoWorked
+
+	^performersRegistry rolesWhoWorked

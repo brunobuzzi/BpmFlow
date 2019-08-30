@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "BrunoBB 11/01/2015 12:52",
 	"instvars" : [
-		"rolesWhoWorked",
 		"externalObject",
-		"usersWhoWorked",
-		"finalizedPerformerCounter",
-		"assignment" ],
+		"assignment",
+		"performersRegistry" ],
 	"name" : "BpmTaskInstance",
 	"pools" : [
 		 ],

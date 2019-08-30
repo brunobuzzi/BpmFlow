@@ -1,3 +1,4 @@
-Accessing
+performers
 usersWhoWorked
-	^usersWhoWorked
+
+	^performersRegistry usersWhoWorked

@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"newForTask:" : "brunobb 08/29/2019 13:32" },
+	"instance" : {
+		"addWorkerUser:as:" : "brunobb 08/29/2019 13:31",
+		"canCloseAndSendPerformer:" : "brunobb 08/29/2019 13:32",
+		"finalizedPerformerCounter" : "brunobb 08/29/2019 13:31",
+		"finalizedPerformerCounter:" : "brunobb 08/29/2019 13:31",
+		"getCurrentPerformerIfNone:" : "brunobb 08/30/2019 08:02",
+		"getCurrentRoleIfNone:" : "brunobb 08/29/2019 13:32",
+		"getNextPerformerIfNone:" : "brunobb 08/30/2019 08:03",
+		"getNextRoleIfNone:" : "brunobb 08/29/2019 13:33",
+		"getPerformersAsRoles" : "brunobb 08/29/2019 13:33",
+		"getRoleForPerformer:" : "brunobb 08/29/2019 13:33",
+		"incrementPerformerCounter" : "brunobb 08/29/2019 13:31",
+		"initialize" : "brunobb 08/29/2019 13:31",
+		"innerTaskHasBeenFinalizedBy:" : "brunobb 08/29/2019 13:31",
+		"innerTaskHasIsPendingBy:" : "brunobb 08/29/2019 13:33",
+		"isFinishedByPerformers" : "brunobb 08/30/2019 08:15",
+		"performers" : "brunobb 08/29/2019 13:34",
+		"removeLastWorker" : "brunobb 08/29/2019 13:31",
+		"rolesWhoWorked" : "brunobb 08/29/2019 13:31",
+		"rolesWhoWorked:" : "brunobb 08/29/2019 13:31",
+		"task" : "brunobb 08/29/2019 13:31",
+		"task:" : "brunobb 08/29/2019 13:31",
+		"usersWhoWorked" : "brunobb 08/29/2019 13:31",
+		"usersWhoWorked:" : "brunobb 08/29/2019 13:31" } }

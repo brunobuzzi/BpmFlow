@@ -1,3 +1,4 @@
-Accessing
+performers
 finalizedPerformerCounter
-	^finalizedPerformerCounter
+
+	^performersRegistry finalizedPerformerCounter

@@ -1,5 +1,5 @@
-performers
+other
 getPerformersAsRoles
 	"The receiver answer a collection of <BpmFrontOfficeRole> converted from performers "
 
-	^performersRegistry getPerformersAsRoles
+	^self performers collect: [:performer | self getRoleForPerformer: performer]
