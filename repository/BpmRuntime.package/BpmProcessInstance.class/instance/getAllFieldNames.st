@@ -5,7 +5,7 @@ getAllFieldNames
 
 	fieldNames := Set new.
 
-	(self getExecutedArtifactsReversed select: [:each | each hasForm]) do: [:each | fieldNames addAll: each getFieldsNames].
+	(self getAllActivitiesReversed select: [:each | each hasForm]) do: [:each | fieldNames addAll: each getFieldsNames].
 
 	self getExecutedScriptsReversed do: [:each | fieldNames addAll: each getScriptVariableNames].
 
