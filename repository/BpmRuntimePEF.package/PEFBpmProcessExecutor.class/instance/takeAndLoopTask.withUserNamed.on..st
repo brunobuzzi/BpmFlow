@@ -11,6 +11,6 @@ takeAndLoopTask: aBpmTaskInstance withUserNamed: aString on: aBpmProcessInstance
 	(self getAssignmentFor: aBpmTaskInstance on: aBpmProcessInstance ifNone: [nil]) 
 	ifNotNil: [PEFImproperStateException signal: 'The assignment should be already taken and not present in Available Matrix']. "the assignment has been already taken --> this must answer nil"
 
-	self loopAssignment: assignment withUserNamed: aString on: aBpmProcessInstance.
+	[self loopAssignment: assignment withUserNamed: aString on: aBpmProcessInstance] on: ImproperBpmOperationException do: [:ex | (self getUserNamed: aString) untake: assignment].
 
 	^assignment
