@@ -1,0 +1,14 @@
+{
+	"category" : "BpmXpdlBizagiReader_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XPDLDashboardProcessWithLoopReaderTest",
+	"pools" : [
+		 ],
+	"super" : "XPDLReaderTest",
+	"type" : "normal" }
