@@ -16,6 +16,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-1').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 1).
+	self assert: currentTask numberOfLoops equals: 1.
 
 	"Step 1.2 - Form [data-entry]" "Performer 2"
 	currentTask := procInstance currentActivities last.
@@ -25,6 +26,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-2').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 2).
+	self assert: currentTask numberOfLoops equals: 1.
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 3]. "plus 1: take messages"
@@ -36,6 +38,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: (currentTask rolesWhoWorked isEmpty).
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 0).
+	self assert: currentTask numberOfLoops equals: 2.
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 5]. "plus 2: take, finalization"
@@ -52,6 +55,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-1').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 1).
+	self assert: currentTask numberOfLoops equals: 2.
 
 	"Step 1.2 - Form [data-entry]" "Performer 2 - Loop 2"
 	currentTask := procInstance currentActivities last.
@@ -61,6 +65,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-2').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 2).
+	self assert: currentTask numberOfLoops equals: 2.
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 7]. "plus 1: take messages"
@@ -72,6 +77,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: ((currentTask rolesWhoWorked last) name = 'data-entry-3').
 	self assert: (currentTask getDefinitionName = 'data-entry').
 	self assert: (currentTask finalizedPerformerCounter = 3).
+	self assert: currentTask numberOfLoops equals: 2.
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 9]. "plus 2: take, finalization"
