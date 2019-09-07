@@ -1,0 +1,4 @@
+state
+performFinalization
+
+	^self basicFinalize
