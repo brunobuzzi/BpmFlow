@@ -1,0 +1,4 @@
+svg generator
+getXpdlReaderClass
+
+	^XPDLReader
