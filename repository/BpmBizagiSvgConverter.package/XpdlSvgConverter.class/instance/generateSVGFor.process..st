@@ -21,7 +21,7 @@ generateSVGFor: aBpmUser process: aBpmProcessInstance
 		eachWorkflow activities do: [:eachActivityNode | | color stroke |
 			color := aBpmProcessInstance getColorForActivityNamed: eachActivityNode getName user: aBpmUser.
 			stroke := aBpmProcessInstance getStrokeForActivityNamed: eachActivityNode getName user: aBpmUser.
-			eachActivityNode drawOn: svgCanvas color: color stroke: stroke].
+			eachActivityNode drawOn: svgCanvas color: color stroke: stroke tooltip: (aBpmProcessInstance getTooltipForTaskNamed: eachActivityNode getName)].
 		eachWorkflow transitions do: [:eachTransition | | color | 
 			color := aBpmProcessInstance getColorForTransition: eachTransition user: aBpmUser.
 			eachTransition drawOn: svgCanvas color: color].

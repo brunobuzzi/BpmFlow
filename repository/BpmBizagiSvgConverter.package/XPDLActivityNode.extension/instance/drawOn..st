@@ -15,9 +15,12 @@ drawOn: aJasvgiBpmCanvas
 
 	self isMultiInstanceLoop
 	ifFalse: [^aJasvgiBpmCanvas 
-						drawActivityNamed: self getName 
-						at: self getXcoordinate @ self getYcoordinate 
-						extent: self getWidth @ self getHeight].
+					drawActivityNamed: self getName 
+					at: self getXcoordinate @ self getYcoordinate
+					extent: self getWidth @ self getHeight
+					color: self defaultTaskFillColor
+					stroke: self defaultTaskStroke
+					tooltip: self getTooltipOrNil].
 
 	^aJasvgiBpmCanvas 
 			drawMultiInstaceActivityNamed: self getName 

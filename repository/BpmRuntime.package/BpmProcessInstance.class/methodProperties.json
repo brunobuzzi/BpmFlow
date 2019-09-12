@@ -88,6 +88,7 @@
 		"getSubProcessesTasks" : "brunobb 08/06/2019 02:49",
 		"getTakenProcessMatrix" : "brunobb 04/16/2018 08:49",
 		"getTaskNamed:ifNone:" : "BrunoBB 11/07/2016 08:30",
+		"getTooltipForTaskNamed:" : "brunobb 09/12/2019 05:26",
 		"getTopProcess" : "BrunoBB 03/23/2016 14:02",
 		"getTotalTime" : "brunobb 05/31/2019 13:11",
 		"getTotalTimeFrom:" : "BrunoBB 11/05/2016 12:16",

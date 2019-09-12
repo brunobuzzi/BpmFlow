@@ -44,6 +44,8 @@
 		"drawActivityNamed:at:extent:" : "brunobb 08/14/2019 11:07",
 		"drawActivityNamed:at:extent:color:stroke:" : "brunobb 08/14/2019 11:07",
 		"drawActivityNamed:at:extent:color:stroke:textSizePx:" : "brunobb 08/14/2019 11:08",
+		"drawActivityNamed:at:extent:color:stroke:textSizePx:tooltip:" : "brunobb 09/12/2019 05:11",
+		"drawActivityNamed:at:extent:color:stroke:tooltip:" : "brunobb 09/12/2019 05:06",
 		"drawAnonymousStartNamed:at:" : "brunobb 08/14/2019 11:30",
 		"drawEndNamed:at:" : "brunobb 08/14/2019 11:08",
 		"drawEventNamed:at:" : "brunobb 08/14/2019 11:08",

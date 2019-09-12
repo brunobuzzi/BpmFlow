@@ -1,5 +1,5 @@
 *bpmBizagiSvgConverter
-drawOn: aJasvgiBpmCanvas color: color stroke: stroke 
+drawOn: aJasvgiBpmCanvas color: color stroke: stroke tooltip: tooltip
 
 	^aJasvgiBpmCanvas
 		drawActivityNamed: self getName 
@@ -7,4 +7,4 @@ drawOn: aJasvgiBpmCanvas color: color stroke: stroke
 		extent: self getWidth @ self getHeight
 		color: color
 		stroke: stroke
-		tooltip: self getTooltipOrNil
+		tooltip: tooltip

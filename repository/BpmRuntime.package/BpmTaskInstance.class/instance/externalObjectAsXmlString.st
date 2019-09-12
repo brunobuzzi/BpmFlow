@@ -1,0 +1,4 @@
+other
+externalObjectAsXmlString
+
+	self subclassResponsibility
