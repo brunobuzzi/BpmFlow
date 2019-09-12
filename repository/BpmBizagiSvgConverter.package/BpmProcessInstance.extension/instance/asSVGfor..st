@@ -1,4 +1,11 @@
 *bpmBizagiSvgConverter
 asSVGfor: aBpmUser
+	| stream |
 
-	^(XpdlSvgConverter convert: definition xmlString) generateSVGFor: aBpmUser process: self
+	stream := WriteStream on: String new.
+
+	self getProcessesTreeAsCollection do: [:eachProcess | 
+		stream nextPutAll: ((XpdlSvgConverter convert: eachProcess definition xmlString) generateSVGFor: aBpmUser process: eachProcess).
+	].
+
+	^stream contents

@@ -1,4 +1,4 @@
 *bpmBizagiSvgConverter
 asSVG
 
-	^(XpdlSvgConverter convert: definition xmlString) generateSVGFor: BpmUser new process: self
+	^self asSVGfor: BpmUser new
