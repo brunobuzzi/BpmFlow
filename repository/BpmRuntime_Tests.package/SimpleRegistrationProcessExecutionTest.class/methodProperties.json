@@ -10,7 +10,7 @@
 		"setUp" : "brunobb 05/23/2019 09:50",
 		"tearDown" : "brunobb 05/23/2019 09:11",
 		"testAssignationPolicyDefinedInBizagi" : "brunobb 03/12/2018 10:41",
-		"testExecuteProcess_simpleRegistration_approved" : "brunobb 03/25/2019 08:46",
+		"testExecuteProcess_simpleRegistration_approved" : "brunobb 09/17/2019 10:39",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:20",
 		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:20",
 		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 12:20" } }

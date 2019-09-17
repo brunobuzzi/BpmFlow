@@ -9,7 +9,7 @@ testExecuteProcess_simpleRegistration_approved
 	formInstance := self formInstance_simple_registration.
 	currentTask externalObject: formInstance.
 	formInstance assignment: (self getAssignmentFor: currentTask).
-	currentTask finalize.
+	currentTask performFinalization.
 
 	self assert: (currentTask getDefinitionName = 'simple-registration').
 	self assert: procInstance startEventIsAnonymous.
