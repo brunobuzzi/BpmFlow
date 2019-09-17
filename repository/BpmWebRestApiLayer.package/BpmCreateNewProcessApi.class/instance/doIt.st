@@ -16,7 +16,7 @@ doIt
 
 	currentTask externalObject: formInstance.
 	self associateFormWithTask: currentTask forProcess: newBpmProcess.
-	currentTask finalize.
+	currentTask performFinalization.
 	newBpmProcess generateNextTransitionsFrom: currentTask.
 	procDefinition updateFieldsOf: formInstance. "the first task is already done --> the indexes of the BpmProcessDefinition are updated here"
 

@@ -1,4 +1,10 @@
 tasks
 getTooltipForTaskNamed: aString
+	"Answer a tooltip for the task named <aString>.
+	If the receiver has a cycle answer the last performed task"
+	| tasks |
 
-	^(self getTaskNamed: aString ifNone: [^nil]) externalObjectAsXmlString
+	tasks := self getTasksNamed: aString.
+	tasks ifEmpty: [^nil].
+ 
+	^tasks last externalObjectAsXmlString

@@ -8,6 +8,6 @@ executeScript
 	"block arguments [:aBpmScriptTaskInstance :aBpmProcessInstance"
 	result := self getScriptBlock value: self value: process.
 
-	self finalize.
+	self performFinalization.
 
 	^result

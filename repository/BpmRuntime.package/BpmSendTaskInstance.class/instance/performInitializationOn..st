@@ -21,6 +21,6 @@ performInitializationOn: aBpmProcessInstance
 			self triggerAttachedEventNamed: eventDefinition name withProperties: properties] "generate next transitions from the event"
 		].
 
-	self finalize.
+	self performFinalization.
 
 	self generateNextRunningTransitions.
