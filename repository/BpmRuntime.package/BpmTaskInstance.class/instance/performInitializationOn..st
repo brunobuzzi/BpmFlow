@@ -7,7 +7,7 @@ performInitializationOn: aBpmProcessInstance
 
 	(definition hasLoop and:[definition isStandardLoop and:[definition testTimeIsBefore]])
 	ifTrue: [(definition evaluateLoopIn: aBpmProcessInstance) result "if <false> it must no enter the loop --> finalize the task and generate next transitions"
-				ifFalse: [self basicFinalize. "only change the task state but does not remove the task from the process (because this task does no exist in <currentActivities> )"
+				ifFalse: [self basicPerformFinalization. "only change the task state but does not remove the task from the process (because this task does no exist in <currentActivities> )"
 							^self generateNextRunningTransitions]].
 
 	"if it isPreviousFormReusable and a task with the same name is already executed --> take the form (previousTask externalObject) and set it to the new task"

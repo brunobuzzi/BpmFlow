@@ -3,7 +3,6 @@
 		 },
 	"instance" : {
 		"createEventBasedTimerEventForGateway:" : "brunobb 11/02/2018 13:58",
-		"finalize" : "brunobb 10/11/2018 10:24",
 		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:18",
 		"incomingTransitionsAreDone" : "BrunoBB 01/22/2016 12:08",
 		"initialize" : "BrunoBB 11/24/2015 13:14",

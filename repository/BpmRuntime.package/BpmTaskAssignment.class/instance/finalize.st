@@ -6,4 +6,4 @@ finalize
 
 	self finalizeWithoutEndingTask.
 
-	task finalize.
+	task performFinalization.

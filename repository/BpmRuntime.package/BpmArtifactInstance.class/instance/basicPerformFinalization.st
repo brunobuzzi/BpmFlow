@@ -1,4 +1,4 @@
-state
+process execution
 basicPerformFinalization
 
 	state := #done.

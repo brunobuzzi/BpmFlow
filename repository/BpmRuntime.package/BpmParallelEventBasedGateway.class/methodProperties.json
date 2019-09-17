@@ -4,7 +4,6 @@
 	"instance" : {
 		"events" : "brunobb 10/11/2018 09:55",
 		"events:" : "brunobb 10/11/2018 09:55",
-		"finalize" : "brunobb 10/24/2018 11:17",
 		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:18",
 		"initialize" : "brunobb 10/11/2018 09:55",
 		"performFinalization" : "brunobb 09/06/2019 17:42",

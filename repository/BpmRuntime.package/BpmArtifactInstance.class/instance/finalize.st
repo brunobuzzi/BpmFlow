@@ -1,4 +1,0 @@
-state
-finalize
-
-	^self basicFinalize
