@@ -1,4 +1,4 @@
 other
 getLoop
 
-	^loopCardinality
+	^loopCardinalityBock

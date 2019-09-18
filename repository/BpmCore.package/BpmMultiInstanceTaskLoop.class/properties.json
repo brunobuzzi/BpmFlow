@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "BrunoBB 10/31/2015 10:59",
 	"instvars" : [
-		"loopCardinality",
+		"loopCardinalityBock",
 		"isSequential" ],
 	"name" : "BpmMultiInstanceTaskLoop",
 	"pools" : [
