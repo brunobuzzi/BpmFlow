@@ -19,4 +19,8 @@ renderXpdlActivity: aXPDLActivityNode on: html
 
 	aXPDLActivityNode isStandardLoop 
 	ifTrue: [self renderStandardLoopIconOn: html 
-						at: ((aXPDLActivityNode getXcoordinate + (aXPDLActivityNode  getWidth // 2)) @ (aXPDLActivityNode getYcoordinate + aXPDLActivityNode getHeight - 15))]
+						at: ((aXPDLActivityNode getXcoordinate + (aXPDLActivityNode  getWidth // 2)) @ (aXPDLActivityNode getYcoordinate + aXPDLActivityNode getHeight - 15))].
+
+	aXPDLActivityNode isMultiInstanceLoop
+	ifTrue: [self renderMultiInstanceLoopIconOn: html 
+						at: ((aXPDLActivityNode getXcoordinate + (aXPDLActivityNode  getWidth // 2)) @ (aXPDLActivityNode getYcoordinate + aXPDLActivityNode getHeight - 15))].
