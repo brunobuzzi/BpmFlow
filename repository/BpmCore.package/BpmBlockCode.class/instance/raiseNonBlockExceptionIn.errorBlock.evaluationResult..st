@@ -1,4 +1,4 @@
-other
+evaluation
 raiseNonBlockExceptionIn: aBpmProcessInstance errorBlock: aBlock evaluationResult: aBpmCodeEvaluationResult
 
 	^EvaluationNotBlockException new 

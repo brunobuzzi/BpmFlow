@@ -1,4 +1,4 @@
 condition evaluation
 setCondition: aString
 
-	conditionToRun := BpmCodeCondition newFromBlock: aString for: self
+	conditionToRun := BpmBlockCode newFromBlock: aString for: self

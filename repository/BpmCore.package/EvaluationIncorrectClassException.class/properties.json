@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"evaluationCode",
-		"bpmObject" ],
-	"name" : "BpmCodeCondition",
+		 ],
+	"name" : "EvaluationIncorrectClassException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "CodeEvaluationException",
 	"type" : "normal" }

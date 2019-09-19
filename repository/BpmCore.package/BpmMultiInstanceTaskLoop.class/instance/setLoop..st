@@ -1,4 +1,5 @@
 other
 setLoop: aStringBlock
 
-	loopCardinalityBock := BpmCodeCondition newFromBlock: aStringBlock for: self
+	loopCardinalityBock := BpmBlockCode newFromBlock: aStringBlock for: self.
+	loopCardinalityBock resultClass: Integer.

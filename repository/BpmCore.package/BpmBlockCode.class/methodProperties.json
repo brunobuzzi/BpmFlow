@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"newFromBlock:" : "brunobb 09/19/2019 10:09",
+		"newFromBlock:for:" : "brunobb 09/19/2019 10:09" },
+	"instance" : {
+		"bpmObject" : "brunobb 09/19/2019 10:10",
+		"bpmObject:" : "brunobb 09/19/2019 10:10",
+		"evaluateConditionIn:" : "brunobb 09/19/2019 10:20",
+		"evaluationCode" : "brunobb 09/19/2019 10:10",
+		"evaluationCode:" : "brunobb 09/19/2019 10:10",
+		"getAllFieldsNames" : "brunobb 09/19/2019 10:10",
+		"hasEvaluation" : "brunobb 09/19/2019 10:10",
+		"hasEvaluationConditionWithFieldNamed:" : "brunobb 09/19/2019 10:10",
+		"initialize" : "brunobb 09/19/2019 10:10",
+		"printEvaluationCode" : "brunobb 09/19/2019 10:10",
+		"printOn:" : "brunobb 09/19/2019 10:10",
+		"raiseInBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
+		"raiseIncorrectClassResultExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:19",
+		"raiseNonBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
+		"raiseNonBooleanExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
+		"resultClass" : "brunobb 09/19/2019 10:10",
+		"resultClass:" : "brunobb 09/19/2019 10:10",
+		"value:" : "brunobb 09/19/2019 10:10" } }

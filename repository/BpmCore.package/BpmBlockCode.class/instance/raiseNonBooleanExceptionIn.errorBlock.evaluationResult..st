@@ -1,4 +1,4 @@
-other
+evaluation
 raiseNonBooleanExceptionIn: aBpmProcessInstance errorBlock: aBlock evaluationResult: aBpmCodeEvaluationResult
 
 	^EvaluationNotBooleanException new 

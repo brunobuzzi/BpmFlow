@@ -2,4 +2,4 @@ other
 setLoop: aStringBlock
 	"The receiver set the loop condition"
 
-	loopCondition := BpmCodeCondition newFromBlock: aStringBlock for: self
+	loopCondition := BpmBlockCode newFromBlock: aStringBlock for: self

@@ -7,7 +7,7 @@ createNewTransition: aBpmTransitionDefinition from: aBpmArtifactInstance
 	numberOfTasks := 1.
 	nextArtifactDefinition := aBpmTransitionDefinition endArtifact.
 
-	nextArtifactDefinition isMultiInstanceLoop ifTrue: [numberOfTasks := nextArtifactDefinition evaluateLoopIn: self].
+	nextArtifactDefinition isMultiInstanceLoop ifTrue: [numberOfTasks := (nextArtifactDefinition evaluateLoopIn: self) result].
 
 	1 to: numberOfTasks do: [:index |
 		newTransition := BpmTransitionInstance newBasedOn: aBpmTransitionDefinition.

@@ -1,0 +1,4 @@
+other
+resultClass
+
+	^result class

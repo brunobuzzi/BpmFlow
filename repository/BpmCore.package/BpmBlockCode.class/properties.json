@@ -1,0 +1,16 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"evaluationCode",
+		"bpmObject",
+		"resultClass" ],
+	"name" : "BpmBlockCode",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

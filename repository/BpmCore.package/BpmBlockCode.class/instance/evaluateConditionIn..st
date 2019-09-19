@@ -1,4 +1,4 @@
-other
+evaluation
 evaluateConditionIn: blockArgumentObject
 	"The receiver evaluates the condition <conditionToRun> in the context of the object <blockArgumentObject>"
 	| evaluation blockClosure blockEvaluation |
@@ -12,7 +12,7 @@ evaluateConditionIn: blockArgumentObject
 		evaluation result: blockEvaluation] on: Exception do:[:error | self raiseInBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
 
 	"the result is NOT a boolean value"
-	evaluation resultNotBoolean ifTrue: [self raiseNonBooleanExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
+	(evaluation resultIsKindOf: resultClass) ifFalse: [self raiseIncorrectClassResultExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
 
 	"the variable <blockClosure> MUST BE a BlockClosure because the <condition> could be a valid Smalltalk expression but NOT a block"
 	blockClosure isBlock ifFalse: [self raiseNonBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
