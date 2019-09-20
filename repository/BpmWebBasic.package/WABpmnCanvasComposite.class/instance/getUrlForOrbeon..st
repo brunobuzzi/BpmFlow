@@ -7,6 +7,8 @@ getUrlForOrbeon: taskName
 
 	taskInstance := model getTaskNamed: taskName ifNone: [^nil].
 
+	mainPanel ifNil: [^nil].
+
 	(mainPanel shouldRenderLinkForFormTask: taskInstance) ifFalse: [^nil].
 
 	uuid  := BpmOrbeonTempTokenRegistry default createEntryToOrbeonFor: taskInstance for: self session user.

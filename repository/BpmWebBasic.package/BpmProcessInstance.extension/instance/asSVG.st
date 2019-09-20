@@ -1,4 +1,4 @@
-*bpmBizagiSvgConverter
+*bpmWebBasic
 asSVG
 
 	^self asSVGfor: BpmUser new
