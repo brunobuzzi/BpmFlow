@@ -2,5 +2,6 @@ other
 defaultAction
 	"The receiver pause the process where the error occurred"
 
+	self storeInProcess.
 	evaluationResult result: false.
-	bpmProcess pauseProcess: nil. "no user"
+	bpmProcess resumeProcessWithException: self. "no user"

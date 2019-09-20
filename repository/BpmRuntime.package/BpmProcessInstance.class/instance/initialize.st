@@ -17,3 +17,4 @@ initialize
 	intermediateEvents := Dictionary new.
 	states := OrderedCollection with: (BpmRunningState newFor: self).
 	externalVariables := RcKeyValueDictionary new.
+	failedEvaluations := OrderedCollection new.

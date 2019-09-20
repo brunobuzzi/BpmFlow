@@ -14,10 +14,9 @@
 		"initialize" : "brunobb 09/19/2019 10:10",
 		"printEvaluationCode" : "brunobb 09/19/2019 10:10",
 		"printOn:" : "brunobb 09/19/2019 10:10",
-		"raiseInBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
-		"raiseIncorrectClassResultExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:19",
-		"raiseNonBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
-		"raiseNonBooleanExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/19/2019 10:10",
+		"raiseInBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/20/2019 10:32",
+		"raiseIncorrectClassResultExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/20/2019 10:32",
+		"raiseNonBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 09/20/2019 10:32",
 		"resultClass" : "brunobb 09/19/2019 10:10",
 		"resultClass:" : "brunobb 09/19/2019 10:10",
 		"value:" : "brunobb 09/19/2019 10:10" } }

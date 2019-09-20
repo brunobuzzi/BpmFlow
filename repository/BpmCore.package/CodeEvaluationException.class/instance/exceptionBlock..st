@@ -1,3 +1,6 @@
 Updating
-exceptionBlock: newValue
-	exceptionBlock := newValue
+exceptionBlock: aBlockClosure
+
+	exceptionBlock := aBlockClosure.
+
+	blockSource := aBlockClosure blockSource

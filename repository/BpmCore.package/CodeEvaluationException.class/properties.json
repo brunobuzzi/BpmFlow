@@ -8,6 +8,7 @@
 	"instvars" : [
 		"bpmProcess",
 		"exceptionBlock",
+		"blockSource",
 		"evaluationResult" ],
 	"name" : "CodeEvaluationException",
 	"pools" : [
