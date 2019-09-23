@@ -15,6 +15,7 @@ asSVGfor: aBpmUser
 	WAHtmlCanvas builder render: [ :html | 
 		self getProcessesTreeAsCollection do: [:process | 
 			WABpmnCanvasComposite new
+				isOnlineComponent: false; 
 				webSession: (WABpmSession new user: aBpmUser);
 				model: process;
 				renderContentOn: html.

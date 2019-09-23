@@ -7,7 +7,7 @@ getUrlForOrbeon: taskName
 
 	taskInstance := model getTaskNamed: taskName ifNone: [^nil].
 
-	mainPanel ifNil: [^nil].
+	isOnlineComponent ifFalse: [^nil]. "when <isOnlineComponent> is false the receiver is used to generate svg code outside a Seaside Application"
 
 	(mainPanel shouldRenderLinkForFormTask: taskInstance) ifFalse: [^nil].
 
