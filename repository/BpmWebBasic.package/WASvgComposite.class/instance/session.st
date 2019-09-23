@@ -9,14 +9,16 @@ session
 
 "
 For example:
+	| result |
 
-| result |
-WAHtmlCanvas builder render: [ :html | 
-	WABpmnCanvasComposite new
-		webSession: (WABpmSession new user: (BpmUser getUserNamed: 'admin'));
-		model: ((BpmProcessDefinition cache at: 'ue') at: 'visa-appliance') last;
-		renderContentOn: html.
-	result := html].
-result document stream contents
-
+	WAHtmlCanvas builder render: [ :html | | canvas |
+		canvas := WABpmnCanvasOfflineComposite new.
+		canvas webSession: (WABpmSession new user: aBpmUser).
+		self getProcessesTreeAsCollection do: [:process | 
+			canvas			
+				model: process;
+				renderContentOn: html.
+		].
+		result := html].
+	^result document stream contents
 "

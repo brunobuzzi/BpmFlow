@@ -2,7 +2,7 @@ other
 renderSvgProcessMapOn: html
 	| svgCanvas |
 
-	svgCanvas := WABpmnCanvasComposite parent: self.
+	svgCanvas := WABpmnCanvasOnlineComposite parent: self.
 
 	svgCanvas model: selectedLateralItem.
 

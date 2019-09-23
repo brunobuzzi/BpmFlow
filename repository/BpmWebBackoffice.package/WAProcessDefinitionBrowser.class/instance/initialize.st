@@ -6,7 +6,7 @@ initialize
 	mode := #normal.
 	searchAvailable := false.
 	categories := OrderedCollection new.
-	svgCanvas := WABpmnCanvasComposite parent: self.
+	svgCanvas := WABpmnCanvasOnlineComposite parent: self.
 	"subprocessesTree := WATree new."
 
 	batchedList := SewafLateralBatchedList parentComponent: self.

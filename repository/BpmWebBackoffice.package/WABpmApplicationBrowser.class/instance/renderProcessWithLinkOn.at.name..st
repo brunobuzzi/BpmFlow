@@ -9,7 +9,7 @@ renderProcessWithLinkOn: html at: aPoint name: procName
 	procDefinition := self defaultProcessDefinitionClass  getLatestProcessDefinitionNamed: procName in: selectedLateralItem applicationName.
 	procDefinition isTopProcess ifFalse: [^self].
 	versionsInfo :=  procDefinition version ifNil: ['v1'] ifNotNil: [:ver | 'v',ver printString]. 
-	bpmnCanvas2 := WABpmnCanvasComposite parent: self.
+	bpmnCanvas2 := WABpmnCanvasOnlineComposite parent: self.
 	bpmnCanvas2 model: procDefinition;
 		beParentScaled;
 		disableViewPortAutoSet.

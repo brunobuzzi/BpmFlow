@@ -1,5 +1,20 @@
 *bpmWebBasic
 asSVGfor: aBpmUser
+	| result |
+
+	WAHtmlCanvas builder render: [ :html | | canvas |
+		canvas := WABpmnCanvasOfflineComposite new.
+		canvas webSession: (WABpmSession new user: aBpmUser).
+		self getProcessesTreeAsCollection do: [:process | 
+			canvas			
+				model: process;
+				renderContentOn: html.
+		].
+		result := html].
+	^result document stream contents
+
+
+"OLD FRAMEWORK"
 "	| stream |
 
 	stream := WriteStream on: String new.
@@ -9,16 +24,3 @@ asSVGfor: aBpmUser
 	].
 
 	^stream contents "
-
-	| result |
-
-	WAHtmlCanvas builder render: [ :html | 
-		self getProcessesTreeAsCollection do: [:process | 
-			WABpmnCanvasComposite new
-				isOnlineComponent: false; 
-				webSession: (WABpmSession new user: aBpmUser);
-				model: process;
-				renderContentOn: html.
-		].
-		result := html].
-	^result document stream contents
