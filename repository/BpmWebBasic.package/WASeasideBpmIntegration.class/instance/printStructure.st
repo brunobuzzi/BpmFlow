@@ -1,0 +1,4 @@
+subclass responsibility
+printStructure
+
+	^self subclassResponsibility
