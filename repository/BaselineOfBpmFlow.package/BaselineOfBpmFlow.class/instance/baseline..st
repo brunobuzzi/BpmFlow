@@ -42,7 +42,8 @@ baseline: spec
 		spec package: 'BpmXpdlBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmXpdlBizagiReader')].
 		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
-		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'Jasvgi')].
+		spec package: 'BpmWebSvgIntegration' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime')].
+		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'BpmWebSvgIntegration')].
 		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
