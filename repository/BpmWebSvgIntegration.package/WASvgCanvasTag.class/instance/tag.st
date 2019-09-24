@@ -1,0 +1,3 @@
+other
+tag
+	^ 'svg'

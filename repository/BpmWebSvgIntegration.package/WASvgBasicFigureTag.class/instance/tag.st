@@ -1,0 +1,4 @@
+other
+tag
+
+	self subclassResponsibility

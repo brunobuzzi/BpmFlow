@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebSvgIntegration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WASvgPathTag",
+	"pools" : [
+		 ],
+	"super" : "WASvgBasicFigureTag",
+	"type" : "normal" }
