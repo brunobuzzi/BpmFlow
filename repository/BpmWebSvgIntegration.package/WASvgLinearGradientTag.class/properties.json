@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebSvgIntegration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WASvgLinearGradientTag",
+	"pools" : [
+		 ],
+	"super" : "WATagBrush",
+	"type" : "normal" }

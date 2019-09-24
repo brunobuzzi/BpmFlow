@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebSvgIntegration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WASvgStopTag",
+	"pools" : [
+		 ],
+	"super" : "WATagBrush",
+	"type" : "normal" }
