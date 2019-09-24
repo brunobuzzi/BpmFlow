@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAHeatMapBpmnCanvasComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmnCanvasComposite",
+	"type" : "normal" }
