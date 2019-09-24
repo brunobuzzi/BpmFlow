@@ -19,7 +19,7 @@
 		"renderLineOn:from:to:widthPx:stroke:fillColor:" : "brunobb 12/27/2018 05:02",
 		"renderLinkTextOn:label:callback:at:id:textSizePx:color:" : "brunobb 12/26/2018 10:56",
 		"renderLinkTextOn:label:callback:at:textSizePx:color:" : "brunobb 12/26/2018 04:04",
-		"renderMarkerDefinitionOn:at:id:width:height:" : "brunobb 12/27/2018 07:20",
+		"renderMarkerDefinitionOn:at:id:width:height:" : "brunobb 09/24/2019 09:04",
 		"renderMarkerOn:at:id:width:height:" : "brunobb 01/14/2019 11:05",
 		"renderPentagonOn:at:height:width:stroke:color:" : "brunobb 12/27/2018 09:22",
 		"renderRectangleOn:at:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 12/21/2018 08:33",

@@ -25,6 +25,6 @@ renderContentOn: html
 	(xpdlWorkflows notEmpty and: [xpdlReader getAllWorkflows size > 1]) ifTrue: [svgCanvasTag attributeAt: 'transform' put: (self getTranslationStringFor: xpdlWorkflows last)].
 
 	svgCanvasTag with: [
-		self renderMarkerDefinitionOn: html at: 10@5 id: 'arrow' width: 10 height: 10.
+		html svgDefs with: [self renderMarkerDefinitionOn: html at: 10@5 id: 'arrow' width: 10 height: 10].
 		xpdlWorkflows do: [:eachWorkflow | eachWorkflow renderInComponent: self on: html].
 	].
