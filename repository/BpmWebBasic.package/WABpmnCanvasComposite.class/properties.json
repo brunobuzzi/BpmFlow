@@ -12,7 +12,8 @@
 		"viewBoxArray",
 		"scaleArray",
 		"isScaledByParent",
-		"autoSetViewPort" ],
+		"autoSetViewPort",
+		"isWorkingOnline" ],
 	"name" : "WABpmnCanvasComposite",
 	"pools" : [
 		 ],

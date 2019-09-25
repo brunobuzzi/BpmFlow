@@ -2,7 +2,7 @@ other
 renderSvgProcessMapOn: html
 	| svgCanvas |
 
-	svgCanvas := WABpmnCanvasOnlineComposite parent: mainPanel.
+	svgCanvas := self defaultBpmnCanvasClass parent: mainPanel.
 
 	svgCanvas model: model process.
 

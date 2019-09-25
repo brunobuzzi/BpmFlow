@@ -2,7 +2,7 @@ import
 renderSvgProcessMapFor: aBpmProcessDefinition on: html
 	| svgCanvas |
 
-	svgCanvas := WABpmnCanvasOnlineComposite parent: self.
+	svgCanvas := self defaultBpmnCanvasClass parent: self.
 
 	svgCanvas model: aBpmProcessDefinition;
 		disableParentProcessIcon. "process are no imported yet (no in the cache) so searching a parent process for its name will fail. So parent navigation is disabled"
