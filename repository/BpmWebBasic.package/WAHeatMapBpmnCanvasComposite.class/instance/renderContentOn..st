@@ -1,6 +1,6 @@
 svg properties
 renderContentOn: html
 
-	gradients := model getHeatMapColorsAndNumersForArtifacts.
+	gradients := self getModelOrSubProcess getHeatMapColorsAndNumersForArtifacts.
 
 	super renderContentOn: html.

@@ -3,7 +3,7 @@ asSVGfor: aBpmUser
 	| result |
 
 	WAHtmlCanvas builder render: [ :html | | canvas |
-		canvas := WAHeatMapBpmnCanvasComposite new.
+		canvas := self defaultBpmnCanvasClass new.
 		canvas webSession: (WABpmSession new user: aBpmUser);
 					isWorkingOnline: false. 
 		self getProcessesTreeAsCollection do: [:process | 

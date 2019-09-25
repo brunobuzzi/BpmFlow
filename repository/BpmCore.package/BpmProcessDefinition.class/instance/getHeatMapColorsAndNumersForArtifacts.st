@@ -10,7 +10,7 @@ getHeatMapColorsAndNumersForArtifacts
 	countDictionary := Dictionary new.
 
 	processInstances do: [:procInstance | 
-		procInstance executedActivities do: [:activity | 
+		(procInstance getAllArtifacts, procInstance subprocesses) do: [:activity | 
 			(countDictionary includesKey: activity getDefinitionName) ifFalse: [countDictionary at: activity getDefinitionName put: 0].
 			countDictionary at: activity getDefinitionName put: ((countDictionary at: activity getDefinitionName) + 1).
 		]. 
