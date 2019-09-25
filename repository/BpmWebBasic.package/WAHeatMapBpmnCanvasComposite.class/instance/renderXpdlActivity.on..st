@@ -1,10 +1,12 @@
 render xpdl
 renderXpdlActivity: aXPDLActivityNode on: html
-	| textPoint attributes |
+	| textPoint attributes fillAssoc |
 
 	textPoint := (aXPDLActivityNode getXcoordinate + 5) @ (aXPDLActivityNode getYcoordinate + 32).
 
 	attributes := aXPDLActivityNode asSvgGeometryFor: self.
+	fillAssoc := attributes detect: [:each | each key = 'fill'] ifNone: [].
+	fillAssoc value: (gradients second at: aXPDLActivityNode getName ifAbsent: [fillAssoc value]). "rewrite 'fill' attribute"
 
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 

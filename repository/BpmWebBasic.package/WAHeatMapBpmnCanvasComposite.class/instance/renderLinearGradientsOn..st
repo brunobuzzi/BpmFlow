@@ -10,3 +10,5 @@ renderLinearGradientsOn: html
 	self renderLinearGradientYellowRedOn: html.
 
 	self renderLinearGradientRedOn: html.
+
+	self renderLinearGradientRedRedOn: html.

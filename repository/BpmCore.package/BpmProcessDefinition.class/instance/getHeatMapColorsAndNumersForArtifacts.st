@@ -18,12 +18,12 @@ getHeatMapColorsAndNumersForArtifacts
 
 	countDictionary keysAndValuesDo: [:activityName :sum | | porcentage |
 		porcentage := (100 * sum) // processInstances size.
-		((0 <= porcentage) and: [porcentage < 20]) ifTrue: [heatMapDictionary at: activityName put: 'gradient-green'].
-		((20 <= porcentage) and: [porcentage < 40]) ifTrue: [heatMapDictionary at: activityName put: 'gradient-green-yellow'].
-		((40 <= porcentage) and: [porcentage < 60]) ifTrue: [heatMapDictionary at: activityName put: 'gradient-yellow'].
-		((60 <= porcentage) and: [porcentage < 80]) ifTrue: [heatMapDictionary at: activityName put: 'gradient-yellow-red'].
-		((80 <= porcentage) and: [porcentage < 100]) ifTrue: [heatMapDictionary at: activityName put: 'gradient-red'].
-		(100 <= porcentage) ifTrue: [heatMapDictionary at: activityName put: 'gradient-red-red'].
+		((0 <= porcentage) and: [porcentage < 20]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-green)'].
+		((20 <= porcentage) and: [porcentage < 40]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-green-yellow)'].
+		((40 <= porcentage) and: [porcentage < 60]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-yellow)'].
+		((60 <= porcentage) and: [porcentage < 80]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-yellow-red)'].
+		((80 <= porcentage) and: [porcentage < 100]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-red)'].
+		(100 <= porcentage) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-red-red)'].
 	].
 
 	^Array with: countDictionary with: heatMapDictionary
