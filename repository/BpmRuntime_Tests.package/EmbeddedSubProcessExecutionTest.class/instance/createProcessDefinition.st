@@ -14,4 +14,6 @@ createProcessDefinition
 		mapProcess: 'Reusable-Script' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
+	generator processes do: [:each | each addToCache].
+
 	^generator getProcessDefinitionNamed: 'ReusableEmbeddedProc' ifNone: []
