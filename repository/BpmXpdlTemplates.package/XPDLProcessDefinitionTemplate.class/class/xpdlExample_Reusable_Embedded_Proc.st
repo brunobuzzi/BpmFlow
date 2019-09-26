@@ -2,12 +2,12 @@ embedded subproc
 xpdlExample_Reusable_Embedded_Proc
 
 ^'<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="a882c7ed-83b9-4174-aeda-4c8a49e596e6" Name="ReusableEmbeddedProc" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="9b6b2074-b305-4c49-9175-3bb1dca5f7df" Name="ReusableEmbeddedProc" xmlns="http://www.wfmc.org/2009/XPDL2.2">
   <PackageHeader>
     <XPDLVersion>2.2</XPDLVersion>
     <Vendor>Bizagi Process Modeler.</Vendor>
     <Created>2016-06-25T11:26:32.7776919-03:00</Created>
-    <ModificationDate>2016-06-25T12:27:08.9719061-03:00</ModificationDate>
+    <ModificationDate>2019-09-26T11:27:47.1763933-03:00</ModificationDate>
     <Description>ReusableEmbeddedProc</Description>
     <Documentation />
   </PackageHeader>
@@ -18,20 +18,22 @@ xpdlExample_Reusable_Embedded_Proc
   </RedefinableHeader>
   <ExternalPackages />
   <Pools>
-    <Pool Id="ff3e2127-e6d8-4fd9-a676-ba0f9611c63f" Name="Main Process" Process="8edf29f3-d072-4ffb-9439-cec9a1d93dde" BoundaryVisible="false">
+    <Pool Id="07db6576-4aee-42c9-9a98-fb3acdbd706c" Name="Main Process" Process="22966683-a587-4740-8498-43276e8a764c" BoundaryVisible="false">
       <Lanes />
       <NodeGraphicsInfos>
-        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="0" Width="0" BorderColor="-16777216" FillColor="-1">
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
+          <TextDirection xsi:nil="true" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
-    <Pool Id="8ab33ae2-e548-48d3-9b30-81e44fd6e52f" Name="ReusableEmbeddedProc" Process="6705db77-f6e8-4c8d-a9b5-b96bb17a957f" BoundaryVisible="true">
+    <Pool Id="cbc00ddc-3f56-4003-8cc1-9dab666b722e" Name="ReusableEmbeddedProc" Process="fbc87b16-ab71-4358-8499-c0c6dfd5b52c" BoundaryVisible="true">
       <Lanes>
-        <Lane Id="650e7842-3af4-4013-98ba-fe8273df2036" Name="administrator" ParentPool="8ab33ae2-e548-48d3-9b30-81e44fd6e52f">
+        <Lane Id="c3370f02-56b6-4e98-8490-6470732d5478" Name="administrator" ParentPool="cbc00ddc-3f56-4003-8cc1-9dab666b722e">
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="650" BorderColor="-11513776" FillColor="-1">
               <Coordinates XCoordinate="50" YCoordinate="0" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
@@ -40,14 +42,15 @@ xpdlExample_Reusable_Embedded_Proc
       <NodeGraphicsInfos>
         <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
           <Coordinates XCoordinate="30" YCoordinate="30" />
+          <TextDirection xsi:nil="true" />
         </NodeGraphicsInfo>
       </NodeGraphicsInfos>
     </Pool>
   </Pools>
   <WorkflowProcesses>
-    <WorkflowProcess Id="8edf29f3-d072-4ffb-9439-cec9a1d93dde" Name="Main Process">
+    <WorkflowProcess Id="22966683-a587-4740-8498-43276e8a764c" Name="Main Process">
       <ProcessHeader>
-        <Created>2016-06-25T12:27:32.4995453-03:00</Created>
+        <Created>2019-09-26T11:28:03.7178691-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -58,12 +61,12 @@ xpdlExample_Reusable_Embedded_Proc
       <ActivitySets />
       <DataInputOutputs />
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-25T11:26:32.7866975-03:00&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-06-25T11:26:32.7866975-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Main Process&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-25T11:26:32.7866975-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-06-25T11:26:32.7866975-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
-    <WorkflowProcess Id="6705db77-f6e8-4c8d-a9b5-b96bb17a957f" Name="ReusableEmbeddedProc">
+    <WorkflowProcess Id="fbc87b16-ab71-4358-8499-c0c6dfd5b52c" Name="ReusableEmbeddedProc">
       <ProcessHeader>
-        <Created>2016-06-25T12:27:32.500546-03:00</Created>
+        <Created>2019-09-26T11:28:03.7188702-03:00</Created>
         <Description />
       </ProcessHeader>
       <RedefinableHeader>
@@ -72,11 +75,11 @@ xpdlExample_Reusable_Embedded_Proc
         <Countrykey>CO</Countrykey>
       </RedefinableHeader>
       <ActivitySets>
-        <ActivitySet Id="f123a1c0-9b6d-44cd-bfc5-c78e1d499206" Name="embedded-sub-proc">
+        <ActivitySet Id="dae5dc0e-5d07-467e-a983-47fc69567804" Name="embedded-sub-proc">
           <Associations />
           <Artifacts />
           <Activities>
-            <Activity Id="28265013-804f-4101-8ef3-7cf8257893f5" Name="start-embedded">
+            <Activity Id="151beb04-33d3-43ac-aa32-b6fae1a42af3" Name="start-embedded">
               <Description />
               <Event>
                 <StartEvent Trigger="None" />
@@ -85,13 +88,14 @@ xpdlExample_Reusable_Embedded_Proc
               <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
                   <Coordinates XCoordinate="131" YCoordinate="50" />
+                  <TextDirection xsi:nil="true" />
                 </NodeGraphicsInfo>
               </NodeGraphicsInfos>
               <ExtendedAttributes>
                 <ExtendedAttribute Name="RuntimeProperties" Value="{}" />
               </ExtendedAttributes>
             </Activity>
-            <Activity Id="f3d025d8-fb49-4083-8f13-1d319b96dff2" Name="script-embedded">
+            <Activity Id="deae053a-efe4-47a9-b554-e35386d7d5d1" Name="script-embedded">
               <Description />
               <Implementation>
                 <Task>
@@ -106,11 +110,12 @@ xpdlExample_Reusable_Embedded_Proc
               <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="140" BorderColor="-16553830" FillColor="-1249281">
                   <Coordinates XCoordinate="309" YCoordinate="35" />
+                  <TextDirection xsi:nil="true" />
                 </NodeGraphicsInfo>
               </NodeGraphicsInfos>
               <ExtendedAttributes />
             </Activity>
-            <Activity Id="93743e15-d411-4789-a5cb-039036c30fbf" Name="end-embedded">
+            <Activity Id="5f730982-008e-4390-afdd-42be73ee6bda" Name="end-embedded">
               <Description />
               <Event>
                 <EndEvent Result="None" />
@@ -119,28 +124,31 @@ xpdlExample_Reusable_Embedded_Proc
               <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
                   <Coordinates XCoordinate="364" YCoordinate="197" />
+                  <TextDirection xsi:nil="true" />
                 </NodeGraphicsInfo>
               </NodeGraphicsInfos>
               <ExtendedAttributes />
             </Activity>
           </Activities>
           <Transitions>
-            <Transition Id="1882f754-5bb3-4ab1-9cbe-9b3c7fff07c9" From="28265013-804f-4101-8ef3-7cf8257893f5" To="f3d025d8-fb49-4083-8f13-1d319b96dff2">
+            <Transition Id="04c4e616-cde5-4ab4-b42f-cd8f1a5db3fc" From="151beb04-33d3-43ac-aa32-b6fae1a42af3" To="deae053a-efe4-47a9-b554-e35386d7d5d1">
               <Condition />
               <Description />
               <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+                  <TextDirection xsi:nil="true" />
                   <Coordinates XCoordinate="161" YCoordinate="65" />
                   <Coordinates XCoordinate="309" YCoordinate="65" />
                 </ConnectorGraphicsInfo>
               </ConnectorGraphicsInfos>
               <ExtendedAttributes />
             </Transition>
-            <Transition Id="398ad9b3-ff8b-4ec6-869a-eba522cf83c9" From="f3d025d8-fb49-4083-8f13-1d319b96dff2" To="93743e15-d411-4789-a5cb-039036c30fbf">
+            <Transition Id="27b90869-f20e-46bb-9ad9-79efad18819b" From="deae053a-efe4-47a9-b554-e35386d7d5d1" To="5f730982-008e-4390-afdd-42be73ee6bda">
               <Condition />
               <Description />
               <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+                  <TextDirection xsi:nil="true" />
                   <Coordinates XCoordinate="379" YCoordinate="95" />
                   <Coordinates XCoordinate="379" YCoordinate="197" />
                 </ConnectorGraphicsInfo>
@@ -152,7 +160,7 @@ xpdlExample_Reusable_Embedded_Proc
       </ActivitySets>
       <DataInputOutputs />
       <Activities>
-        <Activity Id="2dc551e8-5914-4178-a0c3-0e9623ea5b79" Name="start">
+        <Activity Id="1882ed47-c707-4787-97aa-3b6ca5be5381" Name="start">
           <Description />
           <Event>
             <StartEvent Trigger="None" />
@@ -161,13 +169,14 @@ xpdlExample_Reusable_Embedded_Proc
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
               <Coordinates XCoordinate="131" YCoordinate="56" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
             <ExtendedAttribute Name="RuntimeProperties" Value="{}" />
           </ExtendedAttributes>
         </Activity>
-        <Activity Id="0c647959-ac91-4bdc-b8f0-aacf2542d134" Name="script">
+        <Activity Id="6422b853-28d5-4e2c-b1c0-d20867d4803b" Name="script">
           <Description />
           <Implementation>
             <Task>
@@ -182,26 +191,28 @@ xpdlExample_Reusable_Embedded_Proc
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
               <Coordinates XCoordinate="236" YCoordinate="41" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="f123a1c0-9b6d-44cd-bfc5-c78e1d499206" Name="embedded-sub-proc">
+        <Activity Id="dae5dc0e-5d07-467e-a983-47fc69567804" Name="embedded-sub-proc">
           <Description />
-          <BlockActivity ActivitySetId="f123a1c0-9b6d-44cd-bfc5-c78e1d499206" />
+          <BlockActivity ActivitySetId="dae5dc0e-5d07-467e-a983-47fc69567804" />
           <Performers />
           <Documentation />
           <Loop LoopType="None" />
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
               <Coordinates XCoordinate="421" YCoordinate="41" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
-            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;priority&quot;:0,&quot;asynchronousBehavior&quot;:{},&quot;subProcessType&quot;:&quot;None&quot;,&quot;inputMappingType&quot;:&quot;None&quot;,&quot;outputMappingType&quot;:&quot;None&quot;,&quot;exitMode&quot;:&quot;AllTokens&quot;,&quot;multiInstancePropertyGuid&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;groupByAttributesXPathList&quot;:[]}" />
+            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;priority&quot;:0,&quot;asynchronousBehavior&quot;:{},&quot;subProcessType&quot;:&quot;None&quot;,&quot;inputMappingType&quot;:&quot;None&quot;,&quot;outputMappingType&quot;:&quot;None&quot;,&quot;exitMode&quot;:&quot;AllTokens&quot;}" />
           </ExtendedAttributes>
         </Activity>
-        <Activity Id="67983f98-d3f0-4cc5-b8f6-b677764b11db" Name="end">
+        <Activity Id="7d796f97-7b9f-485b-835c-e17c64bc63c5" Name="end">
           <Description />
           <Event>
             <EndEvent Result="None" />
@@ -210,14 +221,15 @@ xpdlExample_Reusable_Embedded_Proc
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
               <Coordinates XCoordinate="168" YCoordinate="232" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes />
         </Activity>
-        <Activity Id="5197c000-5be0-433a-8758-d2498820ee86" Name="reusabe-sub-proc">
+        <Activity Id="a35c8405-7a03-4963-ae64-e0bafbe04a46" Name="reusable-sub-proc">
           <Description />
           <Implementation>
-            <SubFlow Id="b71cb2f4-7b83-40ff-96e6-fb3ae1b592d0" />
+            <SubFlow Id="6fd86357-8c77-4b25-8889-8faaeec82275" />
           </Implementation>
           <Performers />
           <Documentation />
@@ -225,52 +237,57 @@ xpdlExample_Reusable_Embedded_Proc
           <NodeGraphicsInfos>
             <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
               <Coordinates XCoordinate="421" YCoordinate="217" />
+              <TextDirection xsi:nil="true" />
             </NodeGraphicsInfo>
           </NodeGraphicsInfos>
           <ExtendedAttributes>
-            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;priority&quot;:0,&quot;asynchronousBehavior&quot;:{},&quot;subProcessType&quot;:&quot;None&quot;,&quot;inputMappingType&quot;:&quot;None&quot;,&quot;outputMappingType&quot;:&quot;None&quot;,&quot;exitMode&quot;:&quot;AllTokens&quot;,&quot;multiInstancePropertyGuid&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;groupByAttributesXPathList&quot;:[]}" />
+            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;priority&quot;:0,&quot;asynchronousBehavior&quot;:{},&quot;subProcessType&quot;:&quot;None&quot;,&quot;inputMappingType&quot;:&quot;None&quot;,&quot;outputMappingType&quot;:&quot;None&quot;,&quot;exitMode&quot;:&quot;AllTokens&quot;}" />
           </ExtendedAttributes>
         </Activity>
       </Activities>
       <Transitions>
-        <Transition Id="1dd29765-0dfe-4347-aa57-c926b95da752" From="2dc551e8-5914-4178-a0c3-0e9623ea5b79" To="0c647959-ac91-4bdc-b8f0-aacf2542d134">
+        <Transition Id="e381da83-e168-414a-88eb-29242a0cd6ca" From="1882ed47-c707-4787-97aa-3b6ca5be5381" To="6422b853-28d5-4e2c-b1c0-d20867d4803b">
           <Condition />
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <TextDirection xsi:nil="true" />
               <Coordinates XCoordinate="161" YCoordinate="71" />
               <Coordinates XCoordinate="236" YCoordinate="71" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="0b335f9a-4cfd-43bf-a952-cda0360edc3b" From="0c647959-ac91-4bdc-b8f0-aacf2542d134" To="f123a1c0-9b6d-44cd-bfc5-c78e1d499206">
+        <Transition Id="e18f51ce-37f3-4564-ac7b-b5129f957ee2" From="6422b853-28d5-4e2c-b1c0-d20867d4803b" To="dae5dc0e-5d07-467e-a983-47fc69567804">
           <Condition />
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <TextDirection xsi:nil="true" />
               <Coordinates XCoordinate="326" YCoordinate="71" />
               <Coordinates XCoordinate="421" YCoordinate="71" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="0b47ceea-03e1-4190-b8d7-3bd59527ef52" From="f123a1c0-9b6d-44cd-bfc5-c78e1d499206" To="5197c000-5be0-433a-8758-d2498820ee86">
+        <Transition Id="019013fb-68f0-45dd-a4c5-2c79d0e166b3" From="dae5dc0e-5d07-467e-a983-47fc69567804" To="a35c8405-7a03-4963-ae64-e0bafbe04a46">
           <Condition />
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <TextDirection xsi:nil="true" />
               <Coordinates XCoordinate="466" YCoordinate="101" />
               <Coordinates XCoordinate="466" YCoordinate="217" />
             </ConnectorGraphicsInfo>
           </ConnectorGraphicsInfos>
           <ExtendedAttributes />
         </Transition>
-        <Transition Id="5f1eaa6a-794a-4071-a2da-b982567d8ef7" From="5197c000-5be0-433a-8758-d2498820ee86" To="67983f98-d3f0-4cc5-b8f6-b677764b11db">
+        <Transition Id="1f8100c9-7bab-4e10-a214-3c9800d2b413" From="a35c8405-7a03-4963-ae64-e0bafbe04a46" To="7d796f97-7b9f-485b-835c-e17c64bc63c5">
           <Condition />
           <Description />
           <ConnectorGraphicsInfos>
             <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <TextDirection xsi:nil="true" />
               <Coordinates XCoordinate="421" YCoordinate="247" />
               <Coordinates XCoordinate="198" YCoordinate="247" />
             </ConnectorGraphicsInfo>
@@ -279,7 +296,7 @@ xpdlExample_Reusable_Embedded_Proc
         </Transition>
       </Transitions>
       <ExtendedAttributes>
-        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-25T11:26:32.7906989-03:00&quot;,&quot;description&quot;:&quot;&quot;},&quot;processProperties&quot;:{&quot;versionCreationDate&quot;:&quot;2016-06-25T11:26:32.7906989-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;formsVersion&quot;:0}}" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;accessType&quot;:&quot;Process&quot;,&quot;order&quot;:0,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false,&quot;creationDate&quot;:&quot;2016-06-25T11:26:32.7906989-03:00&quot;},&quot;processProperties&quot;:{&quot;version&quot;:{&quot;numberVersion&quot;:&quot;1.0&quot;,&quot;isActive&quot;:true},&quot;versionCreationDate&quot;:&quot;2016-06-25T11:26:32.7906989-03:00&quot;,&quot;supportsScopes&quot;:false,&quot;caseAccessType&quot;:&quot;Public&quot;,&quot;renderVersion&quot;:2,&quot;formsVersion&quot;:0}}" />
       </ExtendedAttributes>
     </WorkflowProcess>
   </WorkflowProcesses>
