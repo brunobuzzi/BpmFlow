@@ -2,6 +2,7 @@ svg properties
 renderContentOn: html
 	| xpdlReader dimensions svgCanvasTag xpdlWorkflows |
 
+	xpdlWorkflows := OrderedCollection new.
 	self renderShowParentProcessIconOn: html.
 
 	xpdlReader := self defaultXpdlReaderClass forProcessNamed: 'convert' withString: self getModelOrSubProcess xmlString.
@@ -21,7 +22,8 @@ renderContentOn: html
 	scaleArray ifNotNil: [svgCanvasTag attributeAt: 'transform' put: self getScaleString].
 
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
-	xpdlWorkflows := xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName].
+	xpdlWorkflows addAll: (xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName]).
+	xpdlReader getAllWorkflows do: [:workflow | xpdlWorkflows addAll:  (workflow embeddedSubprocesses select: [:each | each getName = self getModelOrSubProcess processName])]. "issue #959"
 	(xpdlWorkflows notEmpty and: [xpdlReader getAllWorkflows size > 1]) ifTrue: [svgCanvasTag attributeAt: 'transform' put: (self getTranslationStringFor: xpdlWorkflows last)].
 
 	svgCanvasTag with: [
