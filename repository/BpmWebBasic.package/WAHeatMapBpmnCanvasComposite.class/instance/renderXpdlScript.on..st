@@ -1,6 +1,6 @@
 render xpdl
 renderXpdlScript: aXPDLScriptNode on: html
-	| textPoint aPoint scriptRectOrigin attributes fillAssoc |
+	| textPoint aPoint scriptRectOrigin attributes fillAssoc textValue textXshift |
 
 	aPoint := aXPDLScriptNode getXcoordinate @ aXPDLScriptNode getYcoordinate.
 	textPoint := (aPoint  x + 5) @ (aPoint y + 32).
@@ -11,7 +11,7 @@ renderXpdlScript: aXPDLScriptNode on: html
 
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 
-			attributes: attributes
+			attributes: attributes 
 			with: [aXPDLScriptNode getTooltipOrNil ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
 
 	scriptRectOrigin := (aPoint x + aXPDLScriptNode getWidth - 15) @ (aPoint y + 5).
@@ -26,5 +26,12 @@ renderXpdlScript: aXPDLScriptNode on: html
 
 	self renderTextOn: html text: aXPDLScriptNode getName at: textPoint textSizePx: self defaultActivityNameSize.
 
-	self renderCircleOn: html at: (aXPDLScriptNode getXcoordinate @ aXPDLScriptNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'white'.
-	self renderTextOn: html text: (gradients first at: aXPDLScriptNode getName ifAbsent: [0]) at: ((aXPDLScriptNode getXcoordinate - 6) @ (aXPDLScriptNode getYcoordinate + 4)).
+	textValue := (gradients first at: aXPDLScriptNode getName ifAbsent: [0]) printString.
+	textXshift := (textValue size = 2) ifTrue: [-6] ifFalse: [(textValue size = 1) ifTrue: [-4] ifFalse: [-8]].
+	self renderCircleOn: html at: (aXPDLScriptNode getXcoordinate @ aXPDLScriptNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'lightgray'.
+	self renderTextOn: html text: textValue at: ((aXPDLScriptNode getXcoordinate + textXshift) @ (aXPDLScriptNode getYcoordinate + 4)).
+
+	textValue := (gradients third at: aXPDLScriptNode getName ifAbsent: [0]) printString.
+	textXshift := (textValue size = 2) ifTrue: [20] ifFalse: [(textValue size = 1) ifTrue: [22] ifFalse: [18]].
+	self renderCircleOn: html at: ((aXPDLScriptNode getXcoordinate + 26) @ aXPDLScriptNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'white'.
+	self renderTextOn: html text: (gradients third at: aXPDLScriptNode getName ifAbsent: [0]) at: ((aXPDLScriptNode getXcoordinate + textXshift) @ (aXPDLScriptNode getYcoordinate + 4)).
