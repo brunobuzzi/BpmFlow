@@ -29,5 +29,8 @@ renderXpdlActivity: aXPDLActivityNode on: html
 	ifTrue: [self renderMultiInstanceLoopIconOn: html 
 						at: ((aXPDLActivityNode getXcoordinate + (aXPDLActivityNode  getWidth // 2)) @ (aXPDLActivityNode getYcoordinate + aXPDLActivityNode getHeight - 15))].
 
-	self renderCircleOn: html at: (aXPDLActivityNode getXcoordinate @ aXPDLActivityNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'white'.
+	self renderCircleOn: html at: (aXPDLActivityNode getXcoordinate @ aXPDLActivityNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'lightgray'.
 	self renderTextOn: html text: (gradients first at: aXPDLActivityNode getName ifAbsent: [0]) at: ((aXPDLActivityNode getXcoordinate - 6) @ (aXPDLActivityNode getYcoordinate + 4)).
+
+	self renderCircleOn: html at: ((aXPDLActivityNode getXcoordinate + 26) @ aXPDLActivityNode getYcoordinate) r: 12 strokeWidth: 1 stroke: 'black' fillColor: 'white'.
+	self renderTextOn: html text: (gradients third at: aXPDLActivityNode getName ifAbsent: [0]) at: ((aXPDLActivityNode getXcoordinate + 20) @ (aXPDLActivityNode getYcoordinate + 4)).

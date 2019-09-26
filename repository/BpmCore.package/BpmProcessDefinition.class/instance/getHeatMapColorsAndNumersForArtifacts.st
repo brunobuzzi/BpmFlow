@@ -4,10 +4,11 @@ getHeatMapColorsAndNumersForArtifacts
 	<heatMapDictionary> where each key is an artifact name and each value is the heatmap color name and
 	<countDictionary> where each key is an artifact name and each value is total number of occurences of task in all processes.
 	Check: WAHeatMapBpmnCanvasComposite>>renderLinearGradientXXX: methods"
-	| heatMapDictionary countDictionary |
+	| heatMapDictionary countDictionary porcentageDictionary |
 
 	heatMapDictionary := Dictionary new.
 	countDictionary := Dictionary new.
+	porcentageDictionary := Dictionary new.
 
 	processInstances do: [:procInstance | 
 		(procInstance getAllArtifacts, procInstance subprocesses) do: [:activity | 
@@ -24,6 +25,7 @@ getHeatMapColorsAndNumersForArtifacts
 		((60 <= porcentage) and: [porcentage < 80]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-yellow-red)'].
 		((80 <= porcentage) and: [porcentage < 100]) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-red)'].
 		(100 <= porcentage) ifTrue: [heatMapDictionary at: activityName put: 'url(#gradient-red-red)'].
+		porcentageDictionary at: activityName put: porcentage.
 	].
 
-	^Array with: countDictionary with: heatMapDictionary
+	^Array with: countDictionary with: heatMapDictionary with: porcentageDictionary
