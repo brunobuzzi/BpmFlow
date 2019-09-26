@@ -3,4 +3,4 @@ selectParentProcessToRender
 
 	subProcess ifNil: [^self].
 
-	subProcess := nil
+	subProcess := subProcess parentProcess
