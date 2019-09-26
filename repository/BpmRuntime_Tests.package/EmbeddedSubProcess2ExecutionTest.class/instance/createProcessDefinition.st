@@ -12,4 +12,6 @@ createProcessDefinition
 		mapProcess: 'multi-embedded' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
+	generator processes do: [:each | each addToCache].
+
 	^generator getProcessDefinitionNamed: 'multi-embedded' ifNone: []

@@ -23,7 +23,7 @@ renderContentOn: html
 
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
 	xpdlWorkflows addAll: (xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName]).
-	xpdlReader getAllWorkflows do: [:workflow | xpdlWorkflows addAll:  (workflow embeddedSubprocesses select: [:each | each getName = self getModelOrSubProcess processName])]. "issue #959"
+	xpdlReader getAllWorkflows do: [:workflow | xpdlWorkflows addAll:  (workflow getAllEmbbeddedProcesses select: [:each | each getName = self getModelOrSubProcess processName])]. "issue #959"
 	(xpdlWorkflows notEmpty and: [xpdlReader getAllWorkflows size > 1]) ifTrue: [svgCanvasTag attributeAt: 'transform' put: (self getTranslationStringFor: xpdlWorkflows last)].
 
 	svgCanvasTag with: [
