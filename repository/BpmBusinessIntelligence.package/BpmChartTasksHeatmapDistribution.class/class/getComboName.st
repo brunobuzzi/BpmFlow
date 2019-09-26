@@ -1,4 +1,4 @@
 other
 getComboName
 
-	^'Tasks Heatmap'
+	^'Tasks Instances Heatmap'
