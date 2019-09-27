@@ -1,4 +1,4 @@
-other
+test
 testVisaApplianceImport
 	| environment applications file1 file2 file3 currentVersion ue |
 

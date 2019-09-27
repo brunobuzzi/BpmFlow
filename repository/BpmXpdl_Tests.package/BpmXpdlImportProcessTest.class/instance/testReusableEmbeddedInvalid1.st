@@ -1,4 +1,4 @@
-other
+test
 testReusableEmbeddedInvalid1
 	"This import process should be rejected.
 	The names of the subprocesses nodes are diffent from the subprocesses"
