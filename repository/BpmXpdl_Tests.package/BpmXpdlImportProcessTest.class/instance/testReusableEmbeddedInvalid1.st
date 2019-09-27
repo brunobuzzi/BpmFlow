@@ -25,3 +25,4 @@ testReusableEmbeddedInvalid1
 	self assert: importProcess hasWarnings.	
 	self deny: importProcess isImportSuccessful.
 	self assert: importProcess detectedItemsSize equals: 2. "the names of the subprocesses nodes are diffent from the subprocesses"
+	self assert: (importProcess detectedItems allSatisfy: [:each | each code = 300])
