@@ -16,4 +16,7 @@ acceptTransitionNode: aXPDLTransitionNode
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | self addTransitionCodeWarningItem: eachString]. 
 	].
+
+	aXPDLTransitionNode endNode ifNil: [^self addTransitionWithNoEndNodeItem]. 
+
 	aXPDLTransitionNode endNode acceptVisitor: self.
