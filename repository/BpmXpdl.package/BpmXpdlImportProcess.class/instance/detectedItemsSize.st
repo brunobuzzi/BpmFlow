@@ -1,0 +1,4 @@
+import
+detectedItemsSize
+
+	^xpdlStructureVisitor detectedItemsSize

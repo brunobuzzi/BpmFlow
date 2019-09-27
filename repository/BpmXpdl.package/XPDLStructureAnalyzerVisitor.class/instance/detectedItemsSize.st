@@ -1,0 +1,4 @@
+other
+detectedItemsSize
+
+	^detectedItems size
