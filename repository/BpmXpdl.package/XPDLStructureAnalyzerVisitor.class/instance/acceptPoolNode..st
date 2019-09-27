@@ -5,6 +5,8 @@ acceptPoolNode: aXPDLPoolNode
 	* Lanes with the same name"
 	| lanesNames |
 
+	(aXPDLPoolNode getName isNil or: [aXPDLPoolNode getName isEmpty]) ifTrue: [self addPoolWithoutNameItem].
+
 	aXPDLPoolNode lanes isEmpty ifTrue: [self addPoolWithoutLanesItem].
 
 	lanesNames := aXPDLPoolNode lanes keys.
