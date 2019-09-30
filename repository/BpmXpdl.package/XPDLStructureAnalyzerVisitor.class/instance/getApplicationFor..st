@@ -1,8 +1,10 @@
 mapping
 getApplicationFor: aXPDLObject
 	"The receiver answer <anApplication> associated with the element <aXPDLObject>"
+	| application |
 
-	^packageApplication 
-		at: aXPDLObject package 
-		ifAbsent: [self addMissingAppicationItem: aXPDLObject getName.
-						ProcessAppMappingException signal: 'No Application found for XPDL package [', aXPDLObject package getName, ']']
+	application := packageApplication at: aXPDLObject package ifAbsent: [self addMissingAppicationItem: aXPDLObject getName].
+
+	application ifNil: [self addMissingAppicationItem: aXPDLObject getName].
+
+	^application

@@ -3,13 +3,18 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 	"The receiver check for:
 	* Existence of <OrbeonPublishedFormDefinition> in the receiver <application>
 	* Mandatory fields in non anonymous Forms"
+	| application |
+
+	application := self getApplicationFor: aXPDLTaskNoneNode.
 
 	self acceptActivityNode: aXPDLTaskNoneNode.
 
-	(aXPDLTaskNoneNode isOrbeonTaskNode and: 
-		[(((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode getName) 
-			or: [((self getApplicationFor: aXPDLTaskNoneNode) hasDefinitionNamed: aXPDLTaskNoneNode reuseExternalObjectOfTaskNamed)]) not ])
-	ifTrue: [self addNonExistingOrbeonFormItem: aXPDLTaskNoneNode inApplication: (self getApplicationFor: aXPDLTaskNoneNode)].
+	aXPDLTaskNoneNode isOrbeonTaskNode ifTrue: [ 
+		application notNil ifTrue: [
+			((application hasDefinitionNamed: aXPDLTaskNoneNode getName) or: [application hasDefinitionNamed: aXPDLTaskNoneNode reuseExternalObjectOfTaskNamed]) not
+			ifTrue: [self addNonExistingOrbeonFormItem: aXPDLTaskNoneNode inApplication: application].
+		].
+	].
 
 	(aXPDLTaskNoneNode isSeasideTaskNode and:[(Smalltalk includesKey: aXPDLTaskNoneNode getSeasideComponentName asSymbol) not])
 	ifTrue: [self addNonExistingSeasideComponentItem: aXPDLTaskNoneNode].
@@ -17,6 +22,7 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 	"Madatory fields are not needed (for the first form) when the Process has an anonymous start"
 	(aXPDLTaskNoneNode workflow startNode isAnonymousStart and: [aXPDLTaskNoneNode workflow startNode outTransitions anySatisfy: [:each | each endNode == aXPDLTaskNoneNode]])
 	ifFalse: [| formDef |
-		formDef := (self getApplicationFor: aXPDLTaskNoneNode) definitionNamed: aXPDLTaskNoneNode getName.
+		application ifNil: [^self].
+		formDef := application definitionNamed: aXPDLTaskNoneNode getName.
 		formDef ifNotNil: [formDef getMissingMandatoryFields do: [:missingFieldName | self addMissingMandatoryFieldItem: missingFieldName inForm: formDef inApplication: (self getApplicationFor: aXPDLTaskNoneNode)]].
 	].
