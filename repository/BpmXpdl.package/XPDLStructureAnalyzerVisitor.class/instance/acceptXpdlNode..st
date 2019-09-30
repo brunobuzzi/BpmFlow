@@ -7,8 +7,6 @@ acceptXpdlNode: aXPDLObject
 
 	"transition nodes can have no names and can have the same name as an activity"
 	(aXPDLObject isTransitionNode) ifFalse: [xpdlObjects at: aXPDLObject getName put: aXPDLObject].
-	
-	aXPDLObject hasNoInOrOutTransitions ifTrue: [self addIsolatedActivityItemFor: aXPDLObject].
 
 	(aXPDLObject hasMixedStartConditions) ifTrue: [self addActivityWithMixedConditionsItem: aXPDLObject].
 

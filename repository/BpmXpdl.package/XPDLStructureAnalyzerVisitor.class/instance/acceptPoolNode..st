@@ -9,7 +9,7 @@ acceptPoolNode: aXPDLPoolNode
 
 	aXPDLPoolNode lanes isEmpty ifTrue: [self addPoolWithoutLanesItem].
 
-	lanesNames := aXPDLPoolNode lanes keys.
+	lanesNames := aXPDLPoolNode lanes collect: [:each | each getName].
 
 	(lanesNames size = lanesNames asSet size) ifFalse: [self addPoolWithLanesWithSameName].
 
