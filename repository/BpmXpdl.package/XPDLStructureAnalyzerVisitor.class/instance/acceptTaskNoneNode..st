@@ -14,9 +14,9 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 	(aXPDLTaskNoneNode isSeasideTaskNode and:[(Smalltalk includesKey: aXPDLTaskNoneNode getSeasideComponentName asSymbol) not])
 	ifTrue: [self addNonExistingSeasideComponentItem: aXPDLTaskNoneNode].
 
-	"Madatory fields are not needed when the Process has an anonymous start"
+	"Madatory fields are not needed (for the first form) when the Process has an anonymous start"
 	(aXPDLTaskNoneNode workflow startNode isAnonymousStart and: [aXPDLTaskNoneNode workflow startNode outTransitions anySatisfy: [:each | each endNode == aXPDLTaskNoneNode]])
 	ifFalse: [| formDef |
 		formDef := (self getApplicationFor: aXPDLTaskNoneNode) definitionNamed: aXPDLTaskNoneNode getName.
-		formDef ifNotNil: [formDef getMandatoryFieldsMissing do: [:missingFieldName | self addMissingMandatoryFieldItem: missingFieldName inForm: formDef inApplication: (self getApplicationFor: aXPDLTaskNoneNode)]].
+		formDef ifNotNil: [formDef getMissingMandatoryFields do: [:missingFieldName | self addMissingMandatoryFieldItem: missingFieldName inForm: formDef inApplication: (self getApplicationFor: aXPDLTaskNoneNode)]].
 	].
