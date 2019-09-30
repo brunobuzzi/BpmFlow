@@ -7,6 +7,12 @@ acceptIntermediateEventNode: aXPDLIntermediateNode
 
 	(aXPDLIntermediateNode getName isNil or: [aXPDLIntermediateNode getName isEmpty]) ifTrue: [self addEventWithNoNameItem: aXPDLIntermediateNode].
 
+	aXPDLIntermediateNode isTimerNode ifTrue: [| blockAnalysis | 
+		blockAnalysis := BpmIntermediateEventTimerCodeAnalyzer new blockCode: (aXPDLIntermediateNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
+		blockAnalysis analyze.
+		blockAnalysis codeWarnings do: [:eachString | self addEventCodeWarningItem: eachString]
+	].
+
 	self acceptXpdlNode: aXPDLIntermediateNode.
 
 	aXPDLIntermediateNode outTransitions do: [:each | each acceptVisitor: self]

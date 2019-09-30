@@ -19,7 +19,13 @@ testNoStartNoEndEventImportErrors
 
 	self assert: importProcess hasWarnings.	
 	self deny: importProcess isImportSuccessful.
-	self assert: importProcess detectedItemsSize equals: 2. "no start & no end event"
+	self assert: importProcess detectedItemsSize equals: 7. 
 
 	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 112]). "no start event"
 	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 116]). "no end event"
+
+	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 58]).
+	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 62]).
+	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 50]).
+	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 112]).
+	self assert: (importProcess detectedItems anySatisfy: [:each | each code = 120]).
