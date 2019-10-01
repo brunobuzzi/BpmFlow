@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedReceiveTaskItem
+addUnsupportedServiceTaskItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 740
+			code: 744
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Receive Tasks are NOT supported'
+			description: 'Service Tasks are NOT supported'
 			solution: 'Change the Task Type'
 			)

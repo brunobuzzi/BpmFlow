@@ -11,7 +11,7 @@ acceptActivityNode: aXPDLActivityNode
 
 	(aXPDLActivityNode getName isNil or: [aXPDLActivityNode getName isEmpty])	ifTrue: [self addActivityWithNoNameItem: aXPDLActivityNode].
 
-	aXPDLActivityNode isMultiInstanceLoopSequential ifTrue: [self addUnsupportedMultiInstanceSequentialLoopItem].
+	aXPDLActivityNode isMultiInstanceLoopSequential ifTrue: [self addUnsupportedMultiInstanceSequentialLoopItem: aXPDLActivityNode].
 
 	(aXPDLActivityNode loopType = 'None') 
 	ifFalse: [| blockAnalysis | 

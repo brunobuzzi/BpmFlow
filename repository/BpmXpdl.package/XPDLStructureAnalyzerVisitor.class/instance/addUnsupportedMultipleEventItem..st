@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedEscalationEventItem
+addUnsupportedMultipleEventItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 724
+			code: 732
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Escalation Events are NOT supported'
+			description: 'Multiple Events are NOT supported'
 			solution: 'Remove the Event'
 			)

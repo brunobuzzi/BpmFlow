@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedCompensationEventItem
+addUnsupportedErrorEventItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 708
+			code: 720
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Compensation Events are NOT supported' 
+			description: 'Error Events are NOT supported'
 			solution: 'Remove the Event'
 			)

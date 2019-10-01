@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedManualTaskItem
+addUnsupportedUserTaskItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 728
+			code: 752
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Manual Tasks are NOT supported'
+			description: 'User Tasks are NOT supported'
 			solution: 'Change the Task Type'
 			)

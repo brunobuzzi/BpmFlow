@@ -14,9 +14,9 @@ acceptTransitionNode: aXPDLTransitionNode
 	ifTrue: [| blockAnalysis | 
 		blockAnalysis := BpmTransitionConditionCodeAnalyzer for: aXPDLTransitionNode startCondition.
 		blockAnalysis analyze.
-		blockAnalysis codeWarnings do: [:eachString | self addTransitionCodeWarningItem: eachString]. 
+		blockAnalysis codeWarnings do: [:eachString | self addTransitionCodeWarningItem: aXPDLTransitionNode description: eachString]. 
 	].
 
-	aXPDLTransitionNode endNode ifNil: [^self addTransitionWithNoEndNodeItem]. 
+	aXPDLTransitionNode endNode ifNil: [^self addTransitionWithNoEndNodeItem: aXPDLTransitionNode]. 
 
 	aXPDLTransitionNode endNode acceptVisitor: self.

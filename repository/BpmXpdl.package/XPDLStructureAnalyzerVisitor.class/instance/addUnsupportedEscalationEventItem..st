@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedParallelMultipleEventItem
+addUnsupportedEscalationEventItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 736
+			code: 724
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Parallel Multiple Events are NOT supported'
+			description: 'Escalation Events are NOT supported'
 			solution: 'Remove the Event'
 			)

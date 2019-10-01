@@ -1,10 +1,11 @@
 warning items creation
-addUnsupportedErrorEventItem
+addUnsupportedSignalEventItem: aXPDLObject
 
 	detectedItems add: (
 		self createItemReportType: 'Error'
-			code: 720
+			code: 748
+			xpdlObject: aXPDLObject
 			title: 'Unsupported Element'
-			description: 'Error Events are NOT supported'
+			description: 'Signal Events are NOT supported'
 			solution: 'Remove the Event'
 			)
