@@ -1,15 +1,20 @@
 {
 	"class" : {
-		 },
+		"parent:importProcess:" : "brunobb 10/01/2019 05:17" },
 	"instance" : {
-		"createCodeColumn" : "brunobb 11/29/2018 04:32",
-		"createDescriptionColumn" : "brunobb 11/29/2018 04:15",
-		"createIsResumableColumn" : "brunobb 12/12/2018 10:23",
-		"createSolutionColumn" : "brunobb 11/29/2018 04:15",
-		"createTitleColumn" : "brunobb 11/29/2018 04:15",
-		"createTypeColumn" : "brunobb 11/29/2018 04:16",
-		"initialize" : "BrunoBB 03/12/2015 17:21",
-		"renderContentOn:" : "brunobb 01/30/2019 10:24",
-		"reportTable" : "brunobb 12/12/2018 10:22",
-		"warnings" : "BrunoBB 03/12/2015 17:42",
-		"warnings:" : "BrunoBB 03/12/2015 17:42" } }
+		"createCodeColumn" : "brunobb 10/01/2019 05:15",
+		"createDescriptionColumn" : "brunobb 10/01/2019 05:15",
+		"createIsResumableColumn" : "brunobb 10/01/2019 05:15",
+		"createSolutionColumn" : "brunobb 10/01/2019 05:15",
+		"createTitleColumn" : "brunobb 10/01/2019 05:15",
+		"createTypeColumn" : "brunobb 10/01/2019 05:15",
+		"importProcess" : "brunobb 10/01/2019 05:18",
+		"importProcess:" : "brunobb 10/01/2019 05:18",
+		"initialize" : "brunobb 10/01/2019 05:15",
+		"isSVGdiagramMode" : "brunobb 10/01/2019 05:18",
+		"isSVGdiagramMode:" : "brunobb 10/01/2019 05:18",
+		"renderContentOn:" : "brunobb 10/01/2019 07:43",
+		"renderSVGDiagramOn:" : "brunobb 10/01/2019 07:44",
+		"reportTable" : "brunobb 10/01/2019 05:15",
+		"warnings" : "brunobb 10/01/2019 05:15",
+		"warnings:" : "brunobb 10/01/2019 05:15" } }

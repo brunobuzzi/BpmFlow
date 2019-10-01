@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"warnings" ],
+		"importProcess",
+		"warnings",
+		"isSVGdiagramMode" ],
 	"name" : "WABizagiImportReport",
 	"pools" : [
 		 ],

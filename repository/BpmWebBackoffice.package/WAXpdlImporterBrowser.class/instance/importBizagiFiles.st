@@ -5,6 +5,4 @@ importBizagiFiles
 
 	model hasWarnings ifFalse: [^self].
 
-	self show: ((WABizagiImportReport parent: self)
-						warnings: model importReport;
-						yourself).
+	self show: (WABizagiImportReport parent: self importProcess: model)

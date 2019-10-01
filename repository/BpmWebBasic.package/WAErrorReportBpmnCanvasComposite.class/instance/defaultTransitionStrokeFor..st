@@ -1,0 +1,4 @@
+parameter
+defaultTransitionStrokeFor: aXPDLTransitionNode
+
+	^'black'

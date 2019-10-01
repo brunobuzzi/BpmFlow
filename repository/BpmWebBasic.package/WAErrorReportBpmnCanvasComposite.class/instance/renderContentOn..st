@@ -22,11 +22,13 @@ renderContentOn: html
 	scaleArray ifNotNil: [svgCanvasTag attributeAt: 'transform' put: self getScaleString].
 
 	"in one XPDL string can be more than one process definition --> <aBpmDefinition> is filtered here"
-	xpdlWorkflows addAll: (xpdlReader getAllWorkflows select: [:each | each getName = self getModelOrSubProcess processName]).
-	xpdlReader getAllWorkflows do: [:workflow | xpdlWorkflows addAll:  (workflow getAllEmbbeddedProcesses select: [:each | each getName = self getModelOrSubProcess processName])]. "issue #959"
+	xpdlWorkflows addAll: xpdlReader getAllWorkflows.
+	xpdlReader getAllWorkflows do: [:workflow | xpdlWorkflows addAll:  workflow getAllEmbbeddedProcesses]. "issue #959"
 	(xpdlWorkflows notEmpty and: [xpdlReader getAllWorkflows size > 1]) ifTrue: [svgCanvasTag attributeAt: 'transform' put: (self getTranslationStringFor: xpdlWorkflows last)].
 
 	svgCanvasTag with: [
 		html svgDefs with: [self renderSvgDefinitionsOn: html].
-		xpdlWorkflows do: [:eachWorkflow | eachWorkflow renderInComponent: self on: html].
+		xpdlWorkflows do: [:eachWorkflow | 
+			eachWorkflow renderInComponent: self on: html.
+			self renderImportErrorOn: html for: eachWorkflow].
 	].

@@ -1,0 +1,4 @@
+parameter
+defaultActivityStrokeFor: aXPDLActivityNode
+
+	^'darkblue'

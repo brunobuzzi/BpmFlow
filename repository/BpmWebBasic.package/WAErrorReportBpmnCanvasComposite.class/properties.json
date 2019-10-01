@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"importProcess" ],
+	"name" : "WAErrorReportBpmnCanvasComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmnCanvasComposite",
+	"type" : "normal" }
