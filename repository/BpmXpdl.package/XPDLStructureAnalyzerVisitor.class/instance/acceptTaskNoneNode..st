@@ -24,5 +24,5 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 	ifFalse: [| formDef |
 		application ifNil: [^self].
 		formDef := application definitionNamed: aXPDLTaskNoneNode getName.
-		formDef ifNotNil: [formDef getMissingMandatoryFields do: [:missingFieldName | self addMissingMandatoryFieldItem: missingFieldName inForm: formDef inApplication: (self getApplicationFor: aXPDLTaskNoneNode)]].
+		formDef ifNotNil: [formDef getMissingMandatoryFields do: [:missingFieldName | self addMissingMandatoryFieldItem: aXPDLTaskNoneNode fieldName: missingFieldName inForm: formDef inApplication: (self getApplicationFor: aXPDLTaskNoneNode)]].
 	].

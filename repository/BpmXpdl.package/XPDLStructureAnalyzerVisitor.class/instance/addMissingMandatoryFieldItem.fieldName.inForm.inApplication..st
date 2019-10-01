@@ -1,5 +1,5 @@
 warning items creation
-addMissingMandatoryFieldItem: aString inForm: anOrbeonFormDefinition inApplication: anApplication
+addMissingMandatoryFieldItem: aXPDLTaskNoneNode fieldName: aString inForm: anOrbeonFormDefinition inApplication: anApplication
 
 	detectedItems add: (
 		self createItemReportType: 'Error' 
