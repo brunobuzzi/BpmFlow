@@ -11,7 +11,7 @@ acceptStartEventNode: aXPDLStartNode
 	aXPDLStartNode isTimerNode ifTrue: [| blockAnalysis | 
 		blockAnalysis := BpmStartEventTimerCodeAnalyzer new blockCode: (aXPDLStartNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
 		blockAnalysis analyze.
-		blockAnalysis codeWarnings do: [:eachString | self addEventCodeWarningItem: eachString]
+		blockAnalysis codeWarnings do: [:eachString | self addEventCodeWarningItem: aXPDLStartNode description: eachString]
 	].
 
 	self acceptXpdlNode: aXPDLStartNode.

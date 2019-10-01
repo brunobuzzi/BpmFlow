@@ -17,7 +17,7 @@ acceptActivityNode: aXPDLActivityNode
 	ifFalse: [| blockAnalysis | 
 		blockAnalysis := BpmLoopConditionCodeAnalyzer for: aXPDLActivityNode loopCondition.
 		blockAnalysis analyze.
-		blockAnalysis codeWarnings do: [:eachString | self addLoopConditionCodeWarningItem: eachString]. 
+		blockAnalysis codeWarnings do: [:eachString | self addLoopConditionCodeWarningItem: aXPDLActivityNode description: eachString]. 
 	].
 
 	aXPDLActivityNode outTransitions do: [:each | each acceptVisitor: self].

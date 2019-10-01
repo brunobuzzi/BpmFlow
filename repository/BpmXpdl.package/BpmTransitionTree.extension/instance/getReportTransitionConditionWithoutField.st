@@ -8,6 +8,7 @@ getReportTransitionConditionWithoutField
 		item := self xpdlItemReportClass new 
 				code: 700;
 				type: 'Warning';
+				offendingXpdlObject: transition;
 				isImportResumable: true;
 				title: 'Possible Invalid Condition';
 				description: 'Field named [', anArray first, '] is not visible for transition [', transition printData, '] check: ', anArray second;
