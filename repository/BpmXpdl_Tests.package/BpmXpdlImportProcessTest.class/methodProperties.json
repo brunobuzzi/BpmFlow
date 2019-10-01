@@ -13,6 +13,8 @@
 		"testAllImportErrors" : "brunobb 09/30/2019 10:09",
 		"testBlockTimerErrors" : "brunobb 09/30/2019 12:34",
 		"testNoStartNoEndEventImportErrors" : "brunobb 09/30/2019 11:25",
+		"testOrbeon604" : "brunobb 10/01/2019 03:07",
+		"testOrbeon608" : "brunobb 10/01/2019 02:59",
 		"testOrbeonErrors" : "brunobb 09/30/2019 13:04",
 		"testPoolsWithoutLanes" : "brunobb 09/30/2019 10:56",
 		"testReusableEmbeddedInvalid1" : "brunobb 09/27/2019 09:49",
