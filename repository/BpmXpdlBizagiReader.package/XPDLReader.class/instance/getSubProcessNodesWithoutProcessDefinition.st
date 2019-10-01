@@ -12,6 +12,7 @@ getSubProcessNodesWithoutProcessDefinition
 			reportItem := self xpdlItemReportClass new 
 				code: 300;
 				type: 'Error';
+				offendingXpdlObject: eachAct;
 				title: 'Sub Process Activity without Process Definition';
 				description: 'Sub Process Activity [', eachAct getName, '] in Process  [', eachPack getName, '] has NO Process Definition';
 				solution: 'Define in Bizagi a SubProcess with the same Sheet name as the SubProcess node (in the parent Process definition)';

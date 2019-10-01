@@ -11,7 +11,8 @@
 		"description",
 		"solution",
 		"code",
-		"isImportResumable" ],
+		"isImportResumable",
+		"offendingXpdlObject" ],
 	"name" : "XPDLItemImportReport",
 	"pools" : [
 		 ],

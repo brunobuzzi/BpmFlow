@@ -10,6 +10,7 @@ getPoolsWithoutLanes
 			reportItem := self xpdlItemReportClass new 
 				code: 54;
 				type: 'Error';
+				offendingXpdlObject: eachPool;
 				title: 'Pools wihout Lanes';
 				description: 'Each Pool must have at least one Lane';
 				solution: 'Edit the Process Definition and add Lanes to Pools';
