@@ -23,5 +23,5 @@ testAllImportErrors
 	self assert: importProcess detectedItemsSize equals: 31.
 
 	errorCodes := importProcess detectedItems collect: [:each | each code].
- 
+
 	#(50 58 62 100 104 106 108 116 120 200 204 208 404 500 504 508 608 609) do: [:each | self assert: (errorCodes includes: each)]
