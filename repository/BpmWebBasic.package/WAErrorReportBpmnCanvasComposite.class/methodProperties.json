@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"circleAttributesForItemErrorAt:" : "brunobb 10/01/2019 07:23",
+		"circleAttributesForItemErrorAt:" : "brunobb 10/01/2019 08:39",
 		"createXpdlReader" : "brunobb 10/01/2019 05:50",
 		"defaultActivityColorFor:" : "brunobb 10/01/2019 05:42",
 		"defaultActivityStrokeFor:" : "brunobb 10/01/2019 05:55",
@@ -15,7 +15,7 @@
 		"importProcess:" : "brunobb 10/01/2019 05:22",
 		"model:" : "brunobb 10/01/2019 05:40",
 		"renderContentOn:" : "brunobb 10/01/2019 07:37",
-		"renderImportErrorOn:for:" : "brunobb 10/01/2019 07:27",
+		"renderImportErrorOn:for:" : "brunobb 10/01/2019 08:39",
 		"renderShowParentProcessIconOn:" : "brunobb 10/01/2019 05:52",
 		"renderXpdlActivity:on:" : "brunobb 10/01/2019 07:28",
 		"renderXpdlEndEvent:on:" : "brunobb 10/01/2019 07:29",

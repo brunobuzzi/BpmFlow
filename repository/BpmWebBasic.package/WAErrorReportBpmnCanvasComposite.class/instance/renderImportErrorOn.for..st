@@ -8,5 +8,8 @@ renderImportErrorOn: html for: anXPDLObject
 					tag: html svgCircle 
 					attributes: (self circleAttributesForItemErrorAt: (xCoordinate @ anXPDLObject getYcoordinate))
 					with: [html tag: 'title' with: itemImportReport printAll].
-			xCoordinate := xCoordinate + 22.
+
+			self renderTextOn: html text: itemImportReport code at: (xCoordinate - 12 @ anXPDLObject getYcoordinate + 4).
+
+			xCoordinate := xCoordinate + 32.
 	].
