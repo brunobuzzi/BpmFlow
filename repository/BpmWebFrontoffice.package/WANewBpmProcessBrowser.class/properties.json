@@ -10,7 +10,8 @@
 		"orApplication",
 		"andApplications",
 		"orApplications",
-		"processInstance" ],
+		"processInstance",
+		"selectedSubProcess" ],
 	"name" : "WANewBpmProcessBrowser",
 	"pools" : [
 		 ],
