@@ -11,7 +11,8 @@ renderItemComponentOn: html
 	self getCurrentDashboardItemsAsOrderedCollection keysAndValuesDo: [:index :dashboardInstance | | chartDefinition |
 			chartDefinition := dashboardInstance itemDefinition chartDefinition.
 			html div style: 'display: inline-grid;'; with: [
-				html div with: [self renderActionsOn: html forChart: dashboardInstance itemDefinition in: dashboardInstance].
+				renderChartOptions 
+				ifTrue: [html div with: [self renderActionsOn: html forChart: dashboardInstance itemDefinition in: dashboardInstance]].
 				html div with: [chartDefinition renderReport: dashboardInstance report on: html].
 			].
 		].
