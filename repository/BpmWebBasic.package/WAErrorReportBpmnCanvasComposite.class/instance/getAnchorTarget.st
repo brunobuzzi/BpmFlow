@@ -1,0 +1,4 @@
+other
+getAnchorTarget
+
+	^'_self'

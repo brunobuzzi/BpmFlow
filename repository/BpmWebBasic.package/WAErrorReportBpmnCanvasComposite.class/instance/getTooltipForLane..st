@@ -1,0 +1,4 @@
+other
+getTooltipForLane: aXPDLLaneNode
+
+	^nil

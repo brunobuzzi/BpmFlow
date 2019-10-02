@@ -9,7 +9,7 @@ renderXpdlLane: aXPDLLaneNode on: html
 	self renderSvgElementOn: html 
 			tag: html svgRectangle 
 			attributes: (aXPDLLaneNode asSvgSmallGeometryFor: self) 
-			with: [(self getTooltipOrNilForLane: aXPDLLaneNode in: model application) ifNotNil: [:tooltip | html tag: 'title' with: tooltip] ifNil: []].
+			with: [(self getTooltipForLane: aXPDLLaneNode) ifNotNil: [:tooltip | html tag: 'title' with: tooltip]].
 
 	"render the main lane rectabgle which contains bpmn elements"
 	self renderSvgElementOn: html 

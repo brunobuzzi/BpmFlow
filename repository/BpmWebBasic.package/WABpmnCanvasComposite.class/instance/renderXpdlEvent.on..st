@@ -10,4 +10,4 @@ renderXpdlEvent: aXPDLEventNode on: html
 
 	aXPDLEventNode isErrorNode ifTrue: [^self renderErrorEvent: aXPDLEventNode on: html].
 	
-	^self renderEvent: aXPDLEventNode on: html
+	self renderEvent: aXPDLEventNode on: html

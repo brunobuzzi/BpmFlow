@@ -1,0 +1,4 @@
+other
+renderLinkToSubprocess
+
+	^model isProcessInstance

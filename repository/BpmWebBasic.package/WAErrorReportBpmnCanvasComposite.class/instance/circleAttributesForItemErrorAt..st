@@ -1,4 +1,4 @@
-render xpdl
+other
 circleAttributesForItemErrorAt: aPoint
 	| associations |
 

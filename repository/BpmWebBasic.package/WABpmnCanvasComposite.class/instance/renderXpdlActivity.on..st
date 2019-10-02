@@ -12,7 +12,7 @@ renderXpdlActivity: aXPDLActivityNode on: html
 	aXPDLActivityNode isOrbeonTaskNode
 	ifTrue:[ html anchor 
 						url: (self getUrlForOrbeon: aXPDLActivityNode getName);
-						target: (model isProcessInstance ifFalse: ['_blank'] ifTrue: ['_self']);
+						target: self getAnchorTarget;
 						with: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize].
 	]
 	ifFalse: [self renderTextOn: html text: aXPDLActivityNode getName at: textPoint textSizePx: self defaultActivityNameSize].
