@@ -1,4 +1,6 @@
 render subprocess
 selectSubProcessToRender: subProcName
 
-	subProcess := (self getModelOrSubProcess getSubProcessNamed: subProcName ifAbsent: [nil])
+	subProcess := (self getModelOrSubProcess getSubProcessNamed: subProcName ifAbsent: [nil]).
+
+	mainPanel selectedSubProcess: subProcess

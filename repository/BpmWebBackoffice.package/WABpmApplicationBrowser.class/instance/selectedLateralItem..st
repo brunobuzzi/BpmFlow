@@ -3,4 +3,5 @@ selectedLateralItem: newValue
 
 	super selectedLateralItem: newValue.
 
-	selectedProcess := nil
+	selectedProcess := nil.
+	selectedSubProcess := nil.
