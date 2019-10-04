@@ -1,4 +1,4 @@
 other
 renderLinkToSubprocess
 
-	^model isProcessInstance
+	^model isProcessDefinition
