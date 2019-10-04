@@ -13,7 +13,7 @@ renderItemComponentOn: html
 			html div style: 'display: inline-grid; background-color: white; margin: 2px;'; with: [
 				renderChartOptions 
 				ifTrue: [html div with: [self renderActionsOn: html forChart: dashboardInstance itemDefinition in: dashboardInstance]].
-				html div with: [chartDefinition renderReport: dashboardInstance report on: html].
+				html div with: [chartDefinition renderReport: dashboardInstance report on: html parent: self].
 			].
 		].
 	].
