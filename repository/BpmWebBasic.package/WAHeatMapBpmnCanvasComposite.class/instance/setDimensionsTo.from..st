@@ -1,10 +1,13 @@
 svg properties
 setDimensionsTo: aWASvgCanvasTag from: xpdlReader
+	| dimensions |
+
+	dimensions := xpdlReader getDiagramDimensions.
 
 	self isScaledByParent ifTrue: [self setParentScaleAttributesWith: xpdlReader getDiagramDimensions].
 	autoSetViewPort ifTrue: [
-		aWASvgCanvasTag attributeAt: 'width' put: '100%'.
-		aWASvgCanvasTag attributeAt: 'height' put: '100%'.
+		aWASvgCanvasTag attributeAt: 'width' put: dimensions x.
+		aWASvgCanvasTag attributeAt: 'height' put: dimensions y.
 	].
 	viewPortArray ifNotNil: [
 		aWASvgCanvasTag attributeAt: 'width' put: viewPortArray first.
