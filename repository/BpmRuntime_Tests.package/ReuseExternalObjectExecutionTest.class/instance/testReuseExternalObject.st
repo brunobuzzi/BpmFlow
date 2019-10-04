@@ -1,6 +1,6 @@
 test
 testReuseExternalObject
-	| currentTask currentProcessMatrix finishedProcessMatrix processId takenProcessMatrix endArtifact |
+	| currentTask currentProcessMatrix finishedProcessMatrix processId takenProcessMatrix endArtifact componentClass |
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
@@ -12,6 +12,7 @@ testReuseExternalObject
 
 	"Step 1 - Form [citizen-appliance]"
 	currentTask := procInstance currentActivities last.
+	componentClass := currentTask getComponentClass. 
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'user' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_citizen_appliance on: procInstance.
@@ -20,6 +21,7 @@ testReuseExternalObject
 	"Step 2 - Form [citizen-appliance-edit]"
 	self assert: (currentTask externalObject == procInstance currentActivities last externalObject).
 	currentTask := procInstance currentActivities last.
+	self assert: (componentClass == currentTask getComponentClass).
 	self assert: (currentTask getDefinitionName = 'citizen-appliance-edit').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'approver' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' on: procInstance.
@@ -28,6 +30,7 @@ testReuseExternalObject
 	"Step 3 - Form [citizen-appliance-edit]"
 	self assert: (currentTask externalObject == procInstance currentActivities last externalObject).
 	currentTask := procInstance currentActivities last.
+	self assert: (componentClass == currentTask getComponentClass).
 	self assert: (currentTask getDefinitionName = 'citizen-appliance-edit-2').
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'form-admin' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vc' on: procInstance.
