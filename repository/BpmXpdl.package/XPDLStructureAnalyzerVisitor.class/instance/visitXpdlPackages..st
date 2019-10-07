@@ -14,6 +14,6 @@ visitXpdlPackages: aCollection
 	allPackagesNames := aCollection collect: [:each | each getName]. "package node name <Package Name='xxx'>"
 
 	aCollection do: [:eachPackage | 
-		(eachPackage getAllSubProcessNodes reject: [:eachSubProcAct | allPackagesNames includes: eachSubProcAct getName]) 
+		(eachPackage getAllSubProcessNodes reject: [:eachSubProcAct | eachSubProcAct isEmbedded or: [allPackagesNames includes: eachSubProcAct getName]]) 
 			do: [:eachSubProcAct | self addSubProcessActivityWithoutProcessDefinition: eachSubProcAct]
 	].

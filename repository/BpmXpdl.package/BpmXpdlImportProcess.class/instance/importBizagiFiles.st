@@ -31,4 +31,6 @@ importBizagiFiles
 	xpdlStructureVisitor visitAllXpdlPackages.
 
 	"If false (no warnings) -> the processes definition are created and but not stored yet"
-	xpdlStructureVisitor hasWarnings ifFalse: [^self createBpmProcessesDefinitions].
+	xpdlStructureVisitor hasWarnings 
+	ifFalse: [processGenerator successfulImport: true.
+				^self createBpmProcessesDefinitions].
