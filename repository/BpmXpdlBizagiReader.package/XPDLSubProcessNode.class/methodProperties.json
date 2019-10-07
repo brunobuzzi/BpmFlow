@@ -3,15 +3,17 @@
 		"newEmbedded" : "BrunoBB 06/26/2016 14:07" },
 	"instance" : {
 		"acceptVisitor:" : "brunobb 12/11/2018 03:12",
+		"asSvgGeometryFor:" : "brunobb 10/07/2019 13:38",
 		"createBpmDefinitionOn:" : "BrunoBB 06/26/2016 14:10",
 		"getLanesFrom:" : "BrunoBB 06/26/2016 14:06",
 		"initialize" : "BrunoBB 06/26/2016 14:47",
 		"isEmbedded" : "BrunoBB 06/26/2016 14:06",
 		"isEmbedded:" : "BrunoBB 06/26/2016 14:06",
 		"isSubProcessNode" : "BrunoBB 06/26/2016 14:06",
-		"setInternalDataWithNode:" : "BrunoBB 06/26/2016 14:06",
+		"setInternalDataWithNode:" : "brunobb 10/07/2019 13:34",
 		"shortType" : "BrunoBB 06/26/2016 14:06",
 		"subProcess" : "BrunoBB 06/26/2016 14:06",
 		"subProcess:" : "BrunoBB 06/26/2016 14:06",
 		"subProcessId" : "BrunoBB 06/26/2016 14:06",
-		"subProcessId:" : "BrunoBB 06/26/2016 14:06" } }
+		"subProcessId:" : "BrunoBB 06/26/2016 14:06",
+		"viewIsExpanded" : "brunobb 10/07/2019 13:33" } }
