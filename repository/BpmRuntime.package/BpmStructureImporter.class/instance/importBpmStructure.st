@@ -14,6 +14,6 @@ importBpmStructure
 	(uploadUser hasAccessToEnvironmentManager not and: [(uploadUser hasAccessTo: configurations last environment) not])
 	ifTrue: [^ImproperBpmOperationException signal: 'This user can not import a structure to a <BpmEnvironment> that is not granted to'].
  
-	configurations do: [:aUserGrantConfiguration | aUserGrantConfiguration applyConfiguration].
+	configurations do: [:aUserGrantConfiguration | aUserGrantConfiguration applyConfigurationOnErrorRollback].
 
 	self executed: true
