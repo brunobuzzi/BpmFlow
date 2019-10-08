@@ -2,7 +2,7 @@ import api
 importBpmStructure
 	"The receiver importe the Environment, Application, Role, User structure into the System"
 
-	uploadUser ifNil: [ImproperBpmOperationException signal: 'A [BpmUser] is need to perform the import process !!!'].
+	uploadUser ifNil: [ImproperBpmOperationException signal: 'A [BpmUser] is needed to perform the import process !!!'].
 
 	self generateConfigurationElements. "generate all elements to be imported and store them in <configurations> collection"
 
