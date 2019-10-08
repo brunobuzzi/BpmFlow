@@ -5,8 +5,8 @@ applyConfiguration
 	2- Create the <BpmFrontOfficeRole> and add it to global cache
 	3- Grant the <BpmUser> to the role" 
 
-	environment registerUser: user ifPresent: [].
 	environment registerApplication: application ifPresent: [] ifTaken: [InvalidCsvConfigurationException signal: 'The Application is already in other Environment'].
+	environment registerUser: user ifPresent: [].
 	
 	role := ((roleType = 'F') ifTrue: [self defaultFrontOfficeRoleClass] ifFalse: [self defaultBackOfficeRoleClass]) createNewOrGetExisting: roleName in: application applicationName.
 	role isAdmin: roleIsAdmin. 
