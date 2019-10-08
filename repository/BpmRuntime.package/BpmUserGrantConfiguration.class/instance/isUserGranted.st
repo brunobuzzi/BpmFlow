@@ -1,0 +1,3 @@
+Accessing
+isUserGranted
+	^isUserGranted
