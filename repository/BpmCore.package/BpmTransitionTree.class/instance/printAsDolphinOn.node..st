@@ -1,4 +1,4 @@
-other
+dolphin smalltalk
 printAsDolphinOn: aStream node: aBpmTransitionTreeNode
 	"The receiver add to <aStream> Dolphin Smalltalk code for the tree node <aBpmTransitionTreeNode>.
 	This is only for development and testing purpose"

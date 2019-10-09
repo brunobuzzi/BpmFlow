@@ -1,4 +1,4 @@
-other
+dolphin smalltalk
 printAsDolphinTree
 	"The receiver print <aString> with Dolphin Smalltalk code to be evaluated by a Dolphin Smalltalk Virtual Machine.
 	This is only for development and testing purpose"
