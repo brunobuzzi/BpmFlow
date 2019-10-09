@@ -13,10 +13,6 @@
 		"roleType",
 		"roleIsAdmin",
 		"environment",
-		"isApplicationRegistered",
-		"isUserRegistered",
-		"roleExist",
-		"isAdmin",
 		"isUserGranted" ],
 	"name" : "BpmUserGrantConfiguration",
 	"pools" : [
