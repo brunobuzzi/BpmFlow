@@ -6,15 +6,15 @@ rollbackConfiguration
 
 	isUserGranted ifFalse: [role ungrantUser: user ifAbsent: []].
 
-"It must remove the user from the role only.
+"It must remove the user from the role ONLY.
 
-If NOT there is a problem here:
+If NOT there is a problem. Case:
 
-    Let say 10 grants are configured (one fail)
+    Let say 10 grants are imported (one fail)
     Because there are still 9 valid grants on the system then:
 
-    * Environment can be not removed
-    * Application can not be removed
-    * Role can not be removed
+    * Environment can be NOT removed
+    * Application can NOT be removed
+    * Role can NOT be removed
 
     Otherwise while removing the object an error will arise."
