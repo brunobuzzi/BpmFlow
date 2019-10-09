@@ -14,6 +14,7 @@
 		"getAllPossibleLoops" : "brunobb 03/14/2019 03:39",
 		"getAllPossiblePath" : "brunobb 08/16/2019 11:43",
 		"getAllPossiblePathToEnd" : "brunobb 08/16/2019 08:41",
+		"getArtifacts" : "brunobb 10/09/2019 13:13",
 		"getLeafNodes" : "brunobb 03/14/2019 03:05",
 		"initialize" : "brunobb 03/14/2019 03:16",
 		"loopTolerance" : "brunobb 03/14/2019 03:05",
