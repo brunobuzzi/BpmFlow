@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bpmBlock" ],
+	"name" : "BpmBlockCodeTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
