@@ -1,14 +1,16 @@
 test
 testFieldsInGatewayConditions
 
-	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'taskTwoOption').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'name').
 
-	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'taskThreeOption').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'amount').
 
-	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'taskFiveDate').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'date').
 
-	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'taskSixTime').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'boolean').
 
-	self deny: (procDefinition hasGatewayConditionIncludingFieldNamed: 'name').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'time').
 
-	self deny: (procDefinition hasGatewayConditionIncludingFieldNamed: 'surname').
+	self assert: (procDefinition hasGatewayConditionIncludingFieldNamed: 'timeStamp').
+
+	self deny: (procDefinition hasGatewayConditionIncludingFieldNamed: 'now').
