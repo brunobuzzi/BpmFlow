@@ -1,2 +1,4 @@
 gateways
 acceptExclusiveGateway: aBpmExclusiveGatewayDefinition
+
+	self acceptGateway: aBpmExclusiveGatewayDefinition

@@ -1,2 +1,4 @@
 tasks
 acceptScriptTask: aBpmScriptTaskDefinition
+
+	self acceptTask: aBpmScriptTaskDefinition

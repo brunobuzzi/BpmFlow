@@ -1,2 +1,4 @@
 tasks
 acceptOrbeonTask: aBpmOrbeonTaskDefinition
+
+	self acceptTask: aBpmOrbeonTaskDefinition

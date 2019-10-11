@@ -1,4 +1,4 @@
-import
+mapping
 getNumberOfProcesses
 
 	^indexXpdlFileMapper size

@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"visitedTasks",
+		"visitedTransitions",
+		"missingEvaluationFields" ],
 	"name" : "BpmFieldsInCondtionsAfterGatewayVisitor",
 	"pools" : [
 		 ],
