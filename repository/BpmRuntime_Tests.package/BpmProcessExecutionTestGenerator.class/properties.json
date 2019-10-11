@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"procInstance" ],
+	"name" : "BpmProcessExecutionTestGenerator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
