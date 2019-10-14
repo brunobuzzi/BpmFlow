@@ -1,4 +1,4 @@
 other
 getSystemName
 
-	^'BPM'
+	^'Web_BPM'
