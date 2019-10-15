@@ -8,9 +8,9 @@ renderContentOn: html
 					html legend: ('New Application' translateIn: self session).
 					html label for: 'appName'; with: ('Application Name' translateIn: self session).
 					html textInput id: 'appName'; callback: [:value | self addValue: value named: 'appName']. 
-					html div class: 'top-search-div margin-top-20px width-120px'; with: [
+					html div class: 'width-100per margin-top-10px margin-bottom-10px'; with: [
 						html checkbox attributeAt: 'id' put: 'appType'; callback: [:value | self addValue: value named: 'isOrbeon'].
-						html label attributeAt: 'for' put: 'appType'; with: ('Is Orbeon ?' translateIn: self session).
+						html label attributeAt: 'for' put: 'appType'; with: ('Includes Orbeon Forms ?' translateIn: self session).
 					].
 					html button 
 						callback: [self createApplication];
