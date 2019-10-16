@@ -1,0 +1,4 @@
+other
+reportName
+
+	^'Muti Chart'

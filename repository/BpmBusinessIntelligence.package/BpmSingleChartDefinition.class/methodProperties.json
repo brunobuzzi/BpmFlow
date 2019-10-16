@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addToCache" : "brunobb 12/03/2018 11:41",
 		"application" : "brunobb 03/25/2019 10:24",
 		"applicationName" : "brunobb 12/03/2018 11:41",
 		"chartType" : "brunobb 12/03/2018 11:41",
@@ -28,6 +27,7 @@
 		"getDescriptionItems" : "brunobb 12/03/2018 11:41",
 		"getDistributionName" : "brunobb 12/03/2018 11:41",
 		"hasDates" : "brunobb 12/03/2018 11:41",
+		"hasScopeClass:" : "brunobb 10/16/2019 12:44",
 		"hasSecondaryDistritbution" : "brunobb 12/03/2018 11:41",
 		"isMultiFieldDistribution" : "brunobb 12/03/2018 11:41",
 		"printDistributionMethod" : "brunobb 12/03/2018 11:41",
@@ -64,7 +64,6 @@
 		"report" : "brunobb 12/03/2018 11:41",
 		"report:" : "brunobb 12/03/2018 11:41",
 		"reportName" : "brunobb 12/03/2018 11:41",
-		"reportRepository" : "brunobb 12/03/2018 11:41",
 		"roleName" : "brunobb 12/03/2018 11:41",
 		"scope" : "brunobb 12/03/2018 11:41",
 		"scope:" : "brunobb 12/03/2018 11:41",

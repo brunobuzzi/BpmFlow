@@ -1,0 +1,4 @@
+other
+printSecondsToConstruct
+
+	^'Muti Chart'
