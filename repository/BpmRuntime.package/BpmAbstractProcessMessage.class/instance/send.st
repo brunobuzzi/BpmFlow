@@ -10,7 +10,7 @@ send
 
 	targetProcesses ifEmpty: [^self throwNoProcessesException]. 
 
-	targetProcesses do: [:procInstance | | gatewayInstance transitionDefinition transitionInstance eventInstance |
+	(targetProcesses select: [:each | each isRunning]) do: [:procInstance | | gatewayInstance transitionDefinition transitionInstance eventInstance |
 		gatewayInstance := procInstance getRunningGatewayNamed: receiverGatewayName ifNone: [^self throwNoGatewayException].
 		transitionDefinition := gatewayInstance getNextTransitionDefinitionForArtifactNamed: receiverEventName ifNone: [^self throwNoEventException].
 		"the event instance is created here"
