@@ -14,6 +14,7 @@ createNewTransition: aBpmTransitionDefinition from: aBpmArtifactInstance
 
 		"create the end artifact of the new transition"
 		nextArtifactInstance := nextArtifactDefinition createInstanceOn: self parentArtifact: aBpmArtifactInstance.
+		nextArtifactInstance parentTransition: newTransition. 
 
 		newTransition startArtifact: aBpmArtifactInstance; "also add <newTransition> as an outgoing transition to <aBpmArtifactInstance>"
 			endArtifact: nextArtifactInstance. "also add <newTransition> as an incomming transition to <nextArtifactInstance>"

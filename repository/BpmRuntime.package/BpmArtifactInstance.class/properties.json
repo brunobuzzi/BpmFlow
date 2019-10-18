@@ -15,7 +15,8 @@
 		"state",
 		"exceptions",
 		"endTime",
-		"parentArtifact" ],
+		"parentArtifact",
+		"parentTransition" ],
 	"name" : "BpmArtifactInstance",
 	"pools" : [
 		 ],
