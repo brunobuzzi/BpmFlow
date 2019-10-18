@@ -8,7 +8,7 @@ testSetVariableWithProcessQuery
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: (self formInstance_task1: value) on: procInstance.
 	self assert: (currentTask getDefinitionName = 'task-1').
 
-	apiOperation appName: 'ue';
+	apiOperation appName: 'ue-test';
 		processDefinitionId: procDefinition id printString;
 		processInstanceId: '0';
 		xmlString: (self bodyExample2: value).

@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
+	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'visa-appliance' in: 'ue-test'. "answer a collection with all versions"
 
 	procDefinition := procDefinition ifEmpty: [self createApplianceProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
@@ -32,9 +32,9 @@ setUp
 	environment registerUser: (self getUserNamed: 'andrew po') ifPresent: [].
 	environment registerUser: (self getUserNamed: 'andrew do') ifPresent: [].
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa manager' in: 'ue') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa checker' in: 'ue') grantUser: (self getUserNamed: 'andrew vc') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'finance officer' in: 'ue') grantUser: (self getUserNamed: 'andrew fo') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'properties officer' in: 'ue') grantUser: (self getUserNamed: 'andrew po') ifPresent: [].
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'debts officer' in: 'ue') grantUser: (self getUserNamed: 'andrew do') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue-test') grantUser: (self getUserNamed: 'andrew vo') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa manager' in: 'ue-test') grantUser: (self getUserNamed: 'andrew vm') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa checker' in: 'ue-test') grantUser: (self getUserNamed: 'andrew vc') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'finance officer' in: 'ue-test') grantUser: (self getUserNamed: 'andrew fo') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'properties officer' in: 'ue-test') grantUser: (self getUserNamed: 'andrew po') ifPresent: [].
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'debts officer' in: 'ue-test') grantUser: (self getUserNamed: 'andrew do') ifPresent: [].

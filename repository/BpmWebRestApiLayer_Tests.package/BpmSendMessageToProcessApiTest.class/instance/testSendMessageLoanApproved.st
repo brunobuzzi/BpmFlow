@@ -18,7 +18,7 @@ testSendMessageLoanApproved
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
 	apiOperation := BpmSendMessageToProcessApi newFor: WABpmPersistenceOrbeonLayer new withXml: self bodyExample.
-	apiOperation appName: 'ue';
+	apiOperation appName: 'ue-test';
 		processName: 'House Purchase with Loan';
 		gatewayName: 'loan event';
 		eventName: 'loan message';

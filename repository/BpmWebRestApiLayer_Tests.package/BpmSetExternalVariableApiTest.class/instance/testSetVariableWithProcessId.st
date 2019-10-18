@@ -3,7 +3,7 @@ testSetVariableWithProcessId
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 
-	apiOperation appName: 'ue';
+	apiOperation appName: 'ue-test';
 		processDefinitionId: procDefinition id printString;
 		processInstanceId: procInstance id printString;
 		xmlString: '<setvariables>

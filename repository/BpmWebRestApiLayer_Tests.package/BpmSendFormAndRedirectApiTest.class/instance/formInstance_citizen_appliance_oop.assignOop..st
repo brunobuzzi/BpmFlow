@@ -5,6 +5,6 @@ formInstance_citizen_appliance_oop: taskOop assignOop: assignmentOop
 				createFormInstance: #form_citizen_appliance_oop:assignment: 
 				withValues: (Array with: taskOop with: assignmentOop)
 				definitionNamed: 'citizen-appliance' 
-				app: 'ue' 
-				definitionMethod: #formDefinition_citizen_appliance 
+				app: 'ue-test' 
+				definitionMethod: #formDefinition_citizen_appliance_2
 				in: procInstance

@@ -14,7 +14,7 @@ testSendAndRedirect
 	formInstance := self formInstance_citizen_appliance_oop: currentTask asOop printString assignOop: assignment asOop printString.
 	self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vo' withForm: formInstance on: procInstance.
 
-	apiOperation appName: 'ue';
+	apiOperation appName: 'ue-test';
 		formName: 'citizen-appliance';
 		language: 'en';
 		valid: true;

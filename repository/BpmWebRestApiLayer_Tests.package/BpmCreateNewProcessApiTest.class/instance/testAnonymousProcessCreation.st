@@ -4,7 +4,7 @@ testAnonymousProcessCreation
 
 	simpleRegistrationForm := self formInstance_simple_registration.
 
-	apiOperation appName: 'st';
+	apiOperation appName: 'ue-test';
 		formName: 'simple-registration';
 		id: simpleRegistrationForm id;
 		processId: procDefinition id.

@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessDefinition" : "brunobb 03/25/2019 08:47",
-		"formInstance_simple_registration" : "brunobb 12/04/2018 08:56",
-		"setUp" : "brunobb 03/25/2019 08:45",
-		"tearDown" : "brunobb 05/22/2019 12:13",
-		"testAnonymousProcessCreation" : "brunobb 12/04/2018 09:16" } }
+		"createProcessDefinition" : "brunobb 10/17/2019 07:45",
+		"formInstance_simple_registration" : "brunobb 10/18/2019 09:52",
+		"setUp" : "brunobb 10/17/2019 07:43",
+		"tearDown" : "brunobb 10/17/2019 07:43",
+		"testAnonymousProcessCreation" : "brunobb 10/17/2019 07:43" } }
