@@ -8,6 +8,6 @@ testMultiRoleAndInformedCreation
 
 	self assert: ((taskDefinition extendedValueOf: 'BizagiInformed') = 'data-entry-manager').
 
-	self assert: (taskDefinition onCreationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: 'ue')).
-	self assert: (taskDefinition onModificationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: 'ue')).
-	self assert: (taskDefinition onFinalizationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: 'ue')).
+	self assert: (taskDefinition onCreationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: self defaultApplicationName)).
+	self assert: (taskDefinition onModificationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: self defaultApplicationName)).
+	self assert: (taskDefinition onFinalizationIsInformed: (self defaultFrontOfficeRoleClass createNewOrGetExisting: 'data-entry-manager' in: self defaultApplicationName)).

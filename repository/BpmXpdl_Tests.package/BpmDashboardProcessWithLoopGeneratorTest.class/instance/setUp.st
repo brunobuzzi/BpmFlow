@@ -11,7 +11,7 @@ setUp
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
 	processGenerator 
-		mapProcess: 'dashboard-process-with-loop' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
+		mapProcess: 'dashboard-process-with-loop' toApplication: (self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.
 
 	^processGenerator

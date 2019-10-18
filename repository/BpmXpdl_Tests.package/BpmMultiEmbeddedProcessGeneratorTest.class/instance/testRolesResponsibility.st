@@ -1,4 +1,4 @@
-other
+tests
 testRolesResponsibility
 	| process tasks subProc isGranted |
 

@@ -1,4 +1,4 @@
-other
+tests
 testInOutTransitions3
 	| task processDefinition |
 

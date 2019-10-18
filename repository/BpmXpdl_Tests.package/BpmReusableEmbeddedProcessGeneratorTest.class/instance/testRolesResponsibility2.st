@@ -1,4 +1,4 @@
-other
+tests
 testRolesResponsibility2
 	| process tasks isGranted |
 

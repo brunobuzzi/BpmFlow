@@ -1,4 +1,4 @@
-other
+tests
 testSubProcessTypes
 
 	self assert: self getEmbeddedSubProcess isEmbedded.

@@ -1,4 +1,4 @@
-other
+tests
 testActivitiesNames
 	| taskNames processDefinition |
 
@@ -8,7 +8,7 @@ testActivitiesNames
 	(taskNames collect: [:each | processDefinition getScriptNamed: each ifNone: [nil]])
 		do: [:each | self assert: each notNil].
 
-	taskNames := #('embedded-sub-proc' 'reusabe-sub-proc').
+	taskNames := #('embedded-sub-proc' 'reusable-sub-proc').
 	(taskNames collect: [:each | processDefinition getSubProcessTaskNamed: each ifNone: [nil]])
 		do: [:each | self assert: each notNil].
 

@@ -11,7 +11,7 @@ setUp
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
 	processGenerator 
-		mapProcess: 'multi-embedded' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
+		mapProcess: 'multi-embedded' toApplication: (self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.
 
 	^processGenerator

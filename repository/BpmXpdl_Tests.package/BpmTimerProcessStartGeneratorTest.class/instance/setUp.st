@@ -9,5 +9,5 @@ setUp
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
-	processGenerator mapProcess: 'timer-process-start' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
+	processGenerator mapProcess: 'timer-process-start' toApplication: (self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.

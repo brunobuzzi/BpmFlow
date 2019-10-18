@@ -9,5 +9,5 @@ setUp
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
-	processGenerator mapProcess: 'multi-role' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ue');
+	processGenerator mapProcess: 'multi-role' toApplication: (self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.

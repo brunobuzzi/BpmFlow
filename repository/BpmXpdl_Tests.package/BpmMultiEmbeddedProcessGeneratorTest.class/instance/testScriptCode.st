@@ -1,4 +1,4 @@
-other
+tests
 testScriptCode
 	| script processDefinition |
 

@@ -1,4 +1,4 @@
-other
+tests
 testRoles
 	| task subProc processDefinition |
 
@@ -11,5 +11,5 @@ testRoles
 	subProc := processDefinition getSubProcessTaskNamed: 'embedded-sub-proc' ifNone: [self assert: false].
 	self assert: (subProc roles anySatisfy: [:each | each name = 'administrator']).
 
-	subProc := processDefinition getSubProcessTaskNamed: 'reusabe-sub-proc' ifNone: [self assert: false].
+	subProc := processDefinition getSubProcessTaskNamed: 'reusable-sub-proc' ifNone: [self assert: false].
 	self assert: (subProc roles anySatisfy: [:each | each name = 'administrator']).

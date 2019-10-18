@@ -1,10 +1,10 @@
-other
+tests
 testInOutTransitions
 	| task processDefinition subProc1 subProc2 |
 
 	processDefinition := self getTopProcess.
 	subProc1 := processDefinition getSubProcessTaskNamed: 'embedded-sub-proc' ifNone: [self assert: false].
-	subProc2 := processDefinition getSubProcessTaskNamed: 'reusabe-sub-proc' ifNone: [self assert: false].
+	subProc2 := processDefinition getSubProcessTaskNamed: 'reusable-sub-proc' ifNone: [self assert: false].
 	task := processDefinition getScriptNamed: 'script' ifNone: [self assert: false].
 
 	self assert: (processDefinition startEvent outTransitions last == task inTransitions last).

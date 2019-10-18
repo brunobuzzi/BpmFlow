@@ -1,4 +1,4 @@
 other
 getReusableSubProcess
 
-	^processGenerator getProcessDefinitionNamed: 'Reusable-Script' ifNone: [self assert: false]
+	^processGenerator getProcessDefinitionNamed: 'reusable-sub-proc' ifNone: [self assert: false]

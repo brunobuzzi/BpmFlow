@@ -1,4 +1,4 @@
-other
+tests
 testActivitiesNames
 	| taskNames processDefinition |
 

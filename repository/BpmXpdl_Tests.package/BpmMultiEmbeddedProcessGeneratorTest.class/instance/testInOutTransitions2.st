@@ -1,4 +1,4 @@
-other
+tests
 testInOutTransitions2
 	| task processDefinition subProc1 |
 

@@ -1,4 +1,4 @@
-other
+tests
 testRolesResponsibility
 	| process tasks subProc isGranted |
 
@@ -13,6 +13,6 @@ testRolesResponsibility
 	isGranted := subProc isGrantedRoleNamed: 'administrator'.
 	self assert: isGranted.
 
-	subProc := process getSubProcessTaskNamed: 'reusabe-sub-proc' ifNone: [self assert: false].
+	subProc := process getSubProcessTaskNamed: 'reusable-sub-proc' ifNone: [self assert: false].
 	isGranted := subProc isGrantedRoleNamed: 'administrator'.
 	self assert: isGranted.
