@@ -11,6 +11,7 @@ createNewTransition: aBpmTransitionDefinition from: aBpmArtifactInstance
 
 	1 to: numberOfTasks do: [:index |
 		newTransition := BpmTransitionInstance newBasedOn: aBpmTransitionDefinition.
+		newTransition parentTransition: aBpmArtifactInstance parentTransition.
 
 		"create the end artifact of the new transition"
 		nextArtifactInstance := nextArtifactDefinition createInstanceOn: self parentArtifact: aBpmArtifactInstance.
