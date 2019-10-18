@@ -2,7 +2,7 @@ other
 testActivitiesNames
 	| taskNames |
 
-	taskNames := #('script' 'embedded-sub-proc' 'reusabe-sub-proc').
+	taskNames := #('script' 'embedded-sub-proc' 'reusable-sub-proc').
 
 	self assert: (self getMainWorkflow getScriptNodes allSatisfy: [:each | taskNames includes: each getName]).
 	self assert: (self getMainWorkflow getScriptNodes size = 1).

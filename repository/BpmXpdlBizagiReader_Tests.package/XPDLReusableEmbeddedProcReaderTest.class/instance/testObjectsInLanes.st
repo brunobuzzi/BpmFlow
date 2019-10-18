@@ -15,4 +15,4 @@ testObjectsInLanes
 
 	self assert: ((lane1 getAnyObjectNamed: 'embedded-sub-proc' ifNone: [self assert: false]) == (workflow getSubprocessNamed: 'embedded-sub-proc' ifNone: [self assert: false])).
 
-	self assert: ((lane1 getAnyObjectNamed: 'reusabe-sub-proc' ifNone: [self assert: false]) == (workflow getSubprocessNamed: 'reusabe-sub-proc' ifNone: [self assert: false])).
+	self assert: ((lane1 getAnyObjectNamed: 'reusable-sub-proc' ifNone: [self assert: false]) == (workflow getSubprocessNamed: 'reusable-sub-proc' ifNone: [self assert: false])).

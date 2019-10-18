@@ -1,4 +1,4 @@
 other
 getSubProcessXpdlPackage
 
-	^reader getPackageNamed: 'reusabe-sub-proc'
+	^reader getPackageNamed: 'reusable-sub-proc'
