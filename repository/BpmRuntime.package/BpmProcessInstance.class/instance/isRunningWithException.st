@@ -1,0 +1,4 @@
+execution states
+isRunningWithException
+
+	^self currentState isRunningWithException
