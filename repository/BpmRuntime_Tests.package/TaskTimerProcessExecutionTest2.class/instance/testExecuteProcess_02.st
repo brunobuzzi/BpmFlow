@@ -40,3 +40,8 @@ testExecuteProcess_02
 	self assert: procInstance hasFinalized.
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) isEmpty.
+
+	self assert: procInstance endEventsSize equals: 1.
+	currentTask := procInstance currentActivities last.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_user_form on: procInstance.
+	self assert: procInstance endEventsSize equals: 2.

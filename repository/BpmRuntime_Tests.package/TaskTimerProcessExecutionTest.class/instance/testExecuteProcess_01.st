@@ -14,7 +14,8 @@ testExecuteProcess_01
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
 
 	"formInstance_set_timer_term: is set with 60 seconds and this number is used by timer named Term to wait before finishing the process"
-
+	
+	self formInstance_user_form. "to create the <OrbeonFormDefinition>"
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term on: procInstance.  "60 seconds to wait"
 
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).

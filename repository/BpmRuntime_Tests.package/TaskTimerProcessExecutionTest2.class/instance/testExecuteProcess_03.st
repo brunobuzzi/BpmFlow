@@ -47,3 +47,13 @@ testExecuteProcess_03
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: procInstance hasFinalized.
 	self assert: (procInstance currentActivities size = 2).
+
+	self assert: procInstance endEventsSize equals: 1.
+	currentTask := procInstance currentActivities last.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_user_form on: procInstance. "finalize the first <user-form> form"
+	self assert: procInstance endEventsSize equals: 2.
+
+	self assert: procInstance endEventsSize equals: 2.
+	currentTask := procInstance currentActivities last.
+	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_user_form on: procInstance. "finalize the second <user-form> form"
+	self assert: procInstance endEventsSize equals: 3.
