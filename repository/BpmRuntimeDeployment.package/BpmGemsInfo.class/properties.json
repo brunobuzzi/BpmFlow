@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntimeDeployment",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmGemsInfo",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

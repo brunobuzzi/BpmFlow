@@ -47,6 +47,7 @@ baseline: spec
 		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
+		spec package: 'BpmRuntimeDeployment' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
 		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('BpmRuntime' 'Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
