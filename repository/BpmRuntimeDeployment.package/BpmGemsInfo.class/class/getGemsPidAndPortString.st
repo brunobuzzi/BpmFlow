@@ -5,6 +5,6 @@ getGemsPidAndPortString
 
 	stream := WriteStream on: String new.
 
-	self getGemsPidAndPort keysAndValuesDo: [:port :pid  | stream nextPutAll: port printString, '>>', pid printString, ';;'].
+	self getGemsPidAndPort keysAndValuesDo: [:port :pid  | stream nextPutAll: port printString, '>>', pid printString, ','].
 
 	^stream contents
