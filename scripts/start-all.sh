@@ -2,17 +2,20 @@
 #! /bin/sh
 #set -x
 if [ "$1" == "-h" ]; then
-  echo "The command take no arugments";
-  echo "It will start all Web Servers contained in the file ports-all.ini:";
+  echo "Usage: start-all (with no arguments)"
+  echo "Start all Web Servers contained in the file (ports-all.ini):"; 
   if [ ! -f ports-all.ini ]; 
-    then echo "ports-all.ini file does not exist command can not be executed"
-    else cat ports-all.ini;
+    then echo "ports-all.ini file does not exist the script can not be executed"
+    else (cat ports-all.ini; echo)
   fi
-  echo ;
+  echo "The environment variable GS_HOME must be set";
+  echo "The (ports-all.ini) file has to have the following format: port1,port2,port3";
+  echo "For example: 8787,8888,8989";  
+  echo "This script is used in conjunction with stop-all script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
-  echo "GS_HOME variable is unset";
+  echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
 $GS_HOME/bin/startTopaz devKit_34 -u "WebServer" -il <<EOF >>MFC.out
