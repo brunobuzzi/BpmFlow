@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"gsBpmFlowPath" : "brunobb 10/29/2019 07:28",
+		"gsHomePath" : "brunobb 10/29/2019 07:28",
+		"gsShareReposPath" : "brunobb 10/29/2019 07:28",
+		"testRegisterApplicationShExist" : "brunobb 10/29/2019 07:26",
+		"testStartAllShExist" : "brunobb 10/29/2019 07:26",
+		"testStartDeferredScriptsShExist" : "brunobb 10/29/2019 07:26",
+		"testStartOnShExist" : "brunobb 10/29/2019 07:27",
+		"testStartTimersLoopShExist" : "brunobb 10/29/2019 07:27",
+		"testStartZnShExist" : "brunobb 10/29/2019 07:27",
+		"testStopAllShExist" : "brunobb 10/29/2019 07:27",
+		"testStopOnShExist" : "brunobb 10/29/2019 07:27",
+		"testStopZnShExist" : "brunobb 10/29/2019 07:27",
+		"testUnregisterApplicationShExist" : "brunobb 10/29/2019 07:27" } }
