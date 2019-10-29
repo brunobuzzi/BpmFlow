@@ -1,7 +1,7 @@
 #Requires GS_HOME variable defined
 #! /bin/sh
 #set -x
-if [ "$1" == "-h" ]; then
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: stop-all (with no arguments)"
   echo "Stop all Web Servers contained in the file (ports-all.ini):"; 
   if [ ! -f ports-all.ini ]; 

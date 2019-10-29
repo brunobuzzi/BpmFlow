@@ -1,7 +1,7 @@
 #Requires GS_HOME variable defined
 #! /bin/sh
 #set -x
-if [ "$1" == "-h" ]; then
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: start-on PORT"
   echo "Start a Web Server on port number PORT"; 
   echo "The environment variable GS_HOME must be set"; 

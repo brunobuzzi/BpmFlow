@@ -1,7 +1,7 @@
 #Requires GS_HOME variable defined
 #! /bin/sh
 #set -x
-if [ "$1" == "-h" ]; then
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: start-timers-loop (with no arguments)"
   echo "Start a OS Gem process to manage Bpm Flow Timers";
   echo "This is a 24x7 Gem process"; 

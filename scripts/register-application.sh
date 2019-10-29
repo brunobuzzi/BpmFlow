@@ -1,7 +1,7 @@
 #Requires GS_HOME variable defined
 #! /bin/sh
 #set -x
-if [ "$1" == "-h" ]; then
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: register-application (with no arguments)"
   echo "This script is to register Bpm Flow web application and it should be executed only once after the installation process";
   echo "To unregister the web application see unregister-application script"     

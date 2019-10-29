@@ -1,7 +1,7 @@
 #Requires GS_HOME variable defined
 #! /bin/sh
 #set -x
-if [ "$1" == "-h" ]; then
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: start-zn (with no arguments)"
   echo "Start all Web Servers contained in the file (zn-ports.ini):"; 
   if [ ! -f zn-ports.ini ]; 
