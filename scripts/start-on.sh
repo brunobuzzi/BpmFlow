@@ -12,7 +12,7 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-$GS_HOME/bin/startTopaz devKit_34 -u "WebServer" -il <<EOF >>MFC.out
+nohup $GS_HOME/bin/startTopaz devKit_34 -u "WebServer" -il <<EOF >>MFC.out
 set user DataCurator password swordfish gemstone devKit_34
 login
 exec 
