@@ -9,7 +9,7 @@ renderAddApplicationToEnvironmentOn: html
 							domainObject: nil 
 							arguments: #().
 
-	html div class: 'margin-left-5px'; with: [
+	html div class: 'padding-left-10px'; with: [
 		html anchor 
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;

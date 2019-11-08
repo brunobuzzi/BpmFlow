@@ -18,7 +18,7 @@ renderItemComponentOn: html
 
 		html div id: 'environment-users'; with: [
 			html div id: 'environment-users-title'; with: [html output: ('Users' translateIn: self session)]. 
-			self renderAddUserToEnvironmentOn: html.
+			self renderUserAutocompletionOn: html.
 			self renderUsersOfSelectedEnvironmentOn: html.
 		].
 	].
