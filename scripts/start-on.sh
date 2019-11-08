@@ -35,7 +35,7 @@ exec
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
 
-  BpmAppLinuxScripts startOnPortScript: '$1'.
+  BpmAppLinuxScripts startOnPortScript: $1.
 %
 exit
 EOF
