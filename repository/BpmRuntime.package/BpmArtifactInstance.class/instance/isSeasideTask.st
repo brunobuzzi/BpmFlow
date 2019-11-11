@@ -1,0 +1,4 @@
+testing
+isSeasideTask
+
+	^definition isSeasideTask
