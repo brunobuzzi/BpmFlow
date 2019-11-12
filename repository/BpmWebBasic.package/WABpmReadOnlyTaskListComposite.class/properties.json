@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmReadOnlyTaskListComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmTaskListHolder",
+	"type" : "normal" }

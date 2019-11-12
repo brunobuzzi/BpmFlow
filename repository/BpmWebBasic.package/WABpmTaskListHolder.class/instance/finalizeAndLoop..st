@@ -1,0 +1,4 @@
+other
+finalizeAndLoop: aBpmArtifactInstance
+
+	self subclassResponsibility

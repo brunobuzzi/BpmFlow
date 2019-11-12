@@ -1,0 +1,4 @@
+other
+closeSendAndSelectUsers: aBpmArtifactInstance
+
+	self subclassResponsibility

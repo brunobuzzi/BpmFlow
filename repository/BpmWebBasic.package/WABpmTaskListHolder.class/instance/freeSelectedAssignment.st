@@ -1,0 +1,4 @@
+other
+freeSelectedAssignment
+
+	self subclassResponsibility

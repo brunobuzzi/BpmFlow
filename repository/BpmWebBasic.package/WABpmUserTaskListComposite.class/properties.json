@@ -1,0 +1,15 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assignationComposite",
+		"innerSeasideComponent" ],
+	"name" : "WABpmUserTaskListComposite",
+	"pools" : [
+		 ],
+	"super" : "WABpmTaskListHolder",
+	"type" : "normal" }

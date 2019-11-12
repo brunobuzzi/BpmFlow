@@ -1,6 +1,4 @@
 process
 defaultTaskListCompositeClass
 
-	"^WABpmTaskListThinComposite"
-
-	^WABpmTaskListJsComposite
+	^WABpmUserTaskListComposite

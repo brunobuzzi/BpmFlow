@@ -1,6 +1,4 @@
 other
 defaultTaskListCompositeClass
 
-	"^WABpmTaskListThinComposite"
-
-	^WABpmTaskListJsComposite
+	^WABpmReadOnlyTaskListComposite

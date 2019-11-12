@@ -1,0 +1,4 @@
+other
+renderItemDescriptionAditionalDataOn: html
+
+	self subclassResponsibility
