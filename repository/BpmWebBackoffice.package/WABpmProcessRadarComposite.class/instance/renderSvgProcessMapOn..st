@@ -1,9 +1,13 @@
 other
 renderSvgProcessMapOn: html
-	| svgCanvas |
 
-	svgCanvas := self defaultBpmnCanvasClass parent: self.
+	selectedObject ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
 
-	svgCanvas model: selectedObject.
-
-	html div with: [html render: svgCanvas]
+	taskListComposite 
+	ifNil: [taskListComposite := (self defaultTaskListCompositeClass parent: self) model: selectedObject.
+			taskListComposite 
+				isBannerAvailable: false;
+				areActionsAvailable: false]
+	ifNotNil: [(selectedObject == taskListComposite model) ifFalse: [taskListComposite model: selectedObject]].
+	
+	html div id: 'item-customized-component'; with: [html render: taskListComposite].

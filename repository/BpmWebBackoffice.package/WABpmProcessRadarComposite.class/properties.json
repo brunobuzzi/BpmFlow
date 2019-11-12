@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"assignmentBatchedList",
-		"userAssignationBatchedList" ],
+		"userAssignationBatchedList",
+		"taskListComposite" ],
 	"name" : "WABpmProcessRadarComposite",
 	"pools" : [
 		 ],

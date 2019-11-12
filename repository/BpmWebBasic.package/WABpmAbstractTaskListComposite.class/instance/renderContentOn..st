@@ -2,10 +2,12 @@ other
 renderContentOn: html
 	| heightClass |
 
-	html div id: 'item-complete-description'; class: 'lateral-right-component-description';
-		with: [self renderItemDescriptionOn: html.].
+	isBannerAvailable ifTrue: [
+		html div id: 'item-complete-description'; class: 'lateral-right-component-description';
+			with: [self renderItemDescriptionOn: html.].
 
-	html horizontalRule.
+		html horizontalRule.
+	].
 
 	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [^self renderSvgProcessMapOn: html].
 
