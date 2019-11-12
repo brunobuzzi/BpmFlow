@@ -1,5 +1,7 @@
-other
+tasks details
 renderSvgProcessMapOn: html
+
+	self renderProcessMapOn: html.
 
 	selectedObject ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
 

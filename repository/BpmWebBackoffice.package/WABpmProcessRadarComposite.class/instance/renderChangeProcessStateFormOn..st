@@ -13,7 +13,7 @@ renderChangeProcessStateFormOn: html
 		].
 
 		selectedObject ifNotNil: [ 
-			self renderProcessMapOn: html.
+			self renderProcessTasksDetailsOn: html.
 	 
 			self renderPauseStateIconOn: html.
 			self renderResumeStateIconOn: html.

@@ -33,4 +33,4 @@ renderContentOn: html
 			with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Select a User to Assign' translateIn: self session)].
 					html render: (userAssignationBatchedList table: self sewafTableForUsers)].].
 
-	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].
+	(self componentValueAt: 'view.process.details' ifAbsent: [false]) ifTrue: [self renderSvgProcessMapOn: html].

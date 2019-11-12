@@ -4,6 +4,7 @@
 	"instance" : {
 		"assignationComposite" : "brunobb 11/12/2019 07:17",
 		"assignationComposite:" : "brunobb 11/12/2019 07:17",
+		"canEditTask:" : "brunobb 11/12/2019 08:39",
 		"clearAssignationCompostite" : "brunobb 11/12/2019 07:20",
 		"closeSendAndSelectUsers:" : "brunobb 11/12/2019 07:20",
 		"closeSendAndTakeNextForms:" : "brunobb 11/12/2019 07:20",
@@ -26,4 +27,5 @@
 		"renderItemDescriptionOn:" : "brunobb 11/12/2019 07:30",
 		"renderItemDescriptionSecondaryDataOn:" : "brunobb 11/12/2019 07:30",
 		"renderItemDescriptionTitleOn:" : "brunobb 11/12/2019 07:31",
+		"renderSvgProcessMapOn:" : "brunobb 11/12/2019 08:43",
 		"renderTransitionFormDataOn:for:" : "brunobb 11/12/2019 07:29" } }

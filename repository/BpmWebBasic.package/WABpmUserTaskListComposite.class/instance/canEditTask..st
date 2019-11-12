@@ -8,4 +8,4 @@ canEditTask: aBpmArtifactInstance
 		 The user1 finish task1 and user2 take task2 (same role for both tasks and same process). 
 		 User1 list finished tasks and he can see task2 but he can no edit that task (because is taken by user2)"
 	
-	self subclassResponsibility
+	^((aBpmArtifactInstance isGrantedUser: self session user) and: [aBpmArtifactInstance isDone not and: [model task == aBpmArtifactInstance]])

@@ -1,4 +1,4 @@
-export
+tasks details
 viewSvgProcessMap
 	| currentValue |
 
