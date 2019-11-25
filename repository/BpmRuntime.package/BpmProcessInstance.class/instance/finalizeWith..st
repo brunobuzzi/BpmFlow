@@ -8,4 +8,6 @@ finalizeWith: aBpmEventInstance
  
 	(endEvents includesKey: aBpmEventInstance getDefinitionName) ifFalse: [endEvents at: aBpmEventInstance getDefinitionName put: OrderedCollection new].
 
+	states add: (BpmFinishedState newFor: self).
+
 	^(endEvents at: aBpmEventInstance getDefinitionName) add: aBpmEventInstance
