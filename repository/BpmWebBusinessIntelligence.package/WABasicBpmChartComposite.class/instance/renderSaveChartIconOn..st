@@ -4,7 +4,7 @@ renderSaveChartIconOn: html
 
 	jQueryId := self renderJQueryConfirmationDialogOn: html title: ('Save Chart' translateIn: self session) forActionNamed: 'saveChart' actionMethod: #saveChart.
 
-	html div class: 'float-right'; with: [
+	html div class: 'float-right margin-left-auto'; with: [
 		html anchor 
 					class: 'cursor-pointer';
 					onClick: (html jQuery id: jQueryId) dialog open;
