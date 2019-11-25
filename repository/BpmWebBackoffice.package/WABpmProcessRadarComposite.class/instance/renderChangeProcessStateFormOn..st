@@ -15,10 +15,11 @@ renderChangeProcessStateFormOn: html
 		selectedObject ifNotNil: [ 
 			self renderProcessTasksDetailsOn: html.
 	 
-			self renderPauseStateIconOn: html.
-			self renderResumeStateIconOn: html.
-			self renderAbortStateIconOn: html.
-
+			selectedObject hasFinalized ifFalse: [			
+				self renderPauseStateIconOn: html.
+				self renderResumeStateIconOn: html.
+				self renderAbortStateIconOn: html.
+			].
 			(selectedObject isAborted and: [selectedObject isConfirmed not]) ifTrue: [self renderAbortConfirmationOn: html].
 		].
 		
