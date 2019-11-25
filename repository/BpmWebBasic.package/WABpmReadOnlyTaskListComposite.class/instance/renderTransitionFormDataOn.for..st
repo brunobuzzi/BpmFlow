@@ -6,4 +6,4 @@ renderTransitionFormDataOn: html for: aBpmArtifactInstance
 	self renderTransitionSummaryOn: html for: aBpmArtifactInstance.
 
 	"this is used by backoffice users with <WABpmProcessRadarComposite>"
-	aBpmArtifactInstance renderHtmlOn: html for: self.
+	aBpmArtifactInstance renderHtmlOn: html for: self. "render <anOrbeon> or <aSeaside> link"
