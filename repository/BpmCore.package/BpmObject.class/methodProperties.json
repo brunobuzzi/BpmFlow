@@ -5,6 +5,7 @@
 	"instance" : {
 		"getProcessDefinitionCache" : "brunobb 01/19/2018 10:00",
 		"isArtifactInstance" : "brunobb 10/31/2018 11:41",
+		"isBpmObject" : "brunobb 11/28/2019 04:14",
 		"isProcessDefinition" : "brunobb 02/09/2018 13:31",
 		"isProcessInstance" : "brunobb 02/09/2018 13:31",
 		"isRole" : "brunobb 04/25/2018 08:18",

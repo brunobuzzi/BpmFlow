@@ -1,0 +1,4 @@
+other
+isBpmObject
+
+	^true
