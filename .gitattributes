@@ -1,0 +1,3 @@
+*.st linguist-language=Smalltalk
+*.json linguist-language=Smalltalk
+*.filetree linguist-language=Smalltalk
