@@ -1,21 +1,21 @@
 evaluation
 evaluateConditionIn: blockArgumentObject
 	"The receiver evaluates the condition <conditionToRun> in the context of the object <blockArgumentObject>"
-	| evaluation blockClosure blockEvaluation |
+	| blockClosure blockEvaluation |
 
-	evaluation := BpmCodeEvaluationResult new.
+	evaluationResult := BpmCodeEvaluationResult new.
 
 	[ blockClosure := (evaluationCode isOctetString) 
 			ifTrue: [self evaluate: evaluationCode] 
 			ifFalse: [evaluationCode]. "at this point the <evaluationCode> should be <aBlockClosure> otherwise it will set an exception in the receiver" 
 
 		"the variable <blockClosure> MUST BE a BlockClosure because the <condition> could be a valid Smalltalk expression but NOT a block"
-		blockClosure isBlock ifFalse: [^self raiseNonBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
+		blockClosure isBlock ifFalse: [^self raiseNonBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
 
 		blockEvaluation := blockClosure value: blockArgumentObject.
-		evaluation result: blockEvaluation] on: Error do:[:error | ^self raiseInBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
+		evaluationResult result: blockEvaluation] on: Error do:[:error | ^self raiseInBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
 
 	"the result is NOT a boolean value"
-	(evaluation resultIsKindOf: resultClass) ifFalse: [^self raiseIncorrectClassResultExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluation].
+	(evaluationResult resultIsKindOf: resultClass) ifFalse: [^self raiseIncorrectClassResultExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
 
-	^evaluation
+	^evaluationResult

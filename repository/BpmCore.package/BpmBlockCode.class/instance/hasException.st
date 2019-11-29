@@ -1,0 +1,4 @@
+evaluation
+hasException
+
+	^evaluationResult hasException
