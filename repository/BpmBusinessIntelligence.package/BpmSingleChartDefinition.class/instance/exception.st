@@ -1,0 +1,4 @@
+other
+exception
+
+	^report exception

@@ -5,6 +5,7 @@ renderContentOn: html
 	multiChartIsEnabled ifTrue: [^self renderMultiChartsDefinitionsOn: html].
  
 	self setChartDefinition.
+	chartDefinition distribution ifNotNil: [:value | self setPropertiesTo: value].
 
 	html div id: 'top-search-area'; class: 'top-search-area-box-shadow';
 		with: [self renderSearchAreaOn: html.
@@ -19,5 +20,8 @@ renderContentOn: html
 	chartDefinition dateGroupName: self getDateGroup. 
 
 	(self componentValueAt: 'queryBlock-error') ifNotNil: [:value | ^self].
-  
+	self removeValueNamed: 'queryBlock-runtime-error'.
+
 	chartDefinition renderOn: html.
+
+	chartDefinition hasException ifTrue: [self addValue: chartDefinition exception description named: 'queryBlock-runtime-error']

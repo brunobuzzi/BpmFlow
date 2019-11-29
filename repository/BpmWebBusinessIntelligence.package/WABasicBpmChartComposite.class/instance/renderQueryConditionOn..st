@@ -2,8 +2,11 @@ search area
 renderQueryConditionOn: html
 	| inputText cssClass |
 
-	cssClass := (self componentValueAt: 'queryBlock-error') ifNotNil: ['background-red'] ifNil: [''].
-	inputText := (self componentValueAt: 'queryBlock-error') ifNotNil: [:value |  (self searchValueAt: 'process-condition'), ' >> ', value] ifNil: [self searchValueAt: 'process-condition'].
+	cssClass := (self componentValueAt: 'queryBlock-error') 
+						ifNotNil: ['background-red'] 
+						ifNil: [(self componentValueAt: 'queryBlock-runtime-error') ifNil: [''] ifNotNil: ['background-red']].
+
+	inputText := (self componentValueAt: 'queryBlock-error') ifNotNil: [:value |  (self searchValueAt: 'process-condition' ifAbsent: ['']), ' >> ', value] ifNil: [self searchValueAt: 'process-condition'].
 
 	html div class: 'top-search-div'; with: [
 		html label attributeAt: 'for' put: 'process-condition'; with: ('Condition Block' translateIn: self session).
