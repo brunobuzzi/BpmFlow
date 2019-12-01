@@ -1,6 +1,6 @@
 distribution report
 reportCreationDayFor: processName in: appName version: version from: startDate to: endDate satisfying: satisfyingBlock
-	| distribution secondsToRun definitionCollection |
+	| distribution secondsToRun definitionCollection error |
 
 	secondsToRun := 0.
 	distribution := OrderPreservingDictionary new.
@@ -10,10 +10,11 @@ reportCreationDayFor: processName in: appName version: version from: startDate t
 			ifFalse: [(self getAllProcessesNamed: processName in: appName) select: [:each | each version = version]].
 
 	definitionCollection do: [:procDef | 
-		secondsToRun := secondsToRun + (Time secondsElapsedTime: [procDef addTo: distribution instancesDayDistributionFrom: startDate to: endDate satisfying: satisfyingBlock]).
+		secondsToRun := secondsToRun + (Time secondsElapsedTime: [procDef addTo: distribution instancesDayDistributionFrom: startDate to: endDate satisfying: satisfyingBlock onError: [:ex | error := ex]]).
 	].
 
 	^(BpmProcessDistributionReport processName: processName applicationName: appName distribution: distribution)
+		exception: error;
 		startDate: startDate;
 		endDate: endDate;
 		conditionStringBlock: satisfyingBlock blockSource;
