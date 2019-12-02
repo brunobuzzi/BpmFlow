@@ -1,8 +1,8 @@
 distribution report
 reportValueSumMultiDistributionFor: distributionDataCollection
-	| secondsToRun distribution |
+	| secondsToRun distributionCollection |
 
-	distribution := OrderedCollection new.
+	distributionCollection := OrderedCollection new.
 	secondsToRun := Time secondsElapsedTime: [
 		distributionDataCollection do: [:eachReportFieldDescriptor |  | distributionReport |
 			distributionReport := self reportValueSumDistributionFor: eachReportFieldDescriptor procName 
@@ -12,11 +12,11 @@ reportValueSumMultiDistributionFor: distributionDataCollection
 											to: eachReportFieldDescriptor endTimeStamp 
 											satisfying: eachReportFieldDescriptor satisfyingBlock.
 			distributionReport seriesName: eachReportFieldDescriptor fieldName.
-			distribution add: distributionReport.
+			distributionCollection add: distributionReport.
 		].
 	].
 
-	^(BpmFieldCollectionDistributionReport distribution: distribution)
+	^(BpmFieldCollectionDistributionReport distribution: distributionCollection)
 		sumSecondsToConstruct: secondsToRun;
 		canonizeXAxis;
 		yourself.
