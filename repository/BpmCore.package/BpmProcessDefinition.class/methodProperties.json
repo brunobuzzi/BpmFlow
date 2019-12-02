@@ -183,7 +183,6 @@
 		"getValueDistributionForFieldCollection:" : "brunobb 06/01/2018 11:51",
 		"getValueDistributionForFieldCollection:from:to:satisfying:" : "brunobb 08/30/2018 08:43",
 		"getValueDistributionForFieldName:secondaryField:in:satisfying:" : "brunobb 11/27/2017 12:08",
-		"getValueSumEvolutionForFieldNamed:from:to:satisfying:" : "brunobb 08/30/2018 05:43",
 		"getValueSumEvolutionForFieldNamed:from:to:satisfying:onError:" : "brunobb 11/29/2019 11:41",
 		"getZipProcessMapStream" : "BrunoBB 01/13/2017 12:32",
 		"hasAbortedProcess:" : "brunobb 01/03/2018 12:30",
