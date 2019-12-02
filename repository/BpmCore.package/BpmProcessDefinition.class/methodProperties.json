@@ -239,7 +239,7 @@
 		"reportInstancesDayDistributionUsing:from:to:satisfying:" : "brunobb 12/01/2019 08:21",
 		"reportTasksInstancesFor:" : "brunobb 09/25/2019 13:31",
 		"reportTotalValueDistributionFor:in:" : "BrunoBB 11/20/2016 11:07",
-		"reportValueDistributionFor:in:from:to:satisfying:" : "BrunoBB 11/20/2016 11:07",
+		"reportValueDistributionFor:in:from:to:satisfying:onError:" : "brunobb 12/02/2019 08:27",
 		"reportValueDistributionForFieldCollection:" : "BrunoBB 11/18/2016 03:41",
 		"reportValueDistributionForFieldName:secondaryField:in:satisfying:" : "BrunoBB 11/18/2016 03:41",
 		"reportValueSumDistributionForFieldNamed:from:to:satisfying:" : "brunobb 11/29/2019 11:42",
