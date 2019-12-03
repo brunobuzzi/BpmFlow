@@ -1,0 +1,4 @@
+other
+processIsPausedOrAborted
+
+	^process isPausedOrAborted

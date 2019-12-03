@@ -134,6 +134,7 @@
 		"isFinished" : "brunobb 11/25/2019 11:52",
 		"isInCorruptedState" : "brunobb 09/20/2019 10:04",
 		"isPaused" : "brunobb 09/20/2019 10:04",
+		"isPausedOrAborted" : "brunobb 12/03/2019 02:32",
 		"isProcessInstance" : "brunobb 09/20/2019 10:04",
 		"isRunning" : "brunobb 09/20/2019 10:04",
 		"isRunningWithException" : "brunobb 10/21/2019 10:32",
