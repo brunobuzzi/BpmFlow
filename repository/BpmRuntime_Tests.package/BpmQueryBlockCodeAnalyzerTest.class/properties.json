@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmQueryBlockCodeAnalyzerTest",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeAnalyzerTest",
+	"type" : "normal" }
