@@ -13,7 +13,7 @@ evaluateConditionIn: blockArgumentObject
 		blockClosure isBlock ifFalse: [^self raiseNonBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
 
 		blockEvaluation := blockClosure value: blockArgumentObject.
-		evaluationResult result: blockEvaluation] on: Error do:[:error | ^self raiseInBlockExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
+		evaluationResult result: blockEvaluation] on: Error do:[:error | ^self raiseInBlockException: error in: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].
 
 	"the result is NOT a boolean value"
 	(evaluationResult resultIsKindOf: resultClass) ifFalse: [^self raiseIncorrectClassResultExceptionIn: blockArgumentObject errorBlock: blockClosure evaluationResult: evaluationResult].

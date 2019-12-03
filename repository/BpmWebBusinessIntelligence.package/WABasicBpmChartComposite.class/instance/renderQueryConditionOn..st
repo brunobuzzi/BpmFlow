@@ -6,7 +6,11 @@ renderQueryConditionOn: html
 						ifNotNil: ['background-red'] 
 						ifNil: [(self componentValueAt: 'queryBlock-runtime-error') ifNil: [''] ifNotNil: ['background-red']].
 
-	inputText := (self componentValueAt: 'queryBlock-error') ifNotNil: [:value |  (self searchValueAt: 'process-condition' ifAbsent: ['']), ' >> ', value] ifNil: [self searchValueAt: 'process-condition'].
+	inputText := (self componentValueAt: 'queryBlock-error') 
+						ifNotNil: [:value |  (self searchValueAt: 'process-condition' ifAbsent: ['']), ' >> ', value] 
+						ifNil: [(self componentValueAt: 'queryBlock-runtime-error') 
+								ifNil: [self searchValueAt: 'process-condition' ifAbsent: []] 
+								ifNotNil: [:value | (self searchValueAt: 'process-condition' ifAbsent: ['']), ' >> ', value]].
 
 	html div class: 'top-search-div'; with: [
 		html label attributeAt: 'for' put: 'process-condition'; with: ('Condition Block' translateIn: self session).
