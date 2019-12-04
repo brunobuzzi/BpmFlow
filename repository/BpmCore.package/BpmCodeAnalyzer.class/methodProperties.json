@@ -16,6 +16,7 @@
 		"checkTwoArgumentBlockRule" : "brunobb 12/04/2019 10:14",
 		"codeWarnings" : "brunobb 12/04/2019 10:14",
 		"codeWarnings:" : "brunobb 12/04/2019 10:14",
+		"enableValidClasses" : "brunobb 12/04/2019 10:20",
 		"getAllowedSelectorsToBlockArgument" : "brunobb 12/04/2019 10:14",
 		"getBasicClasses" : "brunobb 12/04/2019 10:14",
 		"getBasicSelectorsForBasicClasses" : "brunobb 12/04/2019 10:14",
