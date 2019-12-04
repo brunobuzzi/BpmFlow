@@ -12,7 +12,7 @@
 		"infoWarnings",
 		"isValidClassesEnabled",
 		"validClasses",
-		"invalidClasses" ],
+		"validSelectors" ],
 	"name" : "BpmCodeAnalyzer",
 	"pools" : [
 		 ],

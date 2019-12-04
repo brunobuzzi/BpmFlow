@@ -1,3 +1,0 @@
-Accessing
-invalidClasses
-	^invalidClasses
