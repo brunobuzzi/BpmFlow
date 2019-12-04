@@ -5,4 +5,5 @@
 		"setUp" : "BrunoBB 06/25/2016 08:07",
 		"testNoBlockRule" : "BrunoBB 06/25/2016 08:12",
 		"testNoTwoArgumentRule" : "BrunoBB 06/25/2016 08:12",
-		"testOk" : "BrunoBB 06/25/2016 08:08" } }
+		"testOk" : "BrunoBB 06/25/2016 08:08",
+		"testSystemInitialization" : "brunobb 12/04/2019 09:43" } }
