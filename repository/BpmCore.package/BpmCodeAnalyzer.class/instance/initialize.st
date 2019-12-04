@@ -5,3 +5,6 @@ initialize
 	
 	codeWarnings := OrderedCollection new.
 	infoWarnings := OrderedCollection new.
+	isValidClassesEnabled := false.
+	validClasses := OrderedCollection new.
+	invalidClasses := OrderedCollection new.

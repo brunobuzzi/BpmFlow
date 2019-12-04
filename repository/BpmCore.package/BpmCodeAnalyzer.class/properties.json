@@ -9,7 +9,10 @@
 		"blockCode",
 		"codeWarnings",
 		"parser",
-		"infoWarnings" ],
+		"infoWarnings",
+		"isValidClassesEnabled",
+		"validClasses",
+		"invalidClasses" ],
 	"name" : "BpmCodeAnalyzer",
 	"pools" : [
 		 ],
