@@ -13,4 +13,6 @@ queryBlock
 	
 	queryBlock isBlock ifFalse: [^self addValue: 'Invalid Block' named: 'queryBlock-error']. "a valid Smalltalk expression but is not <aBlock>"
 
+	self analyzeQueryBlockIfFail: [:codeAnalyzer | ^self addValue: codeAnalyzer printCodeWarnings named: 'queryBlock-error'].
+	
 	^queryBlock

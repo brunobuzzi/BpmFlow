@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"setUp" : "brunobb 12/03/2019 08:32",
+		"testClassMessageAndForbiddenMesage" : "brunobb 12/03/2019 08:33",
+		"testCountryFilter" : "brunobb 12/03/2019 08:31",
+		"testDateFilter" : "brunobb 12/03/2019 08:33" } }

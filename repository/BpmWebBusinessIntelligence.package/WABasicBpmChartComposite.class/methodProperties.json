@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"addCurrentSingleChartToMutiChartDefinition" : "brunobb 12/03/2018 11:57",
-		"analyzeQueryBlockIfFail:" : "brunobb 12/03/2018 11:50",
+		"analyzeQueryBlockIfFail:" : "brunobb 12/04/2019 07:24",
 		"basicCreateChartDefinition" : "brunobb 06/05/2019 05:48",
 		"canvas" : "brunobb 12/03/2018 11:50",
 		"canvas:" : "brunobb 12/03/2018 11:50",
@@ -47,8 +47,7 @@
 		"multiChartIsEnabled" : "brunobb 12/03/2018 12:07",
 		"multiChartIsEnabled:" : "brunobb 12/03/2018 12:07",
 		"newChartScopeFor:" : "brunobb 12/03/2018 11:50",
-		"queryBlock" : "brunobb 11/29/2019 10:10",
-		"queryBlockFailedWith:" : "brunobb 12/03/2018 11:50",
+		"queryBlock" : "brunobb 12/04/2019 07:40",
 		"renderActiveDistributionComboOn:withDistribution:" : "brunobb 01/31/2019 09:09",
 		"renderApplicationComboOn:" : "brunobb 12/03/2018 11:50",
 		"renderApplicationComboOn:withApplications:" : "brunobb 01/31/2019 09:27",
