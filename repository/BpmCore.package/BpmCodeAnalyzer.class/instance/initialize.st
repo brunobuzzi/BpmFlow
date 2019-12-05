@@ -7,4 +7,5 @@ initialize
 	infoWarnings := OrderedCollection new.
 	isValidClassesEnabled := false.
 	validClasses := OrderedCollection new.
+	isValidSelectorsEnabled := false.
 	validSelectors := Dictionary new.
