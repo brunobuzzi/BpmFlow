@@ -3,7 +3,8 @@
 		 },
 	"instance" : {
 		"setUp" : "BrunoBB 06/25/2016 08:07",
+		"testCheckUseOfInvalidClasses" : "brunobb 12/06/2019 06:58",
 		"testNoBlockRule" : "BrunoBB 06/25/2016 08:12",
 		"testNoTwoArgumentRule" : "BrunoBB 06/25/2016 08:12",
 		"testOk" : "BrunoBB 06/25/2016 08:08",
-		"testSystemInitialization" : "brunobb 12/04/2019 09:43" } }
+		"testSystemInitialization" : "brunobb 12/05/2019 02:57" } }
