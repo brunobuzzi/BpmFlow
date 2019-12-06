@@ -5,6 +5,7 @@
 		"for:" : "brunobb 12/05/2019 01:58" },
 	"instance" : {
 		"addBlockWarning:" : "brunobb 12/05/2019 01:58",
+		"addDefaultNonBlockWarning" : "brunobb 12/06/2019 07:07",
 		"addDefaultValidClasses" : "brunobb 12/06/2019 06:55",
 		"addDefaultValidSelectors" : "brunobb 12/05/2019 02:55",
 		"addInfo:" : "brunobb 12/05/2019 01:58",
