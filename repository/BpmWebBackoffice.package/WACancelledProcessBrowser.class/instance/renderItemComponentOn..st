@@ -8,5 +8,5 @@ renderItemComponentOn: html
 	taskListComposite 
 	ifNil: [taskListComposite := (self defaultTaskListCompositeClass parent: self) model: selectedLateralItem]
 	ifNotNil: [(selectedLateralItem == taskListComposite model) ifFalse: [taskListComposite model: selectedLateralItem]].
-	
+ 
 	html div id: 'item-customized-component'; with: [html render: taskListComposite].
