@@ -1,6 +1,7 @@
 other
 analyze
 
-	parser isBlock ifFalse: [^self addBlockWarning: 'Condition is NOT a Block'; yourself].
+	self ifParserNotABlock: [^self addBlockWarning: 'Condition is NOT a Block'; yourself].
 
-	self checkTwoArgumentBlockRule.
+	self checkTwoArgumentBlockRule;
+		checkUseOfInvalidClasses
