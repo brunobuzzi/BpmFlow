@@ -3,18 +3,10 @@ renderItemComponentOn: html
 
 	(self componentValueAt: 'view.svg.map' ifAbsent: [false]) ifTrue: [^self renderSvgProcessMapOn: html].
 
-	(selectedLateralItem executedActivities, selectedLateralItem getActiveArtifacts) do: [:eachArtifact | | cssClass heightClass |
+	selectedLateralItem ifNil: [taskListComposite ifNotNil: [:component | component answer]. taskListComposite := nil. ^self ].
 
-		cssClass := eachArtifact isTask 
-						ifFalse: ['process-transition-gateway']
-						ifTrue: [eachArtifact isDone
-							ifTrue: ['process-transition-finished']
-							ifFalse: ['process-transition-running']].
-
-		heightClass := ((transitionsHeight at: eachArtifact ifAbsent: [#expanded]) = #expanded) 
-							ifTrue: ['process-transition-expanded'] 
-							ifFalse: ['process-transition-collapsed'].
-
-		html div class: (cssClass, ' ', heightClass); with: [ self renderTaskDataOn: html for: eachArtifact].
-
-	].
+	taskListComposite 
+	ifNil: [taskListComposite := (self defaultTaskListCompositeClass parent: self) model: selectedLateralItem]
+	ifNotNil: [(selectedLateralItem == taskListComposite model) ifFalse: [taskListComposite model: selectedLateralItem]].
+	
+	html div id: 'item-customized-component'; with: [html render: taskListComposite].
