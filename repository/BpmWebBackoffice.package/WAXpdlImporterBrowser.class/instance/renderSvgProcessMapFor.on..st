@@ -5,6 +5,7 @@ renderSvgProcessMapFor: aBpmProcessDefinition on: html
 	svgCanvas := self defaultBpmnCanvasClass parent: self.
 
 	svgCanvas model: aBpmProcessDefinition;
+		isLinkToSubprocessAvailable: false;
 		disableParentProcessIcon. "process are no imported yet (no in the cache) so searching a parent process for its name will fail. So parent navigation is disabled"
 
 	"aBpmProcessDefinition isTopProcess 

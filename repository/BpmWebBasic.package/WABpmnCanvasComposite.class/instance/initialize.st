@@ -6,3 +6,4 @@ initialize
 	isScaledByParent := false.
 	autoSetViewPort := true.
 	isWorkingOnline := true.
+	isLinkToSubprocessAvailable := true.

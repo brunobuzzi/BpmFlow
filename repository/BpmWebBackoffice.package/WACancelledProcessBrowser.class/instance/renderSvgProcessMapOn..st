@@ -4,6 +4,8 @@ renderSvgProcessMapOn: html
 
 	svgCanvas := self defaultBpmnCanvasClass parent: self.
 
-	svgCanvas model: selectedLateralItem.
+	svgCanvas 
+		isLinkToSubprocessAvailable: false;
+		model: selectedLateralItem.
 
 	html div with: [html render: svgCanvas]

@@ -15,6 +15,7 @@
 		"getUrlForOrbeonFormDefinitionNamed:" : "brunobb 10/01/2019 05:41",
 		"importProcess" : "brunobb 10/01/2019 05:22",
 		"importProcess:" : "brunobb 10/01/2019 05:22",
+		"initialize" : "brunobb 12/06/2019 08:29",
 		"renderContentOn:" : "brunobb 10/01/2019 07:37",
 		"renderImportErrorOn:for:" : "brunobb 10/01/2019 08:39",
 		"renderLinkToSubprocess" : "brunobb 10/02/2019 06:46",

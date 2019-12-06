@@ -13,7 +13,8 @@
 		"scaleArray",
 		"isScaledByParent",
 		"autoSetViewPort",
-		"isWorkingOnline" ],
+		"isWorkingOnline",
+		"isLinkToSubprocessAvailable" ],
 	"name" : "WABpmnCanvasComposite",
 	"pools" : [
 		 ],

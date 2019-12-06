@@ -5,7 +5,8 @@ asSVGfor: aBpmUser
 	WAHtmlCanvas builder render: [ :html | | canvas |
 		canvas := self defaultBpmnCanvasClass new.
 		canvas webSession: (WABpmSession new user: aBpmUser);
-					isWorkingOnline: false. 
+					isWorkingOnline: false;
+					isLinkToSubprocessAvailable: false.
 		self getProcessesTreeAsCollection do: [:process | 
 			canvas			
 				model: process;

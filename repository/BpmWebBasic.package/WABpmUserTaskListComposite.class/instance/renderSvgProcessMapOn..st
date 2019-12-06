@@ -4,6 +4,7 @@ renderSvgProcessMapOn: html
 
 	svgCanvas := self defaultBpmnCanvasClass parent: mainPanel.
 
-	svgCanvas model: model process.
+	svgCanvas model: model process;
+		isLinkToSubprocessAvailable: false.
 
 	html div with: [html render: svgCanvas]
