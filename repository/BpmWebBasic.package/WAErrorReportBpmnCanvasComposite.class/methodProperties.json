@@ -18,7 +18,6 @@
 		"initialize" : "brunobb 12/06/2019 08:29",
 		"renderContentOn:" : "brunobb 10/01/2019 07:37",
 		"renderImportErrorOn:for:" : "brunobb 10/01/2019 08:39",
-		"renderLinkToSubprocess" : "brunobb 10/02/2019 06:46",
 		"renderShowParentProcessIconOn:" : "brunobb 10/01/2019 05:52",
 		"renderXpdlActivity:on:" : "brunobb 10/02/2019 05:59",
 		"renderXpdlEndEvent:on:" : "brunobb 10/02/2019 06:00",
