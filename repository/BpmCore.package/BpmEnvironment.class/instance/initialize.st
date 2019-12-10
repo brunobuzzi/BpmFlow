@@ -13,3 +13,5 @@ initialize
 	Check WABpmPersistenceOrbeonLayer>>generateLinkedUrlFor:s:andK: 
 	This inst var is used in ATOP application. All Atop applications should change the value of <seasideApplicationName>. See issue #820 for more information."
 	seasideApplicationName := 'bpmflow'.
+
+	embeddedCodeSecurityPolicy := Dictionary new.
