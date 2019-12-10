@@ -3,4 +3,5 @@ analyze
 
 	super analyze.
 
-	self checkThreeArgumentBlockRule
+	self checkThreeArgumentBlockRule;
+			checkUseOfInvalidClasses
