@@ -13,7 +13,8 @@
 		"applicationsNames",
 		"applicationsLogos",
 		"internationalization",
-		"seasideApplicationName" ],
+		"seasideApplicationName",
+		"embeddedCodeSecurityPolicy" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],

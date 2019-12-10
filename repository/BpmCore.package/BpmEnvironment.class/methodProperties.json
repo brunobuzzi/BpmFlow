@@ -22,6 +22,8 @@
 		"areUsersMultiEnvironment" : "brunobb 02/22/2019 09:33",
 		"canDelete" : "brunobb 02/22/2019 09:33",
 		"cloneDefaultInternationalization" : "brunobb 02/22/2019 09:33",
+		"embeddedCodeSecurityPolicy" : "brunobb 12/10/2019 04:54",
+		"embeddedCodeSecurityPolicy:" : "brunobb 12/10/2019 04:54",
 		"getBIApplicationName" : "brunobb 02/22/2019 09:33",
 		"getBILogoSymbol" : "brunobb 02/22/2019 09:33",
 		"getBackofficeApplicationName" : "brunobb 02/22/2019 09:33",
