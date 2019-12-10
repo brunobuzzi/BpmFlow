@@ -14,7 +14,8 @@
 		"visitedTransitions",
 		"packageApplication",
 		"visitedEvents",
-		"visitedActivities" ],
+		"visitedActivities",
+		"bpmEnvironment" ],
 	"name" : "XPDLStructureAnalyzerVisitor",
 	"pools" : [
 		 ],

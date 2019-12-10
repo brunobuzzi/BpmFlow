@@ -28,7 +28,8 @@ importBizagiFiles
 
 	"the structure visitor check that all bpm artifacts are well formed"
 	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: packageApplicationMapping.
-	xpdlStructureVisitor visitAllXpdlPackages.
+	xpdlStructureVisitor bpmEnvironment: bpmEnvironment;
+		visitAllXpdlPackages.
 
 	"If false (no warnings) -> the processes definition are created and but not stored yet"
 	xpdlStructureVisitor hasWarnings 
