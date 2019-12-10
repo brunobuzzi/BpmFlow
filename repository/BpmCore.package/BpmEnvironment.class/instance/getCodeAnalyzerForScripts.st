@@ -1,0 +1,4 @@
+embedded code security
+getCodeAnalyzerForScripts
+
+	^embeddedCodeSecurityPolicy at: BpmTaskScriptCodeAnalyzer

@@ -3,9 +3,9 @@
 		"example1" : "brunobb 12/05/2019 01:58",
 		"example2" : "brunobb 12/05/2019 01:58",
 		"for:" : "brunobb 12/05/2019 01:58",
-		"newWithHighSecurityFor:" : "brunobb 12/10/2019 07:41",
-		"newWithLowSecurityFor:" : "brunobb 12/10/2019 07:41",
-		"newWithMediumSecurityFor:" : "brunobb 12/10/2019 07:42" },
+		"newWithHighSecurity" : "brunobb 12/10/2019 08:13",
+		"newWithLowSecurity" : "brunobb 12/10/2019 08:13",
+		"newWithMediumSecurity" : "brunobb 12/10/2019 08:13" },
 	"instance" : {
 		"addBlockWarning:" : "brunobb 12/05/2019 01:58",
 		"addDefaultNonBlockWarning" : "brunobb 12/06/2019 07:07",

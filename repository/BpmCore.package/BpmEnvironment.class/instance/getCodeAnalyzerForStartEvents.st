@@ -1,0 +1,4 @@
+embedded code security
+getCodeAnalyzerForStartEvents
+
+	^embeddedCodeSecurityPolicy at: BpmStartEventTimerCodeAnalyzer

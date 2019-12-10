@@ -1,0 +1,4 @@
+embedded code security
+getCodeAnalyzerForTransitionConditions
+
+	^embeddedCodeSecurityPolicy at: BpmTransitionConditionCodeAnalyzer

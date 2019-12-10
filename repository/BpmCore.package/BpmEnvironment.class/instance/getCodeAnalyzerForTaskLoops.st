@@ -1,0 +1,4 @@
+embedded code security
+getCodeAnalyzerForTaskLoops
+
+	^embeddedCodeSecurityPolicy at: BpmLoopConditionCodeAnalyzer
