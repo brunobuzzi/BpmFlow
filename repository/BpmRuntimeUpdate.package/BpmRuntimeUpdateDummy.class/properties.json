@@ -1,0 +1,21 @@
+{
+	"category" : "BpmRuntimeUpdate",
+	"classinstvars" : [
+		"newDummyCache",
+		"newDummyCache2" ],
+	"classvars" : [
+		"Cache",
+		"NewCache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"surname",
+		"invoices" ],
+	"name" : "BpmRuntimeUpdateDummy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : [
+		"normal",
+		[
+			"disallowGciStore" ] ] }

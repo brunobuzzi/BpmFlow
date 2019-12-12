@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"addToDummyV3Objects" : "brunobb 10/09/2019 11:28",
+		"addV1Objects" : "brunobb 10/09/2019 09:25",
+		"cache" : "brunobb 10/09/2019 09:23",
+		"dummyCache" : "brunobb 10/09/2019 11:26",
+		"new" : "brunobb 10/09/2019 11:26" },
+	"instance" : {
+		"addToCache" : "brunobb 10/09/2019 09:23",
+		"addToDummyCache" : "brunobb 10/09/2019 11:27",
+		"initialize" : "brunobb 10/09/2019 11:26",
+		"name" : "brunobb 10/09/2019 09:22",
+		"name:" : "brunobb 10/09/2019 09:22",
+		"removeFromCache" : "brunobb 10/09/2019 09:23",
+		"removeFromDummyCache" : "brunobb 10/09/2019 11:27",
+		"surname" : "brunobb 10/09/2019 09:22",
+		"surname:" : "brunobb 10/09/2019 09:22" } }
