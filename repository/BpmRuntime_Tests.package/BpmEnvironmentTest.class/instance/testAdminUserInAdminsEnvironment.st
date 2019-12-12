@@ -1,4 +1,4 @@
-other
+test
 testAdminUserInAdminsEnvironment
 	"The user 'admins' has to be always assigned to 'admins' <BpmEnvironment>"
 

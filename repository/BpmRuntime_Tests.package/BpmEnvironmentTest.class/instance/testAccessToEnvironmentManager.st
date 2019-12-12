@@ -1,4 +1,4 @@
-other
+test
 testAccessToEnvironmentManager
 	"Test the method BpmUser>>hasAccessToEnvironmentManager. 
 	Answer <true> only for users that are: backoffice and admin users and also belong to 'admins' <BpmEnvironment>.

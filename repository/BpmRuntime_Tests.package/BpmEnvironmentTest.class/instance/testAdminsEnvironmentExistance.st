@@ -1,4 +1,4 @@
-other
+test
 testAdminsEnvironmentExistance
 	"Check the existance of 'admins' <BpmEnvironment>.
 	This environment must exist always"

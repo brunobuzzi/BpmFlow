@@ -1,4 +1,4 @@
-other
+test
 testUniqueUserNameInSingleEnvironment
 	| currentMode env1 newUser |
 

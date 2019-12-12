@@ -1,4 +1,4 @@
-other
+test
 testUsersSingleEnvironment
 	"In a user single environment (areUsersMultiEnvironment: false) the same user can NOT be assigned to more than one <BpmEnvironment>.
 	With the exception of 'admins' <BpmEnvironment>.

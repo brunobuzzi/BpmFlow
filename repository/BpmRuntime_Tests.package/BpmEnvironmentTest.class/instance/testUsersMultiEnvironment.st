@@ -1,4 +1,4 @@
-other
+test
 testUsersMultiEnvironment
 	"In a user muti environment (areUsersMultiEnvironment: true) the same user can be assigned to more than one <BpmEnvironment>"
 	| env1 env2 newUser currentMode |
