@@ -9,7 +9,8 @@ acceptStartEventNode: aXPDLStartNode
 	hasStartNode := true.
 
 	aXPDLStartNode isTimerNode ifTrue: [| blockAnalysis | 
-		blockAnalysis := BpmStartEventTimerCodeAnalyzer new blockCode: (aXPDLStartNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
+		blockAnalysis := bpmEnvironment getCodeAnalyzerForStartEvents.
+		blockAnalysis blockCode: (aXPDLStartNode extendedValueOf: 'activationBlock' ifAbsent: ['']).
 		blockAnalysis analyze.
 		blockAnalysis codeWarnings do: [:eachString | self addEventCodeWarningItem: aXPDLStartNode description: eachString]
 	].

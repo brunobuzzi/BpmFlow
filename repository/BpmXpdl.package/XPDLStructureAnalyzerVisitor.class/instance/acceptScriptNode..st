@@ -4,7 +4,8 @@ acceptScriptNode: aXPDLScriptNode
 	* Validity of the script Block"
 	| blockAnalysis | 
 
-	blockAnalysis := BpmTaskScriptCodeAnalyzer new blockCode: aXPDLScriptNode script.
+	blockAnalysis := bpmEnvironment getCodeAnalyzerForScripts.
+	blockAnalysis blockCode: aXPDLScriptNode script.
 	blockAnalysis analyze.
 	blockAnalysis codeWarnings do: [:eachString | self addScriptCodeWarningItem: aXPDLScriptNode description: eachString].
 

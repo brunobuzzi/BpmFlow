@@ -15,8 +15,10 @@ acceptActivityNode: aXPDLActivityNode
 
 	(aXPDLActivityNode loopType = 'None') 
 	ifFalse: [| blockAnalysis | 
-		blockAnalysis := BpmLoopConditionCodeAnalyzer for: aXPDLActivityNode loopCondition.
-		blockAnalysis analyze.
+		blockAnalysis := bpmEnvironment getCodeAnalyzerForTaskLoops.
+		blockAnalysis 
+			blockCode: aXPDLActivityNode loopCondition;
+			analyze.
 		blockAnalysis codeWarnings do: [:eachString | self addLoopConditionCodeWarningItem: aXPDLActivityNode description: eachString]. 
 	].
 
