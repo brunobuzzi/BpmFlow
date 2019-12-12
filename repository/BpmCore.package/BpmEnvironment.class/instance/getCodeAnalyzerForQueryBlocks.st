@@ -1,4 +1,4 @@
 embedded code security
 getCodeAnalyzerForQueryBlocks
 
-	^embeddedCodeSecurityPolicy at: BpmQueryBlockCodeAnalyzer
+	^self getCodeAnalyzerFor: BpmQueryBlockCodeAnalyzer

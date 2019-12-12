@@ -6,4 +6,4 @@ setHighSecurityFor: codeAnalyzerClass
 
 	self notYetImplemented.
 
-	^embeddedCodeSecurityPolicy at: codeAnalyzerClass put: codeAnalyzerClass newWithHighSecurity
+	^embeddedCodeSecurityPolicy at: codeAnalyzerClass put: #newWithHighSecurity

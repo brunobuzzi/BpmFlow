@@ -1,4 +1,4 @@
 embedded code security
 getCodeAnalyzerForTransitionConditions
 
-	^embeddedCodeSecurityPolicy at: BpmTransitionConditionCodeAnalyzer
+	^self getCodeAnalyzerFor: BpmTransitionConditionCodeAnalyzer

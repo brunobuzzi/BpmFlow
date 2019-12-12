@@ -15,3 +15,5 @@ initialize
 	seasideApplicationName := 'bpmflow'.
 
 	embeddedCodeSecurityPolicy := Dictionary new.
+
+	self setLowSecurityForAll.

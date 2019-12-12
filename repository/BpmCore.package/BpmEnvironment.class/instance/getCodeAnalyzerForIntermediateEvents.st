@@ -1,4 +1,4 @@
 embedded code security
 getCodeAnalyzerForIntermediateEvents
 
-	^embeddedCodeSecurityPolicy at: BpmIntermediateEventTimerCodeAnalyzer
+	^self getCodeAnalyzerFor: BpmIntermediateEventTimerCodeAnalyzer
