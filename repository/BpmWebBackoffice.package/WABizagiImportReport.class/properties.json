@@ -8,7 +8,7 @@
 	"instvars" : [
 		"importProcess",
 		"warnings",
-		"isSVGdiagramMode" ],
+		"currentOffendingWorkflow" ],
 	"name" : "WABizagiImportReport",
 	"pools" : [
 		 ],
