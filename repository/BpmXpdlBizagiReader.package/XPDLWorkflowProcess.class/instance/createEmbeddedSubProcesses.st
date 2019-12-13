@@ -9,6 +9,7 @@ createEmbeddedSubProcesses
 										xmlSegment: xmlActivitySet;
 										id: (xmlActivitySet attributeAt: 'Id');
 										name: (xmlActivitySet attributeAt: 'Name');
+										parentPool: parentPool;
 										parentWorkflow: self;
 										yourself.
 		newWorkflow 
