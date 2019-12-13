@@ -1,4 +1,4 @@
-other
+embedded procs
 isEmbedded
 
 	^parentWorkflow notNil

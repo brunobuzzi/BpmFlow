@@ -1,4 +1,4 @@
-other
+embedded procs
 getAllEmbbeddedProcesses
 	| all |
 

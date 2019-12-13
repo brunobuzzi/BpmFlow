@@ -15,6 +15,7 @@ createXpdlComponents
 						setGraphicValues; "set the graphics values -x,y, width, height-"
 						createLanes; "create lanes in the Pool"
 						createWorkflowFrom: xmlSegment; "create the associated Workflow with the Pool "
-						setLanesComponents. "add the subcomponents (tasks, gateways, ...) to the it's parent lane"
+						setLanesComponents; "add the subcomponents (tasks, gateways, ...) to the it's parent lane"
+						setLaneToXpdlObjectsInEmbeddedProcesses. "set <lane> inst var to all xpdl objects of embedded processes"
 					self addPool: newPool].
 	].
