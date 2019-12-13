@@ -16,5 +16,5 @@
 	"name" : "XPDLActivityNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLObject",
+	"super" : "XPDLActionNode",
 	"type" : "normal" }

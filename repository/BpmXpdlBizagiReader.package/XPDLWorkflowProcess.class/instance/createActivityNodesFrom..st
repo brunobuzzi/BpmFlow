@@ -6,6 +6,7 @@ createActivityNodesFrom: aXMLDocument
 	performers := self getAllPerformers.
 	(aXMLDocument xPath: 'Activities/Activity') do: [:eachNode | | newActivity |
 		newActivity := (self basicCreateActivityInstanceFrom: eachNode)
+			workflow: self;
 			id: (eachNode attributeAt: 'Id');
 			name: (eachNode attributeAt: 'Name');
 			xmlSegment: eachNode; 

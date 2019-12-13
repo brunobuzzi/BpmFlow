@@ -8,6 +8,7 @@ createTransitionNodesFrom: aXMLDocument
 		startCond := eachNode findElementNamed: 'Expression'.
 		startCond ifNotNil: [startCond := startCond contentString].
 		newTransition := XPDLTransitionNode new 
+									workflow: self;
 									xmlSegment: eachNode;
 									id: (eachNode attributeAt: 'Id');
 									name: (eachNode attributeAt: 'Name');

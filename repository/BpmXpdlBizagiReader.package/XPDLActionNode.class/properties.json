@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"lane" ],
-	"name" : "XPDLEventNode",
+		"workflow" ],
+	"name" : "XPDLActionNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLActionNode",
+	"super" : "XPDLObject",
 	"type" : "normal" }

@@ -13,5 +13,5 @@
 	"name" : "XPDLGatewayNode",
 	"pools" : [
 		 ],
-	"super" : "XPDLObject",
+	"super" : "XPDLActionNode",
 	"type" : "normal" }
