@@ -3,10 +3,11 @@ testUnsupporttedElements
 	| visitor map |
 
 	map := Dictionary new.
-	reader xpdlPackages do: [:pack | map at: pack put: (OrbeonApplication getExistingApplicationOrCreateNewNamed: 'ue')].
+	reader xpdlPackages do: [:pack | map at: pack put: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue')].
 
 	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map.
-	visitor visitAllXpdlPackages.
+	visitor bpmEnvironment: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'ue');
+		visitAllXpdlPackages.
 
 	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 13).
 
