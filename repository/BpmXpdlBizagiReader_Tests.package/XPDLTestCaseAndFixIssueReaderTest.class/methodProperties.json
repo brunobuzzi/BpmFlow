@@ -42,4 +42,5 @@
 		"testTransitionNoFixReportConditions" : "brunobb 08/28/2019 09:29",
 		"testTransitionRejectIssueConditions" : "brunobb 08/28/2019 09:29",
 		"testTransitionReportIssueConditions" : "brunobb 08/28/2019 09:29",
-		"testTransitionTestOkConditions" : "brunobb 08/28/2019 09:29" } }
+		"testTransitionTestOkConditions" : "brunobb 08/28/2019 09:29",
+		"testXpdlObjectWorkflow" : "brunobb 12/15/2019 09:10" } }
