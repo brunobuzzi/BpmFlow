@@ -1,9 +1,15 @@
 code analyzer
 checkOneArgumentBlockRule
 	"Receiver's block must be a ONE argument block"
+	| treeSearcher resultNodes |
 
-	(parser arguments size = 0) 
-	ifTrue: [^self addBlockWarning: 'Block has no argument'].
+	treeSearcher := RBParseTreeSearcher new.
+	treeSearcher 
+		matches: '[:`var1 | | `@temps |  ``@.Stmts.]'
+		do: [:aNode :answer | answer add: aNode; yourself].
 
-	(parser arguments size > 1) 
-	ifTrue: [^self addBlockWarning: 'Block has more than one argument'].
+	resultNodes := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
+
+	resultNodes ifNotEmpty: [^self]. "the block has one argument"
+
+	^self addBlockWarning: 'Block must have one argument'
