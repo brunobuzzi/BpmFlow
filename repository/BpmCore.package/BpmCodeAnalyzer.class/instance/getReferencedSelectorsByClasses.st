@@ -1,18 +1,16 @@
 ast queries
 getReferencedSelectorsByClasses
 	"The receiver answer a dictionary where the key is the class name and the value is the referenced selector in <blockCode> instance variable"
-	| referencedSelectors |
+	| treeSearcher matchesNodes referencedSelectors |
 
 	referencedSelectors := Dictionary new.
-	self allChildren do: [:each |
-		(each isMessage and: [each receiver isVariable and:[each receiver name first isUppercase]]) 
-		ifTrue: [referencedSelectors at: (each receiver name, ' class') ifAbsentPut: [OrderedCollection new].
-					(referencedSelectors at: (each receiver name, ' class')) add: each selector]
-		ifFalse: [(each isMessage and: [each receiver isVariable]) 
-					ifTrue: [referencedSelectors at: each receiver name ifAbsentPut: [OrderedCollection new].
-								(referencedSelectors at: each receiver name) add: each selector.
-					].
-		].
-	].
-	
+	treeSearcher := RBParseTreeSearcher new.
+	treeSearcher 
+		matches: '`{:node | node isMessage and: [node receiver isVariable and: [node receiver name first isUppercase]]}' 
+		do: [:aNode :answer | answer add: aNode; yourself].
+
+	matchesNodes := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
+
+	matchesNodes do: [:each | referencedSelectors at: each receiver name put: each selector].
+
 	^referencedSelectors
