@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "brunobb 12/03/2019 08:32",
+		"testCheckReceiverVariableMessagesRule" : "brunobb 12/18/2019 11:14",
 		"testClassMessageAndForbiddenMesage" : "brunobb 12/03/2019 08:33",
 		"testCountryFilter" : "brunobb 12/03/2019 08:31",
 		"testDateFilter" : "brunobb 12/03/2019 08:33",
