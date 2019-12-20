@@ -1,0 +1,4 @@
+other
+defaultAnalyzerClass
+
+	^BpmTaskScriptCodeAnalyzer
