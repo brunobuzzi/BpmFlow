@@ -9,14 +9,14 @@ checkReceiverVariableMessagesRule
 	treeSearcher 
 		matches: '``@receiver perform: `@arg1' 
 		do: [:aNode :answer | answer add: aNode; yourself].
-	perfomMessages := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
+	perfomMessages := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
 
 	treeSearcher := RBParseTreeSearcher new.
 	treeSearcher 
 		matches: '``@receiver `@methodName: ``@args' 
 		do: [:aNode :answer | answer add: aNode; yourself].
-	notPerfomMessages := (treeSearcher executeTree: parser initialAnswer: OrderedCollection new) select: [:each | each selector ~= #perform:].
-	notPerfomMessages := notPerfomMessages select: [:node |  node isMessage and: [node receiver isVariable and:[node receiver name = parser arguments last name]]].
+	notPerfomMessages := (treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new) select: [:each | each selector ~= #perform:].
+	notPerfomMessages := notPerfomMessages select: [:node |  node isMessage and: [node receiver isVariable and:[node receiver name = parsedNode arguments last name]]].
 
 	(notPerfomMessages select: [:each | 
 		(self getOrbeonFormInstanceClassOrNil 

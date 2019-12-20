@@ -8,4 +8,4 @@ getReferencedClasses
 		matches: '`{:node | node isMessage and: [node receiver isVariable and: [node receiver name first isUppercase]]}' 
 		do: [:aNode :answer | answer add: aNode receiver name; yourself].
 
-	^treeSearcher executeTree: parser initialAnswer: OrderedCollection new
+	^treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new

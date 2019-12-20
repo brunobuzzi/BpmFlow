@@ -9,6 +9,7 @@
 		"blockCode",
 		"codeWarnings",
 		"parser",
+		"parsedNode",
 		"infoWarnings",
 		"isValidClassesEnabled",
 		"validClasses",

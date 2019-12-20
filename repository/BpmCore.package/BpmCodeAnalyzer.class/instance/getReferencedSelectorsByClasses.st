@@ -9,7 +9,7 @@ getReferencedSelectorsByClasses
 		matches: '`{:node | node isMessage and: [node receiver isVariable and: [node receiver name first isUppercase]]}' 
 		do: [:aNode :answer | answer add: aNode; yourself].
 
-	matchesNodes := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
+	matchesNodes := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
 
 	matchesNodes do: [:each | referencedSelectors at: each receiver name put: each selector].
 

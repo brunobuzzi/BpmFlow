@@ -5,11 +5,11 @@ checkReceiverVariableRule
 	| atomicMessages argumentName |
 
 	"<atomicMessages> MUST have the receiver equal to Block argument"
-	atomicMessages := parser allChildren select: [:each | each isMessage and: [each receiver isVariable]].
+	atomicMessages := parsedNode allChildren select: [:each | each isMessage and: [each receiver isVariable]].
 
-	(parser arguments size = 1) ifFalse: [^self]."if arguments size is not correct --> we abort the following checks"
+	(parsedNode arguments size = 1) ifFalse: [^self]."if arguments size is not correct --> we abort the following checks"
 
-	argumentName := parser arguments last name. "the name of the Block argument ('each', 'proc' or whatever)"
+	argumentName := parsedNode arguments last name. "the name of the Block argument ('each', 'proc' or whatever)"
 
 	(atomicMessages select: [:each | 
 			(each receiver name ~= argumentName) "sending a message to anObject different from Block argument ?"

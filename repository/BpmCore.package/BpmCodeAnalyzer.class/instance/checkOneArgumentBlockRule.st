@@ -8,7 +8,7 @@ checkOneArgumentBlockRule
 		matches: '[:`var1 | | `@temps |  ``@.Stmts.]'
 		do: [:aNode :answer | answer add: aNode; yourself].
 
-	resultNodes := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
+	resultNodes := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
 
 	resultNodes ifNotEmpty: [^self]. "the block has one argument"
 
