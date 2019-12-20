@@ -1,0 +1,1 @@
+This class analyze a dyladic Block

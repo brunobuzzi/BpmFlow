@@ -1,18 +1,18 @@
 code analyzer
 checkReceiverVariableRule
-	"All basic receivers (receiver isVariable) MUST send message only to Block argument.
-	If a message is sent to a <variable receiver> and this <variable receiver> is not the block argument then it can be malicious code or an error"
-	| atomicMessages argumentName |
-
-	"<atomicMessages> MUST have the receiver equal to Block argument"
-	atomicMessages := parsedNode allChildren select: [:each | each isMessage and: [each receiver isVariable]].
-
-	(parsedNode arguments size = 1) ifFalse: [^self]."if arguments size is not correct --> we abort the following checks"
+	"Check that all messages sent to variables different from block argument are included in #getBasicClasses collection and the selector is included in #getBasicSelectorsForBasicClasses.
+	If a message is sent to a <variable> and this <variable> is not the block argument then then both must included in #getBasicClasses and #getBasicSelectorsForBasicClasses"
+	| argumentName treeSearcher sentMessages |
 
 	argumentName := parsedNode arguments last name. "the name of the Block argument ('each', 'proc' or whatever)"
+	treeSearcher := RBParseTreeSearcher new.
+	treeSearcher 
+		matches: '``@receiver `@methodName: ``@args' 
+		do: [:aNode :answer | answer add: aNode; yourself].
+	sentMessages := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
+	sentMessages := sentMessages select: [:node | node isMessage and: [node receiver isVariable and:[node receiver name ~= argumentName]]].
 
-	(atomicMessages select: [:each | 
-			(each receiver name ~= argumentName) "sending a message to anObject different from Block argument ?"
-			and:[(self getBasicClasses includes: each receiver name) not "sending message to basic objects ? Time/Date/TimeStamp"
-					or:[(self getBasicSelectorsForBasicClasses includes: each selector) not]]]) 
-	do: [:each | self addBlockWarning: 'Message is sent to object [', each receiver name, '] that is NOT the argument of the Block or it is a forbidden message [', each selector, '].' ]
+	"1- sending message to different to basic objects ? (Time/Date/TimeStamp)? "
+	"2- message selector different to allowed basic selectors ?"
+	(sentMessages reject: [:each | (self getBasicClasses includes: each receiver name) and: [self getBasicSelectorsForBasicClasses includes: each selector]]) 
+		do: [:each | self addBlockWarning: 'Message is sent to a forbidden variable [', each receiver name, '] or it is sent to a forbidden selector [', each selector, '].' ].
