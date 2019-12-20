@@ -4,6 +4,7 @@ checkReceiverVariableRule
 	If a message is sent to a <variable> and this <variable> is not the block argument then then both must included in #getBasicClasses and #getBasicSelectorsForBasicClasses"
 	| argumentName treeSearcher sentMessages |
 
+	parsedNode arguments ifEmpty: [^self].
 	argumentName := parsedNode arguments last name. "the name of the Block argument ('each', 'proc' or whatever)"
 	treeSearcher := RBParseTreeSearcher new.
 	treeSearcher 
