@@ -1,4 +1,4 @@
 other
 defaultAnalyzerClass
 
-	self subclassResponsibility
+	^BpmCodeAnalyzer
