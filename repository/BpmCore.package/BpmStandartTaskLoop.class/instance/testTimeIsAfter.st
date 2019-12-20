@@ -1,0 +1,4 @@
+other
+testTimeIsAfter
+
+	^testTime = #after

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"adminApplicationName" : "brunobb 01/21/2019 11:01",
+		"applicationNamed:ifNone:" : "BrunoBB 02/25/2016 12:23",
+		"getAdminApplication" : "brunobb 03/22/2019 11:44" },
+	"instance" : {
+		"getApplicationNameForCombo" : "BrunoBB 02/25/2016 16:32",
+		"getLastDefinitions" : "BrunoBB 02/24/2016 15:23",
+		"hasReadAccess:" : "BrunoBB 04/21/2016 12:58",
+		"isBpmApplication" : "BrunoBB 08/31/2016 11:49",
+		"printType" : "BrunoBB 08/31/2016 12:02" } }

@@ -1,0 +1,4 @@
+responsibility
+numberOfTasks
+
+	^tasks size

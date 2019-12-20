@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmCatchTagComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTagComponentDefinition",
+	"type" : "normal" }

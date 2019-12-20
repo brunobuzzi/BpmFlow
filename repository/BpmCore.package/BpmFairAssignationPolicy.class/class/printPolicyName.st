@@ -1,0 +1,4 @@
+other
+printPolicyName
+
+	^'Fair Policy'

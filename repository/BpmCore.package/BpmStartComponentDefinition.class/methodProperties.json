@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptVisitor:" : "brunobb 12/10/2018 11:57",
+		"addToParentProcess" : "BrunoBB 08/06/2016 14:42",
+		"hasAnonymousStart" : "brunobb 02/05/2018 10:08",
+		"hasAnonymousStart:" : "brunobb 02/05/2018 10:08",
+		"initialize" : "brunobb 02/05/2018 10:08",
+		"isStartEvent" : "brunobb 07/28/2017 14:05",
+		"printOnType" : "BrunoBB 08/06/2016 14:46",
+		"setAsAnonymousStart" : "brunobb 02/05/2018 10:12" } }

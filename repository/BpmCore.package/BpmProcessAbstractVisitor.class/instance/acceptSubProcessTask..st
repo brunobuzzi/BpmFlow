@@ -1,0 +1,4 @@
+tasks
+acceptSubProcessTask: aBpmSubProcessTaskDefinition
+
+	self subclassResponsibility

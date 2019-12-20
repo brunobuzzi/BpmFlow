@@ -1,0 +1,4 @@
+assignation
+getAssignationFilterFor: aBpmTaskAssignment
+
+	self subclassResponsibility

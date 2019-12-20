@@ -1,0 +1,4 @@
+events
+acceptIntermediateEvent: aBpmIntermediateComponentDefinition
+
+	self subclassResponsibility

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmLoopConditionCodeAnalyzer",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeAnalyzer",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hasAnonymousStart" ],
+	"name" : "BpmStartComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmCycleComponentDefinition",
+	"type" : "normal" }

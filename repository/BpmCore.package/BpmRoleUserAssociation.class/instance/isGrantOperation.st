@@ -1,0 +1,4 @@
+other
+isGrantOperation
+
+	^operation = #grant

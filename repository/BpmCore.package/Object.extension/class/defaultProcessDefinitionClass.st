@@ -1,0 +1,4 @@
+*bpmcore
+defaultProcessDefinitionClass
+
+	^BpmProcessDefinition

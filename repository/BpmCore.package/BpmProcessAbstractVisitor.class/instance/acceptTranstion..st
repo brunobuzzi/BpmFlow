@@ -1,0 +1,4 @@
+transitions
+acceptTranstion: aBpmTransitionDefinition
+
+	self subclassResponsibility

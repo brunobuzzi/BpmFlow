@@ -1,0 +1,19 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"users",
+		"isAdmin",
+		"application",
+		"tasks",
+		"usersAssociations" ],
+	"name" : "BpmRole",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

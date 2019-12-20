@@ -1,0 +1,4 @@
+other
+isReusable
+
+	^isEmbedded not

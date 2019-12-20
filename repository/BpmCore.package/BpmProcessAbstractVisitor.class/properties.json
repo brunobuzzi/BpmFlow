@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmProcessAbstractVisitor",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

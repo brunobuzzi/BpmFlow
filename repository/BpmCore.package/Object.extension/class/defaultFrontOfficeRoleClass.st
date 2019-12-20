@@ -1,0 +1,4 @@
+*bpmcore
+defaultFrontOfficeRoleClass
+
+	^BpmFrontOfficeRole

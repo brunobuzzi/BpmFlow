@@ -1,0 +1,4 @@
+gateways
+acceptEventBasedGateway: aBpmEventBasedGatewayDefinition
+
+	self subclassResponsibility

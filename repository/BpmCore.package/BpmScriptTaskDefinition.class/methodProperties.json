@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptVisitor:" : "brunobb 06/21/2019 10:45",
+		"addToParentProcess" : "brunobb 06/21/2019 10:45",
+		"beDeferredExecuted" : "brunobb 06/21/2019 11:02",
+		"beOnlineExecuted" : "brunobb 06/21/2019 11:02",
+		"initialize" : "brunobb 06/21/2019 10:46",
+		"printNameAndDefinitionType" : "brunobb 06/21/2019 10:45",
+		"runOnBackground" : "brunobb 06/21/2019 10:46",
+		"scriptCode" : "brunobb 06/21/2019 10:45",
+		"scriptCode:" : "brunobb 06/21/2019 10:45" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TimerDefinitionException",
+	"pools" : [
+		 ],
+	"super" : "BpmCodeException",
+	"type" : "normal" }

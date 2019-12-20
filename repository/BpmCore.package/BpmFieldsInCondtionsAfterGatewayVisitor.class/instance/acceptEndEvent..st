@@ -1,0 +1,2 @@
+events
+acceptEndEvent: aBpmEndComponentDefinition

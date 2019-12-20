@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmCompensationComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTypeComponentDefinition",
+	"type" : "normal" }

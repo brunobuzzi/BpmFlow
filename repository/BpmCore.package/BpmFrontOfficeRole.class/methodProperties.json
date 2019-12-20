@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"cache" : "BrunoBB 10/29/2015 18:46",
+		"cache:" : "BrunoBB 10/29/2015 18:46",
+		"getAllRolesIn:" : "brunobb 09/04/2018 10:58",
+		"getNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:12",
+		"getNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:52",
+		"getNumberOfUsersInTimeDistributionFor:" : "brunobb 05/31/2018 05:25",
+		"getUnassignedTasksDistributionFor:" : "brunobb 03/25/2019 08:11",
+		"reportNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:11",
+		"reportNumberOfUnassignedTasksFor:" : "BrunoBB 11/08/2016 14:38",
+		"reportNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:53" },
+	"instance" : {
+		"asBackofficeRole" : "brunobb 03/25/2019 09:02",
+		"asFrontofficeRole" : "BrunoBB 12/18/2015 14:27",
+		"getAverageTimeForTasks" : "BrunoBB 11/08/2016 09:02",
+		"isFrontofficeRole" : "brunobb 12/27/2017 13:22",
+		"reportAverageTimeDistributionForAllTasks" : "BrunoBB 11/08/2016 09:04" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 01/25/2018 16:47",
+	"instvars" : [
+		 ],
+	"name" : "BpmFairAssignationPolicy",
+	"pools" : [
+		 ],
+	"super" : "BpmTaskAssignationPolicy",
+	"type" : "normal" }

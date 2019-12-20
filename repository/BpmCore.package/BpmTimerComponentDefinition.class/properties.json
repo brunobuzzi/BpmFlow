@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activationBlock",
+		"isInterrupting" ],
+	"name" : "BpmTimerComponentDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmTypeComponentDefinition",
+	"type" : "normal" }

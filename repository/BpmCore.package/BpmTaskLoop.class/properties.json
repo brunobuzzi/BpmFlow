@@ -1,0 +1,16 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"taskDefinition",
+		"startQuantity",
+		"completionQuantity" ],
+	"name" : "BpmTaskLoop",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

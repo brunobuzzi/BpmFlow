@@ -1,0 +1,15 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinition",
+		"isAutomatic" ],
+	"name" : "BpmTaskAssignationPolicy",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+canModifyPathDefinition
+
+	^false
