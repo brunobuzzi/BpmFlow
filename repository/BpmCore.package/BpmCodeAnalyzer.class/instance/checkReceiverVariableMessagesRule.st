@@ -3,13 +3,20 @@ checkReceiverVariableMessagesRule
 	"All messages sent to Block's argument MUST NOT be understood by <BpmProcessInstance> and <OrbeonFormInstance>.
 	Inside the block messages are sent only to fields of <OrbeonFormInstance> or <BpmProcessInstance> and these messages are dispatched using #doesNotUnderstand:. 
 	So inside the block message to the argument MUST fail "
-	| atomicMessages notPerfomMessages perfomMessages |
+	| notPerfomMessages perfomMessages treeSearcher |
 
-	"<atomicMessages> MUST have the receiver equal to Block argument"
-	atomicMessages := parser allChildren select: [:each | each isMessage and: [each receiver isVariable]].
+	treeSearcher := RBParseTreeSearcher new.
+	treeSearcher 
+		matches: '``@receiver perform: `@arg1' 
+		do: [:aNode :answer | answer add: aNode; yourself].
+	perfomMessages := treeSearcher executeTree: parser initialAnswer: OrderedCollection new.
 
-	notPerfomMessages := atomicMessages select: [:each | (each selector findString: #perform:) = 0]. "not perform messages"
-	perfomMessages := atomicMessages select: [:each | (each selector findString: #perform:) ~= 0]. "perform messages"
+	treeSearcher := RBParseTreeSearcher new.
+	treeSearcher 
+		matches: '``@receiver `@methodName: ``@args' 
+		do: [:aNode :answer | answer add: aNode; yourself].
+	notPerfomMessages := (treeSearcher executeTree: parser initialAnswer: OrderedCollection new) select: [:each | each selector ~= #perform:].
+	notPerfomMessages := notPerfomMessages select: [:node |  node isMessage and: [node receiver isVariable and:[node receiver name = parser arguments last name]]].
 
 	(notPerfomMessages select: [:each | 
 		(self getOrbeonFormInstanceClassOrNil 
@@ -22,4 +29,4 @@ checkReceiverVariableMessagesRule
 
 	"Check for suspicious string as argument of #perform: message, more than one string (subString: space) as argument of #perform: NOT allowed"
 	(perfomMessages select: [:each | (each arguments size = 1) and: [each arguments last token isLiteralToken and: [(each arguments last value subStrings: ' ') size > 1]]]) 
-	do: [:each | self addBlockWarning: 'Suspicious string inside #perform: message']
+	do: [:each | self addBlockWarning: 'Suspicious string inside #perform: message'].
