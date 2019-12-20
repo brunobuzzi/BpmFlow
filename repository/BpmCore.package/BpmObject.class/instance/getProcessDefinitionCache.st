@@ -1,4 +1,0 @@
-other
-getProcessDefinitionCache
-
-	^self class getProcessDefinitionCache

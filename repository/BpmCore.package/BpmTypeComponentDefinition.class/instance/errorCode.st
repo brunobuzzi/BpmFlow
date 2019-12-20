@@ -1,4 +1,0 @@
-other
-errorCode
-
-	^-1

@@ -1,3 +1,0 @@
-Accessing
-isNonInterrupt
-	^isNonInterrupt

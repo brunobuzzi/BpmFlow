@@ -1,4 +1,0 @@
-other
-testTimeIsAfter
-
-	^testTime = #after

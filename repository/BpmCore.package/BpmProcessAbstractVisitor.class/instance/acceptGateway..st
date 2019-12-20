@@ -1,4 +1,0 @@
-gateways
-acceptGateway: aBpmGatewayDefinition
-
-	self subclassResponsibility

@@ -1,4 +1,0 @@
-other
-hasFinishedProcesses
-
-	^processInstances notEmpty

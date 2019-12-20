@@ -1,4 +1,0 @@
-other
-setAsAnonymousStart
-
-	hasAnonymousStart := true

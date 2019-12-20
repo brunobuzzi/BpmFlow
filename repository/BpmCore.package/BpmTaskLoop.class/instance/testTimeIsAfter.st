@@ -1,4 +1,0 @@
-other
-testTimeIsAfter
-
-	^false

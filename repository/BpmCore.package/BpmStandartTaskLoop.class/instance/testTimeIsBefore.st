@@ -1,4 +1,0 @@
-other
-testTimeIsBefore
-
-	^testTime = #before

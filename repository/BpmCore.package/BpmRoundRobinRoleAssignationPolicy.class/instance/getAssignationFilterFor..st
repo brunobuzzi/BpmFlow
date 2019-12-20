@@ -1,4 +1,0 @@
-assignation
-getAssignationFilterFor: aBpmTaskAssignment
-
-	^aBpmTaskAssignment roleName

@@ -1,4 +1,0 @@
-subprocesses
-parentProcess
-
-	^self subclassResponsibility

@@ -1,4 +1,0 @@
-tasks
-acceptSeasideTask: aBpmSeasideTaskDefinition
-
-	self subclassResponsibility

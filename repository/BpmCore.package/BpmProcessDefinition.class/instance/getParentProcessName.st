@@ -1,4 +1,0 @@
-subprocesses
-getParentProcessName
-
-	^self subclassResponsibility

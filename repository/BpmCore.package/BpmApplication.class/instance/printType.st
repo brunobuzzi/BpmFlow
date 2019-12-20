@@ -1,4 +1,0 @@
-other
-printType
-
-	^'Bpm'

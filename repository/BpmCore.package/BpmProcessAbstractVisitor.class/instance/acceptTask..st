@@ -1,4 +1,0 @@
-tasks
-acceptTask: aBpmAbstractTaskDefinition
-
-	self subclassResponsibility

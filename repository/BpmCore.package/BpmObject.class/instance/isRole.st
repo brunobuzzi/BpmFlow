@@ -1,4 +1,0 @@
-other
-isRole
-
-	^false

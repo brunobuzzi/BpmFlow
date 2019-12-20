@@ -1,1 +1,0 @@
-isAutomatic - whether or not the task assignations are done automatically (without the users taken them)

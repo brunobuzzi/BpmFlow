@@ -1,4 +1,0 @@
-environment
-bpmEnvironment
-
-	^processDefinition bpmEnvironment

@@ -1,4 +1,0 @@
-other
-getApplicationNameForCombo
-
-	^applicationName , ' [BpmApp]'

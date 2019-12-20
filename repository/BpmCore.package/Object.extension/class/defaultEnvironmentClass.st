@@ -1,4 +1,0 @@
-*bpmcore
-defaultEnvironmentClass
-
-	^BpmEnvironment

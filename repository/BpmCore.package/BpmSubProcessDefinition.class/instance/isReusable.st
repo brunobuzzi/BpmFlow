@@ -1,4 +1,0 @@
-other
-isReusable
-
-	^isEmbedded not

@@ -1,4 +1,0 @@
-other
-getTimeUnitFor: aTimeStamp
-
-	^aTimeStamp

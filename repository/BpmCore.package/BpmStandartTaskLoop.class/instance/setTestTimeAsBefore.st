@@ -1,4 +1,0 @@
-other
-setTestTimeAsBefore
-
-	testTime := #before

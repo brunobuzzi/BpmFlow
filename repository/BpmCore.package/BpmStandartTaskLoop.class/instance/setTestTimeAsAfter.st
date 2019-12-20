@@ -1,4 +1,0 @@
-other
-setTestTimeAsAfter
-
-	testTime := #after

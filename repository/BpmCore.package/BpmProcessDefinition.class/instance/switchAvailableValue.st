@@ -1,3 +1,0 @@
-other
-switchAvailableValue
-	"do nothing"
