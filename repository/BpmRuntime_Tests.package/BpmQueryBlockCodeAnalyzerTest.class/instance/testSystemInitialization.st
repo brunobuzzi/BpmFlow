@@ -5,4 +5,4 @@ testSystemInitialization
 
 	analyzer analyze.
 
-	self assert: (analyzer codeWarnings size = 1).
+	self assert: analyzer codeWarnings size equals: 2.
