@@ -1,5 +1,5 @@
 code analyzer
-checkReceiverVariableMessagesRule
+checkBlockArgumentMessagesRule
 	"All messages sent to Block's argument MUST NOT be understood by <BpmProcessInstance> and <OrbeonFormInstance>.
 	Inside the block messages are sent only to fields of <OrbeonFormInstance> or <BpmProcessInstance> and these messages are dispatched using #doesNotUnderstand:. 
 	So inside the block message to the argument MUST fail "

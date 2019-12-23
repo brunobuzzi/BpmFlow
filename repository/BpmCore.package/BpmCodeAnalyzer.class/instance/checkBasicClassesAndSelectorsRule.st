@@ -1,5 +1,5 @@
 code analyzer
-checkReceiverVariableRule
+checkBasicClassesAndSelectorsRule
 	"Check that all messages sent to variables different from block argument are included in #getBasicClasses collection and the selector is included in #getBasicSelectorsForBasicClasses.
 	If a message is sent to a <variable> and this <variable> is not the block argument then then both must included in #getBasicClasses and #getBasicSelectorsForBasicClasses"
 	| argumentName treeSearcher sentMessages |
