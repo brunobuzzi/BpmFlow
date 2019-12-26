@@ -10,4 +10,6 @@ getReferencedSelectorsByClasses
 		matches: '``@receiver `@methodName: ``@args' 
 		do: [:aNode :answer | answer add: aNode; yourself].
 
-	sentMessages := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
+	sentMessages := (treeSearcher executeTree: parsedNode initialAnswer: Set new) asOrderedCollection.
+
+	^sentMessages

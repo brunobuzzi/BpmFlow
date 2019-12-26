@@ -10,7 +10,7 @@ checkBasicClassesAndSelectorsRule
 	treeSearcher 
 		matches: '``@receiver `@methodName: ``@args' 
 		do: [:aNode :answer | answer add: aNode; yourself].
-	sentMessages := treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new.
+	sentMessages := (treeSearcher executeTree: parsedNode initialAnswer: Set new) asOrderedCollection.
 	sentMessages := sentMessages select: [:node | node isMessage and: [node receiver isVariable and:[node receiver name ~= argumentName]]].
 
 	"1- sending message to different to basic objects ? (Time/Date/TimeStamp)? "

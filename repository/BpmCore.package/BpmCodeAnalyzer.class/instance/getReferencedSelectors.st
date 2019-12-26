@@ -10,4 +10,4 @@ getReferencedSelectors
 		matches: '`{:node | node isMessage}' 
 		do: [:aNode :answer | answer add: aNode selector; yourself].
 
-	^treeSearcher executeTree: parsedNode initialAnswer: OrderedCollection new
+	^(treeSearcher executeTree: parsedNode initialAnswer: Set new) asOrderedCollection
