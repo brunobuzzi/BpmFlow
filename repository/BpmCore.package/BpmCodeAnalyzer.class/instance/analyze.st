@@ -1,4 +1,4 @@
 code analyzer
 analyze
 
-	self subclassResponsibility
+	self ifParserNotABlock: [^self addDefaultNonBlockWarning].
