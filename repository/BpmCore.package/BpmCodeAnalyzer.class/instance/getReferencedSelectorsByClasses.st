@@ -12,4 +12,10 @@ getReferencedSelectorsByClasses
 
 	sentMessages := (treeSearcher executeTree: parsedNode initialAnswer: Set new) asOrderedCollection.
 
-	^sentMessages
+	sentMessages do: [:each | | topReceiver |
+		topReceiver := self getTopReceiverInMessage: each.
+		referencedSelectors at: topReceiver name ifAbsentPut: [Set new].
+		(referencedSelectors at: topReceiver name) add: each selector.
+	].
+
+	^referencedSelectors

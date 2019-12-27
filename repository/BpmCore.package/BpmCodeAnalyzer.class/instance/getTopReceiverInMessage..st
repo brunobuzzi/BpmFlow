@@ -1,5 +1,5 @@
 ast queries
-getTopReceiverFrom: aRBMessageNode
+getTopReceiverInMessage: aRBMessageNode
 	"Answer the top receiver in the message node <aRBMessageNode> that is not a message"
 	| currentReceiver |
 
