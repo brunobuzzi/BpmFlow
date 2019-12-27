@@ -1,6 +1,6 @@
 ast queries
 getReferencedSelectorsByClasses
-	"The receiver answer a dictionary where the key is the class name and the value is the referenced selector in <blockCode> instance variable"
+	"The receiver answer a dictionary where the key is the class name and the value is a collection of referenced selectors in <blockCode>"
 	| treeSearcher referencedSelectors sentMessages |
 
 	referencedSelectors := Dictionary new.
@@ -17,8 +17,10 @@ getReferencedSelectorsByClasses
 		filteredReceiver := topReceiver name first isUppercase 
 		ifTrue: [topReceiver] "<topReceiver> is a class " 
 		ifFalse: [self getTopReceiverInAssignment: (self getAssignmentOf: topReceiver)]. "<topReceiver> is a variable" 
-		referencedSelectors at: filteredReceiver name ifAbsentPut: [Set new].
-		(referencedSelectors at: filteredReceiver name) add: each selector.
+		filteredReceiver ifNotNil: [ "if <nil> then is an arument of the block which are ignored here"
+			referencedSelectors at: filteredReceiver name ifAbsentPut: [Set new].
+			(referencedSelectors at: filteredReceiver name) add: each selector.
+		].
 	].
 
 	^referencedSelectors

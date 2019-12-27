@@ -4,4 +4,5 @@ analyze
 	self ifParserNotABlock: [^self addDefaultNonBlockWarning].
 
 	self checkTwoArgumentBlockRule;
-		checkUseOfInvalidClasses
+		checkUseOfInvalidClasses;
+		checkUseOfInvalidSelectors.
