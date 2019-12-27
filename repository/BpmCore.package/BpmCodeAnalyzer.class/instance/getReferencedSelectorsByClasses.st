@@ -12,10 +12,13 @@ getReferencedSelectorsByClasses
 
 	sentMessages := (treeSearcher executeTree: parsedNode initialAnswer: Set new) asOrderedCollection.
 
-	sentMessages do: [:each | | topReceiver |
+	sentMessages do: [:each | | topReceiver filteredReceiver |
 		topReceiver := self getTopReceiverInMessage: each.
-		referencedSelectors at: topReceiver name ifAbsentPut: [Set new].
-		(referencedSelectors at: topReceiver name) add: each selector.
+		filteredReceiver := topReceiver name first isUppercase 
+		ifTrue: [topReceiver] "<topReceiver> is a class " 
+		ifFalse: [self getTopReceiverInAssignment: (self getAssignmentOf: topReceiver)]. "<topReceiver> is a variable" 
+		referencedSelectors at: filteredReceiver name ifAbsentPut: [Set new].
+		(referencedSelectors at: filteredReceiver name) add: each selector.
 	].
 
 	^referencedSelectors
