@@ -21,3 +21,12 @@ testEmbeddedCodeSecuritySettings
 	self assert: env getCodeAnalyzerForStartEvents securityLevel equals: #medium.
 	self assert: env getCodeAnalyzerForTaskLoops securityLevel equals: #medium.
 	self assert: env getCodeAnalyzerForTransitionConditions securityLevel equals: #medium.
+
+	env setHighSecurityForAll.
+	env allCodeAnalyzers do: [:each | self assert: (env embeddedCodeSecurityLevelFor: each) equals: #high].
+	self assert: env getCodeAnalyzerForIntermediateEvents securityLevel equals: #high.
+	self assert: env getCodeAnalyzerForQueryBlocks securityLevel equals: #high.
+	self assert: env getCodeAnalyzerForScripts securityLevel equals: #high.
+	self assert: env getCodeAnalyzerForStartEvents securityLevel equals: #high.
+	self assert: env getCodeAnalyzerForTaskLoops securityLevel equals: #high.
+	self assert: env getCodeAnalyzerForTransitionConditions securityLevel equals: #high.

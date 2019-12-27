@@ -6,7 +6,7 @@
 		"testAccessToEnvironmentManager" : "brunobb 03/25/2019 09:03",
 		"testAdminUserInAdminsEnvironment" : "brunobb 02/04/2019 06:32",
 		"testAdminsEnvironmentExistance" : "brunobb 01/21/2019 11:46",
-		"testEmbeddedCodeSecuritySettings" : "brunobb 12/12/2019 04:21",
+		"testEmbeddedCodeSecuritySettings" : "brunobb 12/27/2019 08:33",
 		"testMutiUserExceptionInSigleUserEnvironment" : "brunobb 03/25/2019 08:35",
 		"testUniqueUserNameInMultiEnvironment" : "brunobb 03/25/2019 08:35",
 		"testUniqueUserNameInSingleEnvironment" : "brunobb 03/25/2019 08:36",
