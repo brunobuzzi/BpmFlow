@@ -7,4 +7,6 @@
 		"tearDown" : "brunobb 12/03/2019 08:32",
 		"testCheckOneArgumentBlockRule" : "brunobb 12/20/2019 07:18",
 		"testCheckThreeArgumentBlockRule" : "brunobb 12/20/2019 07:21",
-		"testCheckTwoArgumentBlockRule" : "brunobb 12/20/2019 07:20" } }
+		"testCheckTwoArgumentBlockRule" : "brunobb 12/20/2019 07:20",
+		"testGetTopReceiverFrom" : "brunobb 12/26/2019 09:34",
+		"testReferencedSelectorsByClass" : "brunobb 12/27/2019 07:59" } }
