@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBackoffice",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WACodeAnalyzerSecurityLevelPopupComponent",
+	"pools" : [
+		 ],
+	"super" : "SewafPopupComponent",
+	"type" : "normal" }

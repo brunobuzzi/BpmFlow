@@ -6,3 +6,4 @@ renderItemDescriptionTitleOn: html
 	selectedLateralItem canDelete ifTrue: [self renderDeleteEnvironmentOn: html].
 	self renderAddEnvironmentOn: html.
 	self renderSetEnvironmentIconsAndAppsNamesOn: html.
+	self renderSetCodeAnalyzerSecurityLevelOn: html.
