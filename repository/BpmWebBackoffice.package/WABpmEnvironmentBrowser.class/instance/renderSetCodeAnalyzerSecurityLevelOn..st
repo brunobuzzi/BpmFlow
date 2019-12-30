@@ -2,7 +2,7 @@ other
 renderSetCodeAnalyzerSecurityLevelOn: html
    | jQueryId |
 
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 300 composite: WACodeAnalyzerSecurityLevelPopupComponent title: 'Set Code Analyzer Security Level' domainObject: nil arguments: #().
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 600 composite: WACodeAnalyzerSecurityLevelPopupComponent title: 'Set Code Analyzer Security Level' domainObject: nil arguments: #().
 
 	html div class: 'float-right margin-left-5px'; with: [
 		html anchor 
