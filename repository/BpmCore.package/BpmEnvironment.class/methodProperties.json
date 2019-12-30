@@ -13,7 +13,7 @@
 		"newNamed:" : "brunobb 02/22/2019 09:33" },
 	"instance" : {
 		"addToCache" : "brunobb 02/22/2019 09:33",
-		"allCodeAnalyzers" : "brunobb 12/11/2019 09:09",
+		"allCodeAnalyzers" : "brunobb 12/30/2019 07:37",
 		"applications" : "brunobb 02/22/2019 09:33",
 		"applications:" : "brunobb 02/22/2019 09:33",
 		"applicationsLogos" : "brunobb 02/22/2019 09:33",
@@ -72,6 +72,7 @@
 		"setLowSecurityForAll" : "brunobb 12/11/2019 09:10",
 		"setMediumSecurityFor:" : "brunobb 12/12/2019 02:13",
 		"setMediumSecurityForAll" : "brunobb 12/11/2019 09:10",
+		"setSecurityLevelTo:for:" : "brunobb 12/30/2019 07:55",
 		"unregisterApplication:" : "brunobb 05/28/2019 04:21",
 		"unregisterApplication:ifNone:" : "brunobb 05/28/2019 04:20",
 		"unregisterUser:" : "brunobb 02/22/2019 09:33",
