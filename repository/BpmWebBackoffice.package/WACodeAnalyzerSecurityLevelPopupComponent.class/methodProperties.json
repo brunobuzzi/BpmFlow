@@ -2,4 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"allCodeSecurityLevels" : "brunobb 12/30/2019 07:29",
+		"renderCloseButtonOn:" : "brunobb 12/30/2019 07:51",
+		"renderContentOn:" : "brunobb 12/30/2019 07:50",
+		"renderSecurityForComboOn:for:title:id:" : "brunobb 12/30/2019 08:27",
+		"renderSecurityForIntermediateEventsOn:" : "brunobb 12/30/2019 07:47",
+		"renderSecurityForLoopsOn:" : "brunobb 12/30/2019 07:44",
+		"renderSecurityForQueriesOn:" : "brunobb 12/30/2019 07:44",
+		"renderSecurityForScriptsOn:" : "brunobb 12/30/2019 07:45",
+		"renderSecurityForStartEventsOn:" : "brunobb 12/30/2019 07:45",
+		"renderSecurityForTransitionsOn:" : "brunobb 12/30/2019 07:49" } }
