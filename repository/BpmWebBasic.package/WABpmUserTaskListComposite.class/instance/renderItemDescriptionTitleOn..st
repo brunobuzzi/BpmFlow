@@ -4,7 +4,7 @@ renderItemDescriptionTitleOn: html
 	| iconName toolTip |
 
 	html output: model processName. "process name"
-	model isInCorruptedState 
+	model isRunningWithException 
 	ifTrue: [html span with: [html strong: ('(Corrupted)' translateIn: self session)]].
 
 	(model hasFinalized not and: [model canUnassign and:[(model user == self session user) and: [model hasAutomaticTaskAssignation not]]])
