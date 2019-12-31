@@ -1,4 +1,0 @@
-testing
-isInCorruptedState
-
-	^process isInCorruptedState
