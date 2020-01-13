@@ -1,9 +1,10 @@
 other
 renderContentOn: html
 
+	self renderAddCalendarOn: html.
 	html div class: 'float-left'; with: [
 		(mainPanel selectedLateralItem name = 'Default') ifFalse: [self renderDeleteCalendarOn: html]. "Default calendar can not be removed"
-		self renderAddCalendarOn: html.
+
 		(self componentValueAt: 'hoursPane') 
 		ifFalse: [html div with: [
 			self renderYearsListOn: html.
