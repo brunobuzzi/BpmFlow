@@ -1,4 +1,4 @@
-other
+api
 generateTestClass
 	"The receiver create subclass of <BpmProcessExecutionTest> to debug the process <BpmProcessInstance> <procInstance>"
 
