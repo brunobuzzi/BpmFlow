@@ -5,7 +5,7 @@ renderItemDescriptionTitleOn: html
 
 	html output: model processName. "process name"
 	model isRunningWithException 
-	ifTrue: [html span class: 'error-text'; with: [html strong: (' - Evaluation Failed !!!' translateIn: self session)]].
+	ifTrue: [self renderFailedEvaluationAnchorOn: html].
 
 	(model hasFinalized not and: [model canUnassign and:[(model user == self session user) and: [model hasAutomaticTaskAssignation not]]])
 	ifTrue: [self renderReleaseAssignmentOn: html].
