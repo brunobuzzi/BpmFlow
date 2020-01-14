@@ -1,4 +1,4 @@
-code generation
+convenience
 getTestClassName
 	"The receiver generate the test class name for the test class"
 

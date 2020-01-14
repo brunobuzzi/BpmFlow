@@ -1,0 +1,4 @@
+convenience
+getBpmEnvironmentName
+
+	^procInstance definition bpmEnvironment name

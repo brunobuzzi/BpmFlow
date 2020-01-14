@@ -1,0 +1,4 @@
+convenience
+getApplicationName
+
+	^procInstance applicationName
