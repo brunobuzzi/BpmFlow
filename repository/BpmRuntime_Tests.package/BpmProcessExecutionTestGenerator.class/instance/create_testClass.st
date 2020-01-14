@@ -25,4 +25,4 @@ BpmProcessExecutionTest subclass: 'Proc3215866310ProcessExecutionTest'
 		add: #(). "options:"
 
 
-	BpmProcessExecutionTest perform: #subclass:instVarNames:classVars:classInstVars:poolDictionaries:inDictionary:category:options: withArguments: arguments asArray.
+	newTestClass := BpmProcessExecutionTest perform: #subclass:instVarNames:classVars:classInstVars:poolDictionaries:inDictionary:category:options: withArguments: arguments asArray.
