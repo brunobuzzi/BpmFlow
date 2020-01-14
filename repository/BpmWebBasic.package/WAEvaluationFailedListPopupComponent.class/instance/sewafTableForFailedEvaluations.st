@@ -10,4 +10,5 @@ sewafTableForFailedEvaluations
 						yourself);
 		rowColors: #(white white);
 		rowPeriod: 1;
+		rows: model;
 		yourself
