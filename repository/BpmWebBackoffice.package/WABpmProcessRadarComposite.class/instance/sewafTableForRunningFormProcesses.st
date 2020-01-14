@@ -15,7 +15,7 @@ sewafTableForRunningFormProcesses
 						add: (SewafReportColumn selector: #creatorName title: ('Creator' translateIn: self session));
 						add: (SewafReportColumn selector: #createdTime title: ('Creation Time' translateIn: self session));
 						add: (SewafReportColumn selector: #printCurrentRols title: ('Roles' translateIn: self session));
-						add: (SewafReportColumn selector: #stateName title: ('State' translateIn: self session));
+						add: self createStateColumn;
 						yourself);
 		rowColors: #(white white);
 		selectedObject: selectedObject;

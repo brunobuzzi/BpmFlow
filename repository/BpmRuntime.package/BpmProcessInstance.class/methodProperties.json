@@ -73,6 +73,7 @@
 		"getExecutedArtifactsReversed" : "brunobb 09/20/2019 10:04",
 		"getExecutedScriptNamed:ifNone:" : "brunobb 09/20/2019 10:04",
 		"getExecutedScriptsReversed" : "brunobb 09/20/2019 10:04",
+		"getFailedEvaluations" : "brunobb 01/14/2020 03:25",
 		"getFinishedProcessMatrix" : "brunobb 09/20/2019 10:04",
 		"getLastEventNamed:ifNone:" : "brunobb 09/20/2019 10:04",
 		"getParentDefinitionOf:ifNone:" : "brunobb 09/20/2019 10:04",
