@@ -1,30 +1,43 @@
 teardown
 create_tearDownMethod
-	| stream argsStream |
+	| stream procArgsStream rolesArgsStream |
 
-	argsStream := String new writeStream.
+
 	stream := String new writeStream.
 	stream nextPutAll: 'tearDown'; cr;cr;tab;
 			nextPutAll: 'super tearDown.';cr;tab;
 			nextPutAll: 	'self keepTempObjectsInSystem ifTrue: [^self].';
 			cr.
 
-
+	procArgsStream := String new writeStream.
+	rolesArgsStream := String new writeStream.
+	procArgsStream nextPutAll: '#('.
+	rolesArgsStream nextPutAll: '#('.
+ 
 	procInstance getProcessesTreeAsCollection do: [:eachProc | 
+		procArgsStream nextPutAll: eachProc processName quoted , ' '.
+		eachProc definition roles do: [:eachRole | rolesArgsStream nextPutAll: eachRole name quoted, ' ']. 
+	].
+	procArgsStream nextPutAll: ')'. 
+	rolesArgsStream nextPutAll: ')'. 
 
-	]. 
 	stream tab;
 		nextPutAll: 'self removeFrom: ', self getBpmEnvironmentName quoted, ' in: ', self getApplicationName quoted;
-		nextPutAll: ' processesName: '; 
-		nextPutAll: ' rolesName: ';
-		nextPutAll: ' usersName: '.
+		cr; tab;tab;
+		nextPutAll: ' processesName: ', procArgsStream contents; 
+		nextPutAll: ' rolesName: ', rolesArgsStream contents;
+		cr; tab;tab;
+		nextPutAll: ' usersName: #(''proc-user'').'.
+
 	^self compile: stream asMethodNamed: #tearDown
 
 
-"
-(BpmProcessExecutionTestGenerator newOn:
-(BpmProcessDefinition getProcessInstanceWithId: 3215866310))
-create_tearDownMethod.
+"It should produce:
+	tearDown
+
+	super tearDown.
+
+	self keepTempObjectsInSystem ifTrue: [^self].
 
 	self removeFrom: 'env-ue' in: 'ue' 
 			processesName: #('visa-appliance' 'home-office-check' 'check-financial-data') 
@@ -40,4 +53,5 @@ create_tearDownMethod.
 			processesName: #() 
 			rolesName: #('visa officer') 
 			usersName: #('andrew vo').
+
 "
