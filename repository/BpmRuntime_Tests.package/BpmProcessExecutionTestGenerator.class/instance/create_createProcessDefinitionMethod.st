@@ -1,2 +1,4 @@
-code generation
+cg createProcessDefinition
 create_createProcessDefinitionMethod
+
+	self createXPDLTemplates.
