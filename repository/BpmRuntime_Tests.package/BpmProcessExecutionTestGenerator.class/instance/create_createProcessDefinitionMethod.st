@@ -3,7 +3,7 @@ create_createProcessDefinitionMethod
 	| stream mainProcess |
 
 	stream := String new writeStream.
-	"self createXPDLTemplates."
+	self createProcessesXPDLTemplates.
 
 	stream nextPutAll: 'createProcessDefinition'; cr; tab;
 		nextPutAll: '| xpdlReader processGenerator |'; cr;cr;tab.
@@ -40,6 +40,7 @@ create_createProcessDefinitionMethod
 			nextPutAll: 'processGenerator getProcessDefinitionNamed: ', eachProc processName quoted , ' ifNone: [self assert: false].'.
 	].
 	^self compile: stream asMethodNamed: #createProcessDefinition
+
 "It should produce:
 createProcessDefinition
 	| xpdlReader processGenerator |
