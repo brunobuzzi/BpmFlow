@@ -1,4 +1,4 @@
-setup
+cg setUp
 create_setUpMethod
 	| stream |
 

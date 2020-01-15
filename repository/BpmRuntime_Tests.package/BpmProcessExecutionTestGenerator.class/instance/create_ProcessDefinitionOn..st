@@ -1,4 +1,4 @@
-setup
+cg setUp
 create_ProcessDefinitionOn: aStream
 
 	aStream tab;

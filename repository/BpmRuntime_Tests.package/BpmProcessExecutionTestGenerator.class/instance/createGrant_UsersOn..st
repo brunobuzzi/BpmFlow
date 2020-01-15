@@ -1,4 +1,4 @@
-setup
+cg setUp
 createGrant_UsersOn: aStream
 
 	procInstance definition roles do: [:role | 

@@ -1,4 +1,4 @@
-teardown
+cg tearDown
 create_tearDownMethod
 	| stream procArgsStream rolesArgsStream |
 
