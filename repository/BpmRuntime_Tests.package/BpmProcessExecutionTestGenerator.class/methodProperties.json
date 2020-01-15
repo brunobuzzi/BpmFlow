@@ -3,7 +3,7 @@
 		"newOn:" : "brunobb 01/14/2020 07:29" },
 	"instance" : {
 		"compile:asMethodNamed:" : "brunobb 01/14/2020 10:19",
-		"createFormsXMLTemplates" : "brunobb 01/15/2020 10:03",
+		"createFormsXMLTemplates" : "brunobb 01/15/2020 10:33",
 		"createGrant_UsersOn:" : "brunobb 01/15/2020 02:50",
 		"createProcessesXPDLTemplates" : "brunobb 01/15/2020 10:01",
 		"create_EnvironmentAndApplicationOn:" : "brunobb 01/15/2020 02:50",
@@ -18,6 +18,8 @@
 		"generateTestClass" : "brunobb 01/15/2020 03:54",
 		"getApplicationName" : "brunobb 01/14/2020 10:34",
 		"getBpmEnvironmentName" : "brunobb 01/14/2020 10:33",
+		"getFromDefinitionTemplateMethoNameFor:" : "brunobb 01/15/2020 10:36",
+		"getFromInstanceTemplateMethoNameFor:" : "brunobb 01/15/2020 10:37",
 		"getProcessTemplateMethoNameFor:" : "brunobb 01/15/2020 08:53",
 		"getTestClassName" : "brunobb 01/14/2020 07:29",
 		"procInstance" : "brunobb 01/14/2020 07:29",
