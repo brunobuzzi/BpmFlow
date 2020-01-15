@@ -1,2 +1,4 @@
-code generation
+cg formInstance
 create_formInstanceMethods
+
+	self createFormsXMLTemplates.

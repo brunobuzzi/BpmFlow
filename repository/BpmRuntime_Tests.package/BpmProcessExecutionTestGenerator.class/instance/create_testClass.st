@@ -1,4 +1,4 @@
-code generation
+cg test class creation
 create_testClass
 	"Create a new GS Class subclass of <BpmProcessExecutionTest>. The new test class will be like:
 (
