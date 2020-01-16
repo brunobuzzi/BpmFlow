@@ -1,9 +1,12 @@
 cg testExecuteProcess
 createTemporaryVariablesOn: aStream for: aBpmProcessInstance
 
-	aStream nextPutAll: '| '.
+	aStream tab;
+		nextPutAll: '|'.
 	
-	aStream nextPutAll: ' currentTask';
+	aStream 
+		nextPutAll: ' subProcess';
+		nextPutAll: ' currentTask';
 		nextPutAll: ' gateway';
 		nextPutAll: ' endArtifact';
 		nextPutAll: ' processId';
@@ -11,4 +14,5 @@ createTemporaryVariablesOn: aStream for: aBpmProcessInstance
 		nextPutAll: ' takenProcessMatrix';
 		nextPutAll: ' finishedProcessMatrix'.
 
-	aStream nextPutAll: ' |'.
+	aStream nextPutAll: ' |';
+		cr;cr.

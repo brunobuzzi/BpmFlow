@@ -1,9 +1,12 @@
 cg testExecuteProcess
 create_testExecuteProcessMethods
-	| codeStream |
+	| codeStream testMethodName |
 
 	codeStream := String new writeStream.
-	procInstance getProcessesTreeAsCollection do: [:each | self create_testExecuteProcessMethodsOn: codeStream for: each] 
+	testMethodName := self getTestExecuteProcessMethodNameFor: procInstance.
+	self create_testExecuteProcessMethodNamed: testMethodName on: codeStream for: procInstance methodsRepository: Dictionary new.
+
+	^self compile: codeStream asMethodNamed: testMethodName asSymbol
 "
 (BpmProcessExecutionTestGenerator newOn:
 (BpmProcessDefinition getProcessInstanceWithId: 1500319936))
