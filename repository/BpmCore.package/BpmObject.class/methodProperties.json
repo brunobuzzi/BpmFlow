@@ -9,8 +9,10 @@
 		"isProcessDefinition" : "brunobb 02/09/2018 13:31",
 		"isProcessInstance" : "brunobb 02/09/2018 13:31",
 		"isRole" : "brunobb 04/25/2018 08:18",
+		"isTask" : "brunobb 01/16/2020 04:30",
 		"isTaskAssignment" : "brunobb 02/10/2018 05:45",
 		"isTimerEvent" : "brunobb 02/09/2018 11:17",
+		"isTransition" : "brunobb 01/16/2020 04:31",
 		"isUser" : "brunobb 04/25/2018 08:18",
 		"throwExceptionTaskAssignmentNotFound" : "BrunoBB 12/04/2015 10:36",
 		"xmlHeader" : "brunobb 02/10/2018 06:16" } }
