@@ -1,5 +1,6 @@
 other
 generateLog
+	"The receiver collect all generated elements in the execution of <BpmProcessInstance> <bpmProcess> as <BpmExecutionLogEntry> objects and store them on <logEntries> collection"
 	| collectorBlock |
 
 	logEntries := OrderedCollection new.
