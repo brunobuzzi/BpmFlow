@@ -13,15 +13,15 @@ create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstan
 	transitionEntries do: [:eachEntry | | transition endArtifact |
 		transition := eachEntry bpmObject.
 		endArtifact := transition endArtifact.
-		endArtifact isSubprocess 
+		endArtifact isSubprocess "create a new test method for the subprocess "
 		ifTrue: [ | methodName newStream |
 			methodName := self getTestExecuteProcessMethodNameFor: endArtifact processInstance.
 			newStream := String new writeStream.
 			self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary.
 			aStream tab;
-				nextPutAll: 'self ', methodName, '.'.
-		]
-		ifFalse: [].
+				nextPutAll: 'self ', methodName, '.'. "this is the call to the new test method"
+		].
+		
 	]. 
 
 	aDictionary at: aString put: aStream contents
