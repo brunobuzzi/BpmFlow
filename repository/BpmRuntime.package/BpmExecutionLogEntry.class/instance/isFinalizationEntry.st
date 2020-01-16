@@ -1,0 +1,4 @@
+other
+isFinalizationEntry
+
+	^type = #finalization

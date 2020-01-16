@@ -1,0 +1,4 @@
+other
+isArtifactInstance
+
+	^bpmObject isArtifactInstance
