@@ -10,8 +10,18 @@ create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstan
 	self createProcessInstanceOn: aStream for: aBpmProcessInstance.
 	self createTaskMatricesOn: aStream for: aBpmProcessInstance.
 	
-	transitionEntries do: [:eachEntry | | transition |
+	transitionEntries do: [:eachEntry | | transition endArtifact |
 		transition := eachEntry bpmObject.
+		endArtifact := transition endArtifact.
+		endArtifact isSubprocess 
+		ifTrue: [ | methodName newStream |
+			methodName := self getTestExecuteProcessMethodNameFor: endArtifact processInstance.
+			newStream := String new writeStream.
+			self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary.
+			aStream tab;
+				nextPutAll: 'self ', methodName, '.'.
+		]
+		ifFalse: [].
 	]. 
 
 	aDictionary at: aString put: aStream contents

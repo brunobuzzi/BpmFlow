@@ -4,4 +4,7 @@ createProcessInstanceOn: aStream for: aBpmProcessInstance
 
 	variableName := aBpmProcessInstance isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess'].
 
-	aStream nextPutAll: variableName, ' := procDefinition createAndStartProcessInstance: (self getUserNamed: ', self getDefaultUserName, ').'.
+	aStream 
+		tab;
+		nextPutAll: variableName, ' := procDefinition createAndStartProcessInstance: (self getUserNamed: ', self getDefaultUserName, ').';
+		cr.
