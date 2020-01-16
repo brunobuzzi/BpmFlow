@@ -1,13 +1,11 @@
 cg testExecuteProcess
 create_testExecuteProcessMethods
-	| codeStream processLog transitionEntries |
-
-	processLog := procInstance asExecutionLog.
-	transitionEntries := processLog getTransitionsEntries.
+	| codeStream |
 
 	codeStream := String new writeStream.
+	procInstance getProcessesTreeAsCollection do: [:each | self create_testExecuteProcessMethodsOn: codeStream for: each] 
 "
 (BpmProcessExecutionTestGenerator newOn:
-(BpmProcessDefinition getProcessInstanceWithId: 3215866310))
+(BpmProcessDefinition getProcessInstanceWithId: 1500319936))
 create_formInstanceMethods.
 "

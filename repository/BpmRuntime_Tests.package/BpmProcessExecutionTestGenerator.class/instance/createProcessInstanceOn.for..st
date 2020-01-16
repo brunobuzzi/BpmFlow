@@ -1,0 +1,2 @@
+cg testExecuteProcess
+createProcessInstanceOn: aStream for: aBpmProcessInstance
