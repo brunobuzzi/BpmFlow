@@ -1,0 +1,4 @@
+other
+isTransitionEntry
+
+	^bpmObject isTransition

@@ -1,0 +1,4 @@
+other
+isTaskEntry
+
+	^bpmObject isTask

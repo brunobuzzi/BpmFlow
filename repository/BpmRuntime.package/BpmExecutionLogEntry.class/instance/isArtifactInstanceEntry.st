@@ -1,4 +1,4 @@
 other
-isArtifactInstance
+isArtifactInstanceEntry
 
 	^bpmObject isArtifactInstance

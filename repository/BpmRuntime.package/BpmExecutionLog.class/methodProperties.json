@@ -5,7 +5,10 @@
 		"bpmProcess" : "brunobb 05/23/2019 04:23",
 		"bpmProcess:" : "brunobb 05/23/2019 04:23",
 		"generateLog" : "brunobb 01/16/2020 02:44",
-		"getArtifactsEntries" : "brunobb 01/16/2020 02:24",
-		"getFinalizedArtifactsEntries" : "brunobb 01/16/2020 02:31",
+		"getArtifactsEntries" : "brunobb 01/16/2020 04:35",
+		"getFinalizedArtifactsEntries" : "brunobb 01/16/2020 04:35",
+		"getFinalizedTasksEntries" : "brunobb 01/16/2020 04:35",
+		"getTasksEntries" : "brunobb 01/16/2020 04:35",
+		"getTransitionsEntries" : "brunobb 01/16/2020 04:36",
 		"logEntries" : "brunobb 05/23/2019 04:23",
 		"logEntries:" : "brunobb 05/23/2019 04:23" } }

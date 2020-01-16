@@ -1,4 +1,4 @@
-other
+api
 getFinalizedArtifactsEntries
 
-	^logEntries select: [:each | each isArtifactInstance and:[each isFinalizationEntry]]
+	^logEntries select: [:each | each isArtifactInstanceEntry and:[each isFinalizationEntry]]
