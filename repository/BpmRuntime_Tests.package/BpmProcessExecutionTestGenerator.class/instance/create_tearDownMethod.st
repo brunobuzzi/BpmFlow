@@ -2,7 +2,6 @@ cg tearDown
 create_tearDownMethod
 	| stream procArgsStream rolesArgsStream |
 
-
 	stream := String new writeStream.
 	stream nextPutAll: 'tearDown'; cr;cr;tab;
 			nextPutAll: 'super tearDown.';cr;tab;
