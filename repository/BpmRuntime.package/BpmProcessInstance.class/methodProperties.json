@@ -77,6 +77,7 @@
 		"getFinishedProcessMatrix" : "brunobb 09/20/2019 10:04",
 		"getLastEventNamed:ifNone:" : "brunobb 09/20/2019 10:04",
 		"getParentDefinitionOf:ifNone:" : "brunobb 09/20/2019 10:04",
+		"getParentOrSubProcessWithId:ifNone:" : "brunobb 01/16/2020 11:54",
 		"getPrintableValueFrom:" : "brunobb 09/20/2019 10:04",
 		"getProcessMapStreamFor:" : "brunobb 09/20/2019 10:04",
 		"getProcessTree:" : "brunobb 09/20/2019 10:04",

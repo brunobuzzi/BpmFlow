@@ -3,7 +3,7 @@ createTaskMatricesOn: aStream for: aBpmProcessInstance
 
 	aStream 
 		tab;
-		nextPutAll: 'processId := procInstance id.';
+		nextPutAll: 'processId := ', (aBpmProcessInstance isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess']),' id.';
 		cr;
 		tab;
 		nextPutAll: 'currentProcessMatrix := procInstance getAvailableProcessMatrix.';
