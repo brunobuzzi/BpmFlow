@@ -1,9 +1,9 @@
 cg tearDown
 create_tearDownMethod
-	| stream procArgsStream rolesArgsStream |
+	| codeStream procArgsStream rolesArgsStream |
 
-	stream := String new writeStream.
-	stream nextPutAll: 'tearDown'; cr;cr;tab;
+	codeStream := String new writeStream.
+	codeStream nextPutAll: 'tearDown'; cr;cr;tab;
 			nextPutAll: 'super tearDown.';cr;tab;
 			nextPutAll: 	'self keepTempObjectsInSystem ifTrue: [^self].';
 			cr.
@@ -20,7 +20,7 @@ create_tearDownMethod
 	procArgsStream nextPutAll: ')'. 
 	rolesArgsStream nextPutAll: ')'. 
 
-	stream tab;
+	codeStream tab;
 		nextPutAll: 'self removeFrom: ', self getBpmEnvironmentName quoted, ' in: ', self getApplicationName quoted;
 		cr; tab;tab;
 		nextPutAll: ' processesName: ', procArgsStream contents; 
@@ -28,7 +28,7 @@ create_tearDownMethod
 		cr; tab;tab;
 		nextPutAll: ' usersName: #(''proc-user'').'.
 
-	^self compile: stream asMethodNamed: #tearDown
+	^self compile: codeStream asMethodNamed: #tearDown
 
 
 "It should produce:

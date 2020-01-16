@@ -1,19 +1,19 @@
 cg setUp
 create_setUpMethod
-	| stream |
+	| codeStream |
 
-	stream := String new writeStream.
-	stream nextPutAll: 'setUp'; cr;tab;
+	codeStream := String new writeStream.
+	codeStream nextPutAll: 'setUp'; cr;tab;
 			nextPutAll: '| environment |';
 			cr;cr;tab;
 			nextPutAll: 'super setUp.';cr.
 
-	self create_EnvironmentAndApplicationOn: stream.
-	self create_ProcessDefinitionOn: stream.
-	self create_UsersOn: stream.
-	self createGrant_UsersOn: stream.
+	self create_EnvironmentAndApplicationOn: codeStream.
+	self create_ProcessDefinitionOn: codeStream.
+	self create_UsersOn: codeStream.
+	self createGrant_UsersOn: codeStream.
 
-	^self compile: stream asMethodNamed: #setUp
+	^self compile: codeStream asMethodNamed: #setUp
 
 "It should produce:
 setUp

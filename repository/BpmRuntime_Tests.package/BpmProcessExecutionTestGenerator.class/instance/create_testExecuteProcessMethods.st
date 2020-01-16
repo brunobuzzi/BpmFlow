@@ -1,9 +1,11 @@
-code generation
+cg testExecuteProcess
 create_testExecuteProcessMethods
-	| processLog transitionEntries |
+	| codeStream processLog transitionEntries |
 
 	processLog := procInstance asExecutionLog.
 	transitionEntries := processLog getTransitionsEntries.
+
+	codeStream := String new writeStream.
 "
 (BpmProcessExecutionTestGenerator newOn:
 (BpmProcessDefinition getProcessInstanceWithId: 3215866310))
