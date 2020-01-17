@@ -1,0 +1,4 @@
+other
+beGeneratorTest
+
+	isGeneratorTest := true
