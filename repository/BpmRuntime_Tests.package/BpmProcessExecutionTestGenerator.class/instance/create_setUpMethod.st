@@ -4,7 +4,7 @@ create_setUpMethod
 
 	codeStream := String new writeStream.
 	codeStream nextPutAll: 'setUp'; cr;tab;
-			nextPutAll: '| environment |';
+			nextPutAll: '| environment application |';
 			cr;cr;tab;
 			nextPutAll: 'super setUp.';cr.
 
