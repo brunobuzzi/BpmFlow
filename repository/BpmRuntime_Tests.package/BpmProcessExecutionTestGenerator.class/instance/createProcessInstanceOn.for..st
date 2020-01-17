@@ -9,6 +9,6 @@ createProcessInstanceOn: aStream for: aBpmProcessInstance
 	]
 	ifFalse: [aStream 
 					tab;
-					nextPutAll: 'subProcess := procInstance getParentOrSubProcessWithId: ', aBpmProcessInstance id printString,' ifNone: [self assert: false].';
+					nextPutAll: 'subProcess := procInstance getLastSubProcessNamed: ', aBpmProcessInstance processName quoted,' ifNone: [self assert: false].';
 					cr.
 	]
