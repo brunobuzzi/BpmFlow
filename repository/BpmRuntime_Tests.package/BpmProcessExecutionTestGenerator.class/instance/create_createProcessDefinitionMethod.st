@@ -39,7 +39,7 @@ create_createProcessDefinitionMethod
 		codeStream cr; tab;
 			nextPutAll: 'processGenerator getProcessDefinitionNamed: ', eachProc processName quoted , ' ifNone: [self assert: false].'.
 	].
-	^self compile: codeStream asMethodNamed: #createProcessDefinition
+	^self compile: codeStream asMethodNamed: #createProcessDefinition category: self categoryNameOther
 
 "It should produce:
 createProcessDefinition

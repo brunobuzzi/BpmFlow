@@ -28,7 +28,7 @@ create_tearDownMethod
 		cr; tab;tab;
 		nextPutAll: ' usersName: #(''proc-user'').'.
 
-	^self compile: codeStream asMethodNamed: #tearDown
+	^self compile: codeStream asMethodNamed: #tearDown category: self categoryNameOther
 
 
 "It should produce:

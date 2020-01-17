@@ -13,7 +13,7 @@ create_setUpMethod
 	self create_UsersOn: codeStream.
 	self createGrant_UsersOn: codeStream.
 
-	^self compile: codeStream asMethodNamed: #setUp
+	^self compile: codeStream asMethodNamed: #setUp category: self categoryNameOther
 
 "It should produce:
 setUp
