@@ -8,7 +8,7 @@ create_testExecuteProcessMethods
 	self create_testExecuteProcessMethodNamed: testMethodName on: codeStream for: procInstance methodsRepository: repo.
 
 	repo keysAndValuesDo: [:methodName :sourceString |
-		self compile: codeStream asMethodNamed: methodName asSymbol category: self categoryNameTest
+		self compile: sourceString readStream asMethodNamed: methodName asSymbol category: self categoryNameTest
 	].
 "
 (BpmProcessExecutionTestGenerator newOn:
