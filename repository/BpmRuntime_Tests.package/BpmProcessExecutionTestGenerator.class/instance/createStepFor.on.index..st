@@ -9,9 +9,9 @@ createStepFor: aBpmTaskInstance on: aStream index: index
 		nextPutAll: aBpmTaskInstance externalObject formName;
 		nextPutAll: ']" ';
 		cr;tab;
-		nextPutAll: ('self assert: (currentTask getDefinitionName = ', aBpmTaskInstance externalObject formName quoted, ').');
-		cr;tab;
 		nextPutAll: 'currentTask := procInstance currentActivities last.';
+		cr;tab;
+		nextPutAll: ('self assert: (currentTask getDefinitionName = ', aBpmTaskInstance externalObject formName quoted, ').');
 		cr;tab;
 		nextPutAll: 'self assert: (currentProcessMatrix getAvailableTasksFor: ', self getDefaultUserName, ' satisfying: {:assign | assign.processId = processId}) notEmpty.';
 		cr;tab;
