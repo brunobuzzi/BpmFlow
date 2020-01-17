@@ -12,7 +12,9 @@ createTemporaryVariablesOn: aStream for: aBpmProcessInstance
 		nextPutAll: ' processId';
 		nextPutAll: ' currentProcessMatrix';
 		nextPutAll: ' takenProcessMatrix';
-		nextPutAll: ' finishedProcessMatrix'.
+		nextPutAll: ' finishedProcessMatrix';
+		nextPutAll: ' currentTaskCount';
+		nextPutAll: ' finishedTaskCount'.
 
 	aStream nextPutAll: ' |';
 		cr;cr.

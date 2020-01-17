@@ -18,4 +18,7 @@ createStepFor: aBpmTaskInstance on: aStream index: index
 		nextPutAll: self getDefaultUserName, ' withForm: self ';
 		nextPutAll: (self getFromInstanceMethoNameFor: aBpmTaskInstance externalObject); 
 		nextPutAll: ' on: ', (aBpmTaskInstance process isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess']), '.';
-		cr.
+		cr;tab;
+		nextPutAll:  'currentTaskCount := (currentProcessMatrix getAvailableTasksFor: ', roleName quoted,' satisfying: {:assign | assign.processId = processId}) size.'; 
+		cr;tab;
+		nextPutAll:  'finishedTaskCount := (finishedProcessMatrix getAvailableTasksFor: ', roleName quoted,' satisfying: {:assign | assign.processId = processId}) size.'.

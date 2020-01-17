@@ -1,5 +1,7 @@
 cg testExecuteProcess
 create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstance methodsRepository: aDictionary
+	"The receiver create a #testExecuteProcessXXX method named <aString> on <aStream> for process <aBpmProcessInstance> and store the method source in <aDictionary>.
+	Note: the current implementation only reproduce Task and Subprocess and exclude Gateways, Events and Scripts"
 	| processLog transitionEntries |
 
 	aStream nextPutAll: aString; cr.
