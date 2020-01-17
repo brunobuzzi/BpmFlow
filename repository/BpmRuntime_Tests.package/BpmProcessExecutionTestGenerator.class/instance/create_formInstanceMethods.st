@@ -12,7 +12,8 @@ create_formInstanceMethods
 				nextPutAll: (self getFromInstanceTemplateMethoNameFor: eachTask externalObject); 
 				nextPutAll: ' definitionNamed: ', eachTask externalObject getFormName quoted;
 				nextPutAll: ' app: ', eachTask applicationName quoted;
-				nextPutAll: ' definitionMethod: #', (self getFromDefinitionTemplateMethoNameFor: eachTask externalObject) .
+				nextPutAll: ' definitionMethod: #', (self getFromDefinitionTemplateMethoNameFor: eachTask externalObject).
+			newTestClass 	compile: formInstanceStream contents classified: self categoryNameFormInstances.
 		].
 	].
 

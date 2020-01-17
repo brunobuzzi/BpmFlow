@@ -3,7 +3,8 @@ createStepFor: aBpmTaskInstance on: aStream index: index
 	| roleName |
 
 	roleName := aBpmTaskInstance printFirstRoleName.
-	aStream tab;
+	aStream 
+		cr;tab;
 		nextPutAll: '"Step ', index printString,' - Form [';
 		nextPutAll: aBpmTaskInstance externalObject formName;
 		nextPutAll: ']" ';
