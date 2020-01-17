@@ -20,7 +20,7 @@ create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstan
 		endArtifact := transition endArtifact.
 		endArtifact isSubprocess "create a new test method for the subprocess "
 		ifTrue: [ | methodName newStream |
-			methodName := self getTestExecuteProcessMethodNameFor: endArtifact processInstance.
+			methodName := self getTestExecuteSubProcessMethodNameFor: endArtifact processInstance.
 			newStream := String new writeStream.
 			self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary.
 			aStream tab;
