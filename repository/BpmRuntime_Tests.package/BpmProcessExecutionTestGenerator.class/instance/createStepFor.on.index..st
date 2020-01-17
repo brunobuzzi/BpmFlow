@@ -9,11 +9,11 @@ createStepFor: aBpmTaskInstance on: aStream index: index
 		nextPutAll: aBpmTaskInstance externalObject formName;
 		nextPutAll: ']" ';
 		cr;tab;
-		nextPutAll: 'currentTask := procInstance currentActivities last.';
+		nextPutAll: 'currentTask := ', (aBpmTaskInstance process isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess']),' currentActivities last.';
 		cr;tab;
 		nextPutAll: ('self assert: (currentTask getDefinitionName = ', aBpmTaskInstance externalObject formName quoted, ').');
 		cr;tab;
-		nextPutAll: 'self assert: (currentProcessMatrix getAvailableTasksFor: ', self getDefaultUserName, ' satisfying: {:assign | assign.processId = processId}) notEmpty.';
+		nextPutAll: 'self assert: (currentProcessMatrix getAvailableTasksFor: ', roleName quoted, ' satisfying: {:assign | assign.processId = processId}) notEmpty.';
 		cr;tab;
 		nextPutAll: 'self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: ';
 		nextPutAll: self getDefaultUserName, ' withForm: self ';

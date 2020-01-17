@@ -1,16 +1,18 @@
 cg testExecuteProcess
 createTaskMatricesOn: aStream for: aBpmProcessInstance
+	| variableName |
 
+	variableName := aBpmProcessInstance isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess'].
 	aStream 
 		tab;
-		nextPutAll: 'processId := ', (aBpmProcessInstance isTopProcess ifTrue: ['procInstance'] ifFalse: ['subProcess']),' id.';
+		nextPutAll: 'processId := ', variableName,' id.';
 		cr;
 		tab;
-		nextPutAll: 'currentProcessMatrix := procInstance getAvailableProcessMatrix.';
+		nextPutAll: 'currentProcessMatrix := ', variableName,' getAvailableProcessMatrix.';
 		cr;
 		tab;
-		nextPutAll: 'takenProcessMatrix := procInstance getTakenProcessMatrix.';
+		nextPutAll: 'takenProcessMatrix := ', variableName,' getTakenProcessMatrix.';
 		cr;
 		tab;
-		nextPutAll: 'finishedProcessMatrix := procInstance getFinishedProcessMatrix.';
+		nextPutAll: 'finishedProcessMatrix := ', variableName,' getFinishedProcessMatrix.';
 		cr.
