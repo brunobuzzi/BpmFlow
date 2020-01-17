@@ -23,8 +23,9 @@ create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstan
 			methodName := self getTestExecuteSubProcessMethodNameFor: endArtifact processInstance.
 			newStream := String new writeStream.
 			self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary.
-			aStream tab;
-				nextPutAll: 'self ', methodName, '.'; "this is the call to the new test method"
+			aStream 
+				cr;tab;
+				nextPutAll: 'self ', methodName, '. "Resume test with a SubProcess"'; "this is the call to the new test method"
 				cr.
 		].
 		endArtifact isTask ifTrue: [self createStepFor: endArtifact on: aStream index: index].
