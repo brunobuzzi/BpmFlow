@@ -1,6 +1,9 @@
 gs package
 createGemStonePackage
-	| packageInfo |
 
-	packageInfo := PackageInfo named: self defaultGsPackageName.
-	PackageOrganizer default registerPackage: packageInfo.
+	mcPackage := MCPackage named: self defaultGsPackageName.
+	mcWorkingCopy := MCWorkingCopy forPackage: mcPackage.
+
+	mcRepository := MCFileTreeRepository new directory:  (ServerFileDirectory on: self defaultPackagePath).
+
+	mcWorkingCopy repositoryGroup add: mcRepository

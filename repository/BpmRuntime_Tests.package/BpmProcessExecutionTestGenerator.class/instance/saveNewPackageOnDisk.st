@@ -1,10 +1,7 @@
 gs package
 saveNewPackageOnDisk
-	| monticelloWC repository |
+	| versionName newVersion |
 
-	monticelloWC := MCWorkingCopy allManagers detect: [:each | each package name = self defaultGsPackageName] ifNone: [^self].
-	"MCRepositoryGroup default repositories detect: [:each | each description ] ifNone: [^self]."
-	repository := monticelloWC repositoryGroup repositories last.
-
-
-	repository storeVersion: 'aVersion'.
+	versionName := mcWorkingCopy uniqueVersionName.
+	newVersion := mcWorkingCopy newVersionWithName: versionName message: 'Automatically Saved'.
+	mcRepository storeVersion: newVersion.

@@ -9,7 +9,10 @@
 		"procInstance",
 		"newTestClass",
 		"newMethodsSource",
-		"isGeneratorTest" ],
+		"isGeneratorTest",
+		"mcPackage",
+		"mcWorkingCopy",
+		"mcRepository" ],
 	"name" : "BpmProcessExecutionTestGenerator",
 	"pools" : [
 		 ],
