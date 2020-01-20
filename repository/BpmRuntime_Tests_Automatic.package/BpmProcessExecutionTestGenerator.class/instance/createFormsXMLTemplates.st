@@ -11,13 +11,13 @@ createFormsXMLTemplates
 			templateFormDefinitionStream 
 				nextPutAll: templateMethodName; cr; 
 				nextPutAll: '^', eachTask getComponentClass xmlString quoted.
-			OrbeonFormDefinitionTemplateFrom2017_2 class compile: templateFormDefinitionStream contents classified: 'automatically generated'.
+			self compile: templateFormDefinitionStream in: OrbeonFormDefinitionTemplateFrom2017_2 class asMethodNamed: templateMethodName asSymbol category: 'automatically generated'.
 
 			templateFormInstanceStream  := String new writeStream.
 			templateMethodName := self getFromInstanceTemplateMethoNameFor: eachTask externalObject.
 			templateFormInstanceStream 
 				nextPutAll: templateMethodName; cr; 
 				nextPutAll: '^', eachTask externalObject xmlString quoted.
-			OrbeonFormInstanceTemplate class compile: templateFormInstanceStream contents classified: 'automatically generated'.
+			self compile: templateFormInstanceStream in: OrbeonFormInstanceTemplate class asMethodNamed: templateMethodName asSymbol category: 'automatically generated'.
 		]. 
 	].

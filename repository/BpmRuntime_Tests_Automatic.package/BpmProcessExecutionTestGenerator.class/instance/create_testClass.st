@@ -21,7 +21,7 @@ BpmProcessExecutionTest subclass: 'Proc3215866310ProcessExecutionTest'
 		add: #(); "classInstVars:"
 		add: #(); "poolDictionaries:"
 		add: ''; "inDictionary:"
-		add: 'BpmRuntime_Tests'; "category:"
+		add: self defaultGsPackageName; "category:"
 		add: #(). "options:"
 
 	newTestClass := BpmProcessExecutionTest perform: #subclass:instVarNames:classVars:classInstVars:poolDictionaries:inDictionary:category:options: withArguments: arguments asArray.

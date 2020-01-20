@@ -11,6 +11,6 @@ createProcessesXPDLTemplates
 			nextPutAll: templateMethodName; cr; 
 			nextPutAll: '^', eachProc definition xmlString quoted.
 
-		XPDLProcessDefinitionTemplate class compile: templateMethodStream contents classified: 'automatically generated'.
+		self compile: templateMethodStream in: XPDLProcessDefinitionTemplate class asMethodNamed: templateMethodName asSymbol category: 'automatically generated'.
 
 	].
