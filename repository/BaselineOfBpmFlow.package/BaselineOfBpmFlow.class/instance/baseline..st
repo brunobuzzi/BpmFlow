@@ -57,6 +57,7 @@ baseline: spec
 		spec package: 'BpmRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'BpmRuntime')].
 		spec package: 'BpmCore_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmXpdlTemplates')].
 		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
+		spec package: 'BpmRuntime_Tests_Automatic' with: [spec requires: #('BpmRuntime_Tests')].
 
 		spec
 			group: 'core' with: #('BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmRuntimePEF'); 

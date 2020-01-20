@@ -1,4 +1,4 @@
 gs package
 defaultGsPackageName
 
-	^'BpmRuntime_Test_Automatic'
+	^'BpmRuntime_Tests_Automatic'
