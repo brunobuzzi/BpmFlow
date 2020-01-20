@@ -1,2 +1,0 @@
-gs package
-defaultFileTreeRepository

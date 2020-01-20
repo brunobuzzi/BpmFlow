@@ -4,4 +4,6 @@ initialize
 	super initialize.
 
 	newMethodsSource := Dictionary new.
-	isGeneratorTest := false
+	isGeneratorTest := false.
+
+	self initializeGemStonePackageElements.
