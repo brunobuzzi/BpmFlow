@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"users" ],
+	"name" : "BpmUserGroup",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
