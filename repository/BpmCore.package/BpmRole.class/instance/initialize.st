@@ -8,3 +8,4 @@ initialize
 	tasks := Dictionary new.
 	usersAssociations := Set new."store the historic association between the receiver and users"
 	isAdmin := false.
+	userGroups := Set new.

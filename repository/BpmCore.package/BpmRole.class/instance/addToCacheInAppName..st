@@ -1,4 +1,4 @@
-other
+cache
 addToCacheInAppName: aString
 	"The receiver is added to the global Role cache for the an <Application> named <aString>"
 	| roleCollection |

@@ -12,3 +12,5 @@ initialize
 
 	"this inst var is only used to have a NxN bidirectional relation with <Bpmenvironment>"
 	bpmEnvironments := RcKeyValueDictionary new.
+
+	userGroups := Set new.

@@ -6,15 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"users",
-		"isAdmin",
-		"application",
-		"tasks",
-		"usersAssociations",
-		"userGroups" ],
-	"name" : "BpmRole",
+		 ],
+	"name" : "NoSuchUserGroupException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmCoreException",
 	"type" : "normal" }

@@ -1,8 +1,21 @@
 {
 	"class" : {
-		 },
+		"cache" : "brunobb 01/27/2020 10:45",
+		"cache:" : "brunobb 01/27/2020 10:45",
+		"initializeCache" : "brunobb 01/27/2020 10:45",
+		"newNamed:" : "brunobb 01/27/2020 10:45" },
 	"instance" : {
+		"addRole:" : "brunobb 01/27/2020 11:13",
+		"addToCacheInAppName:" : "brunobb 01/27/2020 10:51",
+		"initialize" : "brunobb 01/27/2020 11:08",
 		"name" : "brunobb 01/27/2020 10:08",
 		"name:" : "brunobb 01/27/2020 10:08",
+		"registerUser:" : "brunobb 01/27/2020 11:10",
+		"removeFromCache" : "brunobb 01/27/2020 10:49",
+		"removeFromCacheInAppName:" : "brunobb 01/27/2020 10:50",
+		"removeRole:" : "brunobb 01/27/2020 11:17",
+		"removeRole:ifAbsent:" : "brunobb 01/27/2020 11:15",
+		"unregisterUser:" : "brunobb 01/27/2020 10:58",
+		"unregisterUser:ifAbsent:" : "brunobb 01/27/2020 11:11",
 		"users" : "brunobb 01/27/2020 10:08",
 		"users:" : "brunobb 01/27/2020 10:08" } }

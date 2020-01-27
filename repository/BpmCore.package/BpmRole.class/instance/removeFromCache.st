@@ -1,5 +1,5 @@
-other
+cache
 removeFromCache
-	"The receiver is added to the global Role cache for the an OrbeonApplication named <aString>"
+	"The receiver is removed from the global Role cache for the <anApplication> named <aString>"
 
 	^self removeFromCacheInAppName: application applicationName

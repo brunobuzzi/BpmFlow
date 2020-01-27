@@ -3,15 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Cache" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"users",
-		"roles",
-		"application" ],
-	"name" : "BpmUserGroup",
+		 ],
+	"name" : "NoUserGroupException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmRuntimeException",
 	"type" : "normal" }
