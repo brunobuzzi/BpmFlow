@@ -7,7 +7,10 @@
 	"instance" : {
 		"addRole:" : "brunobb 01/27/2020 12:05",
 		"addToCacheInAppName:" : "brunobb 01/27/2020 10:51",
+		"includesRole:" : "brunobb 01/28/2020 04:58",
+		"includesUser:" : "brunobb 01/28/2020 04:57",
 		"initialize" : "brunobb 01/27/2020 11:08",
+		"isGranted:in:" : "brunobb 01/28/2020 04:59",
 		"name" : "brunobb 01/27/2020 10:08",
 		"name:" : "brunobb 01/27/2020 10:08",
 		"registerUser:" : "brunobb 01/27/2020 11:10",

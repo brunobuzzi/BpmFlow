@@ -1,4 +1,4 @@
-bpm environments
+roles
 rolesIn: aBpmEnvironment
 	"Answer a collection of <BpmRole>s that the receiver is included"
 	| directRoles inheritRoles |
