@@ -1,4 +1,4 @@
-other
+popups
 removeEnvironment
 
 	(self componentValueAt: 'removeEnv') "the jqdialog set this value"

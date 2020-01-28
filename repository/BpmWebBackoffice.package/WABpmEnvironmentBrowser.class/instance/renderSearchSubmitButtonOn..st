@@ -1,4 +1,4 @@
-other
+render
 renderSearchSubmitButtonOn: html
 
 	html submitButton 

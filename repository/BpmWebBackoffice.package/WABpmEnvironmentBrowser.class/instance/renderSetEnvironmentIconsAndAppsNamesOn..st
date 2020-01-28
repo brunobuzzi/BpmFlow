@@ -1,4 +1,4 @@
-other
+render
 renderSetEnvironmentIconsAndAppsNamesOn: html
    | jQueryId |
 

@@ -1,4 +1,4 @@
-other
+popups
 removeUser: aBpmUser
 	| informationString |
 

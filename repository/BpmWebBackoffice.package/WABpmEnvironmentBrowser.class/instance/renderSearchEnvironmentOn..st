@@ -1,4 +1,4 @@
-other
+render
 renderSearchEnvironmentOn: html
 
 	html form with: [ 

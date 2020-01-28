@@ -1,2 +1,2 @@
-other
+render
 renderLateralItemDetailsOn: html for: aLateralItem

@@ -1,4 +1,4 @@
-other
+render
 renderItemComponentOn: html
 	| point |
 

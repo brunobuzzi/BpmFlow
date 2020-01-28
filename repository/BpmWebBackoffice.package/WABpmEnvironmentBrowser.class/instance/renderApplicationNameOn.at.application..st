@@ -1,4 +1,4 @@
-other
+render
 renderApplicationNameOn: html at: aPoint application: anApplication
 	| svgCanvas |
 

@@ -1,4 +1,4 @@
-other
+render
 renderDeleteEnvironmentOn: html
    | jQueryId |
 

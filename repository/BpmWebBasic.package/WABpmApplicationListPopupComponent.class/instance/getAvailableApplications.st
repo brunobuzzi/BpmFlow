@@ -1,0 +1,4 @@
+other
+getAvailableApplications
+
+	^self selectedEnvironment applications

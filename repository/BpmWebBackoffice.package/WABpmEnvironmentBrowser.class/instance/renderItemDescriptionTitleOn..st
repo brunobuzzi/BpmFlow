@@ -1,4 +1,4 @@
-other
+render
 renderItemDescriptionTitleOn: html
 
 	html output: ('Environment Name: [' translateIn: self session) ,selectedLateralItem name, ']'.

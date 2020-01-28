@@ -1,4 +1,4 @@
-other
+render
 renderUsersOfSelectedEnvironmentOn: html
 
 	selectedLateralItem users isEmpty ifTrue: [^self].

@@ -1,4 +1,4 @@
-other
+render
 renderUserAutocompletionOn: html
 
 	html div id: 'environment-user-autocompletion'; with: [

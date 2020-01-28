@@ -1,4 +1,4 @@
-other
+render
 renderAddApplicationToEnvironmentOn: html
    | jQueryId |
 

@@ -1,4 +1,4 @@
-other
+popups
 removeUserButton
 
 	^(SewafReportColumn 
