@@ -6,7 +6,10 @@ unregisterUser: aBpmUser
 	(self isAdminsEnvironment and: [aBpmUser isAdminUser]) ifTrue: [ImproperBpmOperationException signal: '[admin] user can no be removed from [admins] environment'].
 
 	"<aBpmUser> is ungranted from all roles beloging to the receiver"
-	(aBpmUser rolesIn: self) do: [:eachRole | eachRole ungrantUser: aBpmUser].
+	(aBpmUser rolesIn: self) do: [:eachRole | 
+		eachRole ungrantUser: aBpmUser ifAbsent: ["the role is inherited through <BpmUserGroups>"]. 
+		aBpmUser removeFromUserGroupsWith: eachRole.
+	].
 
 	aBpmUser destroyInboxFor: self.
 	aBpmUser destroyOutboxFor: self.
