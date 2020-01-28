@@ -34,7 +34,7 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'System Saved Charts' command: #openUsersSavedCharts);
 		yourself.
 
-	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu0].
+	(self session user isBackofficeUserIn: self bpmEnvironment) ifTrue: [navigation addItem: subMenu0].
 	navigation addItem: subMenu1.
-	self session user isBackofficeUser ifTrue: [navigation addItem: subMenu2; addItem: subMenu3].
+	(self session user isBackofficeUserIn: self bpmEnvironment) ifTrue: [navigation addItem: subMenu2; addItem: subMenu3].
 	navigation addItem: subMenu4.

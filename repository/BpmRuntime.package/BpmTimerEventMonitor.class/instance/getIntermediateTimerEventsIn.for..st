@@ -5,6 +5,6 @@ getIntermediateTimerEventsIn: aBpmEnvironment for: aBpmUser
 
 	currentMonitoredEvents := self getAllIntermediateTimerEventsIn: aBpmEnvironment.
 
-	aBpmUser isBackofficeUserAndAdmin ifTrue: [^currentMonitoredEvents].
+	(aBpmUser isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^currentMonitoredEvents].
 
 	^currentMonitoredEvents select: [:eventInstance | eventInstance isGrantedUser: aBpmUser]

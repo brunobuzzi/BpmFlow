@@ -12,7 +12,7 @@ createNewRole
 
 	newRole := roleClass createNewOrGetExisting: roleName in: appName.
 
-	self session user isBackofficeUserAndAdmin 
+	(self session user isBackofficeUserAndAdminIn: self session bpmEnvironment) 
 	ifTrue: [newRole isAdmin: (self componentValueAt: 'isAdmin').]
 	ifFalse: [(roleClass == self defaultBackOfficeRoleClass) ifTrue:[newRole isAdmin: false]]. "see issue #623 - "
 

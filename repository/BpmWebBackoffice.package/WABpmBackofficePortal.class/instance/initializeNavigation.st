@@ -26,7 +26,8 @@ initializeNavigation
 		addItem: (SewafCommandItem label: 'Available Orbeon Forms' command: #openFormManager);
 		yourself.
 	"only backoffice global admin can manage calendar (which are global to all applications)"
-	self session user isBackofficeUserAndAdmin ifTrue: [subMenu2 addItem: (SewafCommandItem label: 'Manage Calendars' command: #openCalendarManager)].
+	(self session user isBackofficeUserAndAdminIn: self session bpmEnvironment)
+	ifTrue: [subMenu2 addItem: (SewafCommandItem label: 'Manage Calendars' command: #openCalendarManager)].
 	subMenu3 := (SewafSubMenuItem label: 'Users & Roles' icon: #usersettings32Png)
 		set24Icon: #usersettings24Png;
 		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);

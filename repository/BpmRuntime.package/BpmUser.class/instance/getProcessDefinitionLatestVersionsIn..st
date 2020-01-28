@@ -6,7 +6,7 @@ getProcessDefinitionLatestVersionsIn: aBpmEnvironment
 	allLatestDefinitions := Set new.
 	definitionCache := self getProcessDefinitionCache.
 	"backoffice user and admin --> can see all applications"
-	((self isBackofficeUserAndAdmin) ifTrue: [self getVisibleApplicationsIn: aBpmEnvironment] ifFalse: [self getApplicationsIn: aBpmEnvironment]) 
+	((self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [self getVisibleApplicationsIn: aBpmEnvironment] ifFalse: [self getApplicationsIn: aBpmEnvironment]) 
 		do: [:each | | appDictionary |
 			appDictionary := definitionCache at: each applicationName ifAbsent: [OrderedCollection new].
 			appDictionary do: [:procCollection |

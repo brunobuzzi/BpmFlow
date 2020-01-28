@@ -33,7 +33,7 @@ renderItemDescriptionTitleOn: html
 
 	selectedLateralItem canBeStartedByAnonymousForm ifTrue: [self renderToggleOn: html].
 
-	self session user isBackofficeUserAndAdmin ifFalse: [^self].
+	(self session user isBackofficeUserAndAdminIn: self session bpmEnvironment) ifFalse: [^self].
 
 	lockIcon := selectedLateralItem isImmutable ifTrue: [#locklock24Png] ifFalse: [#lockunlock24Png].
 	html anchor 

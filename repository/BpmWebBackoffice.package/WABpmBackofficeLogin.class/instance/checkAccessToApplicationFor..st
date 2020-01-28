@@ -1,4 +1,4 @@
 other
 checkAccessToApplicationFor: aBpmUser
 
-	^aBpmUser isBackofficeUser
+	^aBpmUser isBackofficeUserIn: self bpmEnvironment

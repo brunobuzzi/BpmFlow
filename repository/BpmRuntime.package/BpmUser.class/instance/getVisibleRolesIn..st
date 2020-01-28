@@ -5,9 +5,9 @@ getVisibleRolesIn: aBpmEnvironment
 	If not answer a collection of roles that are contained in the all application accesible to the receiver"
 	| applications |
 
-	self isBackofficeUser ifFalse: [^OrderedCollection new].
+	(self isBackofficeUserIn: aBpmEnvironment) ifFalse: [^OrderedCollection new].
 
-	self isBackofficeUserAndAdmin ifTrue: [^self defaultRoleClass getAllRolesIn: aBpmEnvironment].
+	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^self defaultRoleClass getAllRolesIn: aBpmEnvironment].
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 
