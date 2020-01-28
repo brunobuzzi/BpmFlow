@@ -6,11 +6,12 @@ isGrantedUser: aBpmUser
 		If succeed --> is granted, else --> not granted"
 
 	self hasPerformers 
-	ifFalse: [^roles anySatisfy: [:each | each isGranted: aBpmUser]].
+	ifFalse: [^super isGranted: aBpmUser].
 
 	^self performers anySatisfy: [:eachPerformer | | mappedRole |
 
-		mappedRole := aBpmUser roles detect: [:eachRole | (eachRole name = eachPerformer name) and:[eachRole getApplicationName = self applicationName]] 
+		mappedRole := (aBpmUser rolesIn: self bpmEnvironment) 
+									detect: [:eachRole | (eachRole name = eachPerformer name) and:[eachRole getApplicationName = self applicationName]] 
 									ifNone: [nil].
 
 		mappedRole ifNotNil: [mappedRole isGranted: aBpmUser] ifNil: [false].

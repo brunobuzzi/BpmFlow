@@ -2,4 +2,4 @@ roles
 isGrantedUser: aBpmUser
 	"Answer whether or not the user <aBpmUser> is granted in the receiver"
 
-	^roles anySatisfy: [:eachRole | eachRole isGranted: aBpmUser]
+	^((aBpmUser rolesIn: self bpmEnvironment) intersection: roles) notEmpty
