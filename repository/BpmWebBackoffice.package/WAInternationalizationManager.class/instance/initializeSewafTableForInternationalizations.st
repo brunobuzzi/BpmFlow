@@ -8,7 +8,7 @@ initializeSewafTableForInternationalizations
 		nonSelectedColor: self session user userOptions getSelectTableNonSelectedColor;
 		columns: (OrderedCollection new  
 						add: ((SewafReportColumn selector: #name title: 'Environment' onClick: [:each | self selectEnvironment: each]) beSortable; sortBlock: [:a :b | a name <= b name]; beSearchable; yourself);
-						add: ((SewafReportColumn selector: #printInternationalizationType title: 'Internationalization') beSortable; sortBlock: [:a :b | a isAdmin printString <= b isAdmin printString]; beSearchable; yourself);
+						add: ((SewafReportColumn selector: #printInternationalizationType title: 'Internationalization') beSortable; sortBlock: [:a :b | a printInternationalizationType <= b printInternationalizationType]; beSearchable; yourself);
 						add: self resetInternationalizationButton;
 						add: self cloneDefaultButton;
 						add: self cloneSelectedButton;
