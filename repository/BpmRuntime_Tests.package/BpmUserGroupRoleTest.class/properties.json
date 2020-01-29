@@ -1,0 +1,18 @@
+{
+	"category" : "BpmRuntime_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"environments",
+		"applications",
+		"users",
+		"frontofficeRoles",
+		"backofficeRoles" ],
+	"name" : "BpmUserGroupRoleTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
