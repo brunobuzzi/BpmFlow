@@ -1,4 +1,4 @@
-other
+query
 getUserNamed: aString
 
 	^users at: aString ifAbsent: [self assert: false]
