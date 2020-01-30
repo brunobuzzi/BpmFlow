@@ -1,39 +1,39 @@
 test
 testGrantRoleToUser
 
-	1 to: 5 do: [:index | | env fuser buser frole brole |
-		env := self getEnvironmentNamed: 'env-', index printString.
+	1 to: 5 do: [:index | | environment fuser buser frole brole |
+		environment := self getEnvironmentNamed: 'env-', index printString.
 		fuser := self getUserNamed: 'fuser-', index printString.
 		frole := self getFrontofficeRoleNamed: 'front-role-', index printString.
 		buser := self getUserNamed: 'buser-', index printString.
 		brole := self getBackofficeRoleNamed: 'back-role-', index printString.
 		self assert: (frole isGranted: fuser).
 		self assert: (brole isGranted: buser).
-		self deny: (fuser isBackofficeUserIn: env).
-		self assert: (buser isBackofficeUserIn: env).
-		self deny: (buser isFrontOfficeUserIn: env).
-		self assert: (fuser isFrontOfficeUserIn: env).
-		self deny: (buser isBackofficeUserAndAdminIn: env).
+		self deny: (fuser isBackofficeUserIn: environment).
+		self assert: (buser isBackofficeUserIn: environment).
+		self deny: (buser isFrontOfficeUserIn: environment).
+		self assert: (fuser isFrontOfficeUserIn: environment).
+		self deny: (buser isBackofficeUserAndAdminIn: environment).
 		brole isAdmin: true.
-		self assert: (buser isBackofficeUserAndAdminIn: env).
-		self assert: frole usersAssociations size equals: 1.
+		self assert: (buser isBackofficeUserAndAdminIn: environment).
+		self assert: frole usersAssociations size equals: 1. "each grant or ungrant creates an entry in role's <usersAssociations> collection"
 		self assert: brole usersAssociations size equals: 1.
-		self assert: fuser rolesAssociation size equals: 1.
+		self assert: fuser rolesAssociation size equals: 1. "each grant or ungrant creates an entry in user's <rolesAssociation> collection"
 		self assert: buser rolesAssociation size equals: 1.
-		self assert: (fuser getVisibleApplicationsIn: env) size equals: 1.
-		self assert: (buser getVisibleApplicationsIn: env) size equals: 1.
-		self assert: (fuser getVisibleRolesIn: env) size equals: 0.
-		self assert: (buser getVisibleRolesIn: env) size equals: 2.
-		self assert: (fuser getVisibleUsersIn: env) size equals: 0.
-		self assert: (buser getVisibleUsersIn: env) size equals: 2.
+		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 1. "applications that can be reached by the user (in this case 'admin-index')"
+		self assert: (buser getVisibleApplicationsIn: environment) size equals: 1.
+		self assert: (fuser getVisibleRolesIn: environment) size equals: 0.
+		self assert: (buser getVisibleRolesIn: environment) size equals: 2. "the backoffice roles can see frontoffice roles but NOT vicevsersa"
+		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
+		self assert: (buser getVisibleUsersIn: environment) size equals: 2. "backoffice users can see frontoffice users but NOT vicevsersa"
 		frole ungrantUser: fuser.
 		brole ungrantUser: buser.
-		self assert: (fuser getVisibleApplicationsIn: env) size equals: 0.
-		self assert: (buser getVisibleApplicationsIn: env) size equals: 0.
-		self assert: (fuser getVisibleRolesIn: env) size equals: 0.
-		self assert: (buser getVisibleRolesIn: env) size equals: 0.
-		self assert: (fuser getVisibleUsersIn: env) size equals: 0.
-		self assert: (buser getVisibleUsersIn: env) size equals: 0.
+		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 0.
+		self assert: (buser getVisibleApplicationsIn: environment) size equals: 0.
+		self assert: (fuser getVisibleRolesIn: environment) size equals: 0.
+		self assert: (buser getVisibleRolesIn: environment) size equals: 0.
+		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
+		self assert: (buser getVisibleUsersIn: environment) size equals: 0.
 		self assert: frole usersAssociations size equals: 2.
 		self assert: brole usersAssociations size equals: 2.
 		self assert: fuser rolesAssociation size equals: 2.

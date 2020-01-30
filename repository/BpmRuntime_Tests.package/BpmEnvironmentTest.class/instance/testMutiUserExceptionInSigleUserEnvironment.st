@@ -16,6 +16,7 @@ testMutiUserExceptionInSigleUserEnvironment
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
 	self assert: (env1 includesUserNamed: newUser username).
 
+	self deny: (newUser canBeAddedTo: env2).
 	[env2 registerUser: newUser] on: ImproperBpmOperationException do: [:ex | self assert: true].
 	self deny: (env2 includesUserNamed: newUser username).
 

@@ -8,6 +8,7 @@ testUniqueUserNameInMultiEnvironment
 	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
 
 	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred'.
+	self assert: (newUser canBeAddedTo: env1).
 	self assert: (newUser username = 'alfred').
 	self deny: (env1 includesUserNamed: newUser username).
 
