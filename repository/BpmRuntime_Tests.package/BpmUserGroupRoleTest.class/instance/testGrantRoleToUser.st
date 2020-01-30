@@ -16,18 +16,22 @@ testGrantRoleToUser
 		self deny: (buser isFrontOfficeUserIn: environment).
 		self assert: (fuser isFrontOfficeUserIn: environment).
 		self deny: (buser isBackofficeUserAndAdminIn: environment).
-		brole isAdmin: true.
+		brole isAdmin: true. "is backoffice and admin user now"
 		self assert: (buser isBackofficeUserAndAdminIn: environment).
+		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 1. "applications that can be reached by the user"
+		self assert: (buser getVisibleApplicationsIn: environment) size equals: 4. "is backoffice and admin user --> can access all apps in the environment"
+		self assert: (fuser getVisibleRolesIn: environment) size equals: 0.
+		self assert: (buser getVisibleRolesIn: environment) size equals: 8. "is backoffice and admin user --> can see all roles in the environment"
+		self assert: (buser getVisibleUsersIn: environment) size equals: 2. "is backoffice and admin user --> can see all users in the environment"
+		brole isAdmin: false. "is backoffice but NOT an admin user now"
+		self assert: (buser getVisibleRolesIn: environment) size equals: 2. "is backoffice but NOT admin user --> can see only roles of its app in the environment"
+		self assert: (buser getVisibleApplicationsIn: environment) size equals: 1. "is backoffice but NOT admin user --> can access only apps of its role in the environment"
+		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
+		self assert: (buser getVisibleUsersIn: environment) size equals: 1. "is backoffice but NOT admin user --> can see only users of its apps in the environment"
 		self assert: frole usersAssociations size equals: 1. "each grant or ungrant creates an entry in role's <usersAssociations> collection"
 		self assert: brole usersAssociations size equals: 1.
 		self assert: fuser rolesAssociation size equals: 1. "each grant or ungrant creates an entry in user's <rolesAssociation> collection"
 		self assert: buser rolesAssociation size equals: 1.
-		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 1. "applications that can be reached by the user"
-		self assert: (buser getVisibleApplicationsIn: environment) size equals: 4.
-		self assert: (fuser getVisibleRolesIn: environment) size equals: 0.
-		self assert: (buser getVisibleRolesIn: environment) size equals: 8. "the backoffice roles can see frontoffice roles but NOT vicevsersa"
-		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
-		self assert: (buser getVisibleUsersIn: environment) size equals: 2. "backoffice users can see frontoffice users but NOT vicevsersa"
 		frole ungrantUser: fuser.
 		brole ungrantUser: buser.
 		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 0.
