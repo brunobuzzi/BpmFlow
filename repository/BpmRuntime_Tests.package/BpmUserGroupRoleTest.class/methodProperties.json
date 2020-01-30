@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createBpmSystemStructureFor:" : "brunobb 01/29/2020 12:22",
+		"createBpmSystemStructureFor:" : "brunobb 01/30/2020 05:04",
 		"environments" : "brunobb 01/29/2020 10:52",
 		"environments:" : "brunobb 01/29/2020 10:52",
 		"getApplicationNamed:" : "brunobb 01/29/2020 10:52",
@@ -11,7 +11,8 @@
 		"getFrontofficeRoleNamed:" : "brunobb 01/29/2020 11:04",
 		"getUserNamed:" : "brunobb 01/29/2020 10:52",
 		"initialize" : "brunobb 01/29/2020 10:54",
-		"removeBpmSystemStructureFor:" : "brunobb 01/29/2020 12:24",
+		"removeBpmSystemStructureFor:" : "brunobb 01/30/2020 05:05",
 		"setUp" : "brunobb 01/29/2020 10:55",
 		"tearDown" : "brunobb 01/29/2020 11:01",
-		"testGrantRoleToUser" : "brunobb 01/30/2020 02:07" } }
+		"testGrantRoleToUser" : "brunobb 01/30/2020 05:06",
+		"testUserGroupInEnvironment" : "brunobb 01/30/2020 03:41" } }
