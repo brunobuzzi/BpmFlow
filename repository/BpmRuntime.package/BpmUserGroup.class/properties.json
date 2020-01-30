@@ -3,13 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Cache" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"name",
 		"users",
 		"roles",
-		"application" ],
+		"environment" ],
 	"name" : "BpmUserGroup",
 	"pools" : [
 		 ],
