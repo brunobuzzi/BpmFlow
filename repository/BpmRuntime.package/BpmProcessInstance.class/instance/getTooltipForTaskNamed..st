@@ -5,6 +5,6 @@ getTooltipForTaskNamed: aString
 	| tasks |
 
 	tasks := self getTasksNamed: aString.
-	tasks ifEmpty: [^(self getTaskDefinitionNamed: aString ifNone: [^nil]) printToolTip].
+	tasks ifEmpty: [^(self getTaskDefinitionNamed: aString ifNone: [^'Task Definition not found']) printToolTip].
  
 	^tasks last externalObjectAsXmlString
