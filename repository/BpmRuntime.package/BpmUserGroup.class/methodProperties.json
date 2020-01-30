@@ -3,6 +3,7 @@
 		"newNamed:" : "brunobb 01/30/2020 03:33" },
 	"instance" : {
 		"addRole:" : "brunobb 01/30/2020 03:33",
+		"addUser:" : "brunobb 01/30/2020 06:52",
 		"environment" : "brunobb 01/30/2020 03:33",
 		"environment:" : "brunobb 01/30/2020 03:33",
 		"includesRole:" : "brunobb 01/30/2020 03:33",
@@ -11,12 +12,11 @@
 		"isGranted:in:" : "brunobb 01/30/2020 03:33",
 		"name" : "brunobb 01/30/2020 03:33",
 		"name:" : "brunobb 01/30/2020 03:33",
-		"registerUser:" : "brunobb 01/30/2020 03:33",
 		"removeRole:" : "brunobb 01/30/2020 03:33",
 		"removeRole:ifAbsent:" : "brunobb 01/30/2020 03:33",
+		"removeUser:" : "brunobb 01/30/2020 06:51",
+		"removeUser:ifAbsent:" : "brunobb 01/30/2020 06:53",
 		"roles" : "brunobb 01/30/2020 03:33",
 		"roles:" : "brunobb 01/30/2020 03:33",
-		"unregisterUser:" : "brunobb 01/30/2020 03:33",
-		"unregisterUser:ifAbsent:" : "brunobb 01/30/2020 03:33",
 		"users" : "brunobb 01/30/2020 03:33",
 		"users:" : "brunobb 01/30/2020 03:33" } }

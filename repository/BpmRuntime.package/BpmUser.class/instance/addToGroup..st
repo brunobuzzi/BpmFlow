@@ -1,4 +1,4 @@
 groups
-registerInGroup: aBpmUserGroup
+addToGroup: aBpmUserGroup
 
 	^userGroups add: aBpmUserGroup
