@@ -9,12 +9,6 @@ testExecuteProcess_failed_evaluation_2
 	evaluation2 := transition2 conditionToRun evaluationCode.
 	transition1 conditionToRun evaluationCode: '[:proc | 4]'.
 	transition2 conditionToRun evaluationCode: '[:proc | proc foo]'.
-	
-	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
-	"we force the creation of form definition because is used in a condition"
-"	self formInstance_task5. 
-	self formInstance_task5_1.
-	self formInstance_task7."
 
 	self assert: (procInstance startEvent getDefinitionName = 'start all').
 	"Step 1 - Form [task-1]"

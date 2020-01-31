@@ -2,8 +2,6 @@ test
 testExecuteProcess_task5_task7_to_end
 	| currentTask currentTask2 gateway endArtifact |
 
-	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
-
 	self assert: (procInstance startEvent getDefinitionName = 'start all').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.

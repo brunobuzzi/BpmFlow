@@ -2,11 +2,6 @@ test
 testExecuteProcess_task4_to_task7
 	| currentTask currentTask2 gateway endArtifact |
 
-	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
-	"we force the creation of form definition because is used in a condition"
-	self formCreatorClass createDefinition: 'task-7' with: #formDefinition_task7 in: procDefinition application.
-	self formCreatorClass createDefinition: 'task-5' with: #formDefinition_task5 in: procDefinition application.
-
 	self assert: (procInstance startEvent getDefinitionName = 'start all').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.

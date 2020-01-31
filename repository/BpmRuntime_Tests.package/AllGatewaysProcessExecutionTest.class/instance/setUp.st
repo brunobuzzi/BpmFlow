@@ -15,3 +15,12 @@ setUp
 	self registerUsers: #('alberto') inExecutionAndEnvironment: environment.
 
 	self grantUsers: {'alberto' -> 'manager'} in: 'ue'.
+
+	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
+
+	"we force the creation of form definition because they are used in some conditions. At runtime this could not happend because at import time all forms definition must be already created"
+	self formInstance_task4.
+	self formInstance_task5. 
+	self formInstance_task5_1.
+	self formInstance_task7.
+	self formInstance_task6.
