@@ -2,8 +2,6 @@ test
 testReuseExternalObject
 	| currentTask currentProcessMatrix finishedProcessMatrix processId takenProcessMatrix endArtifact componentClass |
 
-	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
-
 	self assert: (procInstance startEvent getDefinitionName = 'inicio').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
