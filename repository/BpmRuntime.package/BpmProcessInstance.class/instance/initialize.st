@@ -13,6 +13,7 @@ initialize
 	executedGateways := OrderedCollection new.
 	userAssignments := Set new.
 	endEvents := Dictionary new.
+	runningScripts := OrderedCollection new.
 	executedScripts := OrderedCollection new.
 	intermediateEvents := Dictionary new.
 	states := OrderedCollection with: (BpmRunningState newFor: self).

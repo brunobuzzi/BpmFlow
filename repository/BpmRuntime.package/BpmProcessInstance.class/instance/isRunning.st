@@ -4,4 +4,4 @@ isRunning
 	Running: if any started path has not reached an end event yet.
 	Completed: if all started path has reached an end event"
 
-	^self currentState isRunning or:[currentActivities notEmpty or:[runningGateways notEmpty]]
+	^self currentState isRunning or:[currentActivities notEmpty or:[runningGateways notEmpty or:[runningScripts notEmpty]]]

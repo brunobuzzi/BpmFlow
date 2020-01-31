@@ -25,7 +25,8 @@
 		"intermediateEvents",
 		"states",
 		"externalVariables",
-		"failedEvaluations" ],
+		"failedEvaluations",
+		"runningScripts" ],
 	"name" : "BpmProcessInstance",
 	"pools" : [
 		 ],
