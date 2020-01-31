@@ -1,4 +1,4 @@
 execution states
 isRunningWithException
 
-	^self currentState isRunningWithException
+	^self states anySatisfy: [:state | state isRunningWithException]
