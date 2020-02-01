@@ -9,7 +9,8 @@
 		"definition",
 		"startArtifact",
 		"endArtifact",
-		"parentTransition" ],
+		"parentTransition",
+		"childrenTransitions" ],
 	"name" : "BpmTransitionInstance",
 	"pools" : [
 		 ],

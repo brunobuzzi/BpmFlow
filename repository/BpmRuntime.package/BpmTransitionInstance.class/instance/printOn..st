@@ -1,6 +1,10 @@
 other
 printOn: aStream
+	| sArtifactName eArtifactName |
 
 	super printOn: aStream.
 
-	aStream nextPutAll: '[', definition name, '] {(', startArtifact printOnType, ')',startArtifact name, '} >> {(', endArtifact printOnType, ')', endArtifact name, '}'.
+	sArtifactName := startArtifact ifNil: [''] ifNotNil: ['{(', startArtifact printOnType, ')',startArtifact name, '}'].
+	eArtifactName := endArtifact ifNil: [''] ifNotNil: ['{(', endArtifact printOnType, ')', endArtifact name, '}'].
+ 
+	aStream nextPutAll: '[', definition name, '] ', sArtifactName, ' >> ', eArtifactName
