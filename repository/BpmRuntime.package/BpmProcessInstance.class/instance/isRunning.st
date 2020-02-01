@@ -4,5 +4,7 @@ isRunning
 	Running: if any started path has not reached an end event yet.
 	Completed: if all started path has reached an end event"
 
-	^((transitions select: [:eachTransition | eachTransition hasChildren not and:[eachTransition endArtifactIsNotEndEvent]]) notEmpty)
-		or: [(self defaultTimerEventMonitor selectMonitoredEventWith: id) notEmpty]
+	^self currentState isRunning and: [
+		((transitions select: [:eachTransition | eachTransition hasChildren not and:[eachTransition endArtifactIsNotEndEvent]]) notEmpty)
+			or: [(self defaultTimerEventMonitor selectMonitoredEventWith: id) notEmpty]
+		]
