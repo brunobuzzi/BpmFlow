@@ -18,4 +18,4 @@ setUp
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
 	"we force the creation of form definition because they are used in some conditions. At runtime this could not happend because at import time all forms definition must be already created"
-	self formInstance_citizen_appliance.
+	self formInstance_citizen_appliance_withoutProcess. "see #1086"
