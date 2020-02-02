@@ -1,4 +1,0 @@
-Accessing
-possibleUsers
-
-	^role users

@@ -21,6 +21,7 @@
 		"bpmEnvironment" : "brunobb 01/27/2020 11:07",
 		"canDelete" : "brunobb 01/27/2020 11:07",
 		"forgetAssignationHistory" : "brunobb 01/27/2020 11:07",
+		"getAllGrantedUsers" : "brunobb 02/02/2020 12:00",
 		"getApplicationName" : "brunobb 01/27/2020 11:07",
 		"getProcessDefinitions" : "brunobb 01/27/2020 11:07",
 		"getUserAssociations:" : "brunobb 01/27/2020 11:07",

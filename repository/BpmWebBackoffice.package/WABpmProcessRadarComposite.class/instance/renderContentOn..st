@@ -28,7 +28,7 @@ renderContentOn: html
 				html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
 
 	(self componentValueAt: 'userAssgination') ifNotNil: [:assination | 
-		userAssignationBatchedList items: assination possibleUsers.
+		userAssignationBatchedList items: assination availableGrantedUsers.
 		html div class: 'default-gray-table ';
 			with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Select a User to Assign' translateIn: self session)].
 					html render: (userAssignationBatchedList table: self sewafTableForUsers)].].
