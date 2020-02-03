@@ -10,7 +10,8 @@
 		"isClosed:" : "BrunoBB 11/24/2015 13:13",
 		"isMerging" : "BrunoBB 11/23/2015 17:02",
 		"isSplitting" : "BrunoBB 11/23/2015 17:02",
-		"performFinalization" : "brunobb 09/06/2019 17:42",
+		"performFinalization" : "brunobb 02/02/2020 13:26",
 		"performInitializationOn:" : "BrunoBB 11/20/2015 12:48",
 		"registerEvent:" : "brunobb 10/11/2018 09:57",
+		"setChildrenOfInAndOutTransitions" : "brunobb 02/02/2020 13:29",
 		"summaryTitle" : "BrunoBB 12/11/2015 06:52" } }

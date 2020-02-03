@@ -8,6 +8,6 @@ finalizeWith: aBpmEventInstance
  
 	(endEvents includesKey: aBpmEventInstance getDefinitionName) ifFalse: [endEvents at: aBpmEventInstance getDefinitionName put: OrderedCollection new].
 
-	self isRunning ifFalse: [states add: (BpmFinishedState newFor: self)].
+	self isAnyExecutionPathPendingToFinalize ifFalse: [states add: (BpmFinishedState newFor: self)].
 
 	^(endEvents at: aBpmEventInstance getDefinitionName) add: aBpmEventInstance

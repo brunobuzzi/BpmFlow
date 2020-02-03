@@ -3,4 +3,4 @@ performFinalization
 
 	super performFinalization.
 
-	self isClosed: true
+	self isClosed: true.

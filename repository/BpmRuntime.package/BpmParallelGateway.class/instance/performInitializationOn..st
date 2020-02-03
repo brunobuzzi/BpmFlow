@@ -15,3 +15,8 @@ performInitializationOn: aBpmProcessInstance
 							aBpmProcessInstance finalizeGateway: self.
 							aBpmProcessInstance generateNextTransitionsFrom: self]
 	].
+
+	"the <inTransitions> children are set with <outTransitions> after all outgoing transitions have been created.
+	See: BpmProcessInstance>>isAnyExecutionPathPendingToFinalize.
+	Issue: #1081"
+	self setChildrenOfInAndOutTransitions.
