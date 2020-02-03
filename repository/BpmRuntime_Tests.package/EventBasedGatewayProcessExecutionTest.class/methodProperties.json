@@ -13,9 +13,9 @@
 		"setTimerEventToOneDay" : "brunobb 10/24/2018 11:12",
 		"setUp" : "brunobb 05/23/2019 09:55",
 		"tearDown" : "brunobb 05/23/2019 09:07",
-		"testExecuteProcess_LoanAccepted" : "brunobb 12/21/2018 06:40",
-		"testExecuteProcess_LoanRejected" : "brunobb 11/09/2018 09:39",
-		"testExecuteProcess_LoanRejectedByTimer" : "brunobb 11/09/2018 09:40",
+		"testExecuteProcess_LoanAccepted" : "brunobb 02/03/2020 10:21",
+		"testExecuteProcess_LoanRejected" : "brunobb 02/03/2020 10:21",
+		"testExecuteProcess_LoanRejectedByTimer" : "brunobb 02/03/2020 10:21",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:15",
 		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:17",
 		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 12:18" } }

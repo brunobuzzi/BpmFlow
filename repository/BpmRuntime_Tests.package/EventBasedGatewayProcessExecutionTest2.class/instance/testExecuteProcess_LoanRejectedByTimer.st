@@ -58,4 +58,7 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
 
+	self deny: receiverProcessInstance isRunning.
+	self deny: senderProcessInstance isRunning.
+
 	self setTimerEventToOneDay.

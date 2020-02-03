@@ -52,3 +52,6 @@ testExecuteProcess_LoanRejected
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_cancel_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
+
+	self deny: receiverProcessInstance isRunning.
+	self deny: senderProcessInstance isRunning.

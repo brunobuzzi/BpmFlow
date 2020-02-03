@@ -54,3 +54,6 @@ testExecuteProcess_LoanRejected
 	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
 	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+
+	self deny: receiverProcessInstance isRunning.
+	self deny: senderProcessInstance isRunning.

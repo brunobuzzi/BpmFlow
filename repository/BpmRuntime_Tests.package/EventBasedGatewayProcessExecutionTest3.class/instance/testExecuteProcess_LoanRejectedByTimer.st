@@ -69,4 +69,7 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
 	self assert: (receiverProcessInstance endEventsSize = 2). 
 
+	self deny: receiverProcessInstance isRunning.
+	self deny: senderProcessInstance isRunning.
+
 	self setTimerEventToOneDay.
