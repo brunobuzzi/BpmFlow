@@ -32,8 +32,11 @@ testExecuteProcess_task4_to_end
 	self assert: (currentTask getDefinitionName = 'task-6').
 	"Step 7 - Form [task-7]"
 	currentTask := procInstance currentActivities last.
+
+	self assert: procInstance isRunning.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_task7 on: procInstance.
 	self assert: (currentTask getDefinitionName = 'task-7').
+	self deny: procInstance isRunning.
 	"Step 8 - Process End"
 	endArtifact := procInstance endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end all'] ifNone: [self assert: false].
 	self assert: endArtifact isEndEvent.
