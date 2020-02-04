@@ -3,7 +3,7 @@ getNumberOfUsersInTimeDistributionFor: applicationName from: startDate to: endDa
 	| distribution |
 
 	distribution := OrderPreservingDictionary new.
-	(self getRolsInAppName: applicationName) do: [:eachRole | 
+	(self defaultApplicationManagerClass getRolesInAppName: applicationName) do: [:eachRole | 
 		eachRole addTo: distribution numberOfUsersInTimeDistributionFrom: startDate to: endDate.
 	].
 
