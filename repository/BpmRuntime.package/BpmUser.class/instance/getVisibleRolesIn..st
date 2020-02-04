@@ -11,4 +11,4 @@ getVisibleRolesIn: aBpmEnvironment
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 
-	^(applications inject: Set new into: [:all :each | all add: each getAllRoles. all]) asOrderedCollection
+	^(applications inject: Set new into: [:all :each | all addAll: each getAllRoles. all]) asOrderedCollection
