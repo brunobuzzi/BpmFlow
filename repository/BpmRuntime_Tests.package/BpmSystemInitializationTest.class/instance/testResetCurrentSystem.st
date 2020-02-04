@@ -18,8 +18,6 @@ testResetCurrentSystem
 	self assert: self defaultApplicationManagerClass cache isEmpty.
 
 	self assert: self defaultProcessDefinitionClass cache isEmpty.
-	self assert: self defaultBackOfficeRoleClass cache isEmpty.
-	self assert: self defaultFrontOfficeRoleClass cache isEmpty.
 	self assert: self defaultAvailableTasksMatrixClass cache isEmpty.
 	self assert: self defaultFinishedTasksMatrixClass cache isEmpty.
 	self assert: self defaultTakenTasksMatrixClass cache isEmpty.

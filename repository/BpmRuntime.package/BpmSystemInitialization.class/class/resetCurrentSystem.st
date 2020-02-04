@@ -18,9 +18,6 @@ resetCurrentSystem
 
 	self defaultApplicationManagerClass initializeCache.
 
-	self defaultBackOfficeRoleClass initializeCache.
-	self defaultFrontOfficeRoleClass initializeCache.
-
 	self defaultAvailableTasksMatrixClass resetAllRolesAndAssignments.
 	self defaultTakenTasksMatrixClass resetAllRolesAndAssignments.
 	self defaultFinishedTasksMatrixClass resetAllRolesAndAssignments.

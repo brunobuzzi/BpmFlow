@@ -11,8 +11,6 @@ initializeCurrentSystem
 	self defaultAvailableTasksMatrixClass initializeCache.
 	self defaultFinishedTasksMatrixClass initializeCache.
 	self defaultTakenTasksMatrixClass initializeCache.
-	self defaultBackOfficeRoleClass initializeCache.
-	self defaultFrontOfficeRoleClass initializeCache.
 	BpmProcessDefinitionCategory initializeCache.
 	BpmProcessInstanceCategory initializeCache.
 	BpmProcessDynamicCategory initializeCache.
