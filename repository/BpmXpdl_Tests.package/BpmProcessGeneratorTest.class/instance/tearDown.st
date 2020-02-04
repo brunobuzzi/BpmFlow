@@ -5,7 +5,7 @@ tearDown
 	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
 
 	self getDefaultApplication resetDefinitionRegistry.
-	(self defaultFrontOfficeRoleClass getRolsInAppName: self defaultApplicationName) do: [:each | each removeFromCache].
+	(self defaultApplicationManagerClass getRolesInAppName: self defaultApplicationName) do: [:each | each removeFromCache].
 
 	self getDefaultApplication removeFromCache.
 

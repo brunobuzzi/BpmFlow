@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"getAllRolesIn:" : "brunobb 02/04/2020 09:06",
 		"getNumberOfTasksDistributionFor:" : "brunobb 02/04/2020 10:33",
 		"getNumberOfUsersDistributionFor:" : "brunobb 02/04/2020 10:33",
 		"getRoleNamed:in:" : "brunobb 02/04/2020 08:25",

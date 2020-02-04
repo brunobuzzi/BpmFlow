@@ -5,7 +5,7 @@ tearDown
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue-test'.
 	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue-test'.
 
-	roles := self defaultFrontOfficeRoleClass getRolsIn: environment forApplication: application.
+	roles := application frontofficeRoles.
 	roles do: [:each | each removeFromCache].
 	processes := self defaultProcessDefinitionClass getAllProcessesNamed: 'Simple Registration' in: 'ue-test'.
 	processes do: [:each | each resetFormFieldInstances; removeFromCache].

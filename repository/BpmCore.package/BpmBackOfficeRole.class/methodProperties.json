@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"getAllRolesIn:" : "brunobb 02/04/2020 09:06",
 		"getRoleNamed:in:" : "brunobb 02/04/2020 08:24" },
 	"instance" : {
 		"asBackofficeRole" : "brunobb 03/25/2019 09:16",

@@ -4,7 +4,7 @@ searchByApplication
 
 	selectedApplication ifNil: [^self].
 
-	roles := self defaultRoleClass getRolsIn: self session bpmEnvironment forApplication: selectedApplication.
+	roles := selectedApplication getAllRoles.
 
 	model isAdmin ifTrue: [roles := roles select: [:each | each isAdmin]].
 	model isBackofficeRole ifTrue: [roles := roles select: [:each | each isBackofficeRole]].

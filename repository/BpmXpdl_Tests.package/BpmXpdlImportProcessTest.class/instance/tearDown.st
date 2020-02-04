@@ -8,7 +8,7 @@ tearDown
 	importProcess generatedProcesses do: [:each | each resetFormFieldInstances; removeFromCache].
  
 	self getDefaultApplication resetDefinitionRegistry.
-	(self defaultFrontOfficeRoleClass getRolsInAppName: self getDefaultApplication applicationName) do: [:each | each removeFromCache].
+	(self defaultApplicationManagerClass getRolesInAppName: self getDefaultApplication applicationName) do: [:each | each removeFromCache].
  
 	self getDefaultApplication removeFromCache.
 
