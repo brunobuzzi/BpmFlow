@@ -7,7 +7,7 @@ getVisibleRolesIn: aBpmEnvironment
 
 	(self isBackofficeUserIn: aBpmEnvironment) ifFalse: [^OrderedCollection new].
 
-	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^self defaultRoleClass getAllRolesIn: aBpmEnvironment].
+	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^aBpmEnvironment getAllRoles].
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 

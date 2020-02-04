@@ -4,6 +4,6 @@ getOrbeonBackofficeApplicationsIn: aBpmEnvironment
 
 	(self isBackofficeUserIn: aBpmEnvironment) ifFalse: [^OrderedCollection new].
 
-	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^self getOrbeonCache select: [:each | each bpmEnvironment == aBpmEnvironment]].
+	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^aBpmEnvironment getOrbeonApplications].
 
 	^self getOrbeonApplicationsIn: aBpmEnvironment

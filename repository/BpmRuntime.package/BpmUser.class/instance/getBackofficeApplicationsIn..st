@@ -4,6 +4,6 @@ getBackofficeApplicationsIn: aBpmEnvironment
 
 	(self isBackofficeUserIn: aBpmEnvironment) ifFalse: [^OrderedCollection new].
 
-	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^self getApplicationsCache select: [:each | each bpmEnvironment == aBpmEnvironment]].
+	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^aBpmEnvironment applications].
 
 	^self getApplicationsIn: aBpmEnvironment
