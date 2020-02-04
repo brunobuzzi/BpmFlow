@@ -1,4 +1,4 @@
-other
+instance creation
 createNewOrGetExisting: roleName in: appName
 	"The receiver creates a new <BpmRole> named <roleName> or get the existing role from OrbeonApplication <appName>"
 

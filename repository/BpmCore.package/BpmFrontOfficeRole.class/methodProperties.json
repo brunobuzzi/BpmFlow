@@ -17,4 +17,5 @@
 		"getAverageTimeForTasks" : "BrunoBB 11/08/2016 09:02",
 		"isFrontofficeRole" : "brunobb 12/27/2017 13:22",
 		"registerInApplication:" : "brunobb 02/04/2020 08:00",
-		"reportAverageTimeDistributionForAllTasks" : "BrunoBB 11/08/2016 09:04" } }
+		"reportAverageTimeDistributionForAllTasks" : "BrunoBB 11/08/2016 09:04",
+		"unregisterFromApplication:ifAbsent:" : "brunobb 02/04/2020 08:49" } }

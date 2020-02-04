@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"createNewOrGetExisting:in:" : "brunobb 01/27/2020 11:07",
+		"createNewOrGetExisting:in:" : "brunobb 02/04/2020 08:32",
 		"getAllRolesIn:" : "brunobb 01/27/2020 11:07",
 		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 01/27/2020 11:07",
 		"getRoleNamed:in:" : "brunobb 02/04/2020 08:23",
@@ -14,7 +14,7 @@
 		"addGroup:" : "brunobb 01/27/2020 11:14",
 		"addResponsibility:" : "brunobb 01/27/2020 11:07",
 		"addTo:numberOfUsersInTimeDistributionFrom:to:" : "brunobb 01/27/2020 11:07",
-		"addToCacheInAppName:" : "brunobb 01/27/2020 11:07",
+		"addToCacheInAppName:" : "brunobb 02/04/2020 08:43",
 		"application" : "brunobb 01/27/2020 11:07",
 		"application:" : "brunobb 01/27/2020 11:07",
 		"basicRemoveResponsibility:" : "brunobb 01/27/2020 11:07",
@@ -45,7 +45,7 @@
 		"removeAllUsers" : "brunobb 01/27/2020 11:07",
 		"removeCurrentTaskAssigmentsFrom:" : "brunobb 01/27/2020 11:07",
 		"removeFromCache" : "brunobb 01/27/2020 11:07",
-		"removeFromCacheInAppName:" : "brunobb 01/30/2020 04:37",
+		"removeFromCacheInAppName:" : "brunobb 02/04/2020 08:47",
 		"removeGroup:" : "brunobb 01/27/2020 11:15",
 		"removeResponsibility:" : "brunobb 01/27/2020 11:07",
 		"reportNumberOfUsersInTimeDistributionFrom:to:" : "brunobb 01/27/2020 11:07",
@@ -53,6 +53,7 @@
 		"tasks:" : "brunobb 01/27/2020 11:07",
 		"ungrantUser:" : "brunobb 01/27/2020 11:07",
 		"ungrantUser:ifAbsent:" : "brunobb 01/30/2020 07:06",
+		"unregisterFromApplication:ifAbsent:" : "brunobb 02/04/2020 08:48",
 		"userGroups" : "brunobb 01/27/2020 11:09",
 		"userGroups:" : "brunobb 01/27/2020 11:09",
 		"users" : "brunobb 01/27/2020 11:07",
