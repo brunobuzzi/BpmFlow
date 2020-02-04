@@ -64,10 +64,17 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 
 		self assert: ((subProcFinishedMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) size = 1).
 		self assert: ((subProcessL1 definition getCollectionForFieldsNamed: 'checkApplicantRecord[s]' in: 'check-applicant-record') select: [:fieldValue | fieldValue processId = subProcId]) notEmpty.
+
+		self assert: procInstance isRunning.
+		self assert: subProcessL1 isRunning.
+
 		"here the process is cancelled"
 		subProcessL1 abortProcess: nil.
 		subProcessL1 currentState isConfirmed: true. 
 		subProcessL1 confirmAbortion. "cancel all process tree -sub processes and the top process-"
+
+		self deny: procInstance isRunning.
+		self deny: subProcessL1 isRunning.
 
 		self assert: (subProcessL1 definition hasAbortedProcess: subProcId).
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.

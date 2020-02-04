@@ -20,10 +20,14 @@ testExecuteProcess_visaAcceptedPaused01
 
 	"TEST Paused Process"
 	procInstance pauseProcess: nil. "the process is Paused"
+	self deny: procInstance isRunning.
+	self assert: procInstance isPaused.
 
 	[self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vo' withForm: self formInstance_check_basic_data on: procInstance] on: ProcessNotRunningException do: [:ex | self assert: true].
 
 	procInstance resumeProcess: nil. 
+	self assert: procInstance isRunning.
+	self deny: procInstance isPaused.
 
 	"Step 2 - Form [check-basic-data]"
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) notEmpty.
@@ -42,6 +46,7 @@ testExecuteProcess_visaAcceptedPaused01
 
 	[self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance] on: ProcessNotRunningException do: [:ex | self assert: true].
 
+	self deny: procInstance isRunning.
 	self assert: procInstance isPaused.
 	procInstance resumeProcess: nil. 
 	self assert: procInstance isRunning.

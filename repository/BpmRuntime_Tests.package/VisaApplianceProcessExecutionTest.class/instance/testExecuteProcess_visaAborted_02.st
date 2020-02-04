@@ -39,7 +39,7 @@ testExecuteProcess_visaAborted_02
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
 	assignment := self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance. 
-
+	self assert: procInstance isRunning.
 	"here the process is cancelled"
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
@@ -52,3 +52,4 @@ testExecuteProcess_visaAborted_02
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenSurname[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'originCountry[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'gender[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self deny: procInstance isRunning.

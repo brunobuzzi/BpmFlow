@@ -34,7 +34,7 @@ testExecuteProcess_visaAborted_03
 	"Step 3 - Gateway Evaluation"
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'accept basic data').
-
+	self assert: procInstance isRunning.
 	"Step 4 - Form [check-previous-appliance]"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
@@ -53,6 +53,7 @@ testExecuteProcess_visaAborted_03
 		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
 
+		self assert: subProcessL1 isRunning.
 		self assert: (procInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
 		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
@@ -81,6 +82,9 @@ testExecuteProcess_visaAborted_03
 
 		"Sub Process Execution [check-financial-data]"
 			subProcessL2 := subProcessL1 subprocesses last.
+			self assert: procInstance isRunning.
+			self assert: subProcessL1 isRunning.
+			self assert: subProcessL2 isRunning.
 			subProc2Id := subProcessL2 id.
 			subProc2CurrentMatrix := subProcessL2 getAvailableProcessMatrix.
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
@@ -152,10 +156,15 @@ testExecuteProcess_visaAborted_03
 
 	assignment := self processExecutionSimulator takeTask: currentTask forUserNamed: 'andrew vm' withForm: self formInstance_emit_visa on: procInstance.
 
+	self assert: procInstance isRunning.
+	self deny: subProcessL1 isRunning.
+	self deny: subProcessL2 isRunning.
 	"here the process is cancelled"
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
 	procInstance confirmAbortion.
+
+	self deny: procInstance isRunning.
 
 	self assert: (procDefinition hasAbortedProcess: processId).
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) isEmpty.

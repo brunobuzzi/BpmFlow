@@ -21,6 +21,7 @@ testExecuteProcess_visaAborted_01
 
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenSurname[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
+	self assert: procInstance isRunning.
 	"here the process is cancelled"
 	procInstance abortProcess: nil.
 	procInstance currentState isConfirmed: true. 
@@ -31,3 +32,4 @@ testExecuteProcess_visaAborted_01
 	self assert: (procDefinition hasAbortedProcess: processId).
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenName[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenSurname[s]' in: 'citizen-appliance') select: [:fieldValue | fieldValue processId = processId]) isEmpty.
+	self deny: procInstance isRunning.

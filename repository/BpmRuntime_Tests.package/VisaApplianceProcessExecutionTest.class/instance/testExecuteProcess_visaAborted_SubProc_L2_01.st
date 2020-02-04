@@ -114,10 +114,18 @@ testExecuteProcess_visaAborted_SubProc_L2_01
 			currentTask := subProcessL2 currentActivities last.
 			self assert: (currentTask getDefinitionName = 'financial-report').
 
+			self assert: procInstance isRunning.
+			self assert: subProcessL1 isRunning.
+			self assert: subProcessL2 isRunning.
+
 			"here the process is cancelled"
 			subProcessL1 abortProcess: nil.
 			subProcessL1 currentState isConfirmed: true. 
 			subProcessL1 confirmAbortion. "cancel all process tree -sub processes and the top process-"
+
+			self deny: procInstance isRunning.
+			self deny: subProcessL1 isRunning.
+			self deny: subProcessL2 isRunning.
 
 			self assert: (subProcessL2 definition hasAbortedProcess: subProc2Id).
 			self assert: (subProcCurrentMatrix getAvailableTasksFor: 'finance officer' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
