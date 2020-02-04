@@ -1,9 +1,5 @@
 other
 getAllRolesIn: aBpmEnvironment
-	| allRols |
+	"Answer a collection with all roles all caches (frontoffice and backoffice)"
 
-	allRols := OrderedCollection new.
-
-	self cache asOrderedCollection do: [:eachCollection | allRols addAll: eachCollection].
-
-	^allRols select: [:each | each bpmEnvironment == aBpmEnvironment]
+	^aBpmEnvironment applications inject: OrderedCollection new into: [:all :each | all addAll: each backofficeRoles. all]
