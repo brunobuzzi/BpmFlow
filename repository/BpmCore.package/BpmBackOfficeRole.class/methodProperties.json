@@ -1,7 +1,5 @@
 {
 	"class" : {
-		"cache" : "brunobb 03/25/2019 09:16",
-		"cache:" : "brunobb 03/25/2019 09:16",
 		"getAllRolesIn:" : "brunobb 02/04/2020 09:06",
 		"getRoleNamed:in:" : "brunobb 02/04/2020 08:24" },
 	"instance" : {
