@@ -3,12 +3,12 @@ addToCache
 	"Add the receiver to the global cache for this class"
 	| processDefinitions |
 
-	processDefinitions := self collectionCache.
+	(processName isNil or:[processName isEmpty]) ifTrue: [^NoProcessNameException signal: 'ProcessDefinition MUST have a name'].
+	application ifNil: [^NoApplicationException signal: 'ProcessDefinition MUST have anOrbeonApplication'].
 
-	processDefinitions isEmpty 
-	ifFalse: [version := processDefinitions last version + 1]
-	ifTrue: [version := 1].
+	version := (application hasProcessNamed: processName) ifFalse: [1] ifTrue: [application nextVersionNumberForProcessNamed: processName].
 
-	((version > 1) and: [processDefinitions last isImmutable]) ifTrue: [^ImmutableProcessException signal: 'The lasted version of this process is immutable then no more processes can be added to the cache'].
+	(application isImmutableTheLastVersionOfProcessNamed: processName)
+	ifTrue: [^ImmutableProcessException signal: 'The lasted version of this process is immutable then no more processes can be added to the cache'].
 
 	processDefinitions add: self
