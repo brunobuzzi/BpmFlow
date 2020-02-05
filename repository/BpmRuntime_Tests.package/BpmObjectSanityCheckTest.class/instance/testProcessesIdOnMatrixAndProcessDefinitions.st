@@ -6,7 +6,7 @@ testProcessesIdOnMatrixAndProcessDefinitions
 
 	self defaultEnvironmentClass cache do: [:environment |
 		fromDefnitionIds := Set new.
-		((self defaultProcessDefinitionClass getAllProcessInstancesIn: environment) "to be compared with Matrix we have to remove script only processes"
+		(environment getAllProcessInstances "to be compared with Matrix we have to remove script only processes"
 			do: [:procInst | procInst getProcessesTreeAsCollection do: [:proc | proc hasAnyOrbeonOrSeasideTaskInstance ifTrue:[fromDefnitionIds add: proc processId]]]).
 
 		fromDefnitionIds := fromDefnitionIds asSet asSortedCollection.

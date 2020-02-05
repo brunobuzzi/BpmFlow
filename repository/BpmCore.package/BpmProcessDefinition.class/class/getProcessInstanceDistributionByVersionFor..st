@@ -1,15 +1,14 @@
 distribution
 getProcessInstanceDistributionByVersionFor: appName
-	| distribution appDictionary maxSize |
+	| application distribution maxSize |
 
 	maxSize := 0.
 	distribution := OrderPreservingDictionary new.
 
-	appDictionary := self cacheAt: appName ifAbsent: [^#()].
-	appDictionary isEmpty ifTrue: [^#()].
+	application := self defaultApplicationManagerClass applicationNamed: appName ifNone: [^distribution].
 
-	appDictionary keys asSortedCollection do: [:procName | | versionCollection |
-		versionCollection := appDictionary at: procName.
+	application getAllProcessDefinitions do: [:procName | | versionCollection |
+		versionCollection := application getAllProcessesNamed: procName.
 		distribution at: procName put: (versionCollection collect: [:procDef | procDef processInstances size]) asOrderedCollection.
 		maxSize := maxSize max: versionCollection size.
 	].

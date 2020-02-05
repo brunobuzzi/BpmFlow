@@ -7,7 +7,7 @@ initializeCurrentSystem
 	self defaultBpmUserClass initializeCache.
 	self defaultApplicationUserClass initializeCache.
 
-	self defaultProcessDefinitionClass initializeCache.
+	self defaultProcessDefinitionClass initializeAnonymousFormMapping.
 	self defaultAvailableTasksMatrixClass initializeCache.
 	self defaultFinishedTasksMatrixClass initializeCache.
 	self defaultTakenTasksMatrixClass initializeCache.

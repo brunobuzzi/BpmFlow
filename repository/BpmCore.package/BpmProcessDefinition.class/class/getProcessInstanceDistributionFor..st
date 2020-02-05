@@ -1,11 +1,12 @@
 distribution
 getProcessInstanceDistributionFor: appName
-	| applicationDictionary distribution |
+	| application distribution |
 
 	distribution := OrderPreservingDictionary new.
-	applicationDictionary := self cacheAt: appName ifAbsent: [^Dictionary new].
 
-	applicationDictionary keysAndValuesDo: [:procName :versionCollection | | sum |
+	application := self defaultApplicationManagerClass applicationNamed: appName ifNone: [^distribution].
+
+	application processesDefinitions keysAndValuesDo: [:procName :versionCollection | | sum |
 		sum := 0.
 		versionCollection do: [:procDef | sum := sum + procDef processInstances size].
 		distribution at: procName put: sum.

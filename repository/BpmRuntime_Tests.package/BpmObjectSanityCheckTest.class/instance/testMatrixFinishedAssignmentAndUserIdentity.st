@@ -3,7 +3,7 @@ testMatrixFinishedAssignmentAndUserIdentity
 	"Check sanity of Finished Assignments in the Matrix and in BpmUser inbox"
 
 	self defaultEnvironmentClass cache do: [:environment |
-		(self defaultProcessDefinitionClass getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
+		environment getAllProcessDefinitions do: [:eachProcDef | 
 			(eachProcDef processInstances reject: [:each | each isAborted]) do: [:procInstance | | finishedMatrix finishedAssignments |
 				finishedMatrix := procInstance getFinishedProcessMatrix.
 				finishedAssignments := finishedMatrix getAllAssignments. "finished assignments in the entire Application"

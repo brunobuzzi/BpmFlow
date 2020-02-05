@@ -1,7 +1,6 @@
 cache
 addToCache
-	"Add the receiver to the global cache for this class"
-	| processDefinitions |
+	""
 
 	(processName isNil or:[processName isEmpty]) ifTrue: [^NoProcessNameException signal: 'ProcessDefinition MUST have a name'].
 	application ifNil: [^NoApplicationException signal: 'ProcessDefinition MUST have anOrbeonApplication'].
@@ -11,4 +10,4 @@ addToCache
 	(application isImmutableTheLastVersionOfProcessNamed: processName)
 	ifTrue: [^ImmutableProcessException signal: 'The lasted version of this process is immutable then no more processes can be added to the cache'].
 
-	processDefinitions add: self
+	^application registerProcessDefinition: self

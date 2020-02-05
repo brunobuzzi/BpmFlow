@@ -4,13 +4,6 @@ getApplicationAndProcessInstanceDistributionIn: aBpmEnvironment
 
 	distribution := OrderPreservingDictionary new.
 
-"	aBpmEnvironment applications keysAndValuesDo: [:appName :procDefDictionary | | sum |
-		sum := 0.
-		procDefDictionary do: [:procDefCollection |
-			procDefCollection do: [:each | sum := sum + each processInstances size].
-			distribution at: appName put: sum] 
-	]."
-
 	aBpmEnvironment applications do: [:application | | sum | 
 		sum := 0.
 		application processesDefinitions do: [:versionCollection | 

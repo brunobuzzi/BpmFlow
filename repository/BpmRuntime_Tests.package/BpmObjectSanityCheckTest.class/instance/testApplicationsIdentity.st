@@ -6,7 +6,7 @@ testApplicationsIdentity
 	applications := self defaultApplicationManagerClass cache asArray.
 
 	self defaultEnvironmentClass cache do: [:environment |
-		(self defaultProcessDefinitionClass getAllProcessDefinitionIn: environment) do: [:eachProcDef | 
+		environment getAllProcessDefinitions do: [:eachProcDef | 
 			self assert: (applications anySatisfy: [:eachApp | eachApp == eachProcDef application]).
 		]
 	].
