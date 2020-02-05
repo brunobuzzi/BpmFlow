@@ -1,4 +1,4 @@
 query
 getAllProcessNamesIn: appName
 
-	^(self cacheAt: appName ifAbsent: [^#()]) keys asSortedCollection
+	^(self defaultApplicationManagerClass applicationNamed: appName ifNone: [^#()]) getAllProcessDefinitionsNames

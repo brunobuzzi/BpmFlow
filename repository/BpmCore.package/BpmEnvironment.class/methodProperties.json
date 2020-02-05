@@ -28,6 +28,7 @@
 		"embeddedCodeSecurityPolicy:" : "brunobb 01/30/2020 03:06",
 		"getAllBackOfficeRoles" : "brunobb 02/04/2020 10:43",
 		"getAllFrontOfficeRoles" : "brunobb 02/04/2020 10:43",
+		"getAllProcessInstances" : "brunobb 02/05/2020 03:27",
 		"getAllRoles" : "brunobb 02/04/2020 09:55",
 		"getBIApplicationName" : "brunobb 01/30/2020 03:06",
 		"getBILogoSymbol" : "brunobb 01/30/2020 03:06",
