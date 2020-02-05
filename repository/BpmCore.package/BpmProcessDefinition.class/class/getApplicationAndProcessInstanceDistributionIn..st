@@ -13,7 +13,7 @@ getApplicationAndProcessInstanceDistributionIn: aBpmEnvironment
 
 	aBpmEnvironment applications do: [:application | | sum | 
 		sum := 0.
-		(self cache at: application applicationName ifAbsent: [#()]) keysAndValuesDo: [:appName :versionCollection | 
+		application processesDefinitions do: [:versionCollection | 
 			versionCollection do: [:eachVersion | sum := sum + eachVersion processInstances size].
 		].
 		distribution at: application applicationName put: sum.

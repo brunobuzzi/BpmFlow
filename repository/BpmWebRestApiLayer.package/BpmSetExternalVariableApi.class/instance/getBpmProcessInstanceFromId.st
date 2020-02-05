@@ -6,7 +6,7 @@ getBpmProcessInstanceFromId
 
 	[procDefNumberId := Number fromString: processDefinitionId] on: Error do: [:ex | ^nil].
 
-	processDefinition := self defaultProcessDefinitionClass getProcessDefnitionWith: procDefNumberId in: appName.
+	processDefinition := self defaultProcessDefinitionClass getProcessDefinitionWith: procDefNumberId in: appName.
 
 	processDefinition ifNil: [^nil].
 
