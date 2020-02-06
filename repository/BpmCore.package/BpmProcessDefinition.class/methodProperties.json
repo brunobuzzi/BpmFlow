@@ -25,7 +25,7 @@
 		"getValueDistributionForFieldCollection:from:to:satisfying:onError:" : "brunobb 11/29/2019 08:49",
 		"getValueSumDistributionFor:in:fieldNamed:from:to:satisfying:onError:" : "brunobb 11/29/2019 11:46",
 		"getVersionsAverageTimeFor:in:" : "BrunoBB 11/07/2016 07:10",
-		"hasAnyProcessApplicationNamed:" : "BrunoBB 02/29/2016 09:25",
+		"hasAnyProcessInApplicationNamed:" : "brunobb 02/06/2020 09:48",
 		"initializeAnonymousFormMapping" : "BrunoBB 03/30/2016 10:45",
 		"isRegisteredAsAnonymousStart:" : "brunobb 02/05/2018 10:39",
 		"newNamed:" : "BrunoBB 10/27/2015 15:28",

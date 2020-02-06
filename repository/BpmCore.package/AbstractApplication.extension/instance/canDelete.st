@@ -4,6 +4,6 @@ canDelete
 
 	^frontofficeRoles isEmpty and: [
 		backofficeRoles isEmpty and: [
-		(self defaultProcessDefinitionClass hasAnyProcessApplicationNamed: applicationName) not and: [
+		(self defaultProcessDefinitionClass hasAnyProcessInApplicationNamed: applicationName) not and: [
 		(self defaultTimerEventMonitor isMonitoringAnyEventIn: self) not
 		]]]
