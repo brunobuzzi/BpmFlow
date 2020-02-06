@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Cache" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"name",

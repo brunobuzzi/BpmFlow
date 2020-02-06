@@ -10,6 +10,7 @@ initialize
 	applicationsNames := Dictionary new.
 	applicationsLogos := Dictionary new.
 	usersDashboardRepository := BpmDashboardRepository newOn: self.
+	exceptionCalendars := Set new.
 
 	"this value is used to generate the redirect from Orbeon to Seaside. 
 	Check WABpmPersistenceOrbeonLayer>>generateLinkedUrlFor:s:andK: 

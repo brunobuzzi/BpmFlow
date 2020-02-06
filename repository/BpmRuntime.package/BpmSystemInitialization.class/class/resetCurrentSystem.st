@@ -10,8 +10,6 @@ resetCurrentSystem
 
 	self defaultBpmUserClass cache do: [:each | each resetMessagesBoxesAndRoles].
 	(Smalltalk at: #BpmDashboardRepository ifAbsent: [nil]) ifNil: [] ifNotNil: [:repositoryClass | repositoryClass initializeDefault]. "issue #653"
-	
-	BpmExceptionCalendar removeUnusedCalendars.	
 
 	BpmProcessDefinitionCategory resetAllCategorizedProcesses.
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.

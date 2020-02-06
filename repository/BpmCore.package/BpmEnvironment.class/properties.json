@@ -16,7 +16,8 @@
 		"seasideApplicationName",
 		"embeddedCodeSecurityPolicy",
 		"userGroups",
-		"usersDashboardRepository" ],
+		"usersDashboardRepository",
+		"exceptionCalendars" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],

@@ -1,14 +1,6 @@
 {
 	"class" : {
-		"addCalendar:" : "brunobb 09/06/2018 09:26",
-		"addDefaultCalendarIn:" : "brunobb 09/06/2018 09:28",
-		"cache" : "brunobb 09/06/2018 09:24",
-		"defaultIn:" : "brunobb 09/06/2018 09:30",
-		"getCalendarNamedOrDefault:in:" : "brunobb 09/06/2018 09:35",
-		"getCalendarsIn:" : "brunobb 09/06/2018 09:16",
-		"initializeCache" : "brunobb 09/06/2018 09:58",
-		"newExceptWeekEnds" : "BrunoBB 02/05/2017 11:45",
-		"removeUnusedCalendars" : "brunobb 02/05/2019 08:35" },
+		 },
 	"instance" : {
 		"addAllDaysNamed:ofYear:" : "BrunoBB 03/03/2017 12:45",
 		"addAllSaturdayOf:" : "BrunoBB 03/03/2017 12:45",

@@ -10,7 +10,7 @@ createSystemDefaultObjects
 	| defaultEnvironment adminUser application role |
 
 	defaultEnvironment := self defaultEnvironmentClass addDefaultEnvironment.
-	BpmExceptionCalendar addDefaultCalendarIn: defaultEnvironment. "set a default calendar for the environment"
+	defaultEnvironment addDefaultCalendar. "set a default calendar for the environment"
 
 	self defaultBpmApplicationClass initializeCache.
 	application := 	(BpmApplication newNamed: 'admins') addToCache.
