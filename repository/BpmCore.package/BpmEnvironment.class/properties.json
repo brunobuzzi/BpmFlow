@@ -15,7 +15,8 @@
 		"internationalization",
 		"seasideApplicationName",
 		"embeddedCodeSecurityPolicy",
-		"userGroups" ],
+		"userGroups",
+		"usersDashboardRepository" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],

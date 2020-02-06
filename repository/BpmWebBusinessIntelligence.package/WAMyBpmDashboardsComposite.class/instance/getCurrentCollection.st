@@ -1,4 +1,4 @@
 other
 getCurrentCollection
 
-	^BpmDashboardRepository getDashboardsIn: self session bpmEnvironment for: self session user
+	^self session bpmEnvironment getDashboardsFor: self session user

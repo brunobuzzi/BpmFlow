@@ -3,10 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Default" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"definitions" ],
+		"definitions",
+		"bpmEnvironment" ],
 	"name" : "BpmDashboardRepository",
 	"pools" : [
 		 ],

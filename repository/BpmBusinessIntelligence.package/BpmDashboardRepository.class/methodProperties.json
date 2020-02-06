@@ -1,16 +1,15 @@
 {
 	"class" : {
-		"default" : "brunobb 09/17/2018 12:33",
-		"defaultFor:" : "brunobb 09/19/2018 11:01",
-		"defaultFor:ifAbsent:" : "brunobb 09/19/2018 11:00",
-		"getDashboardsIn:for:" : "brunobb 09/19/2018 11:05",
-		"initializeDefault" : "brunobb 09/17/2018 12:33" },
+		"newOn:" : "brunobb 02/06/2020 03:13" },
 	"instance" : {
-		"definitions" : "brunobb 09/17/2018 12:33",
-		"definitions:" : "brunobb 09/17/2018 12:33",
-		"getDashboardFor:" : "brunobb 09/19/2018 11:07",
-		"getDashboardNamed:for:" : "brunobb 09/19/2018 09:53",
-		"getDashboardNamed:for:ifAbsent:" : "brunobb 09/19/2018 09:52",
-		"initialize" : "brunobb 09/17/2018 12:33",
-		"remove:" : "brunobb 09/17/2018 12:41",
-		"store:" : "brunobb 09/17/2018 12:39" } }
+		"bpmEnvironment" : "brunobb 02/06/2020 03:13",
+		"bpmEnvironment:" : "brunobb 02/06/2020 03:13",
+		"definitions" : "brunobb 02/06/2020 03:13",
+		"definitions:" : "brunobb 02/06/2020 03:13",
+		"getDashboardFor:" : "brunobb 02/06/2020 03:13",
+		"getDashboardNamed:for:" : "brunobb 02/06/2020 03:13",
+		"getDashboardNamed:for:ifAbsent:" : "brunobb 02/06/2020 03:13",
+		"getDashboardsFor:" : "brunobb 02/06/2020 03:13",
+		"initialize" : "brunobb 02/06/2020 03:13",
+		"remove:" : "brunobb 02/06/2020 03:13",
+		"store:" : "brunobb 02/06/2020 03:13" } }

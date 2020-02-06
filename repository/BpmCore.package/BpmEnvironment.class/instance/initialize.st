@@ -9,6 +9,7 @@ initialize
 	userGroups := RcKeyValueDictionary new.
 	applicationsNames := Dictionary new.
 	applicationsLogos := Dictionary new.
+	usersDashboardRepository := BpmDashboardRepository newOn: self.
 
 	"this value is used to generate the redirect from Orbeon to Seaside. 
 	Check WABpmPersistenceOrbeonLayer>>generateLinkedUrlFor:s:andK: 
