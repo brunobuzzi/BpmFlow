@@ -1,4 +1,4 @@
 other
 getFinishedMatrixForApplication: aString
 
-	^self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: aString
+	^(self defaultApplicationManagerClass applicationNamed: aString) finishedTasksMatrix

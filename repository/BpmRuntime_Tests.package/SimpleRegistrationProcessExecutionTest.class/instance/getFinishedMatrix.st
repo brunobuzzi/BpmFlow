@@ -1,4 +1,4 @@
 other
 getFinishedMatrix
 
-	^self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: 'st'
+	^(self defaultApplicationManagerClass getAnyApplicationNamed: 'st' ifNone: [self assert: false]) finishedTasksMatrix

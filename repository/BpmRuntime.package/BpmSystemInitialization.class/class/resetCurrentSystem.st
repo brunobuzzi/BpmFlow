@@ -17,8 +17,6 @@ resetCurrentSystem
 
 	self defaultApplicationManagerClass initializeCache.
 
-	self defaultAvailableTasksMatrixClass resetAllRolesAndAssignments.
-	self defaultTakenTasksMatrixClass resetAllRolesAndAssignments.
-	self defaultFinishedTasksMatrixClass resetAllRolesAndAssignments.
+	self defaultEnvironmentClass resetAllRolesAndAssignments.
 
 	self defaultTimerEventMonitor initializeDefault.

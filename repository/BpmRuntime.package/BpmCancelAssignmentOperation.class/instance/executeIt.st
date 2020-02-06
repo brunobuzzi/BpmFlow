@@ -14,7 +14,7 @@ executeIt
 		matrix: nil.
 
 	"add the assignment to finished matrix --> we do not care that it was cancelled because it also finished (but do not generate next transitions)"
-	finishedMatrix := self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
+	finishedMatrix := assignment application finishedTasksMatrix.
 	finishedMatrix addAssignment: assignment.
 
 	self sendInformationMessage.

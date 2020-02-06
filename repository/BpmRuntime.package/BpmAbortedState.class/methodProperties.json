@@ -10,10 +10,10 @@
 		"isConfirmed" : "brunobb 12/12/2017 16:56",
 		"isConfirmed:" : "brunobb 12/12/2017 16:56",
 		"printProcessState" : "brunobb 01/13/2018 14:52",
-		"removeAllAssigmentsFromAvailableMatrix" : "brunobb 03/25/2019 08:11",
-		"removeAllAssigmentsFromFinishedMatrix" : "brunobb 03/25/2019 08:15",
+		"removeAllAssigmentsFromAvailableMatrix" : "brunobb 02/06/2020 10:57",
+		"removeAllAssigmentsFromFinishedMatrix" : "brunobb 02/06/2020 10:42",
 		"removeAllAssigmentsFromMatrix:" : "brunobb 04/22/2018 13:58",
-		"removeAllAssigmentsFromTakenMatrix" : "brunobb 03/25/2019 08:20",
+		"removeAllAssigmentsFromTakenMatrix" : "brunobb 02/06/2020 11:04",
 		"removeAppFieldValuesFromProcessDefinition" : "brunobb 01/02/2018 14:23",
 		"removeTakenAssignmentsFromUsers" : "brunobb 01/28/2020 03:27",
 		"removeTimerEventsFromEventMonitor" : "brunobb 01/14/2018 18:47" } }

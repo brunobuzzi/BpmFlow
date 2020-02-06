@@ -17,10 +17,6 @@ testResetCurrentSystem
 
 	self assert: self defaultApplicationManagerClass cache isEmpty.
 
-	self assert: self defaultAvailableTasksMatrixClass cache isEmpty.
-	self assert: self defaultFinishedTasksMatrixClass cache isEmpty.
-	self assert: self defaultTakenTasksMatrixClass cache isEmpty.
-
 	self assert: BpmProcessDefinitionCategory cache isEmpty.
 	self assert: BpmProcessInstanceCategory cache isEmpty.
 	self assert: BpmProcessDynamicCategory cache isEmpty.

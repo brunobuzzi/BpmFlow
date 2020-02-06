@@ -11,9 +11,9 @@ testProcessesIdOnMatrixAndProcessDefinitions
 
 		fromDefnitionIds := fromDefnitionIds asSet asSortedCollection.
 
-		fromMatrixIds := (((self defaultAvailableTasksMatrixClass getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId]),
-								((self defaultTakenTasksMatrixClass getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId]),
-								((self defaultFinishedTasksMatrixClass getAllAvailableTaskAssignmentsIn: environment) collect: [:each | each processId])) asSet asSortedCollection.
+		fromMatrixIds := ((environment getAllAvailableTaskAssignments collect: [:each | each processId]),
+								(environment getAllTakenTaskAssignments collect: [:each | each processId]),
+								(environment getAllFinishedTaskAssignments collect: [:each | each processId])) asSet asSortedCollection.
 
 		diff := fromMatrixIds difference: fromDefnitionIds.
 		self assert: diff isEmpty.

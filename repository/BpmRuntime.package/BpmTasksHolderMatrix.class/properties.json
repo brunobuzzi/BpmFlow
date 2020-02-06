@@ -1,7 +1,7 @@
 {
 	"category" : "BpmRuntime",
 	"classinstvars" : [
-		"cache" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

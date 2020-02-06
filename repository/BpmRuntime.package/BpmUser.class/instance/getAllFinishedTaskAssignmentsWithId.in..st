@@ -5,7 +5,7 @@ getAllFinishedTaskAssignmentsWithId: processId in: aBpmEnvironment
 
 	assignments := OrderedCollection new.
 	(self rolesIn: aBpmEnvironment) do: [:eachRole | | matrix |
-		matrix := self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: eachRole getApplicationName.
+		matrix := eachRole application finishedTasksMatrix.
 		assignments addAll: (matrix getAvailableTasksFor: eachRole name satisfying: {:each | each.processId = processId}).
 	].
 

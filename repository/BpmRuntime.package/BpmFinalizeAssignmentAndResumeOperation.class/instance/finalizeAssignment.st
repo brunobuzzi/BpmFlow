@@ -13,7 +13,7 @@ finalizeAssignment
 	user moveFromCurrentToFinished: assignment in: self bpmEnvironment. "<user> move from current assignments to finished <assignment> "
 
 	"add the assignment to finished matrix"
-	finishedMatrix := self defaultFinishedTasksMatrixClass getMatrixForApplicationNamed: assignment applicationName.
+	finishedMatrix := assignment application finishedTasksMatrix.
 	finishedMatrix addAssignment: assignment.
 
 	"generate next transitions and put New Tasks in the Application Running Matrix"
