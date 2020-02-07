@@ -6,5 +6,5 @@ reportProcessInstancesQuantityByVersionDistributionFor: appName
  
 	^(BpmApplicationDistributionReport applicationName: appName distribution: distribution)
 		sumSecondsToConstruct: secondsToRun;
-		categories: (self cacheAt: appName ifAbsent: [Dictionary new]) keys asSortedCollection "processes names"
+		categories: (self defaultApplicationManagerClass applicationNamed: appName ifNone: []) getAllProcessDefinitionsNames"processes names"
 		yourself.

@@ -2,7 +2,7 @@ search area
 renderProcessTypeComboOn: html
 	| definitionsNames |
 
-	definitionsNames := self defaultProcessDefinitionClass getAllProcessNamesIn: self getSelectedApplication.
+	definitionsNames := self getSelectedApplication getAllProcessDefinitionsNames.
 
 	html div class: 'top-search-div'; with: [
 		html label 

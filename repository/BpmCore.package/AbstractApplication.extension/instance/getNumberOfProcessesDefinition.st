@@ -1,4 +1,4 @@
 *bpmcore
 getNumberOfProcessesDefinition
 
-	^self getProcessesDefinition size
+	^processesDefinitions size

@@ -4,6 +4,6 @@ getProcessesDefinitionWithAnonymouStart
 
 	processes := OrderedCollection new.
 
-	self getProcessesDefinition do: [:collection | (collection notEmpty and: [collection last isAnonymousStartEnabled]) ifTrue: [processes add: collection last]].
+	processesDefinitions do: [:collection | (collection notEmpty and: [collection last isAnonymousStartEnabled]) ifTrue: [processes add: collection last]].
 
 	^processes

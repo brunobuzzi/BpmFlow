@@ -8,10 +8,8 @@ searchProcessId
 	id := [Integer fromString: (searchValues at: 'id')] on: Error do: [:err | 0].
 
 	contextApplications := 
-		((self session user getBackofficeApplicationsIn: self session bpmEnvironment)
-			collect: [:each | 
-				self defaultProcessDefinitionClass cacheAt: each applicationName ifAbsent: [nil]]) 
-		select: [:each | each notNil].
+		(self session user getBackofficeApplicationsIn: self session bpmEnvironment)
+			collect: [:eachApp | eachApp processesDefinitions] "answer <aDictionary> where the key is the process name and the value is a collection of <BpmPricessDefinition>s".
 
 	searchCollectionResult := (self defaultProcessDefinitionClass getProcessInstanceWithId: id onApplications: contextApplications) 
 										ifNil: [#()] 
