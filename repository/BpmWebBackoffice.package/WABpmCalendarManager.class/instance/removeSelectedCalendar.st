@@ -1,7 +1,7 @@
 other
 removeSelectedCalendar
 
-	selectedLateralItem removeFromCache.
+	self session bpmEnvironment removeCalendar: selectedLateralItem.
 
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
 	batchedList  remove: selectedLateralItem.

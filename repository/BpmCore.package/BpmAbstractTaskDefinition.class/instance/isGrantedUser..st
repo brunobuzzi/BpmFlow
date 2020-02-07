@@ -6,7 +6,7 @@ isGrantedUser: aBpmUser
 		If succeed --> is granted, else --> not granted"
 
 	self hasPerformers 
-	ifFalse: [^super isGranted: aBpmUser].
+	ifFalse: [^super isGrantedUser: aBpmUser].
 
 	^self performers anySatisfy: [:eachPerformer | | mappedRole |
 
