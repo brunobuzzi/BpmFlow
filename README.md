@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/brunobuzzi/OrbeonPersistenceLayer.svg?branch=master)](https://github.com/brunobuzzi/BpmFlow)
 BPM Flow
 =======================
-**Note:** the **master** is the current development line and maybe not stable. 
-For stable versions check: 
+**Note:** the **master** is the current development line and maybe not stable.<br> 
+For stable versions check:<br> 
 https://github.com/brunobuzzi/BpmFlow/releases
 
 An **Open Source** implementation of **BPM** standart using **GemStone/S**, **Orbeon**, **Bizagi** and **Highcharts**.<br>
