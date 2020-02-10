@@ -14,17 +14,17 @@ testValidImport
 	ibm := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'ibm'.
 	google := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'google'.
 
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.sales' in: ibm) notNil.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.budget' in: ibm) notNil.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.admins' in: ibm) notNil.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'google.marketing' in: google) notNil.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'google.admins' in: google) notNil.
+	self assert: (ibm applicationNamed: 'ibm.sales') notNil.
+	self assert: (ibm applicationNamed: 'ibm.budget') notNil.
+	self assert: (ibm applicationNamed: 'ibm.admins') notNil.
+	self assert: (google applicationNamed: 'google.marketing') notNil.
+	self assert: (google applicationNamed: 'google.admins') notNil.
 
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.sales' in: ibm) class equals: OrbeonApplication.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.budget' in: ibm) class equals: BpmApplication.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'ibm.admins' in: ibm) class equals: BpmApplication.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'google.marketing' in: google) class equals: BpmApplication.
-	self assert: (self defaultApplicationManagerClass getAnyApplicationNamed: 'google.admins' in: google) class equals: BpmApplication.
+	self assert: (ibm applicationNamed: 'ibm.sales') class equals: OrbeonApplication.
+	self assert: (ibm applicationNamed: 'ibm.budget') class equals: BpmApplication.
+	self assert: (ibm applicationNamed: 'ibm.admins') class equals: BpmApplication.
+	self assert: (google applicationNamed: 'google.marketing') class equals: BpmApplication.
+	self assert: (google applicationNamed: 'google.admins') class equals: BpmApplication.
 
 	self assert: ((self defaultFrontOfficeRoleClass getRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (self getUserNamed: 'robert')) equals: true.
 	self assert: ((self defaultFrontOfficeRoleClass getRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (self getUserNamed: 'andrew')) equals: true.

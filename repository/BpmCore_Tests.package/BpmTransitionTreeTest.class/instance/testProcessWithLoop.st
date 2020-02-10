@@ -9,7 +9,7 @@ testProcessWithLoop
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
 
 	processGenerator 
-		mapProcess: 'dashboard-process-with-loop' toApplication: (self defaultApplicationManagerClass getAnyApplicationNamed: 'import-test-app');
+		mapProcess: 'dashboard-process-with-loop' toApplication: (self defaultApplicationManagerClass applicationNamed: 'import-test-app');
 		generateAllProcess.
 
 	processDefinition := processGenerator getProcessDefinitionNamed: 'dashboard-process-with-loop' ifNone: [self assert: false].

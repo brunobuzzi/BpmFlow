@@ -4,7 +4,7 @@ createNewRole
 
 	appName := (self componentValueAt: 'application') ifNil: [^self] ifNotNil: [:value | value].
 
-	application := self defaultApplicationManagerClass getAnyApplicationNamed: appName ifNone: [^self].
+	application := self defaultApplicationManagerClass applicationNamed: appName ifNone: [^self].
 
 	roleClass := (self componentValueAt: 'isBackoffice') ifTrue: [self defaultBackOfficeRoleClass] ifFalse: [self defaultFrontOfficeRoleClass].
 

@@ -14,3 +14,5 @@ setUp
 	self registerUsers: #('andrew vm') inExecutionAndEnvironment: environment.
 
 	self grantUsers: {'andrew vm' -> 'timer-role'} in: 'ue'.
+
+	self formInstance_user_form_withoutProcess. "see #1086"

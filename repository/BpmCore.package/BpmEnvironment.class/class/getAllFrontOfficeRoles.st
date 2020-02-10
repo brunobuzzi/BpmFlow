@@ -1,4 +1,4 @@
-applications
+roles
 getAllFrontOfficeRoles
 	"Answer a collection with all frontoffice roles in all environments"
 

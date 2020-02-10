@@ -1,4 +1,4 @@
 other
 booleanValueForApplication: anApplication
 
-	^self selectedEnvironment includesApplicationName: anApplication applicationName
+	^self selectedEnvironment includesApplicationNamed: anApplication applicationName

@@ -16,7 +16,7 @@ testAccessToEnvironmentManager
 	self assert: (self defaultEnvironmentClass getAdminsEnvironment includesUserNamed: newUser username).
 	self deny: newUser hasAccessToEnvironmentManager.
 
-	adminRole := self defaultBpmApplicationClass getAdminApplication backofficeRoles detect: [:each | each name = 'admin'] ifNone: [self assert: false].
+	adminRole := self defaultEnvironmentClass getAdminApplication backofficeRoles detect: [:each | each name = 'admin'] ifNone: [self assert: false].
 	adminRole grantUser: newUser.
 	self assert: newUser hasAccessToEnvironmentManager.
 
@@ -29,3 +29,4 @@ testAccessToEnvironmentManager
 	env1 unregisterUser: newUser.
 	newUser removeFromCache.
 	env1 removeFromCache.
+	self deny: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).

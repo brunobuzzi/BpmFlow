@@ -2,5 +2,5 @@ other
 selectedApplication
 
 	^self defaultApplicationManagerClass 
-			getAnyApplicationNamed: (searchValues at: 'application') 
+			applicationNamed: (searchValues at: 'application') 
 			ifNone: [self getOrbeonApplicationClass new]

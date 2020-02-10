@@ -1,4 +1,4 @@
-applications
+roles
 getAllRoles
 	"Answer a collection with all roles in all environments"
 

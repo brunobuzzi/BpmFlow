@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 
-	application := self defaultApplicationManagerClass getAnyApplicationNamed: 'ue-test' ifNone: [(self getOrbeonApplicationClass newNamed: 'ue-test') addToCache].
+	application := self defaultApplicationManagerClass applicationNamed: 'ue-test' ifNone: [(self getOrbeonApplicationClass newNamed: 'ue-test') addToCache].
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue-test'.
 	application hasBpmEnvironment ifFalse: [environment registerApplication: application].
 

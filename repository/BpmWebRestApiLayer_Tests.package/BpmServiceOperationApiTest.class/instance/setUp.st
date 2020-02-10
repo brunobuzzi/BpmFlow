@@ -9,7 +9,7 @@ setUp
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue-test'.
 
 	application := self getOrbeonApplicationClass 
-							getAnyApplicationNamed: 'ue-test' 
+							applicationNamed: 'ue-test' 
 							ifNone: [(self getOrbeonApplicationClass newNamed: 'ue-test') addToCache].
 
 	application hasBpmEnvironment ifFalse: [environment registerApplication: application].

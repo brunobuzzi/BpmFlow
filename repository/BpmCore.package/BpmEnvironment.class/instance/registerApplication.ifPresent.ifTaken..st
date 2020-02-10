@@ -6,5 +6,7 @@ registerApplication: anApplication ifPresent: presentBlock ifTaken: takenBlock
 
 	(applications includesKey: anApplication applicationName) ifTrue: [^presentBlock value].
 
+	anApplication isOrbeonApplication ifTrue: [anApplication addToCache]. "see issue #1093 task 3)"
+
 	anApplication bpmEnvironment: self. 
 	^applications at: anApplication applicationName put: anApplication
