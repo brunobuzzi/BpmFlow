@@ -22,7 +22,7 @@ renderContentOn: html
 	searchCollectionResult isEmpty ifTrue: [^self].
 	selectedObject ifNil: [^self].
 
-	assignmentBatchedList items: selectedObject userAssignments.
+	assignmentBatchedList items: (selectedObject userAssignmentsSortedBy: [:a :b | a creationDate <= b creationDate]).
 	html div id: 'process-assignments'; class: 'default-gray-table ';
 		with:[html div class: 'default-gray-table-title'; with: [html output class: 'default-gray-table-title'; with: ('Tasks List' translateIn: self session)].
 				html render: (assignmentBatchedList table: self sewafTableForProcessAssignments)].
