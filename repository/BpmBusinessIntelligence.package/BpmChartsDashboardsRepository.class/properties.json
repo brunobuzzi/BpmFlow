@@ -1,0 +1,16 @@
+{
+	"category" : "BpmBusinessIntelligence",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dashboardsDefinitions",
+		"chartsDefinitions",
+		"bpmEnvironment" ],
+	"name" : "BpmChartsDashboardsRepository",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }
