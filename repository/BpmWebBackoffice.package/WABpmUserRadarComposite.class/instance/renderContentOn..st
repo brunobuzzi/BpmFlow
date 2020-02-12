@@ -21,6 +21,3 @@ renderContentOn: html
 		html div id: 'radar-processes-list'; class: 'default-gray-table ';
 			with:[self renderTableWithTasksOn: html.]
 	].
-
-
-		self renderSearchAreaOn: html.
