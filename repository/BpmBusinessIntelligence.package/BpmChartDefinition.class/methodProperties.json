@@ -2,7 +2,6 @@
 	"class" : {
 		"newFor:in:" : "brunobb 09/10/2018 09:48" },
 	"instance" : {
-		"addToCache" : "brunobb 09/10/2018 09:48",
 		"application" : "brunobb 02/10/2020 10:26",
 		"applicationName" : "brunobb 09/10/2018 09:48",
 		"bpmEnvironment" : "brunobb 09/10/2018 09:48",
@@ -39,7 +38,6 @@
 		"processName" : "brunobb 09/10/2018 09:48",
 		"processVersion" : "brunobb 09/10/2018 09:48",
 		"queryBlockSource" : "brunobb 09/10/2018 09:48",
-		"removeFromCache" : "brunobb 09/10/2018 09:48",
 		"renderArray2Chart:distributions:chartsTypes:atDiv:" : "brunobb 09/25/2018 10:04",
 		"renderArray2Chart:distributions:chartsTypes:on:" : "brunobb 06/03/2019 12:56",
 		"renderArray2Chart:distributions:chartsTypes:on:atDiv:" : "brunobb 06/04/2019 03:45",
@@ -66,8 +64,6 @@
 		"report" : "brunobb 09/10/2018 09:48",
 		"report:" : "brunobb 09/10/2018 09:48",
 		"reportName" : "brunobb 09/10/2018 09:48",
-		"reportRepository" : "brunobb 09/10/2018 09:48",
-		"repositoryKey" : "brunobb 09/19/2018 07:53",
 		"roleName" : "brunobb 09/10/2018 09:48",
 		"scope" : "brunobb 09/10/2018 09:48",
 		"scope:" : "brunobb 09/10/2018 09:48",

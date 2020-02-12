@@ -5,7 +5,7 @@ saveChart
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	chartDefinition addToCache.
+	self chartsRepository storeChart: chartDefinition.
 
 	self removeValueNamed: 'saveChart'.
 

@@ -2,7 +2,6 @@
 	"class" : {
 		"newFor:in:" : "brunobb 12/03/2018 11:41" },
 	"instance" : {
-		"addToCache" : "brunobb 10/16/2019 12:27",
 		"bpmEnvironment" : "brunobb 12/03/2018 11:41",
 		"bpmEnvironment:" : "brunobb 12/03/2018 11:41",
 		"clone" : "brunobb 06/25/2019 05:27",
@@ -28,8 +27,6 @@
 		"renderSplineChartDistribution:on:atDiv:" : "brunobb 10/16/2019 12:24",
 		"renderTasksHeatmapChartDistribution:on:" : "brunobb 10/16/2019 12:24",
 		"renderTasksHeatmapChartDistribution:on:parent:" : "brunobb 10/16/2019 12:24",
-		"reportRepository" : "brunobb 10/16/2019 12:27",
-		"repositoryKey" : "brunobb 12/03/2018 11:41",
 		"setGroupedDataFrom:for:withSerie:" : "brunobb 10/16/2019 12:24",
 		"user" : "brunobb 12/03/2018 11:41",
 		"user:" : "brunobb 12/03/2018 11:41",

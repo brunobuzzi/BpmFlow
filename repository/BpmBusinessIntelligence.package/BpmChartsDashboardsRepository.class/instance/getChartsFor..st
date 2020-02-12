@@ -1,4 +1,4 @@
 charts
 getChartsFor: aBpmUser
 
-	^chartsDefinitions at: aBpmUser userName ifAbsent: [#()]
+	^chartsDefinitions at: aBpmUser username ifAbsent: [#()]

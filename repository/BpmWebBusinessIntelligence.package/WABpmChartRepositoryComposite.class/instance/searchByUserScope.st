@@ -6,4 +6,4 @@ searchByUserScope
 		ifTrue: [[:chart | true]] 
 		ifFalse: [[:chart | chart scopeUsername = self getUserName]].
 
-	searchResult := self chartsRepository getChartsIn: self session bpmEnvironment for: self session user withScope: BpmChartUserScope satisfying: queryBlock
+	searchResult := self chartsRepository getChartsFor: self session user withScope: BpmChartUserScope satisfying: queryBlock

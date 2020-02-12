@@ -5,10 +5,10 @@ deleteChart
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	selectedLateralItem removeFromCache.
-
 	self removeValueNamed: 'deleteChart'.
 
-	searchResult remove: selectedLateralItem ifAbsent: [].
+	self chartsRepository removeChart: selectedLateralItem.
+
+	self getCurrentCollection remove: selectedLateralItem.
 	
 	selectedLateralItem := nil

@@ -7,7 +7,6 @@ searchByProcessScope
 		ifFalse: [[:chart | chart applicationName = self getApplicationName and: [chart processName = self getProcessName and: [chart processVersion = self getVersion asInteger]]]].
 
 	searchResult := self chartsRepository 
-									getChartsIn: self session bpmEnvironment
-									for: self session user 
+									getChartsFor: self session user 
 									withScope: BpmChartProcessScope 
 									satisfying: queryBlock

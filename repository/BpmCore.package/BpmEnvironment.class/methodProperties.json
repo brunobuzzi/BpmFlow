@@ -96,6 +96,7 @@
 		"removeAllFormFieldInstances" : "brunobb 02/12/2020 11:03",
 		"removeAllProcessesDefinitions" : "brunobb 02/12/2020 11:03",
 		"removeCalendar:" : "brunobb 02/12/2020 11:03",
+		"removeDashboard:" : "brunobb 02/12/2020 11:32",
 		"removeFromCache" : "brunobb 02/12/2020 11:03",
 		"resetAllRolesAndAssignments" : "brunobb 02/12/2020 11:03",
 		"resetInternationalization" : "brunobb 02/12/2020 11:03",
@@ -114,6 +115,7 @@
 		"setMediumSecurityFor:" : "brunobb 02/12/2020 11:03",
 		"setMediumSecurityForAll" : "brunobb 02/12/2020 11:03",
 		"setSecurityLevelTo:for:" : "brunobb 02/12/2020 11:03",
+		"storeDashboard:" : "brunobb 02/12/2020 11:31",
 		"unregisterApplication:" : "brunobb 02/12/2020 11:03",
 		"unregisterApplication:ifNone:" : "brunobb 02/12/2020 11:03",
 		"unregisterApplicationAndRemove:ifNone:" : "brunobb 02/12/2020 11:03",
@@ -122,4 +124,6 @@
 		"userGroups" : "brunobb 02/12/2020 11:03",
 		"userGroups:" : "brunobb 02/12/2020 11:03",
 		"users" : "brunobb 02/12/2020 11:03",
-		"users:" : "brunobb 02/12/2020 11:03" } }
+		"users:" : "brunobb 02/12/2020 11:03",
+		"usersChartsAndDashboardRepository" : "brunobb 02/12/2020 11:07",
+		"usersChartsAndDashboardRepository:" : "brunobb 02/12/2020 11:07" } }

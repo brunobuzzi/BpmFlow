@@ -7,7 +7,6 @@ searchByRoleScope
 		ifFalse: [[:chart | chart applicationName = self getApplicationName and: [chart roleName = self getRoleName]]].
 
 	searchResult := self chartsRepository 
-								getChartsIn: self session bpmEnvironment
-								for: self session user 
+								getChartsFor: self session user 
 								withScope: BpmChartRoleScope 
 								satisfying: queryBlock
