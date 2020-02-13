@@ -10,7 +10,7 @@ renderProcessTypeComboOn: html
 
 	html select "Process Definition List"
 		attributeAt: 'id' put: 'processType';
-		list: self viewAllArray, definitionsNames
+		list: self viewAllArray, definitionsNames asArray
 "(lateralCollection collect: [:each | each formProcessDefinition name]) asSet asSortedCollection";
 		onChange: 'submit()';
 		callback: [:value | self registerProcessType: value];
