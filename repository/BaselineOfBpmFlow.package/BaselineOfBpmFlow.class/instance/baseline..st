@@ -48,6 +48,7 @@ baseline: spec
 		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 		spec package: 'BpmRuntimeDeployment' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
+		spec package: 'BpmRuntimeDeployment_Tests' with: [spec requires: #('BpmRuntimeDeployment')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."
 		spec package: 'BpmXpdlTemplates' with: [spec requires: #()].
 		spec package: 'BpmWebRestApiLayer' with: [spec requires: #('BpmRuntime' 'Seaside3' 'XMLParser' 'XPath' 'XMLWriter' 'OrbeonPersistenceLayer')].
@@ -65,6 +66,6 @@ baseline: spec
 			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
 			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
 			group: 'rest' with: #('BpmWebRestApiLayer');
-			group: 'test' with: #('BpmXpdlBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests');
+			group: 'test' with: #('BpmXpdlBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests' 'BpmRuntimeDeployment_Tests');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
