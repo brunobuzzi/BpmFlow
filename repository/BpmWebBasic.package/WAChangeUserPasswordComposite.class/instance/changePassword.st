@@ -2,7 +2,7 @@ other
 changePassword
 
 	informationComponent ifNil: [informationComponent := SewafInformComponent parent: self].
-	(self session user password = (GRPlatform current secureHashFor: (searchValues at: 'current-pwd'))) 
+	(self session user password = (searchValues at: 'current-pwd') sha256Sum) 
 	ifFalse: [^informationComponent information: ('Invalid Current Password !!!' translateIn: self session) color: 'red'].
 
 	((searchValues at: 'repeat-new-pwd') = (searchValues at: 'new-pwd')) 

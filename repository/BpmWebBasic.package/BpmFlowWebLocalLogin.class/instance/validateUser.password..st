@@ -1,4 +1,4 @@
-*bpmruntime
+authentication
 validateUser: username password: password
 	"The receiver answer <true> or <false> for the combination of user name <username> and password <password>"
 

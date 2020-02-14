@@ -1,4 +1,4 @@
 other
 ldapLoginModeName
 
-	^OrbeonLdapLogin modeName
+	^AppLdapLogin modeName

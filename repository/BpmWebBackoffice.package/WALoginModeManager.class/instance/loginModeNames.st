@@ -3,4 +3,4 @@ loginModeNames
 
 	^Array
 		with: self ldapLoginModeName
-		with: OrbeonProcessWebLocalLogin modeName
+		with: BpmFlowWebLocalLogin modeName
