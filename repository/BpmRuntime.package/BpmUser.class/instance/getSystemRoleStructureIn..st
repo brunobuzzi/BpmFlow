@@ -11,7 +11,7 @@ getSystemRoleStructureIn: aBpmEnvironment
 				userGrantConfig 
 					roleName: eachRole name;
 					roleType: (eachRole isBackofficeRole ifTrue: ['B'] ifFalse: ['F']);
-					roleIsAdmin: (eachRole isAdminIn: aBpmEnvironment).
+					roleIsAdmin: eachRole isAdmin.
 				grants add: userGrantConfig]]
 		].
 
