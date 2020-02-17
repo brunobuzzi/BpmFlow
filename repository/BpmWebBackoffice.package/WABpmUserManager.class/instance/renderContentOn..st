@@ -11,7 +11,6 @@ renderContentOn: html
 	html div id: 'users-configuration'; with: [
 		html div id: 'system-users'; class: 'default-gray-table ';
 			with:[html render: (usersBatchedList table: self sewafTableForUsers)].
-		self renderAddUserOn: html. 
 		selectedObject ifNil: [^self].
 		isAddingRol ifTrue: [^self renderAddingRolOn: html].
 		html div id: 'add-rol-button'; 

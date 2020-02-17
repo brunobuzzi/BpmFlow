@@ -1,7 +1,7 @@
 other
 renderSearchFormOn: html
 
-	html form with: [
+	html form id: 'top-search-'; with: [
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; 
 				with: ('Search User' translateIn: self session).
