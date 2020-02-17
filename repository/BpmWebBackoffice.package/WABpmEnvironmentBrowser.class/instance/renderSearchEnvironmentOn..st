@@ -1,7 +1,7 @@
 render
 renderSearchEnvironmentOn: html
 
-	html form with: [ 
+	html form id: 'top-search-form'; with: [ 
 		html fieldSet with: [
 			html legend class: 'top-search-legend'; with: ('Search Environment' translateIn: self session).
 			html div class: 'top-search-div'; with: [
