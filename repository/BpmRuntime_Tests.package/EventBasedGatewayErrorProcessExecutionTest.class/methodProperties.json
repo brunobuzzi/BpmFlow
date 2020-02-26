@@ -2,15 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessesDefinition" : "brunobb 08/07/2019 11:48",
+		"createProcessesDefinition" : "brunobb 02/26/2020 10:35",
 		"formInstance_cancel_purchase:" : "brunobb 08/07/2019 11:23",
 		"formInstance_house_purchase_application:" : "brunobb 08/07/2019 11:23",
 		"formInstance_loan_application:" : "brunobb 08/07/2019 11:23",
 		"formInstance_proceed_purchase:" : "brunobb 08/07/2019 11:23",
 		"formInstance_study_loan_application_1:in:" : "brunobb 08/07/2019 11:23",
 		"formInstance_study_loan_application_2:in:" : "brunobb 08/07/2019 11:23",
-		"setUp" : "brunobb 02/03/2020 11:55",
-		"tearDown" : "brunobb 08/07/2019 11:23",
+		"setUp" : "brunobb 02/26/2020 10:35",
+		"tearDown" : "brunobb 02/26/2020 10:34",
 		"testExecuteProcess_errorCode_1" : "brunobb 08/07/2019 11:46",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:14",
 		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:14",
