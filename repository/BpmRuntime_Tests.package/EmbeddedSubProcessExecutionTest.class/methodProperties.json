@@ -4,7 +4,7 @@
 	"instance" : {
 		"createProcessDefinition" : "brunobb 09/26/2019 05:25",
 		"setUp" : "brunobb 09/26/2019 04:21",
-		"tearDown" : "brunobb 05/28/2019 03:52",
+		"tearDown" : "brunobb 02/26/2020 10:27",
 		"testExecuteProcess" : "brunobb 09/26/2019 04:19",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:11",
 		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:11",
