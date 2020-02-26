@@ -23,10 +23,12 @@ p := 1 - m.
 p asFloat.
 
 A more efficient way us (if answer false --> a clash has been produced):
-|numbers |
+| numbers instances clashes |
 numbers := Set new.
-1 to: 100000 do: [:each | numbers add: Lag1MwcRandom new integer  ].
-100000 = numbers size.
+instances := 900000.
+1 to: instances do: [:each | numbers add: Lag1MwcRandom new integer  ].
+clashes := instances - numbers size.
+clashes
 
 With 100000 is pretty possible to have a clash --> a new issue to control the clash of ids should be created.
 "
