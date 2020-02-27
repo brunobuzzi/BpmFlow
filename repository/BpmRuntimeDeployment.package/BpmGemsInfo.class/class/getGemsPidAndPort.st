@@ -4,7 +4,7 @@ getGemsPidAndPort
 	| znServer pidAndPort |
 
 	pidAndPort := Dictionary new.
-	znServer := GemServerRegistry singleton servers detect: [:each | each isKindOf: ZnAbstractGemServer].
+	znServer := GemServerRegistry singleton servers detect: [:each | each isKindOf: ZnAbstractGemServer] ifNone: [^self throwNoRegisteredServersException].
 	znServer portOrResourceNameList do: [:port | | pidFilePath |
 		pidFilePath := znServer gemPidFileName: port.
 		(GsFile openReadOnServer: pidFilePath) ifNotNil: [:file | 

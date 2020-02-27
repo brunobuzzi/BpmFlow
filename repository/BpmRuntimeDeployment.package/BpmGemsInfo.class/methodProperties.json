@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"getGemsPidAndPort" : "brunobb 12/09/2019 06:50",
+		"getGemsPidAndPort" : "brunobb 02/27/2020 06:27",
 		"getGemsPidAndPortString" : "brunobb 10/22/2019 08:47",
-		"isValidPortNumber:" : "brunobb 11/08/2019 10:22" },
+		"isValidPortNumber:" : "brunobb 11/08/2019 10:22",
+		"throwNoRegisteredServersException" : "brunobb 02/27/2020 06:29" },
 	"instance" : {
 		 } }
