@@ -3,7 +3,6 @@ initialize
 
 	super initialize.
 
-	id := Lag1MwcRandom new integer.
 	currentActivities := OrderedCollection new.
 	executedActivities := OrderedCollection new.
 	transitions := OrderedCollection new.
