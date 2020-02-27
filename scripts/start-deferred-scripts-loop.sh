@@ -2,7 +2,7 @@
 #! /bin/sh
 #set -x
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-deferred-scripts-loop (with no arguments)"
+  echo "Usage: start-deferred-scripts-loop STONE_NAME"
   echo "Start a OS Gem process to execute BPM Scripts on a background process";  
   echo "This is a 24x7 Gem process";   
   echo "If this process is not running then Deferred Script will never be executed"     

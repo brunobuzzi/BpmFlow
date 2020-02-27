@@ -1,7 +1,7 @@
 #! /bin/sh
 #set -x
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: stop-zn (with no arguments)"
+  echo "Usage: stop-zn STONE_NAME"
   echo "Stop all Web Servers contained in the file (zn-ports.ini):"; 
   if [ ! -f zn-ports.ini ]; 
     then echo "zn-ports.ini file does not exist the script can not be executed"

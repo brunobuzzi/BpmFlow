@@ -2,7 +2,7 @@
 #! /bin/sh
 #set -x
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: unregister-application (with no arguments)"
+  echo "Usage: unregister-application STONE_NAME"
   echo "This script is to unregister Bpm Flow web application and if it is necessary it should be executed after registration";
   echo "To register the web application again see register-application script"     
   echo "The environment variable GS_HOME must be set";

@@ -2,7 +2,7 @@
 #! /bin/sh
 #set -x
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-all (with no arguments)"
+  echo "Usage: start-all STONE_NAME"
   echo "Start all Web Servers contained in the file (ports-all.ini):"; 
   if [ ! -f ports-all.ini ]; 
     then echo "ports-all.ini file does not exist the script can not be executed"

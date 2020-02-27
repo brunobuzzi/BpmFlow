@@ -2,7 +2,7 @@
 #! /bin/sh
 #set -x
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: stop-on PORT"
+  echo "Usage: stop-on STONE_NAME PORT"
   echo "Stop a Web Server on port number PORT"; 
   echo "The environment variable GS_HOME must be set"; 
   echo "This script is used in conjunction with start-on script";   
