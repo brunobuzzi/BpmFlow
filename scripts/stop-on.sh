@@ -12,8 +12,8 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-$GS_HOME/bin/startTopaz devKit_34 -u "WebServer" -il <<EOF >>MFC.out
-set user DataCurator password swordfish gemstone devKit_34
+$GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out
+set user DataCurator password swordfish gemstone $1
 login
 exec 
    | handler commitThreshold usedMemory |
@@ -35,7 +35,7 @@ exec
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
 
-  BpmAppLinuxScripts stopOnPortScript: '$1'.
+  BpmAppLinuxScripts stopOnPortScript: $2.
 %
 exit
 EOF

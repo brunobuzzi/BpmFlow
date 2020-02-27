@@ -13,8 +13,8 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-nohup $GS_HOME/bin/startTopaz devKit_34 -u "ScriptsLoop" -il <<EOF >>MFC.out &
-set user DataCurator password swordfish gemstone devKit_34
+nohup $GS_HOME/bin/startTopaz $1 -u "ScriptsLoop" -il <<EOF >>MFC.out &
+set user DataCurator password swordfish gemstone $1
 login
 exec 
    | handler commitThreshold |

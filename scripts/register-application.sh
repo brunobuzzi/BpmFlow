@@ -14,7 +14,7 @@ if [ -z ${GS_HOME+x} ]; then
   exit 0
 fi
 nohup $GS_HOME/bin/startTopaz $1 -il <<EOF >>MFC.out
-set user DataCurator password swordfish gemstone devKit_34
+set user DataCurator password swordfish gemstone $1
 login
 exec 
 System beginTransaction.
