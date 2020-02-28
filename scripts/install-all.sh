@@ -71,7 +71,7 @@ cd HighchartsSt
 git branch
 git branch -a
 git checkout origin/v6.0.1
-git checkout v6.0.
+git checkout v6.0.1
 $GS_HOME/bin/startTopaz $1 -il <<EOF >>MFC.out 
 set user DataCurator password swordfish gemstone $1
 login
