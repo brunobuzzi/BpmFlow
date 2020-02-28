@@ -20,7 +20,9 @@ if sh checkIfStoneExist.sh "$1";
     echo;
     exit 0
 fi
-
+echo
+echo "Start: BPM Packages Installation"
+echo
 $GS_HOME/bin/startTopaz $1 -il <<EOF >>LogPackages.out 
 set user DataCurator password swordfish gemstone $1
 login
@@ -64,7 +66,9 @@ GsDeployer deploy: [
 exit
 EOF
 echo
-echo "BPM Packages Installed"
+echo "Finish: BPM Packages Installation"
+echo
+echo "Start: HighchartsSt Packages Installation"
 echo
 # Highcharts is installed locally
 # Check: https://github.com/brunobuzzi/BpmFlow/issues/482
@@ -91,7 +95,7 @@ GsDeployer deploy: [
 exit
 EOF
 echo
-echo "HighchartsSt Installed"
+echo "Finish: HighchartsSt Packages Installation"
 echo
 $GS_HOME/bin/startTopaz $1 -il <<EOF >>LogInitialization.out 
 set user DataCurator password swordfish gemstone $1
@@ -106,5 +110,5 @@ WABpmCentralPortal register. "ipaddress:port/bpmflow"
 exit
 EOF
 echo
-echo "System Initialized
+echo "System Initialized"
 echo
