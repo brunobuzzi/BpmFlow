@@ -1,6 +1,12 @@
-#Requires GS_HOME variable defined
 #! /bin/sh
-#set -x
+# Requires GS_HOME variable defined
+# This command will start a multi-thread Web Application Server where each port will be attended by a different (Gem) process. 
+# Following the previous example three Gem processes will be created to attend each port. 
+# The ports to be attended are defined in ports-all.ini. 
+# At registration time (register-application.sh) there is a list of ports in ports-all.ini and each will be active when this script is executed.
+
+After executing this script some pid and log files will be create at $GS_HOME/server/stones/devKit_34/logs/. In this case is the path includes devKit_34 because the Stone was created with that name. The  pid and log files will be like BPM_server-8787.log and BPM_server-8787.pid. A pair of these file will be create per each port defined in ports-all.ini.
+
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: start-all STONE_NAME"
   echo "Start all Web Servers contained in the file (ports-all.ini):"; 
@@ -18,7 +24,17 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out
+
+if sh checkIfStoneExist.sh "$1"; 
+  then echo "" 
+  else 
+    echo ;
+    echo "Topaz for Stone named [$1] failed to start";
+    echo;
+    exit 0
+fi
+
+nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $1
 login
 exec 
@@ -45,3 +61,6 @@ exec
 %
 exit
 EOF
+echo
+echo "A group of Gem processes has been started on Stone named [$1] on ports contained in [ports-all.ini]"
+echo

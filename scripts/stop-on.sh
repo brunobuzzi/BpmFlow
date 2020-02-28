@@ -1,18 +1,28 @@
-#Requires GS_HOME variable defined
 #! /bin/sh
-#set -x
+# Requires GS_HOME variable defined
+# This command take an argument and stop the Gem Process running on that port.
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: stop-on STONE_NAME PORT"
   echo "Stop a Web Server on port number PORT"; 
   echo "The environment variable GS_HOME must be set"; 
-  echo "This script is used in conjunction with start-on script";   
+  echo "This script is used in conjunction with start-on.sh script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-$GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out
+
+if sh checkIfStoneExist.sh "$1"; 
+  then echo "" 
+  else 
+    echo ;
+    echo "Topaz for Stone named [$1] failed to start";
+    echo;
+    exit 0
+fi
+
+nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $1
 login
 exec 
@@ -39,3 +49,6 @@ exec
 %
 exit
 EOF
+echo
+echo "A Gem process has been stopped on Stone named [$1] on port [$2]"
+echo

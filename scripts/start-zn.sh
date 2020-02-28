@@ -1,6 +1,7 @@
-#Requires GS_HOME variable defined
 #! /bin/sh
-#set -x
+# Requires GS_HOME variable defined
+# This command is similar to [start-all.sh] but instead of starting a Gem Process for each port it only start a subset of all ports. 
+# The subset is defined in [zn-ports.ini] file.
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: start-zn STONE_NAME"
   echo "Start all Web Servers contained in the file (zn-ports.ini):"; 
@@ -18,7 +19,17 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out
+
+if sh checkIfStoneExist.sh "$1"; 
+  then echo "" 
+  else 
+    echo ;
+    echo "Topaz for Stone named [$1] failed to start";
+    echo;
+    exit 0
+fi
+
+nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $1
 login
 exec 
@@ -45,3 +56,6 @@ exec
 %
 exit
 EOF
+echo
+echo "A group of Gem processes has been started on Stone named [$1] on ports contained in [zn-ports.ini]"
+echo
