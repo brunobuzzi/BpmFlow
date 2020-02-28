@@ -1,8 +1,6 @@
 #!/bin/sh
 # Requires GS_HOME variable defined
-#
-#
-#
+
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: install-all STONE_NAME "
   echo "Install the entire BPM application on Stone named STONE_NAME"; 
