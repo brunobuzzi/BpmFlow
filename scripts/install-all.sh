@@ -75,7 +75,7 @@ git branch
 git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
-$GS_HOME/bin/startTopaz $1 -il <<EOF >>LogHighcharts.out 
+$GS_HOME/bin/startTopaz $1 -il -T 500000 <<EOF >>LogHighcharts.out 
 set user DataCurator password swordfish gemstone $1
 login
 exec
