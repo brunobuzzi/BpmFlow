@@ -2,6 +2,9 @@
 [._]s[a-w][a-z]
 *.un~
 MFC.out
+LogPackages.out
+LogHighcharts.out
+LogInitialization.out
 Session.vim
 .netrwhist
 *~
