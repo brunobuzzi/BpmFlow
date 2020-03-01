@@ -21,6 +21,7 @@ if sh checkIfStoneExist.sh "$1";
     exit 0
 fi
 echo
+date
 echo "Start: BPM Packages Installation"
 echo
 $GS_HOME/bin/startTopaz $1 -il <<EOF >>LogPackages.out 
@@ -66,8 +67,10 @@ GsDeployer deploy: [
 exit
 EOF
 echo
+date
 echo "Finish: BPM Packages Installation"
 echo
+date
 echo "Start: HighchartsSt Packages Installation"
 echo
 # Highcharts is installed locally
@@ -95,6 +98,7 @@ GsDeployer deploy: [
 exit
 EOF
 echo
+date
 echo "Finish: HighchartsSt Packages Installation"
 echo
 $GS_HOME/bin/startTopaz $1 -il <<EOF >>LogInitialization.out 
