@@ -24,7 +24,7 @@ echo
 date
 echo "Start: BPM Packages Installation"
 echo
-$GS_HOME/bin/startTopaz $1 -il <<EOF >>LogPackages.out 
+$GS_HOME/bin/startTopaz $1 -il <<EOF
 set user DataCurator password swordfish gemstone $1
 login
 exec
@@ -44,19 +44,19 @@ GsDeployer deploy: [
     baseline: 'AbstractApplicationObjects';
     repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository';
     onLock: [:ex | ex honor];
-    load ].
+    load ].   
 GsDeployer deploy: [
   Metacello new
     baseline: 'Sewaf';
     repository: 'github://brunobuzzi/SEWAF:master/repository';
     onLock: [:ex | ex honor];
-    load ].
+    load ].      
 GsDeployer deploy: [
   Metacello new
     baseline: 'OrbeonPersistenceLayer';
     repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository';
     onLock: [:ex | ex honor];
-    load ].
+    load ].   
 GsDeployer deploy: [
   Metacello new
     baseline: 'BpmFlow';
@@ -82,7 +82,7 @@ git branch
 git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
-$GS_HOME/bin/startTopaz $1 -il -T 500000 <<EOF >>LogHighcharts.out 
+$GS_HOME/bin/startTopaz $1 -il -T 500000 <<EOF  
 set user DataCurator password swordfish gemstone $1
 login
 exec
@@ -101,7 +101,7 @@ echo
 date
 echo "Finish: HighchartsSt Packages Installation"
 echo
-$GS_HOME/bin/startTopaz $1 -il <<EOF >>LogInitialization.out 
+$GS_HOME/bin/startTopaz $1 -il <<EOF
 set user DataCurator password swordfish gemstone $1
 login
 exec
