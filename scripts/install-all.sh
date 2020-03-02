@@ -111,6 +111,7 @@ WAPersistenceOrbeonLayer register.
 "To register a centralized Component to access the other applications"
 WABpmCentralPortal register. "ipaddress:port/bpmflow"
 %
+commit
 exit
 EOF
 echo
