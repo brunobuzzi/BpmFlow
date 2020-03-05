@@ -10,5 +10,5 @@
 	"name" : "WABpmFrontofficeLogin",
 	"pools" : [
 		 ],
-	"super" : "SEWAFWebLogin",
+	"super" : "WABpmAbstractLogin",
 	"type" : "normal" }
