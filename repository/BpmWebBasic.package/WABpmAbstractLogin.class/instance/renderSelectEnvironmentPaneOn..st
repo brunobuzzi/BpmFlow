@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 renderSelectEnvironmentPaneOn: html
 
 	html div id: 'flags'; with: [self renderLanguageFlagsOn: html].

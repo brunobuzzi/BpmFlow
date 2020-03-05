@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 tryLogin
 	| logedUser loginMode |
 

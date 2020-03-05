@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 showPortalFor: aBpmUser
 
 	self subclassResponsibility

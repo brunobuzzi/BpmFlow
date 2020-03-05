@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 setEnvironment: envName
 	| env |
 

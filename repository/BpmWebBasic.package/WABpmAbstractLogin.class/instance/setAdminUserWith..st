@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 setAdminUserWith: aBpmUser
 
 	user := aBpmUser.

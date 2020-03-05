@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebBasic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmAbstractLogin",
+	"pools" : [
+		 ],
+	"super" : "SEWAFWebLogin",
+	"type" : "normal" }

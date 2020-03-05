@@ -1,4 +1,4 @@
-*bpmwebbasic
+other
 checkAccessToApplicationFor: aBpmUser
 
 	self subclassResponsibility
