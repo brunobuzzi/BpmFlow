@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"register" : "brunobb 01/31/2019 02:53",
-		"unregister" : "brunobb 01/31/2019 02:53" },
+		"register" : "brunobb 03/05/2020 08:42",
+		"unregister" : "brunobb 03/05/2020 08:42" },
 	"instance" : {
-		"checkAccessToApplicationFor:" : "brunobb 01/28/2020 09:22",
-		"selectorsToInclude" : "brunobb 01/31/2019 02:53",
-		"showPortalFor:" : "brunobb 01/31/2019 03:10",
-		"updateRoot:" : "brunobb 01/31/2019 02:53" } }
+		"checkAccessToApplicationFor:" : "brunobb 03/05/2020 08:42",
+		"selectorsToInclude" : "brunobb 03/05/2020 08:42",
+		"showPortalFor:" : "brunobb 03/05/2020 08:42",
+		"updateRoot:" : "brunobb 03/05/2020 08:42" } }
