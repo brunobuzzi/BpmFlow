@@ -107,6 +107,7 @@ login
 exec
 BpmSystemInitialization createSystemDefaultObjects.
 GemStoneServerConfiguration default gemstoneIP: 'http://192.168.178.130:8787'. "example IP"
+GemStoneServerConfiguration default baseUrlDocumentation: 'https://bpmflow.gitbook.io/project'.
 WAPersistenceOrbeonLayer register.
 "To register a centralized Component to access the other applications"
 WABpmCentralPortal register. "ipaddress:port/bpmflow"
