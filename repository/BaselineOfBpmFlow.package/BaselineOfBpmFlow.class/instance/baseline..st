@@ -66,6 +66,6 @@ baseline: spec
 			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
 			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
 			group: 'rest' with: #('BpmWebRestApiLayer');
-			group: 'test' with: #('BpmXpdlBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests' 'BpmRuntimeDeployment_Tests');
+			group: 'test' with: #('BpmXpdlBizagiReader_Tests' 'BpmXpdl_Tests' 'BpmRuntimePEF' 'BpmCore_Tests' 'BpmRuntime_Tests' 'BpmRuntimeDeployment_Tests' 'BpmRuntime_Tests_Automatic');
 			group: 'default' with: #('core' 'web-backoffice' 'web-frontoffice' 'web-bi' 'rest' 'test').
 		]
