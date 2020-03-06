@@ -106,7 +106,7 @@ set user DataCurator password swordfish gemstone $1
 login
 exec
 BpmSystemInitialization createSystemDefaultObjects.
-GemStoneServerConfiguration default gemstoneIP: 'http://192.168.178.130'. "example IP"
+GemStoneServerConfiguration default gemstoneIP: 'http://192.168.178.130:8787'. "example IP"
 WAPersistenceOrbeonLayer register.
 "To register a centralized Component to access the other applications"
 WABpmCentralPortal register. "ipaddress:port/bpmflow"
