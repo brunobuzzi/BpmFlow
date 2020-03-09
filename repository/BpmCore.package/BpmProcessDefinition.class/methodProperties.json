@@ -168,7 +168,7 @@
 		"getTransitionNamed:ifNone:" : "BrunoBB 11/28/2015 19:53",
 		"getTransitions" : "BrunoBB 12/10/2015 06:52",
 		"getTypeOf:in:ifNone:" : "BrunoBB 02/19/2016 13:38",
-		"getTypeOfFieldNamed:" : "brunobb 08/06/2019 09:15",
+		"getTypeOfFieldNamed:" : "brunobb 03/09/2020 10:27",
 		"getValueDistributionForFieldCollection:" : "brunobb 06/01/2018 11:51",
 		"getValueDistributionForFieldCollection:from:to:satisfying:" : "brunobb 08/30/2018 08:43",
 		"getValueDistributionForFieldName:secondaryField:in:satisfying:" : "brunobb 11/27/2017 12:08",
