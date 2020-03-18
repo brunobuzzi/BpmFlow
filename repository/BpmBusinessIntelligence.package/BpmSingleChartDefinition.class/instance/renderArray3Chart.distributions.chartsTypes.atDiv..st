@@ -31,8 +31,8 @@ renderArray3Chart: aHighchart distributions: distributionCollection chartsTypes:
 			name: eachDistribution seriesName;
 			data: data asArray.
 		newSerie dataLabels color: '#000000';
-							enabled: true.
-				
+							enabled: true.			
+
 	]. 
 
 	aWADivTag script: aHighchart.
