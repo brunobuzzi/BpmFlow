@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"evaluationCode",
-		"bpmObject",
-		"resultClass",
-		"evaluationResult" ],
+		 ],
 	"name" : "BpmBlockCode",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "AppBlockCode",
 	"type" : "normal" }

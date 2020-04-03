@@ -13,7 +13,7 @@ processAndRedirectForm: anOrbeonFormInstance
 		"get the Domain Object with -oop- in the form"
 	[bpmArtifact := Object _objectForOop: (Integer fromString: artifactOop).
 	assignment := Object _objectForOop: (Integer fromString: assignOop).] on: Error
-		do: [:ex | ^BpmCodeEvaluationResult exception: ex].
+		do: [:ex | ^AppCodeEvaluationResult exception: ex].
 
 	self sendInformationMessageFor: assignment.
 

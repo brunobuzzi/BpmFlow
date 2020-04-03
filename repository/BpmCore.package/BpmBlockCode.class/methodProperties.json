@@ -1,26 +1,5 @@
 {
 	"class" : {
-		"newFromBlock:" : "brunobb 11/29/2019 08:35",
-		"newFromBlock:for:" : "brunobb 11/29/2019 08:35" },
+		 },
 	"instance" : {
-		"bpmObject" : "brunobb 11/29/2019 08:35",
-		"bpmObject:" : "brunobb 11/29/2019 08:35",
-		"evaluateConditionIn:" : "brunobb 12/03/2019 01:38",
-		"evaluationCode" : "brunobb 11/29/2019 08:35",
-		"evaluationCode:" : "brunobb 11/29/2019 08:35",
-		"evaluationResult" : "brunobb 11/29/2019 08:35",
-		"evaluationResult:" : "brunobb 11/29/2019 08:35",
-		"getAllFieldsNames" : "brunobb 11/29/2019 08:35",
-		"hasEvaluation" : "brunobb 11/29/2019 08:35",
-		"hasEvaluationConditionWithFieldNamed:" : "brunobb 11/29/2019 08:35",
-		"hasException" : "brunobb 11/29/2019 08:36",
-		"initialize" : "brunobb 11/29/2019 08:35",
-		"printEvaluationCode" : "brunobb 11/29/2019 08:35",
-		"printOn:" : "brunobb 11/29/2019 08:35",
-		"raiseInBlockException:in:errorBlock:evaluationResult:" : "brunobb 12/03/2019 01:41",
-		"raiseIncorrectClassResultExceptionIn:errorBlock:evaluationResult:" : "brunobb 11/29/2019 08:35",
-		"raiseNonBlockExceptionIn:errorBlock:evaluationResult:" : "brunobb 11/29/2019 08:35",
-		"resultClass" : "brunobb 11/29/2019 08:35",
-		"resultClass:" : "brunobb 11/29/2019 08:35",
-		"value:" : "brunobb 11/29/2019 08:35",
-		"value:onError:" : "brunobb 11/29/2019 08:50" } }
+		 } }

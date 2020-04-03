@@ -1,4 +1,0 @@
-other
-hasNoException
-
-	^exception isNil
