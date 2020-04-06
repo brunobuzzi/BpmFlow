@@ -54,14 +54,6 @@
 		"xpdlDefinition_smalltalksRegistration_bizagi30" : "brunobb 04/05/2020 17:04",
 		"xpdlDefinition_timer_block_errors" : "brunobb 04/05/2020 17:02",
 		"xpdlDefinition_unsupported_elements" : "brunobb 04/05/2020 17:05",
-		"xpdlDefinition_visa_apply" : "brunobb 04/05/2020 17:06",
-		"xpdlExample_all_conditions_type" : "brunobb 11/13/2018 08:57",
-		"xpdlExample_all_gateways" : "brunobb 11/16/2018 08:50",
-		"xpdlExample_all_values" : "brunobb 11/28/2018 08:41",
-		"xpdlExample_dashboard_process" : "brunobb 06/17/2019 12:25",
-		"xpdlExample_dashboard_with_loop" : "brunobb 08/26/2019 13:10",
-		"xpdlExample_dataEntry_performers_with_loop" : "brunobb 08/30/2019 12:44",
-		"xpdlExample_dataEntry_performers_with_multiinstance" : "brunobb 09/02/2019 11:35",
-		"xpdlExample_data_entry" : "brunobb 11/13/2018 08:58" },
+		"xpdlDefinition_visa_apply" : "brunobb 04/05/2020 17:06" },
 	"instance" : {
 		 } }

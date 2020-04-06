@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'multi-role-with-loop' withString: XPDLProcessDefinitionTemplate xpdlExample_dataEntry_performers_with_loop)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'multi-role-with-loop' withString: XPDLProcessDefinitionTemplate xpdlDefinition_dataEntry_performers_with_loop)
 			connectProcesses;
 			yourself.
 

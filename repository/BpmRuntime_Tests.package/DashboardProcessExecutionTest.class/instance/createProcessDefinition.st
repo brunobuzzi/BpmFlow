@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-process' withString: XPDLProcessDefinitionTemplate xpdlExample_dashboard_process)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-process' withString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_process)
 			connectProcesses;
 			yourself.
 
