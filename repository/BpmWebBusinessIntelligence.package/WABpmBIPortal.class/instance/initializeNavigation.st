@@ -26,6 +26,7 @@ initializeNavigation
 	subMenu3 := (SewafSubMenuItem label: 'Compare Fields' icon: #linechart32Png)
 		set24Icon: #linechart24Png;
 		addItem: (SewafCommandItem label: 'Fields Comparison' command: #openCompareFieldsCharts);
+		addItem: (SewafCommandItem label: 'Field Values Comparison' command: #openCompareFieldValuesCharts);
 		yourself.
 
 	subMenu4 := (SewafSubMenuItem label: 'Charts Repository' icon: #placesfoldersavedsearch32Png)

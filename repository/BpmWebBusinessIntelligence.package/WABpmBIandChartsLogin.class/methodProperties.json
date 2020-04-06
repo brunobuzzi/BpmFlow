@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"register" : "brunobb 01/31/2019 03:01",
-		"unregister" : "brunobb 01/31/2019 03:01" },
+		"register" : "brunobb 03/05/2020 08:41",
+		"unregister" : "brunobb 03/05/2020 08:41" },
 	"instance" : {
-		"checkAccessToApplicationFor:" : "brunobb 01/31/2019 03:01",
-		"selectorsToInclude" : "brunobb 01/31/2019 03:01",
-		"showPortalFor:" : "brunobb 01/31/2019 03:13" } }
+		"checkAccessToApplicationFor:" : "brunobb 03/05/2020 08:41",
+		"selectorsToInclude" : "brunobb 03/05/2020 08:41",
+		"showPortalFor:" : "brunobb 03/05/2020 08:41" } }
