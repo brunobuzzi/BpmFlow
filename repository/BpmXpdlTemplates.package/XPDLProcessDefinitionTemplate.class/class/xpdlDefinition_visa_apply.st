@@ -1,5 +1,5 @@
 visa process
-xpdlExample_visa_apply
+xpdlDefinition_visa_apply
 
 ^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="46e112f9-4980-4e3f-afac-d994f19bec6e" Name="visa-apply" xmlns="http://www.wfmc.org/2009/XPDL2.2">

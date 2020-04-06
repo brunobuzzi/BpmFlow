@@ -1,5 +1,5 @@
 condition exceptions
-xpdl_example_condition_Exceptions
+xpdlDefinition_condition_Exceptions
 
 	^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="8bb2bb08-e446-4337-8713-33248e1c6151" Name="Diagram 1" xmlns="http://www.wfmc.org/2009/XPDL2.2">

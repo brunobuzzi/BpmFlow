@@ -1,5 +1,5 @@
 visa process
-xpdlExample_home_office_check
+xpdlDefinition_home_office_check
 
 ^'<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="5acc2526-f142-4613-a3f0-e6816c2a8412" Name="home-office-check" xmlns="http://www.wfmc.org/2009/XPDL2.2">
