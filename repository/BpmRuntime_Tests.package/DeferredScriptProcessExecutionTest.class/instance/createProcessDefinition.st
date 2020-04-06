@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'Process with Deferred Scripts' withString: XPDLProcessDefinitionTemplate xpdlExample_process_with_deferred_script)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'Process with Deferred Scripts' withString: XPDLProcessDefinitionTemplate xpdlDefinition_process_with_deferred_script)
 			connectProcesses;
 			yourself.
 

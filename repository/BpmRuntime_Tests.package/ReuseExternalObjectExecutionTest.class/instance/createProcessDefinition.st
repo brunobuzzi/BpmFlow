@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'reuse-form' withString: XPDLProcessDefinitionTemplate xpdlExample_reuseExternalObject)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'reuse-form' withString: XPDLProcessDefinitionTemplate xpdlDefinition_reuseExternalObject)
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.

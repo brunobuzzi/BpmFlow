@@ -2,9 +2,9 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'VisaAppliance' withString: XPDLProcessDefinitionTemplate xpdlExample_visa_apply)
-			addXPDLDocument: (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlExample_home_office_check) namedAs: 'Home-Office';
-			addXPDLDocument:  (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlExample_check_financial_data) namedAs: 'Check-Financial-Data';
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'VisaAppliance' withString: XPDLProcessDefinitionTemplate xpdlDefinition_visa_apply)
+			addXPDLDocument: (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlDefinition_home_office_check) namedAs: 'Home-Office';
+			addXPDLDocument:  (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlDefinition_check_financial_data) namedAs: 'Check-Financial-Data';
 			connectProcesses;
 			yourself.
 
