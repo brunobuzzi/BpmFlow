@@ -10,8 +10,8 @@ testReusableEmbeddedInvalid1
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_ReusableEmbeddedProcInvalid1; fileName: 'reusable-invalid-main.xpdl'; yourself.
-	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_reusable_sub_proc_invalid; fileName: 'reusable-invalid-subproc.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_ReusableEmbeddedProcInvalid1; fileName: 'reusable-invalid-main.xpdl'; yourself.
+	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_reusable_sub_proc_invalid; fileName: 'reusable-invalid-subproc.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app' atIndex: 1;

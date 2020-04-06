@@ -8,7 +8,7 @@ testPoolsWithoutLanes
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_pools_without_lanes; fileName: 'import-errors.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_pools_without_lanes; fileName: 'import-errors.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app' atIndex: 1;

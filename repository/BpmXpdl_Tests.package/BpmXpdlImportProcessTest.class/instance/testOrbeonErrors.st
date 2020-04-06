@@ -8,7 +8,7 @@ testOrbeonErrors
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_orbeon_errors; fileName: 'import-errors.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_orbeon_errors; fileName: 'import-errors.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app-2' atIndex: 1;

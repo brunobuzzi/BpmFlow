@@ -61,7 +61,6 @@
 		"xpdlExample_Reusable_Sub_Proc" : "brunobb 09/26/2019 05:28",
 		"xpdlExample_all_conditions_type" : "brunobb 11/13/2018 08:57",
 		"xpdlExample_all_gateways" : "brunobb 11/16/2018 08:50",
-		"xpdlExample_all_import_errors" : "brunobb 09/27/2019 11:24",
 		"xpdlExample_all_values" : "brunobb 11/28/2018 08:41",
 		"xpdlExample_dashboard_process" : "brunobb 06/17/2019 12:25",
 		"xpdlExample_dashboard_with_loop" : "brunobb 08/26/2019 13:10",
@@ -73,13 +72,8 @@
 		"xpdlExample_event_based_gateway_02" : "brunobb 11/13/2018 09:02",
 		"xpdlExample_event_based_gateway_03" : "brunobb 11/13/2018 09:02",
 		"xpdlExample_event_based_gateway_error" : "brunobb 08/07/2019 11:53",
-		"xpdlExample_noStart_noEnd_import_errors" : "brunobb 09/27/2019 11:23",
-		"xpdlExample_orbeon_error_604" : "brunobb 10/01/2019 02:37",
-		"xpdlExample_orbeon_errors" : "brunobb 09/30/2019 12:48",
-		"xpdlExample_pools_without_lanes" : "brunobb 09/30/2019 10:28",
 		"xpdlExample_process_error" : "brunobb 07/29/2019 12:43",
 		"xpdlExample_process_error_main_proc" : "brunobb 08/12/2019 11:36",
-		"xpdlExample_process_error_sub_proc" : "brunobb 08/12/2019 11:36",
-		"xpdlExample_timer_block_errors" : "brunobb 09/30/2019 12:32" },
+		"xpdlExample_process_error_sub_proc" : "brunobb 08/12/2019 11:36" },
 	"instance" : {
 		 } }

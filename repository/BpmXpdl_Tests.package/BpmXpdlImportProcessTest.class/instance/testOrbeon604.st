@@ -6,11 +6,11 @@ testOrbeon604
 	agesic := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'agesic'.
 	applications := OrderedCollection with: agesic.
 
-	formDefinition := self formCreatorClass createDefinition: 'test' with: #form_example4 in: agesic.
+	formDefinition := self formCreatorClass createDefinition: 'test' with: #formDefinition_example_4 in: agesic.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_orbeon_error_604; fileName: 'import-errors.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_orbeon_error_604; fileName: 'import-errors.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'agesic' atIndex: 1;

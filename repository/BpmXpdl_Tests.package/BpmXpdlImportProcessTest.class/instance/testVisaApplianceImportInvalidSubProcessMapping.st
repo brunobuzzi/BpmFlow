@@ -8,13 +8,13 @@ testVisaApplianceImportInvalidSubProcessMapping
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	changedDocument := XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlExample_visa_apply.
+	changedDocument := XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlDefinition_visa_apply.
 	changedXpdl := changedDocument allElementsDetect: [:each | (each attributeAt: 'Name') = 'home-office-check'].
 	changedXpdl attributeAt: 'Name' put: 'SubProcessNameDoesNotMap'.
 
 	file1 := WAFile new contents: changedDocument asString; fileName: 'visa-apply.xpdl'; yourself.
-	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_home_office_check; fileName: 'home-office-check.xpdl'; yourself.
-	file3 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_check_financial_data; fileName: 'check-financial-data.xpdl'; yourself.
+	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_home_office_check; fileName: 'home-office-check.xpdl'; yourself.
+	file3 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_check_financial_data; fileName: 'check-financial-data.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app' atIndex: 1;

@@ -8,7 +8,7 @@ testAllImportErrors
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_all_import_errors; fileName: 'import-errors.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_all_import_errors; fileName: 'import-errors.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app' atIndex: 1;
