@@ -2,7 +2,7 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'recursive-data' withString: XPDLProcessDefinitionTemplate xpdlExample_Enter_Recursive_Data)
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'recursive-data' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Enter_Recursive_Data)
 			connectProcesses;
 			yourself.
 

@@ -2,8 +2,8 @@ other
 createProcessDefinition
 	| xpdlReader processGenerator |
 
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-error-sub-proc' withString: XPDLProcessDefinitionTemplate xpdlExample_process_error_main_proc)
-			addXPDLDocument: (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlExample_process_error_sub_proc) namedAs: 'form-process';
+	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-error-sub-proc' withString: XPDLProcessDefinitionTemplate xpdlDefinition_process_error_main_proc)
+			addXPDLDocument: (XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlDefinition_process_error_sub_proc) namedAs: 'form-process';
 			connectProcesses;
 			yourself.
 

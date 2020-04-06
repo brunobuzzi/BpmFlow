@@ -10,8 +10,8 @@ testIssue984
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
-	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_Reusable_Embedded_Proc; fileName: 'ReusableEmbeddedProc.xpdl'; yourself.
-	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlExample_Reusable_Sub_Proc; fileName: 'reusable-sub-proc.xpdl'; yourself.
+	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_Reusable_Embedded_Proc; fileName: 'ReusableEmbeddedProc.xpdl'; yourself.
+	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_Reusable_Sub_Proc; fileName: 'reusable-sub-proc.xpdl'; yourself.
 
 	importProcess 
 		setApplicationName: 'import-test-app' atIndex: 1;
