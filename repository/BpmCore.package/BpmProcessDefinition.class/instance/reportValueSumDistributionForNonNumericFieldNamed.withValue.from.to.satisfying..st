@@ -9,5 +9,7 @@ reportValueSumDistributionForNonNumericFieldNamed: fieldName withValue: fieldVal
 			exception: error;
 			sumSecondsToConstruct: secondsToRun;
 			fieldName: fieldName;
+			seriesName: fieldValue printString;
 			version: version;
+			xAxisIsDate: true;
 			yourself

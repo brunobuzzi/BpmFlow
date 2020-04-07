@@ -3,7 +3,7 @@
 		"distribution:" : "brunobb 06/27/2018 10:53" },
 	"instance" : {
 		"addFieldDistribution:" : "brunobb 06/26/2018 04:56",
-		"canonizeXAxis" : "brunobb 06/28/2018 09:27",
+		"canonizeXAxis" : "brunobb 04/06/2020 17:12",
 		"createSecondaryDistributionByMonth" : "brunobb 06/03/2019 12:14",
 		"createSecondaryDistributionByWeek" : "brunobb 06/03/2019 12:08",
 		"createSecondaryDistributionByYear" : "brunobb 06/03/2019 12:11",

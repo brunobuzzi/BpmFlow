@@ -6,7 +6,6 @@ reportValueSumMultiDistributionForFieldNamed: aString values: anArray from: star
 	secondsToRun := Time secondsElapsedTime: [
 		anArray do: [:fieldValue |  | distributionReport |
 			distributionReport := self reportValueSumDistributionForNonNumericFieldNamed: aString withValue: fieldValue from: startDate to: endDate satisfying: selectBlock.
-			distributionReport seriesName: aString.
 			distributionCollection add: distributionReport.
 		].
 	].
