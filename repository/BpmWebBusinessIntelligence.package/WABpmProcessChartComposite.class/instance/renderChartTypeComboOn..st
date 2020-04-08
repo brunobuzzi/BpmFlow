@@ -3,7 +3,7 @@ renderChartTypeComboOn: html
 	| chartTypes |
 
 	chartTypes := #('Bar Chart' 'Pie Chart').
-	self isCreationDayDistribution ifTrue: [chartTypes := #('Heat Map')].
+	(self isCreationDayDistribution or: [self isDateDistribution]) ifTrue: [chartTypes := #('Heat Map')].
 	self isFieldValueEvolution ifTrue: [chartTypes := #('Spline Area Chart')].
 	self isTasksHeatmapDistribution ifTrue: [chartTypes := #('Tasks Heatmap')].
 	

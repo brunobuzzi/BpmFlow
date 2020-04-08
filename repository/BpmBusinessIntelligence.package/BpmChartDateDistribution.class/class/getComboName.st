@@ -1,4 +1,4 @@
 other
 getComboName
 
-	^'Day Distribution'
+	^'Date Distribution'
