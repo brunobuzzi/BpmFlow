@@ -1,13 +1,13 @@
 distribution
-addTo: distributionDictionary instancesDayDistributionQuantityUsing: sortSelector from: startDate to: endDate satisfying: processConditionBlock
+addTo: distributionDictionary instancesDayDistributionQuantityUsingBlock: aBlock from: startDate to: endDate satisfying: processConditionBlock onError: handler
 	| heatMapStartDate |
 
 	heatMapStartDate := (startDate dayOfWeek = 1) ifTrue: [startDate] ifFalse: [startDate subtractDays: (startDate dayOfWeek - 1)].
 	(processInstances select: [:procInstance | | value |
-		value := procInstance perform: sortSelector.
-		startDate <= value  and: [(value <= endDate) and: [processConditionBlock asBpmBlock value: procInstance]]])
+		value := aBlock value: procInstance.
+		startDate <= value  and: [(value <= endDate) and: [processConditionBlock asBpmBlock value: procInstance onError: handler]]])
 			do: [:procInstance | | key value |
-				value := procInstance perform: sortSelector.
+				value := aBlock value: procInstance.
 				key := OrderedCollection with:  ((value date asDays - heatMapStartDate asDays) // 7).
 				key add: (value date dayOfWeek - 1).
 				(distributionDictionary includesKey: key asArray) 
