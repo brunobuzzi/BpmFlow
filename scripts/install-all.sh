@@ -89,7 +89,7 @@ exec
 GsDeployer deploy: [
     Metacello new
          baseline: 'HighchartsSt';
-         filetreeDirectory: ('/home/',(System performOnServer: 'whoami') trimBlanks,'/GsDevKit_home/shared/repos/HighchartsSt/repository');
+         filetreeDirectory: ('$GS_HOME/shared/repos/HighchartsSt/repository');
          onLock: [:ex | ex honor];
 		     onConflictUseLoaded;
          load.
