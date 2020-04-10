@@ -11,7 +11,7 @@ listProcessesDefinitions
 					html anchor "callback: [self removeRol: each]; "
 								class: 'cursor-pointer';
 								onClick: (html jQuery id: jQueryId) dialog open;
-								with: [html image url: (SEWAFIconLibrary / #documentflowchart24Png); 
+								with: [html image url: (SEWAFIconLibrary / #actionsviewlistdetails24Png); 
 														title: ('View Processes' translateIn: self session); 
 														altText: ('View Processes' translateIn: self session).]
 			]
