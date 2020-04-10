@@ -4,10 +4,10 @@ addTo: distributionDictionary instancesDayDistributionQuantityUsingBlock: aBlock
 
 	heatMapStartDate := (startDate dayOfWeek = 1) ifTrue: [startDate] ifFalse: [startDate subtractDays: (startDate dayOfWeek - 1)].
 	(processInstances select: [:procInstance | | value |
-		value := aBlock value: procInstance.
+		value := (aBlock value: procInstance) asTimeStamp.
 		startDate <= value  and: [(value <= endDate) and: [processConditionBlock asBpmBlock value: procInstance onError: handler]]])
 			do: [:procInstance | | key value |
-				value := aBlock value: procInstance.
+				value := (aBlock value: procInstance) asTimeStamp.
 				key := OrderedCollection with:  ((value date asDays - heatMapStartDate asDays) // 7).
 				key add: (value date dayOfWeek - 1).
 				(distributionDictionary includesKey: key asArray) 
