@@ -1,11 +1,13 @@
 other
 createDistributionReport
-	| report values |
+	| report values fieldName |
 
 	values := Set new.
 	self scope processes do: [:procDef | values addAll: (procDef getAllCurrentValuesForFieldNamed: self fieldName of: self formName)].
 
-	report := self defaultProcessDefinitionClass reportValueSumMultiDistributionFor: self scope processes fieldNamed: (self fieldName allButLast: 3) values: values from: self startDate to: self endDate satisfying: self queryBlock.
+	fieldName := self fieldName ifNil: [''] ifNotNil: [:value | value allButLast: 3].
+ 
+	report := self defaultProcessDefinitionClass reportValueSumMultiDistributionFor: self scope processes fieldNamed: fieldName values: values from: self startDate to: self endDate satisfying: self queryBlock.
 
 	report name: ('Field Values Comparison' translateFor: self user);
 		description: (('Total: ' translateFor: self user), report getTotalValue printString);
