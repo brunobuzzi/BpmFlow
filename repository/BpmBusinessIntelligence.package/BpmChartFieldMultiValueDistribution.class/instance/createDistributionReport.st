@@ -1,12 +1,11 @@
 other
 createDistributionReport
-	| report processDefinition application values |
+	| report values |
 
-	application := self defaultApplicationManagerClass applicationNamed: self applicationName ifNone: [^nil].
-	processDefinition := application getProcessesNamed: self processName version: self version ifNone: [^nil].
-	values := processDefinition getAllCurrentValuesForFieldNamed: self fieldName of: self formName.
+	values := Set new.
+	self scope processes do: [:procDef | values addAll: (procDef getAllCurrentValuesForFieldNamed: self fieldName of: self formName)].
 
-	report := processDefinition reportValueSumMultiDistributionForFieldNamed: (self fieldName allButLast: 3) values: values from: self startDate to: self endDate satisfying: self queryBlock.
+	report := self defaultProcessDefinitionClass reportValueSumMultiDistributionFor: self scope processes fieldNamed: (self fieldName allButLast: 3) values: values from: self startDate to: self endDate satisfying: self queryBlock.
 
 	report name: ('Field Values Comparison' translateFor: self user);
 		description: (('Total: ' translateFor: self user), report getTotalValue printString);

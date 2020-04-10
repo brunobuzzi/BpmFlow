@@ -1,4 +1,4 @@
 other
 newChartScopeFor: aBpmChartDefinition
 
-	^BpmChartProcessScope newOn: aBpmChartDefinition
+	^BpmChartMultipleValueFieldScope newOn: aBpmChartDefinition processes: self getSelectedProcessDefinitions
