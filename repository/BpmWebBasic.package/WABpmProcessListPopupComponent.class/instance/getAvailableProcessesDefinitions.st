@@ -1,0 +1,4 @@
+other
+getAvailableProcessesDefinitions
+
+	^self session bpmEnvironment getProcessesDefinitionsFor: model

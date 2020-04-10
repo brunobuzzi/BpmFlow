@@ -7,5 +7,6 @@ columnsforMainRole
 			add: ((SewafReportColumn selector: #isBackofficeRole title: 'Is Backoffice Role') beSortable beSearchable; sortBlock: [:a :b | a isBackofficeRole printString <= b isBackofficeRole printString]; yourself);
 			add: ((SewafReportColumn selector: #isAdmin title: 'Is Admin Role') beSortable beSearchable; sortBlock: [:a :b | a isAdmin printString <= b isAdmin printString]; yourself);
 			"add: self addCurrentUserButton;"
+			add: self listProcessesDefinitions;
 			add: self newRemoveRolButton;
 			yourself
