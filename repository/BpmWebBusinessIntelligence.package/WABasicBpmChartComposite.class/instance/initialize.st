@@ -7,4 +7,4 @@ initialize
 
 	multiChartIsEnabled := false.
 
-	multiChartDefinition := BpmMultiChartDefinition newFor: self session user in: self session bpmEnvironment.
+	multiChartDefinition := BIMultiChartDefinition newFor: self session user in: self session bpmEnvironment.
