@@ -25,6 +25,10 @@ baseline: spec
 
 		spec baseline: 'AbstractApplicationObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository' ].
+		spec baseline: 'AbstractBIObjects' with: [
+			spec repository: 'github://brunobuzzi/AbstractBIObjects:master/repository' ].
+		spec baseline: 'Jasvgi' with: [
+			spec repository: 'github://brunobuzzi/JASVGI:master/repository'].
 		spec baseline: 'OrbeonPersistenceLayer' with: [
 			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository' ].
 		spec baseline: 'Seaside3' with: [
@@ -39,7 +43,7 @@ baseline: spec
 		spec package: 'BpmRuntime' with: [spec requires: #('BpmCore')].
 		spec package: 'BpmXpdlBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmXpdlBizagiReader')].
-		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('BpmCore' 'BpmRuntime')].
+		spec package: 'BpmBusinessIntelligence' with: [spec requires: #('AbstractBIObjects' 'BpmCore' 'BpmRuntime')].
 		spec package: 'BpmWebSvgIntegration' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime')].
 		spec package: 'BpmWebBasic' with: [spec requires: #('Seaside3' 'BpmCore' 'BpmRuntime' 'BpmWebSvgIntegration')].
 		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
