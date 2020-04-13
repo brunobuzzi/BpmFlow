@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"getComboName" : "brunobb 06/04/2018 10:23" },
+		"getComboName" : "brunobb 04/13/2020 13:53" },
 	"instance" : {
-		"createDistributionReport" : "brunobb 06/04/2018 10:23",
-		"createDistributionReportForAllVersions" : "brunobb 03/25/2019 08:47",
-		"createDistributionReportForSpecificVersion" : "brunobb 12/02/2019 08:28",
-		"isForSpecificVersion" : "brunobb 06/04/2018 10:23" } }
+		"createDistributionReport" : "brunobb 04/13/2020 13:53",
+		"createDistributionReportForAllVersions" : "brunobb 04/13/2020 13:53",
+		"createDistributionReportForSpecificVersion" : "brunobb 04/13/2020 13:53",
+		"isForSpecificVersion" : "brunobb 04/13/2020 13:53" } }

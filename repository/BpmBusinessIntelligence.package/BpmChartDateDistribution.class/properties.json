@@ -10,5 +10,5 @@
 	"name" : "BpmChartDateDistribution",
 	"pools" : [
 		 ],
-	"super" : "BpmChartSingleDistribution",
+	"super" : "BIChartSingleDistribution",
 	"type" : "normal" }

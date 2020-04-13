@@ -10,5 +10,5 @@
 	"name" : "BpmChartGlobalScope",
 	"pools" : [
 		 ],
-	"super" : "BpmChartScope",
+	"super" : "BIChartScope",
 	"type" : "normal" }

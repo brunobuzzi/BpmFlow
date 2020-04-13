@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"newOn:user:" : "brunobb 05/25/2018 10:02",
-		"scopeName" : "brunobb 05/24/2018 05:41" },
+		"newOn:user:" : "brunobb 04/13/2020 14:03",
+		"scopeName" : "brunobb 04/13/2020 14:03" },
 	"instance" : {
-		"createAverageTimeDistributionReport" : "brunobb 05/25/2018 10:12",
-		"getDistributionOptions" : "brunobb 05/31/2018 09:36",
-		"user" : "brunobb 05/23/2018 08:37",
-		"user:" : "brunobb 05/23/2018 08:37",
-		"username" : "brunobb 06/11/2018 11:45" } }
+		"createAverageTimeDistributionReport" : "brunobb 04/13/2020 14:03",
+		"getDistributionOptions" : "brunobb 04/13/2020 14:03",
+		"user" : "brunobb 04/13/2020 14:03",
+		"user:" : "brunobb 04/13/2020 14:03",
+		"username" : "brunobb 04/13/2020 14:03" } }

@@ -1,0 +1,4 @@
+*bpmBusinessIntelligence
+bpmEnvironment
+
+	^containerObject

@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"scopeName" : "brunobb 05/24/2018 05:40" },
+		"scopeName" : "brunobb 04/13/2020 14:01" },
 	"instance" : {
-		"getDistributionOptions" : "brunobb 05/31/2018 09:49",
-		"getProcessInstancesDistribution" : "brunobb 03/25/2019 08:43",
-		"getProcessInstancesXtitle" : "brunobb 05/24/2018 05:46" } }
+		"getDistributionOptions" : "brunobb 04/13/2020 14:01",
+		"getProcessInstancesDistribution" : "brunobb 04/13/2020 14:01",
+		"getProcessInstancesXtitle" : "brunobb 04/13/2020 14:01" } }

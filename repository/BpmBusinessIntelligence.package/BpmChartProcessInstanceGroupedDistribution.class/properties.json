@@ -10,5 +10,5 @@
 	"name" : "BpmChartProcessInstanceGroupedDistribution",
 	"pools" : [
 		 ],
-	"super" : "BpmChartSingleDistribution",
+	"super" : "BIChartSingleDistribution",
 	"type" : "normal" }
