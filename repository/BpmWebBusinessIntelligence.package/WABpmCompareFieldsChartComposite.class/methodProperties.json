@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"addField" : "brunobb 06/29/2018 11:03",
-		"basicCreateChartDefinition" : "brunobb 06/05/2019 05:48",
+		"basicCreateChartDefinition" : "brunobb 04/13/2020 14:24",
 		"fieldIsSelected:" : "brunobb 06/29/2018 12:26",
 		"fieldsBatchedList" : "brunobb 06/29/2018 11:43",
 		"fieldsBatchedList:" : "brunobb 06/29/2018 11:43",
@@ -20,7 +20,7 @@
 		"renderSearchAreaOn:" : "brunobb 05/31/2019 12:47",
 		"renderShowChartButtonOn:" : "brunobb 01/31/2019 09:39",
 		"selectedFieldsToRender" : "brunobb 06/29/2018 10:44",
-		"setChartDefinition" : "brunobb 07/02/2018 09:20",
+		"setChartDefinition" : "brunobb 04/13/2020 14:19",
 		"setSelectedField:value:" : "brunobb 06/29/2018 12:09",
 		"sewafTableForFields" : "brunobb 06/29/2018 11:33",
 		"showSelectedFields" : "brunobb 06/29/2018 12:36" } }
