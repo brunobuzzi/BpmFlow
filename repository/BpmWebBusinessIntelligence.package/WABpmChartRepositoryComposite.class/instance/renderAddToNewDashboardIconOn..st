@@ -2,7 +2,7 @@ dashboard
 renderAddToNewDashboardIconOn: html
    | jQueryId |
 
-	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 560 composite: WANewDashboardPopupComponent title: 'Add to Dashboard' domainObject: BpmDashboardDefinition new arguments: #().
+	jQueryId := self renderJQueryPopupCompositeOn: html width: 350 height: 560 composite: WANewDashboardPopupComponent title: 'Add to Dashboard' domainObject: BIDashboardDefinition new arguments: #().
 
 	html div class: 'float-right'; with: [
 		html anchor 

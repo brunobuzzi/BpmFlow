@@ -9,4 +9,4 @@ renderRecursionComboOn: html
 		attributeAt: 'id' put: 'recursion';
 		list: recursionNames; 
 		callback: [:value | self addValue: value named: 'recursion'];
-		selected: (BpmDashboardRecursionDefinition getRecursionClassFrom: parent selectedLateralItem recursion name ifNone: [])
+		selected: (BIDashboardRecursionDefinition getRecursionClassFrom: parent selectedLateralItem recursion name ifNone: [])
