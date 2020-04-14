@@ -10,5 +10,5 @@
 	"name" : "BpmTasksHeatmapChart",
 	"pools" : [
 		 ],
-	"super" : "BpmChartType",
+	"super" : "BIChartType",
 	"type" : "normal" }
