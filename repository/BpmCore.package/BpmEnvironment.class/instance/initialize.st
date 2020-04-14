@@ -9,7 +9,7 @@ initialize
 	userGroups := RcKeyValueDictionary new.
 	applicationsNames := Dictionary new.
 	applicationsLogos := Dictionary new.
-	usersChartsAndDashboardRepository := BpmChartsDashboardsRepository newOn: self.
+	usersChartsAndDashboardRepository := BIChartsDashboardsRepository newOn: self.
 	exceptionCalendars := Set new.
 
 	"this value is used to generate the redirect from Orbeon to Seaside. 
