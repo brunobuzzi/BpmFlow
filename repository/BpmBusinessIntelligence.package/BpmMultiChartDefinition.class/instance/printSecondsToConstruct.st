@@ -1,4 +1,0 @@
-other
-printSecondsToConstruct
-
-	^'Muti Chart'

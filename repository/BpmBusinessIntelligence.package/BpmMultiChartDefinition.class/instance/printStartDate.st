@@ -1,4 +1,0 @@
-other
-printStartDate
-
-	^'Muti Chart'

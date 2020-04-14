@@ -1,4 +1,0 @@
-other
-exception
-
-	^report exception

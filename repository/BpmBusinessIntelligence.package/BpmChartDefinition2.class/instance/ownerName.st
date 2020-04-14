@@ -1,4 +1,0 @@
-other
-ownerName
-
-	^user username

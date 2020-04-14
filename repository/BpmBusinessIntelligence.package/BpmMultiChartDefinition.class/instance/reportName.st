@@ -1,4 +1,0 @@
-other
-reportName
-
-	^'Muti Chart'

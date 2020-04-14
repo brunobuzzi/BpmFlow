@@ -1,4 +1,0 @@
-other
-isSingleChart
-
-	^false

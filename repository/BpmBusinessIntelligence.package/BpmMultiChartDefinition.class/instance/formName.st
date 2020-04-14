@@ -1,4 +1,0 @@
-other
-formName
-
-	^'Muti Chart'

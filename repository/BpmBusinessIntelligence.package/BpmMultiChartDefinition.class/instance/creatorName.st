@@ -1,4 +1,0 @@
-other
-creatorName
-
-	^'Muti Chart'

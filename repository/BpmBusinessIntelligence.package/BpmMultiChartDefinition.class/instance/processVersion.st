@@ -1,4 +1,0 @@
-other
-processVersion
-
-	^'Muti Chart'

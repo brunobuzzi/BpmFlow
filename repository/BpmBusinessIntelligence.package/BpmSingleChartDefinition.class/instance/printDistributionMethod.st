@@ -1,4 +1,0 @@
-report data
-printDistributionMethod
-
-	^report printDistributionMethod

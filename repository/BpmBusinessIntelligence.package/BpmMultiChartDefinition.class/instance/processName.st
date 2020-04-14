@@ -1,4 +1,0 @@
-other
-processName
-
-	^'Muti Chart'

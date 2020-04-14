@@ -1,4 +1,0 @@
-other
-hasScopeClass: aBpmChartScopeClass
-
-	self subclassResponsibility

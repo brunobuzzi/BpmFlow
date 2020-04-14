@@ -1,4 +1,0 @@
-other
-hasSecondaryDistritbution
-
-	^report hasSecondaryDistritbution

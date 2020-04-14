@@ -1,4 +1,0 @@
-other
-instanciableDistributionSubclasses
-
-	^BpmChartSingleDistribution subclasses, BpmChartMultiDistribution subclasses

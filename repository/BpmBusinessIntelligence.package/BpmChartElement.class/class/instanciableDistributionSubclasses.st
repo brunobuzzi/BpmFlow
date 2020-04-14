@@ -1,4 +1,0 @@
-other
-instanciableDistributionSubclasses
-
-	self subclassResponsibility

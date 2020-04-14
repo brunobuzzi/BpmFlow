@@ -1,4 +1,0 @@
-other
-isMultiFieldDistribution
-
-	^distribution isMultiFieldDistribution

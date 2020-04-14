@@ -1,4 +1,0 @@
-other
-endDate
-
-	^distribution endDate
