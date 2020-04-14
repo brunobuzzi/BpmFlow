@@ -1,4 +1,0 @@
-other
-itemsSize
-
-	^definition itemsSize

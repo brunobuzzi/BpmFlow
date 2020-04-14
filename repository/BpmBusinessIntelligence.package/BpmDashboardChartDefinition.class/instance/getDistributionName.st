@@ -1,4 +1,0 @@
-other
-getDistributionName
-
-	^chartDefinition getDistributionName

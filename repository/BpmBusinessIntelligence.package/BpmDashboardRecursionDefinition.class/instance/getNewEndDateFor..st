@@ -1,2 +1,0 @@
-other
-getNewEndDateFor: aBpmDashboardInstance

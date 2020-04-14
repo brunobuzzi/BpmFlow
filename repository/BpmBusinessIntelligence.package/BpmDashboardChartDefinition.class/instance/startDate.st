@@ -1,4 +1,0 @@
-other
-startDate
-
-	^chartDefinition startDate

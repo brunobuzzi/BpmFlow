@@ -1,4 +1,0 @@
-other
-itemsSize
-
-	^items size

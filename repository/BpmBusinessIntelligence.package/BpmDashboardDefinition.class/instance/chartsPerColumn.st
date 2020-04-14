@@ -1,3 +1,0 @@
-Accessing
-chartsPerColumn
-	^chartsPerColumn

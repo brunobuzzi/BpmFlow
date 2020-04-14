@@ -1,4 +1,0 @@
-other
-comboBoxName
-
-	^'Year'
