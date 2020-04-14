@@ -16,4 +16,6 @@ searchChart
 
 	self isMultiFieldScopeSelected ifTrue: [^self searchByMultiFieldScope].
 
+	self isFieldMultiValue ifTrue: [^self searchByFieldMultiValueScope].
+
 	searchResult := #().

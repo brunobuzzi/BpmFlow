@@ -20,6 +20,7 @@
 		"gitbookUrl" : "brunobb 07/13/2018 10:59",
 		"initialize" : "brunobb 05/31/2019 13:00",
 		"isApplicationScopeSelected" : "brunobb 01/31/2019 09:06",
+		"isFieldMultiValue" : "brunobb 04/14/2020 16:28",
 		"isGlobalScopeSelected" : "brunobb 01/31/2019 09:07",
 		"isMultiFieldScopeSelected" : "brunobb 01/31/2019 09:07",
 		"isProcessScopeSelected" : "brunobb 01/31/2019 09:07",
@@ -47,9 +48,10 @@
 		"renderSearchButtonOn:" : "brunobb 01/31/2019 09:38",
 		"renderUsersComboOn:" : "brunobb 01/31/2019 09:41",
 		"searchByApplicationScope" : "brunobb 02/12/2020 11:07",
+		"searchByFieldMultiValueScope" : "brunobb 04/14/2020 16:27",
 		"searchByGlobalScope" : "brunobb 02/12/2020 11:08",
 		"searchByMultiFieldScope" : "brunobb 02/12/2020 11:08",
 		"searchByProcessScope" : "brunobb 02/12/2020 11:08",
 		"searchByRoleScope" : "brunobb 02/12/2020 11:08",
 		"searchByUserScope" : "brunobb 02/12/2020 11:08",
-		"searchChart" : "brunobb 06/28/2018 09:50" } }
+		"searchChart" : "brunobb 04/14/2020 16:28" } }
