@@ -1,4 +1,0 @@
-other
-getDistributionOptions
-
-	self subclassResponsibility
