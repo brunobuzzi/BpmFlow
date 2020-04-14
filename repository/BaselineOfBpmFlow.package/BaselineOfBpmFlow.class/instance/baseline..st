@@ -39,7 +39,7 @@ baseline: spec
 "		spec baseline: 'HighchartsSt' with: [
 			spec repository: 'github://brunobuzzi/HighchartsSt:v6.0.0gs/repository' ]."
 
-		spec package: 'BpmCore' with: [spec requires: #('AbstractApplicationObjects' 'XPath' 'OrbeonPersistenceLayer')].
+		spec package: 'BpmCore' with: [spec requires: #('AbstractApplicationObjects' 'AbstractBIObjects' 'XPath' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmRuntime' with: [spec requires: #('BpmCore')].
 		spec package: 'BpmXpdlBizagiReader' with: [spec requires: #('XMLParser' 'XPath')].
 		spec package: 'BpmXpdl' with: [spec requires: #('BpmCore' 'BpmXpdlBizagiReader')].
