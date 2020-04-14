@@ -1,4 +1,0 @@
-report data
-createSecondaryDistributionByMonth
-
-	^report createSecondaryDistributionByMonth
