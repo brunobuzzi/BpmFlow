@@ -13,5 +13,5 @@
 	"name" : "BpmDashboardFieldDefinition",
 	"pools" : [
 		 ],
-	"super" : "BpmDashboardItemDefinition",
+	"super" : "BIDashboardItemDefinition",
 	"type" : "normal" }
