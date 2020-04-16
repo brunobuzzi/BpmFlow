@@ -1,7 +1,7 @@
 render
-setPropertiesTo: aBpmChartDistribution
+setPropertiesTo: aBIChartDistribution
 
-	aBpmChartDistribution 
+	aBIChartDistribution 
 		applicationName: self getApplicationName;
 		processName: self getProcessName;
 		fieldName: self getFieldName;
