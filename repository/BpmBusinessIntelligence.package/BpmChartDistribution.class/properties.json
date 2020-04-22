@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BpmChartNumberOfUsersInTimeDistribution",
+	"name" : "BpmChartDistribution",
 	"pools" : [
 		 ],
-	"super" : "BpmChartDistribution",
+	"super" : "BIChartSingleDistribution",
 	"type" : "normal" }

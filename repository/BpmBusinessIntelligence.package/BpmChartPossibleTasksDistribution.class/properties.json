@@ -10,5 +10,5 @@
 	"name" : "BpmChartPossibleTasksDistribution",
 	"pools" : [
 		 ],
-	"super" : "BIChartSingleDistribution",
+	"super" : "BpmChartDistribution",
 	"type" : "normal" }

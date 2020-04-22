@@ -10,5 +10,5 @@
 	"name" : "BpmChartProcessAverageTimeDistribution",
 	"pools" : [
 		 ],
-	"super" : "BIChartSingleDistribution",
+	"super" : "BpmChartDistribution",
 	"type" : "normal" }

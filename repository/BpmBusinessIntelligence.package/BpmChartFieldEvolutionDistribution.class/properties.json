@@ -10,5 +10,5 @@
 	"name" : "BpmChartFieldEvolutionDistribution",
 	"pools" : [
 		 ],
-	"super" : "BIChartSingleDistribution",
+	"super" : "BpmChartDistribution",
 	"type" : "normal" }
