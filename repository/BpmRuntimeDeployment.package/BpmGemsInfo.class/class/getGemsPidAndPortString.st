@@ -7,4 +7,4 @@ getGemsPidAndPortString
 
 	self getGemsPidAndPort keysAndValuesDo: [:port :pid  | stream nextPutAll: port printString, '>>', pid printString, ','].
 
-	^stream contents
+	^stream isEmpty ifTrue: [stream contents] ifFalse: [stream contents allButLast]
