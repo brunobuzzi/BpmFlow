@@ -49,6 +49,7 @@ baseline: spec
 		spec package: 'BpmWebFrontoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBackoffice' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('Seaside3' 'BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
+		spec package: 'BpmWebGemStoneAdministration' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmWebBasic')].
 		spec package: 'BpmRuntimeDeployment' with: [spec requires: #('Seaside3' 'Sewaf' 'BpmWebBackoffice' 'BpmWebFrontoffice')].
 		spec package: 'BpmRuntimeDeployment_Tests' with: [spec requires: #('BpmRuntimeDeployment')].
 "		spec package: 'BpmWebBusinessIntelligence' with: [spec requires: #('BpmBusinessIntelligence' 'BpmWebBackoffice' 'BpmWebFrontoffice' 'HighchartsSt')]."

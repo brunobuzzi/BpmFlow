@@ -1,0 +1,14 @@
+{
+	"category" : "BpmWebGemStoneAdministration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WABpmGemStoneAdministrationLogin",
+	"pools" : [
+		 ],
+	"super" : "WABpmAbstractLogin",
+	"type" : "normal" }
