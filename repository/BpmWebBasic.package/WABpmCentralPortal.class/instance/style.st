@@ -10,7 +10,7 @@ body {
 #application-links {
 	display: flex;
 	margin: 40px auto 0 auto;
-	width: 620px;
+	width: 825px;
 }
 .application-link { }
 .application-link figcaption {text-align: center}

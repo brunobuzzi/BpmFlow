@@ -5,10 +5,10 @@ renderLinkToGemStoneAdminApplicationOn: html
 		html anchor 
 			callback: [self showGemStoneAdminLogin]; 
 			with: [html figure 
-								with: [html image url: (SEWAFIconLibrary / #documentflowchart128Png);
-														title: ('GemStone Admin Login' translateTo: selectedLanguage);
-														altText: ('GemStone Admin Login' translateTo: selectedLanguage).
-										html figureCaption: ('GemStone Admin Login' translateTo: selectedLanguage).
+								with: [html image url: (SEWAFIconLibrary / #miscwebdatabase128Png);
+														title: ('GemStone Administration Login' translateTo: selectedLanguage);
+														altText: ('GemStone Administration Login' translateTo: selectedLanguage).
+										html figureCaption: ('GemStone Administration Login' translateTo: selectedLanguage).
 					].
 			].
 	]
