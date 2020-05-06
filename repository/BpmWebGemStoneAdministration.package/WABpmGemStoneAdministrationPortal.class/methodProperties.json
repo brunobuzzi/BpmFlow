@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applicationIcon" : "brunobb 05/06/2020 16:18",
+		"applicationName" : "brunobb 05/06/2020 16:19",
+		"initializeNavigation" : "brunobb 05/06/2020 16:23",
+		"logout" : "brunobb 05/06/2020 16:29",
+		"openBackupDatabase" : "brunobb 05/06/2020 16:28",
+		"openListRunningGems" : "brunobb 05/06/2020 16:28",
+		"openManageGemStone" : "brunobb 05/06/2020 16:28",
+		"openRepositoryStatistics" : "brunobb 05/06/2020 16:28",
+		"openStartGarbageCollection" : "brunobb 05/06/2020 16:29",
+		"renderSwitchPortalIconsOn:" : "brunobb 05/06/2020 16:24",
+		"updateRoot:" : "brunobb 05/06/2020 16:25",
+		"versionName" : "brunobb 05/06/2020 16:25" } }
