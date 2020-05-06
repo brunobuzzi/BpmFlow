@@ -1,4 +1,4 @@
 other
 applicationName
 
-	^'GemStone/S Administration'
+	^'DB Admin'
