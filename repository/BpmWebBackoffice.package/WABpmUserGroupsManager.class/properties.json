@@ -6,7 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"usersGroupsBatchedList",
+		"usersBatchedList",
+		"rolesBatchedList",
+		"addUsersBatchedList",
+		"addRolesBatchedList" ],
 	"name" : "WABpmUserGroupsManager",
 	"pools" : [
 		 ],

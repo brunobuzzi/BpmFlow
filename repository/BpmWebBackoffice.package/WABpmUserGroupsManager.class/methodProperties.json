@@ -2,4 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"columnsForUsersGroups" : "brunobb 05/16/2020 12:25",
+		"initialize" : "brunobb 05/16/2020 12:18",
+		"initializeBatchedLists" : "brunobb 05/16/2020 12:19",
+		"initializeSewafTableForUsersGroups" : "brunobb 05/16/2020 12:24",
+		"renderContentOn:" : "brunobb 05/16/2020 12:22",
+		"renderSearchUserGroupOn:" : "brunobb 05/16/2020 12:21",
+		"sewafTableForUserGroups" : "brunobb 05/16/2020 12:23" } }
