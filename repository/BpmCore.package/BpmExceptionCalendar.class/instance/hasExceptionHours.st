@@ -1,4 +1,0 @@
-other
-hasExceptionHours
-
-	^hours notEmpty

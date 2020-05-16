@@ -1,4 +1,0 @@
-other
-defaultIdCharacter
-
-	self subclassResponsibility

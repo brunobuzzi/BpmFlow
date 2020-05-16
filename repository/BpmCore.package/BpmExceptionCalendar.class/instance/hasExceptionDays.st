@@ -1,4 +1,0 @@
-other
-hasExceptionDays
-
-	^days notEmpty

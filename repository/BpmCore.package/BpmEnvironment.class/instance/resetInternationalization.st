@@ -1,4 +1,0 @@
-internationalization
-resetInternationalization
-
-	internationalization := nil

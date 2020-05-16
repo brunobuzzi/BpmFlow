@@ -1,4 +1,0 @@
-other
-getTopProcess
-
-	^parentProcess getTopProcess

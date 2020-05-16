@@ -1,4 +1,0 @@
-*bpmcore
-getNumberOfProcessesDefinition
-
-	^processesDefinitions size

@@ -1,4 +1,0 @@
-other
-printNameAndDefinitionType
-
-	^self subclassResponsibility

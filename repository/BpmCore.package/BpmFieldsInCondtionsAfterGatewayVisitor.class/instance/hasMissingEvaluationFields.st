@@ -1,4 +1,0 @@
-other
-hasMissingEvaluationFields
-
-	^missingEvaluationFields size

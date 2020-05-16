@@ -1,4 +1,0 @@
-dashboards
-storeDashboard: aBpmDashboardDefinition
-
-	^usersChartsAndDashboardRepository storeDashboard: aBpmDashboardDefinition

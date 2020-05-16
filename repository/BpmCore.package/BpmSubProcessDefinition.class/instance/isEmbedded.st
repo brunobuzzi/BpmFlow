@@ -1,3 +1,0 @@
-other
-isEmbedded
-	^isEmbedded

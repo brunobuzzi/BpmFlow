@@ -1,4 +1,0 @@
-internationalization
-cloneDefaultInternationalization
-
-	internationalization := self getInternationalization clone.

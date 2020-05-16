@@ -1,4 +1,0 @@
-other
-getFirstSubDistribution
-
-	^subDistributions first

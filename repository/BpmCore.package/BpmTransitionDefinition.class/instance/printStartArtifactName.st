@@ -1,4 +1,0 @@
-other
-printStartArtifactName
-
-	^startArtifact name

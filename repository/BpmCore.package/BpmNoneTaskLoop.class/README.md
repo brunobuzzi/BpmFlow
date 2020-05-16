@@ -1,1 +1,0 @@
-None - each time a transition trigger the a task --> the only instance of <externalObject> is edited.

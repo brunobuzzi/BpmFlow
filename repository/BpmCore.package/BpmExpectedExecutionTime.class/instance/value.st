@@ -1,3 +1,0 @@
-Accessing
-value
-	^value
