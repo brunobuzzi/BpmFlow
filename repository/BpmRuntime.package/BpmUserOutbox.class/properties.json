@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmUserOutbox",
+	"pools" : [
+		 ],
+	"super" : "BpmUserBox",
+	"type" : "normal" }

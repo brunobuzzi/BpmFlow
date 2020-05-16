@@ -1,0 +1,3 @@
+Accessing
+lateralListPagingSize
+	^lateralListPagingSize

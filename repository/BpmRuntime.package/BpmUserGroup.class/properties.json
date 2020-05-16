@@ -1,0 +1,18 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"users",
+		"roles",
+		"environment",
+		"description" ],
+	"name" : "BpmUserGroup",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

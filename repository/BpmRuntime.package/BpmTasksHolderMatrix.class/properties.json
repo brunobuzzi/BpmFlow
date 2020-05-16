@@ -1,0 +1,15 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"application",
+		"rolesAndAssignment" ],
+	"name" : "BpmTasksHolderMatrix",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

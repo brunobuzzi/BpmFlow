@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"application",
+		"formName",
+		"affectedProcesses" ],
+	"name" : "BpmOrbeonFormDefinitionUpdatedMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmGenericMessage",
+	"type" : "normal" }
