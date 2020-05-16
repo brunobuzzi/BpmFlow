@@ -1,4 +1,0 @@
-other
-transitionDisplayModeIsExpanded
-
-	^initialTransitionDisplayMode = #expanded
