@@ -30,9 +30,10 @@ initializeNavigation
 	ifTrue: [subMenu2 addItem: (SewafCommandItem label: 'Manage Calendars' command: #openCalendarManager)].
 	subMenu3 := (SewafSubMenuItem label: 'Users & Roles' icon: #usersettings32Png)
 		set24Icon: #usersettings24Png;
-		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);
 		addItem: (SewafCommandItem label: 'Manage Users' command: #openUsersManager);
 		addItem: (SewafCommandItem label: 'Manage Roles' command: #openRolesManager);
+		"addItem: (SewafCommandItem label: 'Manage Users Groups' command: #openUserGroupsManager);"
+		addItem: (SewafCommandItem label: 'Monitor Users' command: #openUsersRadar);
 		addItem: (SewafCommandItem label: 'Import' command: #importUsersAndRoles);
 		addItem: (SewafCommandItem label: 'Export' command: #exportUsersAndRoles);
 		yourself.

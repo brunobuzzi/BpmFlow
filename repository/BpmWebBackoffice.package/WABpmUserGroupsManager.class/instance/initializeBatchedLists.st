@@ -1,4 +1,4 @@
-other
+tables
 initializeBatchedLists
 
 	usersGroupsBatchedList := SewafBatchedList parentComponent: self.

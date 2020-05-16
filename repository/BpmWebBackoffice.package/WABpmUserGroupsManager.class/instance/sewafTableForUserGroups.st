@@ -1,4 +1,4 @@
-other
+tables
 sewafTableForUserGroups
 	| table |
 

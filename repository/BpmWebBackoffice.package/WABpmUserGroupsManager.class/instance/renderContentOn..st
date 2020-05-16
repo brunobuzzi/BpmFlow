@@ -1,4 +1,4 @@
-other
+render
 renderContentOn: html
 	| jsEcElement |
 
