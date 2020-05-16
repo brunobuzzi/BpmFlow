@@ -1,0 +1,22 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinition",
+		"transitions",
+		"startEvent",
+		"intermediateEvents",
+		"endEvents",
+		"tasks",
+		"gateways",
+		"subProcessTasks",
+		"scripts" ],
+	"name" : "BpmProcessPathDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

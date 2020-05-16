@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"canBeStartedByAnonymousForm" : "brunobb 12/04/2018 07:02",
+		"createProcessInstance:" : "brunobb 12/27/2018 08:41",
+		"getParentProcessName" : "brunobb 12/04/2018 07:02",
+		"getParentSubProcessTaskDefinition" : "brunobb 12/04/2018 07:02",
+		"getParentTopSubProcessTaskDefinition" : "brunobb 12/04/2018 07:02",
+		"getProcessTree:" : "brunobb 12/04/2018 07:02",
+		"getTopProcess" : "brunobb 12/04/2018 07:02",
+		"initialize" : "brunobb 12/04/2018 07:02",
+		"isAvailable" : "brunobb 12/04/2018 07:02",
+		"isAvailable:" : "brunobb 12/04/2018 07:02",
+		"isTopProcess" : "brunobb 12/04/2018 07:02",
+		"parentProcess" : "brunobb 12/04/2018 07:02",
+		"switchAvailableValue" : "brunobb 12/04/2018 07:32" } }

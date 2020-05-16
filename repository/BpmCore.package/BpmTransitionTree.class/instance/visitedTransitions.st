@@ -1,0 +1,3 @@
+Accessing
+visitedTransitions
+	^visitedTransitions

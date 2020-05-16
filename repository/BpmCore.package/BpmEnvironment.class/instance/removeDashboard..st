@@ -1,0 +1,4 @@
+dashboards
+removeDashboard: aBpmDashboardDefinition
+
+	^usersChartsAndDashboardRepository removeDashboard: aBpmDashboardDefinition

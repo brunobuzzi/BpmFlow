@@ -1,0 +1,25 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AreUsersMultiEnvironment",
+		"Cache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"applications",
+		"users",
+		"applicationsNames",
+		"applicationsLogos",
+		"internationalization",
+		"seasideApplicationName",
+		"embeddedCodeSecurityPolicy",
+		"userGroups",
+		"exceptionCalendars",
+		"usersChartsAndDashboardRepository" ],
+	"name" : "BpmEnvironment",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

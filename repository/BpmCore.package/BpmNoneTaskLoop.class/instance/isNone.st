@@ -1,0 +1,4 @@
+other
+isNone
+
+	^true

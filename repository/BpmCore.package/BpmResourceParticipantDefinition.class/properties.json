@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmResourceParticipantDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmParticipantDefinition",
+	"type" : "normal" }

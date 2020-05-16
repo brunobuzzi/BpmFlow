@@ -1,0 +1,4 @@
+other
+hasExceptionDays
+
+	^days notEmpty

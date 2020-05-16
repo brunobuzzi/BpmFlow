@@ -1,0 +1,4 @@
+other
+printStartArtifactName
+
+	^startArtifact name

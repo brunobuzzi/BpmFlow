@@ -1,0 +1,21 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processDefinition",
+		"name",
+		"inTransitions",
+		"outTransitions",
+		"roles",
+		"extendedAttributes",
+		"defaultTransition",
+		"informTo" ],
+	"name" : "BpmArtifactDefinition",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

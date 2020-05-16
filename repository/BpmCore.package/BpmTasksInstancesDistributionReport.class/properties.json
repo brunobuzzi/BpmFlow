@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmTasksInstancesDistributionReport",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessDistributionReport",
+	"type" : "normal" }

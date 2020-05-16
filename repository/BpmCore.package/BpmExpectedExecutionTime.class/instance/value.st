@@ -1,0 +1,3 @@
+Accessing
+value
+	^value

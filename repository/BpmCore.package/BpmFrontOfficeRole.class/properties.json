@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmFrontOfficeRole",
+	"pools" : [
+		 ],
+	"super" : "BpmRole",
+	"type" : "normal" }

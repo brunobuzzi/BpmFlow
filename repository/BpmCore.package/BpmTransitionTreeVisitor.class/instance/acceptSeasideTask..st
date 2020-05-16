@@ -1,0 +1,4 @@
+tasks
+acceptSeasideTask: aBpmSeasideTaskDefinition
+
+	self acceptTask: aBpmSeasideTaskDefinition

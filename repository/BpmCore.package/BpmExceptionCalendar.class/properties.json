@@ -1,0 +1,19 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"days",
+		"hours",
+		"daysHistory",
+		"hoursHistory",
+		"bpmEnvironment" ],
+	"name" : "BpmExceptionCalendar",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+gateways
+acceptComplexGateway: aBpmComplexGatewayDefinition
+
+	self acceptGateway: aBpmComplexGatewayDefinition

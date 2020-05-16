@@ -1,0 +1,16 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"visitedTasks",
+		"visitedTransitions",
+		"missingEvaluationFields" ],
+	"name" : "BpmFieldsInCondtionsAfterGatewayVisitor",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessAbstractVisitor",
+	"type" : "normal" }

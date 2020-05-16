@@ -1,0 +1,3 @@
+Accessing
+applicationsLogos
+	^applicationsLogos

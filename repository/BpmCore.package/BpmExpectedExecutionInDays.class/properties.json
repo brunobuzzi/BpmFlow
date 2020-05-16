@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmExpectedExecutionInDays",
+	"pools" : [
+		 ],
+	"super" : "BpmExpectedExecutionTime",
+	"type" : "normal" }

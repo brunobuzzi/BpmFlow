@@ -1,0 +1,4 @@
+other
+addSubProcessTask: aBpmSubProcessTaskDefinition
+
+	^subProcessTasks at: aBpmSubProcessTaskDefinition name put: aBpmSubProcessTaskDefinition
