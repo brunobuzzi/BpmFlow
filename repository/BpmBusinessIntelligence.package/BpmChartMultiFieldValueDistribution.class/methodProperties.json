@@ -1,15 +1,15 @@
 {
 	"class" : {
-		"getComboName" : "brunobb 04/13/2020 13:55" },
+		"getComboName" : "brunobb 04/22/2020 13:09" },
 	"instance" : {
-		"addFieldDescrition:" : "brunobb 04/13/2020 13:55",
-		"clone" : "brunobb 04/13/2020 13:55",
-		"createDistributionReport" : "brunobb 04/13/2020 13:55",
-		"endDate:" : "brunobb 04/13/2020 13:55",
-		"fieldsCollection" : "brunobb 04/13/2020 13:55",
-		"fieldsCollection:" : "brunobb 04/13/2020 13:55",
-		"initialize" : "brunobb 04/13/2020 13:55",
-		"isMultiFieldDistribution" : "brunobb 04/13/2020 13:55",
-		"removeFieldDescrition:" : "brunobb 04/13/2020 13:55",
-		"selectedFieldsToRender" : "brunobb 04/13/2020 13:55",
-		"startDate:" : "brunobb 04/13/2020 13:55" } }
+		"addFieldDescrition:" : "brunobb 04/22/2020 13:09",
+		"clone" : "brunobb 04/22/2020 13:09",
+		"createDistributionReport" : "brunobb 04/22/2020 13:09",
+		"endDate:" : "brunobb 04/22/2020 13:09",
+		"fieldsCollection" : "brunobb 04/22/2020 13:09",
+		"fieldsCollection:" : "brunobb 04/22/2020 13:09",
+		"initialize" : "brunobb 04/22/2020 13:09",
+		"isMultiFieldDistribution" : "brunobb 04/22/2020 13:09",
+		"removeFieldDescrition:" : "brunobb 04/22/2020 13:09",
+		"selectedFieldsToRender" : "brunobb 04/22/2020 13:09",
+		"startDate:" : "brunobb 04/22/2020 13:09" } }

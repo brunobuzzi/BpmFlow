@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"getComboName" : "brunobb 04/13/2020 13:57" },
+		"getComboName" : "brunobb 04/22/2020 13:11" },
 	"instance" : {
-		"createDistributionReport" : "brunobb 04/13/2020 13:57",
-		"createProcessTasksAverageTimeDistributionReport" : "brunobb 04/13/2020 13:57",
-		"createRoleTasksAverageTimeDistributionReport" : "brunobb 04/13/2020 13:57",
-		"createUserTasksAverageTimeDistributionReport" : "brunobb 04/13/2020 13:57" } }
+		"createDistributionReport" : "brunobb 04/22/2020 13:11",
+		"createProcessTasksAverageTimeDistributionReport" : "brunobb 04/22/2020 13:11",
+		"createRoleTasksAverageTimeDistributionReport" : "brunobb 04/22/2020 13:11",
+		"createUserTasksAverageTimeDistributionReport" : "brunobb 04/22/2020 13:11" } }

@@ -2,7 +2,7 @@ search area
 renderChartScopeComboOn: html
 	| scopes |
 
-	scopes := BIChartScope getAllComboNames asSortedCollection collect: [:each | each translateIn: self session].
+	scopes := BIChartScope getBpmScopeNames asSortedCollection collect: [:each | each translateIn: self session].
 
 	^self renderGenericActiveComboOn: html 
 			withList: (#(''), scopes) 
