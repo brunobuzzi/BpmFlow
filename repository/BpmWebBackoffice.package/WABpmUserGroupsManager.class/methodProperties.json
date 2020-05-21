@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"columnsForUsersGroups" : "brunobb 05/16/2020 13:31",
-		"initialize" : "brunobb 05/16/2020 12:18",
+		"initialize" : "brunobb 05/16/2020 13:38",
 		"initializeBatchedLists" : "brunobb 05/16/2020 12:19",
 		"initializeSewafTableForUsersGroups" : "brunobb 05/16/2020 12:24",
 		"removeUserGroup:" : "brunobb 05/16/2020 13:42",

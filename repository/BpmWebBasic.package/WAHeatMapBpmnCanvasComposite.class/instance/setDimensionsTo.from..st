@@ -4,7 +4,7 @@ setDimensionsTo: aWASvgCanvasTag from: xpdlReader
 
 	dimensions := xpdlReader getDiagramDimensions.
 
-	self isScaledByParent ifTrue: [self setParentScaleAttributesWith: xpdlReader getDiagramDimensions].
+	self isScaledByParent ifTrue: [self setParentScaleAttributesWith: dimensions].
 	autoSetViewPort ifTrue: [
 		aWASvgCanvasTag attributeAt: 'width' put: dimensions x.
 		aWASvgCanvasTag attributeAt: 'height' put: dimensions y.
