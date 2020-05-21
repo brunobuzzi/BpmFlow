@@ -1,4 +1,4 @@
 dashboards
-storeDashboard: aBpmDashboardDefinition
+storeDashboard: aBIDashboardDefinition
 
-	^usersChartsAndDashboardRepository storeDashboard: aBpmDashboardDefinition
+	^usersChartsAndDashboardRepository storeDashboard: aBIDashboardDefinition

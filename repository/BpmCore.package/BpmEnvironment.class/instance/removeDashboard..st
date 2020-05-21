@@ -1,4 +1,4 @@
 dashboards
-removeDashboard: aBpmDashboardDefinition
+removeDashboard: aBIDashboardDefinition
 
-	^usersChartsAndDashboardRepository removeDashboard: aBpmDashboardDefinition
+	^usersChartsAndDashboardRepository removeDashboard: aBIDashboardDefinition
