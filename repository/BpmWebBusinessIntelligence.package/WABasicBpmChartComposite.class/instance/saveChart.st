@@ -5,7 +5,7 @@ saveChart
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	self chartsRepository storeChart: chartDefinition.
+	self bpmEnvironment storeChart: chartDefinition.
 
 	self removeValueNamed: 'saveChart'.
 

@@ -1,0 +1,4 @@
+dashboards
+storeChart: aBIChartDefinition
+
+	^usersChartsAndDashboardRepository storeChart: aBIChartDefinition

@@ -5,10 +5,10 @@ removeDashboard
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 	 
-	selectedLateralItem removeFromCache.
+	self session bpmEnvironment removeDashboard: selectedLateralItem.
 
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
-	batchedList  remove: selectedLateralItem.
+	batchedList remove: selectedLateralItem.
 
 	selectedLateralItem := nil.
 

@@ -7,7 +7,7 @@ deleteChart
 
 	self removeValueNamed: 'deleteChart'.
 
-	self chartsRepository removeChart: selectedLateralItem.
+	self session bpmEnvironment removeChart: selectedLateralItem.
 
 	self getCurrentCollection remove: selectedLateralItem.
 	
