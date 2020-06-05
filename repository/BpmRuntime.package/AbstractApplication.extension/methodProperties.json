@@ -1,5 +1,5 @@
 {
 	"class" : {
-		 },
+		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 06/05/2020 10:55" },
 	"instance" : {
 		"initializeForBpmFlow" : "brunobb 06/05/2020 10:30" } }

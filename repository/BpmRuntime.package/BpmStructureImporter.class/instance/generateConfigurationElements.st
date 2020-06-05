@@ -15,7 +15,7 @@ generateConfigurationElements
 		roleType := (csvData at: 5) trimBlanks.
 		isAdmin := [Boolean fromString: (csvData at: 6) trimBlanks] on: Error do: [:ex | false].
 		user := (csvData at: 7) trimBlanks.
-		application := ((appType = 'O') ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]) getExistingApplicationOrCreateNewNamed: app.
+		application := ((appType = 'O') ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]) getExistingBpmApplicationOrCreateNewNamed: app.
 
 		configuration := BpmUserGrantConfiguration 
 									newOn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: env) 
