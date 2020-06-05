@@ -3,7 +3,7 @@ testUnsupporttedElements
 	| visitor map |
 
 	map := Dictionary new.
-	reader xpdlPackages do: [:pack | map at: pack put: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue')].
+	reader xpdlPackages do: [:pack | map at: pack put: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue')].
 
 	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map.
 	visitor bpmEnvironment: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'ue');

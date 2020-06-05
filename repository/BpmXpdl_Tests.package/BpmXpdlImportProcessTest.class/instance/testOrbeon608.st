@@ -3,7 +3,7 @@ testOrbeon608
 	| environment applications file1 currentVersion agesic |
 
 	environment := self getDefaultEnvironment.
-	agesic := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'agesic'.
+	agesic := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'agesic'.
 	applications := OrderedCollection with: agesic.
 
 	self formCreatorClass createDefinition: 'test' with: #formDefinition_example_4 in: agesic.

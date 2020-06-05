@@ -1,4 +1,4 @@
 other
 getDefaultApplication
 
-	^self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: self defaultApplicationName
+	^self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName
