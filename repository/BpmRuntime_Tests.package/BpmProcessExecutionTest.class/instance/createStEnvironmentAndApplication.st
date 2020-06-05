@@ -8,6 +8,6 @@ createStEnvironmentAndApplication
 
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-st'.
 
-	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'st'.
+	application := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'st'.
 
 	environment registerApplication: application ifPresent: [] ifTaken: [].

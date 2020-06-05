@@ -6,7 +6,7 @@ removeFrom: envName apps: appNames processesName: processNames rolesName: rolesN
 	usersName do: [:each | (self getUserNamed: each) resetMessagesBoxesAndRoles]. "<usersName> collection must no have <admin> user --> this will remove <admins> role from <admin> user"
 
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: envName.
-	applications := appNames collect: [:each | self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: each].
+	applications := appNames collect: [:each | self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: each].
 	applications do:[:each | environment unregisterApplication: each].
 
 	appNames do: [:each | 

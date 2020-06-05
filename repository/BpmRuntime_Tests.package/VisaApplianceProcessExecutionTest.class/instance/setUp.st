@@ -23,8 +23,8 @@ setUp
 
 	"to test Execution Context"
 	(self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue') 
-		registerApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
-		registerApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
+		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
+		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
 
 	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test'.
 	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test-2'.

@@ -9,7 +9,7 @@ createProcessDefinition
 	generator := BpmProcessGenerator on: reader xpdlPackages.
 
 	generator 
-		mapProcess: 'multi-embedded' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
+		mapProcess: 'multi-embedded' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
 	generator processes do: [:each | each addToCache].

@@ -3,7 +3,7 @@ testAndExecutionContext_2
 	| currentTask currentProcessMatrix finishedProcessMatrix processId |
 
 	procInstance := procDefinition createProcessInstance: (self getUserNamed: 'andrew vo').
-	procInstance addAndContextApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'app-test').
+	procInstance addAndContextApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test').
 	procInstance triggerStartEventWith: (self getUserNamed: 'andrew vo'). "the process start - the execution context must added before the process starts"
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').

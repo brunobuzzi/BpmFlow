@@ -8,6 +8,6 @@ createUeEnvironmentAndApplication
 
 	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
-	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue'.
+	application := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue'.
 
 	environment registerApplication: application ifPresent: [] ifTaken: [].

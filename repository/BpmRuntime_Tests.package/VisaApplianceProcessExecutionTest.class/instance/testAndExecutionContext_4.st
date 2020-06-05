@@ -4,8 +4,8 @@ testAndExecutionContext_4
 
 	self grantUsers: {'andrew vo' -> 'visa officer'.} in: 'app-test-2'.
 	procInstance := procDefinition createProcessInstance: (self getUserNamed: 'andrew vo').
-	procInstance addAndContextApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'app-test');
-		addAndContextApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'app-test-2').
+	procInstance addAndContextApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test');
+		addAndContextApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test-2').
 	procInstance triggerStartEventWith: (self getUserNamed: 'andrew vo'). "the process start - the execution context must added before the process starts"
 
 	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').

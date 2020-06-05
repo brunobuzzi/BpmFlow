@@ -7,7 +7,7 @@ createProcessDefinition
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
-	processGenerator mapProcess: 'Simple Registration' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'st');
+	processGenerator mapProcess: 'Simple Registration' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'st');
 		generateAllProcess.
 
 	processGenerator processes do: [:each | each addToCache].

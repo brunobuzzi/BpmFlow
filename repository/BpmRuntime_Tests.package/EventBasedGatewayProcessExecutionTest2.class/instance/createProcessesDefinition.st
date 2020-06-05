@@ -8,8 +8,8 @@ createProcessesDefinition
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
 	processGenerator 
-		mapProcess: 'House Loan 2' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
-		mapProcess: 'House Purchase with Loan 2' toApplication: (self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: 'ue');
+		mapProcess: 'House Loan 2' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
+		mapProcess: 'House Purchase with Loan 2' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
 	processGenerator processes do: [:each | each addToCache].

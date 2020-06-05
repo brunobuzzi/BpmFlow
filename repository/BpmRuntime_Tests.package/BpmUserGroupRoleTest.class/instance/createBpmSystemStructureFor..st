@@ -6,10 +6,10 @@ createBpmSystemStructureFor: index
 	"1) create the environment and application "
 	env := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-', index printString.
 	environments at: 'env-', index printString put: env.
-	frontApp1 := self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: 'f-app1-', index printString.
-	frontApp2 := self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: 'f-app2-', index printString.
-	backApp1 := self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: 'b-app1-', index printString.
-	backApp2 := self defaultApplicationManagerClass getExistingApplicationOrCreateNewNamed: 'b-app2-', index printString.
+	frontApp1 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'f-app1-', index printString.
+	frontApp2 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'f-app2-', index printString.
+	backApp1 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'b-app1-', index printString.
+	backApp2 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'b-app2-', index printString.
 	applications at: 'f-app1-', index printString put: frontApp1;
 		at: 'f-app2-', index printString put: frontApp2;
 		at: 'b-app1-', index printString put: backApp1;
