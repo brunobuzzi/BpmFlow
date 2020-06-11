@@ -6,7 +6,7 @@ getZipProcessMapStream
 	contents := OrderedCollection new.
 	contentsNames := OrderedCollection new.
 	self getProcessesTreeAsCollection do: [:proc | 
-		contents add: (proc xmlHeader, proc xmlString) asByteArray.
+		contents add: (proc xmlHeader, proc xmlString).
 		contentsNames add: (proc processName, '.xpdl').
 	]. 
 
