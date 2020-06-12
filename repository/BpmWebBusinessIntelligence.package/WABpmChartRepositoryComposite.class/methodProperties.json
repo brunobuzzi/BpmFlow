@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"chartsRepository" : "brunobb 02/12/2020 11:07",
 		"deleteChart" : "brunobb 05/21/2020 11:04",
 		"getApplication" : "brunobb 02/12/2020 11:34",
 		"getApplicationName" : "BrunoBB 11/19/2016 07:15",
@@ -47,11 +46,11 @@
 		"renderSearchAreaOn:" : "brunobb 05/31/2019 12:49",
 		"renderSearchButtonOn:" : "brunobb 01/31/2019 09:38",
 		"renderUsersComboOn:" : "brunobb 01/31/2019 09:41",
-		"searchByApplicationScope" : "brunobb 02/12/2020 11:07",
-		"searchByFieldMultiValueScope" : "brunobb 04/14/2020 16:27",
-		"searchByGlobalScope" : "brunobb 02/12/2020 11:08",
-		"searchByMultiFieldScope" : "brunobb 02/12/2020 11:08",
-		"searchByProcessScope" : "brunobb 02/12/2020 11:08",
-		"searchByRoleScope" : "brunobb 02/12/2020 11:08",
-		"searchByUserScope" : "brunobb 02/12/2020 11:08",
+		"searchByApplicationScope" : "brunobb 06/12/2020 12:48",
+		"searchByFieldMultiValueScope" : "brunobb 06/12/2020 12:49",
+		"searchByGlobalScope" : "brunobb 06/12/2020 12:49",
+		"searchByMultiFieldScope" : "brunobb 06/12/2020 12:49",
+		"searchByProcessScope" : "brunobb 06/12/2020 12:50",
+		"searchByRoleScope" : "brunobb 06/12/2020 12:50",
+		"searchByUserScope" : "brunobb 06/12/2020 12:50",
 		"searchChart" : "brunobb 04/14/2020 16:28" } }

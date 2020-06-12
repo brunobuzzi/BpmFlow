@@ -1,4 +1,0 @@
-other
-chartsRepository
-
-	^self session bpmEnvironment usersChartsAndDashboardRepository

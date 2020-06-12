@@ -1,7 +1,7 @@
 search area
 searchByMultiFieldScope
 
-	searchResult := self chartsRepository 
+	searchResult := self session bpmEnvironment
 									getChartsFor: self session user 
 									withScope: BpmChartMultipleFieldsScope
 									satisfying: [:chart | true].
