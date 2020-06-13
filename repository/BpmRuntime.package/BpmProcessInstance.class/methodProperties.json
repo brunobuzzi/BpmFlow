@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"newBasedOn:user:" : "brunobb 01/31/2020 10:45" },
+		"newBasedOn:user:" : "brunobb 06/12/2020 14:26" },
 	"instance" : {
 		"abortProcess:" : "brunobb 01/31/2020 10:45",
 		"addActivityToPerform:" : "brunobb 01/31/2020 10:45",
@@ -27,7 +27,7 @@
 		"currentActivities:" : "brunobb 01/31/2020 10:45",
 		"currentState" : "brunobb 01/31/2020 10:45",
 		"definition" : "brunobb 01/31/2020 10:45",
-		"definition:" : "brunobb 02/27/2020 06:15",
+		"definition:" : "brunobb 06/12/2020 14:25",
 		"doesNotUnderstand:" : "brunobb 01/31/2020 10:45",
 		"endEvents" : "brunobb 01/31/2020 10:45",
 		"endEvents:" : "brunobb 01/31/2020 10:45",
@@ -51,6 +51,7 @@
 		"finalizedDate" : "brunobb 01/31/2020 10:45",
 		"generateNextTransitionsFrom:" : "brunobb 01/31/2020 11:24",
 		"generateProcessMapFor:" : "brunobb 01/31/2020 10:45",
+		"generateUniqueId" : "brunobb 06/12/2020 14:27",
 		"getActiveArtifacts" : "brunobb 01/31/2020 10:45",
 		"getAllActivitiesReversed" : "brunobb 01/31/2020 10:45",
 		"getAllArtifacts" : "brunobb 01/31/2020 10:45",
