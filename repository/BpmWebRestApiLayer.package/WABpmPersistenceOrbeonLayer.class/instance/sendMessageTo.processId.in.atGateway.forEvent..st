@@ -8,7 +8,7 @@ sendMessageTo: processName processId: processId in: appName atGateway: gatewayNa
 	<produces: 'application/xml'>
 
 	"if proc-id=0 --> search for the <BpmProcessInstance> in the XML query in the body"
-	apiOperation := BpmSendMessageToProcessApi newFor: self withXml: self requestContext request rawBody. 
+	apiOperation := BpmSendMessageToProcessApi newWithXml: self requestContext request rawBody. 
 	apiOperation appName: appName;
 		processName: processName;
 		gatewayName: gatewayName;

@@ -9,7 +9,7 @@ newOrbeonFormId: id language: lan valid: valid app: app form: formName
 	<path: '/processform?document={1}&language={2}&valid={3}&app={4}&form={5}'>
 	<produces: 'text/html'>
 
-	apiOperation := BpmSendFormAndRedirectApi newFor: self id: id.
+	apiOperation := BpmSendFormAndRedirectApi newWithId: id.
 	apiOperation appName: app;
 		formName: formName;
 		language: lan;

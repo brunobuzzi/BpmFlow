@@ -9,7 +9,7 @@ getOrbeonSecurityToken: uuidToken
 	<produces: 'text/xml'>
 	| apiOperation |
 
-	apiOperation := BpmGetXmlDataFromTokenApi newFor: self.
+	apiOperation := BpmGetXmlDataFromTokenApi new.
 	apiOperation token: uuidToken.
 
 	^apiOperation doIt

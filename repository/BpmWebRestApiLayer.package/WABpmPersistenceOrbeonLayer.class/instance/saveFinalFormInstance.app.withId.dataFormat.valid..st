@@ -8,7 +8,7 @@ saveFinalFormInstance: formName app: app withId: id dataFormat: dataFormatVersio
 
 	version := ([Number fromString: (self requestContext request headerAt: 'orbeon-form-definition-version')] on: Error do: [:ex | nil]) ifNil: [1] ifNotNil: [:value | value].
 
-	apiOperation := BpmOrbeonFormSaveFinalApi newFor: self withXml: (self requestContext request bodyDecodeUsing: 'utf-8') id: id.
+	apiOperation := BpmOrbeonFormSaveFinalApi newWithXml: (self requestContext request bodyDecodeUsing: 'utf-8') id: id.
 	apiOperation appName: app;
 		formName: formName;
 		isValid: aBoolean;

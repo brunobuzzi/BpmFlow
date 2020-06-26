@@ -9,7 +9,7 @@ newOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVersion langu
 	<path: '/processform?document={1}&process={2}&data-format-version={3}&language={4}&valid={5}&app={6}&form-version={7}&form={8}'>
 	<produces: 'text/html'>
 
-	apiOperation := BpmSendFormAndRedirectApi newFor: self id: id.
+	apiOperation := BpmSendFormAndRedirectApi newWithId: id.
 	apiOperation appName: app;
 		formName: formName;
 		version: formVersion;

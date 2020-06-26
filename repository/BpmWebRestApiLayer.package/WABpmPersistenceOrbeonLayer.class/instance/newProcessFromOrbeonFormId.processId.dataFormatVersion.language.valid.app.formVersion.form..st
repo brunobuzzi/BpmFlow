@@ -9,7 +9,7 @@ newProcessFromOrbeonFormId: id processId: procId dataFormatVersion: dataFormatVe
 	<produces: 'text/html'>
 	| apiOperation |
 
-	apiOperation := BpmCreateNewProcessApi newFor: self id: id.
+	apiOperation := BpmCreateNewProcessApi newWithId: id.
 	apiOperation appName: app;
 		formName: form;
 		processId: procId.
