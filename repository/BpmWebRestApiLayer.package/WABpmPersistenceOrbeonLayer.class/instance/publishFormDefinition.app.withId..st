@@ -7,7 +7,7 @@ publishFormDefinition: formName app: app withId: documentId
 	<path: '/crud/{2}/{1}/form/form.xhtml?document={3}'>
 
 	apiOperation := BpmOrbeonFormBuilderPublishApi newWithXml: (self requestContext request bodyDecodeUsing: 'utf-8') id: documentId.
-	apiOperation createFormReader;
+	apiOperation
 		appName: app;
 		formName: formName;
 		headerVersion: (self requestContext request headerAt: 'orbeon-form-definition-version').

@@ -8,7 +8,4 @@ saveInFormBuilderDefinitionWithId: id dataFormat: dataFormatVersion valid: strin
 
 	(Boolean fromString: stringBool) 
 	ifTrue: [ apiOperation := BpmOrbeonFormBuilderSaveApi newWithXml: (self requestContext request bodyDecodeUsing: 'utf-8') id: id.
-
-				apiOperation createFormReader.
-
 				^apiOperation doIt]
