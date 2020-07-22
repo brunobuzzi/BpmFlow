@@ -15,7 +15,7 @@ getTransversalByVersionQuantityFor2: appName
 		versionArray := OrderedCollection new.
 		procDictionary keys asSortedCollection do: [:procName | | processCollection versionCount |
 			processCollection := procDictionary at: procName.
-			versionCount := (processCollection size >= index) ifTrue: [(processCollection at: index) processInstances size] ifFalse: [0].
+			versionCount := (processCollection size >= index) ifTrue: [(processCollection at: index) processInstancesSize] ifFalse: [0].
 			versionArray add: versionCount.
 		].
 		transversal add: versionArray.

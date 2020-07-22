@@ -8,7 +8,7 @@ getProcessInstanceDistributionFor: appName
 
 	application processesDefinitionsKeysAndValuesDo: [:procName :versionCollection | | sum |
 		sum := 0.
-		versionCollection do: [:procDef | sum := sum + procDef processInstances size].
+		versionCollection do: [:procDef | sum := sum + procDef processInstancesSize].
 		distribution at: procName put: sum.
 	]. 
 

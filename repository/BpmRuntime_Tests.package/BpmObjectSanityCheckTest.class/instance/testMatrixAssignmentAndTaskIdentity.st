@@ -4,7 +4,7 @@ testMatrixAssignmentAndTaskIdentity
 
 	self defaultEnvironmentClass cache do: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
-			(eachProcDef processInstances reject: [:each | each isAborted])  do: [:procInstance | | availableMatrix takenMatrix finishedMatrix currentAssignments takenAssignments finishedAssignments executedActivities |
+			(eachProcDef processInstancesReject: [:each | each isAborted])  do: [:procInstance | | availableMatrix takenMatrix finishedMatrix currentAssignments takenAssignments finishedAssignments executedActivities |
 				availableMatrix := procInstance getAvailableProcessMatrix.
 				takenMatrix := procInstance getTakenProcessMatrix.
 				finishedMatrix := procInstance getFinishedProcessMatrix.

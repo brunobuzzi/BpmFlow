@@ -4,7 +4,7 @@ testProcessesInstancesHolderSize
 
 	self defaultEnvironmentClass cache do: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
-				self assert: eachProcDef processInstances size equals: eachProcDef processInstancesSet size.
+				self assert: eachProcDef processInstancesSize equals: eachProcDef processInstancesSetSize.
 		].
 	].
 

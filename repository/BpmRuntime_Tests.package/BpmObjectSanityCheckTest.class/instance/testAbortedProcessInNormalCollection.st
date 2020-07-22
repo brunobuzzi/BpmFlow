@@ -4,6 +4,6 @@ testAbortedProcessInNormalCollection
 
 	self defaultEnvironmentClass cache do: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
-			self assert: (eachProcDef processInstances allSatisfy: [:eachProcInst | eachProcInst isAborted not])
+			self assert: (eachProcDef processInstancesAllSatisfy: [:eachProcInst | eachProcInst isAborted not])
 		].
 	].

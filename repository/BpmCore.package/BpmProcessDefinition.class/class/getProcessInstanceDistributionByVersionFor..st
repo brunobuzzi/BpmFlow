@@ -9,7 +9,7 @@ getProcessInstanceDistributionByVersionFor: appName
 
 	application getAllProcessDefinitions do: [:procName | | versionCollection |
 		versionCollection := application getAllProcessesNamed: procName.
-		distribution at: procName put: (versionCollection collect: [:procDef | procDef processInstances size]) asOrderedCollection.
+		distribution at: procName put: (versionCollection collect: [:procDef | procDef processInstancesSize]) asOrderedCollection.
 		maxSize := maxSize max: versionCollection size.
 	].
  
