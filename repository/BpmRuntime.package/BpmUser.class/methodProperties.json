@@ -88,7 +88,7 @@
 		"getOutboxFor:" : "brunobb 01/27/2020 11:09",
 		"getPossibleTaskDefinitionsQuantityDistributionIn:" : "brunobb 01/27/2020 11:09",
 		"getProcessDefinitionCategoriesFor:" : "brunobb 01/27/2020 11:09",
-		"getProcessDefinitionLatestVersionsIn:" : "brunobb 02/13/2020 08:21",
+		"getProcessDefinitionLatestVersionsIn:" : "bruno 07/22/2020 15:26",
 		"getProcessInstanceCategoriesFor:" : "brunobb 01/27/2020 11:09",
 		"getProperty:" : "brunobb 01/27/2020 11:09",
 		"getProperty:ifAbsent:" : "brunobb 01/27/2020 11:09",

@@ -7,7 +7,7 @@ getProcessDefinitionLatestVersionsIn: aBpmEnvironment
 	"backoffice user and admin --> can see all applications"
 	((self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [self getVisibleApplicationsIn: aBpmEnvironment] ifFalse: [self getApplicationsIn: aBpmEnvironment]) 
 		do: [:eachApp | 
-				eachApp processesDefinitions do: [:versionCollection | 
+				eachApp processesDefinitionsDo: [:versionCollection | 
 					(versionCollection notEmpty and: [versionCollection last isTopProcess]) ifTrue: [allLatestDefinitions add: versionCollection last].
 				].
 		].

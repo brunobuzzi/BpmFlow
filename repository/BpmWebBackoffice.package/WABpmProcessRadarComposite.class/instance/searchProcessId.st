@@ -7,9 +7,10 @@ searchProcessId
 
 	id := [Integer fromString: (searchValues at: 'id')] on: Error do: [:err | 0].
 
-	contextApplications := 
-		(self session user getBackofficeApplicationsIn: self session bpmEnvironment)
-			collect: [:eachApp | eachApp processesDefinitions] "answer <aDictionary> where the key is the process name and the value is a collection of <BpmPricessDefinition>s".
+	contextApplications := OrderedCollection new.
+	(self session user getBackofficeApplicationsIn: self session bpmEnvironment) do: [:eachApp | 
+		eachApp processesDefinitionsDo:  [:procDef | contextApplications add: procDef].
+	].
 
 	searchCollectionResult := (self defaultProcessDefinitionClass getProcessInstanceWithId: id onApplications: contextApplications) 
 										ifNil: [#()] 

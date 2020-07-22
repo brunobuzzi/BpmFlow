@@ -1,0 +1,3 @@
+Accessing
+processInstancesSize
+	^processInstances size

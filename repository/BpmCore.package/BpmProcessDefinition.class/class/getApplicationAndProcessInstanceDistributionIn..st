@@ -6,7 +6,7 @@ getApplicationAndProcessInstanceDistributionIn: aBpmEnvironment
 
 	aBpmEnvironment applications do: [:application | | sum | 
 		sum := 0.
-		application processesDefinitions do: [:versionCollection | 
+		application processesDefinitionsDo: [:versionCollection | 
 			versionCollection do: [:eachVersion | sum := sum + eachVersion processInstances size].
 		].
 		distribution at: application applicationName put: sum.
