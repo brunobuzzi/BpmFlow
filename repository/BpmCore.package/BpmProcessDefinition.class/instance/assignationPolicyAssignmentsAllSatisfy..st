@@ -1,0 +1,4 @@
+Accessing
+assignationPolicyAssignmentsAllSatisfy: aBlock
+
+	^assignationPolicy assignmentsAllSatisfy: aBlock

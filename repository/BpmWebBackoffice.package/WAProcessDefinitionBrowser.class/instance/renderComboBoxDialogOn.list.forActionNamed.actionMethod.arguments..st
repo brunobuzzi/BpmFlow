@@ -16,7 +16,7 @@ renderComboBoxDialogOn: html list: list forActionNamed: actionName actionMethod:
 				html label: [ 
 					html checkbox class: 'margin-top-20px';
 						id: html nextId;
-						value: selectedLateralItem assignationPolicy isAutomatic;
+						value: selectedLateralItem assignationPolicyIsAutomatic;
 						callback: [ :value | self setAutomaticAssignationPolicy: value ];
 						onChange: (html jQuery ajax serializeForm).
 				html text: ('Is Automatic' translateIn: self session).].

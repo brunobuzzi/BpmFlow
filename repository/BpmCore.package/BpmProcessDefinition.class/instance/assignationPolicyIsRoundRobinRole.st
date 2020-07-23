@@ -1,0 +1,4 @@
+Accessing
+assignationPolicyIsRoundRobinRole
+
+	^assignationPolicy isRoundRobinRole

@@ -17,14 +17,14 @@ testRoundRobinTaskAssignation_visaAccepted
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
 
-	self assert: (procDefinition assignationPolicy assignments allSatisfy: [:eachCount | eachCount count = 0]). 
+	self assert: (procDefinition assignationPolicyAssignmentsAllSatisfy: [:eachCount | eachCount count = 0]). 
 
 	1 to: 10 do: [:index | | newProcess |
 		newProcess := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 		newRoundRobinProcesses add: newProcess.
 	].
 
-	assignations := procDefinition assignationPolicy assignments at: 'citizen-appliance'. "answer <aSortedCollection>"
+	assignations := procDefinition assignationPolicyAssignmentsAt: 'citizen-appliance'. "answer <aSortedCollection>"
 
 	self assert: ((assignations select: [:each | each count = 3]) size = 2).
 	self assert: ((assignations select: [:each | each count = 4]) size = 1).
@@ -55,7 +55,7 @@ testRoundRobinTaskAssignation_visaAccepted
 		self processExecutionSimulator finalizeAssignment: assignment withUserNamed: 'andrew vo3' on: assignment process.
 	].
 
-	assignations := procDefinition assignationPolicy assignments at: 'check-basic-data'. "answer <aSortedCollection>"
+	assignations := procDefinition assignationPolicyAssignmentsAt: 'check-basic-data'. "answer <aSortedCollection>"
 
 	self assert: ((assignations select: [:each | each count = 3]) size = 2).
 	self assert: ((assignations select: [:each | each count = 4]) size = 1).

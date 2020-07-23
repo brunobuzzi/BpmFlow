@@ -1,0 +1,4 @@
+other
+isRoundRobinRole
+
+	^false

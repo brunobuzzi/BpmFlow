@@ -2,4 +2,5 @@
 	"class" : {
 		"printPolicyName" : "brunobb 02/02/2018 14:35" },
 	"instance" : {
-		"getAssignationFilterFor:" : "brunobb 01/26/2018 13:30" } }
+		"getAssignationFilterFor:" : "brunobb 01/26/2018 13:30",
+		"isRoundRobinRole" : "bruno 07/23/2020 12:19" } }

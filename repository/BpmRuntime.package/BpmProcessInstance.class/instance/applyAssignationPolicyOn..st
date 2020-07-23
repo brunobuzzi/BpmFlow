@@ -1,0 +1,4 @@
+assignation policy
+applyAssignationPolicyOn: aBpmTaskAssignment
+
+	^definition applyAssignationPolicyOn: aBpmTaskAssignment
