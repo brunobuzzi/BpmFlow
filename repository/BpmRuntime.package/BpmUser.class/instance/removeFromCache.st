@@ -4,7 +4,7 @@ removeFromCache
 
 	self isAdminUser ifTrue: [ImproperBpmOperationException signal: '[admin] user can no be removed'].
 
-	self roles do: [:eachRole | eachRole ungrantUser: self].
+	self rolesDo: [:eachRole | eachRole ungrantUser: self].
 	rolesAssociation := Set new.
 
 	self getBpmEnvironments do: [:eachEnv | eachEnv unregisterUser: self].

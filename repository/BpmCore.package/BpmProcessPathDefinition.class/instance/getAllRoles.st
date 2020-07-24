@@ -5,6 +5,7 @@ getAllRoles
 
 	allRoles := OrderedCollection new.
 
-	tasks do: [:each | allRoles addAll: each roles].
+	tasks do: [:eachTask | 
+		eachTask rolesDo: [:eachRole | allRoles add: eachRole]].
 
 	^allRoles
