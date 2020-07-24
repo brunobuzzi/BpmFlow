@@ -15,7 +15,7 @@ create_tearDownMethod
  
 	procInstance getProcessesTreeAsCollection do: [:eachProc | 
 		procArgsStream nextPutAll: eachProc processName quoted , ' '.
-		eachProc definition roles do: [:eachRole | rolesArgsStream nextPutAll: eachRole name quoted, ' ']. 
+		eachProc rolesDo: [:eachRole | rolesArgsStream nextPutAll: eachRole name quoted, ' ']. 
 	].
 	procArgsStream nextPutAll: ')'. 
 	rolesArgsStream nextPutAll: ')'. 
