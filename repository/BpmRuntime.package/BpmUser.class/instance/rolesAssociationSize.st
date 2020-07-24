@@ -1,0 +1,3 @@
+Accessing
+rolesAssociationSize
+	^rolesAssociation size

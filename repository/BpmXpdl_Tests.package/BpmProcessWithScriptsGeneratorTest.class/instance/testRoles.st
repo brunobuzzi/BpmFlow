@@ -6,4 +6,4 @@ testRoles
 
 	task := processDefinition getScriptNamed: 'script' ifNone: [self assert: false].
 
-	self assert: (task roles anySatisfy: [:each | each name = 'manager'])
+	self assert: (task rolesAnySatisfy: [:each | each name = 'manager'])

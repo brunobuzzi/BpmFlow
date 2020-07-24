@@ -28,10 +28,10 @@ testGrantRoleToUser
 		self assert: (buser getVisibleApplicationsIn: environment) size equals: 1. "is backoffice but NOT admin user --> can access only apps of its role in the environment"
 		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
 		self assert: (buser getVisibleUsersIn: environment) size equals: 1. "is backoffice but NOT admin user --> can see only users of its apps in the environment"
-		self assert: frole usersAssociations size equals: 1. "each grant or ungrant creates an entry in role's <usersAssociations> collection"
-		self assert: brole usersAssociations size equals: 1.
-		self assert: fuser rolesAssociation size equals: 1. "each grant or ungrant creates an entry in user's <rolesAssociation> collection"
-		self assert: buser rolesAssociation size equals: 1.
+		self assert: frole usersAssociationsSize equals: 1. "each grant or ungrant creates an entry in role's <usersAssociations> collection"
+		self assert: brole usersAssociationsSize equals: 1.
+		self assert: fuser rolesAssociationSize equals: 1. "each grant or ungrant creates an entry in user's <rolesAssociation> collection"
+		self assert: buser rolesAssociationSize equals: 1.
 		frole ungrantUser: fuser.
 		brole ungrantUser: buser.
 		self assert: (fuser getVisibleApplicationsIn: environment) size equals: 0.
@@ -40,18 +40,18 @@ testGrantRoleToUser
 		self assert: (buser getVisibleRolesIn: environment) size equals: 0.
 		self assert: (fuser getVisibleUsersIn: environment) size equals: 0.
 		self assert: (buser getVisibleUsersIn: environment) size equals: 0.
-		self assert: frole usersAssociations size equals: 2.
-		self assert: brole usersAssociations size equals: 2.
-		self assert: fuser rolesAssociation size equals: 2.
-		self assert: buser rolesAssociation size equals: 2.
+		self assert: frole usersAssociationsSize equals: 2.
+		self assert: brole usersAssociationsSize equals: 2.
+		self assert: fuser rolesAssociationSize equals: 2.
+		self assert: buser rolesAssociationSize equals: 2.
 		self deny: (frole isGranted: fuser).
 		self deny: (brole isGranted: buser).
 		frole grantUser: fuser.
 		brole grantUser: buser.
-		self assert: frole usersAssociations size equals: 3.
-		self assert: brole usersAssociations size equals: 3.
-		self assert: fuser rolesAssociation size equals: 3.
-		self assert: buser rolesAssociation size equals: 3.
+		self assert: frole usersAssociationsSize equals: 3.
+		self assert: brole usersAssociationsSize equals: 3.
+		self assert: fuser rolesAssociationSize equals: 3.
+		self assert: buser rolesAssociationSize equals: 3.
 		self assert: (frole isGranted: fuser).
 		self assert: (brole isGranted: buser).
 		frole ungrantUser: fuser.

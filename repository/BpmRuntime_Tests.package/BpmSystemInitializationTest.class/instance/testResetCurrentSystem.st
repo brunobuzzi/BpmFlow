@@ -4,8 +4,8 @@ testResetCurrentSystem
 	BpmSystemInitialization resetCurrentSystem.
 
 	BpmUser cache do: [:user | 
-		self assert: user roles isEmpty.
-		self assert: user rolesAssociation isEmpty.
+		self assert: user rolesIsEmpty.
+		self assert: user rolesAssociationIsEmpty.
 		user getBpmEnvironments do: [:env | 
 			self assert: (user getCurrentAssignmentsIn: env) isEmpty.
 			self assert: (user getFinishedAssignmentsIn: env) isEmpty.

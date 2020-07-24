@@ -9,6 +9,6 @@ rolesIn: aBpmEnvironment
 
 	inheritRoles := Set new.
 
-	userGroups do: [:eachGroup | inheritRoles addAll: (eachGroup roles select: [:eachRole | eachRole bpmEnvironment == aBpmEnvironment])].
+	userGroups do: [:eachGroup | inheritRoles addAll: (eachGroup rolesSelect: [:eachRole | eachRole bpmEnvironment == aBpmEnvironment])].
 
 	^directRoles, inheritRoles

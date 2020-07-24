@@ -1,0 +1,4 @@
+Accessing
+rolesIsEmpty
+
+	^roles isEmpty

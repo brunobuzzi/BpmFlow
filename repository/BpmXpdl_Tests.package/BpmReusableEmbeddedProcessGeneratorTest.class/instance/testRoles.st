@@ -6,10 +6,10 @@ testRoles
 
 	task := processDefinition getScriptNamed: 'script' ifNone: [self assert: false].
 
-	self assert: (task roles anySatisfy: [:each | each name = 'administrator']).
+	self assert: (task rolesAnySatisfy: [:each | each name = 'administrator']).
 
 	subProc := processDefinition getSubProcessTaskNamed: 'embedded-sub-proc' ifNone: [self assert: false].
-	self assert: (subProc roles anySatisfy: [:each | each name = 'administrator']).
+	self assert: (subProc rolesAnySatisfy: [:each | each name = 'administrator']).
 
 	subProc := processDefinition getSubProcessTaskNamed: 'reusable-sub-proc' ifNone: [self assert: false].
-	self assert: (subProc roles anySatisfy: [:each | each name = 'administrator']).
+	self assert: (subProc rolesAnySatisfy: [:each | each name = 'administrator']).

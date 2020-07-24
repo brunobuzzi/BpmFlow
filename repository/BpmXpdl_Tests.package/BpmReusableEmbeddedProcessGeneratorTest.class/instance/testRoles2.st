@@ -6,4 +6,4 @@ testRoles2
 
 	task := processDefinition getScriptNamed: 'script-reusable' ifNone: [self assert: false].
 
-	self assert: (task roles anySatisfy: [:each | each name = 'administrator']).
+	self assert: (task rolesAnySatisfy: [:each | each name = 'administrator']).

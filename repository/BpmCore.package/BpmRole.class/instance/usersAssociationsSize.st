@@ -1,0 +1,4 @@
+Accessing
+usersAssociationsSize
+
+	^usersAssociations size
