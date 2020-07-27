@@ -4,7 +4,7 @@ testFormFieldValueAssignments
 
 	self defaultEnvironmentClass cache do: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
-			eachProcDef formFieldInstances do: [:formDictionary | 
+			eachProcDef formFieldInstancesDo: [:formDictionary | 
 				formDictionary do: [:fieldRcCollection | 
 					fieldRcCollection do: [:appFieldValue |  | formInstance assignment process valueHolder |
 						formInstance := appFieldValue parentObject.

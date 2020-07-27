@@ -5,7 +5,7 @@ visitXpdlPackage: aXPDLPackageNode
 	aXPDLPackageNode pools do: [:xpdlPoolNode | 
 		currentWorkflow := xpdlPoolNode workflow.
 		xpdlPoolNode acceptVisitor: self.
-		(currentWorkflow activities select: [:each | each hasNoInOrOutTransitions]) do: [:each | self addIsolatedActivityItemFor: each].
+		(currentWorkflow activitiesSelect:  [:each | each hasNoInOrOutTransitions]) do: [:each | self addIsolatedActivityItemFor: each].
 	].
 
 	self generateAdditionalReportItems.

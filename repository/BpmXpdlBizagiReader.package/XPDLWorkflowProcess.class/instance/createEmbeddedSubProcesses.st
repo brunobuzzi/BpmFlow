@@ -24,7 +24,7 @@ createEmbeddedSubProcesses
 	].
 	embeddedSubProcs do: [:eachWorkflow1 |
 		embeddedSubProcs do: [:eachWorkflow2 | 
-			(eachWorkflow2 activities anySatisfy: [:each | eachWorkflow1 getId = each getId])
+			(eachWorkflow2 activitiesAnySatisfy: [:each | eachWorkflow1 getId = each getId])
 			ifTrue: [eachWorkflow2 addEmbeddedWorkflow: eachWorkflow1].
 		].
 	].

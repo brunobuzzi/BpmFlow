@@ -1,4 +1,0 @@
-searching
-activities
-
-	^workflow activities

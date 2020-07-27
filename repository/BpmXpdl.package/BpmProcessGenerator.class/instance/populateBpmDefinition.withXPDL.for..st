@@ -16,7 +16,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	].
 
 	"it create the corresponding Bpm definition for each Xpdl artifact <xpdlActivity> in the pool <aXPDLPool>"
-	aXPDLWorflowProcess activities do: [:xpdlActivity | | newArtifact lanesNames |
+	aXPDLWorflowProcess activitiesDo: [:xpdlActivity | | newArtifact lanesNames |
 		newArtifact := xpdlActivity createBpmDefinitionOn: aBpmProcessDefinition.
 		xpdlActivity performers do: [:eachParticipantNode | | bpmPerformer performerRole | "here the Performers of the task are set"
 			bpmPerformer :=  participants detect: [:each | each name = eachParticipantNode getName].

@@ -1,4 +1,4 @@
 other
 getIntermediateAttachedEvents
 
-	^self activities select: [:each | each isIntermediateEventNode and:[each isAttached]]
+	^self activitiesSelect: [:each | each isIntermediateEventNode and:[each isAttached]]

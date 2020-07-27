@@ -5,7 +5,7 @@ removeAllFormFieldInstances
 	self cache do: [:eachDictionary | 
 		eachDictionary do: [:processesCollection | 
 			processesCollection do: [:processDefinition | 
-				processDefinition formFieldInstances: Dictionary new. "remove all form field instances"
+				processDefinition initializeFormFieldInstances. "remove all form field instances"
 			].
 		].
 	].
