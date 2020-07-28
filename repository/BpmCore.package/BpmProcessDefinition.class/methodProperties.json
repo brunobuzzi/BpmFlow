@@ -169,7 +169,6 @@
 		"getTasks" : "BrunoBB 12/10/2015 06:36",
 		"getTopProcess" : "BrunoBB 06/28/2016 12:20",
 		"getTransitionNamed:ifNone:" : "BrunoBB 11/28/2015 19:53",
-		"getTransitions" : "BrunoBB 12/10/2015 06:52",
 		"getTypeOf:in:ifNone:" : "BrunoBB 02/19/2016 13:38",
 		"getTypeOfFieldNamed:" : "brunobb 03/09/2020 10:27",
 		"getValueDistributionForFieldCollection:" : "brunobb 06/01/2018 11:51",

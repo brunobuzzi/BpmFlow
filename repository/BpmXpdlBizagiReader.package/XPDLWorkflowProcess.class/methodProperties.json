@@ -12,7 +12,7 @@
 		"addTransition:" : "brunobb 11/06/2018 06:57",
 		"attachEventsToTasks" : "brunobb 08/05/2019 10:46",
 		"basicCreateActivityInstanceFrom:" : "brunobb 11/07/2018 09:28",
-		"connectActivitiesAndTrasitions" : "brunobb 11/06/2018 06:57",
+		"connectActivitiesAndTrasitions" : "bruno 07/28/2020 10:45",
 		"connectActivitiesToParentLane" : "bruno 07/27/2020 15:29",
 		"createActivityNodes" : "brunobb 11/06/2018 06:57",
 		"createActivityNodesFrom:" : "brunobb 12/13/2019 13:53",
@@ -82,4 +82,9 @@
 		"startNode" : "brunobb 11/06/2018 06:57",
 		"startNode:" : "brunobb 11/06/2018 06:57",
 		"transitions" : "brunobb 11/06/2018 06:57",
-		"transitions:" : "brunobb 11/06/2018 06:57" } }
+		"transitions:" : "brunobb 11/06/2018 06:57",
+		"transitionsAllSatisfy:" : "bruno 07/28/2020 10:47",
+		"transitionsCollect:" : "bruno 07/28/2020 10:43",
+		"transitionsDetect:" : "bruno 07/28/2020 10:45",
+		"transitionsDo:" : "bruno 07/28/2020 10:44",
+		"transitionsSize" : "bruno 07/28/2020 10:47" } }

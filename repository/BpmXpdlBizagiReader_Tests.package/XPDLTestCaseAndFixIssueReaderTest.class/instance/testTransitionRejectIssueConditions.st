@@ -3,7 +3,7 @@ testTransitionRejectIssueConditions
 	| process transition |
 
 	process := self getTestCaseWorkflow.
-	transition := process transitions detect: [:each | (each endNode == (process getEndNodeNamed: 'end' ifNone: [self assert: false]))
+	transition := process transitionsDetect: [:each | (each endNode == (process getEndNodeNamed: 'end' ifNone: [self assert: false]))
 		and: [each startNode isGatewayNode]
 	].
 
