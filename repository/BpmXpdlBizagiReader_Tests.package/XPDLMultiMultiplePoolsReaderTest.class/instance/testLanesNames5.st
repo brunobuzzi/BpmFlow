@@ -4,6 +4,6 @@ testLanesNames5
 
 	lanesNames := #('Lane 10').
 
-	self assert: (self getProcess5Workflow parentPool lanes allSatisfy: [:each | lanesNames includes: each getName]).
+	self assert: (self getProcess5Workflow parentPool lanesAllSatisfy: [:each | lanesNames includes: each getName]).
 
-	self assert: (self getProcess5Workflow parentPool lanes size = lanesNames size).
+	self assert: (self getProcess5Workflow parentPool lanesSize = lanesNames size).

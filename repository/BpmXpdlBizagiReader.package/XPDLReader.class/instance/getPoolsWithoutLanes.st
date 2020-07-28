@@ -6,7 +6,7 @@ getPoolsWithoutLanes
 	report := OrderedCollection new.
 
 	self getAllPools do: [:eachPool |
-		eachPool lanes isEmpty ifTrue: [ | reportItem |
+		eachPool lanesIsEmpty ifTrue: [ | reportItem |
 			reportItem := self xpdlItemReportClass new 
 				code: 54;
 				type: 'Error';

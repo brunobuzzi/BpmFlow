@@ -4,6 +4,6 @@ testLanesNames2
 
 	lanesNames := #('Lane 4' 'Lane 5').
 
-	self assert: (self getProcess2Pool lanes allSatisfy: [:each | lanesNames includes: each getName]).
+	self assert: (self getProcess2Pool lanesAllSatisfy: [:each | lanesNames includes: each getName]).
 
-	self assert: (self getProcess2Pool lanes size = lanesNames size).
+	self assert: (self getProcess2Pool lanesSize = lanesNames size).

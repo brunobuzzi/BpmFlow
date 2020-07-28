@@ -1,0 +1,3 @@
+Accessing
+lanesIsEmpty
+	^lanes isEmpty
