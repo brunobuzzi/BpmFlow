@@ -21,7 +21,7 @@ testExecuteProcess_visaAnalizeAndRejected
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_check_previous_appliance on: procInstance.
 	self assert: (currentTask getDefinitionName = 'check-previous-appliance').
 	"Sub Process Execution [home-office-check] starts here "
-		subProcessL1 := procInstance subprocesses last.
+		subProcessL1 := procInstance subprocessesLast.
 		self assert: (procInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
 		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
@@ -34,7 +34,7 @@ testExecuteProcess_visaAnalizeAndRejected
 		self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vc' withForm: (self formInstance_applicant_home_office_report: subProcessL1) on: subProcessL1.
 		self assert: (currentTask getDefinitionName = 'applicant-home-office-report').
 		"Sub Process Execution [check-financial-data]"
-			subProcessL2 := subProcessL1 subprocesses last.
+			subProcessL2 := subProcessL1 subprocessesLast.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.
 			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').

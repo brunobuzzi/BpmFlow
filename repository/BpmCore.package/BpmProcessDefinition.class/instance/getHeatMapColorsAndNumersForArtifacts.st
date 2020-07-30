@@ -11,7 +11,7 @@ getHeatMapColorsAndNumersForArtifacts
 	porcentageDictionary := Dictionary new.
 
 	processInstances do: [:procInstance | 
-		(procInstance getAllArtifacts, procInstance executedScripts, procInstance subprocesses) do: [:activity | 
+		procInstance artifactsToRenderHeatMapDo: [:activity | 
 			(countDictionary includesKey: activity getDefinitionName) ifFalse: [countDictionary at: activity getDefinitionName put: 0].
 			countDictionary at: activity getDefinitionName put: ((countDictionary at: activity getDefinitionName) + 1).
 		]. 

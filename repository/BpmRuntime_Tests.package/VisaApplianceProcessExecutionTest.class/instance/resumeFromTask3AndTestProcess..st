@@ -23,7 +23,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 1).
 
 	"Sub Process Execution [home-office-check] starts here "
-		subProcessL1 := aBpmProcessInstance subprocesses last.
+		subProcessL1 := aBpmProcessInstance subprocessesLast.
 		subProcId := subProcessL1 id.
 		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
@@ -55,7 +55,7 @@ resumeFromTask3AndTestProcess: aBpmProcessInstance
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 
 		"Sub Process Execution [check-financial-data]"
-			subProcessL2 := subProcessL1 subprocesses last.
+			subProcessL2 := subProcessL1 subprocessesLast.
 			subProc2Id := subProcessL2 id.
 			subProc2CurrentMatrix := subProcessL2 getAvailableProcessMatrix.
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.

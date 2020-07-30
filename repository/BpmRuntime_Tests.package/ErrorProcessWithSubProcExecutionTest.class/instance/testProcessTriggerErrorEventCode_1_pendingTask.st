@@ -6,7 +6,7 @@ testProcessTriggerErrorEventCode_1_pendingTask
 	"Step 1 - It create the subprocess immediately"
 
 	"Sub Process Execution [form-process] starts here "
-		subProcess := procInstance subprocesses last.
+		subProcess := procInstance subprocessesLast.
 		currentTask := subProcess currentActivities last.
 		self assert: currentTask getDefinitionName equals: 'dashboard-form'.
 		formInstance := self formInstance_withValues: self generateRandomValues in: subProcess.

@@ -38,7 +38,7 @@ testExecuteProcess_visaAccepted_04
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) size = 1).
 
 	"Sub Process Execution [home-office-check] starts here "
-		subProcessL1 := procInstance subprocesses last.
+		subProcessL1 := procInstance subprocessesLast.
 		subProcId := subProcessL1 id.
 		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.
@@ -64,7 +64,7 @@ testExecuteProcess_visaAccepted_04
 		self assert: (subProcCurrentMatrix getAvailableTasksFor: 'visa checker' satisfying: {:assign | assign.processId = subProcId}) isEmpty.
 
 		"Sub Process Execution [check-financial-data]"
-			subProcessL2 := subProcessL1 subprocesses last.
+			subProcessL2 := subProcessL1 subprocessesLast.
 			subProc2Id := subProcessL2 id.
 			subProc2CurrentMatrix := subProcessL2 getAvailableProcessMatrix.
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.

@@ -46,7 +46,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'citizenId[n]' in: 'check-previous-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'expirationDate[d]' in: 'check-previous-appliance') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	"Sub Process Execution [home-office-check] starts here "
-		subProcessL1 := procInstance subprocesses last.
+		subProcessL1 := procInstance subprocessesLast.
 		subProcId := subProcessL1 id.
 		subProcCurrentMatrix := subProcessL1 getAvailableProcessMatrix.
 		subProcFinishedMatrix := subProcessL1 getFinishedProcessMatrix.

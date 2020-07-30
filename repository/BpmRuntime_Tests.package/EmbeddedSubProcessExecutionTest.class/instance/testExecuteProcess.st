@@ -10,7 +10,7 @@ testExecuteProcess
 	self assert: (script isDone).
 
 	"Step 2 - After the Script the embedded subprocess is created"
-		subProcessEmb := procInstance subprocesses first.
+		subProcessEmb := procInstance subprocessesLast.
 		self assert: (procInstance includesSubProcess: subProcessEmb).
 		self assert:  subProcessEmb isSubProcess.
 		self assert: (subProcessEmb startEvent getDefinitionName = 'start-embedded').
@@ -18,7 +18,7 @@ testExecuteProcess
 		endArtifact := subProcessEmb endEventsAsOrderedCollection detect: [:each | each getDefinitionName = 'end-embedded'] ifNone: [self assert: false].
 		self assert: endArtifact isEndEvent.
 
-		subProcessReus := procInstance subprocesses last.
+		subProcessReus := procInstance subprocessesLast.
 		self assert: (procInstance includesSubProcess: subProcessReus).
 		self assert:  subProcessReus isSubProcess.
 		self assert: (subProcessReus startEvent getDefinitionName = 'start-resusable').

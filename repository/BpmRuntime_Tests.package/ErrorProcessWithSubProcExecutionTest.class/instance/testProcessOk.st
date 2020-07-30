@@ -6,7 +6,7 @@ testProcessOk
 	"Step 1 - It create the subprocess immediately"
 
 	"Sub Process Execution [form-process] starts here "
-		subProcess := procInstance subprocesses last.
+		subProcess := procInstance subprocessesLast.
 		subProcId := subProcess id.
 		currentTask := subProcess currentActivities last.
 		self assert: currentTask getDefinitionName equals: 'dashboard-form'.
