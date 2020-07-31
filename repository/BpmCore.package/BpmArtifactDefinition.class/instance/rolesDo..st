@@ -1,4 +1,4 @@
 roles
 rolesDo: aBlock
 
-	^roles rolesDo: aBlock
+	^roles do: aBlock

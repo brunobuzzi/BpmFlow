@@ -1,4 +1,4 @@
-Accessing
+roles
 rolesAnySatisfy: aBlock
 
-	roles anySatisfy: aBlock
+	^roles anySatisfy: aBlock
