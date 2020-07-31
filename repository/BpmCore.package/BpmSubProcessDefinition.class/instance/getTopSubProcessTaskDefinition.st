@@ -1,11 +1,11 @@
 other
-getParentTopSubProcessTaskDefinition
+getTopSubProcessTaskDefinition
 	"Answer the Top <BpmSubProcessTaskDefinition> that initiated the creation of the receiver"
 
-	^self getParentSubProcessTaskDefinition
+	^self getTopSubProcessTaskDefinition
 		ifNil: [nil]
 		ifNotNil: [:taskDef | 
 						taskDef processDefinition isTopProcess
 						ifTrue: [taskDef]
-						ifFalse: [taskDef processDefinition getParentTopSubProcessTaskDefinition]
+						ifFalse: [taskDef processDefinition getTopSubProcessTaskDefinition]
 		].

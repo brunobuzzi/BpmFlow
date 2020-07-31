@@ -2,12 +2,12 @@ other
 setRolesOfUnderlineProcess
 	"For embedded sub processes the roles are inherit from the parent task definition.
 	Embedded subprocess does not have Lanes --> they 'do not have' roles (roles are inherited)"
-	| taskDefRoles |
+	| rolesHolderTask |
 
 	self isEmbedded ifFalse: [^self]. "it is only applicable on embedded sub processes"
 
 	"roles of the top process are inherit by all embedded subprocess"
-	taskDefRoles := processDefinition getParentTopSubProcessTaskDefinition ifNil: [roles] ifNotNil: [:taskDef | taskDef roles]. 
+	rolesHolderTask := processDefinition getTopSubProcessTaskDefinition ifNil: [self] ifNotNil: [:taskDef | taskDef]. 
 
 	(subProcessDefinition getAllArtifacts reject: [:each | each isEventDefinition]) do: [:eachArtifact |  
-		taskDefRoles do: [:eachRole | eachArtifact grantRole: eachRole]]
+		rolesHolderTask rolesDo: [:eachRole | eachArtifact grantRole: eachRole]]
