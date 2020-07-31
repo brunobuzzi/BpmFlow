@@ -9,9 +9,9 @@ testRoundRobinRoleAssignation_visaAccepted
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo3').
 
 	procDefinition setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
-	subProc := procDefinition subProcesses asArray last.
+	subProc := procDefinition subProcessesLast.
 	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
-	subProc := subProc subProcesses asArray last.
+	subProc := subProc subProcessesLast.
 	subProc setRoundRobinRoleAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 
 	newRoundRobinProcesses := OrderedCollection new.

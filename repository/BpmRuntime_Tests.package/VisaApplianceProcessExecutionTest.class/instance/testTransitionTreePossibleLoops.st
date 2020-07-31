@@ -4,8 +4,8 @@ testTransitionTreePossibleLoops
 
 	self assert: (procDefinition asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.
 
-	subProc := procDefinition subProcesses asArray last.
+	subProc := procDefinition subProcessesLast.
 	self assert: (subProc asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.
 
-	subSubProc := subProc subProcesses asArray last.
+	subSubProc := subProc subProcessesLast.
 	self assert: (subSubProc asTreeWithLoopTolerance: 5) getAllPossibleLoops size equals: 0.

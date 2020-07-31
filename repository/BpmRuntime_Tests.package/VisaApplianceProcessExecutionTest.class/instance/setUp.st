@@ -11,9 +11,9 @@ setUp
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.
 	procDefinition setNoneAssignationPolicy.
-	subProcDef := procDefinition subProcesses asArray last.
+	subProcDef := procDefinition subProcessesLast.
 	subProcDef setNoneAssignationPolicy.
-	subProcDef := subProcDef subProcesses asArray last.
+	subProcDef := subProcDef subProcessesLast.
 	subProcDef setNoneAssignationPolicy.
 
 	self registerUsers: #('andrew vo' 'clark' 'andrew vo2' 'andrew vo3' 'andrew vm' 'andrew vc' 'andrew fo' 'andrew po' 'andrew do') inExecutionAndEnvironment: environment.

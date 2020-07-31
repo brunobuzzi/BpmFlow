@@ -4,8 +4,8 @@ testTransitionTreePossiblePathsToEnd
 
 	self assert: (procDefinition asTreeWithLoopTolerance: 5) getAllPossiblePathToEnd size equals: 3.
 
-	subProc := procDefinition subProcesses asArray last.
+	subProc := procDefinition subProcessesLast.
 	self assert: (subProc asTreeWithLoopTolerance: 5) getAllPossiblePathToEnd size equals: 1.
 
-	subSubProc := subProc subProcesses asArray last.
+	subSubProc := subProc subProcessesLast.
 	self assert: (subSubProc asTreeWithLoopTolerance: 5) getAllPossiblePathToEnd size equals: 1.

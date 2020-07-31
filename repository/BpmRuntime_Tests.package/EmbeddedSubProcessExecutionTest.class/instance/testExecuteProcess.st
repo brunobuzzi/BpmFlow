@@ -10,7 +10,7 @@ testExecuteProcess
 	self assert: (script isDone).
 
 	"Step 2 - After the Script the embedded subprocess is created"
-		subProcessEmb := procInstance subprocessesLast.
+		subProcessEmb := procInstance subprocessesFirst.
 		self assert: (procInstance includesSubProcess: subProcessEmb).
 		self assert:  subProcessEmb isSubProcess.
 		self assert: (subProcessEmb startEvent getDefinitionName = 'start-embedded').

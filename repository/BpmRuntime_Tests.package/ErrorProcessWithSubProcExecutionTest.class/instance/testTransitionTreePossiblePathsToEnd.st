@@ -4,5 +4,5 @@ testTransitionTreePossiblePathsToEnd
 
 	self assert: procDefinition asTree getAllPossiblePathToEnd size equals: 2.
 
-	subProc := procDefinition subProcesses asArray first.
+	subProc := procDefinition subProcessesFirst.
 	self assert:  subProc asTree getAllPossiblePathToEnd size equals: 1.

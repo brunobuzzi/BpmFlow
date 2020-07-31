@@ -9,14 +9,13 @@ testFairAssignation_visaAccepted
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo3').
 
 	procDefinition setFairAssignationPolicy: true.
-	subProc := procDefinition subProcesses asArray last.
+	subProc := procDefinition subProcessesLast.
 	subProc setFairAssignationPolicy: true.
-	subProc := subProc subProcesses asArray last.
+	subProc := subProc subProcessesLast.
 	subProc setFairAssignationPolicy: true.
 
 	newRoundRobinProcesses := OrderedCollection new.
 	availableUsers := (self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
-
 
 	1 to: 10 do: [:index | | newProcess |
 		newProcess := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
