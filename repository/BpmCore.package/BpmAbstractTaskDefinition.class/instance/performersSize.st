@@ -1,0 +1,4 @@
+Accessing
+performersSize
+
+	^performers size

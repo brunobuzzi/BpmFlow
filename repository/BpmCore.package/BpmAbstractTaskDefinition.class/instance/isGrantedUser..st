@@ -8,11 +8,11 @@ isGrantedUser: aBpmUser
 	self hasPerformers 
 	ifFalse: [^super isGrantedUser: aBpmUser].
 
-	^self performers anySatisfy: [:eachPerformer | | mappedRole |
+	^self performersAnySatisfy: [:eachPerformer | | mappedRole |
 
-		mappedRole := (aBpmUser rolesIn: self bpmEnvironment) 
+			mappedRole := (aBpmUser rolesIn: self bpmEnvironment) 
 									detect: [:eachRole | (eachRole name = eachPerformer name) and:[eachRole getApplicationName = self applicationName]] 
 									ifNone: [nil].
 
-		mappedRole ifNotNil: [mappedRole isGranted: aBpmUser] ifNil: [false].
+			mappedRole ifNotNil: [mappedRole isGranted: aBpmUser] ifNil: [false].
 	]

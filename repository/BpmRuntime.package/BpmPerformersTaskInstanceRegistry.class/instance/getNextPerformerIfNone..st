@@ -2,8 +2,8 @@ other
 getNextPerformerIfNone: aBlock
 	"The receiver answer the next <performer> that is working now"
 
-	rolesWhoWorked isEmpty ifTrue: [^self performers first].
+	rolesWhoWorked isEmpty ifTrue: [^self performersFirst].
 
-	(rolesWhoWorked size = self performers size) ifTrue: [^self performers last].
+	(rolesWhoWorked size = self performersSize) ifTrue: [^self performersLast].
 
-	^(self performers at: rolesWhoWorked size + 1)
+	^(self performersAt: rolesWhoWorked size + 1)

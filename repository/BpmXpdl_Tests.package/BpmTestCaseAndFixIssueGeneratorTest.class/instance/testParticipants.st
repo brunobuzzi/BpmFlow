@@ -2,15 +2,15 @@ other
 testParticipants
 
 	self assert: 
-		(self getTestCaseProcess participants allSatisfy: [:each | 
-			self getFixIssueProcess participants includesIdentical: each]).
+		(self getTestCaseProcess participantsAllSatisfy: [:each | 
+			self getFixIssueProcess participantsIncludesIdentical: each]).
 
 	self assert:
-		(self getTestCaseProcess participants size = self getFixIssueProcess participants size).
+		(self getTestCaseProcess participantsSize = self getFixIssueProcess participantsSize).
 
 	self assert: 
-		(self getTestCaseProcess participants allSatisfy: [:each | 
-			self getArchitectProcess participants includesIdentical: each]).
+		(self getTestCaseProcess participantsAllSatisfy: [:each | 
+			self getArchitectProcess participantsIncludesIdentical: each]).
 
 	self assert:
-		(self getTestCaseProcess participants size = self getArchitectProcess participants size).
+		(self getTestCaseProcess participantsSize = self getArchitectProcess participantsSize).

@@ -1,0 +1,4 @@
+Accessing
+participantsSize
+
+	^participants size

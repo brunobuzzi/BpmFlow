@@ -2,6 +2,6 @@ other
 getCurrentPerformerIfNone: aBlock
 	"The receiver answer the current <performer> that is working now"
 
-	rolesWhoWorked isEmpty ifTrue: [^self performers first].
+	rolesWhoWorked isEmpty ifTrue: [^self performersFirst].
 
-	^(self performers at: rolesWhoWorked size)
+	^(self performersAt: rolesWhoWorked size)

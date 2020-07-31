@@ -1,0 +1,4 @@
+other
+performersSize
+
+	^definition performersSize
