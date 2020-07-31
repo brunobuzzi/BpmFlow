@@ -5,6 +5,6 @@ getGrantedUsers
 
 	grantedUsers := OrderedCollection new.
 
-	self getRoles do: [:eachRole | grantedUsers addAll: eachRole getAllGrantedUsers].
+	self rolesDo: [:eachRole | grantedUsers addAll: eachRole getAllGrantedUsers].
 
 	^grantedUsers

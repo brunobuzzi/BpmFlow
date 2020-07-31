@@ -6,7 +6,7 @@ addTask: aBpmTaskInstance
 	newAssignments := 
 			aBpmTaskInstance hasPerformers "size > 1- In order to use <performers> there must be at least two <performers>"
 			ifFalse: [ "the roles of the task are used to create assignments"
-				aBpmTaskInstance getRoles collect: [:eachRole | self createAssingmentForRole: eachRole inTask: aBpmTaskInstance.
+				aBpmTaskInstance rolesCollect: [:eachRole | self createAssingmentForRole: eachRole inTask: aBpmTaskInstance.
 				]
 			]
 			ifTrue: ["the performers of the task are used to create assignments"

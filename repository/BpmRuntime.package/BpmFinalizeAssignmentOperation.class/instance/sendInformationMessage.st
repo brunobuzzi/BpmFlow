@@ -6,7 +6,7 @@ sendInformationMessage
 
 	message := BpmAssignmentInternalMessage newFromApplicationIn: self bpmEnvironment.
 
-	message to: (assignment getRolesToInformOn: #finalization);
+	message to: (assignment rolesToInformOn: #finalization);
 		subject: ('Assignment Finalization in [', assignment processName, ']');
 		setValuesFrom: assignment.
 	

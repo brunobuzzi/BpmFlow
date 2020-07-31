@@ -1,4 +1,4 @@
-Accessing
+roles
 rolesDo: aBlock
 
-	roles do: aBlock
+	^roles rolesDo: aBlock

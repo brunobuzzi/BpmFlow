@@ -7,7 +7,7 @@ associateFormWithTask: aBpmTaskInstance forProcess: aBpmProcessInstace
 
 	formInstance := aBpmTaskInstance externalObject.
 
-	role := aBpmTaskInstance getRoles ifEmpty: [TaskWithNoRoleException signal: 'No roles for this task' ] ifNotEmpty: [:value | value first].
+	role := aBpmTaskInstance rolesIfEmpty: [TaskWithNoRoleException signal: 'No roles for this task' ] ifNotEmpty: [:value | value first].
 
 	assigment := (BpmTaskAssignment 
 							newFor: aBpmProcessInstace 

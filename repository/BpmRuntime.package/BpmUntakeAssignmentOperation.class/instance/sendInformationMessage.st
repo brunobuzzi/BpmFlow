@@ -6,7 +6,7 @@ sendInformationMessage
 
 	message := BpmAssignmentInternalMessage newFromApplicationIn: self bpmEnvironment.
 
-	message to: (assignment getRolesToInformOn: #untake);
+	message to: (assignment rolesToInformOn: #untake);
 		subject: ('Assignment Released in [', assignment processName, ']');
 		setValuesFrom: assignment.
 	

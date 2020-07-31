@@ -6,7 +6,7 @@ sendInformationMessage
 
 	message := BpmAssignmentInternalMessage newFromApplicationIn: self bpmEnvironment.
 
-	message to: (assignment getRolesToInformOn: #cancelation);
+	message to: (assignment rolesToInformOn: #cancelation);
 		subject: ('Assignment Canceled in [', assignment processName, ']');
 		setValuesFrom: assignment.
 	
