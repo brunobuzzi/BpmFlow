@@ -1,7 +1,7 @@
 other
 setRolesOfUnderlineProcess
 	"For embedded sub processes the roles are inherit from the parent task definition.
-	Embedded subprocess does not have Lanes --> they 'do not have' roles (roles are inherit)"
+	Embedded subprocess does not have Lanes --> they 'do not have' roles (roles are inherited)"
 	| taskDefRoles |
 
 	self isEmbedded ifFalse: [^self]. "it is only applicable on embedded sub processes"
