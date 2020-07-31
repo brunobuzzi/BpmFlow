@@ -9,7 +9,7 @@ testObjectsInLanes
 
 	self assert: ((lane1 getAnyObjectNamed: 'start' ifNone: [self assert: false]) == workflow startNode).
 
-	self assert: ((lane1 getAnyObjectNamed: 'end' ifNone: [self assert: false]) == workflow endNodes asArray last).
+	self assert: ((lane1 getAnyObjectNamed: 'end' ifNone: [self assert: false]) == workflow endNodesLast).
 
 	self assert: ((lane1 getAnyObjectNamed: 'script' ifNone: [self assert: false]) == (workflow getScriptNamed: 'script' ifNone: [self assert: false])).
 

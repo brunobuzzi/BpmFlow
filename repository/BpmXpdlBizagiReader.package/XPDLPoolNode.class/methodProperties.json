@@ -10,7 +10,6 @@
 		"getAllEmbbeddedProcesses" : "brunobb 11/06/2018 06:56",
 		"getAnyObjectNamed:ifNone:" : "brunobb 11/06/2018 06:56",
 		"getEndNodeNamed:ifNone:" : "brunobb 11/06/2018 06:56",
-		"getEndNodes" : "brunobb 11/06/2018 06:56",
 		"getGatewayNamed:ifNone:" : "brunobb 11/06/2018 06:56",
 		"getGatewayNodes" : "brunobb 11/06/2018 06:56",
 		"getLaneNamed:ifNone:" : "brunobb 11/06/2018 06:56",

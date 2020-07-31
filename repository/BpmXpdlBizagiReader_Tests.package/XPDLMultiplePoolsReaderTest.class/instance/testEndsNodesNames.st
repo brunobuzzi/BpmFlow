@@ -4,6 +4,6 @@ testEndsNodesNames
 
 	endNames := #('end 1' 'end 2').
 
-	self assert: (self getProcess1Workflow endNodes allSatisfy: [:each | endNames includes: each getName]).
+	self assert: (self getProcess1Workflow endNodesAllSatisfy: [:each | endNames includes: each getName]).
 
-	self assert: (self getProcess1Workflow endNodes size = endNames size).
+	self assert: (self getProcess1Workflow endNodesSize = endNames size).

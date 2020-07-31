@@ -8,4 +8,4 @@ testEmbeddedActivitiesNames
 	self assert: (self getEmbeddedWorkflow getScriptNodes size = 1).
 
 	self assert: (self getEmbeddedWorkflow startNode getName = 'start-embedded').
-	self assert: (self getEmbeddedWorkflow endNodes asArray last getName = 'end-embedded').
+	self assert: (self getEmbeddedWorkflow endNodesLast getName = 'end-embedded').

@@ -1,4 +1,0 @@
-searching
-getEndNodes
-
-	^workflow endNodes

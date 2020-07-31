@@ -11,4 +11,4 @@ testInOutTransitions
 
 	self assert: (task1 outTransitions last == subProc inTransitions last).
 
-	self assert: (subProc outTransitions last == process endNodes asArray last inTransitions last).
+	self assert: (subProc outTransitions last == process endNodesLast inTransitions last).

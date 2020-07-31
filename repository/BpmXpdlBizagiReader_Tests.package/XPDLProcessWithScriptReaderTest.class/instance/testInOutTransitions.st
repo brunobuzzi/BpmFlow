@@ -8,4 +8,4 @@ testInOutTransitions
 
 	self assert: (process startNode outTransitions last == task1 inTransitions last).
 
-	self assert: (process endNodes asArray last inTransitions last == task1 outTransitions last).
+	self assert: (process endNodesLast inTransitions last == task1 outTransitions last).

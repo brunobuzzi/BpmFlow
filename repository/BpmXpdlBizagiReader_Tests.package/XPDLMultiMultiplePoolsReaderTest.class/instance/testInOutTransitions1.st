@@ -16,8 +16,8 @@ testInOutTransitions1
 
 	transition := process getTransitionNamed: 'tr: t1 end1' ifNone: [self assert: false].
 	self assert: (task1 outTransitions last == transition).
-	self assert: (process endNodes asArray last inTransitions last == transition).
+	self assert: (process endNodesLast inTransitions last == transition).
 
 	transition := process getTransitionNamed: 'tr: t2 end2' ifNone: [self assert: false].
 	self assert: (task2 outTransitions last == transition).
-	self assert: (process endNodes asArray first inTransitions first == transition).
+	self assert: (process endNodesFirst inTransitions first == transition).

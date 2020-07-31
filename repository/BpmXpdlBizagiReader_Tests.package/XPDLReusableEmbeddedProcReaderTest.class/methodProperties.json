@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getEmbeddedWorkflow" : "brunobb 08/28/2019 09:32",
+		"getEmbeddedWorkflow" : "brunobb 07/31/2020 12:21",
 		"getMainProcessXpdlPackage" : "brunobb 08/28/2019 09:32",
 		"getMainWorkflow" : "brunobb 08/28/2019 09:32",
 		"getReusableWorkflow" : "brunobb 10/18/2019 11:07",
@@ -10,11 +10,11 @@
 		"setUp" : "brunobb 04/05/2020 17:39",
 		"testActivitiesNames" : "brunobb 10/18/2019 11:13",
 		"testActivitiesType" : "brunobb 10/18/2019 11:13",
-		"testEmbeddedActivitiesNames" : "brunobb 08/28/2019 09:32",
-		"testEmbeddedProcess" : "brunobb 08/28/2019 09:32",
+		"testEmbeddedActivitiesNames" : "brunobb 07/31/2020 12:26",
+		"testEmbeddedProcess" : "brunobb 07/31/2020 12:21",
 		"testLaneOfXpdlObjectsInEmbeddedProcesses" : "brunobb 12/15/2019 08:50",
-		"testObjectsInLanes" : "brunobb 10/18/2019 11:13",
-		"testObjectsInLanes2" : "brunobb 08/28/2019 09:32",
+		"testObjectsInLanes" : "brunobb 07/31/2020 12:30",
+		"testObjectsInLanes2" : "brunobb 07/31/2020 12:29",
 		"testParentPoolOfEmbeddedProcesses" : "brunobb 12/15/2019 09:01",
-		"testReusableActivitiesNames" : "brunobb 08/28/2019 09:32",
+		"testReusableActivitiesNames" : "brunobb 07/31/2020 12:28",
 		"testXpdlObjectWorkflow" : "brunobb 12/15/2019 08:58" } }

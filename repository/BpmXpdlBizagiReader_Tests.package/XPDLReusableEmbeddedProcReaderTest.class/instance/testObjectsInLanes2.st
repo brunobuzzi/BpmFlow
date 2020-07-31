@@ -9,6 +9,6 @@ testObjectsInLanes2
 
 	self assert: ((lane1 getAnyObjectNamed: 'start-resusable' ifNone: [self assert: false]) == workflow startNode).
 
-	self assert: ((lane1 getAnyObjectNamed: 'end-reusable' ifNone: [self assert: false]) == workflow endNodes asArray last).
+	self assert: ((lane1 getAnyObjectNamed: 'end-reusable' ifNone: [self assert: false]) == workflow endNodesLast).
 
 	self assert: ((lane1 getAnyObjectNamed: 'script-reusable' ifNone: [self assert: false]) == (workflow getScriptNamed: 'script-reusable' ifNone: [self assert: false])).

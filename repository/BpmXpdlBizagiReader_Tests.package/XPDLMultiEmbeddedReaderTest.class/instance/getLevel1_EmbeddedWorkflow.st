@@ -1,4 +1,4 @@
 other
 getLevel1_EmbeddedWorkflow
 
-	^self getMainWorkflow embeddedSubprocesses asArray last
+	^self getMainWorkflow embeddedSubprocessesLast

@@ -17,5 +17,5 @@ testObjectsInLanes2
 		task := workflow getTaskNamed: each ifNone: [self assert: false].
 		self assert: ((lane4 getAnyObjectNamed: each ifNone: [self assert: false]) == task)].
 
-	self assert: ((lane4 getAnyObjectNamed: 'pr2_end1' ifNone: [self assert: false]) == (workflow endNodes asArray first)).
-	self assert: ((lane4 getAnyObjectNamed: 'pr2_end2' ifNone: [self assert: false]) == (workflow endNodes asArray last)).
+	self assert: ((lane4 getAnyObjectNamed: 'pr2_end1' ifNone: [self assert: false]) == (workflow endNodesFirst)).
+	self assert: ((lane4 getAnyObjectNamed: 'pr2_end2' ifNone: [self assert: false]) == (workflow endNodesLast)).

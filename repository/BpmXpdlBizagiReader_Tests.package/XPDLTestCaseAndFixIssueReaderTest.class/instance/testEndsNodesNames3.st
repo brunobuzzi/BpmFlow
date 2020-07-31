@@ -4,6 +4,6 @@ testEndsNodesNames3
 
 	endNames := #('end').
 
-	self assert: (self getReportToArchitectWorkflow endNodes allSatisfy: [:each | endNames includes: each getName]).
+	self assert: (self getReportToArchitectWorkflow endNodesAllSatisfy: [:each | endNames includes: each getName]).
 
-	self assert: (self getReportToArchitectWorkflow endNodes size = endNames size).
+	self assert: (self getReportToArchitectWorkflow endNodesSize = endNames size).

@@ -1,0 +1,4 @@
+Accessing
+endNodesSize
+
+	^endNodes size
