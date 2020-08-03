@@ -29,4 +29,4 @@ createEmbeddedSubProcesses
 		].
 	].
 
-	(embeddedSubProcs select: [:each | each parentWorkflow == self]) do: [:each | self addEmbeddedWorkflow: each].
+	(embeddedSubProcs select: [:each | each parentWorkflowIsIdenticalTo: self]) do: [:each | self addEmbeddedWorkflow: each].

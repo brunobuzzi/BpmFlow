@@ -18,9 +18,9 @@ createEmbeddedSubProcessFor: aBpmProcessDefinition basedOn: xpdlPool package: xp
 	embedded do: [:eachFirst | "connect embedded process with it's subprocess (first: workflow, second: BpmSubProcDefinition)"
 		embedded do: [:eachSecond | 
 			(eachFirst == eachSecond)
-			ifFalse: [(eachFirst first parentWorkflow == eachSecond first)
+			ifFalse: [(eachFirst first parentWorkflowIsIdenticalTo: eachSecond first)
 						ifTrue:[eachSecond second addSubProcess: eachFirst second].
-						(eachSecond first parentWorkflow == eachFirst first)
+						(eachSecond first parentWorkflowIsIdenticalTo: eachFirst first)
 						ifTrue:[eachFirst second addSubProcess: eachSecond second]
 			].
 		].
