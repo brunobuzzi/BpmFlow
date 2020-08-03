@@ -1,0 +1,4 @@
+Accessing
+startNodeOutTransitionsLast
+
+	^startNode outTransitionsLast

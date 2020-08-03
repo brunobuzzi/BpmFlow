@@ -4,7 +4,7 @@ testOutTransitions3
 
 	process := self getReportToArchitectWorkflow.
 	transition := process getTransitionNamed: 'start-dev-analysis' ifNone: [self assert: false].
-	self assert: (process startNode outTransitionsLast == transition).
+	self assert: (process startNodeOutTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'analyze-developer-report' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'evaluate-a-solution' ifNone: [self assert: false].

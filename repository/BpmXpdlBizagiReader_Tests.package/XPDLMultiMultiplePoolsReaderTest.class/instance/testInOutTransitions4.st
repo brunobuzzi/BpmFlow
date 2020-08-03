@@ -7,7 +7,7 @@ testInOutTransitions4
 	task1 := process getTaskNamed: 'Task 13' ifNone: [self assert: false].
 	task2 := process getTaskNamed: 'Task 14' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'tr: start t13' ifNone: [self assert: false].
-	self assert: (process startNode outTransitionsLast == transition).
+	self assert: (process startNodeOutTransitionsLast == transition).
 	self assert: (task1 inTransitionsLast == transition).
 
 	transition := process getTransitionNamed: 'tr: t13 t14' ifNone: [self assert: false].

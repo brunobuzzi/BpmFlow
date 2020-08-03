@@ -88,6 +88,7 @@
 		"startNode:" : "brunobb 11/06/2018 06:57",
 		"startNodeAcceptVisitor:" : "brunobb 08/03/2020 11:43",
 		"startNodeIfNotNil:" : "brunobb 08/03/2020 11:23",
+		"startNodeOutTransitionsLast" : "brunobb 08/03/2020 14:41",
 		"startNodeWorkflowIsIdenticalToSelf" : "brunobb 08/03/2020 12:07",
 		"topPool" : "brunobb 08/03/2020 10:37",
 		"transitionsAllSatisfy:" : "bruno 07/28/2020 10:47",
