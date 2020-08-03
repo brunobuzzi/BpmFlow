@@ -4,7 +4,7 @@ incomingTransitionsAreDone
 	| inTransitionDefinitions |
 
 	"collect the definitions of all concrete incoming transitions"
-	inTransitionDefinitions := inTransitions collect: [:each | each definition]. 
+	inTransitionDefinitions := self inTransitionsCollect: [:each | each definition]. 
 
 	"all <inTransitions> in the definition of the receiver has been instanciated ?"
-	^definition inTransitions allSatisfy: [:each | inTransitionDefinitions includes: each]
+	^definition inTransitionsAllSatisfy: [:each | inTransitionDefinitions includes: each]

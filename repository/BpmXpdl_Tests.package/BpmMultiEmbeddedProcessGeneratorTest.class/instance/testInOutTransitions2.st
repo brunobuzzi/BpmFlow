@@ -6,7 +6,7 @@ testInOutTransitions2
 	subProc1 := processDefinition getSubProcessTaskNamed: 'embedded 02' ifNone: [self assert: false].
 	task := processDefinition getScriptNamed: 'script-embedded-01' ifNone: [self assert: false].
 
-	self assert: (processDefinition startEvent outTransitionsLast == task inTransitions last).
+	self assert: (processDefinition startEvent outTransitionsLast == task inTransitionsLast).
 
-	self assert: (task outTransitionsLast == subProc1 inTransitions last).
-	self assert: (subProc1 outTransitionsLast == (processDefinition getEndEventNamed: 'end embedded 01' ifNone: [self assert: false]) inTransitions last).
+	self assert: (task outTransitionsLast == subProc1 inTransitionsLast).
+	self assert: (subProc1 outTransitionsLast == (processDefinition getEndEventNamed: 'end embedded 01' ifNone: [self assert: false]) inTransitionsLast).

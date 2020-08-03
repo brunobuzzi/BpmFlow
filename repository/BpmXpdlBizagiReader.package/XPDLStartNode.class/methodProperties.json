@@ -7,7 +7,6 @@
 		"createBpmDefinitionOn:" : "brunobb 11/01/2018 04:06",
 		"initialize" : "BrunoBB 10/24/2015 17:02",
 		"isStartNode" : "BrunoBB 10/25/2015 08:43",
-		"outTransitions:" : "BrunoBB 10/25/2015 09:43",
 		"outTransitionsAnySatisfy:" : "brunobb 08/03/2020 12:37",
 		"outTransitionsDo:" : "brunobb 08/03/2020 13:29",
 		"outTransitionsLast" : "brunobb 08/03/2020 12:38",

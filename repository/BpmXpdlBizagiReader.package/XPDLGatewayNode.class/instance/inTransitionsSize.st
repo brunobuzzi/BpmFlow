@@ -1,0 +1,4 @@
+Accessing
+inTransitionsSize
+
+	^inTransitions size

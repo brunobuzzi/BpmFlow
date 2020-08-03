@@ -4,7 +4,7 @@
 	"instance" : {
 		"createEventBasedTimerEventForGateway:" : "brunobb 08/03/2020 13:15",
 		"generateNextRunningTransitionsFromEvent:" : "brunobb 10/11/2018 10:18",
-		"incomingTransitionsAreDone" : "BrunoBB 01/22/2016 12:08",
+		"incomingTransitionsAreDone" : "brunobb 08/03/2020 13:59",
 		"initialize" : "BrunoBB 11/24/2015 13:14",
 		"isClosed" : "BrunoBB 11/24/2015 13:13",
 		"isClosed:" : "BrunoBB 11/24/2015 13:13",

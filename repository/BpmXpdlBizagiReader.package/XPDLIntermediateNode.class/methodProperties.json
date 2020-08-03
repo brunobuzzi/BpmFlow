@@ -3,14 +3,12 @@
 		 },
 	"instance" : {
 		"acceptVisitor:" : "brunobb 12/11/2018 02:58",
+		"addInTransition:" : "brunobb 08/03/2020 14:15",
 		"addOutTransition:" : "brunobb 08/03/2020 13:02",
 		"getTargetId" : "BrunoBB 03/05/2017 11:30",
 		"hostNode" : "BrunoBB 03/05/2017 11:30",
 		"hostNode:" : "BrunoBB 03/05/2017 11:30",
-		"inTransitions" : "BrunoBB 03/05/2017 11:30",
-		"inTransitions:" : "BrunoBB 03/05/2017 11:30",
 		"initialize" : "BrunoBB 03/05/2017 11:30",
 		"isIntermediateEventNode" : "BrunoBB 03/05/2017 11:30",
-		"outTransitions:" : "BrunoBB 03/05/2017 11:30",
 		"outTransitionsDo:" : "brunobb 08/03/2020 13:30",
 		"setInternalAttributesWithNode:" : "brunobb 07/29/2019 12:45" } }

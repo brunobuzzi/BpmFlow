@@ -1,0 +1,4 @@
+Accessing
+inTransitionsFirst
+
+	^inTransitions first

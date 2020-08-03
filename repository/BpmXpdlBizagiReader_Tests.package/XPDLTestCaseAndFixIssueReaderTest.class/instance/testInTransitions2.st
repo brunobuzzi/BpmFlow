@@ -6,28 +6,28 @@ testInTransitions2
 
 	task1 := process getTaskNamed: 'analyze-issue' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'start-analyze' ifNone: [self assert: false].
-	self assert: (task1 inTransitions last == transition).
+	self assert: (task1 inTransitionsLast == transition).
 
 	gateway := process getGatewayNamed: 'can fix' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'evaluate-fix' ifNone: [self assert: false].
-	self assert: (gateway inTransitions last == transition).
+	self assert: (gateway inTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'report-fixes' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'create-report' ifNone: [self assert: false].
-	self assert: (task1 inTransitions last == transition).
+	self assert: (task1 inTransitionsLast == transition).
 
 	task1 := process getSubprocessNamed: 'report-to-architect' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'no-fix-report' ifNone: [self assert: false].
-	self assert: (task1 inTransitions last == transition).
+	self assert: (task1 inTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'internal-test' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'do-internal-test' ifNone: [self assert: false].
-	self assert: (task1 inTransitions last == transition).
+	self assert: (task1 inTransitionsLast == transition).
 
 	task1 := process getEndNodeNamed: 'end' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'architect-done' ifNone: [self assert: false].
-	self assert: (task1 inTransitions last == transition).
+	self assert: (task1 inTransitionsLast == transition).
 
 	task1 := process getEndNodeNamed: 'end' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'finish-internal-test' ifNone: [self assert: false].
-	self assert: (task1 inTransitions first == transition).
+	self assert: (task1 inTransitionsFirst == transition).

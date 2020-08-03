@@ -7,5 +7,5 @@ connectActivitiesToParentLane
 		eachLane xpdlObjects: (self activitiesSelect: [:eachAct | eachLane absoluteRectangleIncludesActivity: eachAct]).
 		"add the rol for each transition"
 		eachLane xpdlObjects do: [:eachAct | 
-			eachAct inTransitions do: [:eachTr | eachTr roles: (OrderedCollection with: eachLane getName)]]
+			eachAct inTransitionsDo: [:eachTr | eachTr roles: (OrderedCollection with: eachLane getName)]]
 	].
