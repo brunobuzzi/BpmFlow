@@ -5,6 +5,6 @@ setNonBooleanCondition
 	gatewayDefinition := procDefinition getGatewayNamed: 'gateway split' ifNone: [self assert: false].
 
 
-	gatewayDefinition outTransitions do: [:transitionDef | 
+	gatewayDefinition outTransitionsDo: [:transitionDef | 
 		transitionDef conditionToRun evaluationCode: '[:proc | proc amount]'.
 	].

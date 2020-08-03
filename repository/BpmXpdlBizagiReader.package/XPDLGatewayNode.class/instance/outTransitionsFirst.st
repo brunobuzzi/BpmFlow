@@ -1,0 +1,4 @@
+Accessing
+outTransitionsFirst
+
+	^outTransitions first

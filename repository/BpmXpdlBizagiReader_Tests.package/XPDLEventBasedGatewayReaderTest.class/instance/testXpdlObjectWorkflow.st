@@ -4,8 +4,8 @@ testXpdlObjectWorkflow
 
 	workflow := self getWorkflow.
 
-	workflow getTaskNodes do: [:each | self assert: (each workflow == workflow)].
+	workflow getTaskNodes do: [:each | self assert: (each workflowIsIdenticalTo:  workflow)].
 
-	self assert: (workflow startNode workflow == workflow).
-	workflow getEventNodes do: [:each | self assert: (each workflow == workflow)].
-	workflow endNodesDo: [:each | self assert: (each workflow == workflow)].
+	self assert: workflow startNodeWorkflowIsIdenticalToSelf.
+	workflow getEventNodes do: [:each | self assert: (each workflowIsIdenticalTo:  workflow)].
+	workflow endNodesDo: [:each | self assert: (each workflowIsIdenticalTo:  workflow)].

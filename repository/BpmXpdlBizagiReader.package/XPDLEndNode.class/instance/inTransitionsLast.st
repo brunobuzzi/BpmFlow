@@ -1,0 +1,4 @@
+Accessing
+inTransitionsLast
+
+	^inTransitions last

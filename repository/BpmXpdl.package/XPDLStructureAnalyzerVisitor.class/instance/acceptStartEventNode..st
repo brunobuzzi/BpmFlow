@@ -17,4 +17,4 @@ acceptStartEventNode: aXPDLStartNode
 
 	self acceptXpdlNode: aXPDLStartNode.
 
-	aXPDLStartNode outTransitions do: [:each | each acceptVisitor: self].
+	aXPDLStartNode outTransitionsDo: [:each | each acceptVisitor: self].

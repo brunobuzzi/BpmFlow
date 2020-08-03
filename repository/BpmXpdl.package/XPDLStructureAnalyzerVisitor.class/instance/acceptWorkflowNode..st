@@ -1,6 +1,6 @@
 xpdl top elements
 acceptWorkflowNode: aXPDLWorkflowProcess
 
-	aXPDLWorkflowProcess startNode ifNotNil: [aXPDLWorkflowProcess startNode acceptVisitor: self].
+	aXPDLWorkflowProcess startNodeIfNotNil: [aXPDLWorkflowProcess startNodeAcceptVisitor: self].
 
 	aXPDLWorkflowProcess embeddedSubprocessesDo: [:each | each acceptVisitor: self]

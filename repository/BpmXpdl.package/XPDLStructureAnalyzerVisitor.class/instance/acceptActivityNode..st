@@ -22,6 +22,6 @@ acceptActivityNode: aXPDLActivityNode
 		blockAnalysis codeWarnings do: [:eachString | self addLoopConditionCodeWarningItem: aXPDLActivityNode description: eachString]. 
 	].
 
-	aXPDLActivityNode outTransitions do: [:each | each acceptVisitor: self].
+	aXPDLActivityNode outTransitionsDo: [:each | each acceptVisitor: self].
 
 	aXPDLActivityNode attachedEvents do: [:each | each acceptVisitor: self].

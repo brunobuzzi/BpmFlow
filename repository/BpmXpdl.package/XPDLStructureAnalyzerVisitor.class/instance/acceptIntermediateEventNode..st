@@ -16,4 +16,4 @@ acceptIntermediateEventNode: aXPDLIntermediateNode
 
 	self acceptXpdlNode: aXPDLIntermediateNode.
 
-	aXPDLIntermediateNode outTransitions do: [:each | each acceptVisitor: self]
+	aXPDLIntermediateNode outTransitionsDo: [:each | each acceptVisitor: self]

@@ -1,4 +1,4 @@
 gateways
 acceptGateway: aBpmGatewayDefinition
 
-	aBpmGatewayDefinition outTransitions do: [:each | each acceptVisitor: self].
+	aBpmGatewayDefinition outTransitionsDo: [:each | each acceptVisitor: self].

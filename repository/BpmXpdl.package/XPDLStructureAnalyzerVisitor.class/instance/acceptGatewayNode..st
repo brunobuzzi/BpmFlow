@@ -8,12 +8,12 @@ acceptGatewayNode: aXPDLGatewayNode
 	self acceptXpdlNode: aXPDLGatewayNode.
 
 	(aXPDLGatewayNode outConditionsAreMandatory and: [aXPDLGatewayNode isGatewayForEventsNode not]) 
-	ifTrue: [(aXPDLGatewayNode outTransitions reject: [:eachTr | eachTr hasCondition]) 
+	ifTrue: [(aXPDLGatewayNode outTransitionsReject: [:eachTr | eachTr hasCondition]) 
 					do: [:eachTr | self addGatewayWithoutConditionsItem: aXPDLGatewayNode in: eachTr]
 	].
 	(aXPDLGatewayNode isGatewayForEventsNode and: [aXPDLGatewayNode inTransitions size > 1]) ifTrue: [self addEventGatewayUsedForMergingItem: aXPDLGatewayNode].
 
 	aXPDLGatewayNode isGatewayForEventsNode 
-	ifTrue: [(aXPDLGatewayNode outTransitions reject: [:eachTr | eachTr endNode isEventNode]) do: [:eachTr | self addNoneEventNodeAfterEventGatewayItem: eachTr endArtifact]].
+	ifTrue: [(aXPDLGatewayNode outTransitionsReject: [:eachTr | eachTr endNode isEventNode]) do: [:eachTr | self addNoneEventNodeAfterEventGatewayItem: eachTr endArtifact]].
 
-	aXPDLGatewayNode outTransitions do: [:each | each acceptVisitor: self].
+	aXPDLGatewayNode outTransitionsDo: [:each | each acceptVisitor: self].

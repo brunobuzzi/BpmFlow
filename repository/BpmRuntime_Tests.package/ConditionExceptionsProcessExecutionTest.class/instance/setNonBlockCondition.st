@@ -5,6 +5,6 @@ setNonBlockCondition
 	gatewayDefinition := procDefinition getGatewayNamed: 'gateway split' ifNone: [self assert: false].
 
 
-	gatewayDefinition outTransitions do: [:transitionDef | 
+	gatewayDefinition outTransitionsDo: [:transitionDef | 
 		transitionDef conditionToRun evaluationCode: '9 negated'.
 	].

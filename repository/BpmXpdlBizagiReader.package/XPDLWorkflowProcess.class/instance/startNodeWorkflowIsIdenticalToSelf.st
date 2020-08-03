@@ -1,0 +1,3 @@
+Accessing
+startNodeWorkflowIsIdenticalToSelf
+	^startNode workflowIsIdenticalTo: self

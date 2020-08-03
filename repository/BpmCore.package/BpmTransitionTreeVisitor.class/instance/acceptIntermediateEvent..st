@@ -1,4 +1,4 @@
 events
 acceptIntermediateEvent: aBpmIntermediateComponentDefinition
 
-	aBpmIntermediateComponentDefinition eventDefinition outTransitions do: [:transition | transition acceptVisitor: self]
+	aBpmIntermediateComponentDefinition eventDefinition outTransitionsDo: [:transition | transition acceptVisitor: self]
