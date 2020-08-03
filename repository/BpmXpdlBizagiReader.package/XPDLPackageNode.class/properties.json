@@ -9,7 +9,6 @@
 		"xpdlReader",
 		"pools",
 		"participants",
-		"associations",
 		"artifacts",
 		"fileName" ],
 	"name" : "XPDLPackageNode",
