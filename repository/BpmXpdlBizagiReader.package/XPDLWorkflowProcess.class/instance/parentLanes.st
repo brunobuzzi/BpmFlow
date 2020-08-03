@@ -1,8 +1,9 @@
 other
 parentLanes
+	| parentLanes |
 
-	parentWorkflow ifNotNil: [^parentWorkflow parentLanes].
+	parentLanes := OrderedCollection new.
 
-	parentPool ifNil: [^#()].
+	self parentLanesDo: [:each | parentLanes add: each].
 
-	^parentPool lanes
+	^parentLanes

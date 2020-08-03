@@ -9,7 +9,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 
 	aBpmProcessDefinition setExtendedAttributesWith: aXPDLWorflowProcess extendedAttributes.
 
-	aXPDLWorflowProcess parentLanes keysDo: [:laneName | | newOrExistingRole |
+	aXPDLWorflowProcess parentLanesKeysDo: [:laneName | | newOrExistingRole |
 		newOrExistingRole := self defaultFrontOfficeRoleClass createNewOrGetExisting: laneName in: anOrbeonApplication applicationName.
 		aBpmProcessDefinition addRole: newOrExistingRole.
 		roles at: laneName put: newOrExistingRole.
