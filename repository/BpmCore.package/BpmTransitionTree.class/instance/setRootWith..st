@@ -5,7 +5,7 @@ setRootWith: aBpmProcessDefinition
 
 	startEvent := aBpmProcessDefinition startEvent.
 
-	rootNodes := startEvent outTransitions collect: [:transition |
+	rootNodes := startEvent outTransitionsCollect: [:transition |
 		self add: transition asChildOf: nil.
 	].
 

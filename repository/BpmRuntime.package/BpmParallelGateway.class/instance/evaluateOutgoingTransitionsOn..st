@@ -4,9 +4,9 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 
 	"in parallel gateway no conditions are evaluated, all outgoing transitions are instantiated"
 
-	self getOutTransitionDefinitions do: [:each | aBpmProcessInstance createNewTransition: each from: self].
+	self definitionOutTransitionsDo: [:each | aBpmProcessInstance createNewTransition: each from: self].
 
-	self getOutTransitionDefinitions isEmpty 
+	self definitionOutTransitionsIsEmpty 
 	ifTrue: [self defaultTransition 
 				ifNotNil: [:trDefinition | aBpmProcessInstance createNewTransition: trDefinition from: self]	
 				ifNil: [self signal: (NoNextArtifactException on: self signal: 'No next Task to execute')]].

@@ -6,6 +6,6 @@ getAnonymousFormName
 	self canBeStartedByAnonymousForm 
 	ifFalse: [^NoAnonymousStartException signal: 'This process can NOT be started by an anonymous form'].
 
-	taskDefinition := startEvent outTransitions last endArtifact.
+	taskDefinition := startEvent outTransitionsLast endArtifact.
 
 	^taskDefinition applicationName, '.', processDefinition processName, '.', taskDefinition name

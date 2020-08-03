@@ -6,7 +6,7 @@ generateNextTransitionsFrom: aBpmTaskInstance
 	"each transition can have a condition or not. if a transition is selected --> it has NO condition or the condition answer <true> after evaluation.
 	if an exception occur when evaluating the condition --> the process is paused (CodeEvaluationException>>defaultAction)"
 	nextTransitions := OrderedCollection new.
-	aBpmTaskInstance getOutTransitionDefinitions do: [:trDefinition | 
+	aBpmTaskInstance definitionOutTransitionsDo: [:trDefinition | 
 		trDefinition hasCondition
 		ifTrue: [(trDefinition evaluateConditionIn: self) result ifTrue: [nextTransitions add: trDefinition]]
 		ifFalse: [nextTransitions add: trDefinition].

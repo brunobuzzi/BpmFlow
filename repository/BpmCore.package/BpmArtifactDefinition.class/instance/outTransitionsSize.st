@@ -1,0 +1,4 @@
+Accessing
+outTransitionsSize
+
+	^outTransitions size

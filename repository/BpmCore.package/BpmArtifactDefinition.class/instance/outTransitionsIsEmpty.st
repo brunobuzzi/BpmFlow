@@ -1,0 +1,4 @@
+Accessing
+outTransitionsIsEmpty
+
+	^outTransitions isEmpty

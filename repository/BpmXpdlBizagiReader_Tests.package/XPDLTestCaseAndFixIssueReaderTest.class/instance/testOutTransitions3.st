@@ -16,7 +16,7 @@ testOutTransitions3
 
 	gateway := process getGatewayNamed: 'has-solution' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'create-solution' ifNone: [self assert: false].
-	self assert: (gateway outTransitionsLast == transition).
+	self assert: (gateway outTransitionsFirst == transition).
 
 	task1 := process getTaskNamed: 'report-workaround' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'end-workaround' ifNone: [self assert: false].

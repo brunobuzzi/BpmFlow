@@ -3,8 +3,8 @@ testExecuteProcess_failed_evaluation_2
 	| currentTask currentTask2 gateway transition1 transition2 evaluation1 evaluation2 |
 
 	gateway := procDefinition getGatewayNamed: 'task 4 or 5' ifNone: [self assert: false]. 
-	transition1 := gateway outTransitions at: 1.
-	transition2 := gateway outTransitions at: 2.
+	transition1 := gateway outTransitionsAt: 1.
+	transition2 := gateway outTransitionsAt: 2.
 	evaluation1 := transition1 conditionToRun evaluationCode.
 	evaluation2 := transition2 conditionToRun evaluationCode.
 	transition1 conditionToRun evaluationCode: '[:proc | 4]'.

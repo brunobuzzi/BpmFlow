@@ -5,7 +5,7 @@ acceptTask: aBpmAbstractTaskDefinition
 
 	visitedTasks add: aBpmAbstractTaskDefinition.
 
-	aBpmAbstractTaskDefinition outTransitions do: [:each | each acceptVisitor: self].
+	aBpmAbstractTaskDefinition outTransitionsDo: [:each | each acceptVisitor: self].
 
 	aBpmAbstractTaskDefinition isTaskDefinition
 	ifTrue: [aBpmAbstractTaskDefinition attachedEvents do: [:each | each acceptVisitor: self]].

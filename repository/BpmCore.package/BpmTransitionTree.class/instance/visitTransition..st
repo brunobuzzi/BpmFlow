@@ -6,7 +6,7 @@ visitTransition: aBpmTransitionTreeNode
 
 	visitedTransitions add: aBpmTransitionTreeNode transition.
 
-	aBpmTransitionTreeNode outTransitions do: [:outTransition | | node |
+	aBpmTransitionTreeNode outTransitionsDo: [:outTransition | | node |
 		node := self add: outTransition asChildOf: aBpmTransitionTreeNode.
 		node ifNotNil: [self visitTransition: node].
 	]

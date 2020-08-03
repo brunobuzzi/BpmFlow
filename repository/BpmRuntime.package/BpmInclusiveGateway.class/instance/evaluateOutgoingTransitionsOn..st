@@ -5,7 +5,7 @@ evaluateOutgoingTransitionsOn: aBpmProcessInstance
 
 	nextTransitionsDef := OrderedCollection new.
 
-	self getOutTransitionDefinitions do: [:trDefinition | | evaluationResult |
+	self definitionOutTransitionsDo: [:trDefinition | | evaluationResult |
 		(self defaultTransition == trDefinition) ifFalse: [ "default transition has no condition --> no evaluation"
 			"if an exception occur when evaluating the condition --> the process is keep running but with an exception (CodeEvaluationException>>defaultAction)"
 			evaluationResult := trDefinition evaluateConditionIn: aBpmProcessInstance.

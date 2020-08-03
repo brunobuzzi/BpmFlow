@@ -1,0 +1,4 @@
+other
+definitionOutTransitionsIsEmpty
+
+	^definition outTransitionsIsEmpty

@@ -1,6 +1,6 @@
 events
 acceptStartEvent: aBpmStartComponentDefinition
 
-	aBpmStartComponentDefinition eventDefinition outTransitions do: [:transition | 
+	aBpmStartComponentDefinition eventDefinition outTransitionsDo: [:transition | 
 		transition acceptVisitor: self.
 	].

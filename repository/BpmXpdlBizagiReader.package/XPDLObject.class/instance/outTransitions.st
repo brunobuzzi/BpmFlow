@@ -1,4 +1,0 @@
-other
-outTransitions
-
-	^OrderedCollection new

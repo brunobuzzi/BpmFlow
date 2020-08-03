@@ -4,10 +4,10 @@ getOrderedTasksFrom: anArtifactDefinition as: anOrderedCollection
 	It recursively iterate over all out transitions storing each <endArtifact> in <anOrderedCollection>"
 	| newArtifacts |
 
-	newArtifacts := anArtifactDefinition outTransitions collect: [:each | each endArtifact].
+	newArtifacts := anArtifactDefinition outTransitionsCollect: [:each | each endArtifact].
 
 	anArtifactDefinition attachedEvents do: [:eventDefinition | 
-		newArtifacts addAll: (eventDefinition outTransitions collect: [:each | each endArtifact])].
+		newArtifacts addAll: (eventDefinition outTransitionsCollect: [:each | each endArtifact])].
 
 	newArtifacts := newArtifacts difference: anOrderedCollection.
 
