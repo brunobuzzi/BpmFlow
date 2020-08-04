@@ -1,0 +1,4 @@
+Accessing
+startNodeIsGatewayNode
+
+	^startNode isGatewayNode

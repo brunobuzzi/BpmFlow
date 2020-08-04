@@ -11,7 +11,7 @@ testObjectsInLanes
 
 	self assert: ((lane1 getAnyObjectNamed: 'fix-issue' ifNone: [self assert: false]) == (workflow getSubprocessNamed: 'fix-issue' ifNone: [self assert: false])).
 
-	self assert: ((lane2 getAnyObjectNamed: 'start' ifNone: [self assert: false]) == workflow startNode).
+	self assert: (workflow startNodeIsIdenticalTo: (lane2 getAnyObjectNamed: 'start' ifNone: [self assert: false])).
 
 	self assert: ((lane2 getAnyObjectNamed: 'analyze-issue-report' ifNone: [self assert: false]) == (workflow getTaskNamed: 'analyze-issue-report' ifNone: [self assert: false])).
 

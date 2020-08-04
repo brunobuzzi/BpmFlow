@@ -7,7 +7,7 @@ testObjectsInLanes2
 
 	lane1 := pool getLaneNamed: 'administrator' ifNone: [self assert: false].
 
-	self assert: ((lane1 getAnyObjectNamed: 'start-resusable' ifNone: [self assert: false]) == workflow startNode).
+	self assert: (workflow startNodeIsIdenticalTo: (lane1 getAnyObjectNamed: 'start-resusable' ifNone: [self assert: false])).
 
 	self assert: ((lane1 getAnyObjectNamed: 'end-reusable' ifNone: [self assert: false]) == workflow endNodesLast).
 

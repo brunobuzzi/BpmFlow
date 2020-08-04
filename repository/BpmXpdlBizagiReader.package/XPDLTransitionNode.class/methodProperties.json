@@ -11,9 +11,12 @@
 		"endId:" : "brunobb 11/06/2018 06:57",
 		"endNode" : "brunobb 11/06/2018 06:57",
 		"endNode:" : "brunobb 11/06/2018 06:57",
-		"endNodeName" : "brunobb 11/06/2018 06:57",
+		"endNodeIfNotNil:" : "brunobb 08/04/2020 10:57",
+		"endNodeName" : "brunobb 08/04/2020 11:04",
+		"getEndEventFrom:" : "brunobb 08/04/2020 11:02",
 		"getFirstCoodinate" : "brunobb 01/18/2019 08:55",
 		"getSecondCoodinate" : "brunobb 01/18/2019 09:03",
+		"getStartEventFrom:" : "brunobb 08/04/2020 11:02",
 		"getTooltipOrNil" : "brunobb 12/28/2018 05:20",
 		"hasCondition" : "brunobb 11/06/2018 06:57",
 		"initialize" : "brunobb 11/06/2018 06:57",
@@ -30,6 +33,6 @@
 		"startCondition:" : "brunobb 11/06/2018 06:57",
 		"startId" : "brunobb 11/06/2018 06:57",
 		"startId:" : "brunobb 11/06/2018 06:57",
-		"startNode" : "brunobb 11/06/2018 06:57",
 		"startNode:" : "brunobb 11/06/2018 06:57",
-		"startNodeName" : "brunobb 11/06/2018 06:57" } }
+		"startNodeIfNotNil:" : "brunobb 08/04/2020 10:56",
+		"startNodeName" : "brunobb 08/04/2020 11:04" } }

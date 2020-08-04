@@ -5,7 +5,7 @@ setLaneToXpdlObjectsInEmbeddedProcesses
 
 	embeddedSubprocesses do: [:embeddedProc | | creatorActivity |
 		creatorActivity := embeddedProc getCreatorSubProcessActivity.
-		embeddedProc startNode lane: creatorActivity lane.
+		embeddedProc setStartNodeLane: creatorActivity lane.
 		embeddedProc activitiesDo: [:each | each lane: creatorActivity lane]. 
 		embeddedProc endNodesDo: [:each | each lane: creatorActivity lane]. 
 

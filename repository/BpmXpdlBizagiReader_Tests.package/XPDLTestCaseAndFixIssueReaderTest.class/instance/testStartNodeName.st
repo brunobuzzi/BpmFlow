@@ -1,4 +1,4 @@
 other
 testStartNodeName
 
-	self assert: (self getTestCaseWorkflow startNode getName = 'start')
+	self assert: (self getTestCaseWorkflow startNodeName = 'start')

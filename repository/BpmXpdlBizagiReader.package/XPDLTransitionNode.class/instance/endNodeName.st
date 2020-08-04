@@ -1,3 +1,3 @@
 Accessing
 endNodeName
-	^self endNode getName
+	^endNode getName

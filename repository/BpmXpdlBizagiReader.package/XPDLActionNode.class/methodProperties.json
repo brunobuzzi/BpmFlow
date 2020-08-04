@@ -4,4 +4,6 @@
 	"instance" : {
 		"workflow" : "brunobb 12/13/2019 13:47",
 		"workflow:" : "brunobb 12/13/2019 13:47",
-		"workflowIsIdenticalTo:" : "brunobb 08/03/2020 11:49" } }
+		"workflowHasAnonymousStart" : "brunobb 08/04/2020 11:08",
+		"workflowIsIdenticalTo:" : "brunobb 08/03/2020 11:49",
+		"workflowStartNodeOutTransitionsAnySatisfy:" : "brunobb 08/04/2020 11:19" } }

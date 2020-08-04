@@ -1,0 +1,4 @@
+Accessing
+getStartEventFrom: aBpmProcessDefinition
+
+	^startNode getArtifactFrom: aBpmProcessDefinition

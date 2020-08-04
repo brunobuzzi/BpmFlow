@@ -1,4 +1,4 @@
 other
 testStartNodeName
 
-	self assert: (self getProcess1Workflow startNode getName = 'start')
+	self assert: (self getProcess1Workflow startNodeName = 'start')

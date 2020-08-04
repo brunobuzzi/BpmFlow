@@ -33,8 +33,8 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	aXPDLWorflowProcess transitionsCollect: [:xpdlTransition | | newTransition |
 		newTransition := (xpdlTransition createBpmDefinitionOn: aBpmProcessDefinition) addToParentProcess.
 		newTransition extendedAttributes: xpdlTransition extendedAttributes.
-		newTransition setStartArtifact: (xpdlTransition startNode getArtifactFrom: aBpmProcessDefinition).
-		newTransition setEndArtifact: (xpdlTransition endNode getArtifactFrom: aBpmProcessDefinition).
+		newTransition setStartArtifact: (xpdlTransition getStartEventFrom: aBpmProcessDefinition).
+		newTransition setEndArtifact: (xpdlTransition getEndEventFrom: aBpmProcessDefinition).
 	].
 
 	"the receiver attach events to task. At this point both exist but are unrelated "

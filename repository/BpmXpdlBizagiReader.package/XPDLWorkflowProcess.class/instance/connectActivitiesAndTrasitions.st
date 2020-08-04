@@ -11,7 +11,7 @@ connectActivitiesAndTrasitions
 		eachTr endNode: 
 				(activities detect: [:eachAct | eachAct getId = eachTr endId] ifNone: [nil]).
 
-		eachTr startNode ifNotNil:[:trStartNode | trStartNode addOutTransition: eachTr].
+		eachTr startNodeIfNotNil: [:trStartNode | trStartNode addOutTransition: eachTr].
 
-		eachTr endNode ifNotNil: [:trEndNode | trEndNode addInTransition: eachTr.]
+		eachTr endNodeIfNotNil: [:trEndNode | trEndNode addInTransition: eachTr.]
 	].

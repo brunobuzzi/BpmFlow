@@ -4,7 +4,7 @@ testOutTransitions2
 
 	process := self getProcess2Workflow.
 	transition := process getTransitionNamed: 'tr1' ifNone: [self assert: false].
-	self assert: (process startNode outTransitionsLast == transition).
+	self assert: (process startNodeOutTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'Task 7' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'tr2' ifNone: [self assert: false].

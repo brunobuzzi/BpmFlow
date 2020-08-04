@@ -7,7 +7,7 @@ testObjectsInLanes3
 	lane6 := pool getLaneNamed: 'Lane 6' ifNone: [self assert: false].
 	lane7 := pool getLaneNamed: 'Lane 7' ifNone: [self assert: false].
 
-	self assert: ((lane7 getAnyObjectNamed: 'pr3_start' ifNone: [self assert: false]) == workflow startNode).
+	self assert: (workflow startNodeIsIdenticalTo: (lane7 getAnyObjectNamed: 'pr3_start' ifNone: [self assert: false])).
 
 	#('Task 9' 'Task 10') do: [:each | 
 		task := workflow getTaskNamed: each ifNone: [self assert: false].

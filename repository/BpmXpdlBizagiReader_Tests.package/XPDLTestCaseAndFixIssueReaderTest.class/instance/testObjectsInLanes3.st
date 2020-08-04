@@ -7,7 +7,7 @@ testObjectsInLanes3
 
 	lane1 := pool getLaneNamed: 'architect' ifNone: [self assert: false].
 
-	self assert: ((lane1 getAnyObjectNamed: 'start' ifNone: [self assert: false]) == workflow startNode).
+	self assert: (workflow startNodeIsIdenticalTo: (lane1 getAnyObjectNamed: 'start' ifNone: [self assert: false])).
 
 	self assert: ((lane1 getAnyObjectNamed: 'analyze-developer-report' ifNone: [self assert: false]) == (workflow getTaskNamed: 'analyze-developer-report' ifNone: [self assert: false])).
 

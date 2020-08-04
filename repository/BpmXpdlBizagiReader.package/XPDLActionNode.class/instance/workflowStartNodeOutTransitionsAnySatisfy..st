@@ -1,0 +1,4 @@
+other
+workflowStartNodeOutTransitionsAnySatisfy: aBlock
+
+	^workflow startNodeOutTransitionsAnySatisfy: aBlock
