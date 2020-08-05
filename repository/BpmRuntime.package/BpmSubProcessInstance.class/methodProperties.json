@@ -3,7 +3,6 @@
 		 },
 	"instance" : {
 		"asLogEntry" : "brunobb 01/16/2020 02:49",
-		"creatorEvent" : "BrunoBB 12/01/2015 12:09",
 		"creatorEvent:" : "BrunoBB 12/01/2015 12:09",
 		"creatorTask" : "BrunoBB 12/01/2015 12:09",
 		"creatorTask:" : "BrunoBB 12/01/2015 12:09",
@@ -11,7 +10,6 @@
 		"getContextApplications" : "BrunoBB 12/06/2015 13:10",
 		"getProcessTree:" : "BrunoBB 03/23/2016 14:30",
 		"getTopProcess" : "BrunoBB 03/23/2016 14:01",
-		"inheritContextApplications" : "BrunoBB 12/06/2015 12:51",
 		"inheritContextApplications:" : "BrunoBB 12/06/2015 12:51",
 		"initialize" : "BrunoBB 12/06/2015 12:51",
 		"isSubProcess" : "BrunoBB 12/01/2015 12:53",

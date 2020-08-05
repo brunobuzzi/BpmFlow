@@ -4,7 +4,6 @@
 	"instance" : {
 		"addAndContextApplication:" : "BrunoBB 12/06/2015 13:40",
 		"addOrContextApplication:" : "BrunoBB 12/06/2015 13:40",
-		"andContextApplications" : "BrunoBB 12/06/2015 13:39",
 		"andContextApplications:" : "BrunoBB 12/06/2015 13:39",
 		"getContextApplications" : "BrunoBB 12/06/2015 13:42",
 		"getProcessTree:" : "BrunoBB 03/23/2016 14:26",
@@ -14,7 +13,6 @@
 		"initialize" : "BrunoBB 12/06/2015 13:42",
 		"isTopProcess" : "BrunoBB 12/01/2015 12:53",
 		"matchContextsWith:" : "brunobb 09/11/2018 05:17",
-		"orContextApplications" : "BrunoBB 12/06/2015 13:39",
 		"orContextApplications:" : "BrunoBB 12/06/2015 13:39",
 		"parentProcess" : "BrunoBB 12/01/2015 12:10",
 		"printAndContext" : "BrunoBB 12/19/2015 11:10",

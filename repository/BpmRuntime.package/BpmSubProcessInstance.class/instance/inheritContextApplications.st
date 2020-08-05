@@ -1,3 +1,0 @@
-Accessing
-inheritContextApplications
-	^inheritContextApplications
