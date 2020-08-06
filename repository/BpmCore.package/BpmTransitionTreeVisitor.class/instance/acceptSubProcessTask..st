@@ -6,4 +6,4 @@ acceptSubProcessTask: aBpmSubProcessTaskDefinition
 
 	subProcess := aBpmSubProcessTaskDefinition subProcessDefinition.
 
-	subProcess startEvent acceptVisitor: self
+	subProcess startEventAcceptVisitor: self

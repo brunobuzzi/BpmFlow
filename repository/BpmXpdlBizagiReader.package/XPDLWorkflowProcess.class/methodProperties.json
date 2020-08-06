@@ -85,7 +85,6 @@
 		"setLaneToXpdlObjectsInEmbeddedProcesses" : "brunobb 08/04/2020 10:53",
 		"setStartAndEndNodes" : "brunobb 11/06/2018 06:57",
 		"setStartNodeLane:" : "brunobb 08/04/2020 10:53",
-		"startEvent" : "brunobb 12/17/2018 09:49",
 		"startNode:" : "brunobb 11/06/2018 06:57",
 		"startNodeAcceptVisitor:" : "brunobb 08/03/2020 11:43",
 		"startNodeIfNotNil:" : "brunobb 08/03/2020 11:23",

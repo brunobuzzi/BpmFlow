@@ -1,4 +1,4 @@
 *bpmxpdl
 getArtifactFrom: aBpmProcessDefinition
 
-	^aBpmProcessDefinition startEvent
+	^aBpmProcessDefinition getStartEventNamed: self getName ifNone: []

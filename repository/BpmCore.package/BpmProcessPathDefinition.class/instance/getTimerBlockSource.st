@@ -1,0 +1,4 @@
+Accessing
+getTimerBlockSource
+
+	^startEvent getTimerBlockSource

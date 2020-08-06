@@ -1,12 +1,8 @@
 other
 renderItemComponentOn: html
-	| timer blockSource cleanBlockSource stringToRemove lastExecutionOutput |
+	| blockSource cleanBlockSource stringToRemove lastExecutionOutput |
 
-	timer := selectedLateralItem isTimerEvent 
-		ifFalse: [selectedLateralItem getStartEvent]
-		ifTrue: [selectedLateralItem definition].
-
-	blockSource := timer getTimerBlock blockSource.
+	blockSource := selectedLateralItem getTimerBlockSource.
 	stringToRemove := '"This is source for a block.  "'.
 	cleanBlockSource := ((blockSource indexOfSubCollection: stringToRemove) = 1)
 		ifTrue: [blockSource copyFrom: stringToRemove size + 1 to: blockSource size] 

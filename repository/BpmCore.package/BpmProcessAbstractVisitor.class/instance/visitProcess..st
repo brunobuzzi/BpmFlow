@@ -1,4 +1,4 @@
 other
 visitProcess: aBpmProcessDefinition
 
-	aBpmProcessDefinition startEvent acceptVisitor: self
+	aBpmProcessDefinition startEventAcceptVisitor: self

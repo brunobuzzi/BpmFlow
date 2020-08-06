@@ -3,4 +3,4 @@ visitProcess: aBpmProcessDefinition
 
 	transtionTree := BpmTransitionTree newOn: aBpmProcessDefinition.
 
-	aBpmProcessDefinition startEvent acceptVisitor: self
+	aBpmProcessDefinition startEventAcceptVisitor: self
