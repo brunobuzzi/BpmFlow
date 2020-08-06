@@ -1,0 +1,4 @@
+Accessing
+startEventHasAnonymousStart
+
+	^startEvent hasAnonymousStart

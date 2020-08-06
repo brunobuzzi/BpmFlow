@@ -1,0 +1,4 @@
+add artifacts
+createStartEventInstanceFor: aBpmProcessInstance
+
+	^executionPath createStartEventInstanceFor: aBpmProcessInstance

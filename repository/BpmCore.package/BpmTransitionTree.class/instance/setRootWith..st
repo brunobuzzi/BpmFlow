@@ -1,11 +1,9 @@
 visiting
 setRootWith: aBpmProcessDefinition
 	"The receiver set the <roots> with out transitions of <aBpmProcessDefinition> start event"
-	| rootNodes startEvent |
+	| rootNodes |
 
-	startEvent := aBpmProcessDefinition startEvent.
-
-	rootNodes := startEvent outTransitionsCollect: [:transition |
+	rootNodes := aBpmProcessDefinition startEventOutTransitionsCollect: [:transition |
 		self add: transition asChildOf: nil.
 	].
 
