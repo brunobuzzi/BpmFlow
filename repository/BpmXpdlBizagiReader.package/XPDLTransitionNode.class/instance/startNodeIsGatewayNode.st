@@ -1,0 +1,4 @@
+other
+startNodeIsGatewayNode
+
+	^startNode isGatewayNode
