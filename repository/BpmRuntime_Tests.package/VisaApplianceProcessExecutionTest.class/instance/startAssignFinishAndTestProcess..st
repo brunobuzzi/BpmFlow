@@ -3,7 +3,7 @@ startAssignFinishAndTestProcess: aBpmProcessInstance
 	"The receiver start the execution of the new created <aBpmProcessInstance> and finish it execution"
 	| currentTask processId currentProcessMatrix finishedProcessMatrix |
 
-	self assert: (aBpmProcessInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (aBpmProcessInstance startEventName = 'visa apply start').
 	processId := aBpmProcessInstance id.
 	currentProcessMatrix := aBpmProcessInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.

@@ -1,13 +1,13 @@
 test
 testExecuteProcess_data_entry_rejected
-	| currentTask processId endArtifact currentProcessMatrix takenProcessMatrix finishedProcessMatrix form |
+	| currentTask processId currentProcessMatrix takenProcessMatrix finishedProcessMatrix form |
 
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
 	processId := procInstance id.
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 
 	"Step 1 - Form [enter-data-recursive]"
 	currentTask := procInstance currentActivities last.

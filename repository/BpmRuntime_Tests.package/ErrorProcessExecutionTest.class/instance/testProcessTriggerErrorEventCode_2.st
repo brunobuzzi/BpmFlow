@@ -2,7 +2,7 @@ other
 testProcessTriggerErrorEventCode_2
 	| currentTask formInstance procId |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	procId := procInstance id.
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.

@@ -5,7 +5,7 @@ testExecuteProcess_non_boolean_condition
 	self setNonBooleanCondition.
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	"The non boolean result will produce an exception"
@@ -15,7 +15,7 @@ testExecuteProcess_non_boolean_condition
 	self assert: procInstance isRunningWithException.
 	self assert: (currentTask getDefinitionName = 'all-field-types').
 	"Step 2 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'gateway split').
 
 	"The gateway has an invalid condition --> the process is paused --> the gateway has no next transition --> NoNextArtifactException --> message to the user"

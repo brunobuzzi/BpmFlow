@@ -2,7 +2,7 @@ test
 testProcessTriggerErrorEventCode_1_finishedTask
 	| currentTask formInstance subProcess subProcessTask |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - It create the subprocess immediately"
 
 	"Sub Process Execution [form-process] starts here "

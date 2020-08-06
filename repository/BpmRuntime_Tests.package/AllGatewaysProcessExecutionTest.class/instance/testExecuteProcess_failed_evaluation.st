@@ -7,13 +7,13 @@ testExecuteProcess_failed_evaluation
 	evaluation1 := transition1 conditionToRun evaluationCode.
 	transition1 conditionToRun evaluationCode: '[:proc | 4]'.
 
-	self assert: (procInstance startEvent getDefinitionName = 'start all').
+	self assert: (procInstance startEventName = 'start all').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_task1 on: procInstance.
 	self assert: (currentTask getDefinitionName = 'task-1').
 	"Step 2 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'split 2 and 3').
 	"Step 3 - Form [task-2] and [task-3]"
 	currentTask :=  procInstance currentActivities first.
@@ -23,9 +23,9 @@ testExecuteProcess_failed_evaluation
 	self processExecutionSimulator takeAndFinalizeTask: currentTask2 withUserNamed: 'alberto' withForm: self formInstance_task3_1 on: procInstance.
 	self assert: (currentTask2 getDefinitionName = 'task-3').
 	"Step 4 - TWO Gateway Evaluations"
-	gateway := procInstance executedGateways asOrderedCollection second.
+	gateway := procInstance executedGatewaysSecond.
 	self assert: (gateway getDefinitionName = 'merge 2 and 3').
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'task 4 or 5').
 
 	self assert: procInstance failedEvaluationsSize equals: 1.

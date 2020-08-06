@@ -8,7 +8,7 @@ testExecuteProcess_boolean_exit_aborted
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'runner' satisfying: {:assign | assign.processId = processId}) notEmpty.

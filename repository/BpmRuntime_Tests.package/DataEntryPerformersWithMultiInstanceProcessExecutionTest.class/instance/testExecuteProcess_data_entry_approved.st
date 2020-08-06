@@ -2,7 +2,7 @@ other
 testExecuteProcess_data_entry_approved
 	| currentTask endArtifact |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start multi role').
+	self assert: (procInstance startEventName = 'start multi role').
 	"Step 1.1 - Form [data-entry]" "Performer 1"
 	self assert: procInstance currentActivities size equals: 4.
 	1 to: 4 do: [:index |

@@ -5,8 +5,8 @@ testExecuteProcess_LoanRejected
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 
-	self assert: (senderProcessInstance startEvent getDefinitionName = 'start').
-	self assert: (receiverProcessInstance startEvent getDefinitionName = 'start').
+	self assert: (senderProcessInstance startEventName = 'start').
+	self assert: (receiverProcessInstance startEventName = 'start').
 
 	currentProcessMatrix := senderProcessInstance getAvailableProcessMatrix.
 	takenProcessMatrix := senderProcessInstance getTakenProcessMatrix.
@@ -39,7 +39,7 @@ testExecuteProcess_LoanRejected
 	self assert: (senderProcessInstance loanApproved not).
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
-	self assert: senderProcessInstance endEvents notEmpty. "the sender process has finalized"
+	self assert: senderProcessInstance endEventsNotEmpty. "the sender process has finalized"
 
 	"Sender Process: Step 2 - Form [cancel-purchase]"
 	self assert: (receiverProcessInstance loanApproved not).
@@ -51,7 +51,7 @@ testExecuteProcess_LoanRejected
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) notEmpty.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew se' withForm: (self formInstance_cancel_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
-	self assert: receiverProcessInstance endEvents notEmpty. "the sender process has finalized"
+	self assert: receiverProcessInstance endEventsNotEmpty. "the sender process has finalized"
 
 	self deny: receiverProcessInstance isRunning.
 	self deny: senderProcessInstance isRunning.

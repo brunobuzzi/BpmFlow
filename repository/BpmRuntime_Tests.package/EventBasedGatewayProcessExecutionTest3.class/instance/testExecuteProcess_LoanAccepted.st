@@ -5,8 +5,8 @@ testExecuteProcess_LoanAccepted
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 	receiverProcessInstance := receiverProcesDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 
-	self assert: (senderProcessInstance startEvent getDefinitionName = 'start').
-	self assert: (receiverProcessInstance startEvent getDefinitionName = 'start').
+	self assert: (senderProcessInstance startEventName = 'start').
+	self assert: (receiverProcessInstance startEventName = 'start').
 
 	currentProcessMatrix := senderProcessInstance getAvailableProcessMatrix.
 	takenProcessMatrix := senderProcessInstance getTakenProcessMatrix.

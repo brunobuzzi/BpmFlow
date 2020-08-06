@@ -4,9 +4,9 @@ testExecuteProcess
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Script Execution"
-	script := procInstance executedScripts last.
+	script := procInstance executedScriptsLast.
 	self assert: (script isDone).
 	self assert: (Smalltalk includesKey: #Test_Temps).
 	self assert: (procInstance getScriptVariableNamed: 'myTempVar' ifNone: [^self assert: false]) = 64.

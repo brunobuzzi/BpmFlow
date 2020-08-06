@@ -2,7 +2,7 @@ test
 testExecuteProcess_data_entry_approved
 	| currentTask endArtifact |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start multi role').
+	self assert: (procInstance startEventName= 'start multi role').
 	"Step 1.1 - Form [data-entry]" "Performer 1"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask finalizedPerformerCounter = 0).

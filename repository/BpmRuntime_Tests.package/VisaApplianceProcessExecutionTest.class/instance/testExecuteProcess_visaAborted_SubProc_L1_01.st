@@ -6,7 +6,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (procInstance startEventName = 'visa apply start').
 
 	"Step 1 - Form [citizen-appliance]"
 	currentTask := procInstance currentActivities last.
@@ -30,7 +30,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'originCountry[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'gender[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	"Step 3 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 
 	"Step 4 - Form [check-previous-appliance]"
@@ -53,7 +53,7 @@ testExecuteProcess_visaAborted_SubProc_L1_01
  
 		self assert: (procInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
-		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
+		self assert: (subProcessL1 startEventName = 'start visa check').
 
 		"Step 1 [subproc] - Form [check-applicant-record]"
 		currentTask := subProcessL1 currentActivities last.

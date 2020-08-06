@@ -4,7 +4,7 @@ testExecuteProcess_visaAborted_03
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (procInstance startEventName = 'visa apply start').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
@@ -32,7 +32,7 @@ testExecuteProcess_visaAborted_03
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'originCountry[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	self assert: ((procDefinition getCollectionForFieldsNamed: 'gender[s]' in: 'check-basic-data') select: [:fieldValue | fieldValue processId = processId]) notEmpty.
 	"Step 3 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 	self assert: procInstance isRunning.
 	"Step 4 - Form [check-previous-appliance]"
@@ -56,7 +56,7 @@ testExecuteProcess_visaAborted_03
 		self assert: subProcessL1 isRunning.
 		self assert: (procInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
-		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
+		self assert: (subProcessL1 startEventName = 'start visa check').
 
 		"Step 1 [subproc] - Form [check-applicant-record]"
 		currentTask := subProcessL1 currentActivities last.
@@ -90,7 +90,7 @@ testExecuteProcess_visaAborted_03
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.
-			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').
+			self assert: (subProcessL2 startEventName = 'start financial check').
 
 			"Step 1 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
@@ -146,7 +146,7 @@ testExecuteProcess_visaAborted_03
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
 	"Step 6 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'granted').
 
 	"Step 7 - Form [emit-visa]"

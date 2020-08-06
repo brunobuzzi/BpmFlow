@@ -5,7 +5,7 @@ testAndExecutionContext_1
 	procInstance := procDefinition createProcessInstance: (self getUserNamed: 'andrew vo').
 	procInstance triggerStartEventWith: (self getUserNamed: 'andrew vo').
 
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (procInstance startEventName = 'visa apply start').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.

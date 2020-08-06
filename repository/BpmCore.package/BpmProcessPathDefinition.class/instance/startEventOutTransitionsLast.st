@@ -1,0 +1,3 @@
+Accessing
+startEventOutTransitionsLast 
+	^startEvent outTransitionsLast

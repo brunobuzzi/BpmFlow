@@ -5,7 +5,7 @@ testExecuteProcess_errorCode_1
 	senderProcessInstance := senderProcessDef createAndStartProcessInstance: (self getUserNamed: 'andrew ap').
 	receiverProcessId := Lag1MwcRandom new integer.
 
-	self assert: (senderProcessInstance startEvent getDefinitionName = 'start').
+	self assert: (senderProcessInstance startEventName = 'start').
 
 	currentProcessMatrix := senderProcessInstance getAvailableProcessMatrix.
 	takenProcessMatrix := senderProcessInstance getTakenProcessMatrix.
@@ -29,6 +29,6 @@ testExecuteProcess_errorCode_1
 	"here the message was sent from <senderProcessInstance> to <receiverProcessInstance>"
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'loan approver' satisfying: {:assign | assign.processId = processId}) size = 1).
 
-	self assert: (senderProcessInstance executedScripts notEmpty).
+	self assert: (senderProcessInstance executedScriptsNotEmpty).
 	self assert: (senderProcessInstance getValueOfProcessField: 'stamp') notNil.
 	self assert: (senderProcessInstance getValueOfProcessField: 'stamp') class equals: TimeStamp.

@@ -8,7 +8,7 @@ testExecuteProcess_visaAborted_01
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (procInstance startEventName = 'visa apply start').
 	"Step 1 - Form [citizen-appliance]"
 	currentTask := procInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'citizen-appliance').

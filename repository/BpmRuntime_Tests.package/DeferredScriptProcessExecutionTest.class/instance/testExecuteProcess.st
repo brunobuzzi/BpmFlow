@@ -6,7 +6,7 @@ testExecuteProcess
 	scriptsToExecuteSize := scriptExecutor scriptsToExecuteSize.
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'alberto').
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Script Execution - (the execution is deffered)"
 	self assert: scriptExecutor scriptsToExecuteSize equals: (scriptsToExecuteSize + 1). "this script has been added to the executor"
 	script := scriptExecutor scriptsToExecute detect: [:each | each process id = procInstance id] ifNone: [self assert: false].

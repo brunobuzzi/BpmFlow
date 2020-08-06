@@ -4,7 +4,7 @@ testOutTransitions1
 
 	process := self getTestCaseProcess.
 	transition := process getTransitionNamed: 'start-case' ifNone: [self assert: false].
-	self assert: (process startEvent outTransitionsLast == transition).
+	self assert: (process startEventOutTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'test-case' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'run-test' ifNone: [self assert: false].

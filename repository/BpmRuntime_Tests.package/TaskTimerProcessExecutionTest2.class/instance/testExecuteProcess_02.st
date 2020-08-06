@@ -6,7 +6,7 @@ testExecuteProcess_02
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vm').
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [set-timer-term]"
 
 	currentTask := procInstance currentActivities last.

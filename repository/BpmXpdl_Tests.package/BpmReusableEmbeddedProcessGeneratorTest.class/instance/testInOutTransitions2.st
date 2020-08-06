@@ -6,6 +6,6 @@ testInOutTransitions2
 
 	task := processDefinition getScriptNamed: 'script-reusable' ifNone: [self assert: false].
 
-	self assert: (processDefinition startEvent outTransitionsLast == task inTransitionsLast).
+	self assert: (processDefinition startEventOutTransitionsLast == task inTransitionsLast).
 
 	self assert: (task outTransitionsLast == (processDefinition getEndEventNamed: 'end-reusable' ifNone: [self assert: false]) inTransitionsLast).

@@ -10,7 +10,7 @@ testExecuteProcessAbort_01
 	takenProcessMatrix := procInstance getTakenProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [set-timer-term]"
 
 	currentTask := procInstance currentActivities last.

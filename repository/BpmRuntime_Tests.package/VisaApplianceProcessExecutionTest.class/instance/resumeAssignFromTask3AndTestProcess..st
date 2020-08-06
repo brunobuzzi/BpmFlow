@@ -8,7 +8,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 	finishedProcessMatrix := aBpmProcessInstance getFinishedProcessMatrix.
 
 	"Step 3 - Gateway Evaluation"
-	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.
+	gateway := aBpmProcessInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 
 	"Step 4 - Form [check-previous-appliance]"
@@ -27,7 +27,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 
 		self assert: (aBpmProcessInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
-		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
+		self assert: (subProcessL1 startEventName = 'start visa check').
 
 		"Step 1 [subproc] - Form [check-applicant-record]"
 		currentTask := subProcessL1 currentActivities last.
@@ -52,7 +52,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.
-			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').
+			self assert: (subProcessL2 startEventName = 'start financial check').
 
 			"Step 1 [subproc] - Form [check-accounts]"
 			currentTask := subProcessL2 currentActivities last.
@@ -99,7 +99,7 @@ resumeAssignFromTask3AndTestProcess: aBpmProcessInstance
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
 	"Step 6 - Gateway Evaluation"
-	gateway := aBpmProcessInstance executedGateways asOrderedCollection last.
+	gateway := aBpmProcessInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'granted').
 
 	"Step 7 - Form [emit-visa]"

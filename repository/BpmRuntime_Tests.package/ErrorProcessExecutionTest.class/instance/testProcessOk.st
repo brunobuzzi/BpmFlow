@@ -2,7 +2,7 @@ other
 testProcessOk
 	| currentTask endArtifact formInstance procId |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	procId := procInstance id.

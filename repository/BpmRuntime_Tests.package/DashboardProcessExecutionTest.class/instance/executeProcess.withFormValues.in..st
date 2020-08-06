@@ -2,7 +2,7 @@ create random process
 executeProcess: aBpmProcessInstance withFormValues: anArray in: aTimeStamp
 	| currentTask endArtifact formInstance |
 
-	self assert: (aBpmProcessInstance startEvent getDefinitionName = 'start').
+	self assert: (aBpmProcessInstance startEventName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := aBpmProcessInstance currentActivities last.
 	formInstance := self formInstance_withValues: anArray in: aBpmProcessInstance.

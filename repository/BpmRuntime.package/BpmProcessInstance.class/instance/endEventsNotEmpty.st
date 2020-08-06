@@ -1,0 +1,4 @@
+Accessing
+endEventsNotEmpty
+
+	^endEvents notEmpty

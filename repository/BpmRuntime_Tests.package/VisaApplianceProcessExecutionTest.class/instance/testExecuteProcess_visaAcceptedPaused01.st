@@ -4,7 +4,7 @@ testExecuteProcess_visaAcceptedPaused01
 
 	procInstance := procDefinition createAndStartProcessInstance: (self getUserNamed: 'andrew vo').
 
-	self assert: (procInstance startEvent getDefinitionName = 'visa apply start').
+	self assert: (procInstance startEventName = 'visa apply start').
 	processId := procInstance id.
 	currentProcessMatrix := procInstance getAvailableProcessMatrix.
 	finishedProcessMatrix := procInstance getFinishedProcessMatrix.
@@ -37,7 +37,7 @@ testExecuteProcess_visaAcceptedPaused01
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'visa officer' satisfying: {:assign | assign.processId = processId}) size = 2).
 
 	"Step 3 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'accept basic data').
 
 	currentTask := procInstance currentActivities last.
@@ -66,7 +66,7 @@ testExecuteProcess_visaAcceptedPaused01
 
 		self assert: (procInstance includesSubProcess: subProcessL1).
 		self assert:  subProcessL1 isSubProcess.
-		self assert: (subProcessL1 startEvent getDefinitionName = 'start visa check').
+		self assert: (subProcessL1 startEventName = 'start visa check').
 
 		currentTask := subProcessL1 currentActivities last.
 		"TEST Paused Process"
@@ -101,7 +101,7 @@ testExecuteProcess_visaAcceptedPaused01
 			subProc2FinishedMatrix := subProcessL2 getFinishedProcessMatrix.
 			self assert: (subProcessL1 includesSubProcess: subProcessL2).
 			self assert:  subProcessL2 isSubProcess.
-			self assert: (subProcessL2 startEvent getDefinitionName = 'start financial check').
+			self assert: (subProcessL2 startEventName = 'start financial check').
 
 			currentTask := subProcessL2 currentActivities last.
 
@@ -168,7 +168,7 @@ testExecuteProcess_visaAcceptedPaused01
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'visa manager' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
 	"Step 6 - Gateway Evaluation"
-	gateway := procInstance executedGateways asOrderedCollection last.
+	gateway := procInstance executedGatewaysLast.
 	self assert: (gateway getDefinitionName = 'granted').
 
 	"Step 7 - Form [emit-visa]"

@@ -1,0 +1,4 @@
+add artifacts
+startEventOutTransitionsLast
+
+	^executionPath startEventOutTransitionsLast

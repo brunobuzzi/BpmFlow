@@ -4,7 +4,7 @@ testOutTransitions3
 
 	process := self getArchitectProcess.
 	transition := process getTransitionNamed: 'start-dev-analysis' ifNone: [self assert: false].
-	self assert: (process startEvent outTransitionsLast == transition).
+	self assert: (process startEventOutTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'analyze-developer-report' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'evaluate-a-solution' ifNone: [self assert: false].

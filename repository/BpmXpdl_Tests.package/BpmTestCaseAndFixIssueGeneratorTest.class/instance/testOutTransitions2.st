@@ -4,7 +4,7 @@ testOutTransitions2
 
 	process := self getFixIssueProcess.
 	transition := process getTransitionNamed: 'start-analyze' ifNone: [self assert: false].
-	self assert: (process startEvent outTransitionsLast == transition).
+	self assert: (process startEventOutTransitionsLast == transition).
 
 	task1 := process getTaskNamed: 'analyze-issue' ifNone: [self assert: false].
 	transition := process getTransitionNamed: 'evaluate-fix' ifNone: [self assert: false].

@@ -1,0 +1,4 @@
+Accessing
+executedScriptsSize
+
+	^executedScripts size

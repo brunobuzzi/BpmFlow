@@ -1,0 +1,3 @@
+Accessing
+startEventName
+	^startEvent getDefinitionName

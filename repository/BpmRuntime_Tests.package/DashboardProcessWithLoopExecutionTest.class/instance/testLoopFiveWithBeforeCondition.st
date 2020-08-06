@@ -5,7 +5,7 @@ testLoopFiveWithBeforeCondition
 	procInstance atExternalVariable: 'condition' put: 11;
 		triggerStartEventWith: (self getUserNamed: 'john').
 
-	self assert: (procInstance startEvent getDefinitionName = 'start').
+	self assert: (procInstance startEventName = 'start').
 	"Step 1 - Form [task-1]"
 	currentTask := procInstance currentActivities last.
 	formInstance := self formInstance_withValues: (self generateRandomValuesIn: TimeStamp now) in: procInstance.

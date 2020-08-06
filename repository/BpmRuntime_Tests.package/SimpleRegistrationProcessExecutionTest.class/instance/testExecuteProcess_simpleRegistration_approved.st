@@ -2,7 +2,7 @@ test
 testExecuteProcess_simpleRegistration_approved
 	| currentTask endArtifact formInstance |
 
-	self assert: (procInstance startEvent getDefinitionName = 'start-registration').
+	self assert: (procInstance startEventName = 'start-registration').
 	self assert: (self defaultProcessDefinitionClass isRegisteredAsAnonymousStart: procInstance definition).
 	"Step 1 - Form [simple-registration]" "THIS IS AN ANONYMOUS PROCESS"
 	currentTask := procInstance currentActivities last.

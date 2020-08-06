@@ -1,0 +1,4 @@
+Accessing
+executedScriptsNotEmpty
+
+	^executedScripts notEmpty
