@@ -26,5 +26,5 @@ createEmbeddedSubProcessFor: aBpmProcessDefinition basedOn: xpdlPool package: xp
 		].
 	].
 	((embedded collect: [:each | each second]) "collect process definition"
-		select: [:each | each parentProcess isNil])  "sub process with not parent --> the parent is the top parent"
+		select: [:each | each parentProcessIsNil])  "sub process with not parent --> the parent is the top parent"
 			do: [:each | aBpmProcessDefinition addSubProcess: each].

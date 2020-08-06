@@ -8,4 +8,4 @@ testNoBooleanCondition
 
 	bpmBlock evaluateConditionIn: process.
 
-	self assert: process failedEvaluations size equals: 1.
+	self assert: process failedEvaluationsSize equals: 1.

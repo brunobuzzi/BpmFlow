@@ -1,14 +1,14 @@
 searching
 searchCancelledProcessByApplication: appName
-	| application cancelledProcess |
+	| application cancelledProcesses |
 
 	application := self getSelectedApplicationOrNil.
 	application ifNil: [^searchResult := OrderedCollection new].
 
-	cancelledProcess := OrderedCollection new.
+	cancelledProcesses := OrderedCollection new.
 
 	(self defaultProcessDefinitionClass getAllVersionsIn: appName) do: [:eachProcDef | 
-		 cancelledProcess addAll: eachProcDef abortedProcesses.
+		eachProcDef abortedProcessesDo: [:each | cancelledProcesses add: each].
 	].
 
-	searchResult := cancelledProcess
+	searchResult := cancelledProcesses

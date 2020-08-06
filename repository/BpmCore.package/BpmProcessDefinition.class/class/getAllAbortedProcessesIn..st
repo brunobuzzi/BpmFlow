@@ -1,5 +1,8 @@
 aborted
 getAllAbortedProcessesIn: aBpmEnvironment
 	"The receiver answer a collection with all aborted processes"
+	| all |
 
-	^aBpmEnvironment getAllProcessDefinitions inject: OrderedCollection new into:  [:all :each | all addAll: each abortedProcesses. all]
+	all := OrderedCollection new.
+	aBpmEnvironment getAllProcessDefinitions do: [:eachProcDef | eachProcDef abortedProcessesDo: [:each | all add: each]]. 
+	^all

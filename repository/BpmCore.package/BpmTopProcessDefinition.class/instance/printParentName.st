@@ -1,4 +1,4 @@
 subprocesses
 printParentName
 
-	self subclassResponsibility
+	^'-'

@@ -28,7 +28,7 @@ testExecuteProcess_failed_evaluation
 	gateway := procInstance executedGateways asOrderedCollection last.
 	self assert: (gateway getDefinitionName = 'task 4 or 5').
 
-	self assert: procInstance failedEvaluations size equals: 1.
+	self assert: procInstance failedEvaluationsSize equals: 1.
 	self assert: procInstance currentState isRunning equals: true.
 	self assert: procInstance currentState hasException equals: true.
 

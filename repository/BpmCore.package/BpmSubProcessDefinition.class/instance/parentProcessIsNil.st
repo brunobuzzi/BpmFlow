@@ -1,0 +1,4 @@
+Accessing
+parentProcessIsNil
+
+	^parentProcess isNil

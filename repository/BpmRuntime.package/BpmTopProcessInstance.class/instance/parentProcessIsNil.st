@@ -1,0 +1,4 @@
+other
+parentProcessIsNil
+
+	^true

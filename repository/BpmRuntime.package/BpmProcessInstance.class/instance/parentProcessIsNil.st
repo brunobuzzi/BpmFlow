@@ -1,4 +1,4 @@
 subprocesses
-printParentName
+parentProcessIsNil
 
 	self subclassResponsibility
