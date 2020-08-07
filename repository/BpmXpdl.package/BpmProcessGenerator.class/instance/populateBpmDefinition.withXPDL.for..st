@@ -7,7 +7,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	aBpmProcessDefinition addAllParticipants: participants.
 	roles := Dictionary new.
 
-	aBpmProcessDefinition setExtendedAttributesWith: aXPDLWorflowProcess extendedAttributes.
+	aXPDLWorflowProcess extendedAttributesDo: [:attr | aBpmProcessDefinition setExtendedAttributesWith: attr].
 
 	aXPDLWorflowProcess parentLanesKeysDo: [:laneName | | newOrExistingRole |
 		newOrExistingRole := self defaultFrontOfficeRoleClass createNewOrGetExisting: laneName in: anOrbeonApplication applicationName.
@@ -24,7 +24,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 			newArtifact addPerformer: bpmPerformer;
 				grantRole: performerRole]. "grant the role of the performer to the task definition"
 		newArtifact addToParentProcess.
-		newArtifact setExtendedAttributesWith: xpdlActivity extendedAttributes.
+		xpdlActivity extendedAttributesDo: [:attr | newArtifact setExtendedAttributesWith: attr].
 		xpdlActivity performersIfEmpty: ["if has perfomers --> lanes roles are NOT granted to the task (only performers roles are granted)"
 			lanesNames := (xpdlActivity getLanesFrom: aXPDLWorflowProcess) collect: [:each | each getName].
 			lanesNames do: [:laneName | (roles at: laneName ifAbsent: [nil]) ifNotNil: [:rol | newArtifact grantRole: rol]]
@@ -32,7 +32,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	].
 	aXPDLWorflowProcess transitionsCollect: [:xpdlTransition | | newTransition |
 		newTransition := (xpdlTransition createBpmDefinitionOn: aBpmProcessDefinition) addToParentProcess.
-		newTransition extendedAttributes: xpdlTransition extendedAttributes.
+		xpdlTransition extendedAttributesDo: [:attr | newTransition extendedAttributes: attr].
 		newTransition setStartArtifact: (xpdlTransition getStartEventFrom: aBpmProcessDefinition).
 		newTransition setEndArtifact: (xpdlTransition getEndEventFrom: aBpmProcessDefinition).
 	].
