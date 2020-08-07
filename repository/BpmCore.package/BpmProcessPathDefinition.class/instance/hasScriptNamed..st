@@ -1,4 +1,4 @@
 other
 hasScriptNamed: aString
 
-	^self scripts anySatisfy: [:each | each name = aString]
+	^scripts anySatisfy: [:each | each name = aString]

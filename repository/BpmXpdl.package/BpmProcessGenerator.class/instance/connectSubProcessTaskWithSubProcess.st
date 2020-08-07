@@ -6,7 +6,7 @@ connectSubProcessTaskWithSubProcess
 	subProcessTasks := OrderedCollection new.
 
 	processes do: [:procDefinition | 
-		procDefinition getSubProcessTasks do: [:subProcTaskDefinition | | subProcess |
+		procDefinition subProcessTasksDo: [:subProcTaskDefinition | | subProcess |
 			subProcess := subProcTaskDefinition isEmbedded
 					ifFalse: [processes detect: [:each | each sheetName = subProcTaskDefinition name] ifNone:  [nil]]
 					ifTrue: [| subProc |
