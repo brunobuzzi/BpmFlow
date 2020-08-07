@@ -1,4 +1,4 @@
 Accessing
 endNodeIfNotNil: aBlock
 
-	^aBlock value: endNode
+	^endNode ifNotNil: aBlock

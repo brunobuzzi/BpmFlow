@@ -1,4 +1,4 @@
 Accessing
 startNodeIfNotNil: aBlock
 
-	^aBlock value: startNode
+	^startNode ifNotNil: aBlock
