@@ -1,4 +1,4 @@
 other
 startArtifactName
 
-	^self startArtifact getDefinitionName
+	^startArtifact getDefinitionName

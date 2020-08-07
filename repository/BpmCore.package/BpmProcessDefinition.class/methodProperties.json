@@ -140,7 +140,6 @@
 		"getOrbeonTasks" : "BrunoBB 11/04/2016 10:43",
 		"getOrderedTasks" : "BrunoBB 12/16/2015 13:09",
 		"getOrderedTasksNames" : "BrunoBB 03/06/2016 17:46",
-		"getParentOf:ifNone:" : "brunobb 10/12/2018 10:40",
 		"getParentProcessName" : "BrunoBB 12/10/2015 06:48",
 		"getParentSubProcessTaskDefinition" : "BrunoBB 06/29/2016 09:42",
 		"getProcessInstanceWith:ifAbsent:" : "BrunoBB 05/31/2016 17:23",

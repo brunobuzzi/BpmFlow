@@ -9,6 +9,7 @@
 		"conditionToRun:" : "BrunoBB 10/29/2015 13:08",
 		"endArtifact" : "BrunoBB 10/27/2015 17:30",
 		"endArtifact:" : "BrunoBB 10/27/2015 17:30",
+		"endArtifactDo:" : "brunobb 08/07/2020 11:45",
 		"evaluateConditionIn:" : "brunobb 11/16/2018 17:34",
 		"extendedAttributes" : "BrunoBB 12/13/2015 13:47",
 		"extendedAttributes:" : "BrunoBB 12/13/2015 13:47",
@@ -34,5 +35,5 @@
 		"setEndArtifact:" : "BrunoBB 10/28/2015 12:22",
 		"setExtended:value:" : "BrunoBB 12/13/2015 13:47",
 		"setStartArtifact:" : "BrunoBB 10/28/2015 12:22",
-		"startArtifact" : "BrunoBB 10/27/2015 17:30",
-		"startArtifact:" : "BrunoBB 10/27/2015 17:30" } }
+		"startArtifact:" : "BrunoBB 10/27/2015 17:30",
+		"startArtifactDo:" : "brunobb 08/07/2020 11:45" } }

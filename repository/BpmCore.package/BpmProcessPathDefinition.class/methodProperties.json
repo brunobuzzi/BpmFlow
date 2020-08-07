@@ -28,7 +28,6 @@
 		"getOrbeonTasks" : "BrunoBB 11/04/2016 10:42",
 		"getOrderedTasks" : "brunobb 08/14/2019 10:06",
 		"getOrderedTasksFrom:as:" : "brunobb 08/03/2020 13:13",
-		"getParentOf:ifNone:" : "brunobb 10/12/2018 10:39",
 		"getScriptNamed:ifNone:" : "BrunoBB 06/22/2016 11:45",
 		"getSeasideTasks" : "brunobb 04/24/2018 08:57",
 		"getStartEventNamed:ifNone:" : "brunobb 08/06/2020 13:25",

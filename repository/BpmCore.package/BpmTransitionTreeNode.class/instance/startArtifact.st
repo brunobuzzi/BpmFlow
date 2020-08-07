@@ -1,4 +1,0 @@
-other
-startArtifact
-
-	^transition startArtifact

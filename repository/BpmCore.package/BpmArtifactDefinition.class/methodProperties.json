@@ -66,7 +66,7 @@
 		"outTransitionsAllSatisfy:" : "brunobb 08/03/2020 13:11",
 		"outTransitionsAt:" : "brunobb 08/03/2020 13:14",
 		"outTransitionsCollect:" : "brunobb 08/03/2020 13:12",
-		"outTransitionsDetect:" : "brunobb 08/03/2020 13:15",
+		"outTransitionsDetect:ifNone:" : "brunobb 08/07/2020 11:54",
 		"outTransitionsDo:" : "brunobb 08/03/2020 13:10",
 		"outTransitionsFirst" : "brunobb 08/03/2020 13:28",
 		"outTransitionsIsEmpty" : "brunobb 08/03/2020 13:20",

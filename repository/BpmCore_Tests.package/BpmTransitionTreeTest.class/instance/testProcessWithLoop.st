@@ -16,7 +16,7 @@ testProcessWithLoop
 
 	processTree := processDefinition asTree.
 
-	self assert: processTree getArtifacts size equals: 3. "three artifacts"
+	self assert: processTree getArtifactsSize equals: 3. "three artifacts"
 	self assert: processTree asOrderedCollection size equals: 2. "two transitions"
 
 	self assert: processTree getAllPossiblePath size equals: 1. 
