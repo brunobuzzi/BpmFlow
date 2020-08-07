@@ -1,5 +1,5 @@
-get artifacts
+other
 getTaskNames
 	"The receiver answer a collection with all names of it's tasks <aBpmTaskDefinition>"
 
-	^executionPath getTaskNames
+	^tasks collect: [:each | each name]

@@ -5,6 +5,6 @@ getGrantedArtifactsIn: aBpmEnviroment
 
 	artifacts := Set new.
 
-	(self rolesIn: aBpmEnviroment) do: [:each | artifacts addAll: each tasks].
+	(self rolesIn: aBpmEnviroment) do: [:eachRole | eachRole tasksDo: [:task | artifacts add: task]].
 
 	^artifacts asOrderedCollection

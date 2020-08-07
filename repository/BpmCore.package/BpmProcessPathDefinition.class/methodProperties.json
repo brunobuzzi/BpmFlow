@@ -37,6 +37,7 @@
 		"getStartTimerBlock" : "brunobb 08/06/2020 13:01",
 		"getSubProcessTaskNamed:ifNone:" : "BrunoBB 10/28/2015 12:13",
 		"getTaskNamed:ifNone:" : "BrunoBB 10/28/2015 12:12",
+		"getTaskNames" : "brunobb 08/07/2020 10:34",
 		"getTimerBlockSource" : "brunobb 08/06/2020 13:19",
 		"getTransitionNamed:ifNone:" : "BrunoBB 10/30/2015 05:44",
 		"hasCreationTimer" : "brunobb 08/06/2020 13:10",
@@ -44,7 +45,7 @@
 		"hasOrbeonFormNamed:" : "BrunoBB 01/23/2016 07:26",
 		"hasOrbeonOrSeasideTasks" : "brunobb 04/24/2018 08:59",
 		"hasScriptNamed:" : "BrunoBB 06/22/2016 11:43",
-		"hasTaskNamed:" : "BrunoBB 12/21/2015 09:48",
+		"hasTaskNamed:" : "brunobb 08/07/2020 10:19",
 		"initialize" : "BrunoBB 06/22/2016 11:40",
 		"intermediateEvents" : "BrunoBB 10/27/2015 17:25",
 		"intermediateEvents:" : "BrunoBB 10/27/2015 17:25",
@@ -61,5 +62,4 @@
 		"startEventOutTransitionsLast" : "brunobb 08/06/2020 11:48",
 		"subProcessTasks" : "BrunoBB 10/27/2015 15:21",
 		"subProcessTasks:" : "BrunoBB 10/27/2015 15:21",
-		"tasks" : "BrunoBB 10/27/2015 15:21",
-		"tasks:" : "BrunoBB 10/27/2015 15:21" } }
+		"tasksAndSubProcessTasksDo:" : "brunobb 08/07/2020 10:38" } }

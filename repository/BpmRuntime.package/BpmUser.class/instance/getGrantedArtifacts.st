@@ -5,6 +5,6 @@ getGrantedArtifacts
 
 	artifacts := Set new.
 
-	roles do: [:each | artifacts addAll: each tasks].
+	roles do: [:eachRole | eachRole tasksDo: [:task | artifacts add: task]].
 
 	^artifacts asOrderedCollection

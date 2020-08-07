@@ -2,7 +2,7 @@
 	"class" : {
 		"on:" : "BrunoBB 10/31/2015 15:57" },
 	"instance" : {
-		"attachEventsToTaskIn:withXPDL:" : "brunobb 08/05/2019 11:11",
+		"attachEventsToTaskIn:withXPDL:" : "brunobb 08/07/2020 10:40",
 		"connectSubProcessTaskWithSubProcess" : "BrunoBB 06/29/2016 09:35",
 		"createEmbeddedSubProcessFor:basedOn:package:" : "brunobb 08/06/2020 10:08",
 		"createParticipantDefinitionsOf:" : "bruno 07/27/2020 14:57",
