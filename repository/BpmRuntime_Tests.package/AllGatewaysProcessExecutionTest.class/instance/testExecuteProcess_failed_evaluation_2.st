@@ -7,8 +7,8 @@ testExecuteProcess_failed_evaluation_2
 	transition2 := gateway outTransitionsAt: 2.
 	evaluation1 := transition1 conditionToRun evaluationCode.
 	evaluation2 := transition2 conditionToRun evaluationCode.
-	transition1 conditionToRun evaluationCode: '[:proc | 4]'.
-	transition2 conditionToRun evaluationCode: '[:proc | proc foo]'.
+	transition1 evaluationCode: '[:proc | 4]'.
+	transition2 evaluationCode: '[:proc | proc foo]'.
 
 	self assert: (procInstance startEventName = 'start all').
 	"Step 1 - Form [task-1]"
@@ -36,5 +36,5 @@ testExecuteProcess_failed_evaluation_2
 	self assert: procInstance currentState hasException equals: true.
 
 	"restore the original evaluation code"
-	transition1 conditionToRun evaluationCode: evaluation1.
-	transition2 conditionToRun evaluationCode: evaluation2.
+	transition1 evaluationCode: evaluation1.
+	transition2 evaluationCode: evaluation2.

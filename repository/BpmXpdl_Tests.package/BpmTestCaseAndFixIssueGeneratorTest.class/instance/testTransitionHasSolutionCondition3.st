@@ -5,8 +5,8 @@ testTransitionHasSolutionCondition3
 	process := self getArchitectProcess.
 
 	transition := process getTransitionNamed: 'create-workaround' ifNone: [self assert: false].
-	self assert: (transition conditionToRun evaluationCode = '[:form | form hasSolution = ''no'']').
+	self assert: (transition evaluationCodeIsEqualTo: '[:form | form hasSolution = ''no'']').
 
 
 	transition := process getTransitionNamed: 'create-solution' ifNone: [self assert: false].
-	self assert: (transition conditionToRun evaluationCode = '[:form | form hasSolution = ''yes'']')
+	self assert: (transition evaluationCodeIsEqualTo: '[:form | form hasSolution = ''yes'']')

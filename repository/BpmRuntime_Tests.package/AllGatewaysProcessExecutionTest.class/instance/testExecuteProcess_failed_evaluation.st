@@ -5,7 +5,7 @@ testExecuteProcess_failed_evaluation
 	gateway := procDefinition getGatewayNamed: 'task 4 or 5' ifNone: [self assert: false]. 
 	transition1 := gateway outTransitionsAt: 1.
 	evaluation1 := transition1 conditionToRun evaluationCode.
-	transition1 conditionToRun evaluationCode: '[:proc | 4]'.
+	transition1 evaluationCode: '[:proc | 4]'.
 
 	self assert: (procInstance startEventName = 'start all').
 	"Step 1 - Form [task-1]"
@@ -33,4 +33,4 @@ testExecuteProcess_failed_evaluation
 	self assert: procInstance currentState hasException equals: true.
 
 	"restore the original evaluation code"
-	transition1 conditionToRun evaluationCode: evaluation1.
+	transition1 evaluationCode: evaluation1.

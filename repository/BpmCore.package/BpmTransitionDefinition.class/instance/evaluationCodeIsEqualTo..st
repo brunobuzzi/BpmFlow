@@ -1,0 +1,3 @@
+Accessing
+evaluationCodeIsEqualTo: aString
+	^conditionToRun evaluationCodeIsEqualTo: aString
