@@ -7,6 +7,6 @@ unsend
 	recipients := to select: [:each | each isUser].
 
 	"transform roles into users"
-	(to select: [:each | each isRole]) do: [:eachRole | recipients addAll: eachRole users].
+	(to select: [:each | each isRole]) do: [:eachRole | eachRole usersDo: [:user | recipients add: user]].
 
 	recipients do: [:eachUser | (eachUser getSystemNotificationsInboxIn: bpmEnvironment) removeEntry: self ifAbsent: []].

@@ -1,7 +1,7 @@
 test
 testRoundRobinTaskAssignation_visaAccepted
 	"Testing Assignation Policy Round Robin by Role"
-	| newRoundRobinProcesses availableUsers assignations assignmentsInProcess subProc |
+	| newRoundRobinProcesses assignations assignmentsInProcess subProc |
 
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') removeAllUsers.
 	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') grantUser: (self getUserNamed: 'andrew vo').
@@ -15,7 +15,6 @@ testRoundRobinTaskAssignation_visaAccepted
 	subProc setRoundRobinTaskAssignationPolicy: true. "new assignation policy is created here (all user has count := 0)"
 
 	newRoundRobinProcesses := OrderedCollection new.
-	availableUsers := (self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'ue') users asOrderedCollection. 
 
 	self assert: (procDefinition assignationPolicyAssignmentsAllSatisfy: [:eachCount | eachCount count = 0]). 
 

@@ -4,6 +4,6 @@ getAllGrantedUsers
 	| inheritUsers |
 
 	inheritUsers := Set new.
-	userGroups do: [:userGroup | inheritUsers addAll: userGroup users].
+	userGroups do: [:userGroup | userGroup usersDo: [:user | inheritUsers add: user]].
  
 	^users asSet, inheritUsers

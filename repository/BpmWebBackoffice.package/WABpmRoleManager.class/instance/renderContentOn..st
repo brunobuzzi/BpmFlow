@@ -16,8 +16,8 @@ renderContentOn: html
 
 	html div id: 'rols-and-users'; with: [
 			html div id: 'rols-users'; class: 'default-gray-table ';
-				with:[usersWithSelectedRoleBatchList items: selectedObject users asArray.
-							html render: (usersWithSelectedRoleBatchList table: self sewafTableUsersWithRol)].
+				with:[selectedObject usersDo: [:user | usersWithSelectedRoleBatchList items add: user].
+						html render: (usersWithSelectedRoleBatchList table: self sewafTableUsersWithRol)].
 			selectedUser ifNotNil: [
 				html div id: 'user-rols'; class: 'default-gray-table ';
 					with:[rolesWithSelectedUserBatchList items: (selectedUser rolesIn: self session bpmEnvironment).

@@ -1,0 +1,4 @@
+Accessing
+usersIsEmpty
+
+	^users isEmpty

@@ -16,7 +16,7 @@
 		"bpmEnvironment" : "brunobb 01/27/2020 11:07",
 		"canDelete" : "brunobb 01/27/2020 11:07",
 		"forgetAssignationHistory" : "brunobb 01/27/2020 11:07",
-		"getAllGrantedUsers" : "brunobb 02/02/2020 12:00",
+		"getAllGrantedUsers" : "brunobb 08/10/2020 13:48",
 		"getApplicationName" : "brunobb 01/27/2020 11:07",
 		"getProcessDefinitions" : "brunobb 01/27/2020 11:07",
 		"getUserAssociations:" : "brunobb 01/27/2020 11:07",
@@ -51,4 +51,5 @@
 		"users" : "brunobb 01/27/2020 11:07",
 		"users:" : "brunobb 01/27/2020 11:07",
 		"usersAssociationsSize" : "bruno 07/24/2020 13:21",
-		"usersSize" : "brunobb 01/27/2020 11:07" } }
+		"usersDo:" : "brunobb 08/10/2020 13:46",
+		"usersSize" : "brunobb 08/10/2020 13:52" } }

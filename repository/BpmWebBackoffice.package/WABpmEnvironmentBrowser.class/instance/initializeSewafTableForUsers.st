@@ -9,7 +9,7 @@ initializeSewafTableForUsers
 						add: self beBackofficeUserButton;
 						add: self removeUserButton;
 						yourself);
-		rows: (selectedLateralItem users asSortedCollection: [:a :b | a username <= b username]); 
+		rows: (selectedLateralItem usersAsSortedCollection: [:a :b | a username <= b username]); 
 		rowColors: #(white white);
 		rowPeriod: 1;
 		yourself.

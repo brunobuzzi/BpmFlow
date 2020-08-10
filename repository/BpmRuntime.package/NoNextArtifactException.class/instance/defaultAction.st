@@ -6,7 +6,7 @@ defaultAction
 	message := BpmProcessInternalMessage newFromApplicationIn: self getProcessInstance bpmEnvironment.
 
 	toUsers := OrderedCollection new.
-	bpmArtifact rolesDo: [:eachRole | toUsers addAll: eachRole users].
+	bpmArtifact rolesDo: [:eachRole | eachRole usersDo: [:user | toUsers add: user]].
 
 	message to: toUsers;
 		subject: 'No Next Artifact to Run';

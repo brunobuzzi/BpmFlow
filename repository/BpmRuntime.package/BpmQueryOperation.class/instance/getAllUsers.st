@@ -1,4 +1,0 @@
-other
-getAllUsers
-
-	^bpmEnvironment users

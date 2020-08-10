@@ -9,7 +9,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	[self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry on: procInstance] on: ImproperBpmOperationException do: [:ex | self assert: true].
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry on: procInstance.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 2]. "2: creation and take messages"
 
 	self assert: ((currentTask getCurrentRoleIfNone: [self assert: false]) name = 'data-entry-1').
@@ -28,7 +28,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: (currentTask finalizedPerformerCounter = 2).
 	self assert: currentTask numberOfLoops equals: 1.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 3]. "plus 1: take messages"
 
 	"Step 1.3 - Form [data-entry]" "Performer 3"
@@ -40,7 +40,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: (currentTask finalizedPerformerCounter = 0).
 	self assert: currentTask numberOfLoops equals: 2.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 5]. "plus 2: take, finalization"
 
 	"Step 1.1 - Form [data-entry]" "Performer 1 - Loop 2"
@@ -48,7 +48,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	[self processExecutionSimulator takeAndLoopTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry on: procInstance] on: ImproperBpmOperationException do: [:ex | self assert: true].
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'alberto' withForm: self formInstance_data_entry on: procInstance.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 6]. "2: take message"
 
 	self assert: ((currentTask getCurrentRoleIfNone: [self assert: false]) name = 'data-entry-1').
@@ -67,7 +67,7 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: (currentTask finalizedPerformerCounter = 2).
 	self assert: currentTask numberOfLoops equals: 2.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 7]. "plus 1: take messages"
 
 	"Step 1.3 - Form [data-entry]" "Performer 3 - Loop 2"
@@ -79,14 +79,14 @@ testExecuteProcess_data_entry_approved_withLoop
 	self assert: (currentTask finalizedPerformerCounter = 3).
 	self assert: currentTask numberOfLoops equals: 2.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 9]. "plus 2: take, finalization"
 
 	"Step 2 - Form [data-approved]" 
 	currentTask := procInstance currentActivities last.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'bruno' withForm: self formInstance_data_approved on: procInstance.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') users do: [:eachUser | 
+	(self defaultFrontOfficeRoleClass getRoleNamed: 'data-entry-manager' in: 'ue') usersDo: [:eachUser | 
 		self assert: ((eachUser getSystemNotificationsInboxIn: self bpmEnvironment) selectSatisfying: [:each | each processId = procInstance processId]) size = 5].  "this task def has not Inform role"
 
 	self assert: (currentTask getDefinitionName = 'data-approved').
