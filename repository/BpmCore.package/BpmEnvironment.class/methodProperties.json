@@ -124,9 +124,11 @@
 		"unregisterApplicationAndRemove:ifNone:" : "brunobb 02/12/2020 11:03",
 		"unregisterUser:" : "brunobb 02/12/2020 11:03",
 		"unregisterUserGroup:" : "brunobb 02/12/2020 11:03",
-		"users" : "brunobb 02/12/2020 11:03",
 		"users:" : "brunobb 02/12/2020 11:03",
+		"usersAsOrderedCollection" : "brunobb 08/10/2020 14:18",
 		"usersAsSortedCollection:" : "brunobb 08/10/2020 13:51",
+		"usersDetect:ifNone:" : "brunobb 08/10/2020 14:14",
 		"usersDo:" : "brunobb 08/10/2020 13:43",
 		"usersIsEmpty" : "brunobb 08/10/2020 13:57",
-		"usersReject:" : "brunobb 08/10/2020 14:05" } }
+		"usersReject:" : "brunobb 08/10/2020 14:05",
+		"usersSelect:" : "brunobb 08/10/2020 14:13" } }
