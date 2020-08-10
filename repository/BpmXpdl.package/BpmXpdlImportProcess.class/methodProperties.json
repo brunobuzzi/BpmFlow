@@ -2,8 +2,10 @@
 	"class" : {
 		"newForApplications:in:" : "brunobb 12/18/2018 11:28" },
 	"instance" : {
-		"applications" : "brunobb 12/18/2018 11:28",
 		"applications:" : "brunobb 12/18/2018 11:28",
+		"applicationsAsOrderedCollection" : "brunobb 08/10/2020 14:35",
+		"applicationsCollect:" : "brunobb 08/10/2020 14:30",
+		"applicationsDo:" : "brunobb 08/10/2020 14:30",
 		"bpmEnvironment" : "brunobb 12/18/2018 11:28",
 		"bpmEnvironment:" : "brunobb 12/18/2018 11:28",
 		"checkFilesFormatOf:" : "brunobb 05/29/2019 11:37",

@@ -1,0 +1,4 @@
+Accessing
+applicationsAsOrderedCollection
+
+	^applications asOrderedCollection

@@ -10,7 +10,7 @@ renderItemComponentOn: html
 			self renderAddApplicationToEnvironmentOn: html.
 			point := 10@10.
 			html div with: [
-				self selectedLateralItem applications do: [:application |
+				self selectedLateralItem applicationsDo: [:application |
 					self renderApplicationNameOn: html at: point application: application.
 				].
 			].

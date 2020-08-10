@@ -1,5 +1,10 @@
 applications
 getAllApplications
 	"Answer a collection with all applications in all environments"
+	| all |
 
-	^self cache inject: Set new into: [:all :environment | all addAll: environment applications. all]
+	all := Set new.
+
+	self cache do: [:environment | environment applicationsDo: [:app | all add: app]].
+
+	^all

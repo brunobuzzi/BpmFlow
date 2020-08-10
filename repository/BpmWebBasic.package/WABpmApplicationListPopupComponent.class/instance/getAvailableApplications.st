@@ -1,4 +1,4 @@
 other
 getAvailableApplications
 
-	^self selectedEnvironment applications
+	^self selectedEnvironment applicationsAsSortedCollection

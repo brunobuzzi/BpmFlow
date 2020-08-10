@@ -4,6 +4,6 @@ getBackofficeApplicationsIn: aBpmEnvironment
 
 	(self isBackofficeUserIn: aBpmEnvironment) ifFalse: [^OrderedCollection new].
 
-	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^aBpmEnvironment applications].
+	(self isBackofficeUserAndAdminIn: aBpmEnvironment) ifTrue: [^aBpmEnvironment applicationsAsSortedCollection].
 
 	^self getApplicationsIn: aBpmEnvironment

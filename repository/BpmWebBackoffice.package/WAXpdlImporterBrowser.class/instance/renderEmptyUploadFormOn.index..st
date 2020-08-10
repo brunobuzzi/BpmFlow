@@ -11,7 +11,7 @@ renderEmptyUploadFormOn: html index: index
 						html fieldSet with:[
 							html legend with: [html strong: ('XPDL Upload Form' translateIn: self session)].
 							html label attributeAt: 'for' put: appId; with: ('Application' translateIn: self session).
-							html select list: (#('-'), (model applications collect: [:each | each applicationName])) asSortedCollection; 
+							html select list: (#('-'), (model applicationsCollect: [:each | each applicationName])) asSortedCollection; 
 								attributeAt: 'id' put: appId;
 								title: ('Available Form Applications' translateIn: self session);
 								onChange: 'submit()';

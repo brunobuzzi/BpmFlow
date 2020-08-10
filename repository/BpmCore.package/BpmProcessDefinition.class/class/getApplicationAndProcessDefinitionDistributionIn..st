@@ -4,7 +4,7 @@ getApplicationAndProcessDefinitionDistributionIn: aBpmEnvironment
 
 	distribution := OrderPreservingDictionary new.
 
-	aBpmEnvironment applications do: [:application | 
+	aBpmEnvironment applicationsDo: [:application | 
 		distribution at: application applicationName put: application processesDefinitionsSize.
 	].
 
