@@ -20,7 +20,7 @@ acceptTaskNoneNode: aXPDLTaskNoneNode
 	ifTrue: [self addNonExistingSeasideComponentItem: aXPDLTaskNoneNode].
 
 	"Madatory fields are not needed (for the first form) when the Process has an anonymous start"
-	(aXPDLTaskNoneNode workflowHasAnonymousStart and: [aXPDLTaskNoneNode workflowStartNodeOutTransitionsAnySatisfy: [:each | each endNode == aXPDLTaskNoneNode]])
+	(aXPDLTaskNoneNode workflowHasAnonymousStart and: [aXPDLTaskNoneNode workflowStartNodeOutTransitionsAnySatisfy: [:each | each endNodeIsIdenticalTo: aXPDLTaskNoneNode]])
 	ifFalse: [| formDef |
 		application ifNil: [^self].
 		formDef := application definitionNamed: aXPDLTaskNoneNode getName.

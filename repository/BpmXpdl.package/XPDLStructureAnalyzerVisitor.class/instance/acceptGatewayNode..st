@@ -14,6 +14,7 @@ acceptGatewayNode: aXPDLGatewayNode
 	(aXPDLGatewayNode isGatewayForEventsNode and: [aXPDLGatewayNode inTransitionsSize > 1]) ifTrue: [self addEventGatewayUsedForMergingItem: aXPDLGatewayNode].
 
 	aXPDLGatewayNode isGatewayForEventsNode 
-	ifTrue: [(aXPDLGatewayNode outTransitionsReject: [:eachTr | eachTr endNodeIsEventNode]) do: [:eachTr | self addNoneEventNodeAfterEventGatewayItem: eachTr endArtifact]].
+	ifTrue: [(aXPDLGatewayNode outTransitionsReject: [:eachTr | eachTr endNodeIsEventNode]) 
+					do: [:eachTr | eachTr endNodeDo: [:endNode | self addNoneEventNodeAfterEventGatewayItem: endNode]]].
 
 	aXPDLGatewayNode outTransitionsDo: [:each | each acceptVisitor: self].

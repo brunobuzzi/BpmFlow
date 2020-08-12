@@ -6,7 +6,7 @@ getTooltipOrNil
 	tooltip := PrintStream on: String new.
 	(outTransitions select: [:each | each hasCondition]) 
 		do: [:trNode | tooltip 
-								nextPutAll: trNode endNode getName;
+								nextPutAll: (trNode endNodeDo: [:endNode | endNode getName]);
 								nextPutAll: String lf;
 								nextPutAll: trNode startCondition; 
 								nextPutAll: String lf].

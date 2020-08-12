@@ -18,6 +18,6 @@ acceptTransitionNode: aXPDLTransitionNode
 		blockAnalysis codeWarnings do: [:eachString | self addTransitionCodeWarningItem: aXPDLTransitionNode description: eachString]. 
 	].
 
-	aXPDLTransitionNode endNode ifNil: [^self addTransitionWithNoEndNodeItem: aXPDLTransitionNode]. 
+	aXPDLTransitionNode endNodeIfNil: [^self addTransitionWithNoEndNodeItem: aXPDLTransitionNode]. 
 
-	aXPDLTransitionNode endNode acceptVisitor: self.
+	aXPDLTransitionNode endNodeDo: [:endNode | endNode acceptVisitor: self]
