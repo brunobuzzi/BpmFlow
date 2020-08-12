@@ -1,0 +1,4 @@
+Accessing
+endArtifactIsTimerEvent
+
+	^endArtifact isTimerEvent

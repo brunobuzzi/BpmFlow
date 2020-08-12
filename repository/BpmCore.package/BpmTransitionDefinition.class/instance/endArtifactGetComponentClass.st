@@ -1,0 +1,4 @@
+Accessing
+endArtifactGetComponentClass
+
+	^endArtifact getComponentClass

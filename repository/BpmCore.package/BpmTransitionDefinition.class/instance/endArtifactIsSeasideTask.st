@@ -1,0 +1,4 @@
+Accessing
+endArtifactIsSeasideTask
+
+	^endArtifact isSeasideTask

@@ -5,5 +5,5 @@ getAllPossiblePathToEnd
 
 	^self getAllPossiblePath select: [:pathCollection | | lastElement |
 			lastElement := pathCollection last.
-			lastElement transition endArtifact isEndEvent
+			lastElement transition endArtifactIsEndEvent
 	]

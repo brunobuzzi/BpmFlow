@@ -1,0 +1,4 @@
+Accessing
+endArtifactIsEndEvent
+
+	^endArtifact isEndEvent

@@ -1,0 +1,4 @@
+Accessing
+endArtifactName
+
+	^endArtifact name
