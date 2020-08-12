@@ -4,4 +4,4 @@ canBeStartedByAnonymousForm
 
 	processDefinition isSubProcess ifTrue: [^false].
 
-	^(startEvent outTransitionsSize = 1) and: [startEvent outTransitionsAllSatisfy: [:each | each endArtifact isOrbeonTask]]
+	^(startEvent outTransitionsSize = 1) and: [startEvent outTransitionsAllSatisfy: [:each | each endArtifactIsOrbeonTask]]

@@ -12,4 +12,4 @@ acceptTransition: aBpmTransitionDefinition
 		ifFalse: [missingEvaluationFields add: fieldName].
 	].
 
-	aBpmTransitionDefinition endArtifact acceptVisitor: self.
+	aBpmTransitionDefinition endArtifactDo: [:endArt | endArt acceptVisitor: self]

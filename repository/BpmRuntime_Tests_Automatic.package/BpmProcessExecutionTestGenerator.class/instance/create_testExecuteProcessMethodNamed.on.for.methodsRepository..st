@@ -15,20 +15,20 @@ create_testExecuteProcessMethodNamed: aString on: aStream for: aBpmProcessInstan
 	self createProcessInstanceOn: aStream for: aBpmProcessInstance.
 	self createTaskMatricesOn: aStream for: aBpmProcessInstance.
 	
-	transitionEntries keysAndValuesDo: [:index :eachEntry | | transition endArtifact |
+	transitionEntries keysAndValuesDo: [:index :eachEntry | | transition  |
 		transition := eachEntry bpmObject.
-		endArtifact := transition endArtifact.
-		endArtifact isSubprocess "create a new test method for the subprocess "
+		transition endArtifactIsSubprocess "create a new test method for the subprocess "
 		ifTrue: [ | methodName newStream |
-			methodName := self getTestExecuteSubProcessMethodNameFor: endArtifact processInstance.
+			transition endArtifactDo: [:endArtifact | methodName := self getTestExecuteSubProcessMethodNameFor: endArtifact processInstance].
+
 			newStream := String new writeStream.
-			self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary.
+			transition endArtifactDo: [:endArtifact | self create_testExecuteProcessMethodNamed: methodName on: newStream for: endArtifact processInstance methodsRepository: aDictionary].
 			aStream 
 				cr;tab;
 				nextPutAll: 'self ', methodName, '. "Resume test with a SubProcess"'; "this is the call to the new test method"
 				cr.
 		].
-		endArtifact isTask ifTrue: [self createStepFor: endArtifact on: aStream index: index].
+		transition endArtifactIsTask ifTrue: [transition endArtifactDo: [:endArtifact | self createStepFor: endArtifact on: aStream index: index]].
 	]. 
 
 	aDictionary at: aString put: aStream contents

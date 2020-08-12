@@ -1,0 +1,4 @@
+Accessing
+endNodeIsEventNode
+
+	^endNode isEventNode
