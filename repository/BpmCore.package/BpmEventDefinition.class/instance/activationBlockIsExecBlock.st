@@ -1,0 +1,4 @@
+other
+activationBlockIsExecBlock
+
+	^type activationBlockIsExecBlock

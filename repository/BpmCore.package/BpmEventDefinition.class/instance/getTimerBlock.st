@@ -1,4 +1,0 @@
-other
-getTimerBlock
-
-	^type activationBlock

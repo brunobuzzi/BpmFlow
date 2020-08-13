@@ -1,0 +1,4 @@
+process execution
+evaluateTimerBlockLastExecution: lastExecutionTime currentTime: timeStamp process: aBpmProcessInstance
+
+	^definition evaluateTimerBlockLastExecution: lastExecutionTime currentTime: timeStamp process: aBpmProcessInstance

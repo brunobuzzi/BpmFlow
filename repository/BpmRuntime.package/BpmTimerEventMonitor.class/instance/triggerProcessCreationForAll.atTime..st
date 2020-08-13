@@ -5,10 +5,9 @@ triggerProcessCreationForAll: processCollection atTime: aTimeStamp
 
 	instancesCollection := OrderedCollection new.
 
-	processCollection do: [:processDefinition | | timerBlock lastExecutionTime processInstance |
-		timerBlock := processDefinition getStartTimerBlock.
+	processCollection do: [:processDefinition | | lastExecutionTime processInstance |
 		lastExecutionTime := self getLastProcessCreationTimeFor: processDefinition.
-		(timerBlock value: lastExecutionTime value: aTimeStamp)  "evaluates the Timer Block"
+		(processDefinition evaluateStartTimerBlockLastExecution: lastExecutionTime currentTime: aTimeStamp) "evaluates the Timer Block"
 		ifTrue: [processInstance := processDefinition createAndStartProcessInstance: nil. "create the <BpmProcessInstance>"
 					self updateLastExecutionTimeFor: processInstance.
 					instancesCollection add: processInstance].

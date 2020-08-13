@@ -1,4 +1,4 @@
 other
 getTimerBlockSource
 
-	^self getTimerBlock blockSource
+	^type getTimerBlockSource
