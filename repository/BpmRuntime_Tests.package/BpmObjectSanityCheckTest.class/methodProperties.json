@@ -5,7 +5,7 @@
 		"testAbortedProcessInNormalCollection" : "bruno 07/22/2020 16:19",
 		"testApplicationsIdentity" : "brunobb 02/05/2020 09:58",
 		"testBpmEnviromentsAndApplicationsIdentity" : "brunobb 08/10/2020 14:31",
-		"testEmptyUnionInAvailableAndTakenAssignments" : "brunobb 08/10/2020 14:32",
+		"testEmptyUnionInAvailableAndTakenAssignments" : "brunobb 08/13/2020 14:11",
 		"testFormFieldValueAssignments" : "bruno 07/27/2020 14:51",
 		"testGetComponentsInTaskDefinitions" : "brunobb 02/05/2020 09:59",
 		"testMatrixAssignmentAndTaskIdentity" : "bruno 07/22/2020 16:19",
