@@ -1,0 +1,4 @@
+Accessing
+bpmEnvironmentsSize
+
+	^bpmEnvironments size

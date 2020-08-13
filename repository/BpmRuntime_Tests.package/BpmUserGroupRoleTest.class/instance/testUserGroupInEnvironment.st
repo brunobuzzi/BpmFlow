@@ -39,6 +39,6 @@ testUserGroupInEnvironment
 		self assert: (frole isGranted: fuser). "but <fuser> has the role <frole> because is a direct assignation"
 	].
 
-	self assert: generalUser bpmEnvironments size equals: 5.
+	self assert: generalUser bpmEnvironmentsSize equals: 5.
 	environments do: [:each | each unregisterUser: generalUser].
-	self assert: generalUser bpmEnvironments size equals: 0.
+	self assert: generalUser bpmEnvironmentsSize equals: 0.
