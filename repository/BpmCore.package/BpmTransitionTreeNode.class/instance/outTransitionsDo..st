@@ -1,6 +1,6 @@
 other
 outTransitionsDo: aBlock
 
-	transition endArtifact attachedEventsOutTransitionsDo: aBlock.
+	transition endArtifactDo: [:artifact | artifact attachedEventsOutTransitionsDo: aBlock].
 
-	transition endArtifact outTransitionsDo: aBlock
+	transition endArtifactDo: [:artifact | artifact outTransitionsDo: aBlock].
