@@ -2,4 +2,8 @@
 	"class" : {
 		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 06/05/2020 10:55" },
 	"instance" : {
-		"initializeForBpmFlow" : "brunobb 06/05/2020 10:30" } }
+		"getAvailableTaskAssignments" : "brunobb 08/13/2020 14:30",
+		"getFinishedTaskAssignments" : "brunobb 08/13/2020 14:30",
+		"getTakenTaskAssignments" : "brunobb 08/13/2020 14:30",
+		"initializeForBpmFlow" : "brunobb 06/05/2020 10:30",
+		"resetAllRolesAndAssignments" : "brunobb 02/06/2020 10:45" } }
