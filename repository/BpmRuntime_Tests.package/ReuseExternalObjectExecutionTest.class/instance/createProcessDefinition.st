@@ -9,6 +9,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'reuse-form' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'reuse-form' ifNone: [self assert: false].

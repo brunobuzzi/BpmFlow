@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'recursive-data' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'recursive-data' ifNone: [self assert: false].

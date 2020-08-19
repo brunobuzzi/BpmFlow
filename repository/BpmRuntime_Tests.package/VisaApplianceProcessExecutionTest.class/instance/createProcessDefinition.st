@@ -14,6 +14,6 @@ createProcessDefinition
 		mapProcess: 'check-financial-data' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'visa-appliance' ifNone: [self assert: false].

@@ -10,7 +10,7 @@ createProcessDefinition
 	processGenerator mapProcess: 'Simple Registration' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'st');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	"Associate the anonymous form with the ProcessDefinition"
 	self defaultProcessDefinitionClass registerAnonymousStartFor:(self defaultProcessDefinitionClass getAllProcessesNamed: 'Simple Registration' in: 'st') last.

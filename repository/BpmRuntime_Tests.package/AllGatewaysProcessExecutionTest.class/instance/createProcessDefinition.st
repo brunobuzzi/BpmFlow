@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'all gateways' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'all gateways' ifNone: [self assert: false].

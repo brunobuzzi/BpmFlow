@@ -9,6 +9,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'all-type-conditions' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'all-type-conditions' ifNone: [self assert: false].

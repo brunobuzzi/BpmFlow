@@ -12,7 +12,7 @@ createProcessesDefinition
 		mapProcess: 'House Purchase with Loan 2' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	senderProcessDef := processGenerator getProcessDefinitionNamed: 'House Loan 2' ifNone: [self assert: false].
 	receiverProcesDef := processGenerator getProcessDefinitionNamed: 'House Purchase with Loan 2' ifNone: [self assert: false].

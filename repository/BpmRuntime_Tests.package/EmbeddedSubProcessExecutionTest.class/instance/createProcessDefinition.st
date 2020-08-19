@@ -14,6 +14,6 @@ createProcessDefinition
 		mapProcess: 'reusable-sub-proc' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	generator processes do: [:each | each addToCache].
+	generator processesDo: [:each | each addToCache].
 
 	^generator getProcessDefinitionNamed: 'ReusableEmbeddedProc' ifNone: []

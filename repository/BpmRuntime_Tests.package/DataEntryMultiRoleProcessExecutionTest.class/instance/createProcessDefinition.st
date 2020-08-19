@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'multi-role' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'multi-role' ifNone: [self assert: false].

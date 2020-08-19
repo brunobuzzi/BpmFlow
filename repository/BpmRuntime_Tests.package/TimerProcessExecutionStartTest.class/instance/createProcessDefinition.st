@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'timer-process-start' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'timer-process-start' ifNone: [self assert: false].

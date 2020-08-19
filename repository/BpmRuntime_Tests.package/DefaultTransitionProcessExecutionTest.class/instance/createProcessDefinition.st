@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'default-transition-process' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'default-transition-process' ifNone: [self assert: false].

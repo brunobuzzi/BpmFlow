@@ -12,6 +12,6 @@ createProcessDefinition
 		mapProcess: 'form-process' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'dashboard-error-sub-proc' ifNone: [self assert: false].

@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'Process with Scripts' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'Process with Scripts' ifNone: [self assert: false].

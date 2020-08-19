@@ -10,6 +10,6 @@ createProcessDefinition
 	processGenerator mapProcess: 'dashboard-process-with-loop' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 
-	processGenerator processes do: [:each | each addToCache].
+	processGenerator processesDo: [:each | each addToCache].
 
 	^processGenerator getProcessDefinitionNamed: 'dashboard-process-with-loop' ifNone: [self assert: false].
