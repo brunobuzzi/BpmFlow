@@ -1,0 +1,4 @@
+other
+endArtifactIsOrbeonTask
+
+	^transition endArtifactIsOrbeonTask

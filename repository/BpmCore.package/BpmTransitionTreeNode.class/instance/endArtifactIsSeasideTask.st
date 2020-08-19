@@ -1,0 +1,4 @@
+other
+endArtifactIsSeasideTask
+
+	^transition endArtifactIsSeasideTask

@@ -17,6 +17,4 @@ clone
 
 	processGenerator generateAllProcess.
 
-	"processGenerator processes do: [:each | each addToCache]."
-
-	^processGenerator processes
+	^processGenerator

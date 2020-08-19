@@ -1,0 +1,4 @@
+other
+endArtifactGetComponentClass
+
+	^transition endArtifactGetComponentClass
