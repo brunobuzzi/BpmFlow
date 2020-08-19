@@ -12,7 +12,7 @@ doIt
 		formName: savedFormDefinition formName;
 		affectedProcesses: (self getAffectedProcessesBy: savedFormDefinition).
 
-	application backofficeRoles do: [:bpmRole | message addRecipients: bpmRole].
+	application backofficeRolesDo: [:bpmRole | message addRecipients: bpmRole].
 
 	message beSavedSubject;
 				createMessageBody;

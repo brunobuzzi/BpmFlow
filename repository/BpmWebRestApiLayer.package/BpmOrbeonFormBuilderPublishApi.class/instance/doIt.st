@@ -13,7 +13,7 @@ doIt
 		formName: publishedFormDefinition formName;
 		affectedProcesses: (self getAffectedProcessesBy: publishedFormDefinition).
 
-	application backofficeRoles do: [:bpmRole | message addRecipients: bpmRole].
+	application backofficeRolesDo: [:bpmRole | message addRecipients: bpmRole].
 
 	message bePublishSubject;
 				createMessageBody;

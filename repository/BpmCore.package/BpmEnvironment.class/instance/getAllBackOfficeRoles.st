@@ -1,5 +1,9 @@
 roles
 getAllBackOfficeRoles
 	"Answer a collection with all backoffice roles of the receiver"
+	| allRoles |
 
-	^applications inject: OrderedCollection new into: [:all :each | all addAll: each backofficeRoles. all]
+	allRoles := Set new.
+	applications do: [:eachApp | eachApp backofficeRolesDo: [:role | allRoles add: role]].
+
+	^allRoles asOrderedCollection
