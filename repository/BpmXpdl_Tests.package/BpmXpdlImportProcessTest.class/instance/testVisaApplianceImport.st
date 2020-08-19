@@ -25,7 +25,7 @@ testVisaApplianceImport
 	importProcess importBizagiFiles.
 
 	self deny: importProcess hasWarnings.
-	self assert: importProcess generatedProcesses size equals: 3.
+	self assert: importProcess generatedProcessesSize equals: 3.
 
 	importProcess storeBpmProcessDefinition.
 

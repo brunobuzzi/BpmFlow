@@ -4,6 +4,7 @@ testOrbeon604
 
 	environment := self getDefaultEnvironment.
 	agesic := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'agesic'.
+	self getDefaultEnvironment registerApplication: agesic.
 	applications := OrderedCollection with: agesic.
 
 	formDefinition := self formCreatorClass createDefinition: 'test' with: #formDefinition_example_4 in: agesic.
@@ -24,3 +25,8 @@ testOrbeon604
 
 	self assert: importProcess detectedItemsSize equals: 8.
 	self assert: (importProcess detectedItems allSatisfy: [:each | each code = 604]).
+
+	self getDefaultEnvironment unregisterApplication: agesic.
+	agesic 
+		resetDefinitionRegistry;
+		removeFromCache.
