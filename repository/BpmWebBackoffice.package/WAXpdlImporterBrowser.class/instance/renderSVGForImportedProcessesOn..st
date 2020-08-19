@@ -1,7 +1,7 @@
 import
 renderSVGForImportedProcessesOn: html
 
-	model generatedProcesses do: [:processDefinition |  
+	model generatedProcessesDo: [:processDefinition |  
 		html div class: 'imported-process'; with: [
 			html anchor 
 				class: 'cursor-pointer';

@@ -1,4 +1,4 @@
-other
-numberOfGeneratedProcesses
+import
+generatedProcessesSize
 
 	^processGenerator processesSize

@@ -5,4 +5,4 @@ createBpmProcessesDefinitions
 
 	processGenerator generateAllProcess.
 
-	processesAsTree := self generatedProcesses collect: [:each | each asTree].
+	processesAsTree := self generatedCollect: [:each | each asTree].
