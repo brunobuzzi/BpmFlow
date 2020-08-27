@@ -13,8 +13,9 @@ saveFinalFormInstance: formName app: app withId: id dataFormat: dataFormatVersio
 		formName: formName;
 		isValid: aBoolean;
 		version: version;
-		username:  (self requestContext request headerAt: 'orbeon-username'); "BUG - creator set only one time"
 		modifiedUser: (self requestContext request headerAt: 'orbeon-username');
-		groupname: (self requestContext request headerAt: 'orbeon-group').
+		group: (self requestContext request headerAt: 'orbeon-group');
+		user: (self requestContext request headerAt: 'orbeon-username');
+		setUserCredentialsFrom: (self requestContext request headerAt: 'orbeon-credentials').
 
 	^apiOperation doIt

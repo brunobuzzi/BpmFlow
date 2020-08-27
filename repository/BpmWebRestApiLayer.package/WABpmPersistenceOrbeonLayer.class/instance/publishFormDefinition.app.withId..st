@@ -10,6 +10,9 @@ publishFormDefinition: formName app: app withId: documentId
 	apiOperation
 		appName: app;
 		formName: formName;
-		headerVersion: (self requestContext request headerAt: 'orbeon-form-definition-version').
+		headerVersion: (self requestContext request headerAt: 'orbeon-form-definition-version');
+		group: (self requestContext request headerAt: 'orbeon-group');
+		user: (self requestContext request headerAt: 'orbeon-username');
+		setUserCredentialsFrom: (self requestContext request headerAt: 'orbeon-credentials').
 
 	^apiOperation doIt.
