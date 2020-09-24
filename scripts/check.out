@@ -14,3 +14,70 @@ topaz> exit
 topaz> exit 
 topaz> exit 
 topaz> exit 
+USAGE: startTopaz [-h] <stone-name> [<topaz-commandLine-args>]
+
+Run topaz for the given stone.
+
+OPTIONS
+  -h 
+     display help
+
+EXAMPLES
+  startTopaz -h
+  startTopaz gs_329 -l -T 50000
+  startTopaz gs_329
+
+USAGE: startTopaz [-h] <stone-name> [<topaz-commandLine-args>]
+
+Run topaz for the given stone.
+
+OPTIONS
+  -h 
+     display help
+
+EXAMPLES
+  startTopaz -h
+  startTopaz gs_329 -l -T 50000
+  startTopaz gs_329
+
+USAGE: startTopaz [-h] <stone-name> [<topaz-commandLine-args>]
+
+Run topaz for the given stone.
+
+OPTIONS
+  -h 
+     display help
+
+EXAMPLES
+  startTopaz -h
+  startTopaz gs_329 -l -T 50000
+  startTopaz gs_329
+
+USAGE: startTopaz [-h] <stone-name> [<topaz-commandLine-args>]
+
+Run topaz for the given stone.
+
+OPTIONS
+  -h 
+     display help
+
+EXAMPLES
+  startTopaz -h
+  startTopaz gs_329 -l -T 50000
+  startTopaz gs_329
+
+topaz> exit 
+USAGE: startTopaz [-h] <stone-name> [<topaz-commandLine-args>]
+
+Run topaz for the given stone.
+
+OPTIONS
+  -h 
+     display help
+
+EXAMPLES
+  startTopaz -h
+  startTopaz gs_329 -l -T 50000
+  startTopaz gs_329
+
+topaz> exit 

@@ -11,7 +11,10 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-
+if [ -z "$1" ]; then
+  echo "GemStone/S name must be an argument of the script";
+  exit 0
+fi
 if sh checkIfStoneExist.sh "$1"; 
   then echo "" 
   else 
