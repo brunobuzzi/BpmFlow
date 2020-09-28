@@ -1,12 +1,12 @@
 other
-doIt
+doItIfNotFound: aBlock
 	"The receiver publish the form named <formName> in application named <app> with id <id> title <title> description <description> and xml <xmlString>. 
 	The version of the form is in <headerVersion> - orbeon parameter.
 	* Calculate the version number & create <anOrbeonSavedFormDefinition> 
 	* Compare latest published version with the new one --> [update the current |or| add the new one]"
 	| message |
 
-	super doIt.
+	super doItIfNotFound: aBlock.
 
 	message := BpmOrbeonFormDefinitionUpdatedMessage newFromSystemIn: application bpmEnvironment.
 	message application: application;
