@@ -1,17 +1,7 @@
 #!/bin/sh
 # Requires GS_HOME variable defined
 PROGRAM_NAME="install_all"
-info() {
-  echo 1>&2
-  CURRENT_TIME=`date`
-  echo ${PROGRAM}[INFO]: $* [$CURRENT_TIME] 1>&2
-  echo 1>&2
-}
-error() {
-  echo 1>&2
-  echo [ERROR]: $* 
-  echo 1>&2
-}
+source ./common.sh
 usage() {
   error "Usage: ${PROGRAM_NAME} -s DBNAME"
 }

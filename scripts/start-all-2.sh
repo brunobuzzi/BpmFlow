@@ -6,17 +6,7 @@
 # At registration time (register-application.sh) there is a list of ports in ports-all.ini and each will be active when this script is executed.
 
 PROGRAM_NAME="start_all"
-info() {
-  echo 1>&2
-  CURRENT_TIME=`date`
-  echo ${PROGRAM}[INFO]: $* [$CURRENT_TIME] 1>&2
-  echo 1>&2
-}
-error() {
-  echo 1>&2
-  echo [ERROR]: $* 
-  echo 1>&2
-}
+source ./common.sh
 usage() {
   error "Usage: ${PROGRAM_NAME} -s DBNAME -p ports"
 }
