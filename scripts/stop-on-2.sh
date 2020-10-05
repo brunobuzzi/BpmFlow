@@ -1,36 +1,28 @@
 #! /bin/sh
 # Requires GS_HOME variable defined
-# This command will start a multi-thread Web Application Server where each port will be attended by a different (Gem) process. 
-# Following the previous example three Gem processes will be created to attend each port. 
-# The ports to be attended are defined in ports-all.ini. 
-# At registration time (register-application.sh) there is a list of ports in ports-all.ini and each will be active when this script is executed.
-PROGRAM_NAME="start-all"
+# This command take an argument and stop the Gem Process running on that port.
+PROGRAM_NAME="stop-on"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME -p ports"
+  error "Usage: ${PROGRAM_NAME} -s DBNAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-all -s STONE_NAME -p PORTS"
-  echo "Start all Web Servers contained in the file (ports-all.ini):"; 
-  if [ ! -f ports-all.ini ]; 
-    then echo "ports-all.ini file does not exist the script can not be executed"
-    else (cat ports-all.ini; echo)
-  fi
-  echo "The environment variable GS_HOME must be set";
-  echo "The (ports-all.ini) file has to have the following format: port1,port2,port3";
-  echo "For example: 8787,8888,8989";  
-  echo "This script is used in conjunction with stop-all script";   
+  echo "Usage: stop-on STONE_NAME PORT"
+  echo "Stop a Web Server on port number PORT"; 
+  echo "The environment variable GS_HOME must be set"; 
+  echo "This script is used in conjunction with start-on.sh script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
-  info "GS_HOME variable is unset. Set this variable first and try again...";
+  echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
 
-while getopts :l:s:p opt; do
+while getopts :l:s:p: opt; do
   case $opt in
     s) STONE=$OPTARG ;;
+    p) PORTS=$OPTARG ;;
     \?) error "Invalid option: -$OPTARG"
       usage
       exit 1
@@ -45,11 +37,13 @@ done
 if sh checkIfStoneExist.sh "$STONE"; 
   then echo "" 
   else 
-    info "Topaz for Stone named [$STONE] failed to start";
+    echo ;
+    echo "Topaz for Stone named [$STONE] failed to start";
+    echo;
     exit 0
 fi
 
-info "Start: Starting Gem processes as Web Servers"
+info "Start: Stopping Web Servers on port $PORTS"
 
 nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $STONE
@@ -74,8 +68,9 @@ exec
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
 
-  BpmAppLinuxScripts startAllScript. 
+  BpmAppLinuxScripts stopOnPortsScript: '$PORTS'.
 %
 exit
 EOF
-info "Finish: Starting Gem processes as Web Servers"
+
+info "Finish: Stopping Web Servers on port $PORTS"

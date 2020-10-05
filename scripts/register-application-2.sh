@@ -23,7 +23,7 @@ if [ -z ${GS_HOME+x} ]; then
   exit 0
 fi
 
-while getopts :l:s:p: opt; do
+while getopts :l:s: opt; do
   case $opt in
     s) STONE=$OPTARG ;;
     \?) error "Invalid option: -$OPTARG"
