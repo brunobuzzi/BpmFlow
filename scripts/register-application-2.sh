@@ -1,25 +1,21 @@
 #! /bin/sh
 # Requires GS_HOME variable defined
-# This command will stop all Gem processes serving the Web Application on all ports. 
-# The Web Application will no longer respond to http requests.
-# sh start-all.sh -s STONE
-PROGRAM_NAME="stop-all"
+# To register the application to run, this shell command has to be executed only once. This script read data in ports-all.ini file and register all ports in this file. 
+# For example if  ports-all.ini has the following content: 8787,8888,8989
+# This will register the Web Application to be used in ports: 8787,8888,8989. 
+# Comma is used to separate ports. The ini's files are in the same directory as the scripts.
+PROGRAM_NAME="register-application"
 source ./common.sh
 usage() {
   error "Usage: ${PROGRAM_NAME} -s DBNAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: stop-all STONE_NAME"
-  echo "Stop all Web Servers contained in the file (ports-all.ini):"; 
-  if [ ! -f ports-all.ini ]; 
-    then echo "ports-all.ini file does not exist the script can not be executed"
-    else (cat ports-all.ini; echo)
-  fi
+  echo "Usage: register-application STONE_NAME"
+  echo "This script is to register Bpm Flow web application and it should be executed only once after the installation process";
+  echo "To unregister the web application see unregister-application script"     
   echo "The environment variable GS_HOME must be set";
-  echo "The (ports-all.ini) file has to have the following format: port1,port2,port3";
-  echo "For example: 8787,8888,8989";  
-  echo "This script is used in conjunction with start-all script";   
+  echo "This script is used in conjunction with unregister-application script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
@@ -50,17 +46,17 @@ if sh checkIfStoneExist.sh "$STONE";
     exit 0
 fi
 
-info "Start: Stopping Gem processes (Web Servers)"
+info "Start: Registering Web Servers"
 
 nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
 System beginTransaction.
-BpmAppLinuxScripts stopAllScript.
+BpmAppLinuxScripts registerScript.
 System commit.
 %
 exit
 EOF
 
-info "Finish: Stopping Gem processes (Web Servers)"
+info "Finish: All Web Components have been registered !!!"

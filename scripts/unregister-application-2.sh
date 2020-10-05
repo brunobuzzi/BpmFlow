@@ -1,25 +1,20 @@
 #! /bin/sh
 # Requires GS_HOME variable defined
-# This command will stop all Gem processes serving the Web Application on all ports. 
-# The Web Application will no longer respond to http requests.
-# sh start-all.sh -s STONE
-PROGRAM_NAME="stop-all"
+# To unregister application.
+# This shell command has to be executed only once (after register-application.sh has been executed). 
+# And is used if you want to uninstall the Web Application.
+PROGRAM_NAME="unregister-application"
 source ./common.sh
 usage() {
   error "Usage: ${PROGRAM_NAME} -s DBNAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: stop-all STONE_NAME"
-  echo "Stop all Web Servers contained in the file (ports-all.ini):"; 
-  if [ ! -f ports-all.ini ]; 
-    then echo "ports-all.ini file does not exist the script can not be executed"
-    else (cat ports-all.ini; echo)
-  fi
+  echo "Usage: unregister-application STONE_NAME"
+  echo "This script is to unregister Bpm Flow web application and if it is necessary it should be executed after registration";
+  echo "To register the web application again see register-application script"     
   echo "The environment variable GS_HOME must be set";
-  echo "The (ports-all.ini) file has to have the following format: port1,port2,port3";
-  echo "For example: 8787,8888,8989";  
-  echo "This script is used in conjunction with start-all script";   
+  echo "This script is used in conjunction with register-application script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
@@ -50,17 +45,17 @@ if sh checkIfStoneExist.sh "$STONE";
     exit 0
 fi
 
-info "Start: Stopping Gem processes (Web Servers)"
+info "Start: Unregistering Web Servers"
 
 nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
 System beginTransaction.
-BpmAppLinuxScripts stopAllScript.
+BpmAppLinuxScripts unregisterScript.
 System commit.
 %
 exit
 EOF
 
-info "Finish: Stopping Gem processes (Web Servers)"
+info "Finish: All Web Components have been unregistered !!!"

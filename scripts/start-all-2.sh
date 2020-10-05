@@ -4,8 +4,7 @@
 # Following the previous example three Gem processes will be created to attend each port. 
 # The ports to be attended are defined in ports-all.ini. 
 # At registration time (register-application.sh) there is a list of ports in ports-all.ini and each will be active when this script is executed.
-
-PROGRAM_NAME="start_all"
+PROGRAM_NAME="start-all"
 source ./common.sh
 usage() {
   error "Usage: ${PROGRAM_NAME} -s DBNAME -p ports"
@@ -49,7 +48,9 @@ if sh checkIfStoneExist.sh "$STONE";
     info "Topaz for Stone named [$STONE] failed to start";
     exit 0
 fi
+
 info "Start: Starting Gem processes as Web Servers"
+
 nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
 set user DataCurator password swordfish gemstone $STONE
 login
