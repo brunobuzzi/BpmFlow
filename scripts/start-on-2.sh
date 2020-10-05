@@ -2,10 +2,10 @@
 # Requires GS_HOME variable defined
 # This command take the port as an argument and start a Gem Process on that port. 
 # The port number must be defined in ports-all.ini file.
-PROGRAM_NAME="start-on"
+SCRIPT="start-on"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then

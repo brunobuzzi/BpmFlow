@@ -1,10 +1,10 @@
 #! /bin/sh
 # Requires GS_HOME variable defined
 # This command take an argument and stop the Gem Process running on that port.
-PROGRAM_NAME="stop-on"
+SCRIPT="stop-on"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then

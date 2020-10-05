@@ -3,10 +3,10 @@
 # This command will stop all Gem processes serving the Web Application on all ports. 
 # The Web Application will no longer respond to http requests.
 # sh start-all.sh -s STONE
-PROGRAM_NAME="stop-all"
+SCRIPT="stop-all"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then

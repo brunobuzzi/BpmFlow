@@ -2,10 +2,10 @@
 # Requires GS_HOME variable defined
 # This command will start a Gem Process to process all Timers in the system and should be execute only once.
 # This Gem should be always running otherwise some Timers won't be processed 
-PROGRAM_NAME="start-timers-loop"
+SCRIPT="start-timers-loop"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then

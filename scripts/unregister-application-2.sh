@@ -3,10 +3,10 @@
 # To unregister application.
 # This shell command has to be executed only once (after register-application.sh has been executed). 
 # And is used if you want to uninstall the Web Application.
-PROGRAM_NAME="unregister-application"
+SCRIPT="unregister-application"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then

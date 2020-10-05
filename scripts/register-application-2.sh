@@ -4,10 +4,10 @@
 # For example if  ports-all.ini has the following content: 8787,8888,8989
 # This will register the Web Application to be used in ports: 8787,8888,8989. 
 # Comma is used to separate ports. The ini's files are in the same directory as the scripts.
-PROGRAM_NAME="register-application"
+SCRIPT="register-application"
 source ./common.sh
 usage() {
-  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
