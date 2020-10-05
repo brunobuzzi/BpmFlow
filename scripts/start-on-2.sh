@@ -1,18 +1,12 @@
-#! /bin/sh
+#!/bin/sh
 # Requires GS_HOME variable defined
-# This command is similar to [start-all.sh] but instead of starting a Gem Process for each port it only start a subset of all ports. 
-# The subset is defined in [zn-ports.ini] file.
+# This command take the port as an argument and start a Gem Process on that port. 
+# The port number must be defined in ports-all.ini file.
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-zn STONE_NAME"
-  echo "Start all Web Servers contained in the file (zn-ports.ini):"; 
-  if [ ! -f zn-ports.ini ]; 
-    then echo "zn-ports.ini file does not exist the script can not be executed"
-    else (cat ports-all.ini; echo)
-  fi
-  echo "The environment variable GS_HOME must be set";
-  echo "The (zn-ports.ini) file has to have the following format: port1,port2,port3";
-  echo "For example: 8787,8888,8989";  
-  echo "This script is used in conjunction with stop-zn script";   
+  echo "Usage: start-on STONE_NAME PORT"
+  echo "Start a Web Server on port number PORT"; 
+  echo "The environment variable GS_HOME must be set"; 
+  echo "This script is used in conjunction with stop-on.sh script";   
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
@@ -32,12 +26,11 @@ if sh checkIfStoneExist.sh "$1";
     exit 0
 fi
 
-nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
+nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out
 set user DataCurator password swordfish gemstone $1
 login
 exec 
    | handler commitThreshold usedMemory |
-
    commitThreshold := 80.
    handler := AlmostOutOfMemory addDefaultHandler: [ :ex | 
      Transcript show: ('AlmostOutOfMemory: ', ex printString); cr.
@@ -54,11 +47,10 @@ exec
    ].
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
-
-  BpmAppLinuxScripts startZnPortsScript.
+  BpmAppLinuxScripts startOnPortScript: $2.
 %
 exit
 EOF
 echo
-echo "A group of Gem processes has been started on Stone named [$1] on ports contained in [zn-ports.ini]"
+echo "A Gem process has been started on Stone named [$1] on port [$2]"
 echo
