@@ -125,6 +125,7 @@ fi
 info "Finish: HighchartsSt Packages Installation"
 
 info "Start: System Initialization"
+
 $GS_HOME/bin/startTopaz $STONE -il <<EOF
 set user DataCurator password swordfish gemstone $STONE
 login

@@ -9,7 +9,7 @@ usage() {
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-on STONE_NAME PORT"
+  echo "Usage: start-on -s STONE_NAME -p PORT1,PORT2,PORT3"
   echo "Start a Web Server on port number PORT"; 
   echo "The environment variable GS_HOME must be set"; 
   echo "This script is used in conjunction with stop-on.sh script";   
