@@ -50,7 +50,7 @@ fi
 
 info "Start: Starting Gem processes as Web Servers"
 
-nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
+nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>start-all.log &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
@@ -78,4 +78,10 @@ exec
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "Failed to start Web Servers check {start-all.log}"
+  exit 1
+fi
+
 info "Finish: Starting Gem processes as Web Servers"

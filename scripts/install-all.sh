@@ -38,7 +38,7 @@ fi
 info "Start: BPM Packages Installation"
 
 #Topaz Installation Script
-$GS_HOME/bin/startTopaz $STONE -il <<EOF
+$GS_HOME/bin/startTopaz $STONE -il <<EOF >>install-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
@@ -82,7 +82,13 @@ logout
 quit
 EOF
 
+if [ $? -ne 0 ]; then
+  error "The installation process has failed check {install-all.log}"
+  exit 1
+fi
+
 info "Finish: BPM Packages Installation"
+
 info "Start: HighchartsSt Packages Installation"
 
 # Highcharts is installed locally
@@ -94,7 +100,7 @@ git branch
 git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
-$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  
+$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>install-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
@@ -110,6 +116,12 @@ GsDeployer deploy: [
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "Highcharts installation has failed check {install-all.log}"
+  exit 1
+fi
+
 info "Finish: HighchartsSt Packages Installation"
 
 info "Start: System Initialization"
@@ -128,5 +140,10 @@ commit
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "System Initialization has failed check {install-all.log}"
+  exit 1
+fi
 
 info "Finish: System Initialization"

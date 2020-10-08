@@ -45,7 +45,7 @@ fi
 
 info "Start: Registering Web Servers"
 
-nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>MFC.out &
+nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>register-application.log &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
@@ -56,5 +56,10 @@ System commit.
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "Failed to register Web Applications check {unregister-application.log}"
+  exit 1
+fi
 
 info "Finish: All Web Components have been registered !!!"

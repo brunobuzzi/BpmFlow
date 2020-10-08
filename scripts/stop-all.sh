@@ -49,7 +49,7 @@ fi
 
 info "Start: Stopping Gem processes (Web Servers)"
 
-nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>MFC.out &
+nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>stop-all.log &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
@@ -60,5 +60,10 @@ System commit.
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "Failed to stop Web Servers check {stop-all.log}"
+  exit 1
+fi
 
 info "Finish: Stopping Gem processes (Web Servers)"

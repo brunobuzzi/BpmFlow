@@ -42,7 +42,7 @@ fi
 
 info "Start: Stopping Web Servers on port $PORTS"
 
-nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
+$GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>stop-on.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
@@ -70,5 +70,10 @@ exec
 logout
 quit
 EOF
+
+if [ $? -ne 0 ]; then
+  error "Failed to stop Web Servers check {start-on.log}"
+  exit 1
+fi
 
 info "Finish: Stopping Web Servers on port $PORTS"
