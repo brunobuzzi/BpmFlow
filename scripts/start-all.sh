@@ -50,7 +50,7 @@ fi
 
 info "Start: Starting Gem processes as Web Servers"
 
-nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>start-all.log &
+$GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>start-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 

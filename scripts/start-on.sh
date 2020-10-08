@@ -48,6 +48,7 @@ set user DataCurator password swordfish gemstone $STONE
 login
 exec 
    | handler commitThreshold usedMemory |
+   
    commitThreshold := 80.
    handler := AlmostOutOfMemory addDefaultHandler: [ :ex | 
      Transcript show: ('AlmostOutOfMemory: ', ex printString); cr.
@@ -64,6 +65,7 @@ exec
    ].
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
+
   BpmAppLinuxScripts startOnPortsScript: '$PORTS'.
 %
 logout

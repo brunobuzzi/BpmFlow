@@ -45,7 +45,7 @@ fi
 
 info "Start: Registering Web Servers"
 
-nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>register-application.log &
+$GS_HOME/bin/startTopaz $STONE -il <<EOF >>register-application.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 

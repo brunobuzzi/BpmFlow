@@ -49,7 +49,7 @@ fi
 
 info "Start: Stopping Gem processes (Web Servers)"
 
-nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>stop-all.log &
+$GS_HOME/bin/startTopaz $STONE -il <<EOF >>stop-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
