@@ -35,23 +35,19 @@ while getopts :l:s: opt; do
   esac
 done
 
-if sh checkIfStoneExist.sh "$STONE"; 
-  then echo "" 
-  else 
-    echo ;
-    echo "Topaz for Stone named [$STONE] failed to start";
-    echo;
-    exit 0
+./checkIfStoneExist.sh $STONE
+if [ $? -ne 0 ]; then
+  error "The Stone {$STONE} does NOT exist"
+  exit 1
 fi
 
 info "Start: Starting Deferred Scripts processes"
 
-nohup $GS_HOME/bin/startTopaz $STONE -u "ScriptsLoop" -il <<EOF >>MFC.out &
+nohup $GS_HOME/bin/startTopaz $STONE -u "ScriptsLoop" -il <<EOF >>start-deferred-scripts-loop.log &
 set user DataCurator password swordfish gemstone $STONE
 login
 exec 
    | handler commitThreshold |
-
    commitThreshold := 65.
    handler := AlmostOutOfMemory addDefaultHandler: [ :ex | self halt ].
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
@@ -61,7 +57,17 @@ exec
   on: AlmostOutOfMemory enable
   do: [:ex | ex error: ex description]. 
 %
-exit
+logout
+quit
 EOF
 
+sleep 1
+pid_isRunning $!
+if [ $? -ne 0 ]; then
+  error "The Gem process could NOT be started check {start-deferred-scripts-loop}"
+  exit 1
+fi
+
 info "Finish: Starting Deferred Scripts processes"
+
+exit 0

@@ -35,13 +35,10 @@ while getopts :l:s:p: opt; do
   esac
 done
 
-if sh checkIfStoneExist.sh "$STONE"; 
-  then echo "" 
-  else 
-    echo ;
-    echo "Topaz for Stone named [$STONE] failed to start";
-    echo;
-    exit 0
+./checkIfStoneExist.sh $STONE
+if [ $? -ne 0 ]; then
+  error "The Stone {$STONE} does NOT exist"
+  exit 1
 fi
 
 info "Start: Starting Web Servers on port $PORTS"

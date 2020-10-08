@@ -1,0 +1,258 @@
+[96;1m=================[0m
+[96;1m   GsDevKit script: startTopaz devKit_test -u ScriptsLoop -il[0m
+[96;1m              path: /home/gemstone/GsDevKit_home/bin/startTopaz[0m
+[96;1m=================[0m
+[Info]: Loaded /home/gemstone/GsDevKit_home/server/stones/devKit_test/product/lib/libgcilnk-3.5.1-64.so
+ _____________________________________________________________________________
+|                             Configuration Files                             |
+|                                                                             |
+| System File: /home/gemstone/GsDevKit_home/server/stones/devKit_test/extents/system.conf
+|                                                                             |
+| Executable File: /home/gemstone/GsDevKit_home/server/stones/devKit_test/gem.conf
+|_____________________________________________________________________________|
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_test/extents/system.conf
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_test/gem.conf
+ _____________________________________________________________________________
+|               Gem Configuration Options for process id 10338                |
+|_____________________________________________________________________________|
+
+CONFIG_WARNINGS_FATAL = FALSE;
+DUMP_OPTIONS = TRUE;
+GEM_ABORT_MAX_CRS = 100000;
+GEM_CACHE_WARMER_ARGS = "";
+GEM_CACHE_WARMER_MID_CACHE_ARGS = "";
+GEM_COMPRESS_TRANLOG_RECORDS = TRUE;
+GEM_ENV = "";
+GEM_FREE_FRAME_CACHE_SIZE = -1;
+GEM_FREE_FRAME_LIMIT = -1;
+GEM_FREE_PAGEIDS_CACHE = 200;
+GEM_HALT_ON_ERROR = -1;
+GEM_KEEP_MIN_SOFTREFS = 0;
+GEM_KERBEROS_KEYTAB_FILE = "";
+GEM_KEYRING_DIRS = "";
+GEM_LISTEN_FOR_DEBUG = FALSE;
+GEM_MAX_SMALLTALK_STACK_DEPTH = 1000;
+GEM_NATIVE_CODE_ENABLED = 2;
+GEM_PGSVR_COMPRESS_PAGE_TRANSFERS = TRUE;
+GEM_PGSVR_FREE_FRAME_CACHE_SIZE = -1;
+GEM_PGSVR_FREE_FRAME_LIMIT = -1;
+GEM_PGSVR_UPDATE_CACHE_ON_READ = TRUE;
+GEM_PGSVR_USE_SSL = FALSE;
+GEM_READ_AUTH_ERR_STUBS = FALSE;
+GEM_REPOSITORY_IN_MEMORY = FALSE;
+GEM_RPCGCI_TIMEOUT = 0;
+GEM_RPC_KEEPALIVE_INTERVAL = 0;
+GEM_RPC_USE_SSL = TRUE;
+GEM_SOFTREF_CLEANUP_PERCENT_MEM = 50;
+GEM_SOLO_EXTENT = "$GEMSTONE/bin/extent0.dbf";
+GEM_STATMONITOR_ARGS = "";
+GEM_STATMONITOR_MID_CACHE_ARGS = "";
+GEM_TEMPOBJ_AGGRESSIVE_STUBBING = TRUE;
+GEM_TEMPOBJ_CACHE_SIZE = 50000KB;
+GEM_TEMPOBJ_CONSECUTIVE_MARKSWEEP_LIMIT = 50;
+GEM_TEMPOBJ_MESPACE_SIZE = 0;
+GEM_TEMPOBJ_OOMSTATS_CSV = FALSE;
+GEM_TEMPOBJ_OOPMAP_SIZE = 0;
+GEM_TEMPOBJ_PERMGEN_SIZE = 0;
+GEM_TEMPOBJ_POMGEN_PRUNE_ON_VOTE = 90;
+GEM_TEMPOBJ_POMGEN_SCAVENGE_INTERVAL = 1800;
+GEM_TEMPOBJ_POMGEN_SIZE = 0;
+GEM_TEMPOBJ_SCOPES_SIZE = 2000;
+LOG_WARNINGS = TRUE;
+SHR_NUM_FREE_FRAME_SERVERS = -1;
+SHR_PAGE_CACHE_LARGE_MEMORY_PAGE_POLICY = 0;
+SHR_PAGE_CACHE_LARGE_MEMORY_PAGE_SIZE_MB = 2MB;
+SHR_PAGE_CACHE_LOCKED = FALSE;
+SHR_PAGE_CACHE_NUM_PROCS = 117;
+SHR_PAGE_CACHE_NUM_SHARED_COUNTERS = 1900;
+SHR_PAGE_CACHE_PERMISSIONS = 0660;
+SHR_PAGE_CACHE_SIZE_KB = 500000KB;
+SHR_SPIN_LOCK_COUNT = 1;
+SHR_TARGET_FREE_FRAME_COUNT = -1;
+SHR_WELL_KNOWN_PORT_NUMBER = 0;
+(vmGc spaceSizes: eden init 2048K max 9344K , survivor init 448K max 1600K,
+ vmGc    old max 37440K, code max 10048K, perm max 5056K, pom 10 * 4224K = 42240K,
+ vmGc    remSet 1156K, meSpace max 51528K oopMapSize 262144  max footprint 160M)
+ _____________________________________________________________________________
+|             GemStone/S64 Object-Oriented Data Management System             |
+|                   Copyright (C) GemTalk Systems 1986-2019                   |
+|                            All rights reserved.                             |
+|                           Covered by U.S Patents:                           |
+|      6,256,637 Transactional virtual machine architecture (1998-2018)       |
+|        6,360,219 Object queues with concurrent updating (1998-2018)         |
+|            6,567,905 Generational Garbage Collector (2001-2021)             |
+|    6,681,226 Selective Pessimistic Locking for a Concurrently Updateable    |
+|                            Database (2001-2021)                             |
++-----------------------------------------------------------------------------+
+|    PROGRAM: topaz, Linear GemStone Interface (Linked Session)               |
+|    VERSION: 3.5.1, Wed Nov 27 12:40:03 2019                                 |
+|      BUILD: gss64_3_5_x_branch-47406                                        |
+|  BUILT FOR: x86-64 (Linux)                                                  |
+| RUNNING ON: 1-CPU gemstoneIP x86_64 (Linux 3.10.0-1062.12.1.el7.x86_64 #1 SMP
+| Tue Feb 4 23:02:59 UTC 2020)                                                |
+|  PROCESSOR: 1-core Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz (Kaby Lake)     |
+|     MEMORY: 3770 MB                                                         |
+| PROCESS ID: 10338     DATE: 10/08/2020 15:54:35 EDT  (UTC -4:00)            |
+|   USER IDS: REAL=gemstone (1000) EFFECTIVE=gemstone (1000) LOGIN=gemstone (1000)
++-----------------------------------------------------------------------------+
+|   GEMSTONE_NRS_ALL = #dir:$GEMSTONE_LOGDIR#log:%N%P.log                     |
+|_____________________________________________________________________________|
+topaz> set user DataCurator password swordfish gemstone devKit_test
+topaz> login
+[Info]: LNK client/gem GCI levels = 35100/35100
+--- 10/08/2020 15:54:35.012 EDT Login
+[Info]: User ID: DataCurator
+[Info]: Repository: devKit_test
+[Info]: Session ID: 8 login at 10/08/2020 15:54:35.015 EDT
+[Info]: GCI Client Host: <Linked>
+[Info]: Page server PID: -1
+[Info]: using libicu version 58.2
+[Info]: Gave this process preference for OOM killer: wrote to /proc/10338/oom_score_adj value 250
+[10/08/2020 15:54:35.029 EDT]
+  gci login: currSession 1  linked session 
+successful login
+ fileformat is now utf8
+sourcestringclass is now Unicode16 
+topaz 1> exec 
+   | handler commitThreshold |
+   commitThreshold := 65.
+   handler := AlmostOutOfMemory addDefaultHandler: [ :ex | self halt ].
+   SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
+   System signalAlmostOutOfMemoryThreshold: commitThreshold.
+
+[BpmScriptExecutor default startUninterruptedLoop]
+  on: AlmostOutOfMemory enable
+  do: [:ex | ex error: ex description]. 
+%
+[96;1m=================[0m
+[96;1m   GsDevKit script: startTopaz devKit_test -u ScriptsLoop -il[0m
+[96;1m              path: /home/gemstone/GsDevKit_home/bin/startTopaz[0m
+[96;1m=================[0m
+[Info]: Loaded /home/gemstone/GsDevKit_home/server/stones/devKit_test/product/lib/libgcilnk-3.5.1-64.so
+ _____________________________________________________________________________
+|                             Configuration Files                             |
+|                                                                             |
+| System File: /home/gemstone/GsDevKit_home/server/stones/devKit_test/extents/system.conf
+|                                                                             |
+| Executable File: /home/gemstone/GsDevKit_home/server/stones/devKit_test/gem.conf
+|_____________________________________________________________________________|
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_test/extents/system.conf
+Reading config file /home/gemstone/GsDevKit_home/server/stones/devKit_test/gem.conf
+ _____________________________________________________________________________
+|               Gem Configuration Options for process id 10396                |
+|_____________________________________________________________________________|
+
+CONFIG_WARNINGS_FATAL = FALSE;
+DUMP_OPTIONS = TRUE;
+GEM_ABORT_MAX_CRS = 100000;
+GEM_CACHE_WARMER_ARGS = "";
+GEM_CACHE_WARMER_MID_CACHE_ARGS = "";
+GEM_COMPRESS_TRANLOG_RECORDS = TRUE;
+GEM_ENV = "";
+GEM_FREE_FRAME_CACHE_SIZE = -1;
+GEM_FREE_FRAME_LIMIT = -1;
+GEM_FREE_PAGEIDS_CACHE = 200;
+GEM_HALT_ON_ERROR = -1;
+GEM_KEEP_MIN_SOFTREFS = 0;
+GEM_KERBEROS_KEYTAB_FILE = "";
+GEM_KEYRING_DIRS = "";
+GEM_LISTEN_FOR_DEBUG = FALSE;
+GEM_MAX_SMALLTALK_STACK_DEPTH = 1000;
+GEM_NATIVE_CODE_ENABLED = 2;
+GEM_PGSVR_COMPRESS_PAGE_TRANSFERS = TRUE;
+GEM_PGSVR_FREE_FRAME_CACHE_SIZE = -1;
+GEM_PGSVR_FREE_FRAME_LIMIT = -1;
+GEM_PGSVR_UPDATE_CACHE_ON_READ = TRUE;
+GEM_PGSVR_USE_SSL = FALSE;
+GEM_READ_AUTH_ERR_STUBS = FALSE;
+GEM_REPOSITORY_IN_MEMORY = FALSE;
+GEM_RPCGCI_TIMEOUT = 0;
+GEM_RPC_KEEPALIVE_INTERVAL = 0;
+GEM_RPC_USE_SSL = TRUE;
+GEM_SOFTREF_CLEANUP_PERCENT_MEM = 50;
+GEM_SOLO_EXTENT = "$GEMSTONE/bin/extent0.dbf";
+GEM_STATMONITOR_ARGS = "";
+GEM_STATMONITOR_MID_CACHE_ARGS = "";
+GEM_TEMPOBJ_AGGRESSIVE_STUBBING = TRUE;
+GEM_TEMPOBJ_CACHE_SIZE = 50000KB;
+GEM_TEMPOBJ_CONSECUTIVE_MARKSWEEP_LIMIT = 50;
+GEM_TEMPOBJ_MESPACE_SIZE = 0;
+GEM_TEMPOBJ_OOMSTATS_CSV = FALSE;
+GEM_TEMPOBJ_OOPMAP_SIZE = 0;
+GEM_TEMPOBJ_PERMGEN_SIZE = 0;
+GEM_TEMPOBJ_POMGEN_PRUNE_ON_VOTE = 90;
+GEM_TEMPOBJ_POMGEN_SCAVENGE_INTERVAL = 1800;
+GEM_TEMPOBJ_POMGEN_SIZE = 0;
+GEM_TEMPOBJ_SCOPES_SIZE = 2000;
+LOG_WARNINGS = TRUE;
+SHR_NUM_FREE_FRAME_SERVERS = -1;
+SHR_PAGE_CACHE_LARGE_MEMORY_PAGE_POLICY = 0;
+SHR_PAGE_CACHE_LARGE_MEMORY_PAGE_SIZE_MB = 2MB;
+SHR_PAGE_CACHE_LOCKED = FALSE;
+SHR_PAGE_CACHE_NUM_PROCS = 117;
+SHR_PAGE_CACHE_NUM_SHARED_COUNTERS = 1900;
+SHR_PAGE_CACHE_PERMISSIONS = 0660;
+SHR_PAGE_CACHE_SIZE_KB = 500000KB;
+SHR_SPIN_LOCK_COUNT = 1;
+SHR_TARGET_FREE_FRAME_COUNT = -1;
+SHR_WELL_KNOWN_PORT_NUMBER = 0;
+(vmGc spaceSizes: eden init 2048K max 9344K , survivor init 448K max 1600K,
+ vmGc    old max 37440K, code max 10048K, perm max 5056K, pom 10 * 4224K = 42240K,
+ vmGc    remSet 1156K, meSpace max 51524K oopMapSize 262144  max footprint 160M)
+ _____________________________________________________________________________
+|             GemStone/S64 Object-Oriented Data Management System             |
+|                   Copyright (C) GemTalk Systems 1986-2019                   |
+|                            All rights reserved.                             |
+|                           Covered by U.S Patents:                           |
+|      6,256,637 Transactional virtual machine architecture (1998-2018)       |
+|        6,360,219 Object queues with concurrent updating (1998-2018)         |
+|            6,567,905 Generational Garbage Collector (2001-2021)             |
+|    6,681,226 Selective Pessimistic Locking for a Concurrently Updateable    |
+|                            Database (2001-2021)                             |
++-----------------------------------------------------------------------------+
+|    PROGRAM: topaz, Linear GemStone Interface (Linked Session)               |
+|    VERSION: 3.5.1, Wed Nov 27 12:40:03 2019                                 |
+|      BUILD: gss64_3_5_x_branch-47406                                        |
+|  BUILT FOR: x86-64 (Linux)                                                  |
+| RUNNING ON: 1-CPU gemstoneIP x86_64 (Linux 3.10.0-1062.12.1.el7.x86_64 #1 SMP
+| Tue Feb 4 23:02:59 UTC 2020)                                                |
+|  PROCESSOR: 1-core Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz (Kaby Lake)     |
+|     MEMORY: 3770 MB                                                         |
+| PROCESS ID: 10396     DATE: 10/08/2020 15:55:24 EDT  (UTC -4:00)            |
+|   USER IDS: REAL=gemstone (1000) EFFECTIVE=gemstone (1000) LOGIN=gemstone (1000)
++-----------------------------------------------------------------------------+
+|   GEMSTONE_NRS_ALL = #dir:$GEMSTONE_LOGDIR#log:%N%P.log                     |
+|_____________________________________________________________________________|
+topaz> set user DataCurator password swordfish gemstone devKit_test
+topaz> login
+[Info]: LNK client/gem GCI levels = 35100/35100
+--- 10/08/2020 15:55:24.086 EDT Login
+[Info]: User ID: DataCurator
+[Info]: Repository: devKit_test
+[Info]: Session ID: 9 login at 10/08/2020 15:55:24.089 EDT
+[Info]: GCI Client Host: <Linked>
+[Info]: Page server PID: -1
+[Info]: using libicu version 58.2
+[Info]: Gave this process preference for OOM killer: wrote to /proc/10396/oom_score_adj value 250
+[10/08/2020 15:55:24.103 EDT]
+  gci login: currSession 1  linked session 
+successful login
+ fileformat is now utf8
+sourcestringclass is now Unicode16 
+topaz 1> exec 
+   | handler commitThreshold |
+   Object foo.
+   commitThreshold := 65.
+   handler := AlmostOutOfMemory addDefaultHandler: [ :ex | self halt ].
+   SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
+   System signalAlmostOutOfMemoryThreshold: commitThreshold.
+
+[BpmScriptExecutor default startUninterruptedLoop]
+  on: AlmostOutOfMemory enable
+  do: [:ex | ex error: ex description]. 
+%
+ERROR 2010 , a MessageNotUnderstood occurred (error 2010), a Object class does not understand  #'foo' (MessageNotUnderstood)
+topaz 1> logout
+--- 10/08/2020 15:55:24.110 EDT Logging out
+topaz> quit
+[91;1mError on or near line 64 :: startTopaz devKit_test -u ScriptsLoop -il :: startTopaz devKit_test -u ScriptsLoop -il[0m

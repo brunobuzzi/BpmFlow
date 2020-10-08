@@ -5,5 +5,5 @@
 # If can execute topaz for that Stone then exit
 
 $GS_HOME/bin/startTopaz $1 -ilq <<EOF >>check.out 
-exit 
+quit
 EOF

@@ -11,3 +11,11 @@ error() {
   echo [ERROR]: $* 
   echo 1>&2
 }
+pid_isRunning () {
+  isRunning=$(ps -p $1)
+  if [ $? -eq 0 ]; then
+   return 0
+  else 
+   return 1
+  fi
+}

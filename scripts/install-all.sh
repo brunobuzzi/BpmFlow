@@ -29,13 +29,10 @@ while getopts :l:s: opt; do
      ;;
   esac
 done
-if sh checkIfStoneExist.sh "$STONE"; 
-  then echo "" 
-  else 
-    echo ;
-    echo "Topaz for Stone named [$1] failed to start";
-    echo;
-    exit 0
+./checkIfStoneExist.sh $STONE
+if [ $? -ne 0 ]; then
+  error "The Stone {$STONE} does NOT exist"
+  exit 1
 fi
 
 info "Start: BPM Packages Installation"
