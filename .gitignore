@@ -3,6 +3,7 @@
 *.un~
 check.out
 MFC.out
+*.log
 LogPackages.out
 LogHighcharts.out
 LogInitialization.out
