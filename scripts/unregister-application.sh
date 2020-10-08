@@ -52,7 +52,8 @@ System beginTransaction.
 BpmAppLinuxScripts unregisterScript.
 System commit.
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: All Web Components have been unregistered !!!"

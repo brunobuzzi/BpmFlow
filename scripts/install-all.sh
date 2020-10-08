@@ -78,7 +78,8 @@ GsDeployer deploy: [
     onLock: [:ex | ex honor];
     load ].
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: BPM Packages Installation"
@@ -106,7 +107,8 @@ GsDeployer deploy: [
          load.
 ].
 %
-exit
+logout
+quit
 EOF
 info "Finish: HighchartsSt Packages Installation"
 
@@ -123,7 +125,8 @@ WAPersistenceOrbeonLayer register.
 WABpmCentralPortal register. "ipaddress:port/bpmflow"
 %
 commit
-exit
+logout
+quit
 EOF
 
 info "Finish: System Initialization"

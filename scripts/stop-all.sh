@@ -57,7 +57,8 @@ System beginTransaction.
 BpmAppLinuxScripts stopAllScript.
 System commit.
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: Stopping Gem processes (Web Servers)"

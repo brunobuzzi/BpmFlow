@@ -66,7 +66,8 @@ exec
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
   BpmAppLinuxScripts startOnPortsScript: '$PORTS'.
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: Starting Web Servers on port $PORTS"

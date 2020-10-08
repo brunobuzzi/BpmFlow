@@ -67,7 +67,8 @@ exec
 
   BpmAppLinuxScripts stopOnPortsScript: '$PORTS'.
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: Stopping Web Servers on port $PORTS"

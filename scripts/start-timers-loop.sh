@@ -59,7 +59,8 @@ nbrun
   do: [:ex | ex error: ex description]. 
 
 %
-exit
+logout
+quit
 EOF
 
 sleep 1

@@ -75,6 +75,7 @@ exec
 
   BpmAppLinuxScripts startAllScript. 
 %
-exit
+logout
+quit
 EOF
 info "Finish: Starting Gem processes as Web Servers"

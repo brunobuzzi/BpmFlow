@@ -53,7 +53,8 @@ System beginTransaction.
 BpmAppLinuxScripts registerScript.
 System commit.
 %
-exit
+logout
+quit
 EOF
 
 info "Finish: All Web Components have been registered !!!"
