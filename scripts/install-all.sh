@@ -1,6 +1,10 @@
 #!/bin/sh
 # Requires GS_HOME variable defined
-
+PROGRAM_NAME="install_all"
+source ./common.sh
+usage() {
+  error "Usage: ${PROGRAM_NAME} -s DBNAME"
+}
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: install-all STONE_NAME "
   echo "Install the entire BPM application on Stone named STONE_NAME"; 
@@ -11,11 +15,21 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-if [ -z "$1" ]; then
-  echo "GemStone/S name must be an argument of the script";
-  exit 0
-fi
-if sh checkIfStoneExist.sh "$1"; 
+
+while getopts :l:s: opt; do
+  case $opt in
+    s) STONE=$OPTARG ;;
+    \?) error "Invalid option: -$OPTARG"
+      usage
+      exit 1
+      ;;
+    :)error "Option -$OPTARG requires an argument."
+      usage
+      exit 1
+     ;;
+  esac
+done
+if sh checkIfStoneExist.sh "$STONE"; 
   then echo "" 
   else 
     echo ;
@@ -23,12 +37,12 @@ if sh checkIfStoneExist.sh "$1";
     echo;
     exit 0
 fi
-echo
-date
-echo "Start: BPM Packages Installation"
-echo
-$GS_HOME/bin/startTopaz $1 -il <<EOF
-set user DataCurator password swordfish gemstone $1
+
+info "Start: BPM Packages Installation"
+
+#Topaz Installation Script
+$GS_HOME/bin/startTopaz $STONE -il <<EOF
+set user DataCurator password swordfish gemstone $STONE
 login
 exec
 Gofer new
@@ -69,13 +83,10 @@ GsDeployer deploy: [
 %
 exit
 EOF
-echo
-date
-echo "Finish: BPM Packages Installation"
-echo
-date
-echo "Start: HighchartsSt Packages Installation"
-echo
+
+info "Finish: BPM Packages Installation"
+info "Start: HighchartsSt Packages Installation"
+
 # Highcharts is installed locally
 # Check: https://github.com/brunobuzzi/BpmFlow/issues/482
 cd $GS_HOME/shared/repos
@@ -85,8 +96,8 @@ git branch
 git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
-$GS_HOME/bin/startTopaz $1 -il -T 500000 <<EOF  
-set user DataCurator password swordfish gemstone $1
+$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  
+set user DataCurator password swordfish gemstone $STONE
 login
 exec
 GsDeployer deploy: [
@@ -100,24 +111,22 @@ GsDeployer deploy: [
 %
 exit
 EOF
-echo
-date
-echo "Finish: HighchartsSt Packages Installation"
-echo
-$GS_HOME/bin/startTopaz $1 -il <<EOF
-set user DataCurator password swordfish gemstone $1
+info "Finish: HighchartsSt Packages Installation"
+
+info "Start: System Initialization"
+$GS_HOME/bin/startTopaz $STONE -il <<EOF
+set user DataCurator password swordfish gemstone $STONE
 login
 exec
 BpmSystemInitialization createSystemDefaultObjects.
 GemStoneServerConfiguration default gemstoneIP: 'http://192.168.178.130:8787'. "example IP"
 GemStoneServerConfiguration default baseUrlDocumentation: 'https://bpmflow.gitbook.io/project'.
 WAPersistenceOrbeonLayer register.
-"To register a centralized Component to access the other applications"
+"To register a centralized Component to access other applications"
 WABpmCentralPortal register. "ipaddress:port/bpmflow"
 %
 commit
 exit
 EOF
-echo
-echo "System Initialized"
-echo
+
+info "Finish: System Initialization"

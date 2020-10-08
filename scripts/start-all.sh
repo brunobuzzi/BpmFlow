@@ -4,11 +4,14 @@
 # Following the previous example three Gem processes will be created to attend each port. 
 # The ports to be attended are defined in ports-all.ini. 
 # At registration time (register-application.sh) there is a list of ports in ports-all.ini and each will be active when this script is executed.
-
-After executing this script some pid and log files will be create at $GS_HOME/server/stones/devKit_34/logs/. In this case is the path includes devKit_34 because the Stone was created with that name. The  pid and log files will be like BPM_server-8787.log and BPM_server-8787.pid. A pair of these file will be create per each port defined in ports-all.ini.
+PROGRAM_NAME="start-all"
+source ./common.sh
+usage() {
+  error "Usage: ${PROGRAM_NAME} -s DBNAME -p ports"
+}
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Usage: start-all STONE_NAME"
+  echo "Usage: start-all -s STONE_NAME -p PORTS"
   echo "Start all Web Servers contained in the file (ports-all.ini):"; 
   if [ ! -f ports-all.ini ]; 
     then echo "ports-all.ini file does not exist the script can not be executed"
@@ -21,24 +24,35 @@ if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   exit 0
 fi
 if [ -z ${GS_HOME+x} ]; then
-  echo "GS_HOME variable is unset. Set this variable first and try again...";
+  info "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-if [ -z "$1" ]; then
-  echo "GemStone/S name must be an argument of the script";
-  exit 0
-fi
-if sh checkIfStoneExist.sh "$1"; 
+
+while getopts :l:s:p opt; do
+  case $opt in
+    s) STONE=$OPTARG ;;
+    \?) error "Invalid option: -$OPTARG"
+      usage
+      exit 1
+      ;;
+    :)error "Option -$OPTARG requires Stone name and ports."
+      usage
+      exit 1
+     ;;
+  esac
+done
+
+if sh checkIfStoneExist.sh "$STONE"; 
   then echo "" 
   else 
-    echo ;
-    echo "Topaz for Stone named [$1] failed to start";
-    echo;
+    info "Topaz for Stone named [$STONE] failed to start";
     exit 0
 fi
 
-nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
-set user DataCurator password swordfish gemstone $1
+info "Start: Starting Gem processes as Web Servers"
+
+nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
+set user DataCurator password swordfish gemstone $STONE
 login
 exec 
    | handler commitThreshold usedMemory |
@@ -64,6 +78,4 @@ exec
 %
 exit
 EOF
-echo
-echo "A group of Gem processes has been started on Stone named [$1] on ports contained in [ports-all.ini]"
-echo
+info "Finish: Starting Gem processes as Web Servers"

@@ -1,6 +1,12 @@
 #! /bin/sh
 # Requires GS_HOME variable defined
 # This command take an argument and stop the Gem Process running on that port.
+SCRIPT="stop-on"
+source ./common.sh
+usage() {
+  error "Usage: ${SCRIPT} -s STONE_NAME"
+}
+
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: stop-on STONE_NAME PORT"
   echo "Stop a Web Server on port number PORT"; 
@@ -12,21 +18,35 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-if [ -z "$1" ]; then
-  echo "GemStone/S name must be an argument of the script";
-  exit 0
-fi
-if sh checkIfStoneExist.sh "$1"; 
+
+while getopts :l:s:p: opt; do
+  case $opt in
+    s) STONE=$OPTARG ;;
+    p) PORTS=$OPTARG ;;
+    \?) error "Invalid option: -$OPTARG"
+      usage
+      exit 1
+      ;;
+    :)error "Option -$OPTARG requires Stone name and ports."
+      usage
+      exit 1
+     ;;
+  esac
+done
+
+if sh checkIfStoneExist.sh "$STONE"; 
   then echo "" 
   else 
     echo ;
-    echo "Topaz for Stone named [$1] failed to start";
+    echo "Topaz for Stone named [$STONE] failed to start";
     echo;
     exit 0
 fi
 
-nohup $GS_HOME/bin/startTopaz $1 -u "WebServer" -il <<EOF >>MFC.out &
-set user DataCurator password swordfish gemstone $1
+info "Start: Stopping Web Servers on port $PORTS"
+
+nohup $GS_HOME/bin/startTopaz $STONE -u "WebServer" -il <<EOF >>MFC.out &
+set user DataCurator password swordfish gemstone $STONE
 login
 exec 
    | handler commitThreshold usedMemory |
@@ -48,10 +68,9 @@ exec
    SessionTemps current at: #'AlmostOutOfMemoryStaticException' put: handler.
    System signalAlmostOutOfMemoryThreshold: commitThreshold.
 
-  BpmAppLinuxScripts stopOnPortScript: $2.
+  BpmAppLinuxScripts stopOnPortsScript: '$PORTS'.
 %
 exit
 EOF
-echo
-echo "A Gem process has been stopped on Stone named [$1] on port [$2]"
-echo
+
+info "Finish: Stopping Web Servers on port $PORTS"

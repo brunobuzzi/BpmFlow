@@ -4,6 +4,12 @@
 # For example if  ports-all.ini has the following content: 8787,8888,8989
 # This will register the Web Application to be used in ports: 8787,8888,8989. 
 # Comma is used to separate ports. The ini's files are in the same directory as the scripts.
+SCRIPT="register-application"
+source ./common.sh
+usage() {
+  error "Usage: ${SCRIPT} -s STONE_NAME"
+}
+
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: register-application STONE_NAME"
   echo "This script is to register Bpm Flow web application and it should be executed only once after the installation process";
@@ -16,21 +22,34 @@ if [ -z ${GS_HOME+x} ]; then
   echo "GS_HOME variable is unset. Set this variable first and try again...";
   exit 0
 fi
-if [ -z "$1" ]; then
-  echo "GemStone/S name must be an argument of the script";
-  exit 0
-fi
-if sh checkIfStoneExist.sh "$1"; 
+
+while getopts :l:s: opt; do
+  case $opt in
+    s) STONE=$OPTARG ;;
+    \?) error "Invalid option: -$OPTARG"
+      usage
+      exit 1
+      ;;
+    :)error "Option -$OPTARG requires Stone name and ports."
+      usage
+      exit 1
+     ;;
+  esac
+done
+
+if sh checkIfStoneExist.sh "$STONE"; 
   then echo "" 
   else 
     echo ;
-    echo "Topaz for Stone named [$1] failed to start";
+    echo "Topaz for Stone named [$STONE] failed to start";
     echo;
     exit 0
 fi
 
-nohup $GS_HOME/bin/startTopaz $1 -il <<EOF >>MFC.out &
-set user DataCurator password swordfish gemstone $1
+info "Start: Registering Web Servers"
+
+nohup $GS_HOME/bin/startTopaz $STONE -il <<EOF >>MFC.out &
+set user DataCurator password swordfish gemstone $STONE
 login
 exec 
 System beginTransaction.
@@ -39,6 +58,5 @@ System commit.
 %
 exit
 EOF
-echo
-echo "All Web Components have been registered !!!"
-echo
+
+info "Finish: All Web Components have been registered !!!"
