@@ -72,7 +72,7 @@ quit
 EOF
 
 if [ $? -ne 0 ]; then
-  error "Failed to stop Web Servers check {start-on.log}"
+  error "Failed to stop Web Servers check {stop-on.log}"
   exit 1
 fi
 
