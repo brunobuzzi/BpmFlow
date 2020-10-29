@@ -10,7 +10,6 @@ baseline: spec
 			spec repository: 'github://GsDevKit/XML-XMLParser:gemstone/filetree'].
 		spec baseline: 'XPath' with: [
 			spec repository: 'github://GsDevKit/XML-XPath:gemstone/filetree'].
-				].
 
 		spec baseline: 'AbstractApplicationObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository' ].
