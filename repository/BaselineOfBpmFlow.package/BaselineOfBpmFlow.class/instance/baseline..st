@@ -18,7 +18,7 @@ baseline: spec
 		spec baseline: 'Jasvgi' with: [
 			spec repository: 'github://brunobuzzi/JASVGI:master/repository'].
 		spec baseline: 'OrbeonPersistenceLayer' with: [
-			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:master/repository' ].
+			spec repository: 'github://brunobuzzi/OrbeonPersistenceLayer:issue378/repository' ].
 		spec baseline: 'Seaside3' with: [
 			spec loads: #('Core' 'REST' 'Seaside-Tools-Web');
 				repository: 'github://SeasideSt/Seaside:master/repository' ].
