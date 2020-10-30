@@ -53,7 +53,7 @@ baseline: spec
 
 		spec
 			group: 'core' with: #('BpmXpdlBizagiReader' 'BpmCore' 'BpmRuntime' 'BpmXpdl' 'BpmRuntimePEF'); 
-			group: 'web-backoffice' with: #('BpmWebBasic' 'BpmWebBackoffice');
+			group: 'web-backoffice' with: #('BpmWebBasic' 'BpmWebBackoffice' 'BpmWebGemStoneAdministration');
 			group: 'web-frontoffice' with: #('BpmWebBasic' 'BpmWebFrontoffice');
 			group: 'web-bi' with: #('BpmWebBasic' 'BpmWebBusinessIntelligence');
 			group: 'rest' with: #('BpmWebRestApiLayer');
