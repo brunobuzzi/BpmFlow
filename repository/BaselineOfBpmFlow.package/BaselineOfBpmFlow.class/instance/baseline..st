@@ -10,9 +10,10 @@ baseline: spec
 			spec repository: 'github://GsDevKit/XML-XMLParser:gemstone/filetree'].
 		spec baseline: 'XPath' with: [
 			spec repository: 'github://GsDevKit/XML-XPath:gemstone/filetree'].
-
 		spec baseline: 'AbstractApplicationObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractApplicationObjects:master/repository' ].
+		spec baseline: 'AbstractTestFramework' with: [
+			spec repository: 'github://brunobuzzi/AbstractTestFramework:master/repository' ].
 		spec baseline: 'AbstractBIObjects' with: [
 			spec repository: 'github://brunobuzzi/AbstractBIObjects:master/repository' ].
 		spec baseline: 'Jasvgi' with: [
@@ -48,7 +49,7 @@ baseline: spec
 		spec package: 'BpmXpdl_Tests' with: [spec requires: #('BpmXpdl' 'BpmXpdlTemplates' 'BpmXpdlBizagiReader' 'OrbeonPersistenceLayer')].
 		spec package: 'BpmRuntimePEF' with: [spec requires: #('OrbeonPersistenceLayer' 'BpmRuntime')].
 		spec package: 'BpmCore_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmXpdlTemplates')].
-		spec package: 'BpmRuntime_Tests' with: [spec requires: #('BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
+		spec package: 'BpmRuntime_Tests' with: [spec requires: #('AbstractTestFramework' 'BpmCore' 'BpmRuntime' 'BpmRuntimePEF' 'OrbeonPersistenceLayer' 'BpmXpdlTemplates')].
 		spec package: 'BpmRuntime_Tests_Automatic' with: [spec requires: #('BpmRuntime_Tests')].
 
 		spec

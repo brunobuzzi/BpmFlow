@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"KeepTempObjectsInSystem" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"procInstance",
@@ -12,5 +12,5 @@
 	"name" : "BpmProcessExecutionTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "AbstractObjectCreatorTest",
 	"type" : "normal" }
