@@ -5,7 +5,7 @@
 SCRIPT="start-on"
 source ./common.sh
 usage() {
-  error "Usage: ${SCRIPT} -s STONE_NAME"
+  error "Usage: ${SCRIPT} -s STONE_NAME -p port1,port2,port3"
 }
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
@@ -34,6 +34,11 @@ while getopts :l:s:p: opt; do
      ;;
   esac
 done
+
+if [ "x$PORTS" = "x" ]; then 
+  error "PORTS (-p) option must be set"
+  exit 1
+fi
 
 ./checkIfStoneExist.sh $STONE
 if [ $? -ne 0 ]; then
