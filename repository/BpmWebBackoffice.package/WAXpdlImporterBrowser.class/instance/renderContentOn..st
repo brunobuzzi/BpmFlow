@@ -20,7 +20,13 @@ renderContentOn: html
 	model hasNonResumableWarnings ifTrue: [^self renderNonResumableWarningsOn: html].
 	
 	model isImportSuccessful
-	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateIn: self session)].]
+	ifTrue: [html div id: 'imported-processes-sucessful'; with: [html output: ('Successful Import' translateIn: self session)].
+		model generatedProcessesDo: [:eachProcess | 
+			html div class: 'imported-process-info'; with: [
+				html output: ('Process Name: [' translateIn: self session), eachProcess processName, '] ', String tab.
+				html output: ('version: [' translateIn: self session), eachProcess version printString, ']'].
+		].
+	]
 	ifFalse: [importTitle := (model numberOfGeneratedProcesses > 1) ifTrue: ['Processes to Import'] ifFalse: ['Process to Import'].
 		html div id: 'imported-processes-title'; 
 					with: [html output: (importTitle translateIn: self session)].
