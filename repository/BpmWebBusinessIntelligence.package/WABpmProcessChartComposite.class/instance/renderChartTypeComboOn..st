@@ -2,9 +2,9 @@ search area
 renderChartTypeComboOn: html
 	| chartTypes |
 
-	chartTypes := #('Bar Chart' 'Pie Chart').
-	(self isCreationDayDistribution or: [self isDateDistribution]) ifTrue: [chartTypes := #('Heat Map')].
-	self isFieldValueEvolution ifTrue: [chartTypes := #('Spline Area Chart')].
-	self isTasksHeatmapDistribution ifTrue: [chartTypes := #('Tasks Heatmap')].
+	chartTypes := Array with: BIBarChart getComboName with: BIPieChart getComboName.
+	(self isCreationDayDistribution or: [self isDateDistribution]) ifTrue: [chartTypes := Array with: BIHeatmapChart getComboName].
+	self isFieldValueEvolution ifTrue: [chartTypes := Array with: BISplineAreaChart getComboName].
+	self isTasksHeatmapDistribution ifTrue: [chartTypes := Array with: BpmTasksHeatmapChart getComboName].
 	
 	^self renderChartTypeComboOn: html withCharts: chartTypes

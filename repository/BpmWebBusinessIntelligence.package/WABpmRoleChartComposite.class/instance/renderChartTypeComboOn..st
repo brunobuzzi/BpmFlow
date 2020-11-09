@@ -2,8 +2,8 @@ search area
 renderChartTypeComboOn: html
 	| chartTypes |
 
-	chartTypes := OrderedCollection withAll: #('Bar Chart' 'Pie Chart').
+	chartTypes := OrderedCollection with: BIBarChart getComboName with: BIPieChart getComboName.
 
-	self isUsersInTimeDistribution ifTrue: [chartTypes add: 'Heat Map'].	
+	self isUsersInTimeDistribution ifTrue: [chartTypes add: BIHeatmapChart getComboName].	
 
 	^self renderChartTypeComboOn: html withCharts: chartTypes asArray

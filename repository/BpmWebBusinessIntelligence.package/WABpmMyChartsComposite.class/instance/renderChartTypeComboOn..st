@@ -2,6 +2,6 @@ search area
 renderChartTypeComboOn: html
 	| chartTypes |
 
-	chartTypes := #('Bar Chart' 'Pie Chart').
-	
+	chartTypes := Array with: BIBarChart getComboName with: BIPieChart getComboName.
+
 	^self renderChartTypeComboOn: html withCharts: chartTypes
