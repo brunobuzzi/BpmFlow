@@ -101,8 +101,7 @@ git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
 cd scripts
-sh downloadAndPrepareFilesForFileLibraries.sh -f -d $GS_HOME/shared/repos/BpmFlow/js -p Highstock -v 6.0.3
-$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>install-all.log
+$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>highcharts.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
@@ -114,17 +113,28 @@ GsDeployer deploy: [
 		     onConflictUseLoaded;
          load.
 ].
+%
+logout
+quit
+EOF
+if [ $? -ne 0 ]; then
+  error "Highcharts installation has failed check {highcharts.log}"
+  exit 1
+fi
+info "Start: Downloading HighchartsSt static files"
+sh downloadAndPrepareFilesForFileLibraries.sh -f -d $GS_HOME/shared/repos/BpmFlow/js -p Highstock -v 6.0.1
+info "Finish: Downloading HighchartsSt static files"
+$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>highcharts.log
+set user DataCurator password swordfish gemstone $STONE
+login
+exec
 Highstock6DeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/deployment/'.
 Highstock6DevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/development/'.
 Highstock6ClassicModeDeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/deployment/'.
 Highstock6ClassicModeDevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/development/'.
 %
-logout
-quit
-EOF
-
 if [ $? -ne 0 ]; then
-  error "Highcharts installation has failed check {install-all.log}"
+  error "Highcharts installation has failed check {highcharts.log}"
   exit 1
 fi
 
