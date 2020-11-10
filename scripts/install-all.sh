@@ -117,6 +117,7 @@ GsDeployer deploy: [
 logout
 quit
 EOF
+
 if [ $? -ne 0 ]; then
   error "Highcharts installation has failed check {highcharts.log}"
   exit 1
@@ -133,6 +134,9 @@ Highstock6DevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/G
 Highstock6ClassicModeDeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/deployment/'.
 Highstock6ClassicModeDevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/development/'.
 %
+logout
+quit
+EOF
 if [ $? -ne 0 ]; then
   error "Highcharts installation has failed check {highcharts.log}"
   exit 1
@@ -142,7 +146,7 @@ info "Finish: HighchartsSt Packages Installation"
 
 info "Start: System Initialization"
 
-$GS_HOME/bin/startTopaz $STONE -il <<EOF
+$GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF >>install-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
