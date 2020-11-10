@@ -100,6 +100,8 @@ git branch
 git branch -a
 git checkout origin/v6.0.1
 git checkout v6.0.1
+cd scripts
+sh downloadAndPrepareFilesForFileLibraries.sh -f -d $GS_HOME/shared/repos/BpmFlow/js -p Highstock -v 6.0.3
 $GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>install-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
@@ -112,6 +114,10 @@ GsDeployer deploy: [
 		     onConflictUseLoaded;
          load.
 ].
+Highstock6DeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/deployment/'.
+Highstock6DevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/development/'.
+Highstock6ClassicModeDeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/deployment/'.
+Highstock6ClassicModeDevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/development/'.
 %
 logout
 quit
