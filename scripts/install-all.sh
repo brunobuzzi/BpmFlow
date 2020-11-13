@@ -129,10 +129,10 @@ $GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF  >>highcharts.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
-Highstock6DeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/deployment/'.
-Highstock6DevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/development/'.
-Highstock6ClassicModeDeploymentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/deployment/'.
-Highstock6ClassicModeDevelopmentMetadataLibrary recursivelyAddAllFilesIn: '/home/gemstone/GsDevKit_home/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/development/'.
+Highstock6DeploymentMetadataLibrary recursivelyAddAllFilesIn: '$GS_HOME/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/deployment/'.
+Highstock6DevelopmentMetadataLibrary recursivelyAddAllFilesIn: '$GS_HOME/shared/repos/BpmFlow/js/6.0.3/Highstock/styled/development/'.
+Highstock6ClassicModeDeploymentMetadataLibrary recursivelyAddAllFilesIn: '$GS_HOME/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/deployment/'.
+Highstock6ClassicModeDevelopmentMetadataLibrary recursivelyAddAllFilesIn: '$GS_HOME/shared/repos/BpmFlow/js/6.0.3/Highstock/oldMode/development/'.
 %
 logout
 quit
