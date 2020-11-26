@@ -84,4 +84,4 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-info "Finish: Starting Gem processes as Web Servers"
+info "Finish: Web Servers started on port [ports-all.ini]"
