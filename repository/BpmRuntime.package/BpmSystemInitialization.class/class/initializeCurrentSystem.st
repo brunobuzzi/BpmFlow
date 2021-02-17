@@ -13,3 +13,5 @@ initializeCurrentSystem
 	BpmProcessDynamicCategory initializeCache.
 
 	self defaultTimerEventMonitor class initializeDefault.
+
+	self createSystemDefaultObjects.
