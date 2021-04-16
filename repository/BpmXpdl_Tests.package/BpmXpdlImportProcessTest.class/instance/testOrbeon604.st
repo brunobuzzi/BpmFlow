@@ -7,7 +7,7 @@ testOrbeon604
 	self getDefaultEnvironment registerApplication: agesic.
 	applications := OrderedCollection with: agesic.
 
-	formDefinition := self formCreatorClass createDefinition: 'test' with: #formDefinition_example_4 in: agesic.
+	formDefinition := 	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_agesic_test_all_types_4 name: 'test' in: agesic.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
 
