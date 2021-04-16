@@ -10,12 +10,10 @@ renderOrbeonConfigurationSettingOn: html readOnly: aBoolean
 			callback: [:value | self getOrbeonWebServerConfiguration orbeonIP: value]; 
 			with: self getOrbeonWebServerConfiguration orbeonIP.
 
-	html label class: 'margin-right-10px'; attributeAt: 'for' put: 'versionName'; with: ('XPath Orbeon Version' translateIn: self session).
-	html select 
-		disabled: aBoolean;
-		attributeAt: 'id' put: 'versionName';
-		list: self getOrbeonWebServerConfiguration getOrbeonXpathVersions;
-		callback: [:versionName | self setOrbeonVersion: versionName];
-		selected: self getOrbeonWebServerConfiguration getOrbeonXpathVersionForCombo.
+	html label class: 'margin-right-10px'; attributeAt: 'for' put: 'dataFormatVersion'; with: ('Data Format Version' translateIn: self session).
+	html textInput 
+			attributeAt: 'id' put: 'dataFormatVersion';
+			readonly: true;
+			value: self defaultOrbeonDataFormatVersion printName.
 
 	aBoolean ifFalse: [html submitButton callback: [self savePreferences]; with: ('Save Preferences' translateIn: self session).].
