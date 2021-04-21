@@ -1,9 +1,9 @@
 form instances
 formInstance_proceed_purchase: aBpmProcessInstance
 
-	^self formCreatorClass createFormInstance: #form_proceed_purchase
-			withValues: #() 
-			definitionNamed: 'proceed-purchase' 
-			app: 'ue' 
-			definitionMethod: #form_proceed_purchase
-			in: aBpmProcessInstance
+	^self formCreatorClass 
+		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_proceed_purchase
+		definitionNamed: 'proceed-purchase' 
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_proceed_purchase
+		in: aBpmProcessInstance
