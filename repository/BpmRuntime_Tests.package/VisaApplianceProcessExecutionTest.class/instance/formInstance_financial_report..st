@@ -1,8 +1,9 @@
 form instances
 formInstance_financial_report: aBpmProcessInstance
 
-	^self formCreatorClass createFormInstance: #form_financial_report_1 
-			definitionNamed: 'financial-report' 
-			app: 'ue' 
-			definitionMethod: #formDefinition_financial_report
-			in: aBpmProcessInstance
+	^self formCreatorClass 
+		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_financial_report_1
+		definitionNamed: 'financial-report' 
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_emit_visa
+		in: aBpmProcessInstance
