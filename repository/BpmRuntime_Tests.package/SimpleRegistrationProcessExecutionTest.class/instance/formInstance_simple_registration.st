@@ -1,4 +1,9 @@
 form instances
 formInstance_simple_registration
 
-	^self formCreatorClass createFormInstance: #form_simple_registration_1 definitionNamed: 'simple-registration' app: 'st' definitionMethod: #formDefinition_simple_registration in: procInstance
+	^self formCreatorClass 
+		buildFormInstanceFrom: self newInstanceTemplate formInstance_st_simple_registration
+		definitionNamed: 'registration-approval'
+		app: 'st' 
+		definitionMethod: self newDefinitionTemplate formDefinition_st_simple_registration
+		in: procInstance
