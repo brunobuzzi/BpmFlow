@@ -1,4 +1,9 @@
 form instance
 formInstance_user_form_withoutProcess
 
-	^self formCreatorClass createFormInstanceWithoutProcess: #form_user_form_1 definitionNamed: 'user-form' app: 'ue' definitionMethod: #formDefinition_user_form in: procInstance
+	^self formCreatorClass 
+		buildFormInstanceWithoutProcessFrom: self newInstanceTemplate formInstance_ue_user_form
+		definitionNamed: 'user-form'
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_user_form
+		in: procInstance
