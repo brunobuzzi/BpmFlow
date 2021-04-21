@@ -1,10 +1,20 @@
 other
 formInstance_withValues: anArray in: aBpmProcessInstance
+	| formInstance |
+
+	formInstance := self newInstanceTemplate 
+										formInstance_ue_dashboard_form: (anArray at: 1) 
+										cost: (anArray at: 2) 
+										deductible: (anArray at: 3) 
+										confirmed: (anArray at: 4) 
+										directClient: (anArray at: 5) 
+										country: (anArray at: 6) 
+										city: (anArray at: 7) 
+										industry: (anArray at: 8).
 
 	^self formCreatorClass 
-				createFormInstance: #form_dashboard_form:cost:deductible:confirmed:directClient:country:city:industry: 
-				withValues: anArray 
-				definitionNamed: 'dashboard-form' 
-				app: 'ue' 
-				definitionMethod: #formDefinition_dashboard_form 
-				in: aBpmProcessInstance
+		buildFormInstanceFrom: formInstance
+		definitionNamed: 'all-field-types' 
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_all_field_types
+		in: aBpmProcessInstance

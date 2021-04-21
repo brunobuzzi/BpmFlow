@@ -1,9 +1,9 @@
 form instances
 formInstance_loan_application: aBpmProcessInstance
 
-	^self formCreatorClass createFormInstance: #form_loan_application
-			withValues: #() 
-			definitionNamed: 'loan-application' 
-			app: 'ue' 
-			definitionMethod: #form_loan_application
-			in: aBpmProcessInstance
+	^self formCreatorClass 
+		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_loan_application
+		definitionNamed: 'loan-application' 
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_loan_application
+		in: aBpmProcessInstance
