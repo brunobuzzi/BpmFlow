@@ -1,4 +1,9 @@
 form instance
 formInstance_data_approved
 
-	^self formCreatorClass createFormInstance: #form_data_approved_1 definitionNamed: 'data-approved' app: 'ue' definitionMethod: #formDefinition_data_approval in: procInstance
+	^self formCreatorClass 
+		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_data_approved
+		definitionNamed: 'all-field-types' 
+		app: 'ue' 
+		definitionMethod: self newDefinitionTemplate formDefinition_ue_data_approved
+		in: procInstance
