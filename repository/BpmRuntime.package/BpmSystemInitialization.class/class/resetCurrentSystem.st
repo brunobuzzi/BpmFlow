@@ -14,7 +14,7 @@ resetCurrentSystem
 	BpmProcessInstanceCategory resetAllCategorizedProcesses.
 	BpmProcessDynamicCategory resetAllCategorizedProcesses.
 
-	self defaultApplicationManagerClass initializeCache.
+	self defaultApplicationManagerClass doInCache: [:eachApp | eachApp isAdminApplication ifFalse: [eachApp removeFromCache]].
 
 	self defaultEnvironmentClass resetAllRolesAndAssignments.
 

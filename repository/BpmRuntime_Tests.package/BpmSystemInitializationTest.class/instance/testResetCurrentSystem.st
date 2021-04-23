@@ -15,7 +15,7 @@ testResetCurrentSystem
 		].
 	].
 
-	self assert: self defaultApplicationManagerClass cache isEmpty.
+	self assert: self defaultApplicationManagerClass cache size equals: 1.
 
 	self assert: BpmProcessDefinitionCategory cache isEmpty.
 	self assert: BpmProcessInstanceCategory cache isEmpty.
