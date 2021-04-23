@@ -14,6 +14,7 @@ createSystemDefaultObjects
 
 	self defaultBpmApplicationClass initializeCache.
 	application := 	(BpmApplication newNamed: 'admins') addToCache.
+	application initializeForBpmFlow.
 
 	adminUser := self defaultBpmUserClass addAdminUser.
 

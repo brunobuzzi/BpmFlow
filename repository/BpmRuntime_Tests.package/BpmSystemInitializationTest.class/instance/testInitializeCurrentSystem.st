@@ -3,10 +3,10 @@ testInitializeCurrentSystem
 
 	BpmSystemInitialization initializeCurrentSystem.
 
-	self assert: self defaultEnvironmentClass cache isEmpty.
-	self assert: self defaultApplicationManagerClass cache isEmpty.
-	self assert: self defaultApplicationUserClass cache isEmpty.
-	self assert: self defaultBpmUserClass cache isEmpty.
+	self assert: self defaultEnvironmentClass cache size equals: 1.
+	self assert: self defaultApplicationManagerClass cache size equals: 1.
+	self assert: self defaultApplicationUserClass cache size equals: 1.
+	self assert: self defaultBpmUserClass cache size equals: 1.
 
 	self assert: BpmProcessDefinitionCategory cache isEmpty.
 	self assert: BpmProcessInstanceCategory cache isEmpty.
