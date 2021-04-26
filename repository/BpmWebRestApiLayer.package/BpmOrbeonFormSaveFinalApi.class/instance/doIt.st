@@ -21,7 +21,7 @@ doIt
 		groupname: groupname;
 		isValid: isValid;
 		updateLastModifiedTime;
-		processXML.
+		buildForm.
 
 	definition removeDraft: instance. "this is the final version so we remove the current draft if any"
 

@@ -1,9 +1,7 @@
 tests
 testCreateSystemDefaultObjects
 
-	BpmSystemInitialization 
-		initializeCurrentSystem;
-		createSystemDefaultObjects.
+	BpmSystemInitialization initializeCurrentSystem.
 
 	[self assert: self defaultEnvironmentClass getAdminsEnvironment notNil] on: NoEnvironmentException do: [:ex | self assert: false].
 
