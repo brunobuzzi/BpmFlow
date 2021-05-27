@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"environments" ],
+	"name" : "BpmSystemManager",
+	"pools" : [
+		 ],
+	"super" : "AbstractSystemManager",
+	"type" : "normal" }
