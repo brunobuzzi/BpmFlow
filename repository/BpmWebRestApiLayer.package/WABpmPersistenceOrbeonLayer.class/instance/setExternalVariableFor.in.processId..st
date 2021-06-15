@@ -7,7 +7,7 @@ setExternalVariableFor: processDefinitionId in: appName processId: processId
 	<path: '/setvariables?processdefnitionid={1}&app={2}&processid={3}'>
 	<produces: 'application/xml'>
 
-	apiOperation := BpmSetExternalVariableApi newWithXml: self requestContext request rawBody. 
+	apiOperation := BpmSetExternalVariableApi newOn: self systemRoot withXml: (self requestContext request bodyDecodeUsing: 'utf-8'). 
 	apiOperation appName: appName;
 		processDefinitionId: processDefinitionId;
 		processInstanceId: processId.
