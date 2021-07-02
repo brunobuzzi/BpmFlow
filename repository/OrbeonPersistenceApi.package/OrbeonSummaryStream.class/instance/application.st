@@ -1,0 +1,4 @@
+other
+application
+
+	^summary application

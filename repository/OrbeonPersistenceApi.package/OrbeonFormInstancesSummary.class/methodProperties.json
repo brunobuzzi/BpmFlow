@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"newWith:definition:version:user:group:credentials:pageSize:pageNumber:xmlQuery:" : "brunobb 07/15/2020 16:42" },
+	"instance" : {
+		"application" : "brunobb 07/15/2020 16:42",
+		"buildStreamForDraftWithId:" : "brunobb 03/25/2021 13:45",
+		"buildStreamForDraftsAndFormsSummary" : "brunobb 10/02/2020 14:56",
+		"buildStreamForDraftsSummary" : "brunobb 05/12/2021 12:14",
+		"buildStreams" : "brunobb 07/15/2020 16:42",
+		"buildStreamsForDraftsSearch" : "brunobb 07/15/2020 16:42",
+		"buildStreamsForRegularSummaryPaging" : "brunobb 05/12/2021 12:14",
+		"buildStreamsForSearchSummaryPaging" : "brunobb 07/15/2020 16:42",
+		"createQueryNodes" : "brunobb 07/15/2020 16:42",
+		"formDefinition" : "brunobb 09/09/2020 10:54",
+		"getAllDrafts" : "brunobb 07/15/2020 16:42",
+		"getAllVersions" : "bruno 07/17/2020 11:08",
+		"getDraftsWithId:" : "brunobb 03/25/2021 13:45",
+		"hasPermissionsEnabled" : "brunobb 07/15/2020 16:42",
+		"selectFormsInstancesWithPermissionsFrom:" : "brunobb 07/15/2020 16:42",
+		"setApplication:" : "brunobb 07/15/2020 16:42",
+		"setDefinition:" : "brunobb 07/15/2020 16:42",
+		"setVersion:" : "brunobb 07/15/2020 16:42" } }

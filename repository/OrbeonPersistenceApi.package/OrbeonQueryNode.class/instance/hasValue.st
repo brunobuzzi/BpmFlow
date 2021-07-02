@@ -1,0 +1,4 @@
+Updating
+hasValue
+
+	^value notNil

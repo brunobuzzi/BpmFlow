@@ -1,0 +1,14 @@
+{
+	"category" : "BpmCore_Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"testRoot" ],
+	"name" : "BpmSystemRootTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

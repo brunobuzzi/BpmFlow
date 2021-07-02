@@ -6,7 +6,7 @@ setUp
 
 	expectedTime := BpmExpectedExecutionInDays new.
 
-	calendar := (self defaultEnvironmentClass newNamed: 'Test') addDefaultCalendar.
+	calendar := (testRoot getExistingEnvironmentOrCreateNewNamed: 'Test') addDefaultCalendar.
 	expectedTime calendar: calendar.
 
 	calendar 

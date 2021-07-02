@@ -6,8 +6,8 @@ createUeEnvironmentAndApplication
 
 	processExecutionSimulator := PEFBpmProcessExecutor new.
 
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
-	application := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue'.
+	application := testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue'.
 
 	environment registerApplication: application ifPresent: [] ifTaken: [].

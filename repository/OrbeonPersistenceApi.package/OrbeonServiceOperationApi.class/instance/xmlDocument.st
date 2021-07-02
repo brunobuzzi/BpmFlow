@@ -1,0 +1,3 @@
+Accessing
+xmlDocument
+	^xmlDocument

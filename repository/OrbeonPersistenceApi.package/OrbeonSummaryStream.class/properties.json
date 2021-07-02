@@ -1,0 +1,18 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"summary",
+		"instancesReadStream",
+		"draftsReadStream",
+		"fieldsReadStreams",
+		"definitionsReadStream" ],
+	"name" : "OrbeonSummaryStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

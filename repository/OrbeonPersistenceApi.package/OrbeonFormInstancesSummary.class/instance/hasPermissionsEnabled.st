@@ -1,0 +1,4 @@
+permissions
+hasPermissionsEnabled
+
+	^definition hasPermissionsEnabled

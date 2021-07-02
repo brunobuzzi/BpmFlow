@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"default" : "BrunoBB 09/21/2015 10:02",
+		"initialize" : "BrunoBB 09/21/2015 10:02" },
+	"instance" : {
+		"addDefinitionAudit:" : "BrunoBB 04/28/2016 10:42",
+		"addDraftAudit:" : "BrunoBB 04/28/2016 10:42",
+		"addInstanceAudit:" : "BrunoBB 04/28/2016 10:43",
+		"definitions:" : "BrunoBB 09/21/2015 10:02",
+		"drafts:" : "BrunoBB 09/21/2015 10:02",
+		"initialize" : "BrunoBB 09/21/2015 10:02",
+		"instances:" : "BrunoBB 09/21/2015 10:02" } }

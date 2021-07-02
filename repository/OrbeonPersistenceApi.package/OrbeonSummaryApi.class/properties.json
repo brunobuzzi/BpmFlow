@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		"log",
+		"queryErrors" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pageNumber",
+		"pageSize",
+		"summary" ],
+	"name" : "OrbeonSummaryApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonSearchApi",
+	"type" : "normal" }

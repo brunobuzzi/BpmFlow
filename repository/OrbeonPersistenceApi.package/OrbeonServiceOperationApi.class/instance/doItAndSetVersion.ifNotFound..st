@@ -1,0 +1,2 @@
+operations
+doItAndSetVersion: setVersionBlock ifNotFound: notFoundBlock

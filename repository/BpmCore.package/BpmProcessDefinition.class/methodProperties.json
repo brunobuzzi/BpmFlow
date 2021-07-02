@@ -5,7 +5,6 @@
 		"cacheAt:ifAbsent:" : "BrunoBB 06/03/2016 15:36",
 		"getAbortedProcessWith:in:" : "brunobb 09/04/2018 09:51",
 		"getAllAbortedProcessesIn:" : "brunobb 08/06/2020 10:36",
-		"getAllProcessDefinitionInBpmEnvironmentNamed:" : "brunobb 02/05/2020 09:31",
 		"getAllProcessesNamed:in:" : "brunobb 02/05/2020 03:48",
 		"getAllVersionsIn:" : "brunobb 02/05/2020 03:45",
 		"getApplicationAndProcessDefinitionDistributionIn:" : "brunobb 08/10/2020 14:29",

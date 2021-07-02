@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 06/05/2020 10:55" },
+		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 06/30/2021 14:35" },
 	"instance" : {
-		"getAvailableTaskAssignments" : "brunobb 08/13/2020 14:30",
-		"getFinishedTaskAssignments" : "brunobb 08/13/2020 14:30",
-		"getTakenTaskAssignments" : "brunobb 08/13/2020 14:30",
-		"initializeForBpmFlow" : "brunobb 06/05/2020 10:30",
-		"resetAllRolesAndAssignments" : "brunobb 02/06/2020 10:45" } }
+		"getAvailableTaskAssignments" : "brunobb 06/30/2021 14:35",
+		"getFinishedTaskAssignments" : "brunobb 06/30/2021 14:35",
+		"getTakenTaskAssignments" : "brunobb 06/30/2021 14:35",
+		"initializeForBpmFlow" : "brunobb 06/30/2021 14:35",
+		"resetAllRolesAndAssignments" : "brunobb 06/30/2021 14:35" } }

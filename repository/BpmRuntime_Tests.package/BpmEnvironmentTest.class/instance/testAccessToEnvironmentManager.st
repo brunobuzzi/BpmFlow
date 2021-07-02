@@ -7,7 +7,7 @@ testAccessToEnvironmentManager
 
 	self assert: self defaultBpmUserClass getAdminUser hasAccessToEnvironmentManager.
 
-	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
+	env1 := testRoot getExistingEnvironmentOrCreateNewNamed: 'env1'.
 	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred-admin' password: ' ' forEnvironment: env1.
 
 	self deny: newUser hasAccessToEnvironmentManager.

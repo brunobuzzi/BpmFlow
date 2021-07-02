@@ -2,7 +2,7 @@ test
 testEmbeddedCodeSecuritySettings
 	| env |
 
-	env := (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env').
+	env := (testRoot getExistingEnvironmentOrCreateNewNamed: 'env').
 
 	"when <aBpmEnvironment> is created #low level is the default"
 	env allCodeAnalyzers do: [:each | self assert: (env embeddedCodeSecurityLevelFor: each) equals: #low].

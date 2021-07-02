@@ -1,0 +1,23 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"systemRoot",
+		"xmlString",
+		"id",
+		"version",
+		"xmlDocument",
+		"appName",
+		"formName",
+		"user",
+		"group",
+		"userCredentials" ],
+	"name" : "OrbeonServiceOperationApi",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

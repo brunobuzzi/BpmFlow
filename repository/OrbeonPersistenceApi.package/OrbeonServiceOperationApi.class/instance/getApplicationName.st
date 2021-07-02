@@ -1,0 +1,4 @@
+metadata
+getApplicationName
+
+	^appName

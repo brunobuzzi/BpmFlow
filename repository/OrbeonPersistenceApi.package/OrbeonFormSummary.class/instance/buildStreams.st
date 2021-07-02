@@ -1,0 +1,4 @@
+streams building
+buildStreams
+
+	self subclassResponsibility

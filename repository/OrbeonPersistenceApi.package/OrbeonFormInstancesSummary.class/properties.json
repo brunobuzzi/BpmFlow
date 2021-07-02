@@ -1,0 +1,17 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"invertedPermissions",
+		"application",
+		"definition" ],
+	"name" : "OrbeonFormInstancesSummary",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormSummary",
+	"type" : "normal" }

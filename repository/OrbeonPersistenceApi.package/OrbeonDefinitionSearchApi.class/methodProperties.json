@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"newOn:withXml:" : "brunobb 06/04/2021 14:08" },
+	"instance" : {
+		"doIt" : "brunobb 06/05/2020 19:54",
+		"generateXmlAnswerForBuilderSummary" : "BrunoBB 12/30/2016 03:27",
+		"generateXmlNodeForAllDefinitionWith:" : "brunobb 02/19/2021 13:39",
+		"generateXmlNodeForDefinition:with:" : "BrunoBB 12/30/2016 04:13",
+		"getArrayOfOrbeonHeaders" : "brunobb 06/05/2020 19:35" } }

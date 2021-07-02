@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OrbeonFormDraftSourceApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormSourceApi",
+	"type" : "normal" }

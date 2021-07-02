@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isValid",
+		"modifiedUser" ],
+	"name" : "OrbeonFormSaveApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormRunnerApi",
+	"type" : "normal" }

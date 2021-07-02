@@ -22,7 +22,7 @@ setUp
 			in: 'ue'.
 
 	"to test Execution Context"
-	(self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue') 
+	(testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue') 
 		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
 		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
 

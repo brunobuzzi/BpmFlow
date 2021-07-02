@@ -1,0 +1,4 @@
+testing
+isFieldStream
+
+	^fieldsReadStreams notNil

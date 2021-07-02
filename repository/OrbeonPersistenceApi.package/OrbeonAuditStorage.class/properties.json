@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"drafts",
+		"instances",
+		"definitions" ],
+	"name" : "OrbeonAuditStorage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

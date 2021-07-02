@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"instances" ],
+	"name" : "OrbeonDeferredProcessingQueue",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

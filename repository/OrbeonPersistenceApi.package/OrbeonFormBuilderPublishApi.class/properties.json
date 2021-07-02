@@ -1,0 +1,16 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"headerVersion",
+		"application",
+		"publishedFormDefinition" ],
+	"name" : "OrbeonFormBuilderPublishApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormBuilderApi",
+	"type" : "normal" }

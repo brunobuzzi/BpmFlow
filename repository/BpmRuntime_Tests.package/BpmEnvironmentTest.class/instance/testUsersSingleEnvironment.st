@@ -3,17 +3,15 @@ testUsersSingleEnvironment
 	"In a user single environment (areUsersMultiEnvironment: false) the same user can NOT be assigned to more than one <BpmEnvironment>.
 	With the exception of 'admins' <BpmEnvironment>.
 	So the rule is: a user can be assigned to 'admins' <BpmEnvironment> and other <BpmEnvironment>. A max of two if one of them is 'admins' "
-	| env1 env2 newUser currentMode |
+	| env1 env2 newUser |
 
-	currentMode := self defaultEnvironmentClass areUsersMultiEnvironment.
-	self defaultEnvironmentClass areUsersMultiEnvironment: false.
+	testRoot setUsersAsMonoEnvironment.
 
-
-	env1 := (self defaultEnvironmentClass newNamed: 'env1') addToCache.
+	env1 := testRoot getExistingEnvironmentOrCreateNewNamed: 'env1'.
 	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred' password: ' ' forEnvironment: env1.
 	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
-	env2 := (self defaultEnvironmentClass newNamed: 'env2') addToCache.
-	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
+	env2 := testRoot getExistingEnvironmentOrCreateNewNamed: 'env2'.
+	self assert: (testRoot includesEnvironmentNamed: env2 name).
 
 	self assert: (env1 includesUserNamed: newUser username).
 
@@ -25,13 +23,9 @@ testUsersSingleEnvironment
 	self deny: (env1 includesUserNamed: newUser username).
 
 	env1 removeFromCache.
-	self deny: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
+	self deny: (testRoot includesEnvironmentNamed: env1 name).
 	env2 removeFromCache.
-	self deny: (self defaultEnvironmentClass includesEnvironmentNamed: env2 name).
-
-	self defaultEnvironmentClass areUsersMultiEnvironment: currentMode.
+	self deny: (testRoot includesEnvironmentNamed: env2 name).
 
 	newUser removeFromCache.
 	self assert: (self defaultBpmUserClass getUserNamed: newUser username) isNil.
-
-	self defaultEnvironmentClass areUsersMultiEnvironment: currentMode.

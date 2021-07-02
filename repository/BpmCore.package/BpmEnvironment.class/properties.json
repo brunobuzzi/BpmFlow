@@ -17,7 +17,8 @@
 		"embeddedCodeSecurityPolicy",
 		"userGroups",
 		"exceptionCalendars",
-		"usersChartsAndDashboardRepository" ],
+		"usersChartsAndDashboardRepository",
+		"systemRoot" ],
 	"name" : "BpmEnvironment",
 	"pools" : [
 		 ],

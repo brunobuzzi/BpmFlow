@@ -1,0 +1,23 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pageSize",
+		"pageNumber",
+		"returnedFormsSize",
+		"totalFormsSize",
+		"user",
+		"group",
+		"userCredentials",
+		"summaryStream",
+		"xmlQuery",
+		"queryNodes" ],
+	"name" : "OrbeonFormSummary",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+other
+beGeneric
+
+	isGeneric := true

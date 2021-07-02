@@ -1,6 +1,6 @@
-other
+setUp
 tearDown
 
 	super tearDown.
 
-	(self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env') removeFromCache.
+	(testRoot getExistingEnvironmentOrCreateNewNamed: 'env') removeFromCache.

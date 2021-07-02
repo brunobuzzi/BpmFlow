@@ -1,0 +1,15 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileId",
+		"fileContents" ],
+	"name" : "OrbeonFileOperationApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonServiceOperationApi",
+	"type" : "normal" }

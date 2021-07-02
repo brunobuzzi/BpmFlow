@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OrbeonDefinitionSearchApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonSummaryApi",
+	"type" : "normal" }

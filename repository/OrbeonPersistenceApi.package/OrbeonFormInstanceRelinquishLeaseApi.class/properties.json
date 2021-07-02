@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OrbeonFormInstanceRelinquishLeaseApi",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormInstanceLeaseApi",
+	"type" : "normal" }

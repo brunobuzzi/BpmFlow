@@ -1,0 +1,4 @@
+default names
+adminUserName
+
+	^'admin'

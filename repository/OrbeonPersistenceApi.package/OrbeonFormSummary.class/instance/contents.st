@@ -1,0 +1,4 @@
+streaming
+contents
+
+	^summaryStream contents

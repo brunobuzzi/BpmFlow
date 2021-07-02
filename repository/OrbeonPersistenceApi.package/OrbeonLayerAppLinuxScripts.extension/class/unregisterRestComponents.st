@@ -1,0 +1,4 @@
+*orbeonPersistenceApi
+unregisterRestComponents
+
+	WAPersistenceOrbeonLayer unregister.

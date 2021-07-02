@@ -1,0 +1,3 @@
+Accessing
+headerVersionValue
+	^headerVersionValue

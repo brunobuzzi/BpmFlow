@@ -7,7 +7,7 @@ setUp
 	self createStEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
 
 	application := self defaultApplicationManagerClass applicationNamed: 'st' ifNone: [(self getOrbeonApplicationClass newNamed: 'st') addToCache].
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-st'.
+	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-st'.
 	application hasBpmEnvironment ifFalse: [environment registerApplication: application].
 
 	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'Simple Registration' in: 'st'. "answer a collection with all versions"

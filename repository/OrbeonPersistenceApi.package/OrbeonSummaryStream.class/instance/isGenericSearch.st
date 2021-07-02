@@ -1,0 +1,4 @@
+other
+isGenericSearch
+
+	^summary isGenericSearch

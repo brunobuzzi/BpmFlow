@@ -1,10 +1,11 @@
 other
 createBpmSystemStructureFor: index
 	"The receiver create the basic structure to run the tests for iteration <index>"
-	| env backApp1 backApp2 frontApp1 frontApp2 front_role back_role front_user back_user |
+	| env backApp1 backApp2 frontApp1 frontApp2 front_role back_role front_user back_user testRoot |
 
+	testRoot := BpmSystemRoot newWithBasicObjects.
 	"1) create the environment and application "
-	env := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-', index printString.
+	env := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-', index printString.
 	environments at: 'env-', index printString put: env.
 	frontApp1 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'f-app1-', index printString.
 	frontApp2 := self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: 'f-app2-', index printString.

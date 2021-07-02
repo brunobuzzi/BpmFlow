@@ -1,0 +1,14 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definitionsReadStream" ],
+	"name" : "OrbeonFormDefinitionsSummary",
+	"pools" : [
+		 ],
+	"super" : "OrbeonFormSummary",
+	"type" : "normal" }

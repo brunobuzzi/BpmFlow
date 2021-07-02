@@ -1,0 +1,4 @@
+other
+auditStorage
+
+	^OrbeonAuditStorage default

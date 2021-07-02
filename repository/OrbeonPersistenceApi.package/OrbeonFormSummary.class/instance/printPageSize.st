@@ -1,0 +1,4 @@
+other
+printPageSize
+
+	^pageSize printString

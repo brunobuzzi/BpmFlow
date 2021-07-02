@@ -2,8 +2,8 @@ facilities
 removeUeEnvironmentAndApplication
 	| environment application |
 
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
-	application := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue'.
+	application := testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue'.
 
 	self removeEnvironment: environment andApplication: application

@@ -1,0 +1,4 @@
+operations
+doItAndInjectPermissions: aBlock
+
+	self subclassResponsibility

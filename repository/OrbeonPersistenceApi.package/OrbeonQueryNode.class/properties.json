@@ -1,0 +1,22 @@
+{
+	"category" : "OrbeonPersistenceApi",
+	"classinstvars" : [
+		"cache" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"path",
+		"type",
+		"control",
+		"searchField",
+		"summaryField",
+		"match",
+		"value",
+		"isGeneric" ],
+	"name" : "OrbeonQueryNode",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
