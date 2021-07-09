@@ -1,4 +1,4 @@
-users
+system root
 areUsersMultiEnvironment
 
-	^self class areUsersMultiEnvironment
+	^systemRoot areUsersMultiEnvironment

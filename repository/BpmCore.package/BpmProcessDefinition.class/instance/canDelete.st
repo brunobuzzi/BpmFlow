@@ -3,7 +3,7 @@ canDelete
 	"Answer whether or not the receiver can be deleted from the system"
 	| definitionsCollection |
 
-	(self defaultTimerEventMonitor isMonitoringAnyEventFor: self) ifTrue: [^false]. "to be removed non monitored events of the receiver can be active"
+	(self systemRoot isMonitoringAnyEventFor: self) ifTrue: [^false]. "to be removed non monitored events of the receiver can be active"
 
 	definitionsCollection := self class getAllProcessesNamed: processName in: self applicationName.
 

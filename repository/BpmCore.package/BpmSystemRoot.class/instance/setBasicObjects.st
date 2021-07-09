@@ -3,5 +3,6 @@ setBasicObjects
 
 	environments := Dictionary new.
 	serverConfiguration := GemStoneServerConfiguration new.
+	eventsMonitor := BpmTimerEventMonitor newOnRoot:  self.
 
-	self getExistingBpmApplicationOrCreateNewNamed: self adminsApplicationName in: self adminsEnvironmentName
+	self createDefaultObjects

@@ -4,7 +4,7 @@ registerUser: aBpmUser ifPresent: aBlock
 
 	(users includesKey: aBpmUser username) ifTrue: [^aBlock value].
 
-	((self == self class getAdminsEnvironment) not and:[aBpmUser isInAdminsEnvironment not and: [self areUsersMultiEnvironment not and: [aBpmUser getBpmEnvironments size > 0]]]) 
+	((self == systemRoot getAdminsEnvironment) not and:[aBpmUser isInAdminsEnvironment not and: [systemRoot areUsersMultiEnvironment not and: [aBpmUser getBpmEnvironments size > 0]]]) 
 	ifTrue: [ImproperBpmOperationException signal: 'The user [', aBpmUser username, '] is already assigned to another Environment !!!'].
 
 	aBpmUser createInboxFor: self.

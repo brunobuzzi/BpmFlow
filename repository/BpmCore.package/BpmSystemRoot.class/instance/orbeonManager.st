@@ -1,4 +1,4 @@
 orbeon
 orbeonManager
 
-	^self atProperty: #orbeon ifAbsent: [self error: 'BPM is no currently using Orbeon Forms']
+	^self atProperty: #orbeon ifAbsent: [ImproperBpmOperationException signal: 'BPM is no currently using Orbeon Forms']

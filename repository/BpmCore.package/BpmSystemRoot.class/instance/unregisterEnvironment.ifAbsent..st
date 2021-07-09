@@ -1,5 +1,5 @@
 environments
-unregisterEnvironment: aBpmEnvironment ifFalse: aBlock
+unregisterEnvironment: aBpmEnvironment ifAbsent: aBlock
 
 	(environments includesKey: aBpmEnvironment name) ifFalse: [^aBlock value].
 
