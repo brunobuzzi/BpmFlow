@@ -1,4 +1,4 @@
 other
 setCentralUserNamed: aString
 
-	centralUser := ApplicationUser getExistingOrNewUserNamed: aString.
+	centralUser := self defaultApplicationUserClass getExistingOrNewUserNamed: aString.

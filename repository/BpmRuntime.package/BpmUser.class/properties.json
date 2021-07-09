@@ -13,7 +13,8 @@
 		"inboxes",
 		"outboxes",
 		"bpmEnvironments",
-		"userGroups" ],
+		"userGroups",
+		"systemRoot" ],
 	"name" : "BpmUser",
 	"pools" : [
 		 ],

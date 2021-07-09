@@ -1,14 +1,14 @@
 {
 	"category" : "BpmRuntime",
 	"classinstvars" : [
-		"default" ],
+		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "brunobb 11/28/2018 06:22",
 	"instvars" : [
-		"systemRoot" ],
-	"name" : "BpmDeferredExecution",
+		 ],
+	"name" : "NoRoleException",
 	"pools" : [
 		 ],
-	"super" : "BpmObject",
+	"super" : "BpmRuntimeException",
 	"type" : "normal" }

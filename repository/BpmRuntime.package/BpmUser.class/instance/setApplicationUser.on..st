@@ -1,7 +1,7 @@
 private
-setApplicationUser: anApplicationUser
+setApplicationUser: anApplicationCentralUser on: aBpmSystemRoot
 
-	centralUser := ApplicationUser new.
+	systemRoot := aBpmSystemRoot.
 	roles := Set new.
 	rolesAssociation := Set new.
 	userOptions := BpmUserOptions new.
@@ -13,4 +13,4 @@ setApplicationUser: anApplicationUser
 
 	userGroups := Set new.
 
-	centralUser := anApplicationUser
+	centralUser := anApplicationCentralUser.

@@ -7,4 +7,4 @@ performTimerEventInitializationOn: aBpmProcessInstance
 	self isAttachedEvent ifTrue: [^self].
 
 	"then the receiver is an independent timer (no attached to any task) so it is added to the <BpmTimerEventMonitor>"
-	self defaultTimerEventMonitor startMonitoringArtifact: self.
+	self systemRoot startMonitoringArtifact: self.

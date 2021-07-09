@@ -1,4 +1,4 @@
 other
 isAdminUser
 
-	^self username = self class adminUserName
+	^self username = systemRoot adminUserName

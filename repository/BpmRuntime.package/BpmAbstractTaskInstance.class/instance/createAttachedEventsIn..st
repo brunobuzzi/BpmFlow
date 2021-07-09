@@ -8,5 +8,5 @@ createAttachedEventsIn: aBpmProcessInstance
 			eventInstance := eventDefinition createInstanceOn: aBpmProcessInstance parentArtifact: self.
 			eventInstance trigger: self;
 				performInitializationOn: aBpmProcessInstance attachTo: self.
-			self defaultTimerEventMonitor startMonitoringArtifact: eventInstance.
+			self systemRoot startMonitoringArtifact: eventInstance.
 	].

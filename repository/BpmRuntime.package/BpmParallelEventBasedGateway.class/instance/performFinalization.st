@@ -4,4 +4,4 @@ performFinalization
 
 	super performFinalization.
 
-	(events select: [:each | each isTimerEvent and:[each isDone not]]) do: [:eventInstance | self defaultTimerEventMonitor stopMonitoringArtifact: eventInstance]
+	(events select: [:each | each isTimerEvent and:[each isDone not]]) do: [:eventInstance | self systemRoot stopMonitoringArtifact: eventInstance]

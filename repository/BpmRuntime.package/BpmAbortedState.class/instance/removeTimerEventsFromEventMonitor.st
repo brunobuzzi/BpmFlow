@@ -5,6 +5,6 @@ removeTimerEventsFromEventMonitor
 
 	processId := process id.
 	
-	eventsToRemove := self defaultTimerEventMonitor selectMonitoredEventWith: processId. 
+	eventsToRemove := self systemRoot selectMonitoredEventWith: processId. 
 
-	eventsToRemove do: [:eventInstance | self defaultTimerEventMonitor stopMonitoringArtifact: eventInstance]
+	eventsToRemove do: [:eventInstance | self systemRoot stopMonitoringArtifact: eventInstance]

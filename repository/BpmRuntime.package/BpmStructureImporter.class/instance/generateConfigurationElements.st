@@ -18,8 +18,8 @@ generateConfigurationElements
 		application := ((appType = 'O') ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]) getExistingBpmApplicationOrCreateNewNamed: app.
 
 		configuration := BpmUserGrantConfiguration 
-									newOn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: env) 
-									for: (self defaultBpmUserClass getExistingOrNewUserNamed: user) 
+									newOn: (systemRoot getExistingEnvironmentOrCreateNewNamed: env) 
+									for: (systemRoot getExistingOrNewUserNamed: user) 
 									app: application 
 									roleName: role 	
 									roleType: roleType

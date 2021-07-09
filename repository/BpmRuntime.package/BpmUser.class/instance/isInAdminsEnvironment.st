@@ -1,4 +1,4 @@
 bpm environments
 isInAdminsEnvironment
 
-	^bpmEnvironments includesKey: self defaultEnvironmentClass adminsEnvironmentName
+	^bpmEnvironments includesKey: systemRoot adminsEnvironmentName

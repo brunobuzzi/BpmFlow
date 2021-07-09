@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 
-	centralUser := ApplicationUser new.
+	centralUser := self defaultApplicationUserClass new.
 	roles := Set new.
 	rolesAssociation := Set new.
 	userOptions := BpmUserOptions new.

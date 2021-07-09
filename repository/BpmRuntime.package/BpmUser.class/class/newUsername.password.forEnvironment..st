@@ -5,7 +5,7 @@ newUsername: username password: password forEnvironment: aBpmEnvironment
 
 	uniqueUsername := self getUniqueUserNameFor: username for: aBpmEnvironment. "(see issue #799)"
 
-	centralUser := ApplicationUser getExistingOrNewUserNamed: uniqueUsername.
+	centralUser := self defaultApplicationUserClass getExistingOrNewUserNamed: uniqueUsername.
 	centralUser password: password.
 
 	user := self new initialize.

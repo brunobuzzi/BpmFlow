@@ -10,7 +10,8 @@
 		"structure",
 		"configurations",
 		"uploadUser",
-		"executed" ],
+		"executed",
+		"systemRoot" ],
 	"name" : "BpmStructureImporter",
 	"pools" : [
 		 ],

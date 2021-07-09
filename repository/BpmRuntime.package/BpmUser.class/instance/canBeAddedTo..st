@@ -2,7 +2,7 @@ other
 canBeAddedTo: aBpmEnvironment
 	"Answer whether or not the receiver can be added to <aBpmEnvironment>"
 
-	^(self defaultEnvironmentClass areUsersMultiEnvironment or: [aBpmEnvironment isAdminsEnvironment])
+	^(aBpmEnvironment areUsersMultiEnvironment or: [aBpmEnvironment isAdminsEnvironment])
 		or: [((bpmEnvironments size = 0) or: [self isInAdminsEnvironment]) and: [(self username indexOfSubCollection: '@', aBpmEnvironment name) ~= 0]]
 
 "Rules: 1) or 2) must be true so the user can be added to <aBpmEnvironment>
