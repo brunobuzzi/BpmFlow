@@ -12,8 +12,8 @@ renderItemComponentOn: html
 	html div class: 'timer-block-code'; with: [html output: cleanBlockSource].
 
 	lastExecutionOutput := self isTimerTypeCreation 
-		ifTrue: [self defaultTimerEventMonitor getLastProcessCreationTimeFor: selectedLateralItem ifNoneExecution: [('none' translateIn: self session)]] 
-		ifFalse: [self defaultTimerEventMonitor getLastEventInstanceExecutionFor: selectedLateralItem ifNoneExecution: [('none' translateIn: self session)]].
+		ifTrue: [self session systemRoot getLastProcessCreationTimeFor: selectedLateralItem ifNoneExecution: [('none' translateIn: self session)]] 
+		ifFalse: [self session systemRoot getLastEventInstanceExecutionFor: selectedLateralItem ifNoneExecution: [('none' translateIn: self session)]].
 
 	html div class: 'timer-last-execution'; with: [html output: ('Last Execution' translateIn: self session)].
 	html div class: 'timer-last-execution'; with: [html output: lastExecutionOutput].

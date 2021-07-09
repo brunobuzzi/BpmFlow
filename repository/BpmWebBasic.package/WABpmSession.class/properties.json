@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"user",
-		"bpmEnvironment" ],
+		"bpmEnvironment",
+		"systemRoot" ],
 	"name" : "WABpmSession",
 	"pools" : [
 		 ],
