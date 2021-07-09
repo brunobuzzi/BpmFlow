@@ -20,15 +20,15 @@ testExecuteProcess_01
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: procInstance currentActivities isEmpty.
 
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
 	(Delay forSeconds: 30) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: procInstance currentActivities isEmpty.
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
 	(Delay forSeconds: 40) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: procInstance hasFinalized.

@@ -14,4 +14,4 @@ setUp
 
 	self grantUsers: {'andrew vm' -> 'executer'} in: 'ue'.
 
-	self defaultTimerEventMonitor startMonitoringProcessCreation: procDefinition.
+	testRoot startMonitoringProcessCreation: procDefinition.

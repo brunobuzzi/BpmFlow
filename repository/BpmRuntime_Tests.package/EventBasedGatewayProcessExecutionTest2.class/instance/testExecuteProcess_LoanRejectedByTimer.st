@@ -28,12 +28,12 @@ testExecuteProcess_LoanRejectedByTimer
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
 	"Timer is executed here"
-	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+	testRoot triggerArtifactTimersWith: TimeStamp now.
 	(Delay forSeconds: 8) wait.
-	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+	testRoot triggerArtifactTimersWith: TimeStamp now.
 
 	"Sender Process: Step 2 - Form [study-loan-application]"
 	processId := senderProcessInstance processId.
@@ -49,7 +49,7 @@ testExecuteProcess_LoanRejectedByTimer
 	"Sender Process: Step 2 - Form [cancel-purchase]"
 	self assert: (receiverProcessInstance valueAtExternalVariable: 'loanApproved') isNil.
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil. "event already removed from <BpmTimerEventMonitor>"
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil. "event already removed from <BpmTimerEventMonitor>"
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').

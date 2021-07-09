@@ -2,7 +2,7 @@ test
 testProcessesInstancesHolderSize
 	"Check the size of <processInstances> and <processInstancesSet> in <aBpmProcessDefinition>"
 
-	self defaultEnvironmentClass cache do: [:environment |
+	testRoot environmentsDo: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
 				self assert: eachProcDef processInstancesSize equals: eachProcDef processInstancesSetSize.
 		].

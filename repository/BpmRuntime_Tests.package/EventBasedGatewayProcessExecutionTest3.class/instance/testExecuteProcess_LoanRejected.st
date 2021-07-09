@@ -28,7 +28,7 @@ testExecuteProcess_LoanRejected
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
 	"Sender Process: Step 2 - Form [study-loan-application]"
 	processId := senderProcessInstance processId.
@@ -44,7 +44,7 @@ testExecuteProcess_LoanRejected
 	"Sender Process: Step 2 - Form [cancel-purchase]"
 	self assert: (receiverProcessInstance loanApproved not).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil. "this gateway time is only finalized by a timer or process termination"
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'cancel-purchase').
@@ -53,7 +53,7 @@ testExecuteProcess_LoanRejected
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance endEventsSize > 0). "the sender process has finalized"
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
 
 	self deny: receiverProcessInstance isRunning.
 	self deny: senderProcessInstance isRunning.

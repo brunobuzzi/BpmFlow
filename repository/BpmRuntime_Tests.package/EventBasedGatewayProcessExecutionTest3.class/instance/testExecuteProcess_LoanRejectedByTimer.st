@@ -28,12 +28,12 @@ testExecuteProcess_LoanRejectedByTimer
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
 	"Timer is executed here"
-	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+	testRoot triggerArtifactTimersWith: TimeStamp now.
 	(Delay forSeconds: 8) wait.
-	self defaultTimerEventMonitor triggerArtifactTimersWith: TimeStamp now.
+	testRoot triggerArtifactTimersWith: TimeStamp now.
 
 	"Sender Process: Step 2 - Form [study-loan-application]"
 	processId := senderProcessInstance processId.
@@ -50,7 +50,7 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: (receiverProcessInstance valueAtExternalVariable: 'loanApproved') notNil.
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
 	"timer event is NOT removed from <BpmTimerEventMonitor> until the process is finished"
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 	processId := receiverProcessInstance processId.
 	"timers do NOT close parallel event gateways only keep triggering the event of the timer until the process is finalized"
 	"so we have two current task [cancel-purchase] and [proceed-purchase] (this situation does no make sense from business point of view -proceed&cancel- but is ok as a test)"
@@ -64,7 +64,7 @@ testExecuteProcess_LoanRejectedByTimer
 	self assert: ((currentProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
 	self assert: (receiverProcessInstance endEventsSize = 1). "the sender process has finalized"
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
 	self processExecutionSimulator takeAndFinalizeTask: currentTask2 withUserNamed: 'andrew se' withForm: (self formInstance_proceed_purchase: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'seller' satisfying: {:assign | assign.processId = processId}) size = 2).
 	self assert: (receiverProcessInstance endEventsSize = 2). 

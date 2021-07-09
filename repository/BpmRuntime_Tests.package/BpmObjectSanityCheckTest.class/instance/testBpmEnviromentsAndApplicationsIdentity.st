@@ -1,6 +1,6 @@
 test
 testBpmEnviromentsAndApplicationsIdentity
 
-	self defaultEnvironmentClass cache do: [:environment | 
+	testRoot environmentsDo: [:environment | 
 		self assert: (environment applicationsAllSatisfy: [:application| application bpmEnvironment == environment])  
 	].

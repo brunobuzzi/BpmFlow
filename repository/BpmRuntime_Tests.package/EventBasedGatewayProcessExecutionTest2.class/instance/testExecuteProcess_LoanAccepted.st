@@ -28,7 +28,7 @@ testExecuteProcess_LoanAccepted
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew ap' withForm: (self formInstance_house_purchase_application: receiverProcessInstance) on: receiverProcessInstance.
 	self assert: ((finishedProcessMatrix getAvailableTasksFor: 'applicant' satisfying: {:assign | assign.processId = processId}) size = 1).
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) notNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) notNil.
 
 	"Sender Process: Step 2 - Form [study-loan-application]"
 	processId := senderProcessInstance processId.
@@ -45,7 +45,7 @@ testExecuteProcess_LoanAccepted
 	self assert: (receiverProcessInstance loanApproved).
 	"this kind of gateway is closed after the first event"
 	self assert: (receiverProcessInstance getRunningGatewayNamed: 'loan event' ifNone: [nil]) isNil.
-	self assert: (self defaultTimerEventMonitor detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
+	self assert: (testRoot detectMonitoredEventNamed: 'timer' withProcessId: receiverProcessInstance processId) isNil.
 	processId := receiverProcessInstance processId.
 	currentTask := receiverProcessInstance currentActivities last.
 	self assert: (currentTask getDefinitionName = 'proceed-purchase').

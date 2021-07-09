@@ -2,15 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAbortedProcessInNormalCollection" : "bruno 07/22/2020 16:19",
-		"testApplicationsIdentity" : "brunobb 02/05/2020 09:58",
-		"testBpmEnviromentsAndApplicationsIdentity" : "brunobb 08/10/2020 14:31",
-		"testEmptyUnionInAvailableAndTakenAssignments" : "brunobb 08/13/2020 14:11",
-		"testFormFieldValueAssignments" : "bruno 07/27/2020 14:51",
-		"testGetComponentsInTaskDefinitions" : "brunobb 02/05/2020 09:59",
-		"testMatrixAssignmentAndTaskIdentity" : "bruno 07/22/2020 16:19",
-		"testMatrixFinishedAssignmentAndUserIdentity" : "bruno 07/22/2020 16:19",
-		"testMatrixTakenAssignmentAndUserIdentity" : "brunobb 02/04/2019 06:32",
-		"testProcessesIdOnMatrixAndProcessDefinitions" : "brunobb 02/06/2020 10:48",
-		"testProcessesInstancesHolderSize" : "bruno 07/22/2020 16:21",
-		"testTimerEventsAndRunningProcess" : "brunobb 01/25/2018 12:48" } }
+		"setUp" : "brunobb 07/08/2021 11:24",
+		"testAbortedProcessInNormalCollection" : "brunobb 07/08/2021 11:24",
+		"testApplicationsIdentity" : "brunobb 07/08/2021 11:26",
+		"testBpmEnviromentsAndApplicationsIdentity" : "brunobb 07/08/2021 11:27",
+		"testEmptyUnionInAvailableAndTakenAssignments" : "brunobb 07/08/2021 11:27",
+		"testFormFieldValueAssignments" : "brunobb 07/08/2021 11:27",
+		"testGetComponentsInTaskDefinitions" : "brunobb 07/08/2021 11:28",
+		"testMatrixAssignmentAndTaskIdentity" : "brunobb 07/08/2021 11:28",
+		"testMatrixFinishedAssignmentAndUserIdentity" : "brunobb 07/08/2021 11:28",
+		"testMatrixTakenAssignmentAndUserIdentity" : "brunobb 07/08/2021 11:29",
+		"testProcessesIdOnMatrixAndProcessDefinitions" : "brunobb 07/08/2021 11:29",
+		"testProcessesInstancesHolderSize" : "brunobb 07/08/2021 11:29",
+		"testTimerEventsAndRunningProcess" : "brunobb 07/09/2021 14:48" } }

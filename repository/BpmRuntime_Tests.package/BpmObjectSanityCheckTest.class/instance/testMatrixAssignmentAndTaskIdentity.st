@@ -2,7 +2,7 @@ test
 testMatrixAssignmentAndTaskIdentity
 	"Check process tasks with assignments in the current and finished matrix"
 
-	self defaultEnvironmentClass cache do: [:environment |
+	testRoot environmentsDo: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
 			(eachProcDef processInstancesReject: [:each | each isAborted])  do: [:procInstance | | availableMatrix takenMatrix finishedMatrix currentAssignments takenAssignments finishedAssignments executedActivities |
 				availableMatrix := procInstance getAvailableProcessMatrix.

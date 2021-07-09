@@ -1,7 +1,7 @@
 test
 testGetComponentsInTaskDefinitions
 
-	self defaultEnvironmentClass cache do: [:environment |
+	testRoot  environmentsDo: [:environment |
 		environment getAllProcessDefinitions do: [:processDefinition | 
 			(processDefinition getOrbeonTasks, processDefinition getSeasideTasks) do: [:taskDefinition | 
 				[taskDefinition getComponentClass] on: NoComponentFoundException do: [:ex | self assert: false].

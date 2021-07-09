@@ -14,32 +14,32 @@ testExecuteProcess_02
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	(Delay forSeconds: 5) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	(Delay forSeconds: 7) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 2).
-	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3 on: procInstance. "15 seconds to wait"
 
-	self assert: ((self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 	self assert: (procInstance currentActivities size = 1).
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self deny: procInstance hasFinalized.
 
 	(Delay forSeconds: 18) wait.
-	self defaultTimerEventMonitor triggerArtifactTimers.
+	testRoot triggerArtifactTimers.
 	self assert: procInstance hasFinalized.
 	self assert: (procInstance currentActivities size = 1).
-	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) isEmpty.
+	self assert: (testRoot selectMonitoredEventWith: procInstance processId) isEmpty.
 
 	self assert: procInstance endEventsSize equals: 1.
 	currentTask := procInstance currentActivities last.

@@ -18,7 +18,7 @@ testExecuteProcessAbort_01
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) notEmpty.
+	self assert: (testRoot selectMonitoredEventWith: procInstance processId) notEmpty.
 
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'timer-role' satisfying: {:assign | assign.processId = processId}) notEmpty.
 
@@ -26,7 +26,7 @@ testExecuteProcessAbort_01
 	procInstance currentState isConfirmed: true. 
 	procInstance confirmAbortion.
 
-	self assert: (self defaultTimerEventMonitor monitoredEvents select: [:each | each processId = procInstance processId]) isEmpty.
+	self assert: (testRoot selectMonitoredEventWith: procInstance processId) isEmpty.
 	self assert: (currentProcessMatrix getAvailableTasksFor: 'timer-role' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (takenProcessMatrix getAvailableTasksFor: 'timer-role' satisfying: {:assign | assign.processId = processId}) isEmpty.
 	self assert: (finishedProcessMatrix getAvailableTasksFor: 'timer-role' satisfying: {:assign | assign.processId = processId}) isEmpty.

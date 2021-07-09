@@ -4,7 +4,7 @@ testProcessesIdOnMatrixAndProcessDefinitions
 	The comparision is done with system matrices so the process to take into account are the one that have orbeon or seaside task instances (see issue: #1019)"
 	| fromDefnitionIds fromMatrixIds diff |
 
-	self defaultEnvironmentClass cache do: [:environment |
+	testRoot environmentsDo: [:environment |
 		fromDefnitionIds := Set new.
 		(environment getAllProcessInstances "to be compared with Matrix we have to remove script only processes"
 			do: [:procInst | procInst getProcessesTreeAsCollection do: [:proc | proc hasAnyOrbeonOrSeasideTaskInstance ifTrue:[fromDefnitionIds add: proc processId]]]).

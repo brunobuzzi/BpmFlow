@@ -3,4 +3,4 @@ tearDown
 
 	super tearDown.
 
-	(testRoot getExistingEnvironmentOrCreateNewNamed: 'env') removeFromCache.
+	testRoot unregisterEnvironment: (testRoot getExistingEnvironmentOrCreateNewNamed: 'env').

@@ -8,8 +8,8 @@ testUsersSingleEnvironment
 	testRoot setUsersAsMonoEnvironment.
 
 	env1 := testRoot getExistingEnvironmentOrCreateNewNamed: 'env1'.
-	newUser := self defaultBpmUserClass getExistingOrNewUserNamed: 'alfred' password: ' ' forEnvironment: env1.
-	self assert: (self defaultEnvironmentClass includesEnvironmentNamed: env1 name).
+	newUser := testRoot getExistingOrNewUserNamed: 'alfred' password: ' ' forEnvironment: env1.
+	self assert: (testRoot includesEnvironmentNamed: env1 name).
 	env2 := testRoot getExistingEnvironmentOrCreateNewNamed: 'env2'.
 	self assert: (testRoot includesEnvironmentNamed: env2 name).
 
@@ -22,10 +22,10 @@ testUsersSingleEnvironment
 	env1 unregisterUser: newUser.
 	self deny: (env1 includesUserNamed: newUser username).
 
-	env1 removeFromCache.
+	testRoot unregisterEnvironment: env1.
 	self deny: (testRoot includesEnvironmentNamed: env1 name).
-	env2 removeFromCache.
+	testRoot unregisterEnvironment: env2 .
 	self deny: (testRoot includesEnvironmentNamed: env2 name).
 
-	newUser removeFromCache.
-	self assert: (self defaultBpmUserClass getUserNamed: newUser username) isNil.
+	testRoot unregisterUser: newUser.
+	self assert: (testRoot getUserNamed: newUser username) isNil.
