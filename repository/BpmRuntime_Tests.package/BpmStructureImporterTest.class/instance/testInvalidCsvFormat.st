@@ -1,7 +1,7 @@
 other
 testInvalidCsvFormat
 
-	structureImporte := BpmStructureImporter newFor: (self defaultBpmUserClass getExistingOrNewUserNamed: 'albert'). 
+	structureImporte := BpmStructureImporter newFor: (testRoot getExistingOrNewUserNamed: 'albert'). 
 
 	structureImporte csvString: '~0HÞr;Éasjflkjsadlfjasdlfj;aldflajsdfljlajdfljlasjf
 adsjflajsdflajsdf
