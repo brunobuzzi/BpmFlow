@@ -2,7 +2,7 @@ other
 addNewUserNamed: aString
 	| informationString bpmUser |
 
-	bpmUser := self defaultBpmUserClass getUserNamed: aString ifAbsent: [^self].
+	bpmUser := self session systemRoot getUserNamed: aString ifAbsent: [^self].
 
 	self sewafTableForUsers closeInformation.
 

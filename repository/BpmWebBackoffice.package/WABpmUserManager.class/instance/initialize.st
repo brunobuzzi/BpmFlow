@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	isAddingRol := false.
-	model := self defaultBpmUserClass new.
+	model := BpmUser new.
 	resetPasswords := Dictionary new.
 
 	self initializeBatchedLists.

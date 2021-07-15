@@ -2,9 +2,9 @@ other
 getAvailableUsers
 	| allUsers |
 
-	allUsers := (self defaultBpmUserClass cache reject: [:each | each hasAccessTo: self selectedLateralItem]) asSortedCollection: [:a :b | a username <= b username].
+	allUsers := (self session systemRoot usersReject: [:each | each hasAccessTo: self selectedLateralItem]) asSortedCollection: [:a :b | a username <= b username].
 
-	^self defaultEnvironmentClass areUsersMultiEnvironment
+	^self session systemRoot areUsersMultiEnvironment
 	ifTrue: [allUsers]
 	ifFalse: [allUsers select: [:each | each canBeAddedTo: self selectedLateralItem]]
 
