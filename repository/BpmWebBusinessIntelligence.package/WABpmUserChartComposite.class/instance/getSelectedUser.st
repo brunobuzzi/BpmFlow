@@ -1,4 +1,4 @@
 other
 getSelectedUser
 
-	^self defaultBpmUserClass getUserNamed: self getBpmUserName
+	^self session systemRoot getUserNamed: self getBpmUserName

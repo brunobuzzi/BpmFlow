@@ -1,4 +1,0 @@
-other
-defaultUserClass
-
-	^self defaultBpmUserClass
