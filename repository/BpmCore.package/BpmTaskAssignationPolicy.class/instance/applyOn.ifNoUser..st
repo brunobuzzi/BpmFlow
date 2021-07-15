@@ -2,9 +2,10 @@ assignation
 applyOn: aBpmTaskAssignment ifNoUser: aBlock
 	"The receiver automatically assign <aBpmTaskAssignment> to the most fit <BpmUser>.
 	If no user can be assigned to <aBpmTaskAssignment> then evaluate the niladic block <aBlock>"
-	| possibleUsers sortedCollection |
+	| possibleUsers sortedCollection systemRoot |
 
-	possibleUsers := self defaultBpmUserClass getAvailableUsersToTake: aBpmTaskAssignment.
+	systemRoot := processDefinition systemRoot.
+	possibleUsers := systemRoot getAvailableUsersToTake: aBpmTaskAssignment.
 
 	possibleUsers ifEmpty: [^aBlock value].
 
