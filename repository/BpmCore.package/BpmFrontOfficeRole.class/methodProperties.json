@@ -8,10 +8,11 @@
 		"reportNumberOfUnassignedTasksFor:" : "BrunoBB 11/08/2016 14:38",
 		"reportNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:53" },
 	"instance" : {
-		"asBackofficeRole" : "brunobb 03/25/2019 09:02",
+		"asBackofficeRole" : "brunobb 07/15/2021 14:39",
 		"asFrontofficeRole" : "BrunoBB 12/18/2015 14:27",
 		"getAverageTimeForTasks" : "brunobb 08/07/2020 10:17",
 		"isFrontofficeRole" : "brunobb 12/27/2017 13:22",
+		"printRoleType" : "brunobb 07/15/2021 15:01",
 		"registerInApplication:" : "brunobb 07/06/2021 14:30",
 		"reportAverageTimeDistributionForAllTasks" : "BrunoBB 11/08/2016 09:04",
 		"unregisterFromApplication:ifAbsent:" : "brunobb 02/04/2020 08:49" } }

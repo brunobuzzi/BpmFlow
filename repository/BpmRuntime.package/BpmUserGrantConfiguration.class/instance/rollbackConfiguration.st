@@ -2,7 +2,9 @@ grant
 rollbackConfiguration
 	"The receiver rollback the configuration (ungrant the <BpmUser> from the <BpmRole>)" 
 	
-	role := ((roleType = 'F') ifTrue: [self defaultFrontOfficeRoleClass] ifFalse: [self defaultBackOfficeRoleClass]) getRoleNamed: roleName in: application applicationName.
+	role := (roleType = 'F') 
+				ifTrue: [self systemRoot getFrontOfficeRoleNamed: roleName in: application applicationName] 
+				ifFalse: [self systemRoot getBackOfficeRoleNamed: roleName in: application applicationName].
 
 	isUserGranted ifFalse: [role ungrantUser: user ifAbsent: []].
 
