@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := self defaultFrontOfficeRoleClass reportNumberOfTasksDistributionFor: self applicationName.
+	report := self systemRoot reportNumberOfTasksDistributionFor: self applicationName.
 	report name: (('Task Distribution per Role (' translateFor: self user), report getTotalValue printString, ')');
 		description: (('Scope: Application Role [' translateFor: self user), self scope applicationName,']');
 		seriesName: ('Instances' translateFor: self user);

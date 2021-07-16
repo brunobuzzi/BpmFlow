@@ -2,7 +2,7 @@ other
 createRoleDistributionReport
 	| role report |
 
-	role := self defaultFrontOfficeRoleClass getRoleNamed: self roleName in: self applicationName.
+	role := self systemRoot getRoleNamed: self roleName in: self applicationName.
 	report := role reportNumberOfUsersInTimeDistributionFrom: self startDate to: self endDate.
 
 	report name: (('Users in Time (' translateFor: self user), report getTotalValue printString, ')');
