@@ -14,9 +14,9 @@ testOrExecutionContext_3
 
 	"Test Execution Context"
 	"andrew vo has a role in 'app-test' aaplication but it not has a role in 'app-test-2' --> it has NO access to <procInstance>  "
-	self assert: (((self getUserNamed: 'andrew vo') getAllAvailableTaskAssignmentsIn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
+	self assert: (((self getUserNamed: 'andrew vo') getAllAvailableTaskAssignmentsIn: (testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
 			equals: 1.
-	self assert: (((self getUserNamed: 'clark') getAllAvailableTaskAssignmentsIn: (self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
+	self assert: (((self getUserNamed: 'clark') getAllAvailableTaskAssignmentsIn: (testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue')) select: [:each | each processId = procInstance id]) size
 			equals: 0.
 
 	"Step 1 - Form [citizen-appliance]"

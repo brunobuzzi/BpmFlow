@@ -23,13 +23,13 @@ setUp
 
 	"to test Execution Context"
 	(testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue') 
-		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
-		registerApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
+		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
+		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
 
-	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test'.
-	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa officer' in: 'app-test-2'.
-	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa manager' in: 'app-test'.
-	self defaultFrontOfficeRoleClass createNewOrGetExisting: 'visa manager' in: 'app-test-2'.
+	self createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test'.
+	self createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test-2'.
+	self createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test'.
+	self createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test-2'.
 	self grantUsers: {'andrew vo' -> 'visa officer'.} in: 'app-test'.
 	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test'.
 	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test-2'.

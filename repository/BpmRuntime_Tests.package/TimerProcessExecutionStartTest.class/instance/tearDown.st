@@ -7,4 +7,4 @@ tearDown
 
 	testRoot stopMonitoringProcessCreation: procDefinition.
 
-	self removeFrom: 'env-ue' in: 'ue' processesName: #('timer-process-start') rolesName: #('executer') usersName: #('andrew vm')
+	testRoot removeFrom: 'env-ue' in: 'ue' processesName: #('timer-process-start') rolesName: #('executer') usersName: #('andrew vm')

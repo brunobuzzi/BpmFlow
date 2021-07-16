@@ -4,5 +4,5 @@ grantUsers: grantArray in: appName
 	<grantArray> format: {'andrew vm' -> 'executer'} where each element is <anAssociation> where the key is the user name and the value is the role name"
 
 	grantArray do: [:eachAssoc | 
-		(self defaultFrontOfficeRoleClass getRoleNamed: eachAssoc value in: appName) grantUser: (self getUserNamed: eachAssoc key) ifPresent: [].
+		(testRoot getFrontOfficeRoleNamed: eachAssoc value in: appName) grantUser: (self getUserNamed: eachAssoc key) ifPresent: [].
 	]

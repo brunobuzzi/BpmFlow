@@ -7,4 +7,4 @@ tearDown
 
 	self keepTempObjectsInSystem ifTrue: [^self].
 
-	self removeFrom: 'env-ue' in: 'ue' processesName: #('Process with Scripts') rolesName: #('manager') usersName: #('alberto')
+	testRoot removeFrom: 'env-ue' in: 'ue' processesName: #('Process with Scripts') rolesName: #('manager') usersName: #('alberto')

@@ -6,7 +6,7 @@
 		"formInstance_data_approved" : "brunobb 04/21/2021 14:08",
 		"formInstance_data_entry" : "brunobb 04/21/2021 14:07",
 		"setUp" : "brunobb 08/30/2019 12:57",
-		"tearDown" : "brunobb 02/26/2020 10:10",
+		"tearDown" : "brunobb 07/16/2021 12:14",
 		"testExecuteProcess_data_entry_approved" : "brunobb 08/10/2020 13:59",
 		"testExecuteProcess_data_entry_approved_withLoop" : "brunobb 08/10/2020 14:00",
 		"testTransitionTreePossibleLoops" : "brunobb 08/30/2019 12:36",

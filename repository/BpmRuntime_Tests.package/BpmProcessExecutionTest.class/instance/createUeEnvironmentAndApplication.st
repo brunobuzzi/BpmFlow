@@ -4,7 +4,7 @@ createUeEnvironmentAndApplication
 	This combination of Environment and Application is used in a wide range of tests"
 	| environment application |
 
-	processExecutionSimulator := PEFBpmProcessExecutor new.
+	processExecutionSimulator := PEFBpmProcessExecutor newOn: testRoot.
 
 	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
