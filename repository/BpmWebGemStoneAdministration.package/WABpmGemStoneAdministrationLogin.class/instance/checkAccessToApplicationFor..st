@@ -5,4 +5,5 @@ checkAccessToApplicationFor: aBpmUser
 	2) <aBpmUser> is registered in the the selected environment and belong to 'admins' environment with a backoffice role --> true"
 
 	^(aBpmUser isBackofficeUserIn: self session bpmEnvironment) 
-		or: [(self defaultEnvironmentClass getAdminsEnvironment includesUserNamed: aBpmUser username) and: [(aBpmUser isBackofficeUserIn: self defaultEnvironmentClass getAdminsEnvironment)]]
+		or: [(self session systemRoot getAdminsEnvironment includesUserNamed: aBpmUser username) 
+				and: [(aBpmUser isBackofficeUserIn: self session systemRoot getAdminsEnvironment getAdminsEnvironment)]]
