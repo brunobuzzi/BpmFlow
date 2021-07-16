@@ -1,4 +1,4 @@
 other
 getSelectedRole
 
-	^self defaultFrontOfficeRoleClass getRoleNamed: self getRoleName in: self getApplicationName
+	^self session systemRoot getFrontOfficeRoleNamed: self getRoleName in: self getApplicationName
