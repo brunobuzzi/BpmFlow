@@ -7,7 +7,7 @@ generateHtmlFor: anBpmArtifactInstance xml: xmlString params: anArray
 	doc := XMLDOMParser parse: xmlString.
 	seasideS := (doc findElementNamed: 's') rawContentString "stringNodes last string".
 	seasideK := (doc findElementNamed: 'k') rawContentString "stringNodes last string".
-	user := self defaultBpmUserClass getUserNamed: (doc findElementNamed: 'username') rawContentString "stringNodes last string".
+	user := self systemRoot getUserNamed: (doc findElementNamed: 'username') rawContentString "stringNodes last string".
 	url := user orbeonWebIsLinked
 		ifTrue: [self generateLinkedUrlFor: anBpmArtifactInstance s: seasideS andK: seasideK]
 		ifFalse: [self generateEmbeddedUrlFor: anBpmArtifactInstance user: user s: seasideS k: seasideK params: anArray].

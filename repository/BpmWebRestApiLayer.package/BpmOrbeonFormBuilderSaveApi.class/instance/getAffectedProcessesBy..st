@@ -5,7 +5,7 @@ getAffectedProcessesBy: anOrbeonPublishedFormDefinition
 	"issue #1162"
 	anOrbeonPublishedFormDefinition hasBpmEnvironment 
 	ifFalse: [ | env |
-		env := BpmEnvironment getExistingEnvironmentOrCreateNewNamed: anOrbeonPublishedFormDefinition applicationName.
+		env := systemRoot getExistingEnvironmentOrCreateNewNamed: anOrbeonPublishedFormDefinition applicationName.
 		env registerApplication: anOrbeonPublishedFormDefinition application ifPresent: [] ifTaken: []].
 
 	^anOrbeonPublishedFormDefinition application bpmEnvironment getAllProcessDefinitions select: [:procDefinition | 
