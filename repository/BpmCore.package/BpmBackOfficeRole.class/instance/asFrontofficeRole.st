@@ -1,7 +1,7 @@
 other
 asFrontofficeRole
 
-	^self defaultFrontOfficeRoleClass new
+	^self systemRoot newFrontOfficeRole
 		name: name;
 		isAdmin: isAdmin;
 		application: application;

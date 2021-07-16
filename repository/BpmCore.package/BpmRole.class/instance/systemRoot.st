@@ -1,4 +1,4 @@
 other
 systemRoot
 
-	^application systemRoot
+	^self bpmEnvironment systemRoot
