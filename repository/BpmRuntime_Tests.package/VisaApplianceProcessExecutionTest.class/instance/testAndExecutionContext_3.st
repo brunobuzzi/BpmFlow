@@ -32,4 +32,4 @@ testAndExecutionContext_3
 
 	self resumeAssignFromTask2AndTestProcess: procInstance.
 
-	(self defaultFrontOfficeRoleClass getRoleNamed: 'visa officer' in: 'app-test-2') ungrantUser: (self getUserNamed: 'andrew vo').
+	(testRoot getFrontOfficeRoleNamed: 'visa officer' in: 'app-test-2') ungrantUser: (self getUserNamed: 'andrew vo').
