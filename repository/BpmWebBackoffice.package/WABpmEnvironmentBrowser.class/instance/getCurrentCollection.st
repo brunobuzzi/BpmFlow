@@ -1,4 +1,4 @@
 other
 getCurrentCollection
 
-	^self defaultEnvironmentClass cache
+	^self session systemRoot environmentsAsSortedCollection

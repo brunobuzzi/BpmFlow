@@ -6,4 +6,4 @@ searchMatchingEnvironments
 
 	searchApplied := true.
 
-	^searchResult := self defaultEnvironmentClass cache select: [:each | (envName, '*') match: each name]
+	^searchResult := self session systemRoot environmentsSelect: [:each | (envName, '*') match: each name]

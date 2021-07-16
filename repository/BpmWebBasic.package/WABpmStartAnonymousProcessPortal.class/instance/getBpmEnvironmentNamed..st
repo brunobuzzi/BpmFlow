@@ -1,4 +1,4 @@
 other
 getBpmEnvironmentNamed: envName
 
-	^self defaultEnvironmentClass getEnvironmentNamed: envName ifNone: [nil]
+	^self session systemRoot getEnvironmentNamed: envName ifNone: [nil]

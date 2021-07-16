@@ -5,7 +5,7 @@ createEnviroment
 	envName := self componentValueAt: 'envName'.
 	(envName isNil or: [envName isEmpty]) ifTrue: [^self].
 
-	environment := self defaultEnvironmentClass getExistingEnvironmentOrCreateNewNamed: envName.
+	environment := self session systemRoot getExistingEnvironmentOrCreateNewNamed: envName.
 
 	environment seasideApplicationName: (self componentValueAt: 'seasideApplicationName' ifAbsent: ['bpmflow'])
 

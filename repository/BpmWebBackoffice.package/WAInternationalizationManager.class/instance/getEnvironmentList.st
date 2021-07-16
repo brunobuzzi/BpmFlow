@@ -1,4 +1,4 @@
 other
 getEnvironmentList
 
-	^self defaultEnvironmentClass cache asArray
+	^self session systemRoot environmentsAsSortedCollection asArray

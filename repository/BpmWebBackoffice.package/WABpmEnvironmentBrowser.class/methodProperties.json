@@ -6,7 +6,7 @@
 		"assignToBackoffice:" : "brunobb 01/28/2020 10:42",
 		"beBackofficeUserButton" : "brunobb 01/28/2020 11:04",
 		"getAvailableUsers" : "brunobb 07/12/2021 09:55",
-		"getCurrentCollection" : "brunobb 03/25/2019 08:33",
+		"getCurrentCollection" : "brunobb 07/15/2021 15:08",
 		"getIconNameFormItem" : "brunobb 02/06/2019 11:27",
 		"getTextForItem:" : "brunobb 02/06/2019 11:27",
 		"getUsersNamesFor:" : "brunobb 11/08/2019 08:13",
@@ -33,6 +33,6 @@
 		"renderSetEnvironmentIconsAndAppsNamesOn:" : "brunobb 02/06/2019 11:27",
 		"renderUserAutocompletionOn:" : "brunobb 11/08/2019 11:31",
 		"renderUsersOfSelectedEnvironmentOn:" : "brunobb 11/05/2020 13:38",
-		"searchMatchingEnvironments" : "brunobb 03/25/2019 08:34",
+		"searchMatchingEnvironments" : "brunobb 07/15/2021 15:09",
 		"selectedLateralItem:" : "brunobb 02/07/2019 09:03",
 		"sewafTableForUsers" : "brunobb 11/05/2020 13:20" } }
