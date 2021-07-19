@@ -11,7 +11,8 @@
 		"participants",
 		"processesMapping",
 		"successfulImport",
-		"failedImportProcesses" ],
+		"failedImportProcesses",
+		"systemRoot" ],
 	"name" : "BpmProcessGenerator",
 	"pools" : [
 		 ],

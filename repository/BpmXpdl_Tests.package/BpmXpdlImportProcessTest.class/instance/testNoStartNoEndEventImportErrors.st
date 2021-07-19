@@ -6,7 +6,7 @@ testNoStartNoEndEventImportErrors
 	ue := self getDefaultApplication.
 	applications := OrderedCollection with: ue.
 
-	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
+	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.
 
 	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_noStart_noEnd_import_errors; fileName: 'import-errors.xpdl'; yourself.
 

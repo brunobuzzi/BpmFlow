@@ -10,7 +10,7 @@ setUp
 				connectProcesses;
 				yourself.
 
-	processGenerator := BpmProcessGenerator on: reader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: reader xpdlPackages root: testRoot.
 
 	processGenerator 
 		mapProcess: 'test-case-process' toApplication: (self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);

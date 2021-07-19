@@ -8,6 +8,6 @@ setUp
 			connectProcesses;
 			yourself.
 
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
 	processGenerator mapProcess: 'multi-role' toApplication: (self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.

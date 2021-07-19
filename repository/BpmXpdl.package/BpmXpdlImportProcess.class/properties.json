@@ -14,7 +14,8 @@
 		"fileFormatErrors",
 		"bpmEnvironment",
 		"xpdlStructureVisitor",
-		"processesAsTree" ],
+		"processesAsTree",
+		"systemRoot" ],
 	"name" : "BpmXpdlImportProcess",
 	"pools" : [
 		 ],

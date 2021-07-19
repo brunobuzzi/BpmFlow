@@ -8,7 +8,7 @@ testIssue984
 	ue := self getDefaultApplication.
 	applications := OrderedCollection with: ue.
 
-	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
+	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.
 
 	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_Reusable_Embedded_Proc; fileName: 'ReusableEmbeddedProc.xpdl'; yourself.
 	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_Reusable_Sub_Proc; fileName: 'reusable-sub-proc.xpdl'; yourself.

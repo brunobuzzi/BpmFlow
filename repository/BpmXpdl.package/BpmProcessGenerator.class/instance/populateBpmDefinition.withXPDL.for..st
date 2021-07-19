@@ -10,7 +10,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 	aXPDLWorflowProcess extendedAttributesDo: [:attr | aBpmProcessDefinition setExtendedAttributesWith: attr].
 
 	aXPDLWorflowProcess parentLanesKeysDo: [:laneName | | newOrExistingRole |
-		newOrExistingRole := self defaultFrontOfficeRoleClass createNewOrGetExisting: laneName in: anOrbeonApplication applicationName.
+		newOrExistingRole := systemRoot createNewOrGetExistingFrontOfficeRole: laneName in: anOrbeonApplication applicationName.
 		aBpmProcessDefinition addRole: newOrExistingRole.
 		roles at: laneName put: newOrExistingRole.
 	].
@@ -20,7 +20,7 @@ populateBpmDefinition: aBpmProcessDefinition withXPDL: aXPDLWorflowProcess for: 
 		newArtifact := xpdlActivity createBpmDefinitionOn: aBpmProcessDefinition.
 		xpdlActivity performersDo: [:eachParticipantNode | | bpmPerformer performerRole | "here the Performers of the task are set"
 			bpmPerformer :=  participants detect: [:each | each name = eachParticipantNode getName].
-			performerRole := self defaultFrontOfficeRoleClass createNewOrGetExisting: bpmPerformer name in: anOrbeonApplication applicationName."create the role for the performer"
+			performerRole := systemRoot createNewOrGetExistingFrontOfficeRole: bpmPerformer name in: anOrbeonApplication applicationName."create the role for the performer"
 			newArtifact addPerformer: bpmPerformer;
 				grantRole: performerRole]. "grant the role of the performer to the task definition"
 		newArtifact addToParentProcess.

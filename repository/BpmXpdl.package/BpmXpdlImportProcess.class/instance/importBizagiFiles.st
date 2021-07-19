@@ -16,7 +16,7 @@ importBizagiFiles
 	"ERROR handler"
 	xpdlReader := self defaultXpdlReaderClass forFiles: fileArray asArray. "create the <XPDLReader> to read selected XPDL files"
 
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: systemRoot.
 
 	processGenerator xpdlPackages do: [:eachPackage | 
 		eachPackage pools do: [:eachPool | 

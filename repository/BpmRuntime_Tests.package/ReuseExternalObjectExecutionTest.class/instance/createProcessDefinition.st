@@ -5,7 +5,7 @@ createProcessDefinition
 	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'reuse-form' withString: XPDLProcessDefinitionTemplate xpdlDefinition_reuseExternalObject)
 			yourself.
 
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
 	processGenerator mapProcess: 'reuse-form' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 

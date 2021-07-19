@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessDefinition" : "brunobb 08/19/2020 04:46",
+		"createProcessDefinition" : "brunobb 07/19/2021 11:55",
 		"setUp" : "brunobb 09/26/2019 04:21",
 		"tearDown" : "brunobb 07/16/2021 12:14",
 		"testExecuteProcess" : "brunobb 08/06/2020 11:42",

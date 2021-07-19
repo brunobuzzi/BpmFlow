@@ -7,7 +7,7 @@ createProcessDefinition
 			connectProcesses;
 			yourself.
 
-	generator := BpmProcessGenerator on: reader xpdlPackages.
+	generator := BpmProcessGenerator on: reader xpdlPackages root: testRoot.
 
 	generator 
 		mapProcess: 'ReusableEmbeddedProc' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');

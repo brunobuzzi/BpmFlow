@@ -6,7 +6,7 @@ testVisaApplianceImport
 	ue := self getDefaultApplication.
 	applications := OrderedCollection with: ue.
 
-	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
+	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.
 
 	file1 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_visa_apply; fileName: 'visa-apply.xpdl'; yourself.
 	file2 := WAFile new contents: XPDLProcessDefinitionTemplate xpdlDefinition_home_office_check; fileName: 'home-office-check.xpdl'; yourself.

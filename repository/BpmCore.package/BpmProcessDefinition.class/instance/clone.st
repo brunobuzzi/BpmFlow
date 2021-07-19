@@ -9,7 +9,7 @@ clone
 
 	xpdlReader connectProcesses.
 
-	processGenerator :=  BpmProcessGenerator on: xpdlReader xpdlPackages.
+	processGenerator :=  BpmProcessGenerator on: xpdlReader xpdlPackages root: self systemRoot.
 
 	processGenerator mapProcess: processName toApplication: application.
 

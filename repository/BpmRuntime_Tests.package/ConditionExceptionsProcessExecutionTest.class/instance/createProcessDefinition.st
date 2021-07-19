@@ -5,7 +5,7 @@ createProcessDefinition
 	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'condition-exceptions' withString: XPDLProcessDefinitionTemplate xpdlDefinition_condition_Exceptions)
 			connectProcesses;
 			yourself.
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages.
+	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
 	processGenerator mapProcess: 'condition-exceptions' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
 		generateAllProcess.
 

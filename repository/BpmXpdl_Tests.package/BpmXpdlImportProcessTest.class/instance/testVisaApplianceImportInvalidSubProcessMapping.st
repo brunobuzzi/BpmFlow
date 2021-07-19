@@ -6,7 +6,7 @@ testVisaApplianceImportInvalidSubProcessMapping
 	ue := self getDefaultApplication.
 	applications := OrderedCollection with: ue.
 
-	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment.
+	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.
 
 	changedDocument := XMLDOMParser parse: XPDLProcessDefinitionTemplate xpdlDefinition_visa_apply.
 	changedXpdl := changedDocument allElementsDetect: [:each | (each attributeAt: 'Name') = 'home-office-check'].
