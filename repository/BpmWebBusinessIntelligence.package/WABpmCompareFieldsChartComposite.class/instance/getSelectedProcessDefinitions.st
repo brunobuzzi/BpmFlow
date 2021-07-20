@@ -1,4 +1,4 @@
 other
 getSelectedProcessDefinitions
 
-	^self defaultProcessDefinitionClass getAllProcessesNamed: self getProcessName in: self getApplicationName.
+	^self session systemRoot getAllProcessesNamed: self getProcessName in: self getApplicationName.

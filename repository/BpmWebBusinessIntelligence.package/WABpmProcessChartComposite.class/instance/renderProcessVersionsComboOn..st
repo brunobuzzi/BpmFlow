@@ -2,7 +2,7 @@ search area
 renderProcessVersionsComboOn: html
 	| procVersions versions |
 
-	procVersions := self defaultProcessDefinitionClass getAllProcessesNamed: self getProcessName in: self getApplicationName.
+	procVersions := self session systemRoot getAllProcessesNamed: self getProcessName in: self getApplicationName.
 
 	versions := procVersions collect: [:each | each version printString].
 

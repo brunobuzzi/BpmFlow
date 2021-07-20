@@ -2,7 +2,7 @@ query variables
 getSelectedProcessDefinitions
 	| versions |
 
-	versions := self defaultProcessDefinitionClass getAllProcessesNamed: self getProcessName in: self getApplicationName.
+	versions := self session systemRoot getAllProcessesNamed: self getProcessName in: self getApplicationName.
 
 	self isAllVersionSelected ifTrue: [^versions].
 
