@@ -26,10 +26,9 @@ importBizagiFiles
 	"create a Dictionary with key <aXPDLPackageNode> and value <anApplication>. To define in which <Application> the Bpm process will be stored"
 	packageApplicationMapping := self createXpdlPackageApplicationMapping.
 
-	"the structure visitor check that all bpm artifacts are well formed"
-	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: packageApplicationMapping.
-	xpdlStructureVisitor bpmEnvironment: bpmEnvironment;
-		visitAllXpdlPackages.
+	"the structure visitor check that all bpm artifacts are well formatted"
+	xpdlStructureVisitor := XPDLStructureAnalyzerVisitor newWithMapping: packageApplicationMapping in: bpmEnvironment.
+	xpdlStructureVisitor visitAllXpdlPackages.
 
 	"If false (no warnings) -> the processes definition are created and but not stored yet"
 	xpdlStructureVisitor hasWarnings 

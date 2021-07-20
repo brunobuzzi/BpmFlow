@@ -6,7 +6,7 @@ storeGeneratedProcessesOnCache
 	newProcesses := processes collect: [:each | each addToCache].
 
 	newProcesses do: [:eachDef | 
-		(self defaultProcessDefinitionClass getProcessDefinitionWith: eachDef id in: eachDef applicationName) isNil 
+		(systemRoot getProcessDefinitionWith: eachDef id in: eachDef applicationName) isNil 
 		ifTrue: [failedImportProcesses add: eachDef].
 	].
 

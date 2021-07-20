@@ -1,7 +1,5 @@
 other
-newWithMapping: packageApplicationDictionary
+newWithMapping: packageApplicationDictionary in: aBpmEnvironment
 	"The receiver create a new instance with dictionary <packageApplicationDictionary> where the key is <aXPDLPackageNode> and the value is <anApplication>"
 
-	^super new initialize
-		packageApplication: packageApplicationDictionary;
-		yourself
+	^self new setMapping: packageApplicationDictionary in: aBpmEnvironment
