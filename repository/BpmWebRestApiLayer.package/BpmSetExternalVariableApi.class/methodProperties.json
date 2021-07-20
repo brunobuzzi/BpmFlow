@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"doIt" : "brunobb 11/28/2018 08:54",
-		"getBpmProcessInstanceFromId" : "brunobb 02/05/2020 03:33",
-		"getBpmProcessInstanceFromQuery" : "brunobb 02/05/2020 03:33",
+		"getBpmProcessInstanceFromId" : "brunobb 07/20/2021 13:59",
+		"getBpmProcessInstanceFromQuery" : "brunobb 07/20/2021 13:59",
 		"getExternalVariablesValuesFrom:" : "brunobb 11/27/2018 07:24",
 		"getProcessFiltersFromCollection:" : "brunobb 11/27/2018 07:24",
 		"mapStClassFrom:" : "brunobb 11/27/2018 07:24",

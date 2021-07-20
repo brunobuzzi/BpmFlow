@@ -1,7 +1,7 @@
 other
 createExternalMessage
 
-	^BpmExternalProcessMessage new
+	^(BpmExternalProcessMessage newOn: systemRoot)
 			receiverAppName: appName;
 			receiverProcessName: processName;
 			receiverGatewayName: gatewayName;

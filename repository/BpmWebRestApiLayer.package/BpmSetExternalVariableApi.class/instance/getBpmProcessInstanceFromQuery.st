@@ -6,7 +6,7 @@ getBpmProcessInstanceFromQuery
 	| processDefinition procDefNumberId queryFieldValues xPathNodes processFilters result |
 
 	[procDefNumberId := Number fromString: processDefinitionId] on: Error do: [:ex | ^nil].
-	processDefinition := self defaultProcessDefinitionClass getProcessDefinitionWith: procDefNumberId in: appName.
+	processDefinition := systemRoot getProcessDefinitionWith: procDefNumberId in: appName.
 
 	processDefinition ifNil: [^nil].
 
