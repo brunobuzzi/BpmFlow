@@ -1,4 +1,4 @@
 report distribution
 getProcessInstancesDistribution
 
-	^self defaultProcessDefinitionClass reportProcessInstancesQuantityDistributionFor: applicationName
+	^self systemRoot reportProcessInstancesQuantityDistributionFor: applicationName

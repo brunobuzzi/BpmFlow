@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := self defaultProcessDefinitionClass reportCreationDayFor: self processName 
+	report := self systemRoot reportCreationDayFor: self processName 
 								in: self applicationName 
 								version: self version 
 								from: self startDate 

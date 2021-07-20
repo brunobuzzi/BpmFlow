@@ -7,7 +7,7 @@ createDistributionReport
 
 	fieldName := self fieldName ifNil: [''] ifNotNil: [:value | value allButLast: 3].
  
-	report := self defaultProcessDefinitionClass reportValueSumMultiDistributionFor: self scope processes fieldNamed: fieldName values: values from: self startDate to: self endDate satisfying: self queryBlock.
+	report := self systemRoot reportValueSumMultiDistributionFor: self scope processes fieldNamed: fieldName values: values from: self startDate to: self endDate satisfying: self queryBlock.
 
 	report name: ('Field Values Comparison' translateFor: self user);
 		description: (('Total: ' translateFor: self user), report getTotalValue printString);

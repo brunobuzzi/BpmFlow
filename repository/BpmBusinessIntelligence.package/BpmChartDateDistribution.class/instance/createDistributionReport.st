@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| error report |
 
-	report := self defaultProcessDefinitionClass 
+	report := self systemRoot 
 							reportDateDistributionQuantityForAll: self scope processes 
 							for: (self fieldName allButLast: 3) "remove field type -> [d]"
 							from: self startDate 

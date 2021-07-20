@@ -2,7 +2,7 @@ other
 createDistributionReport
 	| report |
 
-	report := self defaultProcessDefinitionClass reportValueSumDistributionFor: self processName 
+	report := self systemRoot reportValueSumDistributionFor: self processName 
 								in: self applicationName 
 								fieldNamed: (self fieldName allButLast: 3)
 								from: self startDate 
