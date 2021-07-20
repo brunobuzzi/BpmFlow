@@ -12,7 +12,7 @@ searchProcessId
 		eachApp processesDefinitionsDo:  [:procDef | contextApplications add: procDef].
 	].
 
-	searchCollectionResult := (self defaultProcessDefinitionClass getProcessInstanceWithId: id onApplications: contextApplications) 
+	searchCollectionResult := (self session systemRoot getProcessInstanceWithId: id onApplications: contextApplications) 
 										ifNil: [#()] 
 										ifNotNil: [:object | OrderedCollection with: object].
 

@@ -2,7 +2,7 @@ search area
 getSelectedProcessDefinitionOrNil
 	| definitions |
 
-	definitions := self defaultProcessDefinitionClass 
+	definitions := self session systemRoot 
 							getAllProcessesNamed: (self searchValueAt: 'process-type' ifAbsent: ['']) 
 							in: (self searchValueAt: 'application' ifAbsent: ['']).
 

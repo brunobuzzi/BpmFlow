@@ -11,7 +11,7 @@ searchMatchingProcesses
 	(self hasSelectedApplication and:[self hasFormDefinition and:[self hasFormField not]])
 	ifTrue: [^self searchByApplicationAndFormDefinition].
 
-	assignments := self defaultProcessDefinitionClass getAssignmentsIn: self getSelectedApplication 
+	assignments := self session systemRoot getAssignmentsIn: self getSelectedApplication 
 							processName: self getProcessType 
 							formName: self getSelectedFormDefinition 
 							fieldName: self getSelectedFormField

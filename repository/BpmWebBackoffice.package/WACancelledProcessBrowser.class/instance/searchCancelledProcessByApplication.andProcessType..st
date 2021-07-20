@@ -7,7 +7,7 @@ searchCancelledProcessByApplication: appName andProcessType: procName
 
 	cancelledProcesses := OrderedCollection new.
 	
-	(self defaultProcessDefinitionClass getAllProcessesNamed: procName in: appName) do: [:eachProcDef | 
+	(self session systemRoot getAllProcessesNamed: procName in: appName) do: [:eachProcDef | 
 		eachProcDef abortedProcessesDo: [:each | cancelledProcesses add: each].
 	].
 

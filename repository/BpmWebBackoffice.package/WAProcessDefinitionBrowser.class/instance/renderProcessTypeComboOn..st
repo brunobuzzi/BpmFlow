@@ -2,7 +2,7 @@ search area
 renderProcessTypeComboOn: html
 	| definitionsNames |
 
-	definitionsNames  := (self defaultProcessDefinitionClass getAllVersionsIn: (self searchValueAt: 'application' ifAbsent: [''])) collect: [:each | each processName].
+	definitionsNames  := (self session systemRoot getAllVersionsIn: (self searchValueAt: 'application' ifAbsent: [''])) collect: [:each | each processName].
 
 	html label 
 		attributeAt: 'for' put: 'processType';
