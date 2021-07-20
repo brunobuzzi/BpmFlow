@@ -7,9 +7,9 @@ setUp
 	self createUeEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
 
 	"answer a collection with all versions"
-	senderProcessDef := (self defaultProcessDefinitionClass getAllProcessesNamed: 'House Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last].
+	senderProcessDef := (testRoot getAllProcessesNamed: 'House Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last].
 	"answer a collection with all versions"
-	receiverProcesDef := (self defaultProcessDefinitionClass getAllProcessesNamed: 'House Purchase with Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last]. 
+	receiverProcesDef := (testRoot getAllProcessesNamed: 'House Purchase with Loan' in: 'ue') ifEmpty: [nil] ifNotEmpty: [:collection | collection last]. 
 	
 	(senderProcessDef isNil or: [receiverProcesDef isNil]) ifTrue: [self createProcessesDefinition].
 	environment := senderProcessDef bpmEnvironment.

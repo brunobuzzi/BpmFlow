@@ -6,7 +6,7 @@ setUp
 
 	self createUeEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
 
-	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
+	procDefinition := testRoot getAllProcessesNamed: 'visa-appliance' in: 'ue'. "answer a collection with all versions"
 
 	procDefinition := procDefinition ifEmpty: [self createProcessDefinition] ifNotEmpty: [:collection | collection last].
 	environment := procDefinition bpmEnvironment.

@@ -5,7 +5,7 @@
 		"createProcessDefinition" : "brunobb 07/19/2021 11:55",
 		"formInstance_data_approved" : "brunobb 04/21/2021 14:06",
 		"formInstance_data_entry" : "brunobb 04/21/2021 14:06",
-		"setUp" : "brunobb 05/23/2019 09:58",
+		"setUp" : "brunobb 07/19/2021 14:39",
 		"tearDown" : "brunobb 07/16/2021 12:14",
 		"testExecuteProcess_data_entry_approved" : "brunobb 07/16/2021 13:06",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 11:53",

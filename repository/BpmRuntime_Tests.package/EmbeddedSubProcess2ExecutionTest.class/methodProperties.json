@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"createProcessDefinition" : "brunobb 07/19/2021 12:00",
-		"setUp" : "brunobb 08/15/2019 13:47",
+		"setUp" : "brunobb 07/19/2021 14:40",
 		"tearDown" : "brunobb 07/16/2021 12:14",
 		"testTransitionTreePossibleLoops" : "brunobb 07/31/2020 13:09",
 		"testTransitionTreePossiblePaths" : "brunobb 07/31/2020 13:07",

@@ -6,7 +6,7 @@ setUp
 
 	self createUeEnvironmentAndApplication. "create the <BpmEnvironment> and <OrbeonApplication>"
 
-	procDefinition := self defaultProcessDefinitionClass getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
+	procDefinition := testRoot getAllProcessesNamed: 'all gateways' in: 'ue'. "answer a collection with all versions"
 	
 	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
  

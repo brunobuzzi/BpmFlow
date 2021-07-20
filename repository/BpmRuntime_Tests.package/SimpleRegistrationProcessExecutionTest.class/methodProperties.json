@@ -2,15 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createProcessDefinition" : "brunobb 07/19/2021 12:00",
+		"createProcessDefinition" : "brunobb 07/19/2021 13:59",
 		"formInstance_registration_approval" : "brunobb 04/21/2021 14:35",
 		"formInstance_simple_registration" : "brunobb 04/21/2021 14:38",
 		"getAssignmentFor:" : "brunobb 07/16/2021 12:52",
 		"getFinishedMatrix" : "brunobb 02/10/2020 10:25",
-		"setUp" : "brunobb 07/02/2021 13:55",
+		"setUp" : "brunobb 07/19/2021 14:42",
 		"tearDown" : "brunobb 07/16/2021 12:14",
 		"testAssignationPolicyDefinedInBizagi" : "bruno 07/23/2020 12:20",
-		"testExecuteProcess_simpleRegistration_approved" : "brunobb 08/06/2020 11:38",
+		"testExecuteProcess_simpleRegistration_approved" : "brunobb 07/20/2021 13:58",
 		"testTransitionTreePossibleLoops" : "brunobb 08/16/2019 12:20",
 		"testTransitionTreePossiblePaths" : "brunobb 08/16/2019 12:20",
 		"testTransitionTreePossiblePathsToEnd" : "brunobb 08/16/2019 12:20" } }
