@@ -12,7 +12,7 @@ removeFrom: envName apps: appNames processesName: processNames rolesName: rolesN
 	appNames do: [:each | 
 		rolesName do: [:roleName | (self getFrontOfficeRoleNamed: roleName in: each) ifNotNil: [:role | role removeFromCache]].
 		backofficeRoles do: [:roleName | (self getBackOfficeRoleNamed: roleName in: each) ifNotNil: [:role | role removeFromCache]].
-		processNames do: [:procName | (self defaultProcessDefinitionClass getAllProcessesNamed: procName in: each) do: [:eachProc | eachProc resetFormFieldInstances; removeFromCache]].
+		processNames do: [:procName | (self getAllProcessesNamed: procName in: each) do: [:eachProc | eachProc resetFormFieldInstances; removeFromCache]].
 	].  
 
 	applications  do:[:each | each resetDefinitionRegistry; removeFromCache].
