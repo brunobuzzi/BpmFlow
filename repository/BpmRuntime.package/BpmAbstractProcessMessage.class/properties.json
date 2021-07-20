@@ -14,7 +14,8 @@
 		"receiverGatewayName",
 		"receiverEventName",
 		"variablesToSet",
-		"targetProcesses" ],
+		"targetProcesses",
+		"systemRoot" ],
 	"name" : "BpmAbstractProcessMessage",
 	"pools" : [
 		 ],

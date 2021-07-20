@@ -2,7 +2,7 @@ process execution
 createInterProcessMessageFor: aBpmProcessInstance
 	"Create an instance of <BpmInterProcessMessage> to sent by the receiver to other bpm process <aBpmProcessInstance>"
 
-	^message := BpmInterProcessMessage new
+	^message := (BpmInterProcessMessage newOn: self systemRoot)
 							senderProcess: aBpmProcessInstance;
 							parentTask: self; 
 							receiverAppName: definition appName;
