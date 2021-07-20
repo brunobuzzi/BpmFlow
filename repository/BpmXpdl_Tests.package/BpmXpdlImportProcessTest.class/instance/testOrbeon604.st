@@ -17,7 +17,7 @@ testOrbeon604
 		setApplicationName: 'agesic' atIndex: 1;
 		storeTemporaryXpdlFile: file1 atIndex: 1.
 
-	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'orbeon form error' in: 'agesic') ifNil: [0] ifNotNil: [:proDef | proDef version].
+	currentVersion := (testRoot getLatestProcessDefinitionNamed: 'orbeon form error' in: 'agesic') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 
 	self assert: importProcess hasWarnings.	

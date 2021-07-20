@@ -21,7 +21,7 @@ testVisaApplianceImport
 		storeTemporaryXpdlFile: file3 atIndex: 3.
 
 	self createOrbeonForms. "we create OrbeonFormInstance that create OrboenFormDefinitions first, if not --> the import process will fail"
-	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'visa-appliance' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
+	currentVersion := (testRoot getLatestProcessDefinitionNamed: 'visa-appliance' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 
 	self deny: importProcess hasWarnings.

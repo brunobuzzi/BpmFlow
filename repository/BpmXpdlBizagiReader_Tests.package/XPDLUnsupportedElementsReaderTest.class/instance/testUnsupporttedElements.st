@@ -6,9 +6,8 @@ testUnsupporttedElements
 	map := Dictionary new.
 	reader xpdlPackages do: [:pack | map at: pack put: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue')].
 
-	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map.
-	visitor bpmEnvironment: (testRoot getExistingEnvironmentOrCreateNewNamed: 'ue');
-		visitAllXpdlPackages.
+	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map in: (testRoot getExistingEnvironmentOrCreateNewNamed: 'ue').
+	visitor visitAllXpdlPackages.
 
 	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 13).
 

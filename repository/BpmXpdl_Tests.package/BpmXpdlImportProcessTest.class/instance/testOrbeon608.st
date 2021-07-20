@@ -17,7 +17,7 @@ testOrbeon608
 		setApplicationName: 'import-test-app' atIndex: 1;
 		storeTemporaryXpdlFile: file1 atIndex: 1.
 
-	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'orbeon form error' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
+	currentVersion := (testRoot getLatestProcessDefinitionNamed: 'orbeon form error' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 
 	self assert: importProcess hasWarnings.	

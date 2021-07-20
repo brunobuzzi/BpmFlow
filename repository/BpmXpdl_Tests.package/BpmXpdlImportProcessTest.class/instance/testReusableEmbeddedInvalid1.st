@@ -19,7 +19,7 @@ testReusableEmbeddedInvalid1
 		storeTemporaryXpdlFile: file1 atIndex: 1;
 		storeTemporaryXpdlFile: file2 atIndex: 2.
 
-	currentVersion := (self defaultProcessDefinitionClass getLatestProcessDefinitionNamed: 'ReusableEmbeddedProcInvalid1' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
+	currentVersion := (testRoot getLatestProcessDefinitionNamed: 'ReusableEmbeddedProcInvalid1' in: 'import-test-app') ifNil: [0] ifNotNil: [:proDef | proDef version].
 	importProcess importBizagiFiles.
 
 	self assert: importProcess hasWarnings.	
