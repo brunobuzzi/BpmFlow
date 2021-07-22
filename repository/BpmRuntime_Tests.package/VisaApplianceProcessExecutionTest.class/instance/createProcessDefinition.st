@@ -9,9 +9,9 @@ createProcessDefinition
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'visa-appliance' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
-		mapProcess: 'home-office-check' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
-		mapProcess: 'check-financial-data' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
+	processGenerator mapProcess: 'visa-appliance' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
+		mapProcess: 'home-office-check' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
+		mapProcess: 'check-financial-data' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
 		generateAllProcess.
 
 	processGenerator processesDo: [:each | each addToCache].

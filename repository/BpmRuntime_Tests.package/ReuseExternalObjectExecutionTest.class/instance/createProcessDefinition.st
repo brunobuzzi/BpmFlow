@@ -6,7 +6,7 @@ createProcessDefinition
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'reuse-form' toApplication: (self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'ue');
+	processGenerator mapProcess: 'reuse-form' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
 		generateAllProcess.
 
 	processGenerator processesDo: [:each | each addToCache].
