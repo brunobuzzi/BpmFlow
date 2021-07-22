@@ -4,7 +4,7 @@ createNewRole
 
 	appName := (self componentValueAt: 'application') ifNil: [^self] ifNotNil: [:value | value].
 
-	application := self defaultApplicationManagerClass applicationNamed: appName ifNone: [^self].
+	application := self session systemRoot applicationNamed: appName ifNone: [^self].
 
 	roleName := (self componentValueAt: 'rolename' ifAbsent: [^self]) ifNotEmpty: [:value | value] ifEmpty: [^self].
 

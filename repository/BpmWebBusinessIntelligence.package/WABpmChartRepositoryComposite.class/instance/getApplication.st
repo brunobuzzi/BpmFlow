@@ -1,4 +1,4 @@
 search area
 getApplication
 
-	^self defaultApplicationManagerClass applicationNamed: self getApplicationName ifNone: []
+	^self session systemRoot applicationNamed: self getApplicationName ifNone: []

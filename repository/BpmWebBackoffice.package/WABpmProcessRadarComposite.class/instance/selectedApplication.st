@@ -1,6 +1,6 @@
 other
 selectedApplication
 
-	^self defaultApplicationManagerClass 
+	^self session systemRoot 
 			applicationNamed: (searchValues at: 'application') 
-			ifNone: [self getOrbeonApplicationClass new]
+			ifNone: [self session systemRoot newOrbeonApplication]
