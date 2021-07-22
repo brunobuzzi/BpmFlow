@@ -1,0 +1,4 @@
+orbeon
+getAllFormDefinitions
+
+	^self orbeonManager getAllFormDefinitions

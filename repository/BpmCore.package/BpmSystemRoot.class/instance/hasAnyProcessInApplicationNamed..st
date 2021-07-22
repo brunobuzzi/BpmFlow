@@ -1,4 +1,8 @@
 applications
 hasAnyProcessInApplicationNamed: appName
+	"Answer whether or not the Application named <aString> has any BpmProcessDefinition"
+	| application |
 
-	^self getAllApplications anySatisfy: [:each | each applicationName = appName]
+	application := self applicationNamed: appName ifNone: [^#()].
+
+	^application getAllProcessDefinitions notEmpty

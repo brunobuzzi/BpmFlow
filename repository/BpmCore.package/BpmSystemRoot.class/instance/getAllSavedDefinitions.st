@@ -1,0 +1,4 @@
+orbeon
+getAllSavedDefinitions
+
+	^self orbeonManager getAllSavedDefinitions

@@ -1,4 +1,4 @@
 *bpmBusinessIntelligence
 application
 
-	^self defaultApplicationManagerClass applicationNamed: self applicationName ifNone: [nil]
+	^self systemRoot applicationNamed: self applicationName ifNone: [nil]
