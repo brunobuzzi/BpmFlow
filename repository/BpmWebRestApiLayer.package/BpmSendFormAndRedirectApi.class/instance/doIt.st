@@ -5,11 +5,11 @@ doIt
 	2- With data context inside the XML (inside the post) generate an url link to the previous page but with domain data updated.
 	3- The POST service answer a HTML code with a redirect (with javascript) to the url build in step 2."
 
-	orbeonFormInstance := self getOrbeonApplicationClass 
+	orbeonFormInstance := systemRoot 
 											getAnyInstanceWith: id 
 											formName: formName 
 											in: appName	
-											ifNone: [self getOrbeonApplicationClass 
+											ifNone: [systemRoot 
 																getAnyDraftWith: id 
 																formName: formName 
 																in: appName 

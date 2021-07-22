@@ -4,7 +4,7 @@ doIt
 	The form of the task was sent anonymously to the REST service."
 	| application formInstance procDefinition currentTask |
 
-	application := self getOrbeonApplicationClass applicationNamed: appName ifNone: [^NoApplicationException signal: 'No such application [', appName, ']'].
+	application := systemRoot applicationNamed: appName ifNone: [^NoApplicationException signal: 'No such application [', appName, ']'].
 	formInstance := application getAnyInstanceWithId: id of: formName ifNone: [^NoOrbeonFormException signal: 'No such form [', id, ']'].
 
 	procDefinition := systemRoot getProcessDefinitionWith: processId in: appName.
