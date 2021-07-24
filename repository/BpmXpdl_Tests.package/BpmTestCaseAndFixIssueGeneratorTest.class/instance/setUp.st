@@ -13,9 +13,9 @@ setUp
 	processGenerator := BpmProcessGenerator on: reader xpdlPackages root: testRoot.
 
 	processGenerator 
-		mapProcess: 'test-case-process' toApplication: (self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
-		mapProcess: 'fix-issue' toApplication: (self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
-		mapProcess: 'architect-process' toApplication: (self defaultApplicationManagerClass getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
+		mapProcess: 'test-case-process' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
+		mapProcess: 'fix-issue' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
+		mapProcess: 'architect-process' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName);
 		generateAllProcess.
 
 	^processGenerator

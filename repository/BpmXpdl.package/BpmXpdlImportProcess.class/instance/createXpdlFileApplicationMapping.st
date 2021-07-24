@@ -6,7 +6,7 @@ createXpdlFileApplicationMapping
 	dictionary := Dictionary new.
 
 	indexXpdlFileMapper keysAndValuesDo: [:index :xpdlFileName |
-		dictionary at: xpdlFileName put: (self defaultApplicationManagerClass applicationNamed: (indexApplicationMapper at: index)).
+		dictionary at: xpdlFileName put: (systemRoot applicationNamed: (indexApplicationMapper at: index)).
 	].
 
 	^dictionary

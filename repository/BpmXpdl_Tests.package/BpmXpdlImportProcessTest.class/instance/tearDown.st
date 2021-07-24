@@ -8,7 +8,7 @@ tearDown
 	importProcess generatedProcessesDo: [:each | each resetFormFieldInstances; removeFromCache].
  
 	self getDefaultApplication resetDefinitionRegistry.
-	(self defaultApplicationManagerClass getRolesInAppName: self getDefaultApplication applicationName) do: [:each | each removeFromCache].
+	(testRoot getRolesInAppName: self getDefaultApplication applicationName) do: [:each | each removeFromCache].
  
 	self getDefaultApplication removeFromCache.
 

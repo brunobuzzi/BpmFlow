@@ -3,7 +3,7 @@ testOrbeon608
 	| environment applications file1 currentVersion agesic |
 
 	environment := self getDefaultEnvironment.
-	agesic := self getOrbeonApplicationClass getExistingBpmApplicationOrCreateNewNamed: 'agesic'.
+	agesic := testRoot getExistingBpmApplicationOrCreateNewNamed: 'agesic' in: 'env-test'.
 	self getDefaultEnvironment registerApplication: agesic.
 	applications := OrderedCollection with: agesic.
 
