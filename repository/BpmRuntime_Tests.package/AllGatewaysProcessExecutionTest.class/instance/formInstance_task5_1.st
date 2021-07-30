@@ -1,9 +1,9 @@
 form instances
 formInstance_task5_1
 
-	^self formCreatorClass 
-		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_task_5_1
-		definitionNamed: 'task-5' 
-		app: 'ue' 
-		definitionMethod: self newDefinitionTemplate formDefinition_ue_task5
-		in: procInstance
+	^testRoot
+			buildFormInstanceNamed: 'task-5'  
+			withXml: self newInstanceTemplate formInstance_ue_task_5_1 
+			definitionXml: self newDefinitionTemplate formDefinition_ue_task5 
+			in: 'ue' 
+			process: procInstance

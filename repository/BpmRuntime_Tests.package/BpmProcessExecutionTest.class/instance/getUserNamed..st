@@ -1,4 +1,4 @@
 users
 getUserNamed: aString
 
-	^self processExecutionSimulator getUserNamed: aString ifNone: [self assert: false]
+	^testRoot getUserNamed: aString ifAbsent: [self assert: false]

@@ -8,6 +8,6 @@ createUeEnvironmentAndApplication
 
 	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
 
-	application := testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue'.
+	application := testRoot getExistingOrbeonApplicationOrCreateNewNamed: 'ue' in: 'env-ue'.
 
 	environment registerApplication: application ifPresent: [] ifTaken: [].

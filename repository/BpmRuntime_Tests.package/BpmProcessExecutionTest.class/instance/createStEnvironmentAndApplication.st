@@ -8,6 +8,6 @@ createStEnvironmentAndApplication
 
 	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-st'.
 
-	application := testRoot getExistingBpmApplicationOrCreateNewNamed: 'st' in: 'env-st'.
+	application := testRoot getExistingOrbeonApplicationOrCreateNewNamed: 'st' in: 'env-st'.
 
 	environment registerApplication: application ifPresent: [] ifTaken: [].

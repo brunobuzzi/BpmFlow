@@ -12,9 +12,9 @@ formInstance_withValues: anArray in: aBpmProcessInstance
 										city: (anArray at: 7) 
 										industry: (anArray at: 8).
 
-	^self formCreatorClass 
-		buildFormInstanceFrom: formInstance
-		definitionNamed: 'all-field-types' 
-		app: 'ue' 
-		definitionMethod: self newDefinitionTemplate formDefinition_ue_all_field_types
-		in: procInstance
+	^testRoot
+			buildFormInstanceNamed: 'all-field-types'  
+			withXml: formInstance 
+			definitionXml: self newDefinitionTemplate formDefinition_ue_all_field_types 
+			in: 'ue' 
+			process: procInstance
