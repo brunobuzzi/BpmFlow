@@ -4,7 +4,7 @@ ifRequiredUpdateForm
 	At this point is SAFE to move everything to new location because an <AlreadyExistApplicationOrFormNameException> is NOT possible"
 	| currentIdDefinition | 
 
-	currentIdDefinition := self getOrbeonApplicationClass getSavedDefinitionWithId: id ifNone: [^self].
+	currentIdDefinition := systemRoot getSavedDefinitionWithId: id ifNone: [^self].
 
 	((currentIdDefinition applicationName = appName) and: [currentIdDefinition formName = formName])
 	ifTrue: [^self]. "no change has been made to application name and form name --> no update required"

@@ -4,7 +4,7 @@ doIt
 	The Summary then should open the Orbeon Builder with the code of the clicked form."
 	| definition |
 
-	definition := self getOrbeonApplicationClass getSavedDefinitionWithId: id ifNone: [^NoOrbeonFormException signal: ('No Form Definition with id:' , id)].
+	definition := systemRoot getSavedDefinitionWithId: id ifNone: [^NoOrbeonFormException signal: ('No Form Definition with id:' , id)].
 
 	"^self decodeFromUTF8: definition xmlString"
 

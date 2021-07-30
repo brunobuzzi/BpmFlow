@@ -5,7 +5,7 @@ doIt
 	A direct file upload is when a File Attachment is added to a Form Definition and a concrete file is also uploaded"
 	| definition gsFile path |
 
-	definition := self getOrbeonApplicationClass getAnyDefinitionWithId: id ifNone: [^self storeFileOnTempPath].
+	definition := systemRoot getAnyDefinitionWithId: id ifNone: [^self storeFileOnTempPath].
 
 	path := self getOrbeonWebServerConfiguration getSavedDefinitionsPathFor: definition formName in: definition getApplicationName.
 

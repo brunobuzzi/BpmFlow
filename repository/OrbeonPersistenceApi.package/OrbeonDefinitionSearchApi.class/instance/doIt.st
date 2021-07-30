@@ -1,8 +1,8 @@
 other
 doIt
 
-	summary := OrbeonFormDefinitionsSummary 
-								newFor: user 
+	summary := OrbeonFormDefinitionsSummary newOn: systemRoot
+								for: user 
 								group: group 
 								credentials: userCredentials
 								pageSize: pageSize 

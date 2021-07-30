@@ -8,4 +8,5 @@ getExistingOrbeonApplicationOrCreateNewNamed: applicationName in: environmentNam
 			applicationNamed: applicationName 
 			ifNone: [| application |
 							application := self orbeonManager getExistingOrbeonApplicationOrCreateNewNamed: applicationName.
+							application initializeForBpmFlow.
 							environment registerApplication: application]

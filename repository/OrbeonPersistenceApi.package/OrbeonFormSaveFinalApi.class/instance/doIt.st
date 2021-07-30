@@ -2,7 +2,7 @@ other
 doIt
 	| application definition instance |
 
-	application := self getOrbeonApplicationClass applicationNamed: self getApplicationName ifNone: [^self signalNoApplicationException: self getApplicationName].
+	application := systemRoot applicationNamed: self getApplicationName ifNone: [^self signalNoApplicationException: self getApplicationName].
 	definition := application getDefinitionNamed: self getFormName withVersion: version ifNone: [^self signalNoFormException].
 	instance := definition 
 				getInstanceWithId: id 

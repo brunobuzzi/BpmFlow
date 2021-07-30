@@ -4,10 +4,10 @@ doItAndSetVersion: aBlock
 	This service is used in combination of #getXmlOfFormInstanceWithId:form:app: to <get> the actual data of the form"
 	| application orbeonDefinition instance |
 
-	application := self getOrbeonApplicationClass applicationNamed: self getApplicationName ifNone: [^self signalNoFormException].
+	application := systemRoot applicationNamed: self getApplicationName ifNone: [^self signalNoFormException].
 
-	instance := self getOrbeonApplicationClass getAnyInstanceWith: id formName: self getFormName in: self getApplicationName 
-							ifNone: [self getOrbeonApplicationClass getAnyDraftWith: id formName: self getFormName in: self getApplicationName 
+	instance := systemRoot getAnyInstanceWith: id formName: self getFormName in: self getApplicationName 
+							ifNone: [systemRoot getAnyDraftWith: id formName: self getFormName in: self getApplicationName 
 												ifNone: [^self signalNoFormException]].
 
 	orbeonDefinition := instance definition.

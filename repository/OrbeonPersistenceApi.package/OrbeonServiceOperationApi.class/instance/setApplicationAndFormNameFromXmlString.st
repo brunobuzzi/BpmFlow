@@ -2,6 +2,6 @@ other
 setApplicationAndFormNameFromXmlString
 	| reader |
 
-	reader := self defaultOrbeonFormBuilderClass for: xmlString.
+	reader := systemRoot newFormBuilderFor: xmlString.
 	appName := reader getApplicationName.
 	formName := reader getFormName.

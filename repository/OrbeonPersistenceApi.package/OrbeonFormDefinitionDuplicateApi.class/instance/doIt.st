@@ -1,12 +1,16 @@
 other
 doIt
-	| savedDefinition |
+	| savedDefinition builder |
 
-	savedDefinition := self defaultSavedFormDefinitionClass new.
+	builder := systemRoot newFormBuilderFor: xmlString.
+	appName := builder getApplicationName.
+	formName := builder getFormName.
+	
+	savedDefinition := self defaultSavedFormDefinitionClass newNamed: formName in: (systemRoot getExistingApplicationOrCreateNewNamed: appName).
 
 	savedDefinition xmlString: xmlString;
 		id: id;
-		setMetadata; "set: application, formName, title, description"
+		setTitleAndDescriptionWith: builder;
 		version: 1; "when a form is duplicate it always start at version 1"
 		updateLastModifiedTime.
 

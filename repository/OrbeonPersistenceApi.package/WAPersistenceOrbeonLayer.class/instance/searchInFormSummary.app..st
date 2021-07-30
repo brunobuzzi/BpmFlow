@@ -9,7 +9,7 @@ searchInFormSummary: formName app: app
 	<path: '/search/{2}/{1}'>
 
 	request := self requestContext request.
-	application := self getOrbeonApplicationClass applicationNamed: app ifNone: [^self noRouteFound: self requestContext "^self signalNoApplicationException: app"].
+	application := self systemRoot applicationNamed: app ifNone: [^self noRouteFound: self requestContext "^self signalNoApplicationException: app"].
 	version := (request headerAt: 'orbeon-form-definition-version' ifAbsent: ['1']) asInteger.
 	definition := application getDefinitionNamed: formName withVersion: version ifNone: [^self noRouteFound: self requestContext "^self signalNoFormException: formName app: app"].
 

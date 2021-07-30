@@ -6,7 +6,7 @@ doItAndSetVersion: setVersionBlock ifNotFound: notFoundBlock
 	It also called when a new Form Instance page is about to be displayed (app/form/new)"
 	| application latestDefinition headerVersion |
 
-	application := self getOrbeonApplicationClass 
+	application := systemRoot 
 									applicationNamed: self getApplicationName 
 									ifNone: [^((appName = 'orbeon') or: [formName = 'library']) ifFalse: [notFoundBlock value] ifTrue: [self defaultLibrarySourceTemplate]].
 

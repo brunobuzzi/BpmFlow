@@ -8,13 +8,13 @@ doItIfNotFound: aBlock
 
 	(self getFormName isNil or: [self getApplicationName isNil]) ifTrue: [self setApplicationAndFormNameFromXmlString].
 
-	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: appName.
+	application := systemRoot getExistingApplicationOrCreateNewNamed: appName.
 
 	version := (headerVersion = 'next') 
 							ifTrue: [(application getLastFormDefinitionVersionOf: formName) + 1]
 							ifFalse: [Number fromString: headerVersion].
 
-	latestSavedDefinition := self getOrbeonApplicationClass getLatestSavedDefinition: formName app: appName ifNone: [nil].
+	latestSavedDefinition := systemRoot getLatestSavedDefinition: formName app: appName ifNone: [nil].
 	"is there a form definition with <formName> in application <appName> & the document_id <id> are different ??? 
 	--> if <true> --> creation NOT allowed"
 

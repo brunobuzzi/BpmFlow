@@ -3,7 +3,7 @@ createPublishedDefinition
 	"The receiver create a new definition <anOrbeonFormDefinition> named <formName> in application <anOrbeonApplication> with id <id>"
 	| anOrbeonPublishedDefinition |
 
-	anOrbeonPublishedDefinition := self defaultPublishedFormDefinitionClass newNamed: self getFormName inAppNamed: self getApplicationName.
+	anOrbeonPublishedDefinition := self defaultPublishedFormDefinitionClass newNamed: self getFormName in: (systemRoot getExistingApplicationOrCreateNewNamed: self getApplicationName).
 	anOrbeonPublishedDefinition associateSavedAndPublishedForms.
 
 	^anOrbeonPublishedDefinition "new definition to be published"

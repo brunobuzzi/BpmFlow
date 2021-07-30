@@ -17,6 +17,6 @@ createDefaultObjects
 
 	adminUser := self newUsername: self adminUserName password: self adminPassword forEnvironment: defaultEnvironment.
 
-	role := self createNewOrGetExistingBackOfficeRole: self adminBackOffileRoleName in: application.
+	role := self createNewOrGetExistingBackOfficeRole: self adminBackOffileRoleName in: self adminsApplicationName.
 	role isAdmin: true. 
 	role grantUser: adminUser.

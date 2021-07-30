@@ -5,7 +5,7 @@ doIt
 
 	xmlWriter := XMLWriter new.
 	xmlWriter writeWith: [:writer | 
-		writer tag: 'forms' with: [self getOrbeonApplicationClass getLastDefinitions do: [:eachDef | 
+		writer tag: 'forms' with: [systemRoot getLastDefinitions do: [:eachDef | 
 			self getXmlNodeForRunnerHome: eachDef with: writer]].
 	].
 

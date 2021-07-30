@@ -4,7 +4,7 @@ doItIfNotFound: aBlock
 
 	(self getFormName isNil or: [self getApplicationName isNil]) ifTrue: [self setApplicationAndFormNameFromXmlString].
 
-	application := self getOrbeonApplicationClass getExistingApplicationOrCreateNewNamed: appName.
+	application := systemRoot getExistingApplicationOrCreateNewNamed: appName.
 
 	version := Number fromString: headerVersion.
 

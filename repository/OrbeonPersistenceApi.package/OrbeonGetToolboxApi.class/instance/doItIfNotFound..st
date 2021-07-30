@@ -4,7 +4,7 @@ doItIfNotFound: aBlock
 	It show the available -Library- forms for the application named <appName> "
 	| application latestDefinition |
 
-	application := self getOrbeonApplicationClass applicationNamed: self getApplicationName ifNone: [^aBlock value].
+	application := systemRoot applicationNamed: self getApplicationName ifNone: [^aBlock value].
 
 	version := headerValue ifNil: [application getLastFormDefinitionVersionOf: 'library'] ifNotNil: [Number fromString: headerValue].
 

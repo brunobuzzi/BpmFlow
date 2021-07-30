@@ -3,7 +3,7 @@ doIt
 	"This service is called when Orbeon requires a Custom PDF of a form or the Form Instance has any attachments and the user has clicked -Send-"
 	| definition gsFile pathFile |
 
-	definition := self getOrbeonApplicationClass formDefinitionNamed: self getFormName in: self getApplicationName.
+	definition := systemRoot formDefinitionNamed: self getFormName in: self getApplicationName.
 
 	pathFile := (self getOrbeonWebServerConfiguration getPublishedDefinitionsPathFor: self getFormName in: self getApplicationName), definition id, '-', fileId.
 	gsFile := GsFile openOnServer: pathFile mode: 'rb'.

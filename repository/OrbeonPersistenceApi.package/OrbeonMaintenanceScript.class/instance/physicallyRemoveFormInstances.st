@@ -4,5 +4,5 @@ physicallyRemoveFormInstances
 	"This is a Time and Resource consuming Operation"
 	"Remove all FormInstances where <deleted> is 'Y' "
 
-	(self getOrbeonApplicationClass getAllInstances select: [:each | each deleted = 'Y']) do: [:each | 
+	(root getAllInstances select: [:each | each deleted = 'Y']) do: [:each | 
 		each definition removeInstance: each]

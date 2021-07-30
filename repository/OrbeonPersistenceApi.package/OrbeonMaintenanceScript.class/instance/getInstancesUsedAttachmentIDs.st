@@ -5,7 +5,7 @@ getInstancesUsedAttachmentIDs
 
 	allAttachmentIds := Dictionary new.
 
-	self getOrbeonApplicationClass doInCache: [:eachApp | 
+	root doInCache: [:eachApp | 
 		eachApp definitionsRegistryKeysAndValuesDo: [:formName :registry |
 
 			registry currentVersionsDo: [:eachDef | 

@@ -1,7 +1,8 @@
 {
 	"class" : {
-		 },
+		"newOn:for:group:credentials:pageSize:pageNumber:xmlQuery:" : "brunobb 07/27/2021 12:25" },
 	"instance" : {
-		"buildStreamFormDefinitions" : "brunobb 06/05/2020 20:01",
+		"buildStreamFormDefinitions" : "brunobb 07/27/2021 12:28",
 		"buildStreams" : "brunobb 06/05/2020 19:58",
-		"selectFormsDefinitionsFrom:" : "brunobb 11/24/2020 12:38" } }
+		"selectFormsDefinitionsFrom:" : "brunobb 11/24/2020 12:38",
+		"setRoot:user:group:credentials:pageSize:pageNumber:xmlQuery:" : "brunobb 07/27/2021 12:26" } }

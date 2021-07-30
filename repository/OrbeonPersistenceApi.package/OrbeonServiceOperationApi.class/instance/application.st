@@ -1,4 +1,4 @@
 metadata
 application
 
-	^self getOrbeonApplicationClass applicationNamed: appName ifNone: []
+	^systemRoot applicationNamed: appName ifNone: []

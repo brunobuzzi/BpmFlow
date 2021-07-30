@@ -3,7 +3,7 @@ doIt
 	"This method is called by Orbeon when a Form is autosaved in a Form Instance page"
 	| application definition orbeonDraft |
 
-	application := self getOrbeonApplicationClass applicationNamed: self getApplicationName ifNone: [^self signalNoApplicationException: self getApplicationName].
+	application := systemRoot applicationNamed: self getApplicationName ifNone: [^self signalNoApplicationException: self getApplicationName].
 	definition := application getDefinitionNamed: self getFormName withVersion: version ifNone: [^self signalNoFormException].
 	orbeonDraft := definition getDraftWithId: id ifNone: [definition addDraft: (OrbeonFormInstance newFor: definition withId: id)].
 

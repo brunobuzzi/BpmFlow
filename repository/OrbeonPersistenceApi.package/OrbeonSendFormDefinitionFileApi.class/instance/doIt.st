@@ -4,7 +4,7 @@ doIt
 	The service answer an octet stream to the caller."
 	| definition gsFile pathFile |
 
-	definition := self getOrbeonApplicationClass getAnyDefinitionWithId: id ifNone: [^NoOrbeonFormException signal: 'No form definition with id [', id, ']'].
+	definition := systemRoot getAnyDefinitionWithId: id ifNone: [^NoOrbeonFormException signal: 'No form definition with id [', id, ']'].
 
 	pathFile := (self getOrbeonWebServerConfiguration getSavedDefinitionsPathFor: definition formName in: definition getApplicationName), id, '-',fileId.
 	gsFile := GsFile openOnServer: pathFile mode: 'rb'.

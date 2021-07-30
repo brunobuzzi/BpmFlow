@@ -7,16 +7,19 @@ removeFrom: envName apps: appNames processesName: processNames rolesName: rolesN
 
 	environment := self getExistingEnvironmentOrCreateNewNamed: envName.
 	applications := appNames collect: [:each | self getExistingBpmApplicationOrCreateNewNamed: each].
-	applications do:[:each | environment unregisterApplication: each].
 
-	appNames do: [:each | 
-		rolesName do: [:roleName | (self getFrontOfficeRoleNamed: roleName in: each) ifNotNil: [:role | role removeFromCache]].
-		backofficeRoles do: [:roleName | (self getBackOfficeRoleNamed: roleName in: each) ifNotNil: [:role | role removeFromCache]].
-		processNames do: [:procName | (self getAllProcessesNamed: procName in: each) do: [:eachProc | eachProc resetFormFieldInstances; removeFromCache]].
+	applications do: [:eachApp | 
+		rolesName do: [:roleName | (self getFrontOfficeRoleNamed: roleName in: eachApp applicationName) 
+												ifNotNil: [:role | eachApp removeRole: role ifAbsent: [self assert: false]]].
+		backofficeRoles do: [:roleName | (self getBackOfficeRoleNamed: roleName in: eachApp applicationName) 
+														ifNotNil: [:role | eachApp removeRole: role ifAbsent: [self assert: false]]].
+		processNames do: [:procName | (self getAllProcessesNamed: procName in: eachApp applicationName) 
+														do: [:eachProc | eachProc resetFormFieldInstances. 
+																					eachApp unregisterProcessDefinition: eachProc ifAbsent: [self assert: false]]].
 	].  
 
-	applications  do:[:each | each resetDefinitionRegistry; removeFromCache].
+	applications do:[:each | each resetDefinitionRegistry. environment unregisterApplication: each].
 
 	usersName do: [:usrName | environment unregisterUser: (self getUserNamed: usrName)].
 
-	aBoolean ifTrue: [environment removeFromCache].
+	aBoolean ifTrue: [self unregisterEnvironment: environment ifAbsent: [self assert: false]].

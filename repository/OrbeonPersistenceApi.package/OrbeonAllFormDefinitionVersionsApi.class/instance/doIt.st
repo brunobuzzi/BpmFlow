@@ -4,7 +4,7 @@ doIt
 	https://doc.orbeon.com/form-runner/api/persistence/forms-metadata.html#returning-all-form-definition-versions"
 	| application |
 
-	application := self getOrbeonApplicationClass applicationNamed: self getApplicationName ifNone: [^'<form/>'].
+	application := systemRoot applicationNamed: self getApplicationName ifNone: [^'<form/>'].
 
 	((application hasRegistryForFormNamed: self getFormName) not and: [self getFormName notNil]) ifTrue: [^'<form/>'].
 

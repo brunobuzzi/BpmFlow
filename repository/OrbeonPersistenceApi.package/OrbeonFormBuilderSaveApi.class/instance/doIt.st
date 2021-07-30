@@ -6,8 +6,8 @@ doIt
 
 	(self getFormName isNil or: [self getApplicationName isNil]) ifTrue: [self setApplicationAndFormNameFromXmlString].
 
-	latestSavedDefinition := self getOrbeonApplicationClass getLatestSavedDefinition: self getFormName app: self getApplicationName ifNone: [nil].
-	version := (self getOrbeonApplicationClass getDefinitionWithId: id ifNone: [nil]) ifNil: [1] ifNotNil: [:def | def version].
+	latestSavedDefinition := systemRoot getLatestSavedDefinition: self getFormName app: self getApplicationName ifNone: [nil].
+	version := (systemRoot getDefinitionWithId: id ifNone: [nil]) ifNil: [1] ifNotNil: [:def | def version].
 
 	self ifRequiredUpdateForm. "if the <formName> or <appName> has been changed"
 
