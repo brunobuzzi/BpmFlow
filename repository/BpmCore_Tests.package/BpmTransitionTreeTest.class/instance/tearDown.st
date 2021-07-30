@@ -1,12 +1,12 @@
 other
 tearDown
 
-	super tearDown.
-	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
+	(testRoot getRolesInAppName: self defaultApplicationName) do: [:each | self getDefaultApplication removeRole: each ifAbsent: [self assert: false]].
 
 	self getDefaultApplication resetDefinitionRegistry.
-	(testRoot getRolesInAppName: self defaultApplicationName) do: [:each | each removeFromCache].
 
-	self getDefaultApplication removeFromCache.
+	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
 
-	self getDefaultEnvironment removeFromCache.
+	testRoot unregisterEnvironment: self getDefaultEnvironment ifAbsent: [self assert: false].
+
+	super tearDown.
