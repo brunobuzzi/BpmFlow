@@ -7,7 +7,7 @@ createProcessDefinition
 			yourself.
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'Simple Registration' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'st' in: 'env-ue');
+	processGenerator mapProcess: 'Simple Registration' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'st' in: 'env-st');
 		generateAllProcess.
 
 	processGenerator processesDo: [:each | each addToCache].

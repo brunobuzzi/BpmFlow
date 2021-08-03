@@ -2,7 +2,7 @@ other
 testValidImport
 	| google ibm |
 
-	structureImporte := BpmStructureImporter newFor: (testRoot getExistingOrNewUserNamed: 'admin'). "user is not an admin"
+	structureImporte := BpmStructureImporter newFor: (testRoot getExistingOrNewUserNamed: 'admin') systemRoot: testRoot. "user is not an admin"
 
 	structureImporte csvString: self csvExample1.
 
@@ -26,11 +26,11 @@ testValidImport
 	self assert: (google applicationNamed: 'google.marketing') class equals: BpmApplication.
 	self assert: (google applicationNamed: 'google.admins') class equals: BpmApplication.
 
-	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (self getUserNamed: 'robert')) equals: true.
-	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (self getUserNamed: 'andrew')) equals: true.
-	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.budget') isGranted: (self getUserNamed: 'juan')) equals: true.
-	self assert: ((testRoot getBackOfficeRoleNamed: 'admin' in: 'ibm.admins') isGranted: (self getUserNamed: 'ibm.admin')) equals: true.
+	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (testRoot getUserNamed: 'robert')) equals: true.
+	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.sales') isGranted: (testRoot getUserNamed: 'andrew')) equals: true.
+	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'ibm.budget') isGranted: (testRoot getUserNamed: 'juan')) equals: true.
+	self assert: ((testRoot getBackOfficeRoleNamed: 'admin' in: 'ibm.admins') isGranted: (testRoot getUserNamed: 'ibm.admin')) equals: true.
 
-	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'google.marketing') isGranted: (self getUserNamed: 'alan')) equals: true.
-	self assert: ((testRoot getBackOfficeRoleNamed: 'administrator' in: 'google.marketing') isGranted: (self getUserNamed: 'alan')) equals: true.
-	self assert: ((testRoot getBackOfficeRoleNamed: 'admin' in: 'google.admins') isGranted: (self getUserNamed: 'google.admin')) equals: true.
+	self assert: ((testRoot getFrontOfficeRoleNamed: 'administrator' in: 'google.marketing') isGranted: (testRoot getUserNamed: 'alan')) equals: true.
+	self assert: ((testRoot getBackOfficeRoleNamed: 'administrator' in: 'google.marketing') isGranted: (testRoot getUserNamed: 'alan')) equals: true.
+	self assert: ((testRoot getBackOfficeRoleNamed: 'admin' in: 'google.admins') isGranted: (testRoot getUserNamed: 'google.admin')) equals: true.

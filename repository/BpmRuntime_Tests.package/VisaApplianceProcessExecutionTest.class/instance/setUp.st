@@ -23,13 +23,13 @@ setUp
 
 	"to test Execution Context"
 	(testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue') 
-		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test') ifPresent: [] ifTaken: [];
-		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test-2') ifPresent: [] ifTaken: [].
+		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test' in: 'env-ue') ifPresent: [] ifTaken: [];
+		registerApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'app-test-2' in: 'env-ue') ifPresent: [] ifTaken: [].
 
-	self createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test'.
-	self createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test-2'.
-	self createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test'.
-	self createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test-2'.
+	testRoot createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test'.
+	testRoot createNewOrGetExistingFrontOfficeRole: 'visa officer' in: 'app-test-2'.
+	testRoot createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test'.
+	testRoot createNewOrGetExistingFrontOfficeRole: 'visa manager' in: 'app-test-2'.
 	self grantUsers: {'andrew vo' -> 'visa officer'.} in: 'app-test'.
 	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test'.
 	self grantUsers: {'andrew vm' -> 'visa manager'.} in: 'app-test-2'.

@@ -2,5 +2,5 @@ other
 getAssignmentFor: aBpmTaskInstance
 
 	^(BpmTaskAssignment newFor: procInstance task: aBpmTaskInstance in: self getFinishedMatrix)
-		role: (self createNewOrGetExistingFrontOfficeRole: 'anonymous-user' in: 'st');
+		role: (testRoot createNewOrGetExistingFrontOfficeRole: 'anonymous-user' in: 'st');
 		yourself

@@ -1,9 +1,9 @@
 form instances
 formInstance_analyze_appliance_2
 
-	^self formCreatorClass 
-		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_analyze_appliance_2
-		definitionNamed: 'analyze-appliance'
-		app: 'ue' 
-		definitionMethod: self newDefinitionTemplate formDefinition_ue_analyze_appliance
-		in: procInstance
+	^testRoot
+			buildFormInstanceNamed: 'analyze-appliance'  
+			withXml: self newInstanceTemplate formInstance_ue_analyze_appliance_2 
+			definitionXml: self newDefinitionTemplate formDefinition_ue_analyze_appliance 
+			in: 'ue' 
+			process: procInstance

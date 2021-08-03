@@ -1,9 +1,9 @@
 form instance
 formInstance_user_form
 
-	^self formCreatorClass 
-		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_user_form
-		definitionNamed: 'user-form'
-		app: 'ue' 
-		definitionMethod: self newDefinitionTemplate formDefinition_ue_user_form
-		in: procInstance
+	^testRoot
+			buildFormInstanceNamed: 'user-form' 
+			withXml: self newInstanceTemplate formInstance_ue_user_form 
+			definitionXml: self newDefinitionTemplate formDefinition_ue_user_form 
+			in: 'ue' 
+			process: procInstance

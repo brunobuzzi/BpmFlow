@@ -3,4 +3,4 @@ setUp
 
 	super setUp.
 
-	testRoot := BpmSystemRoot newWithBasicObjects
+	testRoot := BpmSystemRoot newWithOrbeon

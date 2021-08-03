@@ -1,9 +1,9 @@
 form instances
 formInstance_check_previous_appliance: aBpmProcessInstance
 
-	^self formCreatorClass 
-		buildFormInstanceFrom: self newInstanceTemplate formInstance_ue_check_previous_appliance_1
-		definitionNamed: 'check-previous-appliance'
-		app: 'ue' 
-		definitionMethod: self newDefinitionTemplate formDefinition_ue_check_previous_appliance
-		in: aBpmProcessInstance
+	^testRoot
+			buildFormInstanceNamed: 'check-previous-appliance'
+			withXml: self newInstanceTemplate formInstance_ue_check_previous_appliance_1 
+			definitionXml: self newDefinitionTemplate formDefinition_ue_check_previous_appliance 
+			in: 'ue' 
+			process: aBpmProcessInstance

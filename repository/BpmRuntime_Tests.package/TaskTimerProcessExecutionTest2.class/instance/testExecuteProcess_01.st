@@ -12,7 +12,7 @@ testExecuteProcess_01
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: (self systemRoot selectMonitoredEventWith: procInstance processId) notEmpty.
+	self assert: (testRoot selectMonitoredEventWith: procInstance processId) notEmpty.
 
 	"formInstance_set_timer_term: is set with 15 seconds and this number is used by timer named Term to wait before finishing the process"
 	"the attached event wait for 10 seconds and after that trigger a new transition"

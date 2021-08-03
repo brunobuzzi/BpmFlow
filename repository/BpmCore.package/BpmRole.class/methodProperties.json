@@ -3,6 +3,7 @@
 		"createNewOrGetExisting:in:" : "brunobb 02/04/2020 08:32",
 		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 02/04/2020 10:33",
 		"getRoleNamed:in:" : "brunobb 02/04/2020 08:23",
+		"isBackofficeRole" : "brunobb 08/02/2021 14:59",
 		"newNamed:" : "brunobb 01/27/2020 11:07",
 		"reportNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 01/27/2020 11:07" },
 	"instance" : {

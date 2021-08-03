@@ -1,4 +1,4 @@
 other
 systemRoot
 
-	^user systemRoot
+	^environment systemRoot

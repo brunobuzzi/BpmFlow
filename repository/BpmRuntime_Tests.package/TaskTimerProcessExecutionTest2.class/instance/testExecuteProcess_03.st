@@ -15,21 +15,21 @@ testExecuteProcess_03
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	eventInstance := procInstance currentActivities last attachedEvents last.
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: ((self systemRoot selectMonitoredEventWith: procInstance processId) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	(Delay forSeconds: 5) wait.
 	testRoot triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 1).
 	self assert: (procInstance currentActivities last attachedEvents size = 1).
 	self assert: (currentTask getDefinitionName = 'set-timer-term').
-	self assert: ((self systemRoot selectMonitoredEventWith: procInstance processId) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	(Delay forSeconds: 7) wait.
 	testRoot triggerArtifactTimers.
 	self assert: (procInstance currentActivities size = 2).
 	lastExecutionTime := eventInstance lastExecutionTime.
 	self deny: procInstance hasFinalized.
-	self assert: ((self systemRoot selectMonitoredEventWith: procInstance processId) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 
 	(Delay forSeconds: 12) wait.
 	testRoot triggerArtifactTimers.
@@ -40,10 +40,10 @@ testExecuteProcess_03
 	self processExecutionSimulator takeAndFinalizeTask: currentTask withUserNamed: 'andrew vm' withForm: self formInstance_set_timer_term_3 on: procInstance. "15 seconds to wait"
 
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
-	self assert: ((self systemRoot selectMonitoredEventWith: procInstance processId) size = 1).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 1).
 	(Delay forSeconds: 18) wait.
 	testRoot triggerArtifactTimers.
-	self assert: ((self systemRoot selectMonitoredEventWith: procInstance processId) size = 0).
+	self assert: ((testRoot selectMonitoredEventWith: procInstance processId) size = 0).
 	self assert: ((procInstance getEventsNamed: 'term' ifNone: [self assert: false]) size = 1).
 	self assert: procInstance hasFinalized.
 	self assert: (procInstance currentActivities size = 2).
