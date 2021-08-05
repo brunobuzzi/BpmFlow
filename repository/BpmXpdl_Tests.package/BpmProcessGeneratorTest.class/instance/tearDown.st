@@ -5,8 +5,7 @@ tearDown
 	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
 
 	self getDefaultApplication resetDefinitionRegistry.
-	(testRoot getRolesInAppName: self defaultApplicationName) do: [:each | each removeFromCache].
+	(testRoot getRolesInAppName: self defaultApplicationName) do: [:each | testRoot removeRole: each in: self defaultApplicationName].
 
-	self getDefaultApplication removeFromCache.
 
-	self getDefaultEnvironment removeFromCache.
+	testRoot unregisterEnvironment: self getDefaultEnvironment ifAbsent: [self assert: false].

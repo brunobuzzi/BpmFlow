@@ -3,5 +3,6 @@ setUp
 
 	super setUp.
 
-	testRoot := BpmSystemRoot newWithBasicObjects.
-	self getDefaultEnvironment registerApplication: self getDefaultApplication.
+	testRoot := BpmSystemRoot newWithOrbeon.
+
+	self getDefaultEnvironment registerApplication: self getDefaultApplication ifPresent: [] ifTaken: [].

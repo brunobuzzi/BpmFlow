@@ -1,4 +1,4 @@
 other
 getDefaultApplication
 
-	^testRoot getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName
+	^testRoot getExistingBpmApplicationOrCreateNewNamed: self defaultApplicationName in: self getDefaultEnvironment name

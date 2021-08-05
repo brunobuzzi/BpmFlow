@@ -10,7 +10,8 @@
 		"applications",
 		"users",
 		"frontofficeRoles",
-		"backofficeRoles" ],
+		"backofficeRoles",
+		"testRoot" ],
 	"name" : "BpmUserGroupRoleTest",
 	"pools" : [
 		 ],

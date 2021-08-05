@@ -9,4 +9,4 @@ getVisibleUsersIn: aBpmEnvironment
 
 	applications := self getApplicationsIn: aBpmEnvironment.
 
-	^self class cache select: [:each | each includesAnyApplicationOf: applications in: aBpmEnvironment]
+	^systemRoot usersSelect: [:each | each includesAnyApplicationOf: applications in: aBpmEnvironment]

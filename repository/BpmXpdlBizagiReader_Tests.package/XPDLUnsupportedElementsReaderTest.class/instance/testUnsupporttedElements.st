@@ -1,12 +1,15 @@
 other
 testUnsupporttedElements
-	| visitor map testRoot |
+	| visitor map testRoot environment application |
 
 	testRoot := BpmSystemRoot newWithBasicObjects.
 	map := Dictionary new.
-	reader xpdlPackages do: [:pack | map at: pack put: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue')].
+	environment := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-ue'.
+	application := testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue'.
 
-	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map in: (testRoot getExistingEnvironmentOrCreateNewNamed: 'ue').
+	reader xpdlPackages do: [:pack | map at: pack put: application].
+
+	visitor := XPDLStructureAnalyzerVisitor newWithMapping: map in: environment.
 	visitor visitAllXpdlPackages.
 
 	self assert: ((visitor detectedItems select: [:each | each title = 'Unsupported Element'] ) size = 13).

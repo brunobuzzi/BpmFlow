@@ -5,7 +5,7 @@ testApplicationsIdentity
 
 	applications := testRoot getAllApplications asArray.
 
-	testRoot do: [:environment |
+	testRoot environmentsDo: [:environment |
 		environment getAllProcessDefinitions do: [:eachProcDef | 
 			self assert: (applications anySatisfy: [:eachApp | eachApp == eachProcDef application]).
 		]

@@ -1,24 +1,23 @@
 other
 createBpmSystemStructureFor: index
 	"The receiver create the basic structure to run the tests for iteration <index>"
-	| env backApp1 backApp2 frontApp1 frontApp2 front_role back_role front_user back_user testRoot |
+	| env backApp1 backApp2 frontApp1 frontApp2 front_role back_role front_user back_user |
 
-	testRoot := BpmSystemRoot newWithBasicObjects.
 	"1) create the environment and application "
 	env := testRoot getExistingEnvironmentOrCreateNewNamed: 'env-', index printString.
 	environments at: 'env-', index printString put: env.
-	frontApp1 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'f-app1-', index printString.
-	frontApp2 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'f-app2-', index printString.
-	backApp1 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'b-app1-', index printString.
-	backApp2 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'b-app2-', index printString.
+	frontApp1 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'f-app1-', index printString in: env name.
+	frontApp2 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'f-app2-', index printString in: env name.
+	backApp1 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'b-app1-', index printString in: env name.
+	backApp2 := testRoot getExistingBpmApplicationOrCreateNewNamed: 'b-app2-', index printString in: env name.
 	applications at: 'f-app1-', index printString put: frontApp1;
 		at: 'f-app2-', index printString put: frontApp2;
 		at: 'b-app1-', index printString put: backApp1;
 		at: 'b-app2-', index printString put: backApp2.
-	env registerApplication: frontApp1; "register the application in the environment"
+	"env registerApplication: frontApp1; 
 		registerApplication: frontApp2;
 		registerApplication: backApp1;
-		registerApplication: backApp2.
+		registerApplication: backApp2."
 
 	"2) create the user and register it in the environment"
 	front_user := testRoot getExistingOrNewUserNamed: 'fuser-', index printString.

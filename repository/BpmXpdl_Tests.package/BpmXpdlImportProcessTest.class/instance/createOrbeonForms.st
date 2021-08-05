@@ -1,24 +1,24 @@
 other
 createOrbeonForms
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_emit_visa name: 'emit-visa' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'emit-visa' title: '' withXml: self newDefinitionTemplate formDefinition_ue_emit_visa in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_analyze_appliance name: 'analyze-appliance' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'analyze-appliance' title: '' withXml: self newDefinitionTemplate formDefinition_ue_analyze_appliance in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_previous_appliance name: 'check-previous-appliance' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-previous-appliance' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_previous_appliance in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_basic_data name: 'check-basic-data' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-basic-data' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_basic_data in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_citizen_appliance name: 'citizen-appliance' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'citizen-appliance' title: '' withXml: self newDefinitionTemplate formDefinition_ue_citizen_appliance in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_financial_report name: 'financial-report' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'financial-report' title: '' withXml: self newDefinitionTemplate formDefinition_ue_financial_report in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_debts name: 'check-debts' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-debts' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_debts in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_properties name: 'check-properties' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-properties' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_properties in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_accounts name: 'check-accounts' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-accounts' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_accounts in: self getDefaultApplication.
+	
+	testRoot buildPublishedFormNamed: 'applicant-home-office-report' title: '' withXml: self newDefinitionTemplate formDefinition_ue_applicant_home_office_report in: self getDefaultApplication.
 
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_applicant_home_office_report name: 'applicant-home-office-report' in: self getDefaultApplication.
-
-	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_ue_check_applicant_record name: 'check-applicant-record' in: self getDefaultApplication.
+	testRoot buildPublishedFormNamed: 'check-applicant-record' title: '' withXml: self newDefinitionTemplate formDefinition_ue_check_applicant_record in: self getDefaultApplication.

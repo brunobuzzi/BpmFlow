@@ -1,13 +1,16 @@
 test
 testOrbeon604
-	| environment applications file1 currentVersion agesic formDefinition |
+	| environment applications file1 currentVersion agesic |
 
 	environment := self getDefaultEnvironment.
-	agesic := testRoot getExistingBpmApplicationOrCreateNewNamed: 'agesic' in: 'env-test'.
-	self getDefaultEnvironment registerApplication: agesic.
+	agesic := testRoot getExistingOrbeonApplicationOrCreateNewNamed: 'agesic' in: 'env-test'.
 	applications := OrderedCollection with: agesic.
 
-	formDefinition := 	self formCreatorClass buildDefinitionFrom: self newDefinitionTemplate formDefinition_agesic_test_all_types_4 name: 'test' in: agesic.
+	testRoot
+			buildPublishedFormNamed: 'test'  
+			title: ''
+			withXml: self newDefinitionTemplate formDefinition_agesic_test_all_types_4 
+			in: agesic.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.
 
@@ -27,6 +30,5 @@ testOrbeon604
 	self assert: (importProcess detectedItems allSatisfy: [:each | each code = 604]).
 
 	self getDefaultEnvironment unregisterApplication: agesic.
-	agesic 
-		resetDefinitionRegistry;
-		removeFromCache.
+
+	agesic resetDefinitionRegistry

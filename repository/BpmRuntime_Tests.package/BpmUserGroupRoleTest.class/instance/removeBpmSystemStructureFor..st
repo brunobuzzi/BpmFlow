@@ -12,32 +12,39 @@ removeBpmSystemStructureFor: index
 	back_user := self getUserNamed: 'buser-', index printString.
 
 	front_role := self getFrontofficeRoleNamed: 'app1-front-role1-', index printString.
-	front_role removeFromCache. "remove from the system"
-	front_role := self getFrontofficeRoleNamed: 'app1-front-role2-', index printString.
-	front_role removeFromCache. "remove from the system"
-	front_role := self getFrontofficeRoleNamed: 'app2-front-role1-', index printString.
-	front_role removeFromCache. "remove from the system"
-	front_role := self getFrontofficeRoleNamed: 'app2-front-role2-', index printString.
-	front_role removeFromCache. "remove from the system"
-	back_role := self getBackofficeRoleNamed: 'app1-back-role1-', index printString.
-	back_role removeFromCache. "remove from the system"
-	back_role := self getBackofficeRoleNamed: 'app1-back-role2-', index printString.
-	back_role removeFromCache. "remove from the system"
-	back_role := self getBackofficeRoleNamed: 'app2-back-role1-', index printString.
-	back_role removeFromCache. "remove from the system"
-	back_role := self getBackofficeRoleNamed: 'app2-back-role2-', index printString.
-	back_role removeFromCache. "remove from the system"
+	testRoot removeRole: front_role in: frontApp1 applicationName.
 
-	front_user removeFromCache. "remove from the system"
-	back_user removeFromCache. "remove from the system"
-	backApp1 removeFromCache. "remove from the system"
-	backApp2 removeFromCache. "remove from the system"
-	frontApp1 removeFromCache. "remove from the system"
-	frontApp2 removeFromCache. "remove from the system"
+	front_role := self getFrontofficeRoleNamed: 'app1-front-role2-', index printString.
+	testRoot removeRole: front_role in: frontApp1 applicationName.
+
+	front_role := self getFrontofficeRoleNamed: 'app2-front-role1-', index printString.
+	testRoot removeRole: front_role in: frontApp2 applicationName.
+
+	front_role := self getFrontofficeRoleNamed: 'app2-front-role2-', index printString.
+	testRoot removeRole: front_role in: frontApp2 applicationName.
+
+	back_role := self getBackofficeRoleNamed: 'app1-back-role1-', index printString.
+	testRoot removeRole: back_role in: backApp1 applicationName.
+
+	back_role := self getBackofficeRoleNamed: 'app1-back-role2-', index printString.
+	testRoot removeRole: back_role in: backApp1 applicationName.
+
+	back_role := self getBackofficeRoleNamed: 'app2-back-role1-', index printString.
+	testRoot removeRole: back_role in: backApp2 applicationName.
+
+	back_role := self getBackofficeRoleNamed: 'app2-back-role2-', index printString.
+	testRoot removeRole: back_role in: backApp2 applicationName.
+
+"	front_user removeFromCache. 
+	back_user removeFromCache. 
+	backApp1 removeFromCache.
+	backApp2 removeFromCache. 
+	frontApp1 removeFromCache.
+	frontApp2 removeFromCache. "
 	env unregisterUser: front_user;
 		unregisterUser: back_user;
 		unregisterApplication: frontApp1;
 		unregisterApplication: frontApp2;
 		unregisterApplication: backApp1;
 		unregisterApplication: backApp2;
-		removeFromCache. "remove from the system"
+		removeFromCache.
