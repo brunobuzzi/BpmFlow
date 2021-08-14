@@ -9,7 +9,7 @@ createDefaultObjects
 	6- Grant 'admin' User with 'admin' Role."
 	| defaultEnvironment application adminUser role |
 
-	defaultEnvironment := BpmEnvironment newNamed: self adminsEnvironmentName on: self.
+	defaultEnvironment := self getExistingEnvironmentOrCreateNewNamed: self adminsEnvironmentName.
 	defaultEnvironment addDefaultCalendar.
 
 	application := self getExistingBpmApplicationOrCreateNewNamed: self adminsApplicationName in: self adminsEnvironmentName.
