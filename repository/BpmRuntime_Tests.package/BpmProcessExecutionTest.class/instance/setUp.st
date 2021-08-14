@@ -3,4 +3,4 @@ setUp
 
 	super setUp.
 
-	testRoot := BpmSystemRoot newWithOrbeon.
+	testRoot := self keepTempObjectsInSystem ifFalse: [BpmSystemRoot newWithOrbeon] ifTrue: [Globals at: #SystemRoot].
