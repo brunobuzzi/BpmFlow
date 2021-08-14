@@ -15,3 +15,5 @@ testCreateDefaultObjects
 	self assert: testRoot getAdminBackOfficeRole isAdmin.
 	self assert: testRoot getAdminUser notNil .
 	self assert: (testRoot getAdminBackOfficeRole isGranted: testRoot getAdminUser).
+
+	self assert: testRoot getAdminBackOfficeRole application bpmEnvironment == testRoot getAdminsEnvironment.
