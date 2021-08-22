@@ -1,0 +1,1 @@
+This class Finalize <aBpmTaskAssignment> but iterate over the Task with a Stadart Loop.

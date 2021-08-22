@@ -1,0 +1,16 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"senderProcess",
+		"parentTask",
+		"receiverProcessIdField" ],
+	"name" : "BpmInterProcessMessage",
+	"pools" : [
+		 ],
+	"super" : "BpmAbstractProcessMessage",
+	"type" : "normal" }

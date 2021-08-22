@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"getComboBoxNameFor:" : "brunobb 02/07/2018 14:07" },
+	"instance" : {
+		"getAllCurrentTaskAssigments" : "brunobb 03/21/2019 09:16",
+		"getAllFinishedTaskAssignments" : "brunobb 03/21/2019 09:16",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 07/20/2021 13:44",
+		"getCurrentAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 07/20/2021 13:44",
+		"getCurrentTaskAssignmentsInApplication:" : "brunobb 03/21/2019 09:15",
+		"getCurrentTaskAssignmentsInApplication:andProcess:" : "brunobb 03/21/2019 09:15",
+		"getCurrentTaskAssignmentsInProcess:" : "brunobb 03/21/2019 09:16",
+		"getCurrentTaskAssignmentsWithId:" : "brunobb 09/10/2018 09:00",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:" : "brunobb 07/20/2021 13:44",
+		"getFinishedAssignmentsIn:processName:formName:fieldName:initialValue:endValue:" : "brunobb 07/20/2021 13:44",
+		"getFinishedTaskAssignmentsInApplication:" : "brunobb 03/21/2019 09:15",
+		"getFinishedTaskAssignmentsInApplication:andProcess:" : "brunobb 03/21/2019 09:15",
+		"getFinishedTaskAssignmentsInProcess:" : "brunobb 03/21/2019 09:16",
+		"getFinishedTaskAssignmentsWithId:" : "brunobb 09/10/2018 09:02" } }

@@ -1,0 +1,4 @@
+other
+isTransition
+
+	^true

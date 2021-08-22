@@ -1,0 +1,18 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definition",
+		"startArtifact",
+		"endArtifact",
+		"parentTransition",
+		"childrenTransitions" ],
+	"name" : "BpmTransitionInstance",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

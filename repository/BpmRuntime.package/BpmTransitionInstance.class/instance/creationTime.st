@@ -1,0 +1,4 @@
+other
+creationTime
+
+	^endArtifact creationTime

@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BpmProcessInstanceCategory",
+	"pools" : [
+		 ],
+	"super" : "BpmProcessCategory",
+	"type" : "normal" }

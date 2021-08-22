@@ -1,0 +1,4 @@
+execution
+getRunningArtifacts
+
+	^process getRunningArtifacts

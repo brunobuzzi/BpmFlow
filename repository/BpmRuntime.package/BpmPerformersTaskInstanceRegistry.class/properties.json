@@ -1,0 +1,17 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"task",
+		"rolesWhoWorked",
+		"usersWhoWorked",
+		"finalizedPerformerCounter" ],
+	"name" : "BpmPerformersTaskInstanceRegistry",
+	"pools" : [
+		 ],
+	"super" : "BpmObject",
+	"type" : "normal" }

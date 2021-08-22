@@ -1,0 +1,4 @@
+testing
+isTopProcess
+
+	^process isTopProcess

@@ -1,0 +1,4 @@
+other
+endArtifactName
+
+	^endArtifact getDefinitionName

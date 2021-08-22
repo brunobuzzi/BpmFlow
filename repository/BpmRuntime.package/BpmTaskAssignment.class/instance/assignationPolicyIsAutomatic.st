@@ -1,0 +1,4 @@
+assignation policy
+assignationPolicyIsAutomatic
+
+	^process assignationPolicyIsAutomatic

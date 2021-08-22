@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addAndContextApplication:" : "BrunoBB 12/06/2015 13:40",
+		"addOrContextApplication:" : "BrunoBB 12/06/2015 13:40",
+		"andContextApplications:" : "BrunoBB 12/06/2015 13:39",
+		"getContextApplications" : "BrunoBB 12/06/2015 13:42",
+		"getProcessTree:" : "BrunoBB 03/23/2016 14:26",
+		"getTopProcess" : "BrunoBB 03/23/2016 14:02",
+		"hasAndContext" : "BrunoBB 12/19/2015 11:15",
+		"hasOrContext" : "BrunoBB 12/19/2015 11:15",
+		"initialize" : "BrunoBB 12/06/2015 13:42",
+		"isTopProcess" : "BrunoBB 12/01/2015 12:53",
+		"matchContextsWith:" : "brunobb 09/11/2018 05:17",
+		"orContextApplications:" : "BrunoBB 12/06/2015 13:39",
+		"parentProcess" : "BrunoBB 12/01/2015 12:10",
+		"parentProcessIsNil" : "brunobb 08/06/2020 10:08",
+		"printAndContext" : "BrunoBB 12/19/2015 11:10",
+		"printAndContextOn:" : "BrunoBB 02/08/2016 12:32",
+		"printOrContext" : "BrunoBB 12/19/2015 11:10",
+		"printOrContextOn:" : "BrunoBB 02/08/2016 12:33",
+		"removeAndContextApplication:" : "BrunoBB 12/06/2015 13:40",
+		"removeOrContextApplication:" : "BrunoBB 12/06/2015 13:40" } }

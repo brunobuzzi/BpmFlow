@@ -1,0 +1,14 @@
+{
+	"category" : "BpmRuntime",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "brunobb 08/22/2019 10:07",
+	"instvars" : [
+		 ],
+	"name" : "BpmFinalizeAssignmentAndLoopOperation",
+	"pools" : [
+		 ],
+	"super" : "BpmFinalizeAssignmentOperation",
+	"type" : "normal" }

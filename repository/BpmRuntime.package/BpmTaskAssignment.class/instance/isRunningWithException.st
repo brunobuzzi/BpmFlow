@@ -1,0 +1,4 @@
+other
+isRunningWithException
+
+	^process isRunningWithException

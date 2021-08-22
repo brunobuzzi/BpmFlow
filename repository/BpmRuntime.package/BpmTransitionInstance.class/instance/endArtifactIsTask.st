@@ -1,0 +1,4 @@
+other
+endArtifactIsTask
+
+	^endArtifact isTask

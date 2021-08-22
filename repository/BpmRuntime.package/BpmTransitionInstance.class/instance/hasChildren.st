@@ -1,0 +1,4 @@
+other
+hasChildren
+
+	^childrenTransitions notEmpty

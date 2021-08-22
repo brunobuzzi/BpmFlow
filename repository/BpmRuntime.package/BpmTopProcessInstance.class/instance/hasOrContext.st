@@ -1,0 +1,4 @@
+other
+hasOrContext
+
+	^orContextApplications notEmpty
