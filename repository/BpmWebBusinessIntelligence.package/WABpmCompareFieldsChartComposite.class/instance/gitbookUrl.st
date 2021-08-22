@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/bi-manual/main-menu/compare-fields/field-comparison'
+	^self session systemRoot baseUrlDocumentation, '/application-manuals/bi-manual/main-menu/compare-fields/field-comparison'
