@@ -1,4 +1,4 @@
 external components
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals'
+	^self session systemRoot baseUrlDocumentation, '/application-manuals'

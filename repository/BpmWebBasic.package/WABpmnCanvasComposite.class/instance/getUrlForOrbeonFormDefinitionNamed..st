@@ -6,4 +6,4 @@ getUrlForOrbeonFormDefinitionNamed: aString
 
 	definition ifNil: [^nil].
 
-	^self getOrbeonWebServerConfiguration orbeonIP, '/orbeon/fr/orbeon/builder/edit/', definition id
+	^self session systemRoot generateEditUrlForDefinition: definition

@@ -1,4 +1,4 @@
 render
 redirecToOrbeonFormToStart: aBpmProcessDefinition withTaskNamed: taskName
 
-	self requestContext redirectTo: (self getOrbeonWebServerConfiguration orbeonIP,'/orbeon/fr/', aBpmProcessDefinition applicationName ,'/',taskName, '/new')
+	self requestContext redirectTo: (self session systemRoot generateNewAnonymousUrlFor: aBpmProcessDefinition taskName: taskName)

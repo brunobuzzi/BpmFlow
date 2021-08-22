@@ -3,7 +3,7 @@ tryLogin
 	| logedUser loginMode |
 
 	loginFailed := false.
-	loginMode := self getGemStoneServerConfiguration loginModeFor: 'orbeon-processes-web'.
+	loginMode := self session systemRoot loginModeFor: 'orbeon-processes-web'.
 	(loginMode validateUser: name password: password on: self session systemRoot) ifFalse: [loginFailed := true. ^loginAttempts := loginAttempts + 1].
 
 	logedUser := self session systemRoot getUserNamed: name.

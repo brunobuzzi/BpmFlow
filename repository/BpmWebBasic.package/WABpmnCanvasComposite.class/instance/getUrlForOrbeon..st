@@ -11,6 +11,6 @@ getUrlForOrbeon: taskName
 
 	(mainPanel shouldRenderLinkForFormTask: taskInstance) ifFalse: [^nil].
 
-	uuid  := BpmOrbeonTempTokenRegistry default createEntryToOrbeonFor: taskInstance for: self session user.
+	uuid  := self session systemRoot createEntryToOrbeonFor: taskInstance for: self session user.
 
 	^mainPanel getUrlFor: taskInstance with: uuid
