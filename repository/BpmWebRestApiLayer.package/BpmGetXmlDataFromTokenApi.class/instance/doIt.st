@@ -4,11 +4,9 @@ doIt
 	1- Check via lookup if it has associated XML. 
 	2- If it so then answer the XML string associate with the token. 
 	3- If not then answer a XML string with the same structure as 2 but with empty nodes values."
-	| serviceRegistry serviceValue |
+	| serviceValue |
 
-	serviceRegistry := BpmOrbeonTempTokenRegistry default. 
-	"get the XML associate with the token <token> and remove the token <token> for security reasons -can not be used again-"
-	serviceValue := serviceRegistry getSecureValueForToken: token. 
+	serviceValue := systemRoot getSecureValueForToken: token. 
 	"if the token <token> is not registered then answer an empty XML with the same structure"
 	serviceValue ifNil: [^self answerXMLErrorWith: token]. 
 	

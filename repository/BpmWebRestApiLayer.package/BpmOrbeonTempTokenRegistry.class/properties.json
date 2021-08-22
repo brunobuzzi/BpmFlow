@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"tokens",
-		"failedTokens" ],
+		"failedTokens",
+		"root" ],
 	"name" : "BpmOrbeonTempTokenRegistry",
 	"pools" : [
 		 ],

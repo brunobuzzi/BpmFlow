@@ -9,7 +9,7 @@ doIt
 	instance := definition getInstanceWithId: id ifNone: [definition getDraftWithId: id ifNone: [OrbeonFormInstance newFor: definition withId: id]].
 
 	"execute the audit options. if <xmlString> is nil --> is a new form"
-	(instance xmlString notNil and:[self getOrbeonWebServerConfiguration isInstanceAuditEnableFor: formName in: appName]) 
+	(instance xmlString notNil and:[systemRoot isInstanceAuditEnableFor: formName in: appName]) 
 	ifTrue: [self auditStorage addInstanceAudit: instance cloneForAudit].
 
 	instance xmlString: xmlString;

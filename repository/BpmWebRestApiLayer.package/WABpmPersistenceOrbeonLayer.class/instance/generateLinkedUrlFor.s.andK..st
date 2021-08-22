@@ -6,4 +6,4 @@ generateLinkedUrlFor: anBpmArtifactInstance s: seasideS andK: seasideK
 
 	seasideApplicationName := anBpmArtifactInstance bpmEnvironment seasideApplicationName.
 
-	^self getGemStoneServerConfiguration gemstoneIP,'/', seasideApplicationName ,'?_s=', seasideS, '&_k=', seasideK
+	^self systemRoot gemstoneIP,'/', seasideApplicationName ,'?_s=', seasideS, '&_k=', seasideK

@@ -6,4 +6,4 @@ redirectToStaticMessagePageFor: aBpmProcessInstance
 	text := 'Process Id [', aBpmProcessInstance id printString, '] (', aBpmProcessInstance getApplicationName, ' | ', aBpmProcessInstance getDefinitionName, ')'.
 	data := 'You will receive a mail for each process news'.
 
-	^self generateHtmlForRedirectTo: self getGemStoneServerConfiguration gemstoneIP, '/processMessage?title=', title, '&text=', text, '&data=', data.
+	^self generateHtmlForRedirectTo: self systemRoot gemstoneIP, '/processMessage?title=', title, '&text=', text, '&data=', data.

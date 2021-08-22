@@ -14,8 +14,11 @@ generateXMLFor: anObject for: aBpmUser
 
 	anObject previousFieldValues keysAndValuesDo: [:key :value | | conValue |
 		conValue := value ifNil: [''] ifNotNil: [value].
-		conValue := (conValue isKindOf: String) ifTrue: [conValue] ifFalse: [conValue printString].
+		conValue := (conValue isKindOf: String) 
+						ifTrue: [conValue] 
+						ifFalse: [(conValue isKindOf: Date) 
+									ifFalse: [conValue printString] 
+									ifTrue: [conValue printOrbeonString "printOrbeonStringFormat: root orbeonDateFormat"]].
 		result := result, '<', key, '>', conValue,'</', key, '>',  String lf. ].	
 
-	"results add: (result, '</result>', anObject asOop printString)."
 	^result, '</result>'
