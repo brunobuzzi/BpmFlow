@@ -1,4 +1,0 @@
-other
-createMessageBody
-
-	self subclassResponsibility

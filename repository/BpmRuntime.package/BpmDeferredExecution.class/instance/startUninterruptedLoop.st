@@ -1,4 +1,0 @@
-other
-startUninterruptedLoop
-
-	self subclassResponsibility

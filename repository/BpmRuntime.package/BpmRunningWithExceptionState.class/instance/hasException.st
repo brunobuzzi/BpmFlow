@@ -1,4 +1,0 @@
-execution
-hasException
-
-	^exception notNil

@@ -1,4 +1,0 @@
-*bpmruntime
-defaultTakenTasksMatrixClass
-
-	^BpmTakenTasksMatrix

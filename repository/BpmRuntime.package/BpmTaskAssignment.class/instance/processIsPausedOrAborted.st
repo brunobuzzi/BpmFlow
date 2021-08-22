@@ -1,4 +1,0 @@
-execution
-processIsPausedOrAborted
-
-	^process isPausedOrAborted

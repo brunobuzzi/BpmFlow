@@ -1,4 +1,0 @@
-other
-externalObjectAsXmlString
-
-	^externalObject printAllFieldValuesAsPairs

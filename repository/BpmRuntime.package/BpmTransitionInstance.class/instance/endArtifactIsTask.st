@@ -1,4 +1,0 @@
-other
-endArtifactIsTask
-
-	^endArtifact isTask

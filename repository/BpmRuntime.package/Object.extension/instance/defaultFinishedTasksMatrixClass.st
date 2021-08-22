@@ -1,4 +1,0 @@
-*bpmruntime
-defaultFinishedTasksMatrixClass
-
-	^self class defaultFinishedTasksMatrixClass

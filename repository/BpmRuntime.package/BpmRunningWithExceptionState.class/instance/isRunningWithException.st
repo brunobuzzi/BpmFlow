@@ -1,4 +1,0 @@
-execution
-isRunningWithException
-
-	^true

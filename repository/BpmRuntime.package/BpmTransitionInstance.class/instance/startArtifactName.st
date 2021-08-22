@@ -1,4 +1,0 @@
-other
-startArtifactName
-
-	^startArtifact getDefinitionName

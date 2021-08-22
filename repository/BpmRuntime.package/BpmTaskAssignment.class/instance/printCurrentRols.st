@@ -1,4 +1,0 @@
-other
-printCurrentRols
-
-	^process printCurrentRols

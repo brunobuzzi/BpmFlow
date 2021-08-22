@@ -1,4 +1,0 @@
-other
-endArtifactName
-
-	^endArtifact getDefinitionName

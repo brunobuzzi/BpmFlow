@@ -1,4 +1,0 @@
-other
-performersSize
-
-	^task performersSize

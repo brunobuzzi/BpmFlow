@@ -11,5 +11,5 @@ startUninterruptedLoop
 
 		System commit. "commit changes in the system and if <timersTimespan> has been changed read the new value"
 
-		(Delay forSeconds: self getGemStoneServerConfiguration timersTimespan) wait. "rest for 10 minutes"
+		(Delay forSeconds: systemRoot timersTimespan) wait. "rest for 10 minutes"
 	]

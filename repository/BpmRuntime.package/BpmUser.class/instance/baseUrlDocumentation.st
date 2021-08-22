@@ -1,4 +1,4 @@
 other
 baseUrlDocumentation
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation
+	^systemRoot baseUrlDocumentation

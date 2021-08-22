@@ -1,4 +1,0 @@
-other
-isTransition
-
-	^true

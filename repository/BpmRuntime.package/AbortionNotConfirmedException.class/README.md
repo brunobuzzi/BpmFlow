@@ -1,1 +1,0 @@
-When try to execute a process abortion that is not confirmed the receiver is signaled

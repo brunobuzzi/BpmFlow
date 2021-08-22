@@ -1,4 +1,0 @@
-execution
-processIsRunning
-
-	^process isRunning

@@ -1,4 +1,0 @@
-other
-endArtifactIsSubprocess
-
-	^endArtifact isSubprocess

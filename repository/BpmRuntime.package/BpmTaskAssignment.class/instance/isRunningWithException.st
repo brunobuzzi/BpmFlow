@@ -1,4 +1,0 @@
-other
-isRunningWithException
-
-	^process isRunningWithException

@@ -1,4 +1,0 @@
-other
-performersLast
-
-	^task performersLast

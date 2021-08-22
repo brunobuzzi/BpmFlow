@@ -1,1 +1,0 @@
-When try to create an anonymous <BpmProcessInstance> but after creation there is no available activity the receiver is signaled.

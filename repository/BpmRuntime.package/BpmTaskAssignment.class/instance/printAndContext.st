@@ -1,4 +1,0 @@
-other
-printAndContext
-
-	^process printAndContext

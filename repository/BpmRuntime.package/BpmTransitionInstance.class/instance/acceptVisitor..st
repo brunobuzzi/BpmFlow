@@ -1,4 +1,0 @@
-other
-acceptVisitor: aBpmTransitionInstanceVisitor
-
-	aBpmTransitionInstanceVisitor acceptTransition: self

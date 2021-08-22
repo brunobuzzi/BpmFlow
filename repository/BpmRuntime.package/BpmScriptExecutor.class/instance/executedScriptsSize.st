@@ -1,4 +1,0 @@
-other
-executedScriptsSize
-
-	^executedScripts size
