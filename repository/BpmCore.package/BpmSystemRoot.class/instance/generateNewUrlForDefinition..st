@@ -1,0 +1,4 @@
+orbeon
+generateNewUrlForDefinition: anOrbeonPublishedFormDefinition
+
+	^self orbeonManager generateNewUrlForDefinition: anOrbeonPublishedFormDefinition

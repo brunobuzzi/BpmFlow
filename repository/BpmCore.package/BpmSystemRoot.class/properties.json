@@ -9,7 +9,8 @@
 		"environments",
 		"areUsersMultiEnvironment",
 		"eventsMonitor",
-		"anonymousFormMapping" ],
+		"anonymousFormMapping",
+		"tokensRegistry" ],
 	"name" : "BpmSystemRoot",
 	"pools" : [
 		 ],

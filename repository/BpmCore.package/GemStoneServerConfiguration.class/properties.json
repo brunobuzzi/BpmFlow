@@ -6,9 +6,6 @@
 		"Default" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"gemstoneIP",
-		"loginModes",
-		"baseUrlDocumentation",
 		"timersTimespan" ],
 	"name" : "GemStoneServerConfiguration",
 	"pools" : [
