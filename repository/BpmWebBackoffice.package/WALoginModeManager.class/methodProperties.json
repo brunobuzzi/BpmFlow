@@ -2,14 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"gitbookUrl" : "brunobb 07/13/2018 11:10",
-		"initialize" : "BrunoBB 03/15/2016 10:54",
+		"gitbookUrl" : "brunobb 08/19/2021 11:25",
+		"initialize" : "brunobb 08/19/2021 11:26",
 		"ldapLoginModeName" : "brunobb 02/14/2020 09:37",
 		"loginModeNames" : "brunobb 02/14/2020 09:29",
 		"modeType" : "BrunoBB 03/15/2016 10:54",
 		"modeType:" : "BrunoBB 03/15/2016 10:54",
 		"renderContentOn:" : "BrunoBB 03/15/2016 10:54",
-		"renderLdapOptionsOn:" : "brunobb 01/31/2019 09:32",
+		"renderLdapOptionsOn:" : "brunobb 08/19/2021 11:31",
 		"renderLoginModeOn:" : "brunobb 01/31/2019 09:32",
 		"saveLoginMode" : "BrunoBB 03/15/2016 10:54",
-		"setLocalLoginMode" : "BrunoBB 03/15/2016 10:54" } }
+		"setLocalLoginMode" : "brunobb 08/19/2021 11:32" } }

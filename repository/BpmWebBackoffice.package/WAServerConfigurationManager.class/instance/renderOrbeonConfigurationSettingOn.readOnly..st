@@ -7,8 +7,8 @@ renderOrbeonConfigurationSettingOn: html readOnly: aBoolean
 	html label attributeAt: 'for' put: 'orbeonIP'; with: ('Orbeon IP' translateIn: self session).
 	html textInput attributeAt: 'id' put: 'orbeonIP'; 
 			readonly: aBoolean;
-			callback: [:value | self getOrbeonWebServerConfiguration orbeonIP: value]; 
-			with: self getOrbeonWebServerConfiguration orbeonIP.
+			callback: [:value | self session systemRoot orbeonIP: value]; 
+			with: self session systemRoot orbeonIP.
 
 	html label class: 'margin-right-10px'; attributeAt: 'for' put: 'dataFormatVersion'; with: ('Data Format Version' translateIn: self session).
 	html textInput 

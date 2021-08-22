@@ -5,7 +5,7 @@ formDefinitionColumn
 		renderBlock: [:each :html | 
 			html anchor
 				target: '_blank';
-				callback: [self requestContext redirectTo: (self getOrbeonWebServerConfiguration orbeonIP,  '/orbeon/fr/orbeon/builder/edit/', each id)];
+				callback: [self requestContext redirectTo: (self session systemRoot generateEditUrlForDefinition: each)];
 				with: each formName
 		] 
 		title: 'Form'

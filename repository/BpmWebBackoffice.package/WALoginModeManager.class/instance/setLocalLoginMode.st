@@ -1,4 +1,4 @@
 other
 setLocalLoginMode
 
-	self getGemStoneServerConfiguration setLocalForProcesses
+	self session systemRoot setLocalForProcesses

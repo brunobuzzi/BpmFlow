@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/applications/manage-orbeon-forms'
+	^self session systemRoot baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/applications/manage-orbeon-forms'

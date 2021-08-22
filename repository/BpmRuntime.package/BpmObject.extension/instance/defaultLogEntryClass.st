@@ -1,0 +1,4 @@
+*bpmRuntime
+defaultLogEntryClass
+
+	^BpmExecutionLogEntry

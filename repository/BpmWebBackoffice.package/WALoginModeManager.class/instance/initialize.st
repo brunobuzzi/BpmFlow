@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 
-	modeType := (self getGemStoneServerConfiguration loginModeFor: 'orbeon-processes-web') modeName
+	modeType := (self session systemRoot loginModeFor: 'orbeon-processes-web') modeName

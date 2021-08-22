@@ -2,12 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"gitbookUrl" : "brunobb 07/13/2018 10:32",
+		"gitbookUrl" : "brunobb 08/19/2021 11:25",
 		"renderContentOn:" : "brunobb 07/15/2021 15:11",
-		"renderDocumentationConfigurationSettingOn:readOnly:" : "brunobb 01/31/2019 09:15",
-		"renderGemStoneConfigurationSettingOn:readOnly:" : "brunobb 01/31/2019 09:18",
-		"renderOrbeonConfigurationSettingOn:readOnly:" : "brunobb 04/15/2021 14:36",
+		"renderDocumentationConfigurationSettingOn:readOnly:" : "brunobb 08/19/2021 11:26",
+		"renderGemStoneConfigurationSettingOn:readOnly:" : "brunobb 08/19/2021 11:27",
+		"renderOrbeonConfigurationSettingOn:readOnly:" : "brunobb 08/16/2021 12:43",
 		"renderOrbeonDatabaseSettingsOn:readOnly:" : "brunobb 01/31/2019 09:34",
 		"renderServerConfigurationFormOn:readOnly:" : "brunobb 01/31/2019 09:39",
-		"savePreferences" : "BrunoBB 03/15/2016 10:59",
-		"setOrbeonVersion:" : "brunobb 04/09/2018 11:27" } }
+		"savePreferences" : "BrunoBB 03/15/2016 10:59" } }

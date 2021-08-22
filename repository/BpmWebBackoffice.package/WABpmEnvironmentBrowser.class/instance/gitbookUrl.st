@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/applications/manage-environments'
+	^self session systemRoot baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/applications/manage-environments'

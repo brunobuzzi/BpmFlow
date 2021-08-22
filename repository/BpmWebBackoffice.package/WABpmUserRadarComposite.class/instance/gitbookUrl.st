@@ -1,4 +1,4 @@
 other
 gitbookUrl
 
-	^self getGemStoneServerConfiguration baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/users-and-roles/monitor-users'
+	^self session systemRoot baseUrlDocumentation, '/application-manuals/backoffice-manual/main-menu/users-and-roles/monitor-users'

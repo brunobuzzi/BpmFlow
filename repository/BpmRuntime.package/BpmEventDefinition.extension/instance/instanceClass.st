@@ -1,0 +1,4 @@
+*bpmruntime
+instanceClass
+
+	^cycle instanceClass

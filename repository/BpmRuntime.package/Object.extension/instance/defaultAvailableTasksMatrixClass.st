@@ -1,0 +1,4 @@
+*bpmruntime
+defaultAvailableTasksMatrixClass
+
+	^self class defaultAvailableTasksMatrixClass
