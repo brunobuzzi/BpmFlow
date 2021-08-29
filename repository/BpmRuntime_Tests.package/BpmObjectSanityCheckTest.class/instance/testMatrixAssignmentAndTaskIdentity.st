@@ -15,7 +15,7 @@ testMatrixAssignmentAndTaskIdentity
 
 				procInstance currentActivities do: [:eachTask | "the task must be on the running matrix or (must be taken by a user and be in taken matrix)"
 					self assert: ((currentAssignments anySatisfy: [:eachAssign | eachAssign task == eachTask]) 
-										or:[(self defaultBpmUserClass getUserOrNilWorkingOn: eachTask) notNil and: [takenAssignments anySatisfy: [:eachAssign | eachAssign task == eachTask]]])
+										or:[(testRoot getUserOrNilWorkingOn: eachTask) notNil and: [takenAssignments anySatisfy: [:eachAssign | eachAssign task == eachTask]]])
 				].
 
 				executedActivities := procInstance isAnonymousStartEnabled ifTrue: [procInstance executedActivities allButFirst] ifFalse: [procInstance executedActivities].
