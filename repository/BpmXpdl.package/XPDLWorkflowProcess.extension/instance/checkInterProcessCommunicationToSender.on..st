@@ -1,11 +1,11 @@
 *bpmxpdl
-checkInterProcessCommunicationToSender: aXPDLTaskSendNode
+checkInterProcessCommunicationToSender: aXPDLTaskSendNode on: aBpmSystemRoot
 	"The receiver check all configuration of <aXPDLTaskSendNode> to get possible missing elements that avoid to identify the target processes"
 	| warnings targetApplication targetProcesses |
 
 	warnings := OrderedCollection new.
-	targetApplication := self defaultApplicationManagerClass applicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
-	targetProcesses := self defaultProcessDefinitionClass getAllProcessesNamed: aXPDLTaskSendNode processName in: aXPDLTaskSendNode getApplicationName.
+	targetApplication := aBpmSystemRoot applicationNamed: aXPDLTaskSendNode getApplicationName ifNone: [nil].
+	targetProcesses := aBpmSystemRoot getAllProcessesNamed: aXPDLTaskSendNode processName in: aXPDLTaskSendNode getApplicationName.
 	
 	targetApplication ifNil: [warnings add: (self xpdlItemReportClass new 
 															code: 500;
