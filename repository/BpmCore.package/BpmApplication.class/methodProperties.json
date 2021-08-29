@@ -1,7 +1,6 @@
 {
 	"class" : {
-		"applicationNamed:ifNone:" : "BrunoBB 02/25/2016 12:23",
-		"newAdminsApplication" : "brunobb 04/23/2021 09:25" },
+		 },
 	"instance" : {
 		"getApplicationNameForCombo" : "BrunoBB 02/25/2016 16:32",
 		"getLastDefinitions" : "BrunoBB 02/24/2016 15:23",

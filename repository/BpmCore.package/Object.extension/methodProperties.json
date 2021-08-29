@@ -1,18 +1,5 @@
 {
 	"class" : {
-		"defaultBackOfficeRoleClass" : "brunobb 03/25/2019 09:30",
-		"defaultBpmApplicationClass" : "brunobb 03/25/2019 08:07",
-		"defaultEnvironmentClass" : "brunobb 01/20/2019 09:25",
-		"defaultFrontOfficeRoleClass" : "brunobb 03/25/2019 09:00",
-		"defaultProcessDefinitionClass" : "brunobb 03/25/2019 08:41",
-		"defaultRoleClass" : "brunobb 03/25/2019 09:00",
-		"getBpmCache" : "BrunoBB 02/26/2016 13:46" },
+		 },
 	"instance" : {
-		"defaultBackOfficeRoleClass" : "brunobb 03/25/2019 08:59",
-		"defaultBpmApplicationClass" : "brunobb 03/25/2019 08:07",
-		"defaultEnvironmentClass" : "brunobb 01/20/2019 09:25",
-		"defaultFrontOfficeRoleClass" : "brunobb 03/25/2019 08:59",
-		"defaultProcessDefinitionClass" : "brunobb 03/25/2019 08:41",
-		"defaultRoleClass" : "brunobb 03/25/2019 08:58",
-		"getBpmCache" : "BrunoBB 02/26/2016 13:47",
 		"isBpmObject" : "brunobb 11/28/2019 04:14" } }

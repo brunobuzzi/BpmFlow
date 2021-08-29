@@ -1,9 +1,7 @@
 {
 	"class" : {
-		"getProcessDefinitionCache" : "brunobb 03/25/2019 08:43",
 		"new" : "BrunoBB 06/26/2016 14:37" },
 	"instance" : {
-		"getProcessDefinitionCache" : "brunobb 01/19/2018 10:00",
 		"isArtifactInstance" : "brunobb 10/31/2018 11:41",
 		"isBpmObject" : "brunobb 11/28/2019 04:14",
 		"isProcessDefinition" : "brunobb 02/09/2018 13:31",
