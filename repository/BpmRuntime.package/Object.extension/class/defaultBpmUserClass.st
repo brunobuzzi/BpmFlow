@@ -1,4 +1,0 @@
-*bpmruntime
-defaultBpmUserClass
-
-	^BpmUser
