@@ -1,4 +1,4 @@
 other
 getScriptProcess
 
-	^processGenerator getProcessDefinitionNamed: 'Process with Scripts' ifNone: [nil]
+	^testRoot getLatestProcessDefinitionNamed: 'Process with Scripts' in: self defaultApplicationName

@@ -1,0 +1,4 @@
+other
+defaultEnvironmentName
+
+	^'env-test'

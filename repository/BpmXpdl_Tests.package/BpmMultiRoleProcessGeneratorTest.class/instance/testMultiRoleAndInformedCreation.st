@@ -2,7 +2,7 @@ other
 testMultiRoleAndInformedCreation
 	| processDefinition taskDefinition |
 
-	processDefinition := processGenerator getProcessDefinitionNamed: 'multi-role' ifNone: [self assert: false].
+	processDefinition := testRoot getLatestProcessDefinitionNamed: 'multi-role' in: self defaultApplicationName.
 
 	taskDefinition := processDefinition getTaskNamed: 'data-entry' ifNone: [self assert: false].
 

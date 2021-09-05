@@ -1,4 +1,4 @@
 other
 getEmbedded01Process
 
-	^processGenerator getProcessDefinitionNamed: 'embedded 01' ifNone: [self assert: false]
+	^testRoot getLatestProcessDefinitionNamed: 'embedded 01' in: self defaultApplicationName

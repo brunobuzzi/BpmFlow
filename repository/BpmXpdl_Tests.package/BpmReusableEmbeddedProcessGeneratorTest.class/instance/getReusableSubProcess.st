@@ -1,4 +1,4 @@
 other
 getReusableSubProcess
 
-	^processGenerator getProcessDefinitionNamed: 'reusable-sub-proc' ifNone: [self assert: false]
+	^testRoot getLatestProcessDefinitionNamed: 'reusable-sub-proc' in: self defaultApplicationName

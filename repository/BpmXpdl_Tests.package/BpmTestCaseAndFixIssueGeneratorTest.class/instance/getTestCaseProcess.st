@@ -1,4 +1,4 @@
 other
 getTestCaseProcess
 
-	^processGenerator getProcessDefinitionNamed: 'test-case-process' ifNone: [nil]
+	^testRoot getLatestProcessDefinitionNamed: 'test-case-process' in: self defaultApplicationName

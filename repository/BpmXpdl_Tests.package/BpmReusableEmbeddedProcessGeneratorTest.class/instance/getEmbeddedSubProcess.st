@@ -1,4 +1,4 @@
 other
 getEmbeddedSubProcess
 
-	^processGenerator getProcessDefinitionNamed: 'embedded-sub-proc' ifNone: [self assert: false]
+	^testRoot getLatestProcessDefinitionNamed: 'embedded-sub-proc' in: self defaultApplicationName

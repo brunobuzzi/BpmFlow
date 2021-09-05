@@ -9,7 +9,7 @@ testOrbeon608
 	testRoot
 			buildPublishedFormNamed: 'test'  
 			title: ''
-			withXml: self newDefinitionTemplate formDefinition_agesic_test_all_types_4 
+			withXml: testRoot newDefinitionTemplate formDefinition_agesic_test_all_types_4 
 			in: agesic.
 
 	importProcess  := BpmXpdlImportProcess newForApplications: applications in: environment root: testRoot.

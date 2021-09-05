@@ -1,4 +1,4 @@
 other
 getDefaultEnvironment
 
-	^testRoot getExistingEnvironmentOrCreateNewNamed: 'env-test'
+	^testRoot getExistingEnvironmentOrCreateNewNamed: self defaultEnvironmentName

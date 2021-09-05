@@ -1,4 +1,4 @@
 other
 getArchitectProcess
 
-	^processGenerator getProcessDefinitionNamed: 'architect-process' ifNone: [nil]
+	^testRoot getLatestProcessDefinitionNamed: 'architect-process' in: self defaultApplicationName

@@ -1,4 +1,4 @@
 other
 getFixIssueProcess
 
-	^processGenerator getProcessDefinitionNamed: 'fix-issue' ifNone: [nil]
+	^testRoot getLatestProcessDefinitionNamed: 'fix-issue' in: self defaultApplicationName

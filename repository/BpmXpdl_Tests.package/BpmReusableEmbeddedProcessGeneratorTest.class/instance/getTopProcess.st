@@ -1,4 +1,4 @@
 other
 getTopProcess
 
-	^processGenerator getProcessDefinitionNamed: 'ReusableEmbeddedProc' ifNone: [self assert: false]
+	^testRoot getLatestProcessDefinitionNamed: 'ReusableEmbeddedProc' in: self defaultApplicationName

@@ -2,7 +2,7 @@ other
 testProcessBasicCreation
 	| procDef event |
 
-	procDef := processGenerator getProcessDefinitionNamed: 'timer-process' ifNone: [self assert: false].
+	procDef := testRoot getLatestProcessDefinitionNamed: 'timer-process' in: self defaultApplicationName.
 
 	event := procDef getAllArtifacts detect: [:each | each isEventDefinition and: [each isIntermediateEvent]] ifNone: [self assert: false].
 
