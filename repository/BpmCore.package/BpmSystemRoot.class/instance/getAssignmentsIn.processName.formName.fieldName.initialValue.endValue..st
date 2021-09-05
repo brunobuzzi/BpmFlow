@@ -1,4 +1,4 @@
-processes
+bpm processes
 getAssignmentsIn: appName processName: processNamed formName: formNamed fieldName: fieldNamed initialValue: intialValue endValue: endValue
 	"The receiver answer a collection of <OrbeonProcessAssignment> in application named <appName>  for process type <processNamed> where the field named <fieldNamed> is equal to <fieldValue>"
 	| procDefinition assignments |

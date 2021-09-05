@@ -1,4 +1,4 @@
-processes
+bpm processes
 getProcessDefinitionWith: id in: appName
 	"Answer <aBpmProcessDefintion> with id <id> in Application named <appName>"
 

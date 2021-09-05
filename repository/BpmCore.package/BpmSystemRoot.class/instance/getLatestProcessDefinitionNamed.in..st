@@ -1,4 +1,4 @@
-processes
+bpm processes
 getLatestProcessDefinitionNamed: aString in: appName
 	"Answer <aBpmProcessDefinition> for process named <aString> in the Application named <appName>"
 

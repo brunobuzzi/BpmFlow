@@ -1,4 +1,4 @@
-processes
+bpm processes
 unregisterAnonymousStartFor: aBpmProcessDefinition
 	"The receiver unregister as an anonymous start <aBpmProcessDefinition> associated the form named <formName> for application named <appName> "
 

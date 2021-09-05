@@ -1,0 +1,4 @@
+orbeon
+definitionTemplateClass
+
+	^self orbeonManager definitionTemplateClass

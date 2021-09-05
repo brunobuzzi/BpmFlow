@@ -1,4 +1,4 @@
 internationalization
 cloneDefaultInternationalization
 
-	internationalization := self getInternationalization clone.
+	internationalization := systemRoot cloneInternationalization

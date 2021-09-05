@@ -1,4 +1,4 @@
-processes
+bpm processes
 getAllAbortedProcessesIn: aBpmEnvironment
 	"The receiver answer a collection with all aborted processes"
 	| all |

@@ -1,4 +1,4 @@
-processes
+bpm processes
 getProcessInstanceWithId: id onApplications: collectionOfProcessDefinitions
 	"Answer <aBpmProcessDefinition> with process id <id>"
 
