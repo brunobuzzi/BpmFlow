@@ -1,6 +1,6 @@
 other
 createProcessDefinition
-	| xpdlReader processGenerator |
+"	| xpdlReader processGenerator |
 
 	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'Simple Registration' withString: XPDLProcessDefinitionTemplate xpdlDefinition_simple_registration)
 			connectProcesses;
@@ -12,7 +12,18 @@ createProcessDefinition
 
 	processGenerator processesDo: [:each | each addToCache].
 
+	testRoot registerAnonymousStartFor: (testRoot getAllProcessesNamed: 'Simple Registration' in: 'st') last.
+
+	^processGenerator getProcessDefinitionNamed: 'Simple Registration' ifNone: [self assert: false]."
+
+	| newProcDefinition |
+	newProcDefinition := testRoot 
+				newBpmProcessDefinitionNamed: 'Simple Registration'
+				withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_simple_registration
+				inEnvironmentNamed: 'env-st'
+				inApplicationNamed: 'st'.
+
 	"Associate the anonymous form with the ProcessDefinition"
 	testRoot registerAnonymousStartFor: (testRoot getAllProcessesNamed: 'Simple Registration' in: 'st') last.
 
-	^processGenerator getProcessDefinitionNamed: 'Simple Registration' ifNone: [self assert: false].
+	^newProcDefinition

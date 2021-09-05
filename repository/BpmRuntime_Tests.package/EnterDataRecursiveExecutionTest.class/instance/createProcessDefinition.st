@@ -1,15 +1,10 @@
 other
 createProcessDefinition
-	| xpdlReader processGenerator |
-
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'recursive-data' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Enter_Recursive_Data)
-			connectProcesses;
-			yourself.
-
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'recursive-data' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
-		generateAllProcess.
-
-	processGenerator processesDo: [:each | each addToCache].
-
-	^processGenerator getProcessDefinitionNamed: 'recursive-data' ifNone: [self assert: false].
+	| newProcDefinition |
+	newProcDefinition := testRoot 
+				newBpmProcessDefinitionNamed: 'recursive-data'
+				withXpdlString: XPDLProcessDefinitionTemplate 
+						xpdlDefinition_Enter_Recursive_Data
+				inEnvironmentNamed: 'env-ue'
+				inApplicationNamed: 'ue'.
+	^newProcDefinition

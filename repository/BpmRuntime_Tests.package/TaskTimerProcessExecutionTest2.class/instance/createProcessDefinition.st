@@ -1,15 +1,9 @@
 other
 createProcessDefinition
-	| xpdlReader processGenerator |
-
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'timer_task_2' withString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Task_2)
-			connectProcesses;
-			yourself.
-
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'task_timer_2' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
-		generateAllProcess.
-
-	processGenerator processesDo: [:each | each addToCache].
-
-	^processGenerator getProcessDefinitionNamed: 'task_timer_2' ifNone: [self assert: false].
+	| newProcDefinition |
+	newProcDefinition := testRoot 
+				newBpmProcessDefinitionNamed: 'task_timer_2'
+				withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_Timer_Task_2
+				inEnvironmentNamed: 'env-ue'
+				inApplicationNamed: 'ue'.
+	^newProcDefinition

@@ -2,7 +2,7 @@ other
 formInstance_withValues: anArray in: aBpmProcessInstance
 	| formInstance |
 
-	formInstance := self newInstanceTemplate 
+	formInstance := testRoot newInstanceTemplate 
 										formInstance_ue_dashboard_form: (anArray at: 1) 
 										cost: (anArray at: 2) 
 										deductible: (anArray at: 3) 
@@ -15,6 +15,6 @@ formInstance_withValues: anArray in: aBpmProcessInstance
 	^testRoot
 			buildFormInstanceNamed: 'dashboard-form'
 			withXml: formInstance 
-			definitionXml: self newDefinitionTemplate formDefinition_ue_dashboard_form 
+			definitionXml: testRoot newDefinitionTemplate formDefinition_ue_dashboard_form 
 			in: 'ue' 
 			process: procInstance

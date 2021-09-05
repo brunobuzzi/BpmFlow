@@ -1,15 +1,10 @@
 other
 createProcessDefinition
-	| xpdlReader processGenerator |
-
-	xpdlReader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-process' withString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_process)
-			connectProcesses;
-			yourself.
-
-	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: testRoot.
-	processGenerator mapProcess: 'dashboard-process' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'ue' in: 'env-ue');
-		generateAllProcess.
-
-	processGenerator processesDo: [:each | each addToCache].
-
-	^processGenerator getProcessDefinitionNamed: 'dashboard-process' ifNone: [self assert: false].
+	| newProcDefinition |
+	newProcDefinition := testRoot 
+				newBpmProcessDefinitionNamed: 'dashboard-process'
+				withXpdlString: XPDLProcessDefinitionTemplate 
+						xpdlDefinition_dashboard_process
+				inEnvironmentNamed: 'env-ue'
+				inApplicationNamed: 'ue'.
+	^newProcDefinition
