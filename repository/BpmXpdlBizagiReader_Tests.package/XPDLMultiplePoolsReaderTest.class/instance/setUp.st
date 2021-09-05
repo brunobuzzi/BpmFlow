@@ -1,5 +1,7 @@
 other
 setUp
 
-	reader := (self defaultXpdlReaderClass forProcessNamed: 'MultiplePools' withString: XPDLProcessDefinitionTemplate xpdlDefinition_MultiplePools)
+	super setUp.
+
+	reader := (testRoot newXpdlReaderForProcessNamed: 'MultiplePools' withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_MultiplePools)
 				yourself

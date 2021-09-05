@@ -1,6 +1,8 @@
 other
 setUp
 
-	reader := (self defaultXpdlReaderClass forProcessNamed: 'Unsupported Elements' withString: XPDLProcessDefinitionTemplate xpdlDefinition_unsupported_elements)
+	super setUp.
+
+	reader := (testRoot newXpdlReaderForProcessNamed: 'Unsupported Elements' withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_unsupported_elements)
 				connectProcesses;
 				yourself.

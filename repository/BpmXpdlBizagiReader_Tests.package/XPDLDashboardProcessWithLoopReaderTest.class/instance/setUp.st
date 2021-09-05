@@ -1,6 +1,8 @@
 other
 setUp
 
-	reader := (self defaultXpdlReaderClass forProcessNamed: 'dashboard-process-with-loop' withString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_with_loop)
+	super setUp.
+
+	reader := (testRoot newXpdlReaderForProcessNamed: 'dashboard-process-with-loop' withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_with_loop)
 				connectProcesses;
 				yourself.

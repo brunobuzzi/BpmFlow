@@ -1,5 +1,7 @@
 other
 setUp
 
-	reader := (self defaultXpdlReaderClass forProcessNamed: 'multi-role' withString: XPDLProcessDefinitionTemplate xpdlDefinition_data_entry)
+	super setUp.
+
+	reader := (testRoot newXpdlReaderForProcessNamed: 'multi-role' withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_data_entry)
 				yourself

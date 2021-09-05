@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"getProcessWorkflow" : "brunobb 08/28/2019 09:52",
-		"setUp" : "brunobb 04/05/2020 17:44",
+		"setUp" : "brunobb 09/03/2021 10:31",
 		"testActivitiesNames" : "brunobb 08/28/2019 09:52",
 		"testLoopCondition" : "brunobb 08/28/2019 09:59",
 		"testXpdlObjectWorkflow" : "brunobb 12/14/2019 10:30" } }
