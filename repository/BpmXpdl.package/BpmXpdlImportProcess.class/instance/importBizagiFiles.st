@@ -14,7 +14,8 @@ importBizagiFiles
 
 	(self checkFilesFormatOf: fileArray) ifFalse: [^XpdlFileFormatException signal: 'Wrong XPDL file format'].
 	"ERROR handler"
-	xpdlReader := self defaultXpdlReaderClass forFiles: fileArray asArray. "create the <XPDLReader> to read selected XPDL files"
+
+	xpdlReader := systemRoot newXpdlReaderForFiles: fileArray asArray. "create the <XPDLReader> to read selected XPDL files"
 
 	processGenerator := BpmProcessGenerator on: xpdlReader xpdlPackages root: systemRoot.
 
