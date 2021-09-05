@@ -1,18 +1,12 @@
 other
 testProcessWithLoop
-	| reader processGenerator processDefinition processTree |
+	| processDefinition processTree |
 
-	reader:= (self defaultXpdlReaderClass forProcessNamed: 'dashboard-process-with-loop' withString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_with_loop)
-			connectProcesses;
-			yourself.
-
-	processGenerator := BpmProcessGenerator on: reader xpdlPackages root: testRoot.
-
-	processGenerator 
-		mapProcess: 'dashboard-process-with-loop' toApplication: (testRoot getExistingBpmApplicationOrCreateNewNamed: 'import-test-app' in: 'env-test');
-		generateAllProcess.
-
-	processDefinition := processGenerator getProcessDefinitionNamed: 'dashboard-process-with-loop' ifNone: [self assert: false].
+	processDefinition := testRoot 
+				newBpmProcessDefinitionNamed: 'dashboard-process-with-loop'
+				withXpdlString: XPDLProcessDefinitionTemplate xpdlDefinition_dashboard_with_loop
+				inEnvironmentNamed: 'env-test'
+				inApplicationNamed: 'import-test-app'.
 
 	processTree := processDefinition asTree.
 
