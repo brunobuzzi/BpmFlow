@@ -2,7 +2,7 @@ render
 renderSvgProcessMapOn: html
 	| svgCanvas |
 
-	svgCanvas := self defaultBpmnCanvasClass parent: self.
+	svgCanvas := self session systemRoot newBpmnWebCanvasParent: self.
 
 	svgCanvas 
 		isLinkToSubprocessAvailable: false;

@@ -1,7 +1,7 @@
 other
 saveTranslation
 
-	self getInternationalization
+	self session systemRoot
 		translate: stringKey 
 		as: translatedString 
 		for: self currentDictionaryName

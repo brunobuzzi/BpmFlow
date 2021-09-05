@@ -7,7 +7,7 @@ renderSelectOrCreateLanguageOn: html
 			html legend with: [html strong: ('Languages for [' translateIn: self session), self printCurrentEnvironmentName, ']{', self printInternationalizationType, '}'].
 					html label attributeAt: 'for' put: 'language'; with: ('Languages' translateIn: self session).
 					html select attributeAt: 'id' put: 'language'; class: '';
-						list: (#(''), self getInternationalization currentDictionaries);
+						list: (#(''), self session systemRoot internationalizationDictionariesNames);
 						onChange: 'submit()';
 						callback: [:value | searchValues at: 'selected-language' put: value];
 						selected: self currentDictionaryName.

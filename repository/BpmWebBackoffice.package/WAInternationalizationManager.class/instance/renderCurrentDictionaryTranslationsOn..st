@@ -6,7 +6,7 @@ renderCurrentDictionaryTranslationsOn: html
 
 	self renderAddNewTranslationOn: html.
 
-	currentDictionary := self getInternationalization getTranslationsOf: (searchValues at: 'selected-language').
+	currentDictionary := self session systemRoot getTranslationsOf: (searchValues at: 'selected-language').
 
 	html div id: 'inter-current-dictionary'; with: [
 		currentDictionary keys asSortedCollection do: [:key | 

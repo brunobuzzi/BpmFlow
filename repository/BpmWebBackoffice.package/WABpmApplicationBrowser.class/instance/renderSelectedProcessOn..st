@@ -2,7 +2,7 @@ xpdl download
 renderSelectedProcessOn: html
 	| bpmnCanvas2 |
 
-	bpmnCanvas2 := self defaultBpmnCanvasClass parent: self.
+	bpmnCanvas2 := self session systemRoot newBpmnWebCanvasParent: self.
 	bpmnCanvas2 model: selectedProcess.
 	bpmnCanvas2 subProcess: selectedSubProcess.
 

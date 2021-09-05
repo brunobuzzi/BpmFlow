@@ -1,4 +1,4 @@
 buttons
 cloneDefaultInternationalizationTo: aBpmEnvironment
 
-	^aBpmEnvironment internationalization: super getInternationalization clone
+	^aBpmEnvironment internationalization: self session systemRoot cloneInternationalization

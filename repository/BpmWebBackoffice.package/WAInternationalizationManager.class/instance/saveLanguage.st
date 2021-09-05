@@ -1,4 +1,4 @@
 other
 saveLanguage
 
-	self getInternationalization addLanguage: newLanguageName trimBlanks asSymbol
+	self session systemRoot addLanguage: newLanguageName trimBlanks asSymbol

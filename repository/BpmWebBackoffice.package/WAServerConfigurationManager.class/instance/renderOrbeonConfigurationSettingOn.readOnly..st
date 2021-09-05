@@ -14,6 +14,6 @@ renderOrbeonConfigurationSettingOn: html readOnly: aBoolean
 	html textInput 
 			attributeAt: 'id' put: 'dataFormatVersion';
 			readonly: true;
-			value: self defaultOrbeonDataFormatVersion printName.
+			value: self session systemRoot printDataFormatVersionName.
 
 	aBoolean ifFalse: [html submitButton callback: [self savePreferences]; with: ('Save Preferences' translateIn: self session).].

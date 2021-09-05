@@ -2,7 +2,7 @@ import
 renderSvgProcessMapFor: aBpmProcessDefinition on: html
 	| svgCanvas |
 
-	svgCanvas := self defaultBpmnCanvasClass parent: self.
+	svgCanvas := self session systemRoot newBpmnWebCanvasParent: self.
 
 	svgCanvas model: aBpmProcessDefinition;
 		isLinkToSubprocessAvailable: false;

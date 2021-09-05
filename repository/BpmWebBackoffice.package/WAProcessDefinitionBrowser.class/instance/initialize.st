@@ -7,7 +7,7 @@ initialize
 	searchAvailable := false.
 	categories := OrderedCollection new.
 	"svgCanvas := self defaultBpmnCanvasClass parent: self."
-	svgCanvas := self defaultBpmnCanvasClass parent: self.
+	svgCanvas := self session systemRoot newBpmnWebCanvasParent: self.
 	"subprocessesTree := WATree new."
 
 	batchedList := SewafLateralBatchedList parentComponent: self.
