@@ -6,9 +6,9 @@ renderLinkToBusinessIntelligenceApplicationOn: html
 			callback: [self showBusinessInteligenceLogin]; 
 			with: [html figure 
 								with: [html image url: (SEWAFIconLibrary / #piechart128Png);
-														title: ('Business Intelligence Login' translateTo: selectedLanguage);
-														altText: ('Business Intelligence Login' translateTo: selectedLanguage).
-										html figureCaption: ('Business Intelligence Login' translateTo: selectedLanguage).
+														title: ('Business Intelligence Login' translateIn: self session);
+														altText: ('Business Intelligence Login' translateIn: self session).
+										html figureCaption: ('Business Intelligence Login' translateIn: self session).
 					].
 			].
 	]

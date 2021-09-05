@@ -3,7 +3,7 @@ asSVGfor: aBpmUser
 	| result |
 
 	WAHtmlCanvas builder render: [ :html | | canvas |
-		canvas := self defaultBpmnCanvasClass new.
+		canvas := self systemRoot newBpmnWebCanvas.
 		canvas webSession: (WABpmSession new user: aBpmUser);
 					isWorkingOnline: false;
 					isLinkToSubprocessAvailable: false.

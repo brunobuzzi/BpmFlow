@@ -1,4 +1,4 @@
 svg properties
 createXpdlReader
 
-	^self defaultXpdlReaderClass forProcessNamed: 'convert' withString: self getModelOrSubProcess xmlString
+	^self session systemRoot newXpdlReaderForProcessNamed: 'convert' withXpdlString: self getModelOrSubProcess xmlString

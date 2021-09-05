@@ -9,7 +9,7 @@ renderContentOn: html
 					html select 
 						attributeAt: 'id' put: 'language';
 						class: '';
-						list: (#(''), self getInternationalization currentDictionaries);
+						list: (#(''), self session systemRoot internationalizationDictionariesNames);
 						callback: [:value | searchValues at: 'selected-language' put: value];
 						selected: self session user currentLanguage.
 					html submitButton 

@@ -6,9 +6,9 @@ renderLinkToFrontofficeApplicationOn: html
 			callback: [self showFrontofficeLogin]; 
 			with: [html figure 
 								with: [html image url: (SEWAFIconLibrary / #documentflowchart128Png);
-														title: ('Frontoffice Login' translateTo: selectedLanguage);
-														altText: ('Frontoffice Login' translateTo: selectedLanguage).
-										html figureCaption: ('Frontoffice Login' translateTo: selectedLanguage).
+														title: ('Frontoffice Login' translateIn: self session);
+														altText: ('Frontoffice Login' translateIn: self session).
+										html figureCaption: ('Frontoffice Login' translateIn: self session).
 					].
 			].
 	]

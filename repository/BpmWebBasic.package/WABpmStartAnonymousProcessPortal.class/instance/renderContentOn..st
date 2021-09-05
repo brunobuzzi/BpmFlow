@@ -4,7 +4,7 @@ renderContentOn: html
 
 	html div id: 'flags'; with: [self renderLanguageFlagsOn: html].
 
-	html div id: 'header'; with:[html header with: ('Start Process without Login' translateTo: selectedLanguage)].
+	html div id: 'header'; with:[html header with: ('Start Process without Login' translateIn: self session)].
 
 	envName := self requestContext request at: 'environment' ifAbsent: [''].
 	environment := self getBpmEnvironmentNamed: envName.

@@ -6,9 +6,9 @@ renderLinkToBackofficeApplicationOn: html
 			callback: [self showBackofficeLogin]; 
 			with: [html figure 
 								with: [html image url: (SEWAFIconLibrary / #applicationsettings128Png);
-														title: ('Backoffice Login' translateTo: selectedLanguage);
-														altText: ('Backoffice Login' translateTo: selectedLanguage).
-										html figureCaption: ('Backoffice Login' translateTo: selectedLanguage).
+														title: ('Backoffice Login' translateIn: self session);
+														altText: ('Backoffice Login' translateIn: self session).
+										html figureCaption: ('Backoffice Login' translateIn: self session).
 					].
 			].
 	]

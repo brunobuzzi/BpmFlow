@@ -2,7 +2,7 @@ other
 renderSvgProcessMapOn: html
 	| svgCanvas |
 
-	svgCanvas := self defaultBpmnCanvasClass parent: mainPanel.
+	svgCanvas := self session systemRoot newBpmnWebCanvasParent: mainPanel.
 
 	svgCanvas model: model.
 

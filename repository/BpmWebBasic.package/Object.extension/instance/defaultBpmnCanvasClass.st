@@ -1,4 +1,0 @@
-*bpmwebbasic
-defaultBpmnCanvasClass
-
-	^WABpmnCanvasComposite

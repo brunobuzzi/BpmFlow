@@ -2,7 +2,7 @@ other
 renderSvgProcessMapOn: html
 	| svgCanvas |
 
-	svgCanvas := self defaultBpmnCanvasClass parent: self.
+	svgCanvas := self session systemRoot newBpmnWebCanvasParent: self.
 
 	svgCanvas model: (selectedLateralItem isProcessDefinition ifTrue:[selectedLateralItem] ifFalse: [selectedLateralItem process]).
 	svgCanvas isLinkToSubprocessAvailable: selectedLateralItem isProcessDefinition.
