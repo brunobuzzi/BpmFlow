@@ -11,3 +11,5 @@ getProcessInstanceDistributionFor: appName
 		versionCollection do: [:procDef | sum := sum + procDef processInstancesSize].
 		distribution at: procName put: sum.
 	].
+
+	^distribution

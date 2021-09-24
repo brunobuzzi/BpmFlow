@@ -13,8 +13,8 @@ formInstance_withValues: anArray in: aBpmProcessInstance
 										industry: (anArray at: 8).
 
 	^testRoot
-			buildFormInstanceNamed: 'all-field-types'  
+			buildFormInstanceNamed: 'dashboard-form'  
 			withXml: formInstance 
-			definitionXml: testRoot newDefinitionTemplate formDefinition_ue_all_field_types 
+			definitionXml: testRoot newDefinitionTemplate formDefinition_ue_dashboard_form "formDefinition_ue_all_field_types "
 			in: 'ue' 
 			process: procInstance
