@@ -10,7 +10,8 @@ formInstance_withValues: anArray in: aBpmProcessInstance
 										directClient: (anArray at: 5) 
 										country: (anArray at: 6) 
 										city: (anArray at: 7) 
-										industry: (anArray at: 8).
+										industry: (anArray at: 8)
+										date: (self randomGenerator peekRandomDateFromYear: Date today year toYear: Date today year) printOrbeonString.
 
 	^testRoot
 			buildFormInstanceNamed: 'dashboard-form'  

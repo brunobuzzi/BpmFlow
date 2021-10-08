@@ -6,4 +6,5 @@ renderProcessDefinitionComboOn: html
 
 	self renderGenericActiveComboOn: html withList: definitionNames forVariable: 'process-name' label: ('Process' translateIn: self session).
 
-	(self hasSearchValueAt: 'process-name') ifFalse: [self addSearchValue: definitionNames first named: 'process-name'].
+	(self hasSearchValueAt: 'process-name') 
+	ifFalse: [definitionNames notEmpty ifTrue: [self addSearchValue: definitionNames first named: 'process-name']].
