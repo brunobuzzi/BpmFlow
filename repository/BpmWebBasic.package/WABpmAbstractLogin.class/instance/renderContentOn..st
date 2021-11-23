@@ -3,4 +3,4 @@ renderContentOn: html
 
 	super renderContentOn: html.
 
-	self session systemRoot: SystemRoot
+	self session systemRoot: (Globals at: #SystemRoot)
