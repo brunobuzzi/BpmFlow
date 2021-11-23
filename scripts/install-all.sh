@@ -150,7 +150,7 @@ $GS_HOME/bin/startTopaz $STONE -il -T 500000 <<EOF >>install-all.log
 set user DataCurator password swordfish gemstone $STONE
 login
 exec
-BpmSystemInitialization createSystemDefaultObjects.
+Globals at: #SystemRoot put: BpmSystemRoot newWithOrbeon.
 GemStoneServerConfiguration default gemstoneIP: 'http://192.168.178.130:8787'. "example IP"
 GemStoneServerConfiguration default baseUrlDocumentation: 'https://bpmflow.gitbook.io/project'.
 WAPersistenceOrbeonLayer register.
