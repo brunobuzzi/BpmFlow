@@ -102,7 +102,7 @@
 		"getValueDistributionForFieldCollection:from:to:satisfying:onError:" : "brunobb 08/17/2021 15:22",
 		"getValueSumDistributionFor:in:fieldNamed:from:to:satisfying:onError:" : "brunobb 08/17/2021 15:22",
 		"getVersionsAverageTimeFor:in:" : "brunobb 08/17/2021 15:22",
-		"hasAnyProcessInApplicationNamed:" : "brunobb 08/17/2021 15:22",
+		"hasAnyProcessInApplicationNamed:" : "brunobb 11/24/2021 13:46",
 		"includesDefinitionNamed:in:" : "brunobb 08/17/2021 15:22",
 		"includesEnvironmentNamed:" : "brunobb 08/17/2021 15:22",
 		"includesProcessCreationFor:" : "brunobb 08/17/2021 15:22",

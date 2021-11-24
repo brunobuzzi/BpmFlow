@@ -11,7 +11,7 @@ createApplication
 		ifNil: [^self]
 		ifNotNil: [:aBoolean | aBoolean ifTrue: [OrbeonApplication] ifFalse: [BpmApplication]].
 
-	newApplication := (appClass newNamed: appName) addToCache.
+	newApplication := appClass newNamed: appName on: self session systemRoot.
 	parent lateralCollection add: newApplication.
 
 	[self session bpmEnvironment registerApplication: newApplication] on: Error do: [:ex | ].
