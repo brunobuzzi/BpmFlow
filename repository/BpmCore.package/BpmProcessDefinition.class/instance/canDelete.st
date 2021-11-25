@@ -5,7 +5,7 @@ canDelete
 
 	(self systemRoot isMonitoringAnyEventFor: self) ifTrue: [^false]. "to be removed non monitored events of the receiver can be active"
 
-	definitionsCollection := self class getAllProcessesNamed: processName in: self applicationName.
+	definitionsCollection := self systemRoot getAllProcessesNamed: processName in: self applicationName.
 
 	^formFieldInstances isEmpty 
 		and: [(definitionsCollection size = version) or:[definitionsCollection size = 0]] 

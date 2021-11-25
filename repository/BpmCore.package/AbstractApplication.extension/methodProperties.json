@@ -4,4 +4,6 @@
 	"instance" : {
 		"canDelete" : "brunobb 07/09/2021 14:09",
 		"getNumberOfProcessesDefinition" : "brunobb 06/30/2021 14:35",
-		"getProcessesDefinitionWithAnonymouStart" : "brunobb 06/30/2021 14:35" } }
+		"getProcessesDefinitionWithAnonymouStart" : "brunobb 06/30/2021 14:35",
+		"registerProcessDefinition:" : "brunobb 06/30/2021 14:35",
+		"unregisterProcessDefinition:ifAbsent:" : "brunobb 11/25/2021 05:30" } }

@@ -5,8 +5,7 @@ removeProcessDefinition
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	(selectedLateralItem getProcessesTreeAsCollection select: [:each | each canDelete]) do: [:each | each removeFromCache].
-	"selectedLateralItem removeFromCache."
+	(selectedLateralItem getProcessesTreeAsCollection select: [:each | each canDelete]) do: [:each | each unregisterFromApplication].
 
 	batchedList remove: selectedLateralItem.
 	lateralCollection remove: selectedLateralItem ifAbsent: [].

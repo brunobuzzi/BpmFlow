@@ -32,7 +32,7 @@ newBpmProcessesDefinitionNamed: processesNames withXpdlStrings: xpdlArray multip
 	].
 	processGenerator generateAllProcess.
 
-	processGenerator processesDo: [:each | each addToCache].
+	processGenerator processesDo: [:each | each registerInApplication].
 
 	^processGenerator 
 		getProcessDefinitionNamed: (processesNames at: 1) 

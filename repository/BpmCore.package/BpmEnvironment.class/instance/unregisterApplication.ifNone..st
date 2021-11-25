@@ -4,5 +4,7 @@ unregisterApplication: anApplication ifNone: aBlock
 
 	anApplication hasBpmEnvironment ifFalse: [^aBlock value].
 
+	anApplication canDelete ifFalse: [^ImproperBpmOperationException signal: 'This application can not be removed. Check #canDelete method'].
+
 	anApplication bpmEnvironment: nil. 
 	^applications removeKey: anApplication applicationName

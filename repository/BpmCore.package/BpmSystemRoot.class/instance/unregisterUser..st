@@ -5,6 +5,6 @@ unregisterUser: aBpmUser
 
 	aBpmUser rolesDo: [:eachRole | eachRole ungrantUser: self].
 
-	aBpmUser bpmEnvironmentsDo: [:eachEnv | eachEnv unregisterUser: self].
+	aBpmUser bpmEnvironmentsDo: [:eachEnv | eachEnv unregisterUser: aBpmUser].
  
 	^super unregisterUser: aBpmUser

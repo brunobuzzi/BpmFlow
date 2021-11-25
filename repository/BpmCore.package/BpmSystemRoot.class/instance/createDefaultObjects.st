@@ -1,4 +1,4 @@
-system setUp
+private
 createDefaultObjects
 	"The receiver create the minimal objects to allow the BPM System to start:
 	1- Create a default Environment <BpmEnvironment>.

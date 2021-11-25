@@ -1,9 +1,9 @@
 process definition creation
-storeGeneratedProcessesOnCache
-	"The receiver store on cache of class <BpmProcessDefinition> all new process definitions in <processes> instance variable"
+storeGeneratedProcesses
+	"The receiver store all new process definitions in <processes> instance variable"
 	| newProcesses |
 
-	newProcesses := processes collect: [:each | each addToCache].
+	newProcesses := processes collect: [:each | each registerInApplication].
 
 	newProcesses do: [:eachDef | 
 		(systemRoot getProcessDefinitionWith: eachDef id in: eachDef applicationName) isNil 

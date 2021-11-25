@@ -5,4 +5,4 @@ storeBpmProcessDefinition
 
 	processGenerator hasImmutableProcesses ifTrue: [^self].
 
-	processGenerator storeGeneratedProcessesOnCache
+	processGenerator storeGeneratedProcesses

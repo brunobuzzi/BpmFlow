@@ -5,7 +5,7 @@ removeEnvironment
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 
-	selectedLateralItem removeFromCache.
+	self session systemRoot unregisterEnvironment: selectedLateralItem.
 
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
 	batchedList  remove: selectedLateralItem.

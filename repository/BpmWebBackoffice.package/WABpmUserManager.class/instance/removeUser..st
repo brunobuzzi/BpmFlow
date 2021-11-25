@@ -11,9 +11,9 @@ removeUser: aBpmUser
 					information: ('User can not be deleted !!!' translateIn: self session)
 					color: 'red'].
 
-	usersBatchedList remove: aBpmUser.
+	self session systemRoot unregisterUser: aBpmUser.
 
-	aBpmUser removeFromCache.
+	usersBatchedList remove: aBpmUser.
 
 	self closeAllInformationComponents.
 	(self getTableNamed: 'Users' ifAbsent: [^self]) 

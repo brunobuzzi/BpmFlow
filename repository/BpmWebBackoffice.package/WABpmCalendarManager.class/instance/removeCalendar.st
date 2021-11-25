@@ -5,8 +5,6 @@ removeCalendar
 	ifNil: [^self]
 	ifNotNil: [:aBoolean | aBoolean ifFalse: [^self]].
 	
-	selectedLateralItem removeFromCache.
-
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
 	batchedList  remove: selectedLateralItem.
 

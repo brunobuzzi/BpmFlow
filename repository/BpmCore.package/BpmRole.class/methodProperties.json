@@ -1,11 +1,7 @@
 {
 	"class" : {
-		"createNewOrGetExisting:in:" : "brunobb 02/04/2020 08:32",
-		"getNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 02/04/2020 10:33",
-		"getRoleNamed:in:" : "brunobb 02/04/2020 08:23",
 		"isBackofficeRole" : "brunobb 08/02/2021 14:59",
-		"newNamed:" : "brunobb 01/27/2020 11:07",
-		"reportNumberOfUsersInTimeDistributionFor:from:to:" : "brunobb 01/27/2020 11:07" },
+		"newNamed:" : "brunobb 01/27/2020 11:07" },
 	"instance" : {
 		"addGroup:" : "brunobb 01/27/2020 11:14",
 		"addResponsibility:" : "brunobb 01/27/2020 11:07",
@@ -41,7 +37,6 @@
 		"registerInApplication:" : "brunobb 02/04/2020 07:58",
 		"removeAllUsers" : "brunobb 01/27/2020 11:07",
 		"removeCurrentTaskAssigmentsFrom:" : "brunobb 01/27/2020 11:07",
-		"removeFromCache" : "brunobb 01/27/2020 11:07",
 		"removeFromCacheInAppName:" : "brunobb 07/22/2021 13:03",
 		"removeGroup:" : "brunobb 01/27/2020 11:15",
 		"removeResponsibility:" : "brunobb 01/27/2020 11:07",

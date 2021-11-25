@@ -1,4 +1,0 @@
-cache
-adminsEnvironmentName
-
-	^'admins'

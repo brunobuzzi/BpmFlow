@@ -1,12 +1,9 @@
 {
 	"class" : {
-		"newWithBasicObjects" : "brunobb 08/17/2021 15:22",
 		"newWithOrbeon" : "brunobb 08/17/2021 15:22" },
 	"instance" : {
 		"addTo:valueDistributionForFieldCollection:" : "brunobb 09/24/2021 07:37",
 		"adminBackOffileRoleName" : "brunobb 08/17/2021 15:22",
-		"adminPassword" : "brunobb 08/17/2021 15:22",
-		"adminUserName" : "brunobb 08/17/2021 15:22",
 		"adminsApplicationName" : "brunobb 08/17/2021 15:22",
 		"adminsEnvironmentName" : "brunobb 08/17/2021 15:22",
 		"applicationNamed:" : "brunobb 08/17/2021 15:22",
@@ -69,7 +66,6 @@
 		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 08/17/2021 15:22",
 		"getExistingBpmApplicationOrCreateNewNamed:in:" : "brunobb 08/17/2021 15:22",
 		"getExistingEnvironmentOrCreateNewNamed:" : "brunobb 08/17/2021 15:22",
-		"getExistingOrNewUserNamed:" : "brunobb 08/17/2021 15:22",
 		"getExistingOrNewUserNamed:password:forEnvironment:" : "brunobb 08/17/2021 15:22",
 		"getExistingOrbeonApplicationOrCreateNewNamed:in:" : "brunobb 08/17/2021 15:22",
 		"getFirstComparisionTimeStamp" : "brunobb 08/17/2021 15:22",
@@ -118,8 +114,8 @@
 		"logicalRemoveDefinitionWithId:ifNone:" : "brunobb 08/17/2021 15:22",
 		"monitoredEventsDo:" : "brunobb 08/17/2021 15:22",
 		"newBackOfficeRole" : "brunobb 08/17/2021 15:22",
-		"newBpmProcessDefinitionNamed:withXpdlString:inEnvironmentNamed:inApplicationNamed:" : "brunobb 09/01/2021 12:08",
-		"newBpmProcessesDefinitionNamed:withXpdlStrings:multiplePools:inEnvironmentNamed:inApplicationNamed:" : "brunobb 09/03/2021 10:28",
+		"newBpmProcessDefinitionNamed:withXpdlString:inEnvironmentNamed:inApplicationNamed:" : "brunobb 11/25/2021 03:24",
+		"newBpmProcessesDefinitionNamed:withXpdlStrings:multiplePools:inEnvironmentNamed:inApplicationNamed:" : "brunobb 11/25/2021 03:25",
 		"newDefinitionTemplate" : "brunobb 09/03/2021 12:57",
 		"newFormBuilderFor:" : "brunobb 08/19/2021 13:17",
 		"newFrontOfficeRole" : "brunobb 08/17/2021 15:22",
@@ -136,6 +132,7 @@
 		"printDataFormatVersionName" : "brunobb 09/03/2021 12:42",
 		"registerAnonymousStartFor:" : "brunobb 08/17/2021 15:22",
 		"registerEnvironment:ifPresent:" : "brunobb 08/17/2021 15:22",
+		"registerOrbeonApplication:" : "brunobb 11/25/2021 11:52",
 		"removeCreationHistoryFor:" : "brunobb 08/17/2021 15:22",
 		"removeFrom:apps:processesName:rolesName:backofficeRoles:usersName:" : "brunobb 08/17/2021 15:22",
 		"removeFrom:apps:processesName:rolesName:backofficeRoles:usersName:deleteEnvironment:" : "brunobb 08/17/2021 15:22",
@@ -175,5 +172,5 @@
 		"unregisterAnonymousStartFor:" : "brunobb 08/17/2021 15:22",
 		"unregisterEnvironment:" : "brunobb 08/17/2021 15:22",
 		"unregisterEnvironment:ifAbsent:" : "brunobb 08/17/2021 15:22",
-		"unregisterUser:" : "brunobb 08/17/2021 15:22",
+		"unregisterUser:" : "brunobb 11/25/2021 10:00",
 		"usersDo:" : "brunobb 08/17/2021 15:22" } }

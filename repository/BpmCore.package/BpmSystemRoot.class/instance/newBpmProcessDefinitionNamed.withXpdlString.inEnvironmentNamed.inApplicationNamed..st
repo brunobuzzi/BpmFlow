@@ -9,6 +9,6 @@ newBpmProcessDefinitionNamed: aString withXpdlString: xpdlString inEnvironmentNa
 	processGenerator mapProcess: aString toApplication: (self getExistingBpmApplicationOrCreateNewNamed:applicationName in: environmentName);
 		generateAllProcess.
 
-	processGenerator processesDo: [:each | each addToCache].
+	processGenerator processesDo: [:each | each registerInApplication].
 
 	^processGenerator getProcessDefinitionNamed: aString ifNone: [NoProcessDefinitionException signal: 'There is no BpmProcessDefinition named [', aString, ']'].

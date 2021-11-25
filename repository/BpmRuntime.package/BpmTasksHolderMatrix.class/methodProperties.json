@@ -1,11 +1,7 @@
 {
 	"class" : {
 		"getAllAvailableTaskAssignmentsIn:" : "brunobb 02/06/2020 11:08",
-		"getMatrixForApplicationNamed:" : "brunobb 02/10/2020 10:25",
-		"getMatrixForApplicationNamed:ifAbsent:" : "brunobb 02/06/2020 11:08",
-		"newFor:" : "brunobb 02/06/2020 11:08",
-		"newOn:" : "brunobb 02/06/2020 11:08",
-		"resetAllRolesAndAssignments" : "brunobb 02/06/2020 11:08" },
+		"newOn:" : "brunobb 02/06/2020 11:08" },
 	"instance" : {
 		"addAssignment:" : "brunobb 02/06/2020 11:08",
 		"addAssignment:forRoleNamed:" : "brunobb 02/06/2020 11:08",

@@ -5,4 +5,4 @@ initialize
 
 	self initializeBatchedLists.
 
-	importer := BpmStructureImporter newFor: self session user.
+	importer := BpmStructureImporter newFor: self session user systemRoot: self session systemRoot.

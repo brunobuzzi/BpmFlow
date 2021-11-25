@@ -1,6 +1,5 @@
 cache
-addToCache
-	""
+registerInApplication
 
 	(processName isNil or:[processName isEmpty]) ifTrue: [^NoProcessNameException signal: 'ProcessDefinition MUST have a name'].
 	application ifNil: [^NoApplicationException signal: 'ProcessDefinition MUST have anOrbeonApplication'].

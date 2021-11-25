@@ -35,16 +35,10 @@ removeBpmSystemStructureFor: index
 	back_role := self getBackofficeRoleNamed: 'app2-back-role2-', index printString.
 	testRoot removeRole: back_role in: backApp2 applicationName.
 
-"	front_user removeFromCache. 
-	back_user removeFromCache. 
-	backApp1 removeFromCache.
-	backApp2 removeFromCache. 
-	frontApp1 removeFromCache.
-	frontApp2 removeFromCache. "
 	env unregisterUser: front_user;
 		unregisterUser: back_user;
 		unregisterApplication: frontApp1;
 		unregisterApplication: frontApp2;
 		unregisterApplication: backApp1;
-		unregisterApplication: backApp2;
-		removeFromCache.
+		unregisterApplication: backApp2.
+	testRoot unregisterEnvironment: env.

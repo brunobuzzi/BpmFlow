@@ -1,4 +1,0 @@
-default names
-adminUserName
-
-	^'admin'

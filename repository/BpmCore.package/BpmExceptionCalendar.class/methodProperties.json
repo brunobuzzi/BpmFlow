@@ -8,7 +8,6 @@
 		"addAllWeekEndsOf:" : "BrunoBB 03/03/2017 12:46",
 		"addExceptionDay:" : "BrunoBB 02/02/2017 03:56",
 		"addExceptionTimeFrom:to:" : "BrunoBB 02/13/2017 11:30",
-		"addToCache" : "brunobb 11/28/2018 06:43",
 		"bpmEnvironment" : "brunobb 09/06/2018 08:55",
 		"bpmEnvironment:" : "brunobb 09/06/2018 08:55",
 		"days" : "BrunoBB 02/02/2017 03:48",
@@ -30,6 +29,5 @@
 		"removeAllSundayOf:" : "BrunoBB 02/08/2017 09:09",
 		"removeExceptionDay:" : "BrunoBB 02/02/2017 03:53",
 		"removeExceptionTimeFrom:to:" : "BrunoBB 02/13/2017 12:11",
-		"removeFromCache" : "brunobb 12/26/2018 04:36",
 		"reorganizeDaysFrom:" : "brunobb 02/05/2019 08:48",
 		"timeIntervalExistFrom:to:" : "BrunoBB 02/02/2017 08:31" } }

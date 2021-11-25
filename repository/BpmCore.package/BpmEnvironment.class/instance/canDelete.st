@@ -1,4 +1,4 @@
-cache
+other
 canDelete
 
-	^(applications isEmpty and:[users isEmpty]) and: [self class adminsEnvironmentName ~= name]
+	^(applications isEmpty and:[users isEmpty]) and: [systemRoot adminsEnvironmentName ~= name]

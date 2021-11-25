@@ -1,12 +1,6 @@
 {
 	"class" : {
-		"getNumberOfTasksDistributionFor:" : "brunobb 02/04/2020 10:33",
-		"getNumberOfUsersDistributionFor:" : "brunobb 02/04/2020 10:33",
-		"getRoleNamed:in:" : "brunobb 02/04/2020 08:25",
-		"getUnassignedTasksDistributionFor:" : "brunobb 02/06/2020 10:57",
-		"reportNumberOfTasksDistributionFor:" : "BrunoBB 11/08/2016 08:11",
-		"reportNumberOfUnassignedTasksFor:" : "BrunoBB 11/08/2016 14:38",
-		"reportNumberOfUsersDistributionFor:" : "BrunoBB 11/08/2016 14:53" },
+		 },
 	"instance" : {
 		"asBackofficeRole" : "brunobb 07/16/2021 12:52",
 		"asFrontofficeRole" : "BrunoBB 12/18/2015 14:27",

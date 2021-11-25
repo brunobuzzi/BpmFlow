@@ -7,8 +7,6 @@ removeApplication
 
 	self session bpmEnvironment unregisterApplication: selectedLateralItem.
 	 
-	selectedLateralItem removeFromCache.
-
 	lateralCollection remove: selectedLateralItem ifAbsent: [].
 	batchedList remove: selectedLateralItem.
 

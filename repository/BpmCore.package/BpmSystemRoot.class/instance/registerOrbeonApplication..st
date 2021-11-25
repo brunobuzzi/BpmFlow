@@ -1,0 +1,4 @@
+orbeon
+registerOrbeonApplication: anOrbeonApplication
+
+	^self orbeonManager registerApplication: anOrbeonApplication

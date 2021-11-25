@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"getExistingBpmApplicationOrCreateNewNamed:" : "brunobb 06/30/2021 14:35" },
+		 },
 	"instance" : {
 		"getAvailableTaskAssignments" : "brunobb 06/30/2021 14:35",
 		"getFinishedTaskAssignments" : "brunobb 06/30/2021 14:35",
