@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"setUp" : "brunobb 09/03/2021 07:54",
+		"tearDown" : "brunobb 12/01/2021 14:06",
 		"testMultiRoleAndInformedCreation" : "brunobb 09/03/2021 07:53" } }

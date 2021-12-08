@@ -3,5 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "brunobb 09/03/2021 10:21",
+		"tearDown" : "brunobb 12/01/2021 14:09",
 		"testExtendedAttributeCanUnassign" : "brunobb 09/03/2021 10:21",
 		"testProcessBasicCreation" : "brunobb 09/03/2021 10:21" } }

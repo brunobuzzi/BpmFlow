@@ -1,8 +1,7 @@
 other
 tearDown
 
+	importProcess generatedProcessesDo: [:each | 
+		self getDefaultApplication unregisterProcessDefinition: each ifAbsent: []].
+
 	super tearDown.
-
-	self getDefaultEnvironment unregisterApplication: self getDefaultApplication  ifNone: [self assert: false].
-
-	testRoot unregisterEnvironment: self getDefaultEnvironment ifAbsent: [self assert: false]

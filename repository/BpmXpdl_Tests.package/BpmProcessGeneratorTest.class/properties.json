@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"processGenerator",
-		"testRoot" ],
+		"testRoot",
+		"environment",
+		"application" ],
 	"name" : "BpmProcessGeneratorTest",
 	"pools" : [
 		 ],

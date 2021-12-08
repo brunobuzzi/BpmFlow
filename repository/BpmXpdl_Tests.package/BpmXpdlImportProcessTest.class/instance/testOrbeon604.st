@@ -29,6 +29,6 @@ testOrbeon604
 	self assert: importProcess detectedItemsSize equals: 8.
 	self assert: (importProcess detectedItems allSatisfy: [:each | each code = 604]).
 
-	self getDefaultEnvironment unregisterApplication: agesic.
+	agesic resetDefinitionRegistry.
 
-	agesic resetDefinitionRegistry
+	testRoot removeFrom: 'env-test' in: 'agesic' processesName: #('orbeon form error') rolesName: #('administrator') usersName: #().

@@ -5,4 +5,7 @@ setUp
  
 	testRoot := BpmSystemRoot newWithBasicObjects.
 
-	self getDefaultEnvironment registerApplication: self getDefaultApplication ifPresent: [] ifTaken: [].
+	environment := self getDefaultEnvironment.
+	application := self getDefaultApplication.
+	
+	environment registerApplication: self getDefaultApplication ifPresent: [] ifTaken: []

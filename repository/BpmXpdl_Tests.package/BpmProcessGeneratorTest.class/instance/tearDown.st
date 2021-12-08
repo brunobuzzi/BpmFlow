@@ -1,11 +1,11 @@
 other
 tearDown
 
-	super tearDown.
-	self getDefaultEnvironment unregisterApplication: self getDefaultApplication.
-
-	self getDefaultApplication resetDefinitionRegistry.
+	application resetDefinitionRegistry.
 	(testRoot getRolesInAppName: self defaultApplicationName) do: [:each | testRoot removeRole: each in: self defaultApplicationName].
 
+	environment unregisterApplication: application.
 
-	testRoot unregisterEnvironment: self getDefaultEnvironment ifAbsent: [self assert: false].
+	testRoot unregisterEnvironment: environment ifAbsent: [self assert: false].
+
+	super tearDown.

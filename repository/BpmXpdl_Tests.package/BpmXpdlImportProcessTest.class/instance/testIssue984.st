@@ -26,3 +26,12 @@ testIssue984
 	self deny: importProcess hasWarnings.	
 	self assert: importProcess isImportSuccessful.
 	self assert: importProcess detectedItemsSize equals: 0.
+
+	ue unregisterProcessDefinition: (testRoot getLatestProcessDefinitionNamed: 'ReusableEmbeddedProc' in: 'import-test-app') 
+					ifAbsent: [self assert: false].
+	ue unregisterProcessDefinition: (testRoot getLatestProcessDefinitionNamed: 'reusable-sub-proc' in: 'import-test-app') 
+					ifAbsent: [self assert: false].
+	ue unregisterProcessDefinition: (testRoot getLatestProcessDefinitionNamed: 'embedded-sub-proc' in: 'import-test-app') 
+					ifAbsent: [self assert: false].
+
+	testRoot removeFrom: 'env-test' in: 'import-test-app' processesName: #('ReusableEmbeddedProc' 'reusable-sub-proc' 'embedded-sub-proc') rolesName: #('administrator') usersName: #().

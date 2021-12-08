@@ -85,7 +85,7 @@
 		"getInstancesCreationDayDistributionQuantityFrom:to:satisfying:onError:" : "brunobb 12/01/2019 08:27",
 		"getInstancesDayDistributionQuantityUsing:from:to:satisfying:onError:" : "brunobb 12/01/2019 08:20",
 		"getIntermediateEventNamed:ifNone:" : "BrunoBB 11/28/2015 19:50",
-		"getLatestVersion" : "brunobb 03/28/2018 13:47",
+		"getLatestVersion" : "brunobb 12/01/2021 14:23",
 		"getNumberOfEndEvents" : "BrunoBB 10/29/2015 14:03",
 		"getNumberOfGateways" : "BrunoBB 10/29/2015 14:03",
 		"getNumberOfIntermediateEvents" : "BrunoBB 10/29/2015 14:04",

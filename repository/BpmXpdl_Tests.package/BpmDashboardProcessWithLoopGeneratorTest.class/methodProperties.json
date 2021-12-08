@@ -4,4 +4,5 @@
 	"instance" : {
 		"getProcessWithLoop" : "brunobb 09/03/2021 07:57",
 		"setUp" : "brunobb 09/03/2021 07:57",
+		"tearDown" : "brunobb 12/01/2021 14:04",
 		"testLoop" : "brunobb 09/19/2019 10:10" } }

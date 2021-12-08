@@ -6,8 +6,8 @@ getExistingBpmApplicationOrCreateNewNamed: applicationName in: environmentName
 
 	^environment applicationNamed: applicationName 
 							ifNone: [| application |
-										application := BpmApplication new 
-												applicationName: applicationName;
+										application := BpmApplication newNamed: applicationName on: self.
+										application
 												initializeForBpmFlow;
 												yourself.
 										environment registerApplication: application.
