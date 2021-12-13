@@ -5,4 +5,4 @@ setUp
 
 	testRoot := BpmSystemRoot newWithBasicObjects.
 
-	testRoot registerEnvironment: self getDefaultEnvironment ifPresent: [self assert: false].
+	testRoot registerEnvironment: self getDefaultEnvironment ifPresent: [].
